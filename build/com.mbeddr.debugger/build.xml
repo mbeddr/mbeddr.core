@@ -227,6 +227,9 @@
         <module file="${mbeddr.core}/languages/com.mbeddr.core.debug/debug.mpl" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/blext.mpl" />
       </chunk>
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   
@@ -244,7 +247,7 @@
   <target name="java.compile.com.mbeddr.core.debug" depends="fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.debug/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.debug" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.debug" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.debug" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.debug/source_gen" />
@@ -311,12 +314,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.debug">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.debug.blext" depends="java.compile.com.mbeddr.core.debug, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.debug.blext" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.debug.blext" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.debug.blext" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/source_gen" />
@@ -370,12 +376,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.debug.blext">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.debug.blext#1734689175229870721" depends="java.compile.com.mbeddr.core.debug, java.compile.com.mbeddr.core.debug.blext, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.debug.blext#1734689175229870721" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.debug.blext#1734689175229870721" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.debug.blext#1734689175229870721" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/generator/source_gen" />
@@ -430,6 +439,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.debug.blext#1734689175229870721">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">

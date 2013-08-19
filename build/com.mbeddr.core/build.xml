@@ -1077,16 +1077,16 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -1243,6 +1243,9 @@
         <module file="${mbeddr.core}/languages/com.mbeddr.plantuml/solutions/pluginSolution/pluginSolution.msd" />
       </chunk>
       <chunk />
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   
@@ -1268,7 +1271,7 @@
   <target name="java.compile.com.mbeddr.core.base.pluginSolution" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.base/solutions/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.base.pluginSolution" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.base.pluginSolution" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.base.pluginSolution" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.base/solutions/pluginSolution/source_gen" />
@@ -1329,12 +1332,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.base.pluginSolution">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.base/solutions/pluginSolution/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.legacy.pluginSolution" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.legacy, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.legacy/solutions/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.legacy.pluginSolution" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.legacy.pluginSolution" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.legacy.pluginSolution" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.legacy/solutions/pluginSolution/source_gen" />
@@ -1388,12 +1394,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.legacy.pluginSolution">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.legacy/solutions/pluginSolution/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.modules.pluginSolution" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.modules/solutions/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.modules.pluginSolution" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules.pluginSolution" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules.pluginSolution" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.modules/solutions/pluginSolution/source_gen" />
@@ -1450,6 +1459,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.modules.pluginSolution">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.modules/solutions/pluginSolution/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.java.modules.cycle.1" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.embedded, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.legacy, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, java.compile.com.mbeddr.core.udt, java.compile.com.mbeddr.core.util, fetchDependencies">
@@ -1556,7 +1568,7 @@
   <target name="java.compile.com.mbeddr.core.modules.runtime" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.embedded, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.legacy, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, java.compile.com.mbeddr.core.udt, java.compile.com.mbeddr.core.util, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.modules.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.modules.runtime" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules.runtime" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules.runtime" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.modules.runtime/source_gen" />
@@ -1644,12 +1656,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.modules.runtime">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.modules.runtime/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.runconfiguration.pluginSolution" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.runconfiguration/solutions/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.runconfiguration.pluginSolution" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.runconfiguration.pluginSolution" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.runconfiguration.pluginSolution" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.runconfiguration/solutions/pluginSolution/source_gen" />
@@ -1708,12 +1723,15 @@
         <fileset file="${artifacts.mps}/languages/make/jetbrains.mps.make.script.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.runconfiguration.pluginSolution">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.runconfiguration/solutions/pluginSolution/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.statements.pluginSolution" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.statements/solutions/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.statements.pluginSolution" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.statements.pluginSolution" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.statements.pluginSolution" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.statements/solutions/pluginSolution/source_gen" />
@@ -1764,6 +1782,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.statements.pluginSolution">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.statements/solutions/pluginSolution/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.java.modules.cycle.2" depends="fetchDependencies">
@@ -1884,7 +1905,7 @@
   <target name="java.compile.com.mbeddr.core.base" depends="java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.base/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.base" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.base" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.base" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.base/source_gen" />
@@ -1933,12 +1954,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.base">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.base/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.cstubs" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.cstubs/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.cstubs" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.cstubs" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.cstubs" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.cstubs/source_gen" />
@@ -2001,12 +2025,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.cstubs">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.cstubs/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.expressions" depends="java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.expressions/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.expressions" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.expressions" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.expressions" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.expressions/source_gen" />
@@ -2067,12 +2094,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.expressions">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.expressions/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.legacy" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.legacy/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.legacy" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.legacy" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.legacy" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.legacy/source_gen" />
@@ -2124,12 +2154,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.legacy">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.legacy/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.make" depends="java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.make/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.make" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.make" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.make" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.make/source_gen" />
@@ -2188,12 +2221,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.make">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.make/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.make#208195772221165171" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.make/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.make#208195772221165171" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.make#208195772221165171" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.make#208195772221165171" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.make/generator/source_gen" />
@@ -2250,12 +2286,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.make#208195772221165171">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.make/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.modules" depends="java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.modules/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.modules" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.modules/source_gen" />
@@ -2324,12 +2363,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.modules">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.modules/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.modules#1758019824472891829" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.modules/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.modules#1758019824472891829" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules#1758019824472891829" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules#1758019824472891829" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.modules/generator/source_gen" />
@@ -2385,12 +2427,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.modules#1758019824472891829">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.modules/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.modules.gen" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, java.compile.com.mbeddr.core.udt, java.compile.com.mbeddr.core.unittest, java.compile.com.mbeddr.core.util, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.modules.gen/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.modules.gen" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules.gen" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules.gen" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.modules.gen/source_gen" />
@@ -2451,12 +2496,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.modules.gen">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.modules.gen/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.modules.gen#1758019824472882132" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.modules.gen, java.compile.com.mbeddr.core.modules.runtime, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, java.compile.com.mbeddr.core.udt, java.compile.com.mbeddr.core.unittest, java.compile.com.mbeddr.core.util, java.compile.com.mbeddr.plantuml.pluginSolution, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.modules.gen/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.modules.gen#1758019824472882132" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules.gen#1758019824472882132" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules.gen#1758019824472882132" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.modules.gen/generator/source_gen" />
@@ -2555,12 +2603,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.modules.gen#1758019824472882132">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.modules.gen/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.pointers" depends="java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.arrays/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.pointers" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.pointers" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.pointers" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.arrays/source_gen" />
@@ -2624,12 +2675,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.pointers">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.arrays/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.pointers#5684014141267676678" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.pointers, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.arrays/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.pointers#5684014141267676678" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.pointers#5684014141267676678" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.pointers#5684014141267676678" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.arrays/generator/source_gen" />
@@ -2682,12 +2736,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.pointers#5684014141267676678">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.arrays/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.runconfiguration" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.runconfiguration/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.runconfiguration" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.runconfiguration" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.runconfiguration" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.runconfiguration/source_gen" />
@@ -2743,12 +2800,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.runconfiguration">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.runconfiguration/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.statements" depends="java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.statements/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.statements" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.statements" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.statements" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.statements/source_gen" />
@@ -2810,12 +2870,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.statements">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.statements/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.udt" depends="java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.udt/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.udt" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.udt" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.udt" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.udt/source_gen" />
@@ -2900,12 +2963,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.udt">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.udt/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.unittest.pluginSolution" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, java.compile.com.mbeddr.core.udt, java.compile.com.mbeddr.core.unittest, java.compile.com.mbeddr.core.util, java.compile.com.mbeddr.core.util.pluginSolution, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.unittest/solutions/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.unittest.pluginSolution" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.unittest.pluginSolution" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.unittest.pluginSolution" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.unittest/solutions/pluginSolution/source_gen" />
@@ -2968,12 +3034,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.unittest.pluginSolution">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.unittest/solutions/pluginSolution/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.util.pluginSolution" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.dataflow, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, java.compile.com.mbeddr.core.udt, java.compile.com.mbeddr.core.util, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.util/solutions/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.util.pluginSolution" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.util.pluginSolution" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.util.pluginSolution" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.util/solutions/pluginSolution/source_gen" />
@@ -3031,12 +3100,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.util.pluginSolution">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.util/solutions/pluginSolution/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.dataflow" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, java.compile.com.mbeddr.core.udt, java.compile.com.mbeddr.core.util, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/dataflow/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.dataflow" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.dataflow" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.dataflow" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/dataflow/source_gen" />
@@ -3092,12 +3164,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.dataflow">
+      <fileset dir="${mbeddr.core}/languages/dataflow/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.buildconfig" depends="java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.buildconfig/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.buildconfig" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.buildconfig" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.buildconfig" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.buildconfig/source_gen" />
@@ -3151,12 +3226,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.buildconfig">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.buildconfig/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.buildconfig#7717755763392579406" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.buildconfig/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.buildconfig#7717755763392579406" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.buildconfig#7717755763392579406" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.buildconfig#7717755763392579406" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.buildconfig/generator/source_gen" />
@@ -3214,12 +3292,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.buildconfig#7717755763392579406">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.buildconfig/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.embedded" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, java.compile.com.mbeddr.core.udt, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.embedded/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.embedded" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.embedded" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.embedded" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.embedded/source_gen" />
@@ -3272,12 +3353,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.embedded">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.embedded/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.unittest" depends="java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.unittest/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.unittest" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.unittest" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.unittest" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.unittest/source_gen" />
@@ -3338,12 +3422,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.unittest">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.unittest/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.unittest#6275792049641599010" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, java.compile.com.mbeddr.core.udt, java.compile.com.mbeddr.core.unittest, java.compile.com.mbeddr.core.util, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.unittest/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.unittest#6275792049641599010" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.unittest#6275792049641599010" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.unittest#6275792049641599010" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.unittest/generator/source_gen" />
@@ -3404,12 +3491,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.unittest#6275792049641599010">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.unittest/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.util" depends="java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.util/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.util" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.util" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.util" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.util/source_gen" />
@@ -3471,12 +3561,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.util">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.util/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.util#745648737914842687" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, java.compile.com.mbeddr.core.udt, java.compile.com.mbeddr.core.unittest, java.compile.com.mbeddr.core.util, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.util/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.util#745648737914842687" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.util#745648737914842687" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.util#745648737914842687" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.util/generator/source_gen" />
@@ -3537,12 +3630,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.util#745648737914842687">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.util/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.plantuml.pluginSolution" depends="java.compile.com.mbeddr.core.base, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.plantuml/solutions/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.plantuml.pluginSolution" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.plantuml.pluginSolution" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.plantuml.pluginSolution" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.plantuml/solutions/pluginSolution/source_gen" />
@@ -3609,12 +3705,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.plantuml.pluginSolution">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.plantuml/solutions/pluginSolution/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbddr.core.buildconfig.pluginSolution" depends="java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.buildconfig/solution/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbddr.core.buildconfig.pluginSolution" />
-    <javac destdir="${build.tmp}/java/out/com.mbddr.core.buildconfig.pluginSolution" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbddr.core.buildconfig.pluginSolution" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/languages/com.mbeddr.core.buildconfig/solution/pluginSolution/source_gen" />
@@ -3663,6 +3762,9 @@
         <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbddr.core.buildconfig.pluginSolution">
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.buildconfig/solution/pluginSolution/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">

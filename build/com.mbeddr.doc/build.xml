@@ -490,18 +490,18 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -633,6 +633,9 @@
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/spreadsheat.mpl" />
       </chunk>
       <chunk />
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   
@@ -662,7 +665,7 @@
   <target name="java.compile.com.mbeddr.doc" depends="fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc/source_gen" />
@@ -710,12 +713,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc#4457500422381538528" depends="java.compile.com.mbeddr.doc, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc/generator/source_gen" />
@@ -757,12 +763,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.c" depends="java.compile.com.mbeddr.doc, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.c/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.c" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.c" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.c" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.c/source_gen" />
@@ -811,12 +820,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.c">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.c/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.c#4457500422381552786" depends="java.compile.com.mbeddr.doc, java.compile.com.mbeddr.doc.c, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.c/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.c#4457500422381552786" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.c#4457500422381552786" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.c#4457500422381552786" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.c/generator/source_gen" />
@@ -870,12 +882,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.c#4457500422381552786">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.c/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.expressions" depends="java.compile.com.mbeddr.doc, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.expressions/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.expressions" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.expressions" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.expressions" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.expressions/source_gen" />
@@ -920,12 +935,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.expressions">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.expressions/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.expressions#5378658552263161807" depends="java.compile.com.mbeddr.doc, java.compile.com.mbeddr.doc.expressions, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.expressions/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.expressions#5378658552263161807" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.expressions#5378658552263161807" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.expressions#5378658552263161807" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.expressions/generator/source_gen" />
@@ -975,12 +993,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.expressions#5378658552263161807">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.expressions/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.gen_latex" depends="java.compile.com.mbeddr.doc, java.compile.com.mbeddr.doc.latex, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.gen_latex/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.gen_latex" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.gen_latex" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.gen_latex" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.gen_latex/source_gen" />
@@ -1019,12 +1040,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.gen_latex">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.gen_latex/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.gen_latex#4457500422381351720" depends="java.compile.com.mbeddr.doc, java.compile.com.mbeddr.doc.gen_latex, java.compile.com.mbeddr.doc.latex, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.gen_latex/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.gen_latex#4457500422381351720" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.gen_latex#4457500422381351720" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.gen_latex#4457500422381351720" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.gen_latex/generator/source_gen" />
@@ -1068,12 +1092,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.gen_latex#4457500422381351720">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.gen_latex/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.gen_xhtml" depends="java.compile.com.mbeddr.doc, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.gen_xhtml/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.gen_xhtml" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.gen_xhtml" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.gen_xhtml" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.gen_xhtml/source_gen" />
@@ -1112,12 +1139,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.gen_xhtml">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.gen_xhtml/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.gen_xhtml#3350625596580276036" depends="java.compile.com.mbeddr.doc, java.compile.com.mbeddr.doc.gen_latex#4457500422381351720, java.compile.com.mbeddr.doc.gen_xhtml, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.gen_xhtml/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.gen_xhtml#3350625596580276036" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.gen_xhtml#3350625596580276036" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.gen_xhtml#3350625596580276036" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.gen_xhtml/generator/source_gen" />
@@ -1162,12 +1192,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.gen_xhtml#3350625596580276036">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.gen_xhtml/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.terms" depends="java.compile.com.mbeddr.doc, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/terms/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.terms" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.terms" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.terms" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/terms/source_gen" />
@@ -1205,12 +1238,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.terms">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/terms/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.terms#8574110643282389173" depends="java.compile.com.mbeddr.doc, java.compile.com.mbeddr.doc.terms, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/terms/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.terms#8574110643282389173" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.terms#8574110643282389173" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.terms#8574110643282389173" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/terms/generator/source_gen" />
@@ -1253,12 +1289,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.terms#8574110643282389173">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/terms/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.self" depends="java.compile.com.mbeddr.doc, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.self/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.self" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.self" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.self" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.self/source_gen" />
@@ -1296,12 +1335,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.self">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.self/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.self#8730648445433126495" depends="java.compile.com.mbeddr.doc, java.compile.com.mbeddr.doc.self, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.self/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.self#8730648445433126495" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.self#8730648445433126495" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.self#8730648445433126495" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.self/generator/source_gen" />
@@ -1344,12 +1386,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.self#8730648445433126495">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.self/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.latex" depends="fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.latex/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.latex" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.latex" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.latex" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.latex/source_gen" />
@@ -1386,12 +1431,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.latex">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.latex/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.meta" depends="java.compile.com.mbeddr.doc, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.meta/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.meta" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.meta" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.meta" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.meta/source_gen" />
@@ -1437,12 +1485,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.meta">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.meta/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.doc.meta#4715820023543877779" depends="java.compile.com.mbeddr.doc, java.compile.com.mbeddr.doc.meta, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.meta/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.meta#4715820023543877779" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.meta#4715820023543877779" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.meta#4715820023543877779" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.meta/generator/source_gen" />
@@ -1485,12 +1536,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.doc.meta#4715820023543877779">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.meta/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.spreadsheat" depends="fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.spreadsheat" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.spreadsheat" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.spreadsheat" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/source_gen" />
@@ -1539,12 +1593,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.spreadsheat">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.spreadsheat#2042272859106851293" depends="java.compile.com.mbeddr.spreadsheat, fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.spreadsheat#2042272859106851293" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.spreadsheat#2042272859106851293" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.spreadsheat#2042272859106851293" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/generator/source_gen" />
@@ -1594,6 +1651,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.spreadsheat#2042272859106851293">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">

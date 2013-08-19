@@ -281,10 +281,10 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -418,6 +418,9 @@
         <module file="${mpsutil}/tests/test.ts.match/match.msd" />
       </chunk>
       <chunk />
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   
@@ -430,7 +433,7 @@
   <target name="java.compile.com.mbeddr.mpsutil.tables.rt" depends="fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.tables.rt/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.tables.rt" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.tables.rt" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.tables.rt" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.tables.rt/source_gen" />
@@ -457,12 +460,15 @@
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.tables.rt">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.tables.rt/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.bldoc" depends="fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.bldoc/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.bldoc" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.bldoc" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.bldoc" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.bldoc/source_gen" />
@@ -498,12 +504,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.bldoc">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.bldoc/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.blutil" depends="fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.blutil" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.blutil" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.blutil" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/source_gen" />
@@ -544,12 +553,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.blutil">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.blutil#374287044672169667" depends="java.compile.com.mbeddr.mpsutil.blutil, fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.blutil#374287044672169667" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.blutil#374287044672169667" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.blutil#374287044672169667" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/generator/source_gen" />
@@ -591,12 +603,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.blutil#374287044672169667">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.genutil" depends="fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.genutil" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.genutil" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.genutil" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/source_gen" />
@@ -638,12 +653,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.genutil">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.genutil#8326627235132567107" depends="java.compile.com.mbeddr.mpsutil.genutil, fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.genutil#8326627235132567107" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.genutil#8326627235132567107" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.genutil#8326627235132567107" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/generator/source_gen" />
@@ -686,12 +704,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.genutil#8326627235132567107">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.langstats" depends="fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.langstats" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.langstats" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.langstats" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/source_gen" />
@@ -741,12 +762,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.langstats">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.langstats#2745981761597146573" depends="java.compile.com.mbeddr.mpsutil.langstats, fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.langstats#2745981761597146573" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.langstats#2745981761597146573" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.langstats#2745981761597146573" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/generator/source_gen" />
@@ -782,12 +806,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.langstats#2745981761597146573">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.refactoring" depends="fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/source_gen" />
@@ -835,12 +862,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.refactoring#7518061998923596540" depends="java.compile.com.mbeddr.mpsutil.refactoring, fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring#7518061998923596540" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring#7518061998923596540" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring#7518061998923596540" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/generator/source_gen" />
@@ -890,12 +920,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring#7518061998923596540">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.test.ex.match" depends="fetchDependencies">
     <mkdir dir="${mpsutil}/tests/test.ts.match/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.match" />
-    <javac destdir="${build.tmp}/java/out/test.ex.match" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/test.ex.match" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/tests/test.ts.match/source_gen" />
@@ -942,12 +975,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.ex.match">
+      <fileset dir="${mpsutil}/tests/test.ts.match/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.buildutil" depends="fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.buildutil" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.buildutil" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.buildutil" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/source_gen" />
@@ -988,12 +1024,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.buildutil">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.buildutil#6600513366548883903" depends="java.compile.com.mbeddr.mpsutil.buildutil, fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.buildutil#6600513366548883903" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.buildutil#6600513366548883903" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.buildutil#6600513366548883903" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/generator/source_gen" />
@@ -1029,12 +1068,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.buildutil#6600513366548883903">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.refactoring.rt" depends="fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring.rt" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring.rt" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring.rt" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/source_gen" />
@@ -1060,6 +1102,9 @@
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring.rt">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">
