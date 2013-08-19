@@ -803,6 +803,10 @@
       <property name="name" nameId="tpck.1169194664001" value="mustBeOk" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8974692200284623075" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="hideOkOnes" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8691429746170824734" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="sorted" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
