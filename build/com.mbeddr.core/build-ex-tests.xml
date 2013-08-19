@@ -310,6 +310,9 @@
         <module file="${mbeddr.core}/tests/test.ex.core.libs/libs.msd" />
         <module file="${mbeddr.core}/tests/test.ex.errorreporting/errorreporting.msd" />
       </chunk>
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   

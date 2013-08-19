@@ -309,6 +309,9 @@
       <chunk>
         <module file="${tutorial.home}/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" />
       </chunk>
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   

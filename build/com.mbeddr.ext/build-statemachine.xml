@@ -150,18 +150,18 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -287,6 +287,9 @@
         <module file="${mbeddr.ext}/devkits/com.mbeddr.ext.statemachines/statemachines.devkit" />
       </chunk>
       <chunk />
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   
@@ -316,7 +319,7 @@
   <target name="java.compile.com.mbeddr.ext.statemachines" depends="fetchDependencies">
     <mkdir dir="${mbeddr.ext}/languages/com.mbeddr.ext.statemachines/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.statemachines" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.statemachines" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.statemachines" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/languages/com.mbeddr.ext.statemachines/source_gen" />
@@ -387,12 +390,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.ext.statemachines">
+      <fileset dir="${mbeddr.ext}/languages/com.mbeddr.ext.statemachines/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.ext.statemachines#8836799689252270723" depends="java.compile.com.mbeddr.ext.statemachines, fetchDependencies">
     <mkdir dir="${mbeddr.ext}/languages/com.mbeddr.ext.statemachines/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.statemachines#8836799689252270723" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.statemachines#8836799689252270723" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.statemachines#8836799689252270723" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/languages/com.mbeddr.ext.statemachines/generator/source_gen" />
@@ -455,12 +461,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.ext.statemachines#8836799689252270723">
+      <fileset dir="${mbeddr.ext}/languages/com.mbeddr.ext.statemachines/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.ext.statemachines.pluginSolution" depends="java.compile.com.mbeddr.ext.statemachines, fetchDependencies">
     <mkdir dir="${mbeddr.ext}/languages/com.mbeddr.ext.statemachines/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.statemachines.pluginSolution" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.statemachines.pluginSolution" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.statemachines.pluginSolution" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/languages/com.mbeddr.ext.statemachines/pluginSolution/source_gen" />
@@ -520,6 +529,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.ext.statemachines.pluginSolution">
+      <fileset dir="${mbeddr.ext}/languages/com.mbeddr.ext.statemachines/pluginSolution/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">
