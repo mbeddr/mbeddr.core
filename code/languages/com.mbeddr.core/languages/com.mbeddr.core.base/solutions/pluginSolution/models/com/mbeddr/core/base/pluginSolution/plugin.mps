@@ -5552,25 +5552,6 @@
       <property name="isSynchronized" nameId="tpee.4276006055363816570" value="false" />
       <property name="isFinal" nameId="tpee.1181808852946" value="false" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="37070967459202622" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="8738853969705083255" nodeInfo="nn">
-          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.StatementCommentPart" typeId="tpee.6329021646629175143" id="8738853969705087087" nodeInfo="nn">
-            <node role="commentedStatement" roleId="tpee.6329021646629175144" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="37070967461113095" nodeInfo="nn">
-              <node role="expression" roleId="tpee.1068581517676" type="tpee.DotExpression" typeId="tpee.1197027756228" id="37070967461122454" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="37070967461113757" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="37070967461113232" nodeInfo="nn">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="37070967461089319" resolveInfo="project" />
-                  </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetPreferencesComponentInProjectOperation" typeId="tgbt.681855071694758168" id="37070967461122232" nodeInfo="nn">
-                    <link role="componentDeclaration" roleId="tgbt.681855071694758169" targetNodeId="37070967460990017" resolveInfo="mbeddrPrefenrences" />
-                  </node>
-                </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tp4k.PersistentPropertyReference" typeId="tp4k.1210180874794" id="37070967461123840" nodeInfo="nn">
-                  <link role="member" roleId="tp4f.1205756909548" targetNodeId="37070967461020205" resolveInfo="mbeddrMenuEnabled" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8738853969705090802" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="8738853969705091296" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068581517676" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="8738853969705091405" nodeInfo="nn">
@@ -10262,87 +10243,6 @@
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="37070967461021174" nodeInfo="in" />
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="37070967461131956" nodeInfo="nn">
         <property name="value" nameId="tpee.1068580123138" value="true" />
-      </node>
-    </node>
-    <node role="preferencePage" roleId="tp4k.1210684426855" type="tp4k.PreferencePage" typeId="tp4k.1210684385183" id="37070967460990147" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="mbeddr preferences" />
-      <node role="component" roleId="tp4k.1210686845551" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="37070967461724042" nodeInfo="nn">
-        <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="37070967461738321" nodeInfo="nn">
-          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="37070967461190723" resolveInfo="MbeddrPreferencePanle" />
-        </node>
-      </node>
-      <node role="isModifiedBlock" roleId="tp4k.1210763647050" type="tp4k.PreferencePageIsModifiedBlock" typeId="tp4k.1210763550007" id="37070967460990149" nodeInfo="nn">
-        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="37070967460990150" nodeInfo="sn">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="37070967461872254" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="37070967461892525" nodeInfo="nn">
-              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="37070967461903701" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="tp4k.ConceptFunctionParameter_PreferencePage_component" typeId="tp4k.1210690798207" id="37070967461897609" nodeInfo="nn" />
-                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="37070967461938884" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="37070967461707835" resolveInfo="getMenuEnabled" />
-                </node>
-              </node>
-              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="37070967461885675" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="37070967461874309" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tp4k.ConceptFunctionParameter_Project" typeId="tp4k.1213888797251" id="37070967461872253" nodeInfo="nn" />
-                  <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetPreferencesComponentInProjectOperation" typeId="tgbt.681855071694758168" id="37070967461884065" nodeInfo="nn">
-                    <link role="componentDeclaration" roleId="tgbt.681855071694758169" targetNodeId="37070967460990017" resolveInfo="mbeddrPrefenrences" />
-                  </node>
-                </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tp4k.PersistentPropertyReference" typeId="tp4k.1210180874794" id="37070967461888393" nodeInfo="nn">
-                  <link role="member" roleId="tp4f.1205756909548" targetNodeId="37070967461020205" resolveInfo="mbeddrMenuEnabled" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="resetBlock" roleId="tp4k.1210686936988" type="tp4k.PreferencePageResetBlock" typeId="tp4k.1210686882550" id="37070967460990151" nodeInfo="nn">
-        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="37070967460990152" nodeInfo="sn">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="37070967461757267" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="37070967461759897" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="tp4k.ConceptFunctionParameter_PreferencePage_component" typeId="tp4k.1210690798207" id="37070967461757266" nodeInfo="nn" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="37070967461795636" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="37070967461659771" resolveInfo="setMenuEnabled" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="37070967461806524" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="37070967461796868" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="tp4k.ConceptFunctionParameter_Project" typeId="tp4k.1213888797251" id="37070967461796249" nodeInfo="nn" />
-                    <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetPreferencesComponentInProjectOperation" typeId="tgbt.681855071694758168" id="37070967461805778" nodeInfo="nn">
-                      <link role="componentDeclaration" roleId="tgbt.681855071694758169" targetNodeId="37070967460990017" resolveInfo="mbeddrPrefenrences" />
-                    </node>
-                  </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp4k.PersistentPropertyReference" typeId="tp4k.1210180874794" id="37070967461808401" nodeInfo="nn">
-                    <link role="member" roleId="tp4f.1205756909548" targetNodeId="37070967461020205" resolveInfo="mbeddrMenuEnabled" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="commitBlock" roleId="tp4k.1210686956582" type="tp4k.PreferencePageCommitBlock" typeId="tp4k.1210686969356" id="37070967460990153" nodeInfo="nn">
-        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="37070967460990154" nodeInfo="sn">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="37070967461809520" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="37070967461827878" nodeInfo="nn">
-              <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="37070967461836006" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="tp4k.ConceptFunctionParameter_PreferencePage_component" typeId="tp4k.1210690798207" id="37070967461832498" nodeInfo="nn" />
-                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="37070967461870720" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="37070967461707835" resolveInfo="getMenuEnabled" />
-                </node>
-              </node>
-              <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="37070967461819029" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="37070967461810032" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tp4k.ConceptFunctionParameter_Project" typeId="tp4k.1213888797251" id="37070967461809519" nodeInfo="nn" />
-                  <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetPreferencesComponentInProjectOperation" typeId="tgbt.681855071694758168" id="37070967461818415" nodeInfo="nn">
-                    <link role="componentDeclaration" roleId="tgbt.681855071694758169" targetNodeId="37070967460990017" resolveInfo="mbeddrPrefenrences" />
-                  </node>
-                </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tp4k.PersistentPropertyReference" typeId="tp4k.1210180874794" id="37070967461820779" nodeInfo="nn">
-                  <link role="member" roleId="tp4f.1205756909548" targetNodeId="37070967461020205" resolveInfo="mbeddrMenuEnabled" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </root>

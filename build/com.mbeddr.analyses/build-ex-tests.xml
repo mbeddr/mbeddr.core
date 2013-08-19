@@ -511,6 +511,9 @@
         <module file="${mbeddr.analyses}/tests/test.ts.analyses.fm/fm.msd" />
         <module file="${mbeddr.analyses}/tests/test.ex.analyses.yices/yices.msd" />
       </chunk>
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   

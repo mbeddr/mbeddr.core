@@ -242,6 +242,9 @@
       <chunk>
         <module file="${tutorial.home}/tests/mbeddr.tutorial.typesystemtests/typesystemtests.msd" />
       </chunk>
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   

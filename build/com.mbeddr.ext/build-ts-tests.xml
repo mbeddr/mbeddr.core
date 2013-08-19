@@ -177,6 +177,8 @@
     <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip" />
     <unzip src="${artifacts.com.mbeddr.ext.exceptionhandling}/com.mbeddr.ext.exceptionhandling.zip" dest="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" />
+    <unzip src="${artifacts.com.mbeddr.ext.statemachine}/com.mbeddr.ext.statemachine.zip" dest="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -186,7 +188,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.test.ts.ext.physicalunits.c, java.compile.test.ts.ext.components, java.compile.test.ts.ext.exceptionhandling, java.compile.test.ex.ext.exceptionhandling" />
+  <target name="compileJava" depends="java.compile.test.ts.ext.physicalunits.c, java.compile.test.ts.ext.components, java.compile.test.ts.ext.exceptionhandling, java.compile.test.ts.ext.statemachine" />
   
   <target name="processResources" />
   
@@ -296,6 +298,8 @@
       <library file="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components.test.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip/mbeddr.exceptionhandling/languages/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip/mbeddr.exceptionhandling/languages/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.library.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip/mbeddr.statemachine/languages/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachines.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip/mbeddr.statemachine/languages/com.mbeddr.ext.statemachine/com.mbeddr.statemachines.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.c.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.physicalunits.jar" />
@@ -305,11 +309,14 @@
       <library file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
       <chunk>
-        <module file="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/exceptionhandling.msd" />
         <module file="${mbeddr.ext}/tests/test.ts.ext.components/components.msd" />
         <module file="${mbeddr.ext}/tests/test.ts.ext.exceptionhandling/exceptionhandling.msd" />
         <module file="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/c.msd" />
+        <module file="${mbeddr.ext}/tests/test.ts.ext.statemachine/statemachine.msd" />
       </chunk>
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   
@@ -604,14 +611,14 @@
     </javac>
   </target>
   
-  <target name="java.compile.test.ex.ext.exceptionhandling" depends="fetchDependencies">
-    <mkdir dir="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/test.ex.ext.exceptionhandling" />
-    <javac destdir="${build.tmp}/java/out/test.ex.ext.exceptionhandling" fork="true" includeantruntime="false">
+  <target name="java.compile.test.ts.ext.statemachine" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.ext}/tests/test.ts.ext.statemachine/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/test.ts.ext.statemachine" />
+    <javac destdir="${build.tmp}/java/out/test.ts.ext.statemachine" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/source_gen" />
-        <pathelement path="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/test_gen/" />
+        <path location="${mbeddr.ext}/tests/test.ts.ext.statemachine/source_gen" />
+        <pathelement path="${mbeddr.ext}/tests/test.ts.ext.statemachine/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -619,6 +626,11 @@
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-test.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/bsh-core-2.0b4.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/cglib-nodep-2.1_3.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.1.jar" />
@@ -628,6 +640,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
         <fileset file="${artifacts.mps}/lib/junit-4.10.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/commons-io-2.4.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-anim.jar" />
@@ -665,10 +678,11 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip/mbeddr.exceptionhandling/languages/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.library.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
       </classpath>
     </javac>
   </target>
@@ -870,13 +884,13 @@
   </target>
   
   <target name="cleanSources">
-    <delete dir="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/source_gen" />
     <delete dir="${mbeddr.ext}/tests/test.ts.ext.components/source_gen" />
     <delete dir="${mbeddr.ext}/tests/test.ts.ext.exceptionhandling/source_gen" />
     <delete dir="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/source_gen" />
-    <delete dir="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/test_gen" />
+    <delete dir="${mbeddr.ext}/tests/test.ts.ext.statemachine/source_gen" />
     <delete dir="${mbeddr.ext}/tests/test.ts.ext.components/test_gen" />
     <delete dir="${mbeddr.ext}/tests/test.ts.ext.exceptionhandling/test_gen" />
     <delete dir="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/test_gen" />
+    <delete dir="${mbeddr.ext}/tests/test.ts.ext.statemachine/test_gen" />
   </target>
 </project>

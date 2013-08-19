@@ -107,6 +107,13 @@
   <property name="mps-editor-override.build-path" value="${mbeddr.github.core.home}/build/mps-editor-override/build/artifacts/mps-editor-override" />  
   <property name="artifacts.mps-editor-override" value="${mps-editor-override.build-path}" />  
   
+  <!-- mps-tables -->
+  <property name="mps-tables.zip-file.name" value="mps-tables.zip" />
+  <property name="mps-tables.expanded-folder.name" value="mps-tables" />  
+  <property name="mps-tables.build-id" value="bt42" />   
+  <property name="mps-tables.build-path" value="${mbeddr.github.core.home}/build/mps-tables/build/artifacts/mps-tables" />  
+  <property name="artifacts.mps-tables" value="${mps-tables.build-path}" />  
+  
   <!-- spawner -->
   <property name="spawner.suburl" value="com.mbeddr.spawner.build" /> 
   <property name="spawner.zip-file.name" value="com.mbeddr.spawner.zip" />
@@ -141,29 +148,34 @@
 	  <mkdir dir="${multiline.build-path}"/>
 	  <mkdir dir="${mps-editor-override.build-path}"/>
 	  <mkdir dir="${mps-richtext.build-path}"/>
+	  <mkdir dir="${mps-tables.build-path}"/>	  
 	  <mkdir dir="${spawner.build-path}"/> 
 	  
 	  <!-- clean-plugin-folder -->
 	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-editor-override.expanded-folder.name}" verbose="true" />
 	  <delete dir="${mps.home}/${plugins.folder.name}/${multiline.expanded-folder.name}" verbose="true" />
 	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-richtext.expanded-folder.name}" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-tables.expanded-folder.name}" verbose="true" />
 	  <delete dir="${mps.home}/${plugins.folder.name}/${spawner.expanded-folder.name}" verbose="true" />
 	  
 	  <delete file="${multiline.build-path}/${multiline.zip-file.name}"/>	  
 	  <delete file="${mps-editor-override.build-path}/${mps-editor-override.zip-file.name}"/>
 	  <delete file="${mps-richtext.build-path}/${mps-richtext.zip-file.name}"/>
+	  <delete file="${mps-tables.build-path}/${mps-tables.zip-file.name}"/>
 	  <delete file="${spawner.build-path}/${spawner.zip-file.name}"/>
 	    	  
 	  <!-- download-plugins -->
 	  <get src="${base-url}/${multiline.build-id}/${latest-build}/${multiline.zip-file.name}" dest="${multiline.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${mps-richtext.build-id}/${latest-build}/${mps-richtext.zip-file.name}" dest="${mps-richtext.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${mps-editor-override.build-id}/${latest-build}/${mps-editor-override.zip-file.name}" dest="${mps-editor-override.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	  <get src="${base-url}/${mps-tables.build-id}/${latest-build}/${mps-tables.zip-file.name}" dest="${mps-tables.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${spawner.build-id}/${latest-build}/${spawner.suburl}/${spawner.zip-file.name}" dest="${spawner.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>	 
 	  	 
 	  <!-- unzip-plugins -->
 	  <unzip src="${multiline.build-path}/${multiline.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${mps-richtext.build-path}/${mps-richtext.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${mps-editor-override.build-path}/${mps-editor-override.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
+	  <unzip src="${mps-tables.build-path}/${mps-tables.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${spawner.build-path}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" /> 	 	  
   </target>
 

@@ -12,7 +12,7 @@
   <property name="tutorial.home" location="${mbeddr.github.core.home}/code/applications/tutorial" />
   <property name="lisson.home" location="${mbeddr.github.core.home}/.." />
   <property name="multiline.artifacts" location="${lisson.home}/mps-multiline/build/artifacts/mps-multiline" />
-  <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext" />
+  <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext/null" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />
   <property name="artifacts.com.mbeddr.ext.statemachine" location="../com.mbeddr.ext/build/artifacts/com.mbeddr.ext.statemachine" />
@@ -637,6 +637,9 @@
         <module file="${tutorial.home}/languages/vectors/vectors.mpl" />
         <module file="${tutorial.home}/languages/memory/memory.mpl" />
       </chunk>
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   

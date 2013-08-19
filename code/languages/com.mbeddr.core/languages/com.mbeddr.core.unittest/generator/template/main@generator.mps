@@ -921,6 +921,7 @@
           <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="4918562978281537959" nodeInfo="ng">
             <property name="exported" nameId="x27k.1317894735999272944" value="true" />
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4918562978281537959" />
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4918562978281537960" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1600,9 +1601,25 @@
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="767515563077315487" nodeInfo="ng">
             <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="767515563077315487" />
+            <property name="overriddenCodeLocation" nameId="x27k.2688792604368329410" value="dfasfsdfsd" />
             <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="767515563077315488" nodeInfo="ng">
               <link role="table" roleId="k146.2688792604367964824" targetNodeId="767515563077315481" resolveInfo="___testing" />
               <link role="msg" roleId="k146.2688792604367964825" targetNodeId="767515563077315482" resolveInfo="runningTest" />
+            </node>
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="1670233242583083507" nodeInfo="nn">
+              <property name="propertyName" nameId="tpck.1757699476691236117" value="overriddenCodeLocation" />
+              <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="1670233242583083702" nodeInfo="nn">
+                <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1670233242583083703" nodeInfo="sn">
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1670233242583753206" nodeInfo="nn">
+                    <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1670233242583755382" nodeInfo="nn">
+                      <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1670233242583753205" nodeInfo="nn" />
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1670233242583798429" nodeInfo="nn">
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.2688792604368201710" resolveInfo="effectiveCodeLocation" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6275792049641599070" nodeInfo="ng">
