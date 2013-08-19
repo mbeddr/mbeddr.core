@@ -467,22 +467,6 @@
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="5763383285156300930" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5763383285156300931" nodeInfo="sn" />
     </node>
-    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="6584628407655575041" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="getPriolevel" />
-      <property name="isStatic" nameId="1i04.5864038008284099149" value="true" />
-      <property name="isVirtual" nameId="1i04.1225194472832" value="false" />
-      <property name="isPrivate" nameId="1i04.1225194472833" value="false" />
-      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="6584628407655574558" resolveInfo="getPriolevel" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6584628407655575042" nodeInfo="nn" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.IntegerType" typeId="tpee.1070534370425" id="6584628407655575040" nodeInfo="in" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6584628407655575044" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="6584628407655575046" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068581517676" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6584628407655575045" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580320021" value="925" />
-          </node>
-        </node>
-      </node>
-    </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5763383285156373001" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
@@ -16390,6 +16374,29 @@
     </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="1670233242590959881" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1670233242590959882" nodeInfo="sn" />
+    </node>
+  </root>
+  <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8974692200273994138" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.comp" />
+    <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.1762375172531559815" resolveInfo="BinaryOrderedComparisonExpression" />
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="6584628407655575041" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="getPriolevel" />
+      <property name="isStatic" nameId="1i04.5864038008284099149" value="true" />
+      <property name="isVirtual" nameId="1i04.1225194472832" value="false" />
+      <property name="isPrivate" nameId="1i04.1225194472833" value="false" />
+      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="6584628407655574558" resolveInfo="getPriolevel" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6584628407655575042" nodeInfo="nn" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.IntegerType" typeId="tpee.1070534370425" id="6584628407655575040" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6584628407655575044" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="6584628407655575046" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6584628407655575045" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580320021" value="925" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8974692200273994139" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8974692200273994140" nodeInfo="sn" />
     </node>
   </root>
 </model>

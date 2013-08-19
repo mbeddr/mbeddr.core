@@ -3027,6 +3027,13 @@
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="vs0r.3815661793603523593" resolveInfo="mustBeOk" />
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1626886780547193353" nodeInfo="nn" />
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Indent" typeId="tpc2.1198256887712" id="8974692200284623056" nodeInfo="ng" />
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8974692200284623068" nodeInfo="nn">
+          <property name="text" nameId="tpc2.1073389577007" value="hide ok ones:" />
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8974692200284632803" nodeInfo="ng">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="vs0r.8974692200284623075" resolveInfo="hideOkOnes" />
+        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Custom" typeId="tpc2.1078308402140" id="865293814733115697" nodeInfo="ng">
         <node role="cellProvider" roleId="tpc2.1176795024817" type="tpc2.QueryFunction_CellProvider" typeId="tpc2.1176749715029" id="865293814733115698" nodeInfo="nn">
