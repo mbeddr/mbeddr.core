@@ -1412,6 +1412,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="843825774841888233" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="clbe.843825774841772528" resolveInfo="IValuedElement" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1670233242594145285" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3857533489766146432" resolveInfo="IDocumentable" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="998890089995051771" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.sr" />
