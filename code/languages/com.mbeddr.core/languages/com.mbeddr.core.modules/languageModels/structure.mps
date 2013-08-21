@@ -1037,5 +1037,11 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2495970976313195581" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ICodeLocationContext" />
   </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2410497733756536411" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="ICanCalculateCustomType" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2410497733756536657" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1234971358450" resolveInfo="IType" />
+    </node>
+  </root>
 </model>
 
