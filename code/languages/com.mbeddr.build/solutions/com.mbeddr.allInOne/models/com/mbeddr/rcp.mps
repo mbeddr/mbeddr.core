@@ -175,7 +175,7 @@
     <property name="name" nameId="tpck.1169194664001" value="jetbrains.mps.standalone" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-standalone-mps.xml" />
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="6168924288978819717" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="mps_home" />
+      <property name="name" nameId="tpck.1169194664001" value="mps.home" />
     </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildVariableMacro" typeId="3ior.3767587139141066978" id="6168924288978819738" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="buildnumber" />
@@ -228,7 +228,7 @@
             </node>
           </node>
           <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6168924288978819658" nodeInfo="ng">
-            <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6168924288978819717" resolveInfo="mps_home" />
+            <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6168924288978819717" resolveInfo="mps.home" />
             <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6168924288978819659" nodeInfo="nn">
               <property name="head" nameId="3ior.8618885170173601779" value="bin" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6168924288978819660" nodeInfo="nn">
@@ -341,7 +341,7 @@
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6168924288978819541" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="ffeo.1392391688312941958" resolveInfo="mpsStandalone" />
       <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6168924288980959548" nodeInfo="ng">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6168924288978819717" resolveInfo="mps_home" />
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6168924288978819717" resolveInfo="mps.home" />
       </node>
     </node>
   </root>
