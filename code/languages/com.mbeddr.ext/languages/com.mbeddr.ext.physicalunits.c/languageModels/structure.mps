@@ -33,9 +33,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2309941518257287551" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2410497733756974609" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.2410497733756536411" resolveInfo="ICanCalculateCustomType" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5513256947824592491" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="LiteralWithUnit" />
@@ -191,22 +188,6 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3092622784654610404" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="ym4j.1085404444144930947" resolveInfo="IVisibleUnitProvider" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2410497733752027367" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="generics" />
-    <property name="name" nameId="tpck.1169194664001" value="GenericTypeAnnotation" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2410497733752075988" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="decl" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2410497733752038971" resolveInfo="GenericUnitDeclaration" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2410497733752038971" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="generics" />
-    <property name="name" nameId="tpck.1169194664001" value="GenericUnitDeclaration" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="ym4j.2078797996880543459" resolveInfo="NamedUnitDeclaration" />
   </root>
 </model>
 
