@@ -3,10 +3,10 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/jetbrains.mps.standalone" />
   <property name="build.layout" location="${build.dir}/artifacts/jetbrains.mps.standalone" />
-  <property name="mps_home" location="" />
+  <property name="mps.home" location="" />
   <property name="buildnumber" value="130.001" />
   <property name="date" value="20130805" />
-  <property name="artifacts.mpsStandalone" location="${mps_home}" />
+  <property name="artifacts.mpsStandalone" location="${mps.home}" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
   <property name="mpsBootstrapCore.version" value="${import.mpsStandalone.mpsBootstrapCore.version}" />
   
@@ -19,7 +19,7 @@
       </fileset>
     </copy>
     <copy todir="${build.layout}/bin">
-      <fileset file="${mps_home}/bin/idea.properties" />
+      <fileset file="${mps.home}/bin/idea.properties" />
       <filterchain>
         <tokenfilter>
           <replaceregex pattern="\.MPS(\w+)" replace="\.${buildnumber}" flags="g" />

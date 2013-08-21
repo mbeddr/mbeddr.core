@@ -5,7 +5,7 @@
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.rcp.distrib" />
   <property name="version" value="0.1" />
   <property name="buildnumber" value="130.001" />
-  <property name="mps_home" location="" />
+  <property name="mps.home" location="" />
   <property name="multiline.artifacts" location="${basedir}/../mps-multiline/build/artifacts/mps-multiline" />
   <property name="richtext.artifacts" location="${basedir}/../mps-richtext/build/artifacts/mps-richtext" />
   <property name="override.artifacts" location="${basedir}/../mps-editor-override/build/artifacts/mps-editor-override" />
@@ -30,13 +30,13 @@
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
   <property name="artifacts.mps-editor-override" location="${override.artifacts}" />
-  <property name="artifacts.mpsStandalone" location="${mps_home}" />
-  <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
-  <property name="artifacts.mpsExecutionPlugin" location="${mps_home}/plugins" />
-  <property name="artifacts.mpsTesting" location="${mps_home}/plugins" />
-  <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
-  <property name="artifacts.mpsTroveCollections" location="${mps_home}/plugins" />
-  <property name="artifacts.mpsBuild" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsStandalone" location="${mps.home}" />
+  <property name="artifacts.mpsDebuggerPlugin" location="${mps.home}/plugins" />
+  <property name="artifacts.mpsExecutionPlugin" location="${mps.home}/plugins" />
+  <property name="artifacts.mpsTesting" location="${mps.home}/plugins" />
+  <property name="artifacts.mpsMakePlugin" location="${mps.home}/plugins" />
+  <property name="artifacts.mpsTroveCollections" location="${mps.home}/plugins" />
+  <property name="artifacts.mpsBuild" location="${mps.home}/plugins" />
   <property file="${artifacts.jetbrains.mps.standalone}/build.properties" prefix="import.jetbrains.mps.standalone" />
   <property file="${artifacts.com.mbeddr.mpsutil.build}/build.properties" prefix="import.com.mbeddr.mpsutil.build" />
   <property name="jetbrains.mps.standalone.buildnumber" value="${import.jetbrains.mps.standalone.jetbrains.mps.standalone.buildnumber}" />
@@ -55,14 +55,14 @@
     <mkdir dir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-linux.tar.gz/mbeddr ${version}" />
     <mkdir dir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-linux.tar.gz/mbeddr ${version}/bin" />
     <copy todir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-linux.tar.gz/mbeddr ${version}/bin">
-      <fileset file="${mps_home}/bin/mps.vmoptions" />
+      <fileset file="${mps.home}/bin/mps.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-linux.tar.gz_f755" />
     <copy todir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-linux.tar.gz_f755">
-      <fileset file="${mps_home}/mps.sh" />
+      <fileset file="${mps.home}/mps.sh" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
@@ -98,12 +98,12 @@
       <tarfileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-java" prefix="mbeddr ${version}/plugins/mps-debugger-java" />
       <tarfileset dir="${artifacts.mpsTroveCollections}/mps-trove" prefix="mbeddr ${version}/plugins/mps-trove" />
       <tarfileset dir="${artifacts.mpsBuild}/mps-build" prefix="mbeddr ${version}/plugins/mps-build" />
-      <tarfileset dir="${mps_home}/bin/linux" prefix="mbeddr ${version}/bin">
+      <tarfileset dir="${mps.home}/bin/linux" prefix="mbeddr ${version}/bin">
         <exclude name="**/fsnotifier" />
         <exclude name="**/fsnotifier64" />
       </tarfileset>
-      <tarfileset file="${mps_home}/bin/linux/fsnotifier" prefix="mbeddr ${version}/bin" filemode="755" />
-      <tarfileset file="${mps_home}/bin/linux/fsnotifier64" prefix="mbeddr ${version}/bin" filemode="755" />
+      <tarfileset file="${mps.home}/bin/linux/fsnotifier" prefix="mbeddr ${version}/bin" filemode="755" />
+      <tarfileset file="${mps.home}/bin/linux/fsnotifier64" prefix="mbeddr ${version}/bin" filemode="755" />
       <tarfileset dir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-linux.tar.gz_f755" filemode="755" prefix="mbeddr ${version}" />
       <tarfileset dir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-linux.tar.gz" />
     </tar>
@@ -138,43 +138,43 @@
       <zipfileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-java" prefix="mbeddr ${version}/plugins/mps-debugger-java" />
       <zipfileset dir="${artifacts.mpsTroveCollections}/mps-trove" prefix="mbeddr ${version}/plugins/mps-trove" />
       <zipfileset dir="${artifacts.mpsBuild}/mps-build" prefix="mbeddr ${version}/plugins/mps-build" />
-      <zipfileset file="${mps_home}/bin/mps.vmoptions" prefix="mbeddr ${version}/bin" />
-      <zipfileset file="${mps_home}/bin/mps.exe.vmoptions" prefix="mbeddr ${version}/bin" />
-      <zipfileset dir="${mps_home}/bin/win" prefix="mbeddr ${version}/bin/win">
+      <zipfileset file="${mps.home}/bin/mps.vmoptions" prefix="mbeddr ${version}/bin" />
+      <zipfileset file="${mps.home}/bin/mps.exe.vmoptions" prefix="mbeddr ${version}/bin" />
+      <zipfileset dir="${mps.home}/bin/win" prefix="mbeddr ${version}/bin/win">
         <exclude name="**/*.exe" />
       </zipfileset>
-      <zipfileset dir="${mps_home}/bin/win" prefix="mbeddr ${version}/bin/win" filemode="755">
+      <zipfileset dir="${mps.home}/bin/win" prefix="mbeddr ${version}/bin/win" filemode="755">
         <include name="**/*.exe" />
       </zipfileset>
-      <zipfileset dir="${mps_home}/bin/linux" prefix="mbeddr ${version}/bin/linux">
+      <zipfileset dir="${mps.home}/bin/linux" prefix="mbeddr ${version}/bin/linux">
         <exclude name="**/fsnotifier" />
         <exclude name="**/fsnotifier64" />
       </zipfileset>
-      <zipfileset file="${mps_home}/bin/linux/fsnotifier" prefix="mbeddr ${version}/bin/linux" filemode="755" />
-      <zipfileset file="${mps_home}/bin/linux/fsnotifier64" prefix="mbeddr ${version}/bin/linux" filemode="755" />
-      <zipfileset dir="${mps_home}/bin/nix" prefix="mbeddr ${version}/bin/nix" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/libbreakgen.jnilib" prefix="mbeddr ${version}/bin/mac" />
-      <zipfileset file="${mps_home}/bin/mac/libbreakgen64.jnilib" prefix="mbeddr ${version}/bin/mac" />
-      <zipfileset file="${mps_home}/bin/mac/restarter" prefix="mbeddr ${version}/bin/mac" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="mbeddr ${version}/bin/mac" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="mbeddr ${version}/bin/mac/Contents" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="mbeddr ${version}/bin/mac/Contents/Resources" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="mbeddr ${version}/bin/mac/Contents/MacOS" filemode="755" />
-      <zipfileset file="${mps_home}/mps.sh" prefix="mbeddr ${version}" filemode="755" />
-      <zipfileset file="${mps_home}/mps.bat" prefix="mbeddr ${version}" filemode="755" />
+      <zipfileset file="${mps.home}/bin/linux/fsnotifier" prefix="mbeddr ${version}/bin/linux" filemode="755" />
+      <zipfileset file="${mps.home}/bin/linux/fsnotifier64" prefix="mbeddr ${version}/bin/linux" filemode="755" />
+      <zipfileset dir="${mps.home}/bin/nix" prefix="mbeddr ${version}/bin/nix" filemode="755" />
+      <zipfileset file="${mps.home}/bin/mac/libbreakgen.jnilib" prefix="mbeddr ${version}/bin/mac" />
+      <zipfileset file="${mps.home}/bin/mac/libbreakgen64.jnilib" prefix="mbeddr ${version}/bin/mac" />
+      <zipfileset file="${mps.home}/bin/mac/restarter" prefix="mbeddr ${version}/bin/mac" filemode="755" />
+      <zipfileset file="${mps.home}/bin/mac/fsnotifier" prefix="mbeddr ${version}/bin/mac" filemode="755" />
+      <zipfileset file="${mps.home}/bin/mac/Contents/Info.plist" prefix="mbeddr ${version}/bin/mac/Contents" />
+      <zipfileset file="${mps.home}/bin/mac/Contents/Resources/mps.icns" prefix="mbeddr ${version}/bin/mac/Contents/Resources" />
+      <zipfileset file="${mps.home}/bin/mac/Contents/MacOS/mps" prefix="mbeddr ${version}/bin/mac/Contents/MacOS" filemode="755" />
+      <zipfileset file="${mps.home}/mps.sh" prefix="mbeddr ${version}" filemode="755" />
+      <zipfileset file="${mps.home}/mps.bat" prefix="mbeddr ${version}" filemode="755" />
     </zip>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-macos.zip" />
     <mkdir dir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-macos.zip/mbeddr ${buildnumber}.app" />
     <mkdir dir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-macos.zip/mbeddr ${buildnumber}.app/bin" />
     <copy todir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-macos.zip/mbeddr ${buildnumber}.app/bin">
-      <fileset file="${mps_home}/bin/mps.vmoptions" />
+      <fileset file="${mps.home}/bin/mps.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-macos.zip_f755" />
     <copy todir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-macos.zip_f755">
-      <fileset file="${mps_home}/mps.sh" />
+      <fileset file="${mps.home}/mps.sh" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
@@ -210,13 +210,13 @@
       <zipfileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-java" prefix="mbeddr ${buildnumber}.app/plugins/mps-debugger-java" />
       <zipfileset dir="${artifacts.mpsTroveCollections}/mps-trove" prefix="mbeddr ${buildnumber}.app/plugins/mps-trove" />
       <zipfileset dir="${artifacts.mpsBuild}/mps-build" prefix="mbeddr ${buildnumber}.app/plugins/mps-build" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="mbeddr ${buildnumber}.app/Contents" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="mbeddr ${buildnumber}.app/Contents/Resources" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="mbeddr ${buildnumber}.app/Contents/MacOS" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/libbreakgen.jnilib" prefix="mbeddr ${buildnumber}.app/bin" />
-      <zipfileset file="${mps_home}/bin/mac/libbreakgen64.jnilib" prefix="mbeddr ${buildnumber}.app/bin" />
-      <zipfileset file="${mps_home}/bin/mac/restarter" prefix="mbeddr ${buildnumber}.app/bin" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="mbeddr ${buildnumber}.app/bin" filemode="755" />
+      <zipfileset file="${mps.home}/bin/mac/Contents/Info.plist" prefix="mbeddr ${buildnumber}.app/Contents" />
+      <zipfileset file="${mps.home}/bin/mac/Contents/Resources/mps.icns" prefix="mbeddr ${buildnumber}.app/Contents/Resources" />
+      <zipfileset file="${mps.home}/bin/mac/Contents/MacOS/mps" prefix="mbeddr ${buildnumber}.app/Contents/MacOS" filemode="755" />
+      <zipfileset file="${mps.home}/bin/mac/libbreakgen.jnilib" prefix="mbeddr ${buildnumber}.app/bin" />
+      <zipfileset file="${mps.home}/bin/mac/libbreakgen64.jnilib" prefix="mbeddr ${buildnumber}.app/bin" />
+      <zipfileset file="${mps.home}/bin/mac/restarter" prefix="mbeddr ${buildnumber}.app/bin" filemode="755" />
+      <zipfileset file="${mps.home}/bin/mac/fsnotifier" prefix="mbeddr ${buildnumber}.app/bin" filemode="755" />
       <zipfileset dir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-macos.zip_f755" filemode="755" prefix="mbeddr ${buildnumber}.app" />
       <fileset dir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-macos.zip" />
     </zip>
