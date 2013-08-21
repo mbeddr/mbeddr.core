@@ -3,7 +3,7 @@
   <persistence version="8" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="1" />
+  <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="2" />
   <import index="2qjx" modelUID="r:4a697b08-3e5b-4536-9d5c-2eec7aa7093f(com.mbeddr.ext.physicalunits.editor)" version="-1" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" />
   <import index="cl6c" modelUID="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" version="-1" />
@@ -478,13 +478,13 @@
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2410497733752076013" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="generics" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="3c6d.2410497733752027367" resolveInfo="GenericTypeAnnotation" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="3c6d.2410497733752027367" resolveInfo="GenericUnitAnnotation" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2410497733752076022" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="2410497733752076023" nodeInfo="nn" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2410497733752076032" nodeInfo="nn">
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="2410497733752076033" nodeInfo="nn" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2410497733752076026" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="@GenericTypeDeclaration(" />
+          <property name="text" nameId="tpc2.1073389577007" value="@GenericUnitDeclaration(" />
           <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="2qjx.5513256947824560921" resolveInfo="physicalUnits" />
           <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="2410497733753789240" resolveInfo="deleteGenericAnnotation" />
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="2410497733752076147" nodeInfo="nn">
@@ -519,7 +519,7 @@
   <root type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="2410497733753789240" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="generics" />
     <property name="name" nameId="tpck.1169194664001" value="deleteGenericAnnotation" />
-    <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="3c6d.2410497733752027367" resolveInfo="GenericTypeAnnotation" />
+    <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="3c6d.2410497733752027367" resolveInfo="GenericUnitAnnotation" />
     <node role="item" roleId="tpc2.1139535219969" type="tpc2.CellActionMapItem" typeId="tpc2.1139535280617" id="2410497733753789241" nodeInfo="ng">
       <property name="actionId" nameId="tpc2.1139535298778" value="delete_action_id" />
       <node role="executeFunction" roleId="tpc2.1139535280620" type="tpc2.CellActionMap_ExecuteFunction" typeId="tpc2.1139535439104" id="2410497733753789242" nodeInfo="nn">
