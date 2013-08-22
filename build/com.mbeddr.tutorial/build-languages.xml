@@ -48,6 +48,7 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.tutorial.languages.zip" />
     <mkdir dir="${build.tmp}/default/mbeddr.tutorial.blocks.jar" />
     <mkdir dir="${build.tmp}/default/mbeddr.tutorial.blocks.jar/META-INF" />
     <echoxml file="${build.tmp}/default/mbeddr.tutorial.blocks.jar/META-INF/module.xml">
@@ -68,12 +69,12 @@
         <sources jar="mbeddr.tutorial.blocks-src.jar" descriptor="blocks.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.tutorial.blocks.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.blocks.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.blocks" />
       <fileset dir="${tutorial.home}/languages/blocks" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.blocks.jar" />
     </jar>
-    <jar destfile="${build.layout}/mbeddr.tutorial.blocks-generator.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.blocks-generator.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.blocks#6275956088647057041" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-blocks-generator-template">
@@ -82,7 +83,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-blocks-languageModels">
       <fileset dir="${tutorial.home}/languages/blocks/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.tutorial.blocks-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.blocks-src.jar">
       <fileset dir="${tutorial.home}/languages/blocks/generator/source_gen" includes="**/*.java" />
       <fileset dir="${tutorial.home}/languages/blocks/source_gen" includes="**/*.java" />
       <zipfileset file="${tutorial.home}/languages/blocks/blocks.mpl" prefix="module" />
@@ -109,7 +110,7 @@
         <sources jar="mbeddr.tutorial.complex-src.jar" descriptor="complex.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.tutorial.complex.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.complex.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.complex" />
       <fileset dir="${tutorial.home}/languages/complex" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.complex.jar" />
@@ -117,7 +118,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-complex-languageModels">
       <fileset dir="${tutorial.home}/languages/complex/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.tutorial.complex-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.complex-src.jar">
       <fileset dir="${tutorial.home}/languages/complex/source_gen" includes="**/*.java" />
       <zipfileset file="${tutorial.home}/languages/complex/complex.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-complex-languageModels" prefix="module/languageModels" />
@@ -143,12 +144,12 @@
         <sources jar="mbeddr.tutorial.foreach-src.jar" descriptor="foreach.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.tutorial.foreach.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.foreach.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.foreach" />
       <fileset dir="${tutorial.home}/languages/foreach" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.foreach.jar" />
     </jar>
-    <jar destfile="${build.layout}/mbeddr.tutorial.foreach-generator.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.foreach-generator.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.foreach#7977993180520148024" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-foreach-generator-template">
@@ -157,7 +158,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-foreach-languageModels">
       <fileset dir="${tutorial.home}/languages/foreach/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.tutorial.foreach-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.foreach-src.jar">
       <fileset dir="${tutorial.home}/languages/foreach/generator/source_gen" includes="**/*.java" />
       <fileset dir="${tutorial.home}/languages/foreach/source_gen" includes="**/*.java" />
       <zipfileset file="${tutorial.home}/languages/foreach/foreach.mpl" prefix="module" />
@@ -184,12 +185,12 @@
         <sources jar="mbeddr.tutorial.heap-src.jar" descriptor="heap.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.tutorial.heap.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.heap.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.heap" />
       <fileset dir="${tutorial.home}/languages/heap" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.heap.jar" />
     </jar>
-    <jar destfile="${build.layout}/mbeddr.tutorial.heap-generator.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.heap-generator.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.heap#6125369673958882338" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-heap-generator-template">
@@ -198,7 +199,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-heap-languageModels">
       <fileset dir="${tutorial.home}/languages/heap/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.tutorial.heap-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.heap-src.jar">
       <fileset dir="${tutorial.home}/languages/heap/generator/source_gen" includes="**/*.java" />
       <fileset dir="${tutorial.home}/languages/heap/source_gen" includes="**/*.java" />
       <zipfileset file="${tutorial.home}/languages/heap/heap.mpl" prefix="module" />
@@ -225,12 +226,12 @@
         <sources jar="mbeddr.tutorial.metadata-src.jar" descriptor="metadata.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.tutorial.metadata.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.metadata.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.metadata" />
       <fileset dir="${tutorial.home}/languages/metadata" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.metadata.jar" />
     </jar>
-    <jar destfile="${build.layout}/mbeddr.tutorial.metadata-generator.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.metadata-generator.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.metadata#1373401575434711868" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-metadata-generator-template">
@@ -239,7 +240,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-metadata-languageModels">
       <fileset dir="${tutorial.home}/languages/metadata/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.tutorial.metadata-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.metadata-src.jar">
       <fileset dir="${tutorial.home}/languages/metadata/generator/source_gen" includes="**/*.java" />
       <fileset dir="${tutorial.home}/languages/metadata/source_gen" includes="**/*.java" />
       <zipfileset file="${tutorial.home}/languages/metadata/metadata.mpl" prefix="module" />
@@ -266,7 +267,7 @@
         <sources jar="mbeddr.tutorial.osconfig-src.jar" descriptor="osconfig.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.tutorial.osconfig.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.osconfig.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.osconfig" />
       <fileset dir="${tutorial.home}/languages/osconfig" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.osconfig.jar" />
@@ -274,7 +275,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-osconfig-languageModels">
       <fileset dir="${tutorial.home}/languages/osconfig/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.tutorial.osconfig-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.osconfig-src.jar">
       <fileset dir="${tutorial.home}/languages/osconfig/source_gen" includes="**/*.java" />
       <zipfileset file="${tutorial.home}/languages/osconfig/osconfig.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-osconfig-languageModels" prefix="module/languageModels" />
@@ -299,12 +300,12 @@
         <sources jar="mbeddr.tutorial.osconfig.cimpl-src.jar" descriptor="cimpl.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.tutorial.osconfig.cimpl.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.osconfig.cimpl.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.osconfig.cimpl" />
       <fileset dir="${tutorial.home}/languages/cimpl" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.osconfig.cimpl.jar" />
     </jar>
-    <jar destfile="${build.layout}/mbeddr.tutorial.osconfig.cimpl-generator.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.osconfig.cimpl-generator.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.osconfig.cimpl#5485104033529951841" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-cimpl-generator-template">
@@ -313,7 +314,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-cimpl-languageModels">
       <fileset dir="${tutorial.home}/languages/cimpl/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.tutorial.osconfig.cimpl-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.osconfig.cimpl-src.jar">
       <fileset dir="${tutorial.home}/languages/cimpl/generator/source_gen" includes="**/*.java" />
       <fileset dir="${tutorial.home}/languages/cimpl/source_gen" includes="**/*.java" />
       <zipfileset file="${tutorial.home}/languages/cimpl/cimpl.mpl" prefix="module" />
@@ -341,12 +342,12 @@
         <sources jar="mbeddr.tutorial.processorregisters-src.jar" descriptor="processorregisters.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.tutorial.processorregisters.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.processorregisters.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.processorregisters" />
       <fileset dir="${tutorial.home}/languages/processorregisters" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.processorregisters.jar" />
     </jar>
-    <jar destfile="${build.layout}/mbeddr.tutorial.processorregisters-generator.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.processorregisters-generator.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.processorregisters#1462098009437633268" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-processorregisters-generator-template">
@@ -355,7 +356,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-processorregisters-languageModels">
       <fileset dir="${tutorial.home}/languages/processorregisters/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.tutorial.processorregisters-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.processorregisters-src.jar">
       <fileset dir="${tutorial.home}/languages/processorregisters/generator/source_gen" includes="**/*.java" />
       <fileset dir="${tutorial.home}/languages/processorregisters/source_gen" includes="**/*.java" />
       <zipfileset file="${tutorial.home}/languages/processorregisters/processorregisters.mpl" prefix="module" />
@@ -382,7 +383,7 @@
         <sources jar="mbeddr.tutotial.osconfig.memory-src.jar" descriptor="memory.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.tutotial.osconfig.memory.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutotial.osconfig.memory.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutotial.osconfig.memory" />
       <fileset dir="${tutorial.home}/languages/memory" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/mbeddr.tutotial.osconfig.memory.jar" />
@@ -390,7 +391,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-memory-languageModels">
       <fileset dir="${tutorial.home}/languages/memory/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.tutotial.osconfig.memory-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutotial.osconfig.memory-src.jar">
       <fileset dir="${tutorial.home}/languages/memory/source_gen" includes="**/*.java" />
       <zipfileset file="${tutorial.home}/languages/memory/memory.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-memory-languageModels" prefix="module/languageModels" />
@@ -415,12 +416,12 @@
         <sources jar="mbeddr.tutorial.smtrigger-src.jar" descriptor="mbeddr.tutorial.smtrigger.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.tutorial.smtrigger.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.smtrigger.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.smtrigger" />
       <fileset dir="${tutorial.home}/languages/mbeddr.tutorial.smtrigger" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.smtrigger.jar" />
     </jar>
-    <jar destfile="${build.layout}/mbeddr.tutorial.smtrigger-generator.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.smtrigger-generator.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.smtrigger#2051642899460594294" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-mbeddr.tutorial.smtrigger-generator-template">
@@ -429,7 +430,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-mbeddr.tutorial.smtrigger-languageModels">
       <fileset dir="${tutorial.home}/languages/mbeddr.tutorial.smtrigger/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.tutorial.smtrigger-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.smtrigger-src.jar">
       <fileset dir="${tutorial.home}/languages/mbeddr.tutorial.smtrigger/generator/source_gen" includes="**/*.java" />
       <fileset dir="${tutorial.home}/languages/mbeddr.tutorial.smtrigger/source_gen" includes="**/*.java" />
       <zipfileset file="${tutorial.home}/languages/mbeddr.tutorial.smtrigger/mbeddr.tutorial.smtrigger.mpl" prefix="module" />
@@ -456,7 +457,7 @@
         <sources jar="mbeddr.tutorial.vectors-src.jar" descriptor="vectors.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.tutorial.vectors.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.vectors.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.vectors" />
       <fileset dir="${tutorial.home}/languages/vectors" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.vectors.jar" />
@@ -464,11 +465,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-vectors-languageModels">
       <fileset dir="${tutorial.home}/languages/vectors/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.tutorial.vectors-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.vectors-src.jar">
       <fileset dir="${tutorial.home}/languages/vectors/source_gen" includes="**/*.java" />
       <zipfileset file="${tutorial.home}/languages/vectors/vectors.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-vectors-languageModels" prefix="module/languageModels" />
     </jar>
+    <zip destfile="${build.layout}/com.mbeddr.tutorial.languages.zip">
+      <fileset dir="${build.tmp}/default/com.mbeddr.tutorial.languages.zip" />
+    </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.mpsutil.build.build.number=${com.mbeddr.mpsutil.build.build.number}</echo>
   </target>
   
