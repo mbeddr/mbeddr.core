@@ -72,7 +72,7 @@
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
-            <generator generatorUID="com.mbeddr.ext.components.statemachine#8663730687027710488" />
+            <generator generatorUID="318e60a1-d099-4839-94ee-2dc303d9c6f0(com.mbeddr.ext.components.statemachine#8663730687027710488)" />
             <external-mapping>
               <mapping-set>
                 <mapping-set-element>
