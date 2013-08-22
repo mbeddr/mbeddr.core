@@ -132,6 +132,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7308356872494700274" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="aFct" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7308356872494700274" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7308356872494700276" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7308356872494700339" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.GlobalConstantFunctionRef" typeId="x27k.6021475212426147386" id="3926162927329452946" nodeInfo="ng">
