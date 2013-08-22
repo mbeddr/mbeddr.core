@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd code/applications/tutorial
+cd code/applications/
 zip -r com.mbeddr.tutorial.zip tutorial/
 rm -rf build
 mkdir build
