@@ -296,36 +296,42 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="asserts" />
     <property name="name" nameId="tpck.1169194664001" value="AssertEquals" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="assert-equals" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="assert actual == expected" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7755897872837031762" resolveInfo="StructuredBinOpAssertStatement" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7755897872837262967" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="asserts" />
     <property name="name" nameId="tpck.1169194664001" value="AssertNotEquals" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="assert-not-equals" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="assert actual != expected" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7755897872837031762" resolveInfo="StructuredBinOpAssertStatement" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7755897872837262970" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="asserts" />
     <property name="name" nameId="tpck.1169194664001" value="AssertGreater" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="assert-greater" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="assert actual &gt; expected" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7755897872837031762" resolveInfo="StructuredBinOpAssertStatement" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7755897872837262973" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="asserts" />
     <property name="name" nameId="tpck.1169194664001" value="AssertGreaterEquals" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="assert-greater-equals" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="assert actual &gt;= expected" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7755897872837031762" resolveInfo="StructuredBinOpAssertStatement" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7755897872837262976" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="asserts" />
     <property name="name" nameId="tpck.1169194664001" value="AssertLess" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="assert-less" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="assert actual &lt; expected" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7755897872837031762" resolveInfo="StructuredBinOpAssertStatement" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7755897872837262979" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="asserts" />
     <property name="name" nameId="tpck.1169194664001" value="AssertLessEquals" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="assert-less-equals" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="assert actual &lt;= expected" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7755897872837031762" resolveInfo="StructuredBinOpAssertStatement" />
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6937839081833780722" nodeInfo="ig">
