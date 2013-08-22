@@ -322,17 +322,8 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="triggered by operation call" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="op" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4491876417845641673" resolveInfo="RunnableTrigger" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4491876417845673829" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="providedPort" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4491876417845484930" resolveInfo="Port" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4491876417845641678" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="calledOperation" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4491876417845484924" resolveInfo="Operation" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4514118643321588642" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4514118643321588318" resolveInfo="IOperationTriggerLike" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845641679" nodeInfo="ig">
@@ -1531,6 +1522,22 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5697836475313035734" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="dot" />
     <property name="name" nameId="tpck.1169194664001" value="ICanOnlyBeUsedInComponent" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4514118643321588318" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
+    <property name="name" nameId="tpck.1169194664001" value="IOperationTriggerLike" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4514118643321592184" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="providedPort" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4491876417845484930" resolveInfo="Port" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4514118643321619583" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="calledOperation" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4491876417845484924" resolveInfo="Operation" />
+    </node>
   </root>
 </model>
 
