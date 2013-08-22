@@ -54,6 +54,7 @@
             <property name="name" nameId="tpck.1169194664001" value="DUmmy" />
             <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1598382569875755790" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="statemachineFunction" />
+              <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1598382569875755790" />
               <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875755791" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875755794" nodeInfo="ng">
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1598382569875755795" nodeInfo="ng">
@@ -408,6 +409,7 @@
             <property name="name" nameId="tpck.1169194664001" value="DUmmy" />
             <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="881042019525864968" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="statemachineInitFunction" />
+              <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="881042019525864968" />
               <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="881042019525864969" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="881042019525873637" nodeInfo="ng">
                   <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="881042019525873638" nodeInfo="ng">
@@ -540,6 +542,7 @@
             <property name="name" nameId="tpck.1169194664001" value="Dummy" />
             <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1582169519238040102" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="statemachineFunction" />
+              <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1582169519238040102" />
               <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1582169519238040103" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1582169519238040183" nodeInfo="ng">
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1582169519238040184" nodeInfo="ng">
@@ -853,6 +856,7 @@
           <property name="name" nameId="tpck.1169194664001" value="Dummy" />
           <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1598382569875777224" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="someRunnable" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1598382569875777224" />
             <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321304043" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="arg" />
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="6091825850321304044" nodeInfo="ng" />
@@ -988,6 +992,7 @@
         <property name="name" nameId="tpck.1169194664001" value="Dummy" />
         <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1598382569875111028" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="statemachineInitFunction" />
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1598382569875111028" />
           <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875111029" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="881042019525801217" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="881042019525801238" nodeInfo="ng">
@@ -1239,6 +1244,7 @@
         </node>
         <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="881042019525847303" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="statemachineExecuteFunction" />
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="881042019525847303" />
           <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="881042019525847304" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="881042019525847305" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="i" />

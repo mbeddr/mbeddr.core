@@ -139,7 +139,10 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5185104661801338431" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="temp3" />
           <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="5185104661801338432" nodeInfo="ng">
-            <node role="valueType" roleId="mj1l.7336544617004013388" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="5185104661801339644" nodeInfo="ng" />
+            <node role="valueType" roleId="mj1l.7336544617004013388" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="5357370179448322453" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
             <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880664210" nodeInfo="ng">
               <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
             </node>
@@ -811,6 +814,7 @@
       <node role="commentedCode" roleId="vs0r.7024921229556133804" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="7308356872494947010" nodeInfo="ng">
         <property name="exported" nameId="x27k.1317894735999272944" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="simpleConversions" />
+        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7308356872494947010" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7308356872494947011" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1269,6 +1273,7 @@
         <node role="contents" roleId="x27k.6512473996287153139" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="7308356872494948085" nodeInfo="ng">
           <property name="exported" nameId="x27k.1317894735999272944" value="true" />
           <property name="name" nameId="tpck.1169194664001" value="nestedConversions2Levels" />
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7308356872494948085" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7308356872494948086" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1425,7 +1430,6 @@
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7308356872494960394" nodeInfo="ng">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="should be optimized (* -&gt; \/)" />
                     </node>
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7308356872494960397" nodeInfo="ng" />
                   </node>
                 </node>
               </node>
@@ -1974,6 +1978,7 @@
         <node role="contents" roleId="x27k.6512473996287153139" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8711875228214865678" nodeInfo="ng">
           <property name="exported" nameId="x27k.1317894735999272944" value="true" />
           <property name="name" nameId="tpck.1169194664001" value="nestedConversions3Levels" />
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8711875228214865678" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8711875228214865679" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -2129,7 +2134,6 @@
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8711875228214865854" nodeInfo="ng">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="should be optimized (* -&gt; * -&gt; \/)" />
                     </node>
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8711875228214865855" nodeInfo="ng" />
                   </node>
                 </node>
               </node>
@@ -2161,7 +2165,6 @@
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8711875228214865874" nodeInfo="ng">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="should be optimized (* -&gt; * -&gt; \/)" />
                     </node>
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8711875228214865875" nodeInfo="ng" />
                   </node>
                 </node>
               </node>
@@ -2193,7 +2196,6 @@
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8711875228214865894" nodeInfo="ng">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="should be executed as is (* -&gt; + -&gt; *)" />
                     </node>
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8711875228214865895" nodeInfo="ng" />
                   </node>
                 </node>
               </node>
@@ -2225,7 +2227,6 @@
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8711875228214865914" nodeInfo="ng">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="should be executed as is (* -&gt; + -&gt; \/)" />
                     </node>
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8711875228214865915" nodeInfo="ng" />
                   </node>
                 </node>
               </node>
@@ -2319,7 +2320,6 @@
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8711875228214865972" nodeInfo="ng">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="should be executed as is (+ -&gt; * -&gt; +)" />
                     </node>
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8711875228214865973" nodeInfo="ng" />
                   </node>
                 </node>
               </node>

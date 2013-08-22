@@ -98,6 +98,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="4075471389393999908" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4075471389393999908" />
             <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="4075471389394085420" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="___instanceData" />
               <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="4075471389394085421" nodeInfo="ng">
@@ -301,6 +302,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9184727592626691518" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9184727592626691518" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9184727592626691520" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7045189082049723337" nodeInfo="ng" />
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9184727592626691527" nodeInfo="ng">
@@ -414,6 +416,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9184727592626691664" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9184727592626691664" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9184727592626691665" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7045189082049723332" nodeInfo="ng" />
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9184727592626691791" nodeInfo="ng">
@@ -559,6 +562,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9184727592626692045" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9184727592626692045" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9184727592626692046" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9184727592626692092" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="9184727592626702499" nodeInfo="ng">
@@ -630,6 +634,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8519778373517968059" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8519778373517968059" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8519778373517968060" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7045189082049723248" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -768,6 +773,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="699911272313302836" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="699911272313302836" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="699911272313302837" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="699911272313302838" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -914,6 +920,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="4075471389394203051" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4075471389394203051" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4075471389394203053" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4075471389394270640" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionRefCallExpr" typeId="x27k.8551646674110505761" id="4075471389394427136" nodeInfo="ng">
@@ -1114,6 +1121,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1302968767135042324" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="operationFromRunnable" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1302968767135042324" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1302968767135042325" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7045189082049723328" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -1250,6 +1258,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7239575231152294047" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7239575231152294047" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7239575231152294048" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7045189082049723260" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -1380,6 +1389,7 @@
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5022036173480860461" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5022036173480860461" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5022036173480860463" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5022036173480860465" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5022036173480860466" nodeInfo="ng">
@@ -1424,6 +1434,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="466603768608534624" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="466603768608534624" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="466603768608534625" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="466603768608534627" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="466603768608534628" nodeInfo="ng">
@@ -1610,6 +1621,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5413996595772417263" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5413996595772417263" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5413996595772417264" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1862647876606423802" nodeInfo="ng" />
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5413996595772417501" nodeInfo="ng">
@@ -1846,6 +1858,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8116769332110886181" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="runnable" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8116769332110886181" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8116769332110886182" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8116769332110886186" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="6796325052797608466" nodeInfo="ng">
@@ -1978,6 +1991,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5308710777891705299" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5308710777891705299" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5308710777891705300" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="725533166378263441" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="725533166378263442" nodeInfo="ng">
@@ -2130,6 +2144,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5065104421776346254" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5065104421776346254" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5065104421776346255" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5065104421776346256" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="5065104421776346257" nodeInfo="ng">
@@ -2261,6 +2276,7 @@
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9181329841236041088" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9181329841236041088" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9181329841236041089" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9181329841236041301" nodeInfo="ng" />
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9181329841236041364" nodeInfo="ng">
@@ -2374,6 +2390,7 @@
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5065104421776856486" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5065104421776856486" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5065104421776856487" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5065104421776856664" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="5065104421776856665" nodeInfo="ng">
@@ -2506,6 +2523,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9146329806094294597" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9146329806094294597" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9146329806094294598" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7045189082049723274" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -2713,6 +2731,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8922663937488672228" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="theFunctionForTheOp" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8922663937488672228" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8922663937488672229" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8922663937488672230" nodeInfo="ng" />
             </node>
@@ -2730,6 +2749,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8922663937488672104" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8922663937488672104" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8922663937488672105" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7045189082049723288" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -2984,6 +3004,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8933128519013973369" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="theFunctionForTheOp" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8933128519013973369" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8933128519013973370" nodeInfo="ng" />
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8933128519013973372" nodeInfo="ng" />
             <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8933128519013973373" nodeInfo="ng">
@@ -2999,6 +3020,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8933128519013973378" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8933128519013973378" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8933128519013973379" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7045189082049723293" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -3189,6 +3211,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6165117700225925801" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="theFunctionForTheOp" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6165117700225925801" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6165117700225925802" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6165117700225925803" nodeInfo="ng" />
             </node>
@@ -3209,6 +3232,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6165117700225738405" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6165117700225738405" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6165117700225738406" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7045189082049723297" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -3685,6 +3709,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="4567175157254653509" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="theFunctionForTheOp" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4567175157254653509" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4567175157254653510" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4567175157254653511" nodeInfo="ng" />
             </node>
@@ -3705,6 +3730,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="4567175157254653519" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4567175157254653519" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4567175157254653520" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4567175157254653521" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -4209,6 +4235,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6165117700225925436" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6165117700225925436" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6165117700225925437" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7045189082049723301" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -4684,6 +4711,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="4567175157254654116" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4567175157254654116" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4567175157254654117" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4567175157254654118" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -5185,6 +5213,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2742494070477635984" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2742494070477635984" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2742494070477635985" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2742494070477635986" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -5411,6 +5440,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5022036173480825669" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="aRunnableFunction" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5022036173480825669" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5022036173480825670" nodeInfo="ng" />
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5022036173480825672" nodeInfo="ng" />
             <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="5022036173480825673" nodeInfo="ng">
@@ -5548,6 +5578,7 @@
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="4139652462542957387" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="wireInstance" />
             <property name="inline" nameId="x27k.5679441017213716505" value="true" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4139652462542957387" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4139652462542957389" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="4075471389393145261" nodeInfo="ng">
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4075471389393145266" nodeInfo="nn">
@@ -10069,6 +10100,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5022036173480825676" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummy2" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5022036173480825676" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5022036173480825677" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4075471389393137917" nodeInfo="ng" />
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4139652462542959971" nodeInfo="ng">
@@ -10504,6 +10536,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5413996595772438735" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummy2" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5413996595772438735" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5413996595772438736" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5413996595772438737" nodeInfo="ng" />
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5413996595772440374" nodeInfo="ng">
@@ -10654,6 +10687,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5308710777891634238" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5308710777891634238" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5308710777891634239" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7045189082049723305" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -11191,6 +11225,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="843825774842715472" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="runnable" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="843825774842715472" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="843825774842715473" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="843825774842715742" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="843825774842715763" nodeInfo="ng">
@@ -11475,6 +11510,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="843825774842712756" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="runnable" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="843825774842712756" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="843825774842712757" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="843825774842712758" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -11826,6 +11862,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9178537171064849691" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="runnable" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9178537171064849691" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9178537171064849692" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="9178537171064849693" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -11977,6 +12014,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9178537171064882813" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="runnable" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9178537171064882813" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9178537171064882814" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9178537171064883114" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="9178537171064883138" nodeInfo="ng">
@@ -12286,6 +12324,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2116578915583610461" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="runnable" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2116578915583610461" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2116578915583610463" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2116578915583621370" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -12556,6 +12595,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2116578915583669648" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="runnable" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2116578915583669648" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2116578915583669649" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2116578915583669650" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -12698,6 +12738,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="699911272313277576" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="runnable" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="699911272313277576" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="699911272313277577" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="699911272313290767" nodeInfo="ng" />
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="699911272313277581" nodeInfo="ng">
@@ -12949,6 +12990,7 @@
       </node>
       <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6209278014150930683" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="function" />
+        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6209278014150930683" />
         <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6209278014150930699" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="instance_data" />
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6209278014150930701" nodeInfo="ng">
@@ -12990,6 +13032,7 @@
       <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8105003328815416368" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="runnableName" />
         <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8105003328815416368" />
         <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8105003328815416369" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7045189082049721374" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="___castedInstanceData" />
@@ -15063,6 +15106,7 @@
             <property name="name" nameId="tpck.1169194664001" value="Dummy" />
             <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6209278014150446065" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="dummy" />
+              <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6209278014150446065" />
               <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6209278014150446066" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6209278014150446067" nodeInfo="ng">
                   <property name="isInvisible" nameId="c4fa.4643433264760041409" value="true" />
@@ -15543,6 +15587,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="6209278014150446232" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.Function" typeId="x27k.6437088627575724001" id="6209278014150446233" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6209278014150446233" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6209278014150446234" nodeInfo="ng" />
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6209278014150446235" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6209278014150446236" nodeInfo="ng">
@@ -15566,6 +15611,7 @@
           <property name="name" nameId="tpck.1169194664001" value="Dummy" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6209278014150835255" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6209278014150835255" />
             <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6209278014150839945" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="___instanceData" />
               <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6209278014150839946" nodeInfo="ng">
@@ -15704,6 +15750,7 @@
           <property name="name" nameId="tpck.1169194664001" value="Dummy" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6209278014150945812" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6209278014150945812" />
             <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6209278014150945813" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="___instanceData" />
               <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6209278014150945814" nodeInfo="ng">
@@ -15747,6 +15794,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="6209278014150446254" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.Function" typeId="x27k.6437088627575724001" id="6209278014150446255" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6209278014150446255" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6209278014150446256" nodeInfo="ng" />
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6209278014150446257" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6209278014150446258" nodeInfo="ng">
@@ -16053,6 +16101,7 @@
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1539255704408506132" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="operationFromRunnable" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1539255704408506132" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1539255704408506133" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1539255704408506134" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="1539255704408506135" nodeInfo="ng">
@@ -16174,6 +16223,7 @@
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1539255704408534334" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummyFunc" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1539255704408534334" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1539255704408534335" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1539255704408534336" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="1539255704408534337" nodeInfo="ng">
