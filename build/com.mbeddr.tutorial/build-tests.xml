@@ -50,6 +50,7 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.tutorial.tests.zip" />
     <mkdir dir="${build.tmp}/default/mbeddr.tutorial.typesystemtests.jar" />
     <mkdir dir="${build.tmp}/default/mbeddr.tutorial.typesystemtests.jar/META-INF" />
     <echoxml file="${build.tmp}/default/mbeddr.tutorial.typesystemtests.jar/META-INF/module.xml">
@@ -69,7 +70,7 @@
         <sources jar="mbeddr.tutorial.typesystemtests-src.jar" descriptor="typesystemtests.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.tutorial.typesystemtests.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.tests.zip/mbeddr.tutorial.typesystemtests.jar">
       <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.typesystemtests" />
       <fileset dir="${tutorial.home}/tests/mbeddr.tutorial.typesystemtests" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.typesystemtests.jar" />
@@ -77,11 +78,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-mbeddr.tutorial.typesystemtests-models">
       <fileset dir="${tutorial.home}/tests/mbeddr.tutorial.typesystemtests/models" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.tutorial.typesystemtests-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.tests.zip/mbeddr.tutorial.typesystemtests-src.jar">
       <fileset dir="${tutorial.home}/tests/mbeddr.tutorial.typesystemtests/source_gen" includes="**/*.java" />
       <zipfileset file="${tutorial.home}/tests/mbeddr.tutorial.typesystemtests/typesystemtests.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-mbeddr.tutorial.typesystemtests-models" prefix="module/models" />
     </jar>
+    <zip destfile="${build.layout}/com.mbeddr.tutorial.tests.zip">
+      <fileset dir="${build.tmp}/default/com.mbeddr.tutorial.tests.zip" />
+    </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.mpsutil.build.build.number=${com.mbeddr.mpsutil.build.build.number}</echo>
   </target>
   
@@ -106,6 +110,8 @@
   </target>
   
   <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.tutorial-solutions.build/com.mbeddr.tutorial.solutions.zip" />
+    <unzip src="${artifacts.com.mbeddr.tutorial-solutions.build}/com.mbeddr.tutorial.solutions.zip" dest="${build.tmp}/deps/com.mbeddr.tutorial-solutions.build/com.mbeddr.tutorial.solutions.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
@@ -118,6 +124,8 @@
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip" />
+    <unzip src="${artifacts.com.mbeddr.tutorial-languages.build}/com.mbeddr.tutorial.languages.zip" dest="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -144,10 +152,6 @@
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
-      <library file="${artifacts.com.mbeddr.tutorial-languages.build}/mbeddr.tutorial.complex.jar" />
-      <library file="${artifacts.com.mbeddr.tutorial-languages.build}/mbeddr.tutorial.metadata.jar" />
-      <library file="${artifacts.com.mbeddr.tutorial-languages.build}/mbeddr.tutorial.vectors.jar" />
-      <library file="${artifacts.com.mbeddr.tutorial-solutions.build}/mbeddr.tutorial.main.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -237,6 +241,10 @@
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.complex.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.metadata.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.vectors.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.tutorial-solutions.build/com.mbeddr.tutorial.solutions.zip/mbeddr.tutorial.main.jar" />
       <library file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
       <chunk>
@@ -397,7 +405,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
-        <fileset file="${artifacts.com.mbeddr.tutorial-solutions.build}/mbeddr.tutorial.main.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.tutorial-solutions.build/com.mbeddr.tutorial.solutions.zip/mbeddr.tutorial.main.jar" />
       </classpath>
     </javac>
   </target>
