@@ -146,8 +146,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="2151335435833422624" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="2151335435833422619" resolveInfo="d" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="2151335435833422616" resolveInfo="run" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="2151335435833422619" resolveInfo="d" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="2151335435833422616" resolveInfo="run" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3295443900649977807" nodeInfo="ng" />
       </node>
@@ -324,11 +324,6 @@
           </node>
         </node>
       </node>
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="4331139697889836042" nodeInfo="ng">
-        <property name="active" nameId="k146.2688792604367947988" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="mockDidntValidate" />
-        <property name="text" nameId="k146.2688792604367903089" value="the mock did not validate" />
-      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5361708786694714968" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1327306822746_14" />
@@ -379,10 +374,6 @@
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2151335435833465195" />
           <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="2151335435833422634" resolveInfo="config" />
           <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="2151335435833422635" resolveInfo="mock" />
-          <node role="messageRef" roleId="yz9a.4331139697889725052" type="k146.MessageRef" typeId="k146.2688792604367964823" id="4331139697889836039" nodeInfo="ng">
-            <link role="msg" roleId="k146.2688792604367964825" targetNodeId="4331139697889836042" resolveInfo="mockDidntValidate" />
-            <link role="table" roleId="k146.2688792604367964824" targetNodeId="4331139697889836041" resolveInfo="messages" />
-          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6329057548771074199" nodeInfo="ng">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6329057548771074199" />
