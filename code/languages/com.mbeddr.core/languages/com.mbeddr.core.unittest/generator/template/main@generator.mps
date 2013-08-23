@@ -625,7 +625,7 @@
             <property name="name" nameId="tpck.1169194664001" value="___testing" />
             <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="7755897872837214269" nodeInfo="ng">
               <property name="active" nameId="k146.2688792604367947988" value="true" />
-              <property name="name" nameId="tpck.1169194664001" value="FAILED_INT" />
+              <property name="name" nameId="tpck.1169194664001" value="FAILED_INT_INT" />
               <property name="text" nameId="k146.2688792604367903089" value="***FAILED***" />
               <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="7755897872837214270" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="testID" />
@@ -665,7 +665,7 @@
                     <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7755897872837168088" />
                     <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="7755897872837168089" nodeInfo="ng">
                       <link role="table" roleId="k146.2688792604367964824" targetNodeId="7755897872837168077" resolveInfo="___testing" />
-                      <link role="msg" roleId="k146.2688792604367964825" targetNodeId="7755897872837214269" resolveInfo="FAILED_INT" />
+                      <link role="msg" roleId="k146.2688792604367964825" targetNodeId="7755897872837214269" resolveInfo="FAILED_INT_INT" />
                       <node role="propVals" roleId="k146.767515563077221084" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7755897872837168090" nodeInfo="ng">
                         <property name="value" nameId="mj1l.8860443239512128104" value="12" />
                         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="7755897872837168091" nodeInfo="nn">
@@ -749,7 +749,7 @@
                               <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="8046082822449627479" nodeInfo="sn">
                                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="8046082822449627480" nodeInfo="nn">
                                   <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8046082822449627481" nodeInfo="nn">
-                                    <property name="value" nameId="tpee.1070475926801" value="FAILED_DOUBLE" />
+                                    <property name="value" nameId="tpee.1070475926801" value="FAILED_DOUBLE_DOUBLE" />
                                   </node>
                                 </node>
                               </node>
@@ -774,14 +774,14 @@
                               <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="7755897872837219485" nodeInfo="sn">
                                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="7755897872837219486" nodeInfo="nn">
                                   <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7755897872837219487" nodeInfo="nn">
-                                    <property name="value" nameId="tpee.1070475926801" value="FAILED_DOUBLE" />
+                                    <property name="value" nameId="tpee.1070475926801" value="FAILED_DOUBLE_DOUBLE" />
                                   </node>
                                 </node>
                               </node>
                             </node>
                             <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="7755897872837219460" nodeInfo="nn">
                               <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7755897872837219462" nodeInfo="nn">
-                                <property name="value" nameId="tpee.1070475926801" value="FAILED_INT" />
+                                <property name="value" nameId="tpee.1070475926801" value="FAILED_INT_INT" />
                               </node>
                             </node>
                             <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7755897872837219492" nodeInfo="nn" />
@@ -1857,9 +1857,25 @@
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
           </node>
-          <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="7755897872837214309" nodeInfo="ng">
+        </node>
+        <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="376695306814916340" nodeInfo="ng">
+          <property name="active" nameId="k146.2688792604367947988" value="true" />
+          <property name="name" nameId="tpck.1169194664001" value="FAILED_INT_INT" />
+          <property name="text" nameId="k146.2688792604367903089" value="***FAILED***" />
+          <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="376695306814916341" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="testID" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="376695306814916342" nodeInfo="ng" />
+          </node>
+          <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="376695306814916343" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="act" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="376695306814916344" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+          <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="376695306814916345" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="exp" />
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7755897872837214311" nodeInfo="ng">
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="376695306814916346" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
@@ -1880,9 +1896,25 @@
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
           </node>
-          <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="7755897872837214317" nodeInfo="ng">
+        </node>
+        <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="376695306814916464" nodeInfo="ng">
+          <property name="active" nameId="k146.2688792604367947988" value="true" />
+          <property name="name" nameId="tpck.1169194664001" value="FAILED_DOUBLE_DOUBLE" />
+          <property name="text" nameId="k146.2688792604367903089" value="***FAILED***" />
+          <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="376695306814916465" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="testID" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="376695306814916466" nodeInfo="ng" />
+          </node>
+          <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="376695306814916467" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="act" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="376695306814916468" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+          <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="376695306814916469" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="exp" />
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="7755897872837214320" nodeInfo="ng">
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="376695306814916470" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
