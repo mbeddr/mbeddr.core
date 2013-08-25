@@ -15403,9 +15403,6 @@
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8290379208127914011" nodeInfo="ng">
       <node role="nodeToCheck" roleId="tp5g.1216989461394" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8290379208127914012" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Dummy" />
-        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8290379208127914049" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_1353585583206_1" />
-        </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="2531151654384787791" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="gv1" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="2531151654384787789" nodeInfo="ng">
@@ -15434,6 +15431,9 @@
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2531151654384781905" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="empty_1377263603420_3" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7292974412778101553" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1377441150953_1" />
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="8290379208127914052" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="c1" />
@@ -15717,9 +15717,6 @@
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="4069818615075655166" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4069818615075655443" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4069818615075646240" resolveInfo="ui64" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615075657235" nodeInfo="ng">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="4069818615075657236" nodeInfo="ng" />
-                  </node>
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4069818615075654643" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4069818615075646577" resolveInfo="d" />
@@ -15740,9 +15737,6 @@
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="4069818615075648246" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4069818615075648349" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4069818615075646240" resolveInfo="ui64" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615075657550" nodeInfo="ng">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="4069818615075657551" nodeInfo="ng" />
-                  </node>
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4069818615075647965" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4069818615075646443" resolveInfo="f" />
@@ -15753,9 +15747,6 @@
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="4069818615075649761" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4069818615075649914" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4069818615075646189" resolveInfo="ui32" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615075657865" nodeInfo="ng">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="4069818615075657866" nodeInfo="ng" />
-                  </node>
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4069818615075649364" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4069818615075646443" resolveInfo="f" />
@@ -15808,9 +15799,6 @@
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="4069818615075669992" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4069818615075670403" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4069818615075659367" resolveInfo="i64" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615075678740" nodeInfo="ng">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="4069818615075678741" nodeInfo="ng" />
-                  </node>
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4069818615075669303" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4069818615075646577" resolveInfo="d" />
@@ -15831,9 +15819,6 @@
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="4069818615075674236" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4069818615075674709" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4069818615075659365" resolveInfo="i32" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615075678219" nodeInfo="ng">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="4069818615075678220" nodeInfo="ng" />
-                  </node>
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4069818615075673477" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4069818615075646443" resolveInfo="f" />
