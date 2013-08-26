@@ -2,11 +2,21 @@
 <model modelUID="r:fdcdbaf4-7a68-465a-9ff2-dd9ff9a246d2(test.ex.ext.comp_mocking.stub_with_many_ports@tests)">
   <persistence version="8" />
   <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
+  <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
+  <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
+  <language namespace="97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)" />
+  <language namespace="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606(com.mbeddr.ext.components.gen_nomw)" />
+  <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
+  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
+  <language namespace="36a565f1-3fa0-42d6-baac-f87e209c9789(com.mbeddr.ext.components.mock)" />
+  <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
+  <language namespace="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
+  <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="15" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="11" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="15" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
@@ -148,8 +158,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126994865444" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126994865425" resolveInfo="sensor3" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126994865425" resolveInfo="sensor3" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126994865445" nodeInfo="ng" />
       </node>
@@ -165,8 +175,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126994865451" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126994865425" resolveInfo="sensor3" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126994865425" resolveInfo="sensor3" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126994865452" nodeInfo="ng" />
       </node>
@@ -179,8 +189,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126994866880" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126994865423" resolveInfo="sensor2" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126994865423" resolveInfo="sensor2" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126994866881" nodeInfo="ng" />
       </node>
@@ -196,8 +206,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126994866887" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126994865423" resolveInfo="sensor2" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126994865423" resolveInfo="sensor2" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126994866888" nodeInfo="ng" />
       </node>
@@ -210,8 +220,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126994867611" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="6307143892175816628" resolveInfo="sensor" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="6307143892175816628" resolveInfo="sensor" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126994867612" nodeInfo="ng" />
       </node>
@@ -227,8 +237,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126994867618" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="6307143892175816628" resolveInfo="sensor" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="6307143892175816628" resolveInfo="sensor" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126994867619" nodeInfo="ng" />
       </node>
@@ -241,8 +251,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995059928" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059924" resolveInfo="sensor4" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059924" resolveInfo="sensor4" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995059929" nodeInfo="ng" />
       </node>
@@ -258,8 +268,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995059935" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059924" resolveInfo="sensor4" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059924" resolveInfo="sensor4" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995059936" nodeInfo="ng" />
       </node>
@@ -272,8 +282,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995059943" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059939" resolveInfo="sensor5" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059939" resolveInfo="sensor5" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995059944" nodeInfo="ng" />
       </node>
@@ -289,8 +299,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995059950" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059939" resolveInfo="sensor5" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059939" resolveInfo="sensor5" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995059951" nodeInfo="ng" />
       </node>
@@ -303,8 +313,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995059974" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059954" resolveInfo="sensor6" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059954" resolveInfo="sensor6" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995059975" nodeInfo="ng" />
       </node>
@@ -320,8 +330,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995059981" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059954" resolveInfo="sensor6" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059954" resolveInfo="sensor6" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995059982" nodeInfo="ng" />
       </node>
@@ -334,8 +344,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995059988" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059955" resolveInfo="sensor7" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059955" resolveInfo="sensor7" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995059989" nodeInfo="ng" />
       </node>
@@ -351,8 +361,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995059995" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059955" resolveInfo="sensor7" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059955" resolveInfo="sensor7" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995059996" nodeInfo="ng" />
       </node>
@@ -365,8 +375,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060002" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059956" resolveInfo="sensor8" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059956" resolveInfo="sensor8" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060003" nodeInfo="ng" />
       </node>
@@ -382,8 +392,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060009" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059956" resolveInfo="sensor8" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059956" resolveInfo="sensor8" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060010" nodeInfo="ng" />
       </node>
@@ -396,8 +406,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060016" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059957" resolveInfo="sensor9" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059957" resolveInfo="sensor9" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060017" nodeInfo="ng" />
       </node>
@@ -413,8 +423,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060023" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059957" resolveInfo="sensor9" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059957" resolveInfo="sensor9" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060024" nodeInfo="ng" />
       </node>
@@ -427,8 +437,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060030" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059958" resolveInfo="sensor10" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059958" resolveInfo="sensor10" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060031" nodeInfo="ng" />
       </node>
@@ -444,8 +454,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060037" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059958" resolveInfo="sensor10" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059958" resolveInfo="sensor10" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060038" nodeInfo="ng" />
       </node>
@@ -458,8 +468,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060044" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059959" resolveInfo="sensor11" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059959" resolveInfo="sensor11" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060045" nodeInfo="ng" />
       </node>
@@ -475,8 +485,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060051" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059959" resolveInfo="sensor11" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059959" resolveInfo="sensor11" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060052" nodeInfo="ng" />
       </node>
@@ -489,8 +499,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060058" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059960" resolveInfo="sensor12" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059960" resolveInfo="sensor12" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060059" nodeInfo="ng" />
       </node>
@@ -506,8 +516,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060065" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059960" resolveInfo="sensor12" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059960" resolveInfo="sensor12" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060066" nodeInfo="ng" />
       </node>
@@ -520,8 +530,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060072" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059961" resolveInfo="sensor13" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059961" resolveInfo="sensor13" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060073" nodeInfo="ng" />
       </node>
@@ -537,8 +547,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060079" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059961" resolveInfo="sensor13" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059961" resolveInfo="sensor13" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060080" nodeInfo="ng" />
       </node>
@@ -551,8 +561,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060086" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059962" resolveInfo="sensor14" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059962" resolveInfo="sensor14" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060087" nodeInfo="ng" />
       </node>
@@ -568,8 +578,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060093" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059962" resolveInfo="sensor14" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059962" resolveInfo="sensor14" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060094" nodeInfo="ng" />
       </node>
@@ -582,8 +592,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060100" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059963" resolveInfo="sensor15" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059963" resolveInfo="sensor15" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060101" nodeInfo="ng" />
       </node>
@@ -599,8 +609,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060107" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059963" resolveInfo="sensor15" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059963" resolveInfo="sensor15" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060108" nodeInfo="ng" />
       </node>
@@ -613,8 +623,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060114" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059964" resolveInfo="sensor16" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059964" resolveInfo="sensor16" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060115" nodeInfo="ng" />
       </node>
@@ -630,8 +640,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060121" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059964" resolveInfo="sensor16" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059964" resolveInfo="sensor16" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060122" nodeInfo="ng" />
       </node>
@@ -644,8 +654,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060128" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059969" resolveInfo="sensor21" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059969" resolveInfo="sensor21" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060129" nodeInfo="ng" />
       </node>
@@ -661,8 +671,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060135" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059969" resolveInfo="sensor21" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059969" resolveInfo="sensor21" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060136" nodeInfo="ng" />
       </node>
@@ -675,8 +685,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060142" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059968" resolveInfo="sensor20" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059968" resolveInfo="sensor20" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060143" nodeInfo="ng" />
       </node>
@@ -692,8 +702,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060149" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059968" resolveInfo="sensor20" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059968" resolveInfo="sensor20" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060150" nodeInfo="ng" />
       </node>
@@ -706,8 +716,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060156" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059967" resolveInfo="sensor19" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059967" resolveInfo="sensor19" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060157" nodeInfo="ng" />
       </node>
@@ -723,8 +733,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060163" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059967" resolveInfo="sensor19" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059967" resolveInfo="sensor19" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060164" nodeInfo="ng" />
       </node>
@@ -737,8 +747,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060170" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059966" resolveInfo="sensor18" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059966" resolveInfo="sensor18" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060171" nodeInfo="ng" />
       </node>
@@ -754,8 +764,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060177" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059966" resolveInfo="sensor18" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059966" resolveInfo="sensor18" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060178" nodeInfo="ng" />
       </node>
@@ -768,8 +778,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060184" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059965" resolveInfo="sensor17" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8729447926330476752" resolveInfo="isReady" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059965" resolveInfo="sensor17" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8729447926330476752" resolveInfo="isReady" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7949124126995060185" nodeInfo="ng" />
       </node>
@@ -785,8 +795,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7949124126995060191" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="6307143892175816576" resolveInfo="getValue" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="7949124126995059965" resolveInfo="sensor17" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="6307143892175816576" resolveInfo="getValue" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7949124126995059965" resolveInfo="sensor17" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7949124126995060192" nodeInfo="ng" />
       </node>
