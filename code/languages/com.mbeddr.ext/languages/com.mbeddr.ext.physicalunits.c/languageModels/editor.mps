@@ -585,6 +585,8 @@
           <property name="text" nameId="tpc2.1073389577007" value="-&gt;" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="9122562988445461814" nodeInfo="ng">
+          <property name="emptyNoTargetText" nameId="tpc2.1214560368769" value="true" />
+          <property name="noTargetText" nameId="tpc2.1139852716018" value="&lt;none&gt;" />
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="3c6d.9122562988443378416" />
           <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="2qjx.5513256947824560921" resolveInfo="physicalUnits" />
         </node>
