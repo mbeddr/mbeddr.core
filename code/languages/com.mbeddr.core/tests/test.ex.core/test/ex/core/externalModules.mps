@@ -174,10 +174,10 @@
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <node role="value" roleId="x27k.3376775282622233992" type="mj1l.StaticValueExpression" typeId="mj1l.7533755140553634202" id="7533755140570578922" nodeInfo="ng">
-        <property name="castToInt" nameId="mj1l.7533755140569612682" value="true" />
-        <node role="expr" roleId="mj1l.7533755140555345895" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7533755140570580994" nodeInfo="ng">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-          <property name="value" nameId="mj1l.8860443239512128104" value="22.12312312" />
+        <property name="operation" nameId="mj1l.2532836982795394396" value="round" />
+        <node role="expr" roleId="mj1l.7533755140555345895" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="2532836982798366785" nodeInfo="ng">
+          <property name="prefix" nameId="mj1l.1670233242589904217" value="2" />
+          <property name="postfix" nameId="mj1l.1670233242589904219" value="-23" />
         </node>
       </node>
     </node>
@@ -229,10 +229,10 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7533755140570682618" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="xx" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7533755140570682618" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7533755140570682620" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7533755140570696547" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.StaticValueExpression" typeId="mj1l.7533755140553634202" id="7533755140570696548" nodeInfo="ng">
-            <property name="castToInt" nameId="mj1l.7533755140569612682" value="true" />
             <node role="expr" roleId="mj1l.7533755140555345895" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7533755140570696549" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.8860443239512128104" value="22.12312312" />
