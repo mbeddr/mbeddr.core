@@ -13,7 +13,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="22" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="11" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="15" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
@@ -153,8 +153,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517985724" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="9120591063517985709" resolveInfo="compWithNoPpc" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="9120591063517985699" resolveInfo="dummyFunction" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517985709" resolveInfo="compWithNoPpc" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517985699" resolveInfo="dummyFunction" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517985725" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -383,8 +383,8 @@
         <property name="name" nameId="tpck.1169194664001" value="compWithNoPpc_dummyFunctionWithPpc" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517985796" nodeInfo="ng" />
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517985797" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="9120591063517985794" resolveInfo="compWithNoPpc" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="9120591063517985762" resolveInfo="functionWithPpcNotCalled" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517985794" resolveInfo="compWithNoPpc" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517985762" resolveInfo="functionWithPpcNotCalled" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517985798" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -418,8 +418,8 @@
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="9120591063517985807" nodeInfo="ng" />
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517985808" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="9120591063517985794" resolveInfo="compWithNoPpc" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="9120591063517985784" resolveInfo="functionWithoutPPC" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517985794" resolveInfo="compWithNoPpc" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517985784" resolveInfo="functionWithoutPPC" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517985809" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -674,8 +674,8 @@
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517985889" nodeInfo="ng" />
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517985890" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="9120591063517985886" resolveInfo="compWithDifferentPPCExp" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="9120591063517985857" resolveInfo="foo" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517985886" resolveInfo="compWithDifferentPPCExp" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517985857" resolveInfo="foo" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517985891" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -1233,8 +1233,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986092" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="9120591063517986058" resolveInfo="triangle" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="9120591063517985945" resolveInfo="checkValid" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986058" resolveInfo="triangle" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517985945" resolveInfo="checkValid" />
         </node>
         <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321634834" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="a" />
@@ -1336,8 +1336,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986130" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="9120591063517986058" resolveInfo="triangle" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="9120591063517985986" resolveInfo="checkTriangleType" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986058" resolveInfo="triangle" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517985986" resolveInfo="checkTriangleType" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="9120591063517986131" nodeInfo="ng">
           <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="9120591063517986196" resolveInfo="Triangle_Types" />
@@ -1941,8 +1941,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986349" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="9120591063517986315" resolveInfo="triangle" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="9120591063517986208" resolveInfo="checkValid" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986315" resolveInfo="triangle" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986208" resolveInfo="checkValid" />
         </node>
         <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321635125" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="a" />
@@ -2067,8 +2067,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986396" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="9120591063517986315" resolveInfo="triangle" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="9120591063517986246" resolveInfo="checkTriangleType" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986315" resolveInfo="triangle" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986246" resolveInfo="checkTriangleType" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="9120591063517986397" nodeInfo="ng">
           <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="9120591063517986448" resolveInfo="Triangle_Types" />
@@ -2640,8 +2640,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986601" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="9120591063517986567" resolveInfo="triangle" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="9120591063517986460" resolveInfo="checkValid" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986567" resolveInfo="triangle" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986460" resolveInfo="checkValid" />
         </node>
         <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321634884" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="a" />
@@ -2738,8 +2738,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986637" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="9120591063517986567" resolveInfo="triangle" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="9120591063517986498" resolveInfo="checkTriangleType" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986567" resolveInfo="triangle" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986498" resolveInfo="checkTriangleType" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="9120591063517986638" nodeInfo="ng">
           <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="9120591063517986689" resolveInfo="Triangle_Types" />

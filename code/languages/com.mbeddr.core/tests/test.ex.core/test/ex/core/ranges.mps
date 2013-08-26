@@ -6,7 +6,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="11" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="15" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="15" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
@@ -28,17 +28,18 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8729447926330639782" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="simpleRanges" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8729447926330639782" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8729447926330639783" nodeInfo="ng" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8729447926330639784" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8729447926330639786" nodeInfo="ng">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8729447926330639786" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="k146.IsInRangeExpression" typeId="k146.6307143892175831839" id="8729447926330639789" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="8729447926330639790" nodeInfo="ng">
-              <property name="minExclude" nameId="k146.8729447926330623084" value="false" />
-              <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330639793" nodeInfo="ng">
+              <property name="leftExclude" nameId="k146.8729447926330623084" value="false" />
+              <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330639793" nodeInfo="ng">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
-              <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640715" nodeInfo="ng">
+              <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640715" nodeInfo="ng">
                 <property name="value" nameId="mj1l.8860443239512128104" value="5" />
               </node>
             </node>
@@ -53,11 +54,11 @@
             <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="8729447926330640727" nodeInfo="ng">
               <node role="expression" roleId="mj1l.7254843406768839760" type="k146.IsInRangeExpression" typeId="k146.6307143892175831839" id="8729447926330640730" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="8729447926330640731" nodeInfo="ng">
-                  <property name="minExclude" nameId="k146.8729447926330623084" value="true" />
-                  <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640733" nodeInfo="ng">
+                  <property name="leftExclude" nameId="k146.8729447926330623084" value="true" />
+                  <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640733" nodeInfo="ng">
                     <property name="value" nameId="mj1l.8860443239512128104" value="5" />
                   </node>
-                  <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640734" nodeInfo="ng">
+                  <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640734" nodeInfo="ng">
                     <property name="value" nameId="mj1l.8860443239512128104" value="10" />
                   </node>
                 </node>
@@ -72,10 +73,10 @@
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8729447926330640735" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="k146.IsInRangeExpression" typeId="k146.6307143892175831839" id="8729447926330640736" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="8729447926330640737" nodeInfo="ng">
-              <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640738" nodeInfo="ng">
+              <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640738" nodeInfo="ng">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
-              <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640739" nodeInfo="ng">
+              <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640739" nodeInfo="ng">
                 <property name="value" nameId="mj1l.8860443239512128104" value="5" />
               </node>
             </node>
@@ -90,12 +91,12 @@
             <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="8729447926330640749" nodeInfo="ng">
               <node role="expression" roleId="mj1l.7254843406768839760" type="k146.IsInRangeExpression" typeId="k146.6307143892175831839" id="8729447926330640750" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="8729447926330640751" nodeInfo="ng">
-                  <property name="minExclude" nameId="k146.8729447926330623084" value="true" />
-                  <property name="maxExclude" nameId="k146.8729447926330623085" value="true" />
-                  <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640752" nodeInfo="ng">
+                  <property name="leftExclude" nameId="k146.8729447926330623084" value="true" />
+                  <property name="rightExclude" nameId="k146.8729447926330623085" value="true" />
+                  <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640752" nodeInfo="ng">
                     <property name="value" nameId="mj1l.8860443239512128104" value="5" />
                   </node>
-                  <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640753" nodeInfo="ng">
+                  <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330640753" nodeInfo="ng">
                     <property name="value" nameId="mj1l.8860443239512128104" value="10" />
                   </node>
                 </node>
@@ -114,6 +115,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="3136162014989837789" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="forwardsRangeLoopsUnsigned" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3136162014989837789" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3136162014989837790" nodeInfo="ng" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3136162014989837791" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3136162014989837821" nodeInfo="ng">
@@ -157,10 +159,10 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ForRangeStatement" typeId="k146.8729447926330198396" id="3136162014989837836" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="x" />
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989837837" nodeInfo="ng">
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837838" nodeInfo="ng">
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837838" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837839" nodeInfo="ng">
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837839" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
           </node>
@@ -256,11 +258,11 @@
             </node>
           </node>
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989837878" nodeInfo="ng">
-            <property name="minExclude" nameId="k146.8729447926330623084" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837879" nodeInfo="ng">
+            <property name="leftExclude" nameId="k146.8729447926330623084" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837879" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837880" nodeInfo="ng">
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837880" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
           </node>
@@ -328,12 +330,12 @@
             </node>
           </node>
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989837907" nodeInfo="ng">
-            <property name="minExclude" nameId="k146.8729447926330623084" value="true" />
-            <property name="maxExclude" nameId="k146.8729447926330623085" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837908" nodeInfo="ng">
+            <property name="leftExclude" nameId="k146.8729447926330623084" value="true" />
+            <property name="rightExclude" nameId="k146.8729447926330623085" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837908" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837909" nodeInfo="ng">
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837909" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
           </node>
@@ -401,11 +403,11 @@
             </node>
           </node>
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989837936" nodeInfo="ng">
-            <property name="maxExclude" nameId="k146.8729447926330623085" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837937" nodeInfo="ng">
+            <property name="rightExclude" nameId="k146.8729447926330623085" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837937" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837938" nodeInfo="ng">
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837938" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
           </node>
@@ -445,10 +447,10 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ForRangeStatement" typeId="k146.8729447926330198396" id="3136162014989837952" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="r" />
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989837953" nodeInfo="ng">
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837954" nodeInfo="ng">
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837954" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837955" nodeInfo="ng">
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989837955" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
           </node>
@@ -503,6 +505,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="3136162014989895681" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="forwardsRangeLoopsSigned" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3136162014989895681" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3136162014989895682" nodeInfo="ng" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3136162014989895683" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3136162014989895684" nodeInfo="ng">
@@ -546,10 +549,10 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ForRangeStatement" typeId="k146.8729447926330198396" id="3136162014989895699" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="x" />
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895700" nodeInfo="ng">
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895701" nodeInfo="ng">
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895701" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
             </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895702" nodeInfo="ng">
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895702" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
@@ -572,7 +575,6 @@
                 </node>
               </node>
             </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3136162014989895711" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3136162014989895712" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="3136162014989895713" nodeInfo="ng">
                 <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3136162014989895714" nodeInfo="ng">
@@ -645,11 +647,11 @@
             </node>
           </node>
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895741" nodeInfo="ng">
-            <property name="minExclude" nameId="k146.8729447926330623084" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895742" nodeInfo="ng">
+            <property name="leftExclude" nameId="k146.8729447926330623084" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895742" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
             </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895743" nodeInfo="ng">
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895743" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
@@ -717,12 +719,12 @@
             </node>
           </node>
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895770" nodeInfo="ng">
-            <property name="minExclude" nameId="k146.8729447926330623084" value="true" />
-            <property name="maxExclude" nameId="k146.8729447926330623085" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895771" nodeInfo="ng">
+            <property name="leftExclude" nameId="k146.8729447926330623084" value="true" />
+            <property name="rightExclude" nameId="k146.8729447926330623085" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895771" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
             </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895772" nodeInfo="ng">
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895772" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
@@ -790,11 +792,11 @@
             </node>
           </node>
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895799" nodeInfo="ng">
-            <property name="maxExclude" nameId="k146.8729447926330623085" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895800" nodeInfo="ng">
+            <property name="rightExclude" nameId="k146.8729447926330623085" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895800" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
             </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895801" nodeInfo="ng">
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895801" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
@@ -834,10 +836,10 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ForRangeStatement" typeId="k146.8729447926330198396" id="3136162014989895815" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="r" />
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895816" nodeInfo="ng">
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895817" nodeInfo="ng">
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895817" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
             </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895818" nodeInfo="ng">
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895818" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
@@ -892,6 +894,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="3136162014989895372" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="backwardsRangeLoopsUnsigned" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3136162014989895372" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3136162014989895373" nodeInfo="ng" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3136162014989895374" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3136162014989895375" nodeInfo="ng">
@@ -936,11 +939,11 @@
           <property name="name" nameId="tpck.1169194664001" value="x" />
           <property name="countBackwards" nameId="k146.3136162014989109318" value="backward" />
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895538" nodeInfo="ng">
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895539" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-            </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895540" nodeInfo="ng">
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895539" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
+            </node>
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895540" nodeInfo="ng">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
           <node role="body" roleId="k146.8729447926330241139" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3136162014989895541" nodeInfo="ng">
@@ -978,12 +981,12 @@
           <property name="countBackwards" nameId="k146.3136162014989109318" value="forward" />
           <node role="body" roleId="k146.8729447926330241139" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="843825774842270785" nodeInfo="ng" />
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="843825774842270794" nodeInfo="ng">
-            <property name="maxExclude" nameId="k146.8729447926330623085" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="843825774842270797" nodeInfo="ng">
+            <property name="rightExclude" nameId="k146.8729447926330623085" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="843825774842270797" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="843825774842270798" nodeInfo="ng">
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="843825774842270798" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
@@ -1053,12 +1056,12 @@
             </node>
           </node>
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895579" nodeInfo="ng">
-            <property name="minExclude" nameId="k146.8729447926330623084" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895580" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-            </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895581" nodeInfo="ng">
+            <property name="leftExclude" nameId="k146.8729447926330623084" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895580" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
+            </node>
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895581" nodeInfo="ng">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
         </node>
@@ -1126,13 +1129,13 @@
             </node>
           </node>
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895608" nodeInfo="ng">
-            <property name="minExclude" nameId="k146.8729447926330623084" value="true" />
-            <property name="maxExclude" nameId="k146.8729447926330623085" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895609" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-            </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895610" nodeInfo="ng">
+            <property name="leftExclude" nameId="k146.8729447926330623084" value="true" />
+            <property name="rightExclude" nameId="k146.8729447926330623085" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895609" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
+            </node>
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895610" nodeInfo="ng">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
         </node>
@@ -1161,7 +1164,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3136162014989895620" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="3136162014989895621" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895622" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="4" />
+              <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3136162014989895623" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3136162014989895378" resolveInfo="counter" />
@@ -1172,15 +1175,13 @@
           <property name="name" nameId="tpck.1169194664001" value="x" />
           <property name="countBackwards" nameId="k146.3136162014989109318" value="backward" />
           <node role="body" roleId="k146.8729447926330241139" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3136162014989895625" nodeInfo="ng">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="3136162014989895626" nodeInfo="ng">
-              <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3136162014989895626" />
-              <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3136162014989895627" nodeInfo="ng">
-                <node role="right" roleId="mj1l.8860443239512128065" type="k146.ForRangeRef" typeId="k146.7297559910934293472" id="3136162014989895628" nodeInfo="ng">
-                  <link role="forRange" roleId="k146.7297559910934293473" targetNodeId="3136162014989895624" resolveInfo="x" />
-                </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3136162014989895629" nodeInfo="ng">
-                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3136162014989895378" resolveInfo="counter" />
-                </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="2489357932906300607" nodeInfo="ng">
+              <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2489357932906300607" />
+              <node role="expected" roleId="yz9a.7755897872837031764" type="k146.ForRangeRef" typeId="k146.7297559910934293472" id="2489357932906311592" nodeInfo="ng">
+                <link role="forRange" roleId="k146.7297559910934293473" targetNodeId="3136162014989895624" resolveInfo="x" />
+              </node>
+              <node role="actual" roleId="yz9a.7755897872837031765" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2489357932906311539" nodeInfo="ng">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3136162014989895378" resolveInfo="counter" />
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3136162014989895630" nodeInfo="ng">
@@ -1200,13 +1201,23 @@
             </node>
           </node>
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895637" nodeInfo="ng">
-            <property name="maxExclude" nameId="k146.8729447926330623085" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895638" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-            </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895639" nodeInfo="ng">
+            <property name="rightExclude" nameId="k146.8729447926330623085" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895638" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895639" nodeInfo="ng">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="2489357932906521644" nodeInfo="ng">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2489357932906521644" />
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2489357932906522085" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2489357932906522032" nodeInfo="ng">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3136162014989895378" resolveInfo="counter" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="3136162014989895640" nodeInfo="ng">
@@ -1245,11 +1256,11 @@
           <property name="name" nameId="tpck.1169194664001" value="r" />
           <property name="countBackwards" nameId="k146.3136162014989109318" value="backward" />
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895654" nodeInfo="ng">
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895655" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-            </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895656" nodeInfo="ng">
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895655" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
+            </node>
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895656" nodeInfo="ng">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
           <node role="body" roleId="k146.8729447926330241139" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3136162014989895657" nodeInfo="ng">
@@ -1302,6 +1313,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="3136162014989895838" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="backwardsRangeLoopsSigned" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3136162014989895838" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3136162014989895839" nodeInfo="ng" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3136162014989895840" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3136162014989895841" nodeInfo="ng">
@@ -1346,11 +1358,11 @@
           <property name="name" nameId="tpck.1169194664001" value="x" />
           <property name="countBackwards" nameId="k146.3136162014989109318" value="backward" />
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895857" nodeInfo="ng">
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895858" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
-            </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895859" nodeInfo="ng">
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895858" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895859" nodeInfo="ng">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
             </node>
           </node>
           <node role="body" roleId="k146.8729447926330241139" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3136162014989895860" nodeInfo="ng">
@@ -1446,12 +1458,12 @@
             </node>
           </node>
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895898" nodeInfo="ng">
-            <property name="minExclude" nameId="k146.8729447926330623084" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895899" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
-            </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895900" nodeInfo="ng">
+            <property name="leftExclude" nameId="k146.8729447926330623084" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895899" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895900" nodeInfo="ng">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
             </node>
           </node>
         </node>
@@ -1519,13 +1531,13 @@
             </node>
           </node>
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895927" nodeInfo="ng">
-            <property name="minExclude" nameId="k146.8729447926330623084" value="true" />
-            <property name="maxExclude" nameId="k146.8729447926330623085" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895928" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="-4" />
-            </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895929" nodeInfo="ng">
+            <property name="leftExclude" nameId="k146.8729447926330623084" value="true" />
+            <property name="rightExclude" nameId="k146.8729447926330623085" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895928" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895929" nodeInfo="ng">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-4" />
             </node>
           </node>
         </node>
@@ -1554,7 +1566,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3136162014989895939" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="3136162014989895940" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895941" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3136162014989895942" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3136162014989895844" resolveInfo="counter" />
@@ -1593,12 +1605,12 @@
             </node>
           </node>
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895956" nodeInfo="ng">
-            <property name="maxExclude" nameId="k146.8729447926330623085" value="true" />
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895957" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
-            </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895958" nodeInfo="ng">
+            <property name="rightExclude" nameId="k146.8729447926330623085" value="true" />
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895957" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895958" nodeInfo="ng">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
             </node>
           </node>
         </node>
@@ -1638,11 +1650,11 @@
           <property name="name" nameId="tpck.1169194664001" value="r" />
           <property name="countBackwards" nameId="k146.3136162014989109318" value="backward" />
           <node role="range" roleId="k146.8729447926330241132" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="3136162014989895973" nodeInfo="ng">
-            <node role="min" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895974" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
-            </node>
-            <node role="max" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895975" nodeInfo="ng">
+            <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895974" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3136162014989895975" nodeInfo="ng">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-5" />
             </node>
           </node>
           <node role="body" roleId="k146.8729447926330241139" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3136162014989895976" nodeInfo="ng">
@@ -1695,6 +1707,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8729447926330640759" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8729447926330640759" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8729447926330640760" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8729447926330640769" nodeInfo="ng">
           <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="8729447926330640770" nodeInfo="ng">
