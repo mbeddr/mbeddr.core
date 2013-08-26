@@ -1403,6 +1403,10 @@
       <property name="externalValue" nameId="tpce.1083923523172" value="ceil" />
       <property name="internalValue" nameId="tpce.1083923523171" value="ceil" />
     </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2532836982802331858" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="floor" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="floor" />
+    </node>
   </root>
 </model>
 

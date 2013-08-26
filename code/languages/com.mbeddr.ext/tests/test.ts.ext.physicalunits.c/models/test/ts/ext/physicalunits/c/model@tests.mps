@@ -1121,7 +1121,7 @@
                 <node role="targetUnit" roleId="3c6d.2078797996880607636" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="6242953254536658489" nodeInfo="ng">
                   <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
                 </node>
-                <node role="inputType" roleId="3c6d.7579034632111515029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6242953254536675461" nodeInfo="ng">
+                <node role="inputType" roleId="3c6d.7579034632111515029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2532836982800485068" nodeInfo="ng">
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 </node>
