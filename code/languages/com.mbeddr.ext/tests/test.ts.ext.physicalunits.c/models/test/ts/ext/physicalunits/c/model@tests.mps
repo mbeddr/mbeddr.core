@@ -323,6 +323,22 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2382294775777232601" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1377523441483_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.UnitInModuleAdapter" typeId="3c6d.1085404444144872539" id="2382294775777233748" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="unitDecl" roleId="3c6d.1085404444144872540" type="ym4j.NamedDerivedUnitDeclaration" typeId="ym4j.8099136929591129785" id="2382294775777233745" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="AU" />
+        <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="very large distances" />
+        <node role="decl" roleId="ym4j.8099136929591129798" type="ym4j.CompositeUnitDeclaration" typeId="ym4j.3801772042669047863" id="2382294775777233746" nodeInfo="ng">
+          <node role="components" roleId="ym4j.3801772042669047864" type="ym4j.UnitWithExponent" typeId="ym4j.3801772042669047322" id="2382294775777233837" nodeInfo="ng">
+            <property name="exponent" nameId="ym4j.3801772042669047325" value="1" />
+            <node role="unit" roleId="ym4j.3801772042669047323" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="2382294775777233836" nodeInfo="ng" />
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="9108052991585889625" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="testUnits" />
@@ -1290,10 +1306,41 @@
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="9122562988452480283" resolveInfo="y" />
                 </node>
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3c6d.UnitCallTypeOverrider" typeId="3c6d.9122562988443104563" id="9122562988461176964" nodeInfo="ng">
-                  <node role="introducedUnit" roleId="3c6d.9122562988443378416" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="9122562988461238977" nodeInfo="ng" />
+                  <node role="introducedUnit" roleId="3c6d.9122562988443378416" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="2382294775777324730" nodeInfo="ng" />
                 </node>
               </node>
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2382294775777530736" nodeInfo="ng" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2382294775777552631" nodeInfo="ng" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2382294775777486158" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="resInAU" />
+              <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="2382294775777486159" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                <node role="valueType" roleId="mj1l.7336544617004013388" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2382294775777486160" nodeInfo="ng">
+                  <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                  <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                </node>
+                <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2382294775777666054" nodeInfo="ng">
+                  <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2382294775777233745" resolveInfo="AU" />
+                </node>
+              </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2382294775777486162" nodeInfo="ng">
+                <link role="function" roleId="x27k.5950410542643524493" targetNodeId="9122562988452207462" resolveInfo="add" />
+                <node role="actuals" roleId="x27k.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2382294775777486163" nodeInfo="ng">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="9122562988452449921" resolveInfo="x" />
+                </node>
+                <node role="actuals" roleId="x27k.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2382294775777486164" nodeInfo="ng">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="9122562988452480283" resolveInfo="y" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3c6d.UnitCallTypeOverrider" typeId="3c6d.9122562988443104563" id="2382294775777486165" nodeInfo="ng">
+                  <node role="introducedUnit" roleId="3c6d.9122562988443378416" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2382294775777711718" nodeInfo="ng">
+                    <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2382294775777233745" resolveInfo="AU" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2382294775777438133" nodeInfo="ng" />
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9122562988452073491" nodeInfo="ng" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.DoNotAnalyzeDataFlowAnnotation" typeId="vs0r.7307224057853283254" id="9122562988452073492" nodeInfo="ng" />
