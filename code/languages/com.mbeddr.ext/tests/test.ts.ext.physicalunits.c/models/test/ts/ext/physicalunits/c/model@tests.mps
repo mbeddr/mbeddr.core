@@ -2399,6 +2399,9 @@
                     <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="697831284928846510" nodeInfo="ng">
                       <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="697831284928843796" resolveInfo="N" />
                     </node>
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="2532836982802517997" nodeInfo="ng">
+                      <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="2532836982802517998" nodeInfo="ng" />
+                    </node>
                   </node>
                 </node>
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="697831284928849193" nodeInfo="ng">
