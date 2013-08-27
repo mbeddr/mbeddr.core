@@ -2206,7 +2206,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="2410497733753996506" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2410497733754704214" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2410497733754704215" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="ancestor" />
+            <property name="name" nameId="tpck.1169194664001" value="function" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2410497733754704212" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.8105003328814797298" resolveInfo="IFunctionLike" />
             </node>
@@ -2238,7 +2238,7 @@
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8364454775541325815" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8364454775541287868" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8364454775541284814" nodeInfo="nn">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2410497733754704215" resolveInfo="ancestor" />
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2410497733754704215" resolveInfo="function" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="8364454775541303960" nodeInfo="nn">
                       <link role="link" roleId="tp25.1138056546658" targetNodeId="tpck.5169995583184591170" />
