@@ -1,0 +1,10 @@
+<project name="HelloWorld" default="build">
+
+ <taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" 
+	 	  classpath="${mbeddr.github.core.home}/tools/ant/tasks/MakeTestsTask.jar" />
+
+  <target name="make-tests" description="Run 'make test' for child Makefiles">
+  	<make-tests workingDirectory="${basedir}"/>		
+  </target>
+  
+</project>
