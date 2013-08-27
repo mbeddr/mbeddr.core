@@ -423,7 +423,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="9122562988443950702" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9122562988443955411" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9122562988443955410" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Override Unit Types" />
+            <property name="value" nameId="tpee.1070475926801" value="Ignore Units" />
           </node>
         </node>
       </node>

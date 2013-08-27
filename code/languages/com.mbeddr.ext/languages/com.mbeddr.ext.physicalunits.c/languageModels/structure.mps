@@ -214,8 +214,11 @@
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9122562988443378416" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="introducedUnit" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="ym4j.3801772042669047301" resolveInfo="UnitDeclaration" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2382294775776544839" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3092622784654610402" resolveInfo="IVisibleUnitsProviderForC" />
     </node>
   </root>
 </model>

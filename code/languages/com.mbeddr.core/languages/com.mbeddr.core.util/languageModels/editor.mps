@@ -4,21 +4,21 @@
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <language namespace="0272d3b4-4cc8-481e-9e2f-07793fbfcb41(jetbrains.mps.lang.editor.table)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="11" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="15" />
   <import index="squ6" modelUID="r:b60215f1-3d3e-41cc-8321-723ef8eb59dd(jetbrains.mps.lang.editor.table.runtime)" version="-1" />
   <import index="1t7x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" version="-1" />
   <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="1" />
   <import index="h7k5" modelUID="r:2003a7dc-1d33-4109-abf0-90ad1f9028fd(com.mbeddr.core.util.editor)" version="3" />
   <import index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="2" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" />
+  <import index="cl6c" modelUID="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" version="-1" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="ohyq" modelUID="r:2ae43476-98ce-4354-9a55-d7b44e372d64(jetbrains.mps.lang.editor.table.structure)" version="1" implicit="yes" />
-  <import index="cl6c" modelUID="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" version="-1" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5686538669182273030" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="blockexpr" />
@@ -863,7 +863,7 @@
               <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8729447926330623105" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="8729447926330623104" nodeInfo="nn" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8729447926330623109" nodeInfo="nn">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623084" resolveInfo="minExclude" />
+                  <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623084" resolveInfo="leftExclude" />
                 </node>
               </node>
             </node>
@@ -883,7 +883,7 @@
                 <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8729447926330623092" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="8729447926330623091" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8729447926330623097" nodeInfo="nn">
-                    <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623084" resolveInfo="minExclude" />
+                    <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623084" resolveInfo="leftExclude" />
                   </node>
                 </node>
               </node>
@@ -914,7 +914,7 @@
                 <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8729447926330623114" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="8729447926330623113" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8729447926330623118" nodeInfo="nn">
-                    <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623085" resolveInfo="maxExclude" />
+                    <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623085" resolveInfo="rightExclude" />
                   </node>
                 </node>
               </node>
@@ -934,7 +934,7 @@
               <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8729447926330623127" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="8729447926330623126" nodeInfo="nn" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8729447926330623131" nodeInfo="nn">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623085" resolveInfo="maxExclude" />
+                  <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623085" resolveInfo="rightExclude" />
                 </node>
               </node>
             </node>
@@ -1028,14 +1028,14 @@
                 <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6591434695300605856" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellKeyMap_FunctionParm_selectedNode" typeId="tpc2.1402906326896143883" id="6591434695300605855" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6591434695300605860" nodeInfo="nn">
-                    <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623084" resolveInfo="minExclude" />
+                    <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623084" resolveInfo="leftExclude" />
                   </node>
                 </node>
               </node>
               <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8729447926330623186" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellKeyMap_FunctionParm_selectedNode" typeId="tpc2.1402906326896143883" id="8729447926330623185" nodeInfo="nn" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8729447926330623190" nodeInfo="nn">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623084" resolveInfo="minExclude" />
+                  <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623084" resolveInfo="leftExclude" />
                 </node>
               </node>
             </node>
@@ -1059,7 +1059,7 @@
               <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="376695306816946198" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellKeyMap_FunctionParm_selectedNode" typeId="tpc2.1402906326896143883" id="376695306816946199" nodeInfo="nn" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="376695306816946200" nodeInfo="nn">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623084" resolveInfo="minExclude" />
+                  <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623084" resolveInfo="leftExclude" />
                 </node>
               </node>
             </node>
@@ -1083,7 +1083,7 @@
               <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="376695306816949608" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellKeyMap_FunctionParm_selectedNode" typeId="tpc2.1402906326896143883" id="376695306816949609" nodeInfo="nn" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="376695306816949610" nodeInfo="nn">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623084" resolveInfo="minExclude" />
+                  <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623084" resolveInfo="leftExclude" />
                 </node>
               </node>
             </node>
@@ -1111,14 +1111,14 @@
                 <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6591434695300615955" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellKeyMap_FunctionParm_selectedNode" typeId="tpc2.1402906326896143883" id="6591434695300615956" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6591434695300615962" nodeInfo="nn">
-                    <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623085" resolveInfo="maxExclude" />
+                    <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623085" resolveInfo="rightExclude" />
                   </node>
                 </node>
               </node>
               <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6591434695300615958" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellKeyMap_FunctionParm_selectedNode" typeId="tpc2.1402906326896143883" id="6591434695300615959" nodeInfo="nn" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6591434695300615961" nodeInfo="nn">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623085" resolveInfo="maxExclude" />
+                  <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623085" resolveInfo="rightExclude" />
                 </node>
               </node>
             </node>

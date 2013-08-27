@@ -407,6 +407,7 @@
       <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8257817273847034310" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="closureFunction" />
         <property name="inline" nameId="x27k.5679441017213716505" value="false" />
+        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8257817273847034310" />
         <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8257817273847034311" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2179155938639636876" nodeInfo="ng">
             <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2179155938639636877" nodeInfo="ng">
