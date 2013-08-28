@@ -59,7 +59,6 @@
   <property name="com.mbeddr.ext.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.ext/build/artifacts/com.mbeddr.ext.build" />  
   <property name="com.mbeddr.ext.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.ext" />     
   <property name="com.mbeddr.ext.components-build-file.name" value="build-components.xml" /> 
-  <property name="com.mbeddr.ext.exceptionhandling-build-file.name" value="build-exceptionhandling.xml" /> 
   <property name="com.mbeddr.ext.SmInComp-build-file.name" value="build-SmInComp.xml" /> 
   <property name="com.mbeddr.ext.units-build-file.name" value="build-units.xml" /> 
   <property name="com.mbeddr.ext.statemachine-build-file.name" value="build-statemachine.xml" /> 
@@ -282,8 +281,6 @@
   
 	  <ant antfile="${com.mbeddr.ext.SmInComp-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.ext.SmInComp-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />
-	  <ant antfile="${com.mbeddr.ext.exceptionhandling-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />
-	  <ant antfile="${com.mbeddr.ext.exceptionhandling-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />
 	  
 	  <ant antfile="${com.mbeddr.cc.ple-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.cc.ple-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${build-plugin.task}" />
