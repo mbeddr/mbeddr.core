@@ -2835,6 +2835,84 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7543052622807001198" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="wrappingFunction" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7543052622807001198" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7543052622807001199" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="7543052622807162625" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7543052622807162983" nodeInfo="ng">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2532836982811838746" resolveInfo="divide" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="7543052622807163411" nodeInfo="ng">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="7543052622807001231" resolveInfo="u" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="7543052622807179530" nodeInfo="ng">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="7543052622807001235" resolveInfo="t" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="7543052622807001220" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node role="valueType" roleId="mj1l.7336544617004013388" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="7543052622807001221" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.CompositeUnitDeclaration" typeId="ym4j.3801772042669047863" id="7543052622807001222" nodeInfo="ng">
+          <node role="components" roleId="ym4j.3801772042669047864" type="ym4j.UnitWithExponent" typeId="ym4j.3801772042669047322" id="7543052622807001223" nodeInfo="ng">
+            <property name="exponent" nameId="ym4j.3801772042669047325" value="1" />
+            <node role="unit" roleId="ym4j.3801772042669047323" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7543052622807001224" nodeInfo="ng">
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7543052622807001230" resolveInfo="U" />
+            </node>
+          </node>
+          <node role="components" roleId="ym4j.3801772042669047864" type="ym4j.UnitWithExponent" typeId="ym4j.3801772042669047322" id="7543052622807001225" nodeInfo="ng">
+            <property name="exponent" nameId="ym4j.3801772042669047325" value="-1" />
+            <node role="unit" roleId="ym4j.3801772042669047323" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7543052622807001226" nodeInfo="ng">
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7543052622807001228" resolveInfo="T" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3c6d.GenericUnitAnnotation" typeId="3c6d.2410497733752027367" id="7543052622807001227" nodeInfo="ng">
+        <node role="decl" roleId="3c6d.2410497733752075988" type="3c6d.GenericUnitDeclaration" typeId="3c6d.2410497733752038971" id="7543052622807001228" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="T" />
+        </node>
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3c6d.GenericUnitAnnotation" typeId="3c6d.2410497733752027367" id="7543052622807001229" nodeInfo="ng">
+        <node role="decl" roleId="3c6d.2410497733752075988" type="3c6d.GenericUnitDeclaration" typeId="3c6d.2410497733752038971" id="7543052622807001230" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="U" />
+        </node>
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="7543052622807001231" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="u" />
+        <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="7543052622807001232" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="valueType" roleId="mj1l.7336544617004013388" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="7543052622807001233" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7543052622807001234" nodeInfo="ng">
+            <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7543052622807001230" resolveInfo="U" />
+          </node>
+        </node>
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="7543052622807001235" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="t" />
+        <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="7543052622807001236" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="valueType" roleId="mj1l.7336544617004013388" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="7543052622807001237" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7543052622807001238" nodeInfo="ng">
+            <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7543052622807001228" resolveInfo="T" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2410497733756165309" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1377026272914_6" />
     </node>
@@ -2898,6 +2976,37 @@
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2410497733800799422" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="7543052622807363470" nodeInfo="ng">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7543052622807363470" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7543052622807769015" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="7543052622808025055" nodeInfo="ng">
+              <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7543052622808025056" nodeInfo="ng">
+                <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2410497733801705093" resolveInfo="mps" />
+              </node>
+              <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7543052622807852836" nodeInfo="ng">
+                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+              </node>
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7543052622807363524" nodeInfo="ng">
+              <link role="function" roleId="x27k.5950410542643524493" targetNodeId="7543052622807001198" resolveInfo="wrappingFunction" />
+              <node role="actuals" roleId="x27k.5950410542643524495" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="7543052622807369532" nodeInfo="ng">
+                <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="7543052622807369533" nodeInfo="ng" />
+                <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7543052622807363659" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                </node>
+              </node>
+              <node role="actuals" roleId="x27k.5950410542643524495" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="7543052622807615987" nodeInfo="ng">
+                <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="7543052622807615988" nodeInfo="ng" />
+                <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7543052622807381439" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.8860443239512128104" value="5" />
                 </node>
               </node>
             </node>
