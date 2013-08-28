@@ -85,7 +85,6 @@
       </node>
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9125142491355884620" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="9125142491355885662" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9125142491355885662" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="9125142491355885669" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9125142491355885672" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
@@ -112,7 +111,6 @@
       <property name="name" nameId="tpck.1169194664001" value="f" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9125142491355884678" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="9125142491355884683" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9125142491355884683" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="9125142491355884696" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9125142491355884699" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
@@ -122,9 +120,7 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.FailStatement" typeId="yz9a.1937609356306123790" id="9125142491355901742" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9125142491355901742" />
-        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.FailStatement" typeId="yz9a.1937609356306123790" id="9125142491355901742" nodeInfo="ng" />
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9125142491355884675" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />

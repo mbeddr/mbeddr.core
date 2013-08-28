@@ -59,7 +59,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1222391808947549205" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1222391808947549205" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1222391808947549206" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="1222391808947549208" nodeInfo="ng">
           <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="1222391808947549219" nodeInfo="ng">
@@ -156,7 +155,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="1222391808947549198" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="testModifyState" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1222391808947549198" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1222391808947549199" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -174,7 +172,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="1222391808947549234" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1222391808947549234" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="1222391808947549238" nodeInfo="ng">
             <link role="state" roleId="clqz.2558982571829202228" targetNodeId="1222391808947435157" resolveInfo="S1" />
             <node role="expr" roleId="clqz.2558982571829189198" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1222391808947549240" nodeInfo="ng">
@@ -189,7 +186,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="1222391808947549254" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1222391808947549254" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="1222391808947549255" nodeInfo="ng">
             <link role="state" roleId="clqz.2558982571829202228" targetNodeId="1222391808947435159" resolveInfo="S2" />
             <node role="expr" roleId="clqz.2558982571829189198" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1222391808947549256" nodeInfo="ng">
@@ -204,7 +200,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="1222391808947549267" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1222391808947549267" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="1222391808947549268" nodeInfo="ng">
             <link role="state" roleId="clqz.2558982571829202228" targetNodeId="1222391808947435161" resolveInfo="S3" />
             <node role="expr" roleId="clqz.2558982571829189198" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1222391808947549269" nodeInfo="ng">
@@ -268,7 +263,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="1222391808947629820" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="testSetVariable" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1222391808947629820" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1222391808947629821" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -286,7 +280,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="1222391808947629856" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1222391808947629856" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="1222391808947629858" nodeInfo="ng">
             <link role="state" roleId="clqz.2558982571829202228" targetNodeId="1222391808947629810" resolveInfo="S1" />
             <node role="expr" roleId="clqz.2558982571829189198" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1222391808947629860" nodeInfo="ng">
@@ -301,7 +294,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="1222391808947629872" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1222391808947629872" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="1222391808947629873" nodeInfo="ng">
             <link role="state" roleId="clqz.2558982571829202228" targetNodeId="1222391808947629810" resolveInfo="S1" />
             <node role="expr" roleId="clqz.2558982571829189198" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1222391808947629874" nodeInfo="ng">
@@ -329,7 +321,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="1222391808947865231" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1222391808947865231" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="1222391808947865232" nodeInfo="ng">
             <link role="state" roleId="clqz.2558982571829202228" targetNodeId="1222391808947629813" resolveInfo="S2" />
             <node role="expr" roleId="clqz.2558982571829189198" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1222391808947865233" nodeInfo="ng">
@@ -422,7 +413,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6183633367244865617" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="testCheckTransition" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6183633367244865617" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6183633367244865618" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -440,7 +430,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6183633367244865720" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6183633367244865720" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="6183633367244865722" nodeInfo="ng">
             <link role="state" roleId="clqz.2558982571829202228" targetNodeId="6183633367244865673" resolveInfo="S1" />
             <node role="expr" roleId="clqz.2558982571829189198" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6183633367244865724" nodeInfo="ng">
@@ -455,7 +444,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6183633367244921763" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6183633367244921763" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.HasTransitionFiredExpr" typeId="clqz.6183633367244876538" id="6183633367244921765" nodeInfo="ng">
             <link role="transition" roleId="clqz.6183633367244876545" targetNodeId="6183633367244865678" />
             <node role="expr" roleId="clqz.6183633367244876544" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6183633367244921767" nodeInfo="ng">
@@ -464,7 +452,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6183633367245044737" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6183633367245044737" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="6183633367245044739" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.HasTransitionFiredExpr" typeId="clqz.6183633367244876538" id="6183633367245044741" nodeInfo="ng">
               <link role="transition" roleId="clqz.6183633367244876545" targetNodeId="6183633367244865694" />
@@ -491,7 +478,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6183633367245044771" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6183633367245044771" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="6183633367245044772" nodeInfo="ng">
             <link role="state" roleId="clqz.2558982571829202228" targetNodeId="6183633367244865673" resolveInfo="S1" />
             <node role="expr" roleId="clqz.2558982571829189198" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6183633367245044773" nodeInfo="ng">
@@ -506,7 +492,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6183633367245044776" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6183633367245044776" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.HasTransitionFiredExpr" typeId="clqz.6183633367244876538" id="6183633367245044777" nodeInfo="ng">
             <link role="transition" roleId="clqz.6183633367244876545" targetNodeId="6183633367244865694" />
             <node role="expr" roleId="clqz.6183633367244876544" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6183633367245044778" nodeInfo="ng">

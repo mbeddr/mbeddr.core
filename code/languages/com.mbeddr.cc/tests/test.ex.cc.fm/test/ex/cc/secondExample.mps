@@ -97,7 +97,6 @@
       <property name="name" nameId="tpck.1169194664001" value="measure" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3017602783212238094" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="1683704241753519624" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1683704241753519624" />
           <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="1683704241753519625" nodeInfo="ng">
             <link role="table" roleId="k146.2688792604367964824" targetNodeId="1683704241753519617" resolveInfo="messages" />
             <link role="msg" roleId="k146.2688792604367964825" targetNodeId="1683704241753519618" resolveInfo="startingMeasurement" />
@@ -164,7 +163,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="1683704241753519630" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1683704241753519630" />
           <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="1683704241753519631" nodeInfo="ng">
             <link role="table" roleId="k146.2688792604367964824" targetNodeId="1683704241753519617" resolveInfo="messages" />
             <link role="msg" roleId="k146.2688792604367964825" targetNodeId="1683704241753519619" resolveInfo="finishingMeasurement" />
