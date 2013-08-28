@@ -592,6 +592,9 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1670233242585856812" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2688792604368329409" resolveInfo="ICodeLocationAware" />
     </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5753893129145072726" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5753893129145069284" resolveInfo="ICallableWithSignature" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2093108837558505658" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
@@ -1055,6 +1058,9 @@
     <property name="name" nameId="tpck.1169194664001" value="PureFunctionAnnotation" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5753893129145069284" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="ICallableWithSignature" />
   </root>
 </model>
 
