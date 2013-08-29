@@ -2838,7 +2838,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7543052622807001198" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="wrappingFunction" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7543052622807001198" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7543052622807001199" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="7543052622807162625" nodeInfo="ng">
           <node role="expression" roleId="x27k.8967919205527146150" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7543052622807162983" nodeInfo="ng">
@@ -2982,7 +2981,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="7543052622807363470" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7543052622807363470" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7543052622807769015" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="7543052622808025055" nodeInfo="ng">
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7543052622808025056" nodeInfo="ng">

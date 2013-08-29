@@ -106,7 +106,6 @@
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2144336194025147048" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="testNoThrowInCatch" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2144336194025147048" />
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2144336194025147049" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="skt0.TryCatchStatement" typeId="skt0.591155063063570513" id="2144336194025143080" nodeInfo="ng">
               <node role="exceptions" roleId="skt0.9206976458323323627" type="skt0.Catch" typeId="skt0.3134547887598524928" id="2144336194025143082" nodeInfo="ng">
@@ -160,7 +159,6 @@
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2144336194025143075" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="testThrowIsTheLastStatementInFinally" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2144336194025143075" />
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2144336194025143076" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2144336194025143077" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="skt0.TryCatchStatement" typeId="skt0.591155063063570513" id="2144336194025147017" nodeInfo="ng">
@@ -221,7 +219,6 @@
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2144336194025147052" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="testCurrentErrorOnlyInThrowInFinally" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2144336194025147052" />
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2144336194025147053" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="skt0.TryCatchStatement" typeId="skt0.591155063063570513" id="2144336194025159167" nodeInfo="ng">
               <node role="body" roleId="skt0.9206976458323343924" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2144336194025159168" nodeInfo="ng" />
