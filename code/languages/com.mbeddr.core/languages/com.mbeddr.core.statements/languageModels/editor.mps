@@ -556,6 +556,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="arbitraryText" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.3830958861296879113" resolveInfo="AbritraryTextItem" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="3830958861296885944" nodeInfo="ng">
+      <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="c4fa.3830958861296879114" resolveInfo="text" />
     </node>
   </root>
