@@ -81,7 +81,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="ComponentsCBMCAnalysis" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="components analysis" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6472990431939799913" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="analyzedComponent" />
@@ -93,7 +93,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="AssertionsCBMCAnalysis" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="assertions_analysis_config" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4887422885165621122" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CPROVERassume" />
@@ -129,7 +129,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="DecTabCBMCAnalysis" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="decTab_analysis_config" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5070503009225669554" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="decTabContainer" />
@@ -140,7 +140,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="StatemachineCBMCAnalysis" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="statemachine_analysis_config" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8376973589777602108" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="satemachine" />
@@ -342,7 +342,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="RobustnessCBMCAnalysis" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="robustness_analysis_config" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="9047848667681374187" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="check_div_by_zero" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
@@ -367,6 +367,11 @@
       <property name="name" nameId="tpck.1169194664001" value="check_nan" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8780453576634979155" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
+    <property name="name" nameId="tpck.1169194664001" value="CProverBasedMbeddrAnalysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
   </root>
 </model>
 
