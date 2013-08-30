@@ -15,6 +15,12 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4577779292081940161" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4577779292081940160" resolveInfo="ITrace" />
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080550132" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="trace" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080550291" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+      </node>
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="439567521322928999" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TraceKind" />
@@ -69,6 +75,12 @@
       <property name="role" nameId="tpce.1071599776563" value="refs" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="439567521322959422" resolveInfo="TraceTargetProviderRef" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080550337" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="traceTargetProviderAttr" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080550338" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+      </node>
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="439567521322959422" nodeInfo="ig">

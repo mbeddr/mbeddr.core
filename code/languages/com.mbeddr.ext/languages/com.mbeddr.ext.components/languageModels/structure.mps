@@ -1464,6 +1464,12 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2481387216194884712" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2481387216194884709" resolveInfo="IMayRequiresComponentInitializer" />
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080461589" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="externalStorrageLocation" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080470137" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="4491876417845628840" resolveInfo="ProvidedPort" />
+      </node>
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2481387216194884709" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances" />

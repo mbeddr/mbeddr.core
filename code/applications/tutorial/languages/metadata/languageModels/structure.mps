@@ -7,6 +7,8 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="15" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2945795531676751370" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="AccessSpec" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
@@ -15,6 +17,12 @@
       <property name="role" nameId="tpce.1071599776563" value="permissions" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2945795531676751374" resolveInfo="Permission" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080461097" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="accessSpec" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080461156" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
+      </node>
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2945795531676751374" nodeInfo="ig">
@@ -76,6 +84,12 @@
       <property name="role" nameId="tpce.1071599776563" value="role" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2945795531676751395" resolveInfo="RoleSpec" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080520200" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="moduleRole" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080520201" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
+      </node>
     </node>
   </root>
 </model>

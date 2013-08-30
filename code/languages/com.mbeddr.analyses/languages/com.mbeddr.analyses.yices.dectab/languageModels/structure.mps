@@ -10,6 +10,12 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8132151755547132154" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DecTabVerifiableAttribute" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080516382" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="verifiable" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080516383" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
+      </node>
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4961438297707637941" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="AssertWithNegatedDisjunction" />
@@ -30,6 +36,12 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5780134359532729279" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="GSwitchVerifiableAttribute" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080461176" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="verifiable" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080461233" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="k146.6209595569797561318" resolveInfo="GSwitchExpression" />
+      </node>
+    </node>
   </root>
 </model>
 

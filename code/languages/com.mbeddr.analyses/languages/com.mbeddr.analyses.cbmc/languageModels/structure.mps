@@ -17,6 +17,12 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2161187783549671007" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DecTabCheckAttribute" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080460806" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="checked" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080461094" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
+      </node>
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="535044775891207547" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="VerificationConfigurationAttribute" />
@@ -40,10 +46,22 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="x27k.8105003328814797298" resolveInfo="IFunctionLike" />
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080520204" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="verificationConfig" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080520205" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="v7ag.4491876417845474761" resolveInfo="Component" />
+      </node>
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5858278990856237301" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="StatemachineCheckAttribute" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080499657" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="checked" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080499658" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="clqz.5778488248013533809" resolveInfo="Statemachine" />
+      </node>
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6472990431939799907" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
@@ -337,6 +355,12 @@
     <property name="name" nameId="tpck.1169194664001" value="MacroAbstraction" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="manual_abstraction" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080461585" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="abstracted" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080461586" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="clqz.5338908363445763648" resolveInfo="ConditionMacro" />
+      </node>
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9047848667681355291" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />

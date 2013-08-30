@@ -990,6 +990,12 @@
     <property name="name" nameId="tpck.1169194664001" value="WillBeInitializedAnnotation" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080470223" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="willBeInitializedAnnotation" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080470226" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+      </node>
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3376775282622611165" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="global" />
@@ -1053,11 +1059,23 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080470207" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="typeOverrider" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080470208" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="8011039602902827386" resolveInfo="ICallLike" />
+      </node>
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3050776329678832482" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="PureFunctionAnnotation" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080551574" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="pure" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080551575" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="6437088627575723997" resolveInfo="FunctionSignature" />
+      </node>
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5753893129145069284" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ICallableWithSignature" />
