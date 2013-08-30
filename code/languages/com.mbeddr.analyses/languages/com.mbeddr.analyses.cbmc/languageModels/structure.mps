@@ -28,6 +28,12 @@
     <property name="name" nameId="tpck.1169194664001" value="VerificationConfigurationAttribute" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080520204" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="verificationConfig" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080520205" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="v7ag.4491876417845474761" resolveInfo="Component" />
+      </node>
+    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2017717622748544591" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="unwindingDepth" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
@@ -45,12 +51,6 @@
       <property name="role" nameId="tpce.1071599776563" value="verificationEntryPoint" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="x27k.8105003328814797298" resolveInfo="IFunctionLike" />
-    </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080520204" nodeInfo="ng">
-      <property name="role" nameId="tpce.7588428831955550663" value="verificationConfig" />
-      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080520205" nodeInfo="ng">
-        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="v7ag.4491876417845474761" resolveInfo="Component" />
-      </node>
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5858278990856237301" nodeInfo="ig">
@@ -71,7 +71,7 @@
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6472990431939799908" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="entryPoint" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="x27k.8105003328814797298" resolveInfo="IFunctionLike" />
     </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6472990431939799909" nodeInfo="ig">
@@ -99,7 +99,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="ComponentsCBMCAnalysis" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="components analysis" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6472990431939799913" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="analyzedComponent" />
@@ -111,7 +111,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="AssertionsCBMCAnalysis" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="assertions_analysis_config" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4887422885165621122" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CPROVERassume" />
@@ -147,7 +147,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="DecTabCBMCAnalysis" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="decTab_analysis_config" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5070503009225669554" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="decTabContainer" />
@@ -158,7 +158,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="StatemachineCBMCAnalysis" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="statemachine_analysis_config" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8376973589777602108" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="satemachine" />
@@ -366,7 +366,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="RobustnessCBMCAnalysis" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="robustness_analysis_config" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="9047848667681374187" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="check_div_by_zero" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
@@ -391,6 +391,11 @@
       <property name="name" nameId="tpck.1169194664001" value="check_nan" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8780453576634979155" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
+    <property name="name" nameId="tpck.1169194664001" value="CProverBasedMbeddrAnalysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
   </root>
 </model>
 
