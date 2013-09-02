@@ -98,6 +98,12 @@
       <property name="name" nameId="tpck.1169194664001" value="label" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080499562" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="report" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080499563" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="c4fa.2093108837558113914" resolveInfo="LocalVarRef" />
+      </node>
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1937609356306123790" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="FailStatement" />
@@ -170,6 +176,12 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8237788667541741070" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080470283" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="testHelperFunction" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080470284" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="x27k.8105003328814797298" resolveInfo="IFunctionLike" />
+      </node>
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3387987015204930488" nodeInfo="ig">

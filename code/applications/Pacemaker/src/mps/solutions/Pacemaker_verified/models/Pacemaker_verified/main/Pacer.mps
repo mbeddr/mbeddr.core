@@ -12,7 +12,7 @@
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="12" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="11" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="15" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="22" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="8yj6" modelUID="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" version="0" implicit="yes" />
@@ -233,8 +233,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="5688055005366700385" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="5688055005366700351" resolveInfo="paceController" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="5688055005366700360" resolveInfo="onTickEvent" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="5688055005366700351" resolveInfo="paceController" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="5688055005366700360" resolveInfo="onTickEvent" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4887422885165609445" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -257,8 +257,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="5688055005366701747" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="5688055005366700351" resolveInfo="paceController" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="5688055005366700209" resolveInfo="setTicksBetweenPulses" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="5688055005366700351" resolveInfo="paceController" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="5688055005366700209" resolveInfo="setTicksBetweenPulses" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4887422885165609446" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -288,8 +288,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="5688055005366701763" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="5688055005366700351" resolveInfo="paceController" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="5688055005366700220" resolveInfo="setPacingtimeSpan" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="5688055005366700351" resolveInfo="paceController" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="5688055005366700220" resolveInfo="setPacingtimeSpan" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4887422885165609442" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -417,7 +417,6 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="conditions" roleId="v7ag.6591434695300694134" type="v7ag.PreCondition" typeId="v7ag.6591434695300694135" id="3054948287602647389" nodeInfo="ng">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3054948287602647389" />
           <node role="expr" roleId="v7ag.6591434695300694136" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="4887422885165609435" nodeInfo="ng">
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PPCParamRef" typeId="v7ag.6591434695300703522" id="4887422885165609436" nodeInfo="ng">
               <link role="param" roleId="v7ag.6591434695300703523" targetNodeId="5688055005366700211" resolveInfo="newVal" />
@@ -716,8 +715,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="3501833067872371161" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="3501833067872371157" resolveInfo="batteyHandler" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="3501833067872371148" resolveInfo="onBatteryLowEvent" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="3501833067872371157" resolveInfo="batteyHandler" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="3501833067872371148" resolveInfo="onBatteryLowEvent" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3501833067872371162" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -734,8 +733,8 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="3501833067872371166" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="3501833067872371157" resolveInfo="batteyHandler" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="3501833067872371152" resolveInfo="readBatteryLevel" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="3501833067872371157" resolveInfo="batteyHandler" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="3501833067872371152" resolveInfo="readBatteryLevel" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3501833067872371167" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -759,8 +758,8 @@
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3501833067872371198" nodeInfo="ng" />
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="3501833067872371199" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="3501833067872371194" resolveInfo="dCMInterface" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="3501833067872371173" resolveInfo="reportEvent" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="3501833067872371194" resolveInfo="dCMInterface" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="3501833067872371173" resolveInfo="reportEvent" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3501833067872371200" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />

@@ -202,6 +202,15 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2410497733752038971" resolveInfo="GenericUnitDeclaration" />
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080515105" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="genericTypes" />
+      <node role="multiple" roleId="tpce.7588428831955550186" type="tpce.AttributeInfo_IsMultiple" typeId="tpce.6054523464626862044" id="6569298311080516344" nodeInfo="ng">
+        <property name="value" nameId="tpce.6054523464626875854" value="true" />
+      </node>
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080516345" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="x27k.5753893129145069284" resolveInfo="ICallableWithSignature" />
+      </node>
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2410497733752038971" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="generics" />
@@ -219,6 +228,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2382294775776544839" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3092622784654610402" resolveInfo="IVisibleUnitsProviderForC" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080550625" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="" />
     </node>
   </root>
 </model>

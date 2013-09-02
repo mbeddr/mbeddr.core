@@ -35,6 +35,12 @@
       <property name="name" nameId="tpck.1169194664001" value="clearOnImport" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080516386" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="csvimport" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080516555" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="75wo.8745401669462963169" resolveInfo="RequirementsModule" />
+      </node>
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5168147777591819969" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IRequirementMapper" />

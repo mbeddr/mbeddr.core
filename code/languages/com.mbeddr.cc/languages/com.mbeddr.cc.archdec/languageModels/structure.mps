@@ -410,6 +410,9 @@
     <property name="name" nameId="tpck.1169194664001" value="ArchDecModuleRefAttr" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="trace" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="26ao.439567521322959418" resolveInfo="TraceTargetProviderRefAttr" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080461167" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4837632670852670561" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="trace" />
