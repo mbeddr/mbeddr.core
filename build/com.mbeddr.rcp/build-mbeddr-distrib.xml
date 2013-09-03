@@ -9,6 +9,7 @@
   <property name="multiline.artifacts" location="${basedir}/../mps-multiline/build/artifacts/mps-multiline" />
   <property name="richtext.artifacts" location="${basedir}/../mps-richtext/build/artifacts/mps-richtext" />
   <property name="override.artifacts" location="${basedir}/../mps-editor-override/build/artifacts/mps-editor-override" />
+  <property name="tables.artifacts" location="${basedir}/../mps-tables/build/artifacts/mps-tables" />
   <property name="artifacts.com.mbeddr.rcp.branding" location="${build.dir}/artifacts/com.mbeddr.rcp.branding" />
   <property name="artifacts.jetbrains.mps.standalone" location="${build.dir}/artifacts/jetbrains.mps.standalone" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />
@@ -28,6 +29,7 @@
   <property name="artifacts.com.mbeddr.doc.build" location="../com.mbeddr.doc/build/artifacts/com.mbeddr.doc.build" />
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
+  <property name="artifacts.mps-tables" location="${tables.artifacts}" />
   <property name="artifacts.mps-editor-override" location="${override.artifacts}" />
   <property name="artifacts.mpsStandalone" location="${mps.home}" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps.home}/plugins" />
@@ -88,6 +90,7 @@
       <tarfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/mps-tables/mps-tables.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${artifacts.mpsDebuggerPlugin}/mps-execution-api" prefix="mbeddr ${version}/plugins/mps-execution-api" />
       <tarfileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-api" prefix="mbeddr ${version}/plugins/mps-debugger-api" />
       <tarfileset dir="${artifacts.mpsTesting}/mps-testing" prefix="mbeddr ${version}/plugins/mps-testing" />
@@ -127,6 +130,7 @@
       <zipfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/mps-tables/mps-tables.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${artifacts.mpsDebuggerPlugin}/mps-execution-api" prefix="mbeddr ${version}/plugins/mps-execution-api" />
       <zipfileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-api" prefix="mbeddr ${version}/plugins/mps-debugger-api" />
       <zipfileset dir="${artifacts.mpsTesting}/mps-testing" prefix="mbeddr ${version}/plugins/mps-testing" />
@@ -198,6 +202,7 @@
       <zipfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/mps-tables/mps-tables.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${artifacts.mpsDebuggerPlugin}/mps-execution-api" prefix="mbeddr ${buildnumber}.app/plugins/mps-execution-api" />
       <zipfileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-api" prefix="mbeddr ${buildnumber}.app/plugins/mps-debugger-api" />
       <zipfileset dir="${artifacts.mpsTesting}/mps-testing" prefix="mbeddr ${buildnumber}.app/plugins/mps-testing" />
@@ -276,6 +281,8 @@
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" />
     <unzip src="${artifacts.mps-editor-override}/mps-editor-override.zip" dest="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
