@@ -875,6 +875,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Adder" />
       <node role="interfaces" roleId="bgic.4390449211807506536" type="bgic.Port" typeId="bgic.4390449211807506531" id="7977993180520273429" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="a" />
+        <property name="dir" nameId="bgic.4390449211807506544" value="0" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7977993180520273431" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -882,6 +883,7 @@
       </node>
       <node role="interfaces" roleId="bgic.4390449211807506536" type="bgic.Port" typeId="bgic.4390449211807506531" id="7977993180520273433" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="b" />
+        <property name="dir" nameId="bgic.4390449211807506544" value="0" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7977993180520273435" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -951,6 +953,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Integrator" />
       <node role="interfaces" roleId="bgic.4390449211807506536" type="bgic.Port" typeId="bgic.4390449211807506531" id="7977993180520273474" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="signal" />
+        <property name="dir" nameId="bgic.4390449211807506544" value="0" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="7977993180520273476" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
