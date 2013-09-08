@@ -395,6 +395,8 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8780453576634979155" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="CProverBasedMbeddrAnalysis" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
   </root>
 </model>
