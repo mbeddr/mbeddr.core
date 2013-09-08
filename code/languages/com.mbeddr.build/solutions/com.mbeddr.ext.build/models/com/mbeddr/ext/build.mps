@@ -1546,20 +1546,6 @@
           </node>
         </node>
       </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="6600513366562260645" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6600513366562260646" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427554609" resolveInfo="mbeddr.ext" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260647" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260648" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.ext.exceptionhandling" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260649" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="exceptionhandling.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="6600513366562260650" nodeInfo="ng">
         <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6600513366562260651" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427554609" resolveInfo="mbeddr.ext" />
@@ -1583,20 +1569,6 @@
               <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.ext.physicalunits.c" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260659" nodeInfo="nn">
                 <property name="head" nameId="3ior.8618885170173601779" value="c.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="6600513366562260666" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6600513366562260667" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427554609" resolveInfo="mbeddr.ext" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260668" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="solutions" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260669" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.ext.exceptionhandling.lib" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260670" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.ext.exceptionhandling.library.msd" />
               </node>
             </node>
           </node>
@@ -1644,20 +1616,6 @@
           </node>
         </node>
       </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="6600513366562260686" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6600513366562260687" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427554609" resolveInfo="mbeddr.ext" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260688" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260689" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="test.ex.ext.exceptionhandling" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260690" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="exceptionhandling.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="6600513366562260691" nodeInfo="ng">
         <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6600513366562260692" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427554609" resolveInfo="mbeddr.ext" />
@@ -1700,20 +1658,6 @@
           </node>
         </node>
       </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="6600513366562260706" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6600513366562260707" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427554609" resolveInfo="mbeddr.ext" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260708" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260709" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="test.ts.ext.exceptionhandling" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260710" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="exceptionhandling.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="6600513366562260711" nodeInfo="ng">
         <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6600513366562260712" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427554609" resolveInfo="mbeddr.ext" />
@@ -1723,20 +1667,6 @@
               <property name="head" nameId="3ior.8618885170173601779" value="test.ts.ext.physicalunits.c" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260715" nodeInfo="nn">
                 <property name="head" nameId="3ior.8618885170173601779" value="c.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="6600513366562260716" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6600513366562260717" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427554609" resolveInfo="mbeddr.ext" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260718" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260719" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="test.ts.ext.statemachine" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6600513366562260720" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="statemachine.msd" />
               </node>
             </node>
           </node>
