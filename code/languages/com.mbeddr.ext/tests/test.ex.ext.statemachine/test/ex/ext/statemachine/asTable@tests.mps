@@ -49,63 +49,66 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="373648484609159036" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="TL" />
-      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="373648484609159046" resolveInfo="red" />
-      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="373648484611567629" nodeInfo="ng">
+      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="273734302198129105" resolveInfo="initial" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="273734302198129764" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="timeout" />
       </node>
-      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="373648484614380077" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="hallo" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="273734302198129154" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="pedButtonPressed" />
       </node>
-      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="373648484609159069" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="pedBut" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="273734302198129306" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="indLoopSignal" />
       </node>
-      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="373648484609159075" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="carSensor" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="273734302198129458" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="shutdown" />
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="273734302198129105" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="initial" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="273734302198129383" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="373648484609159046" resolveInfo="car_green" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="273734302198129389" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="273734302198129764" resolveInfo="timeout" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="373648484609159046" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="red" />
-        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="373648484611567612" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="373648484609159051" resolveInfo="yellow" />
-          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="373648484611567616" nodeInfo="ng">
-            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="373648484609159069" resolveInfo="pedBut" />
+        <property name="name" nameId="tpck.1169194664001" value="car_green" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="273734302198129392" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="273734302198129111" resolveInfo="ped_green" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="273734302198129398" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="273734302198129764" resolveInfo="timeout" />
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="273734302198129740" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="273734302198129111" resolveInfo="ped_green" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="273734302198129756" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="273734302198129154" resolveInfo="pedButtonPressed" />
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="273734302198129603" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="273734302198129566" resolveInfo="shutdown" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="273734302198129615" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="273734302198129458" resolveInfo="shutdown" />
           </node>
         </node>
       </node>
-      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="373648484609159051" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="yellow" />
-        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="373648484620599813" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="373648484609159046" resolveInfo="red" />
-          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="373648484620599814" nodeInfo="ng">
-            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="373648484614380077" resolveInfo="hallo" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="273734302198129111" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="ped_green" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="273734302198129401" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="373648484609159046" resolveInfo="car_green" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="273734302198129407" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="273734302198129764" resolveInfo="timeout" />
           </node>
         </node>
-        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="373648484618231061" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="373648484609159046" resolveInfo="red" />
-          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="373648484618231062" nodeInfo="ng">
-            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="373648484614380077" resolveInfo="hallo" />
-          </node>
-        </node>
-        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="373648484618231089" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="373648484609159059" resolveInfo="green" />
-          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="373648484618231090" nodeInfo="ng">
-            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="373648484614380077" resolveInfo="hallo" />
-          </node>
-        </node>
-        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="373648484611567639" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="373648484609159059" resolveInfo="green" />
-          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="373648484611567643" nodeInfo="ng">
-            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="373648484611567629" resolveInfo="timeout" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="273734302198129633" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="273734302198129566" resolveInfo="shutdown" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="273734302198129634" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="273734302198129458" resolveInfo="shutdown" />
           </node>
         </node>
       </node>
-      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="373648484609159059" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="green" />
-        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="373648484611567645" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="373648484609159046" resolveInfo="red" />
-          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="373648484611567649" nodeInfo="ng">
-            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="373648484611567629" resolveInfo="timeout" />
-          </node>
-        </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="273734302198129566" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="shutdown" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="373648484609158769" nodeInfo="ng">
