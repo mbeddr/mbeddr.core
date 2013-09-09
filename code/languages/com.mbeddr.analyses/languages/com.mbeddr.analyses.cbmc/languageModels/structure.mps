@@ -94,6 +94,10 @@
       <property name="name" nameId="tpck.1169194664001" value="useCbmc" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="9134944440162076206" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="sliceFormula" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6472990431939799912" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
