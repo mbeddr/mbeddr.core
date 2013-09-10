@@ -13,8 +13,9 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="8" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="7" implicit="yes" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="8" implicit="yes" />
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2671893947946328090" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="51wr.2671893947946267774" resolveInfo="LibraryRef" />
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="2671893947946328091" nodeInfo="ng">
       <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="51wr.2671893947946267775" />
@@ -108,6 +109,7 @@
     </node>
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4809476668198876829" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="51wr.4809476668198796988" resolveInfo="Linkable" />
   </root>
 </model>

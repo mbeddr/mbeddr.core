@@ -62,6 +62,7 @@
     <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/program.jpg" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="an executable binary" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="executable" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5046689135693761556" resolveInfo="Binary" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229556924823" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229556133800" resolveInfo="ICommentable" />
@@ -85,6 +86,7 @@
     <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/program.jpg" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5046689135693761559" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -119,6 +121,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7024921229556714031" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CommentedModuleRef" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="-- don't use this --" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7717755763392524107" resolveInfo="ModuleRef" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7024921229556920134" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -136,6 +139,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2671893947946267774" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="LibraryRef" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="include a pre-built library" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2671893947946267775" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -148,11 +152,13 @@
     <property name="name" nameId="tpck.1169194664001" value="StaticLibrary" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="static library" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a non-executable lib (.a)" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5046689135693761556" resolveInfo="Binary" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7024921229556924824" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CommentedExecutable" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="-- don't use this --" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5046689135693761556" resolveInfo="Binary" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229556924825" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229556133803" resolveInfo="ICommentedCode" />
@@ -164,7 +170,14 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5323740605968447019" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Platform" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2741479916248882970" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="postProcessors" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2741479916248872192" resolveInfo="IBuildProcessor" />
+    </node>
     <node role="conceptLinkDeclaration" roleId="tpce.1137532086877" type="tpce.ReferenceConceptLinkDeclaration" typeId="tpce.1105741578420" id="4509600423770387303" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="binaryKind" />
       <link role="targetType" roleId="tpce.1105736621938" targetNodeId="tpce.1071489090640" resolveInfo="ConceptDeclaration" />
@@ -180,6 +193,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5323740605968447022" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DesktopPlatform" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="desktop" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5323740605968447019" resolveInfo="Platform" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8202952451359188138" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7123462210702867708" resolveInfo="ILOCCountProvider" />
@@ -198,6 +212,7 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2736179788492003936" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IDebuggablePlatform" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2736179788492003937" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="debugOptions" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
@@ -206,12 +221,14 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="440773076688628186" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="NothingPlatform" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nothing" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5323740605968447019" resolveInfo="Platform" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4809476668198796988" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Linkable" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="linkable" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a library that has not been created withing mbeddr" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4809476668198796989" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="path" />
@@ -220,6 +237,19 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4809476668198808306" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="name" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2741479916248872192" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IBuildProcessor" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="platform.processor" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2741479916249348519" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="platform.processor" />
+    <property name="name" nameId="tpck.1169194664001" value="DumpDataProcessor" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="dump data" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2741479916249348571" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2741479916248872192" resolveInfo="IBuildProcessor" />
     </node>
   </root>
 </model>
