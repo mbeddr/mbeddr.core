@@ -1645,7 +1645,7 @@
         </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.VerificationConfigurationAttribute" typeId="q5q6.535044775891207547" id="1634970928500910828" nodeInfo="ng">
           <property name="unwindingDepth" nameId="q5q6.2017717622748544591" value="10" />
-          <property name="analysisDepth" nameId="q5q6.441761995015233437" value="100" />
+          <property name="analysisDepth" nameId="q5q6.441761995015233437" value="10000" />
           <property name="unwindingAssertions" nameId="q5q6.2017717622748544612" value="true" />
           <link role="verificationEntryPoint" roleId="q5q6.535044775891209632" targetNodeId="1634970928501131025" resolveInfo="verification" />
         </node>

@@ -59,6 +59,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4514118643328941311" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6496796267912690432" resolveInfo="SMWithSenderReceiver" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="7156732329327443943" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7156732329327363886" resolveInfo="SMActionsInComponent" />
+      </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4459718605982799809" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605982799810" nodeInfo="ng" />
@@ -111,6 +114,9 @@
             <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6496796267912951641" nodeInfo="ng">
               <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6496796267912715526" resolveInfo="testSenderReceiver" />
             </node>
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="7156732329327406694" nodeInfo="ng">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="7156732329327392651" resolveInfo="testActionsInComp" />
+            </node>
           </node>
         </node>
       </node>
@@ -145,6 +151,9 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6496796267912951600" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6496796267912690432" resolveInfo="SMWithSenderReceiver" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7156732329327406643" nodeInfo="ng">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7156732329327363886" resolveInfo="SMActionsInComponent" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="268054603277369990" nodeInfo="ng">
@@ -484,8 +493,6 @@
           <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="4643433264761154531" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="value" />
             <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="5708867820620657209" nodeInfo="ng">
-              <property name="min" value="0" />
-              <property name="max" value="10" />
               <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329633" nodeInfo="ng">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
@@ -506,8 +513,6 @@
             <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="1598382569875781183" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="value" />
               <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="5708867820620254068" nodeInfo="ng">
-                <property name="min" value="0" />
-                <property name="max" value="10" />
                 <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329609" nodeInfo="ng">
                   <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                 </node>
@@ -1991,6 +1996,594 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6496796267912715315" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1377094709122_14" />
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7156732329327363886" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="SMActionsInComponent" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="7156732329327363910" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="ActionComp" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7156732329327363922" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="8yj6.StatemachineComponentAdapter" typeId="8yj6.8663730687027689188" id="7156732329327363914" nodeInfo="ng">
+        <node role="machine" roleId="8yj6.8663730687027689238" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="7156732329327363915" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="ActionSM" />
+          <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="7156732329327374511" resolveInfo="initial" />
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="7156732329327365075" nodeInfo="ng" />
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="7156732329327365432" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="tick" />
+          </node>
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="7156732329345967836" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="nothing" />
+          </node>
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="7156732329327365082" nodeInfo="ng" />
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="7156732329327373925" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="reset" />
+          </node>
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="7156732329327373733" nodeInfo="ng" />
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="7156732329327374511" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="initial" />
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EntryAction" typeId="clqz.4753668641245534592" id="7156732329327374802" nodeInfo="ng">
+              <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="7156732329327374803" nodeInfo="ng">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327375190" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="7156732329327375466" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327375469" nodeInfo="ng">
+                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                      <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                    </node>
+                    <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327375189" nodeInfo="ng">
+                      <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327372591" resolveInfo="entryCount" />
+                    </node>
+                  </node>
+                </node>
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327375602" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="7156732329327375890" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327375893" nodeInfo="ng">
+                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                      <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                    </node>
+                    <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327375601" nodeInfo="ng">
+                      <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327372880" resolveInfo="transitionCount" />
+                    </node>
+                  </node>
+                </node>
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327376038" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="7156732329327376338" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327376341" nodeInfo="ng">
+                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                      <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                    </node>
+                    <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327376037" nodeInfo="ng">
+                      <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327373062" resolveInfo="exitCount" />
+                    </node>
+                  </node>
+                </node>
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329345955363" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="7156732329345955675" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329345955678" nodeInfo="ng">
+                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                      <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                    </node>
+                    <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329345955362" nodeInfo="ng">
+                      <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329345951161" resolveInfo="doCount" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="7156732329327376457" nodeInfo="ng" />
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="7156732329327376552" nodeInfo="ng">
+              <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="7156732329327365499" resolveInfo="s1" />
+              <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="7156732329327376607" nodeInfo="ng">
+                <link role="event" roleId="clqz.8951398808641876049" targetNodeId="7156732329327365432" resolveInfo="tick" />
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="7156732329327376757" nodeInfo="ng">
+              <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="7156732329327374511" resolveInfo="initial" />
+              <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="7156732329327376821" nodeInfo="ng">
+                <link role="event" roleId="clqz.8951398808641876049" targetNodeId="7156732329327373925" resolveInfo="reset" />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="7156732329327374313" nodeInfo="ng" />
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="7156732329327365499" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="s1" />
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EntryAction" typeId="clqz.4753668641245534592" id="7156732329327365525" nodeInfo="ng">
+              <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="7156732329327365526" nodeInfo="ng">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327365566" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="7156732329327365922" nodeInfo="ng">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327376919" nodeInfo="ng">
+                      <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327372591" resolveInfo="entryCount" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.DoAction" typeId="clqz.8409287311039121599" id="7156732329345968108" nodeInfo="ng">
+              <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="7156732329345968109" nodeInfo="ng">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329345968172" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="7156732329345968532" nodeInfo="ng">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329345968171" nodeInfo="ng">
+                      <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329345951161" resolveInfo="doCount" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="7156732329327377881" nodeInfo="ng">
+              <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="7156732329327374511" resolveInfo="initial" />
+              <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="7156732329327377906" nodeInfo="ng">
+                <link role="event" roleId="clqz.8951398808641876049" targetNodeId="7156732329327373925" resolveInfo="reset" />
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="7156732329327378574" nodeInfo="ng">
+              <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="7156732329327366031" resolveInfo="s2" />
+              <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="7156732329327378656" nodeInfo="ng">
+                <link role="event" roleId="clqz.8951398808641876049" targetNodeId="7156732329327365432" resolveInfo="tick" />
+              </node>
+              <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329327378577" nodeInfo="ng">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327378578" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="7156732329327378579" nodeInfo="ng">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327378580" nodeInfo="ng">
+                      <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327372880" resolveInfo="transitionCount" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.ExitAction" typeId="clqz.4753668641245545020" id="7156732329327379079" nodeInfo="ng">
+              <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="7156732329327379080" nodeInfo="ng">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327379134" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="7156732329327379498" nodeInfo="ng">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327379133" nodeInfo="ng">
+                      <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327373062" resolveInfo="exitCount" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="7156732329327366031" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="s2" />
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EntryAction" typeId="clqz.4753668641245534592" id="7156732329327366032" nodeInfo="ng">
+              <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="7156732329327366033" nodeInfo="ng">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327366036" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="7156732329327366037" nodeInfo="ng">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327380610" nodeInfo="ng">
+                      <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327372591" resolveInfo="entryCount" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.DoAction" typeId="clqz.8409287311039121599" id="7156732329345968732" nodeInfo="ng">
+              <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="7156732329345968733" nodeInfo="ng">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329345968734" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="7156732329345968735" nodeInfo="ng">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329345968736" nodeInfo="ng">
+                      <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329345951161" resolveInfo="doCount" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="7156732329327380873" nodeInfo="ng">
+              <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="7156732329327374511" resolveInfo="initial" />
+              <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="7156732329327380874" nodeInfo="ng">
+                <link role="event" roleId="clqz.8951398808641876049" targetNodeId="7156732329327373925" resolveInfo="reset" />
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="7156732329327380875" nodeInfo="ng">
+              <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="7156732329327365499" resolveInfo="s1" />
+              <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="7156732329327380876" nodeInfo="ng">
+                <link role="event" roleId="clqz.8951398808641876049" targetNodeId="7156732329327365432" resolveInfo="tick" />
+              </node>
+              <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329327380877" nodeInfo="ng">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327380878" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="7156732329327380879" nodeInfo="ng">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327380880" nodeInfo="ng">
+                      <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327372880" resolveInfo="transitionCount" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.ExitAction" typeId="clqz.4753668641245545020" id="7156732329327380881" nodeInfo="ng">
+              <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="7156732329327380882" nodeInfo="ng">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327380883" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="7156732329327380884" nodeInfo="ng">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327380885" nodeInfo="ng">
+                      <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327373062" resolveInfo="exitCount" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="7156732329327380783" nodeInfo="ng" />
+          </node>
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="7156732329327365474" nodeInfo="ng" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7156732329327372284" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="7156732329327372591" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="entryCount" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7156732329327372589" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="7156732329327372880" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="transitionCount" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7156732329327372881" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="7156732329327373062" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="exitCount" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7156732329327373063" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="7156732329345951161" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="doCount" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7156732329345951162" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7156732329327384324" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="7156732329327385345" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="sm" />
+        <node role="type" roleId="mj1l.318113533128716676" type="clqz.StatemachineType" typeId="clqz.7851711690674263345" id="7156732329327385344" nodeInfo="ng">
+          <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="7156732329327363915" resolveInfo="ActionSM" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7156732329327363945" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7156732329327386791" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="setup" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329327386792" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.InitializeSMStatement" typeId="clqz.1786180596061208520" id="7156732329327387176" nodeInfo="ng">
+            <node role="statemachine" roleId="clqz.1786180596061208522" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327387196" nodeInfo="ng">
+              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327385345" resolveInfo="sm" />
+            </node>
+          </node>
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7156732329327386357" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7156732329327387204" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7156732329327388319" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="tick" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329327388320" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="7156732329327388694" nodeInfo="ng">
+            <link role="event" roleId="clqz.1786180596061231919" targetNodeId="7156732329327365432" resolveInfo="tick" />
+            <node role="statemachine" roleId="clqz.7851711690674279260" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327388714" nodeInfo="ng">
+              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327385345" resolveInfo="sm" />
+            </node>
+          </node>
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7156732329327387903" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7156732329327388752" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="reset" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329327388753" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="7156732329327388754" nodeInfo="ng">
+            <link role="event" roleId="clqz.1786180596061231919" targetNodeId="7156732329327373925" resolveInfo="reset" />
+            <node role="statemachine" roleId="clqz.7851711690674279260" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327388755" nodeInfo="ng">
+              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327385345" resolveInfo="sm" />
+            </node>
+          </node>
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7156732329327388756" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7156732329327385694" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7156732329327393339" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7156732329327394529" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="getEntryCount" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329327394530" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="7156732329327394955" nodeInfo="ng">
+            <node role="expression" roleId="x27k.8967919205527146150" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327394974" nodeInfo="ng">
+              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327372591" resolveInfo="entryCount" />
+            </node>
+          </node>
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7156732329327394040" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7156732329327395000" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="getExitCount" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329327395001" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="7156732329327395002" nodeInfo="ng">
+            <node role="expression" roleId="x27k.8967919205527146150" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327398597" nodeInfo="ng">
+              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327373062" resolveInfo="exitCount" />
+            </node>
+          </node>
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7156732329327395004" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7156732329327395545" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="getTransitionCount" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329327395546" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="7156732329327395547" nodeInfo="ng">
+            <node role="expression" roleId="x27k.8967919205527146150" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329327398791" nodeInfo="ng">
+              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329327372880" resolveInfo="transitionCount" />
+            </node>
+          </node>
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7156732329327395549" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7156732329345979407" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="getDuringCount" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329345979408" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="7156732329345979409" nodeInfo="ng">
+            <node role="expression" roleId="x27k.8967919205527146150" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7156732329345989327" nodeInfo="ng">
+              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7156732329345951161" resolveInfo="doCount" />
+            </node>
+          </node>
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7156732329345979411" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7156732329327390329" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1378730572331_6" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7156732329327390647" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1378730572502_7" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="7156732329327391619" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="instances" />
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="7156732329327391948" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="comp" />
+        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="7156732329327363910" resolveInfo="ActionComp" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7156732329327391982" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1378730590419_10" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="7156732329327392651" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testActionsInComp" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7156732329327392652" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329327392654" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="7156732329327393197" nodeInfo="ng">
+          <link role="config" roleId="v7ag.591155063063570514" targetNodeId="7156732329327391619" resolveInfo="instances" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7156732329327393211" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7156732329327393228" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327393289" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327393287" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327388319" resolveInfo="tick" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329327399176" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327399337" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327399246" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327394529" resolveInfo="getEntryCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329327399961" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327399962" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327399963" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327395545" resolveInfo="getTransitionCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329327400195" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327400196" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327400197" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327395000" resolveInfo="getExitCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329345978997" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329345978998" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329345978999" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329345979407" resolveInfo="getDuringCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7156732329327402624" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327402622" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327402623" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327388319" resolveInfo="tick" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329327402619" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327402620" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327402621" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327394529" resolveInfo="getEntryCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329327402616" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327402617" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327402618" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327395545" resolveInfo="getTransitionCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329327402613" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327402614" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327402615" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327395000" resolveInfo="getExitCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329345991707" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329345991708" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329345991709" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329345979407" resolveInfo="getDuringCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7156732329327403815" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327403813" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327403814" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327388319" resolveInfo="tick" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329327403810" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327403811" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327403812" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327394529" resolveInfo="getEntryCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329327403807" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327403808" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327403809" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327395545" resolveInfo="getTransitionCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329327403804" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327403805" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327403806" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327395000" resolveInfo="getExitCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329346005750" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329346005751" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="5" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329346005752" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329345979407" resolveInfo="getDuringCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7156732329327393261" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329327405041" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327405042" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327388752" resolveInfo="reset" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329327405038" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327405039" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327405040" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327394529" resolveInfo="getEntryCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329327405035" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327405036" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327405037" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327395545" resolveInfo="getTransitionCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329327405032" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329327405033" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329327405034" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329327395000" resolveInfo="getExitCount" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="7156732329346018153" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7156732329346018154" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7156732329346018155" nodeInfo="ng">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="7156732329327391619" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="7156732329327391948" resolveInfo="comp" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7156732329345979407" resolveInfo="getDuringCount" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7156732329327391292" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1378730572813_9" />
     </node>
   </root>
 </model>
