@@ -661,8 +661,20 @@
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="440773076688628187" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="51wr.440773076688628186" resolveInfo="NothingPlatform" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="440773076688628191" nodeInfo="nn">
-      <property name="text" nameId="tpc2.1073389577007" value="nothing (no build system available)" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2741479916271162506" nodeInfo="nn">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2741479916271162507" nodeInfo="nn" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="440773076688628191" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="nothing (no build system available)" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="2741479916271162813" nodeInfo="ng">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="2741479916248883042" resolveInfo="buildProcessors" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="2741479916271162910" nodeInfo="nn">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutIndentStyleClassItem" typeId="tpc2.1237307900041" id="2741479916271163012" nodeInfo="nn">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
     </node>
   </root>
   <root type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="2741479916248883042" nodeInfo="ng">
