@@ -242,6 +242,9 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2741479916248872192" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IBuildProcessor" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="platform.processor" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2741479916269504524" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3857533489766146432" resolveInfo="IDocumentable" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2741479916249348519" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="platform.processor" />
