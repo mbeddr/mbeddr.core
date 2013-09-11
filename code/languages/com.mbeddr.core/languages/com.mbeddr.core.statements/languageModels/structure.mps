@@ -78,6 +78,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3196454794517288532" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.3196454794517236255" resolveInfo="IDataflowAssignment" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5449787351258301333" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5449787351258300532" resolveInfo="IValueLike" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4185783222026475861" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="StatementList" />
@@ -681,6 +684,12 @@
     <property name="name" nameId="tpck.1169194664001" value="IStructuredInitExpression" />
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1357038773596697484" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.5160057464295077059" resolveInfo="IRequiresTypeToBeInferred" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5449787351258300532" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IValueLike" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5449787351258301309" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
     </node>
   </root>
 </model>
