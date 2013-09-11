@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="18">
+<model modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="21">
   <persistence version="8" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
@@ -13,7 +13,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="18" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="21" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2161187783549671007" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DecTabCheckAttribute" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
@@ -188,8 +188,8 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7392194941658528658" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
-    <property name="name" nameId="tpck.1169194664001" value="UntilPMustQ" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="until_must" />
+    <property name="name" nameId="tpck.1169194664001" value="BeforePMustQ" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="before_must" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7392194941658581812" resolveInfo="CBMCAdvancedBinaryVerificationCondition" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7392194941658581812" nodeInfo="ig">
@@ -214,12 +214,6 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
     <property name="name" nameId="tpck.1169194664001" value="AfterQUntilRMustP" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="after_until_must" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6876648630975719717" resolveInfo="CBMCAdvancedTernaryVerificationCondition" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6876648630975719716" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
-    <property name="name" nameId="tpck.1169194664001" value="BetweenQAndRMustP" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="between_must" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6876648630975719717" resolveInfo="CBMCAdvancedTernaryVerificationCondition" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6876648630975719717" nodeInfo="ig">
@@ -339,14 +333,14 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2609337213949315030" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
-    <property name="name" nameId="tpck.1169194664001" value="BetweenQAndRExistsP" />
+    <property name="name" nameId="tpck.1169194664001" value="AfterQUntilRExistsP" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="between_exists" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6876648630975719717" resolveInfo="CBMCAdvancedTernaryVerificationCondition" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2609337213949315048" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
-    <property name="name" nameId="tpck.1169194664001" value="UntilQExistsP" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="until_exists" />
+    <property name="name" nameId="tpck.1169194664001" value="BeforeQExistsP" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="before_exists" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7392194941658581812" resolveInfo="CBMCAdvancedBinaryVerificationCondition" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2609337213949315063" nodeInfo="ig">
