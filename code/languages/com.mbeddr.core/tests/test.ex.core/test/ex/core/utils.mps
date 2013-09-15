@@ -708,14 +708,6 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4944376863003347980" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4944376863007601756" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="4944376863007601803" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLInitOp" typeId="k146.4944376863005910952" id="4944376863007601822" nodeInfo="ng" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="4944376863007601755" nodeInfo="ng">
-              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="4944376863005753580" resolveInfo="DL" />
-            </node>
-          </node>
-        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4944376863011891623" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="4944376863011891678" nodeInfo="ng">
             <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLTraceOp" typeId="k146.4944376863010363983" id="4944376863011891697" nodeInfo="ng">

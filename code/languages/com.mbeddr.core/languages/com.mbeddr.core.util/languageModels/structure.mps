@@ -964,12 +964,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.6573338596884805799" resolveInfo="ICanBeUsedInDot" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4944376863005910952" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger" />
-    <property name="name" nameId="tpck.1169194664001" value="DLInitOp" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="init" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4944376863005754347" resolveInfo="DataLoggerOp" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4944376863007601837" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger" />
     <property name="name" nameId="tpck.1169194664001" value="DLFinishOp" />
