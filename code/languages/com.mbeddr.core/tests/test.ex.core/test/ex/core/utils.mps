@@ -612,7 +612,7 @@
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605982730213" nodeInfo="ng" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.DataLoggerConfigItem" typeId="k146.2054775350263837242" id="2054775350281179272" nodeInfo="ng">
-      <node role="gen" roleId="k146.2054775350263837563" type="k146.DLDoNothing" typeId="k146.2054775350267974975" id="2054775350281179280" nodeInfo="ng" />
+      <node role="gen" roleId="k146.2054775350263837563" type="k146.DLCollectAndPrintOnFinish" typeId="k146.2054775350266450111" id="3267857377777629606" nodeInfo="ng" />
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578280435" nodeInfo="ng">
@@ -675,20 +675,12 @@
       <property name="active" nameId="k146.4944376863003348933" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="DL" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="tracepointStackSize" nameId="k146.2284103232242437575" value="100" />
       <node role="tracepoints" roleId="k146.1542399328501010859" type="k146.TracePoint" typeId="k146.1542399328501010856" id="4944376863005753581" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="start" />
       </node>
       <node role="tracepoints" roleId="k146.1542399328501010859" type="k146.TracePoint" typeId="k146.1542399328501010856" id="4944376863011891724" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="f" />
-      </node>
-      <node role="items" roleId="k146.4944376863000971777" type="k146.DataItem" typeId="k146.4944376863000945404" id="4944376863005753582" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="iterator" />
-        <property name="size" nameId="k146.4944376863000971585" value="10" />
-        <property name="active" nameId="k146.2054775350250915337" value="true" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4944376863005753595" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
       </node>
       <node role="items" roleId="k146.4944376863000971777" type="k146.DataItem" typeId="k146.4944376863000945404" id="4944376863019357836" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="i" />
@@ -839,6 +831,14 @@
               <link role="tracepoint" roleId="k146.2054775350276220552" targetNodeId="4944376863005753581" resolveInfo="start" />
             </node>
             <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="2054775350278253927" nodeInfo="ng">
+              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="4944376863005753580" resolveInfo="DL" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3267857377778183029" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="3267857377778183143" nodeInfo="ng">
+            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLFinishOp" typeId="k146.4944376863007601837" id="3267857377778183164" nodeInfo="ng" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="3267857377778183028" nodeInfo="ng">
               <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="4944376863005753580" resolveInfo="DL" />
             </node>
           </node>
