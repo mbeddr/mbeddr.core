@@ -684,7 +684,7 @@
       </node>
       <node role="items" roleId="k146.4944376863000971777" type="k146.DataItem" typeId="k146.4944376863000945404" id="4944376863019357836" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="i" />
-        <property name="size" nameId="k146.4944376863000971585" value="5" />
+        <property name="size" nameId="k146.4944376863000971585" value="10" />
         <property name="active" nameId="k146.2054775350250915337" value="true" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4944376863019357827" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />

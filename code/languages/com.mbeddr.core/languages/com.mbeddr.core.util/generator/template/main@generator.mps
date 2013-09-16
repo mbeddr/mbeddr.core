@@ -10246,6 +10246,13 @@
             <property name="name" nameId="tpck.1169194664001" value="enterTP" />
             <property name="exported" nameId="x27k.1317894735999272944" value="false" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2284103232255420958" nodeInfo="ng">
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2284103232256320520" nodeInfo="ng">
+                <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="2284103232256344277" nodeInfo="ng">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2284103232256320519" nodeInfo="ng">
+                    <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2284103232248579640" resolveInfo="tracepointPos" />
+                  </node>
+                </node>
+              </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2284103232255742539" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2284103232255909226" nodeInfo="ng">
                   <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2284103232255916961" nodeInfo="ng">
@@ -10270,13 +10277,6 @@
                     <node role="index" roleId="yq40.6282313788306893059" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2284103232256180170" nodeInfo="ng">
                       <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2284103232255502995" resolveInfo="tp" />
                     </node>
-                  </node>
-                </node>
-              </node>
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2284103232256320520" nodeInfo="ng">
-                <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="2284103232256344277" nodeInfo="ng">
-                  <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2284103232256320519" nodeInfo="ng">
-                    <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2284103232248579640" resolveInfo="tracepointPos" />
                   </node>
                 </node>
               </node>
