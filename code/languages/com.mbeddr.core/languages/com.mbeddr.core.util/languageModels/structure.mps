@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="16">
+<model modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="15" />
@@ -11,7 +11,7 @@
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="16" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5686538669182273028" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="BlockExpression" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="blockexpr" />
@@ -889,6 +889,10 @@
       <property name="name" nameId="tpck.1169194664001" value="active" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2284103232242437575" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="tracepointStackSize" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1542399328501010859" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="tracepoints" />
@@ -917,6 +921,12 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger" />
     <property name="name" nameId="tpck.1169194664001" value="DataItem" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3267857377793644829" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="initValue" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4944376863000971585" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="size" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
@@ -972,7 +982,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4944376863010363983" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger" />
-    <property name="name" nameId="tpck.1169194664001" value="DLTraceOp" />
+    <property name="name" nameId="tpck.1169194664001" value="DLEnterTraceOp" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4944376863005754347" resolveInfo="DataLoggerOp" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4944376863010364035" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -996,6 +1006,58 @@
       <property name="role" nameId="tpce.1071599776563" value="item" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4944376863000945404" resolveInfo="DataItem" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2054775350263837242" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger.config" />
+    <property name="name" nameId="tpck.1169194664001" value="DataLoggerConfigItem" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="datalogger" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2054775350263837563" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="gen" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2054775350263837562" resolveInfo="DLGenStrategy" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2054775350263837500" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.4459718605982007336" resolveInfo="IConfigurationItem" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2054775350263837562" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger.config" />
+    <property name="name" nameId="tpck.1169194664001" value="DLGenStrategy" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2054775350263837585" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger.config" />
+    <property name="name" nameId="tpck.1169194664001" value="DLPrintfImmediately" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="printf immediately" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2054775350263837562" resolveInfo="DLGenStrategy" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2054775350266450111" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger.config" />
+    <property name="name" nameId="tpck.1169194664001" value="DLCollectAndPrintOnFinish" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="collect and printf" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2054775350263837562" resolveInfo="DLGenStrategy" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2054775350267974975" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger.config" />
+    <property name="name" nameId="tpck.1169194664001" value="DLDoNothing" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="do nothing" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2054775350263837562" resolveInfo="DLGenStrategy" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2054775350276220551" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger" />
+    <property name="name" nameId="tpck.1169194664001" value="DLLeaveTraceOp" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4944376863005754347" resolveInfo="DataLoggerOp" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2054775350276220552" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="tracepoint" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1542399328501010856" resolveInfo="TracePoint" />
     </node>
   </root>
 </model>

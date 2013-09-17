@@ -1957,10 +1957,12 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4137078037088777946" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4137078037088777947" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="nodesToCopy" />
-            <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="4137078037088777948" nodeInfo="in" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SetType" typeId="tp2q.1226511727824" id="1228265962448773216" nodeInfo="in">
+              <node role="elementType" roleId="tp2q.1226511765987" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1228265962448788121" nodeInfo="in" />
+            </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="4137078037088777952" nodeInfo="nn">
-              <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeListCreator" typeId="tp25.1145567426890" id="4137078037088777953" nodeInfo="nn">
-                <node role="createdType" roleId="tp25.1145567471833" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="4137078037088777954" nodeInfo="in" />
+              <node role="creator" roleId="tpee.1145553007750" type="tp2q.HashSetCreator" typeId="tp2q.1226516258405" id="1228265962448808621" nodeInfo="nn">
+                <node role="elementType" roleId="tp2q.1237721435807" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1228265962448838333" nodeInfo="in" />
               </node>
             </node>
           </node>
@@ -2293,8 +2295,11 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4137078037088778155" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="copiedNodes" />
             <node role="initializer" roleId="tpee.1068431790190" type="lyxe.NList_CopyWithTraceOperation" typeId="lyxe.2603522263179374343" id="8200694561661107033" nodeInfo="nn">
-              <node role="argument" roleId="lyxe.2603522263179374348" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8200694561661107034" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4137078037088777947" resolveInfo="nodesToCopy" />
+              <node role="argument" roleId="lyxe.2603522263179374348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1228265962448854500" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8200694561661107034" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4137078037088777947" resolveInfo="nodesToCopy" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp2q.ToListOperation" typeId="tp2q.1151702311717" id="1228265962448883804" nodeInfo="nn" />
               </node>
             </node>
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4137078037088778156" nodeInfo="in">
