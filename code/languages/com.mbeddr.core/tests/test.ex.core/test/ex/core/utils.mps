@@ -611,8 +611,8 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4459718605982730212" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605982730213" nodeInfo="ng" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.DataLoggerConfigItem" typeId="k146.2054775350263837242" id="2054775350281179272" nodeInfo="ng">
-      <node role="gen" roleId="k146.2054775350263837563" type="k146.DLCollectAndPrintOnFinish" typeId="k146.2054775350266450111" id="3267857377795850320" nodeInfo="ng" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.DataLoggerConfigItem" typeId="k146.2054775350263837242" id="3307745037989425341" nodeInfo="ng">
+      <node role="gen" roleId="k146.2054775350263837563" type="k146.DLCollectAndPrintOnFinish" typeId="k146.2054775350266450111" id="3307745037989513236" nodeInfo="ng" />
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578280435" nodeInfo="ng">
@@ -671,81 +671,70 @@
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4944376863002608498" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DataLoggerTest" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="k146.DataLoggerDeclaration" typeId="k146.1542399328500970308" id="4944376863005753580" nodeInfo="ng">
+    <node role="contents" roleId="x27k.6437088627575722833" type="k146.DataLoggerDeclaration" typeId="k146.1542399328500970308" id="3307745037988787879" nodeInfo="ng">
       <property name="active" nameId="k146.4944376863003348933" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="DL" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="tracepointStackSize" nameId="k146.2284103232242437575" value="100" />
-      <node role="tracepoints" roleId="k146.1542399328501010859" type="k146.TracePoint" typeId="k146.1542399328501010856" id="4944376863005753581" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="DL" />
+      <node role="tracepoints" roleId="k146.1542399328501010859" type="k146.TracePoint" typeId="k146.1542399328501010856" id="3307745037988787880" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="start" />
       </node>
-      <node role="tracepoints" roleId="k146.1542399328501010859" type="k146.TracePoint" typeId="k146.1542399328501010856" id="4944376863011891724" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="f" />
+      <node role="tracepoints" roleId="k146.1542399328501010859" type="k146.TracePoint" typeId="k146.1542399328501010856" id="3307745037988787882" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="meineFunktion" />
       </node>
-      <node role="items" roleId="k146.4944376863000971777" type="k146.DataItem" typeId="k146.4944376863000945404" id="4944376863019357836" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="i" />
-        <property name="size" nameId="k146.4944376863000971585" value="10" />
+      <node role="items" roleId="k146.4944376863000971777" type="k146.DataItem" typeId="k146.4944376863000945404" id="3307745037988787938" nodeInfo="ng">
         <property name="active" nameId="k146.2054775350250915337" value="true" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4944376863019357827" nodeInfo="ng">
+        <property name="size" nameId="k146.4944376863000971585" value="1" />
+        <property name="name" nameId="tpck.1169194664001" value="dasXImTest" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="3307745037988787936" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
-        <node role="initValue" roleId="k146.3267857377793644829" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3267857377795114123" nodeInfo="ng">
+        <node role="initValue" roleId="k146.3267857377793644829" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3307745037988787937" nodeInfo="ng">
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-          <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
-        </node>
-      </node>
-      <node role="items" roleId="k146.4944376863000971777" type="k146.DataItem" typeId="k146.4944376863000945404" id="2054775350282490582" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="var" />
-        <property name="size" nameId="k146.4944376863000971585" value="2" />
-        <property name="active" nameId="k146.2054775350250915337" value="true" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="2054775350282490579" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="initValue" roleId="k146.3267857377793644829" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3267857377795114173" nodeInfo="ng">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-          <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="0" />
         </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4944376863005753572" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1379179814694_2" />
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3307745037988787513" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1379407717560_1" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2054775350278254242" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="f" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2054775350278254244" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2054775350278254304" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="2054775350278254352" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLEnterTraceOp" typeId="k146.4944376863010363983" id="2054775350278254373" nodeInfo="ng">
-              <link role="tracepoint" roleId="k146.4944376863010364035" targetNodeId="4944376863011891724" resolveInfo="f" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3307745037989402788" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="3307745037989403003" nodeInfo="ng">
+            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLEnterTraceOp" typeId="k146.4944376863010363983" id="3307745037989403028" nodeInfo="ng">
+              <link role="tracepoint" roleId="k146.4944376863010364035" targetNodeId="3307745037988787882" resolveInfo="meineFunktion" />
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="2054775350278254303" nodeInfo="ng">
-              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="4944376863005753580" resolveInfo="DL" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="3307745037989402968" nodeInfo="ng">
+              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="3307745037988787879" resolveInfo="DL" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2054775350282490587" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="2054775350282490586" nodeInfo="ng">
-            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="2054775350282490583" nodeInfo="ng">
-              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="4944376863005753580" resolveInfo="DL" />
-            </node>
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLLogOp" typeId="k146.4944376863012558867" id="2054775350282490585" nodeInfo="ng">
-              <link role="item" roleId="k146.4944376863012558868" targetNodeId="2054775350282490582" resolveInfo="var" />
-              <node role="value" roleId="k146.4944376863012559046" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2054775350282490584" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3307745037989403223" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="3307745037989403435" nodeInfo="ng">
+            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLLogOp" typeId="k146.4944376863012558867" id="3307745037989403460" nodeInfo="ng">
+              <link role="item" roleId="k146.4944376863012558868" targetNodeId="3307745037988787938" resolveInfo="dasXImTest" />
+              <node role="value" roleId="k146.4944376863012559046" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3307745037989403490" nodeInfo="ng">
                 <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2054775350280556106" resolveInfo="var" />
               </node>
             </node>
+            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="3307745037989403222" nodeInfo="ng">
+              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="3307745037988787879" resolveInfo="DL" />
+            </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2054775350278254427" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="2054775350278254480" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLLeaveTraceOp" typeId="k146.2054775350276220551" id="2054775350278254501" nodeInfo="ng">
-              <link role="tracepoint" roleId="k146.2054775350276220552" targetNodeId="4944376863011891724" resolveInfo="f" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3307745037989404198" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="3307745037989404428" nodeInfo="ng">
+            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLLeaveTraceOp" typeId="k146.2054775350276220551" id="3307745037989404453" nodeInfo="ng">
+              <link role="tracepoint" roleId="k146.2054775350276220552" targetNodeId="3307745037988787882" resolveInfo="meineFunktion" />
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="2054775350278254426" nodeInfo="ng">
-              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="4944376863005753580" resolveInfo="DL" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="3307745037989404197" nodeInfo="ng">
+              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="3307745037988787879" resolveInfo="DL" />
             </node>
           </node>
         </node>
@@ -773,63 +762,60 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4944376863003347980" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4944376863011891623" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="4944376863011891678" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLEnterTraceOp" typeId="k146.4944376863010363983" id="4944376863011891697" nodeInfo="ng">
-              <link role="tracepoint" roleId="k146.4944376863010364035" targetNodeId="4944376863005753581" resolveInfo="start" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3307745037989382078" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="3307745037989382148" nodeInfo="ng">
+            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLEnterTraceOp" typeId="k146.4944376863010363983" id="3307745037989382173" nodeInfo="ng">
+              <link role="tracepoint" roleId="k146.4944376863010364035" targetNodeId="3307745037988787880" resolveInfo="start" />
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="4944376863011891622" nodeInfo="ng">
-              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="4944376863005753580" resolveInfo="DL" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="3307745037989382077" nodeInfo="ng">
+              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="3307745037988787879" resolveInfo="DL" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3267857377795818371" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="3267857377795818436" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLLogOp" typeId="k146.4944376863012558867" id="3267857377795818457" nodeInfo="ng">
-              <link role="item" roleId="k146.4944376863012558868" targetNodeId="4944376863019357836" resolveInfo="i" />
-              <node role="value" roleId="k146.4944376863012559046" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3267857377795818485" nodeInfo="ng">
-                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="100" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3307745037988787633" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="x" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="3307745037988787631" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3307745037988787692" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3307745037988787833" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3307745037988787832" nodeInfo="ng">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3307745037988787633" resolveInfo="x" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3307745037989402672" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="3307745037989402671" nodeInfo="ng">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2054775350278254242" resolveInfo="f" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3307745037989402758" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3307745037988787633" resolveInfo="x" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3307745037988787943" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="3307745037988787942" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="3307745037988787939" nodeInfo="ng">
+              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="3307745037988787879" resolveInfo="DL" />
+            </node>
+            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLLogOp" typeId="k146.4944376863012558867" id="3307745037988787941" nodeInfo="ng">
+              <link role="item" roleId="k146.4944376863012558868" targetNodeId="3307745037988787938" resolveInfo="dasXImTest" />
+              <node role="value" roleId="k146.4944376863012559046" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3307745037988787940" nodeInfo="ng">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3307745037988787633" resolveInfo="x" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="3267857377795818370" nodeInfo="ng">
-              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="4944376863005753580" resolveInfo="DL" />
-            </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2054775350278257730" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2054775350278257729" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2054775350278254242" resolveInfo="f" />
-            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3267857377793256053" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3307745037989382191" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="3307745037989382278" nodeInfo="ng">
+            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLLeaveTraceOp" typeId="k146.2054775350276220551" id="3307745037989382303" nodeInfo="ng">
+              <link role="tracepoint" roleId="k146.2054775350276220552" targetNodeId="3307745037988787880" resolveInfo="start" />
             </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3267857377795867737" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="3267857377795867738" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2054775350278254242" resolveInfo="f" />
-            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3267857377795867739" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.8860443239512128104" value="20" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2054775350278253928" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="2054775350278254001" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLLeaveTraceOp" typeId="k146.2054775350276220551" id="2054775350278254022" nodeInfo="ng">
-              <link role="tracepoint" roleId="k146.2054775350276220552" targetNodeId="4944376863005753581" resolveInfo="start" />
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="2054775350278253927" nodeInfo="ng">
-              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="4944376863005753580" resolveInfo="DL" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3267857377778183029" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="3267857377778183143" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLFinishOp" typeId="k146.4944376863007601837" id="3267857377778183164" nodeInfo="ng" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="3267857377778183028" nodeInfo="ng">
-              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="4944376863005753580" resolveInfo="DL" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="k146.DataLoggerRef" typeId="k146.4944376863005761909" id="3307745037989382243" nodeInfo="ng">
+              <link role="datalogger" roleId="k146.4944376863005761910" targetNodeId="3307745037988787879" resolveInfo="DL" />
             </node>
           </node>
         </node>
