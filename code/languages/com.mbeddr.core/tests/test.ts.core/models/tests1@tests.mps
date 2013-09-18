@@ -15342,7 +15342,7 @@
           <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="6941595764870705894" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="e1" />
             <node role="init" roleId="clbe.8811614583515725856" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6941595764870732954" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="256" />
+              <property name="value" nameId="mj1l.8860443239512128104" value="255" />
             </node>
           </node>
           <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="6941595764870705895" nodeInfo="ng">
