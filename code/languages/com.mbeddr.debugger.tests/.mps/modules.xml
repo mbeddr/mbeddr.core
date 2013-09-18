@@ -11,7 +11,6 @@
       <modulePath path="$PROJECT_DIR$/tests/test.debugging.core/core.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/test.debugging.cross/test.debugging.cross.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/test.debugging.ext.components/test.debugging.ext.components.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/tests/test.debugging.ext.exceptionhadling/test.debugging.ext.exceptionhadling.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/test.debugging.ext.physical-units/test.debugging.ext.physical-units.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/test.debugging.ext.statemachines/test.debugging.ext.statemachines.msd" folder="" />
     </projectModules>
