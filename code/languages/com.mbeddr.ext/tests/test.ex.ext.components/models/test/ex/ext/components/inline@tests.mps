@@ -265,7 +265,7 @@
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="3378779091584449178" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="3378779091584449171" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="i_do" />
+        <property name="name" nameId="tpck.1169194664001" value="i_doStuff" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3378779091584449172" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3378779091584449198" nodeInfo="ng">
             <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="3378779091584449199" nodeInfo="ng">
@@ -298,7 +298,7 @@
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="3378779091584449168" resolveInfo="doStuff" />
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="3378779091584449170" resolveInfo="i" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3378779091584449175" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1965414175743513243" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
