@@ -685,6 +685,9 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1357038773596697484" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.5160057464295077059" resolveInfo="IRequiresTypeToBeInferred" />
     </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1965414175744851315" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3857533489766146432" resolveInfo="IDocumentable" />
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5449787351258300532" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IValueLike" />
