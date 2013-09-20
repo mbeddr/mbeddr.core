@@ -5369,9 +5369,6 @@
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4120785633232231448" nodeInfo="ng">
                   <property name="value" nameId="mj1l.8860443239512128104" value="20" />
                 </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615072377546" nodeInfo="ng">
-                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeWarningProperty" typeId="tp5g.1215511704609" id="4069818615072389545" nodeInfo="ng" />
-                </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8018080331221669005" nodeInfo="ng" />
@@ -5434,9 +5431,6 @@
                       <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8018080331221669003" resolveInfo="st" />
                     </node>
                   </node>
-                </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615072434133" nodeInfo="ng">
-                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeWarningProperty" typeId="tp5g.1215511704609" id="4069818615072444689" nodeInfo="ng" />
                 </node>
               </node>
             </node>
@@ -5532,9 +5526,6 @@
                   <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4120785633232231511" nodeInfo="ng">
                     <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4861891518412267318" resolveInfo="i8p" />
                   </node>
-                </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615072522644" nodeInfo="ng">
-                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeWarningProperty" typeId="tp5g.1215511704609" id="4069818615072532656" nodeInfo="ng" />
                 </node>
               </node>
             </node>
@@ -8038,9 +8029,6 @@
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1351376795743973217" nodeInfo="ng">
                   <property name="value" nameId="mj1l.8860443239512128104" value="2" />
                 </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615074481837" nodeInfo="ng">
-                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeWarningProperty" typeId="tp5g.1215511704609" id="4069818615074486836" nodeInfo="ng" />
-                </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1351376795743973221" nodeInfo="ng">
@@ -8058,9 +8046,6 @@
                     </node>
                   </node>
                 </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615074476838" nodeInfo="ng">
-                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeWarningProperty" typeId="tp5g.1215511704609" id="4069818615074491833" nodeInfo="ng" />
-                </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1351376795743973236" nodeInfo="ng">
@@ -8075,9 +8060,6 @@
                   <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1694414027524545877" nodeInfo="ng">
                     <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1694414027524183950" resolveInfo="x" />
                   </node>
-                </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615074471839" nodeInfo="ng">
-                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeWarningProperty" typeId="tp5g.1215511704609" id="4069818615074496830" nodeInfo="ng" />
                 </node>
               </node>
             </node>
@@ -12918,9 +12900,6 @@
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="7058269619788469765" nodeInfo="ng">
                   <property name="name" nameId="tpck.1169194664001" value="prioTestEquals2" />
                 </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615074543155" nodeInfo="ng">
-                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeWarningProperty" typeId="tp5g.1215511704609" id="4069818615074554573" nodeInfo="ng" />
-                </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7058269619788469766" nodeInfo="ng">
@@ -13027,9 +13006,6 @@
                   </node>
                   <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7058269619788469812" nodeInfo="ng">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7058269619788469804" resolveInfo="f" />
-                  </node>
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4069818615074548837" nodeInfo="ng">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeWarningProperty" typeId="tp5g.1215511704609" id="4069818615074551706" nodeInfo="ng" />
                   </node>
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="7058269619788469813" nodeInfo="ng" />
@@ -15342,7 +15318,7 @@
           <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="6941595764870705894" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="e1" />
             <node role="init" roleId="clbe.8811614583515725856" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6941595764870732954" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="256" />
+              <property name="value" nameId="mj1l.8860443239512128104" value="255" />
             </node>
           </node>
           <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="6941595764870705895" nodeInfo="ng">
