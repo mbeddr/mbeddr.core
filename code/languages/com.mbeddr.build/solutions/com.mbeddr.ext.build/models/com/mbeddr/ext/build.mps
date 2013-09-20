@@ -773,6 +773,9 @@
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="6247780594427554339" nodeInfo="ng">
           <link role="language" roleId="kdzh.322010710375832947" targetNodeId="6247780594427554281" resolveInfo="com.mbeddr.ext.components" />
         </node>
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="2057472296528986971" nodeInfo="ng">
+          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="7998377234122986661" resolveInfo="com.mbeddr.ext.components.embedded" />
+        </node>
       </node>
     </node>
     <node role="aspects" roleId="3ior.3542413272732620719" type="kdzh.BuildMpsAspect" typeId="kdzh.6503355885715333289" id="7360615763635642537" nodeInfo="ng">
