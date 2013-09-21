@@ -42,22 +42,23 @@
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
+            <generator generatorUID="7f02a174-6bab-4ef7-8a81-22b54a82846a(com.mbeddr.core.embedded#6847490852669402965)" />
+            <external-mapping>
+              <mapping-node modelUID="r:07662ee6-795f-4e31-90c2-e6b02f94bc78(com.mbeddr.core.embedded.generator.template.main@generator)" nodeID="6847490852669402966" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_together">
+          <greater-priority-mapping>
             <generator generatorUID="100a502f-856c-42eb-9a63-503ca15cdf53(com.mbeddr.ext.components.embedded#9172009453270354302)" />
             <external-mapping>
-              <mapping-set>
-                <mapping-set-element>
-                  <generator generatorUID="7f02a174-6bab-4ef7-8a81-22b54a82846a(com.mbeddr.core.embedded#6847490852669402965)" />
-                  <external-mapping>
-                    <mapping-node modelUID="r:07662ee6-795f-4e31-90c2-e6b02f94bc78(com.mbeddr.core.embedded.generator.template.main@generator)" nodeID="6847490852669402966" />
-                  </external-mapping>
-                </mapping-set-element>
-                <mapping-set-element>
-                  <generator generatorUID="6285e77c-f535-44cc-be5b-103da66e3c19(com.mbeddr.ext.components.gen_nomw#8105003328815413560)" />
-                  <external-mapping>
-                    <mapping-node modelUID="r:769ad9a0-f26a-4d17-9cc6-f3ae937bc774(com.mbeddr.ext.components.gen_nomw.generator.template.main@generator)" nodeID="1539255704408506110" />
-                  </external-mapping>
-                </mapping-set-element>
-              </mapping-set>
+              <mapping-node modelUID="r:99039c48-485d-4884-89c3-631e32331188(com.mbeddr.ext.components.embedded.generator.template.main@generator)" nodeID="529332856714534723" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="6285e77c-f535-44cc-be5b-103da66e3c19(com.mbeddr.ext.components.gen_nomw#8105003328815413560)" />
+            <external-mapping>
+              <mapping-node modelUID="r:769ad9a0-f26a-4d17-9cc6-f3ae937bc774(com.mbeddr.ext.components.gen_nomw.generator.template.main@generator)" nodeID="8105003328815413561" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
