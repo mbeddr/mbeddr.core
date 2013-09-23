@@ -15,7 +15,7 @@
   <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="4" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="15" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="9prt" modelUID="r:408fbb9e-2f4a-492c-80c9-659ad1be0b91(com.mbeddr.cc.requirements.report.structure)" version="-1" implicit="yes" />
@@ -45,6 +45,7 @@
         <property name="scope" nameId="6pek.3411780537800178873" value="1" />
         <property name="resonsible" nameId="6pek.3411780537800178874" value="peter" />
         <property name="effort" nameId="6pek.8587612447638802594" value="1" />
+        <property name="priority" nameId="6pek.4989385012827211613" value="1" />
         <node role="description" roleId="6pek.8587612447638802618" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3340584831013385755" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3340584831013385756" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3340584831013385757" nodeInfo="ng" />
@@ -76,6 +77,7 @@
         <property name="effort" nameId="6pek.8587612447638802594" value="10" />
         <property name="seenByCustomer" nameId="6pek.3411780537799825607" value="true" />
         <property name="acceptedByCustomer" nameId="6pek.3411780537799825608" value="true" />
+        <property name="priority" nameId="6pek.4989385012827211613" value="1" />
         <node role="description" roleId="6pek.8587612447638802618" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424593974" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424593977" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424593978" nodeInfo="ng">
@@ -93,6 +95,7 @@
         <property name="scope" nameId="6pek.3411780537800178873" value="2" />
         <property name="resonsible" nameId="6pek.3411780537800178874" value="peter" />
         <property name="effort" nameId="6pek.8587612447638802594" value="5" />
+        <property name="priority" nameId="6pek.4989385012827211613" value="1" />
         <node role="description" roleId="6pek.8587612447638802618" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424593981" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424593984" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424593985" nodeInfo="ng">
@@ -130,6 +133,7 @@
         <property name="resonsible" nameId="6pek.3411780537800178874" value="adam" />
         <property name="effort" nameId="6pek.8587612447638802594" value="3" />
         <property name="seenByCustomer" nameId="6pek.3411780537799825607" value="true" />
+        <property name="priority" nameId="6pek.4989385012827211613" value="1" />
         <node role="description" roleId="6pek.8587612447638802618" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424593989" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424593990" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424593991" nodeInfo="ng" />
@@ -162,6 +166,7 @@
         <property name="scope" nameId="6pek.3411780537800178873" value="2" />
         <property name="resonsible" nameId="6pek.3411780537800178874" value="peter" />
         <property name="effort" nameId="6pek.8587612447638802594" value="10" />
+        <property name="priority" nameId="6pek.4989385012827211613" value="1" />
         <node role="description" roleId="6pek.8587612447638802618" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424593994" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424593995" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424593996" nodeInfo="ng" />
@@ -335,6 +340,7 @@
           <property name="scope" nameId="6pek.3411780537800178873" value="1" />
           <property name="name" nameId="tpck.1169194664001" value="impl" />
           <property name="effort" nameId="6pek.8587612447638802594" value="3" />
+          <property name="priority" nameId="6pek.4989385012827211613" value="1" />
           <node role="description" roleId="6pek.8587612447638802618" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424594001" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424594004" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424594005" nodeInfo="ng">
@@ -369,6 +375,7 @@
           <property name="scope" nameId="6pek.3411780537800178873" value="1" />
           <property name="resonsible" nameId="6pek.3411780537800178874" value="alan" />
           <property name="effort" nameId="6pek.8587612447638802594" value="4" />
+          <property name="priority" nameId="6pek.4989385012827211613" value="1" />
           <node role="description" roleId="6pek.8587612447638802618" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424594009" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424594012" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424594013" nodeInfo="ng">
