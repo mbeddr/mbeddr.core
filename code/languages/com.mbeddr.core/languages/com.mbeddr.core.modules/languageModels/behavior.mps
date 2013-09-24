@@ -12583,7 +12583,7 @@
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2410497733756536682" nodeInfo="ng">
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="x27k.2410497733756536411" resolveInfo="ICanCalculateCustomType" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="2410497733756536685" nodeInfo="ng">
-      <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
+      <property name="isAbstract" nameId="1i04.1225194472834" value="true" />
       <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="needsToCalculateCustomType" />
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="2410497733756549887" nodeInfo="ir">
@@ -12603,7 +12603,7 @@
       </node>
     </node>
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="2410497733756536711" nodeInfo="ng">
-      <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
+      <property name="isAbstract" nameId="1i04.1225194472834" value="true" />
       <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="calculateCustomType" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2410497733756536712" nodeInfo="nn" />
