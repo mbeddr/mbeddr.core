@@ -308,6 +308,7 @@
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4626864039426346533" nodeInfo="nn" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4626864039426346541" nodeInfo="nn">
           <property name="text" nameId="tpc2.1073389577007" value="CBMC-based" />
+          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="srwo.1634970928500780281" resolveInfo="verification" />
           <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="4626864039426346544" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4626864039426346545" nodeInfo="sn">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4626864039426346546" nodeInfo="nn">
@@ -320,12 +321,10 @@
               </node>
             </node>
           </node>
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="4626864039426346575" nodeInfo="nn">
-            <property name="color" nameId="tpc2.1186403713874" value="cyan" />
-          </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4626864039426346543" nodeInfo="nn">
           <property name="text" nameId="tpc2.1073389577007" value="SatAbs-based" />
+          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="srwo.1634970928500780281" resolveInfo="verification" />
           <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="4626864039426346576" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4626864039426346577" nodeInfo="sn">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4626864039426346578" nodeInfo="nn">
@@ -339,9 +338,6 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="4626864039426346609" nodeInfo="nn">
-            <property name="color" nameId="tpc2.1186403713874" value="cyan" />
           </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4626864039426346535" nodeInfo="nn">
@@ -753,6 +749,7 @@
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2263984427998414291" nodeInfo="nn">
           <property name="text" nameId="tpc2.1073389577007" value="CBMC-based" />
+          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="srwo.1634970928500780281" resolveInfo="verification" />
           <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="2263984427998414292" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2263984427998414293" nodeInfo="sn">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2263984427998414294" nodeInfo="nn">
@@ -765,12 +762,10 @@
               </node>
             </node>
           </node>
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2263984427998414298" nodeInfo="nn">
-            <property name="color" nameId="tpc2.1186403713874" value="cyan" />
-          </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2263984427998414299" nodeInfo="nn">
           <property name="text" nameId="tpc2.1073389577007" value="SatAbs-based" />
+          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="srwo.1634970928500780281" resolveInfo="verification" />
           <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="2263984427998414300" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2263984427998414301" nodeInfo="sn">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2263984427998414302" nodeInfo="nn">
@@ -784,9 +779,6 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2263984427998414307" nodeInfo="nn">
-            <property name="color" nameId="tpc2.1186403713874" value="cyan" />
           </node>
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2263984427998414290" nodeInfo="nn" />
@@ -1414,6 +1406,7 @@
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2263984427998414175" nodeInfo="nn">
           <property name="text" nameId="tpc2.1073389577007" value="CBMC-based" />
+          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="srwo.1634970928500780281" resolveInfo="verification" />
           <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="2263984427998414176" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2263984427998414177" nodeInfo="sn">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2263984427998414178" nodeInfo="nn">
@@ -1426,12 +1419,10 @@
               </node>
             </node>
           </node>
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2263984427998414182" nodeInfo="nn">
-            <property name="color" nameId="tpc2.1186403713874" value="cyan" />
-          </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2263984427998414183" nodeInfo="nn">
           <property name="text" nameId="tpc2.1073389577007" value="SatAbs-based" />
+          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="srwo.1634970928500780281" resolveInfo="verification" />
           <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="2263984427998414184" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2263984427998414185" nodeInfo="sn">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2263984427998414186" nodeInfo="nn">
@@ -1445,9 +1436,6 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2263984427998414191" nodeInfo="nn">
-            <property name="color" nameId="tpc2.1186403713874" value="cyan" />
           </node>
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2263984427998414174" nodeInfo="nn" />
