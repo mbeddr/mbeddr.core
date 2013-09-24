@@ -81,7 +81,11 @@
           <node role="type" roleId="mj1l.318113533128716676" type="k146.StackType" typeId="k146.291293396405106761" id="291293396407505418" nodeInfo="ng">
             <link role="stack" roleId="k146.291293396405106762" targetNodeId="291293396407505211" resolveInfo="stack" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="k146.StackInitExpression" typeId="k146.291293396406263895" id="291293396407505584" nodeInfo="ng" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="k146.StackInitExpression" typeId="k146.291293396406263895" id="291293396407505584" nodeInfo="ng">
+            <node role="type" roleId="k146.291293396426369667" type="k146.StackType" typeId="k146.291293396405106761" id="291293396428114187" nodeInfo="ng">
+              <link role="stack" roleId="k146.291293396405106762" targetNodeId="291293396407505211" resolveInfo="stack" />
+            </node>
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="291293396411404843" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396411404875" nodeInfo="ng">
