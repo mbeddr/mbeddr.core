@@ -208,5 +208,10 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1085404444144930947" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IVisibleUnitProvider" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3047370974150256092" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="DimensionlessUnitDeclaration" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nounit" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3801772042669047303" resolveInfo="ElementaryUnitDeclaration" />
+  </root>
 </model>
 
