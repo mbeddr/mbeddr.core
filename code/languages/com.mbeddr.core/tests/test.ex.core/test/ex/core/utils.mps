@@ -612,7 +612,7 @@
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605982730213" nodeInfo="ng" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.DataLoggerConfigItem" typeId="k146.2054775350263837242" id="3307745037989425341" nodeInfo="ng">
-      <node role="gen" roleId="k146.2054775350263837563" type="k146.DLCollectAndPrintOnFinish" typeId="k146.2054775350266450111" id="1498485214674622458" nodeInfo="ng" />
+      <node role="gen" roleId="k146.2054775350263837563" type="k146.DLCollectAndPrintOnFinish" typeId="k146.2054775350266450111" id="4188698303615848765" nodeInfo="ng" />
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578280435" nodeInfo="ng">
@@ -696,7 +696,7 @@
       </node>
       <node role="items" roleId="k146.4944376863000971777" type="k146.DataItem" typeId="k146.4944376863000945404" id="5803349945845153784" nodeInfo="ng">
         <property name="active" nameId="k146.2054775350250915337" value="true" />
-        <property name="size" nameId="k146.4944376863000971585" value="10" />
+        <property name="size" nameId="k146.4944376863000971585" value="1" />
         <property name="name" nameId="tpck.1169194664001" value="aFloat" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="5803349945845620160" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -780,7 +780,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="k146.DataLoggerDotExpr" typeId="k146.4944376863005753692" id="3307745037989403003" nodeInfo="ng">
             <node role="member" roleId="mj1l.1452920870317550651" type="k146.DLEnterTraceOp" typeId="k146.4944376863010363983" id="3307745037989403028" nodeInfo="ng">
               <link role="tracepoint" roleId="k146.4944376863010364035" targetNodeId="3307745037988787882" resolveInfo="meineFunktion" />
-              <node role="time" roleId="k146.1498485214668831645" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="1498485214672342818" nodeInfo="ng">
+              <node role="time" roleId="k146.1498485214668831645" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="4188698303615871881" nodeInfo="ng">
                 <link role="function" roleId="x27k.5950410542643524493" targetNodeId="1498485214672341136" resolveInfo="getTime" />
               </node>
             </node>
