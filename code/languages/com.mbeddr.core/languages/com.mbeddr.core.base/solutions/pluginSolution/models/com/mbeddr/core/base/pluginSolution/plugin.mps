@@ -5279,7 +5279,7 @@
       </node>
     </node>
     <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="3815661793603856590" nodeInfo="ng">
-      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/assessment.jpg" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${module}/icons/assessment.png" />
     </node>
   </root>
   <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="3815661793603857909" nodeInfo="ng">
