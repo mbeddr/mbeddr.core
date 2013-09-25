@@ -1052,6 +1052,10 @@
     <property name="name" nameId="tpck.1169194664001" value="DLCollectAndPrintOnFinish" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="collect and printf" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2054775350263837562" resolveInfo="DLGenStrategy" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4188698303623312008" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="writeToFile" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2054775350267974975" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger.config" />

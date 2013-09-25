@@ -3016,8 +3016,23 @@
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2054775350266450158" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger.config" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.2054775350266450111" resolveInfo="DLCollectAndPrintOnFinish" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2054775350266450211" nodeInfo="nn">
-      <property name="text" nameId="tpc2.1073389577007" value="collect and printf" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4188698303623650485" nodeInfo="nn">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4188698303623650486" nodeInfo="nn" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2054775350266450211" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="collect and printf" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4188698303623651807" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="(into file:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4188698303623651815" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.4188698303623312008" resolveInfo="writeToFile" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4188698303623651824" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value=")" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="4188698303623651924" nodeInfo="nn">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2054775350267975142" nodeInfo="ng">

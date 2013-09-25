@@ -612,7 +612,9 @@
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605982730213" nodeInfo="ng" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.DataLoggerConfigItem" typeId="k146.2054775350263837242" id="3307745037989425341" nodeInfo="ng">
-      <node role="gen" roleId="k146.2054775350263837563" type="k146.DLCollectAndPrintOnFinish" typeId="k146.2054775350266450111" id="4188698303615848765" nodeInfo="ng" />
+      <node role="gen" roleId="k146.2054775350263837563" type="k146.DLCollectAndPrintOnFinish" typeId="k146.2054775350266450111" id="4188698303615848765" nodeInfo="ng">
+        <property name="writeToFile" nameId="k146.4188698303623312008" value="true" />
+      </node>
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578280435" nodeInfo="ng">
