@@ -1099,16 +1099,16 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -1243,6 +1243,7 @@
         <module file="${mbeddr.core}/languages/com.mbeddr.core.expressions/expressions.mpl" bootstrap="true" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.make/make.mpl" bootstrap="true" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.modules/modules.mpl" bootstrap="true" />
+        <module file="${mbeddr.core}/languages/com.mbeddr.core.modules.gen/gen.mpl" bootstrap="true" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.arrays/arrays.mpl" bootstrap="true" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.statements/statements.mpl" bootstrap="true" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.udt/udt.mpl" bootstrap="true" />
@@ -1257,7 +1258,6 @@
         <module file="${mbeddr.core}/languages/com.mbeddr.core.embedded/embedded.mpl" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.legacy/legacy.mpl" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.legacy/solutions/pluginSolution/pluginSolution.msd" />
-        <module file="${mbeddr.core}/languages/com.mbeddr.core.modules.gen/gen.mpl" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.modules/solutions/pluginSolution/pluginSolution.msd" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.modules.runtime/include.msd" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.runconfiguration/runconfiguration.mpl" />
@@ -1821,6 +1821,7 @@
         <path location="${mbeddr.core}/languages/com.mbeddr.core.expressions/source_gen" />
         <path location="${mbeddr.core}/languages/com.mbeddr.core.make/source_gen" />
         <path location="${mbeddr.core}/languages/com.mbeddr.core.modules/source_gen" />
+        <path location="${mbeddr.core}/languages/com.mbeddr.core.modules.gen/source_gen" />
         <path location="${mbeddr.core}/languages/com.mbeddr.core.arrays/source_gen" />
         <path location="${mbeddr.core}/languages/com.mbeddr.core.statements/source_gen" />
         <path location="${mbeddr.core}/languages/com.mbeddr.core.udt/source_gen" />
@@ -2518,7 +2519,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.com.mbeddr.core.modules.gen" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.buildconfig, java.compile.com.mbeddr.core.expressions, java.compile.com.mbeddr.core.make, java.compile.com.mbeddr.core.modules, java.compile.com.mbeddr.core.pointers, java.compile.com.mbeddr.core.statements, java.compile.com.mbeddr.core.udt, java.compile.com.mbeddr.core.unittest, java.compile.com.mbeddr.core.util, fetchDependencies">
+  <target name="java.compile.com.mbeddr.core.modules.gen" depends="java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.modules.gen/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.modules.gen" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.core.modules.gen" fork="true" includeantruntime="false" debug="true">
@@ -2540,16 +2541,6 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.buildconfig" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.make" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.modules" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.unittest" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/diff_match_patch.jar" />
@@ -2580,6 +2571,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.core.modules.gen">
@@ -3933,7 +3925,6 @@
     <delete dir="${mbeddr.core}/languages/com.mbeddr.core.legacy/solutions/pluginSolution/source_gen" />
     <delete dir="${mbeddr.core}/languages/com.mbeddr.core.make/generator/source_gen" />
     <delete dir="${mbeddr.core}/languages/com.mbeddr.core.modules/generator/source_gen" />
-    <delete dir="${mbeddr.core}/languages/com.mbeddr.core.modules.gen/source_gen" />
     <delete dir="${mbeddr.core}/languages/com.mbeddr.core.modules/solutions/pluginSolution/source_gen" />
     <delete dir="${mbeddr.core}/languages/com.mbeddr.core.modules.runtime/source_gen" />
     <delete dir="${mbeddr.core}/languages/com.mbeddr.core.arrays/generator/source_gen" />
