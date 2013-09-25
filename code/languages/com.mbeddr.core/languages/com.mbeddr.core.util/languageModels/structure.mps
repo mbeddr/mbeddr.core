@@ -990,6 +990,11 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger" />
     <property name="name" nameId="tpck.1169194664001" value="DLEnterTraceOp" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4944376863005754347" resolveInfo="DataLoggerOp" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1498485214668831645" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="time" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4944376863010364035" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="tracepoint" />
