@@ -54,7 +54,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6437088627575722830" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ImplementationModule" />
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/implementationmodule.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/implementationmodule.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="module" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="module encapsulating implementation code" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6437088627575722813" resolveInfo="Module" />
@@ -288,7 +288,7 @@
     <property name="name" nameId="tpck.1169194664001" value="ExternalModule" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="external" />
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/externalmodule.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/externalmodule.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="external" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="module representing external H and O files" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6437088627575722813" resolveInfo="Module" />
