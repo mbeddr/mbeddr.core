@@ -3196,7 +3196,7 @@
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Double%dparseDouble(java%dlang%dString)%cdouble" resolveInfo="parseDouble" />
                 <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="e2lb.~Double" resolveInfo="Double" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6658270785800548312" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="1E-37" />
+                  <property name="value" nameId="tpee.1070475926801" value="-1E37" />
                 </node>
               </node>
             </node>
@@ -3304,7 +3304,7 @@
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Double%dparseDouble(java%dlang%dString)%cdouble" resolveInfo="parseDouble" />
                 <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="e2lb.~Double" resolveInfo="Double" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6658270785800547270" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="1E-37" />
+                  <property name="value" nameId="tpee.1070475926801" value="-1E37" />
                 </node>
               </node>
             </node>
