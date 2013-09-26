@@ -670,6 +670,22 @@
       <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedLongLongType" typeId="mj1l.8463282783691618471" id="8863019357864489551" nodeInfo="ng" />
       <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt64tType" typeId="mj1l.8463282783691618456" id="8863019357864489552" nodeInfo="ng" />
     </node>
+    <node role="minFloatValue" roleId="mj1l.6658270785788810330" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836823119" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="-1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+    <node role="minDoubleValue" roleId="mj1l.6658270785788810349" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836823120" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="-1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+    <node role="maxFloatValue" roleId="mj1l.6658270785788810029" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836823121" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+    <node role="maxDoubleValue" roleId="mj1l.6658270785788810339" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836823122" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4944376863002608498" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DataLoggerTest" />

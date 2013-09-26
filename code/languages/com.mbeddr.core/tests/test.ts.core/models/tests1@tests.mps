@@ -5060,19 +5060,19 @@
       <node role="basicType" roleId="mj1l.9149785691755093697" type="mj1l.LongDoubleType" typeId="mj1l.9149785691754701072" id="9149785691755264324" nodeInfo="ng" />
       <node role="ieee754Type" roleId="mj1l.9149785691755093698" type="mj1l.LongDoubleType" typeId="mj1l.9149785691754701072" id="9149785691755264325" nodeInfo="ng" />
     </node>
-    <node role="minFloatValue" roleId="mj1l.6658270785788810330" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="6658270785809260874" nodeInfo="ng">
-      <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
-      <property name="postfix" nameId="mj1l.1670233242589904219" value="-37" />
+    <node role="minFloatValue" roleId="mj1l.6658270785788810330" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836822554" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="-1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
     </node>
-    <node role="minDoubleValue" roleId="mj1l.6658270785788810349" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="6658270785809260875" nodeInfo="ng">
-      <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
-      <property name="postfix" nameId="mj1l.1670233242589904219" value="-37" />
+    <node role="minDoubleValue" roleId="mj1l.6658270785788810349" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836822555" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="-1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
     </node>
-    <node role="maxFloatValue" roleId="mj1l.6658270785788810029" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="6658270785809260876" nodeInfo="ng">
+    <node role="maxFloatValue" roleId="mj1l.6658270785788810029" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836822556" nodeInfo="ng">
       <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
       <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
     </node>
-    <node role="maxDoubleValue" roleId="mj1l.6658270785788810339" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="6658270785809260877" nodeInfo="ng">
+    <node role="maxDoubleValue" roleId="mj1l.6658270785788810339" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836822557" nodeInfo="ng">
       <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
       <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
     </node>
