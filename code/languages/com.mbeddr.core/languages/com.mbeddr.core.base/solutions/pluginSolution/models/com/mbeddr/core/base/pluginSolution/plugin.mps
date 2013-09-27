@@ -10248,7 +10248,7 @@
     </node>
   </root>
   <root type="tp4k.PreferencesComponentDeclaration" typeId="tp4k.1210179134063" id="37070967460990017" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="mbeddrPrefenrences" />
+    <property name="name" nameId="tpck.1169194664001" value="mbeddrPreferences" />
     <node role="persistenPropertyDeclaration" roleId="tp4k.1210179829398" type="tp4k.PersistentPropertyDeclaration" typeId="tp4k.1210179190070" id="37070967461020205" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddrMenuEnabled" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="37070967461021174" nodeInfo="in" />
@@ -10260,7 +10260,7 @@
       <property name="name" nameId="tpck.1169194664001" value="mbeddr preference" />
       <node role="component" roleId="tp4k.1210686845551" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="1564919049704253914" nodeInfo="nn">
         <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="1564919049704525185" nodeInfo="nn">
-          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="37070967461190723" resolveInfo="MbeddrPreferencePanle" />
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="37070967461190723" resolveInfo="MbeddrPreferencePanel" />
         </node>
       </node>
       <node role="isModifiedBlock" roleId="tp4k.1210763647050" type="tp4k.PreferencePageIsModifiedBlock" typeId="tp4k.1210763550007" id="1564919049704087421" nodeInfo="nn">
@@ -10271,7 +10271,7 @@
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1564919049704693383" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tp4k.ConceptFunctionParameter_Project" typeId="tp4k.1213888797251" id="1564919049704693384" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetPreferencesComponentInProjectOperation" typeId="tgbt.681855071694758168" id="1564919049704693385" nodeInfo="nn">
-                    <link role="componentDeclaration" roleId="tgbt.681855071694758169" targetNodeId="37070967460990017" resolveInfo="mbeddrPrefenrences" />
+                    <link role="componentDeclaration" roleId="tgbt.681855071694758169" targetNodeId="37070967460990017" resolveInfo="mbeddrPreferences" />
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp4k.PersistentPropertyReference" typeId="tp4k.1210180874794" id="1564919049704693386" nodeInfo="nn">
@@ -10299,7 +10299,7 @@
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1564919049704577861" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tp4k.ConceptFunctionParameter_Project" typeId="tp4k.1213888797251" id="1564919049704577223" nodeInfo="nn" />
                     <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetPreferencesComponentInProjectOperation" typeId="tgbt.681855071694758168" id="1564919049704587644" nodeInfo="nn">
-                      <link role="componentDeclaration" roleId="tgbt.681855071694758169" targetNodeId="37070967460990017" resolveInfo="mbeddrPrefenrences" />
+                      <link role="componentDeclaration" roleId="tgbt.681855071694758169" targetNodeId="37070967460990017" resolveInfo="mbeddrPreferences" />
                     </node>
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp4k.PersistentPropertyReference" typeId="tp4k.1210180874794" id="1564919049704590262" nodeInfo="nn">
@@ -10325,7 +10325,7 @@
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1564919049704591885" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tp4k.ConceptFunctionParameter_Project" typeId="tp4k.1213888797251" id="1564919049704591374" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetPreferencesComponentInProjectOperation" typeId="tgbt.681855071694758168" id="1564919049704600587" nodeInfo="nn">
-                    <link role="componentDeclaration" roleId="tgbt.681855071694758169" targetNodeId="37070967460990017" resolveInfo="mbeddrPrefenrences" />
+                    <link role="componentDeclaration" roleId="tgbt.681855071694758169" targetNodeId="37070967460990017" resolveInfo="mbeddrPreferences" />
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp4k.PersistentPropertyReference" typeId="tp4k.1210180874794" id="1564919049704602961" nodeInfo="nn">
@@ -10339,7 +10339,7 @@
     </node>
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="37070967461189133" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="MbeddrPreferencePanle" />
+    <property name="name" nameId="tpck.1169194664001" value="MbeddrPreferencePanel" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="37070967461192696" nodeInfo="igu">
       <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
       <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
