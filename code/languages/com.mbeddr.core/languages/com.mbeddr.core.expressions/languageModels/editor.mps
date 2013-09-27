@@ -1576,6 +1576,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9149785691755093699" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1l.9149785691755093694" resolveInfo="IEEE754TypeSizeSpecification" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="9149785691755093705" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="9149785691755093706" nodeInfo="ng">
