@@ -2215,7 +2215,7 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.ProtectedVisibility" typeId="tpee.1146644641414" id="98682967488521811" nodeInfo="nn" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="98682967487933257" nodeInfo="in" />
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="98682967487933258" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="___" />
+        <property name="value" nameId="tpee.1070475926801" value="_" />
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="6749476066651213912" nodeInfo="ngu" />
@@ -2229,7 +2229,7 @@
           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="98682967487933259" resolveInfo="PREFIX" />
         </node>
         <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6749476066651213830" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="root_" />
+          <property name="value" nameId="tpee.1070475926801" value="root" />
         </node>
       </node>
     </node>
