@@ -29,6 +29,7 @@
     <property name="name" nameId="tpck.1169194664001" value="AnalysisConfiguration" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.base" />
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/analysisconfig.png" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6472990431939695961" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="name" />

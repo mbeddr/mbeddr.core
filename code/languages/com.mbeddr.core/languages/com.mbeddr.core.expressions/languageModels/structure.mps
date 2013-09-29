@@ -861,7 +861,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3335993110369795380" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TypeSizeConfiguration" />
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/typesizeconfig.png" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/typesizeconfig.png" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="define the type size mapping" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
@@ -907,6 +907,26 @@
       <property name="role" nameId="tpce.1071599776563" value="maxSizeInt" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="8463282783691490869" resolveInfo="PrimitiveC99IntegralType" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6658270785788810029" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="maxFloatValue" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6658270785788810330" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="minFloatValue" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6658270785788810339" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="maxDoubleValue" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6658270785788810349" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="minDoubleValue" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128050" resolveInfo="Expression" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3335993110369795381" nodeInfo="ig">
@@ -995,6 +1015,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9149785691755093694" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IEEE754TypeSizeSpecification" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9149785691755093697" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
