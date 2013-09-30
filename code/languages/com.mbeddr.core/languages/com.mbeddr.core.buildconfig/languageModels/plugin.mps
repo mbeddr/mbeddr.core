@@ -29,6 +29,9 @@
   <import index="tpib" modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" implicit="yes" />
   <root type="vvvw.FacetDeclaration" typeId="vvvw.6418371274763029523" id="2741479916255069899" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="runPostProcessors" />
+    <node role="optional" roleId="vvvw.6447445394688422657" type="vvvw.RelatedFacetReference" typeId="vvvw.8351679702044320297" id="5021925782136365214" nodeInfo="ng">
+      <link role="facet" roleId="vvvw.6447445394688422643" targetNodeId="sjfu.205505736075693674" resolveInfo="runMake" />
+    </node>
     <node role="targetDeclaration" roleId="vvvw.6418371274763146558" type="vvvw.TargetDeclaration" typeId="vvvw.6418371274763029565" id="2741479916255069900" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="runProcessors" />
       <node role="dependency" roleId="vvvw.6418371274763146553" type="vvvw.TargetDependency" typeId="vvvw.6418371274763029600" id="2741479916255069901" nodeInfo="ng">
@@ -399,9 +402,6 @@
     </node>
     <node role="required" roleId="vvvw.6447445394688422656" type="vvvw.RelatedFacetReference" typeId="vvvw.8351679702044320297" id="2741479916255069953" nodeInfo="ng">
       <link role="facet" roleId="vvvw.6447445394688422643" targetNodeId="tpcq.6648795410103939538" resolveInfo="Generate" />
-    </node>
-    <node role="required" roleId="vvvw.6447445394688422656" type="vvvw.RelatedFacetReference" typeId="vvvw.8351679702044320297" id="2741479916255069954" nodeInfo="ng">
-      <link role="facet" roleId="vvvw.6447445394688422643" targetNodeId="sjfu.205505736075693674" resolveInfo="runMake" />
     </node>
   </root>
 </model>
