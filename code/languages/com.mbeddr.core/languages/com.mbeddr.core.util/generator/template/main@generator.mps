@@ -12512,6 +12512,7 @@
                 <property name="isInvisible" nameId="c4fa.4643433264760041409" value="false" />
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4188698303623171653" nodeInfo="ng">
                   <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="4188698303623171651" nodeInfo="ng">
+                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdio.h" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4188698303623191868" nodeInfo="ng">
                       <property name="text" nameId="c4fa.3830958861296879114" value="FILE* f = fopen(&quot;" />
                     </node>
