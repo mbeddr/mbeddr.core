@@ -6610,5 +6610,14 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="2963921682950454588" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="brace" />
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="2963921682950460839" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="braceMatch" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.MatchingLabelStyleClassItem" typeId="tpc2.1236262245656" id="2963921682950460841" nodeInfo="nn">
+        <property name="labelName" nameId="tpc2.1238091709220" value="braces" />
+      </node>
+    </node>
+  </root>
 </model>
 
