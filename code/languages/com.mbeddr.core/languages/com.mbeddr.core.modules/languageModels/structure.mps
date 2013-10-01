@@ -85,14 +85,6 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6437088627575722831" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IModuleContent" />
-    <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.BooleanConceptPropertyDeclaration" typeId="tpce.1105725240314" id="1317894735999278394" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="exportable" />
-      <property name="inheritable" nameId="tpce.1218571350029" value="true" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.DeprecatedNodeAnnotation" typeId="tpce.1224240836180" id="6584628407655574578" nodeInfo="ig" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.MigratedToMethodAnnotation" typeId="tpce.8080932314785812236" id="6584628407655574577" nodeInfo="ig">
-        <link role="method" roleId="tpce.8080932314785812847" targetNodeId="qd6m.6584628407655574574" resolveInfo="exportable" />
-      </node>
-    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1317894735999272944" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="exported" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
