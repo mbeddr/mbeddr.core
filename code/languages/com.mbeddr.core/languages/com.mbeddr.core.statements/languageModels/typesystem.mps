@@ -1013,6 +1013,9 @@
                               </node>
                             </node>
                           </node>
+                          <node role="nodeToCheck" roleId="tpd4.1174662598553" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2340143149226148986" nodeInfo="nn">
+                            <link role="variable" roleId="tp2q.1153944258490" targetNodeId="1357038773596958199" resolveInfo="e" />
+                          </node>
                         </node>
                       </node>
                     </node>
