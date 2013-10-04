@@ -175,5 +175,9 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
   </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8456210691460336054" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="ICareAboutImportingMyself" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="extending" />
+  </root>
 </model>
 
