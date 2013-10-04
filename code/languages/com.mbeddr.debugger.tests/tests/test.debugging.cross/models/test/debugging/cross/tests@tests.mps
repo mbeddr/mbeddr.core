@@ -12,12 +12,6 @@
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.WatchablesDeclaration" typeId="rpmx.1218249513292256529" id="5710167937131122858" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mainParameters" />
       <property name="exported" nameId="rpmx.8924761790439057805" value="true" />
-      <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5710167937131122859" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="argc" />
-      </node>
-      <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5710167937131122860" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="argv" />
-      </node>
     </node>
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131122861" nodeInfo="ng" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.StackFramesDeclaration" typeId="rpmx.1218249513292774460" id="5710167937131122862" nodeInfo="ng">
