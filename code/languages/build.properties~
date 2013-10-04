@@ -1,0 +1,6 @@
+# MPS installation
+mps.home=/home/zaur/MPS30
+# Folder where MPS stores it's cache
+mps.platform.caches=/home/zaur/MPS30Cache
+# Points to the root folder of the mbeddr.core repository
+mbeddr.github.core.home=/home/zaur/Documents/Fortiss/MBEDDR
