@@ -358,6 +358,14 @@
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.debugger.test.runtime">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/tests/test.debugger.runtime/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/tests/test.debugger.runtime/test_gen/">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="test.com.mbeddr.debugger.testing.tests.runtime" depends="assemble">
