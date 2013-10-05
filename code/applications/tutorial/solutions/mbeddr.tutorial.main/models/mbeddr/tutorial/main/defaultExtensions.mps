@@ -33,7 +33,7 @@
   <import index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="1" implicit="yes" />
   <import index="s5bn" modelUID="r:a92dafc6-eacf-4328-984c-d7620d951c7f(com.mbeddr.core.legacy.structure)" version="1" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="5" implicit="yes" />
-  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="13" implicit="yes" />
+  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="6" implicit="yes" />
   <import index="yvrq" modelUID="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)" version="2" implicit="yes" />
   <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="7" implicit="yes" />
@@ -10341,7 +10341,7 @@
     <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="2426041105270455845" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="TracesForFlightJudgementRules" />
       <property name="sorted" nameId="vs0r.8691429746170824734" value="true" />
-      <node role="query" roleId="vs0r.865293814733115677" type="75wo.TraceQuery" typeId="75wo.2426041105269792134" id="2426041105270455847" nodeInfo="ng">
+      <node role="query" roleId="vs0r.865293814733115677" type="75wo.ShowTracesQuery" typeId="75wo.2426041105269792134" id="2426041105270455847" nodeInfo="ng">
         <link role="module" roleId="75wo.2426041105269792565" targetNodeId="iwll.1433966787984154171" resolveInfo="FlightJudgementRules" />
       </node>
       <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="2426041105270526183" nodeInfo="ng">
@@ -10352,7 +10352,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526186" nodeInfo="ng" />
           </node>
         </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.TraceResult" typeId="75wo.2426041105269792135" id="2426041105270526187" nodeInfo="ng">
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526187" nodeInfo="ng">
           <link role="req" roleId="75wo.2426041105269792136" targetNodeId="iwll.1433966787984154176" resolveInfo="FasterThan100" />
           <link role="traced" roleId="75wo.2426041105270167627" targetNodeId="7727566415687763044" resolveInfo="HIGH_SPEED" />
         </node>
@@ -10365,7 +10365,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526181" nodeInfo="ng" />
           </node>
         </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.TraceResult" typeId="75wo.2426041105269792135" id="2426041105270526182" nodeInfo="ng">
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526182" nodeInfo="ng">
           <link role="req" roleId="75wo.2426041105269792136" targetNodeId="iwll.1433966787984154176" resolveInfo="FasterThan100" />
           <link role="traced" roleId="75wo.2426041105270167627" targetNodeId="7727566415687763096" />
         </node>
@@ -10378,7 +10378,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526196" nodeInfo="ng" />
           </node>
         </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.TraceResult" typeId="75wo.2426041105269792135" id="2426041105270526197" nodeInfo="ng">
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526197" nodeInfo="ng">
           <link role="req" roleId="75wo.2426041105269792136" targetNodeId="iwll.1433966787984154178" resolveInfo="FasterThan200" />
           <link role="traced" roleId="75wo.2426041105270167627" targetNodeId="7727566415687763046" resolveInfo="VERY_HIGH_SPEED" />
         </node>
@@ -10391,7 +10391,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526191" nodeInfo="ng" />
           </node>
         </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.TraceResult" typeId="75wo.2426041105269792135" id="2426041105270526192" nodeInfo="ng">
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526192" nodeInfo="ng">
           <link role="req" roleId="75wo.2426041105269792136" targetNodeId="iwll.1433966787984154178" resolveInfo="FasterThan200" />
           <link role="traced" roleId="75wo.2426041105270167627" targetNodeId="7727566415687763082" />
         </node>
@@ -10404,7 +10404,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526211" nodeInfo="ng" />
           </node>
         </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.TraceResult" typeId="75wo.2426041105269792135" id="2426041105270526212" nodeInfo="ng">
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526212" nodeInfo="ng">
           <link role="req" roleId="75wo.2426041105269792136" targetNodeId="iwll.1433966787984154184" resolveInfo="FullStop" />
           <link role="traced" roleId="75wo.2426041105270167627" targetNodeId="7727566415687763120" resolveInfo="LANDING" />
         </node>
@@ -10417,7 +10417,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526206" nodeInfo="ng" />
           </node>
         </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.TraceResult" typeId="75wo.2426041105269792135" id="2426041105270526207" nodeInfo="ng">
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526207" nodeInfo="ng">
           <link role="req" roleId="75wo.2426041105269792136" targetNodeId="iwll.1433966787984154184" resolveInfo="FullStop" />
           <link role="traced" roleId="75wo.2426041105270167627" targetNodeId="7727566415687763140" />
         </node>
@@ -10430,7 +10430,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526176" nodeInfo="ng" />
           </node>
         </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.TraceResult" typeId="75wo.2426041105269792135" id="2426041105270526177" nodeInfo="ng">
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526177" nodeInfo="ng">
           <link role="req" roleId="75wo.2426041105269792136" targetNodeId="iwll.1433966787984154172" resolveInfo="PointsForTakeoff" />
           <link role="traced" roleId="75wo.2426041105270167627" targetNodeId="7727566415687762962" resolveInfo="TAKEOFF" />
         </node>
@@ -10443,7 +10443,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526171" nodeInfo="ng" />
           </node>
         </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.TraceResult" typeId="75wo.2426041105269792135" id="2426041105270526172" nodeInfo="ng">
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526172" nodeInfo="ng">
           <link role="req" roleId="75wo.2426041105269792136" targetNodeId="iwll.1433966787984154172" resolveInfo="PointsForTakeoff" />
           <link role="traced" roleId="75wo.2426041105270167627" targetNodeId="7727566415687762966" />
         </node>
@@ -10456,7 +10456,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526201" nodeInfo="ng" />
           </node>
         </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.TraceResult" typeId="75wo.2426041105269792135" id="2426041105270526202" nodeInfo="ng">
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526202" nodeInfo="ng">
           <link role="req" roleId="75wo.2426041105269792136" targetNodeId="iwll.1433966787984154182" resolveInfo="ShortLandingRoll" />
           <link role="traced" roleId="75wo.2426041105270167627" targetNodeId="7727566415687763131" />
         </node>
