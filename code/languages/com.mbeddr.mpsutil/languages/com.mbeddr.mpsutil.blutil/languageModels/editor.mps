@@ -1304,5 +1304,74 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="8738853969696680903" nodeInfo="nn" />
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5667201763537506115" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="log" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="hba4.5667201763537506087" resolveInfo="LogContextStatement" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5667201763537506679" nodeInfo="nn">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5667201763537506680" nodeInfo="nn" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5667201763537506676" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="logctx:" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5667201763537739972" resolveInfo="log" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="5667201763537506688" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.5667201763537506090" resolveInfo="label" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5667201763537739972" resolveInfo="log" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5667201763544636977" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="with" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5667201763537739972" resolveInfo="log" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5667201763544636987" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.5667201763544636971" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5667201763552120490" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="on change" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5667201763537739972" resolveInfo="log" />
+        <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="5667201763552120497" nodeInfo="nn">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5667201763552120498" nodeInfo="sn">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5667201763552121180" nodeInfo="nn">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5667201763552121805" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="5667201763552121179" nodeInfo="nn" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5667201763552130155" nodeInfo="nn">
+                  <link role="property" roleId="tp25.1138056395725" targetNodeId="hba4.5667201763551497887" resolveInfo="onChange" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5667201763537739927" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="log" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="hba4.5667201763537739848" resolveInfo="LogExpr" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5667201763537739932" nodeInfo="nn">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5667201763537739933" nodeInfo="nn" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5667201763537739929" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="log:" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5667201763537739972" resolveInfo="log" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="5667201763537739941" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.5667201763537739900" resolveInfo="label" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5667201763537739972" resolveInfo="log" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5667201763537739948" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="=" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5667201763537739972" resolveInfo="log" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5667201763537739966" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.5667201763537739902" />
+      </node>
+    </node>
+  </root>
+  <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="5667201763537739971" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="logging" />
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="5667201763537739972" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="log" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="5667201763537739979" nodeInfo="nn">
+        <property name="color" nameId="tpc2.1186403713874" value="red" />
+      </node>
+    </node>
+  </root>
 </model>
 
