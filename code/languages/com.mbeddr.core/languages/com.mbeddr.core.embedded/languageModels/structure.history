@@ -2,20 +2,20 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="bhga" modelUID="r:c4b50490-6973-43ac-bb5c-96c413eaf2e2(com.mbeddr.ext.embedded.constraints)" version="-1" />
-      <model index="nb4f" modelUID="r:272921e7-7030-4de3-ab20-a851a2e6ef5a(com.mbeddr.ext.embedded.behavior)" version="-1" />
-      <model index="9clu" modelUID="r:1200d76b-83c0-4a1a-bd4e-b2766a3a8515(com.mbeddr.ext.embedded.editor)" version="-1" />
-      <model index="z4z8" modelUID="r:96ebd3ef-3795-4b34-8c2c-a4f631bc1fd9(com.mbeddr.ext.embedded.actions)" version="-1" />
       <model index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.ext.embedded.structure)" version="-1" />
-      <model index="jcux" modelUID="r:fdca2071-ad72-4f52-9517-3ce52ba7c01f(com.mbeddr.ext.embedded.textGen)" version="-1" />
-      <model index="fvu6" modelUID="r:8c46b4ec-76a7-4335-baef-93cb86f4b0fc(com.mbeddr.core.udt.typesystem)" version="0" />
-      <model index="arsz" modelUID="r:c0dcafae-993e-49da-8bd0-f4eeac6d4bd9(com.mbeddr.core.udt.editor)" version="-1" />
-      <model index="e3eu" modelUID="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.ext.embedded.typesystem)" version="-1" />
       <model index="2rho" modelUID="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" version="-1" />
+      <model index="z4z8" modelUID="r:96ebd3ef-3795-4b34-8c2c-a4f631bc1fd9(com.mbeddr.ext.embedded.actions)" version="-1" />
+      <model index="arsz" modelUID="r:c0dcafae-993e-49da-8bd0-f4eeac6d4bd9(com.mbeddr.core.udt.editor)" version="-1" />
+      <model index="9clu" modelUID="r:1200d76b-83c0-4a1a-bd4e-b2766a3a8515(com.mbeddr.ext.embedded.editor)" version="-1" />
       <model index="23u9" modelUID="r:e1c41c5a-ac6d-4a35-a67d-6ded583fbc73(com.mbeddr.core.udt.actions)" version="0" />
-      <model index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="2" />
-      <model index="k7w5" modelUID="r:a64617d8-e1ac-471e-92c2-4870bad39a43(com.mbeddr.core.udt.constraints)" version="-1" />
       <model index="n2rq" modelUID="r:625e17e1-8e4b-4676-bc46-db69fa0d9f38(com.mbeddr.core.udt.textGen)" version="-1" />
+      <model index="bhga" modelUID="r:c4b50490-6973-43ac-bb5c-96c413eaf2e2(com.mbeddr.ext.embedded.constraints)" version="-1" />
+      <model index="jcux" modelUID="r:fdca2071-ad72-4f52-9517-3ce52ba7c01f(com.mbeddr.ext.embedded.textGen)" version="-1" />
+      <model index="nb4f" modelUID="r:272921e7-7030-4de3-ab20-a851a2e6ef5a(com.mbeddr.ext.embedded.behavior)" version="-1" />
+      <model index="e3eu" modelUID="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.ext.embedded.typesystem)" version="-1" />
+      <model index="fvu6" modelUID="r:8c46b4ec-76a7-4335-baef-93cb86f4b0fc(com.mbeddr.core.udt.typesystem)" version="0" />
+      <model index="k7w5" modelUID="r:a64617d8-e1ac-471e-92c2-4870bad39a43(com.mbeddr.core.udt.constraints)" version="-1" />
+      <model index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="2" />
     </dependencies>
     <move id="clbe.1730914748330744597" to="nbyu.1730914748330889909" />
     <move id="clbe.1730914748330631897" to="nbyu.1730914748330889919" />
@@ -236,13 +236,13 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="jcux" modelUID="r:fdca2071-ad72-4f52-9517-3ce52ba7c01f(com.mbeddr.ext.embedded.textGen)" version="0" />
       <model index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.ext.embedded.structure)" version="0" />
-      <model index="e3eu" modelUID="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.ext.embedded.typesystem)" version="0" />
       <model index="bhga" modelUID="r:c4b50490-6973-43ac-bb5c-96c413eaf2e2(com.mbeddr.ext.embedded.constraints)" version="0" />
-      <model index="nb4f" modelUID="r:272921e7-7030-4de3-ab20-a851a2e6ef5a(com.mbeddr.ext.embedded.behavior)" version="0" />
-      <model index="9clu" modelUID="r:1200d76b-83c0-4a1a-bd4e-b2766a3a8515(com.mbeddr.ext.embedded.editor)" version="0" />
+      <model index="jcux" modelUID="r:fdca2071-ad72-4f52-9517-3ce52ba7c01f(com.mbeddr.ext.embedded.textGen)" version="0" />
       <model index="z4z8" modelUID="r:96ebd3ef-3795-4b34-8c2c-a4f631bc1fd9(com.mbeddr.ext.embedded.actions)" version="0" />
+      <model index="nb4f" modelUID="r:272921e7-7030-4de3-ab20-a851a2e6ef5a(com.mbeddr.ext.embedded.behavior)" version="0" />
+      <model index="e3eu" modelUID="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.ext.embedded.typesystem)" version="0" />
+      <model index="9clu" modelUID="r:1200d76b-83c0-4a1a-bd4e-b2766a3a8515(com.mbeddr.ext.embedded.editor)" version="0" />
     </dependencies>
     <RenameModel oldModel="r:fdca2071-ad72-4f52-9517-3ce52ba7c01f(com.mbeddr.ext.embedded.textGen)" newModel="r:fdca2071-ad72-4f52-9517-3ce52ba7c01f(com.mbeddr.core.embedded.textGen)" />
     <RenameModel oldModel="r:1200d76b-83c0-4a1a-bd4e-b2766a3a8515(com.mbeddr.ext.embedded.editor)" newModel="r:1200d76b-83c0-4a1a-bd4e-b2766a3a8515(com.mbeddr.core.embedded.editor)" />
@@ -257,6 +257,12 @@
       <model index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="1" />
     </dependencies>
     <rename id="nbyu.1730914748330889914" type="CONCEPT" from="MemoryLayoutSpec" to="NVMLayoutSpec" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="2" />
+    </dependencies>
+    <rename id="nbyu.5177337757798720573" type="PROPERTY" from="eplicitAdressing" to="explicitAdressing" />
   </StructureModification>
 </history>
 

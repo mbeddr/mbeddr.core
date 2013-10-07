@@ -533,12 +533,6 @@
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="6305416899339756810" nodeInfo="ng">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="6305416899339756811" nodeInfo="ng">
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4390760819953073787" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="argc" />
-          </node>
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4390760819953073788" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="argv" />
-          </node>
           <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4390760819953036267" nodeInfo="ng">
             <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4390760819953036268" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="instances" />
