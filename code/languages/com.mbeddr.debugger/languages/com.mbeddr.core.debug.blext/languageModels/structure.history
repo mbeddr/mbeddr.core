@@ -348,5 +348,11 @@
     </dependencies>
     <rename id="talm.87867697803479856" type="CONCEPT" from="AddStepIntoablesFromSubtreeStatement" to="AddNodesFromSubtreeStatement" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="43" />
+    </dependencies>
+    <rename id="talm.87867697826152387" type="CONCEPT" from="ExistsOperations" to="ExistsOperation" />
+  </StructureModification>
 </history>
 
