@@ -451,7 +451,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2194195324959155918" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="arr" />
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="2194195324959155920" nodeInfo="ng">
-            <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2194195324959155919" nodeInfo="ng" />
+            <node role="baseType" roleId="yq40.2963921683065158286" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2194195324959155919" nodeInfo="ng" />
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2194195324959155922" nodeInfo="ng">
             <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2194195324959155923" nodeInfo="ng">
@@ -727,6 +727,10 @@
       <node role="defaultTime" roleId="k146.98682967476673136" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="98682967477980019" nodeInfo="ng">
         <link role="function" roleId="x27k.5950410542643524493" targetNodeId="1498485214672341136" resolveInfo="getTime" />
       </node>
+      <node role="timeType" roleId="k146.985533732105719195" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="7115122674154246510" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4944376863005753572" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1379179814694_2" />
@@ -965,7 +969,7 @@
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6209595569797574060" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="args" />
         <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5708867820621171230" nodeInfo="ng">
-          <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.StringType" typeId="yq40.6113173064528067332" id="5708867820621171231" nodeInfo="ng" />
+          <node role="baseType" roleId="yq40.2963921683065158286" type="yq40.StringType" typeId="yq40.6113173064528067332" id="5708867820621171231" nodeInfo="ng" />
         </node>
       </node>
     </node>
