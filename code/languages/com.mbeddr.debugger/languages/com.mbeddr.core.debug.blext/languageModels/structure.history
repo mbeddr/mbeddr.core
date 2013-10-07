@@ -218,8 +218,8 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="35" />
       <model index="edkn" modelUID="r:b169cf73-0869-4973-bec3-4f2faefe3018(com.mbeddr.core.debug.test.structure)" version="-1" />
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="35" />
     </dependencies>
     <move id="talm.3383190694725951597" to="edkn.4193597469137484534" />
     <move id="talm.2435942464030742054" to="edkn.4193597469137484549" />
@@ -253,8 +253,8 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="36" />
       <model index="edkn" modelUID="r:b169cf73-0869-4973-bec3-4f2faefe3018(com.mbeddr.core.debug.test.structure)" version="0" />
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="36" />
     </dependencies>
     <move id="talm.3383190694725951597" to="edkn.4193597469137491152" />
     <move id="talm.2435942464030742054" to="edkn.4193597469137491149" />
@@ -329,6 +329,24 @@
       <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="39" />
     </dependencies>
     <rename id="talm.6193281990723414481" type="REFERENCE" from="stragegyClass" to="stragegy" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="40" />
+    </dependencies>
+    <rename id="talm.87867697803479856" type="CONCEPT" from="CollectStepIntoablesFromChildrenStatement" to="AddStepIntoablesFromChildrenStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="41" />
+    </dependencies>
+    <rename id="talm.87867697803479856" type="CONCEPT" from="AddStepIntoablesFromChildrenStatement" to="AddStepIntoablesFromSubtreeStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="42" />
+    </dependencies>
+    <rename id="talm.87867697803479856" type="CONCEPT" from="AddStepIntoablesFromSubtreeStatement" to="AddNodesFromSubtreeStatement" />
   </StructureModification>
 </history>
 
