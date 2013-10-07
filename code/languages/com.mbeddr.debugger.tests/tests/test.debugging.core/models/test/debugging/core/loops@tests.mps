@@ -1734,6 +1734,23 @@
         <property name="name" nameId="tpck.1169194664001" value="aVar" />
       </node>
     </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="87867697801941484" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="dummy" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="87867697801941486" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="87867697801941488" nodeInfo="sn" />
+      <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="87867697801941516" nodeInfo="ng">
+        <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="87867697801973404" nodeInfo="ng">
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="5710167937131567370" resolveInfo="stmntBeforeFirstDoWhile" />
+        </node>
+      </node>
+      <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="87867697801973406" nodeInfo="ng">
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="87867697801973408" nodeInfo="ng">
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="87867697801973412" nodeInfo="ng">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5710167937131567370" resolveInfo="stmntBeforeFirstDoWhile" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="3853561535654573965" nodeInfo="ng">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="5710167937131566970" resolveInfo="LoopsTest" />
     </node>
