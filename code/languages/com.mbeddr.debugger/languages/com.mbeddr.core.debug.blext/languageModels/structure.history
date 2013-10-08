@@ -417,5 +417,11 @@
     <move id="lj5f.8443185852107717102" to="2fr3.8443185852109740949" />
     <move id="lj5f.8443185852108240609" to="2fr3.8443185852109740952" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="46" />
+    </dependencies>
+    <rename id="talm.2062806453498588452" type="CONCEPT" from="StepOverIteselfStatement" to="StepOverItselfStatement" />
+  </StructureModification>
 </history>
 

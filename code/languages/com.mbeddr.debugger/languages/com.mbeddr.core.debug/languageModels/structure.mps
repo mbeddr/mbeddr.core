@@ -8,6 +8,9 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="568116135000816591" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ISteppable" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1389340506540666010" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1389340506540662105" resolveInfo="ISuspendableNode" />
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3205769394890863066" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IStackFrameContributor" />
@@ -32,6 +35,9 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3298295153090279176" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
     <property name="name" nameId="tpck.1169194664001" value="ISteppableContext" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1389340506540665759" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1389340506540662105" resolveInfo="ISuspendableNode" />
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2425085581001949605" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
@@ -79,6 +85,10 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7179305966071579075" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IPermanentBreakpointsProvider" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1389340506540662105" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
+    <property name="name" nameId="tpck.1169194664001" value="ISuspendableNode" />
   </root>
 </model>
 
