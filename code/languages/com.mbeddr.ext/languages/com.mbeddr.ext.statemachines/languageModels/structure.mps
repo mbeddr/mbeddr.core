@@ -491,7 +491,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
     <property name="name" nameId="tpck.1169194664001" value="InEvent" />
     <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/inevent.jpg" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="in" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="in event" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="an event flowing into a state machine" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1786180596061219795" resolveInfo="Event" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4643433264760980256" nodeInfo="ig">
@@ -504,7 +504,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
     <property name="name" nameId="tpck.1169194664001" value="OutEvent" />
     <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/outevent.jpg" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="out" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="out event" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="an event flowing out of the state machine" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1786180596061219795" resolveInfo="Event" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4643433264760985275" nodeInfo="ig">
