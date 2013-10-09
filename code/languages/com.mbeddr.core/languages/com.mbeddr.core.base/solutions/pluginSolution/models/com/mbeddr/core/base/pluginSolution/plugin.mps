@@ -11234,7 +11234,10 @@
       </node>
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="209357004262090637" nodeInfo="ng" />
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="209357004262090653" nodeInfo="ng">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="209357004261442181" resolveInfo="copyNodePathToClipboard" />
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="209357004261442181" resolveInfo="copyNodeInfoToClipboard" />
+      </node>
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="209357004273874663" nodeInfo="ng">
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="209357004273856515" resolveInfo="copyNodeURLToClipboard" />
       </node>
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="209357004268495818" nodeInfo="ng">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="209357004268476314" resolveInfo="selectNodeFromClipboardURL" />
@@ -11687,8 +11690,8 @@
     </node>
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="209357004261442181" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="copyNodePathToClipboard" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Copy Node Path to Clipboard" />
+    <property name="name" nameId="tpck.1169194664001" value="copyNodeInfoToClipboard" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Copy Node Info to Clipboard" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="clipboardStuff" />
     <node role="executeFunction" roleId="tp4k.1203083461638" type="tp4k.ExecuteBlock" typeId="tp4k.1203083511112" id="209357004261442182" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="209357004261442183" nodeInfo="sn">
@@ -12067,8 +12070,8 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="209357004268476314" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="selectNodeFromClipboardURL" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Select Node From Clipboard URL" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="clipboardStuff" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Select Node Based on URL in Clipboard" />
     <node role="executeFunction" roleId="tp4k.1203083461638" type="tp4k.ExecuteBlock" typeId="tp4k.1203083511112" id="209357004268476315" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="209357004268476316" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="209357004268498346" nodeInfo="nn">
@@ -12210,6 +12213,84 @@
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="5xh9.~MPSCommonDataKeys%dMPS_PROJECT" resolveInfo="MPS_PROJECT" />
       <node role="condition" roleId="tp4k.5538333046911298738" type="tp4k.RequiredCondition" typeId="tp4k.5538333046911348654" id="209357004268489973" nodeInfo="ng" />
+    </node>
+  </root>
+  <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="209357004273856515" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="copyNodeURLToClipboard" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Copy Node URL to Clipboard" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="clipboardStuff" />
+    <node role="executeFunction" roleId="tp4k.1203083461638" type="tp4k.ExecuteBlock" typeId="tp4k.1203083511112" id="209357004273856516" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="209357004273856517" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="209357004273856518" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="209357004273856519" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="n" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="209357004273856520" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="209357004273856521" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="209357004273856522" nodeInfo="nn" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp4k.ActionParameterReferenceOperation" typeId="tp4k.1206092561075" id="209357004273856523" nodeInfo="nn">
+                <link role="member" roleId="tp4f.1205756909548" targetNodeId="209357004273856675" resolveInfo="selectedNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="209357004273856657" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="209357004273856658" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="clip" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="209357004273856659" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="tt4m.~Clipboard" resolveInfo="Clipboard" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="209357004273856660" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="209357004273856661" nodeInfo="nn">
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="1t7x.~Toolkit" resolveInfo="Toolkit" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1t7x.~Toolkit%dgetDefaultToolkit()%cjava%dawt%dToolkit" resolveInfo="getDefaultToolkit" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="209357004273856662" nodeInfo="nn">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1t7x.~Toolkit%dgetSystemClipboard()%cjava%dawt%ddatatransfer%dClipboard" resolveInfo="getSystemClipboard" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="209357004273856663" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="209357004273856664" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="sel" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="209357004273856665" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="tt4m.~StringSelection" resolveInfo="StringSelection" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="209357004273856666" nodeInfo="nn">
+              <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="209357004273856667" nodeInfo="nn">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tt4m.~StringSelection%d&lt;init&gt;(java%dlang%dString)" resolveInfo="StringSelection" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="209357004273856652" nodeInfo="nn">
+                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="hwgx.209357004266279224" resolveInfo="MbeddrURLHelper" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.209357004266323887" resolveInfo="createURLForNode" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="209357004273856653" nodeInfo="nn">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="209357004273856519" resolveInfo="n" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="209357004273856669" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="209357004273856670" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="209357004273856671" nodeInfo="nn">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="209357004273856658" resolveInfo="clip" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="209357004273856672" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tt4m.~Clipboard%dsetContents(java%dawt%ddatatransfer%dTransferable,java%dawt%ddatatransfer%dClipboardOwner)%cvoid" resolveInfo="setContents" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="209357004273856673" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="209357004273856664" resolveInfo="sel" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="209357004273856674" nodeInfo="nn" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionParameterDeclaration" typeId="tp4k.1205679047295" id="209357004273856675" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="selectedNode" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="209357004273856676" nodeInfo="nn" />
+      <node role="condition" roleId="tp4k.5538333046911298738" type="tp4k.RequiredCondition" typeId="tp4k.5538333046911348654" id="209357004273856677" nodeInfo="ng" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="209357004273856678" nodeInfo="in" />
     </node>
   </root>
 </model>
