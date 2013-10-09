@@ -243,7 +243,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8985851583396455245" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="harness" />
     <property name="name" nameId="tpck.1169194664001" value="NondetVarAssignment" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nondet_assignment" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="assign var" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2613206384568936346" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="constraintsEnabled" />
@@ -286,6 +286,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8985851583396634740" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="harness" />
     <property name="name" nameId="tpck.1169194664001" value="GuardedCall" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="choice" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2613206384568863253" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="hasGuard" />
