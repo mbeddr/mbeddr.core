@@ -1857,6 +1857,19 @@
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="186853311768125005" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="arbitraryText" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="c4fa.3830958861296871078" resolveInfo="ArbitraryTextExpression" />
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7938383052438499032" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="isSideeffectFree" />
+      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="ywuz.7938383052438474217" resolveInfo="isSideeffectFree" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7938383052438499035" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7938383052438501890" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="7938383052438501889" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580123138" value="false" />
+          </node>
+        </node>
+      </node>
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="7938383052438501885" nodeInfo="in" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7938383052438501886" nodeInfo="nn" />
+    </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="186853311768125006" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="186853311768125007" nodeInfo="sn" />
     </node>
