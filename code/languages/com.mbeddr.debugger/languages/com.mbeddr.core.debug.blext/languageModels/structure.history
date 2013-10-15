@@ -429,5 +429,17 @@
     </dependencies>
     <rename id="talm.1389340506572688842" type="CHILD" from="nodes" to="nodesToBreak" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="48" />
+    </dependencies>
+    <rename id="talm.1389340506579679305" type="CONCEPT" from="BreakInOutterFrame" to="BreakInOuterFrame" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="49" />
+    </dependencies>
+    <rename id="talm.1617520389104942531" type="CONCEPT" from="AddLoggingAnnotation" to="LogMethodInvocationAnnotation" />
+  </StructureModification>
 </history>
 
