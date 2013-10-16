@@ -61,7 +61,9 @@
                 <node role="value" roleId="488s.8230003124989522195" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="8230003124991123376" nodeInfo="ng" />
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8230003124982979836" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8230003124982979836" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
           </node>
         </node>
       </node>
@@ -104,7 +106,7 @@
         </node>
       </node>
     </node>
-    <node role="cls" roleId="75wo.8983772170066800844" type="75wo.DefaultRequirementsClass" typeId="75wo.8983772170066800838" id="8230003124978408354" nodeInfo="ng" />
+    <node role="cls" roleId="75wo.8983772170066800844" type="488s.RuntimeFeedbackClass" typeId="488s.8230003124991125853" id="8230003124991226253" nodeInfo="ng" />
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="8230003124982982218" nodeInfo="ng">
     <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="8230003124982982488" nodeInfo="ng">
