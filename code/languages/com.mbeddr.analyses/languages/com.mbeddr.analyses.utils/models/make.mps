@@ -260,8 +260,8 @@
                                                         <node role="creator" roleId="tpee.1145553007750" type="tpee.AnonymousClassCreator" typeId="tpee.1182160077978" id="1657931530006139785" nodeInfo="nn">
                                                           <node role="cls" roleId="tpee.1182160096073" type="tpee.AnonymousClass" typeId="tpee.1170345865475" id="1657931530006139786" nodeInfo="ig">
                                                             <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
-                                                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw3i.~Task$Modal%d&lt;init&gt;(com%dintellij%dopenapi%dproject%dProject,java%dlang%dString,boolean)" resolveInfo="Task.Modal" />
-                                                            <link role="classifier" roleId="tpee.1170346070688" targetNodeId="fw3i.~Task$Modal" resolveInfo="Task.Modal" />
+                                                            <link role="classifier" roleId="tpee.1170346070688" targetNodeId="fw3i.~Task$Backgroundable" resolveInfo="Task.Backgroundable" />
+                                                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw3i.~Task$Backgroundable%d&lt;init&gt;(com%dintellij%dopenapi%dproject%dProject,java%dlang%dString,boolean)" resolveInfo="Task.Backgroundable" />
                                                             <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="1657931530006139788" nodeInfo="igu">
                                                               <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
                                                               <property name="name" nameId="tpck.1169194664001" value="run" />
@@ -308,7 +308,7 @@
                                                               </node>
                                                             </node>
                                                             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1657931530006139861" nodeInfo="nn">
-                                                              <property name="value" nameId="tpee.1070475926801" value="Verifying..." />
+                                                              <property name="value" nameId="tpee.1070475926801" value="Starting verification..." />
                                                             </node>
                                                             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="1657931530006139872" nodeInfo="nn">
                                                               <property name="value" nameId="tpee.1068580123138" value="true" />
