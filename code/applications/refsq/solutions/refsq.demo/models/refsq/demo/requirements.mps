@@ -38,6 +38,13 @@
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="10" />
               </node>
+              <node role="feedbacks" roleId="488s.8230003124989522662" type="488s.ParamFeedback" typeId="488s.8230003124989521780" id="8230003124990957962" nodeInfo="ng">
+                <property name="systemID" nameId="488s.8230003124989522191" value="system1" />
+                <node role="value" roleId="488s.8230003124989522195" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8230003124991123375" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="20" />
+                </node>
+              </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8230003124978408474" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=".\nHere is another one: " />
@@ -49,6 +56,10 @@
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
               <node role="defaultValue" roleId="488s.8230003124978326857" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="8230003124982981879" nodeInfo="ng" />
+              <node role="feedbacks" roleId="488s.8230003124989522662" type="488s.ParamFeedback" typeId="488s.8230003124989521780" id="8230003124990957964" nodeInfo="ng">
+                <property name="systemID" nameId="488s.8230003124989522191" value="system1" />
+                <node role="value" roleId="488s.8230003124989522195" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="8230003124991123376" nodeInfo="ng" />
+              </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8230003124982979836" nodeInfo="ng" />
           </node>
@@ -72,6 +83,12 @@
                 </node>
                 <node role="defaultValue" roleId="488s.8230003124978326857" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="8230003124982981956" nodeInfo="ng">
                   <property name="value" nameId="yq40.6113173064526131578" value="Hallo" />
+                </node>
+                <node role="feedbacks" roleId="488s.8230003124989522662" type="488s.ParamFeedback" typeId="488s.8230003124989521780" id="8230003124990957966" nodeInfo="ng">
+                  <property name="systemID" nameId="488s.8230003124989522191" value="system1" />
+                  <node role="value" roleId="488s.8230003124989522195" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="8230003124991123377" nodeInfo="ng">
+                    <property name="value" nameId="yq40.6113173064526131578" value="Hallo" />
+                  </node>
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8230003124982981928" nodeInfo="ng" />
