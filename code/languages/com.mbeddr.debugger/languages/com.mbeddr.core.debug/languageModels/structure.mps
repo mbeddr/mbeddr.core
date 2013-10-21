@@ -65,10 +65,6 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
     <property name="name" nameId="tpck.1169194664001" value="IChildrenResolver" />
   </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8047260781568394650" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
-    <property name="name" nameId="tpck.1169194664001" value="ICallableInformationProvider" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4198270288895892750" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MPrimitiveValue" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="icon-provider" />
