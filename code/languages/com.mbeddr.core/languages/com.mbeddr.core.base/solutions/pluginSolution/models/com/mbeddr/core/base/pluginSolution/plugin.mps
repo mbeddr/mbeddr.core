@@ -11208,7 +11208,7 @@
   </root>
   <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="3375896920545583628" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="clipboardStuff" />
-    <property name="name" nameId="tpck.1169194664001" value="clipboardStuff" />
+    <property name="name" nameId="tpck.1169194664001" value="clipboardStuffInEditMenu" />
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="3375896920545583737" nodeInfo="ng">
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="3375896920555648052" nodeInfo="ng">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="3375896920555645948" resolveInfo="copyXMLNodeToClipboard" />
@@ -12291,6 +12291,19 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="209357004273856676" nodeInfo="nn" />
       <node role="condition" roleId="tp4k.5538333046911298738" type="tp4k.RequiredCondition" typeId="tp4k.5538333046911348654" id="209357004273856677" nodeInfo="ng" />
       <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="209357004273856678" nodeInfo="in" />
+    </node>
+  </root>
+  <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="3977235049180100787" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="clipboardStuff" />
+    <property name="name" nameId="tpck.1169194664001" value="clipboardStuffInContextMenu" />
+    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="3977235049180100788" nodeInfo="ng">
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="3977235049181991355" nodeInfo="ng" />
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="3977235049180100796" nodeInfo="ng">
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="209357004273856515" resolveInfo="copyNodeURLToClipboard" />
+      </node>
+    </node>
+    <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3977235049180100798" nodeInfo="ng">
+      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="1908346841499860224" resolveInfo="EditorPopup" />
     </node>
   </root>
 </model>
