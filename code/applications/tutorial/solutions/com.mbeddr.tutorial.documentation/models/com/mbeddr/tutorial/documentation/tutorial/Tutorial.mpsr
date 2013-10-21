@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model modelUID="r:eec9fdff-7d49-4d97-a04e-350ceb9ae0b0(com.mbeddr.tutorial.documentation.tutorial)" content="root">
+  <persistence version="8" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
+  <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="yes" />
+  <root type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="794010416819641044" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Tutorial" />
+    <property name="title" nameId="2c95.126932837435324910" value="mbeddr Tutorial Overview" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
+    <node role="renderer" roleId="2c95.6068976060904007487" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="794010416819641048" nodeInfo="ng">
+      <property name="prolog" nameId="g9w8.4755612053022149513" value="mbeddr-prolog.ltx" />
+      <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
+    </node>
+    <node role="root" roleId="2c95.6068976060904007489" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="6403595147461062099" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="6403595147461056875" resolveInfo="Overview" />
+    </node>
+    <node role="abstract" roleId="2c95.126932837435324914" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="126932837435349020" nodeInfo="ng">
+      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435349021" nodeInfo="ng">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435349022" nodeInfo="ng">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+        </node>
+      </node>
+    </node>
+    <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="6403595147461062146" nodeInfo="ng">
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="_vis" />
+      <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="6119416551720820600" resolveInfo="vis" />
+    </node>
+    <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="6403595147461062156" nodeInfo="ng">
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="images" />
+      <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="4715820023543670791" resolveInfo="images" />
+    </node>
+  </root>
+</model>
+
