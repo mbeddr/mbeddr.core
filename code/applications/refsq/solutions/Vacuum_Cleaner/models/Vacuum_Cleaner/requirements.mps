@@ -26,7 +26,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2036173202889418667" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2036173202889418668" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2036173202889418669" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The robot shall clean the apartment at night. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="If " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="488s.ParamWord" typeId="488s.8230003124978326789" id="7440023490842397146" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="active" />
@@ -36,8 +36,8 @@
               </node>
               <node role="defaultValue" roleId="488s.8230003124978326857" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="7440023490842397186" nodeInfo="ng" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7440023490842397145" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="168727908839187082" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the robot shall clean the apartment at night." />
             </node>
           </node>
         </node>
@@ -51,18 +51,18 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2036173202889430962" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2036173202889430963" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2036173202889430964" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The robot shall clean the apartment when nobody is inside. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="If " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="488s.ParamWord" typeId="488s.8230003124978326789" id="7440023490842397241" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="488s.ParamWord" typeId="488s.8230003124978326789" id="168727908841277538" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="active" />
-              <node role="type" roleId="488s.8230003124978326854" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7440023490842397265" nodeInfo="ng">
+              <node role="type" roleId="488s.8230003124978326854" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="168727908841277539" nodeInfo="ng">
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
-              <node role="defaultValue" roleId="488s.8230003124978326857" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="7440023490842397281" nodeInfo="ng" />
+              <node role="defaultValue" roleId="488s.8230003124978326857" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="168727908841277540" nodeInfo="ng" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7440023490842397240" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="168727908841277537" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the robot shall clean the apartment when nobody is inside." />
             </node>
           </node>
         </node>
@@ -76,10 +76,10 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7039440093856934466" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7039440093856934467" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7039440093856934468" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The robot shall work with a reduced suction power (lower than 50%). " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The robot shall work with a reduced suction power (lower than 50%), so " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="488s.ParamWord" typeId="488s.8230003124978326789" id="7440023490842397306" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="suction" />
+              <property name="name" nameId="tpck.1169194664001" value="maxSuction" />
               <node role="type" roleId="488s.8230003124978326854" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7440023490842397330" nodeInfo="ng">
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -109,6 +109,111 @@
       <property name="name" nameId="tpck.1169194664001" value="tmp" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="D:\tmp" />
     </node>
+  </root>
+  <root type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="168727908856045690" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="vacuum_cleaner2" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2428505421104899486" resolveInfo="test" />
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="168727908857035037" nodeInfo="ng">
+      <property name="summmary" nameId="75wo.3402431285977818823" value="The Robot may be active or inactive." />
+      <property name="name" nameId="tpck.1169194664001" value="RE0" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="168727908857035038" nodeInfo="ng" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="168727908857035039" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="168727908857035040" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="168727908857035041" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="168727908857035042" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The robot has two states, active and inactive. This is represented by a parameter " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="488s.ParamWord" typeId="488s.8230003124978326789" id="168727908860024789" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="active" />
+              <node role="type" roleId="488s.8230003124978326854" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="168727908860024790" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              </node>
+              <node role="defaultValue" roleId="488s.8230003124978326857" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="168727908860024791" nodeInfo="ng" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="168727908860024788" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="168727908856045691" nodeInfo="ng">
+      <property name="summmary" nameId="75wo.3402431285977818823" value="Clean at night" />
+      <property name="name" nameId="tpck.1169194664001" value="RE1" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="168727908856045692" nodeInfo="ng" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="168727908856045693" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="168727908856045694" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="168727908856045695" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="168727908872755901" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="488s.IfWord" typeId="488s.168727908862879596" id="168727908872755900" nodeInfo="ng">
+              <node role="condition" roleId="488s.168727908862879598" type="488s.ParamRefExpr" typeId="488s.168727908872668227" id="168727908872756392" nodeInfo="ng">
+                <link role="param" roleId="488s.168727908872668279" targetNodeId="168727908841277538" resolveInfo="active" />
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="168727908872755899" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the robot shall clean the apartment at night." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="168727908856045701" nodeInfo="ng">
+      <property name="summmary" nameId="75wo.3402431285977818823" value="Clean when empty" />
+      <property name="name" nameId="tpck.1169194664001" value="RE2" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="168727908856045702" nodeInfo="ng" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="168727908856045703" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="168727908856045704" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="168727908856045705" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="168727908856045706" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="488s.IfWord" typeId="488s.168727908862879596" id="168727908872877853" nodeInfo="ng">
+              <node role="condition" roleId="488s.168727908862879598" type="488s.ParamRefExpr" typeId="488s.168727908872668227" id="168727908872877854" nodeInfo="ng">
+                <link role="param" roleId="488s.168727908872668279" targetNodeId="168727908841277538" resolveInfo="active" />
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="168727908872877852" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the robot shall clean the apartment when nobody is inside." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="168727908856045711" nodeInfo="ng">
+      <property name="summmary" nameId="75wo.3402431285977818823" value="Minimize noise level" />
+      <property name="name" nameId="tpck.1169194664001" value="RE4" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="168727908856045712" nodeInfo="ng" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="168727908856045713" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="168727908856045714" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="168727908856045715" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="168727908856045716" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The robot shall work with a reduced suction power (lower than 50%), so " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="488s.ParamWord" typeId="488s.8230003124978326789" id="168727908856045717" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="maxSuction" />
+              <node role="type" roleId="488s.8230003124978326854" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="168727908856045718" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              </node>
+              <node role="defaultValue" roleId="488s.8230003124978326857" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="168727908856045719" nodeInfo="ng">
+                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="50" />
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="168727908856045720" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="abstract" roleId="75wo.2588579461811806005" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="168727908856045721" nodeInfo="ng">
+      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="168727908856045722" nodeInfo="ng">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="168727908856045723" nodeInfo="ng" />
+      </node>
+    </node>
+    <node role="cls" roleId="75wo.8983772170066800844" type="488s.RuntimeFeedbackClass" typeId="488s.8230003124991125853" id="168727908856045724" nodeInfo="ng" />
   </root>
 </model>
 
