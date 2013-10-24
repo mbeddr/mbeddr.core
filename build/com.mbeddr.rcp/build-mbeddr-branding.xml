@@ -13,7 +13,7 @@
       <component>
         <version codename="mbeddr" major="0" minor="1" eap="false" />
         <build date="20130805" number="130.001" />
-        <logo url="/mbeddr-logo.png" textcolor="002387" />
+        <logo url="/splash.png" textcolor="002387" />
         <about url="/mbeddr-logo.png" />
         <icon size32="/MPS_16.png" size16="/MPS_16.png" />
         <dialogs-image url="/mbeddr-logo.png" />
@@ -29,7 +29,7 @@
       <fileset file="${mbeddr.github.core.home}/rcp/icons/mbeddr-logo.png" />
       <fileset file="${basedir}" />
       <fileset file="${basedir}" />
-      <fileset file="${mbeddr.github.core.home}/rcp/icons/mbeddr-logo.png" />
+      <fileset file="${mbeddr.github.core.home}/rcp/icons/splash.png" />
       <fileset file="${mbeddr.github.core.home}/rcp/icons/mbeddr-logo.png" />
       <fileset file="${mbeddr.github.core.home}/rcp/icons/mbeddr-logo.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
