@@ -301,13 +301,6 @@
       </node>
     </node>
   </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6847490852670653179" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="registers.config" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nbyu.6847490852670653132" resolveInfo="EmulatedRegisterKind" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6847490852670653181" nodeInfo="ng">
-      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
-    </node>
-  </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1017957699896608838" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="isr" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nbyu.1017957699896608814" resolveInfo="Isr" />
@@ -838,6 +831,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5152824560130493954" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="registers.config" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nbyu.6847490852670588581" resolveInfo="AbstractRegisterTransformationKind" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6847490852670653181" nodeInfo="ng">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
     </node>
   </root>
 </model>
