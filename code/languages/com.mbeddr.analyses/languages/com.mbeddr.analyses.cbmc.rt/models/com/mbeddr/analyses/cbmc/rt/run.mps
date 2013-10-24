@@ -1949,13 +1949,10 @@
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8847483947590127842" nodeInfo="nn">
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="8847483947590127843" nodeInfo="nn">
                   <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8847483947590127844" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="3354545139131214267" nodeInfo="nn">
-                      <link role="concept" roleId="tp25.1140138128738" targetNodeId="fu3r.4655187301461056347" resolveInfo="BlockAnalysisConfigBase" />
-                      <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8847483947590127845" nodeInfo="nn">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8847483947589574435" resolveInfo="config" />
-                      </node>
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8847483947590127845" nodeInfo="nn">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8847483947589574435" resolveInfo="config" />
                     </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3354545139131229967" nodeInfo="nn">
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6969061300498705287" nodeInfo="nn">
                       <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.9134944440162076206" resolveInfo="sliceFormula" />
                     </node>
                   </node>
