@@ -10,6 +10,7 @@
   <property name="richtext.artifacts" location="${basedir}/../mps-richtext/build/artifacts/mps-richtext" />
   <property name="override.artifacts" location="${basedir}/../mps-editor-override/build/artifacts/mps-editor-override" />
   <property name="tables.artifacts" location="${basedir}/../mps-tables/build/artifacts/mps-tables" />
+  <property name="mbeddr.github.core.home" location="${basedir}/../.." />
   <property name="artifacts.com.mbeddr.rcp.branding" location="${build.dir}/artifacts/com.mbeddr.rcp.branding" />
   <property name="artifacts.jetbrains.mps.standalone" location="${build.dir}/artifacts/jetbrains.mps.standalone" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />
@@ -109,6 +110,7 @@
       <tarfileset dir="${build.tmp}/default/_dl__lbrace_buildnumber_rbrace_-linux.tar.gz" />
     </tar>
     <zip destfile="${build.layout}/${buildnumber}.zip">
+      <zipfileset file="${mbeddr.github.core.home}/rcp/icons/mbeddr.ico" prefix="mbeddr ${version}" />
       <zipfileset dir="${artifacts.com.mbeddr.rcp.branding}" prefix="mbeddr ${version}" />
       <zipfileset dir="${artifacts.jetbrains.mps.standalone}" prefix="mbeddr ${version}" />
       <zipfileset file="${artifacts.mpsMakePlugin}/mps-make.jar" prefix="mbeddr ${version}/plugins" />
