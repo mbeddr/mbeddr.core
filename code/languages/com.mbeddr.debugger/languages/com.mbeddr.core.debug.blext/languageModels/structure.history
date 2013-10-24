@@ -441,5 +441,29 @@
     </dependencies>
     <rename id="talm.1617520389104942531" type="CONCEPT" from="AddLoggingAnnotation" to="LogMethodInvocationAnnotation" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="50" />
+    </dependencies>
+    <rename id="talm.1358930484543774076" type="CONCEPT" from="NewStackFrameExpression" to="CreateStackFrameExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="51" />
+    </dependencies>
+    <rename id="talm.1358930484548440228" type="CONCEPT" from="ReadPropertyFromTraceExpression" to="PropertyFromTraceExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="52" />
+    </dependencies>
+    <rename id="talm.1358930484543788569" type="CHILD" from="name" to="cStackFrameName" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="53" />
+    </dependencies>
+    <rename id="talm.1358930484548440228" type="CONCEPT" from="PropertyFromTraceExpression" to="PropertiesFromTraceExpression" />
+  </StructureModification>
 </history>
 

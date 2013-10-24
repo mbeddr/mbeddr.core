@@ -807,5 +807,8 @@
       </node>
     </node>
   </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1358930484586899901" nodeInfo="ng">
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
+  </root>
 </model>
 
