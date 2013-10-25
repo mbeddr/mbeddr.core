@@ -245,6 +245,9 @@
       <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="6168924288978819662" nodeInfo="ng">
         <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.1392391688313033161" resolveInfo="languages" />
       </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5152824560131961291" nodeInfo="ng">
+        <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.1392391688313033194" resolveInfo="plugins" />
+      </node>
       <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="6168924288978819663" nodeInfo="ng">
         <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6168924288978819664" nodeInfo="ng">
           <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688313033167" resolveInfo="lib" />
@@ -320,19 +323,6 @@
             <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6762095421685679560" nodeInfo="ng">
               <property name="text" nameId="3ior.4903714810883755350" value="20130802" />
             </node>
-          </node>
-        </node>
-      </node>
-      <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="6168924288978823599" nodeInfo="ng">
-        <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="6168924288978823647" nodeInfo="ng">
-          <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.618786790401954546" resolveInfo="mps-core" />
-        </node>
-        <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="6168924288978823648" nodeInfo="ng">
-          <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.1392391688313033226" resolveInfo="git4idea" />
-        </node>
-        <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6168924288978823601" nodeInfo="ng">
-          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6168924288978823639" nodeInfo="ng">
-            <property name="text" nameId="3ior.4903714810883755350" value="plugins" />
           </node>
         </node>
       </node>
