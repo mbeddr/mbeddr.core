@@ -484,32 +484,8 @@
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="6168924288978819497" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8607776404756316251" nodeInfo="ng">
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="6168924288978724795" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6497499977866923968" resolveInfo="mps-execution-api" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="4404226481358492064" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6497499977867089530" resolveInfo="mps-debugger-api" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="1163721168542628863" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6265574260762011106" resolveInfo="mps-make.jar" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="2114629637468119797" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.618786790401897005" resolveInfo="mps-testing" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="340850912093891387" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.3558426974110697574" resolveInfo="mps-execution-configurations" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="340850912093895597" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.3558426974110689577" resolveInfo="mps-execution-languages" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="340850912093901677" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6497499977867090078" resolveInfo="mps-debugger-java" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="793619437931021619" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.4034578608468328728" resolveInfo="mps-trove" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="2729353242248555889" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.7117056644539732844" resolveInfo="mps-build" />
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5152824560131915565" nodeInfo="ng">
+              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.4301118715654325713" resolveInfo="plugins" />
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454797" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="auf4.8628756186118973863" resolveInfo="com.mbeddr.cc.ple.zip" />
@@ -697,32 +673,8 @@
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="6168924288978819497" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8607776404756318690" nodeInfo="ng">
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972641" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6497499977866923968" resolveInfo="mps-execution-api" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972642" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6497499977867089530" resolveInfo="mps-debugger-api" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972643" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6265574260762011106" resolveInfo="mps-make.jar" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972644" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.618786790401897005" resolveInfo="mps-testing" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972645" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.3558426974110697574" resolveInfo="mps-execution-configurations" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972646" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.3558426974110689577" resolveInfo="mps-execution-languages" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972647" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6497499977867090078" resolveInfo="mps-debugger-java" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972648" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.4034578608468328728" resolveInfo="mps-trove" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="2729353242248586053" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.7117056644539732844" resolveInfo="mps-build" />
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5152824560131915592" nodeInfo="ng">
+              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.4301118715654325713" resolveInfo="plugins" />
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318869" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="auf4.8628756186118973863" resolveInfo="com.mbeddr.cc.ple.zip" />
@@ -1110,32 +1062,8 @@
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="6168924288978819497" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8607776404756319231" nodeInfo="ng">
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972933" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6497499977866923968" resolveInfo="mps-execution-api" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972934" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6497499977867089530" resolveInfo="mps-debugger-api" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972935" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6265574260762011106" resolveInfo="mps-make.jar" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972936" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.618786790401897005" resolveInfo="mps-testing" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972937" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.3558426974110697574" resolveInfo="mps-execution-configurations" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972938" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.3558426974110689577" resolveInfo="mps-execution-languages" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972939" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6497499977867090078" resolveInfo="mps-debugger-java" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5644330460868972940" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.4034578608468328728" resolveInfo="mps-trove" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="2729353242248586114" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.7117056644539732844" resolveInfo="mps-build" />
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5152824560131915617" nodeInfo="ng">
+              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.4301118715654325713" resolveInfo="plugins" />
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319361" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="auf4.8628756186118973863" resolveInfo="com.mbeddr.cc.ple.zip" />
@@ -1529,6 +1457,12 @@
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2729353242248502858" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value="plugins" />
         </node>
+      </node>
+    </node>
+    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="5152824560131915260" nodeInfo="ng">
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="ffeo.4301118715654192646" resolveInfo="mps" />
+      <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5152824560131915307" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6168924288978682975" resolveInfo="mps.home" />
       </node>
     </node>
   </root>
