@@ -73,7 +73,7 @@
     <tar destfile="${build.layout}/${buildnumber}-linux.tar.gz" compression="gzip" longfile="gnu">
       <tarfileset dir="${artifacts.com.mbeddr.rcp.branding}" prefix="mbeddr ${version}" />
       <tarfileset dir="${artifacts.jetbrains.mps.standalone}" prefix="mbeddr ${version}" />
-      <tarfileset dir="${artifacts.mpsStandalone}/plugins" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${artifacts.mpsStandalone}/plugins" prefix="mbeddr ${version}" />
       <tarfileset dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" prefix="mbeddr ${version}/plugins" />
@@ -106,7 +106,7 @@
       <zipfileset file="${mbeddr.github.core.home}/rcp/icons/mbeddr.ico" prefix="mbeddr ${version}" />
       <zipfileset dir="${artifacts.com.mbeddr.rcp.branding}" prefix="mbeddr ${version}" />
       <zipfileset dir="${artifacts.jetbrains.mps.standalone}" prefix="mbeddr ${version}" />
-      <zipfileset dir="${artifacts.mpsStandalone}/plugins" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${artifacts.mpsStandalone}/plugins" prefix="mbeddr ${version}" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" prefix="mbeddr ${version}/plugins" />
@@ -171,7 +171,7 @@
       <zipfileset dir="${artifacts.com.mbeddr.rcp.branding}" prefix="mbeddr ${buildnumber}.app" />
       <zipfileset dir="${artifacts.jetbrains.mps.standalone}" prefix="mbeddr ${buildnumber}.app" />
       <zipfileset dir="${artifacts.mpsStandalone}/plugins" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${artifacts.mpsStandalone}/plugins" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${artifacts.mpsStandalone}/plugins" prefix="mbeddr ${buildnumber}.app" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
