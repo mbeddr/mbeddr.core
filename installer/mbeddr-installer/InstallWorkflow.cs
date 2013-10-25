@@ -1,4 +1,14 @@
-﻿using ICSharpCode.SharpZipLib.Core;
+﻿/*******************************************************************************
+	* Copyright (c) 2013 itemis AG.
+	* All rights reserved. This program and the accompanying materials
+	* are made available under the terms of the Eclipse Public License v1.0
+	* which accompanies this distribution, and is available at
+	* http://www.eclipse.org/legal/epl-v10.html
+	*
+	* Contributors:
+	*    Kolja Dummann 
+*******************************************************************************/
+using ICSharpCode.SharpZipLib.Core;
 using ICSharpCode.SharpZipLib.Zip;
 using System;
 using System.Collections.Generic;
@@ -25,6 +35,8 @@ namespace mbeddr_installer
 		private int currentStepCount;
 		private UserUnputCallback userInputCallback;
 		private RunInUiContext uiContext;
+		private Thread installerThread;
+		private CancellationTokenSource cts;
 
 		public delegate string UserUnputCallback (string msg);
 
@@ -117,7 +129,7 @@ namespace mbeddr_installer
 					FileName = "setup.exe",
 					InstallAction = (args) => {
 						MessageBox.Show ("The cygwin installation will start now, you just need to click next, all the values are set to fit the mbeddr installation. Please don't change these values!",
-						                                      "cygwin", MessageBoxButtons.OK);
+						                 "cygwin", MessageBoxButtons.OK);
 						var cygwin = new Process ();
 						var path = Path.Combine (args.InstallDirectory.FullName, "tools\\cygwin");
 						cygwin.StartInfo = new ProcessStartInfo () { 
@@ -211,7 +223,7 @@ Your Browser will now open the website. After you have downloaded the file pleas
 					Name = "mbeddr tutorial",
 					FileName = "tutorial.zip",
 					InstallAction = (args) => {
-						UnzipAndStripRoot (args.FileToInstall.FullName, Path.Combine(args.InstallDirectory.FullName, "tutorial"));
+						UnzipAndStripRoot (args.FileToInstall.FullName, Path.Combine (args.InstallDirectory.FullName, "tutorial"));
 					}
 				}
 			};
@@ -229,45 +241,68 @@ Your Browser will now open the website. After you have downloaded the file pleas
 
 		public void Install ()
 		{
-			new Thread (new ThreadStart (InstallInternal)).Start ();
+			installerThread = new Thread (new ThreadStart (InstallInternal));
+			installerThread.Start ();
+		}
+
+		public void Cancel ()
+		{
+			cts.Cancel ();
 		}
 
 		private void InstallInternal ()
 		{
 			currentStepCount = 1;
-			foreach (var step in steps) {
-				currentStep = step;
-				string downloadFile = null;
+			using (Logger logger = Logger.Get()) {
+				foreach (var step in steps) {
+					try {
+						logger.Debug (string.Format ("Starting step {0}", step.Name));
+						currentStep = step;
+						string downloadFile = null;
 
-				if (step.Condition != null && !step.Condition ())
-					throw new InvalidOperationException ();
-
-				if (!string.IsNullOrEmpty (step.FileName) && step.DownloadUrl != null) {
-					downloadFile = Path.Combine (tempPath, step.FileName);
-
-					if (File.Exists (downloadFile) && !string.IsNullOrEmpty (step.MD5Sum)) {
-						using (var stream = File.OpenRead(downloadFile)) {
-							var sum = new MD5CryptoServiceProvider ().ComputeHash (stream);
-							if (!ByteArrayCompare (sum, StringToByteArray (step.MD5Sum)))
-								DoDownload (step, downloadFile);
+						if (step.Condition != null && !step.Condition ()) {
+							logger.Error ("Condition did not match");
+							throw new InvalidOperationException ();
 						}
-					} else {
-						DoDownload (step, downloadFile);
+						if (!string.IsNullOrEmpty (step.FileName) && step.DownloadUrl != null) {
+							downloadFile = Path.Combine (tempPath, step.FileName);
+
+							if (File.Exists (downloadFile) && !string.IsNullOrEmpty (step.MD5Sum)) {
+								using (var stream = File.OpenRead(downloadFile)) {
+									var sum = new MD5CryptoServiceProvider ().ComputeHash (stream);
+									if (!ByteArrayCompare (sum, StringToByteArray (step.MD5Sum))) {
+										logger.Debug ("MD5 sum did not match redownloading");
+										DoDownload (step, downloadFile);
+									} else {
+										logger.Debug ("MD5 did match, not downloading");
+									}
+								}
+							} else {
+								logger.Debug ("File has no checksum, downloading");
+								DoDownload (step, downloadFile);
+							}
+						}
+						currentStepCount++;
+						if (step.InstallAction != null) {
+							logger.Debug ("Installing");
+							ReportProgress (new InstallerStepProgress () {
+								StepNumber = currentStepCount,
+								Progress = 0,
+								StepName = "Installing " + step.Name
+							});
+							step.InstallAction (new InstallerStep.InstallArgs () {
+								FileToInstall = string.IsNullOrEmpty (downloadFile) ? null : new FileInfo (downloadFile),
+								InstallDirectory = new DirectoryInfo (installDir)
+							});
+						}
+						currentStepCount++;
+
+					} catch (Exception ex) {
+						logger.Error ("Failed in step");
+						logger.Error (ex.Message);
+						logger.Error (ex.StackTrace);
 					}
 				}
-				currentStepCount++;
-				if (step.InstallAction != null) {
-					ReportProgress (new InstallerStepProgress () {
-						StepNumber = currentStepCount,
-						Progress = 0,
-						StepName = "Installing " + step.Name
-					});
-					step.InstallAction (new InstallerStep.InstallArgs () {
-						FileToInstall = string.IsNullOrEmpty (downloadFile) ? null : new FileInfo (downloadFile),
-						InstallDirectory = new DirectoryInfo (installDir)
-					});
-				}
-				currentStepCount++;
 			}
 
 			var handler = Complete;
@@ -278,30 +313,39 @@ Your Browser will now open the website. After you have downloaded the file pleas
 
 		private void DoDownload (InstallerStep step, string downloadFile)
 		{
-			var client = new WebClient ();
-			ReportProgress (new InstallerStepProgress () {
-				StepNumber = currentStepCount,
-				StepName = step.Name,
-				Progress = 0,
-				MaxProgress = 100
-			});
-
-			client.DownloadProgressChanged += client_DownloadProgressChanged;
-			client.DownloadFileCompleted += client_DownloadFileCompleted;
-
-
-
-			if (step.NeedsCredentials)
-				uiContext (() => {
-					var dialog = new UserNamePassword ();
-					var res = dialog.ShowDialog ();
-					if (res == DialogResult.OK)
-						client.Credentials = new NetworkCredential (dialog.User, dialog.Password);
+			using (Logger logger = Logger.Get()) {
+				logger.Debug (string.Format ("Downloading file {0}", downloadFile));
+				var client = new WebClient ();
+				ReportProgress (new InstallerStepProgress () {
+					StepNumber = currentStepCount,
+					StepName = step.Name,
+					Progress = 0,
+					MaxProgress = 100
 				});
 
+				client.DownloadProgressChanged += client_DownloadProgressChanged;
+				client.DownloadFileCompleted += client_DownloadFileCompleted;
 
-			client.DownloadFileAsync (step.DownloadUrl, downloadFile);
-			DownloadHandle.WaitOne ();
+				CancellationToken token = cts.Token;
+
+				token.Register (() => {
+
+					if (client != null)
+						client.CancelAsync ();
+				});
+
+				if (step.NeedsCredentials)
+					uiContext (() => {
+						var dialog = new UserNamePassword ();
+						var res = dialog.ShowDialog ();
+						if (res == DialogResult.OK)
+							client.Credentials = new NetworkCredential (dialog.User, dialog.Password);
+					});
+
+				client.DownloadFileAsync (step.DownloadUrl, downloadFile);
+				DownloadHandle.WaitOne ();
+				logger.Debug ("Download finished");
+			}
 		}
 
 		void client_DownloadFileCompleted (object sender, System.ComponentModel.AsyncCompletedEventArgs e)
@@ -361,40 +405,48 @@ Your Browser will now open the website. After you have downloaded the file pleas
 		private void UnzipAndStripRoot (string file, string target)
 		{
 			ZipFile zf = null;
-			try {
-				FileStream fs = File.OpenRead (file);
-				zf = new ZipFile (fs);
-				int i = 1;
+			using (Logger logger = Logger.Get()) {
+				logger.Debug (string.Format ("Extracting file {0} to {1}", file, target));
+				try {
+					FileStream fs = File.OpenRead (file);
+					zf = new ZipFile (fs);
+					int i = 1;
                
-				foreach (ZipEntry zipEntry in zf) {
-					if (!zipEntry.IsFile) {
-						continue;
+					foreach (ZipEntry zipEntry in zf) {
+
+						if (cts.Token.IsCancellationRequested)
+							break;
+
+						if (!zipEntry.IsFile) {
+							continue;
+						}
+						String entryFileName = zipEntry.Name;
+
+						byte[] buffer = new byte[32768];
+						Stream zipStream = zf.GetInputStream (zipEntry);
+
+						String fullZipToPath = Path.Combine (target, entryFileName.Substring (entryFileName.IndexOf ("/") + 1));
+						string directoryName = Path.GetDirectoryName (fullZipToPath);
+						if (directoryName.Length > 0)
+							Directory.CreateDirectory (directoryName);
+
+						using (FileStream streamWriter = File.Create(fullZipToPath)) {
+							StreamUtils.Copy (zipStream, streamWriter, buffer);
+						}
+						ReportProgress (new InstallerStepProgress () {
+							MaxProgress = (int)zf.Count,
+							StepName = currentStep.Name,
+							StepNumber = currentStepCount,
+							Progress = i
+						});
+						i++;
 					}
-					String entryFileName = zipEntry.Name;
-
-					byte[] buffer = new byte[32768];
-					Stream zipStream = zf.GetInputStream (zipEntry);
-
-					String fullZipToPath = Path.Combine (target, entryFileName.Substring (entryFileName.IndexOf ("/") + 1));
-					string directoryName = Path.GetDirectoryName (fullZipToPath);
-					if (directoryName.Length > 0)
-						Directory.CreateDirectory (directoryName);
-
-					using (FileStream streamWriter = File.Create(fullZipToPath)) {
-						StreamUtils.Copy (zipStream, streamWriter, buffer);
+				} finally {
+					logger.Debug ("Extraction finished");
+					if (zf != null) {
+						zf.IsStreamOwner = true;
+						zf.Close ();
 					}
-					ReportProgress (new InstallerStepProgress () {
-						MaxProgress = (int)zf.Count,
-						StepName = currentStep.Name,
-						StepNumber = currentStepCount,
-						Progress = i
-					});
-					i++;
-				}
-			} finally {
-				if (zf != null) {
-					zf.IsStreamOwner = true;
-					zf.Close ();
 				}
 			}
 

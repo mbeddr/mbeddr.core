@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*******************************************************************************
+	* Copyright (c) 2013 itemis AG.
+	* All rights reserved. This program and the accompanying materials
+	* are made available under the terms of the Eclipse Public License v1.0
+	* which accompanies this distribution, and is available at
+	* http://www.eclipse.org/legal/epl-v10.html
+	*
+	* Contributors:
+	*    Kolja Dummann 
+*******************************************************************************/
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -18,9 +28,14 @@ namespace mbeddr_installer
         {
 			try {
 				AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
-				Logger.Init(Path.Combine(System.IO.Path.GetTempPath(), "mbeddr", DateTime.UtcNow.ToString("MMM_yyyy__HH_mm_ss_ffff" )));
+				Logger.Init(Path.Combine(System.IO.Path.GetTempPath(), "mbeddr", DateTime.UtcNow.ToString("MMM_yyyy__HH_mm_ss_ffff.txt" )));
 				using(Logger logger = Logger.Get ())
 				{
+					logger.Debug(Environment.OSVersion);
+					logger.Debug(Environment.MachineName);
+					logger.Debug(Environment.CurrentDirectory);
+					logger.Debug(string.Format("is 64 Bit {0}", Environment.Is64BitProcess));
+					logger.Debug(string.Format("is 64 Bit OS {0}", Environment.Is64BitOperatingSystem));
 
 				if (!IsUserAdministrator())
 				{
@@ -45,7 +60,6 @@ namespace mbeddr_installer
 					return;
 				}
 				//Environment.SetEnvironmentVariable("", "", EnvironmentVariableTarget.Machine);
-				//var wf = new InstallWorkflow("c:\\accent", UserCallback);
 				//wf.Progress += InstallProgress;
 				//wf.Install();
 					logger.Debug("showing main form");
@@ -94,11 +108,11 @@ namespace mbeddr_installer
                 WindowsPrincipal principal = new WindowsPrincipal(user);
                 isAdmin = principal.IsInRole(WindowsBuiltInRole.Administrator);
             }
-            catch (UnauthorizedAccessException ex)
+            catch (UnauthorizedAccessException)
             {
                 isAdmin = false;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 isAdmin = false;
             }
