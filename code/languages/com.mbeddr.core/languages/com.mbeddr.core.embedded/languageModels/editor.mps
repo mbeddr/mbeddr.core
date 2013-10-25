@@ -390,13 +390,6 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="9172009453269282122" nodeInfo="nn" />
     </node>
   </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9172009453269286246" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="isr.config" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nbyu.9172009453269286222" resolveInfo="EmulatedInterruptKind" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="9172009453269286248" nodeInfo="ng">
-      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
-    </node>
-  </root>
   <root type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="3471891103984087599" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="registers" />
     <property name="name" nameId="tpck.1169194664001" value="registerEditor" />
@@ -837,6 +830,13 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="registers.config" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nbyu.6847490852670588581" resolveInfo="AbstractRegisterTransformationKind" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6847490852670653181" nodeInfo="ng">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5152824560131535585" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="isr.config" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nbyu.9172009453269286213" resolveInfo="AbstractInterruptKind" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="9172009453269286248" nodeInfo="ng">
       <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
     </node>
   </root>
