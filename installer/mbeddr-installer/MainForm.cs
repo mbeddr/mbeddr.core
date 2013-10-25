@@ -32,6 +32,7 @@ namespace mbeddr_installer
             textBox1.Text = System.IO.Path.Combine("C:\\", "mbeddr");
             btnInstall.Enabled = true;
             this.BringToFront();
+			this.Activate ();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
