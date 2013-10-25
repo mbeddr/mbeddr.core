@@ -25,7 +25,7 @@ namespace mbeddr.installer
 
 		public void Log(string message)
 		{
-			writer.WriteLine (message);
+			writer.WriteLine (string.Format ("[{0}]{1}", DateTime.UtcNow.ToString ("G"), message));
 		}
 
 		public void Debug(string message)
