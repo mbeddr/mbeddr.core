@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="9btd" modelUID="r:932dea83-34df-4398-8397-98f20a1f45f8(com.mbeddr.core.dataflow.test.structure)" version="-1" />
+    </dependencies>
+    <rename id="9btd.4320071007239598785" type="CONCEPT" from="IDataflowNode" to="IDataflowInstruction" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="9btd" modelUID="r:932dea83-34df-4398-8397-98f20a1f45f8(com.mbeddr.core.dataflow.test.structure)" version="0" />
+    </dependencies>
+    <rename id="9btd.4320071007240440594" type="CONCEPT" from="DataflowNodeContainer" to="DataflowInstructionContainer" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="9btd" modelUID="r:932dea83-34df-4398-8397-98f20a1f45f8(com.mbeddr.core.dataflow.test.structure)" version="1" />
+    </dependencies>
+    <rename id="9btd.4320071007240308543" type="CONCEPT" from="NopDatafowNode" to="NopInstruction" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="9btd" modelUID="r:932dea83-34df-4398-8397-98f20a1f45f8(com.mbeddr.core.dataflow.test.structure)" version="2" />
+    </dependencies>
+    <rename id="9btd.4320071007240501854" type="CONCEPT" from="JumpInstruction" to="AbstractJumpInstruction" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="9btd" modelUID="r:932dea83-34df-4398-8397-98f20a1f45f8(com.mbeddr.core.dataflow.test.structure)" version="3" />
+    </dependencies>
+    <rename id="9btd.4320071007239598786" type="CHILD" from="nodes" to="instructions" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="9btd" modelUID="r:932dea83-34df-4398-8397-98f20a1f45f8(com.mbeddr.core.dataflow.test.structure)" version="4" />
+    </dependencies>
+    <rename id="9btd.4320071007240440595" type="CHILD" from="node" to="instruction" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="9btd" modelUID="r:932dea83-34df-4398-8397-98f20a1f45f8(com.mbeddr.core.dataflow.test.structure)" version="5" />
+    </dependencies>
+    <rename id="9btd.4320071007239598786" type="CHILD" from="instructions" to="instructionContainers" />
+  </StructureModification>
+</history>
+

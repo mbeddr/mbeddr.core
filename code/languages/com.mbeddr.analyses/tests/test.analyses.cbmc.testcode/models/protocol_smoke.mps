@@ -134,13 +134,13 @@
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="9120591063517986815" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986816" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_start" />
+        <property name="name" nameId="tpck.1169194664001" value="ATM_startOperation" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986817" nodeInfo="ng" />
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986818" nodeInfo="ng">
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986814" resolveInfo="ATM" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986779" resolveInfo="startOperation" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986819" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845426223" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
@@ -208,7 +208,7 @@
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986841" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_end" />
+        <property name="name" nameId="tpck.1169194664001" value="ATM_endOperation" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986842" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517986843" nodeInfo="ng" />
         </node>
@@ -216,7 +216,7 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986814" resolveInfo="ATM" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986804" resolveInfo="endOperation" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986845" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845426221" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
@@ -234,13 +234,13 @@
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="9120591063517986849" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986850" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_start" />
+        <property name="name" nameId="tpck.1169194664001" value="ATM_startOperation" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986851" nodeInfo="ng" />
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986852" nodeInfo="ng">
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986848" resolveInfo="ATM" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986779" resolveInfo="startOperation" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986853" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845426191" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
@@ -302,7 +302,7 @@
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986874" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_end" />
+        <property name="name" nameId="tpck.1169194664001" value="ATM_endOperation" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986875" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517986876" nodeInfo="ng" />
         </node>
@@ -310,7 +310,7 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986848" resolveInfo="ATM" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986804" resolveInfo="endOperation" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986878" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845425238" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
@@ -1599,7 +1599,7 @@
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9120591063517986902" resolveInfo="Car" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987332" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="aTMInterface_startOperation" />
+        <property name="name" nameId="tpck.1169194664001" value="atm_startOperation" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987333" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987334" nodeInfo="ng" />
         </node>
@@ -1607,13 +1607,13 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987330" resolveInfo="atm" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986779" resolveInfo="startOperation" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987336" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845594383" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987337" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="aTMInterface_insertPIN" />
+        <property name="name" nameId="tpck.1169194664001" value="atm_insertPIN" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987338" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987339" nodeInfo="ng" />
         </node>
@@ -1621,13 +1621,13 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987330" resolveInfo="atm" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986784" resolveInfo="insertPIN" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987341" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845594338" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987342" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="aTMInterface_checkAmount" />
+        <property name="name" nameId="tpck.1169194664001" value="atm_checkAmount" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987343" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987344" nodeInfo="ng" />
         </node>
@@ -1635,13 +1635,13 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987330" resolveInfo="atm" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986789" resolveInfo="checkAmount" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987346" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845594375" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987347" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="aTMInterface_withdraw" />
+        <property name="name" nameId="tpck.1169194664001" value="atm_withdraw" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987348" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987349" nodeInfo="ng" />
         </node>
@@ -1649,13 +1649,13 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987330" resolveInfo="atm" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986794" resolveInfo="withdraw" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987351" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845594381" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987352" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="aTMInterface_deposit" />
+        <property name="name" nameId="tpck.1169194664001" value="atm_deposit" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987353" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987354" nodeInfo="ng" />
         </node>
@@ -1663,13 +1663,13 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987330" resolveInfo="atm" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986799" resolveInfo="deposit" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987356" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845594377" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987357" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="aTMInterface_endOperation" />
+        <property name="name" nameId="tpck.1169194664001" value="atm_endOperation" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987358" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987359" nodeInfo="ng" />
         </node>
@@ -1677,7 +1677,7 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987330" resolveInfo="atm" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986804" resolveInfo="endOperation" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987361" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845594379" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>

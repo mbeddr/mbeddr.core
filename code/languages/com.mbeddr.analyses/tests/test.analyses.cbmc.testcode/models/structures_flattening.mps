@@ -10,7 +10,6 @@
   <language namespace="42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)" />
   <language namespace="5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)" />
   <language namespace="efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)" />
-  <import index="bog3" modelUID="r:4f1c8a59-d217-4da1-a46c-f37182e9100a(analysis_depth)" version="-1" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
@@ -33,7 +32,7 @@
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="6039433997855983382" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="HelloWorld" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1456501141502360645" nodeInfo="ng">
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4486406496845657055" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6039433997855983426" resolveInfo="main" />
       </node>
     </node>
@@ -448,7 +447,7 @@
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="12" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="10" />
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
-      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="bog3.441761995015384426" resolveInfo="analysisDepth12" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="1456501141506772473" resolveInfo="pointAccess" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.AssertionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="6039433997855983488" nodeInfo="ng">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
@@ -456,7 +455,7 @@
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="13" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="11" />
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
-      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="bog3.441761995015378007" resolveInfo="analysisDepth13" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="6039433997855983428" resolveInfo="rectangleAccess" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.AssertionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="6039433997855983489" nodeInfo="ng">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
@@ -464,15 +463,7 @@
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="14" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="11" />
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
-      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="bog3.441761995015364155" resolveInfo="analysisDepth15" />
-    </node>
-    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.AssertionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="6039433997855983490" nodeInfo="ng">
-      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
-      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="15" />
-      <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="11" />
-      <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
-      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="bog3.441761995015364155" resolveInfo="analysisDepth15" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4278348740075344524" resolveInfo="triangleAccess" />
     </node>
   </root>
 </model>
