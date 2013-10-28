@@ -16,7 +16,6 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
-  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
@@ -24,7 +23,7 @@
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="1563119717886468692" nodeInfo="ng">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="1563119717886468693" nodeInfo="ng">
@@ -259,14 +258,14 @@
               <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="1563119717886558951" resolveInfo="testAdding" />
               <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="1563119717886468717" resolveInfo="instances" />
               <node role="actuals" roleId="v0r9.8230733038424928677" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1563119717886558987" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
               <node role="actuals" roleId="v0r9.8230733038424928677" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1563119717886558991" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7603351357795419065" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="4" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="4" />
             </node>
           </node>
         </node>
@@ -287,14 +286,14 @@
               <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="1563119717886468717" resolveInfo="instances" />
               <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="1563119717886558951" resolveInfo="testAdding" />
               <node role="actuals" roleId="v0r9.8230733038424928677" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7603351357795526643" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
               <node role="actuals" roleId="v0r9.8230733038424928677" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7603351357795526644" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7603351357795526645" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="0" />
             </node>
           </node>
         </node>
@@ -318,31 +317,9 @@
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="1563119717886468643" nodeInfo="ng">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="1547996354246768587" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="1563119717886468644" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="argc" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="1563119717886468645" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="1563119717886468646" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="argv" />
-        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="1563119717886468647" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="1563119717886468648" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-            <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1563119717886468649" nodeInfo="ng">
-              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </root>

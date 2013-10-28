@@ -12,6 +12,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.cimport/com.mbeddr.core.cimport.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.cstubs.test/test.mpl" folder="tests.cstub" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.dataflow.test/com.mbeddr.core.dataflow.test.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.legacy/legacy.mpl" folder="core" />

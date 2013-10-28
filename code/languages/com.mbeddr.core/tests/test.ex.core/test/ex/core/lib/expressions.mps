@@ -56,6 +56,10 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6500545468170850186" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="1547996354235011763" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850187" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6500545468170850188" nodeInfo="ng">
           <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="6500545468170850189" nodeInfo="ng">
@@ -175,10 +179,6 @@
             </node>
           </node>
         </node>
-      </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5152824560132387301" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6500545468170850229" nodeInfo="ng">
@@ -2110,6 +2110,9 @@
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851054" nodeInfo="ng" />
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1547996354239766424" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1382706465682_7" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851055" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="testDirectMultiAssignmentExpression" />
@@ -2250,19 +2253,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6500545468170851112" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectMultiAssignmentExpression" typeId="mj1l.4273030818770088796" id="6500545468170851113" nodeInfo="ng">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170851114" nodeInfo="ng">
-              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PostDecrementExpression" typeId="mj1l.3976803464656498416" id="6500545468170851115" nodeInfo="ng">
-                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851116" nodeInfo="ng">
-                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851057" resolveInfo="i" />
-                </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170851117" nodeInfo="ng">
+              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851118" nodeInfo="ng">
+                <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170851117" nodeInfo="ng">
-                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851118" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.2212975673976043696" value="2" />
-                </node>
-                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851119" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.2212975673976043696" value="2" />
-                </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851119" nodeInfo="ng">
+                <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851120" nodeInfo="ng">
@@ -2270,14 +2266,14 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170851121" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1547996354239766163" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851122" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851123" nodeInfo="ng">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851124" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851057" resolveInfo="i" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851125" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="11" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="8" />
             </node>
           </node>
         </node>
@@ -2589,8 +2585,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6500545468170851256" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectModuloAssignmentExpression" typeId="mj1l.7193082937527768531" id="6500545468170851257" nodeInfo="ng">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PostDecrementExpression" typeId="mj1l.3976803464656498416" id="6500545468170851258" nodeInfo="ng">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851259" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="1547996354244289925" nodeInfo="ng">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1547996354244289928" nodeInfo="ng">
+                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1547996354244286061" nodeInfo="ng">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851228" resolveInfo="i" />
               </node>
             </node>
@@ -2606,7 +2606,7 @@
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851228" resolveInfo="i" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851265" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
           </node>
         </node>

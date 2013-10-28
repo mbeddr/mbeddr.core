@@ -252,8 +252,8 @@
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="8924761790438006452" nodeInfo="ng">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8924761790438006453" nodeInfo="ng">
-          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8924761790438006454" nodeInfo="ng">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932454156" resolveInfo="returnAfterFunctionCall" />
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="1617520389139202886" nodeInfo="ng">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8165847842702599932" resolveInfo="functionCallToHelperFunc" />
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="5710167937131286861" nodeInfo="ng">
