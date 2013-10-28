@@ -246,8 +246,13 @@
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="3367571968338796833" nodeInfo="ng">
             <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="3367571968338796834" nodeInfo="ng">
-              <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="3367571968338796835" nodeInfo="ng">
-                <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="1165432222362213005" resolveInfo="logging" />
+              <node role="expr" roleId="qdv7.2613872510229282926" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="7642065485969909806" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="7642065485969910069" nodeInfo="ng">
+                  <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="7642065485969470029" resolveInfo="derived_1" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="3367571968338796835" nodeInfo="ng">
+                  <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="1165432222362213005" resolveInfo="logging" />
+                </node>
               </node>
             </node>
           </node>
