@@ -3,7 +3,7 @@
   <persistence version="8" />
   <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -188,13 +188,13 @@
     <property name="name" nameId="tpck.1169194664001" value="ModuleWithTypeDef" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.StaticMemoryLocation" typeId="x27k.3376775282622611165" id="2532836982809148724" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="someInt" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <node role="value" roleId="x27k.3376775282622233992" type="mj1l.StaticValueExpression" typeId="mj1l.7533755140553634202" id="7533755140570578922" nodeInfo="ng">
         <property name="operation" nameId="mj1l.2532836982795394396" value="round" />
         <node role="expr" roleId="mj1l.7533755140555345895" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="2532836982798366785" nodeInfo="ng">
-          <property name="prefix" nameId="mj1l.1670233242589904217" value="2" />
-          <property name="postfix" nameId="mj1l.1670233242589904219" value="-23" />
+          <property name="prefix" nameId="mj1l.1670233242589904217" value="22" />
+          <property name="postfix" nameId="mj1l.1670233242589904219" value="0" />
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2532836982809148725" nodeInfo="ng">
@@ -260,7 +260,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.StaticValueExpression" typeId="mj1l.7533755140553634202" id="7533755140570696548" nodeInfo="ng">
             <node role="expr" roleId="mj1l.7533755140555345895" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7533755140570696549" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.8860443239512128104" value="22.12312312" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="22.12312312" />
             </node>
           </node>
         </node>
