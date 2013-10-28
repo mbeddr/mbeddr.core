@@ -245,8 +245,15 @@
       <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="6168924288978819662" nodeInfo="ng">
         <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.1392391688313033161" resolveInfo="languages" />
       </node>
-      <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5152824560131961291" nodeInfo="ng">
-        <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.1392391688313033194" resolveInfo="plugins" />
+      <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="5152824560131983558" nodeInfo="ng">
+        <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="5152824560131983560" nodeInfo="ng">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="5152824560131983611" nodeInfo="ng">
+            <property name="text" nameId="3ior.4903714810883755350" value="plugins" />
+          </node>
+        </node>
+        <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5152824560131983613" nodeInfo="ng">
+          <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688313033194" resolveInfo="plugins" />
+        </node>
       </node>
       <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="6168924288978819663" nodeInfo="ng">
         <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6168924288978819664" nodeInfo="ng">
@@ -474,8 +481,8 @@
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="6168924288978819497" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8607776404756316251" nodeInfo="ng">
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5152824560131915565" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.4301118715654325713" resolveInfo="plugins" />
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5152824560132007229" nodeInfo="ng">
+              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688313033194" />
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454797" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="auf4.8628756186118973863" resolveInfo="com.mbeddr.cc.ple.zip" />
@@ -663,8 +670,8 @@
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="6168924288978819497" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8607776404756318690" nodeInfo="ng">
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5152824560131915592" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.4301118715654325713" resolveInfo="plugins" />
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5152824560132007012" nodeInfo="ng">
+              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688313033194" />
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318869" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="auf4.8628756186118973863" resolveInfo="com.mbeddr.cc.ple.zip" />
@@ -1052,8 +1059,8 @@
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="6168924288978819497" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8607776404756319231" nodeInfo="ng">
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5152824560131915617" nodeInfo="ng">
-              <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.4301118715654325713" resolveInfo="plugins" />
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5152824560132006584" nodeInfo="ng">
+              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688313033194" />
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319361" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="auf4.8628756186118973863" resolveInfo="com.mbeddr.cc.ple.zip" />
@@ -1117,6 +1124,9 @@
                 <property name="text" nameId="3ior.4903714810883755350" value="plugins" />
               </node>
             </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5152824560131983795" nodeInfo="ng">
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688313033194" resolveInfo="plugins" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="6168924288978686158" nodeInfo="ng">
             <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6168924288978686159" nodeInfo="ng">

@@ -10,7 +10,9 @@
   <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
   <language namespace="017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)" />
   <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
-  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="7" implicit="yes" />
+  <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
+  <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="8" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="15" implicit="yes" />
@@ -19,7 +21,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="vxuc" modelUID="r:acfa7fc7-0a34-4d9a-8ea8-22459c66d50c(com.mbeddr.cc.var.c.structure)" version="-1" implicit="yes" />
-  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="6" implicit="yes" />
+  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="8" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5744000828452557271" nodeInfo="ng">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="5744000828452557272" nodeInfo="ng">
@@ -46,13 +48,13 @@
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
             <node role="conditions" roleId="vxuc.5959167564566749552" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5959167564566911053" nodeInfo="ng">
-              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5959167564566911055" nodeInfo="ng">
-                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566811162" resolveInfo="floatType" />
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="5959167564566911055" nodeInfo="ng">
+                <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="5959167564566811162" resolveInfo="floatType" />
               </node>
             </node>
             <node role="conditions" roleId="vxuc.5959167564566749552" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5959167564566946581" nodeInfo="ng">
-              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5959167564566946583" nodeInfo="ng">
-                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566811031" resolveInfo="stringType" />
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="5959167564566946583" nodeInfo="ng">
+                <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="5959167564566811031" resolveInfo="stringType" />
               </node>
             </node>
             <node role="caseTypes" roleId="vxuc.5959167564566908589" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="5959167564566911056" nodeInfo="ng">
@@ -84,8 +86,8 @@
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
             <node role="conditions" roleId="vxuc.5959167564566749552" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5959167564566957618" nodeInfo="ng">
-              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5959167564566957620" nodeInfo="ng">
-                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566811162" resolveInfo="floatType" />
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="5959167564566957620" nodeInfo="ng">
+                <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="5959167564566811162" resolveInfo="floatType" />
               </node>
             </node>
             <node role="caseTypes" roleId="vxuc.5959167564566908589" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="5959167564567293532" nodeInfo="ng">
@@ -98,8 +100,8 @@
               <property name="value" nameId="mj1l.2212975673976043696" value="10" />
             </node>
             <node role="conditions" roleId="vxuc.5959167564566749552" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5959167564566961874" nodeInfo="ng">
-              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5959167564566961876" nodeInfo="ng">
-                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566811162" resolveInfo="floatType" />
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="5959167564566961876" nodeInfo="ng">
+                <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="5959167564566811162" resolveInfo="floatType" />
               </node>
             </node>
             <node role="caseExpressions" roleId="vxuc.5959167564566953251" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5959167564566961877" nodeInfo="ng">
@@ -115,8 +117,8 @@
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="1683704241753519686" nodeInfo="ng">
             <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="1683704241753519687" nodeInfo="ng">
-              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="1683704241753519688" nodeInfo="ng">
-                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566966303" resolveInfo="gv" />
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="1683704241753519688" nodeInfo="ng">
+                <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="5959167564566966303" resolveInfo="gv" />
               </node>
             </node>
           </node>
@@ -147,8 +149,8 @@
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="1683704241753519680" nodeInfo="ng">
                 <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="1683704241753519681" nodeInfo="ng">
-                  <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="1683704241753519682" nodeInfo="ng">
-                    <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566966303" resolveInfo="gv" />
+                  <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="1683704241753519682" nodeInfo="ng">
+                    <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="5959167564566966303" resolveInfo="gv" />
                   </node>
                 </node>
               </node>
