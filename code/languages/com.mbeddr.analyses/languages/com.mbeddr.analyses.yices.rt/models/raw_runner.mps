@@ -166,17 +166,18 @@
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7174651526803761906" nodeInfo="nr">
                 <property name="name" nameId="tpck.1169194664001" value="res" />
                 <property name="isFinal" nameId="tpee.1176718929932" value="true" />
-                <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7174651526803761907" nodeInfo="in">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8e9v.4765878051576517333" resolveInfo="ToolRunnerBase.ToolRunResult" />
+                <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3978522352175011108" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8e9v.5340625354062416082" resolveInfo="ToolRunner.ToolRunResult" />
                 </node>
                 <node role="initializer" roleId="tpee.1068431790190" type="tpee.LocalInstanceMethodCall" typeId="tpee.3066917033203108594" id="7174651526803761908" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="8e9v.4775168500935975085" resolveInfo="runTool" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="8e9v.7255863045967900447" resolveInfo="runTool" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7174651526803761909" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7174651526803761877" resolveInfo="pathOfGeneratedYicesFile" />
                   </node>
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526803761910" nodeInfo="nn">
                     <property name="value" nameId="tpee.1070475926801" value="yices" />
                   </node>
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3978522352174734589" nodeInfo="nn" />
                 </node>
               </node>
             </node>
@@ -189,7 +190,7 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7174651526803761906" resolveInfo="res" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7174651526803761916" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="8e9v.4765878051576561560" resolveInfo="getErrorString" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="8e9v.5340625354062416175" resolveInfo="getErrorString" />
                   </node>
                 </node>
               </node>
@@ -272,7 +273,7 @@
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7174651526803761906" resolveInfo="res" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="7174651526803761941" nodeInfo="nn">
-                      <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="8e9v.4765878051576561225" resolveInfo="outputResult" />
+                      <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="8e9v.5340625354062416084" resolveInfo="outputResult" />
                     </node>
                   </node>
                 </node>
