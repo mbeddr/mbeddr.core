@@ -5,6 +5,7 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" />
+  <import index="qff7" modelUID="r:2ba2e307-a81d-4a21-9e0b-de3624e2fb83(jetbrains.mps.lang.access.structure)" version="0" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="8" implicit="yes" />
@@ -641,6 +642,12 @@
     <property name="name" nameId="tpck.1169194664001" value="ItExpr" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="it" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4911414230406655008" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="helpers" />
+    <property name="name" nameId="tpck.1169194664001" value="UnWrite" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="no write action" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="qff7.8974276187400348172" resolveInfo="BaseExecuteCommandStatementSync" />
   </root>
 </model>
 
