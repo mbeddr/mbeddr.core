@@ -215,5 +215,11 @@
     <move id="7rpm.661141253149262058" to="4prv.7642065485959505559" />
     <move id="7rpm.661141253149262055" to="4prv.7642065485959505557" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="7" />
+    </dependencies>
+    <rename id="qqyh.4508614440797534978" type="CONCEPT" from="FeatureModelElement" to="AbstractFeature" />
+  </StructureModification>
 </history>
 

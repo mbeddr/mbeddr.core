@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="7">
+<model modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="8">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" />
@@ -7,7 +7,7 @@
   <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="8" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="7" implicit="yes" />
+  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="8" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6825476687691297413" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="AttributeValue" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="cm" />
@@ -78,7 +78,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Feature" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
     <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/feature.png" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4508614440797534978" resolveInfo="FeatureModelElement" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4508614440797534978" resolveInfo="AbstractFeature" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1340226363507779178" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.117464341934617033" resolveInfo="IVisualizationParticipant" />
     </node>
@@ -231,7 +231,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="feature" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6825476687691297426" resolveInfo="Feature" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4508614440797534978" resolveInfo="AbstractFeature" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8433257123783652291" nodeInfo="ig">
@@ -269,12 +269,15 @@
     <property name="name" nameId="tpck.1169194664001" value="DerivedFeature" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="derive" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4508614440797534978" resolveInfo="FeatureModelElement" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4508614440797534978" resolveInfo="AbstractFeature" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2203816361987258679" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <property name="role" nameId="tpce.1071599776563" value="value" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7642065485964948423" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7642065485964944371" resolveInfo="IFeatureConditionsOnly" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8799034948079995131" nodeInfo="ig">
@@ -304,7 +307,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4508614440797534978" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
-    <property name="name" nameId="tpck.1169194664001" value="FeatureModelElement" />
+    <property name="name" nameId="tpck.1169194664001" value="AbstractFeature" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4508614440797534982" nodeInfo="ig">
@@ -319,11 +322,14 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="feature" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6825476687691297426" resolveInfo="Feature" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4508614440797534978" resolveInfo="AbstractFeature" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7642065485959505459" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.8076351743304603872" resolveInfo="IReference" />
     </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7642065485964944371" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IFeatureConditionsOnly" />
   </root>
 </model>
 
