@@ -958,6 +958,11 @@
     <property name="name" nameId="tpck.1169194664001" value="AbstractDefineLike" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8549277990762723760" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="type" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpck.1234971358450" resolveInfo="IType" />
+    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3376775282622142918" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6437088627575722831" resolveInfo="IModuleContent" />
     </node>
