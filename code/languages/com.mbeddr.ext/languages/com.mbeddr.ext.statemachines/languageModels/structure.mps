@@ -572,12 +572,14 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states.actions" />
     <property name="name" nameId="tpck.1169194664001" value="EntryAction" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="entry" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="action executed when state is entered" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8409287311039031605" resolveInfo="AbstractAction" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4753668641245545020" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states.actions" />
     <property name="name" nameId="tpck.1169194664001" value="ExitAction" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="exit" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="action executed when state is left" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8409287311039031605" resolveInfo="AbstractAction" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4753668641245811355" nodeInfo="ig">
@@ -655,6 +657,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
     <property name="name" nameId="tpck.1169194664001" value="CompositeState" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="composite state" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="contains a sub-statemachine" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4249345261280334498" resolveInfo="AbstractState" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4249345261280591928" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -799,6 +802,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states.actions" />
     <property name="name" nameId="tpck.1169194664001" value="DoAction" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="do" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="action executed while in state" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8409287311039031605" resolveInfo="AbstractAction" />
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6151459193021482242" nodeInfo="ig">
@@ -863,6 +867,12 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="[" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a transition not triggered by an event" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1270667558200936379" resolveInfo="AbstractTransition" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1819488472664929103" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
+    <property name="name" nameId="tpck.1169194664001" value="JunctionState" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="junction" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4249345261280334498" resolveInfo="AbstractState" />
   </root>
 </model>
 
