@@ -136,12 +136,10 @@
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="1293299655779951319" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="SX" />
-        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="1293299655779954465" nodeInfo="ng" />
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="1293299655779957622" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="SY" />
       </node>
-      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="1293299655779945013" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1819488472667499062" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1353586440775_6" />
