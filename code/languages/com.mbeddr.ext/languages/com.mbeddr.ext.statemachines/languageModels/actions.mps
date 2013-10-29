@@ -6,9 +6,9 @@
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="12" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="15" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpdg" modelUID="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" version="23" implicit="yes" />
@@ -260,7 +260,7 @@
   <root type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="7727566415687747795" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="add_TransitionAction" />
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="7727566415687747796" nodeInfo="ng">
-      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="clqz.5778488248013533883" resolveInfo="Transition" />
+      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="clqz.1270667558200936379" resolveInfo="AbstractTransition" />
       <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="7727566415687747797" nodeInfo="ng">
         <link role="concept" roleId="tpdg.1177333551023" targetNodeId="clqz.7999989049972989533" resolveInfo="StatemachineExtVarRef" />
         <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="7727566415687747798" nodeInfo="ng">
@@ -276,7 +276,7 @@
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7889970966877706874" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="7889970966877706875" nodeInfo="nn" />
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7889970966877706876" nodeInfo="nn">
-                        <link role="link" roleId="tp25.1138056516764" targetNodeId="clqz.5778488248013533907" />
+                        <link role="link" roleId="tp25.1138056516764" targetNodeId="clqz.1270667558200946447" />
                       </node>
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.Link_SetNewChildOperation" typeId="tp25.1138757581985" id="7889970966877706877" nodeInfo="nn" />
