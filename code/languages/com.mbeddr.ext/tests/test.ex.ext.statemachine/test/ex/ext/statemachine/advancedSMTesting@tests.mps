@@ -17,7 +17,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
-  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="12" implicit="yes" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="15" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6183633367244865662" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="dummy" />
@@ -105,7 +105,7 @@
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="1222391808947435157" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="S1" />
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="1222391808947435164" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="1222391808947435159" resolveInfo="S2" />
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="1222391808947435159" resolveInfo="S2" />
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="1222391808947435166" nodeInfo="ng">
             <link role="event" roleId="clqz.8951398808641876049" targetNodeId="1222391808947435163" resolveInfo="e" />
           </node>
@@ -114,7 +114,7 @@
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="1222391808947435159" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="S2" />
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="1222391808947435167" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="1222391808947435161" resolveInfo="S3" />
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="1222391808947435161" resolveInfo="S3" />
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="1222391808947435169" nodeInfo="ng">
             <link role="event" roleId="clqz.8951398808641876049" targetNodeId="1222391808947435163" resolveInfo="e" />
           </node>
@@ -123,7 +123,7 @@
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="1222391808947435161" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="S3" />
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="1222391808947435170" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="1222391808947435157" resolveInfo="S1" />
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="1222391808947435157" resolveInfo="S1" />
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="1222391808947435172" nodeInfo="ng">
             <link role="event" roleId="clqz.8951398808641876049" targetNodeId="1222391808947435163" resolveInfo="e" />
           </node>
@@ -220,11 +220,11 @@
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="1222391808947629810" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="S1" />
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="1222391808947629811" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="1222391808947629813" resolveInfo="S2" />
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="1222391808947629813" resolveInfo="S2" />
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="1222391808947629812" nodeInfo="ng">
             <link role="event" roleId="clqz.8951398808641876049" targetNodeId="1222391808947629809" resolveInfo="e" />
           </node>
-          <node role="guard" roleId="clqz.5778488248013533903" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="1222391808947629851" nodeInfo="ng">
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="1222391808947629851" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1222391808947629854" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="0" />
             </node>
@@ -342,11 +342,11 @@
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="6183633367244865673" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="S1" />
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="6183633367244865678" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="6183633367244865675" resolveInfo="S2" />
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="6183633367244865675" resolveInfo="S2" />
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="6183633367244865680" nodeInfo="ng">
             <link role="event" roleId="clqz.8951398808641876049" targetNodeId="6183633367244865677" resolveInfo="e" />
           </node>
-          <node role="guard" roleId="clqz.5778488248013533903" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6183633367244865690" nodeInfo="ng">
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6183633367244865690" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6183633367244865693" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="0" />
             </node>
@@ -356,11 +356,11 @@
           </node>
         </node>
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="6183633367244865694" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="6183633367244865675" resolveInfo="S2" />
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="6183633367244865675" resolveInfo="S2" />
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="6183633367244865695" nodeInfo="ng">
             <link role="event" roleId="clqz.8951398808641876049" targetNodeId="6183633367244865677" resolveInfo="e" />
           </node>
-          <node role="guard" roleId="clqz.5778488248013533903" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6183633367244865696" nodeInfo="ng">
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6183633367244865696" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6183633367244865697" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
@@ -370,11 +370,11 @@
           </node>
         </node>
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="6183633367244865699" nodeInfo="ng">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="6183633367244865675" resolveInfo="S2" />
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="6183633367244865675" resolveInfo="S2" />
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="6183633367244865700" nodeInfo="ng">
             <link role="event" roleId="clqz.8951398808641876049" targetNodeId="6183633367244865677" resolveInfo="e" />
           </node>
-          <node role="guard" roleId="clqz.5778488248013533903" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6183633367244865701" nodeInfo="ng">
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6183633367244865701" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6183633367244865702" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
