@@ -2287,7 +2287,7 @@
                   <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
                 </node>
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647888841" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.2212975673976043696" value="100" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="10" />
                 </node>
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="1731059994647888817" nodeInfo="ng">
