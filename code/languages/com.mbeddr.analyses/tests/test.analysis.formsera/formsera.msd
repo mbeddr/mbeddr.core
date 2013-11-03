@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="test.analysis.formsera" uuid="d23b59ca-f643-49ec-ae67-3f4488570639" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/" />
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="." />
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <usedLanguages>
+    <usedLanguage>42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)</usedLanguage>
     <usedLanguage>d62d6e81-9ae0-456b-b2c3-d71c0f373ded(com.mbeddr.analyses.nusmv.statemachine)</usedLanguage>
     <usedLanguage>c365dd1e-9817-4719-bfd1-5d70f3d565a6(com.mbeddr.analyses.yices.dectab)</usedLanguage>
     <usedLanguage>ad5c6649-337c-4447-8651-e0cc8f4ffe24(com.mbeddr.analyses.yices.fm)</usedLanguage>
