@@ -646,7 +646,8 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4911414230406655008" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="helpers" />
     <property name="name" nameId="tpck.1169194664001" value="UnWrite" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="no write action" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unwrite" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="no write action" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="qff7.8974276187400348172" resolveInfo="BaseExecuteCommandStatementSync" />
   </root>
 </model>
