@@ -188,29 +188,76 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5110473669961578331" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5110473669961578332" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5110473669961578333" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now create a global variable that holds an instance of this type and that acts as a global event dispatcher. We also create a new, empty " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now create a global variable that holds an instance of this type and that acts as a global event dispatcher." />
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5110473669961578406" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5110473669961578407" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5110473669961578409" nodeInfo="ng">
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="5110473669962002755" nodeInfo="ng">
+        <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
+        <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
+        <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.9141254329931945894" resolveInfo="processor" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5110473669962002319" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5110473669962002320" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5110473669962002321" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="We also create a new, empty " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5110473669962002228" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5110473669962002229" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5110473669962002230" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="test case" />
               </node>
             </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5110473669961578410" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5110473669962002231" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value=" that we will use for making sure the program actually works. In the test we assign a reference to " />
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5110473669961578411" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5110473669961578412" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5110473669961578414" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5110473669962002232" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5110473669962002233" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5110473669962002234" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="process\\_doNothing" />
               </node>
             </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5110473669961578415" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5110473669962002235" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to that event handler." />
           </node>
         </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="5110473669962019445" nodeInfo="ng">
+        <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
+        <property name="detailMode" nameId="rh4a.5110473669964270411" value="from" />
+        <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
+        <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
+        <link role="upTo" targetNodeId="e1tx.5110473669962036844" resolveInfo="assert1" />
+        <link role="detail" roleId="rh4a.6416473402306189931" targetNodeId="e1tx.5110473669962036844" resolveInfo="assert1" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5110473669962018635" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1383653152321_16" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5110473669962018721" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1383653152457_17" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5110473669962018808" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1383653152600_18" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5110473669962018896" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1383653152736_19" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5110473669962018985" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1383653152880_20" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5110473669962019075" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1383653153008_21" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5110473669962019166" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1383653153152_22" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5110473669962019258" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1383653153296_23" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5110473669962019351" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1383653153440_24" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5110473669961578435" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_1383652472463_10" />
