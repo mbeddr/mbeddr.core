@@ -226,7 +226,7 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="5110473669962019445" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-        <property name="detailMode" nameId="rh4a.5110473669964270411" value="from" />
+        <property name="detailMode" nameId="rh4a.5110473669964270411" value="upto" />
         <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
         <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
         <link role="upTo" targetNodeId="e1tx.5110473669962036844" resolveInfo="assert1" />
