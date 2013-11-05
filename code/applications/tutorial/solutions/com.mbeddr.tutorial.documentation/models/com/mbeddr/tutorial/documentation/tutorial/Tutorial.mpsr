@@ -20,7 +20,7 @@
     <node role="abstract" roleId="2c95.126932837435324914" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="126932837435349020" nodeInfo="ng">
       <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435349021" nodeInfo="ng">
         <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435349022" nodeInfo="ng">
-          <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="This document is the user guide for mbeddr. It is based on the mbeddr tutorial project and describes the code in that tutorial in some detail. This does not cover all features of mbeddr. These additional features are discussed separately. Note that this document is generated using the mbeddr documentation language. As a consequence it is relatively simple to keep the document up to date -- but it also means that the formatting is not very sophisticated." />
         </node>
       </node>
     </node>
