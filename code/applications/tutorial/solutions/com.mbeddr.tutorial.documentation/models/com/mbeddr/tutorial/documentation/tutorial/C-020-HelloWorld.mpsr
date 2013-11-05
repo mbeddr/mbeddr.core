@@ -1011,8 +1011,65 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="949722786950985750" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="empty_1382548045968_25" />
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="949722786950989769" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_1382548173855_27" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5779779775762773957" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5779779775762773958" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5779779775762773959" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We have to create one additional element, the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5779779775762786711" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5779779775762786712" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5779779775762786714" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="BuildConfiguration" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5779779775762786715" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". This specifies which modules should be compiled into an executable or library, as well as other aspects related to creating an executable. Depending on the selected target platform, a " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5779779775762786716" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5779779775762786717" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5779779775762786719" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="BuildConfiguration" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5779779775762786720" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" will automatically generate a corresponding " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5779779775762786721" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5779779775762786722" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5779779775762786724" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="make" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5779779775762786725" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" file. In the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5779779775762786726" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5779779775762786727" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5779779775762786729" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="main" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5779779775762786730" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" model, create a new instance of " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5779779775762786731" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5779779775762786732" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5779779775762786734" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="BuildConfiguration" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5779779775762786735" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (via the model's context menu, see figure below)." />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5779779775762774367" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Build Configuration" />
+          </node>
         </node>
       </node>
     </node>
