@@ -787,7 +787,17 @@
                     </node>
                   </node>
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814934986158" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=", \\textbf{You have to use forward shlashes as directory separators even on Windows!}). Note also that the shell scripts rely on Apache ant. You have to install it (from " />
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=", " />
+                  </node>
+                  <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="620304030120222624" nodeInfo="ng">
+                    <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030120222625" nodeInfo="ng">
+                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030120222626" nodeInfo="ng">
+                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="You have to use forward shlashes as directory separators even on Windows!" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030120222623" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Note also that the shell scripts rely on Apache ant. You have to install it (from " />
                   </node>
                   <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814935135900" nodeInfo="ng">
                     <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935135901" nodeInfo="ng">
@@ -808,15 +818,6 @@
                   </node>
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935135936" nodeInfo="ng">
                     <property name="escapedValue" nameId="87nw.2557074442922438158" value=" script is in your path." />
-                  </node>
-                </node>
-              </node>
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2564556814935135672" nodeInfo="ng">
-                <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2564556814935135673" nodeInfo="ng">
-                  <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935135674" nodeInfo="ng">
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935135675" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="TODO: \\textbf{?" />
-                    </node>
                   </node>
                 </node>
               </node>
