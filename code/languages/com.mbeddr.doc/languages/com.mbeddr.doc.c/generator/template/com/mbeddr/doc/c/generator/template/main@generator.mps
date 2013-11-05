@@ -49,6 +49,7 @@
         <node role="templateNode" roleId="tpf8.1177093586806" type="2c95.CodeParagraph" typeId="2c95.6165313375056119251" id="4755612053022284361" nodeInfo="ng">
           <property name="language" nameId="2c95.6165313375056119253" value="mbeddr" />
           <property name="text" nameId="2c95.6165313375056119252" value="code" />
+          <property name="trim" nameId="2c95.5110473669965928545" value="true" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4755612053022284362" nodeInfo="nn">
             <property name="propertyName" nameId="tpck.1757699476691236117" value="text" />
             <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="4755612053022284363" nodeInfo="nn">
