@@ -570,7 +570,12 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8135882712510805768" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="620304030111096253" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8135882712510805768" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rh4a.NameAnnotation" typeId="rh4a.4509696981882026489" id="620304030111086071" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="aStatement" />
+          </node>
+        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8135882712510805868" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="i4" />
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="8135882712510805869" nodeInfo="ng">
@@ -10150,7 +10155,7 @@
           </node>
           <node role="components" roleId="ym4j.3801772042669047864" type="ym4j.UnitWithExponent" typeId="ym4j.3801772042669047322" id="8135882712510800815" nodeInfo="ng">
             <property name="exponent" nameId="ym4j.3801772042669047325" value="-1" />
-            <node role="unit" roleId="ym4j.3801772042669047323" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="8135882712510800814" nodeInfo="ng" />
+            <node role="unit" roleId="ym4j.3801772042669047323" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="620304030110941384" nodeInfo="ng" />
           </node>
         </node>
       </node>
