@@ -95,6 +95,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Section" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="structure" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="section" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a section in the document" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580064222" resolveInfo="AbstractSection" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2564556814934565588" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3857533489766146432" resolveInfo="IDocumentable" />
@@ -471,6 +472,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6165313375056012512" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DocumentInclude" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="include" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="include another document" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6165313375056012515" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -786,6 +788,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2588579461812060090" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Visualization" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="visualization" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="include visualized image" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2588579461812060091" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3350625596579911733" resolveInfo="IDocumentContent" />
