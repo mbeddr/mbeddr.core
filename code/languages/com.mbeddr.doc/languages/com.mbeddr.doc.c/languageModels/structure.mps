@@ -149,5 +149,21 @@
       <property name="internalValue" nameId="tpce.1083923523171" value="from" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4199862776471533291" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="RootCodeParagraph" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="embed root as text" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="root as text" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2c95.3350625596580089583" resolveInfo="AbstractParagraph" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4199862776471533328" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="root" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4199862776471533293" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2c95.4755612053022326353" resolveInfo="IInterspersed" />
+    </node>
+  </root>
 </model>
 
