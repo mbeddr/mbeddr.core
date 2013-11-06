@@ -3,12 +3,33 @@
   <persistence version="8" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4199862776468632873" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-060-Components" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4199862776468632874" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="components" />
       <property name="text" nameId="2c95.3350625596580064225" value="Components" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4199862776471281315" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4199862776471281316" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776471281317" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us now introduce components to further structure the system. We start by factoring the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4199862776471281322" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4199862776471281323" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776471281325" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Trackpoint" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776471281326" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" data structure into a parate module and export it to make it accessible from importing modules." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4199862776471297341" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1383726015091_5" />
+      </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4199862776468633022" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1383658449039_29" />
