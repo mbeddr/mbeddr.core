@@ -538,9 +538,89 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4199862776473561389" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_1383727869360_42" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="4199862776474961000" nodeInfo="ng">
+          <property name="text" nameId="2c95.8730648445434044906" value="./MbeddrTutorial&#10;$$runningTest: running test () @FunctionPointers:test_testProcessing:0#767515563077315487&#10;$$runningTest: running test () @Components:test_testNuller:0#767515563077315487&#10;$$contractFailed: contract failed (op=0, pc=1) @Components:null:-1#1731059994647588232&#10;$$contractFailed: contract failed (op=0, pc=2) @Components:null:-1#1731059994647588253&#10;" />
         </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4199862776474968583" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4199862776474968584" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776474968585" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can fix these problems by changing the test data to conform to the contract, i.e.  " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="4199862776475046634" nodeInfo="ng">
+          <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
+          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.1731059994647783029" resolveInfo="testNuller" />
+          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4199862776475046803" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4199862776475046804" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776475046805" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us provoke another contract violation by returning from the implementation in the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4199862776475046807" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4199862776475046808" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776475046810" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Nuller" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776475046811" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" component a " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4199862776475046812" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4199862776475046813" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776475046815" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Trackpoint" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776475046816" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" whose " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4199862776475046817" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4199862776475046818" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776475046820" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="id" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776475046821" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is 0. " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4199862776475047213" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4199862776475047214" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776475047215" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Running it again provokes another contract failure. Notice how the contract is specified on the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="4199862776475047217" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4199862776475047218" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776475047220" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="interface" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776475047221" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", but they are checked for each " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="4199862776475047222" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4199862776475047223" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776475047225" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="component" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4199862776475047226" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" implementing the interface. There is no way how an implementation can violate the interface contract without the respective error being reported!" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4199862776475048963" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="collab" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Collaborating and Stateful Components" />
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4199862776468633022" nodeInfo="ng">
