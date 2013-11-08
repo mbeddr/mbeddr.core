@@ -638,6 +638,14 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.analyses.cbmc">
+      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc/test_gen/">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.test.analyses.cbmc.testcode" depends="fetchDependencies">
@@ -706,6 +714,14 @@
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.analyses.cbmc.testcode">
+      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/test_gen/">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.test.analyses.cbmc.testcode_analyses_config" depends="fetchDependencies">
@@ -774,6 +790,14 @@
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.analyses.cbmc.testcode_analyses_config">
+      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/test_gen/">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.test.ts.analyses.fmod" depends="fetchDependencies">
@@ -840,6 +864,14 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.ts.analyses.fmod">
+      <fileset dir="${mbeddr.analyses}/tests/test.analysis.fmod/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+      <fileset dir="${mbeddr.analyses}/tests/test.analysis.fmod/test_gen/">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.test.ts.analyses.yices.dectab" depends="fetchDependencies">
@@ -906,6 +938,14 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.ts.analyses.yices.dectab">
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.yices.dectab/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.yices.dectab/test_gen/">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.test.ts.analysis.statemachine" depends="fetchDependencies">
@@ -954,6 +994,14 @@
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.ts.analysis.statemachine">
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/test_gen/">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="test.com.mbeddr.analyses.ts.tests" depends="assemble">
