@@ -1112,6 +1112,7 @@
     <pathconvert pathsep="${path.separator}" property="mps.plugins.path.string" refid="mps.plugins.path" />
     <path id="mps.tests.path">
       <pathelement location="${build.layout}/test.analyses.cbmc.jar" />
+      <pathelement location="${build.layout}/test.analyses.cbmc.testcode.jar" />
       <pathelement location="${build.layout}/test.ts.analyses.fmod.jar" />
       <pathelement location="${build.layout}/test.ts.analyses.yices.dectab.jar" />
       <pathelement location="${build.layout}/test.ts.analysis.statemachine.jar" />
