@@ -81,20 +81,6 @@
           </node>
         </node>
       </node>
-      <node role="derivedFeatures" roleId="qqyh.2203816361987258682" type="qqyh.DerivedFeature" typeId="qqyh.2203816361987134490" id="8842534433307602156" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="a" />
-        <node role="value" roleId="qqyh.2203816361987258679" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8842534433307602158" nodeInfo="ng">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-          <property name="value" nameId="mj1l.2212975673976043696" value="2" />
-        </node>
-      </node>
-      <node role="derivedFeatures" roleId="qqyh.2203816361987258682" type="qqyh.DerivedFeature" typeId="qqyh.2203816361987134490" id="8842534433307661089" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="a" />
-        <node role="value" roleId="qqyh.2203816361987258679" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8842534433307661091" nodeInfo="ng">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-          <property name="value" nameId="mj1l.2212975673976043696" value="3" />
-        </node>
-      </node>
     </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="8882953773355744176" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Cfg1" />

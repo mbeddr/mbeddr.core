@@ -236,6 +236,7 @@
       <library file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.base.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.utils.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.pluginSolution.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.rt.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.componentcontracts.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip/mbeddr.nusmv/languages/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.jar" />
@@ -315,6 +316,7 @@
       <library file="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.vectors.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip/mbeddr.tutotial.osconfig.memory.jar" />
       <library file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+      <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
       <chunk>
         <module file="${tutorial.home}/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" />
