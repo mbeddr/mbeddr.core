@@ -17,7 +17,7 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="88" implicit="yes" />
@@ -37,7 +37,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8165847842702599933" nodeInfo="ng">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8165847842702599934" nodeInfo="ng">
-            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="2812390151932454156" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="returnAfterFunctionCall" />
@@ -66,7 +66,7 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8165847842702599947" nodeInfo="ng">
-            <property name="value" nameId="mj1l.8860443239512128104" value="32" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="32" />
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8165847842702599948" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="stmntBeforeFirstBlockExpr" />
@@ -84,7 +84,7 @@
                   </node>
                   <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="8165847842702599955" nodeInfo="ng">
                     <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8165847842702599956" nodeInfo="ng">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                     </node>
                     <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8165847842702599957" nodeInfo="ng">
                       <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8165847842702599945" resolveInfo="a" />
@@ -105,7 +105,7 @@
                           <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8165847842702599953" resolveInfo="result" />
                         </node>
                         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8165847842702599965" nodeInfo="ng">
-                          <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                          <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                         </node>
                       </node>
                     </node>
@@ -135,7 +135,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8165847842702599972" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="8165847842702599973" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8165847842702599974" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="2323" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="2323" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8165847842702599975" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8165847842702599945" resolveInfo="a" />
@@ -156,7 +156,7 @@
                 </node>
                 <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="8165847842702599982" nodeInfo="ng">
                   <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8165847842702599983" nodeInfo="ng">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                   </node>
                   <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8165847842702599984" nodeInfo="ng">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8165847842702599945" resolveInfo="a" />
@@ -177,7 +177,7 @@
                         <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8165847842702599980" resolveInfo="result" />
                       </node>
                       <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8165847842702599992" nodeInfo="ng">
-                        <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                        <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                       </node>
                     </node>
                   </node>
@@ -251,9 +251,19 @@
         </node>
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="8924761790438006452" nodeInfo="ng">
-        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8924761790438006453" nodeInfo="ng">
-          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="1617520389139202886" nodeInfo="ng">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8165847842702599932" resolveInfo="functionCallToHelperFunc" />
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.PlatformSpecificValidations" typeId="rpmx.2033545087487794832" id="6181369419122747852" nodeInfo="ng">
+          <node role="validations" roleId="rpmx.2033545087487794833" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8924761790438006453" nodeInfo="ng">
+            <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="1617520389139202886" nodeInfo="ng">
+              <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8165847842702599932" resolveInfo="functionCallToHelperFunc" />
+            </node>
+          </node>
+        </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.PlatformSpecificValidations" typeId="rpmx.2033545087487794832" id="6181369419122747873" nodeInfo="ng">
+          <property name="platform" nameId="rpmx.2033545087487794834" value="nux" />
+          <node role="validations" roleId="rpmx.2033545087487794833" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="6181369419122750149" nodeInfo="ng">
+            <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="6181369419122750155" nodeInfo="ng">
+              <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932454156" resolveInfo="returnAfterFunctionCall" />
+            </node>
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="5710167937131286861" nodeInfo="ng">

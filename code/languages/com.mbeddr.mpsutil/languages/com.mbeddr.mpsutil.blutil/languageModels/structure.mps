@@ -608,6 +608,12 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3212431740125231118" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="default" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="3212431740125201975" resolveInfo="CSDefault" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8680547451702410202" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="cases" />
@@ -649,6 +655,18 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unwrite" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="no write action" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="qff7.8974276187400348172" resolveInfo="BaseExecuteCommandStatementSync" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3212431740125201975" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="conceptswitch" />
+    <property name="name" nameId="tpck.1169194664001" value="CSDefault" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="default" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3212431740125201976" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="body" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1082485599095" resolveInfo="BlockStatement" />
+    </node>
   </root>
 </model>
 
