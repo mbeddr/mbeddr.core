@@ -429,11 +429,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="state machine to constraint" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9005445548776882237" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="statemachines" />
-    <property name="name" nameId="tpck.1169194664001" value="NonDetInitSM" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9005445548778024784" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="statemachines" />
     <property name="name" nameId="tpck.1169194664001" value="SMInSubSpace" />
@@ -451,6 +446,29 @@
       <property name="role" nameId="tpce.1071599776563" value="subSpace" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="697164800619673343" resolveInfo="StateMachineStateSubSpace" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7759126187580038177" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="NonDeterministicInit" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="smNonDetInit" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="nonDetInit" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1786180596061208522" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="statemachine" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7759126187582434043" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="subspace" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7759126187582498129" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="body" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="c4fa.4185783222026475861" resolveInfo="StatementList" />
     </node>
   </root>
 </model>
