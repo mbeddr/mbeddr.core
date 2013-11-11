@@ -31,7 +31,7 @@
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064687324" nodeInfo="nn">
-                <property name="fqName" nameId="tp25.559557797393041554" value="ad" />
+                <property name="fqName" nameId="tp25.559557797393041554" value="advanced_verification_condition@" />
                 <property name="name" nameId="tp25.559557797393017702" value="advanced_verification_condition" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
