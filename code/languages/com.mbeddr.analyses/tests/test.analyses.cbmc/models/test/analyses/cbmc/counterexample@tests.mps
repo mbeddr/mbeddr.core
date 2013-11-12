@@ -35,6 +35,17 @@
       <property name="name" nameId="tpck.1169194664001" value="testSmoke" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1567877737115580202" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1567877737115580203" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4716091789692269713" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4716091789692269714" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorOutputPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4716091789692269715" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="4716091789692269716" nodeInfo="ng">
+              <property name="fqName" nameId="o23b.559557797393041554" value="counter" />
+              <property name="name" nameId="o23b.559557797393017702" value="counterexample" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="1567877737115580204" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="1567877737115580205" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
@@ -44,6 +55,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="5294451228540238375" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4716091789692271190" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4716091789692269714" resolveInfo="generatorOutputPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433065051520" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
                 <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
@@ -111,6 +125,17 @@
       <property name="name" nameId="tpck.1169194664001" value="testComponentsInitialization" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="33311699572682172" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="33311699572682173" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4716091789692246293" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4716091789692246294" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorOutputPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4716091789692246295" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="4716091789692246296" nodeInfo="ng">
+              <property name="fqName" nameId="o23b.559557797393041554" value="countere" />
+              <property name="name" nameId="o23b.559557797393017702" value="counterexample" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="33311699572682174" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="33311699572682175" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
@@ -120,6 +145,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="33311699572682177" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4716091789692259172" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4716091789692246294" resolveInfo="generatorOutputPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064801104" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
                 <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
@@ -209,6 +237,17 @@
       <property name="name" nameId="tpck.1169194664001" value="testDecisionTableLift" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="33311699573030565" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="33311699573030566" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4716091789692263059" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4716091789692263060" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorOutputPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4716091789692263061" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="4716091789692263062" nodeInfo="ng">
+              <property name="fqName" nameId="o23b.559557797393041554" value="counter" />
+              <property name="name" nameId="o23b.559557797393017702" value="counterexample" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="33311699573030567" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="33311699573030568" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
@@ -218,6 +257,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="33311699573030570" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4716091789692264546" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4716091789692263060" resolveInfo="generatorOutputPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064982374" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
                 <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
@@ -317,6 +359,17 @@
       <property name="name" nameId="tpck.1169194664001" value="testGoingThroughDecTab" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6224485357112737163" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6224485357112737164" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4716091789692264776" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4716091789692264777" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorOutputPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4716091789692264778" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="4716091789692264779" nodeInfo="ng">
+              <property name="fqName" nameId="o23b.559557797393041554" value="counterex" />
+              <property name="name" nameId="o23b.559557797393017702" value="counterexample" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="3796944424769967030" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3796944424769967031" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="config" />
@@ -339,6 +392,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6224485357112737168" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4716091789692266256" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4716091789692264777" resolveInfo="generatorOutputPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064982571" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
                 <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
@@ -454,6 +510,17 @@
       <property name="name" nameId="tpck.1169194664001" value="testDecTabNestedCalls" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="4755507401199877590" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4755507401199877591" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4716091789692266469" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4716091789692266470" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorOutputPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4716091789692266471" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="4716091789692266472" nodeInfo="ng">
+              <property name="fqName" nameId="o23b.559557797393041554" value="counterex" />
+              <property name="name" nameId="o23b.559557797393017702" value="counterexample" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4755507401199877939" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4755507401199877940" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
@@ -463,6 +530,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4755507401199877942" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4716091789692267944" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4716091789692266470" resolveInfo="generatorOutputPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064982768" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
                 <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
@@ -523,6 +593,17 @@
       <property name="name" nameId="tpck.1169194664001" value="testDecisionTableInPPCLift" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="33311699573035772" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="33311699573035773" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4716091789693095057" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4716091789693095058" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorOutputPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4716091789693095059" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="4716091789693095060" nodeInfo="ng">
+              <property name="name" nameId="o23b.559557797393017702" value="counterexample" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+              <property name="fqName" nameId="o23b.559557797393041554" value="counterex" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="33311699573035774" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="33311699573035775" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
@@ -530,6 +611,9 @@
               <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="33311699573036040" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8514070329609207106" resolveInfo="checkPrePostCondition" />
                 <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4716091789693173362" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4716091789693095058" resolveInfo="generatorOutputPath" />
+                </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433065054060" nodeInfo="nn">
                   <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
                   <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
@@ -593,6 +677,17 @@
       <property name="name" nameId="tpck.1169194664001" value="testStatemachines" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7554338819202042591" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7554338819202042592" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4716091789693179237" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4716091789693179238" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorOutputPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4716091789693179239" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="4716091789693179240" nodeInfo="ng">
+              <property name="name" nameId="o23b.559557797393017702" value="counterexample" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+              <property name="fqName" nameId="o23b.559557797393041554" value="countere" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7554338819202042593" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7554338819202042594" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
@@ -604,6 +699,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7554338819202042755" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.7554338819202040865" resolveInfo="checkStatemachine" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4716091789693182313" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4716091789693179238" resolveInfo="generatorOutputPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433065036933" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
                 <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
@@ -790,12 +888,26 @@
       <property name="name" nameId="tpck.1169194664001" value="testStatemachineCounterexample" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="210871162384222720" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="210871162384222721" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4716091789693190759" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4716091789693190760" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorOutputPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4716091789693190761" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="4716091789693190762" nodeInfo="ng">
+              <property name="name" nameId="o23b.559557797393017702" value="counterexample" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+              <property name="fqName" nameId="o23b.559557797393041554" value="countere" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="210871162384222722" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="210871162384222723" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="210871162384222781" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4716091789692331112" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4716091789693190760" resolveInfo="generatorOutputPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433065048292" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
                 <property name="name" nameId="tp25.559557797393017702" value="counterexample" />

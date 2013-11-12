@@ -56,5 +56,22 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4791280061046124023" resolveInfo="CBMCCounterexampleStateTest" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1348611803040004605" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="GeneratorOutputPath" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="generator-output-path" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="559557797393017702" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="name" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="559557797393021807" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="stereotype" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="559557797393041554" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="fqName" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+  </root>
 </model>
 
