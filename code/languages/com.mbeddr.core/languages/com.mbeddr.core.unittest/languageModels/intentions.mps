@@ -342,7 +342,7 @@
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7727566415687713894" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.4643433264761170927" resolveInfo="visibleContentsOfType" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ConceptRefExpression" typeId="tp25.1172424058054" id="7727566415687713895" nodeInfo="nn">
-                    <link role="conceptDeclaration" roleId="tp25.1172424100906" targetNodeId="yz9a.6275792049641586523" resolveInfo="TestCase" />
+                    <link role="conceptDeclaration" roleId="tp25.1172424100906" targetNodeId="yz9a.6937839081833780722" resolveInfo="ITestContext" />
                   </node>
                 </node>
               </node>
