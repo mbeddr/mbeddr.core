@@ -963,7 +963,7 @@
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6118775998562574703" resolveInfo="s" />
                         </node>
                         <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="6118775998562592293" nodeInfo="nn">
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2665114284924213858" resolveInfo="collectAllCFilesFromTheGeneratedCDirectory" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1348611803042334963" resolveInfo="collectAllCFilesFromTheGeneratedCDirectory" />
                           <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="1774770014194681898" nodeInfo="nn">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1348611803041963295" resolveInfo="generatorOutputPath" />
                           </node>
