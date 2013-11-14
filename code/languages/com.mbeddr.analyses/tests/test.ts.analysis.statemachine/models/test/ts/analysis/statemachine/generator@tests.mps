@@ -14,7 +14,7 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="1b9n" modelUID="r:95fb8574-9ce6-4567-a8e8-253c9bdeb164(com.mbeddr.analyses.base.unittests.structure)" version="0" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="3798708219327325881" nodeInfo="ng">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="3798708219327325882" nodeInfo="ng">
@@ -33,7 +33,7 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6541740662591134894" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6541740662591134895" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="1b9n.CheckGeneratedFile" typeId="1b9n.3798708219327329636" id="6541740662591134896" nodeInfo="ng">
-          <property name="path" nameId="1b9n.3798708219327329638" value="/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/source_gen/test/ts/analyses/statemachine/generation/ExpressionsTestSM.smv" />
+          <property name="path" nameId="1b9n.3798708219327329638" value="/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/source_gen/test/ex/analyses/statemachine/generation/ExpressionsTestSM.smv" />
           <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591134897" nodeInfo="ng">
             <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591134899" nodeInfo="nn">
               <property name="value" nameId="tpee.1070475926801" value="next (lv__anInt_ID_5749040569929901712) := case" />
@@ -142,7 +142,7 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3798708219327490065" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3798708219327490066" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="1b9n.CheckGeneratedFile" typeId="1b9n.3798708219327329636" id="3798708219327490067" nodeInfo="ng">
-          <property name="path" nameId="1b9n.3798708219327329638" value="/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/source_gen/test/ts/analyses/statemachine/generation/InputEventsTestSM.smv" />
+          <property name="path" nameId="1b9n.3798708219327329638" value="/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/source_gen/test/ex/analyses/statemachine/generation/InputEventsTestSM.smv" />
           <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="3798708219327490068" nodeInfo="ng">
             <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3798708219327490070" nodeInfo="nn">
               <property name="value" nameId="tpee.1070475926801" value="MODULE statemachine( in__inEvent__step_ID_3798708219327275419, in__inEvent__flag_ID_3798708219327275421, in__inEvent__present_ID_3798708219327275418)" />
@@ -211,7 +211,7 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2477204873927036316" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2477204873927036317" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="1b9n.CheckGeneratedFile" typeId="1b9n.3798708219327329636" id="3798708219327326367" nodeInfo="ng">
-          <property name="path" nameId="1b9n.3798708219327329638" value="/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/source_gen/test/ts/analyses/statemachine/generation/PrimitiveTypesTestSM.smv" />
+          <property name="path" nameId="1b9n.3798708219327329638" value="/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/source_gen/test/ex/analyses/statemachine/generation/PrimitiveTypesTestSM.smv" />
           <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="3798708219327490058" nodeInfo="ng">
             <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3798708219327490061" nodeInfo="nn">
               <property name="value" nameId="tpee.1068580320021" value="4" />
