@@ -108,5 +108,11 @@
     </dependencies>
     <rename id="q5q6.697164800619789283" type="CONCEPT" from="State" to="StateMachineReference" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="22" />
+    </dependencies>
+    <rename id="q5q6.6937663792694551950" type="CONCEPT" from="LastTimeOneOfEventsOccured" to="LastTimeOneOfEventsOccurred" />
+  </StructureModification>
 </history>
 
