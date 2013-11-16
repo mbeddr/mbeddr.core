@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <cprover>
-<program>CBMC 4.3</program>
+<program>CBMC 4.5</program>
 <message type="STATUS-MESSAGE">
-  <location file="/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c">
-    <file>/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
+  <location file="/Users/ratiud/work/CurrentProjects/LanguageWorkbenches/github_3_0/mbeddr/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c">
+    <file>/Users/ratiud/work/CurrentProjects/LanguageWorkbenches/github_3_0/mbeddr/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
     <line/>
     <function/>
   </location>
@@ -43,7 +43,7 @@
 </message>
 
 <message type="STATUS-MESSAGE">
-  <text>size of program expression: 25 assignments</text>
+  <text>size of program expression: 40 steps</text>
 </message>
 
 <message type="STATUS-MESSAGE">
@@ -63,11 +63,11 @@
 </message>
 
 <message type="STATUS-MESSAGE">
-  <text>Solving with MiniSAT2 with simplifier</text>
+  <text>Solving with MiniSAT 2.2.0 with simplifier</text>
 </message>
 
 <message type="STATUS-MESSAGE">
-  <text>176 variables, 441 clauses</text>
+  <text>122 variables, 313 clauses</text>
 </message>
 
 <message type="STATUS-MESSAGE">
@@ -75,7 +75,7 @@
 </message>
 
 <message type="STATUS-MESSAGE">
-  <text>Runtime decision procedure: 0.002s</text>
+  <text>Runtime decision procedure: 0.001s</text>
 </message>
 
 <message type="STATUS-MESSAGE">
@@ -88,29 +88,9 @@
     <step_nr>2</step_nr>
     <thread>0</thread>
   </function_call>
-  <assignment display_name="__CPROVER_rounding_mode" identifier="c::__CPROVER_rounding_mode" step_nr="3" thread="0">
-    <location file="&lt;built-in-additions&gt;" line="42">
-      <file>&lt;built-in-additions&gt;</file>
-      <line>42</line>
-      <function/>
-    </location>
-    <mode>C</mode>
-    <thread>0</thread>
-    <identifier>c::__CPROVER_rounding_mode</identifier>
-    <base_name>__CPROVER_rounding_mode</base_name>
-    <display_name>__CPROVER_rounding_mode</display_name>
-    <value>0</value>
-    <full_lhs>__CPROVER_rounding_mode</full_lhs>
-    <full_lhs_value>0</full_lhs_value>
-    <type>int</type>
-    <step_nr>3</step_nr>
-    <value_expression>
-      <integer binary="00000000000000000000000000000000">0</integer>
-    </value_expression>
-  </assignment>
-  <assignment display_name="functions_globalVar" identifier="c::functions_globalVar" step_nr="4" thread="0">
-    <location file="/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c" line="6">
-      <file>/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
+  <assignment display_name="functions_globalVar" identifier="c::functions_globalVar" step_nr="3" thread="0">
+    <location file="/Users/ratiud/work/CurrentProjects/LanguageWorkbenches/github_3_0/mbeddr/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c" line="6">
+      <file>/Users/ratiud/work/CurrentProjects/LanguageWorkbenches/github_3_0/mbeddr/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
       <line>6</line>
       <function/>
     </location>
@@ -123,15 +103,95 @@
     <full_lhs>functions_globalVar</full_lhs>
     <full_lhs_value>0</full_lhs_value>
     <type>int</type>
+    <step_nr>3</step_nr>
+    <value_expression>
+      <integer binary="00000000000000000000000000000000">0</integer>
+    </value_expression>
+  </assignment>
+  <assignment display_name="__CPROVER_pipe_count" identifier="c::__CPROVER_pipe_count" step_nr="4" thread="0">
+    <location file="&lt;built-in-additions&gt;" line="78">
+      <file>&lt;built-in-additions&gt;</file>
+      <line>78</line>
+      <function/>
+    </location>
+    <mode>C</mode>
+    <thread>0</thread>
+    <identifier>c::__CPROVER_pipe_count</identifier>
+    <base_name>__CPROVER_pipe_count</base_name>
+    <display_name>__CPROVER_pipe_count</display_name>
+    <value>0</value>
+    <full_lhs>__CPROVER_pipe_count</full_lhs>
+    <full_lhs_value>0</full_lhs_value>
+    <type>unsigned int</type>
     <step_nr>4</step_nr>
     <value_expression>
       <integer binary="00000000000000000000000000000000">0</integer>
     </value_expression>
   </assignment>
-  <assignment display_name="__CPROVER_deallocated" identifier="c::__CPROVER_deallocated" step_nr="5" thread="0">
-    <location file="&lt;built-in-additions&gt;" line="27">
+  <assignment display_name="__CPROVER_threads_exited" identifier="c::__CPROVER_threads_exited" step_nr="5" thread="0">
+    <location file="&lt;built-in-additions&gt;" line="22">
       <file>&lt;built-in-additions&gt;</file>
-      <line>27</line>
+      <line>22</line>
+      <function/>
+    </location>
+    <mode>C</mode>
+    <thread>0</thread>
+    <identifier>c::__CPROVER_threads_exited</identifier>
+    <base_name>__CPROVER_threads_exited</base_name>
+    <display_name>__CPROVER_threads_exited</display_name>
+    <value>__CPROVER_threads_exited#1</value>
+    <full_lhs>__CPROVER_threads_exited</full_lhs>
+    <full_lhs_value>__CPROVER_threads_exited#1</full_lhs_value>
+    <type>_Bool [INFINITY()]</type>
+    <step_nr>5</step_nr>
+    <value_expression>
+      <unknown/>
+    </value_expression>
+  </assignment>
+  <assignment display_name="__CPROVER_next_thread_id" identifier="c::__CPROVER_next_thread_id" step_nr="6" thread="0">
+    <location file="&lt;built-in-additions&gt;" line="23">
+      <file>&lt;built-in-additions&gt;</file>
+      <line>23</line>
+      <function/>
+    </location>
+    <mode>C</mode>
+    <thread>0</thread>
+    <identifier>c::__CPROVER_next_thread_id</identifier>
+    <base_name>__CPROVER_next_thread_id</base_name>
+    <display_name>__CPROVER_next_thread_id</display_name>
+    <value>0</value>
+    <full_lhs>__CPROVER_next_thread_id</full_lhs>
+    <full_lhs_value>0</full_lhs_value>
+    <type>unsigned long int</type>
+    <step_nr>6</step_nr>
+    <value_expression>
+      <integer binary="0000000000000000000000000000000000000000000000000000000000000000">0</integer>
+    </value_expression>
+  </assignment>
+  <assignment display_name="__CPROVER_rounding_mode" identifier="c::__CPROVER_rounding_mode" step_nr="7" thread="0">
+    <location file="&lt;built-in-additions&gt;" line="57">
+      <file>&lt;built-in-additions&gt;</file>
+      <line>57</line>
+      <function/>
+    </location>
+    <mode>C</mode>
+    <thread>0</thread>
+    <identifier>c::__CPROVER_rounding_mode</identifier>
+    <base_name>__CPROVER_rounding_mode</base_name>
+    <display_name>__CPROVER_rounding_mode</display_name>
+    <value>0</value>
+    <full_lhs>__CPROVER_rounding_mode</full_lhs>
+    <full_lhs_value>0</full_lhs_value>
+    <type>int</type>
+    <step_nr>7</step_nr>
+    <value_expression>
+      <integer binary="00000000000000000000000000000000">0</integer>
+    </value_expression>
+  </assignment>
+  <assignment display_name="__CPROVER_deallocated" identifier="c::__CPROVER_deallocated" step_nr="8" thread="0">
+    <location file="&lt;built-in-additions&gt;" line="30">
+      <file>&lt;built-in-additions&gt;</file>
+      <line>30</line>
       <function/>
     </location>
     <mode>C</mode>
@@ -142,16 +202,36 @@
     <value>NULL</value>
     <full_lhs>__CPROVER_deallocated</full_lhs>
     <full_lhs_value>NULL</full_lhs_value>
-    <type>const void *</type>
-    <step_nr>5</step_nr>
+    <type>void *</type>
+    <step_nr>8</step_nr>
     <value_expression>
       <pointer binary="0000000000000000000000000000000000000000000000000000000000000000"/>
     </value_expression>
   </assignment>
-  <assignment display_name="__CPROVER_malloc_object" identifier="c::__CPROVER_malloc_object" step_nr="6" thread="0">
-    <location file="&lt;built-in-additions&gt;" line="28">
+  <assignment display_name="__CPROVER_dead_object" identifier="c::__CPROVER_dead_object" step_nr="9" thread="0">
+    <location file="&lt;built-in-additions&gt;" line="31">
       <file>&lt;built-in-additions&gt;</file>
-      <line>28</line>
+      <line>31</line>
+      <function/>
+    </location>
+    <mode>C</mode>
+    <thread>0</thread>
+    <identifier>c::__CPROVER_dead_object</identifier>
+    <base_name>__CPROVER_dead_object</base_name>
+    <display_name>__CPROVER_dead_object</display_name>
+    <value>NULL</value>
+    <full_lhs>__CPROVER_dead_object</full_lhs>
+    <full_lhs_value>NULL</full_lhs_value>
+    <type>void *</type>
+    <step_nr>9</step_nr>
+    <value_expression>
+      <pointer binary="0000000000000000000000000000000000000000000000000000000000000000"/>
+    </value_expression>
+  </assignment>
+  <assignment display_name="__CPROVER_malloc_object" identifier="c::__CPROVER_malloc_object" step_nr="10" thread="0">
+    <location file="&lt;built-in-additions&gt;" line="32">
+      <file>&lt;built-in-additions&gt;</file>
+      <line>32</line>
       <function/>
     </location>
     <mode>C</mode>
@@ -162,16 +242,16 @@
     <value>NULL</value>
     <full_lhs>__CPROVER_malloc_object</full_lhs>
     <full_lhs_value>NULL</full_lhs_value>
-    <type>const void *</type>
-    <step_nr>6</step_nr>
+    <type>void *</type>
+    <step_nr>10</step_nr>
     <value_expression>
       <pointer binary="0000000000000000000000000000000000000000000000000000000000000000"/>
     </value_expression>
   </assignment>
-  <assignment display_name="__CPROVER_malloc_size" identifier="c::__CPROVER_malloc_size" step_nr="7" thread="0">
-    <location file="&lt;built-in-additions&gt;" line="29">
+  <assignment display_name="__CPROVER_malloc_size" identifier="c::__CPROVER_malloc_size" step_nr="11" thread="0">
+    <location file="&lt;built-in-additions&gt;" line="33">
       <file>&lt;built-in-additions&gt;</file>
-      <line>29</line>
+      <line>33</line>
       <function/>
     </location>
     <mode>C</mode>
@@ -182,16 +262,16 @@
     <value>0</value>
     <full_lhs>__CPROVER_malloc_size</full_lhs>
     <full_lhs_value>0</full_lhs_value>
-    <type>signed long int</type>
-    <step_nr>7</step_nr>
+    <type>unsigned long int</type>
+    <step_nr>11</step_nr>
     <value_expression>
       <integer binary="0000000000000000000000000000000000000000000000000000000000000000">0</integer>
     </value_expression>
   </assignment>
-  <assignment display_name="__CPROVER_malloc_is_new_array" identifier="c::__CPROVER_malloc_is_new_array" step_nr="8" thread="0">
-    <location file="&lt;built-in-additions&gt;" line="30">
+  <assignment display_name="__CPROVER_malloc_is_new_array" identifier="c::__CPROVER_malloc_is_new_array" step_nr="12" thread="0">
+    <location file="&lt;built-in-additions&gt;" line="34">
       <file>&lt;built-in-additions&gt;</file>
-      <line>30</line>
+      <line>34</line>
       <function/>
     </location>
     <mode>C</mode>
@@ -203,87 +283,87 @@
     <full_lhs>__CPROVER_malloc_is_new_array</full_lhs>
     <full_lhs_value>FALSE</full_lhs_value>
     <type>_Bool</type>
-    <step_nr>8</step_nr>
+    <step_nr>12</step_nr>
     <value_expression>
       <boolean binary="0">FALSE</boolean>
     </value_expression>
   </assignment>
-  <function_return display_name="__CPROVER_initialize" identifier="c::__CPROVER_initialize" step_nr="9" thread="0">
-    <step_nr>9</step_nr>
+  <assignment display_name="__CPROVER_memory_leak" identifier="c::__CPROVER_memory_leak" step_nr="13" thread="0">
+    <location file="&lt;built-in-additions&gt;" line="35">
+      <file>&lt;built-in-additions&gt;</file>
+      <line>35</line>
+      <function/>
+    </location>
+    <mode>C</mode>
+    <thread>0</thread>
+    <identifier>c::__CPROVER_memory_leak</identifier>
+    <base_name>__CPROVER_memory_leak</base_name>
+    <display_name>__CPROVER_memory_leak</display_name>
+    <value>NULL</value>
+    <full_lhs>__CPROVER_memory_leak</full_lhs>
+    <full_lhs_value>NULL</full_lhs_value>
+    <type>void *</type>
+    <step_nr>13</step_nr>
+    <value_expression>
+      <pointer binary="0000000000000000000000000000000000000000000000000000000000000000"/>
+    </value_expression>
+  </assignment>
+  <function_return display_name="__CPROVER_initialize" identifier="c::__CPROVER_initialize" step_nr="14" thread="0">
+    <step_nr>14</step_nr>
     <thread>0</thread>
   </function_return>
-  <function_call display_name="functions_assertedCode" identifier="c::functions_assertedCode" step_nr="11" thread="0">
-    <step_nr>11</step_nr>
+  <function_call display_name="functions_assertedCode" identifier="c::functions_assertedCode" step_nr="16" thread="0">
+    <step_nr>16</step_nr>
     <thread>0</thread>
   </function_call>
-  <assignment display_name="functions_assertedCode::par" identifier="c::functions_assertedCode::par" step_nr="12" thread="0">
+  <assignment display_name="functions_assertedCode::par" identifier="c::functions_assertedCode::par" step_nr="17" thread="0">
     <mode>C</mode>
     <thread>0</thread>
     <identifier>c::functions_assertedCode::par</identifier>
     <base_name>par</base_name>
     <display_name>functions_assertedCode::par</display_name>
-    <value>-24316</value>
+    <value>512</value>
     <full_lhs>par</full_lhs>
-    <full_lhs_value>-24316</full_lhs_value>
+    <full_lhs_value>512</full_lhs_value>
     <type>short int</type>
-    <step_nr>12</step_nr>
+    <step_nr>17</step_nr>
     <value_expression>
-      <integer binary="1010000100000100">-24316</integer>
+      <integer binary="0000001000000000">512</integer>
     </value_expression>
   </assignment>
-  <location-only step_nr="13" thread="0">
-    <step_nr>13</step_nr>
+  <location-only step_nr="18" thread="0">
+    <step_nr>18</step_nr>
     <thread>0</thread>
-    <location file="/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c" function="functions_assertedCode" line="10">
-      <file>/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
+    <location file="/Users/ratiud/work/CurrentProjects/LanguageWorkbenches/github_3_0/mbeddr/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c" function="functions_assertedCode" line="10">
+      <file>/Users/ratiud/work/CurrentProjects/LanguageWorkbenches/github_3_0/mbeddr/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
       <line>10</line>
       <function>functions_assertedCode</function>
     </location>
   </location-only>
-  <assignment display_name="functions_assertedCode::par" identifier="c::functions_assertedCode::par" step_nr="14" thread="0">
-    <location file="/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c" function="functions_assertedCode" line="12">
-      <file>/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
-      <line>12</line>
-      <function>functions_assertedCode</function>
-    </location>
-    <mode>C</mode>
+  <location-only step_nr="19" thread="0">
+    <step_nr>19</step_nr>
     <thread>0</thread>
-    <identifier>c::functions_assertedCode::par</identifier>
-    <base_name>par</base_name>
-    <display_name>functions_assertedCode::par</display_name>
-    <value>24316</value>
-    <full_lhs>par</full_lhs>
-    <full_lhs_value>24316</full_lhs_value>
-    <type>short int</type>
-    <step_nr>14</step_nr>
-    <value_expression>
-      <integer binary="0101111011111100">24316</integer>
-    </value_expression>
-  </assignment>
-  <location-only step_nr="15" thread="0">
-    <step_nr>15</step_nr>
-    <thread>0</thread>
-    <location file="/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c" function="functions_assertedCode" line="16">
-      <file>/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
+    <location file="/Users/ratiud/work/CurrentProjects/LanguageWorkbenches/github_3_0/mbeddr/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c" function="functions_assertedCode" line="16">
+      <file>/Users/ratiud/work/CurrentProjects/LanguageWorkbenches/github_3_0/mbeddr/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
       <line>16</line>
       <function>functions_assertedCode</function>
     </location>
   </location-only>
-  <location-only step_nr="16" thread="0">
-    <step_nr>16</step_nr>
+  <location-only step_nr="20" thread="0">
+    <step_nr>20</step_nr>
     <thread>0</thread>
-    <location file="/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c" function="functions_assertedCode" line="18">
-      <file>/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
+    <location file="/Users/ratiud/work/CurrentProjects/LanguageWorkbenches/github_3_0/mbeddr/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c" function="functions_assertedCode" line="18">
+      <file>/Users/ratiud/work/CurrentProjects/LanguageWorkbenches/github_3_0/mbeddr/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
       <line>18</line>
       <function>functions_assertedCode</function>
     </location>
   </location-only>
-  <failure reason="assertion functions_globalVar != 0" step_nr="17" thread="0">
+  <failure reason="assertion functions_globalVar != 0" step_nr="21" thread="0">
     <reason>assertion functions_globalVar != 0</reason>
-    <step_nr>17</step_nr>
+    <step_nr>21</step_nr>
     <thread>0</thread>
-    <location file="/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c" function="functions_assertedCode" line="18">
-      <file>/Users/domenik/repositories/mbeddr.core.3.0/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
+    <location file="/Users/ratiud/work/CurrentProjects/LanguageWorkbenches/github_3_0/mbeddr/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c" function="functions_assertedCode" line="18">
+      <file>/Users/ratiud/work/CurrentProjects/LanguageWorkbenches/github_3_0/mbeddr/code/languages/com.mbeddr.analyses/tests/test.analyses.cbmc.testcode_analyses_config/source_gen/smoke_analysis/functions.c</file>
       <line>18</line>
       <function>functions_assertedCode</function>
     </location>

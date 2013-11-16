@@ -47,7 +47,7 @@
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="4mkv.7174651526804346252" resolveInfo="DecTabGSwitchNodesFindingUtils" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4mkv.7174651526804346253" resolveInfo="findFirstDecisionTableFromImplementationModule" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7174651526804336158" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7174651526804336173" resolveInfo="modelName" />
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7174651526804336173" resolveInfo="aModel" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7174651526804336159" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7174651526804336175" resolveInfo="internalModuleName" />
@@ -70,8 +70,8 @@
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7174651526804336172" nodeInfo="nn" />
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7174651526804336173" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="modelName" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="7174651526804336174" nodeInfo="in" />
+        <property name="name" nameId="tpck.1169194664001" value="aModel" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tp25.SModelType" typeId="tp25.1143226024141" id="4106905652749525666" nodeInfo="in" />
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7174651526804336175" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="internalModuleName" />
@@ -345,7 +345,7 @@
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4mkv.7174651526804346287" resolveInfo="findFirstGSwitchFromImplementationModule" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="4mkv.7174651526804346252" resolveInfo="DecTabGSwitchNodesFindingUtils" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7174651526804336275" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7174651526804336290" resolveInfo="modelName" />
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7174651526804336290" resolveInfo="aModel" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7174651526804336276" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7174651526804336292" resolveInfo="internalModuleName" />
@@ -368,8 +368,8 @@
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7174651526804336289" nodeInfo="nn" />
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7174651526804336290" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="modelName" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="7174651526804336291" nodeInfo="in" />
+        <property name="name" nameId="tpck.1169194664001" value="aModel" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tp25.SModelType" typeId="tp25.1143226024141" id="4106905652749597229" nodeInfo="in" />
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7174651526804336292" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="internalModuleName" />
