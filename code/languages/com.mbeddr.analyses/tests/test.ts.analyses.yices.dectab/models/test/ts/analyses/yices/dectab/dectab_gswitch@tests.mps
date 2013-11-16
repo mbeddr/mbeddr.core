@@ -898,20 +898,25 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4106905652749778506" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4106905652749778510" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4mkv.7174651526804346253" resolveInfo="findFirstDecisionTableFromImplementationModule" />
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="4mkv.7174651526804346252" resolveInfo="DecTabGSwitchNodesFindingUtils" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749778511" nodeInfo="nn">
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4106905652750302024" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.4106905652750268037" resolveInfo="findDecTab" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336144" resolveInfo="DecTabAnalyzer" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652750302066" nodeInfo="nn">
                 <property name="name" nameId="tp25.559557797393017702" value="complex_decision_table" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4106905652749778512" nodeInfo="nn">
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4106905652750302067" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="decisionTableInComponent" />
               </node>
             </node>
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4106905652750104630" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="4106905652750380169" nodeInfo="nn">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4106905652750380245" nodeInfo="nn">
+            <property name="text" nameId="tpee.6329021646629104958" value="the line below passes locally, but fails on the server" />
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertInNotNull" typeId="tpe3.7080278351417106679" id="4106905652750104771" nodeInfo="nn">
           <node role="expression" roleId="tpe3.7080278351417106681" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4106905652750104842" nodeInfo="nn">
             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4106905652749778509" resolveInfo="decTab" />
