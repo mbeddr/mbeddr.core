@@ -9,7 +9,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1965414175734796520" nodeInfo="ng">
@@ -22,7 +22,7 @@
       </node>
       <node role="init" roleId="x27k.2771264470558526601" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1965414175740344540" nodeInfo="ng">
         <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-        <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+        <property name="value" nameId="mj1l.2212975673976043696" value="0" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="1965414175734798983" nodeInfo="ng">
@@ -34,7 +34,7 @@
       </node>
       <node role="init" roleId="x27k.2771264470558526601" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1965414175740347218" nodeInfo="ng">
         <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-        <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+        <property name="value" nameId="mj1l.2212975673976043696" value="0" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1965414175740402961" nodeInfo="ng">
@@ -70,7 +70,7 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="1965414175740391312" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1965414175740391315" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="4" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="4" />
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1965414175740323947" nodeInfo="ng">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="1965414175734798983" resolveInfo="exportedVar" />
@@ -98,7 +98,7 @@
         <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="1965414175734796516" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.StringType" typeId="yq40.6113173064528067332" id="1965414175734796517" nodeInfo="ng">
+          <node role="baseType" roleId="yq40.2963921683065158286" type="yq40.StringType" typeId="yq40.6113173064528067332" id="1965414175734796517" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
@@ -120,7 +120,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectPlusAssignmentExpression" typeId="mj1l.3820836583575227340" id="1965414175740324461" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1965414175740324666" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1965414175734799163" nodeInfo="ng">
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="1965414175734798662" resolveInfo="nonExportedVar" />
@@ -154,7 +154,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectPlusAssignmentExpression" typeId="mj1l.3820836583575227340" id="1965414175740326320" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1965414175740326704" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1965414175734800195" nodeInfo="ng">
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="1965414175734798983" resolveInfo="exportedVar" />
@@ -188,7 +188,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectPlusAssignmentExpression" typeId="mj1l.3820836583575227340" id="1965414175740334776" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1965414175740336093" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1965414175734799191" nodeInfo="ng">
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="1965414175734798662" resolveInfo="nonExportedVar" />
@@ -222,7 +222,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectPlusAssignmentExpression" typeId="mj1l.3820836583575227340" id="1965414175740339971" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1965414175740340911" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1965414175734799954" nodeInfo="ng">
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="1965414175734798983" resolveInfo="exportedVar" />

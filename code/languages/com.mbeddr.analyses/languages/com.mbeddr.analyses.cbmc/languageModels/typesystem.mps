@@ -801,7 +801,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="9005445548778033055" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="smInSubSpace" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="q5q6.9005445548778024784" resolveInfo="SMInSubSpace" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="q5q6.9005445548778024784" resolveInfo="SMInStateSubset" />
     </node>
   </root>
   <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="6937663792678776869" nodeInfo="ng">
@@ -975,6 +975,34 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6937663792694552236" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="lastTimeOneOfEventsOccured" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="q5q6.6937663792694551950" resolveInfo="LastTimeOneOfEventsOccurred" />
+    </node>
+  </root>
+  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="448588129144033482" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="typeof_TimesEventsOccurred" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="statemachines" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="448588129144033483" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="448588129144042867" nodeInfo="nn">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="448588129144042890" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="448588129144042886" nodeInfo="nn">
+            <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="448588129144051640" nodeInfo="nn">
+              <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="448588129144051642" nodeInfo="in">
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8463282783691618440" resolveInfo="Int32tType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="448588129144042870" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="448588129144042623" nodeInfo="nn">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="448588129144042648" nodeInfo="nn">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="448588129144033485" resolveInfo="timesEventsOccurred" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="448588129144033485" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="timesEventsOccurred" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="q5q6.448588129143505717" resolveInfo="TimesEventsOccurred" />
     </node>
   </root>
 </model>
