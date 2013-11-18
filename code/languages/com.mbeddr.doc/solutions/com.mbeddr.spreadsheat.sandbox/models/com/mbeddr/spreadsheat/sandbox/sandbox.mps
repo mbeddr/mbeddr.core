@@ -5,7 +5,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="gnwj" modelUID="r:f6651a85-73de-42f1-9bd6-d372b5b47f05(com.mbeddr.spreadsheat.structure)" version="-1" implicit="yes" />
   <root type="gnwj.Workbook" typeId="gnwj.2042272859106810418" id="2042272859107008349" nodeInfo="ng">
-    <property name="name" value="someSpreadSheet" />
+    <property name="name" nameId="tpck.1169194664001" value="someSpreadSheet" />
     <node role="sheets" roleId="gnwj.2042272859106810421" type="gnwj.Sheet" typeId="gnwj.2042272859106810420" id="2042272859107005543" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="sheet 1" />
       <node role="rows" roleId="gnwj.2042272859106810440" type="gnwj.Row" typeId="gnwj.2042272859106810439" id="2042272859107005544" nodeInfo="ng">
@@ -51,7 +51,7 @@
       </node>
     </node>
     <node role="styles" roleId="gnwj.2042272859107050154" type="gnwj.Style" typeId="gnwj.2042272859107050152" id="2042272859107597280" nodeInfo="ng">
-      <property name="name" value="header" />
+      <property name="name" nameId="tpck.1169194664001" value="header" />
       <property name="bold" value="true" />
     </node>
   </root>

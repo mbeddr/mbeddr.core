@@ -19,14 +19,16 @@
   <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="-1" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <import index="8zu2" modelUID="r:04621706-863a-4403-8bd2-5b328fe9405d(com.mbeddr.doc.terms.structure)" version="-1" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="2293093897292931468" nodeInfo="ng">
-    <property name="name" value="A_Introduction" />
+    <property name="name" nameId="tpck.1169194664001" value="A_Introduction" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2293093897292931470" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2293093897292937696" nodeInfo="ng">
-      <property name="name" value="empty_1363185602732_1" />
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363185602732_1" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2293093897292937699" nodeInfo="ng">
-      <property name="name" value="introduction" />
+      <property name="name" nameId="tpck.1169194664001" value="introduction" />
       <property name="text" nameId="2c95.3350625596580064225" value="Introduction" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2293093897292937700" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2293093897292937701" nodeInfo="ng">
@@ -78,16 +80,16 @@
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2293093897292937698" nodeInfo="ng">
-      <property name="name" value="empty_1363185603105_3" />
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363185603105_3" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2293093897293096178" nodeInfo="ng">
-      <property name="name" value="empty_1363185959826_2" />
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363185959826_2" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445432859479" nodeInfo="ng">
-      <property name="name" value="empty_1363188793760_3" />
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363188793760_3" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445432819187" nodeInfo="ng">
-      <property name="name" value="empty_1363188761337_2" />
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363188761337_2" />
     </node>
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="2293093897292931469" nodeInfo="ng">
       <property name="name" nameId="2c95.126932837435370851" value="Markus Voelter" />
@@ -95,29 +97,29 @@
     </node>
   </root>
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2293093897292931470" nodeInfo="ng">
-    <property name="name" value="Config" />
+    <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="cfg" />
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="8730648445432874250" nodeInfo="ng">
-      <property name="name" value="imgTemp" />
+      <property name="name" nameId="tpck.1169194664001" value="imgTemp" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.doc/temp" />
     </node>
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="8730648445433243074" nodeInfo="ng">
-      <property name="name" value="images" />
+      <property name="name" nameId="tpck.1169194664001" value="images" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.doc/images" />
     </node>
     <node role="sizeSpecs" roleId="2c95.8624890525767800998" type="2c95.NamedSizeSpec" typeId="2c95.8624890525767800825" id="8730648445434214488" nodeInfo="ng">
-      <property name="name" value="smallCodeShot" />
+      <property name="name" nameId="tpck.1169194664001" value="smallCodeShot" />
       <node role="spec" roleId="2c95.8624890525767800827" type="2c95.ScalingSizeSpec" typeId="2c95.8624890525767555426" id="8730648445434225364" nodeInfo="ng">
         <property name="percentage" nameId="2c95.8624890525767555427" value="55" />
       </node>
     </node>
     <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4400783559374234270" nodeInfo="ng">
-      <property name="name" value="temp" />
+      <property name="name" nameId="tpck.1169194664001" value="temp" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="/" />
     </node>
   </root>
   <root type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="2293093897293118943" nodeInfo="ng">
-    <property name="name" value="DocumentationDocumentation" />
+    <property name="name" nameId="tpck.1169194664001" value="DocumentationDocumentation" />
     <property name="title" nameId="2c95.126932837435324910" value="The mbeddr Documentation Language" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="cfg" />
     <node role="root" roleId="2c95.6068976060904007489" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445432859534" nodeInfo="ng">
@@ -131,8 +133,8 @@
       <property name="mappedPath" nameId="2c95.6386504476136554614" value="figures/doc" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="8730648445433243074" resolveInfo="images" />
     </node>
-    <node role="abstract" roleId="2c95.126932837435324914" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433281653" nodeInfo="ng">
-      <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433281654" nodeInfo="ng">
+    <node role="abstract" roleId="2c95.126932837435324914" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433281653" nodeInfo="ng">
+      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433281654" nodeInfo="ng">
         <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433281655" nodeInfo="ng">
           <property name="escapedValue" nameId="87nw.2557074442922438158" value="This document explains how to use the documentation language of mbeddr.\nIt supports writing prose text with sections, figures etc. It also supports\nembedding program nodes into the prose text. For example, references to other\nsections or figures are actural (refactoring-safe) references. Using a separate\nextension language, it is also possible to reference mbeddr code and even to \nembed mbeddr code as images or as text. mbeddr visualizations can also be \nrendered in real-time and embedded into the document. Documents can be output\nto HTML and Latex. The document you are currently reading is is itself written \nwith the documentation language: another extension module can be used to \ndocument itself by embedding documentation language code into documentation\ndocuments." />
         </node>
@@ -149,13 +151,13 @@
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="8730648445432859484" nodeInfo="ng">
-    <property name="name" value="B_SimpleDocuments" />
+    <property name="name" nameId="tpck.1169194664001" value="B_SimpleDocuments" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2293093897292931470" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445432859508" nodeInfo="ng">
-      <property name="name" value="normalDocs" />
+      <property name="name" nameId="tpck.1169194664001" value="normalDocs" />
       <property name="text" nameId="2c95.3350625596580064225" value="Writing Regular Documents" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967071" nodeInfo="ng">
-        <property name="name" value="simpleText" />
+        <property name="name" nameId="tpck.1169194664001" value="simpleText" />
         <property name="text" nameId="2c95.3350625596580064225" value="Simple Text" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445432859509" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445432859510" nodeInfo="ng">
@@ -208,14 +210,14 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445432874248" nodeInfo="ng">
-          <property name="name" value="exSection" />
+          <property name="name" nameId="tpck.1169194664001" value="exSection" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
           <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450378967071" resolveInfo="simpleText" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445432874251" nodeInfo="ng">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
-          <node role="description" roleId="z5ox.8730648445433126847" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433182408" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433182409" nodeInfo="ng">
+          <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433182408" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433182409" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433182410" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="An example section from a document. It is embedded as an image." />
               </node>
@@ -224,7 +226,7 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967064" nodeInfo="ng">
-        <property name="name" value="formatting" />
+        <property name="name" nameId="tpck.1169194664001" value="formatting" />
         <property name="text" nameId="2c95.3350625596580064225" value="Formatting Text" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433240094" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433240095" nodeInfo="ng">
@@ -270,14 +272,14 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433240114" nodeInfo="ng">
-          <property name="name" value="formatting" />
+          <property name="name" nameId="tpck.1169194664001" value="formatting" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
           <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450378967064" resolveInfo="formatting" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433240124" nodeInfo="ng">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
-          <node role="description" roleId="z5ox.8730648445433126847" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433240116" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433240117" nodeInfo="ng">
+          <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433240116" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433240117" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433240118" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="This paragraph shows how to format text." />
               </node>
@@ -286,7 +288,7 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967069" nodeInfo="ng">
-        <property name="name" value="figures" />
+        <property name="name" nameId="tpck.1169194664001" value="figures" />
         <property name="text" nameId="2c95.3350625596580064225" value="Embedding Figures" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433243077" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433243078" nodeInfo="ng">
@@ -308,14 +310,14 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="8730648445433243087" nodeInfo="ng">
-          <property name="name" value="glider" />
+          <property name="name" nameId="tpck.1169194664001" value="glider" />
           <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="8730648445433243093" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="ash26.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="8730648445433243074" resolveInfo="images" />
           </node>
-          <node role="description" roleId="2c95.6386504476136278696" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433243089" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433243090" nodeInfo="ng">
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433243089" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433243090" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433243091" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="An ASH 26E glider." />
               </node>
@@ -326,14 +328,14 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433243102" nodeInfo="ng">
-          <property name="name" value="figures" />
+          <property name="name" nameId="tpck.1169194664001" value="figures" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
           <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450378967069" resolveInfo="figures" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433244192" nodeInfo="ng">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
-          <node role="description" roleId="z5ox.8730648445433126847" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433243104" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433243105" nodeInfo="ng">
+          <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433243104" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433243105" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433243106" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The code that embeds an image" />
               </node>
@@ -361,14 +363,14 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433247956" nodeInfo="ng">
-          <property name="name" value="config" />
+          <property name="name" nameId="tpck.1169194664001" value="config" />
           <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="2293093897292931470" resolveInfo="Config" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433273803" nodeInfo="ng">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
-          <node role="description" roleId="z5ox.8730648445433126847" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433247958" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433247959" nodeInfo="ng">
+          <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433247958" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433247959" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433247960" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="An example document configuration with path definitions." />
               </node>
@@ -377,7 +379,7 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967061" nodeInfo="ng">
-        <property name="name" value="otherEmbeddings" />
+        <property name="name" nameId="tpck.1169194664001" value="otherEmbeddings" />
         <property name="text" nameId="2c95.3350625596580064225" value="Embedding Other Things" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433275055" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433275056" nodeInfo="ng">
@@ -398,7 +400,7 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967070" nodeInfo="ng">
-        <property name="name" value="exporting" />
+        <property name="name" nameId="tpck.1169194664001" value="exporting" />
         <property name="text" nameId="2c95.3350625596580064225" value="Exporting Documents" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433281656" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433281657" nodeInfo="ng">
@@ -414,11 +416,11 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433281660" nodeInfo="ng">
-          <property name="name" value="root" />
+          <property name="name" nameId="tpck.1169194664001" value="root" />
           <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="8730648445432859523" resolveInfo="Root" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-          <node role="description" roleId="z5ox.8730648445433126847" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433281662" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433281663" nodeInfo="ng">
+          <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433281662" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433281663" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433281664" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="A root document that includes other documents in a specific order." />
               </node>
@@ -448,14 +450,14 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433284820" nodeInfo="ng">
-          <property name="name" value="doc" />
+          <property name="name" nameId="tpck.1169194664001" value="doc" />
           <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="2293093897293118943" resolveInfo="DocumentationDocumentation" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433284821" nodeInfo="ng">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
-          <node role="description" roleId="z5ox.8730648445433126847" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433284822" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433284823" nodeInfo="ng">
+          <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433284822" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433284823" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433284824" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The export configuration for this document." />
               </node>
@@ -471,8 +473,8 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="8730648445433284834" nodeInfo="ng">
           <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="8730648445433284835" nodeInfo="ng">
-            <node role="text" roleId="2c95.5378658552262903589" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433284836" nodeInfo="ng">
-              <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433284837" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433284836" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433284837" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433284838" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="For Latex, you specify a document class as well as a prolog file. \nThe prolog file is included at the beginning of the document, and it\ncan define all the style customizations you want." />
                 </node>
@@ -480,8 +482,8 @@
             </node>
           </node>
           <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="8730648445433284839" nodeInfo="ng">
-            <node role="text" roleId="2c95.5378658552262903589" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433284840" nodeInfo="ng">
-              <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433284841" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433284840" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433284841" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433284842" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="For HTML, you specify a style sheet. This style sheet can format the\nHTML code in any way you want. Take a look at the generated HTML to \nlearn about the style classes used in the generated HTML." />
                 </node>
@@ -491,7 +493,7 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445433288564" nodeInfo="ng">
-        <property name="name" value="docEmbedding" />
+        <property name="name" nameId="tpck.1169194664001" value="docEmbedding" />
         <property name="text" nameId="2c95.3350625596580064225" value="Embedding Documents" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433288565" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433288566" nodeInfo="ng">
@@ -508,10 +510,10 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5185579450379584400" nodeInfo="ng">
-        <property name="name" value="empty_1363346601869_1" />
+        <property name="name" nameId="tpck.1169194664001" value="empty_1363346601869_1" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450379584402" nodeInfo="ng">
-        <property name="name" value="tables" />
+        <property name="name" nameId="tpck.1169194664001" value="tables" />
         <property name="text" nameId="2c95.3350625596580064225" value="Tables" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5785245534399892309" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534399892310" nodeInfo="ng">
@@ -634,14 +636,14 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="5785245534400438821" nodeInfo="ng">
-          <property name="name" value="tables" />
+          <property name="name" nameId="tpck.1169194664001" value="tables" />
           <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450379584402" resolveInfo="tables" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="5785245534400438822" nodeInfo="ng">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
-          <node role="description" roleId="z5ox.8730648445433126847" type=".com.mbeddr.core.base.structure.TextBlock" id="5785245534400438823" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534400438824" nodeInfo="ng">
+          <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5785245534400438823" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534400438824" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534400438825" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The code for writing tables." />
               </node>
@@ -650,7 +652,7 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8574110643282412694" nodeInfo="ng">
-        <property name="name" value="glossar" />
+        <property name="name" nameId="tpck.1169194664001" value="glossar" />
         <property name="text" nameId="2c95.3350625596580064225" value="Glossaries" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8574110643282412695" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8574110643282412696" nodeInfo="ng">
@@ -680,13 +682,13 @@
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445433241606" nodeInfo="ng">
-      <property name="name" value="empty_1363191714496_9" />
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363191714496_9" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445433243071" nodeInfo="ng">
-      <property name="name" value="empty_1363191814897_10" />
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363191814897_10" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445433275051" nodeInfo="ng">
-      <property name="name" value="empty_1363192629115_1" />
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363192629115_1" />
     </node>
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="8730648445432859522" nodeInfo="ng">
       <property name="name" nameId="2c95.126932837435370851" value="Markus Voelter" />
@@ -697,11 +699,11 @@
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="8730648445432859523" nodeInfo="ng">
-    <property name="name" value="Root" />
+    <property name="name" nameId="tpck.1169194664001" value="Root" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="cfg" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2293093897292931470" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445432859524" nodeInfo="ng">
-      <property name="name" value="empty_1363188921837_5" />
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363188921837_5" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="8730648445432859527" nodeInfo="ng">
       <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445432859529" nodeInfo="ng">
@@ -729,7 +731,7 @@
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445432859526" nodeInfo="ng">
-      <property name="name" value="empty_1363188922445_7" />
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363188922445_7" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445433340261" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2293093897292931468" resolveInfo="A_Introduction" />
@@ -748,10 +750,10 @@
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="8730648445433290619" nodeInfo="ng">
-    <property name="name" value="C_EmbeddingMbeddr" />
+    <property name="name" nameId="tpck.1169194664001" value="C_EmbeddingMbeddr" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2293093897292931470" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445433288571" nodeInfo="ng">
-      <property name="name" value="workingWithMbeddr" />
+      <property name="name" nameId="tpck.1169194664001" value="workingWithMbeddr" />
       <property name="text" nameId="2c95.3350625596580064225" value="Embedding mbeddr Artifacts" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433290616" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433290617" nodeInfo="ng">
@@ -767,7 +769,7 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967062" nodeInfo="ng">
-        <property name="name" value="referencingCode" />
+        <property name="name" nameId="tpck.1169194664001" value="referencingCode" />
         <property name="text" nameId="2c95.3350625596580064225" value="Referencing Code" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433543909" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433543910" nodeInfo="ng">
@@ -851,12 +853,12 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="8730648445433601058" nodeInfo="ng">
-          <property name="name" value="calculator" />
+          <property name="name" nameId="tpck.1169194664001" value="calculator" />
           <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
           <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
           <link role="path" roleId="rh4a.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-          <node role="description" roleId="rh4a.2726240646375887189" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433601059" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601060" nodeInfo="ng">
+          <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433601059" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601060" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601061" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="An interface with a marker on a precondition, so it can be referenced. " />
               </node>
@@ -901,14 +903,14 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433628194" nodeInfo="ng">
-          <property name="name" value="refCode" />
+          <property name="name" nameId="tpck.1169194664001" value="refCode" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
           <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450378967062" resolveInfo="referencingCode" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433628195" nodeInfo="ng">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
-          <node role="description" roleId="z5ox.8730648445433126847" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433628196" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433628197" nodeInfo="ng">
+          <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433628196" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433628197" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433628198" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Example code for referencing C code from documents. " />
               </node>
@@ -917,7 +919,7 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967072" nodeInfo="ng">
-        <property name="name" value="embddingCode" />
+        <property name="name" nameId="tpck.1169194664001" value="embddingCode" />
         <property name="text" nameId="2c95.3350625596580064225" value="Embedding Code" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433631454" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433631455" nodeInfo="ng">
@@ -968,13 +970,13 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="8730648445433631460" nodeInfo="ng">
-          <property name="name" value="addOp" />
+          <property name="name" nameId="tpck.1169194664001" value="addOp" />
           <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
           <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
           <link role="detail" roleId="rh4a.6416473402306189931" targetNodeId="bskg.8730648445433600014" resolveInfo="add" />
           <link role="path" roleId="rh4a.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-          <node role="description" roleId="rh4a.2726240646375887189" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433631461" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433631462" nodeInfo="ng">
+          <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433631461" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433631462" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433631463" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="An example of how to embed only a part of a module content as an image." />
               </node>
@@ -1030,14 +1032,14 @@
           <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433631470" nodeInfo="ng">
-          <property name="name" value="embedding1" />
+          <property name="name" nameId="tpck.1169194664001" value="embedding1" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
           <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450378967072" resolveInfo="embddingCode" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433631471" nodeInfo="ng">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
-          <node role="description" roleId="z5ox.8730648445433126847" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433631472" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433631473" nodeInfo="ng">
+          <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433631472" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433631473" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433631474" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="An example of how to embed only the " />
               </node>
@@ -1056,7 +1058,7 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967065" nodeInfo="ng">
-        <property name="name" value="visualizations" />
+        <property name="name" nameId="tpck.1169194664001" value="visualizations" />
         <property name="text" nameId="2c95.3350625596580064225" value="Embedding Visualizations" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433858404" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433858405" nodeInfo="ng">
@@ -1116,11 +1118,11 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Visualization" typeId="2c95.2588579461812060090" id="8730648445433858424" nodeInfo="ng">
           <property name="category" nameId="2c95.2588579461812060097" value="statechart (2D)" />
-          <property name="name" value="tl" />
+          <property name="name" nameId="tpck.1169194664001" value="tl" />
           <link role="visualizable" roleId="2c95.2588579461812060095" targetNodeId="bskg.8730648445433858446" resolveInfo="TrafficLights" />
           <link role="path" roleId="2c95.2588579461812060096" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-          <node role="description" roleId="2c95.2588579461812060099" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433858425" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433858426" nodeInfo="ng">
+          <node role="description" roleId="2c95.2588579461812060099" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433858425" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433858426" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433858427" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The " />
               </node>
@@ -1137,14 +1139,14 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433858418" nodeInfo="ng">
-          <property name="name" value="vis" />
+          <property name="name" nameId="tpck.1169194664001" value="vis" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
           <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450378967065" resolveInfo="visualizations" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433858419" nodeInfo="ng">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
-          <node role="description" roleId="z5ox.8730648445433126847" type=".com.mbeddr.core.base.structure.TextBlock" id="8730648445433858420" nodeInfo="ng">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433858421" nodeInfo="ng">
+          <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433858420" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433858421" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433858422" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Example document code to embed a visualization." />
               </node>
@@ -1220,10 +1222,10 @@
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="5185579450379355909" nodeInfo="ng">
-    <property name="name" value="D_Extending" />
+    <property name="name" nameId="tpck.1169194664001" value="D_Extending" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2293093897292931470" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450379355911" nodeInfo="ng">
-      <property name="name" value="extending" />
+      <property name="name" nameId="tpck.1169194664001" value="extending" />
       <property name="text" nameId="2c95.3350625596580064225" value="Extending the Documentation Language" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5185579450379355912" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5185579450379355913" nodeInfo="ng">
@@ -1233,7 +1235,7 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7502794012053454675" nodeInfo="ng">
-        <property name="name" value="para" />
+        <property name="name" nameId="tpck.1169194664001" value="para" />
         <property name="text" nameId="2c95.3350625596580064225" value="New Paragraphs" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7502794012053466212" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7502794012053466213" nodeInfo="ng">
@@ -1266,7 +1268,7 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7502794012053466234" nodeInfo="ng">
-        <property name="name" value="words" />
+        <property name="name" nameId="tpck.1169194664001" value="words" />
         <property name="text" nameId="2c95.3350625596580064225" value="New Embeddable Nodes" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7502794012053466235" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7502794012053466236" nodeInfo="ng">
@@ -1333,40 +1335,40 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="The Drake equation calculates the number of civilizations " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="f87k.VariableDef" typeId="f87k.5378658552263149308" id="7502794012053469784" nodeInfo="ng">
-              <property name="name" value="N" />
-              <node role="type" type=".com.mbeddr.core.expressions.structure.Int8tType" id="7502794012053469785" nodeInfo="ng">
-                <property name="volatile" value="false" />
-                <property name="const" value="false" />
+              <property name="name" nameId="tpck.1169194664001" value="N" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7502794012053469785" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469786" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in the galaxy. As input, it uses the average rate of star formation " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="f87k.VariableDef" typeId="f87k.5378658552263149308" id="7502794012053469787" nodeInfo="ng">
-              <property name="name" value="SF" />
-              <node role="type" type=".com.mbeddr.core.expressions.structure.Int8tType" id="7502794012053469788" nodeInfo="ng">
-                <property name="volatile" value="false" />
-                <property name="const" value="false" />
+              <property name="name" nameId="tpck.1169194664001" value="SF" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7502794012053469788" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469789" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the fractios of those stars that have planets " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="f87k.VariableDef" typeId="f87k.5378658552263149308" id="7502794012053469790" nodeInfo="ng">
-              <property name="name" value="fp" />
-              <node role="type" type=".com.mbeddr.core.expressions.structure.Int8tType" id="7502794012053469791" nodeInfo="ng">
-                <property name="volatile" value="false" />
-                <property name="const" value="false" />
+              <property name="name" nameId="tpck.1169194664001" value="fp" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7502794012053469791" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469792" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and the average number of planets that can potentially support life " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="f87k.VariableDef" typeId="f87k.5378658552263149308" id="7502794012053469793" nodeInfo="ng">
-              <property name="name" value="ne" />
-              <node role="type" type=".com.mbeddr.core.expressions.structure.Int8tType" id="7502794012053469794" nodeInfo="ng">
-                <property name="volatile" value="false" />
-                <property name="const" value="false" />
+              <property name="name" nameId="tpck.1169194664001" value="ne" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7502794012053469794" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469795" nodeInfo="ng">
@@ -1376,15 +1378,15 @@
               <node role="lvalue" roleId="f87k.5378658552263151449" type="f87k.VarRef" typeId="f87k.5378658552263151469" id="7502794012053477448" nodeInfo="ng">
                 <link role="var" roleId="f87k.5378658552263151470" targetNodeId="7502794012053469784" resolveInfo="N" />
               </node>
-              <node role="rvalue" roleId="f87k.5378658552263151448" type=".com.mbeddr.core.expressions.structure.MultiExpression" id="7502794012053477449" nodeInfo="ng">
-                <node role="right" type="f87k.VarRef" typeId="f87k.5378658552263151469" id="7502794012053477450" nodeInfo="ng">
+              <node role="rvalue" roleId="f87k.5378658552263151448" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="7502794012053477449" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="f87k.VarRef" typeId="f87k.5378658552263151469" id="7502794012053477450" nodeInfo="ng">
                   <link role="var" roleId="f87k.5378658552263151470" targetNodeId="7502794012053469793" resolveInfo="ne" />
                 </node>
-                <node role="left" type=".com.mbeddr.core.expressions.structure.MultiExpression" id="7502794012053477451" nodeInfo="ng">
-                  <node role="left" type="f87k.VarRef" typeId="f87k.5378658552263151469" id="7502794012053477452" nodeInfo="ng">
+                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="7502794012053477451" nodeInfo="ng">
+                  <node role="left" roleId="mj1l.8860443239512128064" type="f87k.VarRef" typeId="f87k.5378658552263151469" id="7502794012053477452" nodeInfo="ng">
                     <link role="var" roleId="f87k.5378658552263151470" targetNodeId="7502794012053469787" resolveInfo="SF" />
                   </node>
-                  <node role="right" type="f87k.VarRef" typeId="f87k.5378658552263151469" id="7502794012053477453" nodeInfo="ng">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="f87k.VarRef" typeId="f87k.5378658552263151469" id="7502794012053477453" nodeInfo="ng">
                     <link role="var" roleId="f87k.5378658552263151470" targetNodeId="7502794012053469790" resolveInfo="fp" />
                   </node>
                 </node>
@@ -1416,16 +1418,16 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="7502794012053469777" nodeInfo="ng">
-          <property name="name" value="empty_1363607769950_2" />
+          <property name="name" nameId="tpck.1169194664001" value="empty_1363607769950_2" />
         </node>
       </node>
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="8574110643282412676" nodeInfo="ng">
-    <property name="name" value="Z_Glossary" />
+    <property name="name" nameId="tpck.1169194664001" value="Z_Glossary" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2293093897292931470" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8574110643282419122" nodeInfo="ng">
-      <property name="name" value="importantTerms" />
+      <property name="name" nameId="tpck.1169194664001" value="importantTerms" />
       <property name="text" nameId="2c95.3350625596580064225" value="Important Terms" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2732739370697315762" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2732739370697315763" nodeInfo="ng">
@@ -1441,12 +1443,12 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2732739370697315760" nodeInfo="ng">
-        <property name="name" value="empty_1366139061953_2" />
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366139061953_2" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="8574110643282429386" nodeInfo="ng">
         <property name="term" nameId="8zu2.8574110643282425939" value="Car" />
-        <node role="text" roleId="8zu2.8574110643282425940" type=".com.mbeddr.core.base.structure.TextBlock" id="8574110643282429387" nodeInfo="ng">
-          <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8574110643282429388" nodeInfo="ng">
+        <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8574110643282429387" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8574110643282429388" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282429389" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="A Car is a thing with four " />
             </node>
@@ -1467,12 +1469,12 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8574110643282431632" nodeInfo="ng">
-        <property name="name" value="empty_1366048816639_1" />
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366048816639_1" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="8574110643282431634" nodeInfo="ng">
         <property name="term" nameId="8zu2.8574110643282425939" value="Wheel" />
-        <node role="text" roleId="8zu2.8574110643282425940" type=".com.mbeddr.core.base.structure.TextBlock" id="8574110643282431635" nodeInfo="ng">
-          <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8574110643282431636" nodeInfo="ng">
+        <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8574110643282431635" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8574110643282431636" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282431637" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="A wheel is the thing a " />
             </node>
@@ -1492,12 +1494,12 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8574110643282452773" nodeInfo="ng">
-        <property name="name" value="empty_1366049542078_1" />
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366049542078_1" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="1233689874746927686" nodeInfo="ng">
         <property name="term" nameId="8zu2.8574110643282425939" value="Vehicle" />
-        <node role="text" roleId="8zu2.8574110643282425940" type=".com.mbeddr.core.base.structure.TextBlock" id="1233689874746927687" nodeInfo="ng">
-          <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="1233689874746927688" nodeInfo="ng">
+        <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1233689874746927687" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1233689874746927688" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1233689874746927689" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="A vehicle is " />
             </node>
@@ -1521,13 +1523,13 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="8574110643282452775" nodeInfo="ng">
-        <property name="name" value="anImage" />
+        <property name="name" nameId="tpck.1169194664001" value="anImage" />
         <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="8574110643282452781" nodeInfo="ng">
           <property name="fileName" nameId="2c95.6386504476136521408" value="ash26.png" />
           <link role="path" roleId="2c95.6386504476136521409" targetNodeId="8730648445433243074" resolveInfo="images" />
         </node>
-        <node role="description" roleId="2c95.6386504476136278696" type=".com.mbeddr.core.base.structure.TextBlock" id="8574110643282452777" nodeInfo="ng">
-          <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="8574110643282452778" nodeInfo="ng">
+        <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8574110643282452777" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8574110643282452778" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282452779" nodeInfo="ng" />
           </node>
         </node>
@@ -1537,8 +1539,8 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="4224548511521379216" nodeInfo="ng">
         <property name="term" nameId="8zu2.8574110643282425939" value="Engine" />
-        <node role="text" roleId="8zu2.8574110643282425940" type=".com.mbeddr.core.base.structure.TextBlock" id="4224548511521379217" nodeInfo="ng">
-          <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521379218" nodeInfo="ng">
+        <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4224548511521379217" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521379218" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521379219" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="An engine is the thing that drives the " />
             </node>
@@ -1572,12 +1574,12 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4224548511521382415" nodeInfo="ng">
-        <property name="name" value="empty_1366136993373_2" />
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366136993373_2" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="4224548511521382408" nodeInfo="ng">
         <property name="term" nameId="8zu2.8574110643282425939" value="Driver" />
-        <node role="text" roleId="8zu2.8574110643282425940" type=".com.mbeddr.core.base.structure.TextBlock" id="4224548511521382409" nodeInfo="ng">
-          <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521382410" nodeInfo="ng">
+        <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4224548511521382409" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521382410" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521382411" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="A driver is actually a " />
             </node>
@@ -1591,12 +1593,12 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4224548511521435054" nodeInfo="ng">
-        <property name="name" value="empty_1366137098342_1" />
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366137098342_1" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="4224548511521435050" nodeInfo="ng">
         <property name="term" nameId="8zu2.8574110643282425939" value="Person" />
-        <node role="text" roleId="8zu2.8574110643282425940" type=".com.mbeddr.core.base.structure.TextBlock" id="4224548511521435051" nodeInfo="ng">
-          <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521435052" nodeInfo="ng">
+        <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4224548511521435051" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521435052" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521435053" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="This is a human. Not explained any further. A person " />
             </node>
@@ -1616,15 +1618,15 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4224548511521432087" nodeInfo="ng">
-        <property name="name" value="empty_1366137056247_2" />
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366137056247_2" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Visualization" typeId="2c95.2588579461812060090" id="2732739370697308260" nodeInfo="ng">
         <property name="category" nameId="2c95.2588579461812060097" value="term dependencies" />
-        <property name="name" value="termDeps" />
+        <property name="name" nameId="tpck.1169194664001" value="termDeps" />
         <link role="visualizable" roleId="2c95.2588579461812060095" targetNodeId="8574110643282429386" resolveInfo="Car" />
         <link role="path" roleId="2c95.2588579461812060096" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-        <node role="description" roleId="2c95.2588579461812060099" type=".com.mbeddr.core.base.structure.TextBlock" id="2732739370697308261" nodeInfo="ng">
-          <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="2732739370697308262" nodeInfo="ng">
+        <node role="description" roleId="2c95.2588579461812060099" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2732739370697308261" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2732739370697308262" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2732739370697308263" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="The relationships between the terms can also be shown as a diagram." />
             </node>
@@ -1636,10 +1638,10 @@
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8574110643282412678" nodeInfo="ng">
-      <property name="name" value="empty_1366047884061_2" />
+      <property name="name" nameId="tpck.1169194664001" value="empty_1366047884061_2" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4224548511521382414" nodeInfo="ng">
-      <property name="name" value="empty_1366136984924_1" />
+      <property name="name" nameId="tpck.1169194664001" value="empty_1366136984924_1" />
     </node>
   </root>
 </model>
