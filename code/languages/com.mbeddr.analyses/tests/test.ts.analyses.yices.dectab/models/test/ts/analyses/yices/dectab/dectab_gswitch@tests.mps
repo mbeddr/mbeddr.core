@@ -5,15 +5,35 @@
   <language namespace="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
+  <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
+  <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
+  <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
+  <language namespace="797d0abe-30a5-4698-a9cf-31703733bdc9(com.mbeddr.analyses.yices)" />
+  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
+  <language namespace="c365dd1e-9817-4719-bfd1-5d70f3d565a6(com.mbeddr.analyses.yices.dectab)" />
+  <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
+  <language namespace="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" />
+  <language namespace="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" />
+  <language namespace="5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)" />
+  <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
+  <language namespace="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" />
+  <language namespace="d4615e3b-d671-4ba9-af01-2b78369b0ba7(jetbrains.mps.lang.pattern)" />
+  <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
+  <language namespace="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" />
+  <language namespace="96ee7a94-411d-4cf8-9b94-96cad7e52411(jetbrains.mps.baseLanguage.jdk7)" />
   <import index="fw3h" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" version="-1" />
   <import index="msyo" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" version="-1" />
   <import index="q0jg" modelUID="r:0d2e7505-95e8-4ff8-8d68-fcb028dfcc71(com.mbeddr.analyses.yices.dectab.plugin.analysis_result)" version="1" />
   <import index="wpy9" modelUID="r:d961e31a-d1b6-4b76-bdb3-749250b8599f(com.mbeddr.analyses.yices.dectab.plugin.analyzers)" version="-1" />
+  <import index="4mkv" modelUID="r:06a3d512-aac6-4b99-9738-5320a4474ee4(com.mbeddr.analyses.yices.dectab.plugin.testing_utils)" version="-1" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" />
+  <import index="d8ej" modelUID="r:fde4fd08-2694-4f15-a5e5-88fa2c92442c(com.mbeddr.analyses.utils.testing_utils)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="15" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
+  <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="7174651526804307507" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SimpleDecisionTable" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="7174651526804307508" nodeInfo="ng">
@@ -31,8 +51,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7174651526804307515" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336144" resolveInfo="DecTabAnalyzer" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804307516" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="simple_decision_table" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749573000" nodeInfo="nn">
+                <property name="name" nameId="tp25.559557797393017702" value="simple_decision_table" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+                <property name="fqName" nameId="tp25.559557797393041554" value="simcomplex_decision_table" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804307517" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="enums_table" />
@@ -225,10 +247,12 @@
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7174651526804308601" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336144" resolveInfo="DecTabAnalyzer" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804308602" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="simple_decision_table" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749587125" nodeInfo="nn">
+                <property name="name" nameId="tp25.559557797393017702" value="simple_decision_table" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+                <property name="fqName" nameId="tp25.559557797393041554" value="simcomplex_decision_table" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804308603" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="smoke_table" />
@@ -426,8 +450,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7174651526804320113" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336267" resolveInfo="analyzeGSwitch" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336261" resolveInfo="GSwitchAnalyzer" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804320114" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="simple_gswitch" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749591519" nodeInfo="nn">
+                <property name="name" nameId="tp25.559557797393017702" value="simple_gswitch" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+                <property name="fqName" nameId="tp25.559557797393041554" value="simcomplex_decision_table" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804320115" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="smoke_gswitch" />
@@ -485,8 +511,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7174651526804320367" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336144" resolveInfo="DecTabAnalyzer" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804320368" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="complex_decision_table" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749551031" nodeInfo="nn">
+                <property name="name" nameId="tp25.559557797393017702" value="complex_decision_table" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804320369" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="decisionTableInComponent" />
@@ -499,7 +526,7 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7174651526804320370" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4106905652749747013" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7174651526804320371" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7174651526804320372" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="result" />
@@ -632,10 +659,11 @@
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7174651526804323429" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336144" resolveInfo="DecTabAnalyzer" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804323430" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="complex_decision_table" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749519834" nodeInfo="nn">
+                <property name="name" nameId="tp25.559557797393017702" value="complex_decision_table" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804323431" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="decisionTableAccessingStructMembers" />
@@ -781,10 +809,11 @@
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7174651526804327493" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336144" resolveInfo="DecTabAnalyzer" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804327494" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="complex_decision_table" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749563990" nodeInfo="nn">
+                <property name="name" nameId="tp25.559557797393017702" value="complex_decision_table" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804327495" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="decisionTableAccessingPointerToStructAndPhysicalUnits" />
@@ -856,6 +885,45 @@
   </root>
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534" nodeInfo="ng">
     <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
+  </root>
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="4106905652749774897" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="TestServerFailures" />
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="4106905652749775205" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="findDecisionTableTest" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="4106905652749775206" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4106905652749775210" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4106905652749778508" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4106905652749778509" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="decTab" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4106905652749778506" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4106905652750302024" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.4106905652750268037" resolveInfo="findDecTab" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336144" resolveInfo="DecTabAnalyzer" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652750302066" nodeInfo="nn">
+                <property name="name" nameId="tp25.559557797393017702" value="complex_decision_table" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4106905652750302067" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="decisionTableInComponent" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4106905652750104630" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="4106905652750380169" nodeInfo="nn">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4106905652750380245" nodeInfo="nn">
+            <property name="text" nameId="tpee.6329021646629104958" value="the line below passes locally, but fails on the server" />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertInNotNull" typeId="tpe3.7080278351417106679" id="4106905652750104771" nodeInfo="nn">
+          <node role="expression" roleId="tpe3.7080278351417106681" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4106905652750104842" nodeInfo="nn">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4106905652749778509" resolveInfo="decTab" />
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
 </model>
 

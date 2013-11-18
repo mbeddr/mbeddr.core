@@ -84,6 +84,7 @@
           <property name="name" nameId="tpck.1169194664001" value="mandatoryChild2" />
         </node>
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.FeatureModelVerifiableAttribute" typeId="4r5s.7519116116714294488" id="4106905652749044556" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235910" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="FM" />
@@ -137,6 +138,7 @@
           </node>
         </node>
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.FeatureModelVerifiableAttribute" typeId="4r5s.7519116116714294488" id="4106905652749053561" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="2912335823209235931" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="C1" />
@@ -267,6 +269,7 @@
         </node>
         <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235980" nodeInfo="ng" />
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.FeatureModelVerifiableAttribute" typeId="4r5s.7519116116714294488" id="4106905652749070819" nodeInfo="ng" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7174651526804344750" nodeInfo="ng">
