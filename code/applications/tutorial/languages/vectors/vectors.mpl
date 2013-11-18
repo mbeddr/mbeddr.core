@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="mbeddr.tutorial.vectors" uuid="3d0be1cf-4156-4c3c-ac37-fef83237d8e2" doNotGenerateAdapters="true">
+<language namespace="mbeddr.tutorial.vectors" uuid="3d0be1cf-4156-4c3c-ac37-fef83237d8e2">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators />
