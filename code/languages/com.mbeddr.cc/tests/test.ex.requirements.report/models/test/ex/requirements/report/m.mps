@@ -16,7 +16,6 @@
   <root type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="5785245534400482590" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Requirements" />
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5785245534400482591" nodeInfo="ng">
-      <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="R1" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Das ist das erste Requirements" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5785245534400482592" nodeInfo="ng" />
@@ -31,7 +30,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5785245534400482596" nodeInfo="ng">
-      <property name="open" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="R2" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Hier ist das zweite" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5785245534400482597" nodeInfo="ng" />
