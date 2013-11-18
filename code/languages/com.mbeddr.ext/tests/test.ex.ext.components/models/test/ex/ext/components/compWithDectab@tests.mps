@@ -3,7 +3,6 @@
   <persistence version="8" />
   <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
   <language namespace="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
-  <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
   <language namespace="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606(com.mbeddr.ext.components.gen_nomw)" />
@@ -67,13 +66,13 @@
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1817139875676347066" resolveInfo="Decider" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1817139875676347014" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="decide" />
+        <property name="name" nameId="tpck.1169194664001" value="decider_decide" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1817139875676347015" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="1817139875676347024" nodeInfo="ng">
             <node role="expression" roleId="x27k.8967919205527146150" type="k146.DecTab" typeId="k146.6209595569797584861" id="1817139875676347025" nodeInfo="ng">
               <node role="xExpr" roleId="k146.6209595569797584862" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1817139875676347043" nodeInfo="ng">
                 <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="8444296659257822318" nodeInfo="ng">
-                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321304064" resolveInfo="x" />
+                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="5275770755188912349" resolveInfo="x" />
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1817139875676347045" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
@@ -81,7 +80,7 @@
               </node>
               <node role="xExpr" roleId="k146.6209595569797584862" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="1817139875676347047" nodeInfo="ng">
                 <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="8444296659257822319" nodeInfo="ng">
-                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321304064" resolveInfo="x" />
+                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="5275770755188912349" resolveInfo="x" />
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1817139875676347050" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
@@ -89,7 +88,7 @@
               </node>
               <node role="yExpr" roleId="k146.6209595569797584863" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1817139875676347052" nodeInfo="ng">
                 <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="8444296659257822320" nodeInfo="ng">
-                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321303786" resolveInfo="y" />
+                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="5275770755188912351" resolveInfo="y" />
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1817139875676347055" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
@@ -97,7 +96,7 @@
               </node>
               <node role="yExpr" roleId="k146.6209595569797584863" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="1817139875676347057" nodeInfo="ng">
                 <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="8444296659257822321" nodeInfo="ng">
-                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321303786" resolveInfo="y" />
+                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="5275770755188912351" resolveInfo="y" />
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1817139875676347060" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
@@ -126,14 +125,14 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="1817139875676347074" resolveInfo="decider" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="1817139875676347067" resolveInfo="decide" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820622277887" nodeInfo="ng" />
-        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321304064" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5275770755188912348" nodeInfo="ng" />
+        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="5275770755188912349" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="x" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6091825850321304065" nodeInfo="ng" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5275770755188912350" nodeInfo="ng" />
         </node>
-        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321303786" nodeInfo="ng">
+        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="5275770755188912351" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="y" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6091825850321303787" nodeInfo="ng" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5275770755188912352" nodeInfo="ng" />
         </node>
       </node>
     </node>

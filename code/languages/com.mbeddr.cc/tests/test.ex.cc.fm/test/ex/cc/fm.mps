@@ -3,7 +3,6 @@
   <persistence version="8" />
   <language namespace="017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)" />
   <language namespace="e401b447-8019-4ccd-a72c-bfb0230f5782(com.mbeddr.cc.var.fm)" />
-  <language namespace="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" />
   <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <language namespace="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" />
   <devkit namespace="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
@@ -443,14 +442,11 @@
   </root>
   <root type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="1165432222362156712" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="TestModule" />
-    <property name="showTraces" value="true" />
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1165432222362156713" nodeInfo="ng">
-      <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Dummy" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Summary" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1165432222362156714" nodeInfo="ng" />
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1165432222362212512" nodeInfo="ng">
-        <property name="open" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="D2" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="fdsfdsfdsafdsa" />
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1165432222362212513" nodeInfo="ng" />

@@ -20,7 +20,6 @@
   <root type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="4155609647750946107" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ReqsModule" />
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="4155609647750946108" nodeInfo="ng">
-      <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="simple_req" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="a simple requirement" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="4155609647750946109" nodeInfo="ng" />

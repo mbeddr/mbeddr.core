@@ -11,7 +11,6 @@
   <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
   <language namespace="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
   <language namespace="41911c23-eb23-4ee6-872f-bc7f7ebce290(com.mbeddr.ext.components.test)" />
-  <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
@@ -169,7 +168,7 @@
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9016194309503490021" resolveInfo="Interface" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8933128519013965130" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="someRunnable" />
+        <property name="name" nameId="tpck.1169194664001" value="ci_getTheValue" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8933128519013965131" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8933128519014038683" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="theVal" />
@@ -197,7 +196,7 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="8933128519014038680" resolveInfo="ci" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="8933128519014038677" resolveInfo="getTheValue" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8933128519014038682" nodeInfo="ng" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5275770755188964925" nodeInfo="ng" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8701298571231243816" nodeInfo="ng">

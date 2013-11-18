@@ -11,14 +11,14 @@
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="4gky" modelUID="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" version="1" />
-  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="3" />
+  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="5" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
   <import index="tpcw" modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="4457500422381538575" nodeInfo="ng">
@@ -263,7 +263,7 @@
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.6165313375056012512" resolveInfo="DocumentInclude" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="288801861797797454" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Section" typeId="2c95.3350625596580064455" id="288801861797797456" nodeInfo="ng">
-          <property name="name" value="dummy" />
+          <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <property name="text" nameId="2c95.3350625596580064225" value="Dummy" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="288801861797797458" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="288801861797797459" nodeInfo="ng">
@@ -479,10 +479,10 @@
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.2588579461812060090" resolveInfo="Visualization" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="4755612053022495287" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="4755612053022495289" nodeInfo="ng">
-          <property name="name" value="dummy" />
+          <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <link role="config" roleId="2c95.6657644269295214800" targetNodeId="4755612053022494311" resolveInfo="DummyCfg" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="4755612053022495290" nodeInfo="ng">
-            <property name="name" value="img" />
+            <property name="name" nameId="tpck.1169194664001" value="img" />
             <property name="border" nameId="2c95.4755612053022517119" value="true" />
             <property name="center" nameId="2c95.8730648445434174368" value="true" />
             <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4755612053022495305" nodeInfo="ng">
@@ -524,13 +524,13 @@
                 </node>
               </node>
             </node>
-            <node role="description" roleId="2c95.6386504476136278696" type=".com.mbeddr.core.base.structure.TextBlock" id="4755612053022495292" nodeInfo="ng">
-              <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022495293" nodeInfo="ng">
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4755612053022495292" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022495293" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4755612053022495294" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
                 </node>
               </node>
-              <node role="smodelAttribute" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="4755612053022500280" nodeInfo="nn">
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="4755612053022500280" nodeInfo="nn">
                 <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="4755612053022500283" nodeInfo="nn">
                   <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4755612053022500284" nodeInfo="sn">
                     <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4755612053022500285" nodeInfo="nn">
@@ -586,13 +586,13 @@
     </node>
   </root>
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="4755612053022494311" nodeInfo="ng">
-    <property name="name" value="DummyCfg" />
+    <property name="name" nameId="tpck.1169194664001" value="DummyCfg" />
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4755612053022494313" nodeInfo="ng">
-      <property name="name" value="p" />
+      <property name="name" nameId="tpck.1169194664001" value="p" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="/" />
     </node>
     <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4400783559374235002" nodeInfo="ng">
-      <property name="name" value="temp" />
+      <property name="name" nameId="tpck.1169194664001" value="temp" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="/" />
     </node>
   </root>

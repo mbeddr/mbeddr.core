@@ -3,7 +3,6 @@
   <persistence version="8" />
   <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
   <language namespace="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
-  <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <language namespace="564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)" />
   <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
@@ -30,8 +29,6 @@
           <property name="value" nameId="mj1l.2212975673976043696" value="10" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="6827806583615963321" nodeInfo="ng">
-          <property name="min" value="0" />
-          <property name="max" value="5" />
           <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6827806583615963322" nodeInfo="ng">
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
@@ -301,8 +298,6 @@
         <property name="readable" nameId="clqz.4497436839299253152" value="true" />
         <property name="writable" nameId="clqz.4497436839299253153" value="false" />
         <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4497436839299247207" nodeInfo="ng">
-          <property name="min" value="0" />
-          <property name="max" value="100" />
           <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329675" nodeInfo="ng">
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
@@ -320,8 +315,6 @@
           <property name="value" nameId="mj1l.2212975673976043696" value="100" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4497436839299247212" nodeInfo="ng">
-          <property name="min" value="0" />
-          <property name="max" value="100" />
           <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329631" nodeInfo="ng">
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
@@ -346,8 +339,6 @@
           <property name="value" nameId="mj1l.2212975673976043696" value="0" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4497436839299251317" nodeInfo="ng">
-          <property name="min" value="0" />
-          <property name="max" value="100" />
           <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329601" nodeInfo="ng">
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
@@ -362,8 +353,6 @@
         <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="4497436839299246572" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="delta" />
           <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4497436839299246574" nodeInfo="ng">
-            <property name="min" value="0" />
-            <property name="max" value="10" />
             <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329605" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="0" />
             </node>
@@ -385,8 +374,6 @@
         <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="4497436839299251337" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="steps" />
           <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4497436839299251338" nodeInfo="ng">
-            <property name="min" value="0" />
-            <property name="max" value="100" />
             <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329673" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="0" />
             </node>
@@ -574,7 +561,10 @@
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4497436839299251312" nodeInfo="ng" />
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="4497436839299251339" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="steps" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4497436839299251340" nodeInfo="ng" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5275770755196781772" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4497436839299251308" nodeInfo="ng">
@@ -903,8 +893,6 @@
           <property name="value" nameId="mj1l.2212975673976043696" value="3" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4663449261074423775" nodeInfo="ng">
-          <property name="min" value="0" />
-          <property name="max" value="5" />
           <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329607" nodeInfo="ng">
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>

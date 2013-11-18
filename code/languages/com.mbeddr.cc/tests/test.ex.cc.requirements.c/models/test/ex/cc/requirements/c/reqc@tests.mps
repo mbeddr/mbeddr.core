@@ -9,7 +9,6 @@
   <language namespace="f3ed62ca-3490-40d0-890b-9b3133cc2ead(com.mbeddr.cc.requirements.c)" />
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
   <language namespace="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
-  <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <language namespace="e865cad2-7cc8-437a-951a-665bcbcb8b1a(com.mbeddr.cc.requirements)" />
   <language namespace="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" />
   <language namespace="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" />
@@ -155,10 +154,8 @@
   <root type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="3534497005926839233" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Requirements" />
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3534497005926839234" nodeInfo="ng">
-      <property name="open" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="R1" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Price is 10 EUR" />
-      <property name="proseText" value="" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="3534497005926839235" nodeInfo="ng" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RConstant" typeId="3vkx.3534497005926837262" id="3534497005926839238" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="PRICE" />
@@ -181,10 +178,8 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3534497005926953361" nodeInfo="ng">
-      <property name="open" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="R2" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="The price may be rebated." />
-      <property name="proseText" value="" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="3534497005926953362" nodeInfo="ng" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RCalculation" typeId="3vkx.3534497005926949315" id="3534497005926953363" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="rebatedPrice" />
@@ -233,7 +228,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3562422675424166429" nodeInfo="ng">
-      <property name="open" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="R3" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Price per call" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="3562422675424166430" nodeInfo="ng" />

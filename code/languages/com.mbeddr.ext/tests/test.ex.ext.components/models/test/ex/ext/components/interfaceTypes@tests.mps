@@ -11,7 +11,6 @@
   <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
   <language namespace="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
   <language namespace="41911c23-eb23-4ee6-872f-bc7f7ebce290(com.mbeddr.ext.components.test)" />
-  <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
@@ -103,7 +102,6 @@
       <property name="name" nameId="tpck.1169194664001" value="Computer" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1139274356257150863" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="square" />
-        <property name="asValue" value="true" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1139274356257150855" resolveInfo="ISquare" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="1139274356257150864" nodeInfo="ng" />
@@ -380,7 +378,6 @@
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="4075471389393921564" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="tweaker" />
-        <property name="asValue" value="true" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="4075471389393921562" resolveInfo="Tweaker" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4075471389393865447" nodeInfo="ng" />
@@ -443,12 +440,12 @@
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4075471389393865457" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="adder_setErrorValue" />
+        <property name="name" nameId="tpck.1169194664001" value="tweaker_setErrorValue" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4075471389393865458" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4075471389393865464" nodeInfo="ng">
             <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="4075471389393865468" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="4075471389393865471" nodeInfo="ng">
-                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321303687" resolveInfo="error" />
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="5275770755193422324" resolveInfo="error" />
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="4075471389393865465" nodeInfo="ng">
                 <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="4075471389393865455" resolveInfo="errorValue" />
@@ -456,20 +453,20 @@
             </node>
           </node>
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4075471389393865461" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321303687" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="error" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6091825850321303688" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
-        </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="4075471389393921565" nodeInfo="ng">
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="4075471389393865451" resolveInfo="setErrorValue" />
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="4075471389393921564" resolveInfo="tweaker" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5275770755193422323" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="5275770755193422324" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="error" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5275770755193422325" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
         </node>
       </node>
     </node>

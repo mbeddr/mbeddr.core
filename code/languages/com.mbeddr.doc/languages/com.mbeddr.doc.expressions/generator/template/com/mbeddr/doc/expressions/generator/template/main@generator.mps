@@ -8,7 +8,7 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" />
   <import index="tbr6" modelUID="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" version="1" />
-  <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="2" />
+  <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="3" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
@@ -21,7 +21,7 @@
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="f87k.5378658552263149308" resolveInfo="VariableDef" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="9186986816326846517" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="9186986816326846519" nodeInfo="ng">
-          <property name="name" value="dummy" />
+          <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <link role="config" roleId="2c95.6657644269295214800" targetNodeId="6837710034789951324" resolveInfo="Cfg" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9186986816326771593" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9186986816326771594" nodeInfo="ng">
@@ -96,7 +96,7 @@
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="f87k.5378658552263151469" resolveInfo="VarRef" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="9186986816326846523" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="9186986816326846524" nodeInfo="ng">
-          <property name="name" value="dummy" />
+          <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <link role="config" roleId="2c95.6657644269295214800" targetNodeId="6837710034789951324" resolveInfo="Cfg" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9186986816326846525" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9186986816326846526" nodeInfo="ng">
@@ -176,7 +176,7 @@
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="f87k.5378658552263151447" resolveInfo="Equation" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="9186986816326846624" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="9186986816326846625" nodeInfo="ng">
-          <property name="name" value="dummy" />
+          <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <link role="config" roleId="2c95.6657644269295214800" targetNodeId="6837710034789951324" resolveInfo="Cfg" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9186986816326846626" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9186986816326846627" nodeInfo="ng">
@@ -281,9 +281,9 @@
     </node>
   </root>
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="6837710034789951324" nodeInfo="ng">
-    <property name="name" value="Cfg" />
+    <property name="name" nameId="tpck.1169194664001" value="Cfg" />
     <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="6837710034789951325" nodeInfo="ng">
-      <property name="name" value="temp" />
+      <property name="name" nameId="tpck.1169194664001" value="temp" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="/" />
     </node>
   </root>
