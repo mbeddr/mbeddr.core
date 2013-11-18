@@ -27,7 +27,7 @@
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="88" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
@@ -256,7 +256,7 @@
             </node>
             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430233" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="23" />
             </node>
           </node>
         </node>
@@ -273,7 +273,7 @@
                 </node>
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071467321" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                  <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="23" />
                 </node>
               </node>
             </node>
@@ -290,14 +290,14 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430241" nodeInfo="ng">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="23" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7179305966071431103" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="7179305966071431119" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071431122" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.8860443239512128104" value="999999" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="999999" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7179305966071431104" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7179305966071430238" resolveInfo="local3" />
@@ -352,7 +352,7 @@
               </node>
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430670" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="7179305966071430671" nodeInfo="ng">
@@ -375,7 +375,7 @@
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIAmpere" typeId="ym4j.3801772042669047320" id="7179305966071430785" nodeInfo="ng" />
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430621" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="7179305966071430585" nodeInfo="ng">
@@ -398,7 +398,7 @@
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIKelvin" typeId="ym4j.3801772042669047318" id="7179305966071430792" nodeInfo="ng" />
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430681" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="7179305966071430682" nodeInfo="ng">
@@ -421,7 +421,7 @@
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SICandela" typeId="ym4j.3801772042669047316" id="7179305966071430691" nodeInfo="ng" />
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430692" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="7179305966071430693" nodeInfo="ng">
@@ -444,7 +444,7 @@
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIKilogram" typeId="ym4j.3801772042669047310" id="7179305966071430816" nodeInfo="ng" />
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430709" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="7179305966071430710" nodeInfo="ng">
@@ -467,7 +467,7 @@
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="7179305966071430831" nodeInfo="ng" />
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430720" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="7179305966071430721" nodeInfo="ng">
@@ -493,7 +493,7 @@
               </node>
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430856" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="7179305966071430857" nodeInfo="ng">
@@ -516,7 +516,7 @@
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIAmpere" typeId="ym4j.3801772042669047320" id="7179305966071430865" nodeInfo="ng" />
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430866" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="7179305966071430867" nodeInfo="ng">
@@ -539,7 +539,7 @@
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIKelvin" typeId="ym4j.3801772042669047318" id="7179305966071430875" nodeInfo="ng" />
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430876" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="7179305966071430877" nodeInfo="ng">
@@ -562,7 +562,7 @@
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SICandela" typeId="ym4j.3801772042669047316" id="7179305966071430885" nodeInfo="ng" />
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430886" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="7179305966071430887" nodeInfo="ng">
@@ -585,7 +585,7 @@
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIKilogram" typeId="ym4j.3801772042669047310" id="7179305966071430895" nodeInfo="ng" />
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430896" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="7179305966071430897" nodeInfo="ng">
@@ -608,7 +608,7 @@
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="7179305966071430905" nodeInfo="ng" />
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7179305966071430906" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="7179305966071430907" nodeInfo="ng">
