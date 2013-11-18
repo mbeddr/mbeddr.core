@@ -6,9 +6,6 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">b87ff58e-456e-4d51-9ed6-4090f4e7b51c(mbeddr.tutorial.main)</dependency>
-  </dependencies>
   <usedLanguages>
     <usedLanguage>2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</usedLanguage>
     <usedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</usedLanguage>

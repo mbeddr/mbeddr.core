@@ -18,7 +18,7 @@
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
@@ -45,15 +45,15 @@
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 </node>
                 <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520150392" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                 </node>
               </node>
               <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="7977993180520150394" nodeInfo="ng">
                 <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520150395" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                 </node>
                 <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520150397" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                 </node>
               </node>
             </node>
@@ -65,7 +65,7 @@
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 </node>
                 <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520150369" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                 </node>
               </node>
               <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7977993180520150364" nodeInfo="ng">
@@ -152,7 +152,7 @@
               </node>
               <node role="condition" roleId="c4fa.7254843406768606787" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="7977993180520150373" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520150376" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="100" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="100" />
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="7977993180520150414" nodeInfo="nn">
                     <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="7977993180520150417" nodeInfo="nn">
                       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7977993180520150418" nodeInfo="sn">
