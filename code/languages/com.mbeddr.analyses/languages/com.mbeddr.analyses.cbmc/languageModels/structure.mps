@@ -581,7 +581,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6937663792687147552" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="statemachines" />
     <property name="name" nameId="tpck.1169194664001" value="TimesEventOccurred" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="smTimesEventOccurred" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="smTimesOccurred" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6937663792687147665" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -599,7 +599,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6937663792687151477" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="statemachines" />
     <property name="name" nameId="tpck.1169194664001" value="LastTimeEventOccurred" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="smLastTimeEventOccurred" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="smLastTime" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6937663792687151478" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -646,7 +646,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6937663792694551950" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="statemachines" />
     <property name="name" nameId="tpck.1169194664001" value="LastTimeOneOfEventsOccurred" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="smLastTimeOneOfEventsOccurred" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="smLastTimeMany" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6937663792696477077" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -664,7 +664,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="448588129143505717" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="statemachines" />
     <property name="name" nameId="tpck.1169194664001" value="TimesEventsOccurred" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="smTimesEventsOccurred" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="smTimesOccurredMany" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="448588129143505718" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
