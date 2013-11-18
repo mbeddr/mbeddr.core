@@ -114,5 +114,23 @@
     </dependencies>
     <rename id="q5q6.6937663792694551950" type="CONCEPT" from="LastTimeOneOfEventsOccured" to="LastTimeOneOfEventsOccurred" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="23" />
+    </dependencies>
+    <rename id="q5q6.9005445548778024784" type="CONCEPT" from="SMInSubSpace" to="SMInStateSubset" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="24" />
+    </dependencies>
+    <rename id="q5q6.697164800619673343" type="CONCEPT" from="StateMachineStateSubSpace" to="StateMachineStateSubset" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="25" />
+    </dependencies>
+    <rename id="q5q6.9005445548778024787" type="REFERENCE" from="StateSub" to="stateSubset" />
+  </StructureModification>
 </history>
 
