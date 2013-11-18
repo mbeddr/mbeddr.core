@@ -11,7 +11,7 @@
   <import index="kdzh" modelUID="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" version="1" implicit="yes" />
   <import index="fnbo" modelUID="r:d89d60fc-e488-474b-a7de-9d6e3b77d10d(com.mbeddr.mpsutil.buildutil.structure)" version="-1" implicit="yes" />
   <root type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="8628756186118380491" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.build" />
+    <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mps‘util.build" />
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.mpsutil" />
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildVariableMacro" typeId="3ior.3767587139141066978" id="4301118715654465616" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="build.number" />
