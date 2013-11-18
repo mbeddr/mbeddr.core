@@ -2219,5 +2219,33 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7745462878240028616" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q5q6.7745462878240026790" resolveInfo="BetweenPandQExists" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7745462878240028617" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="7745462878240028618" nodeInfo="ng">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="8330520303445148986" resolveInfo="disabledFlag" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7745462878240028619" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="between" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7745462878240028620" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.6876648630975719720" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7745462878240028621" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="and" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7745462878240028622" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.6876648630975719722" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7745462878240028623" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="exists" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7745462878240028624" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.6876648630975719718" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7745462878240028625" nodeInfo="nn" />
+    </node>
+  </root>
 </model>
 

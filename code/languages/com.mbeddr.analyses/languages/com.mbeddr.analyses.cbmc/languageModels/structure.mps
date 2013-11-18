@@ -712,5 +712,11 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.2093108837558189304" resolveInfo="ILocalVarScopeProvider" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7745462878240026790" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
+    <property name="name" nameId="tpck.1169194664001" value="BetweenPandQExists" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="between exists" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6876648630975719717" resolveInfo="CBMCAdvancedTernaryVerificationCondition" />
+  </root>
 </model>
 
