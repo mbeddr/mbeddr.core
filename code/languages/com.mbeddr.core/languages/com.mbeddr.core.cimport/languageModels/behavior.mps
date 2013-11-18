@@ -4866,6 +4866,7 @@
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575724000" resolveInfo="FunctionPrototype" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="6444423870370229561" nodeInfo="ng">
+              <property name="partial" nameId="hba4.9209730562277576429" value="true" />
               <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="6444423870370229562" nodeInfo="ng">
                 <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
                 <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="6444423870370229563" nodeInfo="ng">
