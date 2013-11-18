@@ -28,7 +28,7 @@
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" version="-1" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="88" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6305416899339624995" nodeInfo="ng">
@@ -224,7 +224,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="init" roleId="v7ag.5308710777891512022" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3629580915884388816" nodeInfo="ng">
-          <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="0" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="mxvz.SequenceExpectation" typeId="mxvz.4957503999940784579" id="7635126078858676544" nodeInfo="ng">
@@ -252,7 +252,7 @@
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
               <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3629580915884311077" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="233" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="233" />
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4390760819952364570" nodeInfo="ng">
@@ -269,7 +269,7 @@
             <link role="param" roleId="mxvz.4957503999941447495" targetNodeId="4390760819953028993" resolveInfo="a" />
             <node role="expr" roleId="mxvz.4331139697889521540" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5833350030648443326" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5833350030648443329" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="3" />
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="mxvz.ParamRefExpression" typeId="mxvz.4331139697889290796" id="4390760819953028995" nodeInfo="ng">
                 <link role="param" roleId="mxvz.4331139697889301323" targetNodeId="4390760819953028993" resolveInfo="a" />
@@ -283,7 +283,7 @@
             <link role="param" roleId="mxvz.4957503999941447495" targetNodeId="4390760819953028993" resolveInfo="a" />
             <node role="expr" roleId="mxvz.4331139697889521540" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7635126078858679896" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7635126078858679897" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="mxvz.ParamRefExpression" typeId="mxvz.4331139697889290796" id="4390760819953028996" nodeInfo="ng">
                 <link role="param" roleId="mxvz.4331139697889301323" targetNodeId="4390760819953028993" resolveInfo="a" />
@@ -321,7 +321,7 @@
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
             <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6305416899339696464" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="0" />
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="6305416899339704545" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="insideComponent" />
@@ -350,7 +350,7 @@
                 <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server1" />
               </node>
               <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1095141890318176569" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="3" />
               </node>
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="1095141890318300351" nodeInfo="ng">
@@ -380,7 +380,7 @@
                 <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server1" />
               </node>
               <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4390760819953028997" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="6305416899339704546" nodeInfo="ng">
@@ -390,7 +390,7 @@
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6305416899339696466" nodeInfo="ng">
             <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="6305416899339696470" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6305416899339696473" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="23" />
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6305416899339696467" nodeInfo="ng">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6305416899339696461" resolveInfo="dummy" />
@@ -407,7 +407,7 @@
                 <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server1" />
               </node>
               <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1095141890318190264" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="1095141890318201078" nodeInfo="ng">
@@ -417,7 +417,7 @@
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1095141890318201083" nodeInfo="ng">
             <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="1095141890318201087" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1095141890318201090" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="234" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="234" />
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1095141890318201084" nodeInfo="ng">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6305416899339696461" resolveInfo="dummy" />

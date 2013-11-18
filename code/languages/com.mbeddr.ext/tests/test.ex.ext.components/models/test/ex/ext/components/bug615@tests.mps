@@ -10,7 +10,6 @@
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
   <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
   <language namespace="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
-  <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <language namespace="41911c23-eb23-4ee6-872f-bc7f7ebce290(com.mbeddr.ext.components.test)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
@@ -100,7 +99,7 @@
       <property name="name" nameId="tpck.1169194664001" value="C2" />
       <link role="baseComponent" roleId="v7ag.4491876417845678669" targetNodeId="4504633138937598634" resolveInfo="C1" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4504633138937598672" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="intf_op2" />
+        <property name="name" nameId="tpck.1169194664001" value="intf_op" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4504633138937598673" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5600840408739001301" nodeInfo="ng">
             <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="5600840408739001305" nodeInfo="ng">
@@ -121,7 +120,7 @@
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="4504633138937598656" resolveInfo="op" />
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="4504633138937598659" resolveInfo="intf" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4504633138937598677" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5275770755188802276" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
@@ -226,7 +225,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="5600840408739001299" nodeInfo="ng">
             <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="4504633138937598650" resolveInfo="c2" />
             <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="4504633138937598649" resolveInfo="instances" />
-            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="4504633138937598672" resolveInfo="intf_op2" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="4504633138937598672" resolveInfo="intf_op" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4504633138937598683" nodeInfo="ng">

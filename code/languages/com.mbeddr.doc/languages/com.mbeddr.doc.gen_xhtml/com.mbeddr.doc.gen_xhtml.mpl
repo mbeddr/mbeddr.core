@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.doc.gen_xhtml" uuid="2dec0852-3a21-4c4e-a68c-b05236cc37f2" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.doc.gen_xhtml" uuid="2dec0852-3a21-4c4e-a68c-b05236cc37f2">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="doc2html" generatorUID="com.mbeddr.doc.gen_xhtml#3350625596580276036" uuid="45c3377b-bfd4-4af4-89da-1dae7d5058f3">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="864be1b4-10fc-4e1f-9112-c5b47ae9adec(com.mbeddr.doc#4457500422381538528)" />
       </external-templates>
-      <dependencies>
-        <dependency reexport="false">ae22a5d5-bb74-4acf-b102-de4ea6203c98(com.mbeddr.doc.gen_latex#4457500422381351720)</dependency>
-      </dependencies>
       <usedLanguages>
         <usedLanguage>2dec0852-3a21-4c4e-a68c-b05236cc37f2(com.mbeddr.doc.gen_xhtml)</usedLanguage>
         <usedLanguage>479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</usedLanguage>

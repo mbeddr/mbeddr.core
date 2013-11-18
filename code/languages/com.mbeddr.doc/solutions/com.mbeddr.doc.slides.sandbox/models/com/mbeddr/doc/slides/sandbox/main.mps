@@ -72,13 +72,13 @@
     </node>
   </root>
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="5455967284188430857" nodeInfo="ng">
-    <property name="name" value="SlideConfig" />
+    <property name="name" nameId="tpck.1169194664001" value="SlideConfig" />
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="5455967284188430860" nodeInfo="ng">
-      <property name="name" value="images" />
+      <property name="name" nameId="tpck.1169194664001" value="images" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.slides.sandbox/slides/images" />
     </node>
     <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="5455967284188430858" nodeInfo="ng">
-      <property name="name" value="temp" />
+      <property name="name" nameId="tpck.1169194664001" value="temp" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="/" />
     </node>
   </root>
