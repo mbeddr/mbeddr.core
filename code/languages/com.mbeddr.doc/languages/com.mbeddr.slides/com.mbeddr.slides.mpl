@@ -15,6 +15,8 @@
       </models>
       <external-templates />
       <usedLanguages>
+        <usedLanguage>94daa6eb-e6a4-4b9f-90b6-4b23682ca120(com.mbeddr.slides)</usedLanguage>
+        <usedLanguage>479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
       </usedLanguages>
