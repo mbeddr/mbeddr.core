@@ -13,7 +13,7 @@
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ym4j.3801772042669047303" resolveInfo="ElementaryUnitDeclaration" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="2309941518257288804" nodeInfo="ng">
       <property name="attractsFocus" nameId="tpc2.1130859485024" value="0" />
-      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="AliasEditorComponent" />
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
       <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5513256947824560921" resolveInfo="physicalUnits" />
     </node>
   </root>

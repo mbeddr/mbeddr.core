@@ -447,7 +447,6 @@
               <link role="element" roleId="k146.3073566081777391258" targetNodeId="998890089994905863" resolveInfo="drehzahl" />
               <node role="value" roleId="k146.3073566081777391257" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="9178537171064900657" nodeInfo="ng">
                 <link role="element" roleId="clbe.2003957539749894106" targetNodeId="998890089994905863" resolveInfo="drehzahl" />
-                <node role="expression" type="mj1l.Expression" typeId="mj1l.8860443239512128050" id="9178537171064900658" nodeInfo="ng" />
               </node>
             </node>
           </node>
@@ -895,7 +894,6 @@
             <link role="element" roleId="k146.3073566081777391258" targetNodeId="998890089994905863" resolveInfo="drehzahl" />
             <node role="value" roleId="k146.3073566081777391257" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="9178537171064598338" nodeInfo="ng">
               <link role="element" roleId="clbe.2003957539749894106" targetNodeId="998890089994905863" resolveInfo="drehzahl" />
-              <node role="expression" type="mj1l.Expression" typeId="mj1l.8860443239512128050" id="9178537171064598339" nodeInfo="ng" />
             </node>
           </node>
           <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="843825774842417462" nodeInfo="ng">
@@ -921,7 +919,6 @@
             <link role="element" roleId="k146.3073566081777391258" targetNodeId="2116578915583764667" resolveInfo="position" />
             <node role="value" roleId="k146.3073566081777391257" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="9178537171064598357" nodeInfo="ng">
               <link role="element" roleId="clbe.2003957539749894106" targetNodeId="2116578915583764667" resolveInfo="position" />
-              <node role="expression" type="mj1l.Expression" typeId="mj1l.8860443239512128050" id="9178537171064598358" nodeInfo="ng" />
             </node>
           </node>
         </node>
