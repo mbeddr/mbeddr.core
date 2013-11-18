@@ -10,7 +10,7 @@
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="23" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="26" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
@@ -240,7 +240,7 @@
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7095497658885511499" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="empty_1384185778478_2" />
           </node>
-          <node role="contents" roleId="x27k.6437088627575722833" type="q5q6.StateMachineStateSubSpace" typeId="q5q6.697164800619673343" id="7095497658886265366" nodeInfo="ng">
+          <node role="contents" roleId="x27k.6437088627575722833" type="q5q6.StateMachineStateSubset" typeId="q5q6.697164800619673343" id="7095497658886265366" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="Space" />
             <link role="stateMachine" roleId="q5q6.697164800619745501" targetNodeId="7095497658885513972" resolveInfo="StateMachine" />
             <node role="constraints" roleId="q5q6.697164800619697541" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="7095497658886269756" nodeInfo="ng" />
@@ -416,12 +416,12 @@
                             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3967061359996392130" nodeInfo="nr">
                               <property name="name" nameId="tpck.1169194664001" value="smInSubSpace" />
                               <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3967061359996392125" nodeInfo="in">
-                                <link role="concept" roleId="tp25.1138405853777" targetNodeId="q5q6.9005445548778024784" resolveInfo="SMInSubSpace" />
+                                <link role="concept" roleId="tp25.1138405853777" targetNodeId="q5q6.9005445548778024784" resolveInfo="SMInStateSubset" />
                               </node>
                               <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3967061359996418221" nodeInfo="nn">
                                 <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="3967061359996443924" nodeInfo="nn">
                                   <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3967061359996443926" nodeInfo="in">
-                                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="q5q6.9005445548778024784" resolveInfo="SMInSubSpace" />
+                                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="q5q6.9005445548778024784" resolveInfo="SMInStateSubset" />
                                   </node>
                                 </node>
                               </node>
@@ -531,7 +531,7 @@
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6937663792685949510" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="empty_1384185778478_2" />
           </node>
-          <node role="contents" roleId="x27k.6437088627575722833" type="q5q6.StateMachineStateSubSpace" typeId="q5q6.697164800619673343" id="6937663792685949511" nodeInfo="ng">
+          <node role="contents" roleId="x27k.6437088627575722833" type="q5q6.StateMachineStateSubset" typeId="q5q6.697164800619673343" id="6937663792685949511" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="Space" />
             <link role="stateMachine" roleId="q5q6.697164800619745501" targetNodeId="6937663792685949504" resolveInfo="StateMachine" />
             <node role="constraints" roleId="q5q6.697164800619697541" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6937663792685949512" nodeInfo="ng" />
@@ -3966,7 +3966,7 @@
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="697164800623952285" nodeInfo="ng">
-      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="q5q6.697164800619673343" resolveInfo="StateMachineStateSubSpace" />
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="q5q6.697164800619673343" resolveInfo="StateMachineStateSubset" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="697164800623997625" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9005445548776335591" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
@@ -3981,7 +3981,7 @@
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="9005445548779361749" nodeInfo="ng">
-      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="q5q6.9005445548778024784" resolveInfo="SMInSubSpace" />
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="q5q6.9005445548778024784" resolveInfo="SMInStateSubset" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="9005445548779400572" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.Function" typeId="x27k.6437088627575724001" id="9005445548779400578" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
