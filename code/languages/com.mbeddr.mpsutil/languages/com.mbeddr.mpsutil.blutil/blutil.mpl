@@ -17,6 +17,9 @@
           <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
+      <facets>
+        <facet type="java" />
+      </facets>
       <external-templates>
         <generator generatorUID="f780afd3-dca0-40c0-8c75-3fbf68382e62(jetbrains.mps.lang.access#8974276187400410207)" />
         <generator generatorUID="5f9babc9-8d5d-4825-8e61-17b241ee6272(jetbrains.mps.baseLanguage.collections#1151699677197)" />
