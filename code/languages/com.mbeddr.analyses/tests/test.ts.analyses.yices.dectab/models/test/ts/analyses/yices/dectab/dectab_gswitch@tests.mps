@@ -21,6 +21,7 @@
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language namespace="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" />
   <language namespace="96ee7a94-411d-4cf8-9b94-96cad7e52411(jetbrains.mps.baseLanguage.jdk7)" />
+  <language namespace="7e09729e-68e4-4442-9bc8-024c5cdac3a2(com.mbeddr.analyses.cbmc.testing)" />
   <import index="fw3h" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" version="-1" />
   <import index="msyo" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" version="-1" />
   <import index="q0jg" modelUID="r:0d2e7505-95e8-4ff8-8d68-fcb028dfcc71(com.mbeddr.analyses.yices.dectab.plugin.analysis_result)" version="1" />
@@ -28,18 +29,36 @@
   <import index="4mkv" modelUID="r:06a3d512-aac6-4b99-9738-5320a4474ee4(com.mbeddr.analyses.yices.dectab.plugin.testing_utils)" version="-1" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" />
   <import index="d8ej" modelUID="r:fde4fd08-2694-4f15-a5e5-88fa2c92442c(com.mbeddr.analyses.utils.testing_utils)" version="-1" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
+  <import index="cu2c" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" version="-1" />
+  <import index="ec5l" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" version="-1" />
+  <import index="88zw" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" version="-1" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
+  <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
+  <import index="qx6n" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/org.jetbrains.mps.openapi.persistence@java_stub)" version="-1" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="15" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
+  <import index="o23b" modelUID="r:d4a8f9bc-78fb-4fb4-8fad-f65eb374c6c1(com.mbeddr.analyses.cbmc.testing.structure)" version="0" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="7174651526804307507" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SimpleDecisionTable" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="7174651526804307508" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="smoke_table" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7174651526804307509" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7174651526804307510" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6052515322117567884" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6052515322117567885" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6052515322117567886" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="6052515322117567887" nodeInfo="ng">
+              <property name="name" nameId="o23b.559557797393017702" value="simple_decision_table" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+              <property name="fqName" nameId="o23b.559557797393041554" value="simple_decision_table" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7174651526804307511" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7174651526804307512" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="analysisResults" />
@@ -51,6 +70,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7174651526804307515" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336144" resolveInfo="DecTabAnalyzer" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6052515322117851958" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6052515322117567885" resolveInfo="generatorPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749573000" nodeInfo="nn">
                 <property name="name" nameId="tp25.559557797393017702" value="simple_decision_table" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
@@ -238,6 +260,17 @@
       <property name="name" nameId="tpck.1169194664001" value="enums_table" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7174651526804308595" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7174651526804308596" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6052515322117569654" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6052515322117569655" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6052515322117569656" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="6052515322117569657" nodeInfo="ng">
+              <property name="name" nameId="o23b.559557797393017702" value="simple_decision_table" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+              <property name="fqName" nameId="o23b.559557797393041554" value="simple_decision_table" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7174651526804308597" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7174651526804308598" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="analysisResults" />
@@ -249,6 +282,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7174651526804308601" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336144" resolveInfo="DecTabAnalyzer" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6052515322117855065" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6052515322117569655" resolveInfo="generatorPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749587125" nodeInfo="nn">
                 <property name="name" nameId="tp25.559557797393017702" value="simple_decision_table" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
@@ -439,6 +475,18 @@
       <property name="name" nameId="tpck.1169194664001" value="smoke_table" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7174651526804319946" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7174651526804319947" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6052515322117873097" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6052515322117873098" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6052515322117873099" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="6052515322117873100" nodeInfo="ng">
+              <property name="name" nameId="o23b.559557797393017702" value="simple_gswitch" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+              <property name="fqName" nameId="o23b.559557797393041554" value="s" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6052515322117872287" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7174651526804319948" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7174651526804319949" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="analysisResults" />
@@ -450,6 +498,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7174651526804320113" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336267" resolveInfo="analyzeGSwitch" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336261" resolveInfo="GSwitchAnalyzer" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6052515322117875095" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6052515322117873098" resolveInfo="generatorPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749591519" nodeInfo="nn">
                 <property name="name" nameId="tp25.559557797393017702" value="simple_gswitch" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
@@ -500,6 +551,17 @@
       <property name="name" nameId="tpck.1169194664001" value="testDecisionTableInComponent" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7174651526804320361" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7174651526804320362" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6052515322117559258" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6052515322117559259" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6052515322117559257" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="6052515322117559260" nodeInfo="ng">
+              <property name="name" nameId="o23b.559557797393017702" value="complex_decision_table" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+              <property name="fqName" nameId="o23b.559557797393041554" value="complex_decision_table" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7174651526804320363" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7174651526804320364" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="analysisResults" />
@@ -511,6 +573,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7174651526804320367" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336144" resolveInfo="DecTabAnalyzer" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6052515322117582663" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6052515322117559259" resolveInfo="generatorPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749551031" nodeInfo="nn">
                 <property name="name" nameId="tp25.559557797393017702" value="complex_decision_table" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
@@ -650,6 +715,17 @@
       <property name="name" nameId="tpck.1169194664001" value="testDecisionTableAccessingStructMembers" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7174651526804323423" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7174651526804323424" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6052515322117562123" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6052515322117562124" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6052515322117562125" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="6052515322117562126" nodeInfo="ng">
+              <property name="name" nameId="o23b.559557797393017702" value="complex_decision_table" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+              <property name="fqName" nameId="o23b.559557797393041554" value="complex_decision_table" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7174651526804323425" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7174651526804323426" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="analysisResults" />
@@ -661,6 +737,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7174651526804323429" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336144" resolveInfo="DecTabAnalyzer" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6052515322117844014" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6052515322117562124" resolveInfo="generatorPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749519834" nodeInfo="nn">
                 <property name="name" nameId="tp25.559557797393017702" value="complex_decision_table" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
@@ -800,6 +879,17 @@
       <property name="name" nameId="tpck.1169194664001" value="testDecisionTableAccessingPointerToStructAndPhysicalUnits" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7174651526804327487" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7174651526804327488" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6052515322117563301" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6052515322117563302" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6052515322117563303" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="6052515322117563304" nodeInfo="ng">
+              <property name="name" nameId="o23b.559557797393017702" value="complex_decision_table" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+              <property name="fqName" nameId="o23b.559557797393041554" value="complex_decision_table" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7174651526804327489" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7174651526804327490" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="analysisResults" />
@@ -811,6 +901,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7174651526804327493" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="wpy9.7174651526804336144" resolveInfo="DecTabAnalyzer" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="wpy9.7174651526804336150" resolveInfo="analyzeDecisionTable" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6052515322117845412" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6052515322117563302" resolveInfo="generatorPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652749563990" nodeInfo="nn">
                 <property name="name" nameId="tp25.559557797393017702" value="complex_decision_table" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
@@ -904,6 +997,7 @@
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4106905652750302066" nodeInfo="nn">
                 <property name="name" nameId="tp25.559557797393017702" value="complex_decision_table" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+                <property name="fqName" nameId="tp25.559557797393041554" value="complex_decision_tabl" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4106905652750302067" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="decisionTableInComponent" />

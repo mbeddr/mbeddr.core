@@ -242,7 +242,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8985851583396455245" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="harness" />
     <property name="name" nameId="tpck.1169194664001" value="NondetVarAssignment" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="assign var" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nondet assign" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2613206384568936346" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="constraintsEnabled" />
@@ -264,7 +264,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8985851583396455243" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="HarnessModule" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="harness" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="harness_module" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="harness" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026475861" resolveInfo="StatementList" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5921690033618980596" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.2093108837558189304" resolveInfo="ILocalVarScopeProvider" />
