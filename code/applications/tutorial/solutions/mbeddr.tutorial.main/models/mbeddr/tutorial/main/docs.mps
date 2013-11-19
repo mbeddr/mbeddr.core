@@ -11,8 +11,8 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="15" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="2637267020265430783" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="overview" />
@@ -72,7 +72,7 @@
         <property name="category" nameId="2c95.2588579461812060097" value="module dependencies" />
         <property name="name" nameId="tpck.1169194664001" value="moduleDeps" />
         <link role="visualizable" roleId="2c95.2588579461812060095" targetNodeId="e1tx.9141254329931944284" resolveInfo="MbeddrTutorial" />
-        <link role="path" roleId="2c95.2588579461812060096" targetNodeId="794010416819988006" resolveInfo="vis" />
+        <link role="path" roleId="2c95.2588579461812060096" targetNodeId="794010416819988006" resolveInfo="visu" />
         <node role="description" roleId="2c95.2588579461812060099" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="794010416819988003" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="794010416819988004" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="794010416819988005" nodeInfo="ng">
@@ -114,7 +114,7 @@
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="794010416819988006" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="vis" />
+      <property name="name" nameId="tpck.1169194664001" value="visu" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/applications/tutorial/solutions/mbeddr.tutorial.main/_vis" />
     </node>
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4715820023543670791" nodeInfo="ng">
@@ -300,7 +300,7 @@
           <property name="category" nameId="2c95.2588579461812060097" value="components + interfaces (grouped)" />
           <property name="name" nameId="tpck.1169194664001" value="ci" />
           <link role="visualizable" roleId="2c95.2588579461812060095" targetNodeId="e1tx.1731059994647814010" resolveInfo="TrackpointStore1" />
-          <link role="path" roleId="2c95.2588579461812060096" targetNodeId="794010416819988006" resolveInfo="vis" />
+          <link role="path" roleId="2c95.2588579461812060096" targetNodeId="794010416819988006" resolveInfo="visu" />
           <node role="description" roleId="2c95.2588579461812060099" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4715820023543612307" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543612308" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543612309" nodeInfo="ng">
@@ -483,7 +483,7 @@
     </node>
     <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="126932837435308866" nodeInfo="ng">
       <property name="mappedPath" nameId="2c95.6386504476136554614" value="_vis" />
-      <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="794010416819988006" resolveInfo="vis" />
+      <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="794010416819988006" resolveInfo="visu" />
     </node>
     <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="4715820023543670804" nodeInfo="ng">
       <property name="mappedPath" nameId="2c95.6386504476136554614" value="images" />

@@ -9,7 +9,7 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="15" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5485104033530070154" nodeInfo="ng" />
@@ -168,6 +168,22 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
     </node>
+    <node role="minFloatValue" roleId="mj1l.6658270785788810330" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="7533215377935698754" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="-1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+    <node role="minDoubleValue" roleId="mj1l.6658270785788810349" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="7533215377935698755" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="-1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+    <node role="maxFloatValue" roleId="mj1l.6658270785788810029" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="7533215377935698756" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+    <node role="maxDoubleValue" roleId="mj1l.6658270785788810339" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="7533215377935698757" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
   </root>
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="5485104033530070062" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="testComplexNumbers" />
@@ -184,10 +200,10 @@
               <property name="name" nameId="tpck.1169194664001" value="c" />
               <node role="init" roleId="c4fa.4185783222026502647" type="d47x.ComplexLiteral" typeId="d47x.8652997886963748615" id="5485104033530070071" nodeInfo="ng">
                 <node role="real" roleId="d47x.8652997886963748616" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5485104033530070068" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="10" />
                 </node>
                 <node role="img" roleId="d47x.8652997886963748617" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5485104033530070072" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="20" />
                 </node>
               </node>
               <node role="type" roleId="mj1l.318113533128716676" type="d47x.ComplexType" typeId="d47x.8652997886963748611" id="5485104033530245996" nodeInfo="ng">
@@ -233,7 +249,7 @@
               </node>
               <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="5485104033530249153" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5485104033530249156" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="10" />
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5485104033530249150" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5485104033530174697" resolveInfo="c" />

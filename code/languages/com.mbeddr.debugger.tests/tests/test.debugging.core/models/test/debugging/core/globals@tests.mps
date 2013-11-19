@@ -20,7 +20,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="88" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6610873504380384110" nodeInfo="ng">
@@ -90,7 +90,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3788988821852138201" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="arrSize1" />
       <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3788988821852188992" nodeInfo="ng">
-        <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+        <property name="value" nameId="mj1l.2212975673976043696" value="10" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8934095934012083732" nodeInfo="ng">
@@ -114,7 +114,7 @@
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="6610873504380353745" resolveInfo="x" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="919907841933123368" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
             </node>
           </node>
         </node>
@@ -141,7 +141,7 @@
               </node>
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6610873504380381166" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
             </node>
           </node>
         </node>
@@ -151,7 +151,7 @@
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="6610873504380353745" resolveInfo="x" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6610873504380381172" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
             </node>
           </node>
         </node>
@@ -161,7 +161,7 @@
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6610873504380381157" resolveInfo="m" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6610873504380381178" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="22" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="22" />
             </node>
           </node>
         </node>
@@ -171,7 +171,7 @@
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="6610873504380377801" resolveInfo="global2" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6610873504380381184" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="22" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="22" />
             </node>
           </node>
         </node>
@@ -200,10 +200,10 @@
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="value" roleId="x27k.3376775282622233992" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="3788988821852189004" nodeInfo="ng">
         <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3788988821852189003" nodeInfo="ng">
-          <property name="value" nameId="mj1l.8860443239512128104" value="100" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="100" />
         </node>
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3788988821852189005" nodeInfo="ng">
-          <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="2" />
         </node>
       </node>
     </node>
@@ -217,7 +217,7 @@
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="6610873504380377801" resolveInfo="global2" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="919907841932882863" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="22" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="22" />
             </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="211881811397184237" nodeInfo="ng">

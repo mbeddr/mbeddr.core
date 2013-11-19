@@ -27,7 +27,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="88" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8230733038425037985" nodeInfo="ng">
@@ -67,7 +67,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="init" roleId="v7ag.5308710777891512022" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8230733038425718557" nodeInfo="ng">
-          <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="0" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8230733038425038008" nodeInfo="ng">
@@ -157,14 +157,14 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8230733038425718539" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8230733038425718561" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8230733038425718564" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="8230733038425038040" nodeInfo="ng">
               <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="8230733038425038025" resolveInfo="instances" />
               <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="8230733038425038026" resolveInfo="c1" />
               <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="8230733038425038014" resolveInfo="getStuff" />
               <node role="actuals" roleId="v0r9.8230733038424928677" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8230733038425039552" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="10" />
               </node>
             </node>
           </node>
@@ -175,14 +175,14 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8230733038425718565" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8230733038425718566" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8230733038425718567" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="8230733038425718568" nodeInfo="ng">
               <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="8230733038425038026" resolveInfo="c1" />
               <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="8230733038425038025" resolveInfo="instances" />
               <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="8230733038425038014" resolveInfo="getStuff" />
               <node role="actuals" roleId="v0r9.8230733038424928677" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8230733038425718569" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="10" />
               </node>
             </node>
           </node>

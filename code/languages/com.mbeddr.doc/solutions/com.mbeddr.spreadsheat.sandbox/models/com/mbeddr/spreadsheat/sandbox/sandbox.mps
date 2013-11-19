@@ -9,7 +9,6 @@
     <node role="sheets" roleId="gnwj.2042272859106810421" type="gnwj.Sheet" typeId="gnwj.2042272859106810420" id="2042272859107005543" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="sheet 1" />
       <node role="rows" roleId="gnwj.2042272859106810440" type="gnwj.Row" typeId="gnwj.2042272859106810439" id="2042272859107005544" nodeInfo="ng">
-        <link role="style" targetNodeId="2042272859107597280" resolveInfo="header" />
         <node role="cells" roleId="gnwj.2042272859106810465" type="gnwj.TextCell" typeId="gnwj.2042272859106810464" id="2042272859107005546" nodeInfo="ng">
           <property name="value" nameId="gnwj.2042272859106810478" value="Cell A" />
         </node>
@@ -52,7 +51,6 @@
     </node>
     <node role="styles" roleId="gnwj.2042272859107050154" type="gnwj.Style" typeId="gnwj.2042272859107050152" id="2042272859107597280" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="header" />
-      <property name="bold" value="true" />
     </node>
   </root>
 </model>

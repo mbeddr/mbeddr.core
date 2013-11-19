@@ -30,7 +30,7 @@
   <import index="tpfo" modelUID="r:00000000-0000-4000-0000-011c89590518(jetbrains.mps.baseLanguage.regexp.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" version="-1" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="88" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6307143892175882815" nodeInfo="ng">
@@ -809,7 +809,7 @@
             <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8729447926330614295" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8729447926330614296" nodeInfo="ng">
                 <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330614297" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
                 </node>
               </node>
             </node>
@@ -855,7 +855,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="init" roleId="v7ag.5308710777891512022" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2910276674573967662" nodeInfo="ng">
-          <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="23" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4075471389393094665" nodeInfo="ng" />
@@ -865,23 +865,23 @@
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6307143892175830875" nodeInfo="ng">
             <node role="expression" roleId="x27k.8967919205527146150" type="k146.GSwitchExpression" typeId="k146.6209595569797561318" id="6307143892175830887" nodeInfo="ng">
               <node role="def" roleId="k146.6209595569797561368" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6307143892175830891" nodeInfo="ng">
-                <property name="value" nameId="mj1l.8860443239512128104" value="255" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="255" />
               </node>
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6307143892175830890" nodeInfo="ng" />
               <node role="cases" roleId="k146.6209595569797561355" type="k146.GSwitchCase" typeId="k146.6209595569797561319" id="4157464901389922698" nodeInfo="ng">
                 <node role="condition" roleId="k146.6209595569797561320" type="k146.IsInRangeExpression" typeId="k146.6307143892175831839" id="4157464901389922702" nodeInfo="ng">
                   <node role="right" roleId="mj1l.8860443239512128065" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="4157464901389922703" nodeInfo="ng">
                     <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4157464901389922705" nodeInfo="ng">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                     </node>
                     <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330188328" nodeInfo="ng">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                     </node>
                   </node>
                   <node role="left" roleId="mj1l.8860443239512128064" type="mxvz.StubOpCallCount" typeId="mxvz.6307143892175683228" id="4157464901390188229" nodeInfo="ng" />
                 </node>
                 <node role="result" roleId="k146.6209595569797561321" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4157464901390071474" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="10" />
                 </node>
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="1779165058150224541" nodeInfo="ng">
@@ -908,7 +908,7 @@
                 <node role="result" roleId="k146.6209595569797561321" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="8729447926330617402" nodeInfo="ng" />
                 <node role="condition" roleId="k146.6209595569797561320" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8729447926330617385" nodeInfo="ng">
                   <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330617388" nodeInfo="ng">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                   </node>
                   <node role="left" roleId="mj1l.8860443239512128064" type="mxvz.StubOpCallCount" typeId="mxvz.6307143892175683228" id="8729447926330617384" nodeInfo="ng" />
                 </node>
@@ -918,7 +918,7 @@
                 <node role="condition" roleId="k146.6209595569797561320" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8729447926330617408" nodeInfo="ng">
                   <node role="left" roleId="mj1l.8860443239512128064" type="mxvz.StubOpCallCount" typeId="mxvz.6307143892175683228" id="8729447926330617409" nodeInfo="ng" />
                   <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330617410" nodeInfo="ng">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                   </node>
                 </node>
               </node>
@@ -927,7 +927,7 @@
                 <node role="condition" roleId="k146.6209595569797561320" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8729447926330617432" nodeInfo="ng">
                   <node role="left" roleId="mj1l.8860443239512128064" type="mxvz.StubOpCallCount" typeId="mxvz.6307143892175683228" id="8729447926330617433" nodeInfo="ng" />
                   <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330617434" nodeInfo="ng">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="4" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="4" />
                   </node>
                 </node>
               </node>
@@ -936,7 +936,7 @@
                 <node role="condition" roleId="k146.6209595569797561320" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8729447926330620298" nodeInfo="ng">
                   <node role="left" roleId="mj1l.8860443239512128064" type="mxvz.StubOpCallCount" typeId="mxvz.6307143892175683228" id="8729447926330620299" nodeInfo="ng" />
                   <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330620300" nodeInfo="ng">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="6" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="6" />
                   </node>
                 </node>
               </node>
@@ -959,7 +959,7 @@
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
             <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2910276674574257686" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="23" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="23" />
             </node>
           </node>
         </node>
@@ -1072,7 +1072,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8729447926330617367" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8729447926330617371" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330617374" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="8729447926330617370" nodeInfo="ng">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8729447926330476740" resolveInfo="measure" />
@@ -1098,7 +1098,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8729447926330617419" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8729447926330617420" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330617421" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="8729447926330617422" nodeInfo="ng">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8729447926330476740" resolveInfo="measure" />
@@ -1111,7 +1111,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8729447926330617424" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8729447926330617425" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330617426" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="8729447926330617427" nodeInfo="ng">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8729447926330476740" resolveInfo="measure" />
@@ -1124,7 +1124,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8729447926330617435" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8729447926330617436" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330617437" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="8729447926330617438" nodeInfo="ng">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8729447926330476740" resolveInfo="measure" />
@@ -1137,7 +1137,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8729447926330618882" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8729447926330618883" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330618884" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="8729447926330618885" nodeInfo="ng">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8729447926330476740" resolveInfo="measure" />
@@ -1150,7 +1150,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8729447926330619571" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8729447926330619572" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330619581" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="8729447926330619574" nodeInfo="ng">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8729447926330476740" resolveInfo="measure" />
@@ -1163,7 +1163,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8729447926330620301" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8729447926330620302" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8729447926330620303" nodeInfo="ng">
-              <property name="value" nameId="mj1l.8860443239512128104" value="255" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="255" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="8729447926330620304" nodeInfo="ng">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8729447926330476740" resolveInfo="measure" />
