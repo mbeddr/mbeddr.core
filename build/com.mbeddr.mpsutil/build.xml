@@ -40,6 +40,11 @@
         <vendor url="http://mbeddr.com">mbeddr</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>de.slisson.mps.richtext</depends>
+        <depends>jetbrains.mps.execution.api</depends>
+        <depends>jetbrains.mps.build</depends>
+        <depends>jetbrains.mps.execution.configurations</depends>
+        <depends>jetbrains.mps.debugger.api</depends>
+        <depends>jetbrains.mps.debugger.java</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -377,6 +382,117 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.typsystem.trace-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.typsystem.trace-languageModels" prefix="module/languageModels" />
     </jar>
+    <mkdir dir="${build.tmp}/default/test.ex.match.jar" />
+    <mkdir dir="${build.tmp}/default/test.ex.match.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/test.ex.match.jar/META-INF/module.xml">
+      <module namespace="test.ex.match" type="solution" uuid="bb2d89dd-a4c7-4821-a0c8-7437446fd8d3">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="360a4e25-e902-4667-a0a6-0e971c4f3177(com.mbeddr.mpsutil.blutil.rt)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="test.ex.match-src.jar" descriptor="match.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/test.ex.match.jar">
+      <fileset dir="${build.tmp}/java/out/test.ex.match" />
+      <fileset dir="${mpsutil}/tests/test.ts.match" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/test.ex.match.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.match-models">
+      <fileset dir="${mpsutil}/tests/test.ts.match/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/test.ex.match-src.jar">
+      <fileset dir="${mpsutil}/tests/test.ts.match/source_gen" includes="**/*.java" />
+      <zipfileset file="${mpsutil}/tests/test.ts.match/match.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.match-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.buildutil.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.buildutil.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.buildutil.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.mpsutil.buildutil" type="language" uuid="692e0a46-0d23-4c8a-8ce0-ea4c2266672a">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="360a4e25-e902-4667-a0a6-0e971c4f3177(com.mbeddr.mpsutil.blutil.rt)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="com.mbeddr.mpsutil.buildutil-src.jar" descriptor="com.mbeddr.mpsutil.buildutil.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.buildutil.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.buildutil" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.buildutil.jar" />
+    </jar>
+    <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.buildutil-generator.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.buildutil#6600513366548883903" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.buildutil-generator-template">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.buildutil-languageModels">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.buildutil-src.jar">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/generator/source_gen" includes="**/*.java" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/source_gen" includes="**/*.java" />
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.buildutil-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.buildutil-languageModels" prefix="module/languageModels" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.refactoring.rt.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.refactoring.rt.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.refactoring.rt.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.mpsutil.refactoring.rt" type="solution" uuid="8f16104e-22e6-406d-8251-ef9688474557">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="com.mbeddr.mpsutil.refactoring.rt-src.jar" descriptor="rt.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.refactoring.rt.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring.rt" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.refactoring.rt.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.refactoring.rt-models">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.refactoring.rt-src.jar">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/source_gen" includes="**/*.java" />
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/rt.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.refactoring.rt-models" prefix="module/models" />
+    </jar>
     <zip destfile="${build.layout}/com.mbeddr.mpsutil.zip">
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.zip" />
     </zip>
@@ -414,6 +530,12 @@
     <generate parallelMode="true" fork="true">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
+      <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-debugger-java" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-configurations" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
+      <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <plugin path="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
       <plugin path="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
