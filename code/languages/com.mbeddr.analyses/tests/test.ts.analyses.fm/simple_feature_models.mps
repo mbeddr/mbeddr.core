@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:3b35fbc0-f2d9-4d99-b894-19f0174c4f04(simple_feature_models123)" version="0">
+<model modelUID="r:3b35fbc0-f2d9-4d99-b894-19f0174c4f04(simple_feature_models)" version="0">
   <persistence version="8" />
   <language-engaged-on-generation namespace="ad5c6649-337c-4447-8651-e0cc8f4ffe24(com.mbeddr.analyses.yices.fm)" />
   <devkit namespace="0d9470ba-d59f-4411-a2ce-12f6b6bdec49(com.mbeddr.analyses.fm)" />
@@ -146,6 +146,7 @@
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="2912335823209235932" nodeInfo="ng">
         <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="2912335823209235911" resolveInfo="root" />
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.ConfigurationModelVerifiableAttribute" typeId="4r5s.7519116116714540431" id="8596690938390339565" nodeInfo="ng" />
     </node>
   </root>
   <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="2912335823209235933" nodeInfo="ng">
