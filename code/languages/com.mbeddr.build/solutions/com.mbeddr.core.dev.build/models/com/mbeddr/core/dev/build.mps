@@ -1128,6 +1128,9 @@
             <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="8628756186118765554" resolveInfo="com.mbeddr.core.statements" />
           </node>
         </node>
+        <node role="runtime" roleId="kdzh.3189788309731917348" type="kdzh.BuildMps_ModuleSolutionRuntime" typeId="kdzh.3189788309731981027" id="6052515322132080193" nodeInfo="ng">
+          <link role="solution" roleId="kdzh.3189788309731981028" targetNodeId="al5i.6534474553344871354" resolveInfo="com.mbeddr.mpsutil.typesystem.trace.rt" />
+        </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="8628756186118765651" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />

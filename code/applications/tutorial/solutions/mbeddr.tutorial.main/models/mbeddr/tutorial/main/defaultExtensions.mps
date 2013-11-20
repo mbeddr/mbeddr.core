@@ -336,7 +336,7 @@
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="9141254329931944284" nodeInfo="ng">
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="MbeddrTutorial" />
+      <property name="name" nameId="tpck.1169194664001" value="MbeddrTutorialDefaultExt" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9141254329931951637" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9141254329931944222" resolveInfo="Main" />
       </node>
@@ -4220,6 +4220,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687718764" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1351861168954_3" />
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5270842844359792312" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1384871841615_2" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="7727566415687697331" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="testFlightAnalyzer" />
@@ -4396,16 +4399,15 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7727566415687844462" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="7727566415687844465" nodeInfo="ng">
-          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7727566415687844479" nodeInfo="ng">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7727566415687844482" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="200" />
-            </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineExtVarRef" typeId="clqz.7999989049972989533" id="7727566415687844473" nodeInfo="ng">
-              <link role="var" roleId="clqz.7999989049972989534" targetNodeId="7727566415687762913" resolveInfo="points" />
-              <node role="statemachine" roleId="clqz.7999989049972989535" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7727566415687844470" nodeInfo="ng">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7727566415687767302" resolveInfo="f" />
-              </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="5270842844359885388" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5270842844360253934" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="100" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="clqz.StatemachineExtVarRef" typeId="clqz.7999989049972989533" id="5270842844360238304" nodeInfo="ng">
+            <link role="var" roleId="clqz.7999989049972989534" targetNodeId="7727566415687762913" resolveInfo="points" />
+            <node role="statemachine" roleId="clqz.7999989049972989535" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5270842844360230549" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7727566415687767302" resolveInfo="f" />
             </node>
           </node>
         </node>
@@ -8984,7 +8986,7 @@
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772584" nodeInfo="ng">
-          <link role="visualizable" roleId="vs0r.3815661793603643770" targetNodeId="9141254329931944284" resolveInfo="MbeddrTutorial" />
+          <link role="visualizable" roleId="vs0r.3815661793603643770" targetNodeId="9141254329931944284" resolveInfo="MbeddrTutorialDefaultExt" />
         </node>
       </node>
       <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772585" nodeInfo="ng">
