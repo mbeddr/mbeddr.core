@@ -31,7 +31,7 @@
   <language namespace="96ee7a94-411d-4cf8-9b94-96cad7e52411(jetbrains.mps.baseLanguage.jdk7)" />
   <import index="jvd9" modelUID="r:a4d279b2-043e-4b7a-a737-92247c439761(com.mbeddr.analyses.nusmv.rt.main)" version="0" />
   <import index="d8ej" modelUID="r:fde4fd08-2694-4f15-a5e5-88fa2c92442c(com.mbeddr.analyses.utils.testing_utils)" version="-1" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="15" />
   <import index="fw3h" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" version="-1" />
   <import index="1kyd" modelUID="r:8e3b5cea-22d0-4810-85cb-5e42618ffced(com.mbeddr.analyses.nusmv.rt.counterexample_model)" version="0" />
@@ -59,7 +59,7 @@
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jvd9.4053052594083963142" resolveInfo="NuSMVFacade" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jvd9.3636940025208521142" resolveInfo="runNuSMVForTests" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="8596690938383059659" nodeInfo="nn">
-                <property name="name" nameId="tp25.559557797393017702" value="counter" />
+                <property name="name" nameId="tp25.559557797393017702" value="test.ex.analyses.statemachine.counter" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8596690938383059660" nodeInfo="nn">
