@@ -2310,13 +2310,13 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7745462878237133853" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7745462878237133854" nodeInfo="nn" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7745462878237133850" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="time envrionment for" />
+        <property name="text" nameId="tpc2.1073389577007" value="cyclic environment for:" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7745462878237133862" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.7745462878236917841" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7745462878237133869" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="with tick event" />
+        <property name="text" nameId="tpc2.1073389577007" value="with step:" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="7745462878237133879" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.7745462878236917847" />
