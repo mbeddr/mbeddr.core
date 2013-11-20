@@ -336,7 +336,7 @@
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="9141254329931944284" nodeInfo="ng">
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="MbeddrTutorial" />
+      <property name="name" nameId="tpck.1169194664001" value="MbeddrTutorialDefaultExt" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9141254329931951637" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9141254329931944222" resolveInfo="Main" />
       </node>
@@ -8986,7 +8986,7 @@
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772584" nodeInfo="ng">
-          <link role="visualizable" roleId="vs0r.3815661793603643770" targetNodeId="9141254329931944284" resolveInfo="MbeddrTutorial" />
+          <link role="visualizable" roleId="vs0r.3815661793603643770" targetNodeId="9141254329931944284" resolveInfo="MbeddrTutorialDefaultExt" />
         </node>
       </node>
       <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772585" nodeInfo="ng">
