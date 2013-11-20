@@ -2,15 +2,15 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="yvc7" modelUID="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)" version="-1" />
       <model index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="-1" />
+      <model index="yvc7" modelUID="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)" version="-1" />
       <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="-1" />
       <model index="7kf" modelUID="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)" version="0" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="0" />
       <model index="3ho" modelUID="r:5464eee6-9739-45c3-be18-bcd3e5d07f5a(com.mbeddr.core.base.textGen)" version="-1" />
       <model index="j4gk" modelUID="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" version="-1" />
-      <model index="gfi" modelUID="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)" version="-1" />
       <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" />
+      <model index="gfi" modelUID="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)" version="-1" />
       <model index="rj8d" modelUID="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" version="-1" />
     </dependencies>
     <move id="c4fa.1679452829930469420" to="vs0r.3857533489766146432" />
@@ -162,9 +162,9 @@
       <model index="p15z" modelUID="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" version="-1" />
       <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="0" />
       <model index="20u6" modelUID="r:bb095207-e9e1-446e-bd19-f8d726d52200(com.mbeddr.mpsutil.blutil.typesystem)" version="-1" />
-      <model index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="4" />
-      <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="3" />
       <model index="9zoj" modelUID="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" version="-1" />
+      <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="3" />
+      <model index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="4" />
     </dependencies>
     <move id="hba4.6616025724454822143" to="vs0r.6616025724454843605" />
     <move id="p15z.6616025724454822180" to="hwgx.6616025724454843608" />
@@ -465,6 +465,22 @@
     <move id="qd6m.692085292169542730" to="hwgx.7139820346889798968" />
     <move id="qd6m.692085292169542759" to="hwgx.7139820346889799015" />
     <move id="qd6m.692085292170433559" to="hwgx.7139820346889798997" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="8" />
+      <model index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="3" />
+      <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="18" />
+      <model index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="6" />
+    </dependencies>
+    <move id="x27k.4811430974075023012" to="vs0r.9074180702631615490" />
+    <move id="qd6m.996536665506346127" to="hwgx.9074180702631615494" />
+    <move id="qd6m.996536665506346124" to="hwgx.9074180702631615493" />
+    <move id="qd6m.996536665506343381" to="hwgx.9074180702631615496" />
+    <move id="qd6m.996536665506346123" to="hwgx.9074180702631615492" />
+    <move id="qd6m.996536665506343382" to="hwgx.9074180702631615497" />
+    <move id="qd6m.996536665506343380" to="hwgx.9074180702631615491" />
+    <move id="qd6m.996536665506346126" to="hwgx.9074180702631615495" />
   </StructureModification>
 </history>
 

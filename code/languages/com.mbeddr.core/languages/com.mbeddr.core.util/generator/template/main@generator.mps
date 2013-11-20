@@ -19,13 +19,13 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" />
   <import index="yi43" modelUID="r:1e8a195e-9746-45e6-a347-a6bdffae3936(com.mbeddr.core.util.behavior)" version="0" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" />
-  <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="3" />
+  <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="4" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" />
   <import index="ahli" modelUID="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" version="-1" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="18" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="6" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="3" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" />
@@ -42,7 +42,7 @@
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="jphc" modelUID="r:f5e22059-6c2f-430a-9e46-6dae72a4d73d(com.mbeddr.mpsutil.genutil.structure)" version="-1" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="8" implicit="yes" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="14" implicit="yes" />
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="745648737914842688" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="blockAndLog" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="blockAndLog" />
@@ -1161,7 +1161,7 @@
                 <property name="isInvisible" nameId="c4fa.4643433264760041409" value="true" />
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348362" nodeInfo="ng">
                   <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="2688792604368142823" nodeInfo="ng">
-                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdio.h" />
+                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="&lt;stdio.h&gt;" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2688792604368142827" nodeInfo="ng">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
                     </node>
@@ -1262,7 +1262,7 @@
                     </node>
                   </node>
                   <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="767515563077244231" nodeInfo="ng">
-                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdio.h" />
+                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="&lt;stdio.h&gt;" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="767515563077244238" nodeInfo="ng">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
                     </node>
@@ -1470,7 +1470,7 @@
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348372" nodeInfo="ng">
                   <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="4331139697889919204" nodeInfo="ng">
-                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdio.h" />
+                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="&lt;stdio.h&gt;" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919205" nodeInfo="ng">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
                     </node>
@@ -1646,7 +1646,7 @@
                 <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2688792604368169634" nodeInfo="ng">
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348377" nodeInfo="ng">
                     <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="4331139697889919271" nodeInfo="ng">
-                      <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdio.h" />
+                      <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="&lt;stdio.h&gt;" />
                       <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919272" nodeInfo="ng">
                         <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
                       </node>
@@ -1747,7 +1747,7 @@
                       </node>
                     </node>
                     <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="8855005633244060597" nodeInfo="ng">
-                      <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdio.h" />
+                      <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="&lt;stdio.h&gt;" />
                       <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="8855005633244060598" nodeInfo="ng">
                         <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
                       </node>
@@ -1955,7 +1955,7 @@
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348388" nodeInfo="ng">
                     <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="4331139697889919391" nodeInfo="ng">
-                      <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdio.h" />
+                      <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="&lt;stdio.h&gt;" />
                       <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919392" nodeInfo="ng">
                         <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
                       </node>
@@ -2160,7 +2160,7 @@
                 <property name="isInvisible" nameId="c4fa.4643433264760041409" value="true" />
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348393" nodeInfo="ng">
                   <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="4331139697889919582" nodeInfo="ng">
-                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdio.h" />
+                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="&lt;stdio.h&gt;" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919583" nodeInfo="ng">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
                     </node>
@@ -2323,7 +2323,7 @@
                     </node>
                   </node>
                   <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="8855005633244060796" nodeInfo="ng">
-                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdio.h" />
+                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="&lt;stdio.h&gt;" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="8855005633244060797" nodeInfo="ng">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
                     </node>
@@ -2531,7 +2531,7 @@
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348403" nodeInfo="ng">
                   <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="4331139697889919702" nodeInfo="ng">
-                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdio.h" />
+                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="&lt;stdio.h&gt;" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919703" nodeInfo="ng">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
                     </node>
@@ -2857,7 +2857,7 @@
               </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348408" nodeInfo="ng">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="2187572410167363891" nodeInfo="ng">
-                  <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdio.h" />
+                  <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="&lt;stdio.h&gt;" />
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2187572410167363892" nodeInfo="ng">
                     <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
                   </node>
@@ -12789,7 +12789,7 @@
                 <property name="isInvisible" nameId="c4fa.4643433264760041409" value="false" />
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4188698303623171653" nodeInfo="ng">
                   <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="4188698303623171651" nodeInfo="ng">
-                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdio.h" />
+                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="&lt;stdio.h&gt;" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4188698303623191868" nodeInfo="ng">
                       <property name="text" nameId="c4fa.3830958861296879114" value="FILE* f = fopen(&quot;" />
                     </node>
