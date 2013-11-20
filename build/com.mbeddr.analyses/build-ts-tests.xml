@@ -58,6 +58,7 @@
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="be896c0f-4f34-4122-95ff-1aef962f5725(com.mbeddr.mpsutil.typesystem.trace.rt)" />
           <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
@@ -91,6 +92,7 @@
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="be896c0f-4f34-4122-95ff-1aef962f5725(com.mbeddr.mpsutil.typesystem.trace.rt)" />
           <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
           <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
@@ -142,74 +144,6 @@
       <zipfileset file="${mbeddr.analyses}/tests/test.analysis.fmod/test.ts.analyses.fmod.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.analysis.fmod-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/test.ts.analysis.statemachine.jar" />
-    <mkdir dir="${build.tmp}/default/test.ts.analysis.statemachine.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/test.ts.analysis.statemachine.jar/META-INF/module.xml">
-      <module namespace="test.ts.analysis.statemachine" type="solution" uuid="5241f524-66ed-4d91-861a-2bec01d49ce5">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
-          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="test.ts.analysis.statemachine-src.jar" descriptor="test.ts.analysis.statemachine.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/test.ts.analysis.statemachine.jar">
-      <fileset dir="${build.tmp}/java/out/test.ts.analysis.statemachine" />
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/test.ts.analysis.statemachine.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analysis.statemachine-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/models" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <jar destfile="${build.layout}/test.ts.analysis.statemachine-src.jar">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/test.ts.analysis.statemachine.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analysis.statemachine-models" prefix="module/models" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/test.analyses.statemachine.jar" />
-    <mkdir dir="${build.tmp}/default/test.analyses.statemachine.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/test.analyses.statemachine.jar/META-INF/module.xml">
-      <module namespace="test.analyses.statemachine" type="solution" uuid="4921e5d9-579d-4829-bb95-25aed1a142e6">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
-          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="test.analyses.statemachine-src.jar" descriptor="statemachine.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/test.analyses.statemachine.jar">
-      <fileset dir="${build.tmp}/java/out/test.analyses.statemachine" />
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/test.analyses.statemachine.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.statemachine">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.statemachine-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine/models" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <jar destfile="${build.layout}/test.analyses.statemachine-src.jar">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.analyses}/tests/test.ts.analyses.statemachine/statemachine.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.statemachine" prefix="module/" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.statemachine-models" prefix="module/models" />
-    </jar>
     <mkdir dir="${build.tmp}/default/test.ts.analyses.yices.dectab.jar" />
     <mkdir dir="${build.tmp}/default/test.ts.analyses.yices.dectab.jar/META-INF" />
     <echoxml file="${build.tmp}/default/test.ts.analyses.yices.dectab.jar/META-INF/module.xml">
@@ -241,6 +175,39 @@
       <zipfileset file="${mbeddr.analyses}/tests/test.ts.analyses.yices.dectab/test.ts.analyses.yices.dectab.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.yices.dectab-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/test.ts.analysis.statemachine.jar" />
+    <mkdir dir="${build.tmp}/default/test.ts.analysis.statemachine.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/test.ts.analysis.statemachine.jar/META-INF/module.xml">
+      <module namespace="test.ts.analysis.statemachine" type="solution" uuid="5241f524-66ed-4d91-861a-2bec01d49ce5">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="be896c0f-4f34-4122-95ff-1aef962f5725(com.mbeddr.mpsutil.typesystem.trace.rt)" />
+          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
+          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
+          <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="test.ts.analysis.statemachine-src.jar" descriptor="test.ts.analysis.statemachine.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/test.ts.analysis.statemachine.jar">
+      <fileset dir="${build.tmp}/java/out/test.ts.analysis.statemachine" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/test.ts.analysis.statemachine.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analysis.statemachine-models">
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+    </copyModels>
+    <jar destfile="${build.layout}/test.ts.analysis.statemachine-src.jar">
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/test.ts.analysis.statemachine.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analysis.statemachine-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/test.ex.analyses.yices.dectab.jar" />
     <mkdir dir="${build.tmp}/default/test.ex.analyses.yices.dectab.jar/META-INF" />
     <echoxml file="${build.tmp}/default/test.ex.analyses.yices.dectab.jar/META-INF/module.xml">
@@ -252,6 +219,7 @@
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="be896c0f-4f34-4122-95ff-1aef962f5725(com.mbeddr.mpsutil.typesystem.trace.rt)" />
           <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
           <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
           <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" />
@@ -272,106 +240,6 @@
       <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.yices/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.analyses}/tests/test.ex.analyses.yices/yices.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ex.analyses.yices" prefix="module/" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/test.analyses.cbmc.testcode_analyses_config.jar" />
-    <mkdir dir="${build.tmp}/default/test.analyses.cbmc.testcode_analyses_config.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/test.analyses.cbmc.testcode_analyses_config.jar/META-INF/module.xml">
-      <module namespace="test.analyses.cbmc.testcode_analyses_config" type="solution" uuid="6af06b95-db74-4451-8977-23aaf6f14307">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
-          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="test.analyses.cbmc.testcode_analyses_config-src.jar" descriptor="testcode_analyses_config.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/test.analyses.cbmc.testcode_analyses_config.jar">
-      <fileset dir="${build.tmp}/java/out/test.analyses.cbmc.testcode_analyses_config" />
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/test.analyses.cbmc.testcode_analyses_config.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.cbmc.testcode_analyses_config-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/models" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <jar destfile="${build.layout}/test.analyses.cbmc.testcode_analyses_config-src.jar">
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/testcode_analyses_config.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.cbmc.testcode_analyses_config-models" prefix="module/models" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/test.ex.analyses.fm.jar" />
-    <mkdir dir="${build.tmp}/default/test.ex.analyses.fm.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/test.ex.analyses.fm.jar/META-INF/module.xml">
-      <module namespace="test.ex.analyses.fm" type="solution" uuid="d6d16be4-566f-4264-97c3-53e69ad27683">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
-          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="test.ex.analyses.fm-src.jar" descriptor="fm.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/test.ex.analyses.fm.jar">
-      <fileset dir="${build.tmp}/java/out/test.ex.analyses.fm" />
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/test.ex.analyses.fm.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.fm">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.fm-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm/models" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <jar destfile="${build.layout}/test.ex.analyses.fm-src.jar">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.analyses}/tests/test.ts.analyses.fm/fm.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.fm" prefix="module/" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.fm-models" prefix="module/models" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/test.analyses.nusmv.jar" />
-    <mkdir dir="${build.tmp}/default/test.analyses.nusmv.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/test.analyses.nusmv.jar/META-INF/module.xml">
-      <module namespace="test.analyses.nusmv" type="solution" uuid="55db1bd0-0d5c-48c6-8d04-0660bdd6e8eb">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
-          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="test.analyses.nusmv-src.jar" descriptor="solution.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/test.analyses.nusmv.jar">
-      <fileset dir="${build.tmp}/java/out/test.analyses.nusmv" />
-      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/test.analyses.nusmv.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.analyses.nusmv">
-      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.analyses.nusmv-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/models" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <jar destfile="${build.layout}/test.analyses.nusmv-src.jar">
-      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/solution.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ex.analyses.nusmv" prefix="module/" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ex.analyses.nusmv-models" prefix="module/models" />
     </jar>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.mpsutil.build.build.number=${com.mbeddr.mpsutil.build.build.number}</echo>
   </target>
@@ -579,6 +447,7 @@
       <library file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.physicalunits.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
       <library file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
@@ -761,6 +630,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip/mbeddr.statemachine/languages/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachines.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
@@ -800,7 +670,6 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/source_gen" />
-        <pathelement path="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -855,15 +724,13 @@
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/test.analyses.cbmc.testcode">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/source_gen">
-        <include name="**/*.info" />
-      </fileset>
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/test_gen/">
         <include name="**/*.info" />
       </fileset>
     </copy>
@@ -931,6 +798,7 @@
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       </classpath>
@@ -1109,7 +977,6 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.analyses}/tests/test.ts.analyses.fm/source_gen" />
-        <pathelement path="${mbeddr.analyses}/tests/test.ts.analyses.fm/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -1179,6 +1046,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
@@ -1203,9 +1071,6 @@
       <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm/source_gen">
         <include name="**/*.info" />
       </fileset>
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm/test_gen/">
-        <include name="**/*.info" />
-      </fileset>
     </copy>
   </target>
   
@@ -1216,7 +1081,6 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/source_gen" />
-        <pathelement path="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -1271,15 +1135,13 @@
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/test.analyses.nusmv">
       <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/source_gen">
-        <include name="**/*.info" />
-      </fileset>
-      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/test_gen/">
         <include name="**/*.info" />
       </fileset>
     </copy>
@@ -1292,7 +1154,6 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.analyses}/tests/test.ts.analyses.statemachine/source_gen" />
-        <pathelement path="${mbeddr.analyses}/tests/test.ts.analyses.statemachine/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -1356,6 +1217,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip/mbeddr.nusmv/languages/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.utils.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
@@ -1363,9 +1225,6 @@
     </javac>
     <copy todir="${build.tmp}/java/out/test.analyses.statemachine">
       <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine/source_gen">
-        <include name="**/*.info" />
-      </fileset>
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine/test_gen/">
         <include name="**/*.info" />
       </fileset>
     </copy>
@@ -1413,8 +1272,40 @@
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip/mbeddr.nusmv/languages/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.rt.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.utils.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.buildconfig.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.make.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.gen.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.pointers.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.statements.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.udt.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.unittest.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.util.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip/mbeddr.statemachine/languages/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachines.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.pattern.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/test.ts.analysis.statemachine">
@@ -1434,7 +1325,6 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.analyses}/tests/test.ex.analyses.yices/source_gen" />
-        <pathelement path="${mbeddr.analyses}/tests/test.ex.analyses.yices/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -1508,6 +1398,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.pointers.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.statements.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
@@ -1530,9 +1421,6 @@
     </javac>
     <copy todir="${build.tmp}/java/out/test.ex.analyses.yices.dectab">
       <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.yices/source_gen">
-        <include name="**/*.info" />
-      </fileset>
-      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.yices/test_gen/">
         <include name="**/*.info" />
       </fileset>
     </copy>
@@ -1602,6 +1490,7 @@
       <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
       <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
       <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+      <pathelement location="${build.layout}/test.analyses.cbmc.testcode.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.base.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.base.unittests.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.utils.jar" />
@@ -1613,17 +1502,12 @@
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip/mbeddr.nusmv/languages/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.rt.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip/mbeddr.nusmv/languages/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.statemachine.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip/mbeddr.nusmv/languages/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.statemachine.pluginSolution.jar" />
-      <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.dectab.jar" />
-      <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.fm.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.dectab.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.fm.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.rt.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip/mbeddr.ple/languages/com.mbeddr.ple/com.mbeddr.cc.var.annotations.jar" />
-      <pathelement location="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip/mbeddr.ple/languages/com.mbeddr.ple/com.mbeddr.cc.var.buildconfig.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip/mbeddr.ple/languages/com.mbeddr.ple/com.mbeddr.cc.var.fm.jar" />
-      <pathelement location="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip/mbeddr.ple/languages/com.mbeddr.ple/com.mbeddr.cc.var.rt.jar" />
-      <pathelement location="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip/mbeddr.ple/languages/com.mbeddr.ple/com.mbeddr.cc.variability.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.trace.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbddr.core.buildconfig.pluginSolution.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
@@ -1658,9 +1542,9 @@
       <pathelement location="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip/mbeddr.SmInComp/languages/com.mbeddr.ext.statemachineInComponents/com.mbeddr.statemachinesInComponents.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.c.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.jar" />
-      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.physicalunits.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
       <pathelement location="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       <pathelement location="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
@@ -1673,10 +1557,12 @@
       <pathelement location="${artifacts.mps}/plugins/mps-debugger-api" />
       <pathelement location="${artifacts.mps}/plugins/mps-debugger-java" />
       <pathelement location="${artifacts.mps}/plugins/mps-execution-api" />
+      <pathelement location="${artifacts.mps}/plugins/mps-execution-configurations" />
       <pathelement location="${artifacts.mps}/plugins/mps-execution-languages" />
       <pathelement location="${artifacts.mps}/plugins/mps-testing" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip/mbeddr.nusmv" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip/mbeddr.yices" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip/mbeddr.ple" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req" />
@@ -1695,11 +1581,6 @@
     <pathconvert pathsep="${path.separator}" property="mps.plugins.path.string" refid="mps.plugins.path" />
     <path id="mps.tests.path">
       <pathelement location="${build.layout}/test.analyses.cbmc.jar" />
-      <pathelement location="${build.layout}/test.analyses.cbmc.testcode.jar" />
-      <pathelement location="${build.layout}/test.analyses.cbmc.testcode_analyses_config.jar" />
-      <pathelement location="${build.layout}/test.analyses.nusmv.jar" />
-      <pathelement location="${build.layout}/test.ex.analyses.fm.jar" />
-      <pathelement location="${build.layout}/test.ex.analyses.yices.dectab.jar" />
       <pathelement location="${build.layout}/test.ts.analyses.fmod.jar" />
       <pathelement location="${build.layout}/test.ts.analyses.yices.dectab.jar" />
       <pathelement location="${build.layout}/test.ts.analysis.statemachine.jar" />
@@ -1731,6 +1612,9 @@
         <fileset dir="${artifacts.mps}/plugins/mps-execution-api">
           <include name="**/lib/*.jar" />
         </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-execution-configurations">
+          <include name="**/lib/*.jar" />
+        </fileset>
         <fileset dir="${artifacts.mps}/plugins/mps-execution-languages">
           <include name="**/lib/*.jar" />
         </fileset>
@@ -1741,6 +1625,9 @@
           <include name="**/lib/*.jar" />
         </fileset>
         <fileset dir="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip/mbeddr.nusmv">
           <include name="**/lib/*.jar" />
         </fileset>
         <fileset dir="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip/mbeddr.yices">
@@ -1809,12 +1696,7 @@
     <delete dir="${mbeddr.analyses}/tests/test.ts.analyses.yices.dectab/source_gen" />
     <delete dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/source_gen" />
     <delete dir="${mbeddr.analyses}/tests/test.analyses.cbmc/test_gen" />
-    <delete dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/test_gen" />
     <delete dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/test_gen" />
-    <delete dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/test_gen" />
-    <delete dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine/test_gen" />
-    <delete dir="${mbeddr.analyses}/tests/test.ts.analyses.fm/test_gen" />
-    <delete dir="${mbeddr.analyses}/tests/test.ex.analyses.yices/test_gen" />
     <delete dir="${mbeddr.analyses}/tests/test.analysis.fmod/test_gen" />
     <delete dir="${mbeddr.analyses}/tests/test.ts.analyses.yices.dectab/test_gen" />
     <delete dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/test_gen" />
