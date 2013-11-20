@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:3b35fbc0-f2d9-4d99-b894-19f0174c4f04(simple_feature_models123)" version="0">
+<model modelUID="r:3b35fbc0-f2d9-4d99-b894-19f0174c4f04(simple_feature_models)" version="0">
   <persistence version="8" />
   <language-engaged-on-generation namespace="ad5c6649-337c-4447-8651-e0cc8f4ffe24(com.mbeddr.analyses.yices.fm)" />
   <devkit namespace="0d9470ba-d59f-4411-a2ce-12f6b6bdec49(com.mbeddr.analyses.fm)" />
