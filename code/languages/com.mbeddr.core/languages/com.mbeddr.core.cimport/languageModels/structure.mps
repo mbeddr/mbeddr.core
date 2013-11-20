@@ -130,7 +130,6 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7946676408105068622" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
     <property name="name" nameId="tpck.1169194664001" value="LazyModuleDependency" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="x27k.3830958861296798477" resolveInfo="ModuleDependency" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7946676408105069456" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="path" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />

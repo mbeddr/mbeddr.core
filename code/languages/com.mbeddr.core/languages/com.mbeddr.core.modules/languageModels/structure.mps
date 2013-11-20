@@ -232,7 +232,6 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1317894735999299713" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ModuleImport" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="make the contents of another module available" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3830958861296798477" resolveInfo="ModuleDependency" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5392117418000526357" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="pregeneratedLibrary" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
@@ -260,16 +259,10 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3830958861296798477" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ModuleDependency" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3830958861296798479" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="StdHeaderImport" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="import a standard header (e.g. &lt;stdio&gt;)" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="header" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3830958861296798477" resolveInfo="ModuleDependency" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3830958861296798480" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="headerFileName" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
