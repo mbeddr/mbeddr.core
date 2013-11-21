@@ -79,7 +79,7 @@
                 <property name="fqName" nameId="tp25.559557797393041554" value="simcomplex_decision_table" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7174651526804307517" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="enums_table" />
+                <property name="value" nameId="tpee.1070475926801" value="smoke_table" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7123609158770305090" nodeInfo="nn">
                 <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="7123609158770305097" nodeInfo="nn">
