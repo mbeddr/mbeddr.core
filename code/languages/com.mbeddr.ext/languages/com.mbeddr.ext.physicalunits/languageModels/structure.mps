@@ -2,7 +2,7 @@
 <model modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
@@ -96,7 +96,7 @@
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
     <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/units.png" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="standalone" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.7139820346881560230" resolveInfo="Chunk" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6870096341748240402" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="contents" />
@@ -106,8 +106,8 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9035511730050143284" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1085404444145151052" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1085404444144930947" resolveInfo="IVisibleUnitProvider" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7139820346925671785" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3578942323568389911" resolveInfo="IGeneratesCodeForIDE" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8099136929591129785" nodeInfo="ig">
@@ -205,13 +205,13 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1049346859912912067" resolveInfo="IEmpty" />
     </node>
   </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1085404444144930947" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="IVisibleUnitProvider" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3047370974150256092" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DimensionlessUnitDeclaration" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nounit" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3801772042669047303" resolveInfo="ElementaryUnitDeclaration" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7139820346921964932" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IPhysicalUnitsAdapter" />
   </root>
 </model>
 

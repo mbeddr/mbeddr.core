@@ -29,6 +29,7 @@
   <language namespace="f93d1dbe-bfd1-42dd-932a-f375fa6f5373(com.mbeddr.core.make)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="96ee7a94-411d-4cf8-9b94-96cad7e52411(jetbrains.mps.baseLanguage.jdk7)" />
+  <language namespace="7e09729e-68e4-4442-9bc8-024c5cdac3a2(com.mbeddr.analyses.cbmc.testing)" />
   <import index="jvd9" modelUID="r:a4d279b2-043e-4b7a-a737-92247c439761(com.mbeddr.analyses.nusmv.rt.main)" version="0" />
   <import index="d8ej" modelUID="r:fde4fd08-2694-4f15-a5e5-88fa2c92442c(com.mbeddr.analyses.utils.testing_utils)" version="-1" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
@@ -41,12 +42,25 @@
   <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
+  <import index="o23b" modelUID="r:d4a8f9bc-78fb-4fb4-8fad-f65eb374c6c1(com.mbeddr.analyses.cbmc.testing.structure)" version="0" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="6541740662591134892" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="CounterAnalysisTest" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="6541740662591134893" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="testCheckCounter" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6541740662591134894" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6541740662591134895" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4716091789693229129" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4716091789693229130" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorOutputPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4716091789693229131" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="4716091789693229132" nodeInfo="ng">
+              <property name="name" nameId="o23b.559557797393017702" value="test.ex.analyses.statemachine.counter" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+              <property name="fqName" nameId="o23b.559557797393041554" value="test.ex.ana" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="9048649469160633501" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8596690938382807768" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8596690938382807769" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="results" />
@@ -57,7 +71,10 @@
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8596690938383059658" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="jvd9.4053052594083963142" resolveInfo="NuSMVFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jvd9.3636940025208521142" resolveInfo="runNuSMVForTests" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jvd9.8596690938382892050" resolveInfo="runNuSMVForTests" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9048649469160634441" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4716091789693229130" resolveInfo="generatorOutputPath" />
+              </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="8596690938383059659" nodeInfo="nn">
                 <property name="name" nameId="tp25.559557797393017702" value="test.ex.analyses.statemachine.counter" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />

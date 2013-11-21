@@ -18,11 +18,11 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="2" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
@@ -45,6 +45,8 @@
   <import index="o4ko" modelUID="r:3b74f196-2fa2-402c-83a3-1b40739a14d2(com.mbeddr.analyses.yices.dectab.structure)" version="4" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="5" implicit="yes" />
+  <import index="krak" modelUID="r:a8fd67ab-11a9-4dbd-9b99-eea007545a9a(com.mbeddr.cc.trace.c.structure)" version="-1" implicit="yes" />
+  <import index="vxuc" modelUID="r:acfa7fc7-0a34-4d9a-8ea8-22459c66d50c(com.mbeddr.cc.var.c.structure)" version="-1" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9141254329931944222" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Main" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9141254329931944223" nodeInfo="ng">
@@ -4419,6 +4421,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687697330" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1351856035301_3" />
     </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="krak.CModuleReqDependency" typeId="krak.9136994893369227797" id="9136994893386213448" nodeInfo="ng">
+      <link role="reqModule" roleId="krak.9136994893369235284" targetNodeId="iwll.1433966787984154171" resolveInfo="FlightJudgementRules" />
+    </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7727566415687732597" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
     </node>
@@ -4427,12 +4432,6 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7727566415687839348" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7727566415687366376" resolveInfo="stdio_stub" />
-    </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="1433966787984154186" nodeInfo="ng">
-      <property name="showTraces" nameId="26ao.3348865852193251354" value="true" />
-      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="1433966787984154187" nodeInfo="ng">
-        <link role="provider" roleId="26ao.439567521322959423" targetNodeId="iwll.1433966787984154171" resolveInfo="FlightJudgementRules" />
-      </node>
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6657613005452170132" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
@@ -7696,6 +7695,9 @@
         </node>
       </node>
     </node>
+    <node role="dependencies" roleId="qqyh.5142601156811343146" type="qqyh.VarDependency" typeId="qqyh.5142601156811335178" id="5142601156812297493" nodeInfo="ng">
+      <link role="chunk" roleId="qqyh.5142601156811992950" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="869116753978119546" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="StaticVariability" />
@@ -7980,13 +7982,15 @@
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="869116753978119552" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="869116753978119728" nodeInfo="ng">
-      <property name="projectionMode" nameId="qdv7.7455436784495594423" value="1" />
-      <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5441227754062476995" resolveInfo="FlightProcessor" />
-      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5441227754062505657" resolveInfo="cfgNullifyOnly" />
-    </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6657613005452170133" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vxuc.VariantModuleDependency" typeId="vxuc.9136994893387078269" id="9103993088059373200" nodeInfo="ng">
+      <link role="variantModule" roleId="vxuc.9136994893387081662" targetNodeId="5441227754062389703" resolveInfo="FlightVariability" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="9103993088062047835" nodeInfo="ng">
+      <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5441227754062476995" resolveInfo="FlightProcessor" />
+      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5441227754062477136" resolveInfo="cfgDoNothing" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6700886800242034956" nodeInfo="ng">
