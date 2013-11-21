@@ -48,7 +48,7 @@
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="9103993088055847296" resolveInfo="pleVariantActive" />
       </node>
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="9103993088055855783" nodeInfo="ng">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="9103993088055853826" resolveInfo="pleVariantInctive" />
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="9103993088055853826" resolveInfo="pleVariantInactive" />
       </node>
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3969129843280035681" nodeInfo="ng">
@@ -318,7 +318,7 @@
     </node>
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="9103993088055853826" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="pleVariantInctive" />
+    <property name="name" nameId="tpck.1169194664001" value="pleVariantInactive" />
     <property name="caption" nameId="tp4k.1205250923097" value="Variant Product Line" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="9103993088055853827" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
