@@ -10,7 +10,7 @@
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="6" implicit="yes" />
   <root type="zpaf.ImportSpec" typeId="zpaf.1535917470678273191" id="1535917470678382147" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="__config" />
     <node role="includePath" roleId="zpaf.1535917470678273195" type="zpaf.IncludePath" typeId="zpaf.1535917470678273193" id="6444423870370084561" nodeInfo="ng">
