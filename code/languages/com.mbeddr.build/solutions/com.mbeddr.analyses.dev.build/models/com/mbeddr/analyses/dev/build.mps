@@ -5973,8 +5973,20 @@
       <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="1276008224353464876" nodeInfo="ng">
         <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="4181193460689023069" resolveInfo="test.analyses.cbmc" />
       </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="4052797720681204218" nodeInfo="ng">
+        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="4181193460689371610" resolveInfo="test.analyses.cbmc.testcode_analyses_config" />
+      </node>
       <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="1348611803039052789" nodeInfo="ng">
         <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="9141467591178534125" resolveInfo="test.analyses.cbmc.testcode" />
+      </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="4052797720681208806" nodeInfo="ng">
+        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="6181369419132079336" resolveInfo="test.analyses.nusmv" />
+      </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="4052797720681210775" nodeInfo="ng">
+        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="6181369419132122233" resolveInfo="test.analyses.statemachine" />
+      </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="6600513366563812641" nodeInfo="ng">
+        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="6600513366563765074" resolveInfo="test.ts.analysis.statemachine" />
       </node>
       <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="1276008224353465998" nodeInfo="ng">
         <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="9141467591178534157" resolveInfo="test.ts.analyses.fmod" />
@@ -5982,11 +5994,11 @@
       <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="1276008224353466383" nodeInfo="ng">
         <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="9141467591178534172" resolveInfo="test.ts.analyses.yices.dectab" />
       </node>
-      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="6600513366563812641" nodeInfo="ng">
-        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="6600513366563765074" resolveInfo="test.ts.analysis.statemachine" />
-      </node>
       <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="138655907971243738" nodeInfo="ng">
         <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="138655907971237680" resolveInfo="test.ex.analyses.yices.dectab" />
+      </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="4052797720681217394" nodeInfo="ng">
+        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="6181369419132581314" resolveInfo="test.ex.analyses.fm" />
       </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="9141467591178534098" nodeInfo="ng">
@@ -6099,7 +6111,7 @@
         <property name="name" nameId="tpck.1169194664001" value="test.analyses.cbmc.testcode" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
-        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources" />
+        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources and tests" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="9141467591178534126" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="9141467591178534027" resolveInfo="mbeddr.analyses" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9141467591178534127" nodeInfo="nn">
@@ -6247,6 +6259,7 @@
         <property name="name" nameId="tpck.1169194664001" value="test.ex.analyses.fm" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="d6d16be4-566f-4264-97c3-53e69ad27683" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources and tests" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6181369419132585014" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="9141467591178534027" resolveInfo="mbeddr.analyses" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6181369419132585914" nodeInfo="nn">
@@ -6295,6 +6308,7 @@
         <property name="name" nameId="tpck.1169194664001" value="test.analyses.nusmv" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="55db1bd0-0d5c-48c6-8d04-0660bdd6e8eb" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources and tests" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6181369419132087322" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="9141467591178534027" resolveInfo="mbeddr.analyses" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6181369419132087990" nodeInfo="nn">
@@ -6313,6 +6327,7 @@
         <property name="name" nameId="tpck.1169194664001" value="test.analyses.statemachine" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="4921e5d9-579d-4829-bb95-25aed1a142e6" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources and tests" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6181369419132125822" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="9141467591178534027" resolveInfo="mbeddr.analyses" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6181369419132174532" nodeInfo="nn">
@@ -6380,6 +6395,7 @@
         <property name="name" nameId="tpck.1169194664001" value="test.ex.analyses.yices.dectab" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="063a58aa-9bae-4e7e-b092-c64f1b1789da" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources and tests" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="138655907971237681" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="9141467591178534027" resolveInfo="mbeddr.analyses" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="138655907971237682" nodeInfo="nn">
@@ -6429,14 +6445,32 @@
       <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="1276008224353469674" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="4181193460689023069" resolveInfo="test.analyses.cbmc" />
       </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="4052797720681206176" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="9141467591178534125" resolveInfo="test.analyses.cbmc.testcode" />
+      </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="4052797720681207488" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="4181193460689371610" resolveInfo="test.analyses.cbmc.testcode_analyses_config" />
+      </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="4052797720681214066" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="6181369419132079336" resolveInfo="test.analyses.nusmv" />
+      </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="4052797720681215386" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="6181369419132122233" resolveInfo="test.analyses.statemachine" />
+      </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="4052797720681216066" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="6600513366563765074" resolveInfo="test.ts.analysis.statemachine" />
+      </node>
       <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="1276008224353470422" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="9141467591178534157" resolveInfo="test.ts.analyses.fmod" />
+      </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="4052797720681219369" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="6181369419132581314" resolveInfo="test.ex.analyses.fm" />
       </node>
       <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="1276008224353470802" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="9141467591178534172" resolveInfo="test.ts.analyses.yices.dectab" />
       </node>
-      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="4181193460688844153" nodeInfo="nn">
-        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="6600513366563765074" resolveInfo="test.ts.analysis.statemachine" />
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="4052797720681222065" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="138655907971237680" resolveInfo="test.ex.analyses.yices.dectab" />
       </node>
     </node>
   </root>
