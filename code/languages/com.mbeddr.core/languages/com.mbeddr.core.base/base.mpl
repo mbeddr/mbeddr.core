@@ -6,7 +6,28 @@
     </modelRoot>
   </models>
   <accessoryModels />
-  <generators />
+  <generators>
+    <generator name="main" generatorUID="com.mbeddr.core.base#8626086128958648025" uuid="2764de2d-de8a-48ff-9db3-f78342da5c1a">
+      <models>
+        <modelRoot contentPath="${module}/generator/template" type="default">
+          <sourceRoot location="." />
+        </modelRoot>
+      </models>
+      <external-templates />
+      <dependencies>
+        <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
+      </dependencies>
+      <usedLanguages>
+        <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
+        <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
+        <usedLanguage>13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)</usedLanguage>
+      </usedLanguages>
+      <usedDevKits>
+        <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
+      </usedDevKits>
+      <mapping-priorities />
+    </generator>
+  </generators>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>

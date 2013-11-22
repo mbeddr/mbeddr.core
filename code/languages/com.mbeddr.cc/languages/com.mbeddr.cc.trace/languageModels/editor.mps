@@ -263,5 +263,11 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8626086128969167645" nodeInfo="ng">
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="26ao.8626086128969157722" resolveInfo="TracingConfigItem" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8626086128969174581" nodeInfo="nn">
+      <property name="text" nameId="tpc2.1073389577007" value="tracing" />
+    </node>
+  </root>
 </model>
 

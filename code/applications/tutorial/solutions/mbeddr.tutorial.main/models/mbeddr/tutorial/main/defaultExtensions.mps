@@ -336,6 +336,7 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="6183633367245147491" nodeInfo="ng">
       <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
     </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="26ao.TracingConfigItem" typeId="26ao.8626086128969157722" id="8626086128969525852" nodeInfo="ng" />
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="9141254329931944284" nodeInfo="ng">
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="MbeddrTutorialDefaultExt" />
@@ -3151,13 +3152,11 @@
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1731059994647588212" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="7451725615401930943" nodeInfo="ng">
-      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="7451725615401930944" nodeInfo="ng">
-        <link role="provider" roleId="26ao.439567521322959423" targetNodeId="iwll.1433966787984154171" resolveInfo="FlightJudgementRules" />
-      </node>
-    </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6657613005452170129" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="krak.CModuleReqDependency" typeId="krak.9136994893369227797" id="9136994893484282370" nodeInfo="ng">
+      <link role="reqModule" roleId="krak.9136994893369235284" targetNodeId="iwll.1433966787984154171" resolveInfo="FlightJudgementRules" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5160057464295358354" nodeInfo="ng">
@@ -7617,6 +7616,9 @@
   <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="5441227754062389703" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
     <property name="name" nameId="tpck.1169194664001" value="FlightVariability" />
+    <node role="dependencies" roleId="qqyh.5142601156811343146" type="qqyh.VarDependency" typeId="qqyh.5142601156811335178" id="5142601156812297493" nodeInfo="ng">
+      <link role="chunk" roleId="qqyh.5142601156811992950" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="5441227754062476995" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="FlightProcessor" />
       <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="5441227754062476996" nodeInfo="ng">
@@ -7699,6 +7701,10 @@
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="869116753978119546" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="StaticVariability" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="9103993088062047835" nodeInfo="ng">
+      <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5441227754062476995" resolveInfo="FlightProcessor" />
+      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5441227754062477136" resolveInfo="cfgDoNothing" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="869116753978119547" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1352295983391_1" />
     </node>
@@ -7984,10 +7990,6 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="vxuc.VariantModuleDependency" typeId="vxuc.9136994893387078269" id="9103993088059373200" nodeInfo="ng">
       <link role="variantModule" roleId="vxuc.9136994893387081662" targetNodeId="5441227754062389703" resolveInfo="FlightVariability" />
-    </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="9103993088062047835" nodeInfo="ng">
-      <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5441227754062476995" resolveInfo="FlightProcessor" />
-      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5441227754062477136" resolveInfo="cfgDoNothing" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6700886800242034956" nodeInfo="ng">

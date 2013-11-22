@@ -232,13 +232,6 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3402431285977874460" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ReqModuleRefAttribute" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="26ao.439567521322959418" resolveInfo="TraceTargetProviderRefAttr" />
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080516558" nodeInfo="ng">
-      <property name="role" nameId="tpce.7588428831955550663" value="" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1165432222362123724" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="RefinesLink" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="links" />

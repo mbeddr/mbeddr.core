@@ -802,7 +802,7 @@
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment" />
     <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/assessment.png" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7139820346881560230" resolveInfo="Chunk" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="865293814733114045" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="assessments" />

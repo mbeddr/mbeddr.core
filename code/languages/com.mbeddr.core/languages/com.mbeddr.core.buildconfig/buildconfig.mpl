@@ -5,6 +5,10 @@
       <sourceRoot location="languageModels" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java" />
+    <facet type="tests" />
+  </facets>
   <accessoryModels>
     <model modelUID="r:ce8731ad-eb56-4f64-b455-5499b4e64857(com.mbddr.core.buildconfig.pluginSolution.plugin)" />
   </accessoryModels>

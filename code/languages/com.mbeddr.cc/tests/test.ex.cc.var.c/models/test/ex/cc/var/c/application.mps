@@ -321,6 +321,10 @@
     <node role="imports" roleId="x27k.1317894735999304826" type="vxuc.VariantModuleDependency" typeId="vxuc.9136994893387078269" id="5142601156808762862" nodeInfo="ng">
       <link role="variantModule" roleId="vxuc.9136994893387081662" targetNodeId="5959167564566811023" resolveInfo="M1Var" />
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="8626086128967141094" nodeInfo="ng">
+      <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5959167564566811025" resolveInfo="FM" />
+      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5959167564566811178" resolveInfo="Float" />
+    </node>
   </root>
 </model>
 
