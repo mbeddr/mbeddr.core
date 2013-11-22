@@ -2807,6 +2807,11 @@
             <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="ffeo.413682502717652307" resolveInfo="JDK" />
           </node>
         </node>
+        <node role="generator" roleId="kdzh.9200313594498201639" type="kdzh.BuildMps_Generator" typeId="kdzh.5507251971038816436" id="8626086128961037229" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.cc.trace#8626086128958778566" />
+          <property name="uuid" nameId="kdzh.322010710375892619" value="d2f04f16-fc81-467c-a1a0-5e0db840c4a5" />
+          <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="1326670572135830805" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
