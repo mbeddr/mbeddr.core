@@ -7695,6 +7695,9 @@
         </node>
       </node>
     </node>
+    <node role="dependencies" roleId="qqyh.5142601156811343146" type="qqyh.VarDependency" typeId="qqyh.5142601156811335178" id="5142601156812297493" nodeInfo="ng">
+      <link role="chunk" roleId="qqyh.5142601156811992950" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="869116753978119546" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="StaticVariability" />
