@@ -13,10 +13,10 @@
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" implicit="yes" />
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="6008766899745313375" nodeInfo="ng">
     <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6008766899745313376" nodeInfo="ng">
       <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -314,19 +314,19 @@
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="5327383046620205847" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="5327383046620205848" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="car1_engineOn" />
+        <property name="name" nameId="tpck.1169194664001" value="automobile_engineOn" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5327383046620205849" nodeInfo="ng" />
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="5327383046620205850" nodeInfo="ng">
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="5327383046620205816" resolveInfo="engineOn" />
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="5327383046620205846" resolveInfo="automobile" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5327383046620205851" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3547064050843141568" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="5327383046620205852" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="car1_drive" />
+        <property name="name" nameId="tpck.1169194664001" value="automobile_drive" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5327383046620205853" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5327383046620205854" nodeInfo="ng" />
         </node>
@@ -334,13 +334,13 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="5327383046620205846" resolveInfo="automobile" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="5327383046620205821" resolveInfo="drive" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5327383046620205856" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3547064050843141598" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="5327383046620205857" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="car1_stop" />
+        <property name="name" nameId="tpck.1169194664001" value="automobile_stop" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5327383046620205858" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5327383046620205859" nodeInfo="ng" />
         </node>
@@ -348,13 +348,13 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="5327383046620205846" resolveInfo="automobile" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="5327383046620205826" resolveInfo="stop" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5327383046620205861" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3547064050843141600" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="5327383046620205862" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="car1_reverse" />
+        <property name="name" nameId="tpck.1169194664001" value="automobile_reverse" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5327383046620205863" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5327383046620205864" nodeInfo="ng" />
         </node>
@@ -362,13 +362,13 @@
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="5327383046620205846" resolveInfo="automobile" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="5327383046620205834" resolveInfo="reverse" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5327383046620205866" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3547064050843141602" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="5327383046620205867" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="car1_engineOff" />
+        <property name="name" nameId="tpck.1169194664001" value="automobile_engineOff" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5327383046620205868" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5327383046620205869" nodeInfo="ng" />
         </node>
@@ -376,7 +376,7 @@
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="5327383046620205839" resolveInfo="engineOff" />
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="5327383046620205846" resolveInfo="automobile" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5327383046620205871" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3547064050843141408" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
