@@ -101,21 +101,10 @@
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="1634970928500780281" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="verification" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="1634970928500780284" nodeInfo="nn">
-        <property name="color" nameId="tpc2.1186403713874" value="orange" />
-        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="1634970928500813326" nodeInfo="ng">
-          <property name="value" nameId="tpc2.1225456424731" value="E0771B" />
-        </node>
+        <property name="color" nameId="tpc2.1186403713874" value="DARK_MAGENTA" />
       </node>
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="1634970928500813328" nodeInfo="nn">
         <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
-      </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.DrawBracketsStyleClassItem" typeId="tpc2.1219226236603" id="1634970928500813368" nodeInfo="nn">
-        <property name="flag" nameId="tpc2.1186414551515" value="true" />
-      </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BracketColorStyleClassItem" typeId="tpc2.1186413799158" id="1634970928500813370" nodeInfo="nn">
-        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="1634970928500813371" nodeInfo="ng">
-          <property name="value" nameId="tpc2.1225456424731" value="E0771B" />
-        </node>
       </node>
     </node>
   </root>
