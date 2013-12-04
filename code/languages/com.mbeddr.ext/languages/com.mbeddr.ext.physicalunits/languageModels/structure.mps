@@ -15,6 +15,9 @@
     <property name="name" nameId="tpck.1169194664001" value="ElementaryUnitDeclaration" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3801772042669047301" resolveInfo="UnitDeclaration" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8308762708346256723" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8308762708346256679" resolveInfo="INamedUnit" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3801772042669047305" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="SIMetre" />
@@ -131,6 +134,9 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2078797996880543459" resolveInfo="NamedUnitDeclaration" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8308762708346256721" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8308762708346256679" resolveInfo="INamedUnit" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2078797996880467434" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ConversionRule" />
@@ -212,6 +218,9 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7139820346921964932" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IPhysicalUnitsAdapter" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8308762708346256679" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="INamedUnit" />
   </root>
 </model>
 
