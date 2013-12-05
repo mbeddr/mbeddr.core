@@ -1020,5 +1020,22 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="controlledName" />
     <property name="name" nameId="tpck.1169194664001" value="IControlledNameProvider" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8399788025237663326" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="controlledName" />
+    <property name="name" nameId="tpck.1169194664001" value="ControlledNameAssQuery" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="controlled names with own names" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="865293814733115675" resolveInfo="AssessmentQuery" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8399788025237724652" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="controlledName" />
+    <property name="name" nameId="tpck.1169194664001" value="ControlledNameAssResult" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="865293814733133833" resolveInfo="AssessmentResult" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8399788025237738429" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="cnc" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="3111692391937249048" resolveInfo="IControlledNamedConcept" />
+    </node>
+  </root>
 </model>
 
