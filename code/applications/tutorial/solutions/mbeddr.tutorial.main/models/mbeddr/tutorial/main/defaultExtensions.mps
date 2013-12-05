@@ -3235,9 +3235,21 @@
             </node>
           </node>
         </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="4674507677017428828" nodeInfo="ng">
+          <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="4674507677017428829" nodeInfo="ng" />
+          <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="4674507677017451214" nodeInfo="ng">
+            <link role="target" roleId="26ao.439567521322959431" targetNodeId="iwll.1433966787984154174" resolveInfo="InFlightPoints" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="7727566415687762945" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="reset" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="4674507677017774329" nodeInfo="ng">
+          <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="4674507677017774330" nodeInfo="ng" />
+          <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="4674507677017796699" nodeInfo="ng">
+            <link role="target" roleId="26ao.439567521322959431" targetNodeId="iwll.1433966787984154178" resolveInfo="FasterThan200" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.OutEvent" typeId="clqz.4643433264760980254" id="7727566415687763159" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="crashNotification" />
