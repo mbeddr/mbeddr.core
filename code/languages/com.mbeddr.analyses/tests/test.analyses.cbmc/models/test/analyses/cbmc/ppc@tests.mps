@@ -11,10 +11,11 @@
   <language namespace="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" />
   <language namespace="7e09729e-68e4-4442-9bc8-024c5cdac3a2(com.mbeddr.analyses.cbmc.testing)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="eqhl" modelUID="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample_lifted)" version="-1" />
+  <import index="eqhl" modelUID="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" version="1" />
   <import index="fxhk" modelUID="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" version="-1" />
-  <import index="gstr" modelUID="r:4464fcc4-ed7a-45c5-91ab-baea02dc9f04(com.mbeddr.analyses.cbmc.rt.counterexample_ppc)" version="-1" />
+  <import index="gstr" modelUID="r:4464fcc4-ed7a-45c5-91ab-baea02dc9f04(com.mbeddr.analyses.cbmc.rt.analyses.components.ppc)" version="0" />
   <import index="fw3h" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" version="-1" />
+  <import index="mlkb" modelUID="r:491ddc27-c006-485d-bc91-fe536ea00e82(com.mbeddr.analyses.cbmc.rt.analyses.components)" version="2" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
@@ -44,7 +45,7 @@
             <property name="name" nameId="tpck.1169194664001" value="res" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="8699019945642127991" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8699019945642128046" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="gstr.5853537697759014133" resolveInfo="CBMCPPCResult" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="mlkb.7727902157492172685" resolveInfo="CBMCPPCResult" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8699019945642212509" nodeInfo="nn">
@@ -103,7 +104,7 @@
             <property name="name" nameId="tpck.1169194664001" value="res" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="8699019945642213068" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8699019945642213069" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="gstr.5853537697759014133" resolveInfo="CBMCPPCResult" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="mlkb.7727902157492172685" resolveInfo="CBMCPPCResult" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1190855822935840013" nodeInfo="nn">
@@ -178,7 +179,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1190855822935840042" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="1190855822935840043" nodeInfo="nn" />
@@ -216,7 +217,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1190855822935840059" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="1190855822935840060" nodeInfo="nn" />
@@ -260,7 +261,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1190855822935840078" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="1190855822935840079" nodeInfo="nn" />
@@ -288,7 +289,7 @@
             <property name="name" nameId="tpck.1169194664001" value="res" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="7910527590777354459" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7910527590777354460" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="gstr.5853537697759014133" resolveInfo="CBMCPPCResult" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="mlkb.7727902157492172685" resolveInfo="CBMCPPCResult" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8699019945642219719" nodeInfo="nn">
@@ -363,7 +364,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7910527590777354483" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="7910527590777354484" nodeInfo="nn" />
@@ -401,7 +402,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7910527590777354500" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="7910527590777354501" nodeInfo="nn" />
@@ -442,7 +443,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7910527590777354519" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="7910527590777354520" nodeInfo="nn" />
@@ -483,7 +484,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7910527590777429819" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="7910527590777429820" nodeInfo="nn" />
@@ -524,7 +525,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7910527590777429838" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="7910527590777429839" nodeInfo="nn" />
@@ -555,7 +556,7 @@
             <property name="name" nameId="tpck.1169194664001" value="res" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="8381166274823495112" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8381166274823495113" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="gstr.5853537697759014133" resolveInfo="CBMCPPCResult" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="mlkb.7727902157492172685" resolveInfo="CBMCPPCResult" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8381166274823495107" nodeInfo="nn">
@@ -627,7 +628,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8381166274823495136" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="8381166274823495137" nodeInfo="nn" />
@@ -668,7 +669,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8381166274823495153" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="8381166274823495154" nodeInfo="nn" />
@@ -709,7 +710,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8381166274823495171" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="8381166274823495172" nodeInfo="nn" />
@@ -750,7 +751,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8381166274823495189" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="8381166274823495190" nodeInfo="nn" />
@@ -791,7 +792,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8381166274823495207" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="8381166274823495208" nodeInfo="nn" />
@@ -822,7 +823,7 @@
             <property name="name" nameId="tpck.1169194664001" value="res" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="8381166274823495232" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8381166274823495233" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="gstr.5853537697759014133" resolveInfo="CBMCPPCResult" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="mlkb.7727902157492172685" resolveInfo="CBMCPPCResult" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8381166274823495227" nodeInfo="nn">
@@ -897,7 +898,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8381166274823495256" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="8381166274823495257" nodeInfo="nn" />
@@ -935,7 +936,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8381166274823495273" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="8381166274823495274" nodeInfo="nn" />
@@ -976,7 +977,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8381166274823495291" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="8381166274823495292" nodeInfo="nn" />
@@ -1017,7 +1018,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8381166274823495309" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="8381166274823495310" nodeInfo="nn" />
@@ -1063,7 +1064,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8381166274823495327" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="8381166274823495328" nodeInfo="nn" />
@@ -1104,7 +1105,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6008766899745364338" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="6008766899745364339" nodeInfo="nn" />
@@ -1145,7 +1146,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6008766899745364356" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gstr.20776903375223444" resolveInfo="getAnalyzedCond" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492172731" resolveInfo="getAnalyzedCond" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="6008766899745364357" nodeInfo="nn" />

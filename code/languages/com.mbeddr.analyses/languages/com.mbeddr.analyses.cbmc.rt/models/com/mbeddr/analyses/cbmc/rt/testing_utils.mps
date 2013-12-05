@@ -9,20 +9,20 @@
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language namespace="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" />
   <language namespace="63650c59-16c8-498a-99c8-005c7ee9515d(jetbrains.mps.lang.access)" />
-  <import index="eqhl" modelUID="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample_lifted)" version="-1" />
-  <import index="tzyt" modelUID="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" version="-1" />
+  <import index="eqhl" modelUID="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" version="1" />
+  <import index="tzyt" modelUID="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" version="7" />
   <import index="vsqj" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" version="-1" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" />
   <import index="d8ej" modelUID="r:fde4fd08-2694-4f15-a5e5-88fa2c92442c(com.mbeddr.analyses.utils.testing_utils)" version="-1" />
   <import index="qh45" modelUID="r:f908bdad-115d-4765-b796-2646eba0b9ab(com.mbeddr.analyses.utils.make)" version="-1" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
-  <import index="gstr" modelUID="r:4464fcc4-ed7a-45c5-91ab-baea02dc9f04(com.mbeddr.analyses.cbmc.rt.counterexample_ppc)" version="-1" />
-  <import index="mlkb" modelUID="r:491ddc27-c006-485d-bc91-fe536ea00e82(com.mbeddr.analyses.cbmc.rt.counterexample_protocol)" version="-1" />
-  <import index="9xhe" modelUID="r:00591259-6594-499f-871c-f9c60c9f62c2(com.mbeddr.analyses.cbmc.rt.counterexample_statemachine)" version="-1" />
+  <import index="gstr" modelUID="r:4464fcc4-ed7a-45c5-91ab-baea02dc9f04(com.mbeddr.analyses.cbmc.rt.analyses.components.ppc)" version="0" />
+  <import index="mlkb" modelUID="r:491ddc27-c006-485d-bc91-fe536ea00e82(com.mbeddr.analyses.cbmc.rt.analyses.components)" version="2" />
+  <import index="9xhe" modelUID="r:00591259-6594-499f-871c-f9c60c9f62c2(com.mbeddr.analyses.cbmc.rt.analyses.statemachine)" version="0" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="15" />
-  <import index="sqo1" modelUID="r:379fad6d-672b-4bf1-8166-a2c257a3135f(com.mbeddr.analyses.cbmc.rt.nightly)" version="-1" />
+  <import index="sqo1" modelUID="r:379fad6d-672b-4bf1-8166-a2c257a3135f(com.mbeddr.analyses.cbmc.rt.nightly)" version="0" />
   <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="2" />
   <import index="fw3h" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" version="-1" />
   <import index="88zw" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" version="-1" />
@@ -32,14 +32,16 @@
   <import index="8e9v" modelUID="r:a21516a4-23a5-4dc7-826d-37c3fde5c4e3(com.mbeddr.analyses.utils.tools)" version="-1" />
   <import index="axpu" modelUID="r:17965360-9fe3-4b6a-ad54-d086f9422dbe(com.mbeddr.analyses.utils.model_facade)" version="-1" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" />
+  <import index="ood5" modelUID="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" version="-1" />
+  <import index="qele" modelUID="r:94a9027f-1810-4f8c-a611-19948fed3505(com.mbeddr.analyses.cbmc.rt.analyses.asserts)" version="0" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="27" />
+  <import index="zxyo" modelUID="r:d4362ffa-7076-42f2-8aa2-9e47fe478fff(com.mbeddr.analyses.cbmc.rt.analyses.robustness)" version="0" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="ood5" modelUID="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" version="-1" implicit="yes" />
   <import index="qff7" modelUID="r:2ba2e307-a81d-4a21-9e0b-de3624e2fb83(jetbrains.mps.lang.access.structure)" version="0" implicit="yes" />
-  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="8" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="26" implicit="yes" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="14" implicit="yes" />
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8118611477531746924" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CProverTestingFacade" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8118611477531746925" nodeInfo="nn" />
@@ -185,11 +187,11 @@
                 <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3354545139179280868" nodeInfo="nr">
                   <property name="name" nameId="tpck.1169194664001" value="ra" />
                   <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3354545139179280869" nodeInfo="in">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="tzyt.3354545139139237763" resolveInfo="RobustnessAnalyzer" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="zxyo.7727902157492226605" resolveInfo="RobustnessAnalyzer" />
                   </node>
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3354545139179282081" nodeInfo="nn">
                     <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="3354545139179283647" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tzyt.4716091789693312110" resolveInfo="RobustnessAnalyzer" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="zxyo.7727902157492226612" resolveInfo="RobustnessAnalyzer" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3354545139179283724" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2905459043573855851" resolveInfo="conf" />
                       </node>
@@ -422,11 +424,11 @@
                 <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3354545139179432083" nodeInfo="nr">
                   <property name="name" nameId="tpck.1169194664001" value="aa" />
                   <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3354545139179436242" nodeInfo="in">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="tzyt.3354545139131654735" resolveInfo="AssertionsAnalyzer" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="qele.7727902157492146548" resolveInfo="AssertionsAnalyzer" />
                   </node>
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3354545139179432085" nodeInfo="nn">
                     <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="3354545139179432086" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tzyt.1348611803042226457" resolveInfo="AssertionsAnalyzer" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qele.7727902157492146555" resolveInfo="AssertionsAnalyzer" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3354545139179460672" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2905459043573855878" resolveInfo="conf" />
                       </node>
@@ -521,7 +523,7 @@
       <property name="name" nameId="tpck.1169194664001" value="checkPrePostCondition" />
       <node role="returnType" roleId="tpee.1068580123133" type="tp2q.ListType" typeId="tp2q.1151688443754" id="8514070329609208943" nodeInfo="in">
         <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8514070329609208945" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="gstr.5853537697759014133" resolveInfo="CBMCPPCResult" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="mlkb.7727902157492172685" resolveInfo="CBMCPPCResult" />
         </node>
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8514070329609207108" nodeInfo="nn" />
@@ -531,7 +533,7 @@
             <property name="name" nameId="tpck.1169194664001" value="result" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="8699019945646102649" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8699019945646102652" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="gstr.5853537697759014133" resolveInfo="CBMCPPCResult" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="mlkb.7727902157492172685" resolveInfo="CBMCPPCResult" />
               </node>
             </node>
           </node>
@@ -640,11 +642,11 @@
                 <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3354545139179465273" nodeInfo="nr">
                   <property name="name" nameId="tpck.1169194664001" value="ca" />
                   <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3354545139179468184" nodeInfo="in">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="tzyt.3354545139140651723" resolveInfo="ComponentsAnalyzer" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="mlkb.7727902157492183875" resolveInfo="ComponentsAnalyzer" />
                   </node>
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3354545139179465275" nodeInfo="nn">
                     <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="3354545139179465276" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tzyt.4716091789693629892" resolveInfo="ComponentsAnalyzer" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492183882" resolveInfo="ComponentsAnalyzer" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3354545139179520776" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3354545139179517912" resolveInfo="conf" />
                       </node>
@@ -688,7 +690,7 @@
                       </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tp2q.OfTypeOperation" typeId="tp2q.4611582986551314327" id="8699019945646102678" nodeInfo="nn">
                         <node role="requestedType" roleId="tp2q.4611582986551314344" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8699019945646102679" nodeInfo="in">
-                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="gstr.5853537697759014133" resolveInfo="CBMCPPCResult" />
+                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="mlkb.7727902157492172685" resolveInfo="CBMCPPCResult" />
                         </node>
                       </node>
                     </node>
@@ -900,11 +902,11 @@
                 <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3354545139179533945" nodeInfo="nr">
                   <property name="name" nameId="tpck.1169194664001" value="ca" />
                   <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3354545139179533946" nodeInfo="in">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="tzyt.3354545139140651723" resolveInfo="ComponentsAnalyzer" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="mlkb.7727902157492183875" resolveInfo="ComponentsAnalyzer" />
                   </node>
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3354545139179533947" nodeInfo="nn">
                     <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="3354545139179533948" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tzyt.4716091789693629892" resolveInfo="ComponentsAnalyzer" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.7727902157492183882" resolveInfo="ComponentsAnalyzer" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3354545139179533949" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3354545139179533934" resolveInfo="conf" />
                       </node>
@@ -1115,11 +1117,11 @@
                 <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3354545139179555432" nodeInfo="nr">
                   <property name="name" nameId="tpck.1169194664001" value="sa" />
                   <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3354545139179563658" nodeInfo="in">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="tzyt.3354545139154315724" resolveInfo="StatemachinesAnalyzer" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9xhe.7727902157492269673" resolveInfo="StatemachinesAnalyzer" />
                   </node>
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3354545139179555434" nodeInfo="nn">
                     <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="3354545139179555435" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tzyt.3354545139154315732" resolveInfo="StatemachinesAnalyzer" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9xhe.7727902157492269680" resolveInfo="StatemachinesAnalyzer" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3354545139179555436" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3354545139179555421" resolveInfo="conf" />
                       </node>
