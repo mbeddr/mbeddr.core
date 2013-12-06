@@ -402,6 +402,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2742494070478183300" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2742494070478183293" resolveInfo="ICanMangleNames" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2843190776583242592" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3111692391937249048" resolveInfo="IControlledNamedConcept" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6610873504380357354" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="global" />

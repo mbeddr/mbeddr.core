@@ -996,6 +996,11 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="controlledName" />
     <property name="name" nameId="tpck.1169194664001" value="ControlledNameAttribute" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049750" resolveInfo="PropertyAttribute" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2843190776579069816" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="suffix" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2843190776579063025" resolveInfo="NameSuffix" />
+    </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="3111692391937281266" nodeInfo="ng">
       <property name="role" nameId="tpce.7588428831955550663" value="controlledName" />
       <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="3111692391937281306" nodeInfo="ng">
@@ -1035,6 +1040,15 @@
       <property name="role" nameId="tpce.1071599776563" value="cnc" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="3111692391937249048" resolveInfo="IControlledNamedConcept" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2843190776579063025" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="controlledName" />
+    <property name="name" nameId="tpck.1169194664001" value="NameSuffix" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2843190776579063838" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="suffix" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
 </model>

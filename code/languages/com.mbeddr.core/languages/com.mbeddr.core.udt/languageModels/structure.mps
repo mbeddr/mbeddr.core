@@ -194,6 +194,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4188698303616140107" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.5449787351258300532" resolveInfo="IValueLike" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2843190776586890505" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3111692391937249048" resolveInfo="IControlledNamedConcept" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5882395403881907066" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="UnionDeclaration" />
