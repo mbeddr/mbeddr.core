@@ -6741,9 +6741,6 @@
             <property name="value" nameId="tpc2.1225456424731" value="C8F7CB" />
           </node>
         </node>
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.NavigatableReferenceStyleClassItem" typeId="tpc2.1227861515039" id="2843190776587866080" nodeInfo="nn">
-          <link role="link" roleId="tpc2.1227861587090" targetNodeId="vs0r.3111692391937282009" />
-        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="4535752357639183787" nodeInfo="ng">
         <property name="attractsFocus" nameId="tpc2.1130859485024" value="2" />
