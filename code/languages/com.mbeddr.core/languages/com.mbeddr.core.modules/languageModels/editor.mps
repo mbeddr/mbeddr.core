@@ -362,7 +362,7 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7892328519581802669" nodeInfo="nn">
         <property name="usesFolding" nameId="tpc2.1160590353935" value="false" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="7892328519581802674" nodeInfo="ng">
-          <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7892328519581768557" resolveInfo="funtionSignatue" />
+          <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7892328519581768557" resolveInfo="functionSignature" />
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="7603351357795578917" nodeInfo="nn">
             <property name="flag" nameId="tpc2.1186414551515" value="false" />
           </node>
@@ -452,7 +452,7 @@
     </node>
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7892328519581768574" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="7892328519581768573" nodeInfo="ng">
-        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7892328519581768557" resolveInfo="funtionSignatue" />
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7892328519581768557" resolveInfo="functionSignature" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="7603351357795616729" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
         </node>
@@ -558,7 +558,7 @@
   </root>
   <root type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="7892328519581768557" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
-    <property name="name" nameId="tpck.1169194664001" value="funtionSignatue" />
+    <property name="name" nameId="tpck.1169194664001" value="functionSignature" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.6437088627575723997" resolveInfo="FunctionSignature" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7892328519581768562" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="605413736672310004" nodeInfo="ng">

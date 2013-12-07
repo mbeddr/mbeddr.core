@@ -214,7 +214,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2093108837558342149" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2093108837558342150" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="outercScopeProvider" />
+            <property name="name" nameId="tpck.1169194664001" value="outerScopeProvider" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2093108837558342151" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.2093108837558189304" resolveInfo="ILocalVarScopeProvider" />
             </node>
@@ -241,7 +241,7 @@
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2093108837558341544" resolveInfo="setOuterScope" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2093108837558342175" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2093108837558342174" nodeInfo="nn">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2093108837558342150" resolveInfo="outercScopeProvider" />
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2093108837558342150" resolveInfo="outerScopeProvider" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="2093108837558342179" nodeInfo="nn">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2093108837558189309" resolveInfo="getLocalVarScope" />
@@ -259,7 +259,7 @@
           <node role="condition" roleId="tpee.1068580123160" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="2093108837558342162" nodeInfo="nn">
             <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2093108837558342165" nodeInfo="nn" />
             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2093108837558342161" nodeInfo="nn">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2093108837558342150" resolveInfo="outercScopeProvider" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2093108837558342150" resolveInfo="outerScopeProvider" />
             </node>
           </node>
         </node>
