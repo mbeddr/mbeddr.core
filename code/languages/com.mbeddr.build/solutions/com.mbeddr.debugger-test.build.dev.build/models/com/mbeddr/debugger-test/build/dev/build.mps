@@ -13,6 +13,10 @@
   <import index="pyq9" modelUID="r:03dd57e2-3edc-4361-a061-60ea71ecad78(com.mbeddr.ext.build)" version="-1" />
   <import index="ayz1" modelUID="r:ddb1dfaa-c6c7-4b90-a785-b5978943c620(de.slisson.mps.richtext.build)" version="-1" />
   <import index="2ikx" modelUID="r:a6a1817a-0262-429f-994d-28bcdfc8eac8(mps-multiline.build)" version="-1" />
+  <import index="h4fd" modelUID="r:0d72e6f8-3d8a-4b48-87dc-89e04c007bf9(com.mbeddr.ext.units.dev.build.build)" version="-1" />
+  <import index="8jli" modelUID="r:a3923394-7824-41b2-a673-4356e18a8046(com.mbeddr.ext.statemachinesInComponents.dev.build.build)" version="-1" />
+  <import index="8vru" modelUID="r:3825aa79-6b00-47ce-bd95-4f08458a0165(com.mbeddr.ext.statemachine.dev.build.build)" version="-1" />
+  <import index="dogi" modelUID="r:d2be0b6c-ba23-4242-a629-c2b5b0cf8789(com.mbeddr.ext.components.dev.build.build)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="3ior" modelUID="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" version="2" implicit="yes" />
   <import index="kdzh" modelUID="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" version="1" implicit="yes" />
@@ -1232,7 +1236,7 @@
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="al5i.8628756186118380491" resolveInfo="com.mbeddr.mpsutil.build" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6970948587880936859" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554251" resolveInfo="com.mbeddr.ext.components" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="dogi.8334796989975391369" resolveInfo="com.mbeddr.ext.components" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="8885587964581203293" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="8885587964581203049" resolveInfo="com.mbeddr.debugger.testing.tests.cross.build" />
@@ -1593,16 +1597,16 @@
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="al5i.8628756186118380491" resolveInfo="com.mbeddr.mpsutil.build" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7179305966071493185" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554375" resolveInfo="com.mbeddr.ext.statemachine" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="8vru.8334796989975381468" resolveInfo="com.mbeddr.ext.statemachine" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="2475960130292410900" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554460" resolveInfo="com.mbeddr.ext.statemachinesInComponents" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="8jli.8334796989975375432" resolveInfo="com.mbeddr.ext.statemachinesInComponents" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="4404160126462723989" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="8885587964581203049" resolveInfo="com.mbeddr.debugger.testing.tests.cross.build" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="2475960130292877509" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554251" resolveInfo="com.mbeddr.ext.components" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="dogi.8334796989975391369" resolveInfo="com.mbeddr.ext.components" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="4404160126462723990" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="6970948587879843289" resolveInfo="com.mbeddr.debugger.testing.build" />
@@ -1771,7 +1775,7 @@
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="al5i.8628756186118380491" resolveInfo="com.mbeddr.mpsutil.build" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7179305966071492732" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554415" resolveInfo="com.mbeddr.ext.units" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="h4fd.8334796989975361786" resolveInfo="com.mbeddr.ext.units" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7179305966071488298" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="8885587964581203049" resolveInfo="com.mbeddr.debugger.testing.tests.cross.build" />
