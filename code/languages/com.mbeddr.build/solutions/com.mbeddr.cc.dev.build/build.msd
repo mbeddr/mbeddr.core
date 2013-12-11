@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.cc.dev.build" uuid="069b04b3-7338-4781-80fa-9e8b854877d2" compileInMPS="true">
+<solution name="com.mbeddr.cc.req.dev.build" uuid="069b04b3-7338-4781-80fa-9e8b854877d2" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,10 +7,11 @@
   </models>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">b22c9f3a-bcc2-4f68-901a-f574ebc81e23(com.mbeddr.cc.ple.dev.build)</dependency>
     <dependency reexport="false">7f0575ee-ce26-49b7-a897-0e0b348b06af(com.mbeddr.core.dev.build)</dependency>
     <dependency reexport="false">16f4da20-e2ec-436c-9423-ccaadb6e9c38(com.mbeddr.debugger.dev.build)</dependency>
     <dependency reexport="false">09682559-86e1-4aeb-96a1-833a77c65c70(com.mbeddr.doc.dev.build)</dependency>
-    <dependency reexport="false">06f4ccb3-313d-4d48-9667-87a8fb963fb2(com.mbeddr.ext.build)</dependency>
+    <dependency reexport="false">8ea70440-eabe-4c88-95c7-cb0f5588827d(com.mbeddr.ext.components.dev.build)</dependency>
     <dependency reexport="false">dcd3e3f0-fb75-4b63-83e0-7a84aeddbb20(com.mbeddr.mpsutil.dev.build)</dependency>
     <dependency reexport="false">ba19fd84-07a8-4c0c-b27a-83b037421bea(com.mbeddr.spawner.dev.build)</dependency>
     <dependency reexport="false">830041d3-fd09-4005-819d-9d2e06a676ba(de.slisson.mps.richtext.build)</dependency>

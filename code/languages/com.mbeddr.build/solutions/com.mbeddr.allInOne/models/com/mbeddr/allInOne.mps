@@ -4,7 +4,7 @@
   <language namespace="798100da-4f0a-421a-b991-71f8c50ce5d2(jetbrains.mps.build)" />
   <language namespace="0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)" />
   <import index="ffeo" modelUID="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" version="-1" />
-  <import index="auf4" modelUID="r:80ab9f35-0383-4b63-8d33-f5ba921f506c(com.mbeddr.cc.dev.build)" version="-1" />
+  <import index="auf4" modelUID="r:80ab9f35-0383-4b63-8d33-f5ba921f506c(com.mbeddr.cc.dev.build)" version="0" />
   <import index="al5i" modelUID="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" version="-1" />
   <import index="pyq9" modelUID="r:03dd57e2-3edc-4361-a061-60ea71ecad78(com.mbeddr.ext.build)" version="-1" />
   <import index="g8gn" modelUID="r:db0f191d-ac3f-4168-aa3a-d27e25360adc(com.mbeddr.core.dev.build)" version="-1" />
@@ -16,6 +16,15 @@
   <import index="2ikx" modelUID="r:a6a1817a-0262-429f-994d-28bcdfc8eac8(mps-multiline.build)" version="-1" />
   <import index="vlym" modelUID="r:c08febfc-f264-4588-928e-132d1df955b7(mps-editor-override.build)" version="-1" />
   <import index="o988" modelUID="r:74f71c46-0b01-4499-922b-13f345199794(de.slisson.mps.tables.build)" version="-1" />
+  <import index="xahx" modelUID="r:a40fc11f-cd88-4bc0-8401-459c3bdebd26(com.mbeddr.cc.ple.dev.build)" version="0" />
+  <import index="h4fd" modelUID="r:0d72e6f8-3d8a-4b48-87dc-89e04c007bf9(com.mbeddr.ext.units.dev.build.build)" version="-1" />
+  <import index="8jli" modelUID="r:a3923394-7824-41b2-a673-4356e18a8046(com.mbeddr.ext.statemachinesInComponents.dev.build.build)" version="-1" />
+  <import index="8vru" modelUID="r:3825aa79-6b00-47ce-bd95-4f08458a0165(com.mbeddr.ext.statemachine.dev.build.build)" version="-1" />
+  <import index="dogi" modelUID="r:d2be0b6c-ba23-4242-a629-c2b5b0cf8789(com.mbeddr.ext.components.dev.build.build)" version="-1" />
+  <import index="byw8" modelUID="r:cee07942-9166-46aa-b335-023165803fb1(com.mbeddr.analyses.base.dev.build.build)" version="-1" />
+  <import index="cres" modelUID="r:37e76d82-365d-4087-8d5c-8fc0b02b7601(com.mbeddr.analyses.cbmc.dev.build.build)" version="-1" />
+  <import index="d8e8" modelUID="r:3ffe2aaa-23d7-415d-96b2-1cdad1cd8ced(com.mbeddr.analyses.nusmv.dev.build.build)" version="-1" />
+  <import index="yexh" modelUID="r:7cdaacc1-b188-42d1-b224-bdfc4ad1a4f9(com.mbeddr.analyses.yices.dev.build.build)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="3ior" modelUID="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" version="2" implicit="yes" />
   <import index="kdzh" modelUID="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" version="1" implicit="yes" />
@@ -123,19 +132,19 @@
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="g8gn.8628756186118765524" resolveInfo="com.mbeddr.core.build" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965056" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554251" resolveInfo="com.mbeddr.ext.components" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="dogi.8334796989975391369" resolveInfo="com.mbeddr.ext.components" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965060" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554375" resolveInfo="com.mbeddr.ext.statemachine" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="8vru.8334796989975381468" resolveInfo="com.mbeddr.ext.statemachine" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965062" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554460" resolveInfo="com.mbeddr.ext.statemachinesInComponents" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="8jli.8334796989975375432" resolveInfo="com.mbeddr.ext.statemachinesInComponents" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965065" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554415" resolveInfo="com.mbeddr.ext.units" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="h4fd.8334796989975361786" resolveInfo="com.mbeddr.ext.units" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965067" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="auf4.8628756186118973852" resolveInfo="com.mbeddr.cc.ple.build" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="xahx.8334796989973521374" resolveInfo="com.mbeddr.cc.ple.build" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965069" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="auf4.6247780594427548258" resolveInfo="com.mbeddr.cc.req.build" />
@@ -144,16 +153,16 @@
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="ax0f.6247780594427434811" resolveInfo="com.mbeddr.debugger.build" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538998606" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="tdj5.7247348105538752431" resolveInfo="com.mbeddr.analyses.base" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="byw8.8334796989975404069" resolveInfo="com.mbeddr.analyses.base" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538998608" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="tdj5.7247348105538928968" resolveInfo="com.mbeddr.analyses.cbmc" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="cres.8334796989975410459" resolveInfo="com.mbeddr.analyses.cbmc" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538998610" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="tdj5.7247348105538928839" resolveInfo="com.mbeddr.analyses.nusmv" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="d8e8.8334796989975460574" resolveInfo="com.mbeddr.analyses.nusmv" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538998612" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="tdj5.7247348105538752323" resolveInfo="com.mbeddr.analyses.yices" />
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="yexh.8334796989975465017" resolveInfo="com.mbeddr.analyses.yices" />
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="2042272859110657423" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="fswa.8607331426312061444" resolveInfo="com.mbeddr.doc.build" />
@@ -191,7 +200,7 @@
             </node>
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6247780594427982562" nodeInfo="ng">
-            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="auf4.8628756186118973863" resolveInfo="com.mbeddr.cc.ple.zip" />
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="xahx.8334796989973521570" resolveInfo="com.mbeddr.cc.ple.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6247780594427982564" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="auf4.6247780594427548298" resolveInfo="com.mbeddr.cc.req.zip" />
@@ -203,16 +212,16 @@
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="og8s.4699195107807380428" resolveInfo="com.mbeddr.spawner.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6247780594427982570" nodeInfo="ng">
-            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="pyq9.6247780594427554262" resolveInfo="com.mbeddr.ext.components.zip" />
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="dogi.8334796989975391430" resolveInfo="com.mbeddr.ext.components.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6247780594427982574" nodeInfo="ng">
-            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="pyq9.6247780594427554386" resolveInfo="com.mbeddr.ext.statemachine.zip" />
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="8vru.8334796989975381530" resolveInfo="com.mbeddr.ext.statemachine.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6247780594427982578" nodeInfo="ng">
-            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="pyq9.6247780594427554471" resolveInfo="com.mbeddr.ext.statemachineInComponents.zip" />
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="8jli.8334796989975375511" resolveInfo="com.mbeddr.ext.statemachineInComponents.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6247780594427982580" nodeInfo="ng">
-            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="pyq9.6247780594427554426" resolveInfo="com.mbeddr.ext.units.zip" />
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="h4fd.8334796989975361847" resolveInfo="com.mbeddr.ext.units.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5100083648679014643" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ax0f.8628756186118765535" resolveInfo="com.mbeddr.core.debugger.zip" />
@@ -221,16 +230,16 @@
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="al5i.8628756186118380502" resolveInfo="com.mbeddr.mpsutil.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="7247348105538998613" nodeInfo="ng">
-            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="tdj5.7247348105538752465" resolveInfo="com.mbeddr.analyses.base.zip" />
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="byw8.8334796989975404237" resolveInfo="com.mbeddr.analyses.base.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="7247348105538998614" nodeInfo="ng">
-            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="tdj5.7247348105538929002" resolveInfo="com.mbeddr.analyses.cbmc.zip" />
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="cres.8334796989975410691" resolveInfo="com.mbeddr.analyses.cbmc.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="7247348105538998615" nodeInfo="ng">
-            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="tdj5.7247348105538928874" resolveInfo="com.mbeddr.analyses.nusmv.zip" />
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="d8e8.8334796989975460797" resolveInfo="com.mbeddr.analyses.nusmv.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="7247348105538998616" nodeInfo="ng">
-            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="tdj5.7247348105538752334" resolveInfo="com.mbeddr.analyses.yices.zip" />
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="yexh.8334796989975465219" resolveInfo="com.mbeddr.analyses.yices.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="2042272859110657426" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="fswa.8607331426312061453" resolveInfo="com.mbeddr.doc.zip" />
