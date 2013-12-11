@@ -3,13 +3,14 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.debugger.build" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.debugger.build" />
-  <property name="mps.home" location="${basedir}/../../../../../../../../Applications/MPS30.app" />
+  <property name="mps.home" location="${basedir}/../../../../MPS/MPS-3.1.app" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="mpsutil" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
-  <property name="mbeddr.core" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
+  <property name="mbeddr.debugger" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
+  <property name="artifacts.com.mbeddr.spawner.build" location="${basedir}/../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build/" />
   <property name="artifacts.mps" location="${mps.home}" />
-  <property name="artifacts.com.mbeddr.spawner.build" location="../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps.home}" />
+  <property name="artifacts.com.mbeddr.spawner.build" location="${artifacts.com.mbeddr.spawner.build}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -68,15 +69,15 @@
     </echoxml>
     <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.core.debug" />
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug" includes="icons/**, resources/**" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/com.mbeddr.core.debug.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.debug-languageModels">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug-src.jar">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.core}/languages/com.mbeddr.core.debug/debug.mpl" prefix="module" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.debugger}/languages/com.mbeddr.core.debug/debug.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.debug-languageModels" prefix="module/languageModels" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.core.debug.blext.jar" />
@@ -101,24 +102,45 @@
     </echoxml>
     <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext.jar">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.core.debug.blext" />
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext" includes="icons/**, resources/**" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/com.mbeddr.core.debug.blext.jar" />
     </jar>
     <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext-generator.jar">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.core.debug.blext#1734689175229870721" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.debug.blext-generator-template">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.debug.blext-languageModels">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext-src.jar">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/generator/source_gen" includes="**/*.java" />
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/blext.mpl" prefix="module" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/generator/source_gen" includes="**/*.java" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/blext.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.debug.blext-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.debug.blext-languageModels" prefix="module/languageModels" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.debugger.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.debugger.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.debugger.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.debugger.dev.build" type="solution" uuid="16f4da20-e2ec-436c-9423-ccaadb6e9c38">
+        <dependencies />
+        <sources jar="com.mbeddr.debugger.dev.build-src.jar" descriptor="debugger.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.debugger.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.debugger.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.debugger.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.debugger.dev.build-models">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.debugger.dev.build-src.jar">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.dev.build/debugger.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.debugger.dev.build-models" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/com.mbeddr.core.debugger.zip">
       <fileset dir="${build.tmp}/default/com.mbeddr.core.debugger.zip" />
@@ -126,9 +148,7 @@
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
-  <target name="buildDependents">
-    <ant antfile="../com.mbeddr.spawner/build.xml" inheritAll="false" useNativeBasedir="true" />
-  </target>
+  <target name="buildDependents" />
   
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
@@ -142,7 +162,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.core.debug, java.compile.com.mbeddr.core.debug.blext, java.compile.com.mbeddr.core.debug.blext#1734689175229870721" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.core.debug, java.compile.com.mbeddr.core.debug.blext, java.compile.com.mbeddr.core.debug.blext#1734689175229870721, java.compile.com.mbeddr.debugger.dev.build" />
   
   <target name="processResources" />
   
@@ -155,6 +175,7 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate parallelMode="true" fork="true">
+      <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
@@ -219,13 +240,21 @@
       <library file="${artifacts.mps}/lib/mps-tool.jar" />
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.mps.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.mps.tests.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
+      <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/solutions/com.mbeddr.spawner.dev.build.jar" />
       <chunk>
-        <module file="${mbeddr.core}/languages/com.mbeddr.core.debug/debug.mpl" />
-        <module file="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/blext.mpl" />
+        <module file="${mbeddr.debugger}/languages/com.mbeddr.core.debug/debug.mpl" />
+        <module file="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/blext.mpl" />
+        <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.dev.build/debugger.msd" />
       </chunk>
       <jvmargs>
         <arg value="-Xmx512m" />
@@ -237,20 +266,15 @@
     <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
   </target>
   
-  <target name="makeDependents">
-    <ant antfile="../com.mbeddr.spawner/build.xml" inheritAll="false" useNativeBasedir="true">
-      <target name="generate" />
-      <target name="assemble" />
-    </ant>
-  </target>
+  <target name="makeDependents" />
   
   <target name="java.compile.com.mbeddr.core.debug" depends="fetchDependencies">
-    <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.debug/source_gen" />
+    <mkdir dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.debug" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.core.debug" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mbeddr.core}/languages/com.mbeddr.core.debug/source_gen" />
+        <path location="${mbeddr.debugger}/languages/com.mbeddr.core.debug/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -315,17 +339,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.core.debug">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug/source_gen" excludes="**/*.java" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.debug.blext" depends="java.compile.com.mbeddr.core.debug, fetchDependencies">
-    <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/source_gen" />
+    <mkdir dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.debug.blext" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.core.debug.blext" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/source_gen" />
+        <path location="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -367,6 +391,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -380,17 +405,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.core.debug.blext">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/source_gen" excludes="**/*.java" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.debug.blext#1734689175229870721" depends="java.compile.com.mbeddr.core.debug, java.compile.com.mbeddr.core.debug.blext, fetchDependencies">
-    <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/generator/source_gen" />
+    <mkdir dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.debug.blext#1734689175229870721" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.core.debug.blext#1734689175229870721" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/generator/source_gen" />
+        <path location="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -433,6 +458,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -443,13 +469,31 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.core.debug.blext#1734689175229870721">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/generator/source_gen" excludes="**/*.java" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/generator/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.com.mbeddr.debugger.dev.build" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.dev.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.debugger.dev.build" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.debugger.dev.build" fork="true" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.dev.build/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/solutions/com.mbeddr.spawner.dev.build.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.debugger.dev.build">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.dev.build/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="cleanSources">
-    <delete dir="${mbeddr.core}/languages/com.mbeddr.core.debug/source_gen" />
-    <delete dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/source_gen" />
-    <delete dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/generator/source_gen" />
+    <delete dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug/source_gen" />
+    <delete dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/source_gen" />
+    <delete dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/generator/source_gen" />
+    <delete dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.dev.build/source_gen" />
   </target>
 </project>
