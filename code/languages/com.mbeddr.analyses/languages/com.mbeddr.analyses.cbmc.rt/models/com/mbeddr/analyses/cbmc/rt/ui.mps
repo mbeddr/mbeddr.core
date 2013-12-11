@@ -2180,7 +2180,7 @@
               </node>
             </node>
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3483530767714191744" nodeInfo="nn">
-              <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="1387689101382708179" nodeInfo="nn">
+              <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="8853717562776650223" nodeInfo="nn">
                 <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="3483530767714191416" resolveInfo="CounterexampleTableModel" />
               </node>
             </node>
