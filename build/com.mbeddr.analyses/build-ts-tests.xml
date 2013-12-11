@@ -19,6 +19,7 @@
   <property name="artifacts.com.mbeddr.cc.ple.build" location="../com.mbeddr.cc/build/artifacts/com.mbeddr.cc.ple.build" />
   <property name="artifacts.com.mbeddr.cc.req.build" location="../com.mbeddr.cc/build/artifacts/com.mbeddr.cc.req.build" />
   <property name="artifacts.com.mbeddr.ext.units" location="../com.mbeddr.ext/build/artifacts/com.mbeddr.ext.units" />
+  <property name="artifacts.com.mbeddr.doc.build" location="../com.mbeddr.doc/build/artifacts/com.mbeddr.doc.build" />
   <property name="artifacts.com.mbeddr.analyses.base" location="${build.dir}/artifacts/com.mbeddr.analyses.base" />
   <property name="artifacts.com.mbeddr.analyses.cbmc" location="${build.dir}/artifacts/com.mbeddr.analyses.cbmc" />
   <property name="artifacts.com.mbeddr.analyses.yices" location="${build.dir}/artifacts/com.mbeddr.analyses.yices" />
@@ -406,6 +407,7 @@
     <ant antfile="../com.mbeddr.cc/build-ple.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.cc/build-req.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-units.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../com.mbeddr.doc/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="build-base.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="build-cbmc.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="build-yices.xml" inheritAll="false" useNativeBasedir="true" />
@@ -450,6 +452,8 @@
     <unzip src="${artifacts.com.mbeddr.ext.units}/com.mbeddr.ext.units.zip" dest="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
     <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
     <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
+    <unzip src="${artifacts.com.mbeddr.doc.build}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -654,6 +658,10 @@
       <target name="assemble" />
     </ant>
     <ant antfile="../com.mbeddr.ext/build-units.xml" inheritAll="false" useNativeBasedir="true">
+      <target name="generate" />
+      <target name="assemble" />
+    </ant>
+    <ant antfile="../com.mbeddr.doc/build.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
@@ -1774,6 +1782,7 @@
       <pathelement location="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip/mbeddr.doc" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip/mbeddr.statemachine" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip/mbeddr.SmInComp" />
@@ -1855,6 +1864,9 @@
           <include name="**/lib/*.jar" />
         </fileset>
         <fileset dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip/mbeddr.doc">
           <include name="**/lib/*.jar" />
         </fileset>
         <fileset dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components">
