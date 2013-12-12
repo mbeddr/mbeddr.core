@@ -121,10 +121,6 @@
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="*" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
           </node>
-          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="7592754314266450471" nodeInfo="ng">
-            <property name="nodeKind" nameId="o23b.4791280061046124024" value="*" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
-          </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046330075" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="main" />

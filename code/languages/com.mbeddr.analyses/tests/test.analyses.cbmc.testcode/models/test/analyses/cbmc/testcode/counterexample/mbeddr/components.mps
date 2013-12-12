@@ -250,8 +250,7 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="4985219442642860019" nodeInfo="ng">
       <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="4985219442642860020" nodeInfo="ng">
         <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
-        <property name="wireStatically" nameId="p7vm.1553713790141527405" value="true" />
-        <link role="instanceConfig" roleId="p7vm.1553713790141527407" targetNodeId="4985219442642860084" resolveInfo="comp" />
+        <property name="wireStatically" nameId="p7vm.1553713790141527405" value="false" />
       </node>
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="4985219442642860022" nodeInfo="ng">
