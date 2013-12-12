@@ -981,7 +981,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1707183716787069625" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1707183716787090396" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1707183716787090395" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="document" />
+            <property name="value" nameId="tpee.1070475926801" value="Document" />
           </node>
         </node>
       </node>
@@ -5034,7 +5034,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1707183716787603008" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1707183716787614923" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1707183716787614922" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="document configuration" />
+            <property name="value" nameId="tpee.1070475926801" value="Document Configuration" />
           </node>
         </node>
       </node>
@@ -5454,7 +5454,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1707183716787718653" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1707183716787718704" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1707183716787718703" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="includable export" />
+            <property name="value" nameId="tpee.1070475926801" value="Includable Export" />
           </node>
         </node>
       </node>
@@ -5507,7 +5507,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1707183716788141165" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1707183716788141216" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1707183716788141215" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="document export" />
+            <property name="value" nameId="tpee.1070475926801" value="Document Export" />
           </node>
         </node>
       </node>
