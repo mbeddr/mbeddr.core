@@ -466,10 +466,6 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8514070329609147300" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="o23b.CBMCCounterexampleTest" typeId="o23b.4791280061046135693" id="4791280061046336105" nodeInfo="ng">
           <link role="liftedResult" roleId="o23b.4791280061046139123" targetNodeId="7364716885853665802" />
-          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="7592754314265658666" nodeInfo="ng">
-            <property name="nodeKind" nameId="o23b.4791280061046124024" value="*" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
-          </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046336106" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="userInputVar" />
@@ -485,7 +481,7 @@
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="input_var" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4791280061046336109" nodeInfo="in">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.2093108837558113914" resolveInfo="LocalVarRef" />
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.22102029902365709" resolveInfo="AssignmentExpr" />
             </node>
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046336114" nodeInfo="ng">
