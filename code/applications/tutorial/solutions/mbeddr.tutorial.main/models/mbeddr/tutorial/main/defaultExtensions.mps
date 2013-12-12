@@ -7621,9 +7621,8 @@
     </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="5441227754062476995" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="FlightProcessor" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="5441227754062476996" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="processing" />
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="5441227754062477003" nodeInfo="ng" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="8473958930090124544" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="8473958930090124545" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="5441227754062477004" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="nullify" />
         </node>
@@ -7657,14 +7656,14 @@
       <property name="name" nameId="tpck.1169194664001" value="cfgDoNothing" />
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="5441227754062476995" resolveInfo="FlightProcessor" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5441227754062477138" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5441227754062476996" resolveInfo="processing" />
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="8473958930090124544" resolveInfo="FlightProcessor_root" />
       </node>
     </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="5441227754062505657" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="cfgNullifyOnly" />
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="5441227754062476995" resolveInfo="FlightProcessor" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5441227754062505658" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5441227754062476996" resolveInfo="processing" />
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="8473958930090124544" resolveInfo="FlightProcessor_root" />
         <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5441227754062505659" nodeInfo="ng">
           <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5441227754062477004" resolveInfo="nullify" />
         </node>
@@ -7674,7 +7673,7 @@
       <property name="name" nameId="tpck.1169194664001" value="cfgNullifyMaxAt200" />
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="5441227754062476995" resolveInfo="FlightProcessor" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5441227754062477140" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5441227754062476996" resolveInfo="processing" />
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="8473958930090124544" resolveInfo="FlightProcessor_root" />
         <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5441227754062477141" nodeInfo="ng">
           <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5441227754062477004" resolveInfo="nullify" />
         </node>
