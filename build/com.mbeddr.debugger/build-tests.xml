@@ -133,6 +133,7 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate parallelMode="true" fork="true">
+      <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
@@ -446,6 +447,7 @@
     </path>
     <pathconvert pathsep="${path.separator}" property="mps.libraries.path.string" refid="mps.libraries.path" />
     <path id="mps.plugins.path">
+      <pathelement location="${artifacts.mps}/plugins/mps-build" />
       <pathelement location="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <pathelement location="${artifacts.mps}/plugins/mps-debugger-api" />
       <pathelement location="${artifacts.mps}/plugins/mps-execution-api" />
@@ -469,6 +471,9 @@
       <classpath>
         <fileset dir="${artifacts.mps}/lib">
           <include name="**/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-build">
+          <include name="**/lib/*.jar" />
         </fileset>
         <fileset dir="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../..">
           <include name="**/lib/*.jar" />

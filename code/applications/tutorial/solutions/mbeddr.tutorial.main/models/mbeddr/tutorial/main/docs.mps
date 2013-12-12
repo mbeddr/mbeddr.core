@@ -11,7 +11,7 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="2637267020265430783" nodeInfo="ng">
@@ -71,7 +71,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Visualization" typeId="2c95.2588579461812060090" id="794010416819988002" nodeInfo="ng">
         <property name="category" nameId="2c95.2588579461812060097" value="module dependencies" />
         <property name="name" nameId="tpck.1169194664001" value="moduleDeps" />
-        <link role="visualizable" roleId="2c95.2588579461812060095" targetNodeId="e1tx.9141254329931944284" resolveInfo="MbeddrTutorial" />
+        <link role="visualizable" roleId="2c95.2588579461812060095" targetNodeId="e1tx.9141254329931944284" resolveInfo="MbeddrTutorialDefaultExt" />
         <link role="path" roleId="2c95.2588579461812060096" targetNodeId="794010416819988006" resolveInfo="visu" />
         <node role="description" roleId="2c95.2588579461812060099" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="794010416819988003" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="794010416819988004" nodeInfo="ng">
@@ -115,11 +115,15 @@
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="794010416819988006" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="visu" />
-      <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/applications/tutorial/solutions/mbeddr.tutorial.main/_vis" />
+      <node role="pathPicker" roleId="2c95.2642765975824057986" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="2642765975825417592" nodeInfo="ng">
+        <property name="path" nameId="vs0r.6156524541422553710" value="_vis" />
+      </node>
     </node>
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4715820023543670791" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="images" />
-      <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/applications/tutorial/solutions/mbeddr.tutorial.main/images" />
+      <node role="pathPicker" roleId="2c95.2642765975824057986" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="2642765975825417604" nodeInfo="ng">
+        <property name="path" nameId="vs0r.6156524541422553710" value="images" />
+      </node>
     </node>
     <node role="sizeSpecs" roleId="2c95.8624890525767800998" type="2c95.NamedSizeSpec" typeId="2c95.8624890525767800825" id="8624890525768078251" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="width100" />
@@ -135,7 +139,9 @@
     </node>
     <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="6119416551720820600" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="vis" />
-      <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/applications/tutorial/solutions/mbeddr.tutorial.main/_vis" />
+      <node role="pathPicker" roleId="2c95.2642765975824057986" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="2642765975825417590" nodeInfo="ng">
+        <property name="path" nameId="vs0r.6156524541422553710" value="_vis" />
+      </node>
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="794010416819640951" nodeInfo="ng">

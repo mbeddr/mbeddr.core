@@ -3301,7 +3301,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="13085436578078536" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="13085436578117630" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="13085436578117629" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="type size configuration" />
+            <property name="value" nameId="tpee.1070475926801" value="Type Size Configuration" />
           </node>
         </node>
       </node>
@@ -3330,7 +3330,9 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="1707183716777185337" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1707183716777185340" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1707183716777226214" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1707183716777226213" nodeInfo="nn" />
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1707183716777226213" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="Implementation" />
+          </node>
         </node>
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="1707183716777185341" nodeInfo="in" />
