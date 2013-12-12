@@ -1067,5 +1067,10 @@
     <property name="name" nameId="tpck.1169194664001" value="SolutionRelativeFilePicker" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6156524541422549000" resolveInfo="AbstractFilePicker" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2642765975824060179" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="pathAndFile" />
+    <property name="name" nameId="tpck.1169194664001" value="SolutionRelativeDirPicker" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6156524541422549000" resolveInfo="AbstractFilePicker" />
+  </root>
 </model>
 
