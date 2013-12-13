@@ -133,9 +133,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4459718605982007336" resolveInfo="IConfigurationItem" />
     </node>
   </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6616025724454843605" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="IMustBeMigratedAutomatically" />
-  </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8051977711588518781" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IDeprecatedLangConcept" />
     <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.StringConceptPropertyDeclaration" typeId="tpce.1105725281956" id="8051977711588637301" nodeInfo="ig">
@@ -1074,6 +1071,24 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="pathAndFile" />
     <property name="name" nameId="tpck.1169194664001" value="SolutionRelativeDirPicker" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6156524541422549000" resolveInfo="AbstractFilePicker" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="747084250476811597" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="chunk" />
+    <property name="name" nameId="tpck.1169194664001" value="DefaultGenericChunkDependency" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="747084250476878887" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="chunk" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7139820346881560230" resolveInfo="Chunk" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="747084250476874891" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="reexport" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="747084250476867965" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7139820346881807063" resolveInfo="IChunkDependency" />
+    </node>
   </root>
 </model>
 

@@ -958,7 +958,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="949722786950984107" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="zxcx.7533215377935700987" resolveInfo="log" />
+          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="zxcx.8265078645304658397" resolveInfo="log" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="949722786950985303" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950985304" nodeInfo="ng">
@@ -976,7 +976,7 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement in the main function, specify the message list " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="949722786950986155" nodeInfo="ng">
-              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="zxcx.7533215377935700987" resolveInfo="log" />
+              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="zxcx.8265078645304658397" resolveInfo="log" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950986156" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and select the message " />

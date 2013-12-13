@@ -12,15 +12,15 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="949722786950982804" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1382547700131_22" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="7538132541982083447" nodeInfo="ng">
+    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="8265078645304658397" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="log" />
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="7538132541982095414" nodeInfo="ng">
+      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="8265078645304658991" nodeInfo="ng">
         <property name="active" nameId="k146.2688792604367947988" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="hello" />
         <property name="text" nameId="k146.2688792604367903089" value="hello" />
-        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="7538132541982095419" nodeInfo="ng">
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="8265078645304658992" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="who" />
-          <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="7538132541982095420" nodeInfo="ng">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="8265078645304658993" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
@@ -76,8 +76,8 @@
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="949722786950986654" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="949722786950988781" nodeInfo="ng">
           <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="949722786950988783" nodeInfo="ng">
-            <link role="table" roleId="k146.2688792604367964824" targetNodeId="7538132541982083447" resolveInfo="log" />
-            <link role="msg" roleId="k146.2688792604367964825" targetNodeId="7538132541982095414" resolveInfo="hello" />
+            <link role="table" roleId="k146.2688792604367964824" targetNodeId="8265078645304658397" resolveInfo="log" />
+            <link role="msg" roleId="k146.2688792604367964825" targetNodeId="8265078645304658991" resolveInfo="hello" />
             <node role="propVals" roleId="k146.767515563077221084" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="949722786950988929" nodeInfo="ng">
               <property name="value" nameId="yq40.6113173064526131578" value="World" />
             </node>
