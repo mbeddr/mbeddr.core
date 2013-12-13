@@ -16,7 +16,6 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" implicit="yes" />
   <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="8" implicit="yes" />
   <import index="4r5s" modelUID="r:877cb3b3-b593-43b4-ac12-3f0d2829688a(com.mbeddr.analyses.yices.fm.structure)" version="2" implicit="yes" />
-  <import index="vxuc" modelUID="r:acfa7fc7-0a34-4d9a-8ea8-22459c66d50c(com.mbeddr.cc.var.c.structure)" version="-1" implicit="yes" />
   <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="3127880198517389397" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="IntelligentSensors" />
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="3127880198517389398" nodeInfo="ng">
@@ -153,8 +152,8 @@
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="425959417804914050" nodeInfo="ng">
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="3127880198517389398" resolveInfo="IntelligentSensorFamily" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vxuc.VariantModuleDependency" typeId="vxuc.9136994893387078269" id="3547064050843140590" nodeInfo="ng">
-      <link role="variantModule" roleId="vxuc.9136994893387081662" targetNodeId="3127880198517389397" resolveInfo="IntelligentSensors" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645303307147" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="3127880198517389397" resolveInfo="IntelligentSensors" />
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="3127880198517389429" nodeInfo="ng">
