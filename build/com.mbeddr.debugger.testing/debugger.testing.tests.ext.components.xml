@@ -7,6 +7,7 @@
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="multiline.artifacts" location="" />
   <property name="richtext.artifacts" location="" />
+  <property name="tables.artifacts" location="" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.spawner.build" location="../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
   <property name="artifacts.com.mbeddr.core.build" location="../com.mbeddr.core/build/artifacts/com.mbeddr.core.build" />
@@ -17,6 +18,7 @@
   <property name="artifacts.com.mbeddr.debugger.testing.build" location="${build.dir}/artifacts/com.mbeddr.debugger.testing.build" />
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
+  <property name="artifacts.mps-tables" location="${tables.artifacts}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.core.build}/build.properties" prefix="import.com.mbeddr.core.build" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -104,6 +106,8 @@
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
     <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -498,6 +502,7 @@
       <pathelement location="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner" />
       <pathelement location="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
       <pathelement location="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
+      <pathelement location="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables" />
     </path>
     <pathconvert pathsep="${path.separator}" property="mps.plugins.path.string" refid="mps.plugins.path" />
     <path location="${build.layout}/test.debugging.ext.components.jar" id="mps.tests.path" />
@@ -562,6 +567,9 @@
           <include name="**/lib/*.jar" />
         </fileset>
         <fileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables">
           <include name="**/lib/*.jar" />
         </fileset>
       </classpath>
