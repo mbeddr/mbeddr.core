@@ -68,7 +68,6 @@
     <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger-src.jar">
       <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/Debugger.msd" prefix="module" />
     </jar>
-    <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/solutions" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.dev.build.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.dev.build.jar/META-INF" />
     <echoxml file="${build.tmp}/default/com.mbeddr.spawner.dev.build.jar/META-INF/module.xml">
@@ -77,7 +76,7 @@
         <sources jar="com.mbeddr.spawner.dev.build-src.jar" descriptor="debugger.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/solutions/com.mbeddr.spawner.dev.build.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/languages/com.mbeddr.spawner.dev.build.jar">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/com.mbeddr.spawner.dev.build.jar" />
@@ -85,7 +84,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.spawner.dev.build-models">
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/solutions/com.mbeddr.spawner.dev.build-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/languages/com.mbeddr.spawner.dev.build-src.jar">
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/debugger.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.spawner.dev.build-models" prefix="module/models" />
