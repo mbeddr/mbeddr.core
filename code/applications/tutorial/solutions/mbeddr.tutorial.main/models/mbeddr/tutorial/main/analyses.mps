@@ -4,6 +4,7 @@
   <language namespace="5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)" />
   <language namespace="42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)" />
   <language namespace="564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)" />
+  <language namespace="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="1a986be1-0ef0-4f9f-9d8a-81c3ea7227ae(com.mbeddr.physicalunits)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
@@ -270,14 +271,17 @@
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3791647284633043928" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="FlightAnalyzerVerification" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3791647284633043929" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386151" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3791647284633043930" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386217" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3791647284633043931" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="e1tx.6657613005452170119" resolveInfo="UnitDeclarations" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386170" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="e1tx.6657613005452170119" resolveInfo="UnitDeclarations" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="8330520303445097405" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="CHOOSEN_EVENT" />

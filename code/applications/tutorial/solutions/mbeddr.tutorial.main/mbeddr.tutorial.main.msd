@@ -14,6 +14,7 @@
     <usedLanguage>983e02f8-8062-426e-b60d-bc044a46b93a(com.mbeddr.cc.requirements.report)</usedLanguage>
     <usedLanguage>b9f5080f-7f6a-4d86-b994-77d4c982153a(com.mbeddr.cc.requirements.scenario2doc)</usedLanguage>
     <usedLanguage>d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)</usedLanguage>
+    <usedLanguage>53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)</usedLanguage>
     <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
     <usedLanguage>1c5b7d51-0ef3-4332-af36-874466950878(com.mbeddr.doc.expressions)</usedLanguage>
     <usedLanguage>fb853ce7-1235-4635-99f2-8ca7447fa202(com.mbeddr.ext.physicalunits)</usedLanguage>

@@ -181,8 +181,8 @@
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5744000828452557624" nodeInfo="ng">
           <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="5744000828452557625" nodeInfo="ng" />
         </node>
-        <node role="imports" roleId="x27k.1317894735999304826" type="vxuc.VariantModuleDependency" typeId="vxuc.9136994893387078269" id="5142601156808675834" nodeInfo="ng">
-          <link role="variantModule" roleId="vxuc.9136994893387081662" targetNodeId="5959167564566811023" resolveInfo="M1Var" />
+        <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645303321645" nodeInfo="ng">
+          <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5959167564566811023" resolveInfo="M1Var" />
         </node>
       </node>
     </node>
