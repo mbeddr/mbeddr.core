@@ -953,6 +953,9 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="13085436577882829" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IMbeddrIDERoot" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2992054467162557129" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8076351743304603872" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IReference" />
