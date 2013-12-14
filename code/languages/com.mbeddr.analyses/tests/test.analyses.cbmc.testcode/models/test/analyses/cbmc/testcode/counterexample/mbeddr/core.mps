@@ -1044,6 +1044,49 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6004315309919798751" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1347023250327_1" />
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2669954551538172260" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="enumAsInt" />
+      <property name="extern" nameId="x27k.6708182213627045681" value="false" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2669954551538172261" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2669954551538172262" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="e1" />
+          <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="2669954551538172263" nodeInfo="ng">
+            <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="6004315309919804236" resolveInfo="AN_ENUM" />
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2669954551538172264" nodeInfo="ng">
+            <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2669954551538172270" resolveInfo="e" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.Assert" typeId="q5q6.6973658835837826905" id="2669954551538172265" nodeInfo="ng">
+          <node role="exp" roleId="q5q6.6973658835837826906" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="2669954551538172266" nodeInfo="ng">
+            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2669954551538172267" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2669954551538172262" resolveInfo="e1" />
+            </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2669954551538172482" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="11" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2669954551538172269" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2669954551538172270" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="e" />
+        <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="2669954551538172271" nodeInfo="ng">
+          <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="6004315309919804236" resolveInfo="AN_ENUM" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2669954551538172272" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1347023250327_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2669954551538171772" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1387037608932_1" />
+    </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6004315309919798752" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="20776903375366586" resolveInfo="std" />
     </node>
