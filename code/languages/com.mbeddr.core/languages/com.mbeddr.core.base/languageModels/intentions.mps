@@ -244,6 +244,7 @@
   </root>
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="2416710259287011735" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="toggleDoNotAnalyzeDataFlowAnnotation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="dataflow" />
     <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="vs0r.2416710259286977851" resolveInfo="IDoNotAnalyzeDataFlowAnnotateable" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="2416710259287011736" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2416710259287011742" nodeInfo="sn">
