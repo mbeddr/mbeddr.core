@@ -171,8 +171,8 @@
   </root>
   <root type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="1165432222362120317" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DetailedRequirements" />
-    <node role="imports" roleId="75wo.1165432222362099166" type="75wo.ModuleRef" typeId="75wo.439567521322965024" id="1165432222362120332" nodeInfo="ng">
-      <link role="module" roleId="75wo.439567521322965025" targetNodeId="8745401669463114528" resolveInfo="HighLevelRequirements" />
+    <node role="imports" roleId="75wo.1165432222362099166" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645295934886" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="8745401669463114528" resolveInfo="HighLevelRequirements" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1165432222362134391" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Specialized" />

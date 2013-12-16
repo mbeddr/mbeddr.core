@@ -319,6 +319,202 @@
         </node>
       </node>
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154175" nodeInfo="ng" />
+      <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="2992054467179682925" nodeInfo="ng">
+        <property name="summmary" nameId="75wo.3402431285977818823" value="Price Depends on Country and Price Group" />
+        <property name="name" nameId="tpck.1169194664001" value="priceDep" />
+        <node role="additionalTags" roleId="75wo.8983772170066710134" type="75wo.StatusTag" typeId="75wo.882101644643192127" id="2992054467185644981" nodeInfo="ng">
+          <node role="status" roleId="75wo.882101644643192135" type="75wo.RequirementStatusAccepted" typeId="75wo.882101644643279449" id="2992054467185649469" nodeInfo="ng" />
+        </node>
+        <node role="additionalTags" roleId="75wo.8983772170066710134" type="75wo.TextTag" typeId="75wo.3273071121108859175" id="2992054467185653890" nodeInfo="ng">
+          <property name="tag" nameId="75wo.3273071121108859177" value="pricing" />
+        </node>
+        <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="2992054467179682926" nodeInfo="ng" />
+        <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="2992054467179682927" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2992054467179682928" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2992054467179682929" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467179682930" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The price of the phone call depends on a number of factors. Among them are the " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="3vkx.VarWord" typeId="3vkx.2992054467184168918" id="2992054467184652768" nodeInfo="ng">
+                <property name="name" nameId="tpck.1169194664001" value="country" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467184652767" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and the " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="3vkx.VarWord" typeId="3vkx.2992054467184168918" id="2992054467184652772" nodeInfo="ng">
+                <property name="name" nameId="tpck.1169194664001" value="pricegroup" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467184652773" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2992054467185937280" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2992054467185937281" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467185937282" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The actual " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="3vkx.VarWord" typeId="3vkx.2992054467184168918" id="2992054467185937241" nodeInfo="ng">
+                <property name="name" nameId="tpck.1169194664001" value="actMinPrice" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467185937242" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is computed from the " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="3vkx.VarWord" typeId="3vkx.2992054467184168918" id="2992054467185937243" nodeInfo="ng">
+                <property name="name" nameId="tpck.1169194664001" value="baseMinPrice" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467185937244" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" with the following equation; the " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="3vkx.VarWord" typeId="3vkx.2992054467184168918" id="2992054467185937245" nodeInfo="ng">
+                <property name="name" nameId="tpck.1169194664001" value="priceFactor" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467185937246" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is determined by the table below: " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="3vkx.PEqWord" typeId="3vkx.2992054467184775334" id="2992054467185937247" nodeInfo="ng">
+                <link role="varref" roleId="3vkx.2992054467184775386" targetNodeId="2992054467185937241" resolveInfo="actMinPrice" />
+                <node role="expr" roleId="3vkx.2992054467184775426" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2992054467185937248" nodeInfo="ng">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="2992054467185937249" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467185937250" nodeInfo="ng">
+                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="100" />
+                    </node>
+                    <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.VarRef" typeId="3vkx.2992054467184778980" id="2992054467185937251" nodeInfo="ng">
+                      <link role="var" roleId="3vkx.2992054467184778981" targetNodeId="2992054467185937245" resolveInfo="priceFactor" />
+                    </node>
+                  </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.VarRef" typeId="3vkx.2992054467184778980" id="2992054467185937252" nodeInfo="ng">
+                    <link role="var" roleId="3vkx.2992054467184778981" targetNodeId="2992054467185937243" resolveInfo="baseMinPrice" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467185941426" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.PTable" typeId="3vkx.2992054467179155627" id="2992054467180736288" nodeInfo="ng">
+          <node role="countries" roleId="3vkx.2992054467179155628" type="3vkx.PCountryDef" typeId="3vkx.2992054467179134980" id="2992054467180736289" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="Germany" />
+          </node>
+          <node role="countries" roleId="3vkx.2992054467179155628" type="3vkx.PCountryDef" typeId="3vkx.2992054467179134980" id="2992054467180748278" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="Italy" />
+          </node>
+          <node role="countries" roleId="3vkx.2992054467179155628" type="3vkx.PCountryDef" typeId="3vkx.2992054467179134980" id="2992054467180748281" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="Spain" />
+          </node>
+          <node role="countries" roleId="3vkx.2992054467179155628" type="3vkx.PCountryDef" typeId="3vkx.2992054467179134980" id="2992054467180748285" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="GreatBritain" />
+          </node>
+          <node role="pricegroups" roleId="3vkx.2992054467179155631" type="3vkx.PPriceGroup" typeId="3vkx.2992054467179155595" id="2992054467180736290" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="PLATINUM" />
+          </node>
+          <node role="pricegroups" roleId="3vkx.2992054467179155631" type="3vkx.PPriceGroup" typeId="3vkx.2992054467179155595" id="2992054467180744198" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="GOLD" />
+          </node>
+          <node role="pricegroups" roleId="3vkx.2992054467179155631" type="3vkx.PPriceGroup" typeId="3vkx.2992054467179155595" id="2992054467180744191" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="SILVER" />
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184056513" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180736289" resolveInfo="Germany" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180736290" resolveInfo="PLATINUM" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184056517" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184060621" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748278" resolveInfo="Italy" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180736290" resolveInfo="PLATINUM" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184060627" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="8" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184074294" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748281" resolveInfo="Spain" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180736290" resolveInfo="PLATINUM" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184074302" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="7" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184078154" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748285" resolveInfo="GreatBritain" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180736290" resolveInfo="PLATINUM" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184078164" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="11" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184082033" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180736289" resolveInfo="Germany" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744191" resolveInfo="SILVER" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184082045" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="12" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184086217" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748278" resolveInfo="Italy" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744191" resolveInfo="SILVER" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184086231" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="8" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184112932" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748281" resolveInfo="Spain" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744191" resolveInfo="SILVER" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184112948" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="8" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184116868" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748285" resolveInfo="GreatBritain" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744191" resolveInfo="SILVER" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184116886" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="8" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184120823" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180736289" resolveInfo="Germany" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744198" resolveInfo="GOLD" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184120843" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="11" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184129076" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748278" resolveInfo="Italy" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744198" resolveInfo="GOLD" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184164625" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184129100" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748281" resolveInfo="Spain" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744198" resolveInfo="GOLD" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184129126" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="9" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184133366" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748285" resolveInfo="GreatBritain" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744198" resolveInfo="GOLD" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184133394" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154176" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="FasterThan100" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="For each trackpoint where you go more than 100 mps, you get 10 points" />
@@ -463,8 +659,8 @@
         </node>
       </node>
     </node>
-    <node role="imports" roleId="75wo.1165432222362099166" type="75wo.ModuleRef" typeId="75wo.439567521322965024" id="4201933574507489772" nodeInfo="ng">
-      <link role="module" roleId="75wo.439567521322965025" targetNodeId="8119642625901794439" resolveInfo="ArchitecturalComponents" />
+    <node role="imports" roleId="75wo.1165432222362099166" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="2992054467179669219" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="8119642625901794439" resolveInfo="ArchitecturalComponents" />
     </node>
     <node role="abstract" roleId="75wo.2588579461811806005" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4557518620047970488" nodeInfo="ng">
       <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4557518620047970489" nodeInfo="ng">

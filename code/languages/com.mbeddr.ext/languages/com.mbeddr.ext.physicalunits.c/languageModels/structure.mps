@@ -212,22 +212,5 @@
       <property name="role" nameId="tpce.7588428831955550663" value="" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7139820346924883170" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="UnitContainerDependency" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="x27k.9136994893366914267" resolveInfo="ModuleDependency" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7139820346924884985" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="reexport" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7139820346924884983" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="container" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="ym4j.3801772042669047872" resolveInfo="UnitContainer" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7139820346924883268" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7139820346881807063" resolveInfo="IChunkDependency" />
-    </node>
-  </root>
 </model>
 
