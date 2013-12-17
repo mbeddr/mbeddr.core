@@ -294,8 +294,12 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7308356872494864504" nodeInfo="ng" />
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6657613005452170122" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6657613005452170110" resolveInfo="UnitDeclarations" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6867589085885191217" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170110" resolveInfo="UnitDeclarations" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6867589085885235113" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7139820346924609110" resolveInfo="BaseUnits" />
     </node>
   </root>
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5185104661801336666" nodeInfo="ng">
@@ -2559,9 +2563,8 @@
         <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7139820346924618123" resolveInfo="F" />
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="3c6d.UnitContainerDependency" typeId="3c6d.7139820346924883170" id="7139820346925332771" nodeInfo="ng">
-      <property name="reexport" nameId="3c6d.7139820346924884985" value="true" />
-      <link role="container" roleId="3c6d.7139820346924884983" targetNodeId="7139820346924609110" resolveInfo="BaseUnits" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6867589085885664385" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7139820346924609110" resolveInfo="BaseUnits" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2410497733751914004" nodeInfo="ng">
