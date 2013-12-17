@@ -54,6 +54,7 @@
           <module ref="be896c0f-4f34-4122-95ff-1aef962f5725(com.mbeddr.mpsutil.typesystem.trace.rt)" />
           <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
           <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="test.ex.ext.components-src.jar" descriptor="components.msd" />
@@ -90,6 +91,7 @@
           <module ref="be896c0f-4f34-4122-95ff-1aef962f5725(com.mbeddr.mpsutil.typesystem.trace.rt)" />
           <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
           <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="test.ex.ext.comp_mocking-src.jar" descriptor="comp_mocking.msd" />
@@ -126,6 +128,7 @@
           <module ref="be896c0f-4f34-4122-95ff-1aef962f5725(com.mbeddr.mpsutil.typesystem.trace.rt)" />
           <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
           <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="test.ex.ext.physicalunits.c-src.jar" descriptor="c.msd" />
@@ -162,6 +165,7 @@
           <module ref="be896c0f-4f34-4122-95ff-1aef962f5725(com.mbeddr.mpsutil.typesystem.trace.rt)" />
           <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
           <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="test.ex.ext.statemachine-src.jar" descriptor="statemachine.msd" />
@@ -185,13 +189,13 @@
   
   <target name="buildDependents">
     <ant antfile="../com.mbeddr.mpsutil/build.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../com.mbeddr.spawner/build.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../com.mbeddr.debugger/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.core/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="build-components.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="build-statemachine.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="build-SmInComp.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="build-units.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../com.mbeddr.spawner/build.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../com.mbeddr.debugger/build.xml" inheritAll="false" useNativeBasedir="true" />
   </target>
   
   <target name="fetchDependencies">
@@ -201,12 +205,12 @@
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
     <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" />
@@ -217,7 +221,7 @@
     <unzip src="${artifacts.com.mbeddr.ext.units}/com.mbeddr.ext.units.zip" dest="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
   </target>
   
-  <target name="build" depends="assemble, check" />
+  <target name="build" depends="assemble" />
   
   <target name="clean">
     <delete dir="${build.tmp}" />
@@ -348,6 +352,13 @@
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
+      <macro name="mps.home" path="${mps.home}" />
+      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
+      <macro name="mbeddr.ext" path="${mbeddr.ext}" />
+      <macro name="lisson.home" path="${lisson.home}" />
+      <macro name="multiline.artifacts" path="${multiline.artifacts}" />
+      <macro name="richtext.artifacts" path="${richtext.artifacts}" />
+      <macro name="tables.artifacts" path="${tables.artifacts}" />
     </generate>
   </target>
   
@@ -357,14 +368,6 @@
   
   <target name="makeDependents">
     <ant antfile="../com.mbeddr.mpsutil/build.xml" inheritAll="false" useNativeBasedir="true">
-      <target name="generate" />
-      <target name="assemble" />
-    </ant>
-    <ant antfile="../com.mbeddr.spawner/build.xml" inheritAll="false" useNativeBasedir="true">
-      <target name="generate" />
-      <target name="assemble" />
-    </ant>
-    <ant antfile="../com.mbeddr.debugger/build.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
@@ -385,6 +388,14 @@
       <target name="assemble" />
     </ant>
     <ant antfile="build-units.xml" inheritAll="false" useNativeBasedir="true">
+      <target name="generate" />
+      <target name="assemble" />
+    </ant>
+    <ant antfile="../com.mbeddr.spawner/build.xml" inheritAll="false" useNativeBasedir="true">
+      <target name="generate" />
+      <target name="assemble" />
+    </ant>
+    <ant antfile="../com.mbeddr.debugger/build.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>

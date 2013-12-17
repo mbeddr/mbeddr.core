@@ -14730,6 +14730,15 @@
               </node>
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TraceMacro" typeId="tpf8.3118009927543452571" id="3809413254161762910" nodeInfo="nn">
+            <node role="sourceNodeQuery" roleId="tpf8.3118009927543452625" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="3809413254161762912" nodeInfo="nn">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3809413254161762914" nodeInfo="sn">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3809413254161774065" nodeInfo="nn">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="3809413254161774064" nodeInfo="nn" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="x27k.6512473996287153139" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="4075471389392750375" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="portOps" />

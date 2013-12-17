@@ -13,8 +13,9 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
   <root type="od47.AccessDataSpecification" typeId="od47.2945795531676751421" id="2945795531676753454" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="n" />
     <node role="roles" roleId="od47.2945795531676751422" type="od47.RoleSpec" typeId="od47.2945795531676751395" id="2945795531676753455" nodeInfo="ng">
@@ -311,8 +312,9 @@
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2945795531676760878" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="empty_1353508000876_7" />
         </node>
-        <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="2945795531676760875" nodeInfo="ng">
-          <link role="module" roleId="x27k.1317894735999299714" targetNodeId="2945795531676751360" resolveInfo="DataDefinition" />
+        <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386106" nodeInfo="ng">
+          <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+          <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="2945795531676751360" resolveInfo="DataDefinition" />
         </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="od47.ModuleRoleSpec" typeId="od47.2945795531676757867" id="2945795531676760924" nodeInfo="ng">
           <link role="role" roleId="od47.2945795531676757868" targetNodeId="2945795531676753456" resolveInfo="ApplicationLayer" />

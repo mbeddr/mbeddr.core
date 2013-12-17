@@ -8,6 +8,7 @@
   <property name="mbeddr.core" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
   <property name="multiline.artifacts" location="" />
   <property name="richtext.artifacts" location="" />
+  <property name="tables.artifacts" location="" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.spawner.build" location="../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
   <property name="artifacts.com.mbeddr.core.build" location="../com.mbeddr.core/build/artifacts/com.mbeddr.core.build" />
@@ -16,6 +17,7 @@
   <property name="artifacts.com.mbeddr.debugger.testing.build" location="${build.dir}/artifacts/com.mbeddr.debugger.testing.build" />
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
+  <property name="artifacts.mps-tables" location="${tables.artifacts}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.core.build}/build.properties" prefix="import.com.mbeddr.core.build" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -99,9 +101,9 @@
   
   <target name="buildDependents">
     <ant antfile="../com.mbeddr.spawner/build.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../com.mbeddr.mpsutil/build.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../com.mbeddr.debugger/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.core/build.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../com.mbeddr.debugger/build.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../com.mbeddr.mpsutil/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="debugger-testing.xml" inheritAll="false" useNativeBasedir="true" />
   </target>
   
@@ -120,11 +122,13 @@
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.testing.tests.runtime.build/com.mbeddr.debugger.testing.tests.runtime.zip" />
     <unzip src="${build.layout}/com.mbeddr.debugger.testing.tests.runtime.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.testing.tests.runtime.build/com.mbeddr.debugger.testing.tests.runtime.zip" />
   </target>
   
-  <target name="build" depends="assemble, check" />
+  <target name="build" depends="assemble" />
   
   <target name="clean">
     <delete dir="${build.tmp}" />
@@ -159,6 +163,7 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner" />
       <plugin path="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
       <plugin path="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
+      <plugin path="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -234,6 +239,7 @@
       <library file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.udt.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.unittest.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.util.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
@@ -248,6 +254,12 @@
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
+      <macro name="mps.home" path="${mps.home}" />
+      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
+      <macro name="mbeddr.core" path="${mbeddr.core}" />
+      <macro name="multiline.artifacts" path="${multiline.artifacts}" />
+      <macro name="richtext.artifacts" path="${richtext.artifacts}" />
+      <macro name="tables.artifacts" path="${tables.artifacts}" />
     </generate>
   </target>
   
@@ -260,7 +272,7 @@
       <target name="generate" />
       <target name="assemble" />
     </ant>
-    <ant antfile="../com.mbeddr.mpsutil/build.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../com.mbeddr.core/build.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
@@ -268,7 +280,7 @@
       <target name="generate" />
       <target name="assemble" />
     </ant>
-    <ant antfile="../com.mbeddr.core/build.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../com.mbeddr.mpsutil/build.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
@@ -441,6 +453,7 @@
       <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.udt.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.unittest.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.util.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
@@ -467,6 +480,7 @@
       <pathelement location="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner" />
       <pathelement location="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
       <pathelement location="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
+      <pathelement location="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables" />
     </path>
     <pathconvert pathsep="${path.separator}" property="mps.plugins.path.string" refid="mps.plugins.path" />
     <path location="${build.tmp}/deps/com.mbeddr.debugger.testing.tests.runtime.build/com.mbeddr.debugger.testing.tests.runtime.zip/debugger.testing.tests.runtime/languages/com.mbeddr.debugger.testing.tests.runtime/test.debugger.test.runtime.jar" id="mps.tests.path" />
@@ -525,6 +539,9 @@
           <include name="**/lib/*.jar" />
         </fileset>
         <fileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables">
           <include name="**/lib/*.jar" />
         </fileset>
       </classpath>

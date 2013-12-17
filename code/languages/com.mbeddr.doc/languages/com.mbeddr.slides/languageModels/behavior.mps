@@ -121,7 +121,7 @@
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~Collections%dsingleton(java%dlang%dObject)%cjava%dutil%dSet" resolveInfo="singleton" />
             <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="k7g3.~Collections" resolveInfo="Collections" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="525206822094936735" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="\\link" />
+              <property name="value" nameId="tpee.1070475926801" value="@link" />
             </node>
           </node>
         </node>

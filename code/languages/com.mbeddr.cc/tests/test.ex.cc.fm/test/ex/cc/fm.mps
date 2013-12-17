@@ -20,7 +20,6 @@
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
-  <import index="vxuc" modelUID="r:acfa7fc7-0a34-4d9a-8ea8-22459c66d50c(com.mbeddr.cc.var.c.structure)" version="-1" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6617704999132170886" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SensorModule" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
@@ -440,8 +439,8 @@
         </node>
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vxuc.VariantModuleDependency" typeId="vxuc.9136994893387078269" id="8626086128967087455" nodeInfo="ng">
-      <link role="variantModule" roleId="vxuc.9136994893387081662" targetNodeId="6617704999132170929" resolveInfo="Deployment" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645303299039" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6617704999132170929" resolveInfo="Deployment" />
     </node>
   </root>
   <root type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="1165432222362156712" nodeInfo="ng">

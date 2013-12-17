@@ -6,6 +6,7 @@
   <property name="mps.home" location="${basedir}/../../../../../../../../Applications/MPS25.app" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="multiline.artifacts" location="" />
+  <property name="tables.artifacts" location="" />
   <property name="richtext.artifacts" location="" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.spawner.build" location="../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
@@ -16,6 +17,7 @@
   <property name="artifacts.com.mbeddr.debugger.testing.build" location="${build.dir}/artifacts/com.mbeddr.debugger.testing.build" />
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
+  <property name="artifacts.mps-tables" location="${tables.artifacts}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.debugger.testing.tests.cross.build}/build.properties" prefix="import.com.mbeddr.debugger.testing.tests.cross.build" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -51,6 +53,7 @@
           <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
           <module ref="23949432-aaff-4c03-b7da-26e4e956ccea(jetbrains.mps.baseLanguage.regexp.runtime)" />
           <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
@@ -83,25 +86,27 @@
   </target>
   
   <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.testing.build}/com.mbeddr.debugger.testing.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.testing.tests.cross.build/com.mbeddr.debugger.testing.tests.cross.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.testing.tests.cross.build}/com.mbeddr.debugger.testing.tests.cross.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.testing.tests.cross.build/com.mbeddr.debugger.testing.tests.cross.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.testing.tests.cross.build/com.mbeddr.debugger.testing.tests.cross.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.testing.tests.cross.build}/com.mbeddr.debugger.testing.tests.cross.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.testing.tests.cross.build/com.mbeddr.debugger.testing.tests.cross.zip" />
   </target>
   
-  <target name="build" depends="assemble, check" />
+  <target name="build" depends="assemble" />
   
   <target name="clean">
     <delete dir="${build.tmp}" />
@@ -229,6 +234,11 @@
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
+      <macro name="mps.home" path="${mps.home}" />
+      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
+      <macro name="multiline.artifacts" path="${multiline.artifacts}" />
+      <macro name="tables.artifacts" path="${tables.artifacts}" />
+      <macro name="richtext.artifacts" path="${richtext.artifacts}" />
     </generate>
   </target>
   
@@ -488,6 +498,7 @@
       <pathelement location="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner" />
       <pathelement location="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
       <pathelement location="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
+      <pathelement location="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables" />
     </path>
     <pathconvert pathsep="${path.separator}" property="mps.plugins.path.string" refid="mps.plugins.path" />
     <path location="${build.layout}/test.debugging.core.jar" id="mps.tests.path" />
@@ -549,6 +560,9 @@
           <include name="**/lib/*.jar" />
         </fileset>
         <fileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables">
           <include name="**/lib/*.jar" />
         </fileset>
       </classpath>
