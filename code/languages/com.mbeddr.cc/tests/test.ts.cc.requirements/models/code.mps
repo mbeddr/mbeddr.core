@@ -9,7 +9,6 @@
   <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
   <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
-  <language namespace="f7873334-6e9d-4efd-a0fd-98205598887b(com.mbeddr.cc.trace.c)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="6bll" modelUID="r:d9293246-b636-408d-a2f1-e29fc568656d(test.ts.requirements.reqs)" version="-1" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
@@ -22,7 +21,6 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
-  <import index="krak" modelUID="r:a8fd67ab-11a9-4dbd-9b99-eea007545a9a(com.mbeddr.cc.trace.c.structure)" version="-1" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8745401669463182946" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ExampleCode" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4577779292082129112" nodeInfo="ng">
@@ -41,7 +39,7 @@
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="2724289185193262612" nodeInfo="ng">
               <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.TestsTraceKind" typeId="26ao.439567521322929001" id="2724289185193262615" nodeInfo="ng" />
-              <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521322996161" nodeInfo="ng">
+              <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="2064656585763659197" nodeInfo="ng">
                 <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.1209423092481311976" resolveInfo="Add" />
               </node>
             </node>
@@ -59,7 +57,7 @@
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1209423092481311983" nodeInfo="ng">
         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1209423092481311984" nodeInfo="ng" />
-        <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521322996160" nodeInfo="ng">
+        <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="2064656585763657831" nodeInfo="ng">
           <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.1209423092481311981" resolveInfo="AddFct" />
         </node>
       </node>
@@ -87,7 +85,7 @@
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="26ao.TraceWord" typeId="26ao.4577779292081946446" id="4577779292082129125" nodeInfo="ng">
               <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="4577779292082132129" nodeInfo="ng" />
-              <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="4577779292082133372" nodeInfo="ng">
+              <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="2064656585763660563" nodeInfo="ng">
                 <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.2667296550441654210" resolveInfo="ANewOne" />
               </node>
               <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="4577779292082138652" nodeInfo="ng">
@@ -116,7 +114,7 @@
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="2724289185193262609" nodeInfo="ng">
               <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="2724289185193262610" nodeInfo="ng" />
-              <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521322996162" nodeInfo="ng">
+              <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="2064656585763661931" nodeInfo="ng">
                 <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.3291018189726988279" resolveInfo="Arg2" />
               </node>
             </node>
@@ -132,7 +130,7 @@
                       <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="1547996354246527267" resolveInfo="args" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="2667296550441544588" nodeInfo="ng">
                         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.TestsTraceKind" typeId="26ao.439567521322929001" id="2667296550441544590" nodeInfo="ng" />
-                        <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="2667296550441544591" nodeInfo="ng">
+                        <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="2064656585763663297" nodeInfo="ng">
                           <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.1209423092481311986" resolveInfo="FailOtherwise" />
                         </node>
                       </node>
@@ -155,7 +153,7 @@
                 </node>
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1209423092481311978" nodeInfo="ng">
                   <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1209423092481311979" nodeInfo="ng" />
-                  <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521322996165" nodeInfo="ng">
+                  <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="2064656585763664663" nodeInfo="ng">
                     <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.3291018189726988279" resolveInfo="Arg2" />
                   </node>
                 </node>
@@ -173,7 +171,7 @@
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1209423092481311988" nodeInfo="ng">
                 <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1209423092481311989" nodeInfo="ng" />
-                <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521322996164" nodeInfo="ng">
+                <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="2064656585763668013" nodeInfo="ng">
                   <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.1209423092481311986" resolveInfo="FailOtherwise" />
                 </node>
               </node>
@@ -183,7 +181,7 @@
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="439567521322996166" nodeInfo="ng">
         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="439567521322996167" nodeInfo="ng" />
-        <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521322996168" nodeInfo="ng">
+        <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="2064656585763666647" nodeInfo="ng">
           <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.3291018189726975357" resolveInfo="Main" />
         </node>
       </node>
@@ -210,11 +208,15 @@
         </node>
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1209423092481298537" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1209423092481298536" resolveInfo="StrUtil" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="2064656585763641546" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1209423092481298536" resolveInfo="StrUtil" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="krak.CModuleReqDependency" typeId="krak.9136994893369227797" id="9136994893387382183" nodeInfo="ng">
-      <link role="reqModule" roleId="krak.9136994893369235284" targetNodeId="6bll.1165432222362120317" resolveInfo="DetailedRequirements" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="2064656585763646962" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6bll.1165432222362120317" resolveInfo="DetailedRequirements" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="2064656585763655110" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6bll.8745401669463114528" resolveInfo="HighLevelRequirements" />
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="6623913219184388889" nodeInfo="ng">

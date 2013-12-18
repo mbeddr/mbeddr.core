@@ -76,7 +76,6 @@
           <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
           <module ref="23949432-aaff-4c03-b7da-26e4e956ccea(jetbrains.mps.baseLanguage.regexp.runtime)" />
           <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
@@ -119,12 +118,12 @@
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
     <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
   </target>

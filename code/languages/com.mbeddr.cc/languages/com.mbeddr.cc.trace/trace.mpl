@@ -15,6 +15,8 @@
       </models>
       <facets>
         <facet type="java" />
+        <facet type="java" />
+        <facet type="java" />
       </facets>
       <external-templates>
         <generator generatorUID="2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)" />
@@ -34,7 +36,7 @@
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <mapping-priorities>
-        <mapping-priority-rule kind="strictly_together">
+        <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
             <generator generatorUID="d2f04f16-fc81-467c-a1a0-5e0db840c4a5(com.mbeddr.cc.trace#8626086128958778566)" />
             <external-mapping>
