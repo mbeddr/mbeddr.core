@@ -27,7 +27,6 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="krak" modelUID="r:a8fd67ab-11a9-4dbd-9b99-eea007545a9a(com.mbeddr.cc.trace.c.structure)" version="-1" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="3534497005926839283" nodeInfo="ng">
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="91052462731187590" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="91052462731187591" nodeInfo="ng" />
@@ -159,8 +158,8 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="krak.CModuleReqDependency" typeId="krak.9136994893369227797" id="9136994893387358652" nodeInfo="ng">
-      <link role="reqModule" roleId="krak.9136994893369235284" targetNodeId="3534497005926839233" resolveInfo="Requirements" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="2064656585766623799" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="3534497005926839233" resolveInfo="Requirements" />
     </node>
   </root>
   <root type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="3534497005926839233" nodeInfo="ng">
