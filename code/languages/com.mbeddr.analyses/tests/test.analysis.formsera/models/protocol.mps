@@ -513,7 +513,11 @@
         </node>
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="4207776615987926878" nodeInfo="ng">
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1328910530790632025" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5327383046620205813" resolveInfo="Car" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1328910530790680088" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="5327383046620205813" resolveInfo="Car" />
     </node>
   </root>

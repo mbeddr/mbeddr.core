@@ -39,8 +39,8 @@
     <property name="name" nameId="tpck.1169194664001" value="Counter" />
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235881" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="CounterVariability" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235882" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Counter" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530793185462" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="1328910530793185463" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235883" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="CoreFunctionality" />
         </node>
@@ -63,7 +63,6 @@
           </node>
           <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235890" nodeInfo="ng" />
         </node>
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235891" nodeInfo="ng" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.FeatureModelVerifiableAttribute" typeId="4r5s.7519116116714294488" id="7174651526804342515" nodeInfo="ng" />
     </node>
@@ -72,9 +71,8 @@
     <property name="name" nameId="tpck.1169194664001" value="FM_Verification" />
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235904" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="MandatoryFeatures" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235905" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="rootWithMandatory" />
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235906" nodeInfo="ng" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530793185682" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="1328910530793185683" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235907" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="mandatoryChild1" />
           <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235908" nodeInfo="ng" />
@@ -87,9 +85,8 @@
     </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235910" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="FM" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235911" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="root" />
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="2912335823209235912" nodeInfo="ng" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530793185642" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="1328910530793185643" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235913" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="optional1" />
         </node>
@@ -143,7 +140,7 @@
       <property name="name" nameId="tpck.1169194664001" value="C1" />
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="2912335823209235910" resolveInfo="FM" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="2912335823209235932" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="2912335823209235911" resolveInfo="root" />
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="1328910530793185642" resolveInfo="FM_root" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.ConfigurationModelVerifiableAttribute" typeId="4r5s.7519116116714540431" id="8596690938390339565" nodeInfo="ng" />
     </node>
@@ -152,8 +149,8 @@
     <property name="name" nameId="tpck.1169194664001" value="IntelligentActuator" />
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235934" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="IntelligentActuatorFamily" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235935" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Root" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530793218074" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="1328910530793218075" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235936" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="Diagnosis" />
           <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235937" nodeInfo="ng">
@@ -181,7 +178,6 @@
             <property name="name" nameId="tpck.1169194664001" value="TCP_IP" />
           </node>
         </node>
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235947" nodeInfo="ng" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.FeatureModelVerifiableAttribute" typeId="4r5s.7519116116714294488" id="7851273378158509915" nodeInfo="ng" />
     </node>
@@ -189,7 +185,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Switch" />
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="2912335823209235934" resolveInfo="IntelligentActuatorFamily" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="2912335823209235949" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="2912335823209235935" resolveInfo="Root" />
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="1328910530793218074" resolveInfo="IntelligentActuatorFamily_root" />
         <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="2912335823209235950" nodeInfo="ng">
           <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="2912335823209235936" resolveInfo="Diagnosis" />
           <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="2912335823209235951" nodeInfo="ng">
@@ -207,8 +203,8 @@
     <property name="name" nameId="tpck.1169194664001" value="IntelligentSensor" />
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235954" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="IntelligentSensorFamily" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235955" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Root" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530793218100" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="1328910530793218101" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235956" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="Diagnosis" />
           <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235957" nodeInfo="ng">
@@ -267,7 +263,6 @@
           </node>
           <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235979" nodeInfo="ng" />
         </node>
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235980" nodeInfo="ng" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.FeatureModelVerifiableAttribute" typeId="4r5s.7519116116714294488" id="4106905652749070819" nodeInfo="ng" />
     </node>
