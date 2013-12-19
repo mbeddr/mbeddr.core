@@ -704,9 +704,6 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5449787351258300532" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IValueLike" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5449787351258301309" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
-    </node>
   </root>
 </model>
 
