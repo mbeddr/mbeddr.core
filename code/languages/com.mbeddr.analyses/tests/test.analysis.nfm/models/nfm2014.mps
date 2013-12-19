@@ -507,7 +507,9 @@
       </node>
     </node>
   </root>
-  <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="3212431740133390077" nodeInfo="ng" />
+  <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="3212431740133390077" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="AC" />
+  </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8559686898069114823" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Heart" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="8559686898069573115" nodeInfo="ng">
@@ -848,8 +850,9 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8559686898069443426" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="3212431740133389815" resolveInfo="Statemachines" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1328910530790632027" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="3212431740133389815" resolveInfo="Statemachines" />
     </node>
   </root>
 </model>

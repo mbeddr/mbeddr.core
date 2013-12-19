@@ -8,8 +8,8 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="yvar" modelUID="r:765e33cb-4436-4258-bc77-24aaaa4929ca(com.mbeddr.cc.fm.constraints)" version="-1" />
       <model index="px2x" modelUID="r:c414c326-1f3c-4c25-a6e1-a886a8a5ae3c(com.mbeddr.cc.fm.intentions)" version="-1" />
+      <model index="yvar" modelUID="r:765e33cb-4436-4258-bc77-24aaaa4929ca(com.mbeddr.cc.fm.constraints)" version="-1" />
       <model index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.fm.structure)" version="0" />
       <model index="7rpm" modelUID="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.fm.editor)" version="-1" />
       <model index="6jzq" modelUID="r:b34a99b5-15cb-4dbe-ba4c-638edf0da733(com.mbeddr.cc.fm.plugin)" version="-1" />
@@ -26,8 +26,8 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="yvar" modelUID="r:765e33cb-4436-4258-bc77-24aaaa4929ca(com.mbeddr.cc.var.constraints)" version="0" />
       <model index="px2x" modelUID="r:c414c326-1f3c-4c25-a6e1-a886a8a5ae3c(com.mbeddr.cc.var.intentions)" version="0" />
+      <model index="yvar" modelUID="r:765e33cb-4436-4258-bc77-24aaaa4929ca(com.mbeddr.cc.var.constraints)" version="0" />
       <model index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.structure)" version="1" />
       <model index="7rpm" modelUID="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.var.editor)" version="0" />
       <model index="6jzq" modelUID="r:b34a99b5-15cb-4dbe-ba4c-638edf0da733(com.mbeddr.cc.var.plugin)" version="0" />
@@ -123,8 +123,8 @@
   <StructureModification>
     <dependencies>
       <model index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="6" />
-      <model index="7rpm" modelUID="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.var.annotations.editor)" version="1" />
       <model index="u5n7" modelUID="r:982b63d9-9815-4b2a-91f2-26936b5fef73(com.mbeddr.cimport.preprocessor.structure)" version="48" />
+      <model index="7rpm" modelUID="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.var.annotations.editor)" version="1" />
       <model index="jhin" modelUID="r:e72c9863-3268-41b0-8c80-154e8b89baf2(com.mbeddr.cimport.preprocessor.editor)" version="2" />
     </dependencies>
     <move id="u5n7.1758204980882733049" to="qdv7.6040209720313685286" />
@@ -142,10 +142,10 @@
       <model index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="7" />
       <model index="g0zr" modelUID="r:0a669ac3-8469-4820-883d-73721ea0df96(com.mbeddr.cc.var.fm.behavior)" version="0" />
       <model index="4prv" modelUID="r:1e889373-bd3c-4acd-972a-d9526584c597(com.mbeddr.cc.var.fm.editor)" version="0" />
-      <model index="7rpm" modelUID="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.var.annotations.editor)" version="2" />
       <model index="mk7h" modelUID="r:106c8ec8-5206-4ec1-ae0f-cd9d3c8dd559(com.mbeddr.cc.var.fm.typesystem)" version="-1" />
-      <model index="qkbr" modelUID="r:b6c2ea2b-94d4-4291-9ab5-6b0b10da5dd6(com.mbeddr.cc.var.annotations.typesystem)" version="1" />
+      <model index="7rpm" modelUID="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.var.annotations.editor)" version="2" />
       <model index="nnwr" modelUID="r:6931d509-c614-495e-afa5-7bb50f15b429(com.mbeddr.cc.var.fm.constraints)" version="-1" />
+      <model index="qkbr" modelUID="r:b6c2ea2b-94d4-4291-9ab5-6b0b10da5dd6(com.mbeddr.cc.var.annotations.typesystem)" version="1" />
       <model index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="6" />
       <model index="rpdm" modelUID="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" version="2" />
     </dependencies>
@@ -254,6 +254,104 @@
     <move id="7rpm.6496796267915539429" to="4prv.7642065485959505561" />
     <move id="7rpm.661141253149262058" to="4prv.7642065485959505559" />
     <move id="7rpm.661141253149262055" to="4prv.7642065485959505557" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="yuyx" modelUID="r:36dc04ce-d511-478b-8615-e829c96b5b25(com.mbeddr.cc.var.buildconfig.behavior)" version="1" />
+      <model index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="8" />
+      <model index="2xq8" modelUID="r:acb944b8-1619-4cb9-976c-0d6174d7d420(com.mbeddr.cc.var.buildconfig.editor)" version="1" />
+      <model index="rbly" modelUID="r:a38003d5-3cc2-4cc7-bfed-041d3d2d1289(com.mbeddr.cc.var.buildconfig.structure)" version="1" />
+      <model index="7rpm" modelUID="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.var.annotations.editor)" version="3" />
+      <model index="rpdm" modelUID="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" version="3" />
+    </dependencies>
+    <move id="rbly.4055870397237196334" to="qdv7.6514264311693667924" />
+    <move id="rbly.4055870397237196333" to="qdv7.6514264311693667923" />
+    <move id="rbly.4055870397237196389" to="qdv7.6514264311693667925" />
+    <move id="yuyx.4055870397237228324" to="rpdm.6514264311693667980" />
+    <move id="yuyx.9035511730050143487" to="rpdm.6514264311693667935" />
+    <move id="yuyx.4055870397237228335" to="rpdm.6514264311693667991" />
+    <move id="yuyx.4055870397237196399" to="rpdm.6514264311693667927" />
+    <move id="yuyx.4055870397237228336" to="rpdm.6514264311693667992" />
+    <move id="yuyx.9035511730050143488" to="rpdm.6514264311693667936" />
+    <move id="yuyx.4055870397237228314" to="rpdm.6514264311693667970" />
+    <move id="yuyx.4055870397237228342" to="rpdm.6514264311693668003" />
+    <move id="yuyx.4055870397237228339" to="rpdm.6514264311693667995" />
+    <move id="yuyx.4055870397237228017" to="rpdm.6514264311693667949" />
+    <move id="yuyx.4055870397237196398" to="rpdm.6514264311693667926" />
+    <move id="yuyx.4055870397237196403" to="rpdm.6514264311693667933" />
+    <move id="yuyx.4055870397237228334" to="rpdm.6514264311693667990" />
+    <move id="yuyx.4055870397237228317" to="rpdm.6514264311693667973" />
+    <move id="yuyx.4055870397237228249" to="rpdm.6514264311693668001" />
+    <move id="yuyx.4055870397237228256" to="rpdm.6514264311693667963" />
+    <move id="yuyx.4137078037089257716" to="rpdm.6514264311693668000" />
+    <move id="yuyx.4137078037089257710" to="rpdm.6514264311693667955" />
+    <move id="yuyx.4055870397237228328" to="rpdm.6514264311693667984" />
+    <move id="yuyx.4055870397237228313" to="rpdm.6514264311693667969" />
+    <move id="yuyx.4055870397237228322" to="rpdm.6514264311693667978" />
+    <move id="yuyx.4137078037089257737" to="rpdm.6514264311693667999" />
+    <move id="yuyx.4055870397237196401" to="rpdm.6514264311693667929" />
+    <move id="yuyx.8200057468984946444" to="rpdm.6514264311693667931" />
+    <move id="yuyx.4055870397237228257" to="rpdm.6514264311693667964" />
+    <move id="yuyx.4055870397237228258" to="rpdm.6514264311693667965" />
+    <move id="yuyx.9035511730050143490" to="rpdm.6514264311693667939" />
+    <move id="yuyx.4055870397237196402" to="rpdm.6514264311693667932" />
+    <move id="yuyx.9035511730050143530" to="rpdm.6514264311693667937" />
+    <move id="yuyx.4137078037089257708" to="rpdm.6514264311693667953" />
+    <move id="yuyx.4055870397237228319" to="rpdm.6514264311693667975" />
+    <move id="yuyx.4137078037089257709" to="rpdm.6514264311693667954" />
+    <move id="yuyx.4055870397237196405" to="rpdm.6514264311693668008" />
+    <move id="yuyx.4055870397237228254" to="rpdm.6514264311693667961" />
+    <move id="yuyx.4055870397237196404" to="rpdm.6514264311693668007" />
+    <move id="yuyx.9035511730050143504" to="rpdm.6514264311693667950" />
+    <move id="yuyx.9035511730050143499" to="rpdm.6514264311693667948" />
+    <move id="yuyx.4055870397237228315" to="rpdm.6514264311693667971" />
+    <move id="yuyx.4055870397237228325" to="rpdm.6514264311693667981" />
+    <move id="yuyx.4137078037089257712" to="rpdm.6514264311693667957" />
+    <move id="yuyx.4137078037089252755" to="rpdm.6514264311693668005" />
+    <move id="yuyx.9035511730050143497" to="rpdm.6514264311693667946" />
+    <move id="yuyx.3008175113698489351" to="rpdm.6514264311693667986" />
+    <move id="yuyx.9035511730050143493" to="rpdm.6514264311693667942" />
+    <move id="yuyx.4055870397237228310" to="rpdm.6514264311693667966" />
+    <move id="yuyx.4055870397237228329" to="rpdm.6514264311693667985" />
+    <move id="yuyx.9035511730050143496" to="rpdm.6514264311693667945" />
+    <move id="yuyx.9035511730050143486" to="rpdm.6514264311693667934" />
+    <move id="yuyx.4055870397237228016" to="rpdm.6514264311693667940" />
+    <move id="yuyx.4055870397237228247" to="rpdm.6514264311693668004" />
+    <move id="yuyx.4055870397237228327" to="rpdm.6514264311693667983" />
+    <move id="yuyx.4137078037089257715" to="rpdm.6514264311693667998" />
+    <move id="yuyx.4055870397237228341" to="rpdm.6514264311693667997" />
+    <move id="yuyx.4055870397237228323" to="rpdm.6514264311693667979" />
+    <move id="yuyx.4055870397237228311" to="rpdm.6514264311693667967" />
+    <move id="yuyx.4055870397237228326" to="rpdm.6514264311693667982" />
+    <move id="yuyx.4055870397237196400" to="rpdm.6514264311693667928" />
+    <move id="yuyx.4055870397237228251" to="rpdm.6514264311693667958" />
+    <move id="yuyx.9035511730050143505" to="rpdm.6514264311693667951" />
+    <move id="yuyx.9035511730050143498" to="rpdm.6514264311693667947" />
+    <move id="yuyx.4055870397237228241" to="rpdm.6514264311693668002" />
+    <move id="yuyx.4055870397237228338" to="rpdm.6514264311693667994" />
+    <move id="yuyx.4055870397237228321" to="rpdm.6514264311693667977" />
+    <move id="yuyx.4137078037089257711" to="rpdm.6514264311693667956" />
+    <move id="yuyx.9035511730050143494" to="rpdm.6514264311693667943" />
+    <move id="yuyx.4055870397237228331" to="rpdm.6514264311693667987" />
+    <move id="yuyx.4137078037089257707" to="rpdm.6514264311693667952" />
+    <move id="yuyx.4055870397237228255" to="rpdm.6514264311693667962" />
+    <move id="yuyx.8200057468984946442" to="rpdm.6514264311693667930" />
+    <move id="yuyx.9035511730050143495" to="rpdm.6514264311693667944" />
+    <move id="yuyx.3008175113698489881" to="rpdm.6514264311693668006" />
+    <move id="yuyx.4055870397237228252" to="rpdm.6514264311693667959" />
+    <move id="yuyx.4055870397237228312" to="rpdm.6514264311693667968" />
+    <move id="yuyx.4055870397237228253" to="rpdm.6514264311693667960" />
+    <move id="yuyx.4055870397237228337" to="rpdm.6514264311693667993" />
+    <move id="yuyx.4055870397237228340" to="rpdm.6514264311693667996" />
+    <move id="yuyx.4055870397237228332" to="rpdm.6514264311693667988" />
+    <move id="yuyx.4055870397237228316" to="rpdm.6514264311693667972" />
+    <move id="yuyx.4055870397237228333" to="rpdm.6514264311693667989" />
+    <move id="yuyx.9035511730050143492" to="rpdm.6514264311693667941" />
+    <move id="yuyx.4055870397237228320" to="rpdm.6514264311693667976" />
+    <move id="yuyx.9035511730050143489" to="rpdm.6514264311693667938" />
+    <move id="yuyx.4055870397237228318" to="rpdm.6514264311693667974" />
+    <move id="2xq8.4055870397237196392" to="7rpm.6514264311693668009" />
+    <move id="2xq8.4055870397237196397" to="7rpm.6514264311693668010" />
   </StructureModification>
 </history>
 

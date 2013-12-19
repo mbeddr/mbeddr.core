@@ -11,7 +11,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="488s" modelUID="r:5e53916f-f0c3-44fa-bf6c-7754d724457d(req.parameters.structure)" version="0" implicit="yes" />
@@ -107,7 +107,10 @@
     <property name="name" nameId="tpck.1169194664001" value="test" />
     <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="2428505421104899487" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="tmp" />
-      <property name="editTimePath" nameId="2c95.6386504476136472797" value="D:\tmp" />
+      <property name="editTimePath" value="D:\tmp" />
+      <node role="pathPicker" roleId="2c95.2642765975824057986" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="559958203696163420" nodeInfo="ng">
+        <property name="path" nameId="vs0r.6156524541422553710" value="temp" />
+      </node>
     </node>
   </root>
   <root type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="168727908856045690" nodeInfo="ng">
