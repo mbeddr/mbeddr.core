@@ -80,7 +80,6 @@
                 </node>
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="4791280061046139480" nodeInfo="ng" />
               </node>
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4791280061046139475" nodeInfo="nn" />
             </node>
           </node>
         </node>
