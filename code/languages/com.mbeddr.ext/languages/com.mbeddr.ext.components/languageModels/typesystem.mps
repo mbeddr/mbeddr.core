@@ -8390,5 +8390,24 @@
       </node>
     </node>
   </root>
+  <root type="tpd4.ComparisonRule" typeId="tpd4.1188811367543" id="7446211917234966066" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="intf" />
+    <property name="name" nameId="tpck.1169194664001" value="compareInterfaceWithNull" />
+    <node role="anotherNode" roleId="tpd4.1188820750135" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7446211917234985402" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="nullType" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="yq40.654909442772452472" resolveInfo="NullType" />
+    </node>
+    <node role="body" roleId="tpd4.1175147624276" type="tpee.StatementList" typeId="tpee.1068580123136" id="7446211917234966068" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7446211917234985434" nodeInfo="nn">
+        <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="7446211917234985433" nodeInfo="nn">
+          <property name="value" nameId="tpee.1068580123138" value="true" />
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7446211917234966070" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="interfaceType" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="v7ag.8105003328815054492" resolveInfo="InterfaceType" />
+    </node>
+  </root>
 </model>
 
