@@ -451,12 +451,10 @@
         </node>
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1328910530789830811" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="3342941382620639775" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9120591063517985284" resolveInfo="std" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1328910530789830810" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="3342941382620652633" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9120591063517985274" resolveInfo="secondary_module" />
     </node>
   </root>
