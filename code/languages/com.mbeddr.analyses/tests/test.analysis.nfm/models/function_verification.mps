@@ -578,8 +578,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5512262613064826807" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1354262999936_5" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3326518367740253976" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="5512262613064826861" resolveInfo="hw_interface" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1328910530790632029" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5512262613064826861" resolveInfo="hw_interface" />
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="5512262613064826809" nodeInfo="ng">
@@ -758,9 +759,7 @@
       <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="5512262613064826853" nodeInfo="ng">
-      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="5512262613064826854" nodeInfo="ng">
-        <property name="addLabels" value="true" />
-      </node>
+      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="5512262613064826854" nodeInfo="ng" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="5512262613064826855" nodeInfo="ng">
       <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="5512262613064826856" nodeInfo="ng">
@@ -929,8 +928,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5512262613064826907" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1361255892795_3" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3326518367740253983" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="5512262613064826861" resolveInfo="hw_interface" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1328910530790632030" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5512262613064826861" resolveInfo="hw_interface" />
     </node>
   </root>
 </model>

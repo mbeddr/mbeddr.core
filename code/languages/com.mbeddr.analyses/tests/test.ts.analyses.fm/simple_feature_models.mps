@@ -8,13 +8,12 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="8" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="4r5s" modelUID="r:877cb3b3-b593-43b4-ac12-3f0d2829688a(com.mbeddr.analyses.yices.fm.structure)" version="2" implicit="yes" />
-  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="8" implicit="yes" />
-  <import index="rbly" modelUID="r:a38003d5-3cc2-4cc7-bfed-041d3d2d1289(com.mbeddr.cc.var.buildconfig.structure)" version="1" implicit="yes" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="9" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2912335823209235876" nodeInfo="ng">
@@ -27,8 +26,8 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="2912335823209235877" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="2912335823209235878" nodeInfo="ng" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="rbly.VariabilityConfigItem" typeId="rbly.4055870397237196333" id="3798708219326250501" nodeInfo="ng">
-      <node role="config" roleId="rbly.4055870397237196334" type="qdv7.VariabilityTransformationConfig" typeId="qdv7.6617704999132114004" id="3798708219326250502" nodeInfo="ng" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qdv7.VariabilityConfigItem" typeId="qdv7.6514264311693667923" id="3798708219326250501" nodeInfo="ng">
+      <node role="config" roleId="qdv7.6514264311693667924" type="qdv7.VariabilityTransformationConfig" typeId="qdv7.6617704999132114004" id="3798708219326250502" nodeInfo="ng" />
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="2912335823209235879" nodeInfo="ng">
       <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
@@ -40,8 +39,8 @@
     <property name="name" nameId="tpck.1169194664001" value="Counter" />
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235881" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="CounterVariability" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235882" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Counter" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530793185462" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="1328910530793185463" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235883" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="CoreFunctionality" />
         </node>
@@ -64,7 +63,6 @@
           </node>
           <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235890" nodeInfo="ng" />
         </node>
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235891" nodeInfo="ng" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.FeatureModelVerifiableAttribute" typeId="4r5s.7519116116714294488" id="7174651526804342515" nodeInfo="ng" />
     </node>
@@ -73,9 +71,8 @@
     <property name="name" nameId="tpck.1169194664001" value="FM_Verification" />
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235904" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="MandatoryFeatures" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235905" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="rootWithMandatory" />
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235906" nodeInfo="ng" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530793185682" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="1328910530793185683" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235907" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="mandatoryChild1" />
           <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235908" nodeInfo="ng" />
@@ -88,9 +85,8 @@
     </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235910" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="FM" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235911" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="root" />
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="2912335823209235912" nodeInfo="ng" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530793185642" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="1328910530793185643" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235913" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="optional1" />
         </node>
@@ -144,7 +140,7 @@
       <property name="name" nameId="tpck.1169194664001" value="C1" />
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="2912335823209235910" resolveInfo="FM" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="2912335823209235932" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="2912335823209235911" resolveInfo="root" />
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="1328910530793185642" resolveInfo="FM_root" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.ConfigurationModelVerifiableAttribute" typeId="4r5s.7519116116714540431" id="8596690938390339565" nodeInfo="ng" />
     </node>
@@ -153,8 +149,8 @@
     <property name="name" nameId="tpck.1169194664001" value="IntelligentActuator" />
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235934" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="IntelligentActuatorFamily" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235935" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Root" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530793218074" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="1328910530793218075" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235936" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="Diagnosis" />
           <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235937" nodeInfo="ng">
@@ -182,7 +178,6 @@
             <property name="name" nameId="tpck.1169194664001" value="TCP_IP" />
           </node>
         </node>
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235947" nodeInfo="ng" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.FeatureModelVerifiableAttribute" typeId="4r5s.7519116116714294488" id="7851273378158509915" nodeInfo="ng" />
     </node>
@@ -190,7 +185,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Switch" />
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="2912335823209235934" resolveInfo="IntelligentActuatorFamily" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="2912335823209235949" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="2912335823209235935" resolveInfo="Root" />
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="1328910530793218074" resolveInfo="IntelligentActuatorFamily_root" />
         <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="2912335823209235950" nodeInfo="ng">
           <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="2912335823209235936" resolveInfo="Diagnosis" />
           <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="2912335823209235951" nodeInfo="ng">
@@ -208,8 +203,8 @@
     <property name="name" nameId="tpck.1169194664001" value="IntelligentSensor" />
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235954" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="IntelligentSensorFamily" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235955" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Root" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530793218100" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="1328910530793218101" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235956" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="Diagnosis" />
           <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235957" nodeInfo="ng">
@@ -268,7 +263,6 @@
           </node>
           <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235979" nodeInfo="ng" />
         </node>
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235980" nodeInfo="ng" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.FeatureModelVerifiableAttribute" typeId="4r5s.7519116116714294488" id="4106905652749070819" nodeInfo="ng" />
     </node>

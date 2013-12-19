@@ -66,8 +66,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4985219442642859965" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1347023250327_1" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="4985219442642859967" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="4985219442642860098" resolveInfo="DecTabInPPC" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1328910530789830832" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="4985219442642860098" resolveInfo="DecTabInPPC" />
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="4985219442642859969" nodeInfo="ng">
