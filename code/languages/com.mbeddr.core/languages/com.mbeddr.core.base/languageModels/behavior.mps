@@ -3749,14 +3749,16 @@
     </node>
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="6584628407655574515" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="getDeprecationMessage" />
-      <property name="isStatic" nameId="1i04.5864038008284099149" value="true" />
+      <property name="isStatic" nameId="1i04.5864038008284099149" value="false" />
       <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
       <property name="isPrivate" nameId="1i04.1225194472833" value="false" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6584628407655574516" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="6584628407655574512" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6584628407655574517" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="6584628407655574514" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068581517676" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6584628407655574513" nodeInfo="nn" />
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8041233282182952234" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="" />
+          </node>
         </node>
       </node>
     </node>

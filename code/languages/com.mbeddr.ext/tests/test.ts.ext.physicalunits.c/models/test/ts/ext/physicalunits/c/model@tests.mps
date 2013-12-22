@@ -1462,8 +1462,9 @@
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9108052991585889705" nodeInfo="ng">
           <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="9108052991585889706" nodeInfo="ng" />
         </node>
-        <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6657613005452170125" nodeInfo="ng">
-          <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6657613005452170098" resolveInfo="UnitDeclarations" />
+        <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8041233282185992991" nodeInfo="ng">
+          <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+          <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170098" resolveInfo="UnitDeclarations" />
         </node>
       </node>
     </node>
@@ -1508,8 +1509,9 @@
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="8027210066655589925" nodeInfo="ng">
           <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="8027210066655589926" nodeInfo="ng" />
         </node>
-        <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6657613005452170128" nodeInfo="ng">
-          <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6657613005452170098" resolveInfo="UnitDeclarations" />
+        <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8041233282186201394" nodeInfo="ng">
+          <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+          <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170098" resolveInfo="UnitDeclarations" />
         </node>
       </node>
     </node>
@@ -2990,8 +2992,9 @@
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3047370974152610421" nodeInfo="ng">
           <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="3047370974152610422" nodeInfo="ng" />
         </node>
-        <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3047370974152610423" nodeInfo="ng">
-          <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6657613005452170098" resolveInfo="UnitDeclarations" />
+        <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8041233282186257271" nodeInfo="ng">
+          <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+          <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170098" resolveInfo="UnitDeclarations" />
         </node>
       </node>
     </node>
