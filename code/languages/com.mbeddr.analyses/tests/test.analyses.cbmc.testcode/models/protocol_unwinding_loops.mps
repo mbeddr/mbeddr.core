@@ -345,7 +345,7 @@
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="9120591063517987929" resolveInfo="i" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9120591063517987938" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="1000" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
             </node>
           </node>
           <node role="incr" roleId="c4fa.7254843406768606790" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="9120591063517987939" nodeInfo="ng">
@@ -418,8 +418,9 @@
       <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9120591063517987827" resolveInfo="ATM" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1328910530790051565" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="9120591063517987827" resolveInfo="ATM" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1489835966423312727" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9120591063517987827" resolveInfo="ATM" />
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="9120591063517987963" nodeInfo="ng">
