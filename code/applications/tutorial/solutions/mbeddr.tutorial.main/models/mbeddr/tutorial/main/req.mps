@@ -177,7 +177,7 @@
                 </node>
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="1711211267093306929" nodeInfo="ng">
-                <property name="expanded" nameId="3vkx.1711211267092858931" value="true" />
+                <property name="expanded" nameId="3vkx.1711211267092858931" value="false" />
                 <property name="value" nameId="3vkx.1711211267080437768" value="false" />
               </node>
             </node>
@@ -188,7 +188,7 @@
               <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="7451725615401720619" nodeInfo="ng">
                 <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="552710421071397252" resolveInfo="alt" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="1711211267093306932" nodeInfo="ng">
-                  <property name="expanded" nameId="3vkx.1711211267092858931" value="false" />
+                  <property name="expanded" nameId="3vkx.1711211267092858931" value="true" />
                   <property name="value" nameId="3vkx.1711211267080437768" value="1100" />
                 </node>
               </node>
@@ -209,7 +209,7 @@
                 </node>
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="1711211267093306933" nodeInfo="ng">
-                <property name="expanded" nameId="3vkx.1711211267092858931" value="true" />
+                <property name="expanded" nameId="3vkx.1711211267092858931" value="false" />
                 <property name="value" nameId="3vkx.1711211267080437768" value="false" />
               </node>
             </node>
@@ -225,7 +225,7 @@
                 </node>
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="1711211267093306935" nodeInfo="ng">
-                <property name="expanded" nameId="3vkx.1711211267092858931" value="true" />
+                <property name="expanded" nameId="3vkx.1711211267092858931" value="false" />
                 <property name="value" nameId="3vkx.1711211267080437768" value="true" />
               </node>
             </node>
