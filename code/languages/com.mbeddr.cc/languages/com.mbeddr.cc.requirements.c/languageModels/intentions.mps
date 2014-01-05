@@ -58,10 +58,10 @@
     <node role="executeFunction" roleId="tp3j.2522969319638198291" type="tp3j.ExecuteBlock" typeId="tp3j.1192795911897" id="1711211267090175995" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1711211267090175996" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1711211267101401325" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1711211267101416454" nodeInfo="nn">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1711211267101404265" resolveInfo="update" />
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1711211267102771134" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1711211267102167944" resolveInfo="clear" />
             <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="1711211267100850533" resolveInfo="DebugHelper" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="1711211267101429197" nodeInfo="nn" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="1711211267102771135" nodeInfo="nn" />
           </node>
         </node>
       </node>
@@ -335,13 +335,16 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1711211267102224966" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="3vkx.3534497005926949315" resolveInfo="RCalculation" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="1711211267102224967" nodeInfo="nn">
-              <link role="concept" roleId="tp25.1140138128738" targetNodeId="3vkx.3534497005926949315" resolveInfo="RCalculation" />
-              <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1711211267102224968" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="1711211267102224969" nodeInfo="nn">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1711211267102175598" resolveInfo="tc" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1711211267102678632" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="1711211267102677119" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1711211267102175598" resolveInfo="tc" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="1711211267102681999" nodeInfo="nn">
+                <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="1711211267102682001" nodeInfo="ng">
+                  <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="1711211267102683959" nodeInfo="nn">
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="3vkx.3534497005926949315" resolveInfo="RCalculation" />
+                  </node>
                 </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="1711211267102224970" nodeInfo="nn" />
               </node>
             </node>
           </node>
