@@ -161,6 +161,83 @@
       <property name="traced" nameId="75wo.2667296550441527826" value="false" />
       <property name="implemented" nameId="75wo.2667296550441502913" value="false" />
       <property name="tested" nameId="75wo.2667296550441527827" value="false" />
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RCalculation" typeId="3vkx.3534497005926949315" id="6965176953375138052" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="MTBF" />
+        <node role="params" roleId="3vkx.3534497005926949334" type="3vkx.RParam" typeId="3vkx.3534497005926949316" id="6965176953375142935" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="t_ds" />
+          <property name="description" nameId="3vkx.3534497005926949331" value="start of downtime" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6965176953375142951" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="params" roleId="3vkx.3534497005926949334" type="3vkx.RParam" typeId="3vkx.3534497005926949316" id="6965176953375147960" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="t_us" />
+          <property name="description" nameId="3vkx.3534497005926949331" value="start of uptime" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6965176953375147980" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="params" roleId="3vkx.3534497005926949334" type="3vkx.RParam" typeId="3vkx.3534497005926949316" id="6965176953375152632" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="n_fail" />
+          <property name="description" nameId="3vkx.3534497005926949331" value="# of failures" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6965176953375152656" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="doc" roleId="3vkx.1711211267079259366" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6965176953375138054" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6965176953375138055" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6965176953375138056" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="At some time this had been calculating some kind of \nmean time between failure. No longer does." />
+            </node>
+          </node>
+        </node>
+        <node role="expr" roleId="3vkx.3534497005926949336" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6965176953375171331" nodeInfo="ng">
+          <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6965176953376753373" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+          </node>
+          <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.FBarDivExpr" typeId="3vkx.6965176953374807418" id="6965176953375161690" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="6965176953375166382" nodeInfo="ng">
+              <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="6965176953375152632" resolveInfo="n_fail" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="6965176953375161719" nodeInfo="ng">
+              <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.FBarDivExpr" typeId="3vkx.6965176953374807418" id="6965176953375246047" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6965176953375246324" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="2" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="6965176953375161752" nodeInfo="ng">
+                  <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="6965176953375147960" resolveInfo="t_us" />
+                </node>
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="6965176953375157293" nodeInfo="ng">
+                <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="6965176953375142935" resolveInfo="t_ds" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="6965176953375220031" nodeInfo="ng">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6965176953375235894" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="35" />
+          </node>
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6965176953375221003" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="100" />
+          </node>
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6965176953375222609" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="100" />
+          </node>
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6965176953375229534" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="2" />
+          </node>
+        </node>
+      </node>
       <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RCalculation" typeId="3vkx.3534497005926949315" id="552710421071397247" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="PointForATrackpoint" />
         <node role="expr" roleId="3vkx.3534497005926949336" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="7451725615401720605" nodeInfo="ng">
