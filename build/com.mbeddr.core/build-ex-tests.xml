@@ -203,7 +203,7 @@
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
   </target>
   
-  <target name="build" depends="assemble" />
+  <target name="build" depends="assemble, check" />
   
   <target name="clean">
     <delete dir="${build.tmp}" />
@@ -321,15 +321,6 @@
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
-      <macro name="mps.home" path="${mps.home}" />
-      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
-      <macro name="lisson.home" path="${lisson.home}" />
-      <macro name="mpsutil" path="${mpsutil}" />
-      <macro name="mbeddr.core" path="${mbeddr.core}" />
-      <macro name="multiline.artifacts" path="${multiline.artifacts}" />
-      <macro name="richtext.artifacts" path="${richtext.artifacts}" />
-      <macro name="mps.macro.mbeddr.github.core.home" path="${mps.macro.mbeddr.github.core.home}" />
-      <macro name="tables.artifacts" path="${tables.artifacts}" />
     </generate>
   </target>
   
