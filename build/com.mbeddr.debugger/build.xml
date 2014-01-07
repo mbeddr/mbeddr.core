@@ -155,7 +155,7 @@
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
   </target>
   
-  <target name="build" depends="assemble" />
+  <target name="build" depends="assemble, check" />
   
   <target name="clean">
     <delete dir="${build.tmp}" />
@@ -259,11 +259,6 @@
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
-      <macro name="mps.home" path="${mps.home}" />
-      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
-      <macro name="mpsutil" path="${mpsutil}" />
-      <macro name="mbeddr.debugger" path="${mbeddr.debugger}" />
-      <macro name="artifacts.com.mbeddr.spawner.build" path="${artifacts.com.mbeddr.spawner.build}" />
     </generate>
   </target>
   
