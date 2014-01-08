@@ -677,6 +677,10 @@
       <property name="name" nameId="tpck.1169194664001" value="contextNodeId" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8360911601957765890" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="contextModelId" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6143206611771701532" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functionrefs" />
