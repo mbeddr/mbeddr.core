@@ -1872,7 +1872,7 @@
                 <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="2812390151934361386" resolveInfo="CommandLineToolsValidator" />
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2812390151934842694" resolveInfo="isCommandLineProgramInstalled" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8529857266701399462" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="gdbd" />
+                  <property name="value" nameId="tpee.1070475926801" value="gdb" />
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8529857266701399463" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="--help" />
