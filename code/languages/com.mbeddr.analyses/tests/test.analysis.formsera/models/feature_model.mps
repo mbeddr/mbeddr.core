@@ -14,15 +14,14 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" implicit="yes" />
-  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="8" implicit="yes" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="9" implicit="yes" />
   <import index="4r5s" modelUID="r:877cb3b3-b593-43b4-ac12-3f0d2829688a(com.mbeddr.analyses.yices.fm.structure)" version="2" implicit="yes" />
   <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="3127880198517389397" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="IntelligentSensors" />
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="3127880198517389398" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="IntelligentSensorFamily" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3127880198517389400" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="root" />
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="3127880198517389403" nodeInfo="ng" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530790723752" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="1328910530790723753" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3127880198517389402" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="Diagnosis" />
           <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.XorConstraint" typeId="qqyh.6825476687691317633" id="3127880198517389408" nodeInfo="ng" />
@@ -62,7 +61,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Production" />
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="3127880198517389398" resolveInfo="IntelligentSensorFamily" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="20776903375352465" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="3127880198517389400" resolveInfo="root" />
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="1328910530790723752" resolveInfo="IntelligentSensorFamily_root" />
         <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="20776903375352466" nodeInfo="ng">
           <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="3127880198517389402" resolveInfo="Diagnosis" />
           <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="20776903375352467" nodeInfo="ng">
@@ -333,6 +332,14 @@
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="3127880198517389473" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="3127880198517389474" nodeInfo="ng" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qdv7.VariabilityConfigItem" typeId="qdv7.6514264311693667923" id="1328910530790918011" nodeInfo="ng">
+      <node role="config" roleId="qdv7.6514264311693667924" type="qdv7.VariabilityTransformationConfig" typeId="qdv7.6617704999132114004" id="1328910530790918013" nodeInfo="ng">
+        <node role="mappings" roleId="qdv7.6617704999132114005" type="qdv7.ConfigurationMapping" typeId="qdv7.6617704999132114000" id="1328910530790918019" nodeInfo="ng">
+          <link role="featureModel" roleId="qdv7.6617704999132114002" targetNodeId="3127880198517389398" resolveInfo="IntelligentSensorFamily" />
+          <link role="configurationModel" roleId="qdv7.6617704999132114003" targetNodeId="20776903375352463" resolveInfo="Production" />
+        </node>
+      </node>
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="3127880198517389475" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Sensors" />

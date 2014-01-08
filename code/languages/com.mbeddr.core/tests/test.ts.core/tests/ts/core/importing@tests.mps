@@ -43,13 +43,13 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7475861851226119724" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1364212237400_2" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7475861851226119804" nodeInfo="ng">
-      <property name="reexport" nameId="x27k.7475861851226119808" value="false" />
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7475861851226119795" resolveInfo="M2" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8041233282182529069" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7475861851226119795" resolveInfo="M2" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7475861851226145575" nodeInfo="ng">
-      <property name="reexport" nameId="x27k.7475861851226119808" value="true" />
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7475861851226145566" resolveInfo="M3" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8041233282182528933" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="true" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7475861851226145566" resolveInfo="M3" />
     </node>
   </root>
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="7475861851226119731" nodeInfo="ng">
@@ -170,8 +170,9 @@
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7475861851226119807" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="empty_1364212463235_15" />
         </node>
-        <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7475861851226119734" nodeInfo="ng">
-          <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7475861851226119722" resolveInfo="M1" />
+        <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8041233282182932191" nodeInfo="ng">
+          <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+          <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7475861851226119722" resolveInfo="M1" />
         </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="7475861851226252706" nodeInfo="ng">
           <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="7475861851226252707" nodeInfo="ng" />
