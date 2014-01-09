@@ -179,14 +179,6 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="reqkind" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="conceptLinkDeclaration" roleId="tpce.1137532086877" type="tpce.ReferenceConceptLinkDeclaration" typeId="tpce.1105741578420" id="3402431285977742871" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="requiredDataKind" />
-      <link role="targetType" roleId="tpce.1105736621938" targetNodeId="tpce.1071489090640" resolveInfo="ConceptDeclaration" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.DeprecatedNodeAnnotation" typeId="tpce.1224240836180" id="3008175113698934706" nodeInfo="ig" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.MigratedToMethodAnnotation" typeId="tpce.8080932314785812236" id="3008175113698934705" nodeInfo="ig">
-        <link role="method" roleId="tpce.8080932314785812847" targetNodeId="xvsr.3008175113698934698" resolveInfo="getRequiredDataKind" />
-      </node>
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8921256082857728250" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="reqkind" />

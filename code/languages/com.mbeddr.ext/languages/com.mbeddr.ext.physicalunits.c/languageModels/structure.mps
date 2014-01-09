@@ -146,6 +146,9 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="ym4j.3801772042669047301" resolveInfo="UnitDeclaration" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7446211917197921726" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="ym4j.7139820346921964932" resolveInfo="IPhysicalUnitsAdapter" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9035511730050139082" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="PhysicalUnitsConfigItem" />

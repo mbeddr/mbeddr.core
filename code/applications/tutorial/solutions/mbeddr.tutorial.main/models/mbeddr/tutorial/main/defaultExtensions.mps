@@ -36,45 +36,15 @@
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="8" implicit="yes" />
   <import index="yvrq" modelUID="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)" version="2" implicit="yes" />
-  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="8" implicit="yes" />
-  <import index="rbly" modelUID="r:a38003d5-3cc2-4cc7-bfed-041d3d2d1289(com.mbeddr.cc.var.buildconfig.structure)" version="1" implicit="yes" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="9" implicit="yes" />
   <import index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.nusmv.statemachine.structure)" version="22" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="4" implicit="yes" />
   <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="27" implicit="yes" />
   <import index="o4ko" modelUID="r:3b74f196-2fa2-402c-83a3-1b40739a14d2(com.mbeddr.analyses.yices.dectab.structure)" version="4" implicit="yes" />
-  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="5" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9141254329931944222" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Main" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386002" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9141254329931944290" resolveInfo="FunctionPointers" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386131" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647588211" resolveInfo="Components" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386229" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6700886800242034956" resolveInfo="ComponentsSRI" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319385987" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5160057464295359491" resolveInfo="LibraryAccess" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386177" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5160057464295358354" resolveInfo="StateMachines" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386081" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5441227754062389682" resolveInfo="RuntimeVariability" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386254" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="869116753978119546" resolveInfo="StaticVariability" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9141254329931944223" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -139,6 +109,34 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386002" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9141254329931944290" resolveInfo="FunctionPointers" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386131" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647588211" resolveInfo="Components" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386229" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6700886800242034956" resolveInfo="ComponentsSRI" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319385987" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5160057464295359491" resolveInfo="LibraryAccess" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386177" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5160057464295358354" resolveInfo="StateMachines" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386081" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5441227754062389682" resolveInfo="RuntimeVariability" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386254" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="869116753978119546" resolveInfo="StaticVariability" />
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="9141254329931944238" nodeInfo="ng">
@@ -330,8 +328,8 @@
       </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="yvrq.VarRTConfigItem" typeId="yvrq.8882953773355809617" id="869116753978169842" nodeInfo="ng" />
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="rbly.VariabilityConfigItem" typeId="rbly.4055870397237196333" id="869116753978169844" nodeInfo="ng">
-      <node role="config" roleId="rbly.4055870397237196334" type="qdv7.VariabilityTransformationConfig" typeId="qdv7.6617704999132114004" id="869116753978169845" nodeInfo="ng">
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qdv7.VariabilityConfigItem" typeId="qdv7.6514264311693667923" id="869116753978169844" nodeInfo="ng">
+      <node role="config" roleId="qdv7.6514264311693667924" type="qdv7.VariabilityTransformationConfig" typeId="qdv7.6617704999132114004" id="869116753978169845" nodeInfo="ng">
         <node role="mappings" roleId="qdv7.6617704999132114005" type="qdv7.ConfigurationMapping" typeId="qdv7.6617704999132114000" id="869116753978298044" nodeInfo="ng">
           <link role="featureModel" roleId="qdv7.6617704999132114002" targetNodeId="5441227754062476995" resolveInfo="FlightProcessor" />
           <link role="configurationModel" roleId="qdv7.6617704999132114003" targetNodeId="5441227754062477139" resolveInfo="cfgNullifyMaxAt200" />
@@ -386,14 +384,6 @@
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9141254329931944290" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="FunctionPointers" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386244" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386126" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9141254329931945897" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1351626983883_18" />
     </node>
@@ -916,14 +906,18 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9141254329931944300" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1351626075607_7" />
     </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386244" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386126" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1731059994647587993" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DataStructures" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386096" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="1731059994647587994" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Trackpoint" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -1250,21 +1244,14 @@
         </node>
       </node>
     </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386096" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1731059994647588211" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Components" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386060" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386199" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645305263131" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="iwll.1433966787984154171" resolveInfo="FlightJudgementRules" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1731059994647588213" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1351703756782_1" />
     </node>
@@ -3168,29 +3155,21 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1731059994647919764" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1351756619496_6" />
     </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386060" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386199" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645305263131" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="iwll.1433966787984154171" resolveInfo="FlightJudgementRules" />
+    </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5160057464295358354" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="StateMachines" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645305433770" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="iwll.1433966787984154171" resolveInfo="FlightJudgementRules" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386035" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386206" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1433966787984146582" resolveInfo="stdlib_stub" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386024" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7727566415687366376" resolveInfo="stdio_stub" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386049" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687697327" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1351855962599_4" />
     </node>
@@ -3305,15 +3284,6 @@
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="7727566415687762981" nodeInfo="ng">
             <link role="event" roleId="clqz.8951398808641876049" targetNodeId="7727566415687762906" resolveInfo="next" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="6068976060903808288" nodeInfo="ng">
-            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903808289" nodeInfo="ng">
-              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903808290" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903808291" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here is a comment on a transition." />
-                </node>
-              </node>
-            </node>
-          </node>
           <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="183497161482807528" nodeInfo="ng">
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUArrowExpression" typeId="clbe.7063398228162571833" id="183497161482807529" nodeInfo="ng">
               <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="183497161482807530" nodeInfo="ng">
@@ -3354,33 +3324,6 @@
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="7727566415687762902" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="airborne" />
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="6068976060903798095" nodeInfo="ng">
-          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903798096" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903798097" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903798098" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="This represents the state in which the airplane flies.\nIt has several substates. Note how it uses the " />
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="x27k.ModuleContentRefWord" typeId="x27k.4052432714773079904" id="6068976060903866958" nodeInfo="ng">
-                <link role="mc" roleId="x27k.4052432714773079905" targetNodeId="7727566415687763046" resolveInfo="VERY_HIGH_SPEED" />
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903808521" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nand " />
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="x27k.ModuleContentRefWord" typeId="x27k.4052432714773079904" id="6068976060903866977" nodeInfo="ng">
-                <link role="mc" roleId="x27k.4052432714773079905" targetNodeId="7727566415687763044" resolveInfo="HIGH_SPEED" />
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903866978" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" constants. These constants are defined in the\nsame module " />
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="x27k.ModuleRefWord" typeId="x27k.6068976060903930232" id="6068976060903988797" nodeInfo="ng">
-                <link role="module" roleId="x27k.6068976060903930233" targetNodeId="5160057464295358354" resolveInfo="StateMachines" />
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903988798" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
-              </node>
-            </node>
-          </node>
-        </node>
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="7727566415687763048" nodeInfo="ng">
           <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="7727566415687763117" resolveInfo="crashed" />
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="7727566415687763049" nodeInfo="ng">
@@ -3687,15 +3630,6 @@
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="7727566415687762904" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="landed" />
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2141471734589204665" nodeInfo="ng">
-          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2141471734589204666" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2141471734589204667" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2141471734589204668" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here is a comment that contains a TODO. Note\nhow the comment will be rendered in blue because\nof this. You can also use the Tools -&gt; mbeddr TODO\ntool to find all TODOs in a program." />
-              </node>
-            </node>
-          </node>
-        </node>
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EntryAction" typeId="clqz.4753668641245534592" id="7727566415687763140" nodeInfo="ng">
           <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="7727566415687763141" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7727566415687763142" nodeInfo="ng">
@@ -3734,27 +3668,6 @@
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="pszp.VerificationAttribute" typeId="pszp.1579201292659177178" id="4422281473825710793" nodeInfo="ng" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="6068976060903867015" nodeInfo="ng">
-        <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903867016" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903867017" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903867018" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This state machine implements a way to grade flights.\nIt has separate states for the important flight phases,\nsuch as " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="x27k.NamedSiblingRefWord" typeId="x27k.6068976060903808906" id="6068976060903867038" nodeInfo="ng">
-              <link role="sibling" roleId="x27k.6068976060903808907" targetNodeId="7727566415687762901" resolveInfo="beforeFlight" />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903867039" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="x27k.NamedSiblingRefWord" typeId="x27k.6068976060903808906" id="6068976060903867048" nodeInfo="ng">
-              <link role="sibling" roleId="x27k.6068976060903808907" targetNodeId="7727566415687762902" resolveInfo="airborne" />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903867049" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.StatemachineCheckAttribute" typeId="q5q6.5858278990856237301" id="7533215377939908489" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3791647284633244976" nodeInfo="ng">
@@ -4461,14 +4374,29 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687697330" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1351856035301_3" />
     </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645305433770" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="iwll.1433966787984154171" resolveInfo="FlightJudgementRules" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386035" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386206" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1433966787984146582" resolveInfo="stdlib_stub" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386024" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7727566415687366376" resolveInfo="stdio_stub" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386049" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5160057464295359491" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="LibraryAccess" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386116" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7727566415687366376" resolveInfo="stdio_stub" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687366366" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1351848179676_1" />
     </node>
@@ -4513,6 +4441,10 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687366368" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1351848180604_3" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386116" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7727566415687366376" resolveInfo="stdio_stub" />
     </node>
   </root>
   <root type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="7727566415687366376" nodeInfo="ng">
@@ -7143,18 +7075,6 @@
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5441227754062389682" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="RuntimeVariability" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386074" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9141254329931944290" resolveInfo="FunctionPointers" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386067" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386119" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5441227754062476997" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1352016755697_1" />
     </node>
@@ -7642,13 +7562,22 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5441227754062476999" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1352016755927_3" />
     </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386074" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9141254329931944290" resolveInfo="FunctionPointers" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386067" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386119" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
+    </node>
   </root>
   <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="5441227754062389703" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
     <property name="name" nameId="tpck.1169194664001" value="FlightVariability" />
-    <node role="dependencies" roleId="qqyh.5142601156811343146" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645304607866" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
-    </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="5441227754062476995" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="FlightProcessor" />
       <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="8473958930090124544" nodeInfo="ng">
@@ -7726,21 +7655,13 @@
         </node>
       </node>
     </node>
+    <node role="dependencies" roleId="qqyh.5142601156811343146" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645304607866" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="869116753978119546" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="StaticVariability" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386099" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386192" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645304634838" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5441227754062389703" resolveInfo="FlightVariability" />
-    </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="9103993088062047835" nodeInfo="ng">
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5441227754062476995" resolveInfo="FlightProcessor" />
       <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5441227754062477136" resolveInfo="cfgDoNothing" />
@@ -8022,18 +7943,21 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="869116753978119550" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1352295983916_4" />
     </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386099" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386192" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645304634838" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5441227754062389703" resolveInfo="FlightVariability" />
+    </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6700886800242034956" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ComponentsSRI" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386165" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386146" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6700886800242034957" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1358007055339_1" />
     </node>
@@ -8589,6 +8513,14 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6700886800242034991" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1358007490424_10" />
     </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386165" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386146" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6657613005452170119" resolveInfo="UnitDeclarations" />
+    </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6657613005452170119" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="UnitDeclarations" />
@@ -8621,8 +8553,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406228" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772421" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772422" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772423" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772422" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772423" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772424" nodeInfo="ng">
@@ -8633,8 +8565,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406229" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772426" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772427" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772428" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772427" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772428" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772429" nodeInfo="ng">
@@ -8645,8 +8577,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406229" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772431" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772432" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772433" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772432" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772433" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772434" nodeInfo="ng">
@@ -8657,8 +8589,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406229" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772436" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772437" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772438" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772437" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772438" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772439" nodeInfo="ng">
@@ -8669,8 +8601,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406229" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772441" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772442" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772443" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772442" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772443" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772444" nodeInfo="ng">
@@ -8681,8 +8613,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406229" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772446" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772447" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772448" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772447" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772448" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772449" nodeInfo="ng">
@@ -8693,8 +8625,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406229" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772451" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772452" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772453" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772452" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772453" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772454" nodeInfo="ng">
@@ -8705,8 +8637,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406229" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772456" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772457" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772458" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772457" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772458" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772459" nodeInfo="ng">
@@ -8717,8 +8649,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406230" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772461" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772462" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772463" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772462" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772463" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772464" nodeInfo="ng">
@@ -8729,8 +8661,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406230" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772466" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772467" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772468" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772467" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772468" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772469" nodeInfo="ng">
@@ -8741,8 +8673,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406230" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772471" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772472" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772473" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772472" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772473" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772474" nodeInfo="ng">
@@ -8753,8 +8685,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406230" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772476" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772477" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772478" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772477" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772478" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772479" nodeInfo="ng">
@@ -8765,8 +8697,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406230" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772481" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772482" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772483" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772482" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772483" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772484" nodeInfo="ng">
@@ -8777,8 +8709,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406230" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772486" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772487" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772488" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772487" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772488" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772489" nodeInfo="ng">
@@ -8789,8 +8721,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406231" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772491" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772492" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772493" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772492" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772493" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772494" nodeInfo="ng">
@@ -8801,8 +8733,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406231" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772496" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772497" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772498" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772497" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772498" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772499" nodeInfo="ng">
@@ -8813,8 +8745,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406231" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772501" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772502" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772503" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772502" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772503" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772504" nodeInfo="ng">
@@ -8825,8 +8757,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406231" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772506" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772507" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772508" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772507" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772508" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772509" nodeInfo="ng">
@@ -8837,8 +8769,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406231" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772511" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772512" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772513" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772512" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772513" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772514" nodeInfo="ng">
@@ -8849,8 +8781,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406231" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772516" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772517" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772518" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772517" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772518" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772519" nodeInfo="ng">
@@ -8861,8 +8793,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406232" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772521" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772522" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772523" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772522" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772523" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772524" nodeInfo="ng">
@@ -8873,8 +8805,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406232" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772526" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772527" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772528" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772527" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772528" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772529" nodeInfo="ng">
@@ -8885,8 +8817,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406232" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772531" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772532" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772533" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772532" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772533" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772534" nodeInfo="ng">
@@ -8897,8 +8829,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406232" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772536" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772537" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772538" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772537" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772538" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772539" nodeInfo="ng">
@@ -8909,8 +8841,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406232" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772541" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772542" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772543" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772542" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772543" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772544" nodeInfo="ng">
@@ -8921,8 +8853,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406232" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772546" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772547" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772548" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772547" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772548" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772549" nodeInfo="ng">
@@ -8933,8 +8865,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406233" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772551" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772552" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772553" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772552" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772553" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772554" nodeInfo="ng">
@@ -8945,8 +8877,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406233" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772556" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772557" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772558" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772557" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772558" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772559" nodeInfo="ng">
@@ -8957,8 +8889,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406233" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772561" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772562" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772563" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772562" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772563" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772564" nodeInfo="ng">
@@ -8969,8 +8901,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406233" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772566" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772567" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772568" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772567" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772568" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772569" nodeInfo="ng">
@@ -8981,8 +8913,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406234" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772571" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772572" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772573" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772572" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772573" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772574" nodeInfo="ng">
@@ -8993,8 +8925,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406228" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772416" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772417" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772418" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772417" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772418" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772419" nodeInfo="ng">
@@ -9005,8 +8937,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406234" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772576" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772577" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772578" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772577" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772578" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772579" nodeInfo="ng">
@@ -9017,8 +8949,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406234" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772581" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772582" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772583" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772582" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772583" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772584" nodeInfo="ng">
@@ -9029,8 +8961,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1378280406234" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772586" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772587" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772588" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3815661793603772587" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3815661793603772588" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="vs0r.VisualizationResult" typeId="vs0r.3815661793603643767" id="3815661793603772589" nodeInfo="ng">
@@ -9056,8 +8988,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1371054846486" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2426041105270526184" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2426041105270526185" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526186" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="2426041105270526185" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="2426041105270526186" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526187" nodeInfo="ng">
@@ -9069,8 +9001,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1371054846486" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2426041105270526179" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2426041105270526180" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526181" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="2426041105270526180" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="2426041105270526181" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526182" nodeInfo="ng">
@@ -9082,8 +9014,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1371054846486" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2426041105270526194" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2426041105270526195" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526196" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="2426041105270526195" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="2426041105270526196" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526197" nodeInfo="ng">
@@ -9095,8 +9027,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1371054846486" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2426041105270526189" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2426041105270526190" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526191" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="2426041105270526190" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="2426041105270526191" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526192" nodeInfo="ng">
@@ -9108,8 +9040,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1371054846486" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2426041105270526209" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2426041105270526210" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526211" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="2426041105270526210" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="2426041105270526211" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526212" nodeInfo="ng">
@@ -9121,8 +9053,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1371054846486" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2426041105270526204" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2426041105270526205" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526206" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="2426041105270526205" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="2426041105270526206" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526207" nodeInfo="ng">
@@ -9134,8 +9066,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1371054846486" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2426041105270526174" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2426041105270526175" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526176" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="2426041105270526175" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="2426041105270526176" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526177" nodeInfo="ng">
@@ -9147,8 +9079,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1371054846486" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2426041105270526169" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2426041105270526170" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526171" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="2426041105270526170" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="2426041105270526171" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526172" nodeInfo="ng">
@@ -9160,8 +9092,8 @@
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1371054846486" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2426041105270526199" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2426041105270526200" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2426041105270526201" nodeInfo="ng" />
+          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="2426041105270526200" nodeInfo="ng">
+            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="2426041105270526201" nodeInfo="ng" />
           </node>
         </node>
         <node role="result" roleId="vs0r.865293814733133843" type="75wo.ShowTracesResult" typeId="75wo.2426041105269792135" id="2426041105270526202" nodeInfo="ng">
@@ -9179,10 +9111,6 @@
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1187244948807576238" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     <property name="name" nameId="tpck.1169194664001" value="ReportingAndLogging" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386046" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="1187244948807577503" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="messages" />
       <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="1187244948807577538" nodeInfo="ng">
@@ -9506,6 +9434,10 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1187244948807600437" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1383320182828_10" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645319386046" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1187244948808232621" nodeInfo="ng">
