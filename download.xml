@@ -4,7 +4,7 @@
   <property name="MPS-Contrib-File" value="MPS-3.1-EAP1-16-contrib.zip"/>
   <property name="MPS-Contrib-File-Target" value="MPS-133.499-contrib.zip"/>
   
-  <property name="MPS-Zip-Folder" value="MPS 3.0"/>
+  <property name="MPS-Zip-Folder" value="MPS 3.1 EAP"/>
   <property name="MPS-Zip-Folder-CleandUp" value="MPS-mbeddr"/>
   <property name="MPS-Dir" value="MPS"/>
   <property name="MPS-Contrib-Dir" value="MPS/mps-contrib"/>
