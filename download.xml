@@ -13,6 +13,7 @@
 	<mkdir dir="${MPS-Dir}"/>	
 	<get src="${MPS-Base-URL}/${MPS-File}" dest="${MPS-Dir}" verbose="true" skipexisting="true" usetimestamp="true"/>	
    	<unzip src="${MPS-Dir}/${MPS-File}" dest="${MPS-Dir}"/>
+	<delete file="${MPS-Dir}/${MPS-File}"/>
 	<move file="${MPS-Dir}/${MPS-Zip-Folder}" tofile="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}"/>			
 	<mkdir dir="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/${MPS-Contrib-Dir}"/>
     <get src="${MPS-Base-URL}/${MPS-Contrib-File}" dest="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/${MPS-Contrib-Dir}/${MPS-Contrib-File-Target}" verbose="true" skipexisting="true" usetimestamp="true"/>
