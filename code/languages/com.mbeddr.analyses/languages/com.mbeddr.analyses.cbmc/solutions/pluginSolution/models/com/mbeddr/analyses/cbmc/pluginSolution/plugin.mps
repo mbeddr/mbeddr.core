@@ -374,6 +374,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3354545139139738631" resolveInfo="toolAdapter" />
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2840293046213442554" nodeInfo="nn" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1340502417503165111" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="60" />
+                </node>
               </node>
             </node>
           </node>
