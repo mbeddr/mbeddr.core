@@ -31,14 +31,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4621481987179741794" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="704069370490430471" resolveInfo="IDataflowTyped" />
     </node>
-    <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.IntegerConceptPropertyDeclaration" typeId="tpce.1105725141344" id="5763383285156530264" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="priolevel" />
-      <property name="inheritable" nameId="tpce.1218571350029" value="true" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.DeprecatedNodeAnnotation" typeId="tpce.1224240836180" id="6584628407655574562" nodeInfo="ig" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.MigratedToMethodAnnotation" typeId="tpce.8080932314785812236" id="6584628407655574561" nodeInfo="ig">
-        <link role="method" roleId="tpce.8080932314785812847" targetNodeId="ywuz.6584628407655574558" resolveInfo="getPriolevel" />
-      </node>
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512128052" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="BinaryExpression" />
@@ -659,13 +651,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1762375172531673444" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5763383285156372998" resolveInfo="INumber" />
     </node>
-    <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.IntegerConceptPropertyDeclaration" typeId="tpce.1105725141344" id="3678395359193847342" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="size" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.DeprecatedNodeAnnotation" typeId="tpce.1224240836180" id="6584628407655574546" nodeInfo="ig" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.MigratedToMethodAnnotation" typeId="tpce.8080932314785812236" id="6584628407655574545" nodeInfo="ig">
-        <link role="method" roleId="tpce.8080932314785812847" targetNodeId="ywuz.6584628407655574542" resolveInfo="getSize" />
-      </node>
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8463282783691492716" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.basic" />
@@ -1066,13 +1051,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4006257212296812974" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4006257212296812970" resolveInfo="INumeric" />
     </node>
-    <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.IntegerConceptPropertyDeclaration" typeId="tpce.1105725141344" id="9149785691754537077" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="size" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.DeprecatedNodeAnnotation" typeId="tpce.1224240836180" id="6584628407655574511" nodeInfo="ig" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.MigratedToMethodAnnotation" typeId="tpce.8080932314785812236" id="6584628407655574510" nodeInfo="ig">
-        <link role="method" roleId="tpce.8080932314785812847" targetNodeId="ywuz.6584628407655574504" resolveInfo="getSize" />
-      </node>
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5947739078127951575" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
@@ -1115,13 +1093,6 @@
     <property name="name" nameId="tpck.1169194664001" value="AbstractDotExpression" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
-    <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.BooleanConceptPropertyDeclaration" typeId="tpce.1105725240314" id="8046082822450325928" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="isArrow" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.DeprecatedNodeAnnotation" typeId="tpce.1224240836180" id="6584628407655574570" nodeInfo="ig" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.MigratedToMethodAnnotation" typeId="tpce.8080932314785812236" id="6584628407655574569" nodeInfo="ig">
-        <link role="method" roleId="tpce.8080932314785812847" targetNodeId="ywuz.6584628407655574566" resolveInfo="isArrow" />
-      </node>
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1452920870317550651" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="member" />
@@ -1337,22 +1308,6 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6573338596884805799" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="memberaccess" />
     <property name="name" nameId="tpck.1169194664001" value="ICanBeUsedInDot" />
-    <node role="conceptLinkDeclaration" roleId="tpce.1137532086877" type="tpce.ReferenceConceptLinkDeclaration" typeId="tpce.1105741578420" id="6573338596884805802" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="dotExprConcept" />
-      <link role="targetType" roleId="tpce.1105736621938" targetNodeId="tpce.1071489090640" resolveInfo="ConceptDeclaration" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.DeprecatedNodeAnnotation" typeId="tpce.1224240836180" id="6584628407655574653" nodeInfo="ig" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.MigratedToMethodAnnotation" typeId="tpce.8080932314785812236" id="6584628407655574652" nodeInfo="ig">
-        <link role="method" roleId="tpce.8080932314785812847" targetNodeId="ywuz.6584628407655574642" resolveInfo="getDotExprConcept" />
-      </node>
-    </node>
-    <node role="conceptLinkDeclaration" roleId="tpce.1137532086877" type="tpce.ReferenceConceptLinkDeclaration" typeId="tpce.1105741578420" id="8046082822450235228" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="arrowExprConcept" />
-      <link role="targetType" roleId="tpce.1105736621938" targetNodeId="tpce.1071489090640" resolveInfo="ConceptDeclaration" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.DeprecatedNodeAnnotation" typeId="tpce.1224240836180" id="6584628407655574664" nodeInfo="ig" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.MigratedToMethodAnnotation" typeId="tpce.8080932314785812236" id="6584628407655574663" nodeInfo="ig">
-        <link role="method" roleId="tpce.8080932314785812847" targetNodeId="ywuz.6584628407655574656" resolveInfo="getArrowExprConcept" />
-      </node>
-    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="329990661091839232" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IAssignmentLike" />

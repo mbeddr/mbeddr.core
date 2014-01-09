@@ -470,13 +470,6 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6871437683401850611" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IStatmentListContainer" />
-    <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.StringConceptPropertyDeclaration" typeId="tpce.1105725281956" id="6871437683401850612" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="label" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.DeprecatedNodeAnnotation" typeId="tpce.1224240836180" id="6584628407655574538" nodeInfo="ig" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.MigratedToMethodAnnotation" typeId="tpce.8080932314785812236" id="6584628407655574537" nodeInfo="ig">
-        <link role="method" roleId="tpce.8080932314785812847" targetNodeId="rj8d.6584628407655574534" resolveInfo="getLabel" />
-      </node>
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="745648737914844471" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="arbitraryText" />

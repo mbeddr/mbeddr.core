@@ -87,22 +87,6 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7946676408104787334" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ILazyRef" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
-    <node role="conceptLinkDeclaration" roleId="tpce.1137532086877" type="tpce.ReferenceConceptLinkDeclaration" typeId="tpce.1105741578420" id="7946676408104788104" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="targetConcept" />
-      <link role="targetType" roleId="tpce.1105736621938" targetNodeId="tpce.1071489090640" resolveInfo="ConceptDeclaration" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.DeprecatedNodeAnnotation" typeId="tpce.1224240836180" id="6584628407655574600" nodeInfo="ig" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.MigratedToMethodAnnotation" typeId="tpce.8080932314785812236" id="6584628407655574599" nodeInfo="ig">
-        <link role="method" roleId="tpce.8080932314785812847" targetNodeId="c4li.6584628407655574592" resolveInfo="getTargetConcept" />
-      </node>
-    </node>
-    <node role="conceptLinkDeclaration" roleId="tpce.1137532086877" type="tpce.ReferenceConceptLinkDeclaration" typeId="tpce.1105741578420" id="7946676408104833713" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="referencingConcept" />
-      <link role="targetType" roleId="tpce.1105736621938" targetNodeId="tpce.1071489090640" resolveInfo="ConceptDeclaration" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.DeprecatedNodeAnnotation" typeId="tpce.1224240836180" id="6584628407655574625" nodeInfo="ig" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.MigratedToMethodAnnotation" typeId="tpce.8080932314785812236" id="6584628407655574624" nodeInfo="ig">
-        <link role="method" roleId="tpce.8080932314785812847" targetNodeId="c4li.6584628407655574617" resolveInfo="getReferencingConcept" />
-      </node>
-    </node>
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7946676408104787339" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
@@ -118,14 +102,6 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
     <property name="name" nameId="tpck.1169194664001" value="LazyTypeDefType" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4096671478328228386" resolveInfo="LazyType" />
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="7946676408105020421" nodeInfo="ig">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104833713" resolveInfo="referencingConcept" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.6116558314501347863" resolveInfo="TypeDefType" />
-    </node>
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="7946676408105020423" nodeInfo="ig">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104788104" resolveInfo="targetConcept" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.6116558314501347857" resolveInfo="TypeDef" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7946676408105068622" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
@@ -165,40 +141,16 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
     <property name="name" nameId="tpck.1169194664001" value="LazyEnumType" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4096671478328228386" resolveInfo="LazyType" />
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4096671478328039354" nodeInfo="ig">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104788104" resolveInfo="targetConcept" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.8811614583515725851" resolveInfo="EnumDeclaration" />
-    </node>
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4096671478328039356" nodeInfo="ig">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104833713" resolveInfo="referencingConcept" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.8811614583515725893" resolveInfo="EnumType" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4096671478328203946" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
     <property name="name" nameId="tpck.1169194664001" value="LazyStructType" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4096671478328228386" resolveInfo="LazyType" />
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4096671478328203949" nodeInfo="ig">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104833713" resolveInfo="referencingConcept" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.6394819151180597816" resolveInfo="StructType" />
-    </node>
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4096671478328203951" nodeInfo="ig">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104788104" resolveInfo="targetConcept" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.6394819151180597807" resolveInfo="StructDeclaration" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4096671478328204063" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
     <property name="name" nameId="tpck.1169194664001" value="LazyUnionType" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4096671478328228386" resolveInfo="LazyType" />
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4096671478328204064" nodeInfo="ig">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104833713" resolveInfo="referencingConcept" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.5882395403881907205" resolveInfo="UnionType" />
-    </node>
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4096671478328204065" nodeInfo="ig">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104788104" resolveInfo="targetConcept" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.5882395403881907066" resolveInfo="UnionDeclaration" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4096671478328228386" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
