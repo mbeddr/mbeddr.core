@@ -4,17 +4,18 @@
   <property name="MPS-Contrib-File" value="MPS-3.1-EAP1-16-contrib.zip"/>
   <property name="MPS-Contrib-File-Target" value="MPS-133.499-contrib.zip"/>
   
-  <property name="MPS-Zip-Folder" value="MPS 3.0"/>
+  <property name="MPS-Zip-Folder" value="MPS 3.1 EAP"/>
   <property name="MPS-Zip-Folder-CleandUp" value="MPS-mbeddr"/>
   <property name="MPS-Dir" value="MPS"/>
-  <property name="MPS-Contrib-Dir" value="MPS/mps-contrib"/>
+  <property name="MPS-Contrib-Dir" value="mps-contrib"/>
   
   <target name="download">
-	<mkdir dir="${MPS-Dir}"/>
-	<get src="${MPS-Base-URL}/${MPS-File}" dest="${MPS-Dir}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	<mkdir dir="${MPS-Dir}"/>	
+	<get src="${MPS-Base-URL}/${MPS-File}" dest="${MPS-Dir}" verbose="true" skipexisting="true" usetimestamp="true"/>	
    	<unzip src="${MPS-Dir}/${MPS-File}" dest="${MPS-Dir}"/>
-	<mkdir dir="${MPS-Contrib-Dir}/"/>
-    <get src="${MPS-Base-URL}/${MPS-Contrib-File}" dest="${MPS-Contrib-Dir}/${MPS-Contrib-File-Target}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	<move file="${MPS-Dir}/${MPS-Zip-Folder}" tofile="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}"/>
+	<delete file="${MPS-Dir}/${MPS-File}"/>
+	<move file="${MPS-Dir}/${MPS-Zip-Folder}" tofile="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}"/>			
+	<mkdir dir="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/${MPS-Contrib-Dir}"/>
+    <get src="${MPS-Base-URL}/${MPS-Contrib-File}" dest="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/${MPS-Contrib-Dir}/${MPS-Contrib-File-Target}" verbose="true" skipexisting="true" usetimestamp="true"/>
   </target>
 </project>
