@@ -7,7 +7,7 @@
   <property name="MPS-Zip-Folder" value="MPS 3.1 EAP"/>
   <property name="MPS-Zip-Folder-CleandUp" value="MPS-mbeddr"/>
   <property name="MPS-Dir" value="MPS"/>
-  <property name="MPS-Contrib-Dir" value="MPS/mps-contrib"/>
+  <property name="MPS-Contrib-Dir" value="MPS-mbeddr/mps-contrib"/>
   
   <target name="download">
 	<mkdir dir="${MPS-Dir}"/>
@@ -15,6 +15,15 @@
    	<unzip src="${MPS-Dir}/${MPS-File}" dest="${MPS-Dir}"/>
 	<mkdir dir="${MPS-Contrib-Dir}/"/>
     <get src="${MPS-Base-URL}/${MPS-Contrib-File}" dest="${MPS-Contrib-Dir}/${MPS-Contrib-File-Target}" verbose="true" skipexisting="true" usetimestamp="true"/>
+
+
+
+
+
+
+
+
+
 	<move file="${MPS-Dir}/${MPS-Zip-Folder}" tofile="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}"/>
   </target>
 </project>
