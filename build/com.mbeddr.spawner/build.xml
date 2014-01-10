@@ -3,11 +3,13 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.spawner.build" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.spawner.build" />
-  <property name="mps.home" location="${basedir}/../../../../MPS/MPS-3.1.app" />
+  <property name="mps.home" location="${basedir}/../../../../MPS/MPS-3.1EAP-19.app" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="mbeddr.core" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.spawner" />
+  <property name="mps.contrib.artifacts" location="${mps.home}/mps-contrib/" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.mpsBuild" location="${mps.home}" />
+  <property name="artifacts.mpsContrib" location="${mps.contrib.artifacts}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -159,7 +161,10 @@
   
   <target name="buildDependents" />
   
-  <target name="fetchDependencies" />
+  <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip" />
+    <unzip src="${artifacts.mpsContrib}/${mps.build.number}-contrib.zip" dest="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip" />
+  </target>
   
   <target name="build" depends="assemble" />
   
@@ -236,6 +241,7 @@
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
+      <library file="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-contrib-build/languages/jetbrains.mps.contrib.build.jar" />
       <chunk>
         <module file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/Debugger.msd" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.spawner/spawner.msd" />
@@ -247,6 +253,7 @@
       <macro name="mps.home" path="${mps.home}" />
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
       <macro name="mbeddr.core" path="${mbeddr.core}" />
+      <macro name="mps.contrib.artifacts" path="${mps.contrib.artifacts}" />
     </generate>
   </target>
   
@@ -288,7 +295,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.spawner.dev.build">
+  <target name="java.compile.com.mbeddr.spawner.dev.build" depends="fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" fork="true" includeantruntime="false">
@@ -296,7 +303,9 @@
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/source_gen" />
       </src>
-      <classpath />
+      <classpath>
+        <fileset file="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-contrib-build/languages/jetbrains.mps.contrib.build.jar" />
+      </classpath>
     </javac>
   </target>
   

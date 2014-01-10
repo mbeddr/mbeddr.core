@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.spawner.dev.build" uuid="ba19fd84-07a8-4c0c-b27a-83b037421bea" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">cd346635-68ba-425d-800f-cb5e57c8aa1b(jetbrains.mps.contrib.build)</dependency>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
   </dependencies>
   <usedLanguages>
