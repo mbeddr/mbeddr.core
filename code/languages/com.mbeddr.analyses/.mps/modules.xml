@@ -8,9 +8,9 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.decisiontables/com.mbeddr.analyses.decisiontables.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.dectab/dectab.devkit" folder="yices" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="yices" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.nusmv.statemachine/statemachine.devkit" folder="nusmv" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.robustness/com.mbeddr.analyses.robustness.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.smtlangs.yices/yices.devkit" folder="" />
-      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.statemachine/statemachine.devkit" folder="nusmv" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.statemachines/com.mbeddr.analyses.statemachines.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.unittests/unittests.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base/base.mpl" folder="base" />
