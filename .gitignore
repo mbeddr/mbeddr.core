@@ -126,3 +126,6 @@ code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/
 #Some local script (not to be shared)
 code/languages/offline.sh
 
+# -----------------------------------------------------------
+# CBMC analyses results temporary files
+code/*/xmlCBMCRawOutput/*
