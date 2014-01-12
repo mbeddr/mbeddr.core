@@ -52,7 +52,7 @@ code/languages/*/lib/*/source_gen.caches
 # * tests
 test_gen
 test_gen.caches
-
+analyses_results
 
 
 
