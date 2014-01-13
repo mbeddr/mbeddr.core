@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="-1" />
+    </dependencies>
+    <rename id="3673.8615074351687435493" type="CONCEPT" from="IterpretStatement" to="InterpretStatement" />
+  </StructureModification>
+</history>
+
