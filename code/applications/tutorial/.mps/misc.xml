@@ -28,6 +28,14 @@
       <favorite_root node_ref="r:306ccf39-5254-4b2f-b40d-518804a55437(mbeddr.tutorial.typesystemtests.complex@tests)/5485104033530070062" />
       <favorite_root node_ref="r:291bc191-705d-4367-b5c1-260d78969d06(mbeddr.tutorial.typesystemtests.metadata@tests)/2945795531676760872" />
     </favorites_list>
+    <favorites_list name="Delft">
+      <favorite_root node_ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)/5160057464295358354" />
+      <favorite_root node_ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)/1731059994647588211" />
+      <favorite_root node_ref="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)/1433966787984154171" />
+      <favorite_root node_ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)/2426041105270455844" />
+      <favorite_root node_ref="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)/3815661793603772590" />
+      <favorite_root node_ref="r:42ceb07b-59b7-4af0-9bb1-7aea4ac30207(mbeddr.tutorial.main.docs)/794010416819640951" />
+    </favorites_list>
   </component>
   <component name="ProjectRootManager" version="2" />
 </project>
