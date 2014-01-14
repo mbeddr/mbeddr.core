@@ -14,9 +14,7 @@
   <property name="spawner.artifacts" location="${basedir}/../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build/" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="${basedir}/../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build/" />
   <property name="artifacts.com.mbeddr.debugger.build" location="${basedir}/../com.mbeddr.debugger/build/artifacts/com.mbeddr.debugger.build/" />
-  <property name="mps.contrib.artifacts" location="${mps.home}/mps-contrib/" />
   <property name="artifacts.mps" location="${mps.home}" />
-  <property name="artifacts.mpsContrib" location="${mps.contrib.artifacts}" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="${artifacts.com.mbeddr.debugger.build}" />
   <property name="artifacts.com.mbeddr.spawner.build" location="${spawner.artifacts}" />
   <property name="artifacts.com.mbeddr.debugger.build" location="${artifacts.com.mbeddr.debugger.build}" />
@@ -57,8 +55,6 @@
         <depends>de.slisson.mps.richtext</depends>
         <depends>de.slisson.mps.tables</depends>
         <depends>jetbrains.mps.execution.languages</depends>
-        <depends>jetbrains.mps.execution.deprecated</depends>
-        <depends>jetbrains.mps.contrib.build</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -192,7 +188,6 @@
           <module ref="cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)" />
           <module ref="36c11d2d-1875-4a95-8bdb-70ea1ac63222(jetbrains.mps.execution.api)" />
           <module ref="365fb593-3c1a-40a0-a7d7-c98144281283(jetbrains.mps.execution.impl)" />
-          <module ref="ceb47609-02c2-4927-bb6d-d58368388a62(jetbrains.mps.ide.uiLanguage.runtime)" />
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
@@ -1188,20 +1183,18 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
     <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <mkdir dir="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip" />
-    <unzip src="${artifacts.mpsContrib}/${mps.build.number}-contrib.zip" dest="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -1238,9 +1231,6 @@
       <plugin path="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
       <plugin path="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
       <plugin path="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables" />
-      <plugin path="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-contrib-build" />
-      <plugin path="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-execution-deprecated" />
-      <plugin path="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-ui-language" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -1355,10 +1345,6 @@
       <library file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
       <library file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.jar" />
       <library file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
-      <library file="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-contrib-build/languages/jetbrains.mps.contrib.build.jar" />
-      <library file="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-execution-deprecated/lib/jetbrains.mps.execution.configurations.deprecated.runtime.jar" />
-      <library file="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-ui-language/languages/uiLanguage/jetbrains.mps.uiLanguage.jar" />
-      <library file="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-ui-language/lib/jetbrains.mps.ide.uiLanguage.runtime.jar" />
       <chunk>
         <module file="${mbeddr.core}/languages/com.mbeddr.core.base/base.mpl" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" />
@@ -1409,7 +1395,6 @@
       <macro name="spawner.artifacts" path="${spawner.artifacts}" />
       <macro name="artifacts.com.mbeddr.mpsutil.build" path="${artifacts.com.mbeddr.mpsutil.build}" />
       <macro name="artifacts.com.mbeddr.debugger.build" path="${artifacts.com.mbeddr.debugger.build}" />
-      <macro name="mps.contrib.artifacts" path="${mps.contrib.artifacts}" />
     </generate>
   </target>
   
@@ -1649,8 +1634,6 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-execution-deprecated/lib/jetbrains.mps.execution.configurations.deprecated.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-ui-language/lib/jetbrains.mps.ide.uiLanguage.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.pattern.jar" />
@@ -4072,7 +4055,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/com.mbeddr.spawner.dev.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-contrib-build/languages/jetbrains.mps.contrib.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
       </classpath>
     </javac>

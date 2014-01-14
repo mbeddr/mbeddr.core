@@ -10,12 +10,10 @@
   <property name="mpsutil" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext/null" />
   <property name="multiline.artifacts" location="${lisson.home}/mps-multiline/build/artifacts/mps-multiline/" />
-  <property name="mps.contrib.artifacts" location="${mps.home}/mps-contrib/" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.mpsBuild" location="${mps.home}" />
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
-  <property name="artifacts.mpsContrib" location="${mps.contrib.artifacts}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -41,7 +39,6 @@
         <name>com.mbeddr.mpsutil</name>
         <version>${build.number}</version>
         <vendor url="http://mbeddr.com">mbeddr</vendor>
-        <depends>jetbrains.mps.contrib.build</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>de.slisson.mps.richtext</depends>
@@ -530,12 +527,10 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <mkdir dir="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip" />
-    <unzip src="${artifacts.mpsContrib}/${mps.build.number}-contrib.zip" dest="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip" />
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -568,7 +563,6 @@
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <plugin path="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
       <plugin path="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
-      <plugin path="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-contrib-build" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.checkedDots.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -664,7 +658,6 @@
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-      <library file="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-contrib-build/languages/jetbrains.mps.contrib.build.jar" />
       <chunk>
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.bldoc/bldoc.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/solutions/com.mbeddr.mpsutil.blutil.rt.msd" />
@@ -695,7 +688,6 @@
       <macro name="mpsutil" path="${mpsutil}" />
       <macro name="richtext.artifacts" path="${richtext.artifacts}" />
       <macro name="multiline.artifacts" path="${multiline.artifacts}" />
-      <macro name="mps.contrib.artifacts" path="${mps.contrib.artifacts}" />
     </generate>
   </target>
   
@@ -1574,7 +1566,6 @@
       </src>
       <classpath>
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-contrib-build/languages/jetbrains.mps.contrib.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
       </classpath>
     </javac>

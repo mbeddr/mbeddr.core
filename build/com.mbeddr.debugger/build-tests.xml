@@ -9,11 +9,9 @@
   <property name="mbeddr.core" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
   <property name="spawner.artifacts" location="${basedir}/../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build/" />
   <property name="mps.macro.mbeddr.github.core.home" location="${mbeddr.github.core.home}" />
-  <property name="mps.contrib.artifacts" location="${mps.home}/mps-contrib/" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.spawner.build" location="${spawner.artifacts}" />
   <property name="artifacts.com.mbeddr.debugger.build" location="${build.dir}/artifacts/com.mbeddr.debugger.build" />
-  <property name="artifacts.mpsContrib" location="${mps.contrib.artifacts}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -111,8 +109,6 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip" />
-    <unzip src="${artifacts.mpsContrib}/${mps.build.number}-contrib.zip" dest="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
   </target>
@@ -144,7 +140,6 @@
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <plugin path="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger" />
       <plugin path="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner" />
-      <plugin path="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-contrib-build" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -219,7 +214,6 @@
       <macro name="mbeddr.core" path="${mbeddr.core}" />
       <macro name="spawner.artifacts" path="${spawner.artifacts}" />
       <macro name="mps.macro.mbeddr.github.core.home" path="${mps.macro.mbeddr.github.core.home}" />
-      <macro name="mps.contrib.artifacts" path="${mps.contrib.artifacts}" />
     </generate>
   </target>
   
@@ -460,7 +454,6 @@
       <pathelement location="${artifacts.mps}/plugins/mps-testing" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner" />
-      <pathelement location="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-contrib-build" />
     </path>
     <pathconvert pathsep="${path.separator}" property="mps.plugins.path.string" refid="mps.plugins.path" />
     <path id="mps.tests.path">
@@ -498,9 +491,6 @@
           <include name="**/lib/*.jar" />
         </fileset>
         <fileset dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner">
-          <include name="**/lib/*.jar" />
-        </fileset>
-        <fileset dir="${build.tmp}/deps/mpsContrib/_dl__lbrace_build.number_rbrace_-contrib.zip/mps-contrib-build">
           <include name="**/lib/*.jar" />
         </fileset>
       </classpath>

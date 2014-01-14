@@ -8,7 +8,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">830041d3-fd09-4005-819d-9d2e06a676ba(de.slisson.mps.richtext.build)</dependency>
-    <dependency reexport="false">cd346635-68ba-425d-800f-cb5e57c8aa1b(jetbrains.mps.contrib.build)</dependency>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
     <dependency reexport="false">05bb02f1-9d98-4854-9173-66e072421464(mps-multiline.build)</dependency>
   </dependencies>
