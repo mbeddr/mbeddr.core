@@ -9,8 +9,8 @@
   <dependencies>
     <dependency reexport="false">cfe2dde5-9e9a-4804-acb8-311b8adc09dc(com.mbeddr.analyses.base.dev.build)</dependency>
     <dependency reexport="false">52533894-f4ff-41f6-8bcd-cc454916834d(com.mbeddr.analyses.cbmc.dev.build)</dependency>
-    <dependency reexport="false">4c28f257-18f6-416e-b37b-fa69eba1866b(com.mbeddr.analyses.tests.dev.build)</dependency>
     <dependency reexport="false">e0d58430-60b1-4fb5-a47b-980926b70767(com.mbeddr.analyses.nusmv.dev.build)</dependency>
+    <dependency reexport="false">4c28f257-18f6-416e-b37b-fa69eba1866b(com.mbeddr.analyses.tests.dev.build)</dependency>
     <dependency reexport="false">f7dff26d-d965-400d-a73f-e89bdc87c05b(com.mbeddr.analyses.yices.dev.build)</dependency>
     <dependency reexport="false">b22c9f3a-bcc2-4f68-901a-f574ebc81e23(com.mbeddr.cc.ple.dev.build)</dependency>
     <dependency reexport="false">069b04b3-7338-4781-80fa-9e8b854877d2(com.mbeddr.cc.req.dev.build)</dependency>
@@ -25,6 +25,7 @@
     <dependency reexport="false">ba19fd84-07a8-4c0c-b27a-83b037421bea(com.mbeddr.spawner.dev.build)</dependency>
     <dependency reexport="false">830041d3-fd09-4005-819d-9d2e06a676ba(de.slisson.mps.richtext.build)</dependency>
     <dependency reexport="false">f635fc54-10fa-4740-93b9-f8dfe124ea1b(de.slisson.mps.tables.build)</dependency>
+    <dependency reexport="false">cd346635-68ba-425d-800f-cb5e57c8aa1b(jetbrains.mps.contrib.build)</dependency>
     <dependency reexport="false">25891414-2b70-48c7-b1cc-8dc0c127d669(jetbrains.mps.debugger.api.runtime)</dependency>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
     <dependency reexport="false">05bb02f1-9d98-4854-9173-66e072421464(mps-multiline.build)</dependency>
