@@ -15,7 +15,5 @@
    	<unzip src="${MPS-Dir}/${MPS-File}" dest="${MPS-Dir}"/>
 	<move file="${MPS-Dir}/${MPS-Zip-Folder}" tofile="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}"/>
 	<delete dir="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/${MPS-Contrib-Dir}"/>	
-	<mkdir dir="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/${MPS-Contrib-Dir}"/>
-    <get src="${MPS-Base-URL}/${MPS-Contrib-File}" dest="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/${MPS-Contrib-Dir}/${MPS-Contrib-File-Target}" verbose="true" skipexisting="true" usetimestamp="true"/>
   </target>
 </project>
