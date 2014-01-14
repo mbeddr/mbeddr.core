@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="com.mbeddr.analyses.statemachine" uuid="2bdeee47-6092-4bbf-b31d-6be5dbbba49d">
+<dev-kit name="com.mbeddr.analyses.nusmv.statemachines" uuid="2bdeee47-6092-4bbf-b31d-6be5dbbba49d">
   <exported-language name="6d6531a5-3257-4592-b692-9db6a8c7e80f(com.mbeddr.analyses.nusmv)" />
   <exported-language name="d62d6e81-9ae0-456b-b2c3-d71c0f373ded(com.mbeddr.analyses.nusmv.statemachine)" />
   <exported-solutions>

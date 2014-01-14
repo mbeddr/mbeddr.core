@@ -318,7 +318,7 @@
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="pszp.7674753535254790353" resolveInfo="UniversalityAfterUntil" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7674753535254804412" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7674753535254804413" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="P is false After Q Until R" />
+        <property name="text" nameId="tpc2.1073389577007" value="P is true After Q Until R" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7674753535254804414" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="  Q:" />
