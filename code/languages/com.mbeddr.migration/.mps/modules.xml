@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.migration.dotexpression/com.mbeddr.migration.dotexpression.mpl" folder="" />
+    </projectModules>
+  </component>
+</project>
+
