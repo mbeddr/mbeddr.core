@@ -1036,5 +1036,8 @@
       </node>
     </node>
   </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4620120465980633110" nodeInfo="ng">
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.4620120465980402700" resolveInfo="GenericDotExpression" />
+  </root>
 </model>
 
