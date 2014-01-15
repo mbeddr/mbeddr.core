@@ -7,7 +7,7 @@
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="10" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" />
   <import index="e8zp" modelUID="r:58a558d9-50ed-4b86-91cf-66ce18b52794(com.mbeddr.core.expressions.actions)" version="-1" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" />
@@ -1102,7 +1102,7 @@
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="7034214596258994215" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="su.struct" />
     <property name="name" nameId="tpck.1169194664001" value="ReferenceForMemberRefGenric" />
-    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="clbe.7034214596253391076" resolveInfo="MemberRefGeneric" />
+    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="clbe.7034214596253391076" resolveInfo="GenericMemberRef" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="7034214596258994216" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7034214596258994217" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="7034214596258994218" nodeInfo="nn">
@@ -1208,7 +1208,7 @@
   </root>
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="7034214596259006722" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DereferenceMemberRefGeneric" />
-    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="clbe.7034214596253391076" resolveInfo="MemberRefGeneric" />
+    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="clbe.7034214596253391076" resolveInfo="GenericMemberRef" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="7034214596259006723" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7034214596259006724" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7034214596259006725" nodeInfo="nn">
