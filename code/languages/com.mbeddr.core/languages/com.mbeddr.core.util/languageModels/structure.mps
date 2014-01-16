@@ -1212,6 +1212,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8801157290035105866" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger" />
     <property name="name" nameId="tpck.1169194664001" value="GenericDLEnterTraceOp" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Enter tracepoint" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8801157290035177761" resolveInfo="GenericDataLoggerOp" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8801157290035105867" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -1231,8 +1232,38 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8801157290035177762" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.5763383285156461605" resolveInfo="IMemberReference" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6472565942502454497" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.4620120465980511009" resolveInfo="IGenericDotTarget" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8801157290036121515" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger" />
+    <property name="name" nameId="tpck.1169194664001" value="GenericDLLeaveTraceOp" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Leave tracepoint" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8801157290035177761" resolveInfo="GenericDataLoggerOp" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8801157290036121516" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="tracepoint" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1542399328501010856" resolveInfo="TracePoint" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6472565942509969649" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger" />
+    <property name="name" nameId="tpck.1169194664001" value="GenericDLLogOp" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8801157290035177761" resolveInfo="GenericDataLoggerOp" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6472565942509969650" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="value" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6472565942509969651" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="item" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4944376863000945404" resolveInfo="DataItem" />
     </node>
   </root>
 </model>
