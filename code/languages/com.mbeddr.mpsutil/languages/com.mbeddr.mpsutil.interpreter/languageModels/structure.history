@@ -6,5 +6,23 @@
     </dependencies>
     <rename id="3673.8615074351687435493" type="CONCEPT" from="IterpretStatement" to="InterpretStatement" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="0" />
+    </dependencies>
+    <rename id="3673.8615074351687435493" type="CONCEPT" from="InterpretStatement" to="InterpretExperssion" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="1" />
+    </dependencies>
+    <rename id="3673.8615074351687435493" type="CONCEPT" from="InterpretExperssion" to="InterpretExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="2" />
+    </dependencies>
+    <rename id="3673.8615074351687425563" type="CONCEPT" from="ChildConstraint" to="TypedChildConstraint" />
+  </StructureModification>
 </history>
 
