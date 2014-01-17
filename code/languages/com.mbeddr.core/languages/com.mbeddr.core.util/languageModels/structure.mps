@@ -1269,5 +1269,11 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4944376863000945404" resolveInfo="DataItem" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2790345531544431663" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger" />
+    <property name="name" nameId="tpck.1169194664001" value="GenericDLFinishOp" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="finish" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8801157290035177761" resolveInfo="GenericDataLoggerOp" />
+  </root>
 </model>
 

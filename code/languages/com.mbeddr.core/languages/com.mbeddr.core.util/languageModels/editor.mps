@@ -3483,5 +3483,13 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2790345531544434615" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.2790345531544431663" resolveInfo="GenericDLFinishOp" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2790345531544434616" nodeInfo="nn">
+      <property name="text" nameId="tpc2.1073389577007" value="finish" />
+      <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="z5qa.6275792049641598457" resolveInfo="asserting" />
+    </node>
+  </root>
 </model>
 
