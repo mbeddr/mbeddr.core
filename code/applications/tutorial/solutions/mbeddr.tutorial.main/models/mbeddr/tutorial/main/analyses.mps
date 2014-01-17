@@ -244,9 +244,10 @@
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.StatemachineCBMCAnalysis" typeId="q5q6.8376973589777602107" id="2613206384568804354" nodeInfo="ng">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="26" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="44" />
+      <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
       <link role="satemachine" roleId="q5q6.8376973589777602108" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="e1tx.7727566415687697331" resolveInfo="testFlightAnalyzer" />
     </node>
@@ -255,6 +256,7 @@
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="44" />
+      <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
       <link role="satemachine" roleId="q5q6.8376973589777602108" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="3791647284633043932" resolveInfo="flightAnalyzerVerification" />
     </node>
@@ -268,6 +270,7 @@
       <property name="check_signed_overflow" nameId="q5q6.9047848667681377015" value="true" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="55" />
       <property name="timeoutForSingleAnalysis" nameId="q5q6.1340502417502745346" value="60" />
+      <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="3791647284633043932" resolveInfo="flightAnalyzerVerification" />
     </node>
     <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6014794391429797202" nodeInfo="ng">
