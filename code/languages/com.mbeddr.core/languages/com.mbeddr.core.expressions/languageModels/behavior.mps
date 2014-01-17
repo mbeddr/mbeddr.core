@@ -8373,7 +8373,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2946801510050675600" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2946801510048001642" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2946801510048001644" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Please run the Migrate Dot Expression script" />
+            <property name="value" nameId="tpee.1070475926801" value="Please run the Tools -&gt; Scripts -&gt; Enhancements -&gt; MBEDDR: Migrate Dot Expression" />
           </node>
         </node>
       </node>
