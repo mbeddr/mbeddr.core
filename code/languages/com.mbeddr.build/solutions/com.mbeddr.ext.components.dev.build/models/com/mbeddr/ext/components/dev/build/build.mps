@@ -90,6 +90,9 @@
         <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975391382" resolveInfo="mbeddr.github.core.home" />
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975391394" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value=".." />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1788062879296181615" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="lisson" />
+          </node>
         </node>
       </node>
     </node>
