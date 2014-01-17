@@ -1219,5 +1219,30 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="3673.8615074351687435493" resolveInfo="InterpretExpression" />
     </node>
   </root>
+  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5712773029550999769" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="typeof_InvokeInterpreterExpr" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5712773029550999770" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="5712773029551000520" nodeInfo="nn">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5712773029551000543" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="5712773029551000539" nodeInfo="nn">
+            <node role="quotedNode" roleId="tp3r.1196350785114" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5712773029551000653" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2ahs.5712773029520911456" resolveInfo="IValue" />
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5712773029551000523" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="5712773029551000334" nodeInfo="nn">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5712773029551000373" nodeInfo="nn">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5712773029550999772" resolveInfo="invokeInterpreterExpr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5712773029550999772" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="invokeInterpreterExpr" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="3673.5712773029543064716" resolveInfo="InvokeInterpreterExpr" />
+    </node>
+  </root>
 </model>
 
