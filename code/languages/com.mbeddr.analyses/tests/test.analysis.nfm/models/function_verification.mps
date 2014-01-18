@@ -803,9 +803,20 @@
     </node>
   </root>
   <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="5512262613064826867" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="DemoConfig" />
+    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.AssertionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="2543669926436293617" nodeInfo="ng">
+      <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="-1" />
+      <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
+      <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="false" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="5512262613064826873" resolveInfo="interruptHandler" />
+    </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.ComponentsCBMCAnalysis" typeId="q5q6.6472990431939799912" id="5512262613064826868" nodeInfo="ng">
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="200" />
+      <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="60" />
       <link role="analyzedComponent" roleId="q5q6.6472990431939799913" targetNodeId="5512262613064826645" resolveInfo="PlauzibilizedSpeedComputer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="5512262613064826754" resolveInfo="emitCurrentSpeed" />
     </node>
@@ -813,8 +824,12 @@
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="true" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="200" />
+      <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="60" />
       <link role="analyzedComponent" roleId="q5q6.6472990431939799913" targetNodeId="5512262613064826645" resolveInfo="PlauzibilizedSpeedComputer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="5512262613064826780" resolveInfo="main" />
+    </node>
+    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1737673050807526495" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5512262613064826870" resolveInfo="AssertionsAndDivByZero" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5512262613064826870" nodeInfo="ng">
