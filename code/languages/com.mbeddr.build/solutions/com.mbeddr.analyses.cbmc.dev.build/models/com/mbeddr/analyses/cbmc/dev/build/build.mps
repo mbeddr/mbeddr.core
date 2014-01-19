@@ -26,7 +26,7 @@
   <import index="fnbo" modelUID="r:d89d60fc-e488-474b-a7de-9d6e3b77d10d(com.mbeddr.mpsutil.buildutil.structure)" version="-1" implicit="yes" />
   <import index="kdzh" modelUID="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" version="3" implicit="yes" />
   <root type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="8334796989975410459" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.analyses.cbmc" />
+    <property name="name" nameId="tpck.1169194664001" value="com..mbeddr.analyses.cbmc" />
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.analyses" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-cbmc.xml" />
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="fnbo.BuildConsistencyAnnotation" typeId="fnbo.6600513366548884504" id="8334796989975410460" nodeInfo="ng">

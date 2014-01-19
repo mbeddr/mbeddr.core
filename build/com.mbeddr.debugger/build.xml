@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.debugger.build" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.debugger.build" />
-  <property name="mps.home" location="${basedir}/../../../../MPS/MPS-3.1EAP-19.app" />
+  <property name="mps.home" location="${basedir}/../../../../MPS/MPS-3.1.app" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="mpsutil" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   <property name="mbeddr.debugger" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />

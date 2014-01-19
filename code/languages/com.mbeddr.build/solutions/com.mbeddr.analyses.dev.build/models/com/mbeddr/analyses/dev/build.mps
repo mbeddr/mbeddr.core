@@ -31,7 +31,7 @@
   <import index="5tjl" modelUID="r:5315d75f-2eea-4bf2-899f-f3d94810cea5(jetbrains.mps.build.mps.tests.structure)" version="-1" implicit="yes" />
   <import index="fnbo" modelUID="r:d89d60fc-e488-474b-a7de-9d6e3b77d10d(com.mbeddr.mpsutil.buildutil.structure)" version="-1" implicit="yes" />
   <root type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="3668159920709422878" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.analyses.ex.tests" />
+    <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.analyses.zex.tests" />
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.analyses" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-ex-tests.xml" />
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="fnbo.BuildConsistencyAnnotation" typeId="fnbo.6600513366548884504" id="6600513366563759332" nodeInfo="ng">

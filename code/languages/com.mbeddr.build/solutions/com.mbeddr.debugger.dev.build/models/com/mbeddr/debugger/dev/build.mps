@@ -29,8 +29,8 @@
                 <property name="head" nameId="3ior.8618885170173601779" value=".." />
                 <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7247348105538928975" nodeInfo="nn">
                   <property name="head" nameId="3ior.8618885170173601779" value="MPS" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6563869198050241284" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="MPS-3.1EAP-19.app" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989980611459" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="MPS-3.1.app" />
                   </node>
                 </node>
               </node>
