@@ -502,21 +502,34 @@
                 </node>
               </node>
               <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6371002723820461615" nodeInfo="nn" />
-              <node role="statement" roleId="tpee.1068581517665" type="hba4.LogExpr" typeId="hba4.5667201763537739848" id="6371002723820732215" nodeInfo="ng">
-                <property name="label" nameId="hba4.5667201763537739900" value="expr" />
-                <node role="expr" roleId="hba4.5667201763537739902" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6371002723821556515" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6371002723821528645" nodeInfo="nn">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3669865008872544804" resolveInfo="de" />
-                  </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6371002723821683029" nodeInfo="nn">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7254843406768839760" />
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="2948205150011129640" nodeInfo="nn">
+                <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="2948205150011315615" nodeInfo="nn">
+                  <property name="text" nameId="tpee.6329021646629104958" value="Annoying output commented out" />
+                </node>
+              </node>
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="2948205150010936149" nodeInfo="nn">
+                <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.StatementCommentPart" typeId="tpee.6329021646629175143" id="2948205150010936150" nodeInfo="nn">
+                  <node role="commentedStatement" roleId="tpee.6329021646629175144" type="hba4.LogExpr" typeId="hba4.5667201763537739848" id="6371002723820732215" nodeInfo="ng">
+                    <property name="label" nameId="hba4.5667201763537739900" value="expr" />
+                    <node role="expr" roleId="hba4.5667201763537739902" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6371002723821556515" nodeInfo="nn">
+                      <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6371002723821528645" nodeInfo="nn">
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3669865008872544804" resolveInfo="de" />
+                      </node>
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6371002723821683029" nodeInfo="nn">
+                        <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7254843406768839760" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
-              <node role="statement" roleId="tpee.1068581517665" type="hba4.LogExpr" typeId="hba4.5667201763537739848" id="6371002723821363407" nodeInfo="ng">
-                <property name="label" nameId="hba4.5667201763537739900" value="contextType" />
-                <node role="expr" roleId="hba4.5667201763537739902" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6371002723821363408" nodeInfo="nn">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3669865008872544809" resolveInfo="ct" />
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="2948205150010994781" nodeInfo="nn">
+                <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.StatementCommentPart" typeId="tpee.6329021646629175143" id="2948205150010994782" nodeInfo="nn">
+                  <node role="commentedStatement" roleId="tpee.6329021646629175144" type="hba4.LogExpr" typeId="hba4.5667201763537739848" id="6371002723821363407" nodeInfo="ng">
+                    <property name="label" nameId="hba4.5667201763537739900" value="contextType" />
+                    <node role="expr" roleId="hba4.5667201763537739902" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6371002723821363408" nodeInfo="nn">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3669865008872544809" resolveInfo="ct" />
+                    </node>
+                  </node>
                 </node>
               </node>
               <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6371002723820535357" nodeInfo="nn" />
