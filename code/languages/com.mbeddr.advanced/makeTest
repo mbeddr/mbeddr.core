@@ -1,0 +1,37 @@
+#!/bin/sh
+#set +v
+
+PROC_RET=0
+
+cd tests/test.ex.ext.compositecomponents/source_gen/test/ex/ext/
+
+echo -------------------------------------
+echo compositeComponents
+cd compositeComponents/tests
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+
+
+if [ "$PROC_RET" -ne "0" ]; 
+ then
+    echo ""
+    echo "" 
+    echo "================================================"
+    echo "================================================" 
+    echo "               $PROC_RET test(s) failed"
+    echo "================================================"
+    echo "================================================"
+    echo ""
+    echo ""
+ else
+  echo ""
+    echo "" 
+    echo "================================================"
+    echo "              OK - All tests green"
+    echo "================================================"
+    echo ""
+    echo ""
+fi
+
+exit $PROC_RET
