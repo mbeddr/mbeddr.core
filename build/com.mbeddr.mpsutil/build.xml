@@ -527,10 +527,10 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -1313,7 +1313,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.com.mbeddr.mpsutil.typsystem.trace#138655907978044806" depends="java.compile.com.mbeddr.mpsutil.blutil.rt, java.compile.com.mbeddr.mpsutil.typesystem.trace.rt, java.compile.com.mbeddr.mpsutil.typsystem.trace, fetchDependencies">
+  <target name="java.compile.com.mbeddr.mpsutil.typsystem.trace#138655907978044806" depends="java.compile.com.mbeddr.mpsutil.typesystem.trace.rt, java.compile.com.mbeddr.mpsutil.typsystem.trace, fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.typsystem.trace/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.typsystem.trace#138655907978044806" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.typsystem.trace#138655907978044806" fork="true" includeantruntime="false" debug="true">
@@ -1327,7 +1327,6 @@
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.blutil.rt" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
@@ -1587,10 +1586,10 @@
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.tables.rt/source_gen" />
     <delete dir="${mpsutil}/solutions/com.mbeddr.mpsutil.typesystem.rt/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.typsystem.trace/source_gen" />
+    <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.typsystem.trace/generator/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/generator/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/source_gen" />
-    <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.typsystem.trace/generator/source_gen" />
     <delete dir="${mpsutil}/tests/test.ts.match/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/generator/source_gen" />
     <delete dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.mpsutil.dev.build/source_gen" />
