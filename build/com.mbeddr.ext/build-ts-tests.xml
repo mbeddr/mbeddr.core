@@ -68,7 +68,7 @@
       <fileset dir="${build.tmp}/default/test.ts.ext.components.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.components-models">
-      <fileset dir="${mbeddr.ext}/tests/test.ts.ext.components/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.ext}/tests/test.ts.ext.components/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ts.ext.components-src.jar">
       <fileset dir="${mbeddr.ext}/tests/test.ts.ext.components/source_gen" includes="**/*.java" />
@@ -102,10 +102,10 @@
       <fileset dir="${build.tmp}/default/test.ts.ext.physicalunits.c.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.physicalunits.c">
-      <fileset dir="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.physicalunits.c-models">
-      <fileset dir="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ts.ext.physicalunits.c-src.jar">
       <fileset dir="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/source_gen" includes="**/*.java" />
