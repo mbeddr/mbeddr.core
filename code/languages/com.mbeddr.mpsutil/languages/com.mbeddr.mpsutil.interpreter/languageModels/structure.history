@@ -24,5 +24,29 @@
     </dependencies>
     <rename id="3673.8615074351687425563" type="CONCEPT" from="ChildConstraint" to="TypedChildConstraint" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="3" />
+    </dependencies>
+    <move id="3673.8615074351687302163" to="3673.5293529713179149471" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="4" />
+    </dependencies>
+    <move id="3673.8615074351687302203" to="3673.5293529713179352145" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="5" />
+    </dependencies>
+    <rename id="3673.5293529713180742448" type="CONCEPT" from="ConstraintRefExpression" to="InterpretConstraintExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="6" />
+    </dependencies>
+    <rename id="3673.5293529713184867204" type="CHILD" from="toTyp" to="toType" />
+  </StructureModification>
 </history>
 

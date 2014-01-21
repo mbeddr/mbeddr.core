@@ -28,8 +28,8 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
   <import index="2ahs" modelUID="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" version="-1" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
-  <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
-  <import index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="3" implicit="yes" />
+  <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" />
+  <import index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="7" implicit="yes" />
   <root type="3673.Interpreter" typeId="3673.8615074351687299818" id="8615074351688654302" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TestInterpreter" />
     <node role="conceptEvaluators" roleId="3673.8615074351687302157" type="3673.ConceptEvaluator" typeId="3673.8615074351687301435" id="5712773029546529695" nodeInfo="ng">
@@ -567,8 +567,8 @@
       </node>
     </node>
     <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.TypeMapping" typeId="3673.8615074351687301432" id="8615074351693097847" nodeInfo="ng">
-      <link role="toType" roleId="3673.8615074351687302203" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
-      <link role="fromType" roleId="3673.8615074351687302163" targetNodeId="mj1l.743779816742251347" resolveInfo="ITypeDecorator" />
+      <link role="toType" roleId="3673.5293529713184867204" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
+      <link role="fromType" roleId="3673.5293529713179149471" targetNodeId="mj1l.743779816742251347" resolveInfo="ITypeDecorator" />
       <node role="mapping" roleId="3673.8615074351687302212" type="3673.TypeMappingMethod" typeId="3673.8615074351690524728" id="8615074351693097848" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="map" />
         <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8615074351693097849" nodeInfo="sn">
