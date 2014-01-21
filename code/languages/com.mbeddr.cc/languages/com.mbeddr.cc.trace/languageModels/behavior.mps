@@ -262,12 +262,6 @@
       </node>
     </node>
   </root>
-  <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3008175113698935082" nodeInfo="ng">
-    <link role="concept" roleId="1i04.1225194240799" targetNodeId="26ao.439567521322959418" resolveInfo="TraceTargetProviderRefAttr" />
-    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="3008175113698935083" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3008175113698935084" nodeInfo="sn" />
-    </node>
-  </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="1039011227345284374" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TraceEditorModeHelper" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="1039011227345284375" nodeInfo="nn" />
