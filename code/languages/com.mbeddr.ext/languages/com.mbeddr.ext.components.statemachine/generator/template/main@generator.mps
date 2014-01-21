@@ -1058,12 +1058,12 @@
           <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875111029" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="881042019525801217" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="881042019525801238" nodeInfo="ng">
-                <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUArrowExpression" typeId="clbe.7063398228162571833" id="881042019525801223" nodeInfo="ng">
+                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="7255548950662169021" nodeInfo="ng">
                   <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="881042019525801218" nodeInfo="ng">
                     <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321303891" resolveInfo="instance" />
                   </node>
-                  <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="881042019525847370" nodeInfo="ng">
-                    <link role="member" roleId="clbe.7099329415460397525" targetNodeId="881042019525847361" resolveInfo="__currentState" />
+                  <node role="target" roleId="mj1l.7034214596252529803" type="clbe.GenericMemberRef" typeId="clbe.7034214596253391076" id="7255548950662169022" nodeInfo="ng">
+                    <link role="member" roleId="clbe.7034214596253391078" targetNodeId="881042019525847361" resolveInfo="__currentState" />
                   </node>
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="881042019525801241" nodeInfo="ng">
@@ -1115,9 +1115,12 @@
                     </node>
                   </node>
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUArrowExpression" typeId="clbe.7063398228162571833" id="881042019525801282" nodeInfo="ng">
-                  <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="881042019525801288" nodeInfo="ng">
-                    <link role="member" roleId="clbe.7099329415460397525" targetNodeId="881042019525847442" resolveInfo="var" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="7255548950662185501" nodeInfo="ng">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="881042019525801272" nodeInfo="ng">
+                    <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321303891" resolveInfo="instance" />
+                  </node>
+                  <node role="target" roleId="mj1l.7034214596252529803" type="clbe.GenericMemberRef" typeId="clbe.7034214596253391076" id="7255548950662185502" nodeInfo="ng">
+                    <link role="member" roleId="clbe.7034214596253391078" targetNodeId="881042019525847442" resolveInfo="var" />
                     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="881042019525801331" nodeInfo="nn">
                       <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
                       <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="881042019525801332" nodeInfo="nn">
@@ -1133,9 +1136,6 @@
                         </node>
                       </node>
                     </node>
-                  </node>
-                  <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="881042019525801272" nodeInfo="ng">
-                    <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321303891" resolveInfo="instance" />
                   </node>
                 </node>
               </node>
