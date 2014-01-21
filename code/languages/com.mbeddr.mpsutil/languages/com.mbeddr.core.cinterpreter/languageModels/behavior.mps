@@ -10,7 +10,9 @@
   <language namespace="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" />
   <language namespace="d4615e3b-d671-4ba9-af01-2b78369b0ba7(jetbrains.mps.lang.pattern)" />
   <language namespace="96ee7a94-411d-4cf8-9b94-96cad7e52411(jetbrains.mps.baseLanguage.jdk7)" />
+  <language namespace="d72d3ee4-7395-438a-9a07-74a38a82cb0e(com.mbeddr.ext.physicalunits.c)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" />
   <import index="2ahs" modelUID="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" version="-1" />
@@ -20,9 +22,15 @@
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
   <import index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="7" />
   <import index="tp3r" modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" />
+  <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="2" />
+  <import index="epq1" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" version="-1" />
+  <import index="58ha" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#sun.awt.image(JDK/sun.awt.image@java_stub)" version="-1" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="1i04" modelUID="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" version="-1" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
   <root type="3673.Interpreter" typeId="3673.8615074351687299818" id="8615074351688654302" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CInterpreter" />
     <node role="conceptEvaluators" roleId="3673.8615074351687302157" type="3673.ConceptEvaluator" typeId="3673.8615074351687301435" id="5712773029546529695" nodeInfo="ng">
@@ -30,36 +38,6 @@
       <node role="evaluator" roleId="3673.8615074351687435350" type="3673.ConceptEvaluatorMethod" typeId="3673.5712773029518214110" id="5712773029546529696" nodeInfo="ig">
         <property name="name" nameId="tpck.1169194664001" value="eval" />
         <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5712773029546529697" nodeInfo="sn">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5293529713187228552" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5293529713187244771" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="tp25.ConceptRefExpression" typeId="tp25.1172424058054" id="5293529713187228550" nodeInfo="nn">
-                <link role="conceptDeclaration" roleId="tp25.1172424100906" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.Concept_NewInstance" typeId="tp25.1181949435690" id="5293529713187250667" nodeInfo="nn" />
-            </node>
-          </node>
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5293529713187075713" nodeInfo="nn" />
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5293529713187043154" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="5293529713187043150" nodeInfo="nn">
-              <node role="quotedNode" roleId="tp3r.1196350785114" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5293529713187057964" nodeInfo="in">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
-              </node>
-            </node>
-          </node>
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5712773029546529995" nodeInfo="nn">
-            <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5712773029546529996" nodeInfo="nr">
-              <property name="name" nameId="tpck.1169194664001" value="result" />
-              <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5712773029546532526" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2ahs.5712773029521284834" resolveInfo="ValueImpl" />
-              </node>
-              <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5712773029546530482" nodeInfo="nn">
-                <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="5712773029546531419" nodeInfo="nn">
-                  <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="2ahs.5712773029521284834" resolveInfo="ValueImpl" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="5712773029546636526" nodeInfo="nn" />
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5712773029546531979" nodeInfo="nn">
             <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5712773029546533197" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5712773029546531978" nodeInfo="nn">
@@ -128,6 +106,27 @@
       <node role="evaluator" roleId="3673.8615074351687435350" type="3673.ConceptEvaluatorMethod" typeId="3673.5712773029518214110" id="5712773029535015436" nodeInfo="ig">
         <property name="name" nameId="tpck.1169194664001" value="eval" />
         <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5712773029535015437" nodeInfo="sn">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="5293529713209825200" nodeInfo="nn" />
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5293529713210057884" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5293529713210119680" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tp25.ConceptRefExpression" typeId="tp25.1172424058054" id="5293529713210057882" nodeInfo="nn">
+                <link role="conceptDeclaration" roleId="tp25.1172424100906" targetNodeId="tpee.1070534370425" resolveInfo="IntegerType" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Concept_NewInstance" typeId="tp25.1181949435690" id="5293529713210152355" nodeInfo="nn" />
+            </node>
+          </node>
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="5293529713210027188" nodeInfo="nn" />
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5293529713209870928" nodeInfo="nn">
+            <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5293529713209870931" nodeInfo="nr">
+              <property name="name" nameId="tpck.1169194664001" value="a" />
+              <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5293529713209870926" nodeInfo="in" />
+            </node>
+          </node>
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5293529713209962719" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5293529713209962718" nodeInfo="nn">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5293529713209870931" resolveInfo="a" />
+            </node>
+          </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5293529713177695308" nodeInfo="nn">
             <node role="expression" roleId="tpee.1068580123156" type="tpee.RemExpression" typeId="tpee.1153422105332" id="5293529713177786648" nodeInfo="nn">
               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5293529713177786683" nodeInfo="nn">
@@ -174,11 +173,15 @@
       </node>
       <node role="constraints" roleId="3673.8615074351687425581" type="3673.TypedChildConstraint" typeId="3673.8615074351687425563" id="5712773029535181679" nodeInfo="ng">
         <link role="child" roleId="3673.8615074351687425566" targetNodeId="mj1l.8860443239512128064" />
-        <link role="type" roleId="3673.5293529713185083481" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
+        <node role="type" roleId="3673.5293529713185083481" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713202144283" nodeInfo="ng">
+          <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
+        </node>
       </node>
       <node role="constraints" roleId="3673.8615074351687425581" type="3673.TypedChildConstraint" typeId="3673.8615074351687425563" id="5712773029535182175" nodeInfo="ng">
         <link role="child" roleId="3673.8615074351687425566" targetNodeId="mj1l.8860443239512128065" />
-        <link role="type" roleId="3673.5293529713185083481" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
+        <node role="type" roleId="3673.5293529713185083481" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713202231081" nodeInfo="ng">
+          <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
+        </node>
       </node>
     </node>
     <node role="conceptEvaluators" roleId="3673.8615074351687302157" type="3673.ConceptEvaluator" typeId="3673.8615074351687301435" id="8903018262757411261" nodeInfo="ng">
@@ -360,10 +363,16 @@
       <node role="constraints" roleId="3673.8615074351687425581" type="3673.TypedChildConstraint" typeId="3673.8615074351687425563" id="8903018262757411331" nodeInfo="ng">
         <link role="child" roleId="3673.8615074351687425566" targetNodeId="mj1l.8860443239512128064" />
         <link role="type" roleId="3673.5293529713185083481" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
+        <node role="type" roleId="3673.5293529713185083481" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713201951729" nodeInfo="ng">
+          <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
+        </node>
       </node>
       <node role="constraints" roleId="3673.8615074351687425581" type="3673.TypedChildConstraint" typeId="3673.8615074351687425563" id="8903018262757411332" nodeInfo="ng">
         <link role="child" roleId="3673.8615074351687425566" targetNodeId="mj1l.8860443239512128065" />
         <link role="type" roleId="3673.5293529713185083481" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
+        <node role="type" roleId="3673.5293529713185083481" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713202054583" nodeInfo="ng">
+          <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
+        </node>
       </node>
     </node>
     <node role="conceptEvaluators" roleId="3673.8615074351687302157" type="3673.ConceptEvaluator" typeId="3673.8615074351687301435" id="8903018262757422465" nodeInfo="ng">
@@ -1367,55 +1376,65 @@
           <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="8615074351693097852" nodeInfo="in" />
         </node>
       </node>
-      <node role="fromType" roleId="3673.5293529713185081187" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5293529713186985132" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8615074351688654302" resolveInfo="CInterpreter" />
+      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713197699430" nodeInfo="ng">
+        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="3c6d.5513256947824492703" resolveInfo="TypeWithUnit" />
       </node>
-      <node role="toType" roleId="3673.5293529713184867204" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5293529713186875168" nodeInfo="in" />
+      <node role="toType" roleId="3673.5293529713184867204" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713198705267" nodeInfo="ng">
+        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
+      </node>
+    </node>
+    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713205411240" nodeInfo="ng">
+      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713205441261" nodeInfo="ng">
+        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
+      </node>
+      <node role="toType" roleId="3673.5293529713185156793" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5293529713210561443" nodeInfo="in" />
+    </node>
+    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713205707847" nodeInfo="ng">
+      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713205737901" nodeInfo="ng">
+        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618435" resolveInfo="Int16tType" />
+      </node>
+      <node role="toType" roleId="3673.5293529713185156793" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5293529713210618149" nodeInfo="in" />
     </node>
     <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713180091668" nodeInfo="ng">
-      <link role="toType" roleId="3673.5293529713185156793" targetNodeId="e2lb.~Integer" resolveInfo="Integer" />
-      <link role="fromType" roleId="3673.5293529713185081187" targetNodeId="mj1l.8463282783691618435" resolveInfo="Int16tType" />
-      <node role="fromType" roleId="3673.5293529713185081187" type="tp25.SConceptType" typeId="tp25.1172420572800" id="5293529713187183409" nodeInfo="in" />
+      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713200199744" nodeInfo="ng">
+        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618440" resolveInfo="Int32tType" />
+      </node>
+      <node role="toType" roleId="3673.5293529713185156793" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5293529713210675375" nodeInfo="in" />
     </node>
-    <node role="applicableLanguages" roleId="3673.8615074351687302152" type="3673.ApplicableLanguage" typeId="3673.8615074351687301431" id="8615074351688654303" nodeInfo="ng">
-      <node role="language" roleId="3673.8615074351687737933" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="8615074351688654304" nodeInfo="nn">
-        <property name="name" nameId="tp25.559557797393017702" value="com.mbeddr.core.base.structure" />
-        <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713205945558" nodeInfo="ng">
+      <node role="toType" roleId="3673.5293529713185156793" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5293529713210733668" nodeInfo="in">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="epq1.~BigInteger" resolveInfo="BigInteger" />
+      </node>
+      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713205975682" nodeInfo="ng">
+        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618445" resolveInfo="Int64tType" />
       </node>
     </node>
-    <node role="applicableLanguages" roleId="3673.8615074351687302152" type="3673.ApplicableLanguage" typeId="3673.8615074351687301431" id="8615074351688706912" nodeInfo="ng">
-      <node role="language" roleId="3673.8615074351687737933" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="8615074351688706913" nodeInfo="nn">
-        <property name="fqName" nameId="tp25.559557797393041554" value="com.mb" />
-        <property name="name" nameId="tp25.559557797393017702" value="com.mbeddr.core.expressions.structure" />
-        <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713206139142" nodeInfo="ng">
+      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713206169262" nodeInfo="ng">
+        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
+      </node>
+      <node role="toType" roleId="3673.5293529713185156793" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5293529713210805887" nodeInfo="in" />
+    </node>
+    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713205078931" nodeInfo="ng">
+      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713205108905" nodeInfo="ng">
+        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618466" resolveInfo="UnsignedInt16tType" />
+      </node>
+      <node role="toType" roleId="3673.5293529713185156793" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5293529713210834695" nodeInfo="in" />
+    </node>
+    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713206333322" nodeInfo="ng">
+      <node role="toType" roleId="3673.5293529713185156793" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5293529713210892341" nodeInfo="in">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="epq1.~BigInteger" resolveInfo="BigInteger" />
+      </node>
+      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713206363515" nodeInfo="ng">
+        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618450" resolveInfo="UnsignedInt32tType" />
       </node>
     </node>
-    <node role="applicableLanguages" roleId="3673.8615074351687302152" type="3673.ApplicableLanguage" typeId="3673.8615074351687301431" id="8615074351690512781" nodeInfo="ng">
-      <node role="language" roleId="3673.8615074351687737933" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="8615074351690512782" nodeInfo="nn">
-        <property name="name" nameId="tp25.559557797393017702" value="com.mbeddr.ext.physicalunits.c.structure" />
-        <property name="stereotype" nameId="tp25.559557797393021807" value="" />
-        <property name="fqName" nameId="tp25.559557797393041554" value="com.mbeddr.ext.physicalunits.c.structure" />
+    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713206572664" nodeInfo="ng">
+      <node role="toType" roleId="3673.5293529713185156793" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5293529713210949992" nodeInfo="in">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="epq1.~BigInteger" resolveInfo="BigInteger" />
       </node>
-    </node>
-    <node role="applicableLanguages" roleId="3673.8615074351687302152" type="3673.ApplicableLanguage" typeId="3673.8615074351687301431" id="5712773029516175362" nodeInfo="ng">
-      <node role="language" roleId="3673.8615074351687737933" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="5712773029516175363" nodeInfo="nn">
-        <property name="fqName" nameId="tp25.559557797393041554" value="com.me" />
-        <property name="name" nameId="tp25.559557797393017702" value="com.mbeddr.ext.physicalunits.structure" />
-        <property name="stereotype" nameId="tp25.559557797393021807" value="" />
-      </node>
-    </node>
-    <node role="applicableLanguages" roleId="3673.8615074351687302152" type="3673.ApplicableLanguage" typeId="3673.8615074351687301431" id="5293529713180177765" nodeInfo="ng">
-      <node role="language" roleId="3673.8615074351687737933" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="5293529713180177766" nodeInfo="nn">
-        <property name="fqName" nameId="tp25.559557797393041554" value="jetb" />
-        <property name="name" nameId="tp25.559557797393017702" value="jetbrains.mps.baseLanguage.classifiers.structure" />
-        <property name="stereotype" nameId="tp25.559557797393021807" value="" />
-      </node>
-    </node>
-    <node role="applicableLanguages" roleId="3673.8615074351687302152" type="3673.ApplicableLanguage" typeId="3673.8615074351687301431" id="5293529713180275587" nodeInfo="ng">
-      <node role="language" roleId="3673.8615074351687737933" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="5293529713180275588" nodeInfo="nn">
-        <property name="fqName" nameId="tp25.559557797393041554" value="jd" />
-        <property name="name" nameId="tp25.559557797393017702" value="java.lang" />
-        <property name="stereotype" nameId="tp25.559557797393021807" value="java_stub" />
+      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713206602850" nodeInfo="ng">
+        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618456" resolveInfo="UnsignedInt64tType" />
       </node>
     </node>
     <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5712773029550811497" nodeInfo="in">
@@ -1459,6 +1478,20 @@
     </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8903018262749445350" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8903018262749445351" nodeInfo="sn" />
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5293529713187979298" nodeInfo="ng">
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="5293529713187979323" nodeInfo="ng">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="5293529713187979326" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5293529713187979340" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="baseType" roleId="yq40.2963921683065158286" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5293529713187979325" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>
