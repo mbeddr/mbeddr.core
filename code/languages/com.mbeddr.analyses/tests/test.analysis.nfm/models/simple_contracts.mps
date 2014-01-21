@@ -410,6 +410,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2161187783549496759" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="emitCurrentSpeed" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2161187783549496760" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2161187783549496761" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="time" />
@@ -583,6 +584,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1614888948653751051" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="foo" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1614888948653751053" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="1614888948653751056" nodeInfo="ng">
           <node role="expression" roleId="x27k.8967919205527146150" type="k146.DecTab" typeId="k146.6209595569797584861" id="1614888948653751057" nodeInfo="ng">
@@ -880,6 +882,7 @@
     </node>
   </root>
   <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="5512262613064823786" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="demo" />
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.ComponentsCBMCAnalysis" typeId="q5q6.6472990431939799912" id="5512262613064823787" nodeInfo="ng">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />

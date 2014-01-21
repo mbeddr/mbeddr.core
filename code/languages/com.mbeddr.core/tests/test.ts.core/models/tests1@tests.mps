@@ -13,7 +13,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="10" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="3" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
@@ -15997,7 +15997,7 @@
                     </node>
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4526266397513546958" nodeInfo="ng" />
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4526266397513707498" nodeInfo="ng">
-                      <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.ClosureParameterRef" typeId="x27k.8257817273846948862" id="4526266397513707497" nodeInfo="ng">
+                      <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.ClosureParameterRef" typeId="x27k.8257817273846948862" id="2948205150011983648" nodeInfo="ng">
                         <link role="param" roleId="x27k.8257817273846948863" targetNodeId="4526266397512902480" resolveInfo="tp" />
                       </node>
                     </node>
