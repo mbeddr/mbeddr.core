@@ -19,7 +19,7 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="27" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="10" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="2" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="5" implicit="yes" />
@@ -367,12 +367,12 @@
                       <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                     </node>
                   </node>
-                  <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="2613206384568952507" nodeInfo="ng">
-                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="2613206384568952517" nodeInfo="ng">
-                      <link role="member" roleId="clbe.7099329415460397525" targetNodeId="e1tx.1731059994647588013" resolveInfo="speed" />
-                    </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381518290397" nodeInfo="ng">
                     <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2613206384568952498" nodeInfo="ng">
                       <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3791647284633043938" resolveInfo="tp" />
+                    </node>
+                    <node role="target" roleId="mj1l.7034214596252529803" type="clbe.GenericMemberRef" typeId="clbe.7034214596253391076" id="8125672381518290398" nodeInfo="ng">
+                      <link role="member" roleId="clbe.7034214596253391078" targetNodeId="e1tx.1731059994647588013" resolveInfo="speed" />
                     </node>
                   </node>
                 </node>
@@ -476,12 +476,12 @@
                       <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                     </node>
                   </node>
-                  <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="8330520303445066811" nodeInfo="ng">
-                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="8330520303445066821" nodeInfo="ng">
-                      <link role="member" roleId="clbe.7099329415460397525" targetNodeId="e1tx.1731059994647588009" resolveInfo="alt" />
-                    </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381518290631" nodeInfo="ng">
                     <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8330520303445066804" nodeInfo="ng">
                       <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3791647284633043938" resolveInfo="tp" />
+                    </node>
+                    <node role="target" roleId="mj1l.7034214596252529803" type="clbe.GenericMemberRef" typeId="clbe.7034214596253391076" id="8125672381518290632" nodeInfo="ng">
+                      <link role="member" roleId="clbe.7034214596253391078" targetNodeId="e1tx.1731059994647588009" resolveInfo="alt" />
                     </node>
                   </node>
                 </node>
