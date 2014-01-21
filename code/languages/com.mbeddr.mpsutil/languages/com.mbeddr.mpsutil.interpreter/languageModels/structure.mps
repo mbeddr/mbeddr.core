@@ -97,6 +97,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8615074351687425563" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TypedChildConstraint" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.Constraint" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="typed-child-constraint" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5712773029522809833" resolveInfo="ChildConstraint" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8615074351687425578" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -164,12 +165,14 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.Constraint" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="name" nameId="tpck.1169194664001" value="AbstractConceptEvaluatorConstraint" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="abstract-constraint" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5712773029522809833" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.Constraint" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
     <property name="name" nameId="tpck.1169194664001" value="ChildConstraint" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="child-constraint" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5712773029522629274" resolveInfo="AbstractConceptEvaluatorConstraint" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8615074351687425566" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
