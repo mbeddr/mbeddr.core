@@ -4,11 +4,11 @@
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="18" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="6" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="291293396407458989" nodeInfo="ng">
@@ -110,28 +110,28 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="5" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459021" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459022" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521373909" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459024" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459022" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459023" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="0" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459024" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="291293396407459025" nodeInfo="ng">
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459026" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459027" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521364634" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459029" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459027" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459028" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459029" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459030" nodeInfo="ng">
@@ -144,15 +144,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="3" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459033" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459034" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521370963" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459036" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459034" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459035" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-2" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459036" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -161,28 +161,28 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="2" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459039" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459040" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521371796" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459042" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459040" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459041" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-3" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459042" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="291293396407459043" nodeInfo="ng">
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459044" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459045" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521364652" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459047" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459045" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459046" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-4" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459047" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459048" nodeInfo="ng">
@@ -195,15 +195,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="5" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459051" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459052" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521365043" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459054" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459052" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459053" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-5" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459054" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -212,15 +212,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="4" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459057" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459058" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521373822" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459060" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459058" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459059" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-6" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459060" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -229,15 +229,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="3" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459063" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459064" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521364661" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459066" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459064" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459065" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-7" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459066" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -246,15 +246,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="2" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459069" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459070" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374041" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459072" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459070" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459071" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-8" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459072" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -263,15 +263,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="1" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459075" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459076" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521365234" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459078" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459076" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459077" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-9" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459078" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -280,29 +280,29 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="5" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459081" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459082" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374059" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459084" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459082" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459083" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-10" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459084" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="291293396407459085" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="291293396407459086" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459087" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="291293396407459088" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521365061" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459090" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="291293396407459088" nodeInfo="ng">
               <node role="value" roleId="k146.3643500611635929146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459089" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="10" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459090" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -311,15 +311,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="10" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459093" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459094" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521373918" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459096" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459094" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459095" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="0" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459096" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -328,15 +328,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="5" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459099" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459100" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374032" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459102" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459100" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459101" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459102" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -345,15 +345,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="4" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459105" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459106" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374023" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459108" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459106" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459107" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-2" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459108" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -362,15 +362,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="3" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459111" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459112" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374005" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459114" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459112" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459113" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-3" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459114" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -379,15 +379,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="2" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459117" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459118" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374014" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459120" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459118" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459119" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-4" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459120" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -396,30 +396,30 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="10" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459123" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459124" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521368847" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459126" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459124" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459125" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-5" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459126" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="291293396407459127" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="291293396407459128" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="291293396407459129" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459130" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="291293396407459131" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521373147" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459133" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="291293396407459131" nodeInfo="ng">
               <node role="value" roleId="k146.3643500611635929146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459132" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="20" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459133" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -428,15 +428,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="20" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459136" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459137" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374068" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459139" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459137" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459138" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="0" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459139" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -445,15 +445,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="10" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459142" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459143" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521370096" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459145" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459143" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459144" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459145" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -462,28 +462,28 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="5" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459148" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459149" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521373813" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459151" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459149" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459150" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-2" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459151" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="291293396407459152" nodeInfo="ng">
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459153" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459154" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521367873" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459156" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459154" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459155" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-3" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459156" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459157" nodeInfo="ng">
@@ -496,15 +496,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="3" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459160" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459161" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521365216" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459163" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459161" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459162" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-4" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459163" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -513,55 +513,55 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="20" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459166" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459167" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521365070" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459169" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459167" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459168" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-5" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459169" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="291293396407459170" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="291293396407459171" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459172" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="291293396407459173" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521372165" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459175" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="291293396407459173" nodeInfo="ng">
               <node role="value" roleId="k146.3643500611635929146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459174" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="30" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459175" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="291293396407459176" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459177" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="291293396407459178" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521373927" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459180" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="291293396407459178" nodeInfo="ng">
               <node role="value" roleId="k146.3643500611635929146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459179" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="40" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459180" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="291293396407459181" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459182" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="291293396407459183" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521373761" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459185" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="291293396407459183" nodeInfo="ng">
               <node role="value" roleId="k146.3643500611635929146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459184" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="50" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459185" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -570,15 +570,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="50" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459188" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459189" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374050" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459191" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459189" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459190" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="0" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459191" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -587,15 +587,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="40" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459194" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459195" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521365207" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459197" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459195" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459196" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459197" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -604,28 +604,28 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="30" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459200" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459201" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521373831" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459203" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459201" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459202" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-2" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459203" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="291293396407459204" nodeInfo="ng">
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459205" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459206" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521365225" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459208" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459206" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459207" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-3" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459208" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459209" nodeInfo="ng">
@@ -638,15 +638,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="10" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459212" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459213" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521373779" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459215" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459213" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459214" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-4" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459215" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -655,29 +655,29 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="50" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459218" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459219" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521365034" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459221" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459219" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459220" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-5" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459221" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="291293396407459222" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="291293396407459223" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459224" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="291293396407459225" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521365052" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459227" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="291293396407459225" nodeInfo="ng">
               <node role="value" roleId="k146.3643500611635929146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459226" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="100" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459227" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -686,15 +686,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="100" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459230" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459231" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521373770" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459233" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459231" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459232" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="0" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459233" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -703,15 +703,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="50" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459236" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459237" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374077" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459239" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459237" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459238" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459239" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -720,28 +720,28 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="40" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459242" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459243" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521364903" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459245" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459243" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459244" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-2" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459245" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="291293396407459246" nodeInfo="ng">
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459247" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459248" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521367485" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459250" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459248" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459249" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-3" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459250" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459251" nodeInfo="ng">
@@ -754,15 +754,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="20" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459254" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459255" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521373514" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459257" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459255" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459256" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-4" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459257" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -771,15 +771,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="100" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferDotExpression" typeId="k146.8046082822450249988" id="291293396407459260" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459261" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521369210" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459263" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459261" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459262" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="-5" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459263" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459010" resolveInfo="buffer" />
             </node>
           </node>
         </node>
@@ -851,15 +851,15 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="5" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.RingBufferArrowExpression" typeId="k146.8046082822450250001" id="291293396407459286" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459287" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521364643" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459289" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459279" resolveInfo="ptr" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="291293396407459287" nodeInfo="ng">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407459288" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="0" />
               </node>
-            </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407459289" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407459279" resolveInfo="ptr" />
             </node>
           </node>
         </node>
