@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.compositecomponents/compositecomponents.devkit" folder="compositeComps" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.compositecomponents/compositecomponents.mpl" folder="compositeComps" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines.table/table.mpl" folder="transtable" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.compositecomponents/compositecomponents.msd" folder="compositeComps" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.transitiontable/transitiontable.msd" folder="transtable" />
+    </projectModules>
+  </component>
+</project>
+

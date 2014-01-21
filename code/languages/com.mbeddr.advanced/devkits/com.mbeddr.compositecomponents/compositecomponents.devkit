@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="com.mbeddr.compositecomponents" uuid="fb3bab58-7c97-4d62-a7cb-1db97718884a">
+  <exported-language name="54f2a59b-97bb-4c09-af92-928ebf9c5966(com.mbeddr.ext.compositecomponents)" />
+  <extendedDevKits>
+    <extendedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</extendedDevKit>
+    <extendedDevKit>24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+
