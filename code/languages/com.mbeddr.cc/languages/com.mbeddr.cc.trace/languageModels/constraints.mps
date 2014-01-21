@@ -152,5 +152,9 @@
       </node>
     </node>
   </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7379700031914171943" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tracekind" />
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="26ao.439567521322928999" resolveInfo="TraceKind" />
+  </root>
 </model>
 
