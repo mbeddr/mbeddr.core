@@ -73,7 +73,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.core.debug.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.debug-languageModels">
-      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug-src.jar">
       <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug/source_gen" includes="**/*.java" />
@@ -109,10 +109,10 @@
       <fileset dir="${build.tmp}/java/out/com.mbeddr.core.debug.blext#1734689175229870721" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.debug.blext-generator-template">
-      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.debug.blext-languageModels">
-      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext-src.jar">
       <fileset dir="${mbeddr.debugger}/languages/com.mbeddr.core.debug.blext/generator/source_gen" includes="**/*.java" />
@@ -135,7 +135,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.debugger.dev.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.debugger.dev.build-models">
-      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.debugger.dev.build-src.jar">
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.dev.build/source_gen" includes="**/*.java" />
