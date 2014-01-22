@@ -19,16 +19,6 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp3r" modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" implicit="yes" />
-  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5712773029517510581" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="typeof_ConceptEvaluator" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator" />
-    <property name="overrides" nameId="tpd4.1195213689297" value="true" />
-    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5712773029517510582" nodeInfo="sn" />
-    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5712773029517510584" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="conceptEvaluator" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="3673.8615074351687301435" resolveInfo="ConceptEvaluator" />
-    </node>
-  </root>
   <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5712773029521826375" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="typeof_InterpretExpression" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.BaseLanguageExtensions" />
@@ -419,16 +409,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="5293529713180838769" nodeInfo="nn" />
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5293529713208157298" nodeInfo="nn">
-        <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5293529713208157301" nodeInfo="nr">
-          <property name="name" nameId="tpck.1169194664001" value="matchingMapping" />
-          <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5293529713208157296" nodeInfo="in">
-            <link role="concept" roleId="tp25.1138405853777" targetNodeId="3673.5293529713179568010" resolveInfo="BaseLanguageTypeMapping" />
-          </node>
-          <node role="initializer" roleId="tpee.1068431790190" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="5293529713208185692" nodeInfo="nn" />
         </node>
       </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="5293529713208157230" nodeInfo="nn" />
