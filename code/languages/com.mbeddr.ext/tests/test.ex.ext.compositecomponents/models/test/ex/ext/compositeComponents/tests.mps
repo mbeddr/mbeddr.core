@@ -422,6 +422,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3204560883610782051" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7780999115923864963" resolveInfo="InitParameters" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2707197998254362323" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2707197998254196904" resolveInfo="Bug897" />
+      </node>
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3548096090326903583" nodeInfo="ng">
@@ -459,6 +462,9 @@
             </node>
             <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="3204560883610782049" nodeInfo="ng">
               <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="3204560883610781770" resolveInfo="initParams" />
+            </node>
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="2707197998254236839" nodeInfo="ng">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="2707197998254236167" resolveInfo="checkGeneration" />
             </node>
           </node>
         </node>
@@ -521,6 +527,9 @@
     <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8125672381583268921" nodeInfo="ng">
       <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7780999115923864963" resolveInfo="InitParameters" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="2707197998254236715" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="2707197998254196904" resolveInfo="Bug897" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3548096090326909629" nodeInfo="ng">
