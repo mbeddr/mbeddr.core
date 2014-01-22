@@ -79,7 +79,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.library.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-lib-com.mbeddr.ext.exceptionhandling-models">
-      <fileset dir="${tutorial.home}/solutions/lib/com.mbeddr.ext.exceptionhandling/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${tutorial.home}/solutions/lib/com.mbeddr.ext.exceptionhandling/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.tests.zip/com.mbeddr.ext.exceptionhandling.library-src.jar">
       <fileset dir="${tutorial.home}/solutions/lib/com.mbeddr.ext.exceptionhandling/source_gen" includes="**/*.java" />
@@ -111,7 +111,7 @@
       <fileset dir="${build.tmp}/default/test.ex.ext.exceptionhandling.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.exceptionhandling">
-      <fileset dir="${tutorial.home}/tests/test.ex.ext.exceptionhandling" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${tutorial.home}/tests/test.ex.ext.exceptionhandling" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.tests.zip/test.ex.ext.exceptionhandling-src.jar">
       <fileset dir="${tutorial.home}/tests/test.ex.ext.exceptionhandling/source_gen" includes="**/*.java" />
@@ -145,10 +145,10 @@
       <fileset dir="${build.tmp}/default/test.ts.ext.exceptionhandling.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.exceptionhandling">
-      <fileset dir="${tutorial.home}/tests/test.ts.ext.exceptionhandling" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${tutorial.home}/tests/test.ts.ext.exceptionhandling" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.exceptionhandling-models">
-      <fileset dir="${tutorial.home}/tests/test.ts.ext.exceptionhandling/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${tutorial.home}/tests/test.ts.ext.exceptionhandling/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.tests.zip/test.ts.ext.exceptionhandling-src.jar">
       <fileset dir="${tutorial.home}/tests/test.ts.ext.exceptionhandling/source_gen" includes="**/*.java" />
@@ -185,10 +185,10 @@
       <fileset dir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling#3809480042719653955" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.ext.exceptionhandling-generator-template">
-      <fileset dir="${tutorial.home}/languages/com.mbeddr.ext.exceptionhandling/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${tutorial.home}/languages/com.mbeddr.ext.exceptionhandling/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.ext.exceptionhandling-languageModels">
-      <fileset dir="${tutorial.home}/languages/com.mbeddr.ext.exceptionhandling/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${tutorial.home}/languages/com.mbeddr.ext.exceptionhandling/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.tests.zip/com.mbeddr.ext.exceptionhandling-src.jar">
       <fileset dir="${tutorial.home}/languages/com.mbeddr.ext.exceptionhandling/generator/source_gen" includes="**/*.java" />
