@@ -45,14 +45,11 @@
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8903018262757522071" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="222" />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="xi9i.EvalResult" typeId="xi9i.8903018262749445332" id="5293529713166251038" nodeInfo="ng" />
               </node>
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8903018262754459256" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.2212975673976043696" value="22" />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="xi9i.EvalResult" typeId="xi9i.8903018262749445332" id="5293529713166255024" nodeInfo="ng" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="222" />
               </node>
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="xi9i.EvalResult" typeId="xi9i.8903018262749445332" id="5293529713166247094" nodeInfo="ng" />
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="xi9i.EvalResult" typeId="xi9i.8903018262749445332" id="8903018262754509438" nodeInfo="ng" />
           </node>

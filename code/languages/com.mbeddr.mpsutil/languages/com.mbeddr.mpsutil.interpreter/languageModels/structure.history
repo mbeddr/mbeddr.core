@@ -48,5 +48,47 @@
     </dependencies>
     <rename id="3673.5293529713184867204" type="CHILD" from="toTyp" to="toType" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="7" />
+    </dependencies>
+    <rename id="3673.5934114435582038053" type="CONCEPT" from="AbstractConceptEvaluatorMethod" to="AbstractConceptEvaluatorImplementation" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="8" />
+    </dependencies>
+    <rename id="3673.5712773029518214110" type="CONCEPT" from="ConceptEvaluatorMethod" to="ConceptEvaluatorBody" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="9" />
+    </dependencies>
+    <rename id="3673.5934114435583058812" type="CONCEPT" from="AbstractConceptEvaluator" to="AbstractEvaluator" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="10" />
+    </dependencies>
+    <move id="3673.8615074351687425581" to="3673.5934114435583235459" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="11" />
+    </dependencies>
+    <move id="3673.8615074351687435460" to="3673.5934114435583412034" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="12" />
+    </dependencies>
+    <move id="3673.8615074351687435350" to="3673.5934114435584084790" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="13" />
+    </dependencies>
+    <rename id="3673.8615074351687302157" type="CHILD" from="conceptEvaluators" to="evaluators" />
+  </StructureModification>
 </history>
 
