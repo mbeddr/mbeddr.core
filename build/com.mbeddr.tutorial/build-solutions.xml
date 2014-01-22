@@ -78,7 +78,7 @@
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.main.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-mbeddr.tutorial.main-models">
-      <fileset dir="${tutorial.home}/solutions/mbeddr.tutorial.main/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${tutorial.home}/solutions/mbeddr.tutorial.main/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.tutorial.solutions.zip/mbeddr.tutorial.main-src.jar">
       <fileset dir="${tutorial.home}/solutions/mbeddr.tutorial.main/source_gen" includes="**/*.java" />
@@ -293,6 +293,7 @@
       <library file="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components.mock.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components.test.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.compositecomponents.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/components.devkit" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip/mbeddr.statemachine/languages/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachines.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip/mbeddr.statemachine/languages/com.mbeddr.ext.statemachine/statemachines.devkit" />
@@ -311,7 +312,6 @@
       <library file="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.metadata.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.osconfig.cimpl.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.osconfig.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.processorregisters.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.smtrigger.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip/mbeddr.tutorial.vectors.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.tutorial-languages.build/com.mbeddr.tutorial.languages.zip/mbeddr.tutotial.osconfig.memory.jar" />

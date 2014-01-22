@@ -515,9 +515,6 @@
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="8118534740657810998" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="DARK_GREEN" />
       </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="8118534740657811000" nodeInfo="nn">
-        <property name="style" nameId="tpc2.1186403771423" value="ITALIC" />
-      </node>
     </node>
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="8118534740657811001" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="boolean2" />

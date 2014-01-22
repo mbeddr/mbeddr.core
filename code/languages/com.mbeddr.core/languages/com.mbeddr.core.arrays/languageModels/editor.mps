@@ -626,9 +626,6 @@
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="6113173064526131609" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="6113173064526131610" nodeInfo="nn">
-          <property name="style" nameId="tpc2.1186403771423" value="ITALIC" />
-        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6113173064526131611" nodeInfo="ng">
         <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
