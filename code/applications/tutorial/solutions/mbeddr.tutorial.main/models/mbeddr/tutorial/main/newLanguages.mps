@@ -10,9 +10,9 @@
   <language namespace="ce2335b7-fcfd-403e-8ace-08dd457fd818(mbeddr.tutorial.osconfig.cimpl)" />
   <language namespace="973c8be0-8526-4588-aca6-92bcbb701b50(mbeddr.tutotial.osconfig.memory)" />
   <language namespace="3d0be1cf-4156-4c3c-ac37-fef83237d8e2(mbeddr.tutorial.vectors)" />
-  <language namespace="f0055926-d605-4ab8-9b98-55d1e17723f5(mbeddr.tutorial.processorregisters)" />
   <language namespace="8f78d0b6-57c9-4fa8-86fe-8c30d0d5b15c(mbeddr.tutorial.smtrigger)" />
   <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
+  <language namespace="783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -34,10 +34,10 @@
   <import index="7wyt" modelUID="r:f8ba97cc-e95a-4f72-81bb-93f6528114ed(mbeddr.tutorial.osconfig.cimpl.structure)" version="-1" implicit="yes" />
   <import index="wlut" modelUID="r:39f56ab1-7cb7-441d-9f40-9b3dac9d6334(mbeddr.tutotial.osconfig.memory.structure)" version="0" implicit="yes" />
   <import index="vj37" modelUID="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(mbeddr.tutorial.vectors.structure)" version="2" implicit="yes" />
-  <import index="qs8s" modelUID="r:74e70f47-713d-47fb-a78d-6496d3649756(mbeddr.tutorial.processorregisters.structure)" version="-1" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="15" implicit="yes" />
   <import index="uj5" modelUID="r:629e0a9b-c3a1-42af-b223-2aea2640ad4f(mbeddr.tutorial.smtrigger.structure)" version="-1" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
+  <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="3" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7727566415687867284" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SafeHeap" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
@@ -632,7 +632,12 @@
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="9141254329931944283" nodeInfo="ng" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="7308356872494809783" nodeInfo="ng" />
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qs8s.RegisterConfigurationItem" typeId="qs8s.1462098009437632191" id="1462098009437762473" nodeInfo="ng" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="nbyu.RegisterConfigurationItem" typeId="nbyu.6847490852669234129" id="2894788280922751308" nodeInfo="ng">
+      <node role="kind" roleId="nbyu.6847490852670616471" type="nbyu.EmulatedRegisterKind" typeId="nbyu.6847490852670653132" id="2894788280922767865" nodeInfo="ng" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="nbyu.InterruptConfigItem" typeId="nbyu.9172009453269230746" id="2894788280922885504" nodeInfo="ng">
+      <node role="kind" roleId="nbyu.9172009453269286214" type="nbyu.EmulatedInterruptKind" typeId="nbyu.9172009453269286222" id="2894788280922885516" nodeInfo="ng" />
+    </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="9141254329931944284" nodeInfo="ng">
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="MbeddrTutorialNewLangs" />
@@ -1300,38 +1305,40 @@
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2945795531676517483" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Registers" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="qs8s.Register8" typeId="qs8s.1462098009437632217" id="1462098009437683308" nodeInfo="ng">
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="2894788280922167760" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="r1" />
-      <node role="setterExpression" roleId="qs8s.1462098009437632216" type="qs8s.RegisterValueExpression" typeId="qs8s.1462098009437632189" id="1462098009437683309" nodeInfo="ng" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register16" typeId="nbyu.6847490852669177902" id="2894788280922168907" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="allowCharAccess" nameId="nbyu.6847490852669177907" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="r2" />
+      <property name="lowSuffix" nameId="nbyu.6847490852669177906" value="_L" />
+      <property name="highSuffix" nameId="nbyu.6847490852669177905" value="_H" />
+      <node role="setterExpression" roleId="nbyu.6847490852669163176" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2894788280922319429" nodeInfo="ng">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2894788280922319432" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="1000" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.RegisterValueExpression" typeId="nbyu.6847490852669234137" id="2894788280922312720" nodeInfo="ng" />
+      </node>
+      <node role="lowSetterExpr" roleId="nbyu.6847490852669177903" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2894788280922180847" nodeInfo="ng">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2894788280922180850" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.RegisterValueExpression" typeId="nbyu.6847490852669234137" id="2894788280922180797" nodeInfo="ng" />
+      </node>
+      <node role="highSetterExpr" roleId="nbyu.6847490852669177904" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2894788280922188622" nodeInfo="ng">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2894788280922188625" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.RegisterValueExpression" typeId="nbyu.6847490852669234137" id="2894788280922185568" nodeInfo="ng" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1462098009437683306" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1361353454982_1" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="qs8s.Register16" typeId="qs8s.1462098009437632198" id="1462098009437683311" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="allowCharAccess" nameId="qs8s.1462098009437632203" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="r2" />
-      <property name="lowSuffix" nameId="qs8s.1462098009437632202" value="_L" />
-      <property name="highSuffix" nameId="qs8s.1462098009437632201" value="_H" />
-      <node role="setterExpression" roleId="qs8s.1462098009437632216" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="1462098009437683335" nodeInfo="ng">
-        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1462098009437683338" nodeInfo="ng">
-          <property name="value" nameId="mj1l.2212975673976043696" value="1000" />
-        </node>
-        <node role="left" roleId="mj1l.8860443239512128064" type="qs8s.RegisterValueExpression" typeId="qs8s.1462098009437632189" id="1462098009437683332" nodeInfo="ng" />
-      </node>
-      <node role="lowSetterExpr" roleId="qs8s.1462098009437632199" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="1462098009437683325" nodeInfo="ng">
-        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1462098009437683328" nodeInfo="ng">
-          <property name="value" nameId="mj1l.2212975673976043696" value="10" />
-        </node>
-        <node role="left" roleId="mj1l.8860443239512128064" type="qs8s.RegisterValueExpression" typeId="qs8s.1462098009437632189" id="1462098009437683322" nodeInfo="ng" />
-      </node>
-      <node role="highSetterExpr" roleId="qs8s.1462098009437632200" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="1462098009437683318" nodeInfo="ng">
-        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1462098009437683321" nodeInfo="ng">
-          <property name="value" nameId="mj1l.2212975673976043696" value="10" />
-        </node>
-        <node role="left" roleId="mj1l.8860443239512128064" type="qs8s.RegisterValueExpression" typeId="qs8s.1462098009437632189" id="1462098009437683315" nodeInfo="ng" />
-      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1462098009437683310" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1361353515113_3" />
@@ -1344,20 +1351,21 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2945795531676611655" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2945795531676611657" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2945795531676611661" nodeInfo="ng">
-            <node role="left" roleId="mj1l.8860443239512128064" type="qs8s.RegisterRefExpr" typeId="qs8s.1462098009437632185" id="1462098009437683329" nodeInfo="ng">
-              <link role="register" roleId="qs8s.1462098009437632186" targetNodeId="1462098009437683308" resolveInfo="r1" />
-            </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611664" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2894788280923992929" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2894788280923997904" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2894788280923997907" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="100" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.RegisterRefExpr" typeId="nbyu.6847490852669338277" id="2894788280923992928" nodeInfo="ng">
+              <link role="register" roleId="nbyu.6847490852669338278" targetNodeId="2894788280922167760" resolveInfo="r1" />
             </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="2945795531676611666" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2945795531676611671" nodeInfo="ng">
-            <node role="left" roleId="mj1l.8860443239512128064" type="qs8s.RegisterRefExpr" typeId="qs8s.1462098009437632185" id="1462098009437683331" nodeInfo="ng">
-              <link role="register" roleId="qs8s.1462098009437632186" targetNodeId="1462098009437683308" resolveInfo="r1" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.RegisterRefExpr" typeId="nbyu.6847490852669338277" id="2894788280922219867" nodeInfo="ng">
+              <link role="register" roleId="nbyu.6847490852669338278" targetNodeId="2894788280922167760" resolveInfo="r1" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611674" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="100" />
@@ -1377,20 +1385,21 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2945795531676611679" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2945795531676611680" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2945795531676611681" nodeInfo="ng">
-            <node role="left" roleId="mj1l.8860443239512128064" type="qs8s.RegisterRefExpr" typeId="qs8s.1462098009437632185" id="1462098009437683339" nodeInfo="ng">
-              <link role="register" roleId="qs8s.1462098009437632186" targetNodeId="1462098009437683311" resolveInfo="r2" />
-            </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611682" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2894788280922223304" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2894788280922226710" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2894788280922226713" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="5" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.RegisterRefExpr" typeId="nbyu.6847490852669338277" id="2894788280922223303" nodeInfo="ng">
+              <link role="register" roleId="nbyu.6847490852669338278" targetNodeId="2894788280922168907" resolveInfo="r2" />
             </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="2945795531676611684" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2945795531676611685" nodeInfo="ng">
-            <node role="left" roleId="mj1l.8860443239512128064" type="qs8s.RegisterRefExpr" typeId="qs8s.1462098009437632185" id="1462098009437683340" nodeInfo="ng">
-              <link role="register" roleId="qs8s.1462098009437632186" targetNodeId="1462098009437683311" resolveInfo="r2" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.RegisterRefExpr" typeId="nbyu.6847490852669338277" id="2894788280922236476" nodeInfo="ng">
+              <link role="register" roleId="nbyu.6847490852669338278" targetNodeId="2894788280922168907" resolveInfo="r2" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611686" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="5000" />
@@ -1400,9 +1409,9 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2945795531676611691" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2945795531676611712" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2945795531676611719" nodeInfo="ng">
-            <node role="left" roleId="mj1l.8860443239512128064" type="qs8s.LowByteRefExpr" typeId="qs8s.1462098009437632183" id="1462098009437683344" nodeInfo="ng">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="qs8s.RegisterRefExpr" typeId="qs8s.1462098009437632185" id="1462098009437683341" nodeInfo="ng">
-                <link role="register" roleId="qs8s.1462098009437632186" targetNodeId="1462098009437683311" resolveInfo="r2" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.LowByteRefExpr" typeId="nbyu.6847490852669359409" id="2894788280922243324" nodeInfo="ng">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="nbyu.RegisterRefExpr" typeId="nbyu.6847490852669338277" id="2894788280922239786" nodeInfo="ng">
+                <link role="register" roleId="nbyu.6847490852669338278" targetNodeId="2894788280922168907" resolveInfo="r2" />
               </node>
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611722" nodeInfo="ng">
@@ -1412,9 +1421,9 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2945795531676611693" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2945795531676611707" nodeInfo="ng">
-            <node role="left" roleId="mj1l.8860443239512128064" type="qs8s.HighByteRefExpr" typeId="qs8s.1462098009437632180" id="1462098009437683348" nodeInfo="ng">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="qs8s.RegisterRefExpr" typeId="qs8s.1462098009437632185" id="1462098009437683345" nodeInfo="ng">
-                <link role="register" roleId="qs8s.1462098009437632186" targetNodeId="1462098009437683311" resolveInfo="r2" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.HighByteRefExpr" typeId="nbyu.6847490852669359420" id="2894788280922292055" nodeInfo="ng">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="nbyu.RegisterRefExpr" typeId="nbyu.6847490852669338277" id="2894788280922285520" nodeInfo="ng">
+                <link role="register" roleId="nbyu.6847490852669338278" targetNodeId="2894788280922168907" resolveInfo="r2" />
               </node>
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611710" nodeInfo="ng">
@@ -1424,9 +1433,9 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="2945795531676611724" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2945795531676611732" nodeInfo="ng">
-            <node role="left" roleId="mj1l.8860443239512128064" type="qs8s.LowByteRefExpr" typeId="qs8s.1462098009437632183" id="1462098009437683352" nodeInfo="ng">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="qs8s.RegisterRefExpr" typeId="qs8s.1462098009437632185" id="1462098009437683349" nodeInfo="ng">
-                <link role="register" roleId="qs8s.1462098009437632186" targetNodeId="1462098009437683311" resolveInfo="r2" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.LowByteRefExpr" typeId="nbyu.6847490852669359409" id="2894788280922306286" nodeInfo="ng">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="nbyu.RegisterRefExpr" typeId="nbyu.6847490852669338277" id="2894788280922301753" nodeInfo="ng">
+                <link role="register" roleId="nbyu.6847490852669338278" targetNodeId="2894788280922168907" resolveInfo="r2" />
               </node>
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611735" nodeInfo="ng">
@@ -1436,9 +1445,9 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="2945795531676611739" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2945795531676611740" nodeInfo="ng">
-            <node role="left" roleId="mj1l.8860443239512128064" type="qs8s.HighByteRefExpr" typeId="qs8s.1462098009437632180" id="1462098009437683356" nodeInfo="ng">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="qs8s.RegisterRefExpr" typeId="qs8s.1462098009437632185" id="1462098009437683353" nodeInfo="ng">
-                <link role="register" roleId="qs8s.1462098009437632186" targetNodeId="1462098009437683311" resolveInfo="r2" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.HighByteRefExpr" typeId="nbyu.6847490852669359420" id="2894788280922358525" nodeInfo="ng">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="nbyu.RegisterRefExpr" typeId="nbyu.6847490852669338277" id="2894788280922368653" nodeInfo="ng">
+                <link role="register" roleId="nbyu.6847490852669338278" targetNodeId="2894788280922168907" resolveInfo="r2" />
               </node>
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611741" nodeInfo="ng">

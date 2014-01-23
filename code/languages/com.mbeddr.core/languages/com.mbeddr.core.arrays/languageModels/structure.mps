@@ -10,7 +10,7 @@
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="279446265608352903" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="SizeOfExpr" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="sizeof (for types)" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="sizeof[" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="get the size of a type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="279446265608352905" nodeInfo="ig">
@@ -174,7 +174,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6883925235272353061" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="SizeOfExprForExpressions" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="get the size of an expression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="sizeof (for expressions)" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="sizeof(" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.3005510381523579442" resolveInfo="UnaryExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6113173064526131575" nodeInfo="ig">
