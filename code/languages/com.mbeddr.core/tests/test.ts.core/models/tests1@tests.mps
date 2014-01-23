@@ -13,7 +13,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="10" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="11" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="3" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
@@ -23,7 +23,7 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="19" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
@@ -11705,11 +11705,11 @@
               <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9178537171064572392" nodeInfo="ng">
                 <link role="element" roleId="k146.3073566081777391258" targetNodeId="3073566081777447094" resolveInfo="y" />
                 <node role="value" roleId="k146.3073566081777391257" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6630930806807200941" nodeInfo="ng">
-                  <node role="right" roleId="mj1l.8860443239512128065" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="6630930806807200964" nodeInfo="ng">
-                    <link role="element" roleId="clbe.2003957539749894106" targetNodeId="3073566081777447092" resolveInfo="x" />
+                  <node role="right" roleId="mj1l.8860443239512128065" type="k146.ValuedElementRefInWithStmnt" typeId="k146.7350547698092916920" id="6630930806807200964" nodeInfo="ng">
+                    <link role="element" roleId="k146.7350547698092916921" targetNodeId="3073566081777447092" resolveInfo="x" />
                   </node>
-                  <node role="left" roleId="mj1l.8860443239512128064" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="6630930806807192641" nodeInfo="ng">
-                    <link role="element" roleId="clbe.2003957539749894106" targetNodeId="3073566081777447094" resolveInfo="y" />
+                  <node role="left" roleId="mj1l.8860443239512128064" type="k146.ValuedElementRefInWithStmnt" typeId="k146.7350547698092916920" id="6630930806807192641" nodeInfo="ng">
+                    <link role="element" roleId="k146.7350547698092916921" targetNodeId="3073566081777447094" resolveInfo="y" />
                   </node>
                 </node>
               </node>
@@ -11720,8 +11720,8 @@
                     <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                     <property name="value" nameId="mj1l.2212975673976043696" value="2.3" />
                   </node>
-                  <node role="left" roleId="mj1l.8860443239512128064" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="6630930806807203266" nodeInfo="ng">
-                    <link role="element" roleId="clbe.2003957539749894106" targetNodeId="3073566081777447094" resolveInfo="y" />
+                  <node role="left" roleId="mj1l.8860443239512128064" type="k146.ValuedElementRefInWithStmnt" typeId="k146.7350547698092916920" id="6630930806807203266" nodeInfo="ng">
+                    <link role="element" roleId="k146.7350547698092916921" targetNodeId="3073566081777447094" resolveInfo="y" />
                   </node>
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="9178537171064572413" nodeInfo="ng">
                     <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="9178537171064572414" nodeInfo="ng" />
