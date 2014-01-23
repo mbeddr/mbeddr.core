@@ -20,7 +20,6 @@
   <property name="artifacts.com.mbeddr.ext.components" location="../com.mbeddr.ext/build/artifacts/com.mbeddr.ext.components" />
   <property name="artifacts.com.mbeddr.ext.statemachine" location="../com.mbeddr.ext/build/artifacts/com.mbeddr.ext.statemachine" />
   <property name="artifacts.com.mbeddr.ext.statemachinesInComponents" location="../com.mbeddr.ext/build/artifacts/com.mbeddr.ext.statemachinesInComponents" />
-  <property name="artifacts.advanced.compositeComponent.dev" location="../com.mbeddr.advanced/build/artifacts/advanced.compositeComponent.dev" />
   <property name="artifacts.com.mbeddr.ext.units" location="../com.mbeddr.ext/build/artifacts/com.mbeddr.ext.units" />
   <property name="artifacts.com.mbeddr.cc.ple.build" location="../com.mbeddr.cc/build/artifacts/com.mbeddr.cc.ple.build" />
   <property name="artifacts.com.mbeddr.cc.req.build" location="../com.mbeddr.cc/build/artifacts/com.mbeddr.cc.req.build" />
@@ -90,7 +89,6 @@
       <tarfileset dir="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" prefix="mbeddr ${version}/plugins" />
-      <tarfileset dir="${build.tmp}/deps/advanced.compositeComponent.dev/com.mbeddr.advanced.compositecomponents.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${version}/plugins" />
@@ -124,7 +122,6 @@
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" prefix="mbeddr ${version}/plugins" />
-      <zipfileset dir="${build.tmp}/deps/advanced.compositeComponent.dev/com.mbeddr.advanced.compositecomponents.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${version}/plugins" />
@@ -190,7 +187,6 @@
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
-      <zipfileset dir="${build.tmp}/deps/advanced.compositeComponent.dev/com.mbeddr.advanced.compositecomponents.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
@@ -217,7 +213,6 @@
     <ant antfile="../com.mbeddr.ext/build-components.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-statemachine.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-SmInComp.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../com.mbeddr.advanced/build-compComp.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-units.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.cc/build-ple.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.cc/build-req.xml" inheritAll="false" useNativeBasedir="true" />
@@ -258,8 +253,6 @@
     <unzip src="${artifacts.com.mbeddr.analyses.nusmv}/com.mbeddr.analyses.nusmv.zip" dest="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" />
     <unzip src="${artifacts.com.mbeddr.analyses.yices}/com.mbeddr.analyses.yices.zip" dest="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" />
-    <mkdir dir="${build.tmp}/deps/advanced.compositeComponent.dev/com.mbeddr.advanced.compositecomponents.zip" />
-    <unzip src="${artifacts.advanced.compositeComponent.dev}/com.mbeddr.advanced.compositecomponents.zip" dest="${build.tmp}/deps/advanced.compositeComponent.dev/com.mbeddr.advanced.compositecomponents.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
     <unzip src="${artifacts.com.mbeddr.doc.build}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
