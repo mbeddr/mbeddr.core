@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="mbeddr.tutorial.blocks" uuid="07b580a3-cb92-4b5d-ab7c-9e2d58b9d602" doNotGenerateAdapters="true">
+<language namespace="mbeddr.tutorial.blocks" uuid="07b580a3-cb92-4b5d-ab7c-9e2d58b9d602">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="blocks2c" generatorUID="mbeddr.tutorial.blocks#6275956088647057041" uuid="a32979ae-2a0e-4807-a585-82f5cabcad4a">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
