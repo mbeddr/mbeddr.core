@@ -576,29 +576,40 @@
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5708867820622277805" nodeInfo="ng" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="5728674636024843263" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="36486875645774046" resolveInfo="arrayStuff" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7350547698092250462" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="36486875645774046" resolveInfo="arrayStuff" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6610873504380018471" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="279446265608457321" resolveInfo="pointerStuff" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7350547698092250495" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="279446265608457321" resolveInfo="pointerStuff" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8551646674110583248" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8551646674110483309" resolveInfo="functionPointerStuff" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7350547698092250330" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="8551646674110483309" resolveInfo="functionPointerStuff" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8257817273847122552" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8257817273847094238" resolveInfo="ClosureTests" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7350547698092250429" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="8257817273847094238" resolveInfo="ClosureTests" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3926162927329447234" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="3926162927329444471" resolveInfo="Functions" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7350547698092250264" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="3926162927329444471" resolveInfo="Functions" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="5684014141267564516" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="5684014141267564508" resolveInfo="Strings" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7350547698092250363" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5684014141267564508" resolveInfo="Strings" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="4115720392368472064" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="268054603277746264" resolveInfo="ArrayInitAndCompound" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7350547698092250396" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="268054603277746264" resolveInfo="ArrayInitAndCompound" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="4115720392370598394" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="4115720392370598207" resolveInfo="StructAndUnionInitAndCompound" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7350547698092250297" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="4115720392370598207" resolveInfo="StructAndUnionInitAndCompound" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7350547698092250721" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="22102029902284574" resolveInfo="constVolatile" />
     </node>
   </root>
   <root type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="6173518449210279095" nodeInfo="ng">
@@ -672,6 +683,9 @@
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4115720392370598419" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4115720392370598207" resolveInfo="StructAndUnionInitAndCompound" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="7350547698092250180" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="22102029902284574" resolveInfo="constVolatile" />
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4459718605982730232" nodeInfo="ng">
