@@ -258,5 +258,11 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="5934114435582038053" resolveInfo="AbstractConceptEvaluatorImplementation" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="800630853695353013" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="TypeMapping" />
+    <property name="name" nameId="tpck.1169194664001" value="FromTypeExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="fromType" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+  </root>
 </model>
 
