@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/solutions/advanced.compComps.dev.build/build.msd" folder="advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.allInOne/allInOne.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.base.dev.build/com.mbeddr.analyses.base.dev.build.msd" folder="analyses" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.dev.build/com.mbeddr.analyses.cbmc.dev.build.msd" folder="analyses" />
