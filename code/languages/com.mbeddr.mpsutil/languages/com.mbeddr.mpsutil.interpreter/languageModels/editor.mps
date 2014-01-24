@@ -470,9 +470,9 @@
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3406009787379004128" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.BaseLanguageExtensions" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="3673.3406009787378976616" resolveInfo="AttributesExpression" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3406009787379004449" nodeInfo="nn">
-      <property name="text" nameId="tpc2.1073389577007" value="attributes" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="3673.3406009787378976616" resolveInfo="EnvExpression" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5973989473256396312" nodeInfo="nn">
+      <property name="text" nameId="tpc2.1073389577007" value="env" />
     </node>
   </root>
 </model>

@@ -290,7 +290,7 @@
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3406009787379004500" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.BaseLanguageExtensions" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="3673.3406009787378976616" resolveInfo="AttributesExpression" />
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="3673.3406009787378976616" resolveInfo="EnvExpression" />
     <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="3406009787379024232" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3406009787379024233" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3406009787379024926" nodeInfo="nn">
