@@ -17,9 +17,8 @@
     <property name="name" nameId="tpck.1169194664001" value="VS" />
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="3017602783212238057" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Deployment" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3017602783212238059" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="root" />
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="3017602783212238061" nodeInfo="ng" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="6140871949402313027" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="6140871949402313028" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3017602783212238062" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="logging" />
         </node>
