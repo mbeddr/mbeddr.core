@@ -81,7 +81,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.typesystem.rt-models">
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.typesystem.rt/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.typesystem.rt/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt-src.jar">
       <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.typesystem.rt/source_gen" includes="**/*.java" />
@@ -111,7 +111,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.blutil.rt.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.blutil-solutions-models">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/solutions/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/solutions/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.rt-src.jar">
       <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/solutions/source_gen" includes="**/*.java" />
@@ -148,10 +148,10 @@
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.blutil#374287044672169667" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.blutil-generator-template">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.blutil-languageModels">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil-src.jar">
       <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/generator/source_gen" includes="**/*.java" />
@@ -189,10 +189,10 @@
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.genutil#8326627235132567107" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.genutil-generator-template">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.genutil-languageModels">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.genutil-src.jar">
       <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/generator/source_gen" includes="**/*.java" />
@@ -230,10 +230,10 @@
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.langstats#2745981761597146573" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.langstats-generator-template">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.langstats-languageModels">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.langstats-src.jar">
       <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/generator/source_gen" includes="**/*.java" />
@@ -271,10 +271,10 @@
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring#7518061998923596540" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.refactoring-generator-template">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.refactoring-languageModels">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.refactoring-src.jar">
       <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/generator/source_gen" includes="**/*.java" />
@@ -312,10 +312,10 @@
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.typsystem.trace#138655907978044806" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.typsystem.trace-generator-template">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.typsystem.trace/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.typsystem.trace/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.typsystem.trace-languageModels">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.typsystem.trace/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.typsystem.trace/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typsystem.trace-src.jar">
       <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.typsystem.trace/generator/source_gen" includes="**/*.java" />
@@ -355,7 +355,7 @@
       <fileset dir="${build.tmp}/default/test.ex.match.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.match-models">
-      <fileset dir="${mpsutil}/tests/test.ts.match/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/tests/test.ts.match/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/test.ex.match-src.jar">
       <fileset dir="${mpsutil}/tests/test.ts.match/source_gen" includes="**/*.java" />
@@ -394,10 +394,10 @@
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.buildutil#6600513366548883903" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.buildutil-generator-template">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.buildutil-languageModels">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.buildutil-src.jar">
       <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/generator/source_gen" includes="**/*.java" />
@@ -430,7 +430,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.refactoring.rt.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.refactoring.rt-models">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.refactoring.rt-src.jar">
       <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/source_gen" includes="**/*.java" />
@@ -451,7 +451,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.dev.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.mpsutil.dev.build-models">
-      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.mpsutil.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.mpsutil.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.dev.build-src.jar">
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.mpsutil.dev.build/source_gen" includes="**/*.java" />
@@ -467,10 +467,10 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
   </target>
   
   <target name="build" depends="assemble" />
