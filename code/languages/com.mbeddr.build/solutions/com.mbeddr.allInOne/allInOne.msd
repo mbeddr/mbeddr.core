@@ -7,7 +7,6 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">d9577847-5af6-4401-b634-6305196f4f02(advanced.compComps.dev.build)</dependency>
     <dependency reexport="false">cfe2dde5-9e9a-4804-acb8-311b8adc09dc(com.mbeddr.analyses.base.dev.build)</dependency>
     <dependency reexport="false">52533894-f4ff-41f6-8bcd-cc454916834d(com.mbeddr.analyses.cbmc.dev.build)</dependency>
     <dependency reexport="false">e0d58430-60b1-4fb5-a47b-980926b70767(com.mbeddr.analyses.nusmv.dev.build)</dependency>

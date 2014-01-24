@@ -44,20 +44,6 @@
           </node>
         </node>
       </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975465025" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975465026" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975465173" resolveInfo="mbeddr.analyses" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975465027" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="devkits" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975465028" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.analyses.statemachine" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975465029" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="statemachine.devkit" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975465030" nodeInfo="ng">
         <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975465031" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975465173" resolveInfo="mbeddr.analyses" />
@@ -275,23 +261,6 @@
               <property name="head" nameId="3ior.8618885170173601779" value="test.analyses.cbmc.testcode_analyses_config" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975465108" nodeInfo="nn">
                 <property name="head" nameId="3ior.8618885170173601779" value="testcode_analyses_config.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975465109" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975465110" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975465173" resolveInfo="mbeddr.analyses" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975465111" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975465112" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="test.analyses.cbmc.testcode_nightly" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975465113" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="testcode_nightly.msd" />
-                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975465114" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="testcode_nightly.msd" />
-                </node>
               </node>
             </node>
           </node>

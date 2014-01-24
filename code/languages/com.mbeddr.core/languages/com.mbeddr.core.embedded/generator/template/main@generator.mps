@@ -27,11 +27,13 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="ahli" modelUID="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" version="-1" />
   <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="3" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
   <import index="nb4f" modelUID="r:272921e7-7030-4de3-ab20-a851a2e6ef5a(com.mbeddr.core.embedded.behavior)" version="1" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" />
+  <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(java.io@java_stub)" version="-1" />
+  <import index="tpcu" modelUID="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
@@ -39,11 +41,10 @@
   <import index="tpf3" modelUID="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" version="0" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="10" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="11" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <import index="tp3r" modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" implicit="yes" />
-  <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" implicit="yes" />
-  <import index="tpcu" modelUID="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" version="-1" implicit="yes" />
+  <import index="fxg8" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" implicit="yes" />
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="6847490852669402966" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="interrupts" />
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="529332856714534665" nodeInfo="ng">
@@ -328,7 +329,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%derr" resolveInfo="err" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2894788280926482403" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprintln(java%dlang%dString)%cvoid" resolveInfo="println" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg8.~PrintStream%dprintln(java%dlang%dString)%cvoid" resolveInfo="println" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="2894788280927046274" nodeInfo="nn">
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2894788280927093807" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2894788280927050591" nodeInfo="nn">
@@ -1746,10 +1747,21 @@
                       </node>
                       <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="529332856714535745" nodeInfo="sn">
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="529332856714535746" nodeInfo="nn">
-                          <node role="expression" roleId="tpee.1068581517676" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="529332856714535747" nodeInfo="nn">
-                            <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="529332856714535748" nodeInfo="ng">
-                              <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
-                              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                          <node role="expression" roleId="tpee.1068581517676" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="168512537791387965" nodeInfo="nn">
+                            <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="168512537791387960" nodeInfo="nn">
+                              <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
+                              <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791387961" nodeInfo="ng">
+                                <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002445651368" resolveInfo="const" />
+                                <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791387962" nodeInfo="nn">
+                                  <property name="value" nameId="tpee.1068580123138" value="false" />
+                                </node>
+                              </node>
+                              <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791387963" nodeInfo="ng">
+                                <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002448691247" resolveInfo="volatile" />
+                                <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791387964" nodeInfo="nn">
+                                  <property name="value" nameId="tpee.1068580123138" value="true" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -1757,10 +1769,21 @@
                       <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="529332856714535749" nodeInfo="nn">
                         <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="529332856714535750" nodeInfo="sn">
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="529332856714535751" nodeInfo="nn">
-                            <node role="expression" roleId="tpee.1068581517676" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="529332856714535752" nodeInfo="nn">
-                              <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="529332856714535753" nodeInfo="ng">
-                                <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
-                                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                            <node role="expression" roleId="tpee.1068581517676" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="168512537791391995" nodeInfo="nn">
+                              <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="168512537791391990" nodeInfo="nn">
+                                <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
+                                <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791391991" nodeInfo="ng">
+                                  <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002445651368" resolveInfo="const" />
+                                  <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791391992" nodeInfo="nn">
+                                    <property name="value" nameId="tpee.1068580123138" value="false" />
+                                  </node>
+                                </node>
+                                <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791391993" nodeInfo="ng">
+                                  <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002448691247" resolveInfo="volatile" />
+                                  <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791391994" nodeInfo="nn">
+                                    <property name="value" nameId="tpee.1068580123138" value="true" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -1789,10 +1812,21 @@
                       </node>
                       <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="529332856714535763" nodeInfo="sn">
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="529332856714535764" nodeInfo="nn">
-                          <node role="expression" roleId="tpee.1068581517676" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="529332856714535765" nodeInfo="nn">
-                            <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="529332856714535766" nodeInfo="ng">
-                              <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
-                              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                          <node role="expression" roleId="tpee.1068581517676" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="168512537791396377" nodeInfo="nn">
+                            <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="168512537791396372" nodeInfo="nn">
+                              <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
+                              <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791396373" nodeInfo="ng">
+                                <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002445651368" resolveInfo="const" />
+                                <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791396374" nodeInfo="nn">
+                                  <property name="value" nameId="tpee.1068580123138" value="false" />
+                                </node>
+                              </node>
+                              <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791396375" nodeInfo="ng">
+                                <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002448691247" resolveInfo="volatile" />
+                                <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791396376" nodeInfo="nn">
+                                  <property name="value" nameId="tpee.1068580123138" value="true" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -1800,10 +1834,21 @@
                       <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="529332856714535767" nodeInfo="nn">
                         <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="529332856714535768" nodeInfo="sn">
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="529332856714535769" nodeInfo="nn">
-                            <node role="expression" roleId="tpee.1068581517676" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="529332856714535770" nodeInfo="nn">
-                              <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="529332856714535771" nodeInfo="ng">
-                                <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
-                                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                            <node role="expression" roleId="tpee.1068581517676" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="168512537791400223" nodeInfo="nn">
+                              <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="168512537791400218" nodeInfo="nn">
+                                <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
+                                <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791400219" nodeInfo="ng">
+                                  <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002445651368" resolveInfo="const" />
+                                  <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791400220" nodeInfo="nn">
+                                    <property name="value" nameId="tpee.1068580123138" value="false" />
+                                  </node>
+                                </node>
+                                <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791400221" nodeInfo="ng">
+                                  <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002448691247" resolveInfo="volatile" />
+                                  <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791400222" nodeInfo="nn">
+                                    <property name="value" nameId="tpee.1068580123138" value="true" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -1877,10 +1922,21 @@
                       </node>
                       <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="529332856714535801" nodeInfo="sn">
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="529332856714535802" nodeInfo="nn">
-                          <node role="expression" roleId="tpee.1068581517676" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="529332856714535803" nodeInfo="nn">
-                            <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="529332856714535804" nodeInfo="ng">
-                              <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
-                              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                          <node role="expression" roleId="tpee.1068581517676" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="168512537791378053" nodeInfo="nn">
+                            <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="168512537791378048" nodeInfo="nn">
+                              <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="mj1l.8463282783691618435" resolveInfo="Int16tType" />
+                              <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791378049" nodeInfo="ng">
+                                <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002445651368" resolveInfo="const" />
+                                <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791378050" nodeInfo="nn">
+                                  <property name="value" nameId="tpee.1068580123138" value="false" />
+                                </node>
+                              </node>
+                              <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791378051" nodeInfo="ng">
+                                <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002448691247" resolveInfo="volatile" />
+                                <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791378052" nodeInfo="nn">
+                                  <property name="value" nameId="tpee.1068580123138" value="true" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -1888,10 +1944,21 @@
                       <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="529332856714535805" nodeInfo="nn">
                         <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="529332856714535806" nodeInfo="sn">
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="529332856714535807" nodeInfo="nn">
-                            <node role="expression" roleId="tpee.1068581517676" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="529332856714535808" nodeInfo="nn">
-                              <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="529332856714535809" nodeInfo="ng">
-                                <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
-                                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                            <node role="expression" roleId="tpee.1068581517676" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="168512537791383327" nodeInfo="nn">
+                              <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="168512537791383322" nodeInfo="nn">
+                                <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="mj1l.8463282783691618466" resolveInfo="UnsignedInt16tType" />
+                                <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791383323" nodeInfo="ng">
+                                  <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002445651368" resolveInfo="const" />
+                                  <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791383324" nodeInfo="nn">
+                                    <property name="value" nameId="tpee.1068580123138" value="false" />
+                                  </node>
+                                </node>
+                                <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791383325" nodeInfo="ng">
+                                  <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002448691247" resolveInfo="volatile" />
+                                  <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791383326" nodeInfo="nn">
+                                    <property name="value" nameId="tpee.1068580123138" value="true" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -2061,10 +2128,21 @@
                     </node>
                     <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="529332856714535882" nodeInfo="sn">
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="529332856714535883" nodeInfo="nn">
-                        <node role="expression" roleId="tpee.1068581517676" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="529332856714535884" nodeInfo="nn">
-                          <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="529332856714535885" nodeInfo="ng">
-                            <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
-                            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                        <node role="expression" roleId="tpee.1068581517676" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="168512537791404237" nodeInfo="nn">
+                          <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="168512537791404232" nodeInfo="nn">
+                            <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
+                            <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791404233" nodeInfo="ng">
+                              <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002445651368" resolveInfo="const" />
+                              <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791404234" nodeInfo="nn">
+                                <property name="value" nameId="tpee.1068580123138" value="false" />
+                              </node>
+                            </node>
+                            <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791404235" nodeInfo="ng">
+                              <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002448691247" resolveInfo="volatile" />
+                              <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791404236" nodeInfo="nn">
+                                <property name="value" nameId="tpee.1068580123138" value="true" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -2072,10 +2150,21 @@
                     <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="529332856714535886" nodeInfo="nn">
                       <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="529332856714535887" nodeInfo="sn">
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="529332856714535888" nodeInfo="nn">
-                          <node role="expression" roleId="tpee.1068581517676" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="529332856714535889" nodeInfo="nn">
-                            <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="529332856714535890" nodeInfo="ng">
-                              <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
-                              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                          <node role="expression" roleId="tpee.1068581517676" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="168512537791414569" nodeInfo="nn">
+                            <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="168512537791414564" nodeInfo="nn">
+                              <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
+                              <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791414565" nodeInfo="ng">
+                                <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002445651368" resolveInfo="const" />
+                                <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791414566" nodeInfo="nn">
+                                  <property name="value" nameId="tpee.1068580123138" value="false" />
+                                </node>
+                              </node>
+                              <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="168512537791414567" nodeInfo="ng">
+                                <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="mj1l.2941277002448691247" resolveInfo="volatile" />
+                                <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="168512537791414568" nodeInfo="nn">
+                                  <property name="value" nameId="tpee.1068580123138" value="true" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>

@@ -122,48 +122,6 @@
           </node>
         </node>
       </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975356780" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975356781" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356782" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356783" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.cimport" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356784" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.cimport.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975356785" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975356786" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356787" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356788" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.cstubs" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356789" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="cstubs.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975356790" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975356791" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356792" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356793" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.cstubs.test" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356794" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="test.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975356795" nodeInfo="ng">
         <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975356796" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
@@ -201,20 +159,6 @@
               <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.modules.gen" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356809" nodeInfo="nn">
                 <property name="head" nameId="3ior.8618885170173601779" value="gen.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975356810" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975356811" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356812" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356813" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.modules.runtime" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356814" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="include.msd" />
               </node>
             </node>
           </node>
@@ -297,20 +241,6 @@
                     <property name="head" nameId="3ior.8618885170173601779" value="pluginSolution.msd" />
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975356844" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975356845" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356846" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356847" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.runconfiguration" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356848" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="runconfiguration.mpl" />
               </node>
             </node>
           </node>
@@ -500,20 +430,6 @@
           </node>
         </node>
       </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975356914" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975356915" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356916" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356917" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="test.cstub.core" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356918" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="core.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975356919" nodeInfo="ng">
         <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975356920" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
@@ -523,62 +439,6 @@
               <property name="head" nameId="3ior.8618885170173601779" value="test.ts.core.dataflow" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356923" nodeInfo="nn">
                 <property name="head" nameId="3ior.8618885170173601779" value="dataflow.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975356924" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975356925" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356926" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356927" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="test.cstub.testheader.expressions" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356928" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="expressions.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975356929" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975356930" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356931" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356932" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="NewSolution" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356933" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="test.imp.core.cimport.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975356934" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975356935" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356936" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356937" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="test.imp.core.import-optimizer" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356938" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="test.imp.core.import-optimizer.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="8334796989975356939" nodeInfo="ng">
-        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975356940" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356941" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356942" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="test.cstub.testheader" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356943" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="testheader.msd" />
               </node>
             </node>
           </node>
@@ -607,6 +467,20 @@
               <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.dataflow.test" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975356953" nodeInfo="nn">
                 <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.dataflow.test.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="7870595884255778685" nodeInfo="ng">
+        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="7870595884255778686" nodeInfo="ng">
+          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
+          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7870595884255778687" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7870595884255778688" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.dependencies" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7870595884255778689" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.dependencies.msd" />
               </node>
             </node>
           </node>
@@ -1525,6 +1399,20 @@
               <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.lib.xml" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975357262" nodeInfo="nn">
                 <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.lib.xml.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="ignoredModules" roleId="fnbo.6600513366551426861" type="fnbo.IgnoredModule" typeId="fnbo.6600513366551426614" id="7870595884255761065" nodeInfo="ng">
+        <node role="buildPath" roleId="fnbo.6600513366556105563" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="7870595884255761066" nodeInfo="ng">
+          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357345" resolveInfo="mbeddr.core" />
+          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7870595884255761067" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7870595884255761068" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.dependencies" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7870595884255761069" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.dependencies.msd" />
               </node>
             </node>
           </node>
