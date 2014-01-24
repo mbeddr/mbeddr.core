@@ -10,6 +10,7 @@
   <property name="mpsutil" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext/null" />
   <property name="multiline.artifacts" location="${lisson.home}/mps-multiline/build/artifacts/mps-multiline/" />
+  <property name="platform.artifacts" location="" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.mpsBuild" location="${mps.home}" />
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
@@ -625,6 +626,7 @@
       <macro name="mpsutil" path="${mpsutil}" />
       <macro name="richtext.artifacts" path="${richtext.artifacts}" />
       <macro name="multiline.artifacts" path="${multiline.artifacts}" />
+      <macro name="platform.artifacts" path="${platform.artifacts}" />
     </generate>
   </target>
   

@@ -6,6 +6,7 @@
   <property name="mps.home" location="${basedir}/../../../../MPS/MPS-3.1EAP-19.app" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="mbeddr.core" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.spawner" />
+  <property name="platform.artifacts" location="" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.mpsBuild" location="${mps.home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
@@ -247,6 +248,7 @@
       <macro name="mps.home" path="${mps.home}" />
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
       <macro name="mbeddr.core" path="${mbeddr.core}" />
+      <macro name="platform.artifacts" path="${platform.artifacts}" />
     </generate>
   </target>
   
