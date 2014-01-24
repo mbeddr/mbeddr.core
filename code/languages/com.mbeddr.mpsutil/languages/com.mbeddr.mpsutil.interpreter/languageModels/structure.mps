@@ -32,13 +32,14 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8615074351687301432" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TypeMapping" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="TypeMapping" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="type-mapping" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="mapping" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="procedural mapping of type to another type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5293529713179149388" resolveInfo="AbstractTypeMapping" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8615074351687302212" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="mapping" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068580123136" resolveInfo="StatementList" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1082485599095" resolveInfo="BlockStatement" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5293529713184867204" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -61,8 +62,14 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8615074351687425563" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TypedChildConstraint" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.Constraint" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="typed-child-constraint" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5712773029522809833" resolveInfo="ChildConstraint" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="tests child of current node for type" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5712773029522629274" resolveInfo="AbstractConceptEvaluatorConstraint" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8615074351687425566" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="child" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1071489288298" resolveInfo="LinkDeclaration" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5293529713185083481" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="type" />
@@ -80,7 +87,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="target" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8615074351687301435" resolveInfo="ConceptEvaluator" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="5934114435583058812" resolveInfo="AbstractEvaluator" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8615074351687435429" nodeInfo="ig">
@@ -99,6 +106,7 @@
     <property name="name" nameId="tpck.1169194664001" value="InterpretExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="##" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.BaseLanguageExtensions" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="call evaluator on arbitrary expression" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5293529713176663275" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -116,7 +124,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="body" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068580123136" resolveInfo="StatementList" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1082485599095" resolveInfo="BlockStatement" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5712773029522629274" nodeInfo="ig">
@@ -126,22 +134,10 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="abstract-constraint" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5712773029522809833" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.Constraint" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="ChildConstraint" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="child-constraint" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5712773029522629274" resolveInfo="AbstractConceptEvaluatorConstraint" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8615074351687425566" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="child" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1071489288298" resolveInfo="LinkDeclaration" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5712773029543064716" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="InvokeInterpreterExpr" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="invoke-interpreter" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="calls defined interpreter on argument" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5712773029545231757" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -155,17 +151,25 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3406009787380184118" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="context" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5293529713177831489" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.BaseLanguageExtensions" />
     <property name="name" nameId="tpck.1169194664001" value="NodeExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="node" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="current node" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5293529713177875074" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.BaseLanguageExtensions" />
     <property name="name" nameId="tpck.1169194664001" value="ContextExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="context" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="evaluator context" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5293529713179149388" nodeInfo="ig">
@@ -183,7 +187,8 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5293529713179568010" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="TypeMapping" />
     <property name="name" nameId="tpck.1169194664001" value="BaseLanguageTypeMapping" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="base-language-type-mapping" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="java" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="declarative mapping to Java" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5293529713179149388" resolveInfo="AbstractTypeMapping" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5293529713185156793" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -196,6 +201,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.BaseLanguageExtensions" />
     <property name="name" nameId="tpck.1169194664001" value="InterpretConstraintExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="call evaluator on child node of current node" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5293529713180742449" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -208,6 +214,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.BaseLanguageExtensions" />
     <property name="name" nameId="tpck.1169194664001" value="ConceptTypeExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="~" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="returns type instance of a concept" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5293529713194689153" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -262,6 +269,14 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="TypeMapping" />
     <property name="name" nameId="tpck.1169194664001" value="FromTypeExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="fromType" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="returns instance of left-hand side (aka source, aka from) type" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3406009787378976616" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.BaseLanguageExtensions" />
+    <property name="name" nameId="tpck.1169194664001" value="AttributesExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="attributes" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="interpreter attributes" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
   </root>
 </model>

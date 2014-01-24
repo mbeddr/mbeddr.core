@@ -31,7 +31,7 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" />
   <import index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="14" implicit="yes" />
   <root type="3673.Interpreter" typeId="3673.8615074351687299818" id="8615074351688654302" nodeInfo="ng">
-    <property name="name" value="TestInterpreter" />
+    <property name="name" nameId="tpck.1169194664001" value="TestInterpreter" />
     <node role="evaluators" roleId="3673.8615074351687302157" type="3673.ConceptEvaluator" typeId="3673.8615074351687301435" id="5712773029546529695" nodeInfo="ng">
       <link role="concept" roleId="3673.8615074351687302216" targetNodeId="mj1l.8860443239512128103" resolveInfo="NumberLiteral" />
       <node role="evaluator" roleId="3673.5934114435584084790" type="3673.ConceptEvaluatorBody" typeId="3673.5712773029518214110" id="5712773029546529696" nodeInfo="ng">
@@ -289,7 +289,7 @@
                 <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="5712773029550842577" nodeInfo="nn">
                   <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5712773029550842578" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="5712773029550842579" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.5712773029522296508" resolveInfo="evaluate" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.3406009787378895904" resolveInfo="evaluate" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5712773029550842580" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5712773029548610944" resolveInfo="context" />
                       </node>
@@ -305,7 +305,7 @@
                           </node>
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5712773029550842586" nodeInfo="nn">
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.5712773029520911605" resolveInfo="getChild" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.3406009787378909314" resolveInfo="getChild" />
                         </node>
                       </node>
                     </node>
@@ -330,7 +330,7 @@
                 <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="5712773029550848317" nodeInfo="nn">
                   <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5712773029550848318" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="5712773029550848319" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.5712773029522296508" resolveInfo="evaluate" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.3406009787378895904" resolveInfo="evaluate" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5712773029550848320" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5712773029548610944" resolveInfo="context" />
                       </node>
@@ -346,7 +346,7 @@
                           </node>
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5712773029550848326" nodeInfo="nn">
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.5712773029520911605" resolveInfo="getChild" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.3406009787378909314" resolveInfo="getChild" />
                         </node>
                       </node>
                     </node>
@@ -559,19 +559,19 @@
           </node>
         </node>
       </node>
-      <node role="constraints" roleId="3673.5934114435583235459" type="3673.ChildConstraint" typeId="3673.5712773029522809833" id="5712773029535295411" nodeInfo="ng">
-        <link role="child" roleId="3673.8615074351687425566" targetNodeId="mj1l.8860443239512128064" />
+      <node role="constraints" roleId="3673.5934114435583235459" type=".com.mbeddr.mpsutil.interpreter.structure.ChildConstraint" id="5712773029535295411" nodeInfo="ng">
+        <link role="child" targetNodeId="mj1l.8860443239512128064" />
       </node>
-      <node role="constraints" roleId="3673.5934114435583235459" type="3673.ChildConstraint" typeId="3673.5712773029522809833" id="5712773029535295817" nodeInfo="ng">
-        <link role="child" roleId="3673.8615074351687425566" targetNodeId="mj1l.8860443239512128065" />
+      <node role="constraints" roleId="3673.5934114435583235459" type=".com.mbeddr.mpsutil.interpreter.structure.ChildConstraint" id="5712773029535295817" nodeInfo="ng">
+        <link role="child" targetNodeId="mj1l.8860443239512128065" />
       </node>
     </node>
     <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.TypeMapping" typeId="3673.8615074351687301432" id="8615074351693097847" nodeInfo="ng">
       <link role="toType" roleId="3673.5293529713184867204" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
       <link role="fromType" roleId="3673.5293529713185081187" targetNodeId="mj1l.743779816742251347" resolveInfo="ITypeDecorator" />
-      <node role="mapping" roleId="3673.8615074351687302212" type="3673.TypeMappingMethod" typeId="3673.8615074351690524728" id="8615074351693097848" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="map" />
-        <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8615074351693097849" nodeInfo="sn">
+      <node role="mapping" roleId="3673.8615074351687302212" type=".com.mbeddr.mpsutil.interpreter.structure.TypeMappingMethod" id="8615074351693097848" nodeInfo="ng">
+        <property name="name" value="map" />
+        <node role="body" type="tpee.StatementList" typeId="tpee.1068580123136" id="8615074351693097849" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="8615074351693596869" nodeInfo="nn">
             <node role="expression" roleId="tpee.1068581517676" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="5712773029521905727" nodeInfo="nn">
               <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="5712773029521905728" nodeInfo="nn">
@@ -590,10 +590,10 @@
             </node>
           </node>
         </node>
-        <node role="returnType" roleId="tpee.1068580123133" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="8615074351693097850" nodeInfo="in" />
-        <node role="parameter" roleId="tpee.1068580123134" type="3673.TypeMappingParameter" typeId="3673.8615074351692035668" id="8615074351693097851" nodeInfo="ig">
-          <property name="name" nameId="tpck.1169194664001" value="fromType" />
-          <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="8615074351693097852" nodeInfo="in" />
+        <node role="returnType" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="8615074351693097850" nodeInfo="in" />
+        <node role="parameter" type=".com.mbeddr.mpsutil.interpreter.structure.TypeMappingParameter" id="8615074351693097851" nodeInfo="ng">
+          <property name="name" value="fromType" />
+          <node role="type" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="8615074351693097852" nodeInfo="in" />
         </node>
       </node>
     </node>
