@@ -9,9 +9,9 @@
   <devkit namespace="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
@@ -20,8 +20,6 @@
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="10" implicit="yes" />
-  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6617704999132170886" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SensorModule" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
@@ -154,8 +152,9 @@
           </node>
         </node>
       </node>
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="6140871949402121795" nodeInfo="ng">
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="6140871949402121796" nodeInfo="ng" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="6617704999132170931" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="root" />
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="6617704999132170932" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="1165432222362213005" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="logging" />
         </node>
@@ -169,22 +168,13 @@
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2785540331872317143" nodeInfo="ng" />
           </node>
         </node>
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="6140871949402121994" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="featureWithEnum" />
-          <node role="attributes" roleId="qqyh.6825476687691297429" type="qqyh.FeatureAttribute" typeId="qqyh.6825476687691297431" id="6140871949402170896" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="c" />
-            <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="6140871949402179761" nodeInfo="ng">
-              <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="6140871949402155719" resolveInfo="Color" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="6617704999132170935" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Debug" />
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="6617704999132170930" resolveInfo="DeploymentConfiguration" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="6617704999132170936" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="6140871949402121795" resolveInfo="DeploymentConfiguration_root" />
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="6617704999132170931" resolveInfo="root" />
         <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="1165432222362213006" nodeInfo="ng">
           <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="1165432222362213005" resolveInfo="logging" />
         </node>
@@ -200,26 +190,14 @@
             </node>
           </node>
         </node>
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="6140871949402180030" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="6140871949402121994" resolveInfo="featureWithEnum" />
-          <node role="values" roleId="qqyh.6825476687691297424" type="qqyh.AttributeValue" typeId="qqyh.6825476687691297413" id="6140871949402180031" nodeInfo="ng">
-            <link role="attribute" roleId="qqyh.6825476687691297415" targetNodeId="6140871949402170896" resolveInfo="c" />
-            <node role="value" roleId="qqyh.6825476687691297414" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="6140871949402180241" nodeInfo="ng">
-              <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="6140871949402155952" resolveInfo="blue" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="6617704999132170939" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Production" />
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="6617704999132170930" resolveInfo="DeploymentConfiguration" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="6617704999132170940" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="6140871949402121795" resolveInfo="DeploymentConfiguration_root" />
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="6617704999132170931" resolveInfo="root" />
       </node>
-    </node>
-    <node role="dependencies" roleId="qqyh.5142601156811343146" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6140871949402156392" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6140871949402126704" resolveInfo="TypesUsedInFM" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6617704999132174954" nodeInfo="ng">
@@ -449,9 +427,17 @@
         </node>
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6140871949402066130" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6617704999132170886" resolveInfo="SensorModule" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3367571968338796866" nodeInfo="ng">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6617704999132170886" resolveInfo="SensorModule" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="3367571968338796867" nodeInfo="ng">
+        <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="3367571968338796868" nodeInfo="ng">
+          <node role="expr" roleId="qdv7.2613872510229282926" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="3367571968338796871" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="3367571968338796869" nodeInfo="ng">
+              <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="6617704999132170934" resolveInfo="test" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645303299039" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6617704999132170929" resolveInfo="Deployment" />
@@ -492,49 +478,6 @@
       <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3348865852193241103" nodeInfo="ng">
         <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3348865852193241104" nodeInfo="ng" />
       </node>
-    </node>
-  </root>
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6140871949402126704" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="TypesUsedInFM" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="6140871949402155719" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Color" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="6140871949402155720" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="red" />
-      </node>
-      <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="6140871949402155823" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="green" />
-      </node>
-      <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="6140871949402155952" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="blue" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6140871949402156172" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1390493191533_1" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="6140871949402156185" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Data" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-    </node>
-  </root>
-  <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6140871949402323683" nodeInfo="ng">
-    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="6140871949402323684" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Dummy" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6140871949402323686" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6617704999132174954" resolveInfo="ApplicationModule" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6140871949402323691" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6617704999132170886" resolveInfo="SensorModule" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6140871949402323698" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6140871949402126704" resolveInfo="TypesUsedInFM" />
-      </node>
-    </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="6140871949402331962" nodeInfo="ng">
-      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="6140871949402331963" nodeInfo="ng" />
-    </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qdv7.VariabilityConfigItem" typeId="qdv7.6514264311693667923" id="6140871949402330696" nodeInfo="ng">
-      <node role="config" roleId="qdv7.6514264311693667924" type="qdv7.VariabilityTransformationConfig" typeId="qdv7.6617704999132114004" id="6140871949402330697" nodeInfo="ng" />
     </node>
   </root>
 </model>

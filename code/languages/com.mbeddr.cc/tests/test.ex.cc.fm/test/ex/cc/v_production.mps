@@ -22,9 +22,6 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6617704999132175010" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="n76k.6617704999132170886" resolveInfo="SensorModule" />
       </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6140871949402313558" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="n76k.6140871949402126704" resolveInfo="TypesUsedInFM" />
-      </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4459718605983071027" nodeInfo="ng">
       <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
