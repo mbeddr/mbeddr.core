@@ -29,6 +29,7 @@
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
   <property name="artifacts.mps-editor-override" location="${override.artifacts}" />
   <property name="artifacts.mps-tables" location="${tables.artifacts}" />
+  <property name="artifacts.com.mbeddr.platform.build" location="../com.mbeddr.platform/build/artifacts/com.mbeddr.platform.build" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.mpsutil.build}/build.properties" prefix="import.com.mbeddr.mpsutil.build" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -61,12 +62,14 @@
       <zipfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-tables/mps-tables.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" prefix="plugins" />
     </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.mpsutil.build.build.number=${com.mbeddr.mpsutil.build.build.number}</echo>
   </target>
   
   <target name="buildDependents">
     <ant antfile="../com.mbeddr.mpsutil/build.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../com.mbeddr.platform/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.core/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-components.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-statemachine.xml" inheritAll="false" useNativeBasedir="true" />
@@ -121,6 +124,8 @@
     <unzip src="${artifacts.mps-editor-override}/mps-editor-override.zip" dest="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" />
     <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
     <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform.build}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
   </target>
   
   <target name="build" depends="assemble" />

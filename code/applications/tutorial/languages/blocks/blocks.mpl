@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="mbeddr.tutorial.blocks" uuid="07b580a3-cb92-4b5d-ab7c-9e2d58b9d602" doNotGenerateAdapters="true">
+<language namespace="mbeddr.tutorial.blocks" uuid="07b580a3-cb92-4b5d-ab7c-9e2d58b9d602">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="blocks2c" generatorUID="mbeddr.tutorial.blocks#6275956088647057041" uuid="a32979ae-2a0e-4807-a585-82f5cabcad4a">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
@@ -20,7 +24,6 @@
         <usedLanguage>3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)</usedLanguage>
         <usedLanguage>a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</usedLanguage>
         <usedLanguage>efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)</usedLanguage>
-        <usedLanguage>fd614f42-6c14-432b-8cad-9da2b5a2b43e(com.mbeddr.mpsutil.bldoc)</usedLanguage>
         <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>

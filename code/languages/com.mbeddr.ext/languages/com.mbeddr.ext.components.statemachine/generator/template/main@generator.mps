@@ -9,7 +9,6 @@
   <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
   <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
-  <language namespace="fd614f42-6c14-432b-8cad-9da2b5a2b43e(com.mbeddr.mpsutil.bldoc)" />
   <language namespace="d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)" />
   <language namespace="13a36f90-83c5-4bf6-9dd6-70e455f1ef36(com.mbeddr.ext.components.statemachine)" />
   <language namespace="564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)" />
@@ -22,16 +21,15 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="15" />
   <import index="eup9" modelUID="r:ab391014-3e08-4918-9cc5-1c93e3a55c72(com.mbeddr.ext.components.behavior)" version="0" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="10" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="11" implicit="yes" />
   <import index="tpf3" modelUID="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" version="0" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
@@ -103,10 +101,10 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="1786180596061183271" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="clqz.7851711690674279259" resolveInfo="TriggerSMStatement" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="2558982571829026905" nodeInfo="ng">
-        <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2558982571829026907" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="2558982571829027120" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="eventEnum" />
+        <node role="contentNode" roleId="tpf8.8900764248744213871" type=".com.mbeddr.core.modules.structure.ImplementationModule" id="2558982571829026907" nodeInfo="ng">
+          <property name="name" value="dummy" />
+          <node role="contents" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="2558982571829027120" nodeInfo="ng">
+            <property name="name" value="eventEnum" />
             <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="2558982571829027121" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="e1" />
             </node>
@@ -114,14 +112,14 @@
               <property name="name" nameId="tpck.1169194664001" value="e2" />
             </node>
           </node>
-          <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="2558982571829026918" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="instanceData" />
+          <node role="contents" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="2558982571829026918" nodeInfo="ng">
+            <property name="name" value="instanceData" />
           </node>
-          <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1598382569875755786" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="DUmmy" />
-            <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1598382569875755790" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="statemachineFunction" />
-              <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875755791" nodeInfo="ng">
+          <node role="contents" type=".com.mbeddr.ext.components.structure.AtomicComponent" id="1598382569875755786" nodeInfo="ng">
+            <property name="name" value="DUmmy" />
+            <node role="contents" type=".com.mbeddr.ext.components.structure.Runnable" id="1598382569875755790" nodeInfo="ng">
+              <property name="name" value="statemachineFunction" />
+              <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875755791" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875755794" nodeInfo="ng">
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1598382569875755795" nodeInfo="ng">
                     <property name="name" nameId="tpck.1169194664001" value="x" />
@@ -232,8 +230,8 @@
                         </node>
                       </node>
                     </node>
-                    <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="1598382569875755836" nodeInfo="ng">
-                      <node role="exprs" roleId="c4fa.5095889050031622571" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1598382569875755837" nodeInfo="ng">
+                    <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ArrayInitExpression" typeId="yq40.7350547698080060956" id="1598382569875755836" nodeInfo="ng">
+                      <node role="exprs" roleId="yq40.7350547698080060962" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1598382569875755837" nodeInfo="ng">
                         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="1598382569875755838" nodeInfo="nn">
                           <node role="sourceNodesQuery" roleId="tpf8.1167952069335" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="1598382569875755839" nodeInfo="nn">
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875755840" nodeInfo="sn">
@@ -286,12 +284,12 @@
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1598382569875755895" nodeInfo="ng">
-                    <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="1598382569875755896" nodeInfo="ng">
-                      <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="1598382569875755790" resolveInfo="statemachineFunction" />
-                      <node role="actuals" roleId="v7ag.5950410542643524495" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1598382569875755939" nodeInfo="ng">
-                        <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1598382569875755940" nodeInfo="ng">
-                          <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2558982571829030246" resolveInfo="theStatemachine" />
-                          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="1598382569875755941" nodeInfo="nn">
+                    <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.ext.components.structure.InternalRunnableCall" id="1598382569875755896" nodeInfo="ng">
+                      <link role="runnable" targetNodeId="1598382569875755790" resolveInfo="statemachineFunction" />
+                      <node role="actuals" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1598382569875755939" nodeInfo="ng">
+                        <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.modules.structure.GlobalVarRef" id="1598382569875755940" nodeInfo="ng">
+                          <link role="var" targetNodeId="2558982571829030246" resolveInfo="theStatemachine" />
+                          <node role="smodelAttribute" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="1598382569875755941" nodeInfo="nn">
                             <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="1598382569875755942" nodeInfo="nn">
                               <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875755943" nodeInfo="sn">
                                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1598382569875755944" nodeInfo="nn">
@@ -307,7 +305,7 @@
                           </node>
                         </node>
                       </node>
-                      <node role="actuals" roleId="v7ag.5950410542643524495" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="1598382569875755991" nodeInfo="ng">
+                      <node role="actuals" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="1598382569875755991" nodeInfo="ng">
                         <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="2558982571829027121" resolveInfo="e1" />
                         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1598382569875755992" nodeInfo="nn">
                           <property name="linkRole" nameId="tpck.1757699476691236116" value="literal" />
@@ -330,7 +328,7 @@
                           </node>
                         </node>
                       </node>
-                      <node role="actuals" roleId="v7ag.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1598382569875756017" nodeInfo="ng">
+                      <node role="actuals" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1598382569875756017" nodeInfo="ng">
                         <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1598382569875755832" resolveInfo="___args" />
                         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="2930946946121452159" nodeInfo="nn">
                           <node role="conditionFunction" roleId="tpf8.1167945861827" type="tpf8.IfMacro_Condition" typeId="tpf8.1167945743726" id="2930946946121452160" nodeInfo="nn">
@@ -353,7 +351,7 @@
                           </node>
                         </node>
                       </node>
-                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1598382569875755914" nodeInfo="nn">
+                      <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1598382569875755914" nodeInfo="nn">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="runnable" />
                         <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="1598382569875755915" nodeInfo="nn">
                           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875755916" nodeInfo="sn">
@@ -390,24 +388,24 @@
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1598382569875755792" nodeInfo="ng" />
               </node>
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277814" nodeInfo="ng" />
-              <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321303977" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="d" />
-                <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321303978" nodeInfo="ng">
+              <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277814" nodeInfo="ng" />
+              <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6091825850321303977" nodeInfo="ng">
+                <property name="name" value="d" />
+                <node role="type" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321303978" nodeInfo="ng">
                   <node role="baseType" roleId="yq40.2963921683065158286" type="clbe.StructType" typeId="clbe.6394819151180597816" id="6091825850321303979" nodeInfo="ng">
                     <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="2558982571829026918" resolveInfo="instanceData" />
                   </node>
                 </node>
               </node>
-              <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321303982" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="e" />
-                <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="6091825850321303983" nodeInfo="ng">
+              <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6091825850321303982" nodeInfo="ng">
+                <property name="name" value="e" />
+                <node role="type" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="6091825850321303983" nodeInfo="ng">
                   <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="2558982571829027120" resolveInfo="eventEnum" />
                 </node>
               </node>
-              <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321303816" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="args" />
-                <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="6091825850321303817" nodeInfo="ng">
+              <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6091825850321303816" nodeInfo="ng">
+                <property name="name" value="args" />
+                <node role="type" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="6091825850321303817" nodeInfo="ng">
                   <node role="baseType" roleId="yq40.2963921683065158286" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321303818" nodeInfo="ng">
                     <node role="baseType" roleId="yq40.2963921683065158286" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6091825850321303819" nodeInfo="ng" />
                   </node>
@@ -415,9 +413,9 @@
               </node>
             </node>
           </node>
-          <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="2558982571829030246" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="theStatemachine" />
-            <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="3912676515585629814" nodeInfo="ng">
+          <node role="contents" type=".com.mbeddr.core.modules.structure.GlobalVariableDeclaration" id="2558982571829030246" nodeInfo="ng">
+            <property name="name" value="theStatemachine" />
+            <node role="type" type="clbe.StructType" typeId="clbe.6394819151180597816" id="3912676515585629814" nodeInfo="ng">
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="2558982571829026918" resolveInfo="instanceData" />
             </node>
           </node>
@@ -460,29 +458,29 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="881042019525864948" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="clqz.1786180596061208520" resolveInfo="InitializeSMStatement" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="881042019525864949" nodeInfo="ng">
-        <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="881042019525864950" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="881042019525864954" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="instanceData" />
+        <node role="contentNode" roleId="tpf8.8900764248744213871" type=".com.mbeddr.core.modules.structure.ImplementationModule" id="881042019525864950" nodeInfo="ng">
+          <property name="name" value="dummy" />
+          <node role="contents" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="881042019525864954" nodeInfo="ng">
+            <property name="name" value="instanceData" />
           </node>
-          <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="881042019525865109" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="theStatemachine" />
-            <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="881042019525865110" nodeInfo="ng">
+          <node role="contents" type=".com.mbeddr.core.modules.structure.GlobalVariableDeclaration" id="881042019525865109" nodeInfo="ng">
+            <property name="name" value="theStatemachine" />
+            <node role="type" type="clbe.StructType" typeId="clbe.6394819151180597816" id="881042019525865110" nodeInfo="ng">
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="881042019525864954" resolveInfo="instanceData" />
             </node>
           </node>
-          <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="881042019525864967" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="DUmmy" />
-            <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="881042019525864968" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="statemachineInitFunction" />
-              <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="881042019525864969" nodeInfo="ng">
+          <node role="contents" type=".com.mbeddr.ext.components.structure.AtomicComponent" id="881042019525864967" nodeInfo="ng">
+            <property name="name" value="DUmmy" />
+            <node role="contents" type=".com.mbeddr.ext.components.structure.Runnable" id="881042019525864968" nodeInfo="ng">
+              <property name="name" value="statemachineInitFunction" />
+              <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="881042019525864969" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="881042019525873637" nodeInfo="ng">
-                  <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="881042019525873638" nodeInfo="ng">
-                    <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="881042019525864968" resolveInfo="statemachineInitFunction" />
-                    <node role="actuals" roleId="v7ag.5950410542643524495" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="881042019525873817" nodeInfo="ng">
-                      <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="881042019525873782" nodeInfo="ng">
-                        <link role="var" roleId="x27k.6610873504380357355" targetNodeId="881042019525865109" resolveInfo="theStatemachine" />
-                        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="881042019525881623" nodeInfo="nn">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.ext.components.structure.InternalRunnableCall" id="881042019525873638" nodeInfo="ng">
+                    <link role="runnable" targetNodeId="881042019525864968" resolveInfo="statemachineInitFunction" />
+                    <node role="actuals" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="881042019525873817" nodeInfo="ng">
+                      <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.modules.structure.GlobalVarRef" id="881042019525873782" nodeInfo="ng">
+                        <link role="var" targetNodeId="881042019525865109" resolveInfo="theStatemachine" />
+                        <node role="smodelAttribute" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="881042019525881623" nodeInfo="nn">
                           <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="881042019525881626" nodeInfo="nn">
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="881042019525881627" nodeInfo="sn">
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="881042019525881628" nodeInfo="nn">
@@ -498,7 +496,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="881042019525873829" nodeInfo="nn">
+                    <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="881042019525873829" nodeInfo="nn">
                       <property name="linkRole" nameId="tpck.1757699476691236116" value="runnable" />
                       <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="881042019525873830" nodeInfo="nn">
                         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="881042019525873831" nodeInfo="sn">
@@ -533,10 +531,10 @@
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="881042019525924364" nodeInfo="ng" />
                 </node>
               </node>
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="881042019525865099" nodeInfo="ng" />
-              <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321303848" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="d" />
-                <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321303849" nodeInfo="ng">
+              <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="881042019525865099" nodeInfo="ng" />
+              <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6091825850321303848" nodeInfo="ng">
+                <property name="name" value="d" />
+                <node role="type" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321303849" nodeInfo="ng">
                   <node role="baseType" roleId="yq40.2963921683065158286" type="clbe.StructType" typeId="clbe.6394819151180597816" id="6091825850321303850" nodeInfo="ng">
                     <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="881042019525864954" resolveInfo="instanceData" />
                   </node>
@@ -583,31 +581,31 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="1582169519238040091" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="clqz.1582169519237884298" resolveInfo="TriggerSelfStatement" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="1582169519238040093" nodeInfo="ng">
-        <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1582169519238040095" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="Dumy" />
-          <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1582169519238040096" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="statemachineInEvents" />
-            <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+        <node role="contentNode" roleId="tpf8.8900764248744213871" type=".com.mbeddr.core.modules.structure.ImplementationModule" id="1582169519238040095" nodeInfo="ng">
+          <property name="name" value="Dumy" />
+          <node role="contents" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1582169519238040096" nodeInfo="ng">
+            <property name="name" value="statemachineInEvents" />
+            <property name="exported" value="true" />
             <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="1582169519238040097" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="anEvent" />
             </node>
           </node>
-          <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1582169519238040098" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="statemachineStates" />
-            <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+          <node role="contents" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1582169519238040098" nodeInfo="ng">
+            <property name="name" value="statemachineStates" />
+            <property name="exported" value="true" />
             <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="1582169519238040099" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="aState" />
             </node>
           </node>
-          <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="1582169519238040100" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="statemachineData" />
-            <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+          <node role="contents" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="1582169519238040100" nodeInfo="ng">
+            <property name="name" value="statemachineData" />
+            <property name="exported" value="true" />
           </node>
-          <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1582169519238040101" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="Dummy" />
-            <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1582169519238040102" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="statemachineFunction" />
-              <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1582169519238040103" nodeInfo="ng">
+          <node role="contents" type=".com.mbeddr.ext.components.structure.AtomicComponent" id="1582169519238040101" nodeInfo="ng">
+            <property name="name" value="Dummy" />
+            <node role="contents" type=".com.mbeddr.ext.components.structure.Runnable" id="1582169519238040102" nodeInfo="ng">
+              <property name="name" value="statemachineFunction" />
+              <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1582169519238040103" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1582169519238040183" nodeInfo="ng">
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1582169519238040184" nodeInfo="ng">
                     <property name="name" nameId="tpck.1169194664001" value="x" />
@@ -701,8 +699,8 @@
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1582169519238040241" nodeInfo="ng">
                     <property name="name" nameId="tpck.1169194664001" value="___args" />
-                    <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="1582169519238040242" nodeInfo="ng">
-                      <node role="exprs" roleId="c4fa.5095889050031622571" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1582169519238040243" nodeInfo="ng">
+                    <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ArrayInitExpression" typeId="yq40.7350547698080060956" id="1582169519238040242" nodeInfo="ng">
+                      <node role="exprs" roleId="yq40.7350547698080060962" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1582169519238040243" nodeInfo="ng">
                         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="1582169519238040244" nodeInfo="nn">
                           <node role="sourceNodesQuery" roleId="tpf8.1167952069335" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="1582169519238040245" nodeInfo="nn">
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1582169519238040246" nodeInfo="sn">
@@ -772,12 +770,12 @@
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1582169519238040177" nodeInfo="ng">
-                    <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="1582169519238040178" nodeInfo="ng">
-                      <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="1582169519238040102" resolveInfo="statemachineFunction" />
-                      <node role="actuals" roleId="v7ag.5950410542643524495" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1582169519238040179" nodeInfo="ng">
-                        <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321303800" resolveInfo="instance" />
+                    <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.ext.components.structure.InternalRunnableCall" id="1582169519238040178" nodeInfo="ng">
+                      <link role="runnable" targetNodeId="1582169519238040102" resolveInfo="statemachineFunction" />
+                      <node role="actuals" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="1582169519238040179" nodeInfo="ng">
+                        <link role="arg" targetNodeId="6091825850321303800" resolveInfo="instance" />
                       </node>
-                      <node role="actuals" roleId="v7ag.5950410542643524495" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="1582169519238040181" nodeInfo="ng">
+                      <node role="actuals" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="1582169519238040181" nodeInfo="ng">
                         <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="1582169519238040097" resolveInfo="anEvent" />
                         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1582169519238040325" nodeInfo="nn">
                           <property name="linkRole" nameId="tpck.1757699476691236116" value="literal" />
@@ -800,7 +798,7 @@
                           </node>
                         </node>
                       </node>
-                      <node role="actuals" roleId="v7ag.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1582169519238040275" nodeInfo="ng">
+                      <node role="actuals" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1582169519238040275" nodeInfo="ng">
                         <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1582169519238040241" resolveInfo="___args" />
                         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="2930946946121432251" nodeInfo="nn">
                           <node role="conditionFunction" roleId="tpf8.1167945861827" type="tpf8.IfMacro_Condition" typeId="tpf8.1167945743726" id="2930946946121432252" nodeInfo="nn">
@@ -823,7 +821,7 @@
                           </node>
                         </node>
                       </node>
-                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1582169519238040285" nodeInfo="nn">
+                      <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1582169519238040285" nodeInfo="nn">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="runnable" />
                         <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="1582169519238040286" nodeInfo="nn">
                           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1582169519238040287" nodeInfo="sn">
@@ -852,24 +850,24 @@
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1582169519238040280" nodeInfo="ng" />
                 </node>
               </node>
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1582169519238040124" nodeInfo="ng" />
-              <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321303800" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="instance" />
-                <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321303801" nodeInfo="ng">
+              <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1582169519238040124" nodeInfo="ng" />
+              <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6091825850321303800" nodeInfo="ng">
+                <property name="name" value="instance" />
+                <node role="type" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321303801" nodeInfo="ng">
                   <node role="baseType" roleId="yq40.2963921683065158286" type="clbe.StructType" typeId="clbe.6394819151180597816" id="6091825850321303802" nodeInfo="ng">
                     <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1582169519238040100" resolveInfo="statemachineData" />
                   </node>
                 </node>
               </node>
-              <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321303913" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="event" />
-                <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="6091825850321303914" nodeInfo="ng">
+              <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6091825850321303913" nodeInfo="ng">
+                <property name="name" value="event" />
+                <node role="type" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="6091825850321303914" nodeInfo="ng">
                   <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="1582169519238040096" resolveInfo="statemachineInEvents" />
                 </node>
               </node>
-              <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321304128" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="arguments" />
-                <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="6091825850321304129" nodeInfo="ng">
+              <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6091825850321304128" nodeInfo="ng">
+                <property name="name" value="arguments" />
+                <node role="type" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="6091825850321304129" nodeInfo="ng">
                   <node role="baseType" roleId="yq40.2963921683065158286" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321304130" nodeInfo="ng">
                     <node role="baseType" roleId="yq40.2963921683065158286" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6091825850321304131" nodeInfo="ng" />
                   </node>
@@ -916,19 +914,19 @@
         </node>
       </node>
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="567269909073854615" nodeInfo="ng">
-        <node role="contentNode" roleId="tpf8.8900764248744213871" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1598382569875777223" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="Dummy" />
-          <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1598382569875777224" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="someRunnable" />
-            <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321304043" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="arg" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="6091825850321304044" nodeInfo="ng" />
+        <node role="contentNode" roleId="tpf8.8900764248744213871" type=".com.mbeddr.ext.components.structure.AtomicComponent" id="1598382569875777223" nodeInfo="ng">
+          <property name="name" value="Dummy" />
+          <node role="contents" type=".com.mbeddr.ext.components.structure.Runnable" id="1598382569875777224" nodeInfo="ng">
+            <property name="name" value="someRunnable" />
+            <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6091825850321304043" nodeInfo="ng">
+              <property name="name" value="arg" />
+              <node role="type" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="6091825850321304044" nodeInfo="ng" />
             </node>
-            <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875777225" nodeInfo="ng">
+            <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875777225" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1598382569875777228" nodeInfo="ng">
-                <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="1598382569875777229" nodeInfo="ng">
-                  <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="1598382569875777224" resolveInfo="someRunnable" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1598382569875777231" nodeInfo="nn">
+                <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.ext.components.structure.InternalRunnableCall" id="1598382569875777229" nodeInfo="ng">
+                  <link role="runnable" targetNodeId="1598382569875777224" resolveInfo="someRunnable" />
+                  <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1598382569875777231" nodeInfo="nn">
                     <property name="linkRole" nameId="tpck.1757699476691236116" value="runnable" />
                     <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="1598382569875777232" nodeInfo="nn">
                       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875777233" nodeInfo="sn">
@@ -964,7 +962,7 @@
                       </node>
                     </node>
                   </node>
-                  <node role="actuals" roleId="v7ag.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1598382569875780229" nodeInfo="ng">
+                  <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1598382569875780229" nodeInfo="ng">
                     <property name="value" nameId="mj1l.2212975673976043696" value="10" />
                     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="1598382569875780231" nodeInfo="nn">
                       <node role="sourceNodesQuery" roleId="tpf8.1168278589236" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="1598382569875780234" nodeInfo="nn">
@@ -985,7 +983,7 @@
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1598382569875777230" nodeInfo="ng" />
               </node>
             </node>
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277818" nodeInfo="ng" />
+            <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277818" nodeInfo="ng" />
           </node>
         </node>
       </node>
@@ -1018,25 +1016,25 @@
   <root type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="3825316005689014357" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="reduce_Statemachine" />
     <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="8yj6.8663730687027689188" resolveInfo="StatemachineComponentAdapter" />
-    <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3825316005689014362" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Dumy" />
-      <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1786180596061285023" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="statemachineInEvents" />
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    <node role="contentNode" roleId="tpf8.1092060348987" type=".com.mbeddr.core.modules.structure.ImplementationModule" id="3825316005689014362" nodeInfo="ng">
+      <property name="name" value="Dumy" />
+      <node role="contents" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1786180596061285023" nodeInfo="ng">
+        <property name="name" value="statemachineInEvents" />
+        <property name="exported" value="true" />
         <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8444296659257928637" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="anEvent" />
         </node>
       </node>
-      <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1786180596061208468" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="statemachineStates" />
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="contents" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1786180596061208468" nodeInfo="ng">
+        <property name="name" value="statemachineStates" />
+        <property name="exported" value="true" />
         <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8444296659257928639" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="aState" />
         </node>
       </node>
-      <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="1786180596061185503" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="statemachineData" />
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="contents" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="1786180596061185503" nodeInfo="ng">
+        <property name="name" value="statemachineData" />
+        <property name="exported" value="true" />
         <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="881042019525847361" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="__currentState" />
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="881042019525847362" nodeInfo="ng">
@@ -1051,16 +1049,16 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1598382569875111027" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Dummy" />
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1598382569875111028" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="statemachineInitFunction" />
-          <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875111029" nodeInfo="ng">
+      <node role="contents" type=".com.mbeddr.ext.components.structure.AtomicComponent" id="1598382569875111027" nodeInfo="ng">
+        <property name="name" value="Dummy" />
+        <node role="contents" type=".com.mbeddr.ext.components.structure.Runnable" id="1598382569875111028" nodeInfo="ng">
+          <property name="name" value="statemachineInitFunction" />
+          <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875111029" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="881042019525801217" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="881042019525801238" nodeInfo="ng">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="7255548950662169021" nodeInfo="ng">
-                  <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="881042019525801218" nodeInfo="ng">
-                    <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321303891" resolveInfo="instance" />
+                  <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="881042019525801218" nodeInfo="ng">
+                    <link role="arg" targetNodeId="6091825850321303891" resolveInfo="instance" />
                   </node>
                   <node role="target" roleId="mj1l.7034214596252529803" type="clbe.GenericMemberRef" typeId="clbe.7034214596253391076" id="7255548950662169022" nodeInfo="ng">
                     <link role="member" roleId="clbe.7034214596253391078" targetNodeId="881042019525847361" resolveInfo="__currentState" />
@@ -1116,8 +1114,8 @@
                   </node>
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="7255548950662185501" nodeInfo="ng">
-                  <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="881042019525801272" nodeInfo="ng">
-                    <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321303891" resolveInfo="instance" />
+                  <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="881042019525801272" nodeInfo="ng">
+                    <link role="arg" targetNodeId="6091825850321303891" resolveInfo="instance" />
                   </node>
                   <node role="target" roleId="mj1l.7034214596252529803" type="clbe.GenericMemberRef" typeId="clbe.7034214596253391076" id="7255548950662185502" nodeInfo="ng">
                     <link role="member" roleId="clbe.7034214596253391078" targetNodeId="881042019525847442" resolveInfo="var" />
@@ -1253,8 +1251,8 @@
               </node>
             </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1598382569875111033" nodeInfo="ng" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="1598382569875755899" nodeInfo="nn">
+          <node role="smodelAttribute" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1598382569875111033" nodeInfo="ng" />
+          <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="1598382569875755899" nodeInfo="nn">
             <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
             <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="1598382569875755900" nodeInfo="nn">
               <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875755901" nodeInfo="sn">
@@ -1274,10 +1272,10 @@
               </node>
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277874" nodeInfo="ng" />
-          <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321303891" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="instance" />
-            <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321303892" nodeInfo="ng">
+          <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277874" nodeInfo="ng" />
+          <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6091825850321303891" nodeInfo="ng">
+            <property name="name" value="instance" />
+            <node role="type" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321303892" nodeInfo="ng">
               <node role="baseType" roleId="yq40.2963921683065158286" type="clbe.StructType" typeId="clbe.6394819151180597816" id="6091825850321303893" nodeInfo="ng">
                 <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1786180596061185503" resolveInfo="statemachineData" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="6091825850321303894" nodeInfo="nn">
@@ -1304,9 +1302,9 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="881042019525847303" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="statemachineExecuteFunction" />
-          <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="881042019525847304" nodeInfo="ng">
+        <node role="contents" type=".com.mbeddr.ext.components.structure.Runnable" id="881042019525847303" nodeInfo="ng">
+          <property name="name" value="statemachineExecuteFunction" />
+          <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="881042019525847304" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="881042019525847305" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="i" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateCallMacro" typeId="tpf8.1510949579266781519" id="881042019525847306" nodeInfo="nn">
@@ -1327,8 +1325,8 @@
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="881042019525847313" nodeInfo="ng" />
             </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="881042019525847314" nodeInfo="ng" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="881042019525847315" nodeInfo="nn">
+          <node role="smodelAttribute" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="881042019525847314" nodeInfo="ng" />
+          <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="881042019525847315" nodeInfo="nn">
             <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
             <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="881042019525847316" nodeInfo="nn">
               <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="881042019525847317" nodeInfo="sn">
@@ -1348,10 +1346,10 @@
               </node>
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="881042019525847324" nodeInfo="ng" />
-          <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321303868" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="instance" />
-            <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321303869" nodeInfo="ng">
+          <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="881042019525847324" nodeInfo="ng" />
+          <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6091825850321303868" nodeInfo="ng">
+            <property name="name" value="instance" />
+            <node role="type" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321303869" nodeInfo="ng">
               <node role="baseType" roleId="yq40.2963921683065158286" type="clbe.StructType" typeId="clbe.6394819151180597816" id="6091825850321303870" nodeInfo="ng">
                 <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1786180596061185503" resolveInfo="statemachineData" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="6091825850321303871" nodeInfo="nn">
@@ -1377,9 +1375,9 @@
               </node>
             </node>
           </node>
-          <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321304047" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="event" />
-            <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="6091825850321304048" nodeInfo="ng">
+          <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6091825850321304047" nodeInfo="ng">
+            <property name="name" value="event" />
+            <node role="type" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="6091825850321304048" nodeInfo="ng">
               <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="1786180596061285023" resolveInfo="statemachineInEvents" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="6091825850321304049" nodeInfo="nn">
                 <property name="linkRole" nameId="tpck.1757699476691236116" value="enum" />
@@ -1403,9 +1401,9 @@
               </node>
             </node>
           </node>
-          <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321303856" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="arguments" />
-            <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="6091825850321303857" nodeInfo="ng">
+          <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6091825850321303856" nodeInfo="ng">
+            <property name="name" value="arguments" />
+            <node role="type" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="6091825850321303857" nodeInfo="ng">
               <node role="baseType" roleId="yq40.2963921683065158286" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6091825850321303858" nodeInfo="ng">
                 <node role="baseType" roleId="yq40.2963921683065158286" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6091825850321303859" nodeInfo="ng" />
               </node>
@@ -1488,72 +1486,72 @@
   <root type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="4514118643327004318" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="weave_ProvidedOperationBinding" />
     <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="8yj6.4514118643320650007" resolveInfo="ProvidedOperationBinding" />
-    <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4514118643327014364" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="dummy" />
-      <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="4514118643327015467" nodeInfo="ng">
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="ProvidedInterface" />
-        <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="4514118643327015476" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="run" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4514118643327015475" nodeInfo="ng">
+    <node role="contentNode" roleId="tpf8.1092060348987" type=".com.mbeddr.core.modules.structure.ImplementationModule" id="4514118643327014364" nodeInfo="ng">
+      <property name="name" value="dummy" />
+      <node role="contents" type=".com.mbeddr.ext.components.structure.ClientServerInterface" id="4514118643327015467" nodeInfo="ng">
+        <property name="exported" value="true" />
+        <property name="name" value="ProvidedInterface" />
+        <node role="contents" type=".com.mbeddr.ext.components.structure.Operation" id="4514118643327015476" nodeInfo="ng">
+          <property name="name" value="run" />
+          <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4514118643327015475" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="parameters" roleId="v7ag.4491876417845683832" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="4514118643327015522" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="anArg" />
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4514118643327015521" nodeInfo="ng">
+          <node role="parameters" type=".com.mbeddr.ext.components.structure.OperationParameter" id="4514118643327015522" nodeInfo="ng">
+            <property name="name" value="anArg" />
+            <node role="type" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4514118643327015521" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
           </node>
         </node>
       </node>
-      <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4514118643327015460" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1377168326193_2" />
+      <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="4514118643327015460" nodeInfo="ng">
+        <property name="name" value="empty_1377168326193_2" />
       </node>
-      <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="4514118643327015452" nodeInfo="ng">
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="dummy" />
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="4514118643327015648" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="providedInterface" />
-          <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="4514118643327015467" resolveInfo="ProvidedInterface" />
+      <node role="contents" type=".com.mbeddr.ext.components.structure.AtomicComponent" id="4514118643327015452" nodeInfo="ng">
+        <property name="exported" value="true" />
+        <property name="name" value="dummy" />
+        <node role="contents" type=".com.mbeddr.ext.components.structure.ProvidedPort" id="4514118643327015648" nodeInfo="ng">
+          <property name="name" value="providedInterface" />
+          <link role="intf" targetNodeId="4514118643327015467" resolveInfo="ProvidedInterface" />
         </node>
-        <node role="contents" roleId="v7ag.6041318036221669720" type="8yj6.StatemachineComponentAdapter" typeId="8yj6.8663730687027689188" id="4514118643327053442" nodeInfo="ng">
-          <node role="machine" roleId="8yj6.8663730687027689238" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="4514118643327053444" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="aSM" />
-            <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="4514118643327057231" resolveInfo="dummy" />
-            <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="4514118643327057160" nodeInfo="ng" />
-            <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="4514118643327057168" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="evt" />
-              <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="4514118643327057175" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="arg" />
-                <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4514118643327057174" nodeInfo="ng">
+        <node role="contents" type=".com.mbeddr.ext.components.statemachine.structure.StatemachineComponentAdapter" id="4514118643327053442" nodeInfo="ng">
+          <node role="machine" type=".com.mbeddr.ext.statemachines.structure.Statemachine" id="4514118643327053444" nodeInfo="ng">
+            <property name="name" value="aSM" />
+            <link role="initial" targetNodeId="4514118643327057231" resolveInfo="dummy" />
+            <node role="contents" type=".com.mbeddr.ext.statemachines.structure.EmptyStatemachineContent" id="4514118643327057160" nodeInfo="ng" />
+            <node role="contents" type=".com.mbeddr.ext.statemachines.structure.InEvent" id="4514118643327057168" nodeInfo="ng">
+              <property name="name" value="evt" />
+              <node role="args" type=".com.mbeddr.ext.statemachines.structure.EventArg" id="4514118643327057175" nodeInfo="ng">
+                <property name="name" value="arg" />
+                <node role="type" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4514118643327057174" nodeInfo="ng">
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 </node>
               </node>
             </node>
-            <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="4514118643327057231" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="dummy" />
+            <node role="contents" type=".com.mbeddr.ext.statemachines.structure.State" id="4514118643327057231" nodeInfo="ng">
+              <property name="name" value="dummy" />
             </node>
           </node>
         </node>
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4514118643327060913" nodeInfo="ng" />
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="4514118643327067441" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="smInstance" />
-          <node role="type" roleId="mj1l.318113533128716676" type="clqz.StatemachineType" typeId="clqz.7851711690674263345" id="4514118643327067440" nodeInfo="ng">
-            <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="4514118643327053444" resolveInfo="aSM" />
+        <node role="contents" type=".com.mbeddr.ext.components.structure.EmptyComponentContent" id="4514118643327060913" nodeInfo="ng" />
+        <node role="contents" type=".com.mbeddr.ext.components.structure.Field" id="4514118643327067441" nodeInfo="ng">
+          <property name="name" value="smInstance" />
+          <node role="type" type=".com.mbeddr.ext.statemachines.structure.StatemachineType" id="4514118643327067440" nodeInfo="ng">
+            <link role="machine" targetNodeId="4514118643327053444" resolveInfo="aSM" />
           </node>
         </node>
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4514118643327015747" nodeInfo="ng" />
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4514118643327015651" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="providedInterface_run" />
-          <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4514118643327015652" nodeInfo="ng">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="4514118643327057243" nodeInfo="ng">
-              <link role="event" roleId="clqz.1786180596061231919" targetNodeId="4514118643327057168" resolveInfo="evt" />
-              <node role="statemachine" roleId="clqz.7851711690674279260" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="4514118643327109033" nodeInfo="ng">
-                <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="4514118643327067441" resolveInfo="smInstance" />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4514118643327117788" nodeInfo="nn">
+        <node role="contents" type=".com.mbeddr.ext.components.structure.EmptyComponentContent" id="4514118643327015747" nodeInfo="ng" />
+        <node role="contents" type=".com.mbeddr.ext.components.structure.Runnable" id="4514118643327015651" nodeInfo="ng">
+          <property name="name" value="providedInterface_run" />
+          <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4514118643327015652" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.ext.statemachines.structure.TriggerSMStatement" id="4514118643327057243" nodeInfo="ng">
+              <link role="event" targetNodeId="4514118643327057168" resolveInfo="evt" />
+              <node role="statemachine" type=".com.mbeddr.ext.components.structure.FieldRef" id="4514118643327109033" nodeInfo="ng">
+                <link role="field" targetNodeId="4514118643327067441" resolveInfo="smInstance" />
+                <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4514118643327117788" nodeInfo="nn">
                   <property name="linkRole" nameId="tpck.1757699476691236116" value="field" />
                   <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="4514118643327117789" nodeInfo="nn">
                     <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4514118643327117790" nodeInfo="sn">
@@ -1655,9 +1653,9 @@
                   </node>
                 </node>
               </node>
-              <node role="args" roleId="clqz.2558982571829095260" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="4514118643327109073" nodeInfo="ng">
-                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="4514118643329948532" resolveInfo="anArg" />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="4514118643327109096" nodeInfo="nn">
+              <node role="args" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="4514118643327109073" nodeInfo="ng">
+                <link role="arg" targetNodeId="4514118643329948532" resolveInfo="anArg" />
+                <node role="smodelAttribute" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="4514118643327109096" nodeInfo="nn">
                   <node role="sourceNodesQuery" roleId="tpf8.1167952069335" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="4514118643327109099" nodeInfo="nn">
                     <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4514118643327109100" nodeInfo="sn">
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4514118643327109106" nodeInfo="nn">
@@ -1677,7 +1675,7 @@
                   </node>
                 </node>
               </node>
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4514118643327355763" nodeInfo="nn">
+              <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4514118643327355763" nodeInfo="nn">
                 <property name="linkRole" nameId="tpck.1757699476691236116" value="event" />
                 <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="4514118643327355764" nodeInfo="nn">
                   <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4514118643327355765" nodeInfo="sn">
@@ -1698,10 +1696,10 @@
               </node>
             </node>
           </node>
-          <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="4514118643327015654" nodeInfo="ng">
-            <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="4514118643327015648" resolveInfo="providedInterface" />
-            <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="4514118643327015476" resolveInfo="run" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4514118643327016200" nodeInfo="nn">
+          <node role="trigger" type=".com.mbeddr.ext.components.structure.OperationTrigger" id="4514118643327015654" nodeInfo="ng">
+            <link role="providedPort" targetNodeId="4514118643327015648" resolveInfo="providedInterface" />
+            <link role="calledOperation" targetNodeId="4514118643327015476" resolveInfo="run" />
+            <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4514118643327016200" nodeInfo="nn">
               <property name="linkRole" nameId="tpck.1757699476691236116" value="providedPort" />
               <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="4514118643327016203" nodeInfo="nn">
                 <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4514118643327016204" nodeInfo="sn">
@@ -1716,7 +1714,7 @@
                 </node>
               </node>
             </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4514118643327016530" nodeInfo="nn">
+            <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4514118643327016530" nodeInfo="nn">
               <property name="linkRole" nameId="tpck.1757699476691236116" value="calledOperation" />
               <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="4514118643327016533" nodeInfo="nn">
                 <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4514118643327016534" nodeInfo="sn">
@@ -1732,8 +1730,8 @@
               </node>
             </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="4514118643327015768" nodeInfo="ng" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4514118643327458449" nodeInfo="nn">
+          <node role="smodelAttribute" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="4514118643327015768" nodeInfo="ng" />
+          <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4514118643327458449" nodeInfo="nn">
             <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
             <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="4514118643327458450" nodeInfo="nn">
               <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4514118643327458451" nodeInfo="sn">
@@ -1748,13 +1746,13 @@
               </node>
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4514118643329948531" nodeInfo="ng">
+          <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4514118643329948531" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="4514118643329948532" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="anArg" />
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4514118643329948533" nodeInfo="ng">
+          <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="4514118643329948532" nodeInfo="ng">
+            <property name="name" value="anArg" />
+            <node role="type" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4514118643329948533" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="4514118643330001704" nodeInfo="nn">
@@ -1772,7 +1770,7 @@
                 </node>
               </node>
             </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="4514118643329956998" nodeInfo="nn">
+            <node role="smodelAttribute" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="4514118643329956998" nodeInfo="nn">
               <node role="sourceNodesQuery" roleId="tpf8.1167952069335" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="4514118643329957001" nodeInfo="nn">
                 <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4514118643329957002" nodeInfo="sn">
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4514118643329957008" nodeInfo="nn">
@@ -1791,7 +1789,7 @@
                 </node>
               </node>
             </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4514118643330014084" nodeInfo="nn">
+            <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4514118643330014084" nodeInfo="nn">
               <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
               <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="4514118643330014087" nodeInfo="nn">
                 <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4514118643330014088" nodeInfo="sn">
@@ -1911,30 +1909,30 @@
   <root type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="7156732329322238042" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="weave_StatemachineActionInComponent" />
     <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="clqz.8409287311039031605" resolveInfo="AbstractAction" />
-    <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7156732329322253640" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="dummy" />
-      <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="5059948731776399167" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="statemachineData" />
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    <node role="contentNode" roleId="tpf8.1092060348987" type=".com.mbeddr.core.modules.structure.ImplementationModule" id="7156732329322253640" nodeInfo="ng">
+      <property name="name" value="dummy" />
+      <node role="contents" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="5059948731776399167" nodeInfo="ng">
+        <property name="name" value="statemachineData" />
+        <property name="exported" value="true" />
       </node>
-      <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7156732329322322333" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1378727855334_1" />
+      <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="7156732329322322333" nodeInfo="ng">
+        <property name="name" value="empty_1378727855334_1" />
       </node>
-      <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7156732329322324173" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1378727855559_2" />
+      <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="7156732329322324173" nodeInfo="ng">
+        <property name="name" value="empty_1378727855559_2" />
       </node>
-      <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7156732329322325140" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1378727855612_3" />
+      <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="7156732329322325140" nodeInfo="ng">
+        <property name="name" value="empty_1378727855612_3" />
       </node>
-      <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="7156732329322253645" nodeInfo="ng">
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="dummy" />
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7156732329322256813" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="anAction" />
-          <property name="inline" nameId="v7ag.4429602430543053637" value="true" />
-          <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="5059948731776493426" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="instance" />
-            <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5059948731776493427" nodeInfo="ng">
+      <node role="contents" type=".com.mbeddr.ext.components.structure.AtomicComponent" id="7156732329322253645" nodeInfo="ng">
+        <property name="exported" value="true" />
+        <property name="name" value="dummy" />
+        <node role="contents" type=".com.mbeddr.ext.components.structure.Runnable" id="7156732329322256813" nodeInfo="ng">
+          <property name="name" value="anAction" />
+          <property name="inline" value="true" />
+          <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="5059948731776493426" nodeInfo="ng">
+            <property name="name" value="instance" />
+            <node role="type" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5059948731776493427" nodeInfo="ng">
               <node role="baseType" roleId="yq40.2963921683065158286" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5059948731776493428" nodeInfo="ng">
                 <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="ol92.5059948731776399167" resolveInfo="statemachineData" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="5059948731776493429" nodeInfo="nn">
@@ -1964,7 +1962,7 @@
               </node>
             </node>
           </node>
-          <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329322256814" nodeInfo="ng">
+          <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329322256814" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5059948731776616167" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="x" />
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5059948731776616165" nodeInfo="ng">
@@ -1992,12 +1990,12 @@
               </node>
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7156732329322256697" nodeInfo="ng">
+          <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7156732329322256697" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="7156732329322256841" nodeInfo="ng" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="7156732329322295244" nodeInfo="nn">
+          <node role="smodelAttribute" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="7156732329322256841" nodeInfo="ng" />
+          <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="7156732329322295244" nodeInfo="nn">
             <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
             <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="7156732329322295245" nodeInfo="nn">
               <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7156732329322295246" nodeInfo="sn">
@@ -2049,22 +2047,22 @@
   <root type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="7156732329324771662" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="callAbstractActionInComponent" />
     <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="clqz.8409287311039031605" resolveInfo="AbstractAction" />
-    <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7156732329324772761" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="dummy" />
-      <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="7156732329324772766" nodeInfo="ng">
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="comp" />
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7156732329324772922" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="anAction" />
-          <property name="inline" nameId="v7ag.4429602430543053637" value="true" />
-          <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329324772923" nodeInfo="ng">
+    <node role="contentNode" roleId="tpf8.1092060348987" type=".com.mbeddr.core.modules.structure.ImplementationModule" id="7156732329324772761" nodeInfo="ng">
+      <property name="name" value="dummy" />
+      <node role="contents" type=".com.mbeddr.ext.components.structure.AtomicComponent" id="7156732329324772766" nodeInfo="ng">
+        <property name="exported" value="true" />
+        <property name="name" value="comp" />
+        <node role="contents" type=".com.mbeddr.ext.components.structure.Runnable" id="7156732329324772922" nodeInfo="ng">
+          <property name="name" value="anAction" />
+          <property name="inline" value="true" />
+          <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7156732329324772923" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329324773368" nodeInfo="ng">
-              <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="7156732329324773367" nodeInfo="ng">
-                <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="7156732329324772922" resolveInfo="anAction" />
-                <node role="actuals" roleId="v7ag.5950410542643524495" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="7156732329324773396" nodeInfo="ng">
-                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="7156732329324772951" resolveInfo="instance" />
+              <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.ext.components.structure.InternalRunnableCall" id="7156732329324773367" nodeInfo="ng">
+                <link role="runnable" targetNodeId="7156732329324772922" resolveInfo="anAction" />
+                <node role="actuals" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="7156732329324773396" nodeInfo="ng">
+                  <link role="arg" targetNodeId="7156732329324772951" resolveInfo="instance" />
                 </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="7156732329324773558" nodeInfo="nn">
+                <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="7156732329324773558" nodeInfo="nn">
                   <property name="linkRole" nameId="tpck.1757699476691236116" value="runnable" />
                   <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="7156732329324773559" nodeInfo="nn">
                     <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7156732329324773560" nodeInfo="sn">
@@ -2083,13 +2081,13 @@
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="7156732329325402169" nodeInfo="ng" />
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7156732329324772770" nodeInfo="ng">
+          <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7156732329324772770" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="7156732329324772951" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="instance" />
-            <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="7156732329324772979" nodeInfo="ng">
+          <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="7156732329324772951" nodeInfo="ng">
+            <property name="name" value="instance" />
+            <node role="type" type="yq40.PointerType" typeId="yq40.279446265608459824" id="7156732329324772979" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               <node role="baseType" roleId="yq40.2963921683065158286" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7156732329324772950" nodeInfo="ng">

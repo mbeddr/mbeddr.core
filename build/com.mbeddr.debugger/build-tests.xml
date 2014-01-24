@@ -52,7 +52,7 @@
       <fileset dir="${build.tmp}/default/test.debugger.cdt.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.debugger.cdt-models">
-      <fileset dir="${mbeddr.core}/tests/test.debugger.cdt/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/tests/test.debugger.cdt/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.debugger.cdt-src.jar">
       <fileset dir="${mbeddr.core}/tests/test.debugger.cdt/source_gen" includes="**/*.java" />
@@ -85,7 +85,7 @@
       <fileset dir="${build.tmp}/default/test.debugger.core.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.debugger.core">
-      <fileset dir="${mbeddr.core}/tests/test.debugger.core" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/tests/test.debugger.core" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.debugger.core-src.jar">
       <fileset dir="${mbeddr.core}/tests/test.debugger.core/source_gen" includes="**/*.java" />
@@ -107,10 +107,10 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
   </target>
   
   <target name="build" depends="assemble" />

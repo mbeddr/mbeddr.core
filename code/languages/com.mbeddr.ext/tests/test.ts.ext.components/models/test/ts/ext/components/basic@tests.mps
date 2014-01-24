@@ -8,16 +8,16 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="15" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
-  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="22" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="10" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="11" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" implicit="yes" />
   <import index="g88q" modelUID="r:34a46663-c408-427f-8f72-90db466b797d(com.mbeddr.ext.compositecomponents.structure)" version="-1" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="4429602430543937640" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Abstract" />
@@ -1557,8 +1557,8 @@
                 </node>
                 <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9178537171064585134" nodeInfo="ng">
                   <link role="element" roleId="k146.3073566081777391258" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
-                  <node role="value" roleId="k146.3073566081777391257" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="6316915880083711170" nodeInfo="ng">
-                    <link role="element" roleId="clbe.2003957539749894106" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
+                  <node role="value" roleId="k146.3073566081777391257" type="k146.ValuedElementRefInWithStmnt" typeId="k146.7350547698092916920" id="6316915880083711170" nodeInfo="ng">
+                    <link role="element" roleId="k146.7350547698092916921" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
                   </node>
                 </node>
                 <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9178537171064585140" nodeInfo="ng">
@@ -1568,8 +1568,8 @@
                       <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                       <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                     </node>
-                    <node role="left" roleId="mj1l.8860443239512128064" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="9178537171064585144" nodeInfo="ng">
-                      <link role="element" roleId="clbe.2003957539749894106" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
+                    <node role="left" roleId="mj1l.8860443239512128064" type="k146.ValuedElementRefInWithStmnt" typeId="k146.7350547698092916920" id="9178537171064585144" nodeInfo="ng">
+                      <link role="element" roleId="k146.7350547698092916921" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
                     </node>
                     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="9178537171064585154" nodeInfo="ng">
                       <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="9178537171064585155" nodeInfo="ng" />

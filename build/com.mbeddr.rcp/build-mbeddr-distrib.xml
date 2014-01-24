@@ -41,6 +41,7 @@
   <property name="artifacts.mpsTroveCollections" location="${mps.home}/plugins" />
   <property name="artifacts.mpsBuild" location="${mps.home}/plugins" />
   <property name="artifacts.mps" location="${mps.home}" />
+  <property name="artifacts.com.mbeddr.platform.build" location="../com.mbeddr.platform/build/artifacts/com.mbeddr.platform.build" />
   <property file="${artifacts.jetbrains.mps.standalone}/build.properties" prefix="import.jetbrains.mps.standalone" />
   <property file="${artifacts.com.mbeddr.mpsutil.build}/build.properties" prefix="import.com.mbeddr.mpsutil.build" />
   <property name="jetbrains.mps.standalone.buildnumber" value="${import.jetbrains.mps.standalone.jetbrains.mps.standalone.buildnumber}" />
@@ -93,6 +94,7 @@
       <tarfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${build.tmp}/deps/mps-tables/mps-tables.zip" prefix="mbeddr ${version}/plugins" />
       <tarfileset dir="${mps.home}/bin/linux" prefix="mbeddr ${version}/bin">
         <exclude name="**/fsnotifier" />
@@ -126,6 +128,7 @@
       <zipfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-tables/mps-tables.zip" prefix="mbeddr ${version}/plugins" />
       <zipfileset file="${mps.home}/bin/mps.vmoptions" prefix="mbeddr ${version}/bin" />
       <zipfileset file="${mps.home}/bin/mps.exe.vmoptions" prefix="mbeddr ${version}/bin" />
@@ -191,6 +194,7 @@
       <zipfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset dir="${build.tmp}/deps/mps-tables/mps-tables.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
       <zipfileset file="${mps.home}/bin/mac/Contents/Info.plist" prefix="mbeddr ${buildnumber}.app/Contents" />
       <zipfileset file="${mps.home}/bin/mac/Contents/Resources/mps.icns" prefix="mbeddr ${buildnumber}.app/Contents/Resources" />
@@ -209,6 +213,7 @@
     <ant antfile="build-mbeddr-branding.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="build-standalone-mps.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.mpsutil/build.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../com.mbeddr.platform/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.core/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-components.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-statemachine.xml" inheritAll="false" useNativeBasedir="true" />
@@ -261,6 +266,8 @@
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" />
     <unzip src="${artifacts.mps-editor-override}/mps-editor-override.zip" dest="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform.build}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
     <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
     <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
   </target>
