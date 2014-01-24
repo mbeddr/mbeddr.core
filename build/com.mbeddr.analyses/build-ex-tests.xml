@@ -72,7 +72,7 @@
       <fileset dir="${build.tmp}/default/test.analyses.cbmc.testcode_analyses_config.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.cbmc.testcode_analyses_config-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.analyses.cbmc.testcode_analyses_config-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/source_gen" includes="**/*.java" />
@@ -104,7 +104,7 @@
       <fileset dir="${build.tmp}/default/test.analysis.nfm.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analysis.nfm-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.analysis.nfm/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.analysis.nfm/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.analysis.nfm-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.analysis.nfm/source_gen" includes="**/*.java" />
@@ -136,10 +136,10 @@
       <fileset dir="${build.tmp}/default/test.analysis.formsera.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analysis.formsera">
-      <fileset dir="${mbeddr.analyses}/tests/test.analysis.formsera" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.analysis.formsera" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analysis.formsera-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.analysis.formsera/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.analysis.formsera/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.analysis.formsera-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.analysis.formsera/source_gen" includes="**/*.java" />
@@ -172,10 +172,10 @@
       <fileset dir="${build.tmp}/default/test.analyses.nusmv.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.analyses.nusmv">
-      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.analyses.nusmv-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.analyses.nusmv-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/source_gen" includes="**/*.java" />
@@ -210,10 +210,10 @@
       <fileset dir="${build.tmp}/default/test.ex.analyses.fm.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.fm">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.fm-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ex.analyses.fm-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm/source_gen" includes="**/*.java" />
@@ -248,7 +248,7 @@
       <fileset dir="${build.tmp}/default/test.ex.analyses.yices.dectab.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.analyses.yices">
-      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.yices" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.yices" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ex.analyses.yices.dectab-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.yices/source_gen" includes="**/*.java" />
@@ -442,13 +442,13 @@
       <library file="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components.mock.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components.test.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.compositecomponents.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/components.devkit" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip/mbeddr.statemachine/languages/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachines.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip/mbeddr.statemachine/languages/com.mbeddr.ext.statemachine/statemachines.devkit" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.c.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/physicalunits.devkit" />
-      <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typsystem.trace.jar" />
@@ -1099,7 +1099,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.pointers.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.statements.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />

@@ -89,7 +89,7 @@
       <fileset dir="${build.tmp}/default/test.debugging.cross.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.debugger.tests-tests-test.debugging.cross-models">
-      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/tests/test.debugging.cross/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/tests/test.debugging.cross/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.debugger.testing.tests.cross.zip/debugger.testing.tests.cross/languages/com.mbeddr.debugger.testing.cross.tests/test.debugging.cross-src.jar">
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/tests/test.debugging.cross/source_gen" includes="**/*.java" />
@@ -254,7 +254,6 @@
       <library file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.util.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/debugger-testing.devkit" />
-      <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typsystem.trace.jar" />

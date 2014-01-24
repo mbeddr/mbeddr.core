@@ -60,7 +60,7 @@
       <fileset dir="${build.tmp}/default/test.ts.cc.requirements.scenarios.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.cc.requirements.scenarios-models">
-      <fileset dir="${mbeddr.cc}/tests/test.ts.cc.requirements.scenarios/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.cc}/tests/test.ts.cc.requirements.scenarios/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ts.cc.requirements.scenarios-src.jar">
       <fileset dir="${mbeddr.cc}/tests/test.ts.cc.requirements.scenarios/source_gen" includes="**/*.java" />
@@ -94,7 +94,7 @@
       <fileset dir="${build.tmp}/default/test.ts.cc.var.c.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.cc.var.c-models">
-      <fileset dir="${mbeddr.cc}/tests/test.ts.cc.var.c/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.cc}/tests/test.ts.cc.var.c/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ts.cc.var.c-src.jar">
       <fileset dir="${mbeddr.cc}/tests/test.ts.cc.var.c/source_gen" includes="**/*.java" />
@@ -126,10 +126,10 @@
       <fileset dir="${build.tmp}/default/test.ts.requirements.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.cc.requirements">
-      <fileset dir="${mbeddr.cc}/tests/test.ts.cc.requirements" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.cc}/tests/test.ts.cc.requirements" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.cc.requirements-models">
-      <fileset dir="${mbeddr.cc}/tests/test.ts.cc.requirements/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.cc}/tests/test.ts.cc.requirements/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ts.requirements-src.jar">
       <fileset dir="${mbeddr.cc}/tests/test.ts.cc.requirements/source_gen" includes="**/*.java" />
@@ -169,10 +169,10 @@
     <unzip src="${artifacts.com.mbeddr.doc.build}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" />
     <unzip src="${artifacts.com.mbeddr.cc.ple.build}/com.mbeddr.cc.ple.zip" dest="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
-    <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
     <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
     <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
+    <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -300,7 +300,6 @@
       <library file="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.latex.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.documentation.devkit" />
-      <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typsystem.trace.jar" />
@@ -647,7 +646,6 @@
       <pathelement location="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.latex.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.documentation.devkit" />
-      <pathelement location="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
       <pathelement location="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typsystem.trace.jar" />
