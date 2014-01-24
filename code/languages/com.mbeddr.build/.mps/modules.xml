@@ -24,6 +24,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.statemachinesInComponents.dev.build/com.mbeddr.ext.statemachinesInComponents.dev.build.msd" folder="ext" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.units.dev.build/com.mbeddr.ext.units.dev.build.msd" folder="ext" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dev.build/build.msd" folder="mpsutil" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform.dev.build/com.mbeddr.platform.dev.build.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.spawner.dev.build/debugger.msd" folder="spawner" />
     </projectModules>
   </component>
