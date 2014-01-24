@@ -173,9 +173,6 @@
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="2484777001246306402" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="auf4.6247780594427548258" resolveInfo="com.mbeddr.cc.req.build" />
     </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="2484777001246306457" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="qqt4.1777424746412726020" resolveInfo="advanced.compositeComponent.dev" />
-    </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="5100083648679014637" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="ax0f.6247780594427434811" resolveInfo="com.mbeddr.debugger.build" />
     </node>
@@ -267,9 +264,6 @@
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="7247348105538998616" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="yexh.8334796989975465219" resolveInfo="com.mbeddr.analyses.yices.zip" />
-          </node>
-          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="2484777001246304544" nodeInfo="ng">
-            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="qqt4.1777424746412726032" resolveInfo="com.mbeddr.advanced.compositecomponents.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="2042272859110657426" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="fswa.8607331426312061453" resolveInfo="com.mbeddr.doc.zip" />
