@@ -10,6 +10,7 @@
     <dependency reexport="false">7f0575ee-ce26-49b7-a897-0e0b348b06af(com.mbeddr.core.dev.build)</dependency>
     <dependency reexport="false">16f4da20-e2ec-436c-9423-ccaadb6e9c38(com.mbeddr.debugger.dev.build)</dependency>
     <dependency reexport="false">dcd3e3f0-fb75-4b63-83e0-7a84aeddbb20(com.mbeddr.mpsutil.dev.build)</dependency>
+    <dependency reexport="false">d9577847-5af6-4401-b634-6305196f4f02(com.mbeddr.platform.dev.build)</dependency>
     <dependency reexport="false">ba19fd84-07a8-4c0c-b27a-83b037421bea(com.mbeddr.spawner.dev.build)</dependency>
     <dependency reexport="false">830041d3-fd09-4005-819d-9d2e06a676ba(de.slisson.mps.richtext.build)</dependency>
     <dependency reexport="false">f635fc54-10fa-4740-93b9-f8dfe124ea1b(de.slisson.mps.tables.build)</dependency>

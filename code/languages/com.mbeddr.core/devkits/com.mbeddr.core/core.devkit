@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="com.mbeddr.core" uuid="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584">
   <exported-language name="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
-  <exported-language name="6ba563df-3f75-4e84-8c14-6626bdd5f00d(com.mbeddr.core.runconfiguration)" />
   <exported-language name="ad5e9db1-9600-47c7-86ef-614165b281b8(com.mbeddr.core.legacy)" />
   <exported-language name="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <exported-language name="ebb5e132-d298-4649-b320-b3f4d7f3acff(com.mbeddr.core.debug.blext)" />
@@ -16,8 +15,5 @@
   <exported-language name="62296a07-bc38-46d2-8034-198c24063588(com.mbeddr.core.modules.gen)" />
   <exported-language name="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" />
   <exported-language name="f93d1dbe-bfd1-42dd-932a-f375fa6f5373(com.mbeddr.core.make)" />
-  <exported-solutions>
-    <exported-solution>c0488c1e-322f-4f38-92d4-5520a7ce96c1(com.mbeddr.plantuml.pluginSolution)</exported-solution>
-  </exported-solutions>
 </dev-kit>
 

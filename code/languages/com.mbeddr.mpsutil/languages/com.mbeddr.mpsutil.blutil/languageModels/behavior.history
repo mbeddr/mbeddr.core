@@ -2,12 +2,12 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="20u6" modelUID="r:bb095207-e9e1-446e-bd19-f8d726d52200(com.mbeddr.mpsutil.blutil.typesystem)" version="-1" />
-      <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="0" />
       <model index="p15z" modelUID="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" version="-1" />
-      <model index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="4" />
-      <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="3" />
+      <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="0" />
+      <model index="20u6" modelUID="r:bb095207-e9e1-446e-bd19-f8d726d52200(com.mbeddr.mpsutil.blutil.typesystem)" version="-1" />
       <model index="9zoj" modelUID="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" version="-1" />
+      <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="3" />
+      <model index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="4" />
     </dependencies>
     <move id="hba4.6616025724454822143" to="vs0r.6616025724454843605" />
     <move id="p15z.6616025724454822180" to="hwgx.6616025724454843608" />
@@ -43,6 +43,57 @@
     <move id="20u6.6616025724454822159" to="9zoj.6616025724454843621" />
     <move id="20u6.6616025724454822178" to="9zoj.6616025724454843633" />
     <move id="20u6.6616025724454822186" to="9zoj.6616025724454843629" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="suat" modelUID="r:04f9aa4f-f74c-44ef-a7bd-0be31a199626(com.mbeddr.mpsutil.bldoc.editor)" version="-1" />
+      <model index="7aka" modelUID="r:02a5dde5-8560-4c26-8875-8f2a79444bd3(com.mbeddr.mpsutil.bldoc.structure)" version="-1" />
+      <model index="p15z" modelUID="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" version="0" />
+      <model index="cpo1" modelUID="r:f07c2659-c5a1-4d1a-b8e6-3dd3562cad61(com.mbeddr.mpsutil.bldoc.behavior)" version="-1" />
+      <model index="muut" modelUID="r:7b6c196f-8133-489b-a5b2-6ed29b884e93(com.mbeddr.mpsutil.blutil.editor)" version="0" />
+      <model index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="14" />
+    </dependencies>
+    <move id="7aka.6925419451529198196" to="hba4.3693790620639876319" />
+    <move id="7aka.6925419451529157942" to="hba4.3693790620639876318" />
+    <move id="7aka.6569298311080551571" to="hba4.3693790620639876321" />
+    <move id="7aka.6569298311080551570" to="hba4.3693790620639876320" />
+    <move id="suat.6925419451529198182" to="muut.3693790620639876334" />
+    <move id="suat.6925419451529198205" to="muut.3693790620639876346" />
+    <move id="suat.6925419451529198179" to="muut.3693790620639876332" />
+    <move id="suat.6925419451529157950" to="muut.3693790620639876328" />
+    <move id="suat.6925419451529198206" to="muut.3693790620639876347" />
+    <move id="suat.6925419451529198207" to="muut.3693790620639876339" />
+    <move id="suat.6925419451529198178" to="muut.3693790620639876331" />
+    <move id="suat.6925419451529198728" to="muut.3693790620639876323" />
+    <move id="suat.6925419451529198203" to="muut.3693790620639876344" />
+    <move id="suat.6925419451529198731" to="muut.3693790620639876326" />
+    <move id="suat.6925419451529157952" to="muut.3693790620639876330" />
+    <move id="suat.6925419451529198202" to="muut.3693790620639876343" />
+    <move id="suat.6925419451529198201" to="muut.3693790620639876342" />
+    <move id="suat.6925419451529198181" to="muut.3693790620639876333" />
+    <move id="suat.6925419451529198200" to="muut.3693790620639876341" />
+    <move id="suat.6925419451529198197" to="muut.3693790620639876338" />
+    <move id="suat.6925419451529157951" to="muut.3693790620639876329" />
+    <move id="suat.6925419451529198732" to="muut.3693790620639876327" />
+    <move id="suat.6925419451529198194" to="muut.3693790620639876335" />
+    <move id="suat.6925419451529198209" to="muut.3693790620639876349" />
+    <move id="suat.4195764031267338846" to="muut.3693790620639876336" />
+    <move id="suat.6925419451529198199" to="muut.3693790620639876340" />
+    <move id="suat.6925419451529157945" to="muut.3693790620639876322" />
+    <move id="suat.6925419451529198729" to="muut.3693790620639876324" />
+    <move id="suat.6925419451529157949" to="muut.3693790620639876337" />
+    <move id="suat.6925419451529198204" to="muut.3693790620639876345" />
+    <move id="suat.4195764031267338847" to="muut.3693790620639876348" />
+    <move id="suat.6925419451529157947" to="muut.3693790620639876325" />
+    <move id="cpo1.4195764031267334414" to="p15z.3693790620639876353" />
+    <move id="cpo1.4195764031267334411" to="p15z.3693790620639876350" />
+    <move id="cpo1.4195764031267334436" to="p15z.3693790620639876355" />
+    <move id="cpo1.4195764031267334413" to="p15z.3693790620639876352" />
+    <move id="cpo1.4195764031267334412" to="p15z.3693790620639876351" />
+    <move id="cpo1.4195764031267334415" to="p15z.3693790620639876356" />
+    <move id="cpo1.4195764031267334470" to="p15z.3693790620639876358" />
+    <move id="cpo1.4195764031267334442" to="p15z.3693790620639876357" />
+    <move id="cpo1.4195764031267334464" to="p15z.3693790620639876354" />
   </StructureModification>
 </history>
 
