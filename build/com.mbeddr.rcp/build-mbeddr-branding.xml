@@ -4,6 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.rcp.branding" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.rcp.branding" />
   <property name="mbeddr.github.core.home" location="${basedir}/../.." />
+  <property name="platform.artifacts" location="" />
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}/lib" />

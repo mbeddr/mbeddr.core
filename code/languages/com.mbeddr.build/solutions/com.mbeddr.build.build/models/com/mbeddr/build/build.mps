@@ -710,6 +710,9 @@
         </node>
       </node>
     </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="5302886665841647523" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="platform.artifacts" />
+    </node>
   </root>
   <root type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="1373401575433957920" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.tutorial-tests.build" />
@@ -983,6 +986,9 @@
         </node>
       </node>
     </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="5302886665841639577" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="platform.artifacts" />
+    </node>
   </root>
   <root type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="1373401575434228864" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.tutorial-solutions.build" />
@@ -1246,6 +1252,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="5302886665841645724" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="platform.artifacts" />
     </node>
   </root>
 </model>
