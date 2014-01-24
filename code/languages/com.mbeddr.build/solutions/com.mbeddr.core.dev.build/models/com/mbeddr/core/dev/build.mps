@@ -1394,11 +1394,6 @@
             <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="8628756186118765589" resolveInfo="com.mbeddr.core.base" />
           </node>
         </node>
-        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="467084113680844248" nodeInfo="nn">
-          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="467084113680844249" nodeInfo="ng">
-            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="al5i.8628756186118380548" resolveInfo="com.mbeddr.mpsutil.bldoc" />
-          </node>
-        </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="467084113680844250" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="467084113680844251" nodeInfo="ng">
             <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="ax0f.8628756186118765569" resolveInfo="com.mbeddr.core.debug" />

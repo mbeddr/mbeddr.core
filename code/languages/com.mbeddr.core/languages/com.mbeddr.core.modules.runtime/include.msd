@@ -5,7 +5,9 @@
       <sourceRoot location="." />
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot path="${module}/lib/commons-io-2.4.jar" type="java_classes" />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="commons-io-2.4.jar" />
+    </modelRoot>
   </models>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/commons-io-2.4.jar" />
@@ -23,7 +25,6 @@
     <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
   </dependencies>
   <usedLanguages>
-    <usedLanguage>fd614f42-6c14-432b-8cad-9da2b5a2b43e(com.mbeddr.mpsutil.bldoc)</usedLanguage>
     <usedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</usedLanguage>
     <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
     <usedLanguage>f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)</usedLanguage>
