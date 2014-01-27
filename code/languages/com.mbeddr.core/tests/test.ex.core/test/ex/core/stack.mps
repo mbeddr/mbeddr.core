@@ -55,7 +55,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1373459996627_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="k146.StackDeclaration" typeId="k146.291293396404994003" id="291293396407505211" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="stack" />
+      <property name="name" nameId="tpck.1169194664001" value="uint8_3_stack" />
       <node role="baseType" roleId="k146.291293396404994004" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="291293396407505373" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -79,11 +79,11 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="291293396407505419" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="s" />
           <node role="type" roleId="mj1l.318113533128716676" type="k146.StackType" typeId="k146.291293396405106761" id="291293396407505418" nodeInfo="ng">
-            <link role="stack" roleId="k146.291293396405106762" targetNodeId="291293396407505211" resolveInfo="stack" />
+            <link role="stack" roleId="k146.291293396405106762" targetNodeId="291293396407505211" resolveInfo="uint8_3_stack" />
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.StackInitExpression" typeId="k146.291293396406263895" id="291293396407505584" nodeInfo="ng">
             <node role="type" roleId="k146.291293396426369667" type="k146.StackType" typeId="k146.291293396405106761" id="291293396428114187" nodeInfo="ng">
-              <link role="stack" roleId="k146.291293396405106762" targetNodeId="291293396407505211" resolveInfo="stack" />
+              <link role="stack" roleId="k146.291293396405106762" targetNodeId="291293396407505211" resolveInfo="uint8_3_stack" />
             </node>
           </node>
         </node>
