@@ -317,6 +317,7 @@
    	   <antcall target="test-cc" />
    	   <antcall target="test-ext" />
    	   <antcall target="test-analyses" />
+   	   <antcall target="build-tutorial" />	   	   
    	   <antcall target="test-tutorial" />
        <!-- <antcall target="test-debugging" /> -->
   </target>	        
@@ -432,7 +433,7 @@
 	  <ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${run-tests.task}" />	
   </target>
   
-  <target name="test-tutorial">	  
+  <target name="build-tutorial">	  
 	  <ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-plugins.task}" />
 	  <ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-generated-code.task}" />	  	  	  
 	  <ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
@@ -442,7 +443,9 @@
 	  <ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-generated-code.task}" />	  		  
 	  <ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${build-plugin.task}" />
-
+  </target>     
+  
+  <target name="test-tutorial"  >	  
 	  <ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-plugins.task}" />
 	  <ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-generated-code.task}" />	  		  
 	  <ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
