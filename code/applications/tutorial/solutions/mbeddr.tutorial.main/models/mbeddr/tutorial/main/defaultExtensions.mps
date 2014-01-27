@@ -2188,7 +2188,7 @@
           <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="1731059994647814153" resolveInfo="InMemoryStorage" />
         </node>
         <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="1731059994647878534" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="ip" />
+          <property name="name" nameId="tpck.1169194664001" value="ipc" />
           <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="1731059994647866538" resolveInfo="Interpolator" />
           <node role="initializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="1731059994647898645" nodeInfo="ng">
             <link role="field" roleId="v7ag.785275130114861598" targetNodeId="1731059994647897644" resolveInfo="divident" />
@@ -2199,7 +2199,7 @@
         </node>
         <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="1731059994647878537" nodeInfo="ng">
           <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1731059994647878538" nodeInfo="ng">
-            <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1731059994647878534" resolveInfo="ip" />
+            <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1731059994647878534" resolveInfo="ipc" />
             <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="1731059994647866541" resolveInfo="store" />
           </node>
           <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1731059994647878539" nodeInfo="ng">
@@ -2210,7 +2210,7 @@
         <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="1731059994647888775" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="ip" />
           <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="1731059994647888776" nodeInfo="ng">
-            <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="1731059994647878534" resolveInfo="ip" />
+            <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="1731059994647878534" resolveInfo="ipc" />
             <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="1731059994647866539" resolveInfo="processor" />
           </node>
         </node>
@@ -2939,13 +2939,13 @@
       <node role="contents" roleId="x27k.6512473996287153139" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="5160057464294662008" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="instancesJudging" />
         <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="5160057464294662009" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="j" />
+          <property name="name" nameId="tpck.1169194664001" value="theJudge" />
           <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="1731059994647919796" resolveInfo="Judge" />
         </node>
         <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="5160057464294662011" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="j" />
           <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="5160057464294662012" nodeInfo="ng">
-            <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="5160057464294662009" resolveInfo="j" />
+            <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="5160057464294662009" resolveInfo="theJudge" />
             <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="1731059994647919797" resolveInfo="judger" />
           </node>
         </node>
@@ -8354,11 +8354,11 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="6700886800242040150" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="instances" />
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6700886800242040154" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="gps" />
+        <property name="name" nameId="tpck.1169194664001" value="gps_comp" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6700886800242034993" resolveInfo="GPS" />
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6700886800242040156" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="si" />
+        <property name="name" nameId="tpck.1169194664001" value="indicator" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6700886800242035078" resolveInfo="SpeedIndicator" />
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6700886800242040152" nodeInfo="ng">
@@ -8371,7 +8371,7 @@
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6700886800242035173" resolveInfo="sp" />
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="6700886800242040162" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6700886800242040156" resolveInfo="si" />
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6700886800242040156" resolveInfo="indicator" />
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6700886800242035079" resolveInfo="speed" />
         </node>
       </node>
@@ -8381,21 +8381,21 @@
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6700886800242035170" resolveInfo="pp" />
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="6700886800242040159" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6700886800242040154" resolveInfo="gps" />
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6700886800242040154" resolveInfo="gps_comp" />
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6700886800242034994" resolveInfo="pos" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="6700886800242040168" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="gps" />
         <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="6700886800242040169" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="6700886800242040154" resolveInfo="gps" />
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="6700886800242040154" resolveInfo="gps_comp" />
           <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="6700886800242035122" resolveInfo="timed" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="6700886800242040170" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="si" />
         <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="6700886800242040171" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="6700886800242040156" resolveInfo="si" />
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="6700886800242040156" resolveInfo="indicator" />
           <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="6700886800242035125" resolveInfo="timed" />
         </node>
       </node>
