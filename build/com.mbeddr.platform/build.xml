@@ -87,7 +87,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.core.base.pluginSolution.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.base-solutions-pluginSolution-models">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.base/solutions/pluginSolution/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.base/solutions/pluginSolution/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution-src.jar">
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.base/solutions/pluginSolution/source_gen" includes="**/*.java" />
@@ -126,10 +126,10 @@
       <fileset dir="${build.tmp}/java/out/com.mbeddr.core.base#8626086128958648025" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.base-generator-template">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.base/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.base/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.base-languageModels">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.base/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.base/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base-src.jar">
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.base/generator/source_gen" includes="**/*.java" />
@@ -189,7 +189,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.plantuml.pluginSolution.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.plantuml-solutions-pluginSolution-models">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.plantuml/solutions/pluginSolution/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.plantuml/solutions/pluginSolution/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.plantuml.pluginSolution-src.jar">
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.plantuml/solutions/pluginSolution/source_gen" includes="**/*.java" />
@@ -226,7 +226,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.core.lib.xml.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.lib.xml-models">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.lib.xml/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.lib.xml/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.lib.xml-src.jar">
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.lib.xml/source_gen" includes="**/*.java" />
@@ -247,7 +247,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.platform.dev.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.platform.dev.build-models">
-      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.platform.dev.build-src.jar">
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform.dev.build/source_gen" includes="**/*.java" />

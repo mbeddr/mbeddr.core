@@ -80,7 +80,7 @@
       <fileset dir="${build.tmp}/default/test.analyses.cbmc.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.cbmc-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.analyses.cbmc-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc/source_gen" includes="**/*.java" />
@@ -112,7 +112,7 @@
       <fileset dir="${build.tmp}/default/test.analyses.cbmc.testcode_analyses_config.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.cbmc.testcode_analyses_config-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.analyses.cbmc.testcode_analyses_config-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/source_gen" includes="**/*.java" />
@@ -144,7 +144,7 @@
       <fileset dir="${build.tmp}/default/test.analyses.cbmc.testcode.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.cbmc.testcode-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.analyses.cbmc.testcode-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/source_gen" includes="**/*.java" />
@@ -176,10 +176,10 @@
       <fileset dir="${build.tmp}/default/test.analyses.nusmv.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.analyses.nusmv">
-      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.analyses.nusmv-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.analyses.nusmv-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/source_gen" includes="**/*.java" />
@@ -214,10 +214,10 @@
       <fileset dir="${build.tmp}/default/test.analyses.statemachine.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.statemachine">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.statemachine-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.analyses.statemachine-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine/source_gen" includes="**/*.java" />
@@ -251,7 +251,7 @@
       <fileset dir="${build.tmp}/default/test.ts.analysis.statemachine.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analysis.statemachine-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ts.analysis.statemachine-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/source_gen" includes="**/*.java" />
@@ -282,7 +282,7 @@
       <fileset dir="${build.tmp}/default/test.ts.analyses.fmod.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analysis.fmod-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.analysis.fmod/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.analysis.fmod/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ts.analyses.fmod-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.analysis.fmod/source_gen" includes="**/*.java" />
@@ -313,7 +313,7 @@
       <fileset dir="${build.tmp}/default/test.ts.analyses.yices.dectab.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.yices.dectab-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.yices.dectab/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.yices.dectab/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ts.analyses.yices.dectab-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.yices.dectab/source_gen" includes="**/*.java" />
@@ -347,7 +347,7 @@
       <fileset dir="${build.tmp}/default/test.ex.analyses.yices.dectab.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.analyses.yices">
-      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.yices" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.yices" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ex.analyses.yices.dectab-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.ex.analyses.yices/source_gen" includes="**/*.java" />
@@ -381,10 +381,10 @@
       <fileset dir="${build.tmp}/default/test.ex.analyses.fm.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.fm">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.analyses.fm-models">
-      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ex.analyses.fm-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.ts.analyses.fm/source_gen" includes="**/*.java" />
@@ -415,14 +415,14 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
     <unzip src="${artifacts.com.mbeddr.platform.build}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />

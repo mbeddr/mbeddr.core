@@ -68,10 +68,10 @@
       <fileset dir="${build.tmp}/default/test.ex.ext.components.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.components">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.components" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.components" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.components-models">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.components/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.components/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ex.ext.components-src.jar">
       <fileset dir="${mbeddr.ext}/tests/test.ex.ext.components/source_gen" includes="**/*.java" />
@@ -104,10 +104,10 @@
       <fileset dir="${build.tmp}/default/test.ex.ext.comp_mocking.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.comp_mocking">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.comp_mocking-models">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ex.ext.comp_mocking-src.jar">
       <fileset dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/source_gen" includes="**/*.java" />
@@ -140,10 +140,10 @@
       <fileset dir="${build.tmp}/default/test.ex.ext.physicalunits.c.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.physicalunits.c">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.physicalunits.c-models">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ex.ext.physicalunits.c-src.jar">
       <fileset dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/source_gen" includes="**/*.java" />
@@ -176,7 +176,7 @@
       <fileset dir="${build.tmp}/default/test.ex.ext.statemachine.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.statemachine">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.statemachine" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.statemachine" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ex.ext.statemachine-src.jar">
       <fileset dir="${mbeddr.ext}/tests/test.ex.ext.statemachine/source_gen" includes="**/*.java" />
@@ -199,14 +199,14 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
     <unzip src="${artifacts.com.mbeddr.platform.build}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
     <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />

@@ -68,10 +68,10 @@
       <fileset dir="${build.tmp}/default/test.ts.core.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.core">
-      <fileset dir="${mbeddr.core}/tests/test.ts.core" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/tests/test.ts.core" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.core-models">
-      <fileset dir="${mbeddr.core}/tests/test.ts.core/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/tests/test.ts.core/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ts.core-src.jar">
       <fileset dir="${mbeddr.core}/tests/test.ts.core/source_gen" includes="**/*.java" />
@@ -103,7 +103,7 @@
       <fileset dir="${build.tmp}/default/test.ts.core.dataflow.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.core.dataflow-models">
-      <fileset dir="${mbeddr.core}/tests/test.ts.core.dataflow/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/tests/test.ts.core.dataflow/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ts.core.dataflow-src.jar">
       <fileset dir="${mbeddr.core}/tests/test.ts.core.dataflow/source_gen" includes="**/*.java" />

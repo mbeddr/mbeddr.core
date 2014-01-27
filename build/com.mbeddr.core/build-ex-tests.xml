@@ -66,7 +66,7 @@
       <fileset dir="${build.tmp}/default/test.ex.core.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.core">
-      <fileset dir="${mbeddr.core}/tests/test.ex.core" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/tests/test.ex.core" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ex.core-src.jar">
       <fileset dir="${mbeddr.core}/tests/test.ex.core/source_gen" includes="**/*.java" />
@@ -98,10 +98,10 @@
       <fileset dir="${build.tmp}/default/test.ex.core.libs.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.core.libs">
-      <fileset dir="${mbeddr.core}/tests/test.ex.core.libs" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/tests/test.ex.core.libs" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.core.libs-models">
-      <fileset dir="${mbeddr.core}/tests/test.ex.core.libs/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/tests/test.ex.core.libs/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ex.core.libs-src.jar">
       <fileset dir="${mbeddr.core}/tests/test.ex.core.libs/source_gen" includes="**/*.java" />
@@ -134,10 +134,10 @@
       <fileset dir="${build.tmp}/default/test.ex.errorreporting.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.errorreporting">
-      <fileset dir="${mbeddr.core}/tests/test.ex.errorreporting" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/tests/test.ex.errorreporting" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.errorreporting-models">
-      <fileset dir="${mbeddr.core}/tests/test.ex.errorreporting/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/tests/test.ex.errorreporting/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test.ex.errorreporting-src.jar">
       <fileset dir="${mbeddr.core}/tests/test.ex.errorreporting/source_gen" includes="**/*.java" />
@@ -170,10 +170,10 @@
       <fileset dir="${build.tmp}/default/aLibrary.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-aLibrary">
-      <fileset dir="${mbeddr.core}/tests/aLibrary" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/tests/aLibrary" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-aLibrary-models">
-      <fileset dir="${mbeddr.core}/tests/aLibrary/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/tests/aLibrary/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/aLibrary-src.jar">
       <fileset dir="${mbeddr.core}/tests/aLibrary/source_gen" includes="**/*.java" />
