@@ -20,6 +20,7 @@
   <property name="artifacts.com.mbeddr.ext.components.build" location="${basedir}/../com.mbeddr.ext/build/artifacts/com.mbeddr.ext.components/" />
   <property name="artifacts.com.mbeddr.ext.units.build" location="${basedir}/../com.mbeddr.ext/build/artifacts/com.mbeddr.ext.units/" />
   <property name="artifacts.com.mbeddr.analyses.base.build" location="${basedir}/../com.mbeddr.analyses/build/artifacts/com.mbeddr.analyses.base/" />
+  <property name="platform.artifacts" location="${mbeddr.github.core.home}/build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform.build" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
@@ -34,6 +35,7 @@
   <property name="artifacts.com.mbeddr.doc.build" location="${artifacts.com.mbeddr.doc.build}" />
   <property name="artifacts.com.mbeddr.ext.units" location="${artifacts.com.mbeddr.ext.units.build}" />
   <property name="artifacts.com.mbeddr.analyses.base" location="${artifacts.com.mbeddr.analyses.base.build}" />
+  <property name="artifacts.com.mbeddr.platform.build" location="${platform.artifacts}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.mpsutil.build}/build.properties" prefix="import.com.mbeddr.mpsutil.build" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -72,6 +74,7 @@
         <depends>com.mbeddr.cc.req</depends>
         <depends>com.mbeddr.mpsutil</depends>
         <depends>de.slisson.mps.richtext</depends>
+        <depends>com.mbeddr.platform</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -109,10 +112,10 @@
       <fileset dir="${build.tmp}/java/out/com.mbeddr.analyses.yices#1611636138415493472" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.analyses.yices-generator-template">
-      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.analyses.yices-languageModels">
-      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices-src.jar">
       <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices/generator/source_gen" includes="**/*.java" />
@@ -156,10 +159,10 @@
       <fileset dir="${build.tmp}/java/out/com.mbeddr.analyses.yices.dectab#2548021041601019876" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.analyses.yices.dectab-generator-template">
-      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.dectab/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.dectab/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.analyses.yices.dectab-languageModels">
-      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.dectab/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.dectab/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.dectab-src.jar">
       <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.dectab/generator/source_gen" includes="**/*.java" />
@@ -202,10 +205,10 @@
       <fileset dir="${build.tmp}/java/out/com.mbeddr.analyses.yices.fm#3320624468180814156" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.analyses.yices.fm-generator-template">
-      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.fm/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.fm/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.analyses.yices.fm-languageModels">
-      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.fm/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.fm/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.fm-src.jar">
       <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.fm/generator/source_gen" includes="**/*.java" />
@@ -237,10 +240,10 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.analyses.yices.rt.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.analyses.yices.rt">
-      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.rt" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.rt" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.analyses.yices.rt-models">
-      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.rt/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.rt/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.rt-src.jar">
       <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.rt/source_gen" includes="**/*.java" />
@@ -274,7 +277,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.analyses.yices.dectab.pluginSolution.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.analyses.yices.dectab-solutions-pluginSolution-models">
-      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.dectab/solutions/pluginSolution/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.dectab/solutions/pluginSolution/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.dectab.pluginSolution-src.jar">
       <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.dectab/solutions/pluginSolution/source_gen" includes="**/*.java" />
@@ -307,7 +310,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.analyses.yices.fm.pluginSolution.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.analyses.yices.fm-solutions-pluginSolution-models">
-      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.fm/solutions/pluginSolution/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.fm/solutions/pluginSolution/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.fm.pluginSolution-src.jar">
       <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.yices.fm/solutions/pluginSolution/source_gen" includes="**/*.java" />
@@ -328,7 +331,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.analyses.yices.dev.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.analyses.yices.dev.build-models">
-      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.yices.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.yices.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.analyses.yices.zip/mbeddr.yices/languages/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.dev.build-src.jar">
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.yices.dev.build/source_gen" includes="**/*.java" />
@@ -347,32 +350,34 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
-    <unzip src="${artifacts.com.mbeddr.cc.req.build}/com.mbeddr.cc.req.zip" dest="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
-    <unzip src="${artifacts.com.mbeddr.ext.units}/com.mbeddr.ext.units.zip" dest="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip" />
-    <unzip src="${artifacts.com.mbeddr.analyses.base}/com.mbeddr.analyses.base.zip" dest="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
-    <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
-    <unzip src="${artifacts.com.mbeddr.doc.build}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip" />
+    <unzip src="${artifacts.com.mbeddr.analyses.base}/com.mbeddr.analyses.base.zip" dest="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" />
     <unzip src="${artifacts.com.mbeddr.cc.ple.build}/com.mbeddr.cc.ple.zip" dest="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
+    <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform.build}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
+    <unzip src="${artifacts.com.mbeddr.ext.units}/com.mbeddr.ext.units.zip" dest="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
+    <unzip src="${artifacts.com.mbeddr.doc.build}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
+    <unzip src="${artifacts.com.mbeddr.cc.req.build}/com.mbeddr.cc.req.zip" dest="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -412,6 +417,7 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components" />
       <plugin path="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units" />
       <plugin path="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip/mbeddr.platform" />
       <plugin path="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner" />
       <plugin path="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
       <plugin path="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
@@ -514,7 +520,6 @@
       <library file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.req.dev.build.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.trace.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbddr.core.buildconfig.pluginSolution.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.buildconfig.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.dev.build.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
@@ -535,13 +540,14 @@
       <library file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.c.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.units.dev.build.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.rt.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.buildutil.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.dev.build.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typsystem.trace.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.platform.dev.build.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/com.mbeddr.spawner.dev.build.jar" />
       <library file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
@@ -583,6 +589,7 @@
       <macro name="artifacts.com.mbeddr.ext.components.build" path="${artifacts.com.mbeddr.ext.components.build}" />
       <macro name="artifacts.com.mbeddr.ext.units.build" path="${artifacts.com.mbeddr.ext.units.build}" />
       <macro name="artifacts.com.mbeddr.analyses.base.build" path="${artifacts.com.mbeddr.analyses.base.build}" />
+      <macro name="platform.artifacts" path="${platform.artifacts}" />
     </generate>
   </target>
   
@@ -619,7 +626,7 @@
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
@@ -675,7 +682,7 @@
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
@@ -737,7 +744,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.utils.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.trace.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.buildconfig.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
@@ -749,7 +756,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.util.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.c.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
@@ -814,7 +820,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.utils.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.trace.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.buildconfig.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
@@ -827,7 +833,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.util-generator.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.c.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
@@ -890,7 +895,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.utils.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.trace.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip/mbeddr.ple/languages/com.mbeddr.ple/com.mbeddr.cc.var.fm.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
@@ -955,7 +960,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.trace.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip/mbeddr.ple/languages/com.mbeddr.ple/com.mbeddr.cc.var.fm.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
@@ -1051,7 +1056,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.utils.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.trace.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.buildconfig.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
@@ -1061,7 +1066,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.statements.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.udt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.util.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -1119,7 +1123,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.utils.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.trace.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip/mbeddr.ple/languages/com.mbeddr.ple/com.mbeddr.cc.var.fm.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
@@ -1163,6 +1167,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components.dev.build.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.units.dev.build.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.dev.build.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.platform.dev.build.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/com.mbeddr.spawner.dev.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />

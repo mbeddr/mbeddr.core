@@ -12,15 +12,15 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
   <import index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="6" implicit="yes" />
-  <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="4" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
+  <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="8" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="22" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="9prt" modelUID="r:408fbb9e-2f4a-492c-80c9-659ad1be0b91(com.mbeddr.cc.requirements.report.structure)" version="-1" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="555r" modelUID="r:01e7a735-c89c-4c96-8b5e-4c3cef4e77c0(com.mbeddr.cc.requirements.c2doc.structure)" version="-1" implicit="yes" />
   <import index="bfq5" modelUID="r:e7c57229-5d47-4e7d-8d68-d13912139230(com.mbeddr.cc.requirements.scenario2doc.structure)" version="-1" implicit="yes" />
   <import index="6pek" modelUID="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.mbeddr.cc.requirements.wp.structure)" version="7" implicit="yes" />
@@ -248,14 +248,6 @@
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="7451725615401720626" nodeInfo="ng">
                 <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="552710421071397252" resolveInfo="alt" />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="7856226235204116007" nodeInfo="ng">
-                  <property name="expanded" nameId="3vkx.1711211267092858931" value="false" />
-                  <property name="value" nameId="3vkx.1711211267080437768" value="2100" />
-                </node>
-              </node>
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="7856226235204116006" nodeInfo="ng">
-                <property name="expanded" nameId="3vkx.1711211267092858931" value="true" />
-                <property name="value" nameId="3vkx.1711211267080437768" value="true" />
               </node>
             </node>
             <node role="xExpr" roleId="k146.6209595569797584862" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="7451725615401720622" nodeInfo="ng">
@@ -264,14 +256,6 @@
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="7451725615401720619" nodeInfo="ng">
                 <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="552710421071397252" resolveInfo="alt" />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="7856226235204116009" nodeInfo="ng">
-                  <property name="expanded" nameId="3vkx.1711211267092858931" value="false" />
-                  <property name="value" nameId="3vkx.1711211267080437768" value="2100" />
-                </node>
-              </node>
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="7856226235204116008" nodeInfo="ng">
-                <property name="expanded" nameId="3vkx.1711211267092858931" value="false" />
-                <property name="value" nameId="3vkx.1711211267080437768" value="true" />
               </node>
             </node>
             <node role="yExpr" roleId="k146.6209595569797584863" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="7451725615401720645" nodeInfo="ng">
@@ -280,14 +264,6 @@
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="7451725615401720642" nodeInfo="ng">
                 <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="552710421071397249" resolveInfo="speed" />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="7856226235204116011" nodeInfo="ng">
-                  <property name="expanded" nameId="3vkx.1711211267092858931" value="false" />
-                  <property name="value" nameId="3vkx.1711211267080437768" value="140" />
-                </node>
-              </node>
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="7856226235204116010" nodeInfo="ng">
-                <property name="expanded" nameId="3vkx.1711211267092858931" value="false" />
-                <property name="value" nameId="3vkx.1711211267080437768" value="false" />
               </node>
             </node>
             <node role="yExpr" roleId="k146.6209595569797584863" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="7451725615401720638" nodeInfo="ng">
@@ -296,14 +272,6 @@
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="7451725615401720635" nodeInfo="ng">
                 <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="552710421071397249" resolveInfo="speed" />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="7856226235204116013" nodeInfo="ng">
-                  <property name="expanded" nameId="3vkx.1711211267092858931" value="false" />
-                  <property name="value" nameId="3vkx.1711211267080437768" value="140" />
-                </node>
-              </node>
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="7856226235204116012" nodeInfo="ng">
-                <property name="expanded" nameId="3vkx.1711211267092858931" value="false" />
-                <property name="value" nameId="3vkx.1711211267080437768" value="true" />
               </node>
             </node>
             <node role="cExpr" roleId="k146.6209595569797584864" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7451725615401720649" nodeInfo="ng">
@@ -321,21 +289,9 @@
             <node role="def" roleId="k146.4143042878078342166" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7451725615401720618" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="0" />
             </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="7856226235204116005" nodeInfo="ng">
-              <property name="expanded" nameId="3vkx.1711211267092858931" value="true" />
-              <property name="value" nameId="3vkx.1711211267080437768" value="10" />
-            </node>
           </node>
           <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="5785245534400540001" nodeInfo="ng">
             <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="7451725615401720596" resolveInfo="BASEPOINTS" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="7856226235204116014" nodeInfo="ng">
-              <property name="expanded" nameId="3vkx.1711211267092858931" value="false" />
-              <property name="value" nameId="3vkx.1711211267080437768" value="10" />
-            </node>
-          </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.Debugger" typeId="3vkx.1711211267080437708" id="7856226235204116004" nodeInfo="ng">
-            <property name="expanded" nameId="3vkx.1711211267092858931" value="true" />
-            <property name="value" nameId="3vkx.1711211267080437768" value="100" />
           </node>
         </node>
         <node role="params" roleId="3vkx.3534497005926949334" type="3vkx.RParam" typeId="3vkx.3534497005926949316" id="552710421071397252" nodeInfo="ng">
@@ -397,7 +353,6 @@
           <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7451725615401925357" nodeInfo="ng">
             <property name="value" nameId="mj1l.2212975673976043696" value="100" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="3vkx.DebuggedTest" typeId="3vkx.1711211267100541688" id="7856226235204116015" nodeInfo="ng" />
         </node>
         <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="7451725615401925358" nodeInfo="ng">
           <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7451725615401925359" nodeInfo="ng">
@@ -502,7 +457,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467185941426" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The type error in this equation is ok; it is there for illustration purposes." />
               </node>
             </node>
           </node>
@@ -708,16 +663,6 @@
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4559893981897096194" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to calculate the total points." />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1711211267092098320" nodeInfo="ng">
-        <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1711211267092098321" nodeInfo="ng" />
-        <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="1711211267092098322" nodeInfo="ng">
-          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1711211267092098323" nodeInfo="ng">
-            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1711211267092098324" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1711211267092098325" nodeInfo="ng" />
             </node>
           </node>
         </node>
@@ -1869,6 +1814,15 @@
         <property name="totalCount" nameId="vs0r.671216505796623805" value="25" />
         <property name="newlyAdded" nameId="vs0r.671216505796623807" value="18" />
         <property name="ok" nameId="vs0r.671216505796623806" value="2" />
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="758326141948605122" nodeInfo="ng">
+        <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="758326141948605123" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="758326141948605124" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="758326141948605125" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This assessment is supposed to fail, the error is ok." />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="623743550703891297" nodeInfo="ng">

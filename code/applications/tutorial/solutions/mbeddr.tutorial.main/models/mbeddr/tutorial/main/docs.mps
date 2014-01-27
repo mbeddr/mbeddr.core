@@ -11,8 +11,8 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="22" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="2637267020265430783" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="overview" />
@@ -487,7 +487,11 @@
     <node role="root" roleId="2c95.6068976060904007489" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="794010416819641047" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2637267020265430783" resolveInfo="overview" />
     </node>
-    <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="126932837435308866" nodeInfo="ng">
+    <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="758326141947759811" nodeInfo="ng">
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="_vis" />
+      <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="6119416551720820600" resolveInfo="vis" />
+    </node>
+    <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="758326141947756593" nodeInfo="ng">
       <property name="mappedPath" nameId="2c95.6386504476136554614" value="_vis" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="794010416819988006" resolveInfo="visu" />
     </node>

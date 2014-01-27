@@ -3,14 +3,14 @@
   <persistence version="8" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
-  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="18" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="22" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="6" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="857825425328041153" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="StackTest" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="857825425328041154" nodeInfo="ng">
@@ -55,7 +55,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1373459996627_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="k146.StackDeclaration" typeId="k146.291293396404994003" id="291293396407505211" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="stack" />
+      <property name="name" nameId="tpck.1169194664001" value="uint8_3_stack" />
       <node role="baseType" roleId="k146.291293396404994004" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="291293396407505373" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -79,53 +79,53 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="291293396407505419" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="s" />
           <node role="type" roleId="mj1l.318113533128716676" type="k146.StackType" typeId="k146.291293396405106761" id="291293396407505418" nodeInfo="ng">
-            <link role="stack" roleId="k146.291293396405106762" targetNodeId="291293396407505211" resolveInfo="stack" />
+            <link role="stack" roleId="k146.291293396405106762" targetNodeId="291293396407505211" resolveInfo="uint8_3_stack" />
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.StackInitExpression" typeId="k146.291293396406263895" id="291293396407505584" nodeInfo="ng">
             <node role="type" roleId="k146.291293396426369667" type="k146.StackType" typeId="k146.291293396405106761" id="291293396428114187" nodeInfo="ng">
-              <link role="stack" roleId="k146.291293396405106762" targetNodeId="291293396407505211" resolveInfo="stack" />
+              <link role="stack" roleId="k146.291293396405106762" targetNodeId="291293396407505211" resolveInfo="uint8_3_stack" />
             </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="291293396411404843" nodeInfo="ng">
-          <node role="expr" roleId="yz9a.6275792049641587288" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396411404875" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackIsEmpty" typeId="k146.291293396409894474" id="291293396415762276" nodeInfo="ng" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374172" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396411404869" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
             </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackIsEmpty" typeId="k146.291293396409894474" id="291293396415762276" nodeInfo="ng" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="291293396419358914" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="291293396419358985" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="291293396419359009" nodeInfo="ng">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396419359051" nodeInfo="ng">
-                <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackIsFull" typeId="k146.291293396414259471" id="291293396419359626" nodeInfo="ng" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374093" nodeInfo="ng">
                 <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396419359037" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
                 </node>
+                <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackIsFull" typeId="k146.291293396414259471" id="291293396419359626" nodeInfo="ng" />
               </node>
             </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="291293396407505615" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396407505621" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackPush" typeId="k146.291293396405148894" id="291293396407505662" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374188" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407505614" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPush" typeId="k146.291293396405148894" id="291293396407505662" nodeInfo="ng">
               <node role="value" roleId="k146.291293396405148895" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407505693" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="10" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396407505614" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="291293396409235045" nodeInfo="ng">
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396409235550" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374114" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396409235394" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
             </node>
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackPeek" typeId="k146.291293396407757880" id="291293396409894208" nodeInfo="ng" />
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPeek" typeId="k146.291293396407757880" id="291293396409894208" nodeInfo="ng" />
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396412804355" nodeInfo="ng">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -135,11 +135,11 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="291293396412799152" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="291293396412800036" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="291293396412800338" nodeInfo="ng">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396412800380" nodeInfo="ng">
-                <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackIsEmpty" typeId="k146.291293396409894474" id="291293396419358799" nodeInfo="ng" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374151" nodeInfo="ng">
                 <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396412800366" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
                 </node>
+                <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackIsEmpty" typeId="k146.291293396409894474" id="291293396419358799" nodeInfo="ng" />
               </node>
             </node>
           </node>
@@ -147,11 +147,11 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="291293396419360848" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="291293396419360849" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="291293396419360850" nodeInfo="ng">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396419360851" nodeInfo="ng">
-                <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackIsFull" typeId="k146.291293396414259471" id="291293396419360852" nodeInfo="ng" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374086" nodeInfo="ng">
                 <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396419360853" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
                 </node>
+                <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackIsFull" typeId="k146.291293396414259471" id="291293396419360852" nodeInfo="ng" />
               </node>
             </node>
           </node>
@@ -161,74 +161,74 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="10" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396414243107" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackPop" typeId="k146.291293396412804923" id="291293396414243282" nodeInfo="ng" />
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374165" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396414243095" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
             </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPop" typeId="k146.291293396412804923" id="291293396414243282" nodeInfo="ng" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="291293396414244135" nodeInfo="ng">
-          <node role="expr" roleId="yz9a.6275792049641587288" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396414244396" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackIsEmpty" typeId="k146.291293396409894474" id="291293396419358834" nodeInfo="ng" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374158" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396414244390" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
             </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackIsEmpty" typeId="k146.291293396409894474" id="291293396419358834" nodeInfo="ng" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="291293396419362165" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="291293396419362166" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="291293396419362167" nodeInfo="ng">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396419362168" nodeInfo="ng">
-                <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackIsFull" typeId="k146.291293396414259471" id="291293396419362169" nodeInfo="ng" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374121" nodeInfo="ng">
                 <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396419362170" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
                 </node>
+                <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackIsFull" typeId="k146.291293396414259471" id="291293396419362169" nodeInfo="ng" />
               </node>
             </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="291293396414244651" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="291293396414245417" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396414245643" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackPush" typeId="k146.291293396405148894" id="291293396414245924" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374179" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396414245416" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPush" typeId="k146.291293396405148894" id="291293396414245924" nodeInfo="ng">
               <node role="value" roleId="k146.291293396405148895" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396414246172" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="20" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396414245416" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="291293396414247520" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396414247788" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackPush" typeId="k146.291293396405148894" id="291293396414248116" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374135" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396414247519" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPush" typeId="k146.291293396405148894" id="291293396414248116" nodeInfo="ng">
               <node role="value" roleId="k146.291293396405148895" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396414248406" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="30" />
               </node>
             </node>
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396414247519" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
-            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="291293396419363499" nodeInfo="ng">
-          <node role="expr" roleId="yz9a.6275792049641587288" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396419363502" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackIsFull" typeId="k146.291293396414259471" id="291293396419363503" nodeInfo="ng" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374128" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396419363504" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
             </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackIsFull" typeId="k146.291293396414259471" id="291293396419363503" nodeInfo="ng" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="291293396414250243" nodeInfo="ng">
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396414250244" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374204" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396414250245" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
             </node>
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackPeek" typeId="k146.291293396407757880" id="291293396414250246" nodeInfo="ng" />
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPeek" typeId="k146.291293396407757880" id="291293396414250246" nodeInfo="ng" />
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396414250247" nodeInfo="ng">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -236,19 +236,19 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="291293396419369119" nodeInfo="ng">
-          <node role="expr" roleId="yz9a.6275792049641587288" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396419369120" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackIsFull" typeId="k146.291293396414259471" id="291293396419369121" nodeInfo="ng" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374100" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396419369122" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
             </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackIsFull" typeId="k146.291293396414259471" id="291293396419369121" nodeInfo="ng" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="291293396414253468" nodeInfo="ng">
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396414253469" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374107" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396414253470" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
             </node>
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackPop" typeId="k146.291293396412804923" id="291293396414255861" nodeInfo="ng" />
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPop" typeId="k146.291293396412804923" id="291293396414255861" nodeInfo="ng" />
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396414253472" nodeInfo="ng">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -256,11 +256,11 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="291293396414254102" nodeInfo="ng">
-          <node role="actual" roleId="yz9a.7755897872837031765" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396414254103" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374197" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396414254104" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
             </node>
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackPop" typeId="k146.291293396412804923" id="291293396414257983" nodeInfo="ng" />
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPop" typeId="k146.291293396412804923" id="291293396414257983" nodeInfo="ng" />
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396414254106" nodeInfo="ng">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -268,11 +268,11 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="291293396419367110" nodeInfo="ng">
-          <node role="expr" roleId="yz9a.6275792049641587288" type="k146.StackDotExpression" typeId="k146.291293396405105506" id="291293396419367111" nodeInfo="ng">
-            <node role="member" roleId="mj1l.1452920870317550651" type="k146.StackIsEmpty" typeId="k146.291293396409894474" id="291293396419367781" nodeInfo="ng" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374144" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="291293396419367113" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="291293396407505419" resolveInfo="s" />
             </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackIsEmpty" typeId="k146.291293396409894474" id="291293396419367781" nodeInfo="ng" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="291293396414245160" nodeInfo="ng" />

@@ -22,7 +22,7 @@
   <import index="f809" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#sun.misc(JDK/sun.misc@java_stub)" version="-1" />
   <import index="c0w0" modelUID="f:java_stub#5454dbfd-2075-4de0-b85e-fa645eb6957e#org.jdom2(com.mbeddr.core.lib.xml/org.jdom2@java_stub)" version="-1" />
   <import index="6aho" modelUID="f:java_stub#5454dbfd-2075-4de0-b85e-fa645eb6957e#org.jdom2.input(com.mbeddr.core.lib.xml/org.jdom2.input@java_stub)" version="-1" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="-1" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
