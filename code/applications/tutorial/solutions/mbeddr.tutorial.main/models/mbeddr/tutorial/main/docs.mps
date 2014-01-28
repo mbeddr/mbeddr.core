@@ -487,7 +487,11 @@
     <node role="root" roleId="2c95.6068976060904007489" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="794010416819641047" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2637267020265430783" resolveInfo="overview" />
     </node>
-    <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="126932837435308866" nodeInfo="ng">
+    <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="758326141947759811" nodeInfo="ng">
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="_vis" />
+      <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="6119416551720820600" resolveInfo="vis" />
+    </node>
+    <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="758326141947756593" nodeInfo="ng">
       <property name="mappedPath" nameId="2c95.6386504476136554614" value="_vis" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="794010416819988006" resolveInfo="visu" />
     </node>
