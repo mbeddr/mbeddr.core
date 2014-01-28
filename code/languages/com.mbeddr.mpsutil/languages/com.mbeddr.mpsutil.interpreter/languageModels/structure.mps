@@ -104,7 +104,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8615074351687435493" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="InterpretExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="##" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#(" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.BaseLanguageExtensions" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="call evaluator on arbitrary expression" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
@@ -189,7 +189,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5293529713194689095" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ConceptEvaluator.BaseLanguageExtensions" />
     <property name="name" nameId="tpck.1169194664001" value="ConceptTypeExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="~" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="$" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="returns type instance of concept" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5293529713194689153" nodeInfo="ig">
