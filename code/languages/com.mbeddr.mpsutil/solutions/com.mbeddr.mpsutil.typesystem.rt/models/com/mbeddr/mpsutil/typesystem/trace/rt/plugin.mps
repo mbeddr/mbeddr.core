@@ -185,7 +185,7 @@
                   <link role="member" roleId="tp4f.1205756909548" targetNodeId="138655907972178505" resolveInfo="proj" />
                 </node>
               </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetToolInProjectOperation" typeId="tgbt.681855071694758165" id="3059187884049495935" nodeInfo="nn">
+              <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetToolInProjectOperation" typeId="tgbt.681855071694758165" id="1121441401737218273" nodeInfo="nn">
                 <link role="tool" roleId="tgbt.681855071694758166" targetNodeId="791159996752890226" resolveInfo="TypeSystemPerformanceData" />
               </node>
             </node>
@@ -228,7 +228,7 @@
     </node>
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="138655907972178505" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="proj" />
-      <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx1.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
+      <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx1.~PlatformDataKeys%dPROJECT" resolveInfo="PROJECT" />
       <node role="condition" roleId="tp4k.5538333046911298738" type="tp4k.RequiredCondition" typeId="tp4k.5538333046911348654" id="138655907972178506" nodeInfo="ng" />
     </node>
   </root>
