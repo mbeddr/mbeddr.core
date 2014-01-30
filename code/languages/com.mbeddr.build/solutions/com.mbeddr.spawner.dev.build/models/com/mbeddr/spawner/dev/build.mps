@@ -23,8 +23,8 @@
                 <property name="head" nameId="3ior.8618885170173601779" value=".." />
                 <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7247348105538928975" nodeInfo="nn">
                   <property name="head" nameId="3ior.8618885170173601779" value="MPS" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989980611459" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="MPS-3.1.app" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4386842880288432820" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="MPS-3.1EAP-19.app" />
                   </node>
                 </node>
               </node>
@@ -61,6 +61,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="5302886665841643322" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="platform.artifacts" />
     </node>
     <node role="plugins" roleId="3ior.6647099934206700656" type="3ior.BuildJavaPlugin" typeId="3ior.6647099934206700647" id="6247780594427434812" nodeInfo="ng" />
     <node role="plugins" roleId="3ior.6647099934206700656" type="kdzh.BuildMPSPlugin" typeId="kdzh.868032131020265945" id="6247780594427434813" nodeInfo="ng" />
@@ -1163,9 +1166,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="5302886665841643322" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="platform.artifacts" />
     </node>
   </root>
 </model>

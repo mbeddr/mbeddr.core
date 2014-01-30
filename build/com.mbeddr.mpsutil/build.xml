@@ -130,7 +130,6 @@
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="be896c0f-4f34-4122-95ff-1aef962f5725(com.mbeddr.mpsutil.typesystem.trace.rt)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
@@ -493,7 +492,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate parallelMode="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" fork="true">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
@@ -558,7 +557,6 @@
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.uiLanguage.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <library file="${artifacts.mps}/lib/mps-closures.jar" />
       <library file="${artifacts.mps}/lib/mps-collections.jar" />
@@ -600,6 +598,7 @@
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
       <chunk>
+        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/solutions/com.mbeddr.mpsutil.blutil.rt.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/langstats.mpl" />
@@ -607,9 +606,6 @@
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/rt.msd" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.typsystem.trace/com.mbeddr.mpsutil.typsystem.trace.mpl" />
-      </chunk>
-      <chunk>
-        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" />
       </chunk>
       <chunk>
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.mpl" />
@@ -703,7 +699,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.com.mbeddr.mpsutil.blutil" depends="java.compile.com.mbeddr.mpsutil.typesystem.trace.rt, fetchDependencies">
+  <target name="java.compile.com.mbeddr.mpsutil.blutil" depends="fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.blutil" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.blutil" fork="true" includeantruntime="false" debug="true">
@@ -717,13 +713,10 @@
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.typesystem.trace.rt" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -1353,10 +1346,10 @@
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.buildutil" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
@@ -1436,6 +1429,8 @@
   </target>
   
   <target name="cleanSources">
+    <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/source_gen" />
+    <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/generator/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/solutions/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/generator/source_gen" />
@@ -1447,8 +1442,6 @@
     <delete dir="${mpsutil}/solutions/com.mbeddr.mpsutil.typesystem.rt/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.typsystem.trace/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.typsystem.trace/generator/source_gen" />
-    <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/source_gen" />
-    <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.blutil/generator/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/source_gen" />
     <delete dir="${mpsutil}/tests/test.ts.match/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.buildutil/generator/source_gen" />

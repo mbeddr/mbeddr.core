@@ -10,7 +10,7 @@
   <property name="multiline.artifacts" location="${lisson.home}/mps-multiline/build/artifacts/mps-multiline" />
   <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext" />
   <property name="tables.artifacts" location="${lisson.home}/mps-tables/build/artifacts/mps-tables" />
-  <property name="artifacts.com.mbeddr.spawner.build" location="${basedir}/../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build/" />
+  <property name="spawner.artifacts" location="${basedir}/../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build/" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="${basedir}/../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build/" />
   <property name="artifacts.com.mbeddr.debugger.build" location="${basedir}/../com.mbeddr.debugger/build/artifacts/com.mbeddr.debugger.build/" />
   <property name="artifacts.com.mbeddr.core.build" location="${basedir}/../com.mbeddr.core/build/artifacts/com.mbeddr.core.build/" />
@@ -23,7 +23,7 @@
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.core.build" location="${artifacts.com.mbeddr.cc.req.build}" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="${artifacts.com.mbeddr.mpsutil.build}" />
-  <property name="artifacts.com.mbeddr.spawner.build" location="${artifacts.com.mbeddr.spawner.build}" />
+  <property name="artifacts.com.mbeddr.spawner.build" location="${spawner.artifacts}" />
   <property name="artifacts.com.mbeddr.debugger.build" location="${artifacts.com.mbeddr.cc.req.build}" />
   <property name="artifacts.com.mbeddr.cc.ple.build" location="${artifacts.com.mbeddr.cc.ple.build}" />
   <property name="artifacts.com.mbeddr.cc.req.build" location="${artifacts.com.mbeddr.cc.req.build}" />
@@ -228,32 +228,32 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
-    <unzip src="${artifacts.com.mbeddr.platform.build}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
-    <unzip src="${artifacts.com.mbeddr.doc.build}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
-    <unzip src="${artifacts.com.mbeddr.ext.units}/com.mbeddr.ext.units.zip" dest="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
-    <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" />
-    <unzip src="${artifacts.com.mbeddr.cc.ple.build}/com.mbeddr.cc.ple.zip" dest="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
-    <unzip src="${artifacts.com.mbeddr.cc.req.build}/com.mbeddr.cc.req.zip" dest="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform.build}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform.build/com.mbeddr.platform.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
+    <unzip src="${artifacts.com.mbeddr.cc.req.build}/com.mbeddr.cc.req.zip" dest="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
+    <unzip src="${artifacts.com.mbeddr.doc.build}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
+    <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
+    <unzip src="${artifacts.com.mbeddr.ext.units}/com.mbeddr.ext.units.zip" dest="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" />
+    <unzip src="${artifacts.com.mbeddr.cc.ple.build}/com.mbeddr.cc.ple.zip" dest="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -275,7 +275,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate parallelMode="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" fork="true">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
@@ -350,7 +350,6 @@
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.uiLanguage.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <library file="${artifacts.mps}/lib/mps-closures.jar" />
       <library file="${artifacts.mps}/lib/mps-collections.jar" />
@@ -450,7 +449,7 @@
       <macro name="multiline.artifacts" path="${multiline.artifacts}" />
       <macro name="richtext.artifacts" path="${richtext.artifacts}" />
       <macro name="tables.artifacts" path="${tables.artifacts}" />
-      <macro name="artifacts.com.mbeddr.spawner.build" path="${artifacts.com.mbeddr.spawner.build}" />
+      <macro name="spawner.artifacts" path="${spawner.artifacts}" />
       <macro name="artifacts.com.mbeddr.mpsutil.build" path="${artifacts.com.mbeddr.mpsutil.build}" />
       <macro name="artifacts.com.mbeddr.debugger.build" path="${artifacts.com.mbeddr.debugger.build}" />
       <macro name="artifacts.com.mbeddr.core.build" path="${artifacts.com.mbeddr.core.build}" />

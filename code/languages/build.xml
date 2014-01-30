@@ -5,7 +5,7 @@
   
   <!-- url/mps properties -->
   <property name="plugins.folder.name" value="plugins"/>
-  <property name="base-url" value="https://mbeddr-build.itemis.de/teamcity/guestAuth/repository/download"/>
+  <property name="base-url" value="http://build.mbeddr.com/guestAuth/repository/download"/>
   <property name="latest-build" value="latest.lastSuccessful"/>
   
   <!-- com.mbeddr.mpsutil -->  
@@ -95,28 +95,28 @@
   <!-- multiline -->  
   <property name="multiline.zip-file.name" value="mps-multiline.zip" />
   <property name="multiline.expanded-folder.name" value="mps-multiline" />
-  <property name="multiline.build-id" value="bt28" />  
+  <property name="multiline.build-id" value="RichtextTables_MpsMultiline" />  
   <property name="multiline.build-path" value="${mbeddr.github.core.home}/build/mps-multiline/build/artifacts/mps-multiline" />  
   <property name="artifacts.mps-multiline" value="${multiline.build-path}" />  
     
   <!-- mps-richtext -->  
   <property name="mps-richtext.zip-file.name" value="mps-richtext.zip" />
   <property name="mps-richtext.expanded-folder.name" value="mps-richtext" />
-  <property name="mps-richtext.build-id" value="bt29" />
+  <property name="mps-richtext.build-id" value="RichtextTables_MpsRichtext" />
   <property name="mps-richtext.build-path" value="${mbeddr.github.core.home}/build/mps-richtext/build/artifacts/mps-richtext" />  
   <property name="artifacts.mps-richtext" value="${mps-richtext.build-path}" />  
   
   <!-- mps-editor-override -->
   <property name="mps-editor-override.zip-file.name" value="mps-editor-override.zip" />
   <property name="mps-editor-override.expanded-folder.name" value="mps-editor-override" />  
-  <property name="mps-editor-override.build-id" value="bt27" />   
+  <property name="mps-editor-override.build-id" value="RichtextTables_MpsEditorOverride" />   
   <property name="mps-editor-override.build-path" value="${mbeddr.github.core.home}/build/mps-editor-override/build/artifacts/mps-editor-override" />  
   <property name="artifacts.mps-editor-override" value="${mps-editor-override.build-path}" />  
   
   <!-- mps-tables -->
   <property name="mps-tables.zip-file.name" value="mps-tables.zip" />
   <property name="mps-tables.expanded-folder.name" value="mps-tables" />  
-  <property name="mps-tables.build-id" value="bt42" />   
+  <property name="mps-tables.build-id" value="RichtextTables_MpsTables" />   
   <property name="mps-tables.build-path" value="${mbeddr.github.core.home}/build/mps-tables/build/artifacts/mps-tables" />  
   <property name="artifacts.mps-tables" value="${mps-tables.build-path}" />  
   
@@ -124,7 +124,7 @@
   <property name="spawner.suburl" value="com.mbeddr.spawner.build" /> 
   <property name="spawner.zip-file.name" value="com.mbeddr.spawner.zip" />
   <property name="spawner.expanded-folder.name" value="mbeddr.spawner" />
-  <property name="spawner.build-id" value="bt3" />
+  <property name="spawner.build-id" value="MbeddrCore_BuildSpawner" />
   <property name="spawner.build-path" value="${mbeddr.github.core.home}/build/com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />  
   <property name="artifacts.com.mbeddr.spawner.build" value="${spawner.build-path}" />
 

@@ -7,7 +7,6 @@
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="smartmeter.code" location="" />
   <property name="mbeddr.assembla.ext.home" location="" />
-  <property name="accent.home" location="" />
   <property name="smartmeter.git.root" location="" />
   <property name="tutorial.home" location="${mbeddr.github.core.home}/code/applications/tutorial" />
   <property name="lisson.home" location="${mbeddr.github.core.home}/.." />
@@ -15,7 +14,7 @@
   <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext" />
   <property name="tables.artifacts" location="${lisson.home}/mps-tables/build/artifacts/mps-tables" />
   <property name="spawner.artifacts" location="${basedir}/../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
-  <property name="platform.artifacts" location="" />
+  <property name="platform.artifacts" location="${mbeddr.github.core.home}/build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform.build" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />
   <property name="artifacts.com.mbeddr.ext.statemachine" location="../com.mbeddr.ext/build/artifacts/com.mbeddr.ext.statemachine" />
@@ -35,7 +34,7 @@
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
   <property name="artifacts.mps-tables" location="${tables.artifacts}" />
-  <property name="artifacts.com.mbeddr.platform.build" location="../com.mbeddr.platform/build/artifacts/com.mbeddr.platform.build" />
+  <property name="artifacts.com.mbeddr.platform.build" location="${platform.artifacts}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.mpsutil.build}/build.properties" prefix="import.com.mbeddr.mpsutil.build" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -107,7 +106,6 @@
     <ant antfile="../com.mbeddr.doc/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.core/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.debugger/build.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../com.mbeddr.platform/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="build-languages.xml" inheritAll="false" useNativeBasedir="true" />
   </target>
   
@@ -169,7 +167,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate parallelMode="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" fork="true">
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
@@ -218,7 +216,6 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.uiLanguage.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <library file="${artifacts.mps}/lib/mps-closures.jar" />
       <library file="${artifacts.mps}/lib/mps-collections.jar" />
@@ -328,7 +325,6 @@
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
       <macro name="smartmeter.code" path="${smartmeter.code}" />
       <macro name="mbeddr.assembla.ext.home" path="${mbeddr.assembla.ext.home}" />
-      <macro name="accent.home" path="${accent.home}" />
       <macro name="smartmeter.git.root" path="${smartmeter.git.root}" />
       <macro name="tutorial.home" path="${tutorial.home}" />
       <macro name="lisson.home" path="${lisson.home}" />
@@ -394,10 +390,6 @@
       <target name="assemble" />
     </ant>
     <ant antfile="../com.mbeddr.debugger/build.xml" inheritAll="false" useNativeBasedir="true">
-      <target name="generate" />
-      <target name="assemble" />
-    </ant>
-    <ant antfile="../com.mbeddr.platform/build.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>

@@ -1906,7 +1906,7 @@
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="651821299948807922" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.platform.dev.build" />
-        <property name="uuid" nameId="kdzh.322010710375892619" value="9028e850-0b96-41ad-93fc-9e2901187ae5" />
+        <property name="uuid" nameId="kdzh.322010710375892619" value="d9577847-5af6-4401-b634-6305196f4f02" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="651821299948807923" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="651821299948806885" resolveInfo="mbeddr.github.core.home" />

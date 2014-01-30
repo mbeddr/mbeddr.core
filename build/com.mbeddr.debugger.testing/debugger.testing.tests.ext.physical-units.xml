@@ -130,7 +130,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate parallelMode="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" fork="true">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
@@ -190,7 +190,6 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.uiLanguage.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <library file="${artifacts.mps}/lib/mps-closures.jar" />
       <library file="${artifacts.mps}/lib/mps-collections.jar" />
@@ -400,7 +399,6 @@
       <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       <pathelement location="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
       <pathelement location="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
-      <pathelement location="${artifacts.mps}/languages/workbench/jetbrains.mps.uiLanguage.jar" />
       <pathelement location="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <pathelement location="${artifacts.mps}/lib/mps-closures.jar" />
       <pathelement location="${artifacts.mps}/lib/mps-collections.jar" />

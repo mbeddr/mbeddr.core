@@ -308,7 +308,7 @@
         </node>
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="5413996595771867936" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="client" />
+        <property name="name" nameId="tpck.1169194664001" value="clientAdapter" />
         <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="5413996595771867937" nodeInfo="ng">
           <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="2151335435833422619" resolveInfo="d" />
           <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="2151335435833422638" resolveInfo="client" />
@@ -374,7 +374,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="4957503999941136205" nodeInfo="ng">
             <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="2151335435833422616" resolveInfo="run" />
             <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4957503999941136206" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="5413996595771867936" resolveInfo="client" />
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="5413996595771867936" resolveInfo="clientAdapter" />
             </node>
           </node>
         </node>
@@ -391,7 +391,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="4331139697889840677" nodeInfo="ng">
             <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="2151335435833422616" resolveInfo="run" />
             <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4331139697889840676" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="5413996595771867936" resolveInfo="client" />
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="5413996595771867936" resolveInfo="clientAdapter" />
             </node>
           </node>
         </node>

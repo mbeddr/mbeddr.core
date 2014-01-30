@@ -236,7 +236,7 @@
     <mkdir dir="${build.tmp}/default/com.mbeddr.platform.dev.build.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.platform.dev.build.jar/META-INF" />
     <echoxml file="${build.tmp}/default/com.mbeddr.platform.dev.build.jar/META-INF/module.xml">
-      <module namespace="com.mbeddr.platform.dev.build" type="solution" uuid="9028e850-0b96-41ad-93fc-9e2901187ae5">
+      <module namespace="com.mbeddr.platform.dev.build" type="solution" uuid="d9577847-5af6-4401-b634-6305196f4f02">
         <dependencies />
         <sources jar="com.mbeddr.platform.dev.build-src.jar" descriptor="com.mbeddr.platform.dev.build.msd" />
       </module>
@@ -266,14 +266,14 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
+    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -295,7 +295,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate parallelMode="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" fork="true">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
@@ -361,7 +361,6 @@
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.uiLanguage.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <library file="${artifacts.mps}/lib/mps-closures.jar" />
       <library file="${artifacts.mps}/lib/mps-collections.jar" />

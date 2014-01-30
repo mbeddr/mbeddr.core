@@ -18,7 +18,7 @@
   <property name="artifacts.com.mbeddr.mpsutil.build" location="../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />
   <property name="artifacts.com.mbeddr.core.build" location="${build.dir}/artifacts/com.mbeddr.core.build" />
   <property name="artifacts.com.mbeddr.debugger.build" location="../com.mbeddr.debugger/build/artifacts/com.mbeddr.debugger.build" />
-  <property name="artifacts.com.mbeddr.spawner.build" location="${mbeddr.github.core.home}/build/com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
+  <property name="artifacts.com.mbeddr.spawner.build" location="${spawner.artifacts}" />
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
   <property name="artifacts.mps-tables" location="${tables.artifacts}" />
@@ -228,7 +228,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate parallelMode="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" fork="true">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
@@ -284,7 +284,6 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.textGen.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.uiLanguage.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <library file="${artifacts.mps}/lib/mps-closures.jar" />
       <library file="${artifacts.mps}/lib/mps-collections.jar" />
