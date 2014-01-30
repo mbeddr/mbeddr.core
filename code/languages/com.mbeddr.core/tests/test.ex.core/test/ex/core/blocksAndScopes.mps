@@ -13,11 +13,15 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7646082028326283112" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="AnotherModule" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7646082028326283113" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7646082028326283148" resolveInfo="TestModule" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="2515196518059986363" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7646082028326283148" resolveInfo="TestModule" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6068976060903766825" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1363161610622_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2515196518059994997" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1391099809488_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7646082028326283114" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="test" />
