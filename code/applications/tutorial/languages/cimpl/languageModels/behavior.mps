@@ -32,5 +32,11 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="8894472076886058257" nodeInfo="in" />
     </node>
   </root>
+  <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8894472076888565820" nodeInfo="ng">
+    <link role="concept" roleId="1i04.1225194240799" targetNodeId="7wyt.8894472076884378131" resolveInfo="CriticalSection" />
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8894472076888565821" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8894472076888565822" nodeInfo="sn" />
+    </node>
+  </root>
 </model>
 
