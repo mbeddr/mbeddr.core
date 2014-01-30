@@ -487,12 +487,6 @@
             <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="dogi.8334796989975391488" resolveInfo="com.mbeddr.ext.components" />
           </node>
         </node>
-        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="8334796989975375548" nodeInfo="nn">
-          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="8334796989975375549" nodeInfo="ng">
-            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
-            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="ffeo.8362449620019856285" resolveInfo="jetbrains.mps.debugger.api.api" />
-          </node>
-        </node>
         <node role="generator" roleId="kdzh.9200313594498201639" type="kdzh.BuildMps_Generator" typeId="kdzh.5507251971038816436" id="8334796989975375550" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.ext.components.statemachine#8663730687027710488" />
           <property name="uuid" nameId="kdzh.322010710375892619" value="318e60a1-d099-4839-94ee-2dc303d9c6f0" />
