@@ -785,6 +785,7 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="1802252976901178759" nodeInfo="nn">
+        <property name="comment" nameId="tpf8.3265704088513289864" value="explicit prototypes" />
         <node role="sourceNodesQuery" roleId="tpf8.1168278589236" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="1802252976901178762" nodeInfo="nn">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1802252976901178763" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1802252976901178769" nodeInfo="nn">
