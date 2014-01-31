@@ -2304,6 +2304,9 @@
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="2794519097334215628" nodeInfo="ng">
           <link role="language" roleId="kdzh.322010710375832947" targetNodeId="8628756186118765636" resolveInfo="com.mbeddr.core.make" />
         </node>
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="8426159527453554162" nodeInfo="ng">
+          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="2515196518058096545" resolveInfo="com.mbeddr.core.cinterpreter" />
+        </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="8334796989972929856" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
