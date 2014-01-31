@@ -535,6 +535,33 @@
         </node>
       </node>
     </node>
+    <node role="evaluators" roleId="3673.8615074351687302157" type="3673.DummyEvaluator" typeId="3673.2515196518060811313" id="3004391828032283220" nodeInfo="ng" />
+    <node role="evaluators" roleId="3673.8615074351687302157" type="3673.ConceptEvaluator" typeId="3673.8615074351687301435" id="3004391828032291688" nodeInfo="ng">
+      <link role="concept" roleId="3673.8615074351687302216" targetNodeId="vs0r.8076351743304603872" resolveInfo="IReference" />
+      <node role="evaluator" roleId="3673.5934114435584084790" type="3673.ConceptEvaluatorInline" typeId="3673.5934114435582125873" id="3004391828032304109" nodeInfo="ng">
+        <node role="expression" roleId="3673.5934114435582660673" type="3673.InterpretExpression" typeId="3673.8615074351687435493" id="3004391828032310283" nodeInfo="ng">
+          <node role="node" roleId="3673.5293529713176663275" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3004391828032316696" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="3673.NodeExpression" typeId="3673.5293529713177831489" id="3004391828032316465" nodeInfo="ng" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="3004391828032325486" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.8076351743304603874" resolveInfo="target" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="evaluators" roleId="3673.8615074351687302157" type="3673.ConceptEvaluator" typeId="3673.8615074351687301435" id="3004391828032449017" nodeInfo="ng">
+      <link role="concept" roleId="3673.8615074351687302216" targetNodeId="mj1l.3196454794517236255" resolveInfo="IDataflowAssignment" />
+      <node role="evaluator" roleId="3673.5934114435584084790" type="3673.ConceptEvaluatorInline" typeId="3673.5934114435582125873" id="3004391828032459390" nodeInfo="ng">
+        <node role="expression" roleId="3673.5934114435582660673" type="3673.InterpretExpression" typeId="3673.8615074351687435493" id="3004391828032464543" nodeInfo="ng">
+          <node role="node" roleId="3673.5293529713176663275" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3004391828032470059" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="3673.NodeExpression" typeId="3673.5293529713177831489" id="3004391828032469704" nodeInfo="ng" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="3004391828032699693" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.3196454794517236267" resolveInfo="getDataflowValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="applicableLanguages" roleId="3673.7019451652830298090" type="3673.ApplicableLanguage" typeId="3673.7019451652830285943" id="7019451652833090605" nodeInfo="ng">
       <node role="language" roleId="3673.7019451652831666945" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="7019451652833090606" nodeInfo="nn">
         <property name="fqName" nameId="tp25.559557797393041554" value="com.mbeddr.core.base.st" />
