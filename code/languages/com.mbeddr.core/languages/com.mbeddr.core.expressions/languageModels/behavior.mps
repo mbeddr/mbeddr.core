@@ -2240,7 +2240,7 @@
       <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
       <property name="isVirtual" nameId="1i04.1225194472832" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="isLiteral" />
-      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="hwgx.651821299956571686" resolveInfo="isLiteral" />
+      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="hwgx.651821299956571686" resolveInfo="doNotShowDebugger" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="651821299964486271" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="651821299964486276" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="651821299964486281" nodeInfo="nn">
@@ -2411,6 +2411,19 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="964883390632342974" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="doNotShowDebugger" />
+      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="hwgx.651821299956571686" resolveInfo="doNotShowDebugger" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="964883390632342977" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="964883390632351119" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="964883390632351118" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580123138" value="true" />
+          </node>
+        </node>
+      </node>
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="964883390632350608" nodeInfo="in" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="964883390632350609" nodeInfo="nn" />
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3335993110369805721" nodeInfo="ng">
