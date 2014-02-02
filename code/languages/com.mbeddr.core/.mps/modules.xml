@@ -9,6 +9,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildconfig/solution/pluginSolution/com.mbddr.core.buildconfig.pluginSolution.msd" folder="core-extended.solutions" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.cinterpreter/com.mbeddr.core.cinterpreter.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.dataflow.test/com.mbeddr.core.dataflow.test.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.dependencies/com.mbeddr.core.dependencies.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
