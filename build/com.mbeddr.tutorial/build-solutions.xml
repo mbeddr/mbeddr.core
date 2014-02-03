@@ -259,6 +259,7 @@
       <library file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.requirements.c.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.requirements.c2doc.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.requirements.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.requirements.pluginSolution.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.requirements.report.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.requirements.scenario2doc.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip/mbeddr.req/languages/com.mbeddr.cc.req/com.mbeddr.cc.requirements.scenarios.jar" />
