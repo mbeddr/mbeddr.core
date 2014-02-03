@@ -733,20 +733,6 @@
         <property name="stereotype" nameId="tp25.559557797393021807" value="" />
       </node>
     </node>
-    <node role="applicableLanguages" roleId="3673.7019451652830298090" type="3673.ApplicableLanguage" typeId="3673.7019451652830285943" id="2921294391695332490" nodeInfo="ng">
-      <node role="language" roleId="3673.7019451652831666945" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="2921294391695332491" nodeInfo="nn">
-        <property name="fqName" nameId="tp25.559557797393041554" value="com.mbeddr.core." />
-        <property name="name" nameId="tp25.559557797393017702" value="com.mbeddr.core.statements.structure" />
-        <property name="stereotype" nameId="tp25.559557797393021807" value="" />
-      </node>
-    </node>
-    <node role="applicableLanguages" roleId="3673.7019451652830298090" type="3673.ApplicableLanguage" typeId="3673.7019451652830285943" id="2921294391695332492" nodeInfo="ng">
-      <node role="language" roleId="3673.7019451652831666945" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="2921294391695332493" nodeInfo="nn">
-        <property name="fqName" nameId="tp25.559557797393041554" value="com.mbedd" />
-        <property name="name" nameId="tp25.559557797393017702" value="com.mbeddr.core.expressions.structure" />
-        <property name="stereotype" nameId="tp25.559557797393021807" value="" />
-      </node>
-    </node>
     <node role="applicableLanguages" roleId="3673.7019451652830298090" type="3673.ApplicableLanguage" typeId="3673.7019451652830285943" id="2921294391695374751" nodeInfo="ng">
       <node role="language" roleId="3673.7019451652831666945" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="2921294391695374752" nodeInfo="nn">
         <property name="fqName" nameId="tp25.559557797393041554" value="com.mbeddr.core.base.ut" />

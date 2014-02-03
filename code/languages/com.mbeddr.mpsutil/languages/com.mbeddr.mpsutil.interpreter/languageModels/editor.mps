@@ -63,6 +63,7 @@
           <property name="text" nameId="tpc2.1073389577007" value="category:" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8426159527444245248" nodeInfo="ng">
+          <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="3673.8426159527444241399" resolveInfo="category" />
         </node>
       </node>
