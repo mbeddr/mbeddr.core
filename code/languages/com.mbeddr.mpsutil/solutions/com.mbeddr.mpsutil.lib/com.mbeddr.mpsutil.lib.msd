@@ -12,8 +12,17 @@
       <excluded location="lib/commons-lang3-3.2.1/commons-lang3-3.2.1-tests.jar" />
       <excluded location="lib/commons-math3-3.2/commons-math3-3.2-test-sources.jar" />
       <excluded location="lib/commons-math3-3.2/commons-math3-3.2-tests.jar" />
+      <excluded location="lib/commons-io-2.4/commons-io-2.4-sources.jar" />
+      <excluded location="lib/commons-lang3-3.2.1/commons-lang3-3.2.1-sources.jar" />
+      <excluded location="lib/commons-math3-3.2/commons-math3-3.2-sources.jar" />
     </modelRoot>
   </models>
+  <stubModelEntries>
+    <stubModelEntry path="${module}/lib/commons-lang3-3.2.1/commons-lang3-3.2.1.jar" />
+    <stubModelEntry path="${module}/lib/commons-io-2.4/commons-io-2.4.jar" />
+    <stubModelEntry path="${module}/lib/commons-math3-3.2/commons-math3-3.2.jar" />
+    <stubModelEntry path="${module}/lib/commons-primitives-1.0/commons-primitives-1.0.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>

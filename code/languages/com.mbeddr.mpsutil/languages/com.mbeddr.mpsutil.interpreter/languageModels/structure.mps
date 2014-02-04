@@ -269,7 +269,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6663324787724559041" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="AbstractInterpreterDependency" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Order" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Dependency" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6663324787724987489" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -279,13 +279,13 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6663324787724987491" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Order" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Dependency" />
     <property name="name" nameId="tpck.1169194664001" value="InterpretBeforeDependency" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="before" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6663324787724559041" resolveInfo="AbstractInterpreterDependency" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6663324787725038318" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Order" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Dependency" />
     <property name="name" nameId="tpck.1169194664001" value="InterpretAfterDependency" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="after" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6663324787724559041" resolveInfo="AbstractInterpreterDependency" />

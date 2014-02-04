@@ -501,7 +501,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6663324787724990849" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Order" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Dependency" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="3673.6663324787724987491" resolveInfo="InterpretBeforeDependency" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6663324787724991868" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6663324787724991875" nodeInfo="nn">
@@ -551,7 +551,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6663324787725038411" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Order" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Dependency" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="3673.6663324787725038318" resolveInfo="InterpretAfterDependency" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6663324787725058437" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6663324787725107540" nodeInfo="nn">
