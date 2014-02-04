@@ -1,0 +1,907 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Interface org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Interface org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/stat/descriptive//class-useStorelessUnivariateStatistic.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="StorelessUnivariateStatistic.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Interface<br>org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.descriptive"><B>org.apache.commons.math3.stat.descriptive</B></A></TD>
+<TD>Generic univariate summary statistic objects.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.descriptive.moment"><B>org.apache.commons.math3.stat.descriptive.moment</B></A></TD>
+<TD>Summary statistics based on moments.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.descriptive.rank"><B>org.apache.commons.math3.stat.descriptive.rank</B></A></TD>
+<TD>Summary statistics based on ranks.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.descriptive.summary"><B>org.apache.commons.math3.stat.descriptive.summary</B></A></TD>
+<TD>Other summary statistics.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.descriptive"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A> in <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/package-summary.html">org.apache.commons.math3.stat.descriptive</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/package-summary.html">org.apache.commons.math3.stat.descriptive</A> that implement <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractStorelessUnivariateStatistic</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abstract implementation of the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive"><CODE>StorelessUnivariateStatistic</CODE></A> interface.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/package-summary.html">org.apache.commons.math3.stat.descriptive</A> that return <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>StorelessUnivariateStatistic.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html#copy()">copy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a copy of the statistic with the same internal state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractStorelessUnivariateStatistic.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#copy()">copy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a copy of the statistic with the same internal state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#getGeoMeanImpl()">getGeoMeanImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured geometric mean implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#getGeoMeanImpl()">getGeoMeanImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured geometric mean implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#getGeoMeanImpl()">getGeoMeanImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured geometric mean implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#getGeoMeanImpl()">getGeoMeanImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured geometric mean implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#getMaxImpl()">getMaxImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured maximum implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#getMaxImpl()">getMaxImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured maximum implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#getMaxImpl()">getMaxImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured maximum implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#getMaxImpl()">getMaxImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured maximum implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#getMeanImpl()">getMeanImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured mean implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#getMeanImpl()">getMeanImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured mean implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#getMeanImpl()">getMeanImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured mean implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#getMeanImpl()">getMeanImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured mean implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#getMinImpl()">getMinImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured minimum implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#getMinImpl()">getMinImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured minimum implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#getMinImpl()">getMinImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured minimum implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#getMinImpl()">getMinImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured minimum implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#getSumImpl()">getSumImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured Sum implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#getSumImpl()">getSumImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured Sum implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#getSumImpl()">getSumImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured Sum implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#getSumImpl()">getSumImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured Sum implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#getSumLogImpl()">getSumLogImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured sum of logs implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#getSumLogImpl()">getSumLogImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured sum of logs implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#getSumLogImpl()">getSumLogImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured sum of logs implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#getSumLogImpl()">getSumLogImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured sum of logs implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#getSumsqImpl()">getSumsqImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured sum of squares implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#getSumsqImpl()">getSumsqImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured sum of squares implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#getSumsqImpl()">getSumsqImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured sum of squares implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#getSumsqImpl()">getSumsqImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured sum of squares implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#getVarianceImpl()">getVarianceImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured variance implementation</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#getVarianceImpl()">getVarianceImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured variance implementation</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/package-summary.html">org.apache.commons.math3.stat.descriptive</A> with parameters of type <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setGeoMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setGeoMeanImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;geoMeanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the geometric mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setGeoMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setGeoMeanImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;geoMeanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the geometric mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setGeoMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setGeoMeanImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;geoMeanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the geometric mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setGeoMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setGeoMeanImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;geoMeanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the geometric mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setMaxImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setMaxImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;maxImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the maximum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setMaxImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setMaxImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;maxImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the maximum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setMaxImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setMaxImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;maxImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the maximum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setMaxImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setMaxImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;maxImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the maximum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setMeanImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;meanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setMeanImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;meanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setMeanImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;meanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setMeanImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;meanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setMinImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setMinImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;minImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the minimum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setMinImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setMinImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;minImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the minimum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setMinImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setMinImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;minImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the minimum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setMinImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setMinImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;minImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the minimum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setSumImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the Sum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setSumImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the Sum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setSumImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setSumImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;sumImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the Sum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setSumImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setSumImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;sumImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the Sum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setSumLogImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumLogImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumLogImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the sum of logs.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setSumLogImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumLogImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumLogImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the sum of logs.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setSumLogImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setSumLogImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;sumLogImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the sum of logs.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setSumLogImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setSumLogImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;sumLogImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the sum of logs.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setSumsqImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumsqImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumsqImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the sum of squares.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setSumsqImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumsqImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumsqImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the sum of squares.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setSumsqImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setSumsqImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;sumsqImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the sum of squares.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setSumsqImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setSumsqImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;sumsqImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the sum of squares.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setVarianceImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setVarianceImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;varianceImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the variance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setVarianceImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setVarianceImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;varianceImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the variance.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.descriptive.moment"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A> in <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/package-summary.html">org.apache.commons.math3.stat.descriptive.moment</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/package-summary.html">org.apache.commons.math3.stat.descriptive.moment</A> that implement <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/GeometricMean.html" title="class in org.apache.commons.math3.stat.descriptive.moment">GeometricMean</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://www.xycoon.com/geometric_mean.htm">
+ geometric mean </a> of the available values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Kurtosis.html" title="class in org.apache.commons.math3.stat.descriptive.moment">Kurtosis</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the Kurtosis of the available values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Mean.html" title="class in org.apache.commons.math3.stat.descriptive.moment">Mean</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the arithmetic mean of a set of values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SecondMoment.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SecondMoment</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes a statistic related to the Second Central Moment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Skewness.html" title="class in org.apache.commons.math3.stat.descriptive.moment">Skewness</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the skewness of the available values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html" title="class in org.apache.commons.math3.stat.descriptive.moment">StandardDeviation</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the sample standard deviation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html" title="class in org.apache.commons.math3.stat.descriptive.moment">Variance</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the variance of the available values.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/package-summary.html">org.apache.commons.math3.stat.descriptive.moment</A> that return <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></FONT></TD>
+<TD><CODE><B>GeometricMean.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/GeometricMean.html#getSumLogImpl()">getSumLogImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the currently configured sum of logs implementation</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/package-summary.html">org.apache.commons.math3.stat.descriptive.moment</A> with parameters of type <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>GeometricMean.</B><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/GeometricMean.html#setSumLogImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumLogImpl</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumLogImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the sum of logs.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.descriptive.rank"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A> in <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/rank/package-summary.html">org.apache.commons.math3.stat.descriptive.rank</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/rank/package-summary.html">org.apache.commons.math3.stat.descriptive.rank</A> that implement <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/rank/Max.html" title="class in org.apache.commons.math3.stat.descriptive.rank">Max</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the maximum of the available values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/rank/Min.html" title="class in org.apache.commons.math3.stat.descriptive.rank">Min</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the minimum of the available values.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.descriptive.summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A> in <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/summary/package-summary.html">org.apache.commons.math3.stat.descriptive.summary</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/summary/package-summary.html">org.apache.commons.math3.stat.descriptive.summary</A> that implement <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/summary/Product.html" title="class in org.apache.commons.math3.stat.descriptive.summary">Product</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the product of the available values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/summary/Sum.html" title="class in org.apache.commons.math3.stat.descriptive.summary">Sum</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of the available values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/summary/SumOfLogs.html" title="class in org.apache.commons.math3.stat.descriptive.summary">SumOfLogs</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of the natural logs for this collection of values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/summary/SumOfSquares.html" title="class in org.apache.commons.math3.stat.descriptive.summary">SumOfSquares</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of the squares of the available values.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/stat/descriptive//class-useStorelessUnivariateStatistic.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="StorelessUnivariateStatistic.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

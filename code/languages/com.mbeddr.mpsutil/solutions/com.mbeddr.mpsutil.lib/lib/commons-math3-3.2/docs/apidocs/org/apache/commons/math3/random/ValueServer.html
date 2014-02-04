@@ -1,0 +1,909 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ValueServer (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ValueServer (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ValueServer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/UnitSphereRandomVectorGenerator.html" title="class in org.apache.commons.math3.random"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/Well1024a.html" title="class in org.apache.commons.math3.random"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/random/ValueServer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ValueServer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.random</FONT>
+<BR>
+Class ValueServer</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.random.ValueServer</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>ValueServer</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+Generates values for use in simulation applications.
+ <p>
+ How values are generated is determined by the <code>mode</code>
+ property.</p>
+ <p>
+ Supported <code>mode</code> values are: <ul>
+ <li> DIGEST_MODE -- uses an empirical distribution </li>
+ <li> REPLAY_MODE -- replays data from <code>valuesFileURL</code></li>
+ <li> UNIFORM_MODE -- generates uniformly distributed random values with
+                      mean = <code>mu</code> </li>
+ <li> EXPONENTIAL_MODE -- generates exponentially distributed random values
+                         with mean = <code>mu</code></li>
+ <li> GAUSSIAN_MODE -- generates Gaussian distributed random values with
+                       mean = <code>mu</code> and
+                       standard deviation = <code>sigma</code></li>
+ <li> CONSTANT_MODE -- returns <code>mu</code> every time.</li></ul></p>
+<P>
+
+<P>
+<DL>
+<DT><B>Version:</B></DT>
+  <DD>$Id: ValueServer.java 1422350 2012-12-15 20:47:47Z psteitz $</DD>
+</DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#CONSTANT_MODE">CONSTANT_MODE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Always return mu</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#DIGEST_MODE">DIGEST_MODE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use empirical distribution.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#EXPONENTIAL_MODE">EXPONENTIAL_MODE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exponential random deviates with mean = &mu;.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#GAUSSIAN_MODE">GAUSSIAN_MODE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaussian random deviates with mean = &mu;, std dev = &sigma;.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#REPLAY_MODE">REPLAY_MODE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replay data from valuesFilePath.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#UNIFORM_MODE">UNIFORM_MODE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uniform random deviates with mean = &mu;.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#ValueServer()">ValueServer</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates new ValueServer</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#ValueServer(org.apache.commons.math3.random.RandomDataImpl)">ValueServer</A></B>(<A HREF="../../../../../org/apache/commons/math3/random/RandomDataImpl.html" title="class in org.apache.commons.math3.random">RandomDataImpl</A>&nbsp;randomData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#ValueServer(org.apache.commons.math3.random.RandomGenerator)"><CODE>ValueServer(RandomGenerator)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#ValueServer(org.apache.commons.math3.random.RandomGenerator)">ValueServer</A></B>(<A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html" title="interface in org.apache.commons.math3.random">RandomGenerator</A>&nbsp;generator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a ValueServer instance using a RandomGenerator as its source
+ of random data.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#closeReplayFile()">closeReplayFile</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closes <code>valuesFileURL</code> after use in REPLAY_MODE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#computeDistribution()">computeDistribution</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the empirical distribution using values from the file
+ in <code>valuesFileURL</code>, using the default number of bins.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#computeDistribution(int)">computeDistribution</A></B>(int&nbsp;binCount)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the empirical distribution using values from the file
+ in <code>valuesFileURL</code> and <code>binCount</code> bins.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#fill(double[])">fill</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fills the input array with values generated using getNext() repeatedly.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#fill(int)">fill</A></B>(int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of length <code>length</code> with values generated
+ using getNext() repeatedly.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/EmpiricalDistribution.html" title="class in org.apache.commons.math3.random">EmpiricalDistribution</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getEmpiricalDistribution()">getEmpiricalDistribution</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <A HREF="../../../../../org/apache/commons/math3/random/EmpiricalDistribution.html" title="class in org.apache.commons.math3.random"><CODE>EmpiricalDistribution</CODE></A> used when operating in <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#DIGEST_MODE">0</A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getMode()">getMode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the data generation mode.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getMu()">getMu</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the mean used when operating in <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#GAUSSIAN_MODE"><CODE>GAUSSIAN_MODE</CODE></A>, <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#EXPONENTIAL_MODE"><CODE>EXPONENTIAL_MODE</CODE></A>
+ or <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#UNIFORM_MODE"><CODE>UNIFORM_MODE</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getNext()">getNext</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the next generated value, generated according
+ to the mode value (see MODE constants).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getSigma()">getSigma</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the standard deviation used when operating in <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#GAUSSIAN_MODE"><CODE>GAUSSIAN_MODE</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getValuesFileURL()">getValuesFileURL</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the URL for the file used to build the empirical distribution
+ when using <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#DIGEST_MODE"><CODE>DIGEST_MODE</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#reSeed(long)">reSeed</A></B>(long&nbsp;seed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reseeds the random data generator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#resetReplayFile()">resetReplayFile</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resets REPLAY_MODE file pointer to the beginning of the <code>valuesFileURL</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#setMode(int)">setMode</A></B>(int&nbsp;mode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the data generation mode.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#setMu(double)">setMu</A></B>(double&nbsp;mu)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getMu()"><CODE>mean</CODE></A> used in data generation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#setSigma(double)">setSigma</A></B>(double&nbsp;sigma)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getSigma()"><CODE>standard deviation</CODE></A> used in <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#GAUSSIAN_MODE"><CODE>GAUSSIAN_MODE</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#setValuesFileURL(java.lang.String)">setValuesFileURL</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;url)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getValuesFileURL()"><CODE>values file URL</CODE></A> using a string
+ URL representation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#setValuesFileURL(java.net.URL)">setValuesFileURL</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;url)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the the <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getValuesFileURL()"><CODE>values file URL</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DIGEST_MODE"><!-- --></A><H3>
+DIGEST_MODE</H3>
+<PRE>
+public static final int <B>DIGEST_MODE</B></PRE>
+<DL>
+<DD>Use empirical distribution.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.random.ValueServer.DIGEST_MODE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="REPLAY_MODE"><!-- --></A><H3>
+REPLAY_MODE</H3>
+<PRE>
+public static final int <B>REPLAY_MODE</B></PRE>
+<DL>
+<DD>Replay data from valuesFilePath.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.random.ValueServer.REPLAY_MODE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="UNIFORM_MODE"><!-- --></A><H3>
+UNIFORM_MODE</H3>
+<PRE>
+public static final int <B>UNIFORM_MODE</B></PRE>
+<DL>
+<DD>Uniform random deviates with mean = &mu;.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.random.ValueServer.UNIFORM_MODE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="EXPONENTIAL_MODE"><!-- --></A><H3>
+EXPONENTIAL_MODE</H3>
+<PRE>
+public static final int <B>EXPONENTIAL_MODE</B></PRE>
+<DL>
+<DD>Exponential random deviates with mean = &mu;.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.random.ValueServer.EXPONENTIAL_MODE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GAUSSIAN_MODE"><!-- --></A><H3>
+GAUSSIAN_MODE</H3>
+<PRE>
+public static final int <B>GAUSSIAN_MODE</B></PRE>
+<DL>
+<DD>Gaussian random deviates with mean = &mu;, std dev = &sigma;.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.random.ValueServer.GAUSSIAN_MODE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CONSTANT_MODE"><!-- --></A><H3>
+CONSTANT_MODE</H3>
+<PRE>
+public static final int <B>CONSTANT_MODE</B></PRE>
+<DL>
+<DD>Always return mu
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.random.ValueServer.CONSTANT_MODE">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ValueServer()"><!-- --></A><H3>
+ValueServer</H3>
+<PRE>
+public <B>ValueServer</B>()</PRE>
+<DL>
+<DD>Creates new ValueServer
+<P>
+</DL>
+<HR>
+
+<A NAME="ValueServer(org.apache.commons.math3.random.RandomDataImpl)"><!-- --></A><H3>
+ValueServer</H3>
+<PRE>
+public <B>ValueServer</B>(<A HREF="../../../../../org/apache/commons/math3/random/RandomDataImpl.html" title="class in org.apache.commons.math3.random">RandomDataImpl</A>&nbsp;randomData)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#ValueServer(org.apache.commons.math3.random.RandomGenerator)"><CODE>ValueServer(RandomGenerator)</CODE></A></I>
+<P>
+<DD>Construct a ValueServer instance using a RandomDataImpl as its source
+ of random data.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>randomData</CODE> - the RandomDataImpl instance used to source random data<DT><B>Since:</B></DT>
+  <DD>3.0</DD>
+</DL>
+</DL>
+<HR>
+
+<A NAME="ValueServer(org.apache.commons.math3.random.RandomGenerator)"><!-- --></A><H3>
+ValueServer</H3>
+<PRE>
+public <B>ValueServer</B>(<A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html" title="interface in org.apache.commons.math3.random">RandomGenerator</A>&nbsp;generator)</PRE>
+<DL>
+<DD>Construct a ValueServer instance using a RandomGenerator as its source
+ of random data.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>generator</CODE> - source of random data<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getNext()"><!-- --></A><H3>
+getNext</H3>
+<PRE>
+public double <B>getNext</B>()
+               throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A>,
+                      <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A>,
+                      <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Returns the next generated value, generated according
+ to the mode value (see MODE constants).
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>generated value
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - in REPLAY_MODE if a file I/O error occurs
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></CODE> - if mode is not recognized
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the underlying random generator thwrows one</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fill(double[])"><!-- --></A><H3>
+fill</H3>
+<PRE>
+public void <B>fill</B>(double[]&nbsp;values)
+          throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A>,
+                 <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A>,
+                 <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Fills the input array with values generated using getNext() repeatedly.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - array to be filled
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - in REPLAY_MODE if a file I/O error occurs
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></CODE> - if mode is not recognized
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the underlying random generator thwrows one</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fill(int)"><!-- --></A><H3>
+fill</H3>
+<PRE>
+public double[] <B>fill</B>(int&nbsp;length)
+              throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A>,
+                     <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A>,
+                     <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Returns an array of length <code>length</code> with values generated
+ using getNext() repeatedly.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>length</CODE> - length of output array
+<DT><B>Returns:</B><DD>array of generated values
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - in REPLAY_MODE if a file I/O error occurs
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></CODE> - if mode is not recognized
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the underlying random generator thwrows one</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeDistribution()"><!-- --></A><H3>
+computeDistribution</H3>
+<PRE>
+public void <B>computeDistribution</B>()
+                         throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A>,
+                                <A HREF="../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A>,
+                                <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Computes the empirical distribution using values from the file
+ in <code>valuesFileURL</code>, using the default number of bins.
+ <p>
+ <code>valuesFileURL</code> must exist and be
+ readable by *this at runtime.</p>
+ <p>
+ This method must be called before using <code>getNext()</code>
+ with <code>mode = DIGEST_MODE</code></p>
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - if an I/O error occurs reading the input file
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the <code>valuesFileURL</code> has not been set
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A></CODE> - if URL contains no data</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeDistribution(int)"><!-- --></A><H3>
+computeDistribution</H3>
+<PRE>
+public void <B>computeDistribution</B>(int&nbsp;binCount)
+                         throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                                <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A>,
+                                <A HREF="../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A></PRE>
+<DL>
+<DD>Computes the empirical distribution using values from the file
+ in <code>valuesFileURL</code> and <code>binCount</code> bins.
+ <p>
+ <code>valuesFileURL</code> must exist and be readable by this process
+ at runtime.</p>
+ <p>
+ This method must be called before using <code>getNext()</code>
+ with <code>mode = DIGEST_MODE</code></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>binCount</CODE> - the number of bins used in computing the empirical
+ distribution
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the <code>valuesFileURL</code> has not been set
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - if an error occurs reading the input file
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A></CODE> - if URL contains no data</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMode()"><!-- --></A><H3>
+getMode</H3>
+<PRE>
+public int <B>getMode</B>()</PRE>
+<DL>
+<DD>Returns the data generation mode. See <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html" title="class in org.apache.commons.math3.random"><CODE>the class javadoc</CODE></A>
+ for description of the valid values of this property.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>Value of property mode.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMode(int)"><!-- --></A><H3>
+setMode</H3>
+<PRE>
+public void <B>setMode</B>(int&nbsp;mode)</PRE>
+<DL>
+<DD>Sets the data generation mode.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mode</CODE> - New value of the data generation mode.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getValuesFileURL()"><!-- --></A><H3>
+getValuesFileURL</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A> <B>getValuesFileURL</B>()</PRE>
+<DL>
+<DD>Returns the URL for the file used to build the empirical distribution
+ when using <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#DIGEST_MODE"><CODE>DIGEST_MODE</CODE></A>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>Values file URL.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setValuesFileURL(java.lang.String)"><!-- --></A><H3>
+setValuesFileURL</H3>
+<PRE>
+public void <B>setValuesFileURL</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;url)
+                      throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/net/MalformedURLException.html?is-external=true" title="class or interface in java.net">MalformedURLException</A></PRE>
+<DL>
+<DD>Sets the <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getValuesFileURL()"><CODE>values file URL</CODE></A> using a string
+ URL representation.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>url</CODE> - String representation for new valuesFileURL.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/net/MalformedURLException.html?is-external=true" title="class or interface in java.net">MalformedURLException</A></CODE> - if url is not well formed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setValuesFileURL(java.net.URL)"><!-- --></A><H3>
+setValuesFileURL</H3>
+<PRE>
+public void <B>setValuesFileURL</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;url)</PRE>
+<DL>
+<DD>Sets the the <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getValuesFileURL()"><CODE>values file URL</CODE></A>.
+
+ <p>The values file <i>must</i> be an ASCII text file containing one
+ valid numeric entry per line.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>url</CODE> - URL of the values file.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEmpiricalDistribution()"><!-- --></A><H3>
+getEmpiricalDistribution</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/random/EmpiricalDistribution.html" title="class in org.apache.commons.math3.random">EmpiricalDistribution</A> <B>getEmpiricalDistribution</B>()</PRE>
+<DL>
+<DD>Returns the <A HREF="../../../../../org/apache/commons/math3/random/EmpiricalDistribution.html" title="class in org.apache.commons.math3.random"><CODE>EmpiricalDistribution</CODE></A> used when operating in <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#DIGEST_MODE">0</A>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>EmpircalDistribution built by <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#computeDistribution()"><CODE>computeDistribution()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="resetReplayFile()"><!-- --></A><H3>
+resetReplayFile</H3>
+<PRE>
+public void <B>resetReplayFile</B>()
+                     throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD>Resets REPLAY_MODE file pointer to the beginning of the <code>valuesFileURL</code>.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - if an error occurs opening the file</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="closeReplayFile()"><!-- --></A><H3>
+closeReplayFile</H3>
+<PRE>
+public void <B>closeReplayFile</B>()
+                     throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD>Closes <code>valuesFileURL</code> after use in REPLAY_MODE.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - if an error occurs closing the file</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMu()"><!-- --></A><H3>
+getMu</H3>
+<PRE>
+public double <B>getMu</B>()</PRE>
+<DL>
+<DD>Returns the mean used when operating in <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#GAUSSIAN_MODE"><CODE>GAUSSIAN_MODE</CODE></A>, <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#EXPONENTIAL_MODE"><CODE>EXPONENTIAL_MODE</CODE></A>
+ or <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#UNIFORM_MODE"><CODE>UNIFORM_MODE</CODE></A>.  When operating in <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#CONSTANT_MODE"><CODE>CONSTANT_MODE</CODE></A>, this is the constant
+ value always returned.  Calling <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#computeDistribution()"><CODE>computeDistribution()</CODE></A> sets this value to the
+ overall mean of the values in the <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getValuesFileURL()"><CODE>values file</CODE></A>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>Mean used in data generation.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMu(double)"><!-- --></A><H3>
+setMu</H3>
+<PRE>
+public void <B>setMu</B>(double&nbsp;mu)</PRE>
+<DL>
+<DD>Sets the <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getMu()"><CODE>mean</CODE></A> used in data generation.  Note that calling this method
+ after <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#computeDistribution()"><CODE>computeDistribution()</CODE></A> has been called will have no effect on data
+ generated in <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#DIGEST_MODE"><CODE>DIGEST_MODE</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mu</CODE> - new Mean value.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSigma()"><!-- --></A><H3>
+getSigma</H3>
+<PRE>
+public double <B>getSigma</B>()</PRE>
+<DL>
+<DD>Returns the standard deviation used when operating in <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#GAUSSIAN_MODE"><CODE>GAUSSIAN_MODE</CODE></A>.
+ Calling <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#computeDistribution()"><CODE>computeDistribution()</CODE></A> sets this value to the overall standard
+ deviation of the values in the <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getValuesFileURL()"><CODE>values file</CODE></A>.  This
+ property has no effect when the data generation mode is not
+ <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#GAUSSIAN_MODE"><CODE>GAUSSIAN_MODE</CODE></A>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>Standard deviation used when operating in <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#GAUSSIAN_MODE"><CODE>GAUSSIAN_MODE</CODE></A>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSigma(double)"><!-- --></A><H3>
+setSigma</H3>
+<PRE>
+public void <B>setSigma</B>(double&nbsp;sigma)</PRE>
+<DL>
+<DD>Sets the <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#getSigma()"><CODE>standard deviation</CODE></A> used in <A HREF="../../../../../org/apache/commons/math3/random/ValueServer.html#GAUSSIAN_MODE"><CODE>GAUSSIAN_MODE</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sigma</CODE> - New standard deviation.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="reSeed(long)"><!-- --></A><H3>
+reSeed</H3>
+<PRE>
+public void <B>reSeed</B>(long&nbsp;seed)</PRE>
+<DL>
+<DD>Reseeds the random data generator.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>seed</CODE> - Value with which to reseed the <A HREF="../../../../../org/apache/commons/math3/random/RandomDataImpl.html" title="class in org.apache.commons.math3.random"><CODE>RandomDataImpl</CODE></A>
+ used to generate random data.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ValueServer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/UnitSphereRandomVectorGenerator.html" title="class in org.apache.commons.math3.random"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/Well1024a.html" title="class in org.apache.commons.math3.random"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/random/ValueServer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ValueServer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

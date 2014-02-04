@@ -1,0 +1,567 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+NordsieckStepInterpolator (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="NordsieckStepInterpolator (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/NordsieckStepInterpolator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/ode/sampling/FixedStepHandler.html" title="interface in org.apache.commons.math3.ode.sampling"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/ode/sampling/StepHandler.html" title="interface in org.apache.commons.math3.ode.sampling"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="NordsieckStepInterpolator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.ode.sampling</FONT>
+<BR>
+Class NordsieckStepInterpolator</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">org.apache.commons.math3.ode.sampling.AbstractStepInterpolator</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.ode.sampling.NordsieckStepInterpolator</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Externalizable.html?is-external=true" title="class or interface in java.io">Externalizable</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/StepInterpolator.html" title="interface in org.apache.commons.math3.ode.sampling">StepInterpolator</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>NordsieckStepInterpolator</B><DT>extends <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">AbstractStepInterpolator</A></DL>
+</PRE>
+
+<P>
+This class implements an interpolator for integrators using Nordsieck representation.
+
+ <p>This interpolator computes dense output around the current point.
+ The interpolation equation is based on Taylor series formulas.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: NordsieckStepInterpolator.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsBashforthIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>AdamsBashforthIntegrator</CODE></A>, 
+<A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsMoultonIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>AdamsMoultonIntegrator</CODE></A>, 
+<A HREF="../../../../../../serialized-form.html#org.apache.commons.math3.ode.sampling.NordsieckStepInterpolator">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html#stateVariation">stateVariation</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State variation.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.commons.math3.ode.sampling.AbstractStepInterpolator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.commons.math3.ode.sampling.<A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">AbstractStepInterpolator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#currentState">currentState</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#h">h</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#interpolatedDerivatives">interpolatedDerivatives</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#interpolatedPrimaryDerivatives">interpolatedPrimaryDerivatives</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#interpolatedPrimaryState">interpolatedPrimaryState</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#interpolatedSecondaryDerivatives">interpolatedSecondaryDerivatives</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#interpolatedSecondaryState">interpolatedSecondaryState</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#interpolatedState">interpolatedState</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#interpolatedTime">interpolatedTime</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html#NordsieckStepInterpolator()">NordsieckStepInterpolator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple constructor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html#NordsieckStepInterpolator(org.apache.commons.math3.ode.sampling.NordsieckStepInterpolator)">NordsieckStepInterpolator</A></B>(<A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">NordsieckStepInterpolator</A>&nbsp;interpolator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy constructor.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html#computeInterpolatedStateAndDerivatives(double, double)">computeInterpolatedStateAndDerivatives</A></B>(double&nbsp;theta,
+                                       double&nbsp;oneMinusThetaH)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the state and derivatives at the interpolated time.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/ode/sampling/StepInterpolator.html" title="interface in org.apache.commons.math3.ode.sampling">StepInterpolator</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html#doCopy()">doCopy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Really copy the finalized instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html#getInterpolatedStateVariation()">getInterpolatedStateVariation</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the state vector variation from current to interpolated state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html#readExternal(java.io.ObjectInput)">readExternal</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/ObjectInput.html?is-external=true" title="class or interface in java.io">ObjectInput</A>&nbsp;in)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html#reinitialize(double[], boolean, org.apache.commons.math3.ode.EquationsMapper, org.apache.commons.math3.ode.EquationsMapper[])">reinitialize</A></B>(double[]&nbsp;y,
+             boolean&nbsp;forward,
+             <A HREF="../../../../../../org/apache/commons/math3/ode/EquationsMapper.html" title="class in org.apache.commons.math3.ode">EquationsMapper</A>&nbsp;primaryMapper,
+             <A HREF="../../../../../../org/apache/commons/math3/ode/EquationsMapper.html" title="class in org.apache.commons.math3.ode">EquationsMapper</A>[]&nbsp;secondaryMappers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reinitialize the instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html#reinitialize(double, double, double[], org.apache.commons.math3.linear.Array2DRowRealMatrix)">reinitialize</A></B>(double&nbsp;time,
+             double&nbsp;stepSize,
+             double[]&nbsp;scaledDerivative,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/Array2DRowRealMatrix.html" title="class in org.apache.commons.math3.linear">Array2DRowRealMatrix</A>&nbsp;nordsieckVector)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reinitialize the instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html#rescale(double)">rescale</A></B>(double&nbsp;stepSize)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rescale the instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html#writeExternal(java.io.ObjectOutput)">writeExternal</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/ObjectOutput.html?is-external=true" title="class or interface in java.io">ObjectOutput</A>&nbsp;out)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.ode.sampling.AbstractStepInterpolator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.ode.sampling.<A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">AbstractStepInterpolator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#copy()">copy</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#doFinalize()">doFinalize</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#finalizeStep()">finalizeStep</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#getCurrentTime()">getCurrentTime</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#getGlobalCurrentTime()">getGlobalCurrentTime</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#getGlobalPreviousTime()">getGlobalPreviousTime</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#getInterpolatedDerivatives()">getInterpolatedDerivatives</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#getInterpolatedSecondaryDerivatives(int)">getInterpolatedSecondaryDerivatives</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#getInterpolatedSecondaryState(int)">getInterpolatedSecondaryState</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#getInterpolatedState()">getInterpolatedState</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#getInterpolatedTime()">getInterpolatedTime</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#getPreviousTime()">getPreviousTime</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#isForward()">isForward</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#readBaseExternal(java.io.ObjectInput)">readBaseExternal</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#setInterpolatedTime(double)">setInterpolatedTime</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#setSoftCurrentTime(double)">setSoftCurrentTime</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#setSoftPreviousTime(double)">setSoftPreviousTime</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#shift()">shift</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#storeTime(double)">storeTime</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#writeBaseExternal(java.io.ObjectOutput)">writeBaseExternal</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="stateVariation"><!-- --></A><H3>
+stateVariation</H3>
+<PRE>
+protected double[] <B>stateVariation</B></PRE>
+<DL>
+<DD>State variation.
+<P>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="NordsieckStepInterpolator()"><!-- --></A><H3>
+NordsieckStepInterpolator</H3>
+<PRE>
+public <B>NordsieckStepInterpolator</B>()</PRE>
+<DL>
+<DD>Simple constructor.
+ This constructor builds an instance that is not usable yet, the
+ <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#reinitialize(double[], boolean, org.apache.commons.math3.ode.EquationsMapper, org.apache.commons.math3.ode.EquationsMapper[])"><CODE>AbstractStepInterpolator.reinitialize(double[], boolean, org.apache.commons.math3.ode.EquationsMapper, org.apache.commons.math3.ode.EquationsMapper[])</CODE></A> method should be called
+ before using the instance in order to initialize the internal arrays. This
+ constructor is used only in order to delay the initialization in
+ some cases.
+<P>
+</DL>
+<HR>
+
+<A NAME="NordsieckStepInterpolator(org.apache.commons.math3.ode.sampling.NordsieckStepInterpolator)"><!-- --></A><H3>
+NordsieckStepInterpolator</H3>
+<PRE>
+public <B>NordsieckStepInterpolator</B>(<A HREF="../../../../../../org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">NordsieckStepInterpolator</A>&nbsp;interpolator)</PRE>
+<DL>
+<DD>Copy constructor.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>interpolator</CODE> - interpolator to copy from. The copy is a deep
+ copy: its arrays are separated from the original arrays of the
+ instance</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="doCopy()"><!-- --></A><H3>
+doCopy</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/StepInterpolator.html" title="interface in org.apache.commons.math3.ode.sampling">StepInterpolator</A> <B>doCopy</B>()</PRE>
+<DL>
+<DD>Really copy the finalized instance.
+ <p>This method is called by <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#copy()"><CODE>AbstractStepInterpolator.copy()</CODE></A> after the
+ step has been finalized. It must perform a deep copy
+ to have an new instance completely independent for the
+ original instance.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#doCopy()">doCopy</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">AbstractStepInterpolator</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a copy of the finalized instance</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="reinitialize(double[], boolean, org.apache.commons.math3.ode.EquationsMapper, org.apache.commons.math3.ode.EquationsMapper[])"><!-- --></A><H3>
+reinitialize</H3>
+<PRE>
+public void <B>reinitialize</B>(double[]&nbsp;y,
+                         boolean&nbsp;forward,
+                         <A HREF="../../../../../../org/apache/commons/math3/ode/EquationsMapper.html" title="class in org.apache.commons.math3.ode">EquationsMapper</A>&nbsp;primaryMapper,
+                         <A HREF="../../../../../../org/apache/commons/math3/ode/EquationsMapper.html" title="class in org.apache.commons.math3.ode">EquationsMapper</A>[]&nbsp;secondaryMappers)</PRE>
+<DL>
+<DD>Reinitialize the instance.
+ <p>Beware that all arrays <em>must</em> be references to integrator
+ arrays, in order to ensure proper update without copy.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#reinitialize(double[], boolean, org.apache.commons.math3.ode.EquationsMapper, org.apache.commons.math3.ode.EquationsMapper[])">reinitialize</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">AbstractStepInterpolator</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>y</CODE> - reference to the integrator array holding the state at
+ the end of the step<DD><CODE>forward</CODE> - integration direction indicator<DD><CODE>primaryMapper</CODE> - equations mapper for the primary equations set<DD><CODE>secondaryMappers</CODE> - equations mappers for the secondary equations sets</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="reinitialize(double, double, double[], org.apache.commons.math3.linear.Array2DRowRealMatrix)"><!-- --></A><H3>
+reinitialize</H3>
+<PRE>
+public void <B>reinitialize</B>(double&nbsp;time,
+                         double&nbsp;stepSize,
+                         double[]&nbsp;scaledDerivative,
+                         <A HREF="../../../../../../org/apache/commons/math3/linear/Array2DRowRealMatrix.html" title="class in org.apache.commons.math3.linear">Array2DRowRealMatrix</A>&nbsp;nordsieckVector)</PRE>
+<DL>
+<DD>Reinitialize the instance.
+ <p>Beware that all arrays <em>must</em> be references to integrator
+ arrays, in order to ensure proper update without copy.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>time</CODE> - time at which all arrays are defined<DD><CODE>stepSize</CODE> - step size used in the scaled and nordsieck arrays<DD><CODE>scaledDerivative</CODE> - reference to the integrator array holding the first
+ scaled derivative<DD><CODE>nordsieckVector</CODE> - reference to the integrator matrix holding the
+ nordsieck vector</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="rescale(double)"><!-- --></A><H3>
+rescale</H3>
+<PRE>
+public void <B>rescale</B>(double&nbsp;stepSize)</PRE>
+<DL>
+<DD>Rescale the instance.
+ <p>Since the scaled and Nordiseck arrays are shared with the caller,
+ this method has the side effect of rescaling this arrays in the caller too.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>stepSize</CODE> - new step size to use in the scaled and nordsieck arrays</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInterpolatedStateVariation()"><!-- --></A><H3>
+getInterpolatedStateVariation</H3>
+<PRE>
+public double[] <B>getInterpolatedStateVariation</B>()
+                                       throws <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Get the state vector variation from current to interpolated state.
+ <p>This method is aimed at computing y(t<sub>interpolation</sub>)
+ -y(t<sub>current</sub>) accurately by avoiding the cancellation errors
+ that would occur if the subtraction were performed explicitly.</p>
+ <p>The returned vector is a reference to a reused array, so
+ it should not be modified and it should be copied if it needs
+ to be preserved across several calls.</p>
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>state vector at time <A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#getInterpolatedTime()"><CODE>AbstractStepInterpolator.getInterpolatedTime()</CODE></A>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if the number of functions evaluations is exceeded<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#getInterpolatedDerivatives()"><CODE>AbstractStepInterpolator.getInterpolatedDerivatives()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeInterpolatedStateAndDerivatives(double, double)"><!-- --></A><H3>
+computeInterpolatedStateAndDerivatives</H3>
+<PRE>
+protected void <B>computeInterpolatedStateAndDerivatives</B>(double&nbsp;theta,
+                                                      double&nbsp;oneMinusThetaH)</PRE>
+<DL>
+<DD>Compute the state and derivatives at the interpolated time.
+ This is the main processing method that should be implemented by
+ the derived classes to perform the interpolation.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#computeInterpolatedStateAndDerivatives(double, double)">computeInterpolatedStateAndDerivatives</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">AbstractStepInterpolator</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>theta</CODE> - normalized interpolation abscissa within the step
+ (theta is zero at the previous time step and one at the current time step)<DD><CODE>oneMinusThetaH</CODE> - time gap between the interpolated time and
+ the current time</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="writeExternal(java.io.ObjectOutput)"><!-- --></A><H3>
+writeExternal</H3>
+<PRE>
+public void <B>writeExternal</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/ObjectOutput.html?is-external=true" title="class or interface in java.io">ObjectOutput</A>&nbsp;out)
+                   throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Externalizable.html?is-external=true#writeExternal(java.io.ObjectOutput)" title="class or interface in java.io">writeExternal</A></CODE> in interface <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Externalizable.html?is-external=true" title="class or interface in java.io">Externalizable</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#writeExternal(java.io.ObjectOutput)">writeExternal</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">AbstractStepInterpolator</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readExternal(java.io.ObjectInput)"><!-- --></A><H3>
+readExternal</H3>
+<PRE>
+public void <B>readExternal</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/ObjectInput.html?is-external=true" title="class or interface in java.io">ObjectInput</A>&nbsp;in)
+                  throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A>,
+                         <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</A></PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Externalizable.html?is-external=true#readExternal(java.io.ObjectInput)" title="class or interface in java.io">readExternal</A></CODE> in interface <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Externalizable.html?is-external=true" title="class or interface in java.io">Externalizable</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html#readExternal(java.io.ObjectInput)">readExternal</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">AbstractStepInterpolator</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</A></CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/NordsieckStepInterpolator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/ode/sampling/FixedStepHandler.html" title="interface in org.apache.commons.math3.ode.sampling"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/ode/sampling/StepHandler.html" title="interface in org.apache.commons.math3.ode.sampling"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="NordsieckStepInterpolator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

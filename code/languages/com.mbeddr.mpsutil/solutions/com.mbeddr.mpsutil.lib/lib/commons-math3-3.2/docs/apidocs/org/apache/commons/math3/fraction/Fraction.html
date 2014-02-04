@@ -1,0 +1,1318 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Fraction (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Fraction (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Fraction.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/BigFractionFormat.html" title="class in org.apache.commons.math3.fraction"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/FractionConversionException.html" title="class in org.apache.commons.math3.fraction"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/fraction/Fraction.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Fraction.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.fraction</FONT>
+<BR>
+Class Fraction</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">java.lang.Number</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.fraction.Fraction</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;, <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;</DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>Fraction</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</A><DT>implements <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DL>
+</PRE>
+
+<P>
+Representation of a rational number.
+
+ implements Serializable since 2.0
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>1.1</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: Fraction.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../serialized-form.html#org.apache.commons.math3.fraction.Fraction">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#FOUR_FIFTHS">FOUR_FIFTHS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "4/5".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#MINUS_ONE">MINUS_ONE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "-1 / 1".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#ONE">ONE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "1".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#ONE_FIFTH">ONE_FIFTH</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "1/5".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#ONE_HALF">ONE_HALF</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "1/2".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#ONE_QUARTER">ONE_QUARTER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "1/4".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#ONE_THIRD">ONE_THIRD</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "1/3".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#THREE_FIFTHS">THREE_FIFTHS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "3/5".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#THREE_QUARTERS">THREE_QUARTERS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "3/4".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#TWO">TWO</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "2 / 1".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#TWO_FIFTHS">TWO_FIFTHS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "2/5".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#TWO_QUARTERS">TWO_QUARTERS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "2/4".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#TWO_THIRDS">TWO_THIRDS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "2/3".</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#ZERO">ZERO</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A fraction representing "0".</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#Fraction(double)">Fraction</A></B>(double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a fraction given the double value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#Fraction(double, double, int)">Fraction</A></B>(double&nbsp;value,
+         double&nbsp;epsilon,
+         int&nbsp;maxIterations)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a fraction given the double value and maximum error allowed.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#Fraction(double, int)">Fraction</A></B>(double&nbsp;value,
+         int&nbsp;maxDenominator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a fraction given the double value and maximum denominator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#Fraction(int)">Fraction</A></B>(int&nbsp;num)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a fraction from an int.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#Fraction(int, int)">Fraction</A></B>(int&nbsp;num,
+         int&nbsp;den)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a fraction given the numerator and denominator.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#abs()">abs</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the absolute value of this fraction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#add(org.apache.commons.math3.fraction.Fraction)">add</A></B>(<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&nbsp;fraction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds the value of this fraction to another, returning the result in reduced form.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#add(int)">add</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add an integer to the fraction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#compareTo(org.apache.commons.math3.fraction.Fraction)">compareTo</A></B>(<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&nbsp;object)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compares this object to another based on size.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#divide(org.apache.commons.math3.fraction.Fraction)">divide</A></B>(<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&nbsp;fraction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Divide the value of this fraction by another.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#divide(int)">divide</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Divide the fraction by an integer.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#doubleValue()">doubleValue</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the fraction as a <tt>double</tt>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#equals(java.lang.Object)">equals</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;other)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Test for the equality of two fractions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;float</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#floatValue()">floatValue</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the fraction as a <tt>float</tt>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#getDenominator()">getDenominator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Access the denominator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/FractionField.html" title="class in org.apache.commons.math3.fraction">FractionField</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#getField()">getField</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the <A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3"><CODE>Field</CODE></A> to which the instance belongs.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#getNumerator()">getNumerator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Access the numerator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#getReducedFraction(int, int)">getReducedFraction</A></B>(int&nbsp;numerator,
+                   int&nbsp;denominator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a <code>Fraction</code> instance with the 2 parts
+ of a fraction Y/Z.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#hashCode()">hashCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a hashCode for the fraction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#intValue()">intValue</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the fraction as an <tt>int</tt>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#longValue()">longValue</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the fraction as a <tt>long</tt>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#multiply(org.apache.commons.math3.fraction.Fraction)">multiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&nbsp;fraction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiplies the value of this fraction by another, returning the
+ result in reduced form.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#multiply(int)">multiply</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiply the fraction by an integer.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#negate()">negate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the additive inverse of this fraction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#percentageValue()">percentageValue</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Gets the fraction percentage as a <tt>double</tt>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#reciprocal()">reciprocal</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the multiplicative inverse of this fraction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#subtract(org.apache.commons.math3.fraction.Fraction)">subtract</A></B>(<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&nbsp;fraction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtracts the value of another fraction from the value of this one,
+ returning the result in reduced form.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#subtract(int)">subtract</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract an integer from the fraction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html#toString()">toString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Returns the <code>String</code> representing this fraction, ie
+ "num / dem" or just "num" if the denominator is one.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Number"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#byteValue()" title="class or interface in java.lang">byteValue</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#shortValue()" title="class or interface in java.lang">shortValue</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="TWO"><!-- --></A><H3>
+TWO</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>TWO</B></PRE>
+<DL>
+<DD>A fraction representing "2 / 1".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="ONE"><!-- --></A><H3>
+ONE</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>ONE</B></PRE>
+<DL>
+<DD>A fraction representing "1".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="ZERO"><!-- --></A><H3>
+ZERO</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>ZERO</B></PRE>
+<DL>
+<DD>A fraction representing "0".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="FOUR_FIFTHS"><!-- --></A><H3>
+FOUR_FIFTHS</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>FOUR_FIFTHS</B></PRE>
+<DL>
+<DD>A fraction representing "4/5".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="ONE_FIFTH"><!-- --></A><H3>
+ONE_FIFTH</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>ONE_FIFTH</B></PRE>
+<DL>
+<DD>A fraction representing "1/5".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="ONE_HALF"><!-- --></A><H3>
+ONE_HALF</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>ONE_HALF</B></PRE>
+<DL>
+<DD>A fraction representing "1/2".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="ONE_QUARTER"><!-- --></A><H3>
+ONE_QUARTER</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>ONE_QUARTER</B></PRE>
+<DL>
+<DD>A fraction representing "1/4".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="ONE_THIRD"><!-- --></A><H3>
+ONE_THIRD</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>ONE_THIRD</B></PRE>
+<DL>
+<DD>A fraction representing "1/3".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="THREE_FIFTHS"><!-- --></A><H3>
+THREE_FIFTHS</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>THREE_FIFTHS</B></PRE>
+<DL>
+<DD>A fraction representing "3/5".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="THREE_QUARTERS"><!-- --></A><H3>
+THREE_QUARTERS</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>THREE_QUARTERS</B></PRE>
+<DL>
+<DD>A fraction representing "3/4".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="TWO_FIFTHS"><!-- --></A><H3>
+TWO_FIFTHS</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>TWO_FIFTHS</B></PRE>
+<DL>
+<DD>A fraction representing "2/5".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="TWO_QUARTERS"><!-- --></A><H3>
+TWO_QUARTERS</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>TWO_QUARTERS</B></PRE>
+<DL>
+<DD>A fraction representing "2/4".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="TWO_THIRDS"><!-- --></A><H3>
+TWO_THIRDS</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>TWO_THIRDS</B></PRE>
+<DL>
+<DD>A fraction representing "2/3".
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="MINUS_ONE"><!-- --></A><H3>
+MINUS_ONE</H3>
+<PRE>
+public static final <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>MINUS_ONE</B></PRE>
+<DL>
+<DD>A fraction representing "-1 / 1".
+<P>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="Fraction(double)"><!-- --></A><H3>
+Fraction</H3>
+<PRE>
+public <B>Fraction</B>(double&nbsp;value)
+         throws <A HREF="../../../../../org/apache/commons/math3/fraction/FractionConversionException.html" title="class in org.apache.commons.math3.fraction">FractionConversionException</A></PRE>
+<DL>
+<DD>Create a fraction given the double value.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - the double value to convert to a fraction.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/fraction/FractionConversionException.html" title="class in org.apache.commons.math3.fraction">FractionConversionException</A></CODE> - if the continued fraction failed to
+         converge.</DL>
+</DL>
+<HR>
+
+<A NAME="Fraction(double, double, int)"><!-- --></A><H3>
+Fraction</H3>
+<PRE>
+public <B>Fraction</B>(double&nbsp;value,
+                double&nbsp;epsilon,
+                int&nbsp;maxIterations)
+         throws <A HREF="../../../../../org/apache/commons/math3/fraction/FractionConversionException.html" title="class in org.apache.commons.math3.fraction">FractionConversionException</A></PRE>
+<DL>
+<DD>Create a fraction given the double value and maximum error allowed.
+ <p>
+ References:
+ <ul>
+ <li><a href="http://mathworld.wolfram.com/ContinuedFraction.html">
+ Continued Fraction</a> equations (11) and (22)-(26)</li>
+ </ul>
+ </p>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - the double value to convert to a fraction.<DD><CODE>epsilon</CODE> - maximum error allowed.  The resulting fraction is within
+        <code>epsilon</code> of <code>value</code>, in absolute terms.<DD><CODE>maxIterations</CODE> - maximum number of convergents
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/fraction/FractionConversionException.html" title="class in org.apache.commons.math3.fraction">FractionConversionException</A></CODE> - if the continued fraction failed to
+         converge.</DL>
+</DL>
+<HR>
+
+<A NAME="Fraction(double, int)"><!-- --></A><H3>
+Fraction</H3>
+<PRE>
+public <B>Fraction</B>(double&nbsp;value,
+                int&nbsp;maxDenominator)
+         throws <A HREF="../../../../../org/apache/commons/math3/fraction/FractionConversionException.html" title="class in org.apache.commons.math3.fraction">FractionConversionException</A></PRE>
+<DL>
+<DD>Create a fraction given the double value and maximum denominator.
+ <p>
+ References:
+ <ul>
+ <li><a href="http://mathworld.wolfram.com/ContinuedFraction.html">
+ Continued Fraction</a> equations (11) and (22)-(26)</li>
+ </ul>
+ </p>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - the double value to convert to a fraction.<DD><CODE>maxDenominator</CODE> - The maximum allowed value for denominator
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/fraction/FractionConversionException.html" title="class in org.apache.commons.math3.fraction">FractionConversionException</A></CODE> - if the continued fraction failed to
+         converge</DL>
+</DL>
+<HR>
+
+<A NAME="Fraction(int)"><!-- --></A><H3>
+Fraction</H3>
+<PRE>
+public <B>Fraction</B>(int&nbsp;num)</PRE>
+<DL>
+<DD>Create a fraction from an int.
+ The fraction is num / 1.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>num</CODE> - the numerator.</DL>
+</DL>
+<HR>
+
+<A NAME="Fraction(int, int)"><!-- --></A><H3>
+Fraction</H3>
+<PRE>
+public <B>Fraction</B>(int&nbsp;num,
+                int&nbsp;den)</PRE>
+<DL>
+<DD>Create a fraction given the numerator and denominator.  The fraction is
+ reduced to lowest terms.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>num</CODE> - the numerator.<DD><CODE>den</CODE> - the denominator.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the denominator is <code>zero</code></DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="abs()"><!-- --></A><H3>
+abs</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>abs</B>()</PRE>
+<DL>
+<DD>Returns the absolute value of this fraction.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the absolute value.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compareTo(org.apache.commons.math3.fraction.Fraction)"><!-- --></A><H3>
+compareTo</H3>
+<PRE>
+public int <B>compareTo</B>(<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&nbsp;object)</PRE>
+<DL>
+<DD>Compares this object to another based on size.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true#compareTo(T)" title="class or interface in java.lang">compareTo</A></CODE> in interface <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>object</CODE> - the object to compare to
+<DT><B>Returns:</B><DD>-1 if this is less than <tt>object</tt>, +1 if this is greater
+         than <tt>object</tt>, 0 if they are equal.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="doubleValue()"><!-- --></A><H3>
+doubleValue</H3>
+<PRE>
+public double <B>doubleValue</B>()</PRE>
+<DL>
+<DD>Gets the fraction as a <tt>double</tt>. This calculates the fraction as
+ the numerator divided by denominator.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#doubleValue()" title="class or interface in java.lang">doubleValue</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the fraction as a <tt>double</tt></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="equals(java.lang.Object)"><!-- --></A><H3>
+equals</H3>
+<PRE>
+public boolean <B>equals</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;other)</PRE>
+<DL>
+<DD>Test for the equality of two fractions.  If the lowest term
+ numerator and denominators are the same for both fractions, the two
+ fractions are considered to be equal.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>other</CODE> - fraction to test for equality to this fraction
+<DT><B>Returns:</B><DD>true if two fractions are equal, false if object is
+         <tt>null</tt>, not an instance of <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction"><CODE>Fraction</CODE></A>, or not equal
+         to this fraction instance.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="floatValue()"><!-- --></A><H3>
+floatValue</H3>
+<PRE>
+public float <B>floatValue</B>()</PRE>
+<DL>
+<DD>Gets the fraction as a <tt>float</tt>. This calculates the fraction as
+ the numerator divided by denominator.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#floatValue()" title="class or interface in java.lang">floatValue</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the fraction as a <tt>float</tt></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDenominator()"><!-- --></A><H3>
+getDenominator</H3>
+<PRE>
+public int <B>getDenominator</B>()</PRE>
+<DL>
+<DD>Access the denominator.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the denominator.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNumerator()"><!-- --></A><H3>
+getNumerator</H3>
+<PRE>
+public int <B>getNumerator</B>()</PRE>
+<DL>
+<DD>Access the numerator.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the numerator.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hashCode()"><!-- --></A><H3>
+hashCode</H3>
+<PRE>
+public int <B>hashCode</B>()</PRE>
+<DL>
+<DD>Gets a hashCode for the fraction.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a hash code value for this object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="intValue()"><!-- --></A><H3>
+intValue</H3>
+<PRE>
+public int <B>intValue</B>()</PRE>
+<DL>
+<DD>Gets the fraction as an <tt>int</tt>. This returns the whole number part
+ of the fraction.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#intValue()" title="class or interface in java.lang">intValue</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the whole number fraction part</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="longValue()"><!-- --></A><H3>
+longValue</H3>
+<PRE>
+public long <B>longValue</B>()</PRE>
+<DL>
+<DD>Gets the fraction as a <tt>long</tt>. This returns the whole number part
+ of the fraction.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#longValue()" title="class or interface in java.lang">longValue</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the whole number fraction part</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="negate()"><!-- --></A><H3>
+negate</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>negate</B>()</PRE>
+<DL>
+<DD>Return the additive inverse of this fraction.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html#negate()">negate</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the negation of this fraction.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="reciprocal()"><!-- --></A><H3>
+reciprocal</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>reciprocal</B>()</PRE>
+<DL>
+<DD>Return the multiplicative inverse of this fraction.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html#reciprocal()">reciprocal</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the reciprocal fraction</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="add(org.apache.commons.math3.fraction.Fraction)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>add</B>(<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&nbsp;fraction)</PRE>
+<DL>
+<DD><p>Adds the value of this fraction to another, returning the result in reduced form.
+ The algorithm follows Knuth, 4.5.1.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html#add(T)">add</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>fraction</CODE> - the fraction to add, must not be <code>null</code>
+<DT><B>Returns:</B><DD>a <code>Fraction</code> instance with the resulting values
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the fraction is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the resulting numerator or denominator exceeds
+  <code>Integer.MAX_VALUE</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="add(int)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>add</B>(int&nbsp;i)</PRE>
+<DL>
+<DD>Add an integer to the fraction.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>i</CODE> - the <tt>integer</tt> to add.
+<DT><B>Returns:</B><DD>this + i</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subtract(org.apache.commons.math3.fraction.Fraction)"><!-- --></A><H3>
+subtract</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>subtract</B>(<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&nbsp;fraction)</PRE>
+<DL>
+<DD><p>Subtracts the value of another fraction from the value of this one,
+ returning the result in reduced form.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html#subtract(T)">subtract</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>fraction</CODE> - the fraction to subtract, must not be <code>null</code>
+<DT><B>Returns:</B><DD>a <code>Fraction</code> instance with the resulting values
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the fraction is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the resulting numerator or denominator
+   cannot be represented in an <code>int</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subtract(int)"><!-- --></A><H3>
+subtract</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>subtract</B>(int&nbsp;i)</PRE>
+<DL>
+<DD>Subtract an integer from the fraction.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>i</CODE> - the <tt>integer</tt> to subtract.
+<DT><B>Returns:</B><DD>this - i</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="multiply(org.apache.commons.math3.fraction.Fraction)"><!-- --></A><H3>
+multiply</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>multiply</B>(<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&nbsp;fraction)</PRE>
+<DL>
+<DD><p>Multiplies the value of this fraction by another, returning the
+ result in reduced form.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html#multiply(T)">multiply</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>fraction</CODE> - the fraction to multiply by, must not be <code>null</code>
+<DT><B>Returns:</B><DD>a <code>Fraction</code> instance with the resulting values
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the fraction is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the resulting numerator or denominator exceeds
+  <code>Integer.MAX_VALUE</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="multiply(int)"><!-- --></A><H3>
+multiply</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>multiply</B>(int&nbsp;i)</PRE>
+<DL>
+<DD>Multiply the fraction by an integer.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html#multiply(int)">multiply</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>i</CODE> - the <tt>integer</tt> to multiply by.
+<DT><B>Returns:</B><DD>this * i</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="divide(org.apache.commons.math3.fraction.Fraction)"><!-- --></A><H3>
+divide</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>divide</B>(<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&nbsp;fraction)</PRE>
+<DL>
+<DD><p>Divide the value of this fraction by another.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html#divide(T)">divide</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>fraction</CODE> - the fraction to divide by, must not be <code>null</code>
+<DT><B>Returns:</B><DD>a <code>Fraction</code> instance with the resulting values
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</A></CODE> - if the fraction is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the fraction to divide by is zero
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the resulting numerator or denominator exceeds
+  <code>Integer.MAX_VALUE</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="divide(int)"><!-- --></A><H3>
+divide</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>divide</B>(int&nbsp;i)</PRE>
+<DL>
+<DD>Divide the fraction by an integer.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>i</CODE> - the <tt>integer</tt> to divide by.
+<DT><B>Returns:</B><DD>this * i</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="percentageValue()"><!-- --></A><H3>
+percentageValue</H3>
+<PRE>
+public double <B>percentageValue</B>()</PRE>
+<DL>
+<DD><p>
+ Gets the fraction percentage as a <tt>double</tt>. This calculates the
+ fraction as the numerator divided by denominator multiplied by 100.
+ </p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the fraction percentage as a <tt>double</tt>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getReducedFraction(int, int)"><!-- --></A><H3>
+getReducedFraction</H3>
+<PRE>
+public static <A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A> <B>getReducedFraction</B>(int&nbsp;numerator,
+                                          int&nbsp;denominator)</PRE>
+<DL>
+<DD><p>Creates a <code>Fraction</code> instance with the 2 parts
+ of a fraction Y/Z.</p>
+
+ <p>Any negative signs are resolved to be on the numerator.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>numerator</CODE> - the numerator, for example the three in 'three sevenths'<DD><CODE>denominator</CODE> - the denominator, for example the seven in 'three sevenths'
+<DT><B>Returns:</B><DD>a new fraction instance, with the numerator and denominator reduced
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the denominator is <code>zero</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toString()"><!-- --></A><H3>
+toString</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>toString</B>()</PRE>
+<DL>
+<DD><p>
+ Returns the <code>String</code> representing this fraction, ie
+ "num / dem" or just "num" if the denominator is one.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a string representation of the fraction.<DT><B>See Also:</B><DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang"><CODE>Object.toString()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getField()"><!-- --></A><H3>
+getField</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/fraction/FractionField.html" title="class in org.apache.commons.math3.fraction">FractionField</A> <B>getField</B>()</PRE>
+<DL>
+<DD>Get the <A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3"><CODE>Field</CODE></A> to which the instance belongs.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html#getField()">getField</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3"><CODE>Field</CODE></A> to which the instance belongs</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Fraction.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/BigFractionFormat.html" title="class in org.apache.commons.math3.fraction"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/fraction/FractionConversionException.html" title="class in org.apache.commons.math3.fraction"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/fraction/Fraction.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Fraction.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

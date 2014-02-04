@@ -1,0 +1,802 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ChiSquareTest (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ChiSquareTest (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ChiSquareTest.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/inference/GTest.html" title="class in org.apache.commons.math3.stat.inference"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/inference/ChiSquareTest.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ChiSquareTest.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.stat.inference</FONT>
+<BR>
+Class ChiSquareTest</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.stat.inference.ChiSquareTest</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>ChiSquareTest</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+Implements Chi-Square test statistics.
+
+ <p>This implementation handles both known and unknown distributions.</p>
+
+ <p>Two samples tests can be used when the distribution is unknown <i>a priori</i>
+ but provided by one sample, or when the hypothesis under test is that the two
+ samples come from the same underlying distribution.</p>
+<P>
+
+<P>
+<DL>
+<DT><B>Version:</B></DT>
+  <DD>$Id: ChiSquareTest.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/ChiSquareTest.html#ChiSquareTest()">ChiSquareTest</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a ChiSquareTest</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/ChiSquareTest.html#chiSquare(double[], long[])">chiSquare</A></B>(double[]&nbsp;expected,
+          long[]&nbsp;observed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda35f.htm">
+ Chi-Square statistic</a> comparing <code>observed</code> and <code>expected</code>
+ frequency counts.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/ChiSquareTest.html#chiSquare(long[][])">chiSquare</A></B>(long[][]&nbsp;counts)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the Chi-Square statistic associated with a
+ <a href="http://www.itl.nist.gov/div898/handbook/prc/section4/prc45.htm">
+  chi-square test of independence</a> based on the input <code>counts</code>
+  array, viewed as a two-way table.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/ChiSquareTest.html#chiSquareDataSetsComparison(long[], long[])">chiSquareDataSetsComparison</A></B>(long[]&nbsp;observed1,
+                            long[]&nbsp;observed2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes a
+ <a href="http://www.itl.nist.gov/div898/software/dataplot/refman1/auxillar/chi2samp.htm">
+ Chi-Square two sample test statistic</a> comparing bin frequency counts
+ in <code>observed1</code> and <code>observed2</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/ChiSquareTest.html#chiSquareTest(double[], long[])">chiSquareTest</A></B>(double[]&nbsp;expected,
+              long[]&nbsp;observed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <i>observed significance level</i>, or <a href=
+ "http://www.cas.lancs.ac.uk/glossary_v1.1/hyptest.html#pvalue">
+ p-value</a>, associated with a
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda35f.htm">
+ Chi-square goodness of fit test</a> comparing the <code>observed</code>
+ frequency counts to those in the <code>expected</code> array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/ChiSquareTest.html#chiSquareTest(double[], long[], double)">chiSquareTest</A></B>(double[]&nbsp;expected,
+              long[]&nbsp;observed,
+              double&nbsp;alpha)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda35f.htm">
+ Chi-square goodness of fit test</a> evaluating the null hypothesis that the
+ observed counts conform to the frequency distribution described by the expected
+ counts, with significance level <code>alpha</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/ChiSquareTest.html#chiSquareTest(long[][])">chiSquareTest</A></B>(long[][]&nbsp;counts)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <i>observed significance level</i>, or <a href=
+ "http://www.cas.lancs.ac.uk/glossary_v1.1/hyptest.html#pvalue">
+ p-value</a>, associated with a
+ <a href="http://www.itl.nist.gov/div898/handbook/prc/section4/prc45.htm">
+ chi-square test of independence</a> based on the input <code>counts</code>
+ array, viewed as a two-way table.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/ChiSquareTest.html#chiSquareTest(long[][], double)">chiSquareTest</A></B>(long[][]&nbsp;counts,
+              double&nbsp;alpha)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a <a href="http://www.itl.nist.gov/div898/handbook/prc/section4/prc45.htm">
+ chi-square test of independence</a> evaluating the null hypothesis that the
+ classifications represented by the counts in the columns of the input 2-way table
+ are independent of the rows, with significance level <code>alpha</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/ChiSquareTest.html#chiSquareTestDataSetsComparison(long[], long[])">chiSquareTestDataSetsComparison</A></B>(long[]&nbsp;observed1,
+                                long[]&nbsp;observed2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <i>observed significance level</i>, or <a href=
+ "http://www.cas.lancs.ac.uk/glossary_v1.1/hyptest.html#pvalue">
+ p-value</a>, associated with a Chi-Square two sample test comparing
+ bin frequency counts in <code>observed1</code> and
+ <code>observed2</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/ChiSquareTest.html#chiSquareTestDataSetsComparison(long[], long[], double)">chiSquareTestDataSetsComparison</A></B>(long[]&nbsp;observed1,
+                                long[]&nbsp;observed2,
+                                double&nbsp;alpha)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a Chi-Square two sample test comparing two binned data
+ sets.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ChiSquareTest()"><!-- --></A><H3>
+ChiSquareTest</H3>
+<PRE>
+public <B>ChiSquareTest</B>()</PRE>
+<DL>
+<DD>Construct a ChiSquareTest
+<P>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="chiSquare(double[], long[])"><!-- --></A><H3>
+chiSquare</H3>
+<PRE>
+public double <B>chiSquare</B>(double[]&nbsp;expected,
+                        long[]&nbsp;observed)
+                 throws <A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                        <A HREF="../../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A>,
+                        <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Computes the <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda35f.htm">
+ Chi-Square statistic</a> comparing <code>observed</code> and <code>expected</code>
+ frequency counts.
+ <p>
+ This statistic can be used to perform a Chi-Square test evaluating the null
+ hypothesis that the observed counts follow the expected distribution.</p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>Expected counts must all be positive.
+ </li>
+ <li>Observed counts must all be &ge; 0.
+ </li>
+ <li>The observed and expected arrays must have the same length and
+ their common length must be at least 2.
+ </li></ul></p><p>
+ If any of the preconditions are not met, an
+ <code>IllegalArgumentException</code> is thrown.</p>
+ <p><strong>Note: </strong>This implementation rescales the
+ <code>expected</code> array if necessary to ensure that the sum of the
+ expected and observed counts are equal.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>observed</CODE> - array of observed frequency counts<DD><CODE>expected</CODE> - array of expected frequency counts
+<DT><B>Returns:</B><DD>chiSquare test statistic
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>observed</code> has negative entries
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if <code>expected</code> has entries that are
+ not strictly positive
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the arrays length is less than 2</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="chiSquareTest(double[], long[])"><!-- --></A><H3>
+chiSquareTest</H3>
+<PRE>
+public double <B>chiSquareTest</B>(double[]&nbsp;expected,
+                            long[]&nbsp;observed)
+                     throws <A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                            <A HREF="../../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A>,
+                            <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                            <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns the <i>observed significance level</i>, or <a href=
+ "http://www.cas.lancs.ac.uk/glossary_v1.1/hyptest.html#pvalue">
+ p-value</a>, associated with a
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda35f.htm">
+ Chi-square goodness of fit test</a> comparing the <code>observed</code>
+ frequency counts to those in the <code>expected</code> array.
+ <p>
+ The number returned is the smallest significance level at which one can reject
+ the null hypothesis that the observed counts conform to the frequency distribution
+ described by the expected counts.</p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>Expected counts must all be positive.
+ </li>
+ <li>Observed counts must all be &ge; 0.
+ </li>
+ <li>The observed and expected arrays must have the same length and
+ their common length must be at least 2.
+ </li></ul></p><p>
+ If any of the preconditions are not met, an
+ <code>IllegalArgumentException</code> is thrown.</p>
+ <p><strong>Note: </strong>This implementation rescales the
+ <code>expected</code> array if necessary to ensure that the sum of the
+ expected and observed counts are equal.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>observed</CODE> - array of observed frequency counts<DD><CODE>expected</CODE> - array of expected frequency counts
+<DT><B>Returns:</B><DD>p-value
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>observed</code> has negative entries
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if <code>expected</code> has entries that are
+ not strictly positive
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the arrays length is less than 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="chiSquareTest(double[], long[], double)"><!-- --></A><H3>
+chiSquareTest</H3>
+<PRE>
+public boolean <B>chiSquareTest</B>(double[]&nbsp;expected,
+                             long[]&nbsp;observed,
+                             double&nbsp;alpha)
+                      throws <A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                             <A HREF="../../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A>,
+                             <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                             <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A>,
+                             <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Performs a <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda35f.htm">
+ Chi-square goodness of fit test</a> evaluating the null hypothesis that the
+ observed counts conform to the frequency distribution described by the expected
+ counts, with significance level <code>alpha</code>.  Returns true iff the null
+ hypothesis can be rejected with 100 * (1 - alpha) percent confidence.
+ <p>
+ <strong>Example:</strong><br>
+ To test the hypothesis that <code>observed</code> follows
+ <code>expected</code> at the 99% level, use </p><p>
+ <code>chiSquareTest(expected, observed, 0.01) </code></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>Expected counts must all be positive.
+ </li>
+ <li>Observed counts must all be &ge; 0.
+ </li>
+ <li>The observed and expected arrays must have the same length and
+ their common length must be at least 2.
+ <li> <code> 0 &lt; alpha &lt; 0.5 </code>
+ </li></ul></p><p>
+ If any of the preconditions are not met, an
+ <code>IllegalArgumentException</code> is thrown.</p>
+ <p><strong>Note: </strong>This implementation rescales the
+ <code>expected</code> array if necessary to ensure that the sum of the
+ expected and observed counts are equal.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>observed</CODE> - array of observed frequency counts<DD><CODE>expected</CODE> - array of expected frequency counts<DD><CODE>alpha</CODE> - significance level of the test
+<DT><B>Returns:</B><DD>true iff null hypothesis can be rejected with confidence
+ 1 - alpha
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>observed</code> has negative entries
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if <code>expected</code> has entries that are
+ not strictly positive
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the arrays length is less than 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if <code>alpha</code> is not in the range (0, 0.5]
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="chiSquare(long[][])"><!-- --></A><H3>
+chiSquare</H3>
+<PRE>
+public double <B>chiSquare</B>(long[][]&nbsp;counts)
+                 throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                        <A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                        <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Computes the Chi-Square statistic associated with a
+ <a href="http://www.itl.nist.gov/div898/handbook/prc/section4/prc45.htm">
+  chi-square test of independence</a> based on the input <code>counts</code>
+  array, viewed as a two-way table.
+ <p>
+ The rows of the 2-way table are
+ <code>count[0], ... , count[count.length - 1] </code></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>All counts must be &ge; 0.
+ </li>
+ <li>The count array must be rectangular (i.e. all count[i] subarrays
+  must have the same length).
+ </li>
+ <li>The 2-way table represented by <code>counts</code> must have at
+  least 2 columns and at least 2 rows.
+ </li>
+ </li></ul></p><p>
+ If any of the preconditions are not met, an
+ <code>IllegalArgumentException</code> is thrown.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>counts</CODE> - array representation of 2-way table
+<DT><B>Returns:</B><DD>chiSquare test statistic
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the array is null
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the array is not rectangular
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>counts</code> has negative entries</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="chiSquareTest(long[][])"><!-- --></A><H3>
+chiSquareTest</H3>
+<PRE>
+public double <B>chiSquareTest</B>(long[][]&nbsp;counts)
+                     throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                            <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                            <A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                            <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns the <i>observed significance level</i>, or <a href=
+ "http://www.cas.lancs.ac.uk/glossary_v1.1/hyptest.html#pvalue">
+ p-value</a>, associated with a
+ <a href="http://www.itl.nist.gov/div898/handbook/prc/section4/prc45.htm">
+ chi-square test of independence</a> based on the input <code>counts</code>
+ array, viewed as a two-way table.
+ <p>
+ The rows of the 2-way table are
+ <code>count[0], ... , count[count.length - 1] </code></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>All counts must be &ge; 0.
+ </li>
+ <li>The count array must be rectangular (i.e. all count[i] subarrays must have
+     the same length).
+ </li>
+ <li>The 2-way table represented by <code>counts</code> must have at least 2
+     columns and at least 2 rows.
+ </li>
+ </li></ul></p><p>
+ If any of the preconditions are not met, an
+ <code>IllegalArgumentException</code> is thrown.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>counts</CODE> - array representation of 2-way table
+<DT><B>Returns:</B><DD>p-value
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the array is null
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the array is not rectangular
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>counts</code> has negative entries
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="chiSquareTest(long[][], double)"><!-- --></A><H3>
+chiSquareTest</H3>
+<PRE>
+public boolean <B>chiSquareTest</B>(long[][]&nbsp;counts,
+                             double&nbsp;alpha)
+                      throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                             <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                             <A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                             <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A>,
+                             <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Performs a <a href="http://www.itl.nist.gov/div898/handbook/prc/section4/prc45.htm">
+ chi-square test of independence</a> evaluating the null hypothesis that the
+ classifications represented by the counts in the columns of the input 2-way table
+ are independent of the rows, with significance level <code>alpha</code>.
+ Returns true iff the null hypothesis can be rejected with 100 * (1 - alpha) percent
+ confidence.
+ <p>
+ The rows of the 2-way table are
+ <code>count[0], ... , count[count.length - 1] </code></p>
+ <p>
+ <strong>Example:</strong><br>
+ To test the null hypothesis that the counts in
+ <code>count[0], ... , count[count.length - 1] </code>
+  all correspond to the same underlying probability distribution at the 99% level, use</p>
+ <p><code>chiSquareTest(counts, 0.01)</code></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>All counts must be &ge; 0.
+ </li>
+ <li>The count array must be rectangular (i.e. all count[i] subarrays must have the
+     same length).</li>
+ <li>The 2-way table represented by <code>counts</code> must have at least 2 columns and
+     at least 2 rows.</li>
+ </li></ul></p><p>
+ If any of the preconditions are not met, an
+ <code>IllegalArgumentException</code> is thrown.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>counts</CODE> - array representation of 2-way table<DD><CODE>alpha</CODE> - significance level of the test
+<DT><B>Returns:</B><DD>true iff null hypothesis can be rejected with confidence
+ 1 - alpha
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the array is null
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the array is not rectangular
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>counts</code> has any negative entries
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if <code>alpha</code> is not in the range (0, 0.5]
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="chiSquareDataSetsComparison(long[], long[])"><!-- --></A><H3>
+chiSquareDataSetsComparison</H3>
+<PRE>
+public double <B>chiSquareDataSetsComparison</B>(long[]&nbsp;observed1,
+                                          long[]&nbsp;observed2)
+                                   throws <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                                          <A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                                          <A HREF="../../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A></PRE>
+<DL>
+<DD><p>Computes a
+ <a href="http://www.itl.nist.gov/div898/software/dataplot/refman1/auxillar/chi2samp.htm">
+ Chi-Square two sample test statistic</a> comparing bin frequency counts
+ in <code>observed1</code> and <code>observed2</code>.  The
+ sums of frequency counts in the two samples are not required to be the
+ same.  The formula used to compute the test statistic is</p>
+ <code>
+ &sum;[(K * observed1[i] - observed2[i]/K)<sup>2</sup> / (observed1[i] + observed2[i])]
+ </code> where
+ <br/><code>K = &sqrt;[&sum(observed2 / &sum;(observed1)]</code>
+ </p>
+ <p>This statistic can be used to perform a Chi-Square test evaluating the
+ null hypothesis that both observed counts follow the same distribution.</p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>Observed counts must be non-negative.
+ </li>
+ <li>Observed counts for a specific bin must not both be zero.
+ </li>
+ <li>Observed counts for a specific sample must not all be 0.
+ </li>
+ <li>The arrays <code>observed1</code> and <code>observed2</code> must have
+ the same length and their common length must be at least 2.
+ </li></ul></p><p>
+ If any of the preconditions are not met, an
+ <code>IllegalArgumentException</code> is thrown.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>observed1</CODE> - array of observed frequency counts of the first data set<DD><CODE>observed2</CODE> - array of observed frequency counts of the second data set
+<DT><B>Returns:</B><DD>chiSquare test statistic
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - the the length of the arrays does not match
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if any entries in <code>observed1</code> or
+ <code>observed2</code> are negative
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A></CODE> - if either all counts of <code>observed1</code> or
+ <code>observed2</code> are zero, or if the count at some index is zero
+ for both arrays<DT><B>Since:</B></DT>
+  <DD>1.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="chiSquareTestDataSetsComparison(long[], long[])"><!-- --></A><H3>
+chiSquareTestDataSetsComparison</H3>
+<PRE>
+public double <B>chiSquareTestDataSetsComparison</B>(long[]&nbsp;observed1,
+                                              long[]&nbsp;observed2)
+                                       throws <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                                              <A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                                              <A HREF="../../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A>,
+                                              <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD><p>Returns the <i>observed significance level</i>, or <a href=
+ "http://www.cas.lancs.ac.uk/glossary_v1.1/hyptest.html#pvalue">
+ p-value</a>, associated with a Chi-Square two sample test comparing
+ bin frequency counts in <code>observed1</code> and
+ <code>observed2</code>.
+ </p>
+ <p>The number returned is the smallest significance level at which one
+ can reject the null hypothesis that the observed counts conform to the
+ same distribution.
+ </p>
+ <p>See <A HREF="../../../../../../org/apache/commons/math3/stat/inference/ChiSquareTest.html#chiSquareDataSetsComparison(long[], long[])"><CODE>chiSquareDataSetsComparison(long[], long[])</CODE></A> for details
+ on the formula used to compute the test statistic. The degrees of
+ of freedom used to perform the test is one less than the common length
+ of the input observed count arrays.
+ </p>
+ <strong>Preconditions</strong>: <ul>
+ <li>Observed counts must be non-negative.
+ </li>
+ <li>Observed counts for a specific bin must not both be zero.
+ </li>
+ <li>Observed counts for a specific sample must not all be 0.
+ </li>
+ <li>The arrays <code>observed1</code> and <code>observed2</code> must
+ have the same length and
+ their common length must be at least 2.
+ </li></ul><p>
+ If any of the preconditions are not met, an
+ <code>IllegalArgumentException</code> is thrown.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>observed1</CODE> - array of observed frequency counts of the first data set<DD><CODE>observed2</CODE> - array of observed frequency counts of the second data set
+<DT><B>Returns:</B><DD>p-value
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - the the length of the arrays does not match
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if any entries in <code>observed1</code> or
+ <code>observed2</code> are negative
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A></CODE> - if either all counts of <code>observed1</code> or
+ <code>observed2</code> are zero, or if the count at the same index is zero
+ for both arrays
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value<DT><B>Since:</B></DT>
+  <DD>1.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="chiSquareTestDataSetsComparison(long[], long[], double)"><!-- --></A><H3>
+chiSquareTestDataSetsComparison</H3>
+<PRE>
+public boolean <B>chiSquareTestDataSetsComparison</B>(long[]&nbsp;observed1,
+                                               long[]&nbsp;observed2,
+                                               double&nbsp;alpha)
+                                        throws <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                                               <A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                                               <A HREF="../../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A>,
+                                               <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A>,
+                                               <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD><p>Performs a Chi-Square two sample test comparing two binned data
+ sets. The test evaluates the null hypothesis that the two lists of
+ observed counts conform to the same frequency distribution, with
+ significance level <code>alpha</code>.  Returns true iff the null
+ hypothesis can be rejected with 100 * (1 - alpha) percent confidence.
+ </p>
+ <p>See <A HREF="../../../../../../org/apache/commons/math3/stat/inference/ChiSquareTest.html#chiSquareDataSetsComparison(long[], long[])"><CODE>chiSquareDataSetsComparison(long[], long[])</CODE></A> for
+ details on the formula used to compute the Chisquare statistic used
+ in the test. The degrees of of freedom used to perform the test is
+ one less than the common length of the input observed count arrays.
+ </p>
+ <strong>Preconditions</strong>: <ul>
+ <li>Observed counts must be non-negative.
+ </li>
+ <li>Observed counts for a specific bin must not both be zero.
+ </li>
+ <li>Observed counts for a specific sample must not all be 0.
+ </li>
+ <li>The arrays <code>observed1</code> and <code>observed2</code> must
+ have the same length and their common length must be at least 2.
+ </li>
+ <li> <code> 0 < alpha < 0.5 </code>
+ </li></ul><p>
+ If any of the preconditions are not met, an
+ <code>IllegalArgumentException</code> is thrown.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>observed1</CODE> - array of observed frequency counts of the first data set<DD><CODE>observed2</CODE> - array of observed frequency counts of the second data set<DD><CODE>alpha</CODE> - significance level of the test
+<DT><B>Returns:</B><DD>true iff null hypothesis can be rejected with confidence
+ 1 - alpha
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - the the length of the arrays does not match
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if any entries in <code>observed1</code> or
+ <code>observed2</code> are negative
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A></CODE> - if either all counts of <code>observed1</code> or
+ <code>observed2</code> are zero, or if the count at the same index is zero
+ for both arrays
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if <code>alpha</code> is not in the range (0, 0.5]
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs performing the test<DT><B>Since:</B></DT>
+  <DD>1.2</DD>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ChiSquareTest.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/inference/GTest.html" title="class in org.apache.commons.math3.stat.inference"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/inference/ChiSquareTest.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ChiSquareTest.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

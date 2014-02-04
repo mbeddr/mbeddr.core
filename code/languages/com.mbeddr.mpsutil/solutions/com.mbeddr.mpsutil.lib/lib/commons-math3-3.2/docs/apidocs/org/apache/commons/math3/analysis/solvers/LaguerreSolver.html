@@ -1,0 +1,499 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+LaguerreSolver (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="LaguerreSolver (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/LaguerreSolver.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/IllinoisSolver.html" title="class in org.apache.commons.math3.analysis.solvers"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/MullerSolver.html" title="class in org.apache.commons.math3.analysis.solvers"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/analysis/solvers/LaguerreSolver.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="LaguerreSolver.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.analysis.solvers</FONT>
+<BR>
+Class LaguerreSolver</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html" title="class in org.apache.commons.math3.analysis.solvers">org.apache.commons.math3.analysis.solvers.BaseAbstractUnivariateSolver</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunction.html" title="class in org.apache.commons.math3.analysis.polynomials">PolynomialFunction</A>&gt;
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/AbstractPolynomialSolver.html" title="class in org.apache.commons.math3.analysis.solvers">org.apache.commons.math3.analysis.solvers.AbstractPolynomialSolver</A>
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.analysis.solvers.LaguerreSolver</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers">BaseUnivariateSolver</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunction.html" title="class in org.apache.commons.math3.analysis.polynomials">PolynomialFunction</A>&gt;, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/PolynomialSolver.html" title="interface in org.apache.commons.math3.analysis.solvers">PolynomialSolver</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>LaguerreSolver</B><DT>extends <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/AbstractPolynomialSolver.html" title="class in org.apache.commons.math3.analysis.solvers">AbstractPolynomialSolver</A></DL>
+</PRE>
+
+<P>
+Implements the <a href="http://mathworld.wolfram.com/LaguerresMethod.html">
+ Laguerre's Method</a> for root finding of real coefficient polynomials.
+ For reference, see
+ <quote>
+  <b>A First Course in Numerical Analysis</b>
+  ISBN 048641454X, chapter 8.
+ </quote>
+ Laguerre's method is global in the sense that it can start with any initial
+ approximation and be able to solve all roots from that point.
+ The algorithm requires a bracketing condition.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>1.2</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: LaguerreSolver.java 1422195 2012-12-15 06:45:18Z psteitz $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/LaguerreSolver.html#LaguerreSolver()">LaguerreSolver</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a solver with default accuracy (1e-6).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/LaguerreSolver.html#LaguerreSolver(double)">LaguerreSolver</A></B>(double&nbsp;absoluteAccuracy)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a solver.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/LaguerreSolver.html#LaguerreSolver(double, double)">LaguerreSolver</A></B>(double&nbsp;relativeAccuracy,
+               double&nbsp;absoluteAccuracy)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a solver.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/LaguerreSolver.html#LaguerreSolver(double, double, double)">LaguerreSolver</A></B>(double&nbsp;relativeAccuracy,
+               double&nbsp;absoluteAccuracy,
+               double&nbsp;functionValueAccuracy)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a solver.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/LaguerreSolver.html#doSolve()">doSolve</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method for implementing actual optimization algorithms in derived
+ classes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/LaguerreSolver.html#laguerre(double, double, double, double)">laguerre</A></B>(double&nbsp;lo,
+         double&nbsp;hi,
+         double&nbsp;fLo,
+         double&nbsp;fHi)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>This method should not be part of the public API: It will
+ be made private in version 4.0.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/complex/Complex.html" title="class in org.apache.commons.math3.complex">Complex</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/LaguerreSolver.html#solveAllComplex(double[], double)">solveAllComplex</A></B>(double[]&nbsp;coefficients,
+                double&nbsp;initial)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find all complex roots for the polynomial with the given
+ coefficients, starting from the given initial value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/complex/Complex.html" title="class in org.apache.commons.math3.complex">Complex</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/LaguerreSolver.html#solveComplex(double[], double)">solveComplex</A></B>(double[]&nbsp;coefficients,
+             double&nbsp;initial)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find a complex root for the polynomial with the given coefficients,
+ starting from the given initial value.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.analysis.solvers.AbstractPolynomialSolver"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.analysis.solvers.<A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/AbstractPolynomialSolver.html" title="class in org.apache.commons.math3.analysis.solvers">AbstractPolynomialSolver</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/AbstractPolynomialSolver.html#getCoefficients()">getCoefficients</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/AbstractPolynomialSolver.html#setup(int, org.apache.commons.math3.analysis.polynomials.PolynomialFunction, double, double, double)">setup</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.analysis.solvers.BaseAbstractUnivariateSolver"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.analysis.solvers.<A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html" title="class in org.apache.commons.math3.analysis.solvers">BaseAbstractUnivariateSolver</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#computeObjectiveValue(double)">computeObjectiveValue</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#getAbsoluteAccuracy()">getAbsoluteAccuracy</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#getEvaluations()">getEvaluations</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#getFunctionValueAccuracy()">getFunctionValueAccuracy</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#getMax()">getMax</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#getMaxEvaluations()">getMaxEvaluations</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#getMin()">getMin</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#getRelativeAccuracy()">getRelativeAccuracy</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#getStartValue()">getStartValue</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#incrementEvaluationCount()">incrementEvaluationCount</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#isBracketing(double, double)">isBracketing</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#isSequence(double, double, double)">isSequence</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#solve(int, FUNC, double)">solve</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#solve(int, FUNC, double, double)">solve</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#solve(int, FUNC, double, double, double)">solve</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#verifyBracketing(double, double)">verifyBracketing</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#verifyInterval(double, double)">verifyInterval</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#verifySequence(double, double, double)">verifySequence</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.analysis.solvers.BaseUnivariateSolver"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.commons.math3.analysis.solvers.<A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers">BaseUnivariateSolver</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#getAbsoluteAccuracy()">getAbsoluteAccuracy</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#getEvaluations()">getEvaluations</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#getFunctionValueAccuracy()">getFunctionValueAccuracy</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#getMaxEvaluations()">getMaxEvaluations</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#getRelativeAccuracy()">getRelativeAccuracy</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#solve(int, FUNC, double)">solve</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#solve(int, FUNC, double, double)">solve</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#solve(int, FUNC, double, double, double)">solve</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="LaguerreSolver()"><!-- --></A><H3>
+LaguerreSolver</H3>
+<PRE>
+public <B>LaguerreSolver</B>()</PRE>
+<DL>
+<DD>Construct a solver with default accuracy (1e-6).
+<P>
+</DL>
+<HR>
+
+<A NAME="LaguerreSolver(double)"><!-- --></A><H3>
+LaguerreSolver</H3>
+<PRE>
+public <B>LaguerreSolver</B>(double&nbsp;absoluteAccuracy)</PRE>
+<DL>
+<DD>Construct a solver.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>absoluteAccuracy</CODE> - Absolute accuracy.</DL>
+</DL>
+<HR>
+
+<A NAME="LaguerreSolver(double, double)"><!-- --></A><H3>
+LaguerreSolver</H3>
+<PRE>
+public <B>LaguerreSolver</B>(double&nbsp;relativeAccuracy,
+                      double&nbsp;absoluteAccuracy)</PRE>
+<DL>
+<DD>Construct a solver.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>relativeAccuracy</CODE> - Relative accuracy.<DD><CODE>absoluteAccuracy</CODE> - Absolute accuracy.</DL>
+</DL>
+<HR>
+
+<A NAME="LaguerreSolver(double, double, double)"><!-- --></A><H3>
+LaguerreSolver</H3>
+<PRE>
+public <B>LaguerreSolver</B>(double&nbsp;relativeAccuracy,
+                      double&nbsp;absoluteAccuracy,
+                      double&nbsp;functionValueAccuracy)</PRE>
+<DL>
+<DD>Construct a solver.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>relativeAccuracy</CODE> - Relative accuracy.<DD><CODE>absoluteAccuracy</CODE> - Absolute accuracy.<DD><CODE>functionValueAccuracy</CODE> - Function value accuracy.</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="doSolve()"><!-- --></A><H3>
+doSolve</H3>
+<PRE>
+public double <B>doSolve</B>()
+               throws <A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A>,
+                      <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A>,
+                      <A HREF="../../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></PRE>
+<DL>
+<DD>Method for implementing actual optimization algorithms in derived
+ classes.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html#doSolve()">doSolve</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.html" title="class in org.apache.commons.math3.analysis.solvers">BaseAbstractUnivariateSolver</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunction.html" title="class in org.apache.commons.math3.analysis.polynomials">PolynomialFunction</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the root.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A></CODE> - if the maximal number of evaluations
+ is exceeded.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></CODE> - if the initial search interval does not bracket
+ a root and the solver requires it.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="laguerre(double, double, double, double)"><!-- --></A><H3>
+laguerre</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public double <B>laguerre</B>(double&nbsp;lo,
+                                  double&nbsp;hi,
+                                  double&nbsp;fLo,
+                                  double&nbsp;fHi)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>This method should not be part of the public API: It will
+ be made private in version 4.0.</I>
+<P>
+<DD>Find a real root in the given interval.
+
+ Despite the bracketing condition, the root returned by
+ <CODE>LaguerreSolver.ComplexSolver.solve(Complex[],Complex)</CODE> may
+ not be a real zero inside <code>[min, max]</code>.
+ For example, <code>p(x) = x<sup>3</sup> + 1,</code>
+ with <code>min = -2</code>, <code>max = 2</code>, <code>initial = 0</code>.
+ When it occurs, this code calls
+ <CODE>LaguerreSolver.ComplexSolver.solveAll(Complex[],Complex)</CODE>
+ in order to obtain all roots and picks up one real root.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>lo</CODE> - Lower bound of the search interval.<DD><CODE>hi</CODE> - Higher bound of the search interval.<DD><CODE>fLo</CODE> - Function value at the lower bound of the search interval.<DD><CODE>fHi</CODE> - Function value at the higher bound of the search interval.
+<DT><B>Returns:</B><DD>the point at which the function value is zero.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="solveAllComplex(double[], double)"><!-- --></A><H3>
+solveAllComplex</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/commons/math3/complex/Complex.html" title="class in org.apache.commons.math3.complex">Complex</A>[] <B>solveAllComplex</B>(double[]&nbsp;coefficients,
+                                 double&nbsp;initial)
+                          throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                                 <A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A>,
+                                 <A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A></PRE>
+<DL>
+<DD>Find all complex roots for the polynomial with the given
+ coefficients, starting from the given initial value.
+ <br/>
+ Note: This method is not part of the API of <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers"><CODE>BaseUnivariateSolver</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>coefficients</CODE> - Polynomial coefficients.<DD><CODE>initial</CODE> - Start value.
+<DT><B>Returns:</B><DD>the point at which the function value is zero.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A></CODE> - if the maximum number of evaluations is exceeded.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the <code>coefficients</code> is
+ <code>null</code>.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></CODE> - if the <code>coefficients</code> array is empty.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="solveComplex(double[], double)"><!-- --></A><H3>
+solveComplex</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/commons/math3/complex/Complex.html" title="class in org.apache.commons.math3.complex">Complex</A> <B>solveComplex</B>(double[]&nbsp;coefficients,
+                            double&nbsp;initial)
+                     throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                            <A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A>,
+                            <A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A></PRE>
+<DL>
+<DD>Find a complex root for the polynomial with the given coefficients,
+ starting from the given initial value.
+ <br/>
+ Note: This method is not part of the API of <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers"><CODE>BaseUnivariateSolver</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>coefficients</CODE> - Polynomial coefficients.<DD><CODE>initial</CODE> - Start value.
+<DT><B>Returns:</B><DD>the point at which the function value is zero.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A></CODE> - if the maximum number of evaluations is exceeded.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the <code>coefficients</code> is
+ <code>null</code>.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></CODE> - if the <code>coefficients</code> array is empty.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/LaguerreSolver.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/IllinoisSolver.html" title="class in org.apache.commons.math3.analysis.solvers"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/MullerSolver.html" title="class in org.apache.commons.math3.analysis.solvers"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/analysis/solvers/LaguerreSolver.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="LaguerreSolver.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

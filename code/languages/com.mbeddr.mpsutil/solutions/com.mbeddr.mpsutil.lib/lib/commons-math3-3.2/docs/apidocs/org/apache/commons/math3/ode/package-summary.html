@@ -1,0 +1,411 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+org.apache.commons.math3.ode (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="org.apache.commons.math3.ode (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/ml/distance/package-summary.html"><B>PREV PACKAGE</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/ode/events/package-summary.html"><B>NEXT PACKAGE</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/ode/package-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="package-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<H2>
+Package org.apache.commons.math3.ode
+</H2>
+
+ This package provides classes to solve Ordinary Differential Equations problems.
+<P>
+<B>See:</B>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#package_description"><B>Description</B></A>
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Interface Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderDifferentialEquations.html" title="interface in org.apache.commons.math3.ode">FirstOrderDifferentialEquations</A></B></TD>
+<TD>This interface represents a first order differential equations set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderIntegrator.html" title="interface in org.apache.commons.math3.ode">FirstOrderIntegrator</A></B></TD>
+<TD>This interface represents a first order integrator for
+ differential equations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/MainStateJacobianProvider.html" title="interface in org.apache.commons.math3.ode">MainStateJacobianProvider</A></B></TD>
+<TD>Interface expanding <A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderDifferentialEquations.html" title="interface in org.apache.commons.math3.ode"><CODE>first order
+  differential equations</CODE></A> in order to compute exactly the main state jacobian
+  matrix for <A HREF="../../../../../org/apache/commons/math3/ode/JacobianMatrices.html" title="class in org.apache.commons.math3.ode"><CODE>partial derivatives equations</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.NordsieckTransformer.html" title="interface in org.apache.commons.math3.ode">MultistepIntegrator.NordsieckTransformer</A></B></TD>
+<TD>Transformer used to convert the first step to Nordsieck representation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></B></TD>
+<TD>This interface defines the common parts shared by integrators
+ for first and second order differential equations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/Parameterizable.html" title="interface in org.apache.commons.math3.ode">Parameterizable</A></B></TD>
+<TD>This interface enables to process any parameterizable object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/ParameterizedODE.html" title="interface in org.apache.commons.math3.ode">ParameterizedODE</A></B></TD>
+<TD>Interface to compute by finite difference Jacobian matrix for some parameter
+  when computing <A HREF="../../../../../org/apache/commons/math3/ode/JacobianMatrices.html" title="class in org.apache.commons.math3.ode"><CODE>partial derivatives equations</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/ParameterJacobianProvider.html" title="interface in org.apache.commons.math3.ode">ParameterJacobianProvider</A></B></TD>
+<TD>Interface to compute exactly Jacobian matrix for some parameter
+  when computing <A HREF="../../../../../org/apache/commons/math3/ode/JacobianMatrices.html" title="class in org.apache.commons.math3.ode"><CODE>partial derivatives equations</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/SecondaryEquations.html" title="interface in org.apache.commons.math3.ode">SecondaryEquations</A></B></TD>
+<TD>This interface allows users to add secondary differential equations to a primary
+ set of differential equations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/SecondOrderDifferentialEquations.html" title="interface in org.apache.commons.math3.ode">SecondOrderDifferentialEquations</A></B></TD>
+<TD>This interface represents a second order differential equations set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/SecondOrderIntegrator.html" title="interface in org.apache.commons.math3.ode">SecondOrderIntegrator</A></B></TD>
+<TD>This interface represents a second order integrator for
+ differential equations.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html" title="class in org.apache.commons.math3.ode">AbstractIntegrator</A></B></TD>
+<TD>Base class managing common boilerplate for all integrators.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractParameterizable.html" title="class in org.apache.commons.math3.ode">AbstractParameterizable</A></B></TD>
+<TD>This abstract class provides boilerplate parameters list.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/ContinuousOutputModel.html" title="class in org.apache.commons.math3.ode">ContinuousOutputModel</A></B></TD>
+<TD>This class stores all information provided by an ODE integrator
+ during the integration process and build a continuous model of the
+ solution from this.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/EquationsMapper.html" title="class in org.apache.commons.math3.ode">EquationsMapper</A></B></TD>
+<TD>Class mapping the part of a complete state or derivative that pertains
+ to a specific differential equation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/ExpandableStatefulODE.html" title="class in org.apache.commons.math3.ode">ExpandableStatefulODE</A></B></TD>
+<TD>This class represents a combined set of first order differential equations,
+ with at least a primary set of equations expandable by some sets of secondary
+ equations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderConverter.html" title="class in org.apache.commons.math3.ode">FirstOrderConverter</A></B></TD>
+<TD>This class converts second order differential equations to first
+ order ones.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/JacobianMatrices.html" title="class in org.apache.commons.math3.ode">JacobianMatrices</A></B></TD>
+<TD>This class defines a set of <A HREF="../../../../../org/apache/commons/math3/ode/SecondaryEquations.html" title="interface in org.apache.commons.math3.ode"><CODE>secondary equations</CODE></A> to
+ compute the Jacobian matrices with respect to the initial state vector and, if
+ any, to some parameters of the primary ODE set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html" title="class in org.apache.commons.math3.ode">MultistepIntegrator</A></B></TD>
+<TD>This class is the base class for multistep integrators for Ordinary
+ Differential Equations.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Exception Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/JacobianMatrices.MismatchedEquations.html" title="class in org.apache.commons.math3.ode">JacobianMatrices.MismatchedEquations</A></B></TD>
+<TD>Special exception for equations mismatch.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../org/apache/commons/math3/ode/UnknownParameterException.html" title="class in org.apache.commons.math3.ode">UnknownParameterException</A></B></TD>
+<TD>Exception to be thrown when a parameter is unknown.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P>
+<A NAME="package_description"><!-- --></A><H2>
+Package org.apache.commons.math3.ode Description
+</H2>
+
+<P>
+<p>
+ This package provides classes to solve Ordinary Differential Equations problems.
+ </p>
+
+ <p>
+ This package solves Initial Value Problems of the form
+ <code>y'=f(t,y)</code> with <code>t<sub>0</sub></code> and
+ <code>y(t<sub>0</sub>)=y<sub>0</sub></code> known. The provided
+ integrators compute an estimate of <code>y(t)</code> from
+ <code>t=t<sub>0</sub></code> to <code>t=t<sub>1</sub></code>.
+ It is also possible to get thederivatives with respect to the initial state
+ <code>dy(t)/dy(t<sub>0</sub>)</code> or the derivatives with
+ respect to some ODE parameters <code>dy(t)/dp</code>.
+ </p>
+
+ <p>
+ All integrators provide dense output. This means that besides
+ computing the state vector at discrete times, they also provide a
+ cheap mean to get the state between the time steps. They do so through
+ classes extending the <A HREF="../../../../../org/apache/commons/math3/ode/sampling/StepInterpolator.html" title="interface in org.apache.commons.math3.ode.sampling"><CODE>StepInterpolator</CODE></A>
+ abstract class, which are made available to the user at the end of
+ each step.
+ </p>
+
+ <p>
+ All integrators handle multiple discrete events detection based on switching
+ functions. This means that the integrator can be driven by user specified
+ discrete events. The steps are shortened as needed to ensure the events occur
+ at step boundaries (even if the integrator is a fixed-step
+ integrator). When the events are triggered, integration can be stopped
+ (this is called a G-stop facility), the state vector can be changed,
+ or integration can simply go on. The latter case is useful to handle
+ discontinuities in the differential equations gracefully and get
+ accurate dense output even close to the discontinuity.
+ </p>
+
+ <p>
+ The user should describe his problem in his own classes
+ (<code>UserProblem</code> in the diagram below) which should implement
+ the <A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderDifferentialEquations.html" title="interface in org.apache.commons.math3.ode"><CODE>FirstOrderDifferentialEquations</CODE></A> interface. Then he should pass it to
+ the integrator he prefers among all the classes that implement the
+ <A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderIntegrator.html" title="interface in org.apache.commons.math3.ode"><CODE>FirstOrderIntegrator</CODE></A> interface.
+ </p>
+
+ <p>
+ The solution of the integration problem is provided by two means. The
+ first one is aimed towards simple use: the state vector at the end of
+ the integration process is copied in the <code>y</code> array of the
+ <A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderIntegrator.html#integrate(org.apache.commons.math3.ode.FirstOrderDifferentialEquations, double, double[], double, double[])"><CODE>FirstOrderIntegrator.integrate</CODE></A> method. The second one should be used
+ when more in-depth information is needed throughout the integration
+ process. The user can register an object implementing the <A HREF="../../../../../org/apache/commons/math3/ode/sampling/StepHandler.html" title="interface in org.apache.commons.math3.ode.sampling"><CODE>StepHandler</CODE></A> interface or a
+ <A HREF="../../../../../org/apache/commons/math3/ode/sampling/StepNormalizer.html" title="class in org.apache.commons.math3.ode.sampling"><CODE>StepNormalizer</CODE></A>
+ object wrapping a user-specified object implementing the <A HREF="../../../../../org/apache/commons/math3/ode/sampling/FixedStepHandler.html" title="interface in org.apache.commons.math3.ode.sampling"><CODE>FixedStepHandler</CODE></A>
+ interface into the integrator before calling the <A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderIntegrator.html#integrate(org.apache.commons.math3.ode.FirstOrderDifferentialEquations, double, double[], double, double[])"><CODE>FirstOrderIntegrator.integrate</CODE></A> method. The user object will be called
+ appropriately during the integration process, allowing the user to
+ process intermediate results. The default step handler does nothing.
+ </p>
+
+ <p>
+ <A HREF="../../../../../org/apache/commons/math3/ode/ContinuousOutputModel.html" title="class in org.apache.commons.math3.ode"><CODE>ContinuousOutputModel</CODE></A> is a special-purpose step handler that is able
+ to store all steps and to provide transparent access to any
+ intermediate result once the integration is over. An important feature
+ of this class is that it implements the <code>Serializable</code>
+ interface. This means that a complete continuous model of the
+ integrated function throughout the integration range can be serialized
+ and reused later (if stored into a persistent medium like a filesystem
+ or a database) or elsewhere (if sent to another application). Only the
+ result of the integration is stored, there is no reference to the
+ integrated problem by itself.
+ </p>
+
+ <p>
+ Other default implementations of the <A HREF="../../../../../org/apache/commons/math3/ode/sampling/StepHandler.html" title="interface in org.apache.commons.math3.ode.sampling"><CODE>StepHandler</CODE></A> interface are
+ available for general needs (<A HREF="../../../../../org/apache/commons/math3/ode/sampling/DummyStepHandler.html" title="class in org.apache.commons.math3.ode.sampling"><CODE>DummyStepHandler</CODE></A>, <A HREF="../../../../../org/apache/commons/math3/ode/sampling/StepNormalizer.html" title="class in org.apache.commons.math3.ode.sampling"><CODE>StepNormalizer</CODE></A>) and custom
+ implementations can be developed for specific needs. As an example,
+ if an application is to be completely driven by the integration
+ process, then most of the application code will be run inside a step
+ handler specific to this application.
+ </p>
+
+ <p>
+ Some integrators (the simple ones) use fixed steps that are set at
+ creation time. The more efficient integrators use variable steps that
+ are handled internally in order to control the integration error with
+ respect to a specified accuracy (these integrators extend the <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>AdaptiveStepsizeIntegrator</CODE></A> abstract class). In this case, the step
+ handler which is called after each successful step shows up the
+ variable stepsize. The <A HREF="../../../../../org/apache/commons/math3/ode/sampling/StepNormalizer.html" title="class in org.apache.commons.math3.ode.sampling"><CODE>StepNormalizer</CODE></A> class can
+ be used to convert the variable stepsize into a fixed stepsize that
+ can be handled by classes implementing the <A HREF="../../../../../org/apache/commons/math3/ode/sampling/FixedStepHandler.html" title="interface in org.apache.commons.math3.ode.sampling"><CODE>FixedStepHandler</CODE></A>
+ interface. Adaptive stepsize integrators can automatically compute the
+ initial stepsize by themselves, however the user can specify it if he
+ prefers to retain full control over the integration or if the
+ automatic guess is wrong.
+ </p>
+
+ <p>
+ <table border="1" align="center">
+ <tr BGCOLOR="#CCCCFF"><td colspan=2><font size="+2">Fixed Step Integrators</font></td></tr>
+ <tr BGCOLOR="#EEEEFF"><font size="+1"><td>Name</td><td>Order</td></font></tr>
+ <tr><td><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/EulerIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Euler</CODE></A></td><td>1</td></tr>
+ <tr><td><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/MidpointIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Midpoint</CODE></A></td><td>2</td></tr>
+ <tr><td><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/ClassicalRungeKuttaIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Classical Runge-Kutta</CODE></A></td><td>4</td></tr>
+ <tr><td><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/GillIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Gill</CODE></A></td><td>4</td></tr>
+ <tr><td><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/ThreeEighthesIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>3/8</CODE></A></td><td>4</td></tr>
+ </table>
+ </p>
+
+ <table border="1" align="center">
+ <tr BGCOLOR="#CCCCFF"><td colspan=3><font size="+2">Adaptive Stepsize Integrators</font></td></tr>
+ <tr BGCOLOR="#EEEEFF"><font size="+1"><td>Name</td><td>Integration Order</td><td>Error Estimation Order</td></font></tr>
+ <tr><td><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/HighamHall54Integrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Higham and Hall</CODE></A></td><td>5</td><td>4</td></tr>
+ <tr><td><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/DormandPrince54Integrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Dormand-Prince 5(4)</CODE></A></td><td>5</td><td>4</td></tr>
+ <tr><td><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/DormandPrince853Integrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Dormand-Prince 8(5,3)</CODE></A></td><td>8</td><td>5 and 3</td></tr>
+ <tr><td><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/GraggBulirschStoerIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Gragg-Bulirsch-Stoer</CODE></A></td><td>variable (up to 18 by default)</td><td>variable</td></tr>
+ <tr><td><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdamsBashforthIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Adams-Bashforth</CODE></A></td><td>variable</td><td>variable</td></tr>
+ <tr><td><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdamsMoultonIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Adams-Moulton</CODE></A></td><td>variable</td><td>variable</td></tr>
+ </table>
+ </p>
+
+ <p>
+ In the table above, the <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdamsBashforthIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Adams-Bashforth</CODE></A> and <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdamsMoultonIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Adams-Moulton</CODE></A> integrators appear as variable-step ones. This is an experimental extension
+ to the classical algorithms using the Nordsieck vector representation.
+ </p>
+<P>
+
+<P>
+<DL>
+</DL>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/ml/distance/package-summary.html"><B>PREV PACKAGE</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/ode/events/package-summary.html"><B>NEXT PACKAGE</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/ode/package-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="package-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

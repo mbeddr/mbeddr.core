@@ -1,0 +1,425 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+BOBYQAOptimizer (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="BOBYQAOptimizer (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/BOBYQAOptimizer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplex.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../../index.html?org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="BOBYQAOptimizer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.optim.nonlinear.scalar.noderiv</FONT>
+<BR>
+Class BOBYQAOptimizer</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html" title="class in org.apache.commons.math3.optim">org.apache.commons.math3.optim.BaseOptimizer</A>&lt;PAIR&gt;
+      <IMG SRC="../../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">org.apache.commons.math3.optim.BaseMultivariateOptimizer</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/optim/PointValuePair.html" title="class in org.apache.commons.math3.optim">PointValuePair</A>&gt;
+          <IMG SRC="../../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar">org.apache.commons.math3.optim.nonlinear.scalar.MultivariateOptimizer</A>
+              <IMG SRC="../../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.BOBYQAOptimizer</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>BOBYQAOptimizer</B><DT>extends <A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar">MultivariateOptimizer</A></DL>
+</PRE>
+
+<P>
+Powell's BOBYQA algorithm. This implementation is translated and
+ adapted from the Fortran version available
+ <a href="http://plato.asu.edu/ftp/other_software/bobyqa.zip">here</a>.
+ See <a href="http://www.optimization-online.org/DB_HTML/2010/05/2616.html">
+ this paper</a> for an introduction.
+ <br/>
+ BOBYQA is particularly well suited for high dimensional problems
+ where derivatives are not available. In most cases it outperforms the
+ <A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/PowellOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv"><CODE>PowellOptimizer</CODE></A> significantly. Stochastic algorithms like
+ <A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv"><CODE>CMAESOptimizer</CODE></A> succeed more often than BOBYQA, but are more
+ expensive. BOBYQA could also be considered as a replacement of any
+ derivative-based optimizer when the derivatives are approximated by
+ finite differences.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>3.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: BOBYQAOptimizer.java 1462507 2013-03-29 15:50:22Z luc $</DD>
+</DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html#DEFAULT_INITIAL_RADIUS">DEFAULT_INITIAL_RADIUS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Default value for <A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html#initialTrustRegionRadius"><CODE>initialTrustRegionRadius</CODE></A>: 10.0 .</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html#DEFAULT_STOPPING_RADIUS">DEFAULT_STOPPING_RADIUS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Default value for <A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html#stoppingTrustRegionRadius"><CODE>stoppingTrustRegionRadius</CODE></A>: 1.0E-8 .</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html#MINIMUM_PROBLEM_DIMENSION">MINIMUM_PROBLEM_DIMENSION</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minimum dimension of the problem: 2</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.commons.math3.optim.BaseOptimizer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.commons.math3.optim.<A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html" title="class in org.apache.commons.math3.optim">BaseOptimizer</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html#evaluations">evaluations</A>, <A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html#iterations">iterations</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html#BOBYQAOptimizer(int)">BOBYQAOptimizer</A></B>(int&nbsp;numberOfInterpolationPoints)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html#BOBYQAOptimizer(int, double, double)">BOBYQAOptimizer</A></B>(int&nbsp;numberOfInterpolationPoints,
+                double&nbsp;initialTrustRegionRadius,
+                double&nbsp;stoppingTrustRegionRadius)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/optim/PointValuePair.html" title="class in org.apache.commons.math3.optim">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html#doOptimize()">doOptimize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs the bulk of the optimization algorithm.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.optim.nonlinear.scalar.MultivariateOptimizer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.optim.nonlinear.scalar.<A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar">MultivariateOptimizer</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateOptimizer.html#computeObjectiveValue(double[])">computeObjectiveValue</A>, <A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateOptimizer.html#getGoalType()">getGoalType</A>, <A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateOptimizer.html#optimize(org.apache.commons.math3.optim.OptimizationData...)">optimize</A>, <A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateOptimizer.html#parseOptimizationData(org.apache.commons.math3.optim.OptimizationData...)">parseOptimizationData</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.optim.BaseMultivariateOptimizer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.optim.<A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html#getLowerBound()">getLowerBound</A>, <A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html#getStartPoint()">getStartPoint</A>, <A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html#getUpperBound()">getUpperBound</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.optim.BaseOptimizer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.optim.<A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html" title="class in org.apache.commons.math3.optim">BaseOptimizer</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html#getConvergenceChecker()">getConvergenceChecker</A>, <A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html#getEvaluations()">getEvaluations</A>, <A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html#getIterations()">getIterations</A>, <A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html#getMaxEvaluations()">getMaxEvaluations</A>, <A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html#getMaxIterations()">getMaxIterations</A>, <A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html#incrementEvaluationCount()">incrementEvaluationCount</A>, <A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html#incrementIterationCount()">incrementIterationCount</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="MINIMUM_PROBLEM_DIMENSION"><!-- --></A><H3>
+MINIMUM_PROBLEM_DIMENSION</H3>
+<PRE>
+public static final int <B>MINIMUM_PROBLEM_DIMENSION</B></PRE>
+<DL>
+<DD>Minimum dimension of the problem: 2
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../../constant-values.html#org.apache.commons.math3.optim.nonlinear.scalar.noderiv.BOBYQAOptimizer.MINIMUM_PROBLEM_DIMENSION">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="DEFAULT_INITIAL_RADIUS"><!-- --></A><H3>
+DEFAULT_INITIAL_RADIUS</H3>
+<PRE>
+public static final double <B>DEFAULT_INITIAL_RADIUS</B></PRE>
+<DL>
+<DD>Default value for <A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html#initialTrustRegionRadius"><CODE>initialTrustRegionRadius</CODE></A>: 10.0 .
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../../constant-values.html#org.apache.commons.math3.optim.nonlinear.scalar.noderiv.BOBYQAOptimizer.DEFAULT_INITIAL_RADIUS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="DEFAULT_STOPPING_RADIUS"><!-- --></A><H3>
+DEFAULT_STOPPING_RADIUS</H3>
+<PRE>
+public static final double <B>DEFAULT_STOPPING_RADIUS</B></PRE>
+<DL>
+<DD>Default value for <A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html#stoppingTrustRegionRadius"><CODE>stoppingTrustRegionRadius</CODE></A>: 1.0E-8 .
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../../constant-values.html#org.apache.commons.math3.optim.nonlinear.scalar.noderiv.BOBYQAOptimizer.DEFAULT_STOPPING_RADIUS">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="BOBYQAOptimizer(int)"><!-- --></A><H3>
+BOBYQAOptimizer</H3>
+<PRE>
+public <B>BOBYQAOptimizer</B>(int&nbsp;numberOfInterpolationPoints)</PRE>
+<DL>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>numberOfInterpolationPoints</CODE> - Number of interpolation conditions.
+ For a problem of dimension <code>n</code>, its value must be in the interval
+ <code>[n+2, (n+1)(n+2)/2]</code>.
+ Choices that exceed <code>2n+1</code> are not recommended.</DL>
+</DL>
+<HR>
+
+<A NAME="BOBYQAOptimizer(int, double, double)"><!-- --></A><H3>
+BOBYQAOptimizer</H3>
+<PRE>
+public <B>BOBYQAOptimizer</B>(int&nbsp;numberOfInterpolationPoints,
+                       double&nbsp;initialTrustRegionRadius,
+                       double&nbsp;stoppingTrustRegionRadius)</PRE>
+<DL>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>numberOfInterpolationPoints</CODE> - Number of interpolation conditions.
+ For a problem of dimension <code>n</code>, its value must be in the interval
+ <code>[n+2, (n+1)(n+2)/2]</code>.
+ Choices that exceed <code>2n+1</code> are not recommended.<DD><CODE>initialTrustRegionRadius</CODE> - Initial trust region radius.<DD><CODE>stoppingTrustRegionRadius</CODE> - Stopping trust region radius.</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="doOptimize()"><!-- --></A><H3>
+doOptimize</H3>
+<PRE>
+protected <A HREF="../../../../../../../../org/apache/commons/math3/optim/PointValuePair.html" title="class in org.apache.commons.math3.optim">PointValuePair</A> <B>doOptimize</B>()</PRE>
+<DL>
+<DD>Performs the bulk of the optimization algorithm.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html#doOptimize()">doOptimize</A></CODE> in class <CODE><A HREF="../../../../../../../../org/apache/commons/math3/optim/BaseOptimizer.html" title="class in org.apache.commons.math3.optim">BaseOptimizer</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/optim/PointValuePair.html" title="class in org.apache.commons.math3.optim">PointValuePair</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the point/value pair giving the optimal value of the
+ objective function.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/BOBYQAOptimizer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplex.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../../index.html?org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="BOBYQAOptimizer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

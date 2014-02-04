@@ -1,0 +1,648 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Interface org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Interface org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/analysis/differentiation//class-useUnivariateDifferentiableFunction.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="UnivariateDifferentiableFunction.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Interface<br>org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.analysis"><B>org.apache.commons.math3.analysis</B></A></TD>
+<TD>
+      Parent package for common numerical analysis procedures, including root finding,
+      function interpolation and integration.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.analysis.differentiation"><B>org.apache.commons.math3.analysis.differentiation</B></A></TD>
+<TD>
+   This package holds the main interfaces and basic building block classes
+   dealing with differentiation.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.analysis.function"><B>org.apache.commons.math3.analysis.function</B></A></TD>
+<TD>
+      The <code>function</code> package contains function objects that wrap the
+      methods contained in <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Math.html?is-external=true" title="class or interface in java.lang"><CODE>Math</CODE></A>, as well as common
+      mathematical functions such as the gaussian and sinc functions.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.analysis.polynomials"><B>org.apache.commons.math3.analysis.polynomials</B></A></TD>
+<TD>Univariate real polynomials implementations, seen as differentiable
+     univariate real functions.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.analysis.solvers"><B>org.apache.commons.math3.analysis.solvers</B></A></TD>
+<TD>Root finding algorithms, for univariate real functions.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.analysis"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A> in <A HREF="../../../../../../../org/apache/commons/math3/analysis/package-summary.html">org.apache.commons.math3.analysis</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/analysis/package-summary.html">org.apache.commons.math3.analysis</A> that return <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></CODE></FONT></TD>
+<TD><CODE><B>FunctionUtils.</B><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/FunctionUtils.html#add(org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction...)">add</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A>...&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds functions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></CODE></FONT></TD>
+<TD><CODE><B>FunctionUtils.</B><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/FunctionUtils.html#compose(org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction...)">compose</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A>...&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composes functions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></CODE></FONT></TD>
+<TD><CODE><B>FunctionUtils.</B><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/FunctionUtils.html#multiply(org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction...)">multiply</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A>...&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiplies functions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></CODE></FONT></TD>
+<TD><CODE><B>FunctionUtils.</B><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/FunctionUtils.html#toUnivariateDifferential(org.apache.commons.math3.analysis.DifferentiableUnivariateFunction)">toUnivariateDifferential</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/analysis/DifferentiableUnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">DifferentiableUnivariateFunction</A>&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>this conversion method is temporary in version 3.1, as the <A HREF="../../../../../../../org/apache/commons/math3/analysis/DifferentiableUnivariateFunction.html" title="interface in org.apache.commons.math3.analysis"><CODE>DifferentiableUnivariateFunction</CODE></A> interface itself is deprecated</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/analysis/package-summary.html">org.apache.commons.math3.analysis</A> with parameters of type <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></CODE></FONT></TD>
+<TD><CODE><B>FunctionUtils.</B><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/FunctionUtils.html#add(org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction...)">add</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A>...&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds functions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></CODE></FONT></TD>
+<TD><CODE><B>FunctionUtils.</B><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/FunctionUtils.html#compose(org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction...)">compose</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A>...&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composes functions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></CODE></FONT></TD>
+<TD><CODE><B>FunctionUtils.</B><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/FunctionUtils.html#multiply(org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction...)">multiply</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A>...&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiplies functions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/analysis/DifferentiableUnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">DifferentiableUnivariateFunction</A></CODE></FONT></TD>
+<TD><CODE><B>FunctionUtils.</B><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/FunctionUtils.html#toDifferentiableUnivariateFunction(org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction)">toDifferentiableUnivariateFunction</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A>&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>this conversion method is temporary in version 3.1, as the <A HREF="../../../../../../../org/apache/commons/math3/analysis/DifferentiableUnivariateFunction.html" title="interface in org.apache.commons.math3.analysis"><CODE>DifferentiableUnivariateFunction</CODE></A> interface itself is deprecated</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.analysis.differentiation"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A> in <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/package-summary.html">org.apache.commons.math3.analysis.differentiation</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/package-summary.html">org.apache.commons.math3.analysis.differentiation</A> that return <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></CODE></FONT></TD>
+<TD><CODE><B>UnivariateFunctionDifferentiator.</B><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateFunctionDifferentiator.html#differentiate(org.apache.commons.math3.analysis.UnivariateFunction)">differentiate</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;function)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an implementation of a <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation"><CODE>differential</CODE></A> from a regular <A HREF="../../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis"><CODE>function</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></CODE></FONT></TD>
+<TD><CODE><B>FiniteDifferencesDifferentiator.</B><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/FiniteDifferencesDifferentiator.html#differentiate(org.apache.commons.math3.analysis.UnivariateFunction)">differentiate</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;function)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an implementation of a <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation"><CODE>differential</CODE></A> from a regular <A HREF="../../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis"><CODE>function</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.analysis.function"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A> in <A HREF="../../../../../../../org/apache/commons/math3/analysis/function/package-summary.html">org.apache.commons.math3.analysis.function</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../../org/apache/commons/math3/analysis/function/package-summary.html">org.apache.commons.math3.analysis.function</A> that implement <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Acos.html" title="class in org.apache.commons.math3.analysis.function">Acos</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arc-cosine function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Acosh.html" title="class in org.apache.commons.math3.analysis.function">Acosh</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hyperbolic arc-cosine function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Asin.html" title="class in org.apache.commons.math3.analysis.function">Asin</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arc-sine function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Asinh.html" title="class in org.apache.commons.math3.analysis.function">Asinh</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hyperbolic arc-sine function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Atan.html" title="class in org.apache.commons.math3.analysis.function">Atan</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arc-tangent function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Atanh.html" title="class in org.apache.commons.math3.analysis.function">Atanh</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hyperbolic arc-tangent function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Cbrt.html" title="class in org.apache.commons.math3.analysis.function">Cbrt</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cube root function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Constant.html" title="class in org.apache.commons.math3.analysis.function">Constant</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constant function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Cos.html" title="class in org.apache.commons.math3.analysis.function">Cos</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cosine function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Cosh.html" title="class in org.apache.commons.math3.analysis.function">Cosh</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hyperbolic cosine function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Exp.html" title="class in org.apache.commons.math3.analysis.function">Exp</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exponential function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Expm1.html" title="class in org.apache.commons.math3.analysis.function">Expm1</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>e<sup>x</sup>-1</code> function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Gaussian.html" title="class in org.apache.commons.math3.analysis.function">Gaussian</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://en.wikipedia.org/wiki/Gaussian_function">
+  Gaussian</a> function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/HarmonicOscillator.html" title="class in org.apache.commons.math3.analysis.function">HarmonicOscillator</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://en.wikipedia.org/wiki/Harmonic_oscillator">
+  simple harmonic oscillator</a> function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Identity.html" title="class in org.apache.commons.math3.analysis.function">Identity</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Identity function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Inverse.html" title="class in org.apache.commons.math3.analysis.function">Inverse</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inverse function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Log.html" title="class in org.apache.commons.math3.analysis.function">Log</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Natural logarithm function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Log10.html" title="class in org.apache.commons.math3.analysis.function">Log10</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base 10 logarithm function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Log1p.html" title="class in org.apache.commons.math3.analysis.function">Log1p</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>log(1 + p)</code> function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Logistic.html" title="class in org.apache.commons.math3.analysis.function">Logistic</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://en.wikipedia.org/wiki/Generalised_logistic_function">
+  Generalised logistic</a> function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Logit.html" title="class in org.apache.commons.math3.analysis.function">Logit</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://en.wikipedia.org/wiki/Logit">
+  Logit</a> function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Minus.html" title="class in org.apache.commons.math3.analysis.function">Minus</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minus function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Power.html" title="class in org.apache.commons.math3.analysis.function">Power</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Power function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Sigmoid.html" title="class in org.apache.commons.math3.analysis.function">Sigmoid</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://en.wikipedia.org/wiki/Sigmoid_function">
+  Sigmoid</a> function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Sin.html" title="class in org.apache.commons.math3.analysis.function">Sin</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sine function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Sinc.html" title="class in org.apache.commons.math3.analysis.function">Sinc</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://en.wikipedia.org/wiki/Sinc_function">Sinc</a> function,
+ defined by
+ <code>
+   sinc(x) = 1            if x = 0,
+             sin(x) / x   otherwise.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Sinh.html" title="class in org.apache.commons.math3.analysis.function">Sinh</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hyperbolic sine function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Sqrt.html" title="class in org.apache.commons.math3.analysis.function">Sqrt</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Square-root function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Tan.html" title="class in org.apache.commons.math3.analysis.function">Tan</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tangent function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Tanh.html" title="class in org.apache.commons.math3.analysis.function">Tanh</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hyperbolic tangent function.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.analysis.polynomials"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A> in <A HREF="../../../../../../../org/apache/commons/math3/analysis/polynomials/package-summary.html">org.apache.commons.math3.analysis.polynomials</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../../org/apache/commons/math3/analysis/polynomials/package-summary.html">org.apache.commons.math3.analysis.polynomials</A> that implement <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunction.html" title="class in org.apache.commons.math3.analysis.polynomials">PolynomialFunction</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Immutable representation of a real polynomial function with real coefficients.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionNewtonForm.html" title="class in org.apache.commons.math3.analysis.polynomials">PolynomialFunctionNewtonForm</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implements the representation of a real polynomial function in
+ Newton Form.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialSplineFunction.html" title="class in org.apache.commons.math3.analysis.polynomials">PolynomialSplineFunction</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Represents a polynomial spline function.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.analysis.solvers"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A> in <A HREF="../../../../../../../org/apache/commons/math3/analysis/solvers/package-summary.html">org.apache.commons.math3.analysis.solvers</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/analysis/solvers/package-summary.html">org.apache.commons.math3.analysis.solvers</A> with parameters of type <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractUnivariateDifferentiableSolver.</B><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/solvers/AbstractUnivariateDifferentiableSolver.html#setup(int, org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction, double, double, double)">setup</A></B>(int&nbsp;maxEval,
+      <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A>&nbsp;f,
+      double&nbsp;min,
+      double&nbsp;max,
+      double&nbsp;startValue)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prepare for computation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>NewtonRaphsonSolver.</B><B><A HREF="../../../../../../../org/apache/commons/math3/analysis/solvers/NewtonRaphsonSolver.html#solve(int, org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction, double, double)">solve</A></B>(int&nbsp;maxEval,
+      <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">UnivariateDifferentiableFunction</A>&nbsp;f,
+      double&nbsp;min,
+      double&nbsp;max)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find a zero near the midpoint of <code>min</code> and <code>max</code>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/analysis/differentiation//class-useUnivariateDifferentiableFunction.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="UnivariateDifferentiableFunction.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

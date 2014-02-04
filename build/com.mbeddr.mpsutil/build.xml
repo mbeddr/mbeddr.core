@@ -56,6 +56,31 @@
     </echoxml>
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.lib.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.lib.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.lib.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.mpsutil.lib" type="solution" uuid="fbbe2d0f-711d-4331-ac7e-7a5ce36e8d67">
+        <dependencies />
+        <library jar="../../lib/commons-lang3-3.2.1/commons-lang3-3.2.1.jar" />
+        <library jar="../../lib/commons-io-2.4/commons-io-2.4.jar" />
+        <library jar="../../lib/commons-math3-3.2/commons-math3-3.2.jar" />
+        <library jar="../../lib/commons-primitives-1.0/commons-primitives-1.0.jar" />
+        <sources jar="com.mbeddr.mpsutil.lib-src.jar" descriptor="com.mbeddr.mpsutil.lib.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.lib.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.lib" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.lib" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.lib.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.lib-models">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.lib-src.jar">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/source_gen" includes="**/*.java" />
+      <zipfileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/com.mbeddr.mpsutil.lib.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.lib-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.typesystem.trace.rt.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.typesystem.trace.rt.jar/META-INF" />
     <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.typesystem.trace.rt.jar/META-INF/module.xml">
@@ -130,6 +155,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="com.mbeddr.mpsutil.interpreter.rt-src.jar" descriptor="com.mbeddr.mpsutil.interpreter.runtime.msd" />
@@ -570,6 +596,7 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.mpsutil.dev.build-models" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/com.mbeddr.mpsutil.zip">
+      <zipfileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib" prefix="mbeddr.mpsutil/lib" />
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">com.mbeddr.mpsutil.build.build.number=${build.number}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
@@ -578,10 +605,10 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -591,7 +618,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.mpsutil.typesystem.trace.rt, java.compile.com.mbeddr.mpsutil.blutil.rt, java.compile.com.mbeddr.mpsutil.interpreter.rt, java.compile.com.mbeddr.mpsutil.blutil, java.compile.com.mbeddr.mpsutil.blutil#374287044672169667, java.compile.com.mbeddr.mpsutil.genutil, java.compile.com.mbeddr.mpsutil.genutil#8326627235132567107, java.compile.com.mbeddr.mpsutil.langstats, java.compile.com.mbeddr.mpsutil.langstats#2745981761597146573, java.compile.com.mbeddr.mpsutil.interpreter, java.compile.com.mbeddr.mpsutil.interpreter#8615074351687299716, java.compile.com.mbeddr.mpsutil.interpreter.test, java.compile.com.mbeddr.mpsutil.interpreter.test#7019451652828571985, java.compile.com.mbeddr.mpsutil.refactoring, java.compile.com.mbeddr.mpsutil.refactoring#7518061998923596540, java.compile.com.mbeddr.mpsutil.typsystem.trace, java.compile.com.mbeddr.mpsutil.typsystem.trace#138655907978044806, java.compile.test.ex.match, java.compile.com.mbeddr.mpsutil.buildutil, java.compile.com.mbeddr.mpsutil.buildutil#6600513366548883903, java.compile.com.mbeddr.mpsutil.refactoring.rt, java.compile.com.mbeddr.mpsutil.dev.build" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.mpsutil.lib, java.compile.com.mbeddr.mpsutil.typesystem.trace.rt, java.compile.com.mbeddr.mpsutil.blutil.rt, java.compile.java.modules.cycle.1, java.compile.com.mbeddr.mpsutil.interpreter.rt, java.compile.com.mbeddr.mpsutil.blutil, java.compile.com.mbeddr.mpsutil.blutil#374287044672169667, java.compile.com.mbeddr.mpsutil.genutil, java.compile.com.mbeddr.mpsutil.genutil#8326627235132567107, java.compile.com.mbeddr.mpsutil.langstats, java.compile.com.mbeddr.mpsutil.langstats#2745981761597146573, java.compile.com.mbeddr.mpsutil.interpreter, java.compile.com.mbeddr.mpsutil.interpreter#8615074351687299716, java.compile.com.mbeddr.mpsutil.interpreter.test, java.compile.com.mbeddr.mpsutil.interpreter.test#7019451652828571985, java.compile.com.mbeddr.mpsutil.refactoring, java.compile.com.mbeddr.mpsutil.refactoring#7518061998923596540, java.compile.com.mbeddr.mpsutil.typsystem.trace, java.compile.com.mbeddr.mpsutil.typsystem.trace#138655907978044806, java.compile.test.ex.match, java.compile.com.mbeddr.mpsutil.buildutil, java.compile.com.mbeddr.mpsutil.buildutil#6600513366548883903, java.compile.com.mbeddr.mpsutil.refactoring.rt, java.compile.com.mbeddr.mpsutil.dev.build" />
   
   <target name="processResources" />
   
@@ -716,6 +743,7 @@
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.interpreter/runtime/com.mbeddr.mpsutil.interpreter.runtime.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/langstats.mpl" />
+        <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/com.mbeddr.mpsutil.lib.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/rt.msd" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" />
@@ -746,6 +774,26 @@
   </target>
   
   <target name="makeDependents" />
+  
+  <target name="java.compile.com.mbeddr.mpsutil.lib">
+    <mkdir dir="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.lib" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.lib" fork="true" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib/commons-lang3-3.2.1/commons-lang3-3.2.1.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib/commons-io-2.4/commons-io-2.4.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib/commons-math3-3.2/commons-math3-3.2.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib/commons-primitives-1.0/commons-primitives-1.0.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.lib">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.typesystem.trace.rt" depends="fetchDependencies">
     <mkdir dir="${mpsutil}/solutions/com.mbeddr.mpsutil.typesystem.rt/source_gen" />
@@ -813,7 +861,59 @@
     </copy>
   </target>
   
-  <target name="java.compile.com.mbeddr.mpsutil.interpreter.rt" depends="fetchDependencies">
+  <target name="java.compile.java.modules.cycle.1" depends="java.compile.com.mbeddr.mpsutil.lib, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.1" />
+    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" nowarn="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mpsutil}/languages/com.mbeddr.mpsutil.interpreter/runtime/source_gen" />
+        <path location="${mpsutil}/languages/com.mbeddr.mpsutil.interpreter/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib/commons-lang3-3.2.1/commons-lang3-3.2.1.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib/commons-io-2.4/commons-io-2.4.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib/commons-math3-3.2/commons-math3-3.2.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib/commons-primitives-1.0/commons-primitives-1.0.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.2.1.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.project.jar" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.lib" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.com.mbeddr.mpsutil.interpreter.rt" depends="java.compile.com.mbeddr.mpsutil.lib, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.interpreter/runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter.rt" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter.rt" fork="true" includeantruntime="false" debug="true">
@@ -827,6 +927,17 @@
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.lib" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib/commons-lang3-3.2.1/commons-lang3-3.2.1.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib/commons-io-2.4/commons-io-2.4.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib/commons-math3-3.2/commons-math3-3.2.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/lib/commons-primitives-1.0/commons-primitives-1.0.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -835,15 +946,21 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter.rt">
@@ -1156,7 +1273,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.com.mbeddr.mpsutil.interpreter" depends="java.compile.com.mbeddr.mpsutil.interpreter.rt, fetchDependencies">
+  <target name="java.compile.com.mbeddr.mpsutil.interpreter" depends="java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.interpreter/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter" fork="true" includeantruntime="false" debug="true">
@@ -1170,7 +1287,6 @@
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter.rt" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
@@ -1200,6 +1316,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter">
@@ -1784,6 +1901,7 @@
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.interpreter.test/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.langstats/generator/source_gen" />
+    <delete dir="${mpsutil}/solutions/com.mbeddr.mpsutil.lib/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/generator/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/source_gen" />

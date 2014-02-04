@@ -1,0 +1,1576 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+OpenMapRealVector (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="OpenMapRealVector (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/OpenMapRealVector.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.OpenMapEntry.html" title="class in org.apache.commons.math3.linear"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/linear/OpenMapRealVector.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="OpenMapRealVector.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.linear</FONT>
+<BR>
+Class OpenMapRealVector</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">org.apache.commons.math3.linear.RealVector</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/math3/linear/SparseRealVector.html" title="class in org.apache.commons.math3.linear">org.apache.commons.math3.linear.SparseRealVector</A>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.linear.OpenMapRealVector</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DD>
+</DL>
+<HR>
+<B>Deprecated.</B>&nbsp;<I>As of version 3.1, this class is deprecated, for reasons exposed
+ in this JIRA
+ <a href="https://issues.apache.org/jira/browse/MATH-870">ticket</a>. This
+ class will be removed in version 4.0.</I>
+<P>
+<DL>
+<DT><PRE><FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public class <B>OpenMapRealVector</B><DT>extends <A HREF="../../../../../org/apache/commons/math3/linear/SparseRealVector.html" title="class in org.apache.commons.math3.linear">SparseRealVector</A><DT>implements <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DL>
+</PRE>
+
+<P>
+This class implements the <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> interface with a
+ <A HREF="../../../../../org/apache/commons/math3/util/OpenIntToDoubleHashMap.html" title="class in org.apache.commons.math3.util"><CODE>OpenIntToDoubleHashMap</CODE></A> backing store.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: OpenMapRealVector.java 1462503 2013-03-29 15:48:27Z luc $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../serialized-form.html#org.apache.commons.math3.linear.OpenMapRealVector">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.OpenMapEntry.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector.OpenMapEntry</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Implementation of <code>Entry</code> optimized for OpenMap.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.OpenMapSparseIterator.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector.OpenMapSparseIterator</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Iterator class to do iteration over just the non-zero elements.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_org.apache.commons.math3.linear.RealVector"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class org.apache.commons.math3.linear.<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.Entry.html" title="class in org.apache.commons.math3.linear">RealVector.Entry</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.SparseEntryIterator.html" title="class in org.apache.commons.math3.linear">RealVector.SparseEntryIterator</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#DEFAULT_ZERO_TOLERANCE">DEFAULT_ZERO_TOLERANCE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Default Tolerance for having a value considered zero.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector()">OpenMapRealVector</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a 0-length vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(double[])">OpenMapRealVector</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Create from an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(java.lang.Double[])">OpenMapRealVector</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</A>[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Create from an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(double[], double)">OpenMapRealVector</A></B>(double[]&nbsp;values,
+                  double&nbsp;epsilon)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Create from an array, specifying zero tolerance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(java.lang.Double[], double)">OpenMapRealVector</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</A>[]&nbsp;values,
+                  double&nbsp;epsilon)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Create from an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(int)">OpenMapRealVector</A></B>(int&nbsp;dimension)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Construct a vector of zeroes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(int, double)">OpenMapRealVector</A></B>(int&nbsp;dimension,
+                  double&nbsp;epsilon)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Construct a vector of zeroes, specifying zero tolerance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(int, int)">OpenMapRealVector</A></B>(int&nbsp;dimension,
+                  int&nbsp;expectedSize)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a vector with known the sparseness (for advanced use only).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(int, int, double)">OpenMapRealVector</A></B>(int&nbsp;dimension,
+                  int&nbsp;expectedSize,
+                  double&nbsp;epsilon)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a vector with known the sparseness and zero tolerance
+ setting (for advanced use only).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(org.apache.commons.math3.linear.OpenMapRealVector)">OpenMapRealVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Copy constructor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(org.apache.commons.math3.linear.OpenMapRealVector, int)">OpenMapRealVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v,
+                  int&nbsp;resize)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a resized vector, for use with append.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(org.apache.commons.math3.linear.RealVector)">OpenMapRealVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generic copy constructor.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#add(org.apache.commons.math3.linear.OpenMapRealVector)">add</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimized method to add two OpenMapRealVectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#add(org.apache.commons.math3.linear.RealVector)">add</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Compute the sum of this vector and <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#append(double)">append</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Construct a new vector by appending a double to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#append(org.apache.commons.math3.linear.OpenMapRealVector)">append</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimized method to append a OpenMapRealVector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#append(org.apache.commons.math3.linear.RealVector)">append</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Construct a new vector by appending a vector to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#copy()">copy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns a (deep) copy of this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#dotProduct(org.apache.commons.math3.linear.OpenMapRealVector)">dotProduct</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of 3.1 (to be removed in 4.0). The computation is
+ performed by the parent class. The method must be kept to maintain
+ backwards compatibility.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#ebeDivide(org.apache.commons.math3.linear.RealVector)">ebeDivide</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Element-by-element division.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#ebeMultiply(org.apache.commons.math3.linear.RealVector)">ebeMultiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Element-by-element multiplication.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#equals(java.lang.Object)">equals</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;
+ Test for the equality of two real vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#getDimension()">getDimension</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns the size of the vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#getDistance(org.apache.commons.math3.linear.OpenMapRealVector)">getDistance</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimized method to compute distance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#getDistance(org.apache.commons.math3.linear.RealVector)">getDistance</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#getEntry(int)">getEntry</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Return the entry at the specified index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#getL1Distance(org.apache.commons.math3.linear.OpenMapRealVector)">getL1Distance</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#getL1Distance(org.apache.commons.math3.linear.RealVector)">getL1Distance</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#getLInfDistance(org.apache.commons.math3.linear.RealVector)">getLInfDistance</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#getSparsity()">getSparsity</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#getSubVector(int, int)">getSubVector</A></B>(int&nbsp;index,
+             int&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get a subvector from consecutive elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#hashCode()">hashCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#isDefaultValue(double)">isDefaultValue</A></B>(double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Determine if this value is within epsilon of zero.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#isInfinite()">isInfinite</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Check whether any coordinate of this vector is infinite and none are <code>NaN</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#isNaN()">isNaN</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Check whether any coordinate of this vector is <code>NaN</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#mapAdd(double)">mapAdd</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Add a value to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#mapAddToSelf(double)">mapAddToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Add a value to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#set(double)">set</A></B>(double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Set all elements to a single value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#setEntry(int, double)">setEntry</A></B>(int&nbsp;index,
+         double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Set a single element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#setSubVector(int, org.apache.commons.math3.linear.RealVector)">setSubVector</A></B>(int&nbsp;index,
+             <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Set a sequence of consecutive elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.Entry.html" title="class in org.apache.commons.math3.linear">RealVector.Entry</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#sparseIterator()">sparseIterator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Create a sparse iterator over the vector, which may omit some entries.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#subtract(org.apache.commons.math3.linear.OpenMapRealVector)">subtract</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimized method to subtract OpenMapRealVectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#subtract(org.apache.commons.math3.linear.RealVector)">subtract</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Subtract <code>v</code> from this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#toArray()">toArray</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Convert the vector to an array of <code>double</code>s.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#unitize()">unitize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Converts this vector into a unit vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#unitVector()">unitVector</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Creates a unit vector pointing in the direction of this vector.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.linear.RealVector"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.linear.<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#addToEntry(int, double)">addToEntry</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#checkIndex(int)">checkIndex</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#checkIndices(int, int)">checkIndices</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#checkVectorDimensions(int)">checkVectorDimensions</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#checkVectorDimensions(org.apache.commons.math3.linear.RealVector)">checkVectorDimensions</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#combine(double, double, org.apache.commons.math3.linear.RealVector)">combine</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#combineToSelf(double, double, org.apache.commons.math3.linear.RealVector)">combineToSelf</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#cosine(org.apache.commons.math3.linear.RealVector)">cosine</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#dotProduct(org.apache.commons.math3.linear.RealVector)">dotProduct</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getL1Norm()">getL1Norm</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getLInfNorm()">getLInfNorm</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getMaxIndex()">getMaxIndex</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getMaxValue()">getMaxValue</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getMinIndex()">getMinIndex</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getMinValue()">getMinValue</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getNorm()">getNorm</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#iterator()">iterator</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#map(org.apache.commons.math3.analysis.UnivariateFunction)">map</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapDivide(double)">mapDivide</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapDivideToSelf(double)">mapDivideToSelf</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapMultiply(double)">mapMultiply</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapMultiplyToSelf(double)">mapMultiplyToSelf</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapSubtract(double)">mapSubtract</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapSubtractToSelf(double)">mapSubtractToSelf</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapToSelf(org.apache.commons.math3.analysis.UnivariateFunction)">mapToSelf</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#outerProduct(org.apache.commons.math3.linear.RealVector)">outerProduct</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#projection(org.apache.commons.math3.linear.RealVector)">projection</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#unmodifiableRealVector(org.apache.commons.math3.linear.RealVector)">unmodifiableRealVector</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor)">walkInDefaultOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor, int, int)">walkInDefaultOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor)">walkInDefaultOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor, int, int)">walkInDefaultOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor)">walkInOptimizedOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor, int, int)">walkInOptimizedOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor)">walkInOptimizedOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor, int, int)">walkInOptimizedOrder</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DEFAULT_ZERO_TOLERANCE"><!-- --></A><H3>
+DEFAULT_ZERO_TOLERANCE</H3>
+<PRE>
+public static final double <B>DEFAULT_ZERO_TOLERANCE</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Default Tolerance for having a value considered zero.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.linear.OpenMapRealVector.DEFAULT_ZERO_TOLERANCE">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="OpenMapRealVector()"><!-- --></A><H3>
+OpenMapRealVector</H3>
+<PRE>
+public <B>OpenMapRealVector</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Build a 0-length vector.
+ Zero-length vectors may be used to initialized construction of vectors
+ by data gathering. We start with zero-length and use either the <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(org.apache.commons.math3.linear.OpenMapRealVector, int)"><CODE>OpenMapRealVector(OpenMapRealVector, int)</CODE></A> constructor
+ or one of the <code>append</code> method (<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#append(double)"><CODE>append(double)</CODE></A>,
+ <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#append(org.apache.commons.math3.linear.RealVector)"><CODE>append(RealVector)</CODE></A>) to gather data into this vector.
+<P>
+</DL>
+<HR>
+
+<A NAME="OpenMapRealVector(int)"><!-- --></A><H3>
+OpenMapRealVector</H3>
+<PRE>
+public <B>OpenMapRealVector</B>(int&nbsp;dimension)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Construct a vector of zeroes.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>dimension</CODE> - Size of the vector.</DL>
+</DL>
+<HR>
+
+<A NAME="OpenMapRealVector(int, double)"><!-- --></A><H3>
+OpenMapRealVector</H3>
+<PRE>
+public <B>OpenMapRealVector</B>(int&nbsp;dimension,
+                         double&nbsp;epsilon)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Construct a vector of zeroes, specifying zero tolerance.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>dimension</CODE> - Size of the vector.<DD><CODE>epsilon</CODE> - Tolerance below which a value considered zero.</DL>
+</DL>
+<HR>
+
+<A NAME="OpenMapRealVector(org.apache.commons.math3.linear.OpenMapRealVector, int)"><!-- --></A><H3>
+OpenMapRealVector</H3>
+<PRE>
+protected <B>OpenMapRealVector</B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v,
+                            int&nbsp;resize)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Build a resized vector, for use with append.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Original vector.<DD><CODE>resize</CODE> - Amount to add.</DL>
+</DL>
+<HR>
+
+<A NAME="OpenMapRealVector(int, int)"><!-- --></A><H3>
+OpenMapRealVector</H3>
+<PRE>
+public <B>OpenMapRealVector</B>(int&nbsp;dimension,
+                         int&nbsp;expectedSize)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Build a vector with known the sparseness (for advanced use only).
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>dimension</CODE> - Size of the vector.<DD><CODE>expectedSize</CODE> - The expected number of non-zero entries.</DL>
+</DL>
+<HR>
+
+<A NAME="OpenMapRealVector(int, int, double)"><!-- --></A><H3>
+OpenMapRealVector</H3>
+<PRE>
+public <B>OpenMapRealVector</B>(int&nbsp;dimension,
+                         int&nbsp;expectedSize,
+                         double&nbsp;epsilon)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Build a vector with known the sparseness and zero tolerance
+ setting (for advanced use only).
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>dimension</CODE> - Size of the vector.<DD><CODE>expectedSize</CODE> - Expected number of non-zero entries.<DD><CODE>epsilon</CODE> - Tolerance below which a value is considered zero.</DL>
+</DL>
+<HR>
+
+<A NAME="OpenMapRealVector(double[])"><!-- --></A><H3>
+OpenMapRealVector</H3>
+<PRE>
+public <B>OpenMapRealVector</B>(double[]&nbsp;values)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Create from an array.
+ Only non-zero entries will be stored.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - Set of values to create from.</DL>
+</DL>
+<HR>
+
+<A NAME="OpenMapRealVector(double[], double)"><!-- --></A><H3>
+OpenMapRealVector</H3>
+<PRE>
+public <B>OpenMapRealVector</B>(double[]&nbsp;values,
+                         double&nbsp;epsilon)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Create from an array, specifying zero tolerance.
+ Only non-zero entries will be stored.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - Set of values to create from.<DD><CODE>epsilon</CODE> - Tolerance below which a value is considered zero.</DL>
+</DL>
+<HR>
+
+<A NAME="OpenMapRealVector(java.lang.Double[])"><!-- --></A><H3>
+OpenMapRealVector</H3>
+<PRE>
+public <B>OpenMapRealVector</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</A>[]&nbsp;values)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Create from an array.
+ Only non-zero entries will be stored.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - The set of values to create from</DL>
+</DL>
+<HR>
+
+<A NAME="OpenMapRealVector(java.lang.Double[], double)"><!-- --></A><H3>
+OpenMapRealVector</H3>
+<PRE>
+public <B>OpenMapRealVector</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</A>[]&nbsp;values,
+                         double&nbsp;epsilon)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Create from an array.
+ Only non-zero entries will be stored.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - Set of values to create from.<DD><CODE>epsilon</CODE> - Tolerance below which a value is considered zero.</DL>
+</DL>
+<HR>
+
+<A NAME="OpenMapRealVector(org.apache.commons.math3.linear.OpenMapRealVector)"><!-- --></A><H3>
+OpenMapRealVector</H3>
+<PRE>
+public <B>OpenMapRealVector</B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Copy constructor.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Instance to copy from.</DL>
+</DL>
+<HR>
+
+<A NAME="OpenMapRealVector(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+OpenMapRealVector</H3>
+<PRE>
+public <B>OpenMapRealVector</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generic copy constructor.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Instance to copy from.</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="isDefaultValue(double)"><!-- --></A><H3>
+isDefaultValue</H3>
+<PRE>
+protected boolean <B>isDefaultValue</B>(double&nbsp;value)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Determine if this value is within epsilon of zero.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - Value to test
+<DT><B>Returns:</B><DD><code>true</code> if this value is within epsilon to zero,
+ <code>false</code> otherwise.<DT><B>Since:</B></DT>
+  <DD>2.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="add(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>add</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+               throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Compute the sum of this vector and <code>v</code>.
+ Returns a new vector. Does not change instance data.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#add(org.apache.commons.math3.linear.RealVector)">add</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to be added.
+<DT><B>Returns:</B><DD><code>this</code> + <code>v</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="add(org.apache.commons.math3.linear.OpenMapRealVector)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A> <B>add</B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)
+                      throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Optimized method to add two OpenMapRealVectors.
+ It copies the larger vector, then iterates over the smaller.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to add.
+<DT><B>Returns:</B><DD>the sum of <code>this</code> and <code>v</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the dimensions do not match.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="append(org.apache.commons.math3.linear.OpenMapRealVector)"><!-- --></A><H3>
+append</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A> <B>append</B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Optimized method to append a OpenMapRealVector.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector to append
+<DT><B>Returns:</B><DD>The result of appending <code>v</code> to self</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="append(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+append</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A> <B>append</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Construct a new vector by appending a vector to this vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#append(org.apache.commons.math3.linear.RealVector)">append</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector to append to this one.
+<DT><B>Returns:</B><DD>a new vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="append(double)"><!-- --></A><H3>
+append</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A> <B>append</B>(double&nbsp;d)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Construct a new vector by appending a double to this vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#append(double)">append</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - double to append.
+<DT><B>Returns:</B><DD>a new vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="copy()"><!-- --></A><H3>
+copy</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A> <B>copy</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Returns a (deep) copy of this vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#copy()">copy</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a vector copy.<DT><B>Since:</B></DT>
+  <DD>2.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dotProduct(org.apache.commons.math3.linear.OpenMapRealVector)"><!-- --></A><H3>
+dotProduct</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public double <B>dotProduct</B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)
+                  throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>as of 3.1 (to be removed in 4.0). The computation is
+ performed by the parent class. The method must be kept to maintain
+ backwards compatibility.</I>
+<P>
+<DD>Computes the dot product.
+ Note that the computation is now performed in the parent class: no
+ performance improvement is to be expected from this overloaded
+ method.
+ The previous implementation was buggy and cannot be easily fixed
+ (see MATH-795).
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector.
+<DT><B>Returns:</B><DD>the dot product of this vector with <code>v</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ebeDivide(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+ebeDivide</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A> <B>ebeDivide</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                            throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Element-by-element division.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#ebeDivide(org.apache.commons.math3.linear.RealVector)">ebeDivide</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector by which instance elements must be divided.
+<DT><B>Returns:</B><DD>a vector containing this[i] / v[i] for all i.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ebeMultiply(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+ebeMultiply</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A> <B>ebeMultiply</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                              throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Element-by-element multiplication.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#ebeMultiply(org.apache.commons.math3.linear.RealVector)">ebeMultiply</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector by which instance elements must be multiplied
+<DT><B>Returns:</B><DD>a vector containing this[i] * v[i] for all i.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSubVector(int, int)"><!-- --></A><H3>
+getSubVector</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A> <B>getSubVector</B>(int&nbsp;index,
+                                      int&nbsp;n)
+                               throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                                      <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Get a subvector from consecutive elements.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getSubVector(int, int)">getSubVector</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - index of first element.<DD><CODE>n</CODE> - number of elements to be retrieved.
+<DT><B>Returns:</B><DD>a vector containing n elements.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if the number of elements is not positive.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDimension()"><!-- --></A><H3>
+getDimension</H3>
+<PRE>
+public int <B>getDimension</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Returns the size of the vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getDimension()">getDimension</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the size of this vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDistance(org.apache.commons.math3.linear.OpenMapRealVector)"><!-- --></A><H3>
+getDistance</H3>
+<PRE>
+public double <B>getDistance</B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)
+                   throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Optimized method to compute distance.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to compute distance to.
+<DT><B>Returns:</B><DD>the distance from <code>this</code> and <code>v</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the dimensions do not match.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDistance(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+getDistance</H3>
+<PRE>
+public double <B>getDistance</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                   throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Distance between two vectors.
+ <p>This method computes the distance consistent with the
+ L<sub>2</sub> norm, i.e. the square root of the sum of
+ element differences, or Euclidean distance.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getDistance(org.apache.commons.math3.linear.RealVector)">getDistance</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to which distance is requested.
+<DT><B>Returns:</B><DD>the distance between two vectors.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getL1Distance(org.apache.commons.math3.linear.RealVector)"><CODE>RealVector.getL1Distance(RealVector)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getLInfDistance(org.apache.commons.math3.linear.RealVector)"><CODE>RealVector.getLInfDistance(RealVector)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getNorm()"><CODE>RealVector.getNorm()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEntry(int)"><!-- --></A><H3>
+getEntry</H3>
+<PRE>
+public double <B>getEntry</B>(int&nbsp;index)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Return the entry at the specified index.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getEntry(int)">getEntry</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - Index location of entry to be fetched.
+<DT><B>Returns:</B><DD>the vector entry at <code>index</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#setEntry(int, double)"><CODE>RealVector.setEntry(int, double)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getL1Distance(org.apache.commons.math3.linear.OpenMapRealVector)"><!-- --></A><H3>
+getL1Distance</H3>
+<PRE>
+public double <B>getL1Distance</B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Distance between two vectors.
+ This method computes the distance consistent with
+ L<sub>1</sub> norm, i.e. the sum of the absolute values of
+ elements differences.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to which distance is requested.
+<DT><B>Returns:</B><DD>distance between this vector and <code>v</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the dimensions do not match.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getL1Distance(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+getL1Distance</H3>
+<PRE>
+public double <B>getL1Distance</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Distance between two vectors.
+ <p>This method computes the distance consistent with
+ L<sub>1</sub> norm, i.e. the sum of the absolute values of
+ the elements differences.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getL1Distance(org.apache.commons.math3.linear.RealVector)">getL1Distance</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to which distance is requested.
+<DT><B>Returns:</B><DD>the distance between two vectors.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLInfDistance(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+getLInfDistance</H3>
+<PRE>
+public double <B>getLInfDistance</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                       throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Distance between two vectors.
+ <p>This method computes the distance consistent with
+ L<sub>&infin;</sub> norm, i.e. the max of the absolute values of
+ element differences.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getLInfDistance(org.apache.commons.math3.linear.RealVector)">getLInfDistance</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to which distance is requested.
+<DT><B>Returns:</B><DD>the distance between two vectors.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getDistance(org.apache.commons.math3.linear.RealVector)"><CODE>RealVector.getDistance(RealVector)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getL1Distance(org.apache.commons.math3.linear.RealVector)"><CODE>RealVector.getL1Distance(RealVector)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getLInfNorm()"><CODE>RealVector.getLInfNorm()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isInfinite()"><!-- --></A><H3>
+isInfinite</H3>
+<PRE>
+public boolean <B>isInfinite</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Check whether any coordinate of this vector is infinite and none are <code>NaN</code>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#isInfinite()">isInfinite</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if any coordinate of this vector is infinite and
+ none are <code>NaN</code>, <code>false</code> otherwise.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isNaN()"><!-- --></A><H3>
+isNaN</H3>
+<PRE>
+public boolean <B>isNaN</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Check whether any coordinate of this vector is <code>NaN</code>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#isNaN()">isNaN</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if any coordinate of this vector is <code>NaN</code>,
+ <code>false</code> otherwise.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapAdd(double)"><!-- --></A><H3>
+mapAdd</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A> <B>mapAdd</B>(double&nbsp;d)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Add a value to each entry.
+ Returns a new vector. Does not change instance data.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapAdd(double)">mapAdd</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - Value to be added to each entry.
+<DT><B>Returns:</B><DD><code>this</code> + <code>d</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapAddToSelf(double)"><!-- --></A><H3>
+mapAddToSelf</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A> <B>mapAddToSelf</B>(double&nbsp;d)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Add a value to each entry.
+ The instance is changed in-place.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapAddToSelf(double)">mapAddToSelf</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - Value to be added to each entry.
+<DT><B>Returns:</B><DD><code>this</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEntry(int, double)"><!-- --></A><H3>
+setEntry</H3>
+<PRE>
+public void <B>setEntry</B>(int&nbsp;index,
+                     double&nbsp;value)
+              throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Set a single element.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#setEntry(int, double)">setEntry</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - element index.<DD><CODE>value</CODE> - new value for the element.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getEntry(int)"><CODE>RealVector.getEntry(int)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSubVector(int, org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+setSubVector</H3>
+<PRE>
+public void <B>setSubVector</B>(int&nbsp;index,
+                         <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                  throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Set a sequence of consecutive elements.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#setSubVector(int, org.apache.commons.math3.linear.RealVector)">setSubVector</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - index of first element to be set.<DD><CODE>v</CODE> - vector containing the values to set.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="set(double)"><!-- --></A><H3>
+set</H3>
+<PRE>
+public void <B>set</B>(double&nbsp;value)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Set all elements to a single value.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#set(double)">set</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - Single value to set for all elements.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subtract(org.apache.commons.math3.linear.OpenMapRealVector)"><!-- --></A><H3>
+subtract</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A> <B>subtract</B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A>&nbsp;v)
+                           throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Optimized method to subtract OpenMapRealVectors.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to subtract from <code>this</code>.
+<DT><B>Returns:</B><DD>the difference of <code>this</code> and <code>v</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the dimensions do not match.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subtract(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+subtract</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>subtract</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                    throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Subtract <code>v</code> from this vector.
+ Returns a new vector. Does not change instance data.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#subtract(org.apache.commons.math3.linear.RealVector)">subtract</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to be subtracted.
+<DT><B>Returns:</B><DD><code>this</code> - <code>v</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unitVector()"><!-- --></A><H3>
+unitVector</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A> <B>unitVector</B>()
+                             throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Creates a unit vector pointing in the direction of this vector.
+ The instance is not changed by this method.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#unitVector()">unitVector</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a unit vector pointing in direction of this vector.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the norm is zero.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unitize()"><!-- --></A><H3>
+unitize</H3>
+<PRE>
+public void <B>unitize</B>()
+             throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Converts this vector into a unit vector.
+ The instance itself is changed by this method.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#unitize()">unitize</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the norm is zero.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toArray()"><!-- --></A><H3>
+toArray</H3>
+<PRE>
+public double[] <B>toArray</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Convert the vector to an array of <code>double</code>s.
+ The array is independent from this vector data: the elements
+ are copied.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#toArray()">toArray</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>an array containing a copy of the vector elements.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hashCode()"><!-- --></A><H3>
+hashCode</H3>
+<PRE>
+public int <B>hashCode</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>. This method <em>must</em> be overriden by concrete
+ subclasses of <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> (current implementation throws an
+ exception).
+ Implementation Note: This works on exact values, and as a result
+ it is possible for <code>a.subtract(b)</code> to be the zero vector, while
+ <code>a.hashCode() != b.hashCode()</code>.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#hashCode()">hashCode</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="equals(java.lang.Object)"><!-- --></A><H3>
+equals</H3>
+<PRE>
+public boolean <B>equals</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;obj)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD><p>
+ Test for the equality of two real vectors. If all coordinates of two real
+ vectors are exactly the same, and none are <code>NaN</code>, the two real
+ vectors are considered to be equal. <code>NaN</code> coordinates are
+ considered to affect globally the vector and be equals to each other -
+ i.e, if either (or all) coordinates of the real vector are equal to
+ <code>NaN</code>, the real vector is equal to a vector with all <code>NaN</code>
+ coordinates.
+ </p>
+ <p>
+ This method <em>must</em> be overriden by concrete subclasses of
+ <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> (the current implementation throws an exception).
+ </p>
+ Implementation Note: This performs an exact comparison, and as a result
+ it is possible for <code>a.subtract(b</code>} to be the zero vector, while
+ <code>a.equals(b) == false</code>.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#equals(java.lang.Object)">equals</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>obj</CODE> - Object to test for equality.
+<DT><B>Returns:</B><DD><code>true</code> if two vector objects are equal, <code>false</code> if
+ <code>other</code> is null, not an instance of <code>RealVector</code>, or
+ not equal to this <code>RealVector</code> instance.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSparsity()"><!-- --></A><H3>
+getSparsity</H3>
+<PRE>
+public double <B>getSparsity</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the percentage of none zero elements as a decimal percent.<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sparseIterator()"><!-- --></A><H3>
+sparseIterator</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.Entry.html" title="class in org.apache.commons.math3.linear">RealVector.Entry</A>&gt; <B>sparseIterator</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Create a sparse iterator over the vector, which may omit some entries.
+ Specialized implementations may choose to not iterate over all
+ dimensions, either because those values are unset, or are equal
+ to defaultValue(), or are small enough to be ignored for the
+ purposes of iteration. No guarantees are made about order of iteration.
+ In dense implementations, this method will often delegate to
+ <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#iterator()"><CODE>RealVector.iterator()</CODE></A>.
+
+ <p>Note: derived classes are required to return an <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util"><CODE>Iterator</CODE></A> that
+ returns non-null <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.Entry.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector.Entry</CODE></A> objects as long as <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true#hasNext()" title="class or interface in java.util"><CODE>Iterator.hasNext()</CODE></A>
+ returns <code>true</code>.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#sparseIterator()">sparseIterator</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a sparse iterator.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/OpenMapRealVector.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.OpenMapEntry.html" title="class in org.apache.commons.math3.linear"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/linear/OpenMapRealVector.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="OpenMapRealVector.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

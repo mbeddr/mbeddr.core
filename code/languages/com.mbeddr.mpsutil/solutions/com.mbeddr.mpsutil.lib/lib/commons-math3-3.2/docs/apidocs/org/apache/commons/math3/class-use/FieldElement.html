@@ -1,0 +1,1758 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Interface org.apache.commons.math3.FieldElement (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Interface org.apache.commons.math3.FieldElement (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3//class-useFieldElement.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="FieldElement.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Interface<br>org.apache.commons.math3.FieldElement</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3"><B>org.apache.commons.math3</B></A></TD>
+<TD>Common classes used throughout the commons-math library.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.analysis.differentiation"><B>org.apache.commons.math3.analysis.differentiation</B></A></TD>
+<TD>
+   This package holds the main interfaces and basic building block classes
+   dealing with differentiation.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.analysis.interpolation"><B>org.apache.commons.math3.analysis.interpolation</B></A></TD>
+<TD>Univariate real functions interpolation algorithms.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.complex"><B>org.apache.commons.math3.complex</B></A></TD>
+<TD>Complex number type and implementations of complex transcendental
+     functions.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.dfp"><B>org.apache.commons.math3.dfp</B></A></TD>
+<TD>Decimal floating point library for Java
+
+ Another floating point class.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.fraction"><B>org.apache.commons.math3.fraction</B></A></TD>
+<TD>Fraction number type and fraction number formatting.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.linear"><B>org.apache.commons.math3.linear</B></A></TD>
+<TD>Linear algebra support.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.util"><B>org.apache.commons.math3.util</B></A></TD>
+<TD>Convenience routines and common data structures used throughout the commons-math library.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A> in <A HREF="../../../../../org/apache/commons/math3/package-summary.html">org.apache.commons.math3</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subinterfaces of <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A> in <A HREF="../../../../../org/apache/commons/math3/package-summary.html">org.apache.commons.math3</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement&lt;T&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interface representing a <a href="http://mathworld.wolfram.com/RealNumber.html">real</a>
+ <a href="http://mathworld.wolfram.com/Field.html">field</a>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/commons/math3/package-summary.html">org.apache.commons.math3</A> that return types with arguments of type <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;? extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/Field.html" title="type parameter in Field">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>Field.</B><B><A HREF="../../../../../org/apache/commons/math3/Field.html#getRuntimeClass()">getRuntimeClass</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the runtime class of the FieldElement.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.analysis.differentiation"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A> in <A HREF="../../../../../org/apache/commons/math3/analysis/differentiation/package-summary.html">org.apache.commons.math3.analysis.differentiation</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/commons/math3/analysis/differentiation/package-summary.html">org.apache.commons.math3.analysis.differentiation</A> that implement <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/analysis/differentiation/DerivativeStructure.html" title="class in org.apache.commons.math3.analysis.differentiation">DerivativeStructure</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Class representing both the value and the differentials of a function.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.analysis.interpolation"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A> in <A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/package-summary.html">org.apache.commons.math3.analysis.interpolation</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/package-summary.html">org.apache.commons.math3.analysis.interpolation</A> with type parameters of type <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="class in org.apache.commons.math3.analysis.interpolation">FieldHermiteInterpolator&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Polynomial interpolator using both sample values and sample derivatives.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/package-summary.html">org.apache.commons.math3.analysis.interpolation</A> that return <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>[][]</CODE></FONT></TD>
+<TD><CODE><B>FieldHermiteInterpolator.</B><B><A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html#derivatives(T, int)">derivatives</A></B>(<A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>&nbsp;x,
+            int&nbsp;order)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interpolate value and first derivatives at a specified abscissa.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>FieldHermiteInterpolator.</B><B><A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html#value(T)">value</A></B>(<A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interpolate value at a specified abscissa.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/package-summary.html">org.apache.commons.math3.analysis.interpolation</A> with parameters of type <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>FieldHermiteInterpolator.</B><B><A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html#addSamplePoint(T, T[]...)">addSamplePoint</A></B>(<A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>&nbsp;x,
+               <A HREF="../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>[]...&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a sample point.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.complex"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A> in <A HREF="../../../../../org/apache/commons/math3/complex/package-summary.html">org.apache.commons.math3.complex</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/commons/math3/complex/package-summary.html">org.apache.commons.math3.complex</A> that implement <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/complex/Complex.html" title="class in org.apache.commons.math3.complex">Complex</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Representation of a Complex number, i.e. a number which has both a
+ real and imaginary part.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/commons/math3/complex/package-summary.html">org.apache.commons.math3.complex</A> that return types with arguments of type <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;? extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/complex/Complex.html" title="class in org.apache.commons.math3.complex">Complex</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>ComplexField.</B><B><A HREF="../../../../../org/apache/commons/math3/complex/ComplexField.html#getRuntimeClass()">getRuntimeClass</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the runtime class of the FieldElement.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.dfp"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A> in <A HREF="../../../../../org/apache/commons/math3/dfp/package-summary.html">org.apache.commons.math3.dfp</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/commons/math3/dfp/package-summary.html">org.apache.commons.math3.dfp</A> that implement <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decimal floating point library for Java
+
+  Another floating point class.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpDec.html" title="class in org.apache.commons.math3.dfp">DfpDec</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subclass of <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> which hides the radix-10000 artifacts of the superclass.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/commons/math3/dfp/package-summary.html">org.apache.commons.math3.dfp</A> that return types with arguments of type <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;? extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>DfpField.</B><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getRuntimeClass()">getRuntimeClass</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the runtime class of the FieldElement.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.fraction"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A> in <A HREF="../../../../../org/apache/commons/math3/fraction/package-summary.html">org.apache.commons.math3.fraction</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/commons/math3/fraction/package-summary.html">org.apache.commons.math3.fraction</A> that implement <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/BigFraction.html" title="class in org.apache.commons.math3.fraction">BigFraction</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Representation of a rational number without any overflow.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Representation of a rational number.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/commons/math3/fraction/package-summary.html">org.apache.commons.math3.fraction</A> that return types with arguments of type <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;? extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/Fraction.html" title="class in org.apache.commons.math3.fraction">Fraction</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>FractionField.</B><B><A HREF="../../../../../org/apache/commons/math3/fraction/FractionField.html#getRuntimeClass()">getRuntimeClass</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the runtime class of the FieldElement.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;? extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/fraction/BigFraction.html" title="class in org.apache.commons.math3.fraction">BigFraction</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>BigFractionField.</B><B><A HREF="../../../../../org/apache/commons/math3/fraction/BigFractionField.html#getRuntimeClass()">getRuntimeClass</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the runtime class of the FieldElement.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.linear"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A> in <A HREF="../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A> with type parameters of type <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="class in org.apache.commons.math3.linear">AbstractFieldMatrix&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basic implementation of <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldMatrix</CODE></A> methods regardless of the underlying storage.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="class in org.apache.commons.math3.linear">Array2DRowFieldMatrix&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implementation of FieldMatrix<T> using a <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3"><CODE>FieldElement</CODE></A>[][] array to store entries.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This class implements the <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldVector</CODE></A> interface with a <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3"><CODE>FieldElement</CODE></A> array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="class in org.apache.commons.math3.linear">BlockFieldMatrix&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cache-friendly implementation of FieldMatrix using a flat arrays to store
+ square blocks of the matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/DefaultFieldMatrixChangingVisitor.html" title="class in org.apache.commons.math3.linear">DefaultFieldMatrixChangingVisitor&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Default implementation of the <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrixChangingVisitor.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldMatrixChangingVisitor</CODE></A> interface.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/DefaultFieldMatrixPreservingVisitor.html" title="class in org.apache.commons.math3.linear">DefaultFieldMatrixPreservingVisitor&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Default implementation of the <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrixPreservingVisitor.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldMatrixPreservingVisitor</CODE></A> interface.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldDecompositionSolver.html" title="interface in org.apache.commons.math3.linear">FieldDecompositionSolver&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interface handling decomposition algorithms that can solve A &times; X = B.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldLUDecomposition.html" title="class in org.apache.commons.math3.linear">FieldLUDecomposition&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the LUP-decomposition of a square matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interface defining field-valued matrix with basic algebraic operations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrixChangingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldMatrixChangingVisitor&lt;T extends FieldElement&lt;?&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interface defining a visitor for matrix entries.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrixPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldMatrixPreservingVisitor&lt;T extends FieldElement&lt;?&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interface defining a visitor for matrix entries.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interface defining a field-valued vector with basic algebraic operations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldMatrix.html" title="class in org.apache.commons.math3.linear">SparseFieldMatrix&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of version 3.1, this class is deprecated, for reasons exposed
+ in this JIRA
+ <a href="https://issues.apache.org/jira/browse/MATH-870">ticket</a>. This
+ class will be removed in version 4.0.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of version 3.1, this class is deprecated, for reasons exposed
+ in this JIRA
+ <a href="https://issues.apache.org/jira/browse/MATH-870">ticket</a>. This
+ class will be removed in version 4.0.</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A> with type parameters of type <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+T[]</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#buildArray(org.apache.commons.math3.Field, int)">buildArray</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;T&gt;&nbsp;field,
+           int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of 3.2, replaced by <A HREF="../../../../../org/apache/commons/math3/util/MathArrays.html#buildArray(org.apache.commons.math3.Field, int)"><CODE>MathArrays.buildArray(Field, int)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+T[][]</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#buildArray(org.apache.commons.math3.Field, int, int)">buildArray</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;T&gt;&nbsp;field,
+           int&nbsp;rows,
+           int&nbsp;columns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of 3.2, replaced by <A HREF="../../../../../org/apache/commons/math3/util/MathArrays.html#buildArray(org.apache.commons.math3.Field, int, int)"><CODE>MathArrays.buildArray(Field, int, int)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+T[][]</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#createBlocksLayout(org.apache.commons.math3.Field, int, int)">createBlocksLayout</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;T&gt;&nbsp;field,
+                   int&nbsp;rows,
+                   int&nbsp;columns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a data array in blocks layout.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createColumnFieldMatrix(T[])">createColumnFieldMatrix</A></B>(T[]&nbsp;columnData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a column <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldMatrix</CODE></A> using the data from the input
+ array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createFieldDiagonalMatrix(T[])">createFieldDiagonalMatrix</A></B>(T[]&nbsp;diagonal)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a diagonal matrix with specified elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createFieldIdentityMatrix(org.apache.commons.math3.Field, int)">createFieldIdentityMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;T&gt;&nbsp;field,
+                          int&nbsp;dimension)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>dimension x dimension</code> identity matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createFieldMatrix(org.apache.commons.math3.Field, int, int)">createFieldMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;T&gt;&nbsp;field,
+                  int&nbsp;rows,
+                  int&nbsp;columns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldMatrix</CODE></A> with specified dimensions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createFieldMatrix(T[][])">createFieldMatrix</A></B>(T[][]&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldMatrix</CODE></A> whose entries are the the values in the
+ the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createFieldVector(T[])">createFieldVector</A></B>(T[]&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldVector</CODE></A> using the data from the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createRowFieldMatrix(T[])">createRowFieldMatrix</A></B>(T[]&nbsp;rowData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a row <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldMatrix</CODE></A> using the data from the input
+ array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#extractField(T[])">extractField</A></B>(T[]&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the elements type from an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#extractField(T[][])">extractField</A></B>(T[][]&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the elements type from an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+T[][]</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#toBlocksLayout(T[][])">toBlocksLayout</A></B>(T[][]&nbsp;rawData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convert a data array from raw layout to blocks layout.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A> that return <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+T[]</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#buildArray(org.apache.commons.math3.Field, int)">buildArray</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;T&gt;&nbsp;field,
+           int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of 3.2, replaced by <A HREF="../../../../../org/apache/commons/math3/util/MathArrays.html#buildArray(org.apache.commons.math3.Field, int)"><CODE>MathArrays.buildArray(Field, int)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+T[][]</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#buildArray(org.apache.commons.math3.Field, int, int)">buildArray</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;T&gt;&nbsp;field,
+           int&nbsp;rows,
+           int&nbsp;columns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of 3.2, replaced by <A HREF="../../../../../org/apache/commons/math3/util/MathArrays.html#buildArray(org.apache.commons.math3.Field, int, int)"><CODE>MathArrays.buildArray(Field, int, int)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+T[][]</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#createBlocksLayout(org.apache.commons.math3.Field, int, int)">createBlocksLayout</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;T&gt;&nbsp;field,
+                   int&nbsp;rows,
+                   int&nbsp;columns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a data array in blocks layout.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>FieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html#getColumn(int)">getColumn</A></B>(int&nbsp;column)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the entries in column number <code>col</code> as an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#getColumn(int)">getColumn</A></B>(int&nbsp;column)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the entries in column number <code>col</code> as an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#getColumn(int)">getColumn</A></B>(int&nbsp;column)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the entries in column number <code>col</code> as an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[][]</CODE></FONT></TD>
+<TD><CODE><B>FieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html#getData()">getData</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns matrix entries as a two-dimensional array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[][]</CODE></FONT></TD>
+<TD><CODE><B>Array2DRowFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#getData()">getData</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns matrix entries as a two-dimensional array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>ArrayFieldVector.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#getData()">getData</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns vector entries as a T array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[][]</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#getData()">getData</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns matrix entries as a two-dimensional array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="type parameter in FieldVector">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>FieldVector.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#getData()">getData</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of 3.1, to be removed in 4.0. Please use the <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#toArray()"><CODE>FieldVector.toArray()</CODE></A> method instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>SparseFieldVector.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#getData()">getData</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of 3.1, to be removed in 4.0. Please use the <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#toArray()"><CODE>SparseFieldVector.toArray()</CODE></A> method instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[][]</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#getData()">getData</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns matrix entries as a two-dimensional array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[][]</CODE></FONT></TD>
+<TD><CODE><B>Array2DRowFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#getDataRef()">getDataRef</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a reference to the underlying data array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>ArrayFieldVector.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#getDataRef()">getDataRef</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a reference to the underlying data array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>FieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html#getRow(int)">getRow</A></B>(int&nbsp;row)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the entries in row number <code>row</code> as an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#getRow(int)">getRow</A></B>(int&nbsp;row)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the entries in row number <code>row</code> as an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#getRow(int)">getRow</A></B>(int&nbsp;row)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the entries in row number <code>row</code> as an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>FieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html#operate(T[])">operate</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>Array2DRowFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#operate(T[])">operate</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#operate(T[])">operate</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#operate(T[])">operate</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>FieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html#preMultiply(T[])">preMultiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (row) vector result of premultiplying this by the vector
+ <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>Array2DRowFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#preMultiply(T[])">preMultiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (row) vector result of premultiplying this by the vector
+ <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#preMultiply(T[])">preMultiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (row) vector result of premultiplying this by the vector
+ <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#preMultiply(T[])">preMultiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (row) vector result of premultiplying this by the vector
+ <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>ArrayFieldVector.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#toArray()">toArray</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convert the vector to a T array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="type parameter in FieldVector">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>FieldVector.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#toArray()">toArray</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convert the vector to a T array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>SparseFieldVector.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#toArray()">toArray</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Convert the vector to a T array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+T[][]</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#toBlocksLayout(T[][])">toBlocksLayout</A></B>(T[][]&nbsp;rawData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convert a data array from raw layout to blocks layout.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A> with parameters of type <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>FieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html#copySubMatrix(int[], int[], T[][])">copySubMatrix</A></B>(int[]&nbsp;selectedRows,
+              int[]&nbsp;selectedColumns,
+              <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[][]&nbsp;destination)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy a submatrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#copySubMatrix(int[], int[], T[][])">copySubMatrix</A></B>(int[]&nbsp;selectedRows,
+              int[]&nbsp;selectedColumns,
+              <A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[][]&nbsp;destination)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy a submatrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>FieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html#copySubMatrix(int, int, int, int, T[][])">copySubMatrix</A></B>(int&nbsp;startRow,
+              int&nbsp;endRow,
+              int&nbsp;startColumn,
+              int&nbsp;endColumn,
+              <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[][]&nbsp;destination)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy a submatrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#copySubMatrix(int, int, int, int, T[][])">copySubMatrix</A></B>(int&nbsp;startRow,
+              int&nbsp;endRow,
+              int&nbsp;startColumn,
+              int&nbsp;endColumn,
+              <A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[][]&nbsp;destination)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy a submatrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createColumnFieldMatrix(T[])">createColumnFieldMatrix</A></B>(T[]&nbsp;columnData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a column <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldMatrix</CODE></A> using the data from the input
+ array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createFieldDiagonalMatrix(T[])">createFieldDiagonalMatrix</A></B>(T[]&nbsp;diagonal)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a diagonal matrix with specified elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createFieldMatrix(T[][])">createFieldMatrix</A></B>(T[][]&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldMatrix</CODE></A> whose entries are the the values in the
+ the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createFieldVector(T[])">createFieldVector</A></B>(T[]&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldVector</CODE></A> using the data from the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createRowFieldMatrix(T[])">createRowFieldMatrix</A></B>(T[]&nbsp;rowData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a row <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldMatrix</CODE></A> using the data from the input
+ array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#extractField(T[])">extractField</A></B>(T[]&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the elements type from an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#extractField(T[][])">extractField</A></B>(T[][]&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the elements type from an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>FieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html#operate(T[])">operate</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>Array2DRowFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#operate(T[])">operate</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#operate(T[])">operate</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#operate(T[])">operate</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>FieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html#preMultiply(T[])">preMultiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (row) vector result of premultiplying this by the vector
+ <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>Array2DRowFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#preMultiply(T[])">preMultiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (row) vector result of premultiplying this by the vector
+ <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#preMultiply(T[])">preMultiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (row) vector result of premultiplying this by the vector
+ <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#preMultiply(T[])">preMultiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (row) vector result of premultiplying this by the vector
+ <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>FieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html#setColumn(int, T[])">setColumn</A></B>(int&nbsp;column,
+          <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[]&nbsp;array)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the entries in column number <code>column</code>
+ as a column matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#setColumn(int, T[])">setColumn</A></B>(int&nbsp;column,
+          <A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[]&nbsp;array)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the entries in column number <code>column</code>
+ as a column matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#setColumn(int, T[])">setColumn</A></B>(int&nbsp;column,
+          <A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[]&nbsp;array)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the entries in column number <code>column</code>
+ as a column matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>FieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html#setRow(int, T[])">setRow</A></B>(int&nbsp;row,
+       <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[]&nbsp;array)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the entries in row number <code>row</code>
+ as a row matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#setRow(int, T[])">setRow</A></B>(int&nbsp;row,
+       <A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[]&nbsp;array)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the entries in row number <code>row</code>
+ as a row matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#setRow(int, T[])">setRow</A></B>(int&nbsp;row,
+       <A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[]&nbsp;array)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the entries in row number <code>row</code>
+ as a row matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>FieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html#setSubMatrix(T[][], int, int)">setSubMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="type parameter in FieldMatrix">T</A>[][]&nbsp;subMatrix,
+             int&nbsp;row,
+             int&nbsp;column)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replace the submatrix starting at <code>(row, column)</code> using data in the
+ input <code>subMatrix</code> array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Array2DRowFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#setSubMatrix(T[][], int, int)">setSubMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[][]&nbsp;subMatrix,
+             int&nbsp;row,
+             int&nbsp;column)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replace the submatrix starting at <code>(row, column)</code> using data in the
+ input <code>subMatrix</code> array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#setSubMatrix(T[][], int, int)">setSubMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[][]&nbsp;subMatrix,
+             int&nbsp;row,
+             int&nbsp;column)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replace the submatrix starting at <code>(row, column)</code> using data in the
+ input <code>subMatrix</code> array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html#setSubMatrix(T[][], int, int)">setSubMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="type parameter in AbstractFieldMatrix">T</A>[][]&nbsp;subMatrix,
+             int&nbsp;row,
+             int&nbsp;column)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replace the submatrix starting at <code>(row, column)</code> using data in the
+ input <code>subMatrix</code> array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt; 
+<BR>
+T[][]</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>BlockFieldMatrix.</B><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#toBlocksLayout(T[][])">toBlocksLayout</A></B>(T[][]&nbsp;rawData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convert a data array from raw layout to blocks layout.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A> with parameters of type <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#Array2DRowFieldMatrix(org.apache.commons.math3.Field, T[])">Array2DRowFieldMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>&gt;&nbsp;field,
+                      <A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new (column) <code>FieldMatrix&lt;T&gt;</code> using <code>v</code> as the
+ data for the unique column of the created matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#Array2DRowFieldMatrix(org.apache.commons.math3.Field, T[][])">Array2DRowFieldMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>&gt;&nbsp;field,
+                      <A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[][]&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new <code>FieldMatrix&lt;T&gt;</code> using the input array as the underlying
+ data array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#Array2DRowFieldMatrix(org.apache.commons.math3.Field, T[][], boolean)">Array2DRowFieldMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>&gt;&nbsp;field,
+                      <A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[][]&nbsp;d,
+                      boolean&nbsp;copyArray)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new <code>FieldMatrix&lt;T&gt;</code> using the input array as the underlying
+ data array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#Array2DRowFieldMatrix(T[])">Array2DRowFieldMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new (column) <code>FieldMatrix&lt;T&gt;</code> using <code>v</code> as the
+ data for the unique column of the created matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#Array2DRowFieldMatrix(T[][])">Array2DRowFieldMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[][]&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new <code>FieldMatrix&lt;T&gt;</code> using the input array as the underlying
+ data array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html#Array2DRowFieldMatrix(T[][], boolean)">Array2DRowFieldMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="type parameter in Array2DRowFieldMatrix">T</A>[][]&nbsp;d,
+                      boolean&nbsp;copyArray)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new <code>FieldMatrix&lt;T&gt;</code> using the input array as the underlying
+ data array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector, T[])">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>&gt;&nbsp;v1,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of 3.2, replaced by <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.FieldVector, T[])"><CODE>ArrayFieldVector.ArrayFieldVector(FieldVector, FieldElement[])</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[])">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>&gt;&nbsp;field,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector from an array, copying the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[], boolean)">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>&gt;&nbsp;field,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;d,
+                 boolean&nbsp;copyArray)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new ArrayFieldVector using the input array as the underlying
+ data array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[], int, int)">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>&gt;&nbsp;field,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;d,
+                 int&nbsp;pos,
+                 int&nbsp;size)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector from part of a array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[], T[])">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>&gt;&nbsp;field,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;v1,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[], T[])">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>&gt;&nbsp;field,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;v1,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.FieldVector, T[])">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>&gt;&nbsp;v1,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[])">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector from an array, copying the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], org.apache.commons.math3.linear.ArrayFieldVector)">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;v1,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>&gt;&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of 3.2, replaced by <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], org.apache.commons.math3.linear.FieldVector)"><CODE>ArrayFieldVector.ArrayFieldVector(FieldElement[], FieldVector)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], boolean)">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;d,
+                 boolean&nbsp;copyArray)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new ArrayFieldVector using the input array as the underlying
+ data array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], org.apache.commons.math3.linear.FieldVector)">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;v1,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>&gt;&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], int, int)">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;d,
+                 int&nbsp;pos,
+                 int&nbsp;size)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector from part of a array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], T[])">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;v1,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], T[])">ArrayFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;v1,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</A>[]&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#BlockFieldMatrix(int, int, T[][], boolean)">BlockFieldMatrix</A></B>(int&nbsp;rows,
+                 int&nbsp;columns,
+                 <A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[][]&nbsp;blockData,
+                 boolean&nbsp;copyArray)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new dense matrix copying entries from block layout data.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html#BlockFieldMatrix(T[][])">BlockFieldMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="type parameter in BlockFieldMatrix">T</A>[][]&nbsp;rawData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new dense matrix copying entries from raw layout data.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#SparseFieldVector(org.apache.commons.math3.Field, T[])">SparseFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;field,
+                  <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Create from a Field array.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.util"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A> in <A HREF="../../../../../org/apache/commons/math3/util/package-summary.html">org.apache.commons.math3.util</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/commons/math3/util/package-summary.html">org.apache.commons.math3.util</A> with type parameters of type <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/OpenIntToFieldHashMap.html" title="class in org.apache.commons.math3.util">OpenIntToFieldHashMap&lt;T extends FieldElement&lt;T&gt;&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open addressed map from int to FieldElement.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/commons/math3/util/package-summary.html">org.apache.commons.math3.util</A> that implement <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/BigReal.html" title="class in org.apache.commons.math3.util">BigReal</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arbitrary precision decimal number.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This class wraps a <code>double</code> value in an object.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/commons/math3/util/package-summary.html">org.apache.commons.math3.util</A> that return types with arguments of type <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;? extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>Decimal64Field.</B><B><A HREF="../../../../../org/apache/commons/math3/util/Decimal64Field.html#getRuntimeClass()">getRuntimeClass</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the runtime class of the FieldElement.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;? extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/util/BigReal.html" title="class in org.apache.commons.math3.util">BigReal</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>BigRealField.</B><B><A HREF="../../../../../org/apache/commons/math3/util/BigRealField.html#getRuntimeClass()">getRuntimeClass</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the runtime class of the FieldElement.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3//class-useFieldElement.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="FieldElement.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>
