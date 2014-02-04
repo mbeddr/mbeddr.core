@@ -1,0 +1,1375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+SparseFieldVector (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SparseFieldVector (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SparseFieldVector.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldMatrix.html" title="class in org.apache.commons.math3.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseRealMatrix.html" title="interface in org.apache.commons.math3.linear"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/linear/SparseFieldVector.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SparseFieldVector.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.linear</FONT>
+<BR>
+Class SparseFieldVector&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt;</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.linear.SparseFieldVector&lt;T&gt;</B>
+</PRE>
+<DL>
+<DT><DT><B>Type Parameters:</B><DD><CODE>T</CODE> - the type of the field elements</DL>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;T&gt;</DD>
+</DL>
+<HR>
+<B>Deprecated.</B>&nbsp;<I>As of version 3.1, this class is deprecated, for reasons exposed
+ in this JIRA
+ <a href="https://issues.apache.org/jira/browse/MATH-870">ticket</a>. This
+ class will be removed in version 4.0.</I>
+<P>
+<DL>
+<DT><PRE><FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public class <B>SparseFieldVector&lt;T extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt;</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;T&gt;, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DL>
+</PRE>
+
+<P>
+This class implements the <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear"><CODE>FieldVector</CODE></A> interface with a <A HREF="../../../../../org/apache/commons/math3/util/OpenIntToFieldHashMap.html" title="class in org.apache.commons.math3.util"><CODE>OpenIntToFieldHashMap</CODE></A> backing store.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: SparseFieldVector.java 1455233 2013-03-11 17:00:41Z luc $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../serialized-form.html#org.apache.commons.math3.linear.SparseFieldVector">Serialized Form</A></DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#SparseFieldVector(org.apache.commons.math3.Field)">SparseFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;field)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a 0-length vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#SparseFieldVector(org.apache.commons.math3.Field, int)">SparseFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;field,
+                  int&nbsp;dimension)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Construct a vector of zeroes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#SparseFieldVector(org.apache.commons.math3.Field, int, int)">SparseFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;field,
+                  int&nbsp;dimension,
+                  int&nbsp;expectedSize)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a vector with known the sparseness (for advanced use only).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#SparseFieldVector(org.apache.commons.math3.Field, T[])">SparseFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;field,
+                  <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Create from a Field array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#SparseFieldVector(org.apache.commons.math3.linear.SparseFieldVector)">SparseFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Copy constructor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#SparseFieldVector(org.apache.commons.math3.linear.SparseFieldVector, int)">SparseFieldVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v,
+                  int&nbsp;resize)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a resized vector, for use with append.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#add(org.apache.commons.math3.linear.FieldVector)">add</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Compute the sum of <code>this</code> and <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#add(org.apache.commons.math3.linear.SparseFieldVector)">add</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimized method to add sparse vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#append(org.apache.commons.math3.linear.FieldVector)">append</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Construct a vector by appending a vector to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#append(org.apache.commons.math3.linear.SparseFieldVector)">append</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Construct a vector by appending a vector to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#append(T)">append</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Construct a vector by appending a T to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#checkVectorDimensions(int)">checkVectorDimensions</A></B>(int&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Check if instance dimension is equal to some expected value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#copy()">copy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns a (deep) copy of this.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#dotProduct(org.apache.commons.math3.linear.FieldVector)">dotProduct</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Compute the dot product.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#ebeDivide(org.apache.commons.math3.linear.FieldVector)">ebeDivide</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Element-by-element division.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#ebeMultiply(org.apache.commons.math3.linear.FieldVector)">ebeMultiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Element-by-element multiplication.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#equals(java.lang.Object)">equals</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#getData()">getData</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of 3.1, to be removed in 4.0. Please use the <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#toArray()"><CODE>toArray()</CODE></A> method instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#getDimension()">getDimension</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns the size of the vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#getEntry(int)">getEntry</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns the entry in the specified index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#getField()">getField</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get the type of field elements of the vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#getSubVector(int, int)">getSubVector</A></B>(int&nbsp;index,
+             int&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get a subvector from consecutive elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#hashCode()">hashCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#mapAdd(T)">mapAdd</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Map an addition operation to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#mapAddToSelf(T)">mapAddToSelf</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Map an addition operation to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#mapDivide(T)">mapDivide</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Map a division operation to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#mapDivideToSelf(T)">mapDivideToSelf</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Map a division operation to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#mapInv()">mapInv</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Map the 1/x function to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#mapInvToSelf()">mapInvToSelf</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Map the 1/x function to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#mapMultiply(T)">mapMultiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Map a multiplication operation to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#mapMultiplyToSelf(T)">mapMultiplyToSelf</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Map a multiplication operation to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#mapSubtract(T)">mapSubtract</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Map a subtraction operation to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#mapSubtractToSelf(T)">mapSubtractToSelf</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Map a subtraction operation to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#outerProduct(org.apache.commons.math3.linear.FieldVector)">outerProduct</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Compute the outer product.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#outerProduct(org.apache.commons.math3.linear.SparseFieldVector)">outerProduct</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimized method to compute outer product when both vectors are sparse.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#projection(org.apache.commons.math3.linear.FieldVector)">projection</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Find the orthogonal projection of this vector onto another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#set(T)">set</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Set all elements to a single value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#setEntry(int, T)">setEntry</A></B>(int&nbsp;index,
+         <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Set a single element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#setSubVector(int, org.apache.commons.math3.linear.FieldVector)">setSubVector</A></B>(int&nbsp;index,
+             <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Set a set of consecutive elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#subtract(org.apache.commons.math3.linear.FieldVector)">subtract</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Compute <code>this</code> minus <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#subtract(org.apache.commons.math3.linear.SparseFieldVector)">subtract</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimized method to compute <code>this</code> minus <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#toArray()">toArray</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Convert the vector to a T array.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="SparseFieldVector(org.apache.commons.math3.Field)"><!-- --></A><H3>
+SparseFieldVector</H3>
+<PRE>
+public <B>SparseFieldVector</B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;field)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Build a 0-length vector.
+ Zero-length vectors may be used to initialize construction of vectors
+ by data gathering. We start with zero-length and use either the <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#SparseFieldVector(org.apache.commons.math3.linear.SparseFieldVector, int)"><CODE>SparseFieldVector(SparseFieldVector, int)</CODE></A> constructor
+ or one of the <code>append</code> method (<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#append(org.apache.commons.math3.linear.FieldVector)"><CODE>append(FieldVector)</CODE></A> or
+ <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#append(org.apache.commons.math3.linear.SparseFieldVector)"><CODE>append(SparseFieldVector)</CODE></A>) to gather data into this vector.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>field</CODE> - Field to which the elements belong.</DL>
+</DL>
+<HR>
+
+<A NAME="SparseFieldVector(org.apache.commons.math3.Field, int)"><!-- --></A><H3>
+SparseFieldVector</H3>
+<PRE>
+public <B>SparseFieldVector</B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;field,
+                         int&nbsp;dimension)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Construct a vector of zeroes.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>field</CODE> - Field to which the elements belong.<DD><CODE>dimension</CODE> - Size of the vector.</DL>
+</DL>
+<HR>
+
+<A NAME="SparseFieldVector(org.apache.commons.math3.linear.SparseFieldVector, int)"><!-- --></A><H3>
+SparseFieldVector</H3>
+<PRE>
+protected <B>SparseFieldVector</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v,
+                            int&nbsp;resize)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Build a resized vector, for use with append.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Original vector<DD><CODE>resize</CODE> - Amount to add.</DL>
+</DL>
+<HR>
+
+<A NAME="SparseFieldVector(org.apache.commons.math3.Field, int, int)"><!-- --></A><H3>
+SparseFieldVector</H3>
+<PRE>
+public <B>SparseFieldVector</B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;field,
+                         int&nbsp;dimension,
+                         int&nbsp;expectedSize)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Build a vector with known the sparseness (for advanced use only).
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>field</CODE> - Field to which the elements belong.<DD><CODE>dimension</CODE> - Size of the vector.<DD><CODE>expectedSize</CODE> - Expected number of non-zero entries.</DL>
+</DL>
+<HR>
+
+<A NAME="SparseFieldVector(org.apache.commons.math3.Field,org.apache.commons.math3.FieldElement[])"><!-- --></A><A NAME="SparseFieldVector(org.apache.commons.math3.Field, T[])"><!-- --></A><H3>
+SparseFieldVector</H3>
+<PRE>
+public <B>SparseFieldVector</B>(<A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;field,
+                         <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>[]&nbsp;values)
+                  throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Create from a Field array.
+ Only non-zero entries will be stored.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>field</CODE> - Field to which the elements belong.<DD><CODE>values</CODE> - Set of values to create from.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if values is null</DL>
+</DL>
+<HR>
+
+<A NAME="SparseFieldVector(org.apache.commons.math3.linear.SparseFieldVector)"><!-- --></A><H3>
+SparseFieldVector</H3>
+<PRE>
+public <B>SparseFieldVector</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Copy constructor.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Instance to copy.</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="add(org.apache.commons.math3.linear.SparseFieldVector)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>add</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)
+                                           throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Optimized method to add sparse vectors.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to add.
+<DT><B>Returns:</B><DD><code>this + v</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="append(org.apache.commons.math3.linear.SparseFieldVector)"><!-- --></A><H3>
+append</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>append</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Construct a vector by appending a vector to this vector.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to append to this one.
+<DT><B>Returns:</B><DD>a new vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="append(org.apache.commons.math3.linear.FieldVector)"><!-- --></A><H3>
+append</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>append</B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Construct a vector by appending a vector to this vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#append(org.apache.commons.math3.linear.FieldVector)">append</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector to append to this one.
+<DT><B>Returns:</B><DD>a new vector</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="append(org.apache.commons.math3.FieldElement)"><!-- --></A><A NAME="append(T)"><!-- --></A><H3>
+append</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>append</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)
+                                              throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Construct a vector by appending a T to this vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#append(T)">append</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - T to append.
+<DT><B>Returns:</B><DD>a new vector
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if d is null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="copy()"><!-- --></A><H3>
+copy</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>copy</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Returns a (deep) copy of this.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#copy()">copy</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>vector copy</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dotProduct(org.apache.commons.math3.linear.FieldVector)"><!-- --></A><H3>
+dotProduct</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> <B>dotProduct</B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)
+                                     throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Compute the dot product.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#dotProduct(org.apache.commons.math3.linear.FieldVector)">dotProduct</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector with which dot product should be computed
+<DT><B>Returns:</B><DD>the scalar dot product of <code>this</code> and <code>v</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as <code>this</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ebeDivide(org.apache.commons.math3.linear.FieldVector)"><!-- --></A><H3>
+ebeDivide</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>ebeDivide</B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)
+                                                 throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                                                        <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Element-by-element division.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#ebeDivide(org.apache.commons.math3.linear.FieldVector)">ebeDivide</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector by which instance elements must be divided
+<DT><B>Returns:</B><DD>a vector containing <code>this[i] / v[i]</code> for all <code>i</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as <code>this</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if one entry of <code>v</code> is zero.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ebeMultiply(org.apache.commons.math3.linear.FieldVector)"><!-- --></A><H3>
+ebeMultiply</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>ebeMultiply</B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)
+                                                   throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Element-by-element multiplication.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#ebeMultiply(org.apache.commons.math3.linear.FieldVector)">ebeMultiply</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector by which instance elements must be multiplied
+<DT><B>Returns:</B><DD>a vector containing <code>this[i] * v[i]</code> for all <code>i</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as <code>this</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getData()"><!-- --></A><H3>
+getData</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>[] <B>getData</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>as of 3.1, to be removed in 4.0. Please use the <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html#toArray()"><CODE>toArray()</CODE></A> method instead.</I>
+<P>
+<DD>Returns vector entries as a T array.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#getData()">getData</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>T array of entries</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDimension()"><!-- --></A><H3>
+getDimension</H3>
+<PRE>
+public int <B>getDimension</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Returns the size of the vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#getDimension()">getDimension</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>size</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEntry(int)"><!-- --></A><H3>
+getEntry</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> <B>getEntry</B>(int&nbsp;index)
+                                   throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Returns the entry in the specified index.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#getEntry(int)">getEntry</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - Index location of entry to be fetched.
+<DT><B>Returns:</B><DD>the vector entry at <code>index</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#setEntry(int, T)"><CODE>FieldVector.setEntry(int, FieldElement)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getField()"><!-- --></A><H3>
+getField</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>getField</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Get the type of field elements of the vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#getField()">getField</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>type of field elements of the vector</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSubVector(int, int)"><!-- --></A><H3>
+getSubVector</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>getSubVector</B>(int&nbsp;index,
+                                   int&nbsp;n)
+                                                    throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A>,
+                                                           <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Get a subvector from consecutive elements.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#getSubVector(int, int)">getSubVector</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - index of first element.<DD><CODE>n</CODE> - number of elements to be retrieved.
+<DT><B>Returns:</B><DD>a vector containing n elements.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if the number of elements if not positive.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapAdd(org.apache.commons.math3.FieldElement)"><!-- --></A><A NAME="mapAdd(T)"><!-- --></A><H3>
+mapAdd</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>mapAdd</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)
+                                              throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Map an addition operation to each entry.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapAdd(T)">mapAdd</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - value to be added to each entry
+<DT><B>Returns:</B><DD><code>this + d</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>d</code> is <code>null</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapAddToSelf(org.apache.commons.math3.FieldElement)"><!-- --></A><A NAME="mapAddToSelf(T)"><!-- --></A><H3>
+mapAddToSelf</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>mapAddToSelf</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)
+                                                    throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Map an addition operation to each entry.
+ <p>The instance <strong>is</strong> changed by this method.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapAddToSelf(T)">mapAddToSelf</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - value to be added to each entry
+<DT><B>Returns:</B><DD>for convenience, return <code>this</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>d</code> is <code>null</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapDivide(org.apache.commons.math3.FieldElement)"><!-- --></A><A NAME="mapDivide(T)"><!-- --></A><H3>
+mapDivide</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>mapDivide</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)
+                                                 throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                                                        <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Map a division operation to each entry.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapDivide(T)">mapDivide</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - value to divide all entries by
+<DT><B>Returns:</B><DD><code>this / d</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>d</code> is <code>null</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if <code>d</code> is zero.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapDivideToSelf(org.apache.commons.math3.FieldElement)"><!-- --></A><A NAME="mapDivideToSelf(T)"><!-- --></A><H3>
+mapDivideToSelf</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>mapDivideToSelf</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)
+                                                       throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                                                              <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Map a division operation to each entry.
+ <p>The instance <strong>is</strong> changed by this method.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapDivideToSelf(T)">mapDivideToSelf</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - value to divide all entries by
+<DT><B>Returns:</B><DD>for convenience, return <code>this</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>d</code> is <code>null</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if <code>d</code> is zero.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapInv()"><!-- --></A><H3>
+mapInv</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>mapInv</B>()
+                                              throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Map the 1/x function to each entry.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapInv()">mapInv</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a vector containing the result of applying the function to each entry.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if one of the entries is zero.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapInvToSelf()"><!-- --></A><H3>
+mapInvToSelf</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>mapInvToSelf</B>()
+                                                    throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Map the 1/x function to each entry.
+ <p>The instance <strong>is</strong> changed by this method.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapInvToSelf()">mapInvToSelf</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>for convenience, return <code>this</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if one of the entries is zero.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapMultiply(org.apache.commons.math3.FieldElement)"><!-- --></A><A NAME="mapMultiply(T)"><!-- --></A><H3>
+mapMultiply</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>mapMultiply</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)
+                                                   throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Map a multiplication operation to each entry.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapMultiply(T)">mapMultiply</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - value to multiply all entries by
+<DT><B>Returns:</B><DD><code>this * d</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>d</code> is <code>null</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapMultiplyToSelf(org.apache.commons.math3.FieldElement)"><!-- --></A><A NAME="mapMultiplyToSelf(T)"><!-- --></A><H3>
+mapMultiplyToSelf</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>mapMultiplyToSelf</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)
+                                                         throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Map a multiplication operation to each entry.
+ <p>The instance <strong>is</strong> changed by this method.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapMultiplyToSelf(T)">mapMultiplyToSelf</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - value to multiply all entries by
+<DT><B>Returns:</B><DD>for convenience, return <code>this</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>d</code> is <code>null</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapSubtract(org.apache.commons.math3.FieldElement)"><!-- --></A><A NAME="mapSubtract(T)"><!-- --></A><H3>
+mapSubtract</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>mapSubtract</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)
+                                                   throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Map a subtraction operation to each entry.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapSubtract(T)">mapSubtract</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - value to be subtracted to each entry
+<DT><B>Returns:</B><DD><code>this - d</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>d</code> is <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapSubtractToSelf(org.apache.commons.math3.FieldElement)"><!-- --></A><A NAME="mapSubtractToSelf(T)"><!-- --></A><H3>
+mapSubtractToSelf</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>mapSubtractToSelf</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;d)
+                                                         throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Map a subtraction operation to each entry.
+ <p>The instance <strong>is</strong> changed by this method.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapSubtractToSelf(T)">mapSubtractToSelf</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - value to be subtracted to each entry
+<DT><B>Returns:</B><DD>for convenience, return <code>this</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>d</code> is <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="outerProduct(org.apache.commons.math3.linear.SparseFieldVector)"><!-- --></A><H3>
+outerProduct</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>outerProduct</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Optimized method to compute outer product when both vectors are sparse.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector with which outer product should be computed
+<DT><B>Returns:</B><DD>the matrix outer product between instance and v</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="outerProduct(org.apache.commons.math3.linear.FieldVector)"><!-- --></A><H3>
+outerProduct</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>outerProduct</B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Compute the outer product.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#outerProduct(org.apache.commons.math3.linear.FieldVector)">outerProduct</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector with which outer product should be computed
+<DT><B>Returns:</B><DD>the matrix outer product between instance and v</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="projection(org.apache.commons.math3.linear.FieldVector)"><!-- --></A><H3>
+projection</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>projection</B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)
+                                                  throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                                                         <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Find the orthogonal projection of this vector onto another vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#projection(org.apache.commons.math3.linear.FieldVector)">projection</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector onto which <code>this</code> must be projected
+<DT><B>Returns:</B><DD>projection of <code>this</code> onto <code>v</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as <code>this</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if <code>v</code> is the null vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="set(org.apache.commons.math3.FieldElement)"><!-- --></A><A NAME="set(T)"><!-- --></A><H3>
+set</H3>
+<PRE>
+public void <B>set</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;value)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Set all elements to a single value.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#set(T)">set</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - single value to set for all elements
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if value is null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEntry(int,org.apache.commons.math3.FieldElement)"><!-- --></A><A NAME="setEntry(int, T)"><!-- --></A><H3>
+setEntry</H3>
+<PRE>
+public void <B>setEntry</B>(int&nbsp;index,
+                     <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&nbsp;value)
+              throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                     <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Set a single element.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#setEntry(int, T)">setEntry</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - element index.<DD><CODE>value</CODE> - new value for the element.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if value is null
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#getEntry(int)"><CODE>FieldVector.getEntry(int)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSubVector(int, org.apache.commons.math3.linear.FieldVector)"><!-- --></A><H3>
+setSubVector</H3>
+<PRE>
+public void <B>setSubVector</B>(int&nbsp;index,
+                         <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)
+                  throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Set a set of consecutive elements.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#setSubVector(int, org.apache.commons.math3.linear.FieldVector)">setSubVector</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - index of first element to be set.<DD><CODE>v</CODE> - vector containing the values to set.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subtract(org.apache.commons.math3.linear.SparseFieldVector)"><!-- --></A><H3>
+subtract</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>subtract</B>(<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)
+                                                      throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Optimized method to compute <code>this</code> minus <code>v</code>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector to be subtracted
+<DT><B>Returns:</B><DD><code>this - v</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subtract(org.apache.commons.math3.linear.FieldVector)"><!-- --></A><H3>
+subtract</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>subtract</B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)
+                                                throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Compute <code>this</code> minus <code>v</code>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#subtract(org.apache.commons.math3.linear.FieldVector)">subtract</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector to be subtracted
+<DT><B>Returns:</B><DD><code>this - v</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as <code>this</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toArray()"><!-- --></A><H3>
+toArray</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>[] <B>toArray</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Convert the vector to a T array.
+ <p>The array is independent from vector data, it's elements
+ are copied.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#toArray()">toArray</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>array containing a copy of vector elements</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="checkVectorDimensions(int)"><!-- --></A><H3>
+checkVectorDimensions</H3>
+<PRE>
+protected void <B>checkVectorDimensions</B>(int&nbsp;n)
+                              throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Check if instance dimension is equal to some expected value.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>n</CODE> - Expected dimension.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the dimensions do not match.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="add(org.apache.commons.math3.linear.FieldVector)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt; <B>add</B>(<A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&nbsp;v)
+                                           throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Compute the sum of <code>this</code> and <code>v</code>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html#add(org.apache.commons.math3.linear.FieldVector)">add</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A> extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="type parameter in SparseFieldVector">T</A>&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector to be added
+<DT><B>Returns:</B><DD><code>this + v</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as <code>this</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hashCode()"><!-- --></A><H3>
+hashCode</H3>
+<PRE>
+public int <B>hashCode</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="equals(java.lang.Object)"><!-- --></A><H3>
+equals</H3>
+<PRE>
+public boolean <B>equals</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;obj)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SparseFieldVector.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseFieldMatrix.html" title="class in org.apache.commons.math3.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseRealMatrix.html" title="interface in org.apache.commons.math3.linear"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/linear/SparseFieldVector.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SparseFieldVector.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

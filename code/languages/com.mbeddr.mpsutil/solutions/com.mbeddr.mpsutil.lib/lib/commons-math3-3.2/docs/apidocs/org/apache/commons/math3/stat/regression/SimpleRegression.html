@@ -1,0 +1,1232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+SimpleRegression (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SimpleRegression (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SimpleRegression.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html" title="class in org.apache.commons.math3.stat.regression"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/regression/SimpleRegression.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SimpleRegression.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.stat.regression</FONT>
+<BR>
+Class SimpleRegression</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.stat.regression.SimpleRegression</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">UpdatingMultipleLinearRegression</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>SimpleRegression</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">UpdatingMultipleLinearRegression</A></DL>
+</PRE>
+
+<P>
+Estimates an ordinary least squares regression model
+ with one independent variable.
+ <p>
+ <code> y = intercept + slope * x  </code></p>
+ <p>
+ Standard errors for <code>intercept</code> and <code>slope</code> are
+ available as well as ANOVA, r-square and Pearson's r statistics.</p>
+ <p>
+ Observations (x,y pairs) can be added to the model one at a time or they
+ can be provided in a 2-dimensional array.  The observations are not stored
+ in memory, so there is no limit to the number of observations that can be
+ added to the model.</p>
+ <p>
+ <strong>Usage Notes</strong>: <ul>
+ <li> When there are fewer than two observations in the model, or when
+ there is no variation in the x values (i.e. all x values are the same)
+ all statistics return <code>NaN</code>. At least two observations with
+ different x coordinates are required to estimate a bivariate regression
+ model.
+ </li>
+ <li> Getters for the statistics always compute values based on the current
+ set of observations -- i.e., you can get statistics, then add more data
+ and get updated statistics without using a new instance.  There is no
+ "compute" method that updates all statistics.  Each of the getters performs
+ the necessary computations to return the requested statistic.
+ </li>
+ <li> The intercept term may be suppressed by passing <code>false</code> to
+ the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#SimpleRegression(boolean)"><CODE>SimpleRegression(boolean)</CODE></A> constructor.  When the
+ <code>hasIntercept</code> property is false, the model is estimated without a
+ constant term and <A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getIntercept()"><CODE>getIntercept()</CODE></A> returns <code>0</code>.</li>
+ </ul></p>
+<P>
+
+<P>
+<DL>
+<DT><B>Version:</B></DT>
+  <DD>$Id: SimpleRegression.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../serialized-form.html#org.apache.commons.math3.stat.regression.SimpleRegression">Serialized Form</A></DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#SimpleRegression()">SimpleRegression</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an empty SimpleRegression instance</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#SimpleRegression(boolean)">SimpleRegression</A></B>(boolean&nbsp;includeIntercept)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a SimpleRegression instance, specifying whether or not to estimate
+ an intercept.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#addData(double[][])">addData</A></B>(double[][]&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds the observations represented by the elements in
+ <code>data</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#addData(double, double)">addData</A></B>(double&nbsp;x,
+        double&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds the observation (x,y) to the regression data set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#addObservation(double[], double)">addObservation</A></B>(double[]&nbsp;x,
+               double&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds one observation to the regression model.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#addObservations(double[][], double[])">addObservations</A></B>(double[][]&nbsp;x,
+                double[]&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a series of observations to the regression model.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#clear()">clear</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears all data from the model.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getIntercept()">getIntercept</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the intercept of the estimated regression line, if
+ <A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#hasIntercept()"><CODE>hasIntercept()</CODE></A> is true; otherwise 0.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getInterceptStdErr()">getInterceptStdErr</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://www.xycoon.com/standarderrorb0.htm">
+ standard error of the intercept estimate</a>,
+ usually denoted s(b0).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getMeanSquareError()">getMeanSquareError</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of squared errors divided by the degrees of freedom,
+ usually abbreviated MSE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getN()">getN</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the number of observations that have been added to the model.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getR()">getR</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <a href="http://mathworld.wolfram.com/CorrelationCoefficient.html">
+ Pearson's product moment correlation coefficient</a>,
+ usually denoted r.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getRegressionSumSquares()">getRegressionSumSquares</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of squared deviations of the predicted y values about
+ their mean (which equals the mean of y).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getRSquare()">getRSquare</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://www.xycoon.com/coefficient1.htm">
+ coefficient of determination</a>,
+ usually denoted r-square.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getSignificance()">getSignificance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the significance level of the slope (equiv) correlation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getSlope()">getSlope</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the slope of the estimated regression line.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getSlopeConfidenceInterval()">getSlopeConfidenceInterval</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the half-width of a 95% confidence interval for the slope
+ estimate.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getSlopeConfidenceInterval(double)">getSlopeConfidenceInterval</A></B>(double&nbsp;alpha)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the half-width of a (100-100*alpha)% confidence interval for
+ the slope estimate.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getSlopeStdErr()">getSlopeStdErr</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://www.xycoon.com/standerrorb(1).htm">standard
+ error of the slope estimate</a>,
+ usually denoted s(b1).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getSumOfCrossProducts()">getSumOfCrossProducts</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of crossproducts, x<sub>i</sub>*y<sub>i</sub>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getSumSquaredErrors()">getSumSquaredErrors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://www.xycoon.com/SumOfSquares.htm">
+ sum of squared errors</a> (SSE) associated with the regression
+ model.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getTotalSumSquares()">getTotalSumSquares</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of squared deviations of the y values about their mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getXSumSquares()">getXSumSquares</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of squared deviations of the x values about their mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#hasIntercept()">hasIntercept</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if the model includes an intercept term.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#predict(double)">predict</A></B>(double&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the "predicted" <code>y</code> value associated with the
+ supplied <code>x</code> value,  based on the data that has been
+ added to the model when this method is activated.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html" title="class in org.apache.commons.math3.stat.regression">RegressionResults</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#regress()">regress</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a regression on data present in buffers and outputs a RegressionResults object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html" title="class in org.apache.commons.math3.stat.regression">RegressionResults</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#regress(int[])">regress</A></B>(int[]&nbsp;variablesToInclude)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a regression on data present in buffers including only regressors
+ indexed in variablesToInclude and outputs a RegressionResults object</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#removeData(double[][])">removeData</A></B>(double[][]&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes observations represented by the elements in <code>data</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#removeData(double, double)">removeData</A></B>(double&nbsp;x,
+           double&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes the observation (x,y) from the regression data set.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="SimpleRegression()"><!-- --></A><H3>
+SimpleRegression</H3>
+<PRE>
+public <B>SimpleRegression</B>()</PRE>
+<DL>
+<DD>Create an empty SimpleRegression instance
+<P>
+</DL>
+<HR>
+
+<A NAME="SimpleRegression(boolean)"><!-- --></A><H3>
+SimpleRegression</H3>
+<PRE>
+public <B>SimpleRegression</B>(boolean&nbsp;includeIntercept)</PRE>
+<DL>
+<DD>Create a SimpleRegression instance, specifying whether or not to estimate
+ an intercept.
+
+ <p>Use <code>false</code> to estimate a model with no intercept.  When the
+ <code>hasIntercept</code> property is false, the model is estimated without a
+ constant term and <A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#getIntercept()"><CODE>getIntercept()</CODE></A> returns <code>0</code>.</p>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>includeIntercept</CODE> - whether or not to include an intercept term in
+ the regression model</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="addData(double, double)"><!-- --></A><H3>
+addData</H3>
+<PRE>
+public void <B>addData</B>(double&nbsp;x,
+                    double&nbsp;y)</PRE>
+<DL>
+<DD>Adds the observation (x,y) to the regression data set.
+ <p>
+ Uses updating formulas for means and sums of squares defined in
+ "Algorithms for Computing the Sample Variance: Analysis and
+ Recommendations", Chan, T.F., Golub, G.H., and LeVeque, R.J.
+ 1983, American Statistician, vol. 37, pp. 242-247, referenced in
+ Weisberg, S. "Applied Linear Regression". 2nd Ed. 1985.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - independent variable value<DD><CODE>y</CODE> - dependent variable value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeData(double, double)"><!-- --></A><H3>
+removeData</H3>
+<PRE>
+public void <B>removeData</B>(double&nbsp;x,
+                       double&nbsp;y)</PRE>
+<DL>
+<DD>Removes the observation (x,y) from the regression data set.
+ <p>
+ Mirrors the addData method.  This method permits the use of
+ SimpleRegression instances in streaming mode where the regression
+ is applied to a sliding "window" of observations, however the caller is
+ responsible for maintaining the set of observations in the window.</p>
+
+ The method has no effect if there are no points of data (i.e. n=0)
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - independent variable value<DD><CODE>y</CODE> - dependent variable value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addData(double[][])"><!-- --></A><H3>
+addData</H3>
+<PRE>
+public void <B>addData</B>(double[][]&nbsp;data)
+             throws <A HREF="../../../../../../org/apache/commons/math3/stat/regression/ModelSpecificationException.html" title="class in org.apache.commons.math3.stat.regression">ModelSpecificationException</A></PRE>
+<DL>
+<DD>Adds the observations represented by the elements in
+ <code>data</code>.
+ <p>
+ <code>(data[0][0],data[0][1])</code> will be the first observation, then
+ <code>(data[1][0],data[1][1])</code>, etc.</p>
+ <p>
+ This method does not replace data that has already been added.  The
+ observations represented by <code>data</code> are added to the existing
+ dataset.</p>
+ <p>
+ To replace all data, use <code>clear()</code> before adding the new
+ data.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>data</CODE> - array of observations to be added
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/ModelSpecificationException.html" title="class in org.apache.commons.math3.stat.regression">ModelSpecificationException</A></CODE> - if the length of <code>data[i]</code> is not
+ greater than or equal to 2</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addObservation(double[], double)"><!-- --></A><H3>
+addObservation</H3>
+<PRE>
+public void <B>addObservation</B>(double[]&nbsp;x,
+                           double&nbsp;y)
+                    throws <A HREF="../../../../../../org/apache/commons/math3/stat/regression/ModelSpecificationException.html" title="class in org.apache.commons.math3.stat.regression">ModelSpecificationException</A></PRE>
+<DL>
+<DD>Adds one observation to the regression model.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html#addObservation(double[], double)">addObservation</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">UpdatingMultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - the independent variables which form the design matrix<DD><CODE>y</CODE> - the dependent or response variable
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/ModelSpecificationException.html" title="class in org.apache.commons.math3.stat.regression">ModelSpecificationException</A></CODE> - if the length of <code>x</code> does not equal
+ the number of independent variables in the model</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addObservations(double[][], double[])"><!-- --></A><H3>
+addObservations</H3>
+<PRE>
+public void <B>addObservations</B>(double[][]&nbsp;x,
+                            double[]&nbsp;y)
+                     throws <A HREF="../../../../../../org/apache/commons/math3/stat/regression/ModelSpecificationException.html" title="class in org.apache.commons.math3.stat.regression">ModelSpecificationException</A></PRE>
+<DL>
+<DD>Adds a series of observations to the regression model. The lengths of
+ x and y must be the same and x must be rectangular.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html#addObservations(double[][], double[])">addObservations</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">UpdatingMultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - a series of observations on the independent variables<DD><CODE>y</CODE> - a series of observations on the dependent variable
+ The length of x and y must be the same
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/ModelSpecificationException.html" title="class in org.apache.commons.math3.stat.regression">ModelSpecificationException</A></CODE> - if <code>x</code> is not rectangular, does not match
+ the length of <code>y</code> or does not contain sufficient data to estimate the model</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeData(double[][])"><!-- --></A><H3>
+removeData</H3>
+<PRE>
+public void <B>removeData</B>(double[][]&nbsp;data)</PRE>
+<DL>
+<DD>Removes observations represented by the elements in <code>data</code>.
+ <p>
+ If the array is larger than the current n, only the first n elements are
+ processed.  This method permits the use of SimpleRegression instances in
+ streaming mode where the regression is applied to a sliding "window" of
+ observations, however the caller is responsible for maintaining the set
+ of observations in the window.</p>
+ <p>
+ To remove all data, use <code>clear()</code>.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>data</CODE> - array of observations to be removed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clear()"><!-- --></A><H3>
+clear</H3>
+<PRE>
+public void <B>clear</B>()</PRE>
+<DL>
+<DD>Clears all data from the model.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html#clear()">clear</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">UpdatingMultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getN()"><!-- --></A><H3>
+getN</H3>
+<PRE>
+public long <B>getN</B>()</PRE>
+<DL>
+<DD>Returns the number of observations that have been added to the model.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html#getN()">getN</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">UpdatingMultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>n number of observations that have been added.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="predict(double)"><!-- --></A><H3>
+predict</H3>
+<PRE>
+public double <B>predict</B>(double&nbsp;x)</PRE>
+<DL>
+<DD>Returns the "predicted" <code>y</code> value associated with the
+ supplied <code>x</code> value,  based on the data that has been
+ added to the model when this method is activated.
+ <p>
+ <code> predict(x) = intercept + slope * x </code></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>At least two observations (with at least two different x values)
+ must have been added before invoking this method. If this method is
+ invoked before a model can be estimated, <code>Double,NaN</code> is
+ returned.
+ </li></ul></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - input <code>x</code> value
+<DT><B>Returns:</B><DD>predicted <code>y</code> value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getIntercept()"><!-- --></A><H3>
+getIntercept</H3>
+<PRE>
+public double <B>getIntercept</B>()</PRE>
+<DL>
+<DD>Returns the intercept of the estimated regression line, if
+ <A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#hasIntercept()"><CODE>hasIntercept()</CODE></A> is true; otherwise 0.
+ <p>
+ The least squares estimate of the intercept is computed using the
+ <a href="http://www.xycoon.com/estimation4.htm">normal equations</a>.
+ The intercept is sometimes denoted b0.</p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>At least two observations (with at least two different x values)
+ must have been added before invoking this method. If this method is
+ invoked before a model can be estimated, <code>Double,NaN</code> is
+ returned.
+ </li></ul></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the intercept of the regression line if the model includes an
+ intercept; 0 otherwise<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#SimpleRegression(boolean)"><CODE>SimpleRegression(boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hasIntercept()"><!-- --></A><H3>
+hasIntercept</H3>
+<PRE>
+public boolean <B>hasIntercept</B>()</PRE>
+<DL>
+<DD>Returns true if the model includes an intercept term.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html#hasIntercept()">hasIntercept</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">UpdatingMultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if the regression includes an intercept; false otherwise<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#SimpleRegression(boolean)"><CODE>SimpleRegression(boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSlope()"><!-- --></A><H3>
+getSlope</H3>
+<PRE>
+public double <B>getSlope</B>()</PRE>
+<DL>
+<DD>Returns the slope of the estimated regression line.
+ <p>
+ The least squares estimate of the slope is computed using the
+ <a href="http://www.xycoon.com/estimation4.htm">normal equations</a>.
+ The slope is sometimes denoted b1.</p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>At least two observations (with at least two different x values)
+ must have been added before invoking this method. If this method is
+ invoked before a model can be estimated, <code>Double.NaN</code> is
+ returned.
+ </li></ul></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the slope of the regression line</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSumSquaredErrors()"><!-- --></A><H3>
+getSumSquaredErrors</H3>
+<PRE>
+public double <B>getSumSquaredErrors</B>()</PRE>
+<DL>
+<DD>Returns the <a href="http://www.xycoon.com/SumOfSquares.htm">
+ sum of squared errors</a> (SSE) associated with the regression
+ model.
+ <p>
+ The sum is computed using the computational formula</p>
+ <p>
+ <code>SSE = SYY - (SXY * SXY / SXX)</code></p>
+ <p>
+ where <code>SYY</code> is the sum of the squared deviations of the y
+ values about their mean, <code>SXX</code> is similarly defined and
+ <code>SXY</code> is the sum of the products of x and y mean deviations.
+ </p><p>
+ The sums are accumulated using the updating algorithm referenced in
+ <A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#addData(double, double)"><CODE>addData(double, double)</CODE></A>.</p>
+ <p>
+ The return value is constrained to be non-negative - i.e., if due to
+ rounding errors the computational formula returns a negative result,
+ 0 is returned.</p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>At least two observations (with at least two different x values)
+ must have been added before invoking this method. If this method is
+ invoked before a model can be estimated, <code>Double,NaN</code> is
+ returned.
+ </li></ul></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>sum of squared errors associated with the regression model</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTotalSumSquares()"><!-- --></A><H3>
+getTotalSumSquares</H3>
+<PRE>
+public double <B>getTotalSumSquares</B>()</PRE>
+<DL>
+<DD>Returns the sum of squared deviations of the y values about their mean.
+ <p>
+ This is defined as SSTO
+ <a href="http://www.xycoon.com/SumOfSquares.htm">here</a>.</p>
+ <p>
+ If <code>n < 2</code>, this returns <code>Double.NaN</code>.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>sum of squared deviations of y values</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getXSumSquares()"><!-- --></A><H3>
+getXSumSquares</H3>
+<PRE>
+public double <B>getXSumSquares</B>()</PRE>
+<DL>
+<DD>Returns the sum of squared deviations of the x values about their mean.
+
+ If <code>n < 2</code>, this returns <code>Double.NaN</code>.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>sum of squared deviations of x values</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSumOfCrossProducts()"><!-- --></A><H3>
+getSumOfCrossProducts</H3>
+<PRE>
+public double <B>getSumOfCrossProducts</B>()</PRE>
+<DL>
+<DD>Returns the sum of crossproducts, x<sub>i</sub>*y<sub>i</sub>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>sum of cross products</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRegressionSumSquares()"><!-- --></A><H3>
+getRegressionSumSquares</H3>
+<PRE>
+public double <B>getRegressionSumSquares</B>()</PRE>
+<DL>
+<DD>Returns the sum of squared deviations of the predicted y values about
+ their mean (which equals the mean of y).
+ <p>
+ This is usually abbreviated SSR or SSM.  It is defined as SSM
+ <a href="http://www.xycoon.com/SumOfSquares.htm">here</a></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>At least two observations (with at least two different x values)
+ must have been added before invoking this method. If this method is
+ invoked before a model can be estimated, <code>Double.NaN</code> is
+ returned.
+ </li></ul></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>sum of squared deviations of predicted y values</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMeanSquareError()"><!-- --></A><H3>
+getMeanSquareError</H3>
+<PRE>
+public double <B>getMeanSquareError</B>()</PRE>
+<DL>
+<DD>Returns the sum of squared errors divided by the degrees of freedom,
+ usually abbreviated MSE.
+ <p>
+ If there are fewer than <strong>three</strong> data pairs in the model,
+ or if there is no variation in <code>x</code>, this returns
+ <code>Double.NaN</code>.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>sum of squared deviations of y values</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getR()"><!-- --></A><H3>
+getR</H3>
+<PRE>
+public double <B>getR</B>()</PRE>
+<DL>
+<DD>Returns <a href="http://mathworld.wolfram.com/CorrelationCoefficient.html">
+ Pearson's product moment correlation coefficient</a>,
+ usually denoted r.
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>At least two observations (with at least two different x values)
+ must have been added before invoking this method. If this method is
+ invoked before a model can be estimated, <code>Double,NaN</code> is
+ returned.
+ </li></ul></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>Pearson's r</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRSquare()"><!-- --></A><H3>
+getRSquare</H3>
+<PRE>
+public double <B>getRSquare</B>()</PRE>
+<DL>
+<DD>Returns the <a href="http://www.xycoon.com/coefficient1.htm">
+ coefficient of determination</a>,
+ usually denoted r-square.
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>At least two observations (with at least two different x values)
+ must have been added before invoking this method. If this method is
+ invoked before a model can be estimated, <code>Double,NaN</code> is
+ returned.
+ </li></ul></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>r-square</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInterceptStdErr()"><!-- --></A><H3>
+getInterceptStdErr</H3>
+<PRE>
+public double <B>getInterceptStdErr</B>()</PRE>
+<DL>
+<DD>Returns the <a href="http://www.xycoon.com/standarderrorb0.htm">
+ standard error of the intercept estimate</a>,
+ usually denoted s(b0).
+ <p>
+ If there are fewer that <strong>three</strong> observations in the
+ model, or if there is no variation in x, this returns
+ <code>Double.NaN</code>.</p> Additionally, a <code>Double.NaN</code> is
+ returned when the intercept is constrained to be zero
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>standard error associated with intercept estimate</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSlopeStdErr()"><!-- --></A><H3>
+getSlopeStdErr</H3>
+<PRE>
+public double <B>getSlopeStdErr</B>()</PRE>
+<DL>
+<DD>Returns the <a href="http://www.xycoon.com/standerrorb(1).htm">standard
+ error of the slope estimate</a>,
+ usually denoted s(b1).
+ <p>
+ If there are fewer that <strong>three</strong> data pairs in the model,
+ or if there is no variation in x, this returns <code>Double.NaN</code>.
+ </p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>standard error associated with slope estimate</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSlopeConfidenceInterval()"><!-- --></A><H3>
+getSlopeConfidenceInterval</H3>
+<PRE>
+public double <B>getSlopeConfidenceInterval</B>()
+                                  throws <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Returns the half-width of a 95% confidence interval for the slope
+ estimate.
+ <p>
+ The 95% confidence interval is</p>
+ <p>
+ <code>(getSlope() - getSlopeConfidenceInterval(),
+ getSlope() + getSlopeConfidenceInterval())</code></p>
+ <p>
+ If there are fewer that <strong>three</strong> observations in the
+ model, or if there is no variation in x, this returns
+ <code>Double.NaN</code>.</p>
+ <p>
+ <strong>Usage Note</strong>:<br>
+ The validity of this statistic depends on the assumption that the
+ observations included in the model are drawn from a
+ <a href="http://mathworld.wolfram.com/BivariateNormalDistribution.html">
+ Bivariate Normal Distribution</a>.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>half-width of 95% confidence interval for the slope estimate
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the confidence interval can not be computed.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSlopeConfidenceInterval(double)"><!-- --></A><H3>
+getSlopeConfidenceInterval</H3>
+<PRE>
+public double <B>getSlopeConfidenceInterval</B>(double&nbsp;alpha)
+                                  throws <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Returns the half-width of a (100-100*alpha)% confidence interval for
+ the slope estimate.
+ <p>
+ The (100-100*alpha)% confidence interval is </p>
+ <p>
+ <code>(getSlope() - getSlopeConfidenceInterval(),
+ getSlope() + getSlopeConfidenceInterval())</code></p>
+ <p>
+ To request, for example, a 99% confidence interval, use
+ <code>alpha = .01</code></p>
+ <p>
+ <strong>Usage Note</strong>:<br>
+ The validity of this statistic depends on the assumption that the
+ observations included in the model are drawn from a
+ <a href="http://mathworld.wolfram.com/BivariateNormalDistribution.html">
+ Bivariate Normal Distribution</a>.</p>
+ <p>
+ <strong> Preconditions:</strong><ul>
+ <li>If there are fewer that <strong>three</strong> observations in the
+ model, or if there is no variation in x, this returns
+ <code>Double.NaN</code>.
+ </li>
+ <li><code>(0 < alpha < 1)</code>; otherwise an
+ <code>OutOfRangeException</code> is thrown.
+ </li></ul></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>alpha</CODE> - the desired significance level
+<DT><B>Returns:</B><DD>half-width of 95% confidence interval for the slope estimate
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the confidence interval can not be computed.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSignificance()"><!-- --></A><H3>
+getSignificance</H3>
+<PRE>
+public double <B>getSignificance</B>()</PRE>
+<DL>
+<DD>Returns the significance level of the slope (equiv) correlation.
+ <p>
+ Specifically, the returned value is the smallest <code>alpha</code>
+ such that the slope confidence interval with significance level
+ equal to <code>alpha</code> does not include <code>0</code>.
+ On regression output, this is often denoted <code>Prob(|t| > 0)</code>
+ </p><p>
+ <strong>Usage Note</strong>:<br>
+ The validity of this statistic depends on the assumption that the
+ observations included in the model are drawn from a
+ <a href="http://mathworld.wolfram.com/BivariateNormalDistribution.html">
+ Bivariate Normal Distribution</a>.</p>
+ <p>
+ If there are fewer that <strong>three</strong> observations in the
+ model, or if there is no variation in x, this returns
+ <code>Double.NaN</code>.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>significance level for slope/correlation
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if the significance level can not be computed.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="regress()"><!-- --></A><H3>
+regress</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html" title="class in org.apache.commons.math3.stat.regression">RegressionResults</A> <B>regress</B>()
+                          throws <A HREF="../../../../../../org/apache/commons/math3/stat/regression/ModelSpecificationException.html" title="class in org.apache.commons.math3.stat.regression">ModelSpecificationException</A>,
+                                 <A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></PRE>
+<DL>
+<DD>Performs a regression on data present in buffers and outputs a RegressionResults object.
+
+ <p>If there are fewer than 3 observations in the model and <code>hasIntercept</code> is true
+ a <code>NoDataException</code> is thrown.  If there is no intercept term, the model must
+ contain at least 2 observations.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html#regress()">regress</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">UpdatingMultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>RegressionResults acts as a container of regression output
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/ModelSpecificationException.html" title="class in org.apache.commons.math3.stat.regression">ModelSpecificationException</A></CODE> - if the model is not correctly specified
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></CODE> - if there is not sufficient data in the model to
+ estimate the regression parameters</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="regress(int[])"><!-- --></A><H3>
+regress</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html" title="class in org.apache.commons.math3.stat.regression">RegressionResults</A> <B>regress</B>(int[]&nbsp;variablesToInclude)
+                          throws <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Performs a regression on data present in buffers including only regressors
+ indexed in variablesToInclude and outputs a RegressionResults object
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html#regress(int[])">regress</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">UpdatingMultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>variablesToInclude</CODE> - an array of indices of regressors to include
+<DT><B>Returns:</B><DD>RegressionResults acts as a container of regression output
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the variablesToInclude array is null or zero length
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if a requested variable is not present in model</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SimpleRegression.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html" title="class in org.apache.commons.math3.stat.regression"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/regression/SimpleRegression.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SimpleRegression.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

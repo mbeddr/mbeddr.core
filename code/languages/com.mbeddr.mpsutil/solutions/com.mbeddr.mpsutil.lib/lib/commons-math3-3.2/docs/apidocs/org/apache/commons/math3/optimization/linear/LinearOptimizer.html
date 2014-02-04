@@ -1,0 +1,325 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+LinearOptimizer (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="LinearOptimizer (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/LinearOptimizer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearObjectiveFunction.html" title="class in org.apache.commons.math3.optimization.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/NoFeasibleSolutionException.html" title="class in org.apache.commons.math3.optimization.linear"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/optimization/linear/LinearOptimizer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="LinearOptimizer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.optimization.linear</FONT>
+<BR>
+Interface LinearOptimizer</H2>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/AbstractLinearOptimizer.html" title="class in org.apache.commons.math3.optimization.linear">AbstractLinearOptimizer</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/SimplexSolver.html" title="class in org.apache.commons.math3.optimization.linear">SimplexSolver</A></DD>
+</DL>
+<HR>
+<B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0).</I>
+<P>
+<DL>
+<DT><PRE><FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public interface <B>LinearOptimizer</B></DL>
+</PRE>
+
+<P>
+This interface represents an optimization algorithm for linear problems.
+ <p>Optimization algorithms find the input point set that either <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization"><CODE>maximize or minimize</CODE></A> an objective function. In the linear case the form of
+ the function is restricted to
+ <pre>
+ c<sub>1</sub>x<sub>1</sub> + ... c<sub>n</sub>x<sub>n</sub> = v
+ </pre>
+ and there may be linear constraints too, of one of the forms:
+ <ul>
+   <li>c<sub>1</sub>x<sub>1</sub> + ... c<sub>n</sub>x<sub>n</sub> = v</li>
+   <li>c<sub>1</sub>x<sub>1</sub> + ... c<sub>n</sub>x<sub>n</sub> &lt;= v</li>
+   <li>c<sub>1</sub>x<sub>1</sub> + ... c<sub>n</sub>x<sub>n</sub> >= v</li>
+   <li>l<sub>1</sub>x<sub>1</sub> + ... l<sub>n</sub>x<sub>n</sub> + l<sub>cst</sub> =
+       r<sub>1</sub>x<sub>1</sub> + ... r<sub>n</sub>x<sub>n</sub> + r<sub>cst</sub></li>
+   <li>l<sub>1</sub>x<sub>1</sub> + ... l<sub>n</sub>x<sub>n</sub> + l<sub>cst</sub> &lt;=
+       r<sub>1</sub>x<sub>1</sub> + ... r<sub>n</sub>x<sub>n</sub> + r<sub>cst</sub></li>
+   <li>l<sub>1</sub>x<sub>1</sub> + ... l<sub>n</sub>x<sub>n</sub> + l<sub>cst</sub> >=
+       r<sub>1</sub>x<sub>1</sub> + ... r<sub>n</sub>x<sub>n</sub> + r<sub>cst</sub></li>
+ </ul>
+ where the c<sub>i</sub>, l<sub>i</sub> or r<sub>i</sub> are the coefficients of
+ the constraints, the x<sub>i</sub> are the coordinates of the current point and
+ v is the value of the constraint.
+ </p>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: LinearOptimizer.java 1422230 2012-12-15 12:11:13Z erans $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearOptimizer.html#getIterations()">getIterations</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get the number of iterations realized by the algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearOptimizer.html#getMaxIterations()">getMaxIterations</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get the maximal number of iterations of the algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearOptimizer.html#optimize(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction, java.util.Collection, org.apache.commons.math3.optimization.GoalType, boolean)">optimize</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearObjectiveFunction.html" title="class in org.apache.commons.math3.optimization.linear">LinearObjectiveFunction</A>&nbsp;f,
+         <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearConstraint.html" title="class in org.apache.commons.math3.optimization.linear">LinearConstraint</A>&gt;&nbsp;constraints,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+         boolean&nbsp;restrictToNonNegative)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimizes an objective function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearOptimizer.html#setMaxIterations(int)">setMaxIterations</A></B>(int&nbsp;maxIterations)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Set the maximal number of iterations of the algorithm.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="setMaxIterations(int)"><!-- --></A><H3>
+setMaxIterations</H3>
+<PRE>
+void <B>setMaxIterations</B>(int&nbsp;maxIterations)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Set the maximal number of iterations of the algorithm.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>maxIterations</CODE> - maximal number of function calls</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMaxIterations()"><!-- --></A><H3>
+getMaxIterations</H3>
+<PRE>
+int <B>getMaxIterations</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Get the maximal number of iterations of the algorithm.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>maximal number of iterations</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getIterations()"><!-- --></A><H3>
+getIterations</H3>
+<PRE>
+int <B>getIterations</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Get the number of iterations realized by the algorithm.
+ <p>
+ The number of evaluations corresponds to the last call to the
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearOptimizer.html#optimize(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction, java.util.Collection, org.apache.commons.math3.optimization.GoalType, boolean)"><CODE>optimize</CODE></A>
+ method. It is 0 if the method has not been called yet.
+ </p>
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>number of iterations</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="optimize(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction, java.util.Collection, org.apache.commons.math3.optimization.GoalType, boolean)"><!-- --></A><H3>
+optimize</H3>
+<PRE>
+<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A> <B>optimize</B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearObjectiveFunction.html" title="class in org.apache.commons.math3.optimization.linear">LinearObjectiveFunction</A>&nbsp;f,
+                        <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearConstraint.html" title="class in org.apache.commons.math3.optimization.linear">LinearConstraint</A>&gt;&nbsp;constraints,
+                        <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+                        boolean&nbsp;restrictToNonNegative)
+                        throws <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Optimizes an objective function.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>f</CODE> - linear objective function<DD><CODE>constraints</CODE> - linear constraints<DD><CODE>goalType</CODE> - type of optimization goal: either <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html#MAXIMIZE"><CODE>GoalType.MAXIMIZE</CODE></A> or <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html#MINIMIZE"><CODE>GoalType.MINIMIZE</CODE></A><DD><CODE>restrictToNonNegative</CODE> - whether to restrict the variables to non-negative values
+<DT><B>Returns:</B><DD>point/value pair giving the optimal value for objective function
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></CODE> - if no solution fulfilling the constraints
+   can be found in the allowed number of iterations</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/LinearOptimizer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearObjectiveFunction.html" title="class in org.apache.commons.math3.optimization.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/NoFeasibleSolutionException.html" title="class in org.apache.commons.math3.optimization.linear"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/optimization/linear/LinearOptimizer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="LinearOptimizer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

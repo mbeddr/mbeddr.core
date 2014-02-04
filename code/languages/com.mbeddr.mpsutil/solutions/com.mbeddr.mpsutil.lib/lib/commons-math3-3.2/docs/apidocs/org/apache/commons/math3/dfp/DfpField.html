@@ -1,0 +1,1358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+DfpField (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="DfpField (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DfpField.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/DfpDec.html" title="class in org.apache.commons.math3.dfp"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.RoundingMode.html" title="enum in org.apache.commons.math3.dfp"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/dfp/DfpField.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DfpField.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.dfp</FONT>
+<BR>
+Class DfpField</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.dfp.DfpField</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&gt;</DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>DfpField</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&gt;</DL>
+</PRE>
+
+<P>
+Field for Decimal floating point instances.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: DfpField.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+</DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.RoundingMode.html" title="enum in org.apache.commons.math3.dfp">DfpField.RoundingMode</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enumerate for rounding modes.</TD>
+</TR>
+</TABLE>
+&nbsp;<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_DIV_ZERO">FLAG_DIV_ZERO</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE 854-1987 flag for division by zero.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_INEXACT">FLAG_INEXACT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE 854-1987 flag for inexact result.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_INVALID">FLAG_INVALID</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE 854-1987 flag for invalid operation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_OVERFLOW">FLAG_OVERFLOW</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE 854-1987 flag for overflow.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_UNDERFLOW">FLAG_UNDERFLOW</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE 854-1987 flag for underflow.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#DfpField(int)">DfpField</A></B>(int&nbsp;decimalDigits)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a factory for the specified number of radix digits.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#clearIEEEFlags()">clearIEEEFlags</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the IEEE 854 status flags.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#computeExp(org.apache.commons.math3.dfp.Dfp, org.apache.commons.math3.dfp.Dfp)">computeExp</A></B>(<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&nbsp;a,
+           <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&nbsp;one)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute exp(a).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#computeLn(org.apache.commons.math3.dfp.Dfp, org.apache.commons.math3.dfp.Dfp, org.apache.commons.math3.dfp.Dfp)">computeLn</A></B>(<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&nbsp;a,
+          <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&nbsp;one,
+          <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&nbsp;two)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute ln(a).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getE()">getE</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getESplit()">getESplit</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant e split in two pieces.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getIEEEFlags()">getIEEEFlags</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the IEEE 854 status flags.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getLn10()">getLn10</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant ln(10).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getLn2()">getLn2</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant ln(2).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getLn2Split()">getLn2Split</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant ln(2) split in two pieces.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getLn5()">getLn5</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant ln(5).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getLn5Split()">getLn5Split</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant ln(5) split in two pieces.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getOne()">getOne</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant 1.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getPi()">getPi</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant &pi;.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getPiSplit()">getPiSplit</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant &pi; split in two pieces.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getRadixDigits()">getRadixDigits</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the number of radix digits of the <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> instances built by this factory.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.RoundingMode.html" title="enum in org.apache.commons.math3.dfp">DfpField.RoundingMode</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getRoundingMode()">getRoundingMode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the current rounding mode.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;? extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getRuntimeClass()">getRuntimeClass</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the runtime class of the FieldElement.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getSqr2()">getSqr2</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant &radic;2.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getSqr2Reciprocal()">getSqr2Reciprocal</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant &radic;2 / 2.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getSqr2Split()">getSqr2Split</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant &radic;2 split in two pieces.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getSqr3()">getSqr3</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant &radic;3.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getSqr3Reciprocal()">getSqr3Reciprocal</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant &radic;3 / 3.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getTwo()">getTwo</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant 2.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getZero()">getZero</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the constant 0.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#newDfp()">newDfp</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Makes a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with a value of 0.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#newDfp(byte)">newDfp</A></B>(byte&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance from a byte value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#newDfp(byte, byte)">newDfp</A></B>(byte&nbsp;sign,
+       byte&nbsp;nans)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with a non-finite value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#newDfp(org.apache.commons.math3.dfp.Dfp)">newDfp</A></B>(<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy constructor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#newDfp(double)">newDfp</A></B>(double&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance from a double value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#newDfp(int)">newDfp</A></B>(int&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance from an int value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#newDfp(long)">newDfp</A></B>(long&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance from a long value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#newDfp(java.lang.String)">newDfp</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;s)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> given a String representation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#setIEEEFlags(int)">setIEEEFlags</A></B>(int&nbsp;flags)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the IEEE 854 status flags.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#setIEEEFlagsBits(int)">setIEEEFlagsBits</A></B>(int&nbsp;bits)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets some bits in the IEEE 854 status flags, without changing the already set bits.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#setRoundingMode(org.apache.commons.math3.dfp.DfpField.RoundingMode)">setRoundingMode</A></B>(<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.RoundingMode.html" title="enum in org.apache.commons.math3.dfp">DfpField.RoundingMode</A>&nbsp;mode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the rounding mode.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="FLAG_INVALID"><!-- --></A><H3>
+FLAG_INVALID</H3>
+<PRE>
+public static final int <B>FLAG_INVALID</B></PRE>
+<DL>
+<DD>IEEE 854-1987 flag for invalid operation.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.dfp.DfpField.FLAG_INVALID">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="FLAG_DIV_ZERO"><!-- --></A><H3>
+FLAG_DIV_ZERO</H3>
+<PRE>
+public static final int <B>FLAG_DIV_ZERO</B></PRE>
+<DL>
+<DD>IEEE 854-1987 flag for division by zero.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.dfp.DfpField.FLAG_DIV_ZERO">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="FLAG_OVERFLOW"><!-- --></A><H3>
+FLAG_OVERFLOW</H3>
+<PRE>
+public static final int <B>FLAG_OVERFLOW</B></PRE>
+<DL>
+<DD>IEEE 854-1987 flag for overflow.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.dfp.DfpField.FLAG_OVERFLOW">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="FLAG_UNDERFLOW"><!-- --></A><H3>
+FLAG_UNDERFLOW</H3>
+<PRE>
+public static final int <B>FLAG_UNDERFLOW</B></PRE>
+<DL>
+<DD>IEEE 854-1987 flag for underflow.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.dfp.DfpField.FLAG_UNDERFLOW">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="FLAG_INEXACT"><!-- --></A><H3>
+FLAG_INEXACT</H3>
+<PRE>
+public static final int <B>FLAG_INEXACT</B></PRE>
+<DL>
+<DD>IEEE 854-1987 flag for inexact result.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.dfp.DfpField.FLAG_INEXACT">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DfpField(int)"><!-- --></A><H3>
+DfpField</H3>
+<PRE>
+public <B>DfpField</B>(int&nbsp;decimalDigits)</PRE>
+<DL>
+<DD>Create a factory for the specified number of radix digits.
+ <p>
+ Note that since the <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> class uses 10000 as its radix, each radix
+ digit is equivalent to 4 decimal digits. This implies that asking for
+ 13, 14, 15 or 16 decimal digits will really lead to a 4 radix 10000 digits in
+ all cases.
+ </p>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>decimalDigits</CODE> - minimal number of decimal digits.</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getRadixDigits()"><!-- --></A><H3>
+getRadixDigits</H3>
+<PRE>
+public int <B>getRadixDigits</B>()</PRE>
+<DL>
+<DD>Get the number of radix digits of the <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> instances built by this factory.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>number of radix digits</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setRoundingMode(org.apache.commons.math3.dfp.DfpField.RoundingMode)"><!-- --></A><H3>
+setRoundingMode</H3>
+<PRE>
+public void <B>setRoundingMode</B>(<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.RoundingMode.html" title="enum in org.apache.commons.math3.dfp">DfpField.RoundingMode</A>&nbsp;mode)</PRE>
+<DL>
+<DD>Set the rounding mode.
+  If not set, the default value is <A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.RoundingMode.html#ROUND_HALF_EVEN"><CODE>DfpField.RoundingMode.ROUND_HALF_EVEN</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mode</CODE> - desired rounding mode
+ Note that the rounding mode is common to all <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> instances
+ belonging to the current <A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html" title="class in org.apache.commons.math3.dfp"><CODE>DfpField</CODE></A> in the system and will
+ affect all future calculations.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRoundingMode()"><!-- --></A><H3>
+getRoundingMode</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.RoundingMode.html" title="enum in org.apache.commons.math3.dfp">DfpField.RoundingMode</A> <B>getRoundingMode</B>()</PRE>
+<DL>
+<DD>Get the current rounding mode.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>current rounding mode</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getIEEEFlags()"><!-- --></A><H3>
+getIEEEFlags</H3>
+<PRE>
+public int <B>getIEEEFlags</B>()</PRE>
+<DL>
+<DD>Get the IEEE 854 status flags.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>IEEE 854 status flags<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#clearIEEEFlags()"><CODE>clearIEEEFlags()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#setIEEEFlags(int)"><CODE>setIEEEFlags(int)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#setIEEEFlagsBits(int)"><CODE>setIEEEFlagsBits(int)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_INVALID"><CODE>FLAG_INVALID</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_DIV_ZERO"><CODE>FLAG_DIV_ZERO</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_OVERFLOW"><CODE>FLAG_OVERFLOW</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_UNDERFLOW"><CODE>FLAG_UNDERFLOW</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_INEXACT"><CODE>FLAG_INEXACT</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearIEEEFlags()"><!-- --></A><H3>
+clearIEEEFlags</H3>
+<PRE>
+public void <B>clearIEEEFlags</B>()</PRE>
+<DL>
+<DD>Clears the IEEE 854 status flags.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getIEEEFlags()"><CODE>getIEEEFlags()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#setIEEEFlags(int)"><CODE>setIEEEFlags(int)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#setIEEEFlagsBits(int)"><CODE>setIEEEFlagsBits(int)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_INVALID"><CODE>FLAG_INVALID</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_DIV_ZERO"><CODE>FLAG_DIV_ZERO</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_OVERFLOW"><CODE>FLAG_OVERFLOW</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_UNDERFLOW"><CODE>FLAG_UNDERFLOW</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_INEXACT"><CODE>FLAG_INEXACT</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setIEEEFlags(int)"><!-- --></A><H3>
+setIEEEFlags</H3>
+<PRE>
+public void <B>setIEEEFlags</B>(int&nbsp;flags)</PRE>
+<DL>
+<DD>Sets the IEEE 854 status flags.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>flags</CODE> - desired value for the flags<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getIEEEFlags()"><CODE>getIEEEFlags()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#clearIEEEFlags()"><CODE>clearIEEEFlags()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#setIEEEFlagsBits(int)"><CODE>setIEEEFlagsBits(int)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_INVALID"><CODE>FLAG_INVALID</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_DIV_ZERO"><CODE>FLAG_DIV_ZERO</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_OVERFLOW"><CODE>FLAG_OVERFLOW</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_UNDERFLOW"><CODE>FLAG_UNDERFLOW</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_INEXACT"><CODE>FLAG_INEXACT</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setIEEEFlagsBits(int)"><!-- --></A><H3>
+setIEEEFlagsBits</H3>
+<PRE>
+public void <B>setIEEEFlagsBits</B>(int&nbsp;bits)</PRE>
+<DL>
+<DD>Sets some bits in the IEEE 854 status flags, without changing the already set bits.
+ <p>
+ Calling this method is equivalent to call <code>setIEEEFlags(getIEEEFlags() | bits)</code>
+ </p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>bits</CODE> - bits to set<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#getIEEEFlags()"><CODE>getIEEEFlags()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#clearIEEEFlags()"><CODE>clearIEEEFlags()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#setIEEEFlags(int)"><CODE>setIEEEFlags(int)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_INVALID"><CODE>FLAG_INVALID</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_DIV_ZERO"><CODE>FLAG_DIV_ZERO</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_OVERFLOW"><CODE>FLAG_OVERFLOW</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_UNDERFLOW"><CODE>FLAG_UNDERFLOW</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.html#FLAG_INEXACT"><CODE>FLAG_INEXACT</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newDfp()"><!-- --></A><H3>
+newDfp</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>newDfp</B>()</PRE>
+<DL>
+<DD>Makes a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with a value of 0.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a new <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with a value of 0</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newDfp(byte)"><!-- --></A><H3>
+newDfp</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>newDfp</B>(byte&nbsp;x)</PRE>
+<DL>
+<DD>Create an instance from a byte value.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - value to convert to an instance
+<DT><B>Returns:</B><DD>a new <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with the same value as x</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newDfp(int)"><!-- --></A><H3>
+newDfp</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>newDfp</B>(int&nbsp;x)</PRE>
+<DL>
+<DD>Create an instance from an int value.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - value to convert to an instance
+<DT><B>Returns:</B><DD>a new <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with the same value as x</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newDfp(long)"><!-- --></A><H3>
+newDfp</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>newDfp</B>(long&nbsp;x)</PRE>
+<DL>
+<DD>Create an instance from a long value.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - value to convert to an instance
+<DT><B>Returns:</B><DD>a new <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with the same value as x</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newDfp(double)"><!-- --></A><H3>
+newDfp</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>newDfp</B>(double&nbsp;x)</PRE>
+<DL>
+<DD>Create an instance from a double value.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - value to convert to an instance
+<DT><B>Returns:</B><DD>a new <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with the same value as x</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newDfp(org.apache.commons.math3.dfp.Dfp)"><!-- --></A><H3>
+newDfp</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>newDfp</B>(<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&nbsp;d)</PRE>
+<DL>
+<DD>Copy constructor.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - instance to copy
+<DT><B>Returns:</B><DD>a new <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with the same value as d</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newDfp(java.lang.String)"><!-- --></A><H3>
+newDfp</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>newDfp</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;s)</PRE>
+<DL>
+<DD>Create a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> given a String representation.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>s</CODE> - string representation of the instance
+<DT><B>Returns:</B><DD>a new <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> parsed from specified string</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newDfp(byte, byte)"><!-- --></A><H3>
+newDfp</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>newDfp</B>(byte&nbsp;sign,
+                  byte&nbsp;nans)</PRE>
+<DL>
+<DD>Creates a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with a non-finite value.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sign</CODE> - sign of the Dfp to create<DD><CODE>nans</CODE> - code of the value, must be one of <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html#INFINITE"><CODE>Dfp.INFINITE</CODE></A>,
+ <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html#SNAN"><CODE>Dfp.SNAN</CODE></A>,  <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html#QNAN"><CODE>Dfp.QNAN</CODE></A>
+<DT><B>Returns:</B><DD>a new <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with a non-finite value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getZero()"><!-- --></A><H3>
+getZero</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>getZero</B>()</PRE>
+<DL>
+<DD>Get the constant 0.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/Field.html#getZero()">getZero</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value 0</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOne()"><!-- --></A><H3>
+getOne</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>getOne</B>()</PRE>
+<DL>
+<DD>Get the constant 1.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/Field.html#getOne()">getOne</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value 1</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRuntimeClass()"><!-- --></A><H3>
+getRuntimeClass</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;? extends <A HREF="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&gt;&gt; <B>getRuntimeClass</B>()</PRE>
+<DL>
+<DD>Returns the runtime class of the FieldElement.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/Field.html#getRuntimeClass()">getRuntimeClass</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</A>&lt;<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The <code>Class</code> object that represents the runtime
+         class of this object.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTwo()"><!-- --></A><H3>
+getTwo</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>getTwo</B>()</PRE>
+<DL>
+<DD>Get the constant 2.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value 2</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSqr2()"><!-- --></A><H3>
+getSqr2</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>getSqr2</B>()</PRE>
+<DL>
+<DD>Get the constant &radic;2.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value &radic;2</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSqr2Split()"><!-- --></A><H3>
+getSqr2Split</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>[] <B>getSqr2Split</B>()</PRE>
+<DL>
+<DD>Get the constant &radic;2 split in two pieces.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value &radic;2 split in two pieces</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSqr2Reciprocal()"><!-- --></A><H3>
+getSqr2Reciprocal</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>getSqr2Reciprocal</B>()</PRE>
+<DL>
+<DD>Get the constant &radic;2 / 2.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value &radic;2 / 2</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSqr3()"><!-- --></A><H3>
+getSqr3</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>getSqr3</B>()</PRE>
+<DL>
+<DD>Get the constant &radic;3.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value &radic;3</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSqr3Reciprocal()"><!-- --></A><H3>
+getSqr3Reciprocal</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>getSqr3Reciprocal</B>()</PRE>
+<DL>
+<DD>Get the constant &radic;3 / 3.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value &radic;3 / 3</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPi()"><!-- --></A><H3>
+getPi</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>getPi</B>()</PRE>
+<DL>
+<DD>Get the constant &pi;.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value &pi;</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPiSplit()"><!-- --></A><H3>
+getPiSplit</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>[] <B>getPiSplit</B>()</PRE>
+<DL>
+<DD>Get the constant &pi; split in two pieces.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value &pi; split in two pieces</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getE()"><!-- --></A><H3>
+getE</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>getE</B>()</PRE>
+<DL>
+<DD>Get the constant e.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value e</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getESplit()"><!-- --></A><H3>
+getESplit</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>[] <B>getESplit</B>()</PRE>
+<DL>
+<DD>Get the constant e split in two pieces.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value e split in two pieces</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLn2()"><!-- --></A><H3>
+getLn2</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>getLn2</B>()</PRE>
+<DL>
+<DD>Get the constant ln(2).
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value ln(2)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLn2Split()"><!-- --></A><H3>
+getLn2Split</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>[] <B>getLn2Split</B>()</PRE>
+<DL>
+<DD>Get the constant ln(2) split in two pieces.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value ln(2) split in two pieces</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLn5()"><!-- --></A><H3>
+getLn5</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>getLn5</B>()</PRE>
+<DL>
+<DD>Get the constant ln(5).
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value ln(5)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLn5Split()"><!-- --></A><H3>
+getLn5Split</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>[] <B>getLn5Split</B>()</PRE>
+<DL>
+<DD>Get the constant ln(5) split in two pieces.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value ln(5) split in two pieces</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLn10()"><!-- --></A><H3>
+getLn10</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>getLn10</B>()</PRE>
+<DL>
+<DD>Get the constant ln(10).
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp"><CODE>Dfp</CODE></A> with value ln(10)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeExp(org.apache.commons.math3.dfp.Dfp, org.apache.commons.math3.dfp.Dfp)"><!-- --></A><H3>
+computeExp</H3>
+<PRE>
+public static <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>computeExp</B>(<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&nbsp;a,
+                             <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&nbsp;one)</PRE>
+<DL>
+<DD>Compute exp(a).
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - number for which we want the exponential<DD><CODE>one</CODE> - constant with value 1 at desired precision
+<DT><B>Returns:</B><DD>exp(a)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeLn(org.apache.commons.math3.dfp.Dfp, org.apache.commons.math3.dfp.Dfp, org.apache.commons.math3.dfp.Dfp)"><!-- --></A><H3>
+computeLn</H3>
+<PRE>
+public static <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A> <B>computeLn</B>(<A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&nbsp;a,
+                            <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&nbsp;one,
+                            <A HREF="../../../../../org/apache/commons/math3/dfp/Dfp.html" title="class in org.apache.commons.math3.dfp">Dfp</A>&nbsp;two)</PRE>
+<DL>
+<DD>Compute ln(a).
+
+  Let f(x) = ln(x),
+
+  We know that f'(x) = 1/x, thus from Taylor's theorem we have:
+
+           -----          n+1         n
+  f(x) =   \           (-1)    (x - 1)
+           /          ----------------    for 1 <= n <= infinity
+           -----             n
+
+  or
+                       2        3       4
+                   (x-1)   (x-1)    (x-1)
+  ln(x) =  (x-1) - ----- + ------ - ------ + ...
+                     2       3        4
+
+  alternatively,
+
+                  2    3   4
+                 x    x   x
+  ln(x+1) =  x - -  + - - - + ...
+                 2    3   4
+
+  This series can be used to compute ln(x), but it converges too slowly.
+
+  If we substitute -x for x above, we get
+
+                   2    3    4
+                  x    x    x
+  ln(1-x) =  -x - -  - -  - - + ...
+                  2    3    4
+
+  Note that all terms are now negative.  Because the even powered ones
+  absorbed the sign.  Now, subtract the series above from the previous
+  one to get ln(x+1) - ln(1-x).  Note the even terms cancel out leaving
+  only the odd ones
+
+                             3     5      7
+                           2x    2x     2x
+  ln(x+1) - ln(x-1) = 2x + --- + --- + ---- + ...
+                            3     5      7
+
+  By the property of logarithms that ln(a) - ln(b) = ln (a/b) we have:
+
+                                3        5        7
+      x+1           /          x        x        x          \
+  ln ----- =   2 *  |  x  +   ----  +  ----  +  ---- + ...  |
+      x-1           \          3        5        7          /
+
+  But now we want to find ln(a), so we need to find the value of x
+  such that a = (x+1)/(x-1).   This is easily solved to find that
+  x = (a-1)/(a+1).
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - number for which we want the exponential<DD><CODE>one</CODE> - constant with value 1 at desired precision<DD><CODE>two</CODE> - constant with value 2 at desired precision
+<DT><B>Returns:</B><DD>ln(a)</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DfpField.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/DfpDec.html" title="class in org.apache.commons.math3.dfp"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/dfp/DfpField.RoundingMode.html" title="enum in org.apache.commons.math3.dfp"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/dfp/DfpField.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DfpField.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

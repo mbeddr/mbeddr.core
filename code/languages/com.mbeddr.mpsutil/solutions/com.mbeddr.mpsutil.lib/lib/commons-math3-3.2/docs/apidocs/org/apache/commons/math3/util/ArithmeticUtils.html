@@ -1,0 +1,1080 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ArithmeticUtils (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ArithmeticUtils (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ArithmeticUtils.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/util/BigReal.html" title="class in org.apache.commons.math3.util"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/util/ArithmeticUtils.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ArithmeticUtils.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.util</FONT>
+<BR>
+Class ArithmeticUtils</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.util.ArithmeticUtils</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public final class <B>ArithmeticUtils</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+Some useful, arithmetics related, additions to the built-in functions in
+ <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Math.html?is-external=true" title="class or interface in java.lang"><CODE>Math</CODE></A>.
+<P>
+
+<P>
+<DL>
+<DT><B>Version:</B></DT>
+  <DD>$Id: ArithmeticUtils.java 1422313 2012-12-15 18:53:41Z psteitz $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#addAndCheck(int, int)">addAndCheck</A></B>(int&nbsp;x,
+            int&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add two integers, checking for overflow.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#addAndCheck(long, long)">addAndCheck</A></B>(long&nbsp;a,
+            long&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add two long integers, checking for overflow.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#binomialCoefficient(int, int)">binomialCoefficient</A></B>(int&nbsp;n,
+                    int&nbsp;k)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an exact representation of the <a
+ href="http://mathworld.wolfram.com/BinomialCoefficient.html"> Binomial
+ Coefficient</a>, "<code>n choose k</code>", the number of
+ <code>k</code>-element subsets that can be selected from an
+ <code>n</code>-element set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#binomialCoefficientDouble(int, int)">binomialCoefficientDouble</A></B>(int&nbsp;n,
+                          int&nbsp;k)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a <code>double</code> representation of the <a
+ href="http://mathworld.wolfram.com/BinomialCoefficient.html"> Binomial
+ Coefficient</a>, "<code>n choose k</code>", the number of
+ <code>k</code>-element subsets that can be selected from an
+ <code>n</code>-element set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#binomialCoefficientLog(int, int)">binomialCoefficientLog</A></B>(int&nbsp;n,
+                       int&nbsp;k)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the natural <code>log</code> of the <a
+ href="http://mathworld.wolfram.com/BinomialCoefficient.html"> Binomial
+ Coefficient</a>, "<code>n choose k</code>", the number of
+ <code>k</code>-element subsets that can be selected from an
+ <code>n</code>-element set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#factorial(int)">factorial</A></B>(int&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns n!.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#factorialDouble(int)">factorialDouble</A></B>(int&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute n!</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#factorialLog(int)">factorialLog</A></B>(int&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the natural logarithm of the factorial of <code>n</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#gcd(int, int)">gcd</A></B>(int&nbsp;p,
+    int&nbsp;q)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the greatest common divisor of the absolute value of two
+ numbers, using a modified version of the "binary gcd" method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#gcd(long, long)">gcd</A></B>(long&nbsp;p,
+    long&nbsp;q)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Gets the greatest common divisor of the absolute value of two numbers,
+ using the "binary gcd" method which avoids division and modulo
+ operations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#isPowerOfTwo(long)">isPowerOfTwo</A></B>(long&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if the argument is a power of two.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#lcm(int, int)">lcm</A></B>(int&nbsp;a,
+    int&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Returns the least common multiple of the absolute value of two numbers,
+ using the formula <code>lcm(a,b) = (a / gcd(a,b)) * b</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#lcm(long, long)">lcm</A></B>(long&nbsp;a,
+    long&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Returns the least common multiple of the absolute value of two numbers,
+ using the formula <code>lcm(a,b) = (a / gcd(a,b)) * b</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#mulAndCheck(int, int)">mulAndCheck</A></B>(int&nbsp;x,
+            int&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiply two integers, checking for overflow.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#mulAndCheck(long, long)">mulAndCheck</A></B>(long&nbsp;a,
+            long&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiply two long integers, checking for overflow.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#pow(java.math.BigInteger, java.math.BigInteger)">pow</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A>&nbsp;k,
+    <A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A>&nbsp;e)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raise a BigInteger to a BigInteger power.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#pow(java.math.BigInteger, int)">pow</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A>&nbsp;k,
+    int&nbsp;e)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raise a BigInteger to an int power.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#pow(java.math.BigInteger, long)">pow</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A>&nbsp;k,
+    long&nbsp;e)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raise a BigInteger to a long power.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#pow(int, int)">pow</A></B>(int&nbsp;k,
+    int&nbsp;e)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raise an int to an int power.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#pow(int, long)">pow</A></B>(int&nbsp;k,
+    long&nbsp;e)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raise an int to a long power.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#pow(long, int)">pow</A></B>(long&nbsp;k,
+    int&nbsp;e)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raise a long to an int power.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#pow(long, long)">pow</A></B>(long&nbsp;k,
+    long&nbsp;e)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raise a long to a long power.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#stirlingS2(int, int)">stirlingS2</A></B>(int&nbsp;n,
+           int&nbsp;k)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a
+ href="http://mathworld.wolfram.com/StirlingNumberoftheSecondKind.html">
+ Stirling number of the second kind</a>, "<code>S(n,k)</code>", the number of
+ ways of partitioning an <code>n</code>-element set into <code>k</code> non-empty
+ subsets.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#subAndCheck(int, int)">subAndCheck</A></B>(int&nbsp;x,
+            int&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract two integers, checking for overflow.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ArithmeticUtils.html#subAndCheck(long, long)">subAndCheck</A></B>(long&nbsp;a,
+            long&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract two long integers, checking for overflow.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="addAndCheck(int, int)"><!-- --></A><H3>
+addAndCheck</H3>
+<PRE>
+public static int <B>addAndCheck</B>(int&nbsp;x,
+                              int&nbsp;y)
+                       throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Add two integers, checking for overflow.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - an addend<DD><CODE>y</CODE> - an addend
+<DT><B>Returns:</B><DD>the sum <code>x+y</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result can not be represented
+ as an <code>int</code>.<DT><B>Since:</B></DT>
+  <DD>1.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addAndCheck(long, long)"><!-- --></A><H3>
+addAndCheck</H3>
+<PRE>
+public static long <B>addAndCheck</B>(long&nbsp;a,
+                               long&nbsp;b)
+                        throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Add two long integers, checking for overflow.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - an addend<DD><CODE>b</CODE> - an addend
+<DT><B>Returns:</B><DD>the sum <code>a+b</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result can not be represented as an
+         long<DT><B>Since:</B></DT>
+  <DD>1.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="binomialCoefficient(int, int)"><!-- --></A><H3>
+binomialCoefficient</H3>
+<PRE>
+public static long <B>binomialCoefficient</B>(int&nbsp;n,
+                                       int&nbsp;k)
+                                throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                                       <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A>,
+                                       <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Returns an exact representation of the <a
+ href="http://mathworld.wolfram.com/BinomialCoefficient.html"> Binomial
+ Coefficient</a>, "<code>n choose k</code>", the number of
+ <code>k</code>-element subsets that can be selected from an
+ <code>n</code>-element set.
+ <p>
+ <Strong>Preconditions</strong>:
+ <ul>
+ <li> <code>0 &lt;= k &lt;= n </code> (otherwise
+ <code>IllegalArgumentException</code> is thrown)</li>
+ <li> The result is small enough to fit into a <code>long</code>. The
+ largest value of <code>n</code> for which all coefficients are
+ <code>&lt; Long.MAX_VALUE</code> is 66. If the computed value exceeds
+ <code>Long.MAX_VALUE</code> an <code>ArithMeticException</code> is
+ thrown.</li>
+ </ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>n</CODE> - the size of the set<DD><CODE>k</CODE> - the size of the subsets to be counted
+<DT><B>Returns:</B><DD><code>n choose k</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>n &lt; 0</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>k &gt; n</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result is too large to be
+ represented by a long integer.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="binomialCoefficientDouble(int, int)"><!-- --></A><H3>
+binomialCoefficientDouble</H3>
+<PRE>
+public static double <B>binomialCoefficientDouble</B>(int&nbsp;n,
+                                               int&nbsp;k)
+                                        throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                                               <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A>,
+                                               <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Returns a <code>double</code> representation of the <a
+ href="http://mathworld.wolfram.com/BinomialCoefficient.html"> Binomial
+ Coefficient</a>, "<code>n choose k</code>", the number of
+ <code>k</code>-element subsets that can be selected from an
+ <code>n</code>-element set.
+ <p>
+ <Strong>Preconditions</strong>:
+ <ul>
+ <li> <code>0 &lt;= k &lt;= n </code> (otherwise
+ <code>IllegalArgumentException</code> is thrown)</li>
+ <li> The result is small enough to fit into a <code>double</code>. The
+ largest value of <code>n</code> for which all coefficients are <
+ Double.MAX_VALUE is 1029. If the computed value exceeds Double.MAX_VALUE,
+ Double.POSITIVE_INFINITY is returned</li>
+ </ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>n</CODE> - the size of the set<DD><CODE>k</CODE> - the size of the subsets to be counted
+<DT><B>Returns:</B><DD><code>n choose k</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>n &lt; 0</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>k &gt; n</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result is too large to be
+ represented by a long integer.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="binomialCoefficientLog(int, int)"><!-- --></A><H3>
+binomialCoefficientLog</H3>
+<PRE>
+public static double <B>binomialCoefficientLog</B>(int&nbsp;n,
+                                            int&nbsp;k)
+                                     throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                                            <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A>,
+                                            <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Returns the natural <code>log</code> of the <a
+ href="http://mathworld.wolfram.com/BinomialCoefficient.html"> Binomial
+ Coefficient</a>, "<code>n choose k</code>", the number of
+ <code>k</code>-element subsets that can be selected from an
+ <code>n</code>-element set.
+ <p>
+ <Strong>Preconditions</strong>:
+ <ul>
+ <li> <code>0 &lt;= k &lt;= n </code> (otherwise
+ <code>IllegalArgumentException</code> is thrown)</li>
+ </ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>n</CODE> - the size of the set<DD><CODE>k</CODE> - the size of the subsets to be counted
+<DT><B>Returns:</B><DD><code>n choose k</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>n &lt; 0</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>k &gt; n</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result is too large to be
+ represented by a long integer.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="factorial(int)"><!-- --></A><H3>
+factorial</H3>
+<PRE>
+public static long <B>factorial</B>(int&nbsp;n)
+                      throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                             <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Returns n!. Shorthand for <code>n</code> <a
+ href="http://mathworld.wolfram.com/Factorial.html"> Factorial</a>, the
+ product of the numbers <code>1,...,n</code>.
+ <p>
+ <Strong>Preconditions</strong>:
+ <ul>
+ <li> <code>n &gt;= 0</code> (otherwise
+ <code>IllegalArgumentException</code> is thrown)</li>
+ <li> The result is small enough to fit into a <code>long</code>. The
+ largest value of <code>n</code> for which <code>n!</code> <
+ Long.MAX_VALUE} is 20. If the computed value exceeds <code>Long.MAX_VALUE</code>
+ an <code>ArithMeticException </code> is thrown.</li>
+ </ul>
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>n</CODE> - argument
+<DT><B>Returns:</B><DD><code>n!</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result is too large to be represented
+ by a <code>long</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>n &lt; 0</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if <code>n &gt; 20</code>: The factorial value is too
+ large to fit in a <code>long</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="factorialDouble(int)"><!-- --></A><H3>
+factorialDouble</H3>
+<PRE>
+public static double <B>factorialDouble</B>(int&nbsp;n)
+                              throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></PRE>
+<DL>
+<DD>Compute n!, the<a href="http://mathworld.wolfram.com/Factorial.html">
+ factorial</a> of <code>n</code> (the product of the numbers 1 to n), as a
+ <code>double</code>.
+ The result should be small enough to fit into a <code>double</code>: The
+ largest <code>n</code> for which <code>n! &lt; Double.MAX_VALUE</code> is 170.
+ If the computed value exceeds <code>Double.MAX_VALUE</code>,
+ <code>Double.POSITIVE_INFINITY</code> is returned.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>n</CODE> - Argument.
+<DT><B>Returns:</B><DD><code>n!</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>n &lt; 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="factorialLog(int)"><!-- --></A><H3>
+factorialLog</H3>
+<PRE>
+public static double <B>factorialLog</B>(int&nbsp;n)
+                           throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></PRE>
+<DL>
+<DD>Compute the natural logarithm of the factorial of <code>n</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>n</CODE> - Argument.
+<DT><B>Returns:</B><DD><code>n!</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>n &lt; 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="gcd(int, int)"><!-- --></A><H3>
+gcd</H3>
+<PRE>
+public static int <B>gcd</B>(int&nbsp;p,
+                      int&nbsp;q)
+               throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Computes the greatest common divisor of the absolute value of two
+ numbers, using a modified version of the "binary gcd" method.
+ See Knuth 4.5.2 algorithm B.
+ The algorithm is due to Josef Stein (1961).
+ <br/>
+ Special cases:
+ <ul>
+  <li>The invocations
+   <code>gcd(Integer.MIN_VALUE, Integer.MIN_VALUE)</code>,
+   <code>gcd(Integer.MIN_VALUE, 0)</code> and
+   <code>gcd(0, Integer.MIN_VALUE)</code> throw an
+   <code>ArithmeticException</code>, because the result would be 2^31, which
+   is too large for an int value.</li>
+  <li>The result of <code>gcd(x, x)</code>, <code>gcd(0, x)</code> and
+   <code>gcd(x, 0)</code> is the absolute value of <code>x</code>, except
+   for the special cases above.</li>
+  <li>The invocation <code>gcd(0, 0)</code> is the only one which returns
+   <code>0</code>.</li>
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>p</CODE> - Number.<DD><CODE>q</CODE> - Number.
+<DT><B>Returns:</B><DD>the greatest common divisor (never negative).
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result cannot be represented as
+ a non-negative <code>int</code> value.<DT><B>Since:</B></DT>
+  <DD>1.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="gcd(long, long)"><!-- --></A><H3>
+gcd</H3>
+<PRE>
+public static long <B>gcd</B>(long&nbsp;p,
+                       long&nbsp;q)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD><p>
+ Gets the greatest common divisor of the absolute value of two numbers,
+ using the "binary gcd" method which avoids division and modulo
+ operations. See Knuth 4.5.2 algorithm B. This algorithm is due to Josef
+ Stein (1961).
+ </p>
+ Special cases:
+ <ul>
+ <li>The invocations
+ <code>gcd(Long.MIN_VALUE, Long.MIN_VALUE)</code>,
+ <code>gcd(Long.MIN_VALUE, 0L)</code> and
+ <code>gcd(0L, Long.MIN_VALUE)</code> throw an
+ <code>ArithmeticException</code>, because the result would be 2^63, which
+ is too large for a long value.</li>
+ <li>The result of <code>gcd(x, x)</code>, <code>gcd(0L, x)</code> and
+ <code>gcd(x, 0L)</code> is the absolute value of <code>x</code>, except
+ for the special cases above.
+ <li>The invocation <code>gcd(0L, 0L)</code> is the only one which returns
+ <code>0L</code>.</li>
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>p</CODE> - Number.<DD><CODE>q</CODE> - Number.
+<DT><B>Returns:</B><DD>the greatest common divisor, never negative.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result cannot be represented as
+ a non-negative <code>long</code> value.<DT><B>Since:</B></DT>
+  <DD>2.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="lcm(int, int)"><!-- --></A><H3>
+lcm</H3>
+<PRE>
+public static int <B>lcm</B>(int&nbsp;a,
+                      int&nbsp;b)
+               throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD><p>
+ Returns the least common multiple of the absolute value of two numbers,
+ using the formula <code>lcm(a,b) = (a / gcd(a,b)) * b</code>.
+ </p>
+ Special cases:
+ <ul>
+ <li>The invocations <code>lcm(Integer.MIN_VALUE, n)</code> and
+ <code>lcm(n, Integer.MIN_VALUE)</code>, where <code>abs(n)</code> is a
+ power of 2, throw an <code>ArithmeticException</code>, because the result
+ would be 2^31, which is too large for an int value.</li>
+ <li>The result of <code>lcm(0, x)</code> and <code>lcm(x, 0)</code> is
+ <code>0</code> for any <code>x</code>.
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - Number.<DD><CODE>b</CODE> - Number.
+<DT><B>Returns:</B><DD>the least common multiple, never negative.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result cannot be represented as
+ a non-negative <code>int</code> value.<DT><B>Since:</B></DT>
+  <DD>1.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="lcm(long, long)"><!-- --></A><H3>
+lcm</H3>
+<PRE>
+public static long <B>lcm</B>(long&nbsp;a,
+                       long&nbsp;b)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD><p>
+ Returns the least common multiple of the absolute value of two numbers,
+ using the formula <code>lcm(a,b) = (a / gcd(a,b)) * b</code>.
+ </p>
+ Special cases:
+ <ul>
+ <li>The invocations <code>lcm(Long.MIN_VALUE, n)</code> and
+ <code>lcm(n, Long.MIN_VALUE)</code>, where <code>abs(n)</code> is a
+ power of 2, throw an <code>ArithmeticException</code>, because the result
+ would be 2^63, which is too large for an int value.</li>
+ <li>The result of <code>lcm(0L, x)</code> and <code>lcm(x, 0L)</code> is
+ <code>0L</code> for any <code>x</code>.
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - Number.<DD><CODE>b</CODE> - Number.
+<DT><B>Returns:</B><DD>the least common multiple, never negative.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result cannot be represented
+ as a non-negative <code>long</code> value.<DT><B>Since:</B></DT>
+  <DD>2.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mulAndCheck(int, int)"><!-- --></A><H3>
+mulAndCheck</H3>
+<PRE>
+public static int <B>mulAndCheck</B>(int&nbsp;x,
+                              int&nbsp;y)
+                       throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Multiply two integers, checking for overflow.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - Factor.<DD><CODE>y</CODE> - Factor.
+<DT><B>Returns:</B><DD>the product <code>x * y</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result can not be
+ represented as an <code>int</code>.<DT><B>Since:</B></DT>
+  <DD>1.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mulAndCheck(long, long)"><!-- --></A><H3>
+mulAndCheck</H3>
+<PRE>
+public static long <B>mulAndCheck</B>(long&nbsp;a,
+                               long&nbsp;b)
+                        throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Multiply two long integers, checking for overflow.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - Factor.<DD><CODE>b</CODE> - Factor.
+<DT><B>Returns:</B><DD>the product <code>a * b</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result can not be represented
+ as a <code>long</code>.<DT><B>Since:</B></DT>
+  <DD>1.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subAndCheck(int, int)"><!-- --></A><H3>
+subAndCheck</H3>
+<PRE>
+public static int <B>subAndCheck</B>(int&nbsp;x,
+                              int&nbsp;y)
+                       throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Subtract two integers, checking for overflow.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - Minuend.<DD><CODE>y</CODE> - Subtrahend.
+<DT><B>Returns:</B><DD>the difference <code>x - y</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result can not be represented
+ as an <code>int</code>.<DT><B>Since:</B></DT>
+  <DD>1.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subAndCheck(long, long)"><!-- --></A><H3>
+subAndCheck</H3>
+<PRE>
+public static long <B>subAndCheck</B>(long&nbsp;a,
+                               long&nbsp;b)
+                        throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Subtract two long integers, checking for overflow.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - Value.<DD><CODE>b</CODE> - Value.
+<DT><B>Returns:</B><DD>the difference <code>a - b</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the result can not be represented as a
+ <code>long</code>.<DT><B>Since:</B></DT>
+  <DD>1.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="pow(int, int)"><!-- --></A><H3>
+pow</H3>
+<PRE>
+public static int <B>pow</B>(int&nbsp;k,
+                      int&nbsp;e)
+               throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></PRE>
+<DL>
+<DD>Raise an int to an int power.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>k</CODE> - Number to raise.<DD><CODE>e</CODE> - Exponent (must be positive or zero).
+<DT><B>Returns:</B><DD>k<sup>e</sup>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>e &lt; 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="pow(int, long)"><!-- --></A><H3>
+pow</H3>
+<PRE>
+public static int <B>pow</B>(int&nbsp;k,
+                      long&nbsp;e)
+               throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></PRE>
+<DL>
+<DD>Raise an int to a long power.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>k</CODE> - Number to raise.<DD><CODE>e</CODE> - Exponent (must be positive or zero).
+<DT><B>Returns:</B><DD>k<sup>e</sup>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>e &lt; 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="pow(long, int)"><!-- --></A><H3>
+pow</H3>
+<PRE>
+public static long <B>pow</B>(long&nbsp;k,
+                       int&nbsp;e)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></PRE>
+<DL>
+<DD>Raise a long to an int power.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>k</CODE> - Number to raise.<DD><CODE>e</CODE> - Exponent (must be positive or zero).
+<DT><B>Returns:</B><DD>k<sup>e</sup>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>e &lt; 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="pow(long, long)"><!-- --></A><H3>
+pow</H3>
+<PRE>
+public static long <B>pow</B>(long&nbsp;k,
+                       long&nbsp;e)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></PRE>
+<DL>
+<DD>Raise a long to a long power.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>k</CODE> - Number to raise.<DD><CODE>e</CODE> - Exponent (must be positive or zero).
+<DT><B>Returns:</B><DD>k<sup>e</sup>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>e &lt; 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="pow(java.math.BigInteger, int)"><!-- --></A><H3>
+pow</H3>
+<PRE>
+public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A> <B>pow</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A>&nbsp;k,
+                             int&nbsp;e)
+                      throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></PRE>
+<DL>
+<DD>Raise a BigInteger to an int power.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>k</CODE> - Number to raise.<DD><CODE>e</CODE> - Exponent (must be positive or zero).
+<DT><B>Returns:</B><DD>k<sup>e</sup>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>e &lt; 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="pow(java.math.BigInteger, long)"><!-- --></A><H3>
+pow</H3>
+<PRE>
+public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A> <B>pow</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A>&nbsp;k,
+                             long&nbsp;e)
+                      throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></PRE>
+<DL>
+<DD>Raise a BigInteger to a long power.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>k</CODE> - Number to raise.<DD><CODE>e</CODE> - Exponent (must be positive or zero).
+<DT><B>Returns:</B><DD>k<sup>e</sup>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>e &lt; 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="pow(java.math.BigInteger, java.math.BigInteger)"><!-- --></A><H3>
+pow</H3>
+<PRE>
+public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A> <B>pow</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A>&nbsp;k,
+                             <A HREF="http://download.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A>&nbsp;e)
+                      throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></PRE>
+<DL>
+<DD>Raise a BigInteger to a BigInteger power.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>k</CODE> - Number to raise.<DD><CODE>e</CODE> - Exponent (must be positive or zero).
+<DT><B>Returns:</B><DD>k<sup>e</sup>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>e &lt; 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="stirlingS2(int, int)"><!-- --></A><H3>
+stirlingS2</H3>
+<PRE>
+public static long <B>stirlingS2</B>(int&nbsp;n,
+                              int&nbsp;k)
+                       throws <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A>,
+                              <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A>,
+                              <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Returns the <a
+ href="http://mathworld.wolfram.com/StirlingNumberoftheSecondKind.html">
+ Stirling number of the second kind</a>, "<code>S(n,k)</code>", the number of
+ ways of partitioning an <code>n</code>-element set into <code>k</code> non-empty
+ subsets.
+ <p>
+ The preconditions are <code>0 &lt;= k &lt;= n </code> (otherwise
+ <code>NotPositiveException</code> is thrown)
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>n</CODE> - the size of the set<DD><CODE>k</CODE> - the number of non-empty subsets
+<DT><B>Returns:</B><DD><code>S(n,k)</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if <code>k &lt; 0</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>k &gt; n</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if some overflow happens, typically for n exceeding 25 and
+ k between 20 and n-2 (S(n,n-1) is handled specifically and does not overflow)<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isPowerOfTwo(long)"><!-- --></A><H3>
+isPowerOfTwo</H3>
+<PRE>
+public static boolean <B>isPowerOfTwo</B>(long&nbsp;n)</PRE>
+<DL>
+<DD>Returns true if the argument is a power of two.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>n</CODE> - the number to test
+<DT><B>Returns:</B><DD>true if the argument is a power of two</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ArithmeticUtils.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/util/BigReal.html" title="class in org.apache.commons.math3.util"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/util/ArithmeticUtils.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ArithmeticUtils.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

@@ -1,0 +1,788 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+SemiVariance (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SemiVariance (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SemiVariance.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SecondMoment.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SemiVariance.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.stat.descriptive.moment</FONT>
+<BR>
+Class SemiVariance</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic</A>
+      <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.stat.descriptive.moment.SemiVariance</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">UnivariateStatistic</A>, <A HREF="../../../../../../../org/apache/commons/math3/util/MathArrays.Function.html" title="interface in org.apache.commons.math3.util">MathArrays.Function</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>SemiVariance</B><DT>extends <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractUnivariateStatistic</A><DT>implements <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DL>
+</PRE>
+
+<P>
+<p>Computes the semivariance of a set of values with respect to a given cutoff value.
+ We define the <i>downside semivariance</i> of a set of values <code>x</code>
+ against the <i>cutoff value</i> <code>cutoff</code> to be <br/>
+ <code>&Sigma; (x[i] - target)<sup>2</sup> / df</code> <br/>
+ where the sum is taken over all <code>i</code> such that <code>x[i] < cutoff</code>
+ and <code>df</code> is the length of <code>x</code> (non-bias-corrected) or
+ one less than this number (bias corrected).  The <i>upside semivariance</i>
+ is defined similarly, with the sum taken over values of <code>x</code> that
+ exceed the cutoff value.</p>
+
+ <p>The cutoff value defaults to the mean, bias correction defaults to <code>true</code>
+ and the "variance direction" (upside or downside) defaults to downside.  The variance direction
+ and bias correction may be set using property setters or their values can provided as
+ parameters to <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#evaluate(double[], double, org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction, boolean, int, int)"><CODE>evaluate(double[], double, Direction, boolean, int, int)</CODE></A>.</p>
+
+ <p>If the input array is null, <code>evaluate</code> methods throw
+ <code>IllegalArgumentException.</code>  If the array has length 1, <code>0</code>
+ is returned, regardless of the value of the <code>cutoff.</code>
+
+ <p><strong>Note that this class is not intended to be threadsafe.</strong> If
+ multiple threads access an instance of this class concurrently, and one or
+ more of these threads invoke property setters, external synchronization must
+ be provided to ensure correct results.</p>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.1</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: SemiVariance.java 1385386 2012-09-16 22:11:15Z psteitz $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../serialized-form.html#org.apache.commons.math3.stat.descriptive.moment.SemiVariance">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The direction of the semivariance - either upside or downside.</TD>
+</TR>
+</TABLE>
+&nbsp;<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#DOWNSIDE_VARIANCE">DOWNSIDE_VARIANCE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The DOWNSIDE Direction is used to specify that the observations below
+ the cutoff point will be used to calculate SemiVariance</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#UPSIDE_VARIANCE">UPSIDE_VARIANCE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The UPSIDE Direction is used to specify that the observations above the
+ cutoff point will be used to calculate SemiVariance.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#SemiVariance()">SemiVariance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a SemiVariance with default (true) <code>biasCorrected</code>
+ property and default (Downside) <code>varianceDirection</code> property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#SemiVariance(boolean)">SemiVariance</A></B>(boolean&nbsp;biasCorrected)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a SemiVariance with the specified <code>biasCorrected</code>
+ property and default (Downside) <code>varianceDirection</code> property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#SemiVariance(boolean, org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction)">SemiVariance</A></B>(boolean&nbsp;corrected,
+             <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a SemiVariance with the specified <code>isBiasCorrected</code>
+ property and the specified <code>Direction</code> property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#SemiVariance(org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction)">SemiVariance</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a SemiVariance with the specified <code>Direction</code> property
+ and default (true) <code>biasCorrected</code> property</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#SemiVariance(org.apache.commons.math3.stat.descriptive.moment.SemiVariance)">SemiVariance</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SemiVariance</A>&nbsp;original)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy constructor, creates a new <code>SemiVariance</code> identical
+ to the <code>original</code></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SemiVariance</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#copy()">copy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a copy of the statistic with the same internal state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#copy(org.apache.commons.math3.stat.descriptive.moment.SemiVariance, org.apache.commons.math3.stat.descriptive.moment.SemiVariance)">copy</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SemiVariance</A>&nbsp;source,
+     <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SemiVariance</A>&nbsp;dest)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copies source to dest.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#evaluate(double[], double)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;cutoff)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> of the designated values against the cutoff, using
+ instance properties variancDirection and biasCorrection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#evaluate(double[], double, org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;cutoff,
+         <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> of the designated values against the cutoff in the
+ given direction, using the current value of the biasCorrection instance property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#evaluate(double[], double, org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction, boolean, int, int)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;cutoff,
+         <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction,
+         boolean&nbsp;corrected,
+         int&nbsp;start,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> of the designated values against the cutoff
+ in the given direction with the provided bias correction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;start,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> of the designated values against the mean, using
+ instance properties varianceDirection and biasCorrection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#evaluate(double[], org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction)">evaluate</A></B>(double[]&nbsp;values,
+         <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method calculates <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> for the entire array against the mean, using
+ the current value of the biasCorrection instance property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#getVarianceDirection()">getVarianceDirection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the varianceDirection property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#isBiasCorrected()">isBiasCorrected</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true iff biasCorrected property is set to true.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#setBiasCorrected(boolean)">setBiasCorrected</A></B>(boolean&nbsp;biasCorrected)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the biasCorrected property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#setVarianceDirection(org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction)">setVarianceDirection</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;varianceDirection)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the variance direction</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.stat.descriptive.<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractUnivariateStatistic</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#evaluate()">evaluate</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#evaluate(double[])">evaluate</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#getData()">getData</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#getDataRef()">getDataRef</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#setData(double[])">setData</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#setData(double[], int, int)">setData</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#test(double[], double[], int, int)">test</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#test(double[], double[], int, int, boolean)">test</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#test(double[], int, int)">test</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#test(double[], int, int, boolean)">test</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="UPSIDE_VARIANCE"><!-- --></A><H3>
+UPSIDE_VARIANCE</H3>
+<PRE>
+public static final <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A> <B>UPSIDE_VARIANCE</B></PRE>
+<DL>
+<DD>The UPSIDE Direction is used to specify that the observations above the
+ cutoff point will be used to calculate SemiVariance.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="DOWNSIDE_VARIANCE"><!-- --></A><H3>
+DOWNSIDE_VARIANCE</H3>
+<PRE>
+public static final <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A> <B>DOWNSIDE_VARIANCE</B></PRE>
+<DL>
+<DD>The DOWNSIDE Direction is used to specify that the observations below
+ the cutoff point will be used to calculate SemiVariance
+<P>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="SemiVariance()"><!-- --></A><H3>
+SemiVariance</H3>
+<PRE>
+public <B>SemiVariance</B>()</PRE>
+<DL>
+<DD>Constructs a SemiVariance with default (true) <code>biasCorrected</code>
+ property and default (Downside) <code>varianceDirection</code> property.
+<P>
+</DL>
+<HR>
+
+<A NAME="SemiVariance(boolean)"><!-- --></A><H3>
+SemiVariance</H3>
+<PRE>
+public <B>SemiVariance</B>(boolean&nbsp;biasCorrected)</PRE>
+<DL>
+<DD>Constructs a SemiVariance with the specified <code>biasCorrected</code>
+ property and default (Downside) <code>varianceDirection</code> property.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>biasCorrected</CODE> - setting for bias correction - true means
+ bias will be corrected and is equivalent to using the argumentless
+ constructor</DL>
+</DL>
+<HR>
+
+<A NAME="SemiVariance(org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction)"><!-- --></A><H3>
+SemiVariance</H3>
+<PRE>
+public <B>SemiVariance</B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction)</PRE>
+<DL>
+<DD>Constructs a SemiVariance with the specified <code>Direction</code> property
+ and default (true) <code>biasCorrected</code> property
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>direction</CODE> - setting for the direction of the SemiVariance
+ to calculate</DL>
+</DL>
+<HR>
+
+<A NAME="SemiVariance(boolean, org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction)"><!-- --></A><H3>
+SemiVariance</H3>
+<PRE>
+public <B>SemiVariance</B>(boolean&nbsp;corrected,
+                    <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction)</PRE>
+<DL>
+<DD>Constructs a SemiVariance with the specified <code>isBiasCorrected</code>
+ property and the specified <code>Direction</code> property.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>corrected</CODE> - setting for bias correction - true means
+ bias will be corrected and is equivalent to using the argumentless
+ constructor<DD><CODE>direction</CODE> - setting for the direction of the SemiVariance
+ to calculate</DL>
+</DL>
+<HR>
+
+<A NAME="SemiVariance(org.apache.commons.math3.stat.descriptive.moment.SemiVariance)"><!-- --></A><H3>
+SemiVariance</H3>
+<PRE>
+public <B>SemiVariance</B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SemiVariance</A>&nbsp;original)
+             throws <A HREF="../../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Copy constructor, creates a new <code>SemiVariance</code> identical
+ to the <code>original</code>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>original</CODE> - the <code>SemiVariance</code> instance to copy
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if original is null</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="copy()"><!-- --></A><H3>
+copy</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SemiVariance</A> <B>copy</B>()</PRE>
+<DL>
+<DD>Returns a copy of the statistic with the same internal state.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html#copy()">copy</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">UnivariateStatistic</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#copy()">copy</A></CODE> in class <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractUnivariateStatistic</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a copy of the statistic</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="copy(org.apache.commons.math3.stat.descriptive.moment.SemiVariance, org.apache.commons.math3.stat.descriptive.moment.SemiVariance)"><!-- --></A><H3>
+copy</H3>
+<PRE>
+public static void <B>copy</B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SemiVariance</A>&nbsp;source,
+                        <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SemiVariance</A>&nbsp;dest)
+                 throws <A HREF="../../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Copies source to dest.
+ <p>Neither source nor dest can be null.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>source</CODE> - SemiVariance to copy<DD><CODE>dest</CODE> - SemiVariance to copy to
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if either source or dest is null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="evaluate(double[], int, int)"><!-- --></A><H3>
+evaluate</H3>
+<PRE>
+public double <B>evaluate</B>(double[]&nbsp;values,
+                       int&nbsp;start,
+                       int&nbsp;length)
+                throws <A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><p>Returns the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> of the designated values against the mean, using
+ instance properties varianceDirection and biasCorrection.</p>
+
+ <p>Returns <code>NaN</code> if the array is empty and throws
+ <code>IllegalArgumentException</code> if the array is null.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html#evaluate(double[], int, int)">evaluate</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">UnivariateStatistic</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/util/MathArrays.Function.html#evaluate(double[], int, int)">evaluate</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/util/MathArrays.Function.html" title="interface in org.apache.commons.math3.util">MathArrays.Function</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#evaluate(double[], int, int)">evaluate</A></CODE> in class <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractUnivariateStatistic</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - the input array<DD><CODE>start</CODE> - index of the first array element to include<DD><CODE>length</CODE> - the number of elements to include
+<DT><B>Returns:</B><DD>the SemiVariance
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the parameters are not valid</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="evaluate(double[], org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction)"><!-- --></A><H3>
+evaluate</H3>
+<PRE>
+public double <B>evaluate</B>(double[]&nbsp;values,
+                       <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction)
+                throws <A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>This method calculates <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> for the entire array against the mean, using
+ the current value of the biasCorrection instance property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - the input array<DD><CODE>direction</CODE> - the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance.Direction</CODE></A> of the semivariance
+<DT><B>Returns:</B><DD>the SemiVariance
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if values is null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="evaluate(double[], double)"><!-- --></A><H3>
+evaluate</H3>
+<PRE>
+public double <B>evaluate</B>(double[]&nbsp;values,
+                       double&nbsp;cutoff)
+                throws <A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><p>Returns the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> of the designated values against the cutoff, using
+ instance properties variancDirection and biasCorrection.</p>
+
+ <p>Returns <code>NaN</code> if the array is empty and throws
+ <code>MathIllegalArgumentException</code> if the array is null.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - the input array<DD><CODE>cutoff</CODE> - the reference point
+<DT><B>Returns:</B><DD>the SemiVariance
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if values is null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="evaluate(double[], double, org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction)"><!-- --></A><H3>
+evaluate</H3>
+<PRE>
+public double <B>evaluate</B>(double[]&nbsp;values,
+                       double&nbsp;cutoff,
+                       <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction)
+                throws <A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><p>Returns the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> of the designated values against the cutoff in the
+ given direction, using the current value of the biasCorrection instance property.</p>
+
+ <p>Returns <code>NaN</code> if the array is empty and throws
+ <code>MathIllegalArgumentException</code> if the array is null.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - the input array<DD><CODE>cutoff</CODE> - the reference point<DD><CODE>direction</CODE> - the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance.Direction</CODE></A> of the semivariance
+<DT><B>Returns:</B><DD>the SemiVariance
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if values is null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="evaluate(double[], double, org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction, boolean, int, int)"><!-- --></A><H3>
+evaluate</H3>
+<PRE>
+public double <B>evaluate</B>(double[]&nbsp;values,
+                       double&nbsp;cutoff,
+                       <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction,
+                       boolean&nbsp;corrected,
+                       int&nbsp;start,
+                       int&nbsp;length)
+                throws <A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><p>Returns the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> of the designated values against the cutoff
+ in the given direction with the provided bias correction.</p>
+
+ <p>Returns <code>NaN</code> if the array is empty and throws
+ <code>IllegalArgumentException</code> if the array is null.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - the input array<DD><CODE>cutoff</CODE> - the reference point<DD><CODE>direction</CODE> - the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance.Direction</CODE></A> of the semivariance<DD><CODE>corrected</CODE> - the BiasCorrection flag<DD><CODE>start</CODE> - index of the first array element to include<DD><CODE>length</CODE> - the number of elements to include
+<DT><B>Returns:</B><DD>the SemiVariance
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the parameters are not valid</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isBiasCorrected()"><!-- --></A><H3>
+isBiasCorrected</H3>
+<PRE>
+public boolean <B>isBiasCorrected</B>()</PRE>
+<DL>
+<DD>Returns true iff biasCorrected property is set to true.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the value of biasCorrected.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBiasCorrected(boolean)"><!-- --></A><H3>
+setBiasCorrected</H3>
+<PRE>
+public void <B>setBiasCorrected</B>(boolean&nbsp;biasCorrected)</PRE>
+<DL>
+<DD>Sets the biasCorrected property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>biasCorrected</CODE> - new biasCorrected property value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getVarianceDirection()"><!-- --></A><H3>
+getVarianceDirection</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A> <B>getVarianceDirection</B>()</PRE>
+<DL>
+<DD>Returns the varianceDirection property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the varianceDirection</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setVarianceDirection(org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction)"><!-- --></A><H3>
+setVarianceDirection</H3>
+<PRE>
+public void <B>setVarianceDirection</B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;varianceDirection)</PRE>
+<DL>
+<DD>Sets the variance direction
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>varianceDirection</CODE> - the direction of the semivariance</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SemiVariance.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SecondMoment.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SemiVariance.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

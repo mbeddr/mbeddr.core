@@ -1,0 +1,1154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+AbstractLeastSquaresOptimizer (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractLeastSquaresOptimizer (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractLeastSquaresOptimizer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractDifferentiableOptimizer.html" title="class in org.apache.commons.math3.optimization.general"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractScalarDifferentiableOptimizer.html" title="class in org.apache.commons.math3.optimization.general"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractLeastSquaresOptimizer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.optimization.general</FONT>
+<BR>
+Class AbstractLeastSquaresOptimizer</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html" title="class in org.apache.commons.math3.optimization.direct">org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateVectorOptimizer</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/analysis/DifferentiableMultivariateVectorFunction.html" title="interface in org.apache.commons.math3.analysis">DifferentiableMultivariateVectorFunction</A>&gt;
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../org/apache/commons/math3/optimization/BaseMultivariateVectorOptimizer.html" title="interface in org.apache.commons.math3.optimization">BaseMultivariateVectorOptimizer</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/analysis/DifferentiableMultivariateVectorFunction.html" title="interface in org.apache.commons.math3.analysis">DifferentiableMultivariateVectorFunction</A>&gt;, <A HREF="../../../../../../org/apache/commons/math3/optimization/BaseOptimizer.html" title="interface in org.apache.commons.math3.optimization">BaseOptimizer</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointVectorValuePair.html" title="class in org.apache.commons.math3.optimization">PointVectorValuePair</A>&gt;, <A HREF="../../../../../../org/apache/commons/math3/optimization/DifferentiableMultivariateVectorOptimizer.html" title="interface in org.apache.commons.math3.optimization">DifferentiableMultivariateVectorOptimizer</A></DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../org/apache/commons/math3/optimization/general/GaussNewtonOptimizer.html" title="class in org.apache.commons.math3.optimization.general">GaussNewtonOptimizer</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/general/LevenbergMarquardtOptimizer.html" title="class in org.apache.commons.math3.optimization.general">LevenbergMarquardtOptimizer</A></DD>
+</DL>
+<HR>
+<B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0).</I>
+<P>
+<DL>
+<DT><PRE><FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public abstract class <B>AbstractLeastSquaresOptimizer</B><DT>extends <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html" title="class in org.apache.commons.math3.optimization.direct">BaseAbstractMultivariateVectorOptimizer</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/analysis/DifferentiableMultivariateVectorFunction.html" title="interface in org.apache.commons.math3.analysis">DifferentiableMultivariateVectorFunction</A>&gt;<DT>implements <A HREF="../../../../../../org/apache/commons/math3/optimization/DifferentiableMultivariateVectorOptimizer.html" title="interface in org.apache.commons.math3.optimization">DifferentiableMultivariateVectorOptimizer</A></DL>
+</PRE>
+
+<P>
+Base class for implementing least squares optimizers.
+ It handles the boilerplate methods associated to thresholds settings,
+ Jacobian and error estimation.
+ <br/>
+ This class constructs the Jacobian matrix of the function argument in method
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.OptimizationData...)"><CODE>optimize</CODE></A> and assumes that the rows of that matrix iterate on the model
+ functions while the columns iterate on the parameters; thus, the numbers
+ of rows is equal to the dimension of the
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/Target.html" title="class in org.apache.commons.math3.optimization"><CODE>Target</CODE></A> while
+ the number of columns is equal to the dimension of the
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/InitialGuess.html" title="class in org.apache.commons.math3.optimization"><CODE>InitialGuess</CODE></A>.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>1.2</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: AbstractLeastSquaresOptimizer.java 1426759 2012-12-29 13:26:44Z erans $</DD>
+</DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#cols">cols</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#cost">cost</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Field to become "private" in 4.0.
+ Please use <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#setCost(double)"><CODE>setCost(double)</CODE></A>.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#objective">objective</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#point">point</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#rows">rows</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[][]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#weightedResidualJacobian">weightedResidualJacobian</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. To be removed in 4.0. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeWeightedJacobian(double[])"><CODE>computeWeightedJacobian(double[])</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#weightedResiduals">weightedResiduals</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1.</I></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateVectorOptimizer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.commons.math3.optimization.direct.<A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html" title="class in org.apache.commons.math3.optimization.direct">BaseAbstractMultivariateVectorOptimizer</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#evaluations">evaluations</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#AbstractLeastSquaresOptimizer()">AbstractLeastSquaresOptimizer</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>See <A HREF="../../../../../../org/apache/commons/math3/optimization/SimpleValueChecker.html#SimpleValueChecker()"><CODE>SimpleValueChecker.SimpleValueChecker()</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#AbstractLeastSquaresOptimizer(org.apache.commons.math3.optimization.ConvergenceChecker)">AbstractLeastSquaresOptimizer</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointVectorValuePair.html" title="class in org.apache.commons.math3.optimization">PointVectorValuePair</A>&gt;&nbsp;checker)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeCost(double[])">computeCost</A></B>(double[]&nbsp;residuals)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Computes the cost.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[][]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeCovariances(double[], double)">computeCovariances</A></B>(double[]&nbsp;params,
+                   double&nbsp;threshold)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get the covariance matrix of the optimized parameters.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeResiduals(double[])">computeResiduals</A></B>(double[]&nbsp;objectiveValue)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Computes the residuals.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeSigma(double[], double)">computeSigma</A></B>(double[]&nbsp;params,
+             double&nbsp;covarianceSingularityThreshold)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Computes an estimate of the standard deviation of the parameters.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeWeightedJacobian(double[])">computeWeightedJacobian</A></B>(double[]&nbsp;params)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Computes the Jacobian matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#getChiSquare()">getChiSquare</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get a Chi-Square-like value assuming the N residuals follow N
+ distinct normal distributions centered on 0 and whose variances are
+ the reciprocal of the weights.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[][]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#getCovariances()">getCovariances</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeCovariances(double[], double)"><CODE>computeCovariances(double[],double)</CODE></A>
+ instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[][]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#getCovariances(double)">getCovariances</A></B>(double&nbsp;threshold)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeCovariances(double[], double)"><CODE>computeCovariances(double[],double)</CODE></A>
+ instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#getJacobianEvaluations()">getJacobianEvaluations</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#getRMS()">getRMS</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get the Root Mean Square value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#getWeightSquareRoot()">getWeightSquareRoot</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Gets the square-root of the weight matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#guessParametersErrors()">guessParametersErrors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of version 3.1, <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeSigma(double[], double)"><CODE>computeSigma(double[],double)</CODE></A> should be used
+ instead. It should be emphasized that <code>guessParametersErrors</code> and
+ <code>computeSigma</code> are <em>not</em> strictly equivalent.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointVectorValuePair.html" title="class in org.apache.commons.math3.optimization">PointVectorValuePair</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#optimize(int, org.apache.commons.math3.analysis.DifferentiableMultivariateVectorFunction, double[], double[], double[])">optimize</A></B>(int&nbsp;maxEval,
+         <A HREF="../../../../../../org/apache/commons/math3/analysis/DifferentiableMultivariateVectorFunction.html" title="interface in org.apache.commons.math3.analysis">DifferentiableMultivariateVectorFunction</A>&nbsp;f,
+         double[]&nbsp;target,
+         double[]&nbsp;weights,
+         double[]&nbsp;startPoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.OptimizationData...)"><CODE>optimize(int,MultivariateDifferentiableVectorFunction,OptimizationData...)</CODE></A>
+ instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointVectorValuePair.html" title="class in org.apache.commons.math3.optimization">PointVectorValuePair</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#optimize(int, org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableVectorFunction, double[], double[], double[])">optimize</A></B>(int&nbsp;maxEval,
+         <A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/MultivariateDifferentiableVectorFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">MultivariateDifferentiableVectorFunction</A>&nbsp;f,
+         double[]&nbsp;target,
+         double[]&nbsp;weights,
+         double[]&nbsp;startPoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.OptimizationData...)"><CODE>optimize(int,MultivariateDifferentiableVectorFunction,OptimizationData...)</CODE></A>
+ instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointVectorValuePair.html" title="class in org.apache.commons.math3.optimization">PointVectorValuePair</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#optimizeInternal(int, org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableVectorFunction, org.apache.commons.math3.optimization.OptimizationData...)">optimizeInternal</A></B>(int&nbsp;maxEval,
+                 <A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/MultivariateDifferentiableVectorFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">MultivariateDifferentiableVectorFunction</A>&nbsp;f,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/OptimizationData.html" title="interface in org.apache.commons.math3.optimization">OptimizationData</A>...&nbsp;optData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Override is necessary only until this class's generic
+ argument is changed to <code>MultivariateDifferentiableVectorFunction</code>.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#setCost(double)">setCost</A></B>(double&nbsp;cost)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Sets the cost.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#setUp()">setUp</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Method which a subclass <em>must</em> override whenever its internal
+ state depend on the <A HREF="../../../../../../org/apache/commons/math3/optimization/OptimizationData.html" title="interface in org.apache.commons.math3.optimization"><CODE>input</CODE></A> parsed by this base
+ class.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#updateJacobian()">updateJacobian</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeWeightedJacobian(double[])"><CODE>computeWeightedJacobian(double[])</CODE></A>
+ instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#updateResidualsAndCost()">updateResidualsAndCost</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeResiduals(double[])"><CODE>computeResiduals(double[])</CODE></A>,
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#computeObjectiveValue(double[])"><CODE>BaseAbstractMultivariateVectorOptimizer.computeObjectiveValue(double[])</CODE></A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeCost(double[])"><CODE>computeCost(double[])</CODE></A>
+ and <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#setCost(double)"><CODE>setCost(double)</CODE></A> instead.</I></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateVectorOptimizer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.optimization.direct.<A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html" title="class in org.apache.commons.math3.optimization.direct">BaseAbstractMultivariateVectorOptimizer</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#computeObjectiveValue(double[])">computeObjectiveValue</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#doOptimize()">doOptimize</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#getConvergenceChecker()">getConvergenceChecker</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#getEvaluations()">getEvaluations</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#getMaxEvaluations()">getMaxEvaluations</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#getObjectiveFunction()">getObjectiveFunction</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#getStartPoint()">getStartPoint</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#getTarget()">getTarget</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#getTargetRef()">getTargetRef</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#getWeight()">getWeight</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#getWeightRef()">getWeightRef</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.OptimizationData...)">optimize</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#optimizeInternal(int, FUNC, double[], double[], double[])">optimizeInternal</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#optimizeInternal(int, FUNC, org.apache.commons.math3.optimization.OptimizationData...)">optimizeInternal</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.optimization.BaseOptimizer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.commons.math3.optimization.<A HREF="../../../../../../org/apache/commons/math3/optimization/BaseOptimizer.html" title="interface in org.apache.commons.math3.optimization">BaseOptimizer</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/optimization/BaseOptimizer.html#getConvergenceChecker()">getConvergenceChecker</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/BaseOptimizer.html#getEvaluations()">getEvaluations</A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/BaseOptimizer.html#getMaxEvaluations()">getMaxEvaluations</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="weightedResidualJacobian"><!-- --></A><H3>
+weightedResidualJacobian</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>protected double[][] <B>weightedResidualJacobian</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. To be removed in 4.0. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeWeightedJacobian(double[])"><CODE>computeWeightedJacobian(double[])</CODE></A> instead.</I><DD>Jacobian matrix of the weighted residuals.
+ This matrix is in canonical form just after the calls to
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#updateJacobian()"><CODE>updateJacobian()</CODE></A>, but may be modified by the solver
+ in the derived class (the <A HREF="../../../../../../org/apache/commons/math3/optimization/general/LevenbergMarquardtOptimizer.html" title="class in org.apache.commons.math3.optimization.general"><CODE>Levenberg-Marquardt optimizer</CODE></A> does this).
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="cols"><!-- --></A><H3>
+cols</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>protected int <B>cols</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1.</I><DD>Number of columns of the jacobian matrix.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="rows"><!-- --></A><H3>
+rows</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>protected int <B>rows</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1.</I><DD>Number of rows of the jacobian matrix.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="point"><!-- --></A><H3>
+point</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>protected double[] <B>point</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1.</I><DD>Current point.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="objective"><!-- --></A><H3>
+objective</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>protected double[] <B>objective</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1.</I><DD>Current objective function value.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="weightedResiduals"><!-- --></A><H3>
+weightedResiduals</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>protected double[] <B>weightedResiduals</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1.</I><DD>Weighted residuals
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="cost"><!-- --></A><H3>
+cost</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>protected double <B>cost</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Field to become "private" in 4.0.
+ Please use <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#setCost(double)"><CODE>setCost(double)</CODE></A>.</I><DD>Cost value (square root of the sum of the residuals).
+<P>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AbstractLeastSquaresOptimizer()"><!-- --></A><H3>
+AbstractLeastSquaresOptimizer</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>protected <B>AbstractLeastSquaresOptimizer</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>See <A HREF="../../../../../../org/apache/commons/math3/optimization/SimpleValueChecker.html#SimpleValueChecker()"><CODE>SimpleValueChecker.SimpleValueChecker()</CODE></A></I>
+<P>
+<DD>Simple constructor with default settings.
+ The convergence check is set to a <A HREF="../../../../../../org/apache/commons/math3/optimization/SimpleVectorValueChecker.html" title="class in org.apache.commons.math3.optimization"><CODE>SimpleVectorValueChecker</CODE></A>.
+<P>
+</DL>
+<HR>
+
+<A NAME="AbstractLeastSquaresOptimizer(org.apache.commons.math3.optimization.ConvergenceChecker)"><!-- --></A><H3>
+AbstractLeastSquaresOptimizer</H3>
+<PRE>
+protected <B>AbstractLeastSquaresOptimizer</B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointVectorValuePair.html" title="class in org.apache.commons.math3.optimization">PointVectorValuePair</A>&gt;&nbsp;checker)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DL>
+<DT><B>Parameters:</B><DD><CODE>checker</CODE> - Convergence checker.</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getJacobianEvaluations()"><!-- --></A><H3>
+getJacobianEvaluations</H3>
+<PRE>
+public int <B>getJacobianEvaluations</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the number of evaluations of the Jacobian function.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="updateJacobian()"><!-- --></A><H3>
+updateJacobian</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>protected void <B>updateJacobian</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeWeightedJacobian(double[])"><CODE>computeWeightedJacobian(double[])</CODE></A>
+ instead.</I>
+<P>
+<DD>Update the jacobian matrix.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the Jacobian dimension does not
+ match problem dimension.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeWeightedJacobian(double[])"><!-- --></A><H3>
+computeWeightedJacobian</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>computeWeightedJacobian</B>(double[]&nbsp;params)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Computes the Jacobian matrix.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>params</CODE> - Model parameters at which to compute the Jacobian.
+<DT><B>Returns:</B><DD>the weighted Jacobian: W<sup>1/2</sup> J.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the Jacobian dimension does not
+ match problem dimension.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="updateResidualsAndCost()"><!-- --></A><H3>
+updateResidualsAndCost</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>protected void <B>updateResidualsAndCost</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeResiduals(double[])"><CODE>computeResiduals(double[])</CODE></A>,
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#computeObjectiveValue(double[])"><CODE>BaseAbstractMultivariateVectorOptimizer.computeObjectiveValue(double[])</CODE></A>, <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeCost(double[])"><CODE>computeCost(double[])</CODE></A>
+ and <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#setCost(double)"><CODE>setCost(double)</CODE></A> instead.</I>
+<P>
+<DD>Update the residuals array and cost function value.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the dimension does not match the
+ problem dimension.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A></CODE> - if the maximal number of evaluations is exceeded.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeCost(double[])"><!-- --></A><H3>
+computeCost</H3>
+<PRE>
+protected double <B>computeCost</B>(double[]&nbsp;residuals)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Computes the cost.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>residuals</CODE> - Residuals.
+<DT><B>Returns:</B><DD>the cost.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeResiduals(double[])"><CODE>computeResiduals(double[])</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRMS()"><!-- --></A><H3>
+getRMS</H3>
+<PRE>
+public double <B>getRMS</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Get the Root Mean Square value.
+ Get the Root Mean Square value, i.e. the root of the arithmetic
+ mean of the square of all weighted residuals. This is related to the
+ criterion that is minimized by the optimizer as follows: if
+ <em>c</em> if the criterion, and <em>n</em> is the number of
+ measurements, then the RMS is <em>sqrt (c/n)</em>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>RMS value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getChiSquare()"><!-- --></A><H3>
+getChiSquare</H3>
+<PRE>
+public double <B>getChiSquare</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Get a Chi-Square-like value assuming the N residuals follow N
+ distinct normal distributions centered on 0 and whose variances are
+ the reciprocal of the weights.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>chi-square value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getWeightSquareRoot()"><!-- --></A><H3>
+getWeightSquareRoot</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>getWeightSquareRoot</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Gets the square-root of the weight matrix.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the square-root of the weight matrix.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setCost(double)"><!-- --></A><H3>
+setCost</H3>
+<PRE>
+protected void <B>setCost</B>(double&nbsp;cost)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Sets the cost.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>cost</CODE> - Cost value.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCovariances()"><!-- --></A><H3>
+getCovariances</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public double[][] <B>getCovariances</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeCovariances(double[], double)"><CODE>computeCovariances(double[],double)</CODE></A>
+ instead.</I>
+<P>
+<DD>Get the covariance matrix of the optimized parameters.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the covariance matrix.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/linear/SingularMatrixException.html" title="class in org.apache.commons.math3.linear">SingularMatrixException</A></CODE> - if the covariance matrix cannot be computed (singular problem).<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#getCovariances(double)"><CODE>getCovariances(double)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCovariances(double)"><!-- --></A><H3>
+getCovariances</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public double[][] <B>getCovariances</B>(double&nbsp;threshold)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeCovariances(double[], double)"><CODE>computeCovariances(double[],double)</CODE></A>
+ instead.</I>
+<P>
+<DD>Get the covariance matrix of the optimized parameters.
+ <br/>
+ Note that this operation involves the inversion of the
+ <code>J<sup>T</sup>J</code> matrix, where <code>J</code> is the
+ Jacobian matrix.
+ The <code>threshold</code> parameter is a way for the caller to specify
+ that the result of this computation should be considered meaningless,
+ and thus trigger an exception.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>threshold</CODE> - Singularity threshold.
+<DT><B>Returns:</B><DD>the covariance matrix.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/linear/SingularMatrixException.html" title="class in org.apache.commons.math3.linear">SingularMatrixException</A></CODE> - if the covariance matrix cannot be computed (singular problem).</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeCovariances(double[], double)"><!-- --></A><H3>
+computeCovariances</H3>
+<PRE>
+public double[][] <B>computeCovariances</B>(double[]&nbsp;params,
+                                     double&nbsp;threshold)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Get the covariance matrix of the optimized parameters.
+ <br/>
+ Note that this operation involves the inversion of the
+ <code>J<sup>T</sup>J</code> matrix, where <code>J</code> is the
+ Jacobian matrix.
+ The <code>threshold</code> parameter is a way for the caller to specify
+ that the result of this computation should be considered meaningless,
+ and thus trigger an exception.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>params</CODE> - Model parameters.<DD><CODE>threshold</CODE> - Singularity threshold.
+<DT><B>Returns:</B><DD>the covariance matrix.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/linear/SingularMatrixException.html" title="class in org.apache.commons.math3.linear">SingularMatrixException</A></CODE> - if the covariance matrix cannot be computed (singular problem).<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="guessParametersErrors()"><!-- --></A><H3>
+guessParametersErrors</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public double[] <B>guessParametersErrors</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>as of version 3.1, <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeSigma(double[], double)"><CODE>computeSigma(double[],double)</CODE></A> should be used
+ instead. It should be emphasized that <code>guessParametersErrors</code> and
+ <code>computeSigma</code> are <em>not</em> strictly equivalent.</I>
+<P>
+<DD><p>
+ Returns an estimate of the standard deviation of each parameter. The
+ returned values are the so-called (asymptotic) standard errors on the
+ parameters, defined as <code>sd(a[i]) = sqrt(S / (n - m) * C[i][i])</code>,
+ where <code>a[i]</code> is the optimized value of the <code>i</code>-th parameter,
+ <code>S</code> is the minimized value of the sum of squares objective function
+ (as returned by <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#getChiSquare()"><CODE>getChiSquare()</CODE></A>), <code>n</code> is the number of
+ observations, <code>m</code> is the number of parameters and <code>C</code> is the
+ covariance matrix.
+ </p>
+ <p>
+ See also
+ <a href="http://en.wikipedia.org/wiki/Least_squares">Wikipedia</a>,
+ or
+ <a href="http://mathworld.wolfram.com/LeastSquaresFitting.html">MathWorld</a>,
+ equations (34) and (35) for a particular case.
+ </p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>an estimate of the standard deviation of the optimized parameters
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/linear/SingularMatrixException.html" title="class in org.apache.commons.math3.linear">SingularMatrixException</A></CODE> - if the covariance matrix cannot be computed.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the number of degrees of freedom is not
+ positive, i.e. the number of measurements is less or equal to the number of
+ parameters.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeSigma(double[], double)"><!-- --></A><H3>
+computeSigma</H3>
+<PRE>
+public double[] <B>computeSigma</B>(double[]&nbsp;params,
+                             double&nbsp;covarianceSingularityThreshold)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Computes an estimate of the standard deviation of the parameters. The
+ returned values are the square root of the diagonal coefficients of the
+ covariance matrix, <code>sd(a[i]) ~= sqrt(C[i][i])</code>, where <code>a[i]</code>
+ is the optimized value of the <code>i</code>-th parameter, and <code>C</code> is
+ the covariance matrix.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>params</CODE> - Model parameters.<DD><CODE>covarianceSingularityThreshold</CODE> - Singularity threshold (see
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html#computeCovariances(double[], double)"><CODE>computeCovariances</CODE></A>).
+<DT><B>Returns:</B><DD>an estimate of the standard deviation of the optimized parameters
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/linear/SingularMatrixException.html" title="class in org.apache.commons.math3.linear">SingularMatrixException</A></CODE> - if the covariance matrix cannot be computed.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="optimize(int, org.apache.commons.math3.analysis.DifferentiableMultivariateVectorFunction, double[], double[], double[])"><!-- --></A><H3>
+optimize</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public <A HREF="../../../../../../org/apache/commons/math3/optimization/PointVectorValuePair.html" title="class in org.apache.commons.math3.optimization">PointVectorValuePair</A> <B>optimize</B>(int&nbsp;maxEval,
+                                                <A HREF="../../../../../../org/apache/commons/math3/analysis/DifferentiableMultivariateVectorFunction.html" title="interface in org.apache.commons.math3.analysis">DifferentiableMultivariateVectorFunction</A>&nbsp;f,
+                                                double[]&nbsp;target,
+                                                double[]&nbsp;weights,
+                                                double[]&nbsp;startPoint)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.OptimizationData...)"><CODE>optimize(int,MultivariateDifferentiableVectorFunction,OptimizationData...)</CODE></A>
+ instead.</I>
+<P>
+<DD>Optimize an objective function.
+ Optimization is considered to be a weighted least-squares minimization.
+ The cost function to be minimized is
+ <code>&sum;weight<sub>i</sub>(objective<sub>i</sub> - target<sub>i</sub>)<sup>2</sup></code>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/optimization/BaseMultivariateVectorOptimizer.html#optimize(int, FUNC, double[], double[], double[])">optimize</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/optimization/BaseMultivariateVectorOptimizer.html" title="interface in org.apache.commons.math3.optimization">BaseMultivariateVectorOptimizer</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/analysis/DifferentiableMultivariateVectorFunction.html" title="interface in org.apache.commons.math3.analysis">DifferentiableMultivariateVectorFunction</A>&gt;</CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#optimize(int, FUNC, double[], double[], double[])">optimize</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html" title="class in org.apache.commons.math3.optimization.direct">BaseAbstractMultivariateVectorOptimizer</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/analysis/DifferentiableMultivariateVectorFunction.html" title="interface in org.apache.commons.math3.analysis">DifferentiableMultivariateVectorFunction</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>maxEval</CODE> - Maximum number of function evaluations.<DD><CODE>f</CODE> - Objective function.<DD><CODE>target</CODE> - Target value for the objective functions at optimum.<DD><CODE>weights</CODE> - Weights for the least squares cost computation.<DD><CODE>startPoint</CODE> - Start point for optimization.
+<DT><B>Returns:</B><DD>the point/value pair giving the optimal value for objective
+ function.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="optimize(int, org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableVectorFunction, double[], double[], double[])"><!-- --></A><H3>
+optimize</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public <A HREF="../../../../../../org/apache/commons/math3/optimization/PointVectorValuePair.html" title="class in org.apache.commons.math3.optimization">PointVectorValuePair</A> <B>optimize</B>(int&nbsp;maxEval,
+                                                <A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/MultivariateDifferentiableVectorFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">MultivariateDifferentiableVectorFunction</A>&nbsp;f,
+                                                double[]&nbsp;target,
+                                                double[]&nbsp;weights,
+                                                double[]&nbsp;startPoint)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.OptimizationData...)"><CODE>optimize(int,MultivariateDifferentiableVectorFunction,OptimizationData...)</CODE></A>
+ instead.</I>
+<P>
+<DD>Optimize an objective function.
+ Optimization is considered to be a weighted least-squares minimization.
+ The cost function to be minimized is
+ <code>&sum;weight<sub>i</sub>(objective<sub>i</sub> - target<sub>i</sub>)<sup>2</sup></code>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>f</CODE> - Objective function.<DD><CODE>target</CODE> - Target value for the objective functions at optimum.<DD><CODE>weights</CODE> - Weights for the least squares cost computation.<DD><CODE>startPoint</CODE> - Start point for optimization.<DD><CODE>maxEval</CODE> - Maximum number of function evaluations.
+<DT><B>Returns:</B><DD>the point/value pair giving the optimal value for objective
+ function.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the start point dimension is wrong.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A></CODE> - if the maximal number of evaluations is exceeded.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if
+ any argument is <code>null</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="optimizeInternal(int, org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableVectorFunction, org.apache.commons.math3.optimization.OptimizationData...)"><!-- --></A><H3>
+optimizeInternal</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>protected <A HREF="../../../../../../org/apache/commons/math3/optimization/PointVectorValuePair.html" title="class in org.apache.commons.math3.optimization">PointVectorValuePair</A> <B>optimizeInternal</B>(int&nbsp;maxEval,
+                                                           <A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/MultivariateDifferentiableVectorFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">MultivariateDifferentiableVectorFunction</A>&nbsp;f,
+                                                           <A HREF="../../../../../../org/apache/commons/math3/optimization/OptimizationData.html" title="interface in org.apache.commons.math3.optimization">OptimizationData</A>...&nbsp;optData)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Override is necessary only until this class's generic
+ argument is changed to <code>MultivariateDifferentiableVectorFunction</code>.</I>
+<P>
+<DD>Optimize an objective function.
+ Optimization is considered to be a weighted least-squares minimization.
+ The cost function to be minimized is
+ <code>&sum;weight<sub>i</sub>(objective<sub>i</sub> - target<sub>i</sub>)<sup>2</sup></code>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>maxEval</CODE> - Allowed number of evaluations of the objective function.<DD><CODE>f</CODE> - Objective function.<DD><CODE>optData</CODE> - Optimization data. The following data will be looked for:
+ <ul>
+  <li><A HREF="../../../../../../org/apache/commons/math3/optimization/Target.html" title="class in org.apache.commons.math3.optimization"><CODE>Target</CODE></A></li>
+  <li><A HREF="../../../../../../org/apache/commons/math3/optimization/Weight.html" title="class in org.apache.commons.math3.optimization"><CODE>Weight</CODE></A></li>
+  <li><A HREF="../../../../../../org/apache/commons/math3/optimization/InitialGuess.html" title="class in org.apache.commons.math3.optimization"><CODE>InitialGuess</CODE></A></li>
+ </ul>
+<DT><B>Returns:</B><DD>the point/value pair giving the optimal value of the objective
+ function.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A></CODE> - if
+ the maximal number of evaluations is exceeded.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the target, and weight arguments
+ have inconsistent dimensions.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#optimizeInternal(int, FUNC, org.apache.commons.math3.optimization.OptimizationData...)"><CODE>BaseAbstractMultivariateVectorOptimizer.optimizeInternal(int,MultivariateVectorFunction,OptimizationData[])</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUp()"><!-- --></A><H3>
+setUp</H3>
+<PRE>
+protected void <B>setUp</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Method which a subclass <em>must</em> override whenever its internal
+ state depend on the <A HREF="../../../../../../org/apache/commons/math3/optimization/OptimizationData.html" title="interface in org.apache.commons.math3.optimization"><CODE>input</CODE></A> parsed by this base
+ class.
+ It will be called after the parsing step performed in the
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.OptimizationData...)"><CODE>optimize</CODE></A> method and just before <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#doOptimize()"><CODE>BaseAbstractMultivariateVectorOptimizer.doOptimize()</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#setUp()">setUp</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html" title="class in org.apache.commons.math3.optimization.direct">BaseAbstractMultivariateVectorOptimizer</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/analysis/DifferentiableMultivariateVectorFunction.html" title="interface in org.apache.commons.math3.analysis">DifferentiableMultivariateVectorFunction</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeResiduals(double[])"><!-- --></A><H3>
+computeResiduals</H3>
+<PRE>
+protected double[] <B>computeResiduals</B>(double[]&nbsp;objectiveValue)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Computes the residuals.
+ The residual is the difference between the observed (target)
+ values and the model (objective function) value.
+ There is one residual for each element of the vector-valued
+ function.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>objectiveValue</CODE> - Value of the the objective function. This is
+ the value returned from a call to
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.html#computeObjectiveValue(double[])"><CODE>computeObjectiveValue</CODE></A>
+ (whose array argument contains the model parameters).
+<DT><B>Returns:</B><DD>the residuals.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>params</code> has a wrong
+ length.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractLeastSquaresOptimizer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractDifferentiableOptimizer.html" title="class in org.apache.commons.math3.optimization.general"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractScalarDifferentiableOptimizer.html" title="class in org.apache.commons.math3.optimization.general"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractLeastSquaresOptimizer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

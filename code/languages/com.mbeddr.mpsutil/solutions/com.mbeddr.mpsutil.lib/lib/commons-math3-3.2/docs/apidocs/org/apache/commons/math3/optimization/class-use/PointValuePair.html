@@ -1,0 +1,781 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Class org.apache.commons.math3.optimization.PointValuePair (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class org.apache.commons.math3.optimization.PointValuePair (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/optimization//class-usePointValuePair.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="PointValuePair.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Class<br>org.apache.commons.math3.optimization.PointValuePair</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optimization"><B>org.apache.commons.math3.optimization</B></A></TD>
+<TD>All classes and sub-packages of this package are deprecated.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optimization.direct"><B>org.apache.commons.math3.optimization.direct</B></A></TD>
+<TD>
+ This package provides optimization algorithms that don't require derivatives.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optimization.general"><B>org.apache.commons.math3.optimization.general</B></A></TD>
+<TD>This package provides optimization algorithms that require derivatives.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optimization.linear"><B>org.apache.commons.math3.optimization.linear</B></A></TD>
+<TD>This package provides optimization algorithms for linear constrained problems.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optimization"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A> in <A HREF="../../../../../../org/apache/commons/math3/optimization/package-summary.html">org.apache.commons.math3.optimization</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optimization/package-summary.html">org.apache.commons.math3.optimization</A> that return <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>[]</CODE></FONT></TD>
+<TD><CODE><B>BaseMultivariateMultiStartOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html#getOptima()">getOptima</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get all the optima found during the last call to <A HREF="../../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, double[])"><CODE>optimize</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>BaseMultivariateMultiStartOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, double[])">optimize</A></B>(int&nbsp;maxEval,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html" title="type parameter in BaseMultivariateMultiStartOptimizer">FUNC</A>&nbsp;f,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goal,
+         double[]&nbsp;startPoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimize an objective function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>BaseMultivariateOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/BaseMultivariateOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, double[])">optimize</A></B>(int&nbsp;maxEval,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/BaseMultivariateOptimizer.html" title="type parameter in BaseMultivariateOptimizer">FUNC</A>&nbsp;f,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+         double[]&nbsp;startPoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. In 4.0, it will be replaced by the declaration
+ corresponding to this <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, org.apache.commons.math3.optimization.OptimizationData...)"><CODE>method</CODE></A>.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>BaseMultivariateSimpleBoundsOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/BaseMultivariateSimpleBoundsOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, double[], double[], double[])">optimize</A></B>(int&nbsp;maxEval,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/BaseMultivariateSimpleBoundsOptimizer.html" title="type parameter in BaseMultivariateSimpleBoundsOptimizer">FUNC</A>&nbsp;f,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+         double[]&nbsp;startPoint,
+         double[]&nbsp;lowerBound,
+         double[]&nbsp;upperBound)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimize an objective function.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optimization/package-summary.html">org.apache.commons.math3.optimization</A> that return types with arguments of type <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>BaseMultivariateMultiStartOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html#getConvergenceChecker()">getConvergenceChecker</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get the convergence checker.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optimization/package-summary.html">org.apache.commons.math3.optimization</A> with parameters of type <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>SimpleValueChecker.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/SimpleValueChecker.html#converged(int, org.apache.commons.math3.optimization.PointValuePair, org.apache.commons.math3.optimization.PointValuePair)">converged</A></B>(int&nbsp;iteration,
+          <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&nbsp;previous,
+          <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&nbsp;current)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Check if the optimization algorithm has converged considering the
+ last two points.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optimization.direct"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A> in <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/package-summary.html">org.apache.commons.math3.optimization.direct</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/package-summary.html">org.apache.commons.math3.optimization.direct</A> that return <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>BaseAbstractMultivariateOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html#doOptimize()">doOptimize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Perform the bulk of the optimization algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>CMAESOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/CMAESOptimizer.html#doOptimize()">doOptimize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Perform the bulk of the optimization algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>PowellOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/PowellOptimizer.html#doOptimize()">doOptimize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Perform the bulk of the optimization algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>SimplexOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/SimplexOptimizer.html#doOptimize()">doOptimize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Perform the bulk of the optimization algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>BOBYQAOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BOBYQAOptimizer.html#doOptimize()">doOptimize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Perform the bulk of the optimization algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractSimplex.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/AbstractSimplex.html#getPoint(int)">getPoint</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get the simplex point stored at the requested <code>index</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>[]</CODE></FONT></TD>
+<TD><CODE><B>AbstractSimplex.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/AbstractSimplex.html#getPoints()">getPoints</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get the points of the simplex.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>BaseAbstractMultivariateOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, double[])">optimize</A></B>(int&nbsp;maxEval,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html" title="type parameter in BaseAbstractMultivariateOptimizer">FUNC</A>&nbsp;f,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+         double[]&nbsp;startPoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, org.apache.commons.math3.optimization.OptimizationData...)"><CODE>BaseAbstractMultivariateOptimizer.optimize(int,MultivariateFunction,GoalType,OptimizationData[])</CODE></A>
+ instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>BaseAbstractMultivariateSimpleBoundsOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateSimpleBoundsOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, double[])">optimize</A></B>(int&nbsp;maxEval,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateSimpleBoundsOptimizer.html" title="type parameter in BaseAbstractMultivariateSimpleBoundsOptimizer">FUNC</A>&nbsp;f,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+         double[]&nbsp;startPoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimize an objective function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>BaseAbstractMultivariateSimpleBoundsOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateSimpleBoundsOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, double[], double[], double[])">optimize</A></B>(int&nbsp;maxEval,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateSimpleBoundsOptimizer.html" title="type parameter in BaseAbstractMultivariateSimpleBoundsOptimizer">FUNC</A>&nbsp;f,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+         double[]&nbsp;startPoint,
+         double[]&nbsp;lower,
+         double[]&nbsp;upper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimize an objective function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>BaseAbstractMultivariateOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, org.apache.commons.math3.optimization.OptimizationData...)">optimize</A></B>(int&nbsp;maxEval,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html" title="type parameter in BaseAbstractMultivariateOptimizer">FUNC</A>&nbsp;f,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/OptimizationData.html" title="interface in org.apache.commons.math3.optimization">OptimizationData</A>...&nbsp;optData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimize an objective function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>BaseAbstractMultivariateOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html#optimizeInternal(int, FUNC, org.apache.commons.math3.optimization.GoalType, double[])">optimizeInternal</A></B>(int&nbsp;maxEval,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html" title="type parameter in BaseAbstractMultivariateOptimizer">FUNC</A>&nbsp;f,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+                 double[]&nbsp;startPoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, org.apache.commons.math3.optimization.OptimizationData...)"><CODE>BaseAbstractMultivariateOptimizer.optimize(int,MultivariateFunction,GoalType,OptimizationData[])</CODE></A>
+ instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>BaseAbstractMultivariateOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html#optimizeInternal(int, FUNC, org.apache.commons.math3.optimization.GoalType, org.apache.commons.math3.optimization.OptimizationData...)">optimizeInternal</A></B>(int&nbsp;maxEval,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html" title="type parameter in BaseAbstractMultivariateOptimizer">FUNC</A>&nbsp;f,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/OptimizationData.html" title="interface in org.apache.commons.math3.optimization">OptimizationData</A>...&nbsp;optData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimize an objective function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>CMAESOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/CMAESOptimizer.html#optimizeInternal(int, org.apache.commons.math3.analysis.MultivariateFunction, org.apache.commons.math3.optimization.GoalType, org.apache.commons.math3.optimization.OptimizationData...)">optimizeInternal</A></B>(int&nbsp;maxEval,
+                 <A HREF="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A>&nbsp;f,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/OptimizationData.html" title="interface in org.apache.commons.math3.optimization">OptimizationData</A>...&nbsp;optData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimize an objective function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>SimplexOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/SimplexOptimizer.html#optimizeInternal(int, org.apache.commons.math3.analysis.MultivariateFunction, org.apache.commons.math3.optimization.GoalType, org.apache.commons.math3.optimization.OptimizationData...)">optimizeInternal</A></B>(int&nbsp;maxEval,
+                 <A HREF="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A>&nbsp;f,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/OptimizationData.html" title="interface in org.apache.commons.math3.optimization">OptimizationData</A>...&nbsp;optData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimize an objective function.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/package-summary.html">org.apache.commons.math3.optimization.direct</A> that return types with arguments of type <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>BaseAbstractMultivariateOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html#getConvergenceChecker()">getConvergenceChecker</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get the convergence checker.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/package-summary.html">org.apache.commons.math3.optimization.direct</A> with parameters of type <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractSimplex.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/AbstractSimplex.html#replaceWorstPoint(org.apache.commons.math3.optimization.PointValuePair, java.util.Comparator)">replaceWorstPoint</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&nbsp;pointValuePair,
+                  <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;comparator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Replace the worst point of the simplex by a new point.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractSimplex.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/AbstractSimplex.html#setPoint(int, org.apache.commons.math3.optimization.PointValuePair)">setPoint</A></B>(int&nbsp;index,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Store a new point at location <code>index</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractSimplex.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/AbstractSimplex.html#setPoints(org.apache.commons.math3.optimization.PointValuePair[])">setPoints</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>[]&nbsp;points)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Replace all points.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Method parameters in <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/package-summary.html">org.apache.commons.math3.optimization.direct</A> with type arguments of type <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractSimplex.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/AbstractSimplex.html#evaluate(org.apache.commons.math3.analysis.MultivariateFunction, java.util.Comparator)">evaluate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A>&nbsp;evaluationFunction,
+         <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;comparator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Evaluate all the non-evaluated points of the simplex.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultiDirectionalSimplex.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/MultiDirectionalSimplex.html#iterate(org.apache.commons.math3.analysis.MultivariateFunction, java.util.Comparator)">iterate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A>&nbsp;evaluationFunction,
+        <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;comparator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Compute the next simplex of the algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractSimplex.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/AbstractSimplex.html#iterate(org.apache.commons.math3.analysis.MultivariateFunction, java.util.Comparator)">iterate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A>&nbsp;evaluationFunction,
+        <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;comparator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Compute the next simplex of the algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>NelderMeadSimplex.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/NelderMeadSimplex.html#iterate(org.apache.commons.math3.analysis.MultivariateFunction, java.util.Comparator)">iterate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A>&nbsp;evaluationFunction,
+        <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;comparator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Compute the next simplex of the algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractSimplex.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/AbstractSimplex.html#replaceWorstPoint(org.apache.commons.math3.optimization.PointValuePair, java.util.Comparator)">replaceWorstPoint</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&nbsp;pointValuePair,
+                  <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;comparator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Replace the worst point of the simplex by a new point.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructor parameters in <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/package-summary.html">org.apache.commons.math3.optimization.direct</A> with type arguments of type <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html#BaseAbstractMultivariateOptimizer(org.apache.commons.math3.optimization.ConvergenceChecker)">BaseAbstractMultivariateOptimizer</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;checker)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateSimpleBoundsOptimizer.html#BaseAbstractMultivariateSimpleBoundsOptimizer(org.apache.commons.math3.optimization.ConvergenceChecker)">BaseAbstractMultivariateSimpleBoundsOptimizer</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;checker)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/CMAESOptimizer.html#CMAESOptimizer(int, double[], int, double, boolean, int, int, org.apache.commons.math3.random.RandomGenerator, boolean, org.apache.commons.math3.optimization.ConvergenceChecker)">CMAESOptimizer</A></B>(int&nbsp;lambda,
+               double[]&nbsp;inputSigma,
+               int&nbsp;maxIterations,
+               double&nbsp;stopFitness,
+               boolean&nbsp;isActiveCMA,
+               int&nbsp;diagonalOnly,
+               int&nbsp;checkFeasableCount,
+               <A HREF="../../../../../../org/apache/commons/math3/random/RandomGenerator.html" title="interface in org.apache.commons.math3.random">RandomGenerator</A>&nbsp;random,
+               boolean&nbsp;generateStatistics,
+               <A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;checker)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of version 3.1: Parameters <code>lambda</code> and <code>inputSigma</code> must be
+ passed with the call to <A HREF="../../../../../../org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, org.apache.commons.math3.optimization.OptimizationData...)"><CODE>optimize</CODE></A>.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/CMAESOptimizer.html#CMAESOptimizer(int, double, boolean, int, int, org.apache.commons.math3.random.RandomGenerator, boolean, org.apache.commons.math3.optimization.ConvergenceChecker)">CMAESOptimizer</A></B>(int&nbsp;maxIterations,
+               double&nbsp;stopFitness,
+               boolean&nbsp;isActiveCMA,
+               int&nbsp;diagonalOnly,
+               int&nbsp;checkFeasableCount,
+               <A HREF="../../../../../../org/apache/commons/math3/random/RandomGenerator.html" title="interface in org.apache.commons.math3.random">RandomGenerator</A>&nbsp;random,
+               boolean&nbsp;generateStatistics,
+               <A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;checker)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/PowellOptimizer.html#PowellOptimizer(double, double, org.apache.commons.math3.optimization.ConvergenceChecker)">PowellOptimizer</A></B>(double&nbsp;rel,
+                double&nbsp;abs,
+                <A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;checker)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;This constructor allows to specify a user-defined convergence checker,
+ in addition to the parameters that control the default convergence
+ checking procedure.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/PowellOptimizer.html#PowellOptimizer(double, double, double, double, org.apache.commons.math3.optimization.ConvergenceChecker)">PowellOptimizer</A></B>(double&nbsp;rel,
+                double&nbsp;abs,
+                double&nbsp;lineRel,
+                double&nbsp;lineAbs,
+                <A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;checker)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;This constructor allows to specify a user-defined convergence checker,
+ in addition to the parameters that control the default convergence
+ checking procedure and the line search tolerances.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/direct/SimplexOptimizer.html#SimplexOptimizer(org.apache.commons.math3.optimization.ConvergenceChecker)">SimplexOptimizer</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;checker)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optimization.general"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A> in <A HREF="../../../../../../org/apache/commons/math3/optimization/general/package-summary.html">org.apache.commons.math3.optimization.general</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optimization/general/package-summary.html">org.apache.commons.math3.optimization.general</A> that return <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>NonLinearConjugateGradientOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/NonLinearConjugateGradientOptimizer.html#doOptimize()">doOptimize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Perform the bulk of the optimization algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractScalarDifferentiableOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractScalarDifferentiableOptimizer.html#optimize(int, org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction, org.apache.commons.math3.optimization.GoalType, double[])">optimize</A></B>(int&nbsp;maxEval,
+         <A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/MultivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">MultivariateDifferentiableFunction</A>&nbsp;f,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+         double[]&nbsp;startPoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimize an objective function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractScalarDifferentiableOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractScalarDifferentiableOptimizer.html#optimizeInternal(int, org.apache.commons.math3.analysis.DifferentiableMultivariateFunction, org.apache.commons.math3.optimization.GoalType, double[])">optimizeInternal</A></B>(int&nbsp;maxEval,
+                 <A HREF="../../../../../../org/apache/commons/math3/analysis/DifferentiableMultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">DifferentiableMultivariateFunction</A>&nbsp;f,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+                 double[]&nbsp;startPoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimize an objective function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractDifferentiableOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractDifferentiableOptimizer.html#optimizeInternal(int, org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction, org.apache.commons.math3.optimization.GoalType, double[])">optimizeInternal</A></B>(int&nbsp;maxEval,
+                 <A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/MultivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">MultivariateDifferentiableFunction</A>&nbsp;f,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+                 double[]&nbsp;startPoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>In 3.1. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractDifferentiableOptimizer.html#optimizeInternal(int, org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction, org.apache.commons.math3.optimization.GoalType, org.apache.commons.math3.optimization.OptimizationData...)"><CODE>AbstractDifferentiableOptimizer.optimizeInternal(int,MultivariateDifferentiableFunction,GoalType,OptimizationData[])</CODE></A>
+ instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractDifferentiableOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractDifferentiableOptimizer.html#optimizeInternal(int, org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction, org.apache.commons.math3.optimization.GoalType, org.apache.commons.math3.optimization.OptimizationData...)">optimizeInternal</A></B>(int&nbsp;maxEval,
+                 <A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/MultivariateDifferentiableFunction.html" title="interface in org.apache.commons.math3.analysis.differentiation">MultivariateDifferentiableFunction</A>&nbsp;f,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/OptimizationData.html" title="interface in org.apache.commons.math3.optimization">OptimizationData</A>...&nbsp;optData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimize an objective function.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructor parameters in <A HREF="../../../../../../org/apache/commons/math3/optimization/general/package-summary.html">org.apache.commons.math3.optimization.general</A> with type arguments of type <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractDifferentiableOptimizer.html#AbstractDifferentiableOptimizer(org.apache.commons.math3.optimization.ConvergenceChecker)">AbstractDifferentiableOptimizer</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;checker)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/AbstractScalarDifferentiableOptimizer.html#AbstractScalarDifferentiableOptimizer(org.apache.commons.math3.optimization.ConvergenceChecker)">AbstractScalarDifferentiableOptimizer</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;checker)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/NonLinearConjugateGradientOptimizer.html#NonLinearConjugateGradientOptimizer(org.apache.commons.math3.optimization.general.ConjugateGradientFormula, org.apache.commons.math3.optimization.ConvergenceChecker)">NonLinearConjugateGradientOptimizer</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/general/ConjugateGradientFormula.html" title="enum in org.apache.commons.math3.optimization.general">ConjugateGradientFormula</A>&nbsp;updateFormula,
+                                    <A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;checker)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Constructor with default <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BrentSolver.html" title="class in org.apache.commons.math3.analysis.solvers"><CODE>line search solver</CODE></A> and
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/general/NonLinearConjugateGradientOptimizer.IdentityPreconditioner.html" title="class in org.apache.commons.math3.optimization.general"><CODE>preconditioner</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/NonLinearConjugateGradientOptimizer.html#NonLinearConjugateGradientOptimizer(org.apache.commons.math3.optimization.general.ConjugateGradientFormula, org.apache.commons.math3.optimization.ConvergenceChecker, org.apache.commons.math3.analysis.solvers.UnivariateSolver)">NonLinearConjugateGradientOptimizer</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/general/ConjugateGradientFormula.html" title="enum in org.apache.commons.math3.optimization.general">ConjugateGradientFormula</A>&nbsp;updateFormula,
+                                    <A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;checker,
+                                    <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/UnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers">UnivariateSolver</A>&nbsp;lineSearchSolver)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Constructor with default <A HREF="../../../../../../org/apache/commons/math3/optimization/general/NonLinearConjugateGradientOptimizer.IdentityPreconditioner.html" title="class in org.apache.commons.math3.optimization.general"><CODE>preconditioner</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/general/NonLinearConjugateGradientOptimizer.html#NonLinearConjugateGradientOptimizer(org.apache.commons.math3.optimization.general.ConjugateGradientFormula, org.apache.commons.math3.optimization.ConvergenceChecker, org.apache.commons.math3.analysis.solvers.UnivariateSolver, org.apache.commons.math3.optimization.general.Preconditioner)">NonLinearConjugateGradientOptimizer</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/general/ConjugateGradientFormula.html" title="enum in org.apache.commons.math3.optimization.general">ConjugateGradientFormula</A>&nbsp;updateFormula,
+                                    <A HREF="../../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="interface in org.apache.commons.math3.optimization">ConvergenceChecker</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;&nbsp;checker,
+                                    <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/UnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers">UnivariateSolver</A>&nbsp;lineSearchSolver,
+                                    <A HREF="../../../../../../org/apache/commons/math3/optimization/general/Preconditioner.html" title="interface in org.apache.commons.math3.optimization.general">Preconditioner</A>&nbsp;preconditioner)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optimization.linear"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A> in <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/package-summary.html">org.apache.commons.math3.optimization.linear</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/package-summary.html">org.apache.commons.math3.optimization.linear</A> that return <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractLinearOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/AbstractLinearOptimizer.html#doOptimize()">doOptimize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Perform the bulk of optimization algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>SimplexSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/SimplexSolver.html#doOptimize()">doOptimize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Perform the bulk of optimization algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractLinearOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/AbstractLinearOptimizer.html#optimize(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction, java.util.Collection, org.apache.commons.math3.optimization.GoalType, boolean)">optimize</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearObjectiveFunction.html" title="class in org.apache.commons.math3.optimization.linear">LinearObjectiveFunction</A>&nbsp;f,
+         <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearConstraint.html" title="class in org.apache.commons.math3.optimization.linear">LinearConstraint</A>&gt;&nbsp;constraints,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+         boolean&nbsp;restrictToNonNegative)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimizes an objective function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>LinearOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearOptimizer.html#optimize(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction, java.util.Collection, org.apache.commons.math3.optimization.GoalType, boolean)">optimize</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearObjectiveFunction.html" title="class in org.apache.commons.math3.optimization.linear">LinearObjectiveFunction</A>&nbsp;f,
+         <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearConstraint.html" title="class in org.apache.commons.math3.optimization.linear">LinearConstraint</A>&gt;&nbsp;constraints,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+         boolean&nbsp;restrictToNonNegative)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimizes an objective function.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/optimization//class-usePointValuePair.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="PointValuePair.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

@@ -1,0 +1,315 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+BracketedUnivariateSolver (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="BracketedUnivariateSolver (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/BracketedUnivariateSolver.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BisectionSolver.html" title="class in org.apache.commons.math3.analysis.solvers"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.html" title="class in org.apache.commons.math3.analysis.solvers"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/analysis/solvers/BracketedUnivariateSolver.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="BracketedUnivariateSolver.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.analysis.solvers</FONT>
+<BR>
+Interface BracketedUnivariateSolver&lt;FUNC extends <A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&gt;</H2>
+<DL>
+<DT><DT><B>Type Parameters:</B><DD><CODE>FUNC</CODE> - Type of function to solve.</DL>
+<DL>
+<DT><B>All Superinterfaces:</B> <DD><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers">BaseUnivariateSolver</A>&lt;FUNC&gt;</DD>
+</DL>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseSecantSolver.html" title="class in org.apache.commons.math3.analysis.solvers">BaseSecantSolver</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.html" title="class in org.apache.commons.math3.analysis.solvers">BracketingNthOrderBrentSolver</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/IllinoisSolver.html" title="class in org.apache.commons.math3.analysis.solvers">IllinoisSolver</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/PegasusSolver.html" title="class in org.apache.commons.math3.analysis.solvers">PegasusSolver</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/RegulaFalsiSolver.html" title="class in org.apache.commons.math3.analysis.solvers">RegulaFalsiSolver</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public interface <B>BracketedUnivariateSolver&lt;FUNC extends <A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&gt;</B><DT>extends <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers">BaseUnivariateSolver</A>&lt;FUNC&gt;</DL>
+</PRE>
+
+<P>
+Interface for <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/UnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers"><CODE>(univariate real) root-finding
+ algorithms</CODE></A> that maintain a bracketed solution. There are several advantages
+ to having such root-finding algorithms:
+ <ul>
+  <li>The bracketed solution guarantees that the root is kept within the
+      interval. As such, these algorithms generally also guarantee
+      convergence.</li>
+  <li>The bracketed solution means that we have the opportunity to only
+      return roots that are greater than or equal to the actual root, or
+      are less than or equal to the actual root. That is, we can control
+      whether under-approximations and over-approximations are
+      <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/AllowedSolution.html" title="enum in org.apache.commons.math3.analysis.solvers"><CODE>allowed solutions</CODE></A>. Other root-finding
+      algorithms can usually only guarantee that the solution (the root that
+      was found) is around the actual root.</li>
+ </ul>
+
+ <p>For backwards compatibility, all root-finding algorithms must have
+ <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/AllowedSolution.html#ANY_SIDE"><CODE>ANY_SIDE</CODE></A> as default for the allowed
+ solutions.</p>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>3.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: BracketedUnivariateSolver.java 1364387 2012-07-22 18:14:11Z tn $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/AllowedSolution.html" title="enum in org.apache.commons.math3.analysis.solvers"><CODE>AllowedSolution</CODE></A></DL>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BracketedUnivariateSolver.html#solve(int, FUNC, double, double, org.apache.commons.math3.analysis.solvers.AllowedSolution)">solve</A></B>(int&nbsp;maxEval,
+      <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BracketedUnivariateSolver.html" title="type parameter in BracketedUnivariateSolver">FUNC</A>&nbsp;f,
+      double&nbsp;min,
+      double&nbsp;max,
+      <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/AllowedSolution.html" title="enum in org.apache.commons.math3.analysis.solvers">AllowedSolution</A>&nbsp;allowedSolution)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solve for a zero in the given interval.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BracketedUnivariateSolver.html#solve(int, FUNC, double, double, double, org.apache.commons.math3.analysis.solvers.AllowedSolution)">solve</A></B>(int&nbsp;maxEval,
+      <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BracketedUnivariateSolver.html" title="type parameter in BracketedUnivariateSolver">FUNC</A>&nbsp;f,
+      double&nbsp;min,
+      double&nbsp;max,
+      double&nbsp;startValue,
+      <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/AllowedSolution.html" title="enum in org.apache.commons.math3.analysis.solvers">AllowedSolution</A>&nbsp;allowedSolution)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solve for a zero in the given interval, start at <code>startValue</code>.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.analysis.solvers.BaseUnivariateSolver"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.commons.math3.analysis.solvers.<A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers">BaseUnivariateSolver</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#getAbsoluteAccuracy()">getAbsoluteAccuracy</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#getEvaluations()">getEvaluations</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#getFunctionValueAccuracy()">getFunctionValueAccuracy</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#getMaxEvaluations()">getMaxEvaluations</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#getRelativeAccuracy()">getRelativeAccuracy</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#solve(int, FUNC, double)">solve</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#solve(int, FUNC, double, double)">solve</A>, <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#solve(int, FUNC, double, double, double)">solve</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="solve(int,org.apache.commons.math3.analysis.UnivariateFunction,double,double,org.apache.commons.math3.analysis.solvers.AllowedSolution)"><!-- --></A><A NAME="solve(int, FUNC, double, double, org.apache.commons.math3.analysis.solvers.AllowedSolution)"><!-- --></A><H3>
+solve</H3>
+<PRE>
+double <B>solve</B>(int&nbsp;maxEval,
+             <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BracketedUnivariateSolver.html" title="type parameter in BracketedUnivariateSolver">FUNC</A>&nbsp;f,
+             double&nbsp;min,
+             double&nbsp;max,
+             <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/AllowedSolution.html" title="enum in org.apache.commons.math3.analysis.solvers">AllowedSolution</A>&nbsp;allowedSolution)</PRE>
+<DL>
+<DD>Solve for a zero in the given interval.
+ A solver may require that the interval brackets a single zero root.
+ Solvers that do require bracketing should be able to handle the case
+ where one of the endpoints is itself a root.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>maxEval</CODE> - Maximum number of evaluations.<DD><CODE>f</CODE> - Function to solve.<DD><CODE>min</CODE> - Lower bound for the interval.<DD><CODE>max</CODE> - Upper bound for the interval.<DD><CODE>allowedSolution</CODE> - The kind of solutions that the root-finding algorithm may
+ accept as solutions.
+<DT><B>Returns:</B><DD>A value where the function is zero.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the arguments do not satisfy the requirements specified by the solver.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A></CODE> - if
+ the allowed number of evaluations is exceeded.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="solve(int,org.apache.commons.math3.analysis.UnivariateFunction,double,double,double,org.apache.commons.math3.analysis.solvers.AllowedSolution)"><!-- --></A><A NAME="solve(int, FUNC, double, double, double, org.apache.commons.math3.analysis.solvers.AllowedSolution)"><!-- --></A><H3>
+solve</H3>
+<PRE>
+double <B>solve</B>(int&nbsp;maxEval,
+             <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BracketedUnivariateSolver.html" title="type parameter in BracketedUnivariateSolver">FUNC</A>&nbsp;f,
+             double&nbsp;min,
+             double&nbsp;max,
+             double&nbsp;startValue,
+             <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/AllowedSolution.html" title="enum in org.apache.commons.math3.analysis.solvers">AllowedSolution</A>&nbsp;allowedSolution)</PRE>
+<DL>
+<DD>Solve for a zero in the given interval, start at <code>startValue</code>.
+ A solver may require that the interval brackets a single zero root.
+ Solvers that do require bracketing should be able to handle the case
+ where one of the endpoints is itself a root.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>maxEval</CODE> - Maximum number of evaluations.<DD><CODE>f</CODE> - Function to solve.<DD><CODE>min</CODE> - Lower bound for the interval.<DD><CODE>max</CODE> - Upper bound for the interval.<DD><CODE>startValue</CODE> - Start value to use.<DD><CODE>allowedSolution</CODE> - The kind of solutions that the root-finding algorithm may
+ accept as solutions.
+<DT><B>Returns:</B><DD>A value where the function is zero.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the arguments do not satisfy the requirements specified by the solver.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A></CODE> - if
+ the allowed number of evaluations is exceeded.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/BracketedUnivariateSolver.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BisectionSolver.html" title="class in org.apache.commons.math3.analysis.solvers"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.html" title="class in org.apache.commons.math3.analysis.solvers"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/analysis/solvers/BracketedUnivariateSolver.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="BracketedUnivariateSolver.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

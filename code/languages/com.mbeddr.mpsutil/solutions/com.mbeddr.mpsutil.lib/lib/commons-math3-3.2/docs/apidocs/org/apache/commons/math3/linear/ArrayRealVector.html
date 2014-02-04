@@ -1,0 +1,2090 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ArrayRealVector (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ArrayRealVector (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ArrayRealVector.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="class in org.apache.commons.math3.linear"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/linear/ArrayRealVector.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ArrayRealVector.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_org.apache.commons.math3.linear.RealVector">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.linear</FONT>
+<BR>
+Class ArrayRealVector</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">org.apache.commons.math3.linear.RealVector</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.linear.ArrayRealVector</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>ArrayRealVector</B><DT>extends <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A><DT>implements <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DL>
+</PRE>
+
+<P>
+This class implements the <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> interface with a double array.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: ArrayRealVector.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../serialized-form.html#org.apache.commons.math3.linear.ArrayRealVector">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_org.apache.commons.math3.linear.RealVector"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class org.apache.commons.math3.linear.<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.Entry.html" title="class in org.apache.commons.math3.linear">RealVector.Entry</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.SparseEntryIterator.html" title="class in org.apache.commons.math3.linear">RealVector.SparseEntryIterator</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector()">ArrayRealVector</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a 0-length vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(org.apache.commons.math3.linear.ArrayRealVector)">ArrayRealVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector from another vector, using a deep copy.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(org.apache.commons.math3.linear.ArrayRealVector, org.apache.commons.math3.linear.ArrayRealVector)">ArrayRealVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v1,
+                <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(org.apache.commons.math3.linear.ArrayRealVector, boolean)">ArrayRealVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v,
+                boolean&nbsp;deep)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector from another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(org.apache.commons.math3.linear.ArrayRealVector, double[])">ArrayRealVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v1,
+                double[]&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(org.apache.commons.math3.linear.ArrayRealVector, org.apache.commons.math3.linear.RealVector)">ArrayRealVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v1,
+                <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(double[])">ArrayRealVector</A></B>(double[]&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector from an array, copying the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(java.lang.Double[])">ArrayRealVector</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</A>[]&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector from an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(double[], org.apache.commons.math3.linear.ArrayRealVector)">ArrayRealVector</A></B>(double[]&nbsp;v1,
+                <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(double[], boolean)">ArrayRealVector</A></B>(double[]&nbsp;d,
+                boolean&nbsp;copyArray)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new ArrayRealVector using the input array as the underlying
+ data array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(double[], double[])">ArrayRealVector</A></B>(double[]&nbsp;v1,
+                double[]&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(double[], int, int)">ArrayRealVector</A></B>(double[]&nbsp;d,
+                int&nbsp;pos,
+                int&nbsp;size)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector from part of a array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(java.lang.Double[], int, int)">ArrayRealVector</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</A>[]&nbsp;d,
+                int&nbsp;pos,
+                int&nbsp;size)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector from part of an array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(int)">ArrayRealVector</A></B>(int&nbsp;size)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector of zeroes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(int, double)">ArrayRealVector</A></B>(int&nbsp;size,
+                double&nbsp;preset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector with preset values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(org.apache.commons.math3.linear.RealVector)">ArrayRealVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector from another vector, using a deep copy.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.ArrayRealVector)">ArrayRealVector</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v1,
+                <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#add(org.apache.commons.math3.linear.RealVector)">add</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the sum of this vector and <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#addToEntry(int, double)">addToEntry</A></B>(int&nbsp;index,
+           double&nbsp;increment)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change an entry at the specified index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#append(org.apache.commons.math3.linear.ArrayRealVector)">append</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending a vector to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#append(double)">append</A></B>(double&nbsp;in)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new vector by appending a double to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#append(org.apache.commons.math3.linear.RealVector)">append</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new vector by appending a vector to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#checkVectorDimensions(int)">checkVectorDimensions</A></B>(int&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if instance dimension is equal to some expected value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#checkVectorDimensions(org.apache.commons.math3.linear.RealVector)">checkVectorDimensions</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if instance and specified vectors have the same dimension.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#combine(double, double, org.apache.commons.math3.linear.RealVector)">combine</A></B>(double&nbsp;a,
+        double&nbsp;b,
+        <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a new vector representing <code>a * this + b * y</code>, the linear
+ combination of <code>this</code> and <code>y</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#combineToSelf(double, double, org.apache.commons.math3.linear.RealVector)">combineToSelf</A></B>(double&nbsp;a,
+              double&nbsp;b,
+              <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates <code>this</code> with the linear combination of <code>this</code> and
+ <code>y</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#copy()">copy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a (deep) copy of this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#dotProduct(org.apache.commons.math3.linear.RealVector)">dotProduct</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the dot product of this vector with <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ebeDivide(org.apache.commons.math3.linear.RealVector)">ebeDivide</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Element-by-element division.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ebeMultiply(org.apache.commons.math3.linear.RealVector)">ebeMultiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Element-by-element multiplication.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#equals(java.lang.Object)">equals</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;other)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Test for the equality of two real vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getDataRef()">getDataRef</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a reference to the underlying data array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getDimension()">getDimension</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the size of the vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getDistance(org.apache.commons.math3.linear.RealVector)">getDistance</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getEntry(int)">getEntry</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the entry at the specified index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getL1Distance(org.apache.commons.math3.linear.RealVector)">getL1Distance</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getL1Norm()">getL1Norm</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the L<sub>1</sub> norm of the vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getLInfDistance(org.apache.commons.math3.linear.RealVector)">getLInfDistance</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getLInfNorm()">getLInfNorm</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the L<sub>&infin;</sub> norm of the vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getNorm()">getNorm</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the L<sub>2</sub> norm of the vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getSubVector(int, int)">getSubVector</A></B>(int&nbsp;index,
+             int&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a subvector from consecutive elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#hashCode()">hashCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#isInfinite()">isInfinite</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check whether any coordinate of this vector is infinite and none
+ are <code>NaN</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#isNaN()">isNaN</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if any coordinate of this vector is <code>NaN</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#map(org.apache.commons.math3.analysis.UnivariateFunction)">map</A></B>(<A HREF="../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;function)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acts as if implemented as:
+ 
+  return copy().mapToSelf(function);
+ 
+ Returns a new vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#mapAddToSelf(double)">mapAddToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a value to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#mapDivideToSelf(double)">mapDivideToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Divide each entry by the argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#mapMultiplyToSelf(double)">mapMultiplyToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiply each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#mapSubtractToSelf(double)">mapSubtractToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract a value from each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#mapToSelf(org.apache.commons.math3.analysis.UnivariateFunction)">mapToSelf</A></B>(<A HREF="../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;function)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acts as if it is implemented as:
+ 
+  Entry e = null;
+  for(Iterator<Entry> it = iterator(); it.hasNext(); e = it.next()) {
+      e.setValue(function.value(e.getValue()));
+  }
+ 
+ Entries of this vector are modified in-place by this method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#outerProduct(org.apache.commons.math3.linear.RealVector)">outerProduct</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the outer product.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#set(double)">set</A></B>(double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set all elements to a single value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#setEntry(int, double)">setEntry</A></B>(int&nbsp;index,
+         double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set a single element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#setSubVector(int, double[])">setSubVector</A></B>(int&nbsp;index,
+             double[]&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set a set of consecutive elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#setSubVector(int, org.apache.commons.math3.linear.RealVector)">setSubVector</A></B>(int&nbsp;index,
+             <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set a sequence of consecutive elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#subtract(org.apache.commons.math3.linear.RealVector)">subtract</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract <code>v</code> from this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#toArray()">toArray</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convert the vector to an array of <code>double</code>s.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#toString()">toString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor)">walkInDefaultOrder</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorChangingVisitor</A>&nbsp;visitor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits (and possibly alters) all entries of this vector in default order
+ (increasing index).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor, int, int)">walkInDefaultOrder</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorChangingVisitor</A>&nbsp;visitor,
+                   int&nbsp;start,
+                   int&nbsp;end)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits (and possibly alters) some entries of this vector in default order
+ (increasing index).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor)">walkInDefaultOrder</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorPreservingVisitor</A>&nbsp;visitor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits (but does not alter) all entries of this vector in default order
+ (increasing index).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor, int, int)">walkInDefaultOrder</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorPreservingVisitor</A>&nbsp;visitor,
+                   int&nbsp;start,
+                   int&nbsp;end)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits (but does not alter) some entries of this vector in default order
+ (increasing index).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor)">walkInOptimizedOrder</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorChangingVisitor</A>&nbsp;visitor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits (and possibly alters) all entries of this vector in optimized
+ order.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor, int, int)">walkInOptimizedOrder</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorChangingVisitor</A>&nbsp;visitor,
+                     int&nbsp;start,
+                     int&nbsp;end)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits (and possibly change) some entries of this vector in optimized
+ order.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor)">walkInOptimizedOrder</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorPreservingVisitor</A>&nbsp;visitor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits (but does not alter) all entries of this vector in optimized
+ order.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor, int, int)">walkInOptimizedOrder</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorPreservingVisitor</A>&nbsp;visitor,
+                     int&nbsp;start,
+                     int&nbsp;end)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits (but does not alter) some entries of this vector in optimized
+ order.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.linear.RealVector"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.linear.<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#checkIndex(int)">checkIndex</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#checkIndices(int, int)">checkIndices</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#cosine(org.apache.commons.math3.linear.RealVector)">cosine</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getMaxIndex()">getMaxIndex</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getMaxValue()">getMaxValue</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getMinIndex()">getMinIndex</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getMinValue()">getMinValue</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#iterator()">iterator</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapAdd(double)">mapAdd</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapDivide(double)">mapDivide</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapMultiply(double)">mapMultiply</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapSubtract(double)">mapSubtract</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#projection(org.apache.commons.math3.linear.RealVector)">projection</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#sparseIterator()">sparseIterator</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#unitize()">unitize</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#unitVector()">unitVector</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#unmodifiableRealVector(org.apache.commons.math3.linear.RealVector)">unmodifiableRealVector</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ArrayRealVector()"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>()</PRE>
+<DL>
+<DD>Build a 0-length vector.
+ Zero-length vectors may be used to initialized construction of vectors
+ by data gathering. We start with zero-length and use either the <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(org.apache.commons.math3.linear.ArrayRealVector, org.apache.commons.math3.linear.ArrayRealVector)"><CODE>ArrayRealVector(ArrayRealVector, ArrayRealVector)</CODE></A> constructor
+ or one of the <code>append</code> method (<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#append(double)"><CODE>append(double)</CODE></A>,
+ <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#append(org.apache.commons.math3.linear.ArrayRealVector)"><CODE>append(ArrayRealVector)</CODE></A>) to gather data into this vector.
+<P>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(int)"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(int&nbsp;size)</PRE>
+<DL>
+<DD>Construct a vector of zeroes.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>size</CODE> - Size of the vector.</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(int, double)"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(int&nbsp;size,
+                       double&nbsp;preset)</PRE>
+<DL>
+<DD>Construct a vector with preset values.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>size</CODE> - Size of the vector<DD><CODE>preset</CODE> - All entries will be set with this value.</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(double[])"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(double[]&nbsp;d)</PRE>
+<DL>
+<DD>Construct a vector from an array, copying the input array.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - Array.</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(double[], boolean)"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(double[]&nbsp;d,
+                       boolean&nbsp;copyArray)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Create a new ArrayRealVector using the input array as the underlying
+ data array.
+ If an array is built specially in order to be embedded in a
+ ArrayRealVector and not used directly, the <code>copyArray</code> may be
+ set to <code>false</code>. This will prevent the copying and improve
+ performance as no new array will be built and no data will be copied.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - Data for the new vector.<DD><CODE>copyArray</CODE> - if <code>true</code>, the input array will be copied,
+ otherwise it will be referenced.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>d</code> is <code>null</code>.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(double[])"><CODE>ArrayRealVector(double[])</CODE></A></DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(double[], int, int)"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(double[]&nbsp;d,
+                       int&nbsp;pos,
+                       int&nbsp;size)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                       <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></PRE>
+<DL>
+<DD>Construct a vector from part of a array.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - Array.<DD><CODE>pos</CODE> - Position of first entry.<DD><CODE>size</CODE> - Number of entries to copy.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>d</code> is <code>null</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if the size of <code>d</code> is less
+ than <code>pos + size</code>.</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(java.lang.Double[])"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</A>[]&nbsp;d)</PRE>
+<DL>
+<DD>Construct a vector from an array.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - Array of <code>Double</code>s.</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(java.lang.Double[], int, int)"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</A>[]&nbsp;d,
+                       int&nbsp;pos,
+                       int&nbsp;size)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                       <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></PRE>
+<DL>
+<DD>Construct a vector from part of an array.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - Array.<DD><CODE>pos</CODE> - Position of first entry.<DD><CODE>size</CODE> - Number of entries to copy.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>d</code> is <code>null</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if the size of <code>d</code> is less
+ than <code>pos + size</code>.</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Construct a vector from another vector, using a deep copy.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector to copy.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>v</code> is <code>null</code>.</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(org.apache.commons.math3.linear.ArrayRealVector)"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Construct a vector from another vector, using a deep copy.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to copy.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>v</code> is <code>null</code>.</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(org.apache.commons.math3.linear.ArrayRealVector, boolean)"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v,
+                       boolean&nbsp;deep)</PRE>
+<DL>
+<DD>Construct a vector from another vector.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to copy.<DD><CODE>deep</CODE> - If <code>true</code> perform a deep copy, otherwise perform a
+ shallow copy.</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(org.apache.commons.math3.linear.ArrayRealVector, org.apache.commons.math3.linear.ArrayRealVector)"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v1,
+                       <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v2)</PRE>
+<DL>
+<DD>Construct a vector by appending one vector to another vector.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v1</CODE> - First vector (will be put in front of the new vector).<DD><CODE>v2</CODE> - Second vector (will be put at back of the new vector).</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(org.apache.commons.math3.linear.ArrayRealVector, org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v1,
+                       <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v2)</PRE>
+<DL>
+<DD>Construct a vector by appending one vector to another vector.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v1</CODE> - First vector (will be put in front of the new vector).<DD><CODE>v2</CODE> - Second vector (will be put at back of the new vector).</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.ArrayRealVector)"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v1,
+                       <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v2)</PRE>
+<DL>
+<DD>Construct a vector by appending one vector to another vector.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v1</CODE> - First vector (will be put in front of the new vector).<DD><CODE>v2</CODE> - Second vector (will be put at back of the new vector).</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(org.apache.commons.math3.linear.ArrayRealVector, double[])"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v1,
+                       double[]&nbsp;v2)</PRE>
+<DL>
+<DD>Construct a vector by appending one vector to another vector.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v1</CODE> - First vector (will be put in front of the new vector).<DD><CODE>v2</CODE> - Second vector (will be put at back of the new vector).</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(double[], org.apache.commons.math3.linear.ArrayRealVector)"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(double[]&nbsp;v1,
+                       <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v2)</PRE>
+<DL>
+<DD>Construct a vector by appending one vector to another vector.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v1</CODE> - First vector (will be put in front of the new vector).<DD><CODE>v2</CODE> - Second vector (will be put at back of the new vector).</DL>
+</DL>
+<HR>
+
+<A NAME="ArrayRealVector(double[], double[])"><!-- --></A><H3>
+ArrayRealVector</H3>
+<PRE>
+public <B>ArrayRealVector</B>(double[]&nbsp;v1,
+                       double[]&nbsp;v2)</PRE>
+<DL>
+<DD>Construct a vector by appending one vector to another vector.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>v1</CODE> - first vector (will be put in front of the new vector)<DD><CODE>v2</CODE> - second vector (will be put at back of the new vector)</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="copy()"><!-- --></A><H3>
+copy</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A> <B>copy</B>()</PRE>
+<DL>
+<DD>Returns a (deep) copy of this vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#copy()">copy</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a vector copy.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="add(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A> <B>add</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                    throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Compute the sum of this vector and <code>v</code>.
+ Returns a new vector. Does not change instance data.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#add(org.apache.commons.math3.linear.RealVector)">add</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to be added.
+<DT><B>Returns:</B><DD><code>this</code> + <code>v</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subtract(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+subtract</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A> <B>subtract</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                         throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Subtract <code>v</code> from this vector.
+ Returns a new vector. Does not change instance data.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#subtract(org.apache.commons.math3.linear.RealVector)">subtract</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to be subtracted.
+<DT><B>Returns:</B><DD><code>this</code> - <code>v</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="map(org.apache.commons.math3.analysis.UnivariateFunction)"><!-- --></A><H3>
+map</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A> <B>map</B>(<A HREF="../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;function)</PRE>
+<DL>
+<DD>Acts as if implemented as:
+ <pre>
+  return copy().mapToSelf(function);
+ </pre>
+ Returns a new vector. Does not change instance data.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#map(org.apache.commons.math3.analysis.UnivariateFunction)">map</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>function</CODE> - Function to apply to each entry.
+<DT><B>Returns:</B><DD>a new vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapToSelf(org.apache.commons.math3.analysis.UnivariateFunction)"><!-- --></A><H3>
+mapToSelf</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A> <B>mapToSelf</B>(<A HREF="../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;function)</PRE>
+<DL>
+<DD>Acts as if it is implemented as:
+ <pre>
+  Entry e = null;
+  for(Iterator<Entry> it = iterator(); it.hasNext(); e = it.next()) {
+      e.setValue(function.value(e.getValue()));
+  }
+ </pre>
+ Entries of this vector are modified in-place by this method.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapToSelf(org.apache.commons.math3.analysis.UnivariateFunction)">mapToSelf</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>function</CODE> - Function to apply to each entry.
+<DT><B>Returns:</B><DD>a reference to this vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapAddToSelf(double)"><!-- --></A><H3>
+mapAddToSelf</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>mapAddToSelf</B>(double&nbsp;d)</PRE>
+<DL>
+<DD>Add a value to each entry.
+ The instance is changed in-place.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapAddToSelf(double)">mapAddToSelf</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - Value to be added to each entry.
+<DT><B>Returns:</B><DD><code>this</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapSubtractToSelf(double)"><!-- --></A><H3>
+mapSubtractToSelf</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>mapSubtractToSelf</B>(double&nbsp;d)</PRE>
+<DL>
+<DD>Subtract a value from each entry.
+ The instance is changed in-place.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapSubtractToSelf(double)">mapSubtractToSelf</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - Value to be subtracted.
+<DT><B>Returns:</B><DD><code>this</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapMultiplyToSelf(double)"><!-- --></A><H3>
+mapMultiplyToSelf</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>mapMultiplyToSelf</B>(double&nbsp;d)</PRE>
+<DL>
+<DD>Multiply each entry.
+ The instance is changed in-place.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapMultiplyToSelf(double)">mapMultiplyToSelf</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - Multiplication factor.
+<DT><B>Returns:</B><DD><code>this</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mapDivideToSelf(double)"><!-- --></A><H3>
+mapDivideToSelf</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>mapDivideToSelf</B>(double&nbsp;d)</PRE>
+<DL>
+<DD>Divide each entry by the argument.
+ The instance is changed in-place.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#mapDivideToSelf(double)">mapDivideToSelf</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - Value to divide by.
+<DT><B>Returns:</B><DD><code>this</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ebeMultiply(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+ebeMultiply</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A> <B>ebeMultiply</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                            throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Element-by-element multiplication.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#ebeMultiply(org.apache.commons.math3.linear.RealVector)">ebeMultiply</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector by which instance elements must be multiplied
+<DT><B>Returns:</B><DD>a vector containing this[i] * v[i] for all i.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ebeDivide(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+ebeDivide</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A> <B>ebeDivide</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                          throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Element-by-element division.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#ebeDivide(org.apache.commons.math3.linear.RealVector)">ebeDivide</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector by which instance elements must be divided.
+<DT><B>Returns:</B><DD>a vector containing this[i] / v[i] for all i.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDataRef()"><!-- --></A><H3>
+getDataRef</H3>
+<PRE>
+public double[] <B>getDataRef</B>()</PRE>
+<DL>
+<DD>Get a reference to the underlying data array.
+ This method does not make a fresh copy of the underlying data.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the array of entries.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dotProduct(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+dotProduct</H3>
+<PRE>
+public double <B>dotProduct</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                  throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Compute the dot product of this vector with <code>v</code>.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#dotProduct(org.apache.commons.math3.linear.RealVector)">dotProduct</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector with which dot product should be computed
+<DT><B>Returns:</B><DD>the scalar dot product between this instance and <code>v</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNorm()"><!-- --></A><H3>
+getNorm</H3>
+<PRE>
+public double <B>getNorm</B>()</PRE>
+<DL>
+<DD>Returns the L<sub>2</sub> norm of the vector.
+ <p>The L<sub>2</sub> norm is the root of the sum of
+ the squared elements.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getNorm()">getNorm</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the norm.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getL1Norm()"><CODE>RealVector.getL1Norm()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getLInfNorm()"><CODE>RealVector.getLInfNorm()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getDistance(org.apache.commons.math3.linear.RealVector)"><CODE>RealVector.getDistance(RealVector)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getL1Norm()"><!-- --></A><H3>
+getL1Norm</H3>
+<PRE>
+public double <B>getL1Norm</B>()</PRE>
+<DL>
+<DD>Returns the L<sub>1</sub> norm of the vector.
+ <p>The L<sub>1</sub> norm is the sum of the absolute
+ values of the elements.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getL1Norm()">getL1Norm</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the norm.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getNorm()"><CODE>RealVector.getNorm()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getLInfNorm()"><CODE>RealVector.getLInfNorm()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getL1Distance(org.apache.commons.math3.linear.RealVector)"><CODE>RealVector.getL1Distance(RealVector)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLInfNorm()"><!-- --></A><H3>
+getLInfNorm</H3>
+<PRE>
+public double <B>getLInfNorm</B>()</PRE>
+<DL>
+<DD>Returns the L<sub>&infin;</sub> norm of the vector.
+ <p>The L<sub>&infin;</sub> norm is the max of the absolute
+ values of the elements.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getLInfNorm()">getLInfNorm</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the norm.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getNorm()"><CODE>RealVector.getNorm()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getL1Norm()"><CODE>RealVector.getL1Norm()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getLInfDistance(org.apache.commons.math3.linear.RealVector)"><CODE>RealVector.getLInfDistance(RealVector)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDistance(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+getDistance</H3>
+<PRE>
+public double <B>getDistance</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                   throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Distance between two vectors.
+ <p>This method computes the distance consistent with the
+ L<sub>2</sub> norm, i.e. the square root of the sum of
+ element differences, or Euclidean distance.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getDistance(org.apache.commons.math3.linear.RealVector)">getDistance</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to which distance is requested.
+<DT><B>Returns:</B><DD>the distance between two vectors.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getL1Distance(org.apache.commons.math3.linear.RealVector)"><CODE>RealVector.getL1Distance(RealVector)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getLInfDistance(org.apache.commons.math3.linear.RealVector)"><CODE>RealVector.getLInfDistance(RealVector)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getNorm()"><CODE>RealVector.getNorm()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getL1Distance(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+getL1Distance</H3>
+<PRE>
+public double <B>getL1Distance</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Distance between two vectors.
+ <p>This method computes the distance consistent with
+ L<sub>1</sub> norm, i.e. the sum of the absolute values of
+ the elements differences.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getL1Distance(org.apache.commons.math3.linear.RealVector)">getL1Distance</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to which distance is requested.
+<DT><B>Returns:</B><DD>the distance between two vectors.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLInfDistance(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+getLInfDistance</H3>
+<PRE>
+public double <B>getLInfDistance</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                       throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Distance between two vectors.
+ <p>This method computes the distance consistent with
+ L<sub>&infin;</sub> norm, i.e. the max of the absolute values of
+ element differences.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getLInfDistance(org.apache.commons.math3.linear.RealVector)">getLInfDistance</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to which distance is requested.
+<DT><B>Returns:</B><DD>the distance between two vectors.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>v</code> is not the same size as
+ <code>this</code> vector.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getDistance(org.apache.commons.math3.linear.RealVector)"><CODE>RealVector.getDistance(RealVector)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getL1Distance(org.apache.commons.math3.linear.RealVector)"><CODE>RealVector.getL1Distance(RealVector)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getLInfNorm()"><CODE>RealVector.getLInfNorm()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="outerProduct(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+outerProduct</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>outerProduct</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</PRE>
+<DL>
+<DD>Compute the outer product.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#outerProduct(org.apache.commons.math3.linear.RealVector)">outerProduct</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector with which outer product should be computed.
+<DT><B>Returns:</B><DD>the matrix outer product between this instance and <code>v</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEntry(int)"><!-- --></A><H3>
+getEntry</H3>
+<PRE>
+public double <B>getEntry</B>(int&nbsp;index)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Return the entry at the specified index.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getEntry(int)">getEntry</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - Index location of entry to be fetched.
+<DT><B>Returns:</B><DD>the vector entry at <code>index</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#setEntry(int, double)"><CODE>RealVector.setEntry(int, double)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDimension()"><!-- --></A><H3>
+getDimension</H3>
+<PRE>
+public int <B>getDimension</B>()</PRE>
+<DL>
+<DD>Returns the size of the vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getDimension()">getDimension</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the size of this vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="append(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+append</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>append</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</PRE>
+<DL>
+<DD>Construct a new vector by appending a vector to this vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#append(org.apache.commons.math3.linear.RealVector)">append</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - vector to append to this one.
+<DT><B>Returns:</B><DD>a new vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="append(org.apache.commons.math3.linear.ArrayRealVector)"><!-- --></A><H3>
+append</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A> <B>append</B>(<A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v)</PRE>
+<DL>
+<DD>Construct a vector by appending a vector to this vector.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to append to this one.
+<DT><B>Returns:</B><DD>a new vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="append(double)"><!-- --></A><H3>
+append</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>append</B>(double&nbsp;in)</PRE>
+<DL>
+<DD>Construct a new vector by appending a double to this vector.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#append(double)">append</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>in</CODE> - double to append.
+<DT><B>Returns:</B><DD>a new vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSubVector(int, int)"><!-- --></A><H3>
+getSubVector</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>getSubVector</B>(int&nbsp;index,
+                               int&nbsp;n)
+                        throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></PRE>
+<DL>
+<DD>Get a subvector from consecutive elements.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getSubVector(int, int)">getSubVector</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - index of first element.<DD><CODE>n</CODE> - number of elements to be retrieved.
+<DT><B>Returns:</B><DD>a vector containing n elements.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></CODE> - if the number of elements is not positive.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEntry(int, double)"><!-- --></A><H3>
+setEntry</H3>
+<PRE>
+public void <B>setEntry</B>(int&nbsp;index,
+                     double&nbsp;value)
+              throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Set a single element.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#setEntry(int, double)">setEntry</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - element index.<DD><CODE>value</CODE> - new value for the element.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#getEntry(int)"><CODE>RealVector.getEntry(int)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addToEntry(int, double)"><!-- --></A><H3>
+addToEntry</H3>
+<PRE>
+public void <B>addToEntry</B>(int&nbsp;index,
+                       double&nbsp;increment)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Change an entry at the specified index.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#addToEntry(int, double)">addToEntry</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - Index location of entry to be set.<DD><CODE>increment</CODE> - Value to add to the vector entry.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSubVector(int, org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+setSubVector</H3>
+<PRE>
+public void <B>setSubVector</B>(int&nbsp;index,
+                         <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                  throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Set a sequence of consecutive elements.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#setSubVector(int, org.apache.commons.math3.linear.RealVector)">setSubVector</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - index of first element to be set.<DD><CODE>v</CODE> - vector containing the values to set.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is not valid.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSubVector(int, double[])"><!-- --></A><H3>
+setSubVector</H3>
+<PRE>
+public void <B>setSubVector</B>(int&nbsp;index,
+                         double[]&nbsp;v)
+                  throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Set a set of consecutive elements.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - Index of first element to be set.<DD><CODE>v</CODE> - Vector containing the values to set.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the index is inconsistent with the vector
+ size.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="set(double)"><!-- --></A><H3>
+set</H3>
+<PRE>
+public void <B>set</B>(double&nbsp;value)</PRE>
+<DL>
+<DD>Set all elements to a single value.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#set(double)">set</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - Single value to set for all elements.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toArray()"><!-- --></A><H3>
+toArray</H3>
+<PRE>
+public double[] <B>toArray</B>()</PRE>
+<DL>
+<DD>Convert the vector to an array of <code>double</code>s.
+ The array is independent from this vector data: the elements
+ are copied.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#toArray()">toArray</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>an array containing a copy of the vector elements.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toString()"><!-- --></A><H3>
+toString</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>toString</B>()</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="checkVectorDimensions(org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+checkVectorDimensions</H3>
+<PRE>
+protected void <B>checkVectorDimensions</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)
+                              throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Check if instance and specified vectors have the same dimension.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#checkVectorDimensions(org.apache.commons.math3.linear.RealVector)">checkVectorDimensions</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v</CODE> - Vector to compare instance with.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the vectors do not
+ have the same dimension.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="checkVectorDimensions(int)"><!-- --></A><H3>
+checkVectorDimensions</H3>
+<PRE>
+protected void <B>checkVectorDimensions</B>(int&nbsp;n)
+                              throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Check if instance dimension is equal to some expected value.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#checkVectorDimensions(int)">checkVectorDimensions</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>n</CODE> - Expected dimension.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the dimension is
+ inconsistent with vector size.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isNaN()"><!-- --></A><H3>
+isNaN</H3>
+<PRE>
+public boolean <B>isNaN</B>()</PRE>
+<DL>
+<DD>Check if any coordinate of this vector is <code>NaN</code>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#isNaN()">isNaN</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if any coordinate of this vector is <code>NaN</code>,
+ <code>false</code> otherwise.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isInfinite()"><!-- --></A><H3>
+isInfinite</H3>
+<PRE>
+public boolean <B>isInfinite</B>()</PRE>
+<DL>
+<DD>Check whether any coordinate of this vector is infinite and none
+ are <code>NaN</code>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#isInfinite()">isInfinite</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if any coordinate of this vector is infinite and
+ none are <code>NaN</code>, <code>false</code> otherwise.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="equals(java.lang.Object)"><!-- --></A><H3>
+equals</H3>
+<PRE>
+public boolean <B>equals</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;other)</PRE>
+<DL>
+<DD><p>
+ Test for the equality of two real vectors. If all coordinates of two real
+ vectors are exactly the same, and none are <code>NaN</code>, the two real
+ vectors are considered to be equal. <code>NaN</code> coordinates are
+ considered to affect globally the vector and be equals to each other -
+ i.e, if either (or all) coordinates of the real vector are equal to
+ <code>NaN</code>, the real vector is equal to a vector with all <code>NaN</code>
+ coordinates.
+ </p>
+ <p>
+ This method <em>must</em> be overriden by concrete subclasses of
+ <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> (the current implementation throws an exception).
+ </p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#equals(java.lang.Object)">equals</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>other</CODE> - Object to test for equality.
+<DT><B>Returns:</B><DD><code>true</code> if two vector objects are equal, <code>false</code> if
+ <code>other</code> is null, not an instance of <code>RealVector</code>, or
+ not equal to this <code>RealVector</code> instance.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hashCode()"><!-- --></A><H3>
+hashCode</H3>
+<PRE>
+public int <B>hashCode</B>()</PRE>
+<DL>
+<DD>. This method <em>must</em> be overriden by concrete
+ subclasses of <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> (current implementation throws an
+ exception). All <code>NaN</code> values have the same hash code.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#hashCode()">hashCode</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="combine(double, double, org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+combine</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A> <B>combine</B>(double&nbsp;a,
+                               double&nbsp;b,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;y)
+                        throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Returns a new vector representing <code>a * this + b * y</code>, the linear
+ combination of <code>this</code> and <code>y</code>.
+ Returns a new vector. Does not change instance data.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#combine(double, double, org.apache.commons.math3.linear.RealVector)">combine</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - Coefficient of <code>this</code>.<DD><CODE>b</CODE> - Coefficient of <code>y</code>.<DD><CODE>y</CODE> - Vector with which <code>this</code> is linearly combined.
+<DT><B>Returns:</B><DD>a vector containing <code>a * this[i] + b * y[i]</code> for all
+ <code>i</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>y</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="combineToSelf(double, double, org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+combineToSelf</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A> <B>combineToSelf</B>(double&nbsp;a,
+                                     double&nbsp;b,
+                                     <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;y)
+                              throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Updates <code>this</code> with the linear combination of <code>this</code> and
+ <code>y</code>.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#combineToSelf(double, double, org.apache.commons.math3.linear.RealVector)">combineToSelf</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - Weight of <code>this</code>.<DD><CODE>b</CODE> - Weight of <code>y</code>.<DD><CODE>y</CODE> - Vector with which <code>this</code> is linearly combined.
+<DT><B>Returns:</B><DD><code>this</code>, with components equal to
+ <code>a * this[i] + b * y[i]</code> for all <code>i</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>y</code> is not the same size as
+ <code>this</code> vector.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor)"><!-- --></A><H3>
+walkInDefaultOrder</H3>
+<PRE>
+public double <B>walkInDefaultOrder</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorPreservingVisitor</A>&nbsp;visitor)</PRE>
+<DL>
+<DD>Visits (but does not alter) all entries of this vector in default order
+ (increasing index).
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor)">walkInDefaultOrder</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visitor</CODE> - the visitor to be used to process the entries of this
+ vector
+<DT><B>Returns:</B><DD>the value returned by <A HREF="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html#end()"><CODE>RealVectorPreservingVisitor.end()</CODE></A>
+ at the end of the walk</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor, int, int)"><!-- --></A><H3>
+walkInDefaultOrder</H3>
+<PRE>
+public double <B>walkInDefaultOrder</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorPreservingVisitor</A>&nbsp;visitor,
+                                 int&nbsp;start,
+                                 int&nbsp;end)
+                          throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                                 <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Visits (but does not alter) some entries of this vector in default order
+ (increasing index).
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor, int, int)">walkInDefaultOrder</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visitor</CODE> - visitor to be used to process the entries of this vector<DD><CODE>start</CODE> - the index of the first entry to be visited<DD><CODE>end</CODE> - the index of the last entry to be visited (inclusive)
+<DT><B>Returns:</B><DD>the value returned by <A HREF="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html#end()"><CODE>RealVectorPreservingVisitor.end()</CODE></A>
+ at the end of the walk
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if <code>end &lt; start</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the indices are not valid.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor)"><!-- --></A><H3>
+walkInOptimizedOrder</H3>
+<PRE>
+public double <B>walkInOptimizedOrder</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorPreservingVisitor</A>&nbsp;visitor)</PRE>
+<DL>
+<DD>Visits (but does not alter) all entries of this vector in optimized
+ order. The order in which the entries are visited is selected so as to
+ lead to the most efficient implementation; it might depend on the
+ concrete implementation of this abstract class.
+
+ In this implementation, the optimized order is the default order.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor)">walkInOptimizedOrder</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visitor</CODE> - the visitor to be used to process the entries of this
+ vector
+<DT><B>Returns:</B><DD>the value returned by <A HREF="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html#end()"><CODE>RealVectorPreservingVisitor.end()</CODE></A>
+ at the end of the walk</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor, int, int)"><!-- --></A><H3>
+walkInOptimizedOrder</H3>
+<PRE>
+public double <B>walkInOptimizedOrder</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorPreservingVisitor</A>&nbsp;visitor,
+                                   int&nbsp;start,
+                                   int&nbsp;end)
+                            throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                                   <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Visits (but does not alter) some entries of this vector in optimized
+ order. The order in which the entries are visited is selected so as to
+ lead to the most efficient implementation; it might depend on the
+ concrete implementation of this abstract class.
+
+ In this implementation, the optimized order is the default order.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor, int, int)">walkInOptimizedOrder</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visitor</CODE> - visitor to be used to process the entries of this vector<DD><CODE>start</CODE> - the index of the first entry to be visited<DD><CODE>end</CODE> - the index of the last entry to be visited (inclusive)
+<DT><B>Returns:</B><DD>the value returned by <A HREF="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html#end()"><CODE>RealVectorPreservingVisitor.end()</CODE></A>
+ at the end of the walk
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if <code>end &lt; start</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the indices are not valid.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor)"><!-- --></A><H3>
+walkInDefaultOrder</H3>
+<PRE>
+public double <B>walkInDefaultOrder</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorChangingVisitor</A>&nbsp;visitor)</PRE>
+<DL>
+<DD>Visits (and possibly alters) all entries of this vector in default order
+ (increasing index).
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor)">walkInDefaultOrder</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visitor</CODE> - the visitor to be used to process and modify the entries
+ of this vector
+<DT><B>Returns:</B><DD>the value returned by <A HREF="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html#end()"><CODE>RealVectorChangingVisitor.end()</CODE></A>
+ at the end of the walk</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor, int, int)"><!-- --></A><H3>
+walkInDefaultOrder</H3>
+<PRE>
+public double <B>walkInDefaultOrder</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorChangingVisitor</A>&nbsp;visitor,
+                                 int&nbsp;start,
+                                 int&nbsp;end)
+                          throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                                 <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Visits (and possibly alters) some entries of this vector in default order
+ (increasing index).
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor, int, int)">walkInDefaultOrder</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visitor</CODE> - visitor to be used to process the entries of this vector<DD><CODE>start</CODE> - the index of the first entry to be visited<DD><CODE>end</CODE> - the index of the last entry to be visited (inclusive)
+<DT><B>Returns:</B><DD>the value returned by <A HREF="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html#end()"><CODE>RealVectorChangingVisitor.end()</CODE></A>
+ at the end of the walk
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if <code>end &lt; start</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the indices are not valid.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor)"><!-- --></A><H3>
+walkInOptimizedOrder</H3>
+<PRE>
+public double <B>walkInOptimizedOrder</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorChangingVisitor</A>&nbsp;visitor)</PRE>
+<DL>
+<DD>Visits (and possibly alters) all entries of this vector in optimized
+ order. The order in which the entries are visited is selected so as to
+ lead to the most efficient implementation; it might depend on the
+ concrete implementation of this abstract class.
+
+ In this implementation, the optimized order is the default order.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor)">walkInOptimizedOrder</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visitor</CODE> - the visitor to be used to process the entries of this
+ vector
+<DT><B>Returns:</B><DD>the value returned by <A HREF="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html#end()"><CODE>RealVectorChangingVisitor.end()</CODE></A>
+ at the end of the walk</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor, int, int)"><!-- --></A><H3>
+walkInOptimizedOrder</H3>
+<PRE>
+public double <B>walkInOptimizedOrder</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorChangingVisitor</A>&nbsp;visitor,
+                                   int&nbsp;start,
+                                   int&nbsp;end)
+                            throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                                   <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Visits (and possibly change) some entries of this vector in optimized
+ order. The order in which the entries are visited is selected so as to
+ lead to the most efficient implementation; it might depend on the
+ concrete implementation of this abstract class.
+
+ In this implementation, the optimized order is the default order.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor, int, int)">walkInOptimizedOrder</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visitor</CODE> - visitor to be used to process the entries of this vector<DD><CODE>start</CODE> - the index of the first entry to be visited<DD><CODE>end</CODE> - the index of the last entry to be visited (inclusive)
+<DT><B>Returns:</B><DD>the value returned by <A HREF="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html#end()"><CODE>RealVectorChangingVisitor.end()</CODE></A>
+ at the end of the walk
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if <code>end &lt; start</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the indices are not valid.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ArrayRealVector.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="class in org.apache.commons.math3.linear"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/linear/ArrayRealVector.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ArrayRealVector.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_org.apache.commons.math3.linear.RealVector">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

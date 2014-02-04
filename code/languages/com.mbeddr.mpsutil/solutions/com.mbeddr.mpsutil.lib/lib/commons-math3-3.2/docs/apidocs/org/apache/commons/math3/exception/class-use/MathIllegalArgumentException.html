@@ -1,0 +1,2909 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Class org.apache.commons.math3.exception.MathIllegalArgumentException (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class org.apache.commons.math3.exception.MathIllegalArgumentException (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/exception//class-useMathIllegalArgumentException.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MathIllegalArgumentException.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Class<br>org.apache.commons.math3.exception.MathIllegalArgumentException</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.analysis.differentiation"><B>org.apache.commons.math3.analysis.differentiation</B></A></TD>
+<TD>
+   This package holds the main interfaces and basic building block classes
+   dealing with differentiation.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.analysis.integration"><B>org.apache.commons.math3.analysis.integration</B></A></TD>
+<TD>Numerical integration (quadrature) algorithms for univariate real functions.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.analysis.interpolation"><B>org.apache.commons.math3.analysis.interpolation</B></A></TD>
+<TD>Univariate real functions interpolation algorithms.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.analysis.solvers"><B>org.apache.commons.math3.analysis.solvers</B></A></TD>
+<TD>Root finding algorithms, for univariate real functions.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.complex"><B>org.apache.commons.math3.complex</B></A></TD>
+<TD>Complex number type and implementations of complex transcendental
+     functions.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.exception"><B>org.apache.commons.math3.exception</B></A></TD>
+<TD>Specialized exceptions for algorithms errors.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.fraction"><B>org.apache.commons.math3.fraction</B></A></TD>
+<TD>Fraction number type and fraction number formatting.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.genetics"><B>org.apache.commons.math3.genetics</B></A></TD>
+<TD>This package provides Genetic Algorithms components and implementations.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.geometry.euclidean.threed"><B>org.apache.commons.math3.geometry.euclidean.threed</B></A></TD>
+<TD>
+ This package provides basic 3D geometry components.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.geometry.euclidean.twod"><B>org.apache.commons.math3.geometry.euclidean.twod</B></A></TD>
+<TD>
+ This package provides basic 2D geometry components.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.linear"><B>org.apache.commons.math3.linear</B></A></TD>
+<TD>Linear algebra support.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.ml.clustering"><B>org.apache.commons.math3.ml.clustering</B></A></TD>
+<TD>Clustering algorithms.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.ode"><B>org.apache.commons.math3.ode</B></A></TD>
+<TD>
+ This package provides classes to solve Ordinary Differential Equations problems.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.random"><B>org.apache.commons.math3.random</B></A></TD>
+<TD>Random number and random data generators.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat"><B>org.apache.commons.math3.stat</B></A></TD>
+<TD>Data storage, manipulation and summary routines.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.clustering"><B>org.apache.commons.math3.stat.clustering</B></A></TD>
+<TD>All classes and sub-packages of this package are deprecated.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.correlation"><B>org.apache.commons.math3.stat.correlation</B></A></TD>
+<TD>Correlations/Covariance computations.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.descriptive"><B>org.apache.commons.math3.stat.descriptive</B></A></TD>
+<TD>Generic univariate summary statistic objects.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.descriptive.moment"><B>org.apache.commons.math3.stat.descriptive.moment</B></A></TD>
+<TD>Summary statistics based on moments.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.descriptive.rank"><B>org.apache.commons.math3.stat.descriptive.rank</B></A></TD>
+<TD>Summary statistics based on ranks.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.descriptive.summary"><B>org.apache.commons.math3.stat.descriptive.summary</B></A></TD>
+<TD>Other summary statistics.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.inference"><B>org.apache.commons.math3.stat.inference</B></A></TD>
+<TD>Classes providing hypothesis testing and confidence interval
+      construction.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.regression"><B>org.apache.commons.math3.stat.regression</B></A></TD>
+<TD>Statistical routines involving multivariate data.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.transform"><B>org.apache.commons.math3.transform</B></A></TD>
+<TD>Implementations of transform methods, including Fast Fourier transforms.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.util"><B>org.apache.commons.math3.util</B></A></TD>
+<TD>Convenience routines and common data structures used throughout the commons-math library.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.analysis.differentiation"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/package-summary.html">org.apache.commons.math3.analysis.differentiation</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/package-summary.html">org.apache.commons.math3.analysis.differentiation</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/DerivativeStructure.html" title="class in org.apache.commons.math3.analysis.differentiation">DerivativeStructure</A>[]</CODE></FONT></TD>
+<TD><CODE><B>UnivariateDifferentiableVectorFunction.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableVectorFunction.html#value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)">value</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/DerivativeStructure.html" title="class in org.apache.commons.math3.analysis.differentiation">DerivativeStructure</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the value for the function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/DerivativeStructure.html" title="class in org.apache.commons.math3.analysis.differentiation">DerivativeStructure</A>[][]</CODE></FONT></TD>
+<TD><CODE><B>UnivariateDifferentiableMatrixFunction.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableMatrixFunction.html#value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)">value</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/DerivativeStructure.html" title="class in org.apache.commons.math3.analysis.differentiation">DerivativeStructure</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the value for the function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/DerivativeStructure.html" title="class in org.apache.commons.math3.analysis.differentiation">DerivativeStructure</A>[]</CODE></FONT></TD>
+<TD><CODE><B>MultivariateDifferentiableVectorFunction.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/MultivariateDifferentiableVectorFunction.html#value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure[])">value</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/DerivativeStructure.html" title="class in org.apache.commons.math3.analysis.differentiation">DerivativeStructure</A>[]&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the value for the function at the given point.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/DerivativeStructure.html" title="class in org.apache.commons.math3.analysis.differentiation">DerivativeStructure</A></CODE></FONT></TD>
+<TD><CODE><B>MultivariateDifferentiableFunction.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/MultivariateDifferentiableFunction.html#value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure[])">value</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/differentiation/DerivativeStructure.html" title="class in org.apache.commons.math3.analysis.differentiation">DerivativeStructure</A>[]&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the value for the function at the given point.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.analysis.integration"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/analysis/integration/package-summary.html">org.apache.commons.math3.analysis.integration</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/analysis/integration/package-summary.html">org.apache.commons.math3.analysis.integration</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>LegendreGaussIntegrator.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/integration/LegendreGaussIntegrator.html#doIntegrate()">doIntegrate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Method for implementing actual integration algorithms in derived
+ classes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>IterativeLegendreGaussIntegrator.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/integration/IterativeLegendreGaussIntegrator.html#doIntegrate()">doIntegrate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method for implementing actual integration algorithms in derived
+ classes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>TrapezoidIntegrator.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/integration/TrapezoidIntegrator.html#doIntegrate()">doIntegrate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method for implementing actual integration algorithms in derived
+ classes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>UnivariateIntegrator.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/integration/UnivariateIntegrator.html#integrate(int, org.apache.commons.math3.analysis.UnivariateFunction, double, double)">integrate</A></B>(int&nbsp;maxEval,
+          <A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;f,
+          double&nbsp;min,
+          double&nbsp;max)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integrate the function in the given interval.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>BaseAbstractUnivariateIntegrator.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/integration/BaseAbstractUnivariateIntegrator.html#integrate(int, org.apache.commons.math3.analysis.UnivariateFunction, double, double)">integrate</A></B>(int&nbsp;maxEval,
+          <A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;f,
+          double&nbsp;lower,
+          double&nbsp;upper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integrate the function in the given interval.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BaseAbstractUnivariateIntegrator.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/integration/BaseAbstractUnivariateIntegrator.html#setup(int, org.apache.commons.math3.analysis.UnivariateFunction, double, double)">setup</A></B>(int&nbsp;maxEval,
+      <A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;f,
+      double&nbsp;lower,
+      double&nbsp;upper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prepare for computation.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/commons/math3/analysis/integration/package-summary.html">org.apache.commons.math3.analysis.integration</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/integration/LegendreGaussIntegrator.html#LegendreGaussIntegrator(int, double, double)">LegendreGaussIntegrator</A></B>(int&nbsp;n,
+                        double&nbsp;relativeAccuracy,
+                        double&nbsp;absoluteAccuracy)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a Legendre-Gauss integrator with given accuracies.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/integration/LegendreGaussIntegrator.html#LegendreGaussIntegrator(int, double, double, int, int)">LegendreGaussIntegrator</A></B>(int&nbsp;n,
+                        double&nbsp;relativeAccuracy,
+                        double&nbsp;absoluteAccuracy,
+                        int&nbsp;minimalIterationCount,
+                        int&nbsp;maximalIterationCount)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a Legendre-Gauss integrator with given accuracies and iterations counts.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/integration/LegendreGaussIntegrator.html#LegendreGaussIntegrator(int, int, int)">LegendreGaussIntegrator</A></B>(int&nbsp;n,
+                        int&nbsp;minimalIterationCount,
+                        int&nbsp;maximalIterationCount)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a Legendre-Gauss integrator with given iteration counts.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.analysis.interpolation"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/package-summary.html">org.apache.commons.math3.analysis.interpolation</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/package-summary.html">org.apache.commons.math3.analysis.interpolation</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A></CODE></FONT></TD>
+<TD><CODE><B>MultivariateInterpolator.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/MultivariateInterpolator.html#interpolate(double[][], double[])">interpolate</A></B>(double[][]&nbsp;xval,
+            double[]&nbsp;yval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes an interpolating function for the data set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A></CODE></FONT></TD>
+<TD><CODE><B>UnivariateInterpolator.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/UnivariateInterpolator.html#interpolate(double[], double[])">interpolate</A></B>(double[]&nbsp;xval,
+            double[]&nbsp;yval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute an interpolating function for the dataset.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.analysis.solvers"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/package-summary.html">org.apache.commons.math3.analysis.solvers</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/package-summary.html">org.apache.commons.math3.analysis.solvers</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>BaseUnivariateSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#solve(int, FUNC, double, double)">solve</A></B>(int&nbsp;maxEval,
+      <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html" title="type parameter in BaseUnivariateSolver">FUNC</A>&nbsp;f,
+      double&nbsp;min,
+      double&nbsp;max)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solve for a zero root in the given interval.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>BaseUnivariateSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html#solve(int, FUNC, double, double, double)">solve</A></B>(int&nbsp;maxEval,
+      <A HREF="../../../../../../org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.html" title="type parameter in BaseUnivariateSolver">FUNC</A>&nbsp;f,
+      double&nbsp;min,
+      double&nbsp;max,
+      double&nbsp;startValue)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solve for a zero in the given interval, start at <code>startValue</code>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.complex"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/complex/package-summary.html">org.apache.commons.math3.complex</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/complex/package-summary.html">org.apache.commons.math3.complex</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang">StringBuffer</A></CODE></FONT></TD>
+<TD><CODE><B>ComplexFormat.</B><B><A HREF="../../../../../../org/apache/commons/math3/complex/ComplexFormat.html#format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition)">format</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;obj,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang">StringBuffer</A>&nbsp;toAppendTo,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/text/FieldPosition.html?is-external=true" title="class or interface in java.text">FieldPosition</A>&nbsp;pos)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formats a object to produce a string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>RootsOfUnity.</B><B><A HREF="../../../../../../org/apache/commons/math3/complex/RootsOfUnity.html#getReal(int)">getReal</A></B>(int&nbsp;k)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the real part of the <code>k</code>-th <code>n</code>-th root of unity.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/commons/math3/complex/Complex.html" title="class in org.apache.commons.math3.complex">Complex</A></CODE></FONT></TD>
+<TD><CODE><B>ComplexUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/complex/ComplexUtils.html#polar2Complex(double, double)">polar2Complex</A></B>(double&nbsp;r,
+              double&nbsp;theta)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a complex number from the given polar representation.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.exception"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/exception/package-summary.html">org.apache.commons.math3.exception</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/exception/package-summary.html">org.apache.commons.math3.exception</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when two dimensions differ.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalNumberException.html" title="class in org.apache.commons.math3.exception">MathIllegalNumberException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base class for exceptions raised by a wrong number.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/MultiDimensionMismatchException.html" title="class in org.apache.commons.math3.exception">MultiDimensionMismatchException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when two sets of dimensions differ.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when function values have the same sign at both
+ ends of an interval.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when the required data is missing.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/NonMonotonicSequenceException.html" title="class in org.apache.commons.math3.exception">NonMonotonicSequenceException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when the a sequence of values is not monotonically
+ increasing or decreasing.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/NotANumberException.html" title="class in org.apache.commons.math3.exception">NotANumberException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when a number is not a number.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/NotFiniteNumberException.html" title="class in org.apache.commons.math3.exception">NotFiniteNumberException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when a number is not finite.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when the argument is negative.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when the argument is negative.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All conditions checks that fail due to a <code>null</code> argument must throw
+ this exception.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when a number is too large.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when a number is too small.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when some argument is out of range.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when zero is provided where it is not allowed.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.fraction"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/fraction/package-summary.html">org.apache.commons.math3.fraction</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/fraction/package-summary.html">org.apache.commons.math3.fraction</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang">StringBuffer</A></CODE></FONT></TD>
+<TD><CODE><B>FractionFormat.</B><B><A HREF="../../../../../../org/apache/commons/math3/fraction/FractionFormat.html#format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition)">format</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;obj,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang">StringBuffer</A>&nbsp;toAppendTo,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/text/FieldPosition.html?is-external=true" title="class or interface in java.text">FieldPosition</A>&nbsp;pos)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formats an object and appends the result to a StringBuffer.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/commons/math3/fraction/package-summary.html">org.apache.commons.math3.fraction</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/fraction/BigFraction.html#BigFraction(double)">BigFraction</A></B>(double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a fraction given the double value.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.genetics"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/genetics/package-summary.html">org.apache.commons.math3.genetics</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/genetics/package-summary.html">org.apache.commons.math3.genetics</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/genetics/InvalidRepresentationException.html" title="class in org.apache.commons.math3.genetics">InvalidRepresentationException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception indicating that the representation of a chromosome is not valid.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/genetics/package-summary.html">org.apache.commons.math3.genetics</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/genetics/ChromosomePair.html" title="class in org.apache.commons.math3.genetics">ChromosomePair</A></CODE></FONT></TD>
+<TD><CODE><B>CrossoverPolicy.</B><B><A HREF="../../../../../../org/apache/commons/math3/genetics/CrossoverPolicy.html#crossover(org.apache.commons.math3.genetics.Chromosome, org.apache.commons.math3.genetics.Chromosome)">crossover</A></B>(<A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;first,
+          <A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;second)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perform a crossover operation on the given chromosomes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/genetics/ChromosomePair.html" title="class in org.apache.commons.math3.genetics">ChromosomePair</A></CODE></FONT></TD>
+<TD><CODE><B>CycleCrossover.</B><B><A HREF="../../../../../../org/apache/commons/math3/genetics/CycleCrossover.html#crossover(org.apache.commons.math3.genetics.Chromosome, org.apache.commons.math3.genetics.Chromosome)">crossover</A></B>(<A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;first,
+          <A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;second)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perform a crossover operation on the given chromosomes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/genetics/ChromosomePair.html" title="class in org.apache.commons.math3.genetics">ChromosomePair</A></CODE></FONT></TD>
+<TD><CODE><B>NPointCrossover.</B><B><A HREF="../../../../../../org/apache/commons/math3/genetics/NPointCrossover.html#crossover(org.apache.commons.math3.genetics.Chromosome, org.apache.commons.math3.genetics.Chromosome)">crossover</A></B>(<A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;first,
+          <A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;second)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a N-point crossover.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/genetics/ChromosomePair.html" title="class in org.apache.commons.math3.genetics">ChromosomePair</A></CODE></FONT></TD>
+<TD><CODE><B>UniformCrossover.</B><B><A HREF="../../../../../../org/apache/commons/math3/genetics/UniformCrossover.html#crossover(org.apache.commons.math3.genetics.Chromosome, org.apache.commons.math3.genetics.Chromosome)">crossover</A></B>(<A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;first,
+          <A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;second)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perform a crossover operation on the given chromosomes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/genetics/ChromosomePair.html" title="class in org.apache.commons.math3.genetics">ChromosomePair</A></CODE></FONT></TD>
+<TD><CODE><B>OrderedCrossover.</B><B><A HREF="../../../../../../org/apache/commons/math3/genetics/OrderedCrossover.html#crossover(org.apache.commons.math3.genetics.Chromosome, org.apache.commons.math3.genetics.Chromosome)">crossover</A></B>(<A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;first,
+          <A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;second)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perform a crossover operation on the given chromosomes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/genetics/ChromosomePair.html" title="class in org.apache.commons.math3.genetics">ChromosomePair</A></CODE></FONT></TD>
+<TD><CODE><B>OnePointCrossover.</B><B><A HREF="../../../../../../org/apache/commons/math3/genetics/OnePointCrossover.html#crossover(org.apache.commons.math3.genetics.Chromosome, org.apache.commons.math3.genetics.Chromosome)">crossover</A></B>(<A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;first,
+          <A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;second)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs one point crossover.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;S&gt; <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</A>&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>RandomKey.</B><B><A HREF="../../../../../../org/apache/commons/math3/genetics/RandomKey.html#inducedPermutation(java.util.List, java.util.List)">inducedPermutation</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;S&gt;&nbsp;originalData,
+                   <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;S&gt;&nbsp;permutedData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generates a representation of a permutation corresponding to a
+ permutation which yields <code>permutedData</code> when applied to
+ <code>originalData</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A></CODE></FONT></TD>
+<TD><CODE><B>BinaryMutation.</B><B><A HREF="../../../../../../org/apache/commons/math3/genetics/BinaryMutation.html#mutate(org.apache.commons.math3.genetics.Chromosome)">mutate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;original)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutate the given chromosome.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A></CODE></FONT></TD>
+<TD><CODE><B>RandomKeyMutation.</B><B><A HREF="../../../../../../org/apache/commons/math3/genetics/RandomKeyMutation.html#mutate(org.apache.commons.math3.genetics.Chromosome)">mutate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;original)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutate the given chromosome.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A></CODE></FONT></TD>
+<TD><CODE><B>MutationPolicy.</B><B><A HREF="../../../../../../org/apache/commons/math3/genetics/MutationPolicy.html#mutate(org.apache.commons.math3.genetics.Chromosome)">mutate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/genetics/Chromosome.html" title="class in org.apache.commons.math3.genetics">Chromosome</A>&nbsp;original)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutate the given chromosome.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/genetics/ChromosomePair.html" title="class in org.apache.commons.math3.genetics">ChromosomePair</A></CODE></FONT></TD>
+<TD><CODE><B>SelectionPolicy.</B><B><A HREF="../../../../../../org/apache/commons/math3/genetics/SelectionPolicy.html#select(org.apache.commons.math3.genetics.Population)">select</A></B>(<A HREF="../../../../../../org/apache/commons/math3/genetics/Population.html" title="interface in org.apache.commons.math3.genetics">Population</A>&nbsp;population)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select two chromosomes from the population.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/genetics/ChromosomePair.html" title="class in org.apache.commons.math3.genetics">ChromosomePair</A></CODE></FONT></TD>
+<TD><CODE><B>TournamentSelection.</B><B><A HREF="../../../../../../org/apache/commons/math3/genetics/TournamentSelection.html#select(org.apache.commons.math3.genetics.Population)">select</A></B>(<A HREF="../../../../../../org/apache/commons/math3/genetics/Population.html" title="interface in org.apache.commons.math3.genetics">Population</A>&nbsp;population)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select two chromosomes from the population.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.geometry.euclidean.threed"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/NotARotationMatrixException.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">NotARotationMatrixException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This class represents exceptions thrown while building rotations
+ from matrices.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Line.</B><B><A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#reset(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)">reset</A></B>(<A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p1,
+      <A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reset the instance as if built from two points.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.html#FieldRotation(org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D, T)">FieldRotation</A></B>(<A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">FieldVector3D</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.html" title="type parameter in FieldRotation">T</A>&gt;&nbsp;axis,
+              <A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.html" title="type parameter in FieldRotation">T</A>&nbsp;angle)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a rotation from an axis and an angle.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#Line(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)">Line</A></B>(<A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p1,
+     <A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a line from two points.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Rotation.html#Rotation(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, double)">Rotation</A></B>(<A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;axis,
+         double&nbsp;angle)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a rotation from an axis and an angle.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/SubLine.html#SubLine(org.apache.commons.math3.geometry.euclidean.threed.Segment)">SubLine</A></B>(<A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Segment.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Segment</A>&nbsp;segment)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a sub-line from a segment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/SubLine.html#SubLine(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)">SubLine</A></B>(<A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;start,
+        <A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;end)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a sub-line from two endpoints.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.geometry.euclidean.twod"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html">org.apache.commons.math3.geometry.euclidean.twod</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html">org.apache.commons.math3.geometry.euclidean.twod</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="interface in org.apache.commons.math3.geometry.partitioning">Transform</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>,<A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>Line.</B><B><A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Line.html#getTransform(java.awt.geom.AffineTransform)">getTransform</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/awt/geom/AffineTransform.html?is-external=true" title="class or interface in java.awt.geom">AffineTransform</A>&nbsp;transform)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a <A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="interface in org.apache.commons.math3.geometry.partitioning"><CODE>Transform</CODE></A> embedding an affine transform.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.linear"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An exception to be thrown when the condition number of a
+ <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear"><CODE>RealLinearOperator</CODE></A> is too high.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/MatrixDimensionMismatchException.html" title="class in org.apache.commons.math3.linear">MatrixDimensionMismatchException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when either the number of rows or the number of
+ columns of a matrix do not match the expected values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteMatrixException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteMatrixException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when a positive definite matrix is expected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when a symmetric, definite positive
+ <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear"><CODE>RealLinearOperator</CODE></A> is expected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when a self-adjoint <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear"><CODE>RealLinearOperator</CODE></A>
+ is expected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/NonSquareMatrixException.html" title="class in org.apache.commons.math3.linear">NonSquareMatrixException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when a square matrix is expected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when a square linear operator is expected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/NonSymmetricMatrixException.html" title="class in org.apache.commons.math3.linear">NonSymmetricMatrixException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when a symmetric matrix is expected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/SingularMatrixException.html" title="class in org.apache.commons.math3.linear">SingularMatrixException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when a non-singular matrix is expected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/SingularOperatorException.html" title="class in org.apache.commons.math3.linear">SingularOperatorException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when trying to invert a singular operator.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.ml.clustering"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/ml/clustering/package-summary.html">org.apache.commons.math3.ml.clustering</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/ml/clustering/package-summary.html">org.apache.commons.math3.ml.clustering</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/ml/clustering/CentroidCluster.html" title="class in org.apache.commons.math3.ml.clustering">CentroidCluster</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/ml/clustering/KMeansPlusPlusClusterer.html" title="type parameter in KMeansPlusPlusClusterer">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>KMeansPlusPlusClusterer.</B><B><A HREF="../../../../../../org/apache/commons/math3/ml/clustering/KMeansPlusPlusClusterer.html#cluster(java.util.Collection)">cluster</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/ml/clustering/KMeansPlusPlusClusterer.html" title="type parameter in KMeansPlusPlusClusterer">T</A>&gt;&nbsp;points)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Runs the K-means++ clustering algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;? extends <A HREF="../../../../../../org/apache/commons/math3/ml/clustering/Cluster.html" title="class in org.apache.commons.math3.ml.clustering">Cluster</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/ml/clustering/Clusterer.html" title="type parameter in Clusterer">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>Clusterer.</B><B><A HREF="../../../../../../org/apache/commons/math3/ml/clustering/Clusterer.html#cluster(java.util.Collection)">cluster</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/ml/clustering/Clusterer.html" title="type parameter in Clusterer">T</A>&gt;&nbsp;points)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perform a cluster analysis on the given set of <A HREF="../../../../../../org/apache/commons/math3/ml/clustering/Clusterable.html" title="interface in org.apache.commons.math3.ml.clustering"><CODE>Clusterable</CODE></A> instances.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/ml/clustering/CentroidCluster.html" title="class in org.apache.commons.math3.ml.clustering">CentroidCluster</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/ml/clustering/MultiKMeansPlusPlusClusterer.html" title="type parameter in MultiKMeansPlusPlusClusterer">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>MultiKMeansPlusPlusClusterer.</B><B><A HREF="../../../../../../org/apache/commons/math3/ml/clustering/MultiKMeansPlusPlusClusterer.html#cluster(java.util.Collection)">cluster</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/ml/clustering/MultiKMeansPlusPlusClusterer.html" title="type parameter in MultiKMeansPlusPlusClusterer">T</A>&gt;&nbsp;points)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Runs the K-means++ clustering algorithm.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.ode"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/ode/package-summary.html">org.apache.commons.math3.ode</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/ode/package-summary.html">org.apache.commons.math3.ode</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/JacobianMatrices.MismatchedEquations.html" title="class in org.apache.commons.math3.ode">JacobianMatrices.MismatchedEquations</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Special exception for equations mismatch.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/UnknownParameterException.html" title="class in org.apache.commons.math3.ode">UnknownParameterException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when a parameter is unknown.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/ode/package-summary.html">org.apache.commons.math3.ode</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ContinuousOutputModel.</B><B><A HREF="../../../../../../org/apache/commons/math3/ode/ContinuousOutputModel.html#append(org.apache.commons.math3.ode.ContinuousOutputModel)">append</A></B>(<A HREF="../../../../../../org/apache/commons/math3/ode/ContinuousOutputModel.html" title="class in org.apache.commons.math3.ode">ContinuousOutputModel</A>&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Append another model at the end of the instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SecondOrderIntegrator.</B><B><A HREF="../../../../../../org/apache/commons/math3/ode/SecondOrderIntegrator.html#integrate(org.apache.commons.math3.ode.SecondOrderDifferentialEquations, double, double[], double[], double, double[], double[])">integrate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/ode/SecondOrderDifferentialEquations.html" title="interface in org.apache.commons.math3.ode">SecondOrderDifferentialEquations</A>&nbsp;equations,
+          double&nbsp;t0,
+          double[]&nbsp;y0,
+          double[]&nbsp;yDot0,
+          double&nbsp;t,
+          double[]&nbsp;y,
+          double[]&nbsp;yDot)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integrate the differential equations up to the given time</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.random"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/random/package-summary.html">org.apache.commons.math3.random</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/random/package-summary.html">org.apache.commons.math3.random</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ValueServer.</B><B><A HREF="../../../../../../org/apache/commons/math3/random/ValueServer.html#fill(double[])">fill</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fills the input array with values generated using getNext() repeatedly.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B>ValueServer.</B><B><A HREF="../../../../../../org/apache/commons/math3/random/ValueServer.html#fill(int)">fill</A></B>(int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of length <code>length</code> with values generated
+ using getNext() repeatedly.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>ValueServer.</B><B><A HREF="../../../../../../org/apache/commons/math3/random/ValueServer.html#getNext()">getNext</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the next generated value, generated according
+ to the mode value (see MODE constants).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B>RandomDataImpl.</B><B><A HREF="../../../../../../org/apache/commons/math3/random/RandomDataImpl.html#nextInversionDeviate(org.apache.commons.math3.distribution.IntegerDistribution)">nextInversionDeviate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/distribution/IntegerDistribution.html" title="interface in org.apache.commons.math3.distribution">IntegerDistribution</A>&nbsp;distribution)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use the distribution's sample() method</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>RandomDataImpl.</B><B><A HREF="../../../../../../org/apache/commons/math3/random/RandomDataImpl.html#nextInversionDeviate(org.apache.commons.math3.distribution.RealDistribution)">nextInversionDeviate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/distribution/RealDistribution.html" title="interface in org.apache.commons.math3.distribution">RealDistribution</A>&nbsp;distribution)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use the distribution's sample() method</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/package-summary.html">org.apache.commons.math3.stat</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/stat/package-summary.html">org.apache.commons.math3.stat</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Frequency.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/Frequency.html#addValue(char)">addValue</A></B>(char&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds 1 to the frequency count for v.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Frequency.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/Frequency.html#addValue(java.lang.Comparable)">addValue</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</A>&lt;?&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds 1 to the frequency count for v.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Frequency.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/Frequency.html#addValue(int)">addValue</A></B>(int&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds 1 to the frequency count for v.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Frequency.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/Frequency.html#addValue(long)">addValue</A></B>(long&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds 1 to the frequency count for v.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#geometricMean(double[])">geometricMean</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the geometric mean of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#geometricMean(double[], int, int)">geometricMean</A></B>(double[]&nbsp;values,
+              int&nbsp;begin,
+              int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the geometric mean of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#max(double[])">max</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the maximum of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#max(double[], int, int)">max</A></B>(double[]&nbsp;values,
+    int&nbsp;begin,
+    int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the maximum of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#mean(double[])">mean</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the arithmetic mean of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#mean(double[], int, int)">mean</A></B>(double[]&nbsp;values,
+     int&nbsp;begin,
+     int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the arithmetic mean of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#min(double[])">min</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the minimum of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#min(double[], int, int)">min</A></B>(double[]&nbsp;values,
+    int&nbsp;begin,
+    int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the minimum of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#percentile(double[], double)">percentile</A></B>(double[]&nbsp;values,
+           double&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the <code>p</code>th percentile of the values
+ in the <code>values</code> array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#percentile(double[], int, int, double)">percentile</A></B>(double[]&nbsp;values,
+           int&nbsp;begin,
+           int&nbsp;length,
+           double&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the <code>p</code>th percentile of the values
+ in the <code>values</code> array, starting with the element in (0-based)
+ position <code>begin</code> in the array and including <code>length</code>
+ values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#populationVariance(double[])">populationVariance</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://en.wikibooks.org/wiki/Statistics/Summary/Variance">
+ population variance</a> of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#populationVariance(double[], double)">populationVariance</A></B>(double[]&nbsp;values,
+                   double&nbsp;mean)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://en.wikibooks.org/wiki/Statistics/Summary/Variance">
+ population variance</a> of the entries in the input array, using the
+ precomputed mean value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#populationVariance(double[], double, int, int)">populationVariance</A></B>(double[]&nbsp;values,
+                   double&nbsp;mean,
+                   int&nbsp;begin,
+                   int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://en.wikibooks.org/wiki/Statistics/Summary/Variance">
+ population variance</a> of the entries in the specified portion of
+ the input array, using the precomputed mean value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#populationVariance(double[], int, int)">populationVariance</A></B>(double[]&nbsp;values,
+                   int&nbsp;begin,
+                   int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://en.wikibooks.org/wiki/Statistics/Summary/Variance">
+ population variance</a> of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#product(double[])">product</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the product of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#product(double[], int, int)">product</A></B>(double[]&nbsp;values,
+        int&nbsp;begin,
+        int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the product of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#sum(double[])">sum</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of the values in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#sum(double[], int, int)">sum</A></B>(double[]&nbsp;values,
+    int&nbsp;begin,
+    int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#sumLog(double[])">sumLog</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of the natural logs of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#sumLog(double[], int, int)">sumLog</A></B>(double[]&nbsp;values,
+       int&nbsp;begin,
+       int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of the natural logs of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#sumSq(double[])">sumSq</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of the squares of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#sumSq(double[], int, int)">sumSq</A></B>(double[]&nbsp;values,
+      int&nbsp;begin,
+      int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of the squares of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#variance(double[])">variance</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the variance of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#variance(double[], double)">variance</A></B>(double[]&nbsp;values,
+         double&nbsp;mean)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the variance of the entries in the input array, using the
+ precomputed mean value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#variance(double[], double, int, int)">variance</A></B>(double[]&nbsp;values,
+         double&nbsp;mean,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the variance of the entries in the specified portion of
+ the input array, using the precomputed mean value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StatUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/StatUtils.html#variance(double[], int, int)">variance</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the variance of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.clustering"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/clustering/package-summary.html">org.apache.commons.math3.stat.clustering</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/stat/clustering/package-summary.html">org.apache.commons.math3.stat.clustering</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/stat/clustering/Cluster.html" title="class in org.apache.commons.math3.stat.clustering">Cluster</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/stat/clustering/KMeansPlusPlusClusterer.html" title="type parameter in KMeansPlusPlusClusterer">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>KMeansPlusPlusClusterer.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/clustering/KMeansPlusPlusClusterer.html#cluster(java.util.Collection, int, int)">cluster</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/stat/clustering/KMeansPlusPlusClusterer.html" title="type parameter in KMeansPlusPlusClusterer">T</A>&gt;&nbsp;points,
+        int&nbsp;k,
+        int&nbsp;maxIterations)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Runs the K-means++ clustering algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/stat/clustering/Cluster.html" title="class in org.apache.commons.math3.stat.clustering">Cluster</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/stat/clustering/KMeansPlusPlusClusterer.html" title="type parameter in KMeansPlusPlusClusterer">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>KMeansPlusPlusClusterer.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/clustering/KMeansPlusPlusClusterer.html#cluster(java.util.Collection, int, int, int)">cluster</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/stat/clustering/KMeansPlusPlusClusterer.html" title="type parameter in KMeansPlusPlusClusterer">T</A>&gt;&nbsp;points,
+        int&nbsp;k,
+        int&nbsp;numTrials,
+        int&nbsp;maxIterationsPerTrial)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Runs the K-means++ clustering algorithm.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.correlation"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/correlation/package-summary.html">org.apache.commons.math3.stat.correlation</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/stat/correlation/package-summary.html">org.apache.commons.math3.stat.correlation</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B>Covariance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/correlation/Covariance.html#computeCovarianceMatrix(double[][])">computeCovarianceMatrix</A></B>(double[][]&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a covariance matrix from a rectangular array whose columns represent
+ covariates.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B>Covariance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/correlation/Covariance.html#computeCovarianceMatrix(double[][], boolean)">computeCovarianceMatrix</A></B>(double[][]&nbsp;data,
+                        boolean&nbsp;biasCorrected)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute a covariance matrix from a rectangular array whose columns represent
+ covariates.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B>Covariance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/correlation/Covariance.html#computeCovarianceMatrix(org.apache.commons.math3.linear.RealMatrix)">computeCovarianceMatrix</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;matrix)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a covariance matrix from a matrix whose columns represent
+ covariates.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B>Covariance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/correlation/Covariance.html#computeCovarianceMatrix(org.apache.commons.math3.linear.RealMatrix, boolean)">computeCovarianceMatrix</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;matrix,
+                        boolean&nbsp;biasCorrected)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute a covariance matrix from a matrix whose columns represent
+ covariates.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Covariance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/correlation/Covariance.html#covariance(double[], double[])">covariance</A></B>(double[]&nbsp;xArray,
+           double[]&nbsp;yArray)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the covariance between the two arrays, using the bias-corrected
+ formula.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Covariance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/correlation/Covariance.html#covariance(double[], double[], boolean)">covariance</A></B>(double[]&nbsp;xArray,
+           double[]&nbsp;yArray,
+           boolean&nbsp;biasCorrected)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the covariance between the two arrays.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/commons/math3/stat/correlation/package-summary.html">org.apache.commons.math3.stat.correlation</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/correlation/Covariance.html#Covariance(double[][])">Covariance</A></B>(double[][]&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a Covariance matrix from a rectangular array
+ whose columns represent covariates.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/correlation/Covariance.html#Covariance(double[][], boolean)">Covariance</A></B>(double[][]&nbsp;data,
+           boolean&nbsp;biasCorrected)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a Covariance matrix from a rectangular array
+ whose columns represent covariates.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/correlation/Covariance.html#Covariance(org.apache.commons.math3.linear.RealMatrix)">Covariance</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;matrix)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a covariance matrix from a matrix whose columns
+ represent covariates.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/correlation/Covariance.html#Covariance(org.apache.commons.math3.linear.RealMatrix, boolean)">Covariance</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;matrix,
+           boolean&nbsp;biasCorrected)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a covariance matrix from a matrix whose columns
+ represent covariates.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.descriptive"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/package-summary.html">org.apache.commons.math3.stat.descriptive</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/package-summary.html">org.apache.commons.math3.stat.descriptive</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>AbstractUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#evaluate()">evaluate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of evaluating the statistic over the stored data.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>AbstractUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#evaluate(double[])">evaluate</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of evaluating the statistic over the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>AbstractStorelessUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#evaluate(double[])">evaluate</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This default implementation calls <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#clear()"><CODE>AbstractStorelessUnivariateStatistic.clear()</CODE></A>, then invokes
+ <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#increment(double)"><CODE>AbstractStorelessUnivariateStatistic.increment(double)</CODE></A> in a loop over the the input array, and then uses
+ <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#getResult()"><CODE>AbstractStorelessUnivariateStatistic.getResult()</CODE></A> to compute the return value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>UnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html#evaluate(double[])">evaluate</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of evaluating the statistic over the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>WeightedEvaluation.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/WeightedEvaluation.html#evaluate(double[], double[])">evaluate</A></B>(double[]&nbsp;values,
+         double[]&nbsp;weights)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of evaluating the statistic over the input array,
+ using the supplied weights.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>WeightedEvaluation.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/WeightedEvaluation.html#evaluate(double[], double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         double[]&nbsp;weights,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of evaluating the statistic over the specified entries
+ in the input array, using corresponding entries in the supplied weights array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>AbstractUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of evaluating the statistic over the specified entries
+ in the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>AbstractStorelessUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This default implementation calls <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#clear()"><CODE>AbstractStorelessUnivariateStatistic.clear()</CODE></A>, then invokes
+ <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#increment(double)"><CODE>AbstractStorelessUnivariateStatistic.increment(double)</CODE></A> in a loop over the specified portion of the input
+ array, and then uses <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#getResult()"><CODE>AbstractStorelessUnivariateStatistic.getResult()</CODE></A> to compute the return value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>UnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of evaluating the statistic over the specified entries
+ in the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>DescriptiveStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.html#getPercentile(double)">getPercentile</A></B>(double&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate for the pth percentile of the stored values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>StorelessUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html#incrementAll(double[])">incrementAll</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the internal state of the statistic to reflect addition of
+ all values in the values array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractStorelessUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#incrementAll(double[])">incrementAll</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This default implementation just calls <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#increment(double)"><CODE>AbstractStorelessUnivariateStatistic.increment(double)</CODE></A> in a loop over
+ the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>StorelessUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html#incrementAll(double[], int, int)">incrementAll</A></B>(double[]&nbsp;values,
+             int&nbsp;start,
+             int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the internal state of the statistic to reflect addition of
+ the values in the designated portion of the values array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractStorelessUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#incrementAll(double[], int, int)">incrementAll</A></B>(double[]&nbsp;values,
+             int&nbsp;begin,
+             int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This default implementation just calls <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#increment(double)"><CODE>AbstractStorelessUnivariateStatistic.increment(double)</CODE></A> in a loop over
+ the specified portion of the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#setData(double[], int, int)">setData</A></B>(double[]&nbsp;values,
+        int&nbsp;begin,
+        int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the data array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>DescriptiveStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.html#setPercentileImpl(org.apache.commons.math3.stat.descriptive.UnivariateStatistic)">setPercentileImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">UnivariateStatistic</A>&nbsp;percentileImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation to be used by <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.html#getPercentile(double)"><CODE>DescriptiveStatistics.getPercentile(double)</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>DescriptiveStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.html#setWindowSize(int)">setWindowSize</A></B>(int&nbsp;windowSize)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WindowSize controls the number of values that contribute to the
+ reported statistics.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedDescriptiveStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedDescriptiveStatistics.html#setWindowSize(int)">setWindowSize</A></B>(int&nbsp;windowSize)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WindowSize controls the number of values that contribute to the
+ reported statistics.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>AbstractUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#test(double[], double[], int, int)">test</A></B>(double[]&nbsp;values,
+     double[]&nbsp;weights,
+     int&nbsp;begin,
+     int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method is used by <code>evaluate(double[], double[], int, int)</code> methods
+ to verify that the begin and length parameters designate a subarray of positive length
+ and the weights are all non-negative, non-NaN, finite, and not all zero.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>AbstractUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#test(double[], double[], int, int, boolean)">test</A></B>(double[]&nbsp;values,
+     double[]&nbsp;weights,
+     int&nbsp;begin,
+     int&nbsp;length,
+     boolean&nbsp;allowEmpty)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method is used by <code>evaluate(double[], double[], int, int)</code> methods
+ to verify that the begin and length parameters designate a subarray of positive length
+ and the weights are all non-negative, non-NaN, finite, and not all zero.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>AbstractUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#test(double[], int, int)">test</A></B>(double[]&nbsp;values,
+     int&nbsp;begin,
+     int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method is used by <code>evaluate(double[], int, int)</code> methods
+ to verify that the input parameters designate a subarray of positive length.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>AbstractUnivariateStatistic.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#test(double[], int, int, boolean)">test</A></B>(double[]&nbsp;values,
+     int&nbsp;begin,
+     int&nbsp;length,
+     boolean&nbsp;allowEmpty)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method is used by <code>evaluate(double[], int, int)</code> methods
+ to verify that the input parameters designate a subarray of positive length.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/package-summary.html">org.apache.commons.math3.stat.descriptive</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.html#DescriptiveStatistics(int)">DescriptiveStatistics</A></B>(int&nbsp;window)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a DescriptiveStatistics instance with the specified window</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedDescriptiveStatistics.html#SynchronizedDescriptiveStatistics(int)">SynchronizedDescriptiveStatistics</A></B>(int&nbsp;window)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct an instance with finite window</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.descriptive.moment"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/package-summary.html">org.apache.commons.math3.stat.descriptive.moment</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/package-summary.html">org.apache.commons.math3.stat.descriptive.moment</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Variance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html#evaluate(double[])">evaluate</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the variance of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StandardDeviation.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#evaluate(double[])">evaluate</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Standard Deviation of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Variance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html#evaluate(double[], double)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;mean)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the variance of the entries in the input array, using the
+ precomputed mean value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StandardDeviation.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#evaluate(double[], double)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;mean)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Standard Deviation of the entries in the input array, using
+ the precomputed mean value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>SemiVariance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#evaluate(double[], double)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;cutoff)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> of the designated values against the cutoff, using
+ instance properties variancDirection and biasCorrection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Variance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html#evaluate(double[], double[])">evaluate</A></B>(double[]&nbsp;values,
+         double[]&nbsp;weights)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Returns the weighted variance of the entries in the the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Mean.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Mean.html#evaluate(double[], double[])">evaluate</A></B>(double[]&nbsp;values,
+         double[]&nbsp;weights)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the weighted arithmetic mean of the entries in the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Variance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html#evaluate(double[], double[], double)">evaluate</A></B>(double[]&nbsp;values,
+         double[]&nbsp;weights,
+         double&nbsp;mean)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the weighted variance of the values in the input array, using
+ the precomputed weighted mean value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Variance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html#evaluate(double[], double[], double, int, int)">evaluate</A></B>(double[]&nbsp;values,
+         double[]&nbsp;weights,
+         double&nbsp;mean,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the weighted variance of the entries in the specified portion of
+ the input array, using the precomputed weighted mean value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Variance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html#evaluate(double[], double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         double[]&nbsp;weights,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the weighted variance of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Mean.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Mean.html#evaluate(double[], double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         double[]&nbsp;weights,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the weighted arithmetic mean of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Variance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html#evaluate(double[], double, int, int)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;mean,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the variance of the entries in the specified portion of
+ the input array, using the precomputed mean value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StandardDeviation.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#evaluate(double[], double, int, int)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;mean,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Standard Deviation of the entries in the specified portion of
+ the input array, using the precomputed mean value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>SemiVariance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#evaluate(double[], double, org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;cutoff,
+         <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> of the designated values against the cutoff in the
+ given direction, using the current value of the biasCorrection instance property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>SemiVariance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#evaluate(double[], double, org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction, boolean, int, int)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;cutoff,
+         <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction,
+         boolean&nbsp;corrected,
+         int&nbsp;start,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> of the designated values against the cutoff
+ in the given direction with the provided bias correction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Variance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the variance of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>GeometricMean.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/GeometricMean.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the geometric mean of the entries in the specified portion
+ of the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>StandardDeviation.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Standard Deviation of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Skewness.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Skewness.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Skewness of the entries in the specifed portion of the
+ input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Mean.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Mean.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the arithmetic mean of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>SemiVariance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;start,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> of the designated values against the mean, using
+ instance properties varianceDirection and biasCorrection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Kurtosis.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/Kurtosis.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the kurtosis of the entries in the specified portion of the
+ input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>SemiVariance.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html#evaluate(double[], org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction)">evaluate</A></B>(double[]&nbsp;values,
+         <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.Direction.html" title="enum in org.apache.commons.math3.stat.descriptive.moment">SemiVariance.Direction</A>&nbsp;direction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method calculates <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/SemiVariance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>SemiVariance</CODE></A> for the entire array against the mean, using
+ the current value of the biasCorrection instance property.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.descriptive.rank"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/rank/package-summary.html">org.apache.commons.math3.stat.descriptive.rank</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/rank/package-summary.html">org.apache.commons.math3.stat.descriptive.rank</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Percentile.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/rank/Percentile.html#evaluate(double)">evaluate</A></B>(double&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of evaluating the statistic over the stored data.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Percentile.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/rank/Percentile.html#evaluate(double[], double)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the <code>p</code>th percentile of the values
+ in the <code>values</code> array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Max.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/rank/Max.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the maximum of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Min.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/rank/Min.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the minimum of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Percentile.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/rank/Percentile.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;start,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the <code>quantile</code>th percentile of the
+ designated values in the <code>values</code> array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Percentile.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/rank/Percentile.html#evaluate(double[], int, int, double)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length,
+         double&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the <code>p</code>th percentile of the values
+ in the <code>values</code> array, starting with the element in (0-based)
+ position <code>begin</code> in the array and including <code>length</code>
+ values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Percentile.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/rank/Percentile.html#setData(double[], int, int)">setData</A></B>(double[]&nbsp;values,
+        int&nbsp;begin,
+        int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the data array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Percentile.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/rank/Percentile.html#setQuantile(double)">setQuantile</A></B>(double&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the quantile field (determines what percentile is
+ computed when evaluate() is called with no quantile argument).</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/rank/package-summary.html">org.apache.commons.math3.stat.descriptive.rank</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/rank/Percentile.html#Percentile(double)">Percentile</A></B>(double&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a Percentile with the specific quantile value.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.descriptive.summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/summary/package-summary.html">org.apache.commons.math3.stat.descriptive.summary</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/summary/package-summary.html">org.apache.commons.math3.stat.descriptive.summary</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Product.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/summary/Product.html#evaluate(double[], double[])">evaluate</A></B>(double[]&nbsp;values,
+         double[]&nbsp;weights)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the weighted product of the entries in the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Sum.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/summary/Sum.html#evaluate(double[], double[])">evaluate</A></B>(double[]&nbsp;values,
+         double[]&nbsp;weights)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The weighted sum of the entries in the the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Product.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/summary/Product.html#evaluate(double[], double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         double[]&nbsp;weights,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the weighted product of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Sum.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/summary/Sum.html#evaluate(double[], double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         double[]&nbsp;weights,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The weighted sum of the entries in the specified portion of
+ the input array, or 0 if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Product.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/summary/Product.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the product of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>SumOfLogs.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/summary/SumOfLogs.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of the natural logs of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Sum.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/summary/Sum.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The sum of the entries in the specified portion of
+ the input array, or 0 if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>SumOfSquares.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/summary/SumOfSquares.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of the squares of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.inference"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/inference/package-summary.html">org.apache.commons.math3.stat.inference</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/stat/inference/package-summary.html">org.apache.commons.math3.stat.inference</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>TTest.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double, double, double, double)">tTest</A></B>(double&nbsp;m,
+      double&nbsp;mu,
+      double&nbsp;v,
+      double&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes p-value for 2-sided, 1-sample t-test.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.regression"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/regression/package-summary.html">org.apache.commons.math3.stat.regression</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/regression/package-summary.html">org.apache.commons.math3.stat.regression</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/ModelSpecificationException.html" title="class in org.apache.commons.math3.stat.regression">ModelSpecificationException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception thrown when a regression model is not correctly specified.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/stat/regression/package-summary.html">org.apache.commons.math3.stat.regression</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>OLSMultipleLinearRegression.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateAdjustedRSquared()">calculateAdjustedRSquared</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the adjusted R-squared statistic, defined by the formula 
+ R<sup>2</sup><sub>adj</sub> = 1 - [SSR (n - 1)] / [SSTO (n - p)]
+ 
+ where SSR is the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateResidualSumOfSquares()"><CODE>sum of squared residuals</CODE></A>,
+ SSTO is the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateTotalSumOfSquares()"><CODE>total sum of squares</CODE></A>, n is the number
+ of observations and p is the number of parameters estimated (including the intercept).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>OLSMultipleLinearRegression.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateRSquared()">calculateRSquared</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the R-Squared statistic, defined by the formula 
+ R<sup>2</sup> = 1 - SSR / SSTO
+ 
+ where SSR is the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateResidualSumOfSquares()"><CODE>sum of squared residuals</CODE></A>
+ and SSTO is the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateTotalSumOfSquares()"><CODE>total sum of squares</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>OLSMultipleLinearRegression.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateTotalSumOfSquares()">calculateTotalSumOfSquares</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of squared deviations of Y from its mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>OLSMultipleLinearRegression.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#newSampleData(double[], double[][])">newSampleData</A></B>(double[]&nbsp;y,
+              double[][]&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loads model x and y sample data, overriding any previous sample.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html" title="class in org.apache.commons.math3.stat.regression">RegressionResults</A></CODE></FONT></TD>
+<TD><CODE><B>UpdatingMultipleLinearRegression.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/UpdatingMultipleLinearRegression.html#regress(int[])">regress</A></B>(int[]&nbsp;variablesToInclude)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a regression on data present in buffers including only regressors
+ indexed in variablesToInclude and outputs a RegressionResults object</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html" title="class in org.apache.commons.math3.stat.regression">RegressionResults</A></CODE></FONT></TD>
+<TD><CODE><B>SimpleRegression.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html#regress(int[])">regress</A></B>(int[]&nbsp;variablesToInclude)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a regression on data present in buffers including only regressors
+ indexed in variablesToInclude and outputs a RegressionResults object</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractMultipleLinearRegression.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#validateSampleData(double[][], double[])">validateSampleData</A></B>(double[][]&nbsp;x,
+                   double[]&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Validates sample data.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.transform"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/transform/package-summary.html">org.apache.commons.math3.transform</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/transform/package-summary.html">org.apache.commons.math3.transform</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B>TransformUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/transform/TransformUtils.html#exactLog2(int)">exactLog2</A></B>(int&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the base-2 logarithm of the specified <code>int</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B>FastCosineTransformer.</B><B><A HREF="../../../../../../org/apache/commons/math3/transform/FastCosineTransformer.html#fct(double[])">fct</A></B>(double[]&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perform the FCT algorithm (including inverse).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B>FastHadamardTransformer.</B><B><A HREF="../../../../../../org/apache/commons/math3/transform/FastHadamardTransformer.html#fht(double[])">fht</A></B>(double[]&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The FHT (Fast Hadamard Transformation) which uses only subtraction and
+ addition.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;int[]</CODE></FONT></TD>
+<TD><CODE><B>FastHadamardTransformer.</B><B><A HREF="../../../../../../org/apache/commons/math3/transform/FastHadamardTransformer.html#fht(int[])">fht</A></B>(int[]&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the forward transform of the specified integer data set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B>FastSineTransformer.</B><B><A HREF="../../../../../../org/apache/commons/math3/transform/FastSineTransformer.html#fst(double[])">fst</A></B>(double[]&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perform the FST algorithm (including inverse).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B>FastCosineTransformer.</B><B><A HREF="../../../../../../org/apache/commons/math3/transform/FastCosineTransformer.html#transform(double[], org.apache.commons.math3.transform.TransformType)">transform</A></B>(double[]&nbsp;f,
+          <A HREF="../../../../../../org/apache/commons/math3/transform/TransformType.html" title="enum in org.apache.commons.math3.transform">TransformType</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (forward, inverse) transform of the specified real data set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B>RealTransformer.</B><B><A HREF="../../../../../../org/apache/commons/math3/transform/RealTransformer.html#transform(double[], org.apache.commons.math3.transform.TransformType)">transform</A></B>(double[]&nbsp;f,
+          <A HREF="../../../../../../org/apache/commons/math3/transform/TransformType.html" title="enum in org.apache.commons.math3.transform">TransformType</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (forward, inverse) transform of the specified real data set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B>FastCosineTransformer.</B><B><A HREF="../../../../../../org/apache/commons/math3/transform/FastCosineTransformer.html#transform(org.apache.commons.math3.analysis.UnivariateFunction, double, double, int, org.apache.commons.math3.transform.TransformType)">transform</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;f,
+          double&nbsp;min,
+          double&nbsp;max,
+          int&nbsp;n,
+          <A HREF="../../../../../../org/apache/commons/math3/transform/TransformType.html" title="enum in org.apache.commons.math3.transform">TransformType</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (forward, inverse) transform of the specified real function,
+ sampled on the specified interval.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B>RealTransformer.</B><B><A HREF="../../../../../../org/apache/commons/math3/transform/RealTransformer.html#transform(org.apache.commons.math3.analysis.UnivariateFunction, double, double, int, org.apache.commons.math3.transform.TransformType)">transform</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;f,
+          double&nbsp;min,
+          double&nbsp;max,
+          int&nbsp;n,
+          <A HREF="../../../../../../org/apache/commons/math3/transform/TransformType.html" title="enum in org.apache.commons.math3.transform">TransformType</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (forward, inverse) transform of the specified real function,
+ sampled on the specified interval.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.util"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A> in <A HREF="../../../../../../org/apache/commons/math3/util/package-summary.html">org.apache.commons.math3.util</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/util/package-summary.html">org.apache.commons.math3.util</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResizableDoubleArray.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#checkContractExpand(float, float)">checkContractExpand</A></B>(float&nbsp;contraction,
+                    float&nbsp;expansion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#checkContractExpand(double, double)"><CODE>ResizableDoubleArray.checkContractExpand(double,double)</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResizableDoubleArray.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#discardFrontElements(int)">discardFrontElements</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discards the <code>i</code> initial elements of the array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResizableDoubleArray.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#discardMostRecentElements(int)">discardMostRecentElements</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discards the <code>i</code> last elements of the array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B>MathArrays.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/MathArrays.html#normalizeArray(double[], double)">normalizeArray</A></B>(double[]&nbsp;values,
+               double&nbsp;normalizedSum)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Normalizes an array to make it sum to a specified value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;float</CODE></FONT></TD>
+<TD><CODE><B>Precision.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/Precision.html#round(float, int, int)">round</A></B>(float&nbsp;x,
+      int&nbsp;scale,
+      int&nbsp;roundingMethod)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rounds the given value to the specified number of decimal places.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResizableDoubleArray.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setContractionCriteria(float)">setContractionCriteria</A></B>(float&nbsp;contractionCriteria)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0 as field will become "final").</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResizableDoubleArray.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setExpansionFactor(float)">setExpansionFactor</A></B>(float&nbsp;expansionFactor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0 as field will become "final").</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResizableDoubleArray.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setExpansionMode(int)">setExpansionMode</A></B>(int&nbsp;expansionMode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setExpansionMode(org.apache.commons.math3.util.ResizableDoubleArray.ExpansionMode)"><CODE>ResizableDoubleArray.setExpansionMode(ExpansionMode)</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResizableDoubleArray.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setInitialCapacity(int)">setInitialCapacity</A></B>(int&nbsp;initialCapacity)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1, this is a no-op.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResizableDoubleArray.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setNumElements(int)">setNumElements</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This function allows you to control the number of elements contained
+ in this array, and can be used to "throw out" the last n values in an
+ array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>NumberTransformer.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/NumberTransformer.html#transform(java.lang.Object)">transform</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implementing this interface provides a facility to transform
+ from Object to Double.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>TransformerMap.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/TransformerMap.html#transform(java.lang.Object)">transform</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attempts to transform the Object against the map of
+ NumberTransformers.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>DefaultTransformer.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/DefaultTransformer.html#transform(java.lang.Object)">transform</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/commons/math3/util/package-summary.html">org.apache.commons.math3.util</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an instance with the specified initial capacity.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity,
+                     double&nbsp;expansionFactor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an instance with the specified initial capacity
+ and expansion factor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double, double)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity,
+                     double&nbsp;expansionFactor,
+                     double&nbsp;contractionCriterion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an instance with the specified initial capacity,
+ expansion factor, and contraction criteria.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double, double, org.apache.commons.math3.util.ResizableDoubleArray.ExpansionMode, double...)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity,
+                     double&nbsp;expansionFactor,
+                     double&nbsp;contractionCriterion,
+                     <A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html" title="enum in org.apache.commons.math3.util">ResizableDoubleArray.ExpansionMode</A>&nbsp;expansionMode,
+                     double...&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an instance with the specified properties.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, float)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity,
+                     float&nbsp;expansionFactor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double)"><CODE>ResizableDoubleArray.ResizableDoubleArray(int,double)</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, float, float)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity,
+                     float&nbsp;expansionFactor,
+                     float&nbsp;contractionCriteria)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double, double)"><CODE>ResizableDoubleArray.ResizableDoubleArray(int,double,double)</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, float, float, int)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity,
+                     float&nbsp;expansionFactor,
+                     float&nbsp;contractionCriteria,
+                     int&nbsp;expansionMode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double, double, org.apache.commons.math3.util.ResizableDoubleArray.ExpansionMode, double...)"><CODE>ResizableDoubleArray.ResizableDoubleArray(int,double,double,ExpansionMode,double[])</CODE></A>
+ instead.</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/exception//class-useMathIllegalArgumentException.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MathIllegalArgumentException.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

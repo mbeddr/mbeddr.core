@@ -1,0 +1,669 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Line (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Line (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Line.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/NotARotationMatrixException.html" title="class in org.apache.commons.math3.geometry.euclidean.threed"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/geometry/euclidean/threed/Line.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Line.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.geometry.euclidean.threed</FONT>
+<BR>
+Class Line</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.geometry.euclidean.threed.Line</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Embedding.html" title="interface in org.apache.commons.math3.geometry.partitioning">Embedding</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>,<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>Line</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Embedding.html" title="interface in org.apache.commons.math3.geometry.partitioning">Embedding</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>,<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</DL>
+</PRE>
+
+<P>
+The class represent lines in a three dimensional space.
+
+ <p>Each oriented line is intrinsically associated with an abscissa
+ which is a coordinate on the line. The point at abscissa 0 is the
+ orthogonal projection of the origin on the line, another equivalent
+ way to express this is to say that it is the point of the line
+ which is closest to the origin. Abscissa increases in the line
+ direction.</p>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>3.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: Line.java 1453218 2013-03-06 08:53:28Z luc $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#Line(org.apache.commons.math3.geometry.euclidean.threed.Line)">Line</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Line</A>&nbsp;line)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy constructor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#Line(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)">Line</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p1,
+     <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a line from two points.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#closestPoint(org.apache.commons.math3.geometry.euclidean.threed.Line)">closestPoint</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Line</A>&nbsp;line)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the point of the instance closest to another line.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#contains(org.apache.commons.math3.geometry.euclidean.threed.Vector3D)">contains</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if the instance contains a point.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#distance(org.apache.commons.math3.geometry.euclidean.threed.Line)">distance</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Line</A>&nbsp;line)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the shortest distance between the instance and another line.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#distance(org.apache.commons.math3.geometry.euclidean.threed.Vector3D)">distance</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the distance between the instance and a point.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#getAbscissa(org.apache.commons.math3.geometry.euclidean.threed.Vector3D)">getAbscissa</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the abscissa of a point with respect to the line.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#getDirection()">getDirection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the normalized direction vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#getOrigin()">getOrigin</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the line point closest to the origin.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#intersection(org.apache.commons.math3.geometry.euclidean.threed.Line)">intersection</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Line</A>&nbsp;line)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the intersection point of the instance and another line.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#isSimilarTo(org.apache.commons.math3.geometry.euclidean.threed.Line)">isSimilarTo</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Line</A>&nbsp;line)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if the instance is similar to another line.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#pointAt(double)">pointAt</A></B>(double&nbsp;abscissa)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get one point from the line.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#reset(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)">reset</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p1,
+      <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reset the instance as if built from two points.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Line</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#revert()">revert</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a line with reversed direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#toSpace(org.apache.commons.math3.geometry.Vector)">toSpace</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transform a sub-space point into a space point.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Vector1D</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#toSubSpace(org.apache.commons.math3.geometry.Vector)">toSubSpace</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>&gt;&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transform a space point into a sub-space point.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/SubLine.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">SubLine</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#wholeLine()">wholeLine</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a sub-line covering the whole line.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="Line(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)"><!-- --></A><H3>
+Line</H3>
+<PRE>
+public <B>Line</B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p1,
+            <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p2)
+     throws <A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Build a line from two points.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>p1</CODE> - first point belonging to the line (this can be any point)<DD><CODE>p2</CODE> - second point belonging to the line (this can be any point, different from p1)
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the points are equal</DL>
+</DL>
+<HR>
+
+<A NAME="Line(org.apache.commons.math3.geometry.euclidean.threed.Line)"><!-- --></A><H3>
+Line</H3>
+<PRE>
+public <B>Line</B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Line</A>&nbsp;line)</PRE>
+<DL>
+<DD>Copy constructor.
+ <p>The created instance is completely independent from the
+ original instance, it is a deep copy.</p>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>line</CODE> - line to copy</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="reset(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)"><!-- --></A><H3>
+reset</H3>
+<PRE>
+public void <B>reset</B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p1,
+                  <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p2)
+           throws <A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Reset the instance as if built from two points.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>p1</CODE> - first point belonging to the line (this can be any point)<DD><CODE>p2</CODE> - second point belonging to the line (this can be any point, different from p1)
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the points are equal</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="revert()"><!-- --></A><H3>
+revert</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Line</A> <B>revert</B>()</PRE>
+<DL>
+<DD>Get a line with reversed direction.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a new instance, with reversed direction</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDirection()"><!-- --></A><H3>
+getDirection</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A> <B>getDirection</B>()</PRE>
+<DL>
+<DD>Get the normalized direction vector.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>normalized direction vector</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOrigin()"><!-- --></A><H3>
+getOrigin</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A> <B>getOrigin</B>()</PRE>
+<DL>
+<DD>Get the line point closest to the origin.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>line point closest to the origin</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAbscissa(org.apache.commons.math3.geometry.euclidean.threed.Vector3D)"><!-- --></A><H3>
+getAbscissa</H3>
+<PRE>
+public double <B>getAbscissa</B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;point)</PRE>
+<DL>
+<DD>Get the abscissa of a point with respect to the line.
+ <p>The abscissa is 0 if the projection of the point and the
+ projection of the frame origin on the line are the same
+ point.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>point</CODE> - point to check
+<DT><B>Returns:</B><DD>abscissa of the point</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="pointAt(double)"><!-- --></A><H3>
+pointAt</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A> <B>pointAt</B>(double&nbsp;abscissa)</PRE>
+<DL>
+<DD>Get one point from the line.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>abscissa</CODE> - desired abscissa for the point
+<DT><B>Returns:</B><DD>one point belonging to the line, at specified abscissa</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toSubSpace(org.apache.commons.math3.geometry.Vector)"><!-- --></A><H3>
+toSubSpace</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Vector1D</A> <B>toSubSpace</B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>&gt;&nbsp;point)</PRE>
+<DL>
+<DD>Transform a space point into a sub-space point.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Embedding.html#toSubSpace(org.apache.commons.math3.geometry.Vector)">toSubSpace</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Embedding.html" title="interface in org.apache.commons.math3.geometry.partitioning">Embedding</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>,<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>point</CODE> - n-dimension point of the space
+<DT><B>Returns:</B><DD>(n-1)-dimension point of the sub-space corresponding to
+ the specified space point<DT><B>See Also:</B><DD><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#getAbscissa(org.apache.commons.math3.geometry.euclidean.threed.Vector3D)"><CODE>getAbscissa(Vector3D)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toSpace(org.apache.commons.math3.geometry.Vector)"><!-- --></A><H3>
+toSpace</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A> <B>toSpace</B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;point)</PRE>
+<DL>
+<DD>Transform a sub-space point into a space point.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Embedding.html#toSpace(org.apache.commons.math3.geometry.Vector)">toSpace</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Embedding.html" title="interface in org.apache.commons.math3.geometry.partitioning">Embedding</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>,<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>point</CODE> - (n-1)-dimension point of the sub-space
+<DT><B>Returns:</B><DD>n-dimension point of the space corresponding to the
+ specified sub-space point<DT><B>See Also:</B><DD><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#pointAt(double)"><CODE>pointAt(double)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSimilarTo(org.apache.commons.math3.geometry.euclidean.threed.Line)"><!-- --></A><H3>
+isSimilarTo</H3>
+<PRE>
+public boolean <B>isSimilarTo</B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Line</A>&nbsp;line)</PRE>
+<DL>
+<DD>Check if the instance is similar to another line.
+ <p>Lines are considered similar if they contain the same
+ points. This does not mean they are equal since they can have
+ opposite directions.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>line</CODE> - line to which instance should be compared
+<DT><B>Returns:</B><DD>true if the lines are similar</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="contains(org.apache.commons.math3.geometry.euclidean.threed.Vector3D)"><!-- --></A><H3>
+contains</H3>
+<PRE>
+public boolean <B>contains</B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p)</PRE>
+<DL>
+<DD>Check if the instance contains a point.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>p</CODE> - point to check
+<DT><B>Returns:</B><DD>true if p belongs to the line</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="distance(org.apache.commons.math3.geometry.euclidean.threed.Vector3D)"><!-- --></A><H3>
+distance</H3>
+<PRE>
+public double <B>distance</B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A>&nbsp;p)</PRE>
+<DL>
+<DD>Compute the distance between the instance and a point.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>p</CODE> - to check
+<DT><B>Returns:</B><DD>distance between the instance and the point</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="distance(org.apache.commons.math3.geometry.euclidean.threed.Line)"><!-- --></A><H3>
+distance</H3>
+<PRE>
+public double <B>distance</B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Line</A>&nbsp;line)</PRE>
+<DL>
+<DD>Compute the shortest distance between the instance and another line.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>line</CODE> - line to check against the instance
+<DT><B>Returns:</B><DD>shortest distance between the instance and the line</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="closestPoint(org.apache.commons.math3.geometry.euclidean.threed.Line)"><!-- --></A><H3>
+closestPoint</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A> <B>closestPoint</B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Line</A>&nbsp;line)</PRE>
+<DL>
+<DD>Compute the point of the instance closest to another line.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>line</CODE> - line to check against the instance
+<DT><B>Returns:</B><DD>point of the instance closest to another line</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="intersection(org.apache.commons.math3.geometry.euclidean.threed.Line)"><!-- --></A><H3>
+intersection</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A> <B>intersection</B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Line</A>&nbsp;line)</PRE>
+<DL>
+<DD>Get the intersection point of the instance and another line.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>line</CODE> - other line
+<DT><B>Returns:</B><DD>intersection point of the instance and the other line
+ or null if there are no intersection points</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="wholeLine()"><!-- --></A><H3>
+wholeLine</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/SubLine.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">SubLine</A> <B>wholeLine</B>()</PRE>
+<DL>
+<DD>Build a sub-line covering the whole line.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a sub-line covering the whole line</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Line.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/NotARotationMatrixException.html" title="class in org.apache.commons.math3.geometry.euclidean.threed"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/geometry/euclidean/threed/Line.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Line.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

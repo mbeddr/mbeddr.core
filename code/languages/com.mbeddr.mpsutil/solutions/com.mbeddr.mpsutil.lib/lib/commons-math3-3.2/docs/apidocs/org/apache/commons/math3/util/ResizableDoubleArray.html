@@ -1,0 +1,1811 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ResizableDoubleArray (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ResizableDoubleArray (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ResizableDoubleArray.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/util/Precision.html" title="class in org.apache.commons.math3.util"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html" title="enum in org.apache.commons.math3.util"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/util/ResizableDoubleArray.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ResizableDoubleArray.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.util</FONT>
+<BR>
+Class ResizableDoubleArray</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.util.ResizableDoubleArray</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html" title="interface in org.apache.commons.math3.util">DoubleArray</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>ResizableDoubleArray</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html" title="interface in org.apache.commons.math3.util">DoubleArray</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DL>
+</PRE>
+
+<P>
+<p>
+ A variable length <A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html" title="interface in org.apache.commons.math3.util"><CODE>DoubleArray</CODE></A> implementation that automatically
+ handles expanding and contracting its internal storage array as elements
+ are added and removed.
+ </p>
+ <h3>Important note: Usage should not assume that this class is thread-safe
+ even though some of the methods are <code>synchronized</code>.
+ This qualifier will be dropped in the next major release (4.0).</h3>
+ <p>
+ The internal storage array starts with capacity determined by the
+ <code>initialCapacity</code> property, which can be set by the constructor.
+ The default initial capacity is 16.  Adding elements using
+ <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#addElement(double)"><CODE>addElement(double)</CODE></A> appends elements to the end of the array.
+ When there are no open entries at the end of the internal storage array,
+ the array is expanded.  The size of the expanded array depends on the
+ <code>expansionMode</code> and <code>expansionFactor</code> properties.
+ The <code>expansionMode</code> determines whether the size of the array is
+ multiplied by the <code>expansionFactor</code>
+ (<A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html#MULTIPLICATIVE"><CODE>ResizableDoubleArray.ExpansionMode.MULTIPLICATIVE</CODE></A>) or if the expansion is additive
+ (<A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html#ADDITIVE"><CODE>ResizableDoubleArray.ExpansionMode.ADDITIVE</CODE></A> -- <code>expansionFactor</code> storage
+ locations added).
+ The default <code>expansionMode</code> is <code>MULTIPLICATIVE</code> and the default
+ <code>expansionFactor</code> is 2.
+ </p>
+ <p>
+ The <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#addElementRolling(double)"><CODE>addElementRolling(double)</CODE></A> method adds a new element to the end
+ of the internal storage array and adjusts the "usable window" of the
+ internal array forward by one position (effectively making what was the
+ second element the first, and so on).  Repeated activations of this method
+ (or activation of <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#discardFrontElements(int)"><CODE>discardFrontElements(int)</CODE></A>) will effectively orphan
+ the storage locations at the beginning of the internal storage array.  To
+ reclaim this storage, each time one of these methods is activated, the size
+ of the internal storage array is compared to the number of addressable
+ elements (the <code>numElements</code> property) and if the difference
+ is too large, the internal array is contracted to size
+ <code>numElements + 1</code>.  The determination of when the internal
+ storage array is "too large" depends on the <code>expansionMode</code> and
+ <code>contractionFactor</code> properties.  If  the <code>expansionMode</code>
+ is <code>MULTIPLICATIVE</code>, contraction is triggered when the
+ ratio between storage array length and <code>numElements</code> exceeds
+ <code>contractionFactor.</code>  If the <code>expansionMode</code>
+ is <code>ADDITIVE</code>, the number of excess storage locations
+ is compared to <code>contractionFactor</code>.
+ </p>
+ <p>
+ To avoid cycles of expansions and contractions, the
+ <code>expansionFactor</code> must not exceed the <code>contractionFactor</code>.
+ Constructors and mutators for both of these properties enforce this
+ requirement, throwing a <code>MathIllegalArgumentException</code> if it is
+ violated.
+ </p>
+<P>
+
+<P>
+<DL>
+<DT><B>Version:</B></DT>
+  <DD>$Id: ResizableDoubleArray.java 1462504 2013-03-29 15:48:57Z luc $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../serialized-form.html#org.apache.commons.math3.util.ResizableDoubleArray">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html" title="enum in org.apache.commons.math3.util">ResizableDoubleArray.ExpansionMode</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specification of expansion algorithm.</TD>
+</TR>
+</TABLE>
+&nbsp;<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ADDITIVE_MODE">ADDITIVE_MODE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html#ADDITIVE"><CODE>ResizableDoubleArray.ExpansionMode.ADDITIVE</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#MULTIPLICATIVE_MODE">MULTIPLICATIVE_MODE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html#MULTIPLICATIVE"><CODE>ResizableDoubleArray.ExpansionMode.MULTIPLICATIVE</CODE></A> instead.</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray()">ResizableDoubleArray</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an instance with default properties.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(double[])">ResizableDoubleArray</A></B>(double[]&nbsp;initialArray)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an instance from an existing <code>double[]</code> with the
+ initial capacity and numElements corresponding to the size of
+ the supplied <code>double[]</code> array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an instance with the specified initial capacity.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity,
+                     double&nbsp;expansionFactor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an instance with the specified initial capacity
+ and expansion factor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double, double)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity,
+                     double&nbsp;expansionFactor,
+                     double&nbsp;contractionCriterion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an instance with the specified initial capacity,
+ expansion factor, and contraction criteria.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double, double, org.apache.commons.math3.util.ResizableDoubleArray.ExpansionMode, double...)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity,
+                     double&nbsp;expansionFactor,
+                     double&nbsp;contractionCriterion,
+                     <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html" title="enum in org.apache.commons.math3.util">ResizableDoubleArray.ExpansionMode</A>&nbsp;expansionMode,
+                     double...&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an instance with the specified properties.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, float)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity,
+                     float&nbsp;expansionFactor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double)"><CODE>ResizableDoubleArray(int,double)</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, float, float)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity,
+                     float&nbsp;expansionFactor,
+                     float&nbsp;contractionCriteria)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double, double)"><CODE>ResizableDoubleArray(int,double,double)</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, float, float, int)">ResizableDoubleArray</A></B>(int&nbsp;initialCapacity,
+                     float&nbsp;expansionFactor,
+                     float&nbsp;contractionCriteria,
+                     int&nbsp;expansionMode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double, double, org.apache.commons.math3.util.ResizableDoubleArray.ExpansionMode, double...)"><CODE>ResizableDoubleArray(int,double,double,ExpansionMode,double[])</CODE></A>
+ instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(org.apache.commons.math3.util.ResizableDoubleArray)">ResizableDoubleArray</A></B>(<A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html" title="class in org.apache.commons.math3.util">ResizableDoubleArray</A>&nbsp;original)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy constructor.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#addElement(double)">addElement</A></B>(double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds an element to the end of this expandable array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#addElementRolling(double)">addElementRolling</A></B>(double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Adds an element to the end of the array and removes the first
+ element in the array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#addElements(double[])">addElements</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds several element to the end of this expandable array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#checkContractExpand(double, double)">checkContractExpand</A></B>(double&nbsp;contraction,
+                    double&nbsp;expansion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checks the expansion factor and the contraction criterion and raises
+ an exception if the contraction criterion is smaller than the
+ expansion criterion.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#checkContractExpand(float, float)">checkContractExpand</A></B>(float&nbsp;contraction,
+                    float&nbsp;expansion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#checkContractExpand(double, double)"><CODE>checkContractExpand(double,double)</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#clear()">clear</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the array contents, resetting the number of elements to zero.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#compute(org.apache.commons.math3.util.MathArrays.Function)">compute</A></B>(<A HREF="../../../../../org/apache/commons/math3/util/MathArrays.Function.html" title="interface in org.apache.commons.math3.util">MathArrays.Function</A>&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs an operation on the addressable elements of the array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#contract()">contract</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contracts the storage array to the (size of the element set) + 1 - to
+ avoid a zero length array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html" title="class in org.apache.commons.math3.util">ResizableDoubleArray</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#copy()">copy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a copy of the ResizableDoubleArray.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#copy(org.apache.commons.math3.util.ResizableDoubleArray, org.apache.commons.math3.util.ResizableDoubleArray)">copy</A></B>(<A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html" title="class in org.apache.commons.math3.util">ResizableDoubleArray</A>&nbsp;source,
+     <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html" title="class in org.apache.commons.math3.util">ResizableDoubleArray</A>&nbsp;dest)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copies source to dest, copying the underlying data, so dest is
+ a new, independent copy of source.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#discardFrontElements(int)">discardFrontElements</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discards the <code>i</code> initial elements of the array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#discardMostRecentElements(int)">discardMostRecentElements</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discards the <code>i</code> last elements of the array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#equals(java.lang.Object)">equals</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;object)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true iff object is a ResizableDoubleArray with the same properties
+ as this and an identical internal storage array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#expand()">expand</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expands the internal storage array using the expansion factor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getArrayRef()">getArrayRef</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides <em>direct</em> access to the internal storage array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getCapacity()">getCapacity</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the currently allocated size of the internal data structure used
+ for storing elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;float</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getContractionCriteria()">getContractionCriteria</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getContractionCriterion()"><CODE>getContractionCriterion()</CODE></A>
+ instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getContractionCriterion()">getContractionCriterion</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The contraction criterion defines when the internal array will contract
+ to store only the number of elements in the element array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getElement(int)">getElement</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the element at the specified index</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getElements()">getElements</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a double array containing the elements of this
+ <code>ResizableArray</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;float</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getExpansionFactor()">getExpansionFactor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Return type will be changed to "double" in 4.0.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getExpansionMode()">getExpansionMode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Return value to be changed to
+ <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html" title="enum in org.apache.commons.math3.util"><CODE>ResizableDoubleArray.ExpansionMode</CODE></A> in 4.0.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getInternalValues()">getInternalValues</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getNumElements()">getNumElements</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the number of elements currently in the array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getStartIndex()">getStartIndex</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the "start index" of the internal array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#hashCode()">hashCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a hash code consistent with equals.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setContractionCriteria(float)">setContractionCriteria</A></B>(float&nbsp;contractionCriteria)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0 as field will become "final").</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setElement(int, double)">setElement</A></B>(int&nbsp;index,
+           double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the element at the specified index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setExpansionFactor(float)">setExpansionFactor</A></B>(float&nbsp;expansionFactor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0 as field will become "final").</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setExpansionMode(int)">setExpansionMode</A></B>(int&nbsp;expansionMode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setExpansionMode(org.apache.commons.math3.util.ResizableDoubleArray.ExpansionMode)"><CODE>setExpansionMode(ExpansionMode)</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setExpansionMode(org.apache.commons.math3.util.ResizableDoubleArray.ExpansionMode)">setExpansionMode</A></B>(<A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html" title="enum in org.apache.commons.math3.util">ResizableDoubleArray.ExpansionMode</A>&nbsp;expansionMode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0 as field will become "final").</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setInitialCapacity(int)">setInitialCapacity</A></B>(int&nbsp;initialCapacity)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1, this is a no-op.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setNumElements(int)">setNumElements</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This function allows you to control the number of elements contained
+ in this array, and can be used to "throw out" the last n values in an
+ array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#start()">start</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#substituteMostRecentElement(double)">substituteMostRecentElement</A></B>(double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Substitutes <code>value</code> for the most recently added value.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ADDITIVE_MODE"><!-- --></A><H3>
+ADDITIVE_MODE</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public static final int <B>ADDITIVE_MODE</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html#ADDITIVE"><CODE>ResizableDoubleArray.ExpansionMode.ADDITIVE</CODE></A> instead.</I><DD>Additive expansion mode.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.util.ResizableDoubleArray.ADDITIVE_MODE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="MULTIPLICATIVE_MODE"><!-- --></A><H3>
+MULTIPLICATIVE_MODE</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public static final int <B>MULTIPLICATIVE_MODE</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html#MULTIPLICATIVE"><CODE>ResizableDoubleArray.ExpansionMode.MULTIPLICATIVE</CODE></A> instead.</I><DD>Multiplicative expansion mode.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.commons.math3.util.ResizableDoubleArray.MULTIPLICATIVE_MODE">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ResizableDoubleArray()"><!-- --></A><H3>
+ResizableDoubleArray</H3>
+<PRE>
+public <B>ResizableDoubleArray</B>()</PRE>
+<DL>
+<DD>Creates an instance with default properties.
+ <ul>
+  <li><code>initialCapacity = 16</code></li>
+  <li><code>expansionMode = MULTIPLICATIVE</code></li>
+  <li><code>expansionFactor = 2.0</code></li>
+  <li><code>contractionCriterion = 2.5</code></li>
+ </ul>
+<P>
+</DL>
+<HR>
+
+<A NAME="ResizableDoubleArray(int)"><!-- --></A><H3>
+ResizableDoubleArray</H3>
+<PRE>
+public <B>ResizableDoubleArray</B>(int&nbsp;initialCapacity)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Creates an instance with the specified initial capacity.
+ Other properties take default values:
+ <ul>
+  <li><code>expansionMode = MULTIPLICATIVE</code></li>
+  <li><code>expansionFactor = 2.0</code></li>
+  <li><code>contractionCriterion = 2.5</code></li>
+ </ul>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>initialCapacity</CODE> - Initial size of the internal storage array.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if <code>initialCapacity &lt;= 0</code>.</DL>
+</DL>
+<HR>
+
+<A NAME="ResizableDoubleArray(double[])"><!-- --></A><H3>
+ResizableDoubleArray</H3>
+<PRE>
+public <B>ResizableDoubleArray</B>(double[]&nbsp;initialArray)</PRE>
+<DL>
+<DD>Creates an instance from an existing <code>double[]</code> with the
+ initial capacity and numElements corresponding to the size of
+ the supplied <code>double[]</code> array.
+ If the supplied array is null, a new empty array with the default
+ initial capacity will be created.
+ The input array is copied, not referenced.
+ Other properties take default values:
+ <ul>
+  <li><code>initialCapacity = 16</code></li>
+  <li><code>expansionMode = MULTIPLICATIVE</code></li>
+  <li><code>expansionFactor = 2.0</code></li>
+  <li><code>contractionCriterion = 2.5</code></li>
+ </ul>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>initialArray</CODE> - initial array<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+</DL>
+</DL>
+<HR>
+
+<A NAME="ResizableDoubleArray(int, float)"><!-- --></A><H3>
+ResizableDoubleArray</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public <B>ResizableDoubleArray</B>(int&nbsp;initialCapacity,
+                                       float&nbsp;expansionFactor)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double)"><CODE>ResizableDoubleArray(int,double)</CODE></A> instead.</I>
+<P>
+<DD>Creates an instance with the specified initial capacity
+ and expansion factor.
+ The remaining properties take default values:
+ <ul>
+  <li><code>expansionMode = MULTIPLICATIVE</code></li>
+  <li><code>contractionCriterion = 0.5 + expansionFactor</code></li>
+ </ul>
+ <br/>
+ Throws IllegalArgumentException if the following conditions are
+ not met:
+ <ul>
+  <li><code>initialCapacity &gt; 0</code></li>
+  <li><code>expansionFactor &gt; 1</code></li>
+ </ul>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>initialCapacity</CODE> - Initial size of the internal storage array.<DD><CODE>expansionFactor</CODE> - The array will be expanded based on this
+ parameter.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if parameters are not valid.</DL>
+</DL>
+<HR>
+
+<A NAME="ResizableDoubleArray(int, double)"><!-- --></A><H3>
+ResizableDoubleArray</H3>
+<PRE>
+public <B>ResizableDoubleArray</B>(int&nbsp;initialCapacity,
+                            double&nbsp;expansionFactor)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Creates an instance with the specified initial capacity
+ and expansion factor.
+ The remaining properties take default values:
+ <ul>
+  <li><code>expansionMode = MULTIPLICATIVE</code></li>
+  <li><code>contractionCriterion = 0.5 + expansionFactor</code></li>
+ </ul>
+ <br/>
+ Throws IllegalArgumentException if the following conditions are
+ not met:
+ <ul>
+  <li><code>initialCapacity &gt; 0</code></li>
+  <li><code>expansionFactor &gt; 1</code></li>
+ </ul>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>initialCapacity</CODE> - Initial size of the internal storage array.<DD><CODE>expansionFactor</CODE> - The array will be expanded based on this
+ parameter.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if parameters are not valid.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DL>
+<HR>
+
+<A NAME="ResizableDoubleArray(int, float, float)"><!-- --></A><H3>
+ResizableDoubleArray</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public <B>ResizableDoubleArray</B>(int&nbsp;initialCapacity,
+                                       float&nbsp;expansionFactor,
+                                       float&nbsp;contractionCriteria)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double, double)"><CODE>ResizableDoubleArray(int,double,double)</CODE></A> instead.</I>
+<P>
+<DD>Creates an instance with the specified initialCapacity,
+ expansionFactor, and contractionCriterion.
+ The expansion mode will default to <code>MULTIPLICATIVE</code>.
+ <br/>
+ Throws IllegalArgumentException if the following conditions are
+ not met:
+ <ul>
+  <li><code>initialCapacity &gt; 0</code></li>
+  <li><code>expansionFactor &gt; 1</code></li>
+  <li><code>contractionCriterion &gt;= expansionFactor</code></li>
+ </ul>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>initialCapacity</CODE> - Initial size of the internal storage array..<DD><CODE>expansionFactor</CODE> - The array will be expanded based on this
+ parameter.<DD><CODE>contractionCriteria</CODE> - Contraction criteria.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if parameters are not valid.</DL>
+</DL>
+<HR>
+
+<A NAME="ResizableDoubleArray(int, double, double)"><!-- --></A><H3>
+ResizableDoubleArray</H3>
+<PRE>
+public <B>ResizableDoubleArray</B>(int&nbsp;initialCapacity,
+                            double&nbsp;expansionFactor,
+                            double&nbsp;contractionCriterion)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Creates an instance with the specified initial capacity,
+ expansion factor, and contraction criteria.
+ The expansion mode will default to <code>MULTIPLICATIVE</code>.
+ <br/>
+ Throws IllegalArgumentException if the following conditions are
+ not met:
+ <ul>
+  <li><code>initialCapacity &gt; 0</code></li>
+  <li><code>expansionFactor &gt; 1</code></li>
+  <li><code>contractionCriterion &gt;= expansionFactor</code></li>
+ </ul>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>initialCapacity</CODE> - Initial size of the internal storage array..<DD><CODE>expansionFactor</CODE> - The array will be expanded based on this
+ parameter.<DD><CODE>contractionCriterion</CODE> - Contraction criterion.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the parameters are not valid.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DL>
+<HR>
+
+<A NAME="ResizableDoubleArray(int, float, float, int)"><!-- --></A><H3>
+ResizableDoubleArray</H3>
+<PRE>
+public <B>ResizableDoubleArray</B>(int&nbsp;initialCapacity,
+                            float&nbsp;expansionFactor,
+                            float&nbsp;contractionCriteria,
+                            int&nbsp;expansionMode)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#ResizableDoubleArray(int, double, double, org.apache.commons.math3.util.ResizableDoubleArray.ExpansionMode, double...)"><CODE>ResizableDoubleArray(int,double,double,ExpansionMode,double[])</CODE></A>
+ instead.</I>
+<P>
+<DD><p>
+ Create a ResizableArray with the specified properties.</p>
+ <p>
+ Throws IllegalArgumentException if the following conditions are
+ not met:
+ <ul>
+ <li><code>initialCapacity > 0</code></li>
+ <li><code>expansionFactor > 1</code></li>
+ <li><code>contractionFactor >= expansionFactor</code></li>
+ <li><code>expansionMode in {MULTIPLICATIVE_MODE, ADDITIVE_MODE}</code>
+ </li>
+ </ul></p>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>initialCapacity</CODE> - the initial size of the internal storage array<DD><CODE>expansionFactor</CODE> - the array will be expanded based on this
+                        parameter<DD><CODE>contractionCriteria</CODE> - the contraction Criteria<DD><CODE>expansionMode</CODE> - the expansion mode
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if parameters are not valid</DL>
+</DL>
+<HR>
+
+<A NAME="ResizableDoubleArray(int, double, double, org.apache.commons.math3.util.ResizableDoubleArray.ExpansionMode, double...)"><!-- --></A><H3>
+ResizableDoubleArray</H3>
+<PRE>
+public <B>ResizableDoubleArray</B>(int&nbsp;initialCapacity,
+                            double&nbsp;expansionFactor,
+                            double&nbsp;contractionCriterion,
+                            <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html" title="enum in org.apache.commons.math3.util">ResizableDoubleArray.ExpansionMode</A>&nbsp;expansionMode,
+                            double...&nbsp;data)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Creates an instance with the specified properties.
+ <br/>
+ Throws MathIllegalArgumentException if the following conditions are
+ not met:
+ <ul>
+  <li><code>initialCapacity &gt; 0</code></li>
+  <li><code>expansionFactor &gt; 1</code></li>
+  <li><code>contractionCriterion &gt;= expansionFactor</code></li>
+ </ul>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>initialCapacity</CODE> - Initial size of the internal storage array.<DD><CODE>expansionFactor</CODE> - The array will be expanded based on this
+ parameter.<DD><CODE>contractionCriterion</CODE> - Contraction criteria.<DD><CODE>expansionMode</CODE> - Expansion mode.<DD><CODE>data</CODE> - Initial contents of the array.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the parameters are not valid.</DL>
+</DL>
+<HR>
+
+<A NAME="ResizableDoubleArray(org.apache.commons.math3.util.ResizableDoubleArray)"><!-- --></A><H3>
+ResizableDoubleArray</H3>
+<PRE>
+public <B>ResizableDoubleArray</B>(<A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html" title="class in org.apache.commons.math3.util">ResizableDoubleArray</A>&nbsp;original)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Copy constructor.  Creates a new ResizableDoubleArray that is a deep,
+ fresh copy of the original. Needs to acquire synchronization lock
+ on original.  Original may not be null; otherwise a <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception"><CODE>NullArgumentException</CODE></A>
+ is thrown.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>original</CODE> - array to copy
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if original is null<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="addElement(double)"><!-- --></A><H3>
+addElement</H3>
+<PRE>
+public void <B>addElement</B>(double&nbsp;value)</PRE>
+<DL>
+<DD>Adds an element to the end of this expandable array.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html#addElement(double)">addElement</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html" title="interface in org.apache.commons.math3.util">DoubleArray</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - Value to be added to end of array.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addElements(double[])"><!-- --></A><H3>
+addElements</H3>
+<PRE>
+public void <B>addElements</B>(double[]&nbsp;values)</PRE>
+<DL>
+<DD>Adds several element to the end of this expandable array.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html#addElements(double[])">addElements</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html" title="interface in org.apache.commons.math3.util">DoubleArray</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - Values to be added to end of array.<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addElementRolling(double)"><!-- --></A><H3>
+addElementRolling</H3>
+<PRE>
+public double <B>addElementRolling</B>(double&nbsp;value)</PRE>
+<DL>
+<DD><p>
+ Adds an element to the end of the array and removes the first
+ element in the array.  Returns the discarded first element.
+ The effect is similar to a push operation in a FIFO queue.
+ </p>
+ <p>
+ Example: If the array contains the elements 1, 2, 3, 4 (in that order)
+ and addElementRolling(5) is invoked, the result is an array containing
+ the entries 2, 3, 4, 5 and the value returned is 1.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html#addElementRolling(double)">addElementRolling</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html" title="interface in org.apache.commons.math3.util">DoubleArray</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - Value to be added to the array.
+<DT><B>Returns:</B><DD>the value which has been discarded or "pushed" out of the array
+ by this rolling insert.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="substituteMostRecentElement(double)"><!-- --></A><H3>
+substituteMostRecentElement</H3>
+<PRE>
+public double <B>substituteMostRecentElement</B>(double&nbsp;value)
+                                   throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></PRE>
+<DL>
+<DD>Substitutes <code>value</code> for the most recently added value.
+ Returns the value that has been replaced. If the array is empty (i.e.
+ if <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#numElements"><CODE>numElements</CODE></A> is zero), an IllegalStateException is thrown.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - New value to substitute for the most recently added value
+<DT><B>Returns:</B><DD>the value that has been replaced in the array.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></CODE> - if the array is empty<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="checkContractExpand(float, float)"><!-- --></A><H3>
+checkContractExpand</H3>
+<PRE>
+protected void <B>checkContractExpand</B>(float&nbsp;contraction,
+                                   float&nbsp;expansion)
+                            throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use
+ <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#checkContractExpand(double, double)"><CODE>checkContractExpand(double,double)</CODE></A> instead.</I>
+<P>
+<DD>Checks the expansion factor and the contraction criterion and throws an
+ IllegalArgumentException if the contractionCriteria is less than the
+ expansionCriteria
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>expansion</CODE> - factor to be checked<DD><CODE>contraction</CODE> - criteria to be checked
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the contractionCriteria is less than
+ the expansionCriteria.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="checkContractExpand(double, double)"><!-- --></A><H3>
+checkContractExpand</H3>
+<PRE>
+protected void <B>checkContractExpand</B>(double&nbsp;contraction,
+                                   double&nbsp;expansion)
+                            throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></PRE>
+<DL>
+<DD>Checks the expansion factor and the contraction criterion and raises
+ an exception if the contraction criterion is smaller than the
+ expansion criterion.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>contraction</CODE> - Criterion to be checked.<DD><CODE>expansion</CODE> - Factor to be checked.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if <code>contraction &lt; expansion</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if <code>contraction &lt;= 1</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if <code>expansion &lt;= 1 </code>.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clear()"><!-- --></A><H3>
+clear</H3>
+<PRE>
+public void <B>clear</B>()</PRE>
+<DL>
+<DD>Clear the array contents, resetting the number of elements to zero.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html#clear()">clear</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html" title="interface in org.apache.commons.math3.util">DoubleArray</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="contract()"><!-- --></A><H3>
+contract</H3>
+<PRE>
+public void <B>contract</B>()</PRE>
+<DL>
+<DD>Contracts the storage array to the (size of the element set) + 1 - to
+ avoid a zero length array. This function also resets the startIndex to
+ zero.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="discardFrontElements(int)"><!-- --></A><H3>
+discardFrontElements</H3>
+<PRE>
+public void <B>discardFrontElements</B>(int&nbsp;i)
+                          throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Discards the <code>i</code> initial elements of the array.  For example,
+ if the array contains the elements 1,2,3,4, invoking
+ <code>discardFrontElements(2)</code> will cause the first two elements
+ to be discarded, leaving 3,4 in the array.  Throws illegalArgumentException
+ if i exceeds numElements.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>i</CODE> - the number of elements to discard from the front of the array
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if i is greater than numElements.<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="discardMostRecentElements(int)"><!-- --></A><H3>
+discardMostRecentElements</H3>
+<PRE>
+public void <B>discardMostRecentElements</B>(int&nbsp;i)
+                               throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Discards the <code>i</code> last elements of the array.  For example,
+ if the array contains the elements 1,2,3,4, invoking
+ <code>discardMostRecentElements(2)</code> will cause the last two elements
+ to be discarded, leaving 1,2 in the array.  Throws illegalArgumentException
+ if i exceeds numElements.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>i</CODE> - the number of elements to discard from the end of the array
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if i is greater than numElements.<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="expand()"><!-- --></A><H3>
+expand</H3>
+<PRE>
+protected void <B>expand</B>()</PRE>
+<DL>
+<DD>Expands the internal storage array using the expansion factor.
+ <p>
+ if <code>expansionMode</code> is set to MULTIPLICATIVE_MODE,
+ the new array size will be <code>internalArray.length * expansionFactor.</code>
+ If <code>expansionMode</code> is set to ADDITIVE_MODE,  the length
+ after expansion will be <code>internalArray.length + expansionFactor</code>
+ </p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getContractionCriteria()"><!-- --></A><H3>
+getContractionCriteria</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public float <B>getContractionCriteria</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getContractionCriterion()"><CODE>getContractionCriterion()</CODE></A>
+ instead.</I>
+<P>
+<DD>The contraction criteria defines when the internal array will contract
+ to store only the number of elements in the element array.
+ If  the <code>expansionMode</code> is <code>MULTIPLICATIVE_MODE</code>,
+ contraction is triggered when the ratio between storage array length
+ and <code>numElements</code> exceeds <code>contractionFactor</code>.
+ If the <code>expansionMode</code> is <code>ADDITIVE_MODE</code>, the
+ number of excess storage locations is compared to
+ <code>contractionFactor.</code>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the contraction criteria used to reclaim memory.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getContractionCriterion()"><!-- --></A><H3>
+getContractionCriterion</H3>
+<PRE>
+public double <B>getContractionCriterion</B>()</PRE>
+<DL>
+<DD>The contraction criterion defines when the internal array will contract
+ to store only the number of elements in the element array.
+ If  the <code>expansionMode</code> is <code>MULTIPLICATIVE_MODE</code>,
+ contraction is triggered when the ratio between storage array length
+ and <code>numElements</code> exceeds <code>contractionFactor</code>.
+ If the <code>expansionMode</code> is <code>ADDITIVE_MODE</code>, the
+ number of excess storage locations is compared to
+ <code>contractionFactor.</code>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the contraction criterion used to reclaim memory.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getElement(int)"><!-- --></A><H3>
+getElement</H3>
+<PRE>
+public double <B>getElement</B>(int&nbsp;index)</PRE>
+<DL>
+<DD>Returns the element at the specified index
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html#getElement(int)">getElement</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html" title="interface in org.apache.commons.math3.util">DoubleArray</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - index to fetch a value from
+<DT><B>Returns:</B><DD>value stored at the specified index
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ArrayIndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang">ArrayIndexOutOfBoundsException</A></CODE> - if <code>index</code> is less than
+ zero or is greater than <code>getNumElements() - 1</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getElements()"><!-- --></A><H3>
+getElements</H3>
+<PRE>
+public double[] <B>getElements</B>()</PRE>
+<DL>
+<DD>Returns a double array containing the elements of this
+ <code>ResizableArray</code>.  This method returns a copy, not a
+ reference to the underlying array, so that changes made to the returned
+  array have no effect on this <code>ResizableArray.</code>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html#getElements()">getElements</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html" title="interface in org.apache.commons.math3.util">DoubleArray</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the double array.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getExpansionFactor()"><!-- --></A><H3>
+getExpansionFactor</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public float <B>getExpansionFactor</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Return type will be changed to "double" in 4.0.</I>
+<P>
+<DD>The expansion factor controls the size of a new array when an array
+ needs to be expanded.  The <code>expansionMode</code>
+ determines whether the size of the array is multiplied by the
+ <code>expansionFactor</code> (MULTIPLICATIVE_MODE) or if
+ the expansion is additive (ADDITIVE_MODE -- <code>expansionFactor</code>
+ storage locations added).  The default <code>expansionMode</code> is
+ MULTIPLICATIVE_MODE and the default <code>expansionFactor</code>
+ is 2.0.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the expansion factor of this expandable double array</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getExpansionMode()"><!-- --></A><H3>
+getExpansionMode</H3>
+<PRE>
+public int <B>getExpansionMode</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Return value to be changed to
+ <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html" title="enum in org.apache.commons.math3.util"><CODE>ResizableDoubleArray.ExpansionMode</CODE></A> in 4.0.</I>
+<P>
+<DD>The expansion mode determines whether the internal storage
+ array grows additively or multiplicatively when it is expanded.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the expansion mode.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCapacity()"><!-- --></A><H3>
+getCapacity</H3>
+<PRE>
+public int <B>getCapacity</B>()</PRE>
+<DL>
+<DD>Gets the currently allocated size of the internal data structure used
+ for storing elements.
+ This is not to be confused with <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getNumElements()"><CODE>the number of
+ elements actually stored</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the length of the internal array.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNumElements()"><!-- --></A><H3>
+getNumElements</H3>
+<PRE>
+public int <B>getNumElements</B>()</PRE>
+<DL>
+<DD>Returns the number of elements currently in the array.  Please note
+ that this is different from the length of the internal storage array.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html#getNumElements()">getNumElements</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html" title="interface in org.apache.commons.math3.util">DoubleArray</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the number of elements.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInternalValues()"><!-- --></A><H3>
+getInternalValues</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public double[] <B>getInternalValues</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1.</I>
+<P>
+<DD>Returns the internal storage array.  Note that this method returns
+ a reference to the internal storage array, not a copy, and to correctly
+ address elements of the array, the <code>startIndex</code> is
+ required (available via the <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#start()"><CODE>start()</CODE></A> method).  This method should
+ only be used in cases where copying the internal array is not practical.
+ The <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getElements()"><CODE>getElements()</CODE></A> method should be used in all other cases.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the internal storage array used by this object<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getArrayRef()"><!-- --></A><H3>
+getArrayRef</H3>
+<PRE>
+protected double[] <B>getArrayRef</B>()</PRE>
+<DL>
+<DD>Provides <em>direct</em> access to the internal storage array.
+ Please note that this method returns a reference to this object's
+ storage array, not a copy.
+ <br/>
+ To correctly address elements of the array, the "start index" is
+ required (available via the <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getStartIndex()"><CODE>getStartIndex</CODE></A>
+ method.
+ <br/>
+ This method should only be used to avoid copying the internal array.
+ The returned value <em>must</em> be used for reading only; other
+ uses could lead to this object becoming inconsistent.
+ <br/>
+ The <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getElements()"><CODE>getElements()</CODE></A> method has no such limitation since it
+ returns a copy of this array's addressable elements.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the internal storage array used by this object.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStartIndex()"><!-- --></A><H3>
+getStartIndex</H3>
+<PRE>
+protected int <B>getStartIndex</B>()</PRE>
+<DL>
+<DD>Returns the "start index" of the internal array.
+ This index is the position of the first addressable element in the
+ internal storage array.
+ The addressable elements in the array are at indices contained in
+ the interval [<A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getStartIndex()"><CODE>getStartIndex()</CODE></A>,
+               <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getStartIndex()"><CODE>getStartIndex()</CODE></A> + <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#getNumElements()"><CODE>getNumElements()</CODE></A> - 1].
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the start index.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setContractionCriteria(float)"><!-- --></A><H3>
+setContractionCriteria</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public void <B>setContractionCriteria</B>(float&nbsp;contractionCriteria)
+                            throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0 as field will become "final").</I>
+<P>
+<DD>Sets the contraction criteria.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>contractionCriteria</CODE> - contraction criteria
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the contractionCriteria is less than
+         the expansionCriteria.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compute(org.apache.commons.math3.util.MathArrays.Function)"><!-- --></A><H3>
+compute</H3>
+<PRE>
+public double <B>compute</B>(<A HREF="../../../../../org/apache/commons/math3/util/MathArrays.Function.html" title="interface in org.apache.commons.math3.util">MathArrays.Function</A>&nbsp;f)</PRE>
+<DL>
+<DD>Performs an operation on the addressable elements of the array.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>f</CODE> - Function to be applied on this array.
+<DT><B>Returns:</B><DD>the result.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setElement(int, double)"><!-- --></A><H3>
+setElement</H3>
+<PRE>
+public void <B>setElement</B>(int&nbsp;index,
+                       double&nbsp;value)</PRE>
+<DL>
+<DD>Sets the element at the specified index.  If the specified index is greater than
+ <code>getNumElements() - 1</code>, the <code>numElements</code> property
+ is increased to <code>index +1</code> and additional storage is allocated
+ (if necessary) for the new element and all  (uninitialized) elements
+ between the new element and the previous end of the array).
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html#setElement(int, double)">setElement</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/util/DoubleArray.html" title="interface in org.apache.commons.math3.util">DoubleArray</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - index to store a value in<DD><CODE>value</CODE> - value to store at the specified index
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ArrayIndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang">ArrayIndexOutOfBoundsException</A></CODE> - if <code>index &lt; 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setExpansionFactor(float)"><!-- --></A><H3>
+setExpansionFactor</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public void <B>setExpansionFactor</B>(float&nbsp;expansionFactor)
+                        throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0 as field will become "final").</I>
+<P>
+<DD>Sets the expansionFactor.  Throws IllegalArgumentException if the
+ the following conditions are not met:
+ <ul>
+ <li><code>expansionFactor > 1</code></li>
+ <li><code>contractionFactor >= expansionFactor</code></li>
+ </ul>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>expansionFactor</CODE> - the new expansion factor value.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if expansionFactor is <= 1 or greater
+ than contractionFactor</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setExpansionMode(int)"><!-- --></A><H3>
+setExpansionMode</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public void <B>setExpansionMode</B>(int&nbsp;expansionMode)
+                      throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1. Please use <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#setExpansionMode(org.apache.commons.math3.util.ResizableDoubleArray.ExpansionMode)"><CODE>setExpansionMode(ExpansionMode)</CODE></A> instead.</I>
+<P>
+<DD>Sets the <code>expansionMode</code>. The specified value must be one of
+ ADDITIVE_MODE, MULTIPLICATIVE_MODE.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>expansionMode</CODE> - The expansionMode to set.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the specified mode value is not valid.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setExpansionMode(org.apache.commons.math3.util.ResizableDoubleArray.ExpansionMode)"><!-- --></A><H3>
+setExpansionMode</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public void <B>setExpansionMode</B>(<A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html" title="enum in org.apache.commons.math3.util">ResizableDoubleArray.ExpansionMode</A>&nbsp;expansionMode)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0 as field will become "final").</I>
+<P>
+<DD>Sets the <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html" title="enum in org.apache.commons.math3.util"><CODE>expansion mode</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>expansionMode</CODE> - Expansion mode to use for resizing the array.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setInitialCapacity(int)"><!-- --></A><H3>
+setInitialCapacity</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>protected void <B>setInitialCapacity</B>(int&nbsp;initialCapacity)
+                           throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1, this is a no-op.</I>
+<P>
+<DD>Sets the initial capacity.  Should only be invoked by constructors.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>initialCapacity</CODE> - of the array
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if <code>initialCapacity</code> is not
+ positive.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setNumElements(int)"><!-- --></A><H3>
+setNumElements</H3>
+<PRE>
+public void <B>setNumElements</B>(int&nbsp;i)
+                    throws <A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>This function allows you to control the number of elements contained
+ in this array, and can be used to "throw out" the last n values in an
+ array. This function will also expand the internal array as needed.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>i</CODE> - a new number of elements
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if <code>i</code> is negative.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="start()"><!-- --></A><H3>
+start</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public int <B>start</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>As of 3.1.</I>
+<P>
+<DD>Returns the starting index of the internal array.  The starting index is
+ the position of the first addressable element in the internal storage
+ array.  The addressable elements in the array are <code>
+ internalArray[startIndex],...,internalArray[startIndex + numElements -1]
+ </code>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the starting index.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="copy(org.apache.commons.math3.util.ResizableDoubleArray, org.apache.commons.math3.util.ResizableDoubleArray)"><!-- --></A><H3>
+copy</H3>
+<PRE>
+public static void <B>copy</B>(<A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html" title="class in org.apache.commons.math3.util">ResizableDoubleArray</A>&nbsp;source,
+                        <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html" title="class in org.apache.commons.math3.util">ResizableDoubleArray</A>&nbsp;dest)
+                 throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD><p>Copies source to dest, copying the underlying data, so dest is
+ a new, independent copy of source.  Does not contract before
+ the copy.</p>
+
+ <p>Obtains synchronization locks on both source and dest
+ (in that order) before performing the copy.</p>
+
+ <p>Neither source nor dest may be null; otherwise a <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception"><CODE>NullArgumentException</CODE></A>
+ is thrown</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>source</CODE> - ResizableDoubleArray to copy<DD><CODE>dest</CODE> - ResizableArray to replace with a copy of the source array
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if either source or dest is null<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="copy()"><!-- --></A><H3>
+copy</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html" title="class in org.apache.commons.math3.util">ResizableDoubleArray</A> <B>copy</B>()</PRE>
+<DL>
+<DD>Returns a copy of the ResizableDoubleArray.  Does not contract before
+ the copy, so the returned object is an exact copy of this.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a new ResizableDoubleArray with the same data and configuration
+ properties as this<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="equals(java.lang.Object)"><!-- --></A><H3>
+equals</H3>
+<PRE>
+public boolean <B>equals</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;object)</PRE>
+<DL>
+<DD>Returns true iff object is a ResizableDoubleArray with the same properties
+ as this and an identical internal storage array.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>object</CODE> - object to be compared for equality with this
+<DT><B>Returns:</B><DD>true iff object is a ResizableDoubleArray with the same data and
+ properties as this<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hashCode()"><!-- --></A><H3>
+hashCode</H3>
+<PRE>
+public int <B>hashCode</B>()</PRE>
+<DL>
+<DD>Returns a hash code consistent with equals.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the hash code representing this <code>ResizableDoubleArray</code>.<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ResizableDoubleArray.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/util/Precision.html" title="class in org.apache.commons.math3.util"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/util/ResizableDoubleArray.ExpansionMode.html" title="enum in org.apache.commons.math3.util"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/util/ResizableDoubleArray.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ResizableDoubleArray.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>
