@@ -281,13 +281,15 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6663324787724987491" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Dependency" />
     <property name="name" nameId="tpck.1169194664001" value="InterpretBeforeDependency" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="before" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="run before" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="run this one before another one" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6663324787724559041" resolveInfo="AbstractInterpreterDependency" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6663324787725038318" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Dependency" />
     <property name="name" nameId="tpck.1169194664001" value="InterpretAfterDependency" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="after" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="run after" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="run this one after another one" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6663324787724559041" resolveInfo="AbstractInterpreterDependency" />
   </root>
 </model>
