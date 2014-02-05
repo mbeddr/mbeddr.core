@@ -42,5 +42,15 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="3ior.7321017245476976379" resolveInfo="BuildRelativePath" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4787678410439044523" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="RunReloadModulesAnnotation" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="4787678410439044534" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="reloadModules" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="4787678410439044536" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="3ior.5617550519002745363" resolveInfo="BuildProject" />
+      </node>
+    </node>
+  </root>
 </model>
 
