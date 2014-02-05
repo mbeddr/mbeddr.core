@@ -1,0 +1,360 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+FieldHermiteInterpolator (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="FieldHermiteInterpolator (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/FieldHermiteInterpolator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/DividedDifferenceInterpolator.html" title="class in org.apache.commons.math3.analysis.interpolation"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/HermiteInterpolator.html" title="class in org.apache.commons.math3.analysis.interpolation"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="FieldHermiteInterpolator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.analysis.interpolation</FONT>
+<BR>
+Class FieldHermiteInterpolator&lt;T extends <A HREF="../../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt;</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator&lt;T&gt;</B>
+</PRE>
+<DL>
+<DT><DT><B>Type Parameters:</B><DD><CODE>T</CODE> - Type of the field elements.</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>FieldHermiteInterpolator&lt;T extends <A HREF="../../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</A>&lt;T&gt;&gt;</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+Polynomial interpolator using both sample values and sample derivatives.
+ <p>
+ The interpolation polynomials match all sample points, including both values
+ and provided derivatives. There is one polynomial for each component of
+ the values vector. All polynomials have the same degree. The degree of the
+ polynomials depends on the number of points and number of derivatives at each
+ point. For example the interpolation polynomials for n sample points without
+ any derivatives all have degree n-1. The interpolation polynomials for n
+ sample points with the two extreme points having value and first derivative
+ and the remaining points having value only all have degree n+1. The
+ interpolation polynomial for n sample points with value, first and second
+ derivative for all points all have degree 3n-1.
+ </p>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>3.2</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: FieldHermiteInterpolator.java 1455194 2013-03-11 15:45:54Z luc $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html#FieldHermiteInterpolator()">FieldHermiteInterpolator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an empty interpolator.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html#addSamplePoint(T, T[]...)">addSamplePoint</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>&nbsp;x,
+               <A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>[]...&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a sample point.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>[][]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html#derivatives(T, int)">derivatives</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>&nbsp;x,
+            int&nbsp;order)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interpolate value and first derivatives at a specified abscissa.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html#value(T)">value</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interpolate value at a specified abscissa.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="FieldHermiteInterpolator()"><!-- --></A><H3>
+FieldHermiteInterpolator</H3>
+<PRE>
+public <B>FieldHermiteInterpolator</B>()</PRE>
+<DL>
+<DD>Create an empty interpolator.
+<P>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="addSamplePoint(org.apache.commons.math3.FieldElement,org.apache.commons.math3.FieldElement[][])"><!-- --></A><A NAME="addSamplePoint(T, T[]...)"><!-- --></A><H3>
+addSamplePoint</H3>
+<PRE>
+public void <B>addSamplePoint</B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>&nbsp;x,
+                           <A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>[]...&nbsp;value)
+                    throws <A HREF="../../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A>,
+                           <A HREF="../../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A>,
+                           <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                           <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Add a sample point.
+ <p>
+ This method must be called once for each sample point. It is allowed to
+ mix some calls with values only with calls with values and first
+ derivatives.
+ </p>
+ <p>
+ The point abscissae for all calls <em>must</em> be different.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - abscissa of the sample point<DD><CODE>value</CODE> - value and derivatives of the sample point
+ (if only one row is passed, it is the value, if two rows are
+ passed the first one is the value and the second the derivative
+ and so on)
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</A></CODE> - if the abscissa difference between added point
+ and a previous point is zero (i.e. the two points are at same abscissa)
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the number of derivatives is larger
+ than 20, which prevents computation of a factorial
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if derivative structures are inconsistent
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if x is null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="value(org.apache.commons.math3.FieldElement)"><!-- --></A><A NAME="value(T)"><!-- --></A><H3>
+value</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>[] <B>value</B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>&nbsp;x)
+                                  throws <A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A>,
+                                         <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Interpolate value at a specified abscissa.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - interpolation abscissa
+<DT><B>Returns:</B><DD>interpolated value
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></CODE> - if sample is empty
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if x is null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="derivatives(org.apache.commons.math3.FieldElement,int)"><!-- --></A><A NAME="derivatives(T, int)"><!-- --></A><H3>
+derivatives</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>[][] <B>derivatives</B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" title="type parameter in FieldHermiteInterpolator">T</A>&nbsp;x,
+                         int&nbsp;order)
+                                          throws <A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A>,
+                                                 <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Interpolate value and first derivatives at a specified abscissa.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - interpolation abscissa<DD><CODE>order</CODE> - maximum derivation order
+<DT><B>Returns:</B><DD>interpolated value and derivatives (value in row 0,
+ 1<sup>st</sup> derivative in row 1, ... n<sup>th</sup> derivative in row n)
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></CODE> - if sample is empty
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if x is null</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/FieldHermiteInterpolator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/DividedDifferenceInterpolator.html" title="class in org.apache.commons.math3.analysis.interpolation"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/interpolation/HermiteInterpolator.html" title="class in org.apache.commons.math3.analysis.interpolation"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/analysis/interpolation/FieldHermiteInterpolator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="FieldHermiteInterpolator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

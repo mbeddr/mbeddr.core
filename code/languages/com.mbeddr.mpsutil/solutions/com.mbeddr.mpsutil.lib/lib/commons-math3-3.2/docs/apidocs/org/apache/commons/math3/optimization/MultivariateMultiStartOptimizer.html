@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+MultivariateMultiStartOptimizer (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MultivariateMultiStartOptimizer (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/MultivariateMultiStartOptimizer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/optimization/MultivariateDifferentiableVectorOptimizer.html" title="interface in org.apache.commons.math3.optimization"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/optimization/MultivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/optimization/MultivariateMultiStartOptimizer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MultivariateMultiStartOptimizer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#methods_inherited_from_class_org.apache.commons.math3.optimization.BaseMultivariateMultiStartOptimizer">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;METHOD</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.optimization</FONT>
+<BR>
+Class MultivariateMultiStartOptimizer</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html" title="class in org.apache.commons.math3.optimization">org.apache.commons.math3.optimization.BaseMultivariateMultiStartOptimizer</A>&lt;<A HREF="../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A>&gt;
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.optimization.MultivariateMultiStartOptimizer</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../org/apache/commons/math3/optimization/BaseMultivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization">BaseMultivariateOptimizer</A>&lt;<A HREF="../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A>&gt;, <A HREF="../../../../../org/apache/commons/math3/optimization/BaseOptimizer.html" title="interface in org.apache.commons.math3.optimization">BaseOptimizer</A>&lt;<A HREF="../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A>&gt;, <A HREF="../../../../../org/apache/commons/math3/optimization/MultivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization">MultivariateOptimizer</A></DD>
+</DL>
+<HR>
+<B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0).</I>
+<P>
+<DL>
+<DT><PRE><FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public class <B>MultivariateMultiStartOptimizer</B><DT>extends <A HREF="../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html" title="class in org.apache.commons.math3.optimization">BaseMultivariateMultiStartOptimizer</A>&lt;<A HREF="../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A>&gt;<DT>implements <A HREF="../../../../../org/apache/commons/math3/optimization/MultivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization">MultivariateOptimizer</A></DL>
+</PRE>
+
+<P>
+Special implementation of the <A HREF="../../../../../org/apache/commons/math3/optimization/MultivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization"><CODE>MultivariateOptimizer</CODE></A> interface adding
+ multi-start features to an existing optimizer.
+
+ This class wraps a classical optimizer to use it several times in
+ turn with different starting points in order to avoid being trapped
+ into a local extremum when looking for a global one.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: MultivariateMultiStartOptimizer.java 1422230 2012-12-15 12:11:13Z erans $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/optimization/MultivariateMultiStartOptimizer.html#MultivariateMultiStartOptimizer(org.apache.commons.math3.optimization.MultivariateOptimizer, int, org.apache.commons.math3.random.RandomVectorGenerator)">MultivariateMultiStartOptimizer</A></B>(<A HREF="../../../../../org/apache/commons/math3/optimization/MultivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization">MultivariateOptimizer</A>&nbsp;optimizer,
+                                int&nbsp;starts,
+                                <A HREF="../../../../../org/apache/commons/math3/random/RandomVectorGenerator.html" title="interface in org.apache.commons.math3.random">RandomVectorGenerator</A>&nbsp;generator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Create a multi-start optimizer from a single-start optimizer.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.optimization.BaseMultivariateMultiStartOptimizer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.optimization.<A HREF="../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html" title="class in org.apache.commons.math3.optimization">BaseMultivariateMultiStartOptimizer</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html#getConvergenceChecker()">getConvergenceChecker</A>, <A HREF="../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html#getEvaluations()">getEvaluations</A>, <A HREF="../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html#getMaxEvaluations()">getMaxEvaluations</A>, <A HREF="../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html#getOptima()">getOptima</A>, <A HREF="../../../../../org/apache/commons/math3/optimization/BaseMultivariateMultiStartOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, double[])">optimize</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.optimization.BaseMultivariateOptimizer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.commons.math3.optimization.<A HREF="../../../../../org/apache/commons/math3/optimization/BaseMultivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization">BaseMultivariateOptimizer</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/optimization/BaseMultivariateOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, double[])">optimize</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.optimization.BaseOptimizer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.commons.math3.optimization.<A HREF="../../../../../org/apache/commons/math3/optimization/BaseOptimizer.html" title="interface in org.apache.commons.math3.optimization">BaseOptimizer</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/optimization/BaseOptimizer.html#getConvergenceChecker()">getConvergenceChecker</A>, <A HREF="../../../../../org/apache/commons/math3/optimization/BaseOptimizer.html#getEvaluations()">getEvaluations</A>, <A HREF="../../../../../org/apache/commons/math3/optimization/BaseOptimizer.html#getMaxEvaluations()">getMaxEvaluations</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="MultivariateMultiStartOptimizer(org.apache.commons.math3.optimization.MultivariateOptimizer, int, org.apache.commons.math3.random.RandomVectorGenerator)"><!-- --></A><H3>
+MultivariateMultiStartOptimizer</H3>
+<PRE>
+public <B>MultivariateMultiStartOptimizer</B>(<A HREF="../../../../../org/apache/commons/math3/optimization/MultivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization">MultivariateOptimizer</A>&nbsp;optimizer,
+                                       int&nbsp;starts,
+                                       <A HREF="../../../../../org/apache/commons/math3/random/RandomVectorGenerator.html" title="interface in org.apache.commons.math3.random">RandomVectorGenerator</A>&nbsp;generator)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Create a multi-start optimizer from a single-start optimizer.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>optimizer</CODE> - Single-start optimizer to wrap.<DD><CODE>starts</CODE> - Number of starts to perform (including the
+ first one), multi-start is disabled if value is less than or
+ equal to 1.<DD><CODE>generator</CODE> - Random vector generator to use for restarts.</DL>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/MultivariateMultiStartOptimizer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/optimization/MultivariateDifferentiableVectorOptimizer.html" title="interface in org.apache.commons.math3.optimization"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/optimization/MultivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/optimization/MultivariateMultiStartOptimizer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MultivariateMultiStartOptimizer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#methods_inherited_from_class_org.apache.commons.math3.optimization.BaseMultivariateMultiStartOptimizer">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;METHOD</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

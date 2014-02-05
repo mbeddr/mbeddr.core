@@ -1,0 +1,714 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+OpenMapRealMatrix (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="OpenMapRealMatrix (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/OpenMapRealMatrix.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/NonSymmetricMatrixException.html" title="class in org.apache.commons.math3.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/linear/OpenMapRealMatrix.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="OpenMapRealMatrix.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.linear</FONT>
+<BR>
+Class OpenMapRealMatrix</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">org.apache.commons.math3.linear.RealLinearOperator</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">org.apache.commons.math3.linear.AbstractRealMatrix</A>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.linear.OpenMapRealMatrix</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AnyMatrix.html" title="interface in org.apache.commons.math3.linear">AnyMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/SparseRealMatrix.html" title="interface in org.apache.commons.math3.linear">SparseRealMatrix</A></DD>
+</DL>
+<HR>
+<B>Deprecated.</B>&nbsp;<I>As of version 3.1, this class is deprecated, for reasons exposed
+ in this JIRA
+ <a href="https://issues.apache.org/jira/browse/MATH-870">ticket</a>. This
+ class will be removed in version 4.0.</I>
+<P>
+<DL>
+<DT><PRE><FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public class <B>OpenMapRealMatrix</B><DT>extends <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</A><DT>implements <A HREF="../../../../../org/apache/commons/math3/linear/SparseRealMatrix.html" title="interface in org.apache.commons.math3.linear">SparseRealMatrix</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DL>
+</PRE>
+
+<P>
+Sparse matrix implementation based on an open addressed map.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: OpenMapRealMatrix.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../serialized-form.html#org.apache.commons.math3.linear.OpenMapRealMatrix">Serialized Form</A></DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#OpenMapRealMatrix(int, int)">OpenMapRealMatrix</A></B>(int&nbsp;rowDimension,
+                  int&nbsp;columnDimension)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a sparse matrix with the supplied row and column dimensions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#OpenMapRealMatrix(org.apache.commons.math3.linear.OpenMapRealMatrix)">OpenMapRealMatrix</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A>&nbsp;matrix)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a matrix by copying another one.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#add(org.apache.commons.math3.linear.OpenMapRealMatrix)">add</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A>&nbsp;m)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Compute the sum of this matrix and <code>m</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#addToEntry(int, int, double)">addToEntry</A></B>(int&nbsp;row,
+           int&nbsp;column,
+           double&nbsp;increment)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Adds (in place) the specified value to the specified entry of
+ <code>this</code> matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#copy()">copy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns a (deep) copy of this.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#createMatrix(int, int)">createMatrix</A></B>(int&nbsp;rowDimension,
+             int&nbsp;columnDimension)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Create a new RealMatrix of the same type as the instance with the
+ supplied
+ row and column dimensions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#getColumnDimension()">getColumnDimension</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns the number of columns of this matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#getEntry(int, int)">getEntry</A></B>(int&nbsp;row,
+         int&nbsp;column)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get the entry in the specified row and column.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#getRowDimension()">getRowDimension</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns the number of rows of this matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#multiply(org.apache.commons.math3.linear.OpenMapRealMatrix)">multiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A>&nbsp;m)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Postmultiply this matrix by <code>m</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#multiply(org.apache.commons.math3.linear.RealMatrix)">multiply</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;m)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns the result of postmultiplying <code>this</code> by <code>m</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#multiplyEntry(int, int, double)">multiplyEntry</A></B>(int&nbsp;row,
+              int&nbsp;column,
+              double&nbsp;factor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Multiplies (in place) the specified entry of <code>this</code> matrix by the
+ specified value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#setEntry(int, int, double)">setEntry</A></B>(int&nbsp;row,
+         int&nbsp;column,
+         double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Set the entry in the specified row and column.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#subtract(org.apache.commons.math3.linear.OpenMapRealMatrix)">subtract</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A>&nbsp;m)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Subtract <code>m</code> from this matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html#subtract(org.apache.commons.math3.linear.RealMatrix)">subtract</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;m)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns <code>this</code> minus <code>m</code>.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.linear.AbstractRealMatrix"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.linear.<A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#add(org.apache.commons.math3.linear.RealMatrix)">add</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#copySubMatrix(int[], int[], double[][])">copySubMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#copySubMatrix(int, int, int, int, double[][])">copySubMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#equals(java.lang.Object)">equals</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getColumn(int)">getColumn</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getColumnMatrix(int)">getColumnMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getColumnVector(int)">getColumnVector</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getData()">getData</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getFrobeniusNorm()">getFrobeniusNorm</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getNorm()">getNorm</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getRow(int)">getRow</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getRowMatrix(int)">getRowMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getRowVector(int)">getRowVector</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getSubMatrix(int[], int[])">getSubMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getSubMatrix(int, int, int, int)">getSubMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getTrace()">getTrace</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#hashCode()">hashCode</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#isSquare()">isSquare</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#operate(double[])">operate</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#operate(org.apache.commons.math3.linear.RealVector)">operate</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#power(int)">power</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#preMultiply(double[])">preMultiply</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#preMultiply(org.apache.commons.math3.linear.RealMatrix)">preMultiply</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#preMultiply(org.apache.commons.math3.linear.RealVector)">preMultiply</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#scalarAdd(double)">scalarAdd</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#scalarMultiply(double)">scalarMultiply</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#setColumn(int, double[])">setColumn</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#setColumnMatrix(int, org.apache.commons.math3.linear.RealMatrix)">setColumnMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#setColumnVector(int, org.apache.commons.math3.linear.RealVector)">setColumnVector</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#setRow(int, double[])">setRow</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#setRowMatrix(int, org.apache.commons.math3.linear.RealMatrix)">setRowMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#setRowVector(int, org.apache.commons.math3.linear.RealVector)">setRowVector</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#setSubMatrix(double[][], int, int)">setSubMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#toString()">toString</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#transpose()">transpose</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#walkInColumnOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor)">walkInColumnOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#walkInColumnOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor, int, int, int, int)">walkInColumnOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#walkInColumnOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor)">walkInColumnOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#walkInColumnOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor, int, int, int, int)">walkInColumnOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor)">walkInOptimizedOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor, int, int, int, int)">walkInOptimizedOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor)">walkInOptimizedOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor, int, int, int, int)">walkInOptimizedOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#walkInRowOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor)">walkInRowOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#walkInRowOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor, int, int, int, int)">walkInRowOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#walkInRowOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor)">walkInRowOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#walkInRowOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor, int, int, int, int)">walkInRowOrder</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.linear.RealLinearOperator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.linear.<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html#isTransposable()">isTransposable</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html#operateTranspose(org.apache.commons.math3.linear.RealVector)">operateTranspose</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.linear.RealMatrix"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.commons.math3.linear.<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#add(org.apache.commons.math3.linear.RealMatrix)">add</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#copySubMatrix(int[], int[], double[][])">copySubMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#copySubMatrix(int, int, int, int, double[][])">copySubMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getColumn(int)">getColumn</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getColumnMatrix(int)">getColumnMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getColumnVector(int)">getColumnVector</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getData()">getData</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getFrobeniusNorm()">getFrobeniusNorm</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getNorm()">getNorm</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getRow(int)">getRow</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getRowMatrix(int)">getRowMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getRowVector(int)">getRowVector</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getSubMatrix(int[], int[])">getSubMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getSubMatrix(int, int, int, int)">getSubMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getTrace()">getTrace</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#operate(double[])">operate</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#operate(org.apache.commons.math3.linear.RealVector)">operate</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#power(int)">power</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#preMultiply(double[])">preMultiply</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#preMultiply(org.apache.commons.math3.linear.RealMatrix)">preMultiply</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#preMultiply(org.apache.commons.math3.linear.RealVector)">preMultiply</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#scalarAdd(double)">scalarAdd</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#scalarMultiply(double)">scalarMultiply</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#setColumn(int, double[])">setColumn</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#setColumnMatrix(int, org.apache.commons.math3.linear.RealMatrix)">setColumnMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#setColumnVector(int, org.apache.commons.math3.linear.RealVector)">setColumnVector</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#setRow(int, double[])">setRow</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#setRowMatrix(int, org.apache.commons.math3.linear.RealMatrix)">setRowMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#setRowVector(int, org.apache.commons.math3.linear.RealVector)">setRowVector</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#setSubMatrix(double[][], int, int)">setSubMatrix</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#transpose()">transpose</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#walkInColumnOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor)">walkInColumnOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#walkInColumnOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor, int, int, int, int)">walkInColumnOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#walkInColumnOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor)">walkInColumnOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#walkInColumnOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor, int, int, int, int)">walkInColumnOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor)">walkInOptimizedOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor, int, int, int, int)">walkInOptimizedOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor)">walkInOptimizedOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#walkInOptimizedOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor, int, int, int, int)">walkInOptimizedOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#walkInRowOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor)">walkInRowOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#walkInRowOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor, int, int, int, int)">walkInRowOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#walkInRowOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor)">walkInRowOrder</A>, <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#walkInRowOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor, int, int, int, int)">walkInRowOrder</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.linear.AnyMatrix"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.commons.math3.linear.<A HREF="../../../../../org/apache/commons/math3/linear/AnyMatrix.html" title="interface in org.apache.commons.math3.linear">AnyMatrix</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AnyMatrix.html#isSquare()">isSquare</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="OpenMapRealMatrix(int, int)"><!-- --></A><H3>
+OpenMapRealMatrix</H3>
+<PRE>
+public <B>OpenMapRealMatrix</B>(int&nbsp;rowDimension,
+                         int&nbsp;columnDimension)
+                  throws <A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A>,
+                         <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Build a sparse matrix with the supplied row and column dimensions.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>rowDimension</CODE> - Number of rows of the matrix.<DD><CODE>columnDimension</CODE> - Number of columns of the matrix.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if row or column dimension is not
+ positive.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if the total number of entries of the
+ matrix is larger than <code>Integer.MAX_VALUE</code>.</DL>
+</DL>
+<HR>
+
+<A NAME="OpenMapRealMatrix(org.apache.commons.math3.linear.OpenMapRealMatrix)"><!-- --></A><H3>
+OpenMapRealMatrix</H3>
+<PRE>
+public <B>OpenMapRealMatrix</B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A>&nbsp;matrix)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Build a matrix by copying another one.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>matrix</CODE> - matrix to copy.</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="copy()"><!-- --></A><H3>
+copy</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A> <B>copy</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Returns a (deep) copy of this.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#copy()">copy</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#copy()">copy</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>matrix copy</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createMatrix(int, int)"><!-- --></A><H3>
+createMatrix</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A> <B>createMatrix</B>(int&nbsp;rowDimension,
+                                      int&nbsp;columnDimension)
+                               throws <A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A>,
+                                      <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Create a new RealMatrix of the same type as the instance with the
+ supplied
+ row and column dimensions.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#createMatrix(int, int)">createMatrix</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#createMatrix(int, int)">createMatrix</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>rowDimension</CODE> - the number of rows in the new matrix<DD><CODE>columnDimension</CODE> - the number of columns in the new matrix
+<DT><B>Returns:</B><DD>a new matrix of the same type as the instance
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if the total number of entries of the
+ matrix is larger than <code>Integer.MAX_VALUE</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if row or column dimension is not
+ positive.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getColumnDimension()"><!-- --></A><H3>
+getColumnDimension</H3>
+<PRE>
+public int <B>getColumnDimension</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Returns the number of columns of this matrix.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AnyMatrix.html#getColumnDimension()">getColumnDimension</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/AnyMatrix.html" title="interface in org.apache.commons.math3.linear">AnyMatrix</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getColumnDimension()">getColumnDimension</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the number of columns.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="add(org.apache.commons.math3.linear.OpenMapRealMatrix)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A> <B>add</B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A>&nbsp;m)
+                      throws <A HREF="../../../../../org/apache/commons/math3/linear/MatrixDimensionMismatchException.html" title="class in org.apache.commons.math3.linear">MatrixDimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Compute the sum of this matrix and <code>m</code>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>m</CODE> - Matrix to be added.
+<DT><B>Returns:</B><DD><code>this</code> + <code>m</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/MatrixDimensionMismatchException.html" title="class in org.apache.commons.math3.linear">MatrixDimensionMismatchException</A></CODE> - if <code>m</code> is not the same
+ size as <code>this</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subtract(org.apache.commons.math3.linear.RealMatrix)"><!-- --></A><H3>
+subtract</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A> <B>subtract</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;m)
+                           throws <A HREF="../../../../../org/apache/commons/math3/linear/MatrixDimensionMismatchException.html" title="class in org.apache.commons.math3.linear">MatrixDimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Returns <code>this</code> minus <code>m</code>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#subtract(org.apache.commons.math3.linear.RealMatrix)">subtract</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#subtract(org.apache.commons.math3.linear.RealMatrix)">subtract</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>m</CODE> - matrix to be subtracted
+<DT><B>Returns:</B><DD><code>this - m</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/MatrixDimensionMismatchException.html" title="class in org.apache.commons.math3.linear">MatrixDimensionMismatchException</A></CODE> - if <code>m</code> is not the same
+ size as <code>this</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subtract(org.apache.commons.math3.linear.OpenMapRealMatrix)"><!-- --></A><H3>
+subtract</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A> <B>subtract</B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A>&nbsp;m)
+                           throws <A HREF="../../../../../org/apache/commons/math3/linear/MatrixDimensionMismatchException.html" title="class in org.apache.commons.math3.linear">MatrixDimensionMismatchException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Subtract <code>m</code> from this matrix.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>m</CODE> - Matrix to be subtracted.
+<DT><B>Returns:</B><DD><code>this</code> - <code>m</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/MatrixDimensionMismatchException.html" title="class in org.apache.commons.math3.linear">MatrixDimensionMismatchException</A></CODE> - if <code>m</code> is not the same
+ size as <code>this</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="multiply(org.apache.commons.math3.linear.RealMatrix)"><!-- --></A><H3>
+multiply</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>multiply</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;m)
+                    throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                           <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Returns the result of postmultiplying <code>this</code> by <code>m</code>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#multiply(org.apache.commons.math3.linear.RealMatrix)">multiply</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#multiply(org.apache.commons.math3.linear.RealMatrix)">multiply</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>m</CODE> - matrix to postmultiply by
+<DT><B>Returns:</B><DD><code>this * m</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>m</code> is an
+ <code>OpenMapRealMatrix</code>, and the total number of entries of the product
+ is larger than <code>Integer.MAX_VALUE</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if
+ <code>columnDimension(this) != rowDimension(m)</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="multiply(org.apache.commons.math3.linear.OpenMapRealMatrix)"><!-- --></A><H3>
+multiply</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A> <B>multiply</B>(<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</A>&nbsp;m)
+                           throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                                  <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Postmultiply this matrix by <code>m</code>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>m</CODE> - Matrix to postmultiply by.
+<DT><B>Returns:</B><DD><code>this</code> * <code>m</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the number of rows of <code>m</code>
+ differ from the number of columns of <code>this</code> matrix.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if the total number of entries of the
+ product is larger than <code>Integer.MAX_VALUE</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEntry(int, int)"><!-- --></A><H3>
+getEntry</H3>
+<PRE>
+public double <B>getEntry</B>(int&nbsp;row,
+                       int&nbsp;column)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Get the entry in the specified row and column. Row and column indices
+ start at 0.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#getEntry(int, int)">getEntry</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getEntry(int, int)">getEntry</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>row</CODE> - Row index of entry to be fetched.<DD><CODE>column</CODE> - Column index of entry to be fetched.
+<DT><B>Returns:</B><DD>the matrix entry at <code>(row, column)</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the row or column index is not valid.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRowDimension()"><!-- --></A><H3>
+getRowDimension</H3>
+<PRE>
+public int <B>getRowDimension</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Returns the number of rows of this matrix.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AnyMatrix.html#getRowDimension()">getRowDimension</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/AnyMatrix.html" title="interface in org.apache.commons.math3.linear">AnyMatrix</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getRowDimension()">getRowDimension</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the number of rows.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEntry(int, int, double)"><!-- --></A><H3>
+setEntry</H3>
+<PRE>
+public void <B>setEntry</B>(int&nbsp;row,
+                     int&nbsp;column,
+                     double&nbsp;value)
+              throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Set the entry in the specified row and column. Row and column indices
+ start at 0.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#setEntry(int, int, double)">setEntry</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#setEntry(int, int, double)">setEntry</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>row</CODE> - Row index of entry to be set.<DD><CODE>column</CODE> - Column index of entry to be set.<DD><CODE>value</CODE> - the new value of the entry.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the row or column index is not valid</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addToEntry(int, int, double)"><!-- --></A><H3>
+addToEntry</H3>
+<PRE>
+public void <B>addToEntry</B>(int&nbsp;row,
+                       int&nbsp;column,
+                       double&nbsp;increment)
+                throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Adds (in place) the specified value to the specified entry of
+ <code>this</code> matrix. Row and column indices start at 0.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#addToEntry(int, int, double)">addToEntry</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#addToEntry(int, int, double)">addToEntry</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>row</CODE> - Row index of the entry to be modified.<DD><CODE>column</CODE> - Column index of the entry to be modified.<DD><CODE>increment</CODE> - value to add to the matrix entry.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the row or column index is not valid.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="multiplyEntry(int, int, double)"><!-- --></A><H3>
+multiplyEntry</H3>
+<PRE>
+public void <B>multiplyEntry</B>(int&nbsp;row,
+                          int&nbsp;column,
+                          double&nbsp;factor)
+                   throws <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Multiplies (in place) the specified entry of <code>this</code> matrix by the
+ specified value. Row and column indices start at 0.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html#multiplyEntry(int, int, double)">multiplyEntry</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#multiplyEntry(int, int, double)">multiplyEntry</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>row</CODE> - Row index of the entry to be modified.<DD><CODE>column</CODE> - Column index of the entry to be modified.<DD><CODE>factor</CODE> - Multiplication factor for the matrix entry.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the row or column index is not valid.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/OpenMapRealMatrix.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/NonSymmetricMatrixException.html" title="class in org.apache.commons.math3.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/linear/OpenMapRealMatrix.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="OpenMapRealMatrix.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

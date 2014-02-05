@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+AdamsBashforthIntegrator (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AdamsBashforthIntegrator (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AdamsBashforthIntegrator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/ode/nonstiff/AdamsBashforthIntegrator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AdamsBashforthIntegrator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_org.apache.commons.math3.ode.MultistepIntegrator">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.commons.math3.ode.MultistepIntegrator">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.ode.nonstiff</FONT>
+<BR>
+Class AdamsBashforthIntegrator</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html" title="class in org.apache.commons.math3.ode">org.apache.commons.math3.ode.AbstractIntegrator</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">org.apache.commons.math3.ode.nonstiff.AdaptiveStepsizeIntegrator</A>
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html" title="class in org.apache.commons.math3.ode">org.apache.commons.math3.ode.MultistepIntegrator</A>
+              <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">org.apache.commons.math3.ode.nonstiff.AdamsIntegrator</A>
+                  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.ode.nonstiff.AdamsBashforthIntegrator</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../org/apache/commons/math3/ode/FirstOrderIntegrator.html" title="interface in org.apache.commons.math3.ode">FirstOrderIntegrator</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>AdamsBashforthIntegrator</B><DT>extends <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">AdamsIntegrator</A></DL>
+</PRE>
+
+<P>
+This class implements explicit Adams-Bashforth integrators for Ordinary
+ Differential Equations.
+
+ <p>Adams-Bashforth methods (in fact due to Adams alone) are explicit
+ multistep ODE solvers. This implementation is a variation of the classical
+ one: it uses adaptive stepsize to implement error control, whereas
+ classical implementations are fixed step size. The value of state vector
+ at step n+1 is a simple combination of the value at step n and of the
+ derivatives at steps n, n-1, n-2 ... Depending on the number k of previous
+ steps one wants to use for computing the next value, different formulas
+ are available:</p>
+ <ul>
+   <li>k = 1: y<sub>n+1</sub> = y<sub>n</sub> + h y'<sub>n</sub></li>
+   <li>k = 2: y<sub>n+1</sub> = y<sub>n</sub> + h (3y'<sub>n</sub>-y'<sub>n-1</sub>)/2</li>
+   <li>k = 3: y<sub>n+1</sub> = y<sub>n</sub> + h (23y'<sub>n</sub>-16y'<sub>n-1</sub>+5y'<sub>n-2</sub>)/12</li>
+   <li>k = 4: y<sub>n+1</sub> = y<sub>n</sub> + h (55y'<sub>n</sub>-59y'<sub>n-1</sub>+37y'<sub>n-2</sub>-9y'<sub>n-3</sub>)/24</li>
+   <li>...</li>
+ </ul>
+
+ <p>A k-steps Adams-Bashforth method is of order k.</p>
+
+ <h3>Implementation details</h3>
+
+ <p>We define scaled derivatives s<sub>i</sub>(n) at step n as:
+ <pre>
+ s<sub>1</sub>(n) = h y'<sub>n</sub> for first derivative
+ s<sub>2</sub>(n) = h<sup>2</sup>/2 y''<sub>n</sub> for second derivative
+ s<sub>3</sub>(n) = h<sup>3</sup>/6 y'''<sub>n</sub> for third derivative
+ ...
+ s<sub>k</sub>(n) = h<sup>k</sup>/k! y<sup>(k)</sup><sub>n</sub> for k<sup>th</sup> derivative
+ </pre></p>
+
+ <p>The definitions above use the classical representation with several previous first
+ derivatives. Lets define
+ <pre>
+   q<sub>n</sub> = [ s<sub>1</sub>(n-1) s<sub>1</sub>(n-2) ... s<sub>1</sub>(n-(k-1)) ]<sup>T</sup>
+ </pre>
+ (we omit the k index in the notation for clarity). With these definitions,
+ Adams-Bashforth methods can be written:
+ <ul>
+   <li>k = 1: y<sub>n+1</sub> = y<sub>n</sub> + s<sub>1</sub>(n)</li>
+   <li>k = 2: y<sub>n+1</sub> = y<sub>n</sub> + 3/2 s<sub>1</sub>(n) + [ -1/2 ] q<sub>n</sub></li>
+   <li>k = 3: y<sub>n+1</sub> = y<sub>n</sub> + 23/12 s<sub>1</sub>(n) + [ -16/12 5/12 ] q<sub>n</sub></li>
+   <li>k = 4: y<sub>n+1</sub> = y<sub>n</sub> + 55/24 s<sub>1</sub>(n) + [ -59/24 37/24 -9/24 ] q<sub>n</sub></li>
+   <li>...</li>
+ </ul></p>
+
+ <p>Instead of using the classical representation with first derivatives only (y<sub>n</sub>,
+ s<sub>1</sub>(n) and q<sub>n</sub>), our implementation uses the Nordsieck vector with
+ higher degrees scaled derivatives all taken at the same step (y<sub>n</sub>, s<sub>1</sub>(n)
+ and r<sub>n</sub>) where r<sub>n</sub> is defined as:
+ <pre>
+ r<sub>n</sub> = [ s<sub>2</sub>(n), s<sub>3</sub>(n) ... s<sub>k</sub>(n) ]<sup>T</sup>
+ </pre>
+ (here again we omit the k index in the notation for clarity)
+ </p>
+
+ <p>Taylor series formulas show that for any index offset i, s<sub>1</sub>(n-i) can be
+ computed from s<sub>1</sub>(n), s<sub>2</sub>(n) ... s<sub>k</sub>(n), the formula being exact
+ for degree k polynomials.
+ <pre>
+ s<sub>1</sub>(n-i) = s<sub>1</sub>(n) + &sum;<sub>j</sub> j (-i)<sup>j-1</sup> s<sub>j</sub>(n)
+ </pre>
+ The previous formula can be used with several values for i to compute the transform between
+ classical representation and Nordsieck vector. The transform between r<sub>n</sub>
+ and q<sub>n</sub> resulting from the Taylor series formulas above is:
+ <pre>
+ q<sub>n</sub> = s<sub>1</sub>(n) u + P r<sub>n</sub>
+ </pre>
+ where u is the [ 1 1 ... 1 ]<sup>T</sup> vector and P is the (k-1)&times;(k-1) matrix built
+ with the j (-i)<sup>j-1</sup> terms:
+ <pre>
+        [  -2   3   -4    5  ... ]
+        [  -4  12  -32   80  ... ]
+   P =  [  -6  27 -108  405  ... ]
+        [  -8  48 -256 1280  ... ]
+        [          ...           ]
+ </pre></p>
+
+ <p>Using the Nordsieck vector has several advantages:
+ <ul>
+   <li>it greatly simplifies step interpolation as the interpolator mainly applies
+   Taylor series formulas,</li>
+   <li>it simplifies step changes that occur when discrete events that truncate
+   the step are triggered,</li>
+   <li>it allows to extend the methods in order to support adaptive stepsize.</li>
+ </ul></p>
+
+ <p>The Nordsieck vector at step n+1 is computed from the Nordsieck vector at step n as follows:
+ <ul>
+   <li>y<sub>n+1</sub> = y<sub>n</sub> + s<sub>1</sub>(n) + u<sup>T</sup> r<sub>n</sub></li>
+   <li>s<sub>1</sub>(n+1) = h f(t<sub>n+1</sub>, y<sub>n+1</sub>)</li>
+   <li>r<sub>n+1</sub> = (s<sub>1</sub>(n) - s<sub>1</sub>(n+1)) P<sup>-1</sup> u + P<sup>-1</sup> A P r<sub>n</sub></li>
+ </ul>
+ where A is a rows shifting matrix (the lower left part is an identity matrix):
+ <pre>
+        [ 0 0   ...  0 0 | 0 ]
+        [ ---------------+---]
+        [ 1 0   ...  0 0 | 0 ]
+    A = [ 0 1   ...  0 0 | 0 ]
+        [       ...      | 0 ]
+        [ 0 0   ...  1 0 | 0 ]
+        [ 0 0   ...  0 1 | 0 ]
+ </pre></p>
+
+ <p>The P<sup>-1</sup>u vector and the P<sup>-1</sup> A P matrix do not depend on the state,
+ they only depend on k and therefore are precomputed once for all.</p>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: AdamsBashforthIntegrator.java 1463684 2013-04-02 19:04:13Z luc $</DD>
+</DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_org.apache.commons.math3.ode.MultistepIntegrator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class org.apache.commons.math3.ode.<A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html" title="class in org.apache.commons.math3.ode">MultistepIntegrator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.NordsieckTransformer.html" title="interface in org.apache.commons.math3.ode">MultistepIntegrator.NordsieckTransformer</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.commons.math3.ode.MultistepIntegrator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.commons.math3.ode.<A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html" title="class in org.apache.commons.math3.ode">MultistepIntegrator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#nordsieck">nordsieck</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#scaled">scaled</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.commons.math3.ode.nonstiff.AdaptiveStepsizeIntegrator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.commons.math3.ode.nonstiff.<A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">AdaptiveStepsizeIntegrator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#mainSetDimension">mainSetDimension</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#scalAbsoluteTolerance">scalAbsoluteTolerance</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#scalRelativeTolerance">scalRelativeTolerance</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#vecAbsoluteTolerance">vecAbsoluteTolerance</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#vecRelativeTolerance">vecRelativeTolerance</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.commons.math3.ode.AbstractIntegrator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.commons.math3.ode.<A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html" title="class in org.apache.commons.math3.ode">AbstractIntegrator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#isLastStep">isLastStep</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#resetOccurred">resetOccurred</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#stepHandlers">stepHandlers</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#stepSize">stepSize</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#stepStart">stepStart</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsBashforthIntegrator.html#AdamsBashforthIntegrator(int, double, double, double[], double[])">AdamsBashforthIntegrator</A></B>(int&nbsp;nSteps,
+                         double&nbsp;minStep,
+                         double&nbsp;maxStep,
+                         double[]&nbsp;vecAbsoluteTolerance,
+                         double[]&nbsp;vecRelativeTolerance)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build an Adams-Bashforth integrator with the given order and step control parameters.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsBashforthIntegrator.html#AdamsBashforthIntegrator(int, double, double, double, double)">AdamsBashforthIntegrator</A></B>(int&nbsp;nSteps,
+                         double&nbsp;minStep,
+                         double&nbsp;maxStep,
+                         double&nbsp;scalAbsoluteTolerance,
+                         double&nbsp;scalRelativeTolerance)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build an Adams-Bashforth integrator with the given order and step control parameters.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsBashforthIntegrator.html#integrate(org.apache.commons.math3.ode.ExpandableStatefulODE, double)">integrate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/ode/ExpandableStatefulODE.html" title="class in org.apache.commons.math3.ode">ExpandableStatefulODE</A>&nbsp;equations,
+          double&nbsp;t)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integrate a set of differential equations up to the given time.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.ode.nonstiff.AdamsIntegrator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.ode.nonstiff.<A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">AdamsIntegrator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsIntegrator.html#initializeHighOrderDerivatives(double, double[], double[][], double[][])">initializeHighOrderDerivatives</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsIntegrator.html#updateHighOrderDerivativesPhase1(org.apache.commons.math3.linear.Array2DRowRealMatrix)">updateHighOrderDerivativesPhase1</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsIntegrator.html#updateHighOrderDerivativesPhase2(double[], double[], org.apache.commons.math3.linear.Array2DRowRealMatrix)">updateHighOrderDerivativesPhase2</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.ode.MultistepIntegrator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.ode.<A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html" title="class in org.apache.commons.math3.ode">MultistepIntegrator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#computeStepGrowShrinkFactor(double)">computeStepGrowShrinkFactor</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#getMaxGrowth()">getMaxGrowth</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#getMinReduction()">getMinReduction</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#getSafety()">getSafety</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#getStarterIntegrator()">getStarterIntegrator</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#setMaxGrowth(double)">setMaxGrowth</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#setMinReduction(double)">setMinReduction</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#setSafety(double)">setSafety</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#setStarterIntegrator(org.apache.commons.math3.ode.FirstOrderIntegrator)">setStarterIntegrator</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#start(double, double[], double)">start</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.ode.nonstiff.AdaptiveStepsizeIntegrator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.ode.nonstiff.<A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">AdaptiveStepsizeIntegrator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#filterStep(double, boolean, boolean)">filterStep</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#getCurrentStepStart()">getCurrentStepStart</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#getMaxStep()">getMaxStep</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#getMinStep()">getMinStep</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#initializeStep(boolean, int, double[], double, double[], double[], double[], double[])">initializeStep</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#resetInternalState()">resetInternalState</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#sanityChecks(org.apache.commons.math3.ode.ExpandableStatefulODE, double)">sanityChecks</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#setInitialStepSize(double)">setInitialStepSize</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#setStepSizeControl(double, double, double[], double[])">setStepSizeControl</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#setStepSizeControl(double, double, double, double)">setStepSizeControl</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.ode.AbstractIntegrator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.ode.<A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html" title="class in org.apache.commons.math3.ode">AbstractIntegrator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#acceptStep(org.apache.commons.math3.ode.sampling.AbstractStepInterpolator, double[], double[], double)">acceptStep</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#addEventHandler(org.apache.commons.math3.ode.events.EventHandler, double, double, int)">addEventHandler</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#addEventHandler(org.apache.commons.math3.ode.events.EventHandler, double, double, int, org.apache.commons.math3.analysis.solvers.UnivariateSolver)">addEventHandler</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#addStepHandler(org.apache.commons.math3.ode.sampling.StepHandler)">addStepHandler</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#clearEventHandlers()">clearEventHandlers</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#clearStepHandlers()">clearStepHandlers</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#computeDerivatives(double, double[], double[])">computeDerivatives</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getCurrentSignedStepsize()">getCurrentSignedStepsize</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getEvaluations()">getEvaluations</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getEvaluationsCounter()">getEvaluationsCounter</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getEventHandlers()">getEventHandlers</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getExpandable()">getExpandable</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getMaxEvaluations()">getMaxEvaluations</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getName()">getName</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getStepHandlers()">getStepHandlers</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#initIntegration(double, double[], double)">initIntegration</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#integrate(org.apache.commons.math3.ode.FirstOrderDifferentialEquations, double, double[], double, double[])">integrate</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#setEquations(org.apache.commons.math3.ode.ExpandableStatefulODE)">setEquations</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#setMaxEvaluations(int)">setMaxEvaluations</A>, <A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#setStateInitialized(boolean)">setStateInitialized</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AdamsBashforthIntegrator(int, double, double, double, double)"><!-- --></A><H3>
+AdamsBashforthIntegrator</H3>
+<PRE>
+public <B>AdamsBashforthIntegrator</B>(int&nbsp;nSteps,
+                                double&nbsp;minStep,
+                                double&nbsp;maxStep,
+                                double&nbsp;scalAbsoluteTolerance,
+                                double&nbsp;scalRelativeTolerance)
+                         throws <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></PRE>
+<DL>
+<DD>Build an Adams-Bashforth integrator with the given order and step control parameters.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>nSteps</CODE> - number of steps of the method excluding the one being computed<DD><CODE>minStep</CODE> - minimal step (sign is irrelevant, regardless of
+ integration direction, forward or backward), the last step can
+ be smaller than this<DD><CODE>maxStep</CODE> - maximal step (sign is irrelevant, regardless of
+ integration direction, forward or backward), the last step can
+ be smaller than this<DD><CODE>scalAbsoluteTolerance</CODE> - allowed absolute error<DD><CODE>scalRelativeTolerance</CODE> - allowed relative error
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if order is 1 or less</DL>
+</DL>
+<HR>
+
+<A NAME="AdamsBashforthIntegrator(int, double, double, double[], double[])"><!-- --></A><H3>
+AdamsBashforthIntegrator</H3>
+<PRE>
+public <B>AdamsBashforthIntegrator</B>(int&nbsp;nSteps,
+                                double&nbsp;minStep,
+                                double&nbsp;maxStep,
+                                double[]&nbsp;vecAbsoluteTolerance,
+                                double[]&nbsp;vecRelativeTolerance)
+                         throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</A></PRE>
+<DL>
+<DD>Build an Adams-Bashforth integrator with the given order and step control parameters.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>nSteps</CODE> - number of steps of the method excluding the one being computed<DD><CODE>minStep</CODE> - minimal step (sign is irrelevant, regardless of
+ integration direction, forward or backward), the last step can
+ be smaller than this<DD><CODE>maxStep</CODE> - maximal step (sign is irrelevant, regardless of
+ integration direction, forward or backward), the last step can
+ be smaller than this<DD><CODE>vecAbsoluteTolerance</CODE> - allowed absolute error<DD><CODE>vecRelativeTolerance</CODE> - allowed relative error
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</A></CODE> - if order is 1 or less</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="integrate(org.apache.commons.math3.ode.ExpandableStatefulODE, double)"><!-- --></A><H3>
+integrate</H3>
+<PRE>
+public void <B>integrate</B>(<A HREF="../../../../../../org/apache/commons/math3/ode/ExpandableStatefulODE.html" title="class in org.apache.commons.math3.ode">ExpandableStatefulODE</A>&nbsp;equations,
+                      double&nbsp;t)
+               throws <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                      <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                      <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A>,
+                      <A HREF="../../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></PRE>
+<DL>
+<DD>Integrate a set of differential equations up to the given time.
+ <p>This method solves an Initial Value Problem (IVP).</p>
+ <p>The set of differential equations is composed of a main set, which
+ can be extended by some sets of secondary equations. The set of
+ equations must be already set up with initial time and partial states.
+ At integration completion, the final time and partial states will be
+ available in the same object.</p>
+ <p>Since this method stores some internal state variables made
+ available in its public interface during integration (<A HREF="../../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getCurrentSignedStepsize()"><CODE>AbstractIntegrator.getCurrentSignedStepsize()</CODE></A>), it is <em>not</em> thread-safe.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsIntegrator.html#integrate(org.apache.commons.math3.ode.ExpandableStatefulODE, double)">integrate</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">AdamsIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>equations</CODE> - complete set of differential equations to integrate<DD><CODE>t</CODE> - target time for the integration
+ (can be set to a value smaller than <code>t0</code> for backward integration)
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if integration step is too small
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the dimension of the complete state does not
+ match the complete equations sets dimension
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if the number of functions evaluations is exceeded
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></CODE> - if the location of an event cannot be bracketed</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AdamsBashforthIntegrator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/ode/nonstiff/AdamsIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/ode/nonstiff/AdamsBashforthIntegrator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AdamsBashforthIntegrator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_org.apache.commons.math3.ode.MultistepIntegrator">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.commons.math3.ode.MultistepIntegrator">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

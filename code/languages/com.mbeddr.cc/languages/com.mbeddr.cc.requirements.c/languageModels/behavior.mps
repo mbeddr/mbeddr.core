@@ -23,6 +23,7 @@
   <import index="tzir" modelUID="r:0d608d1a-ea48-45a7-a9b7-e8214ed7bb8f(com.mbeddr.cc.requirements.c.typesystem)" version="-1" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="22" />
+  <import index="i38" modelUID="r:561bd59c-83bb-4945-898d-c5392896f074(com.mbeddr.core.cinterpreter.behavior)" version="-1" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="1i04" modelUID="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -500,67 +501,7 @@
   </root>
   <root type="3673.Interpreter" typeId="3673.8615074351687299818" id="2921294391695228000" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="RequirementsInterpreter" />
-    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713205411240" nodeInfo="ng">
-      <node role="toType" roleId="3673.5293529713185156793" type="tpee.LongType" typeId="tpee.1068581242867" id="3799977499686823351" nodeInfo="in" />
-      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5934114435586136389" nodeInfo="ng">
-        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
-      </node>
-    </node>
-    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713205707847" nodeInfo="ng">
-      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713205737901" nodeInfo="ng">
-        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618435" resolveInfo="Int16tType" />
-      </node>
-      <node role="toType" roleId="3673.5293529713185156793" type="tpee.LongType" typeId="tpee.1068581242867" id="3799977499686854048" nodeInfo="in" />
-    </node>
-    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713180091668" nodeInfo="ng">
-      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713200199744" nodeInfo="ng">
-        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618440" resolveInfo="Int32tType" />
-      </node>
-      <node role="toType" roleId="3673.5293529713185156793" type="tpee.LongType" typeId="tpee.1068581242867" id="3799977499686883337" nodeInfo="in" />
-    </node>
-    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5934114435583993475" nodeInfo="ng">
-      <node role="toType" roleId="3673.5293529713185156793" type="tpee.LongType" typeId="tpee.1068581242867" id="5934114435586309198" nodeInfo="in" />
-      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5934114435584007350" nodeInfo="ng">
-        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618445" resolveInfo="Int64tType" />
-      </node>
-    </node>
-    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713206139142" nodeInfo="ng">
-      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713206169262" nodeInfo="ng">
-        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
-      </node>
-      <node role="toType" roleId="3673.5293529713185156793" type="tpee.LongType" typeId="tpee.1068581242867" id="3799977499686911320" nodeInfo="in" />
-    </node>
-    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713205078931" nodeInfo="ng">
-      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713205108905" nodeInfo="ng">
-        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618466" resolveInfo="UnsignedInt16tType" />
-      </node>
-      <node role="toType" roleId="3673.5293529713185156793" type="tpee.LongType" typeId="tpee.1068581242867" id="3799977499686938375" nodeInfo="in" />
-    </node>
-    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713206333322" nodeInfo="ng">
-      <node role="toType" roleId="3673.5293529713185156793" type="tpee.LongType" typeId="tpee.1068581242867" id="5934114435586300979" nodeInfo="in" />
-      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713206363515" nodeInfo="ng">
-        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618450" resolveInfo="UnsignedInt32tType" />
-      </node>
-    </node>
-    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="5293529713206572664" nodeInfo="ng">
-      <node role="toType" roleId="3673.5293529713185156793" type="tpee.LongType" typeId="tpee.1068581242867" id="3799977499686964502" nodeInfo="in" />
-      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="5293529713206602850" nodeInfo="ng">
-        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8463282783691618456" resolveInfo="UnsignedInt64tType" />
-      </node>
-    </node>
-    <node role="typeMappings" roleId="3673.8615074351687302154" type="3673.BaseLanguageTypeMapping" typeId="3673.5293529713179568010" id="3799977499687352976" nodeInfo="ng">
-      <node role="toType" roleId="3673.5293529713185156793" type="tpee.BooleanType" typeId="tpee.1070534644030" id="3799977499687374486" nodeInfo="in" />
-      <node role="fromType" roleId="3673.5293529713185081187" type="3673.ConceptTypeExpression" typeId="3673.5293529713194689095" id="3799977499687360604" nodeInfo="ng">
-        <link role="concept" roleId="3673.5293529713194689153" targetNodeId="mj1l.8860443239512128058" resolveInfo="BooleanType" />
-      </node>
-    </node>
-    <node role="applicableLanguages" roleId="3673.7019451652830298090" type="3673.ApplicableLanguage" typeId="3673.7019451652830285943" id="2921294391695228092" nodeInfo="ng">
-      <node role="language" roleId="3673.7019451652831666945" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="2921294391695228093" nodeInfo="nn">
-        <property name="fqName" nameId="tp25.559557797393041554" value="com.mbeddr.c." />
-        <property name="name" nameId="tp25.559557797393017702" value="com.mbeddr.core.expressions.structure" />
-        <property name="stereotype" nameId="tp25.559557797393021807" value="" />
-      </node>
-    </node>
+    <property name="category" nameId="3673.8426159527444241399" value="reqs" />
     <node role="applicableLanguages" roleId="3673.7019451652830298090" type="3673.ApplicableLanguage" typeId="3673.7019451652830285943" id="2921294391695228074" nodeInfo="ng">
       <node role="language" roleId="3673.7019451652831666945" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="2921294391695228075" nodeInfo="nn">
         <property name="name" nameId="tp25.559557797393017702" value="com.mbeddr.cc.requirements.c.structure" />
@@ -606,6 +547,21 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="dependencies" roleId="3673.6663324787725059267" type="3673.InterpretAfterDependency" typeId="3673.6663324787725038318" id="2447795128862591996" nodeInfo="ng">
+      <link role="target" roleId="3673.6663324787724987489" targetNodeId="i38.8615074351688654302" resolveInfo="CInterpreter" />
+    </node>
+    <node role="dependencies" roleId="3673.6663324787725059267" type="3673.InterpretAfterDependency" typeId="3673.6663324787725038318" id="2447795128867217312" nodeInfo="ng">
+      <link role="target" roleId="3673.6663324787724987489" targetNodeId="i38.2921294391695326672" resolveInfo="CExtInterpreter" />
+    </node>
+  </root>
+  <root type="3673.Interpreter" typeId="3673.8615074351687299818" id="2447795128867219008" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="SpecialRequirementsGenerator" />
+    <node role="dependencies" roleId="3673.6663324787725059267" type="3673.InterpretAfterDependency" typeId="3673.6663324787725038318" id="2447795128867219845" nodeInfo="ng">
+      <link role="target" roleId="3673.6663324787724987489" targetNodeId="2921294391695228000" resolveInfo="RequirementsInterpreter" />
+    </node>
+    <node role="dependencies" roleId="3673.6663324787725059267" type="3673.InterpretBeforeDependency" typeId="3673.6663324787724987491" id="2447795128867219850" nodeInfo="ng">
+      <link role="target" roleId="3673.6663324787724987489" targetNodeId="i38.8615074351688654302" resolveInfo="CInterpreter" />
     </node>
   </root>
 </model>

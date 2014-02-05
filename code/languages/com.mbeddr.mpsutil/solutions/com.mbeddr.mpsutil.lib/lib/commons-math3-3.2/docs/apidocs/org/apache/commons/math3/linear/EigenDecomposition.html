@@ -1,0 +1,695 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+EigenDecomposition (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="EigenDecomposition (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/EigenDecomposition.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/DiagonalMatrix.html" title="class in org.apache.commons.math3.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldDecompositionSolver.html" title="interface in org.apache.commons.math3.linear"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/linear/EigenDecomposition.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="EigenDecomposition.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.linear</FONT>
+<BR>
+Class EigenDecomposition</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.linear.EigenDecomposition</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>EigenDecomposition</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+Calculates the eigen decomposition of a real matrix.
+ <p>The eigen decomposition of matrix A is a set of two matrices:
+ V and D such that A = V &times; D &times; V<sup>T</sup>.
+ A, V and D are all m &times; m matrices.</p>
+ <p>This class is similar in spirit to the <code>EigenvalueDecomposition</code>
+ class from the <a href="http://math.nist.gov/javanumerics/jama/">JAMA</a>
+ library, with the following changes:</p>
+ <ul>
+   <li>a <A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getVT()"><CODE>getVt</CODE></A> method has been added,</li>
+   <li>two <A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getRealEigenvalue(int)"><CODE>getRealEigenvalue</CODE></A> and <A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getImagEigenvalue(int)"><CODE>getImagEigenvalue</CODE></A> methods to pick up a single eigenvalue have been added,</li>
+   <li>a <A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getEigenvector(int)"><CODE>getEigenvector</CODE></A> method to pick up a single
+   eigenvector has been added,</li>
+   <li>a <A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getDeterminant()"><CODE>getDeterminant</CODE></A> method has been added.</li>
+   <li>a <A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getSolver()"><CODE>getSolver</CODE></A> method has been added.</li>
+ </ul>
+ <p>
+ As of 3.1, this class supports general real matrices (both symmetric and non-symmetric):
+ </p>
+ <p>
+ If A is symmetric, then A = V*D*V' where the eigenvalue matrix D is diagonal and the eigenvector
+ matrix V is orthogonal, i.e. A = V.multiply(D.multiply(V.transpose())) and
+ V.multiply(V.transpose()) equals the identity matrix.
+ </p>
+ <p>
+ If A is not symmetric, then the eigenvalue matrix D is block diagonal with the real eigenvalues
+ in 1-by-1 blocks and any complex eigenvalues, lambda + i*mu, in 2-by-2 blocks:
+ <pre>
+    [lambda, mu    ]
+    [   -mu, lambda]
+ </pre>
+ The columns of V represent the eigenvectors in the sense that A*V = V*D,
+ i.e. A.multiply(V) equals V.multiply(D).
+ The matrix V may be badly conditioned, or even singular, so the validity of the equation
+ A = V*D*inverse(V) depends upon the condition of V.
+ </p>
+ <p>
+ This implementation is based on the paper by A. Drubrulle, R.S. Martin and
+ J.H. Wilkinson "The Implicit QL Algorithm" in Wilksinson and Reinsch (1971)
+ Handbook for automatic computation, vol. 2, Linear algebra, Springer-Verlag,
+ New-York
+ </p>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0 (changed to concrete class in 3.0)</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: EigenDecomposition.java 1452595 2013-03-04 23:29:39Z tn $</DD>
+<DT><B>See Also:</B><DD><a href="http://mathworld.wolfram.com/EigenDecomposition.html">MathWorld</a>, 
+<a href="http://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix">Wikipedia</a></DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#EigenDecomposition(double[], double[])">EigenDecomposition</A></B>(double[]&nbsp;main,
+                   double[]&nbsp;secondary)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the eigen decomposition of the symmetric tridiagonal
+ matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#EigenDecomposition(double[], double[], double)">EigenDecomposition</A></B>(double[]&nbsp;main,
+                   double[]&nbsp;secondary,
+                   double&nbsp;splitTolerance)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>in 3.1 (to be removed in 4.0) due to unused parameter</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#EigenDecomposition(org.apache.commons.math3.linear.RealMatrix)">EigenDecomposition</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;matrix)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the eigen decomposition of the given real matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#EigenDecomposition(org.apache.commons.math3.linear.RealMatrix, double)">EigenDecomposition</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;matrix,
+                   double&nbsp;splitTolerance)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>in 3.1 (to be removed in 4.0) due to unused parameter</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getD()">getD</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the block diagonal matrix D of the decomposition.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getDeterminant()">getDeterminant</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the determinant of the matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getEigenvector(int)">getEigenvector</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a copy of the i<sup>th</sup> eigenvector of the original matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getImagEigenvalue(int)">getImagEigenvalue</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the imaginary part of the i<sup>th</sup> eigenvalue of the original
+ matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getImagEigenvalues()">getImagEigenvalues</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a copy of the imaginary parts of the eigenvalues of the original
+ matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getRealEigenvalue(int)">getRealEigenvalue</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the real part of the i<sup>th</sup> eigenvalue of the original
+ matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getRealEigenvalues()">getRealEigenvalues</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a copy of the real parts of the eigenvalues of the original matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/DecompositionSolver.html" title="interface in org.apache.commons.math3.linear">DecompositionSolver</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getSolver()">getSolver</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a solver for finding the A &times; X = B solution in exact
+ linear sense.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getSquareRoot()">getSquareRoot</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the square-root of the matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getV()">getV</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the matrix V of the decomposition.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getVT()">getVT</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the transpose of the matrix V of the decomposition.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#hasComplexEigenvalues()">hasComplexEigenvalues</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns whether the calculated eigen values are complex or real.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="EigenDecomposition(org.apache.commons.math3.linear.RealMatrix)"><!-- --></A><H3>
+EigenDecomposition</H3>
+<PRE>
+public <B>EigenDecomposition</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;matrix)
+                   throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD>Calculates the eigen decomposition of the given real matrix.
+ <p>
+ Supports decomposition of a general matrix since 3.1.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>matrix</CODE> - Matrix to decompose.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if the algorithm fails to converge.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the decomposition of a general matrix
+ results in a matrix with zero norm<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DL>
+<HR>
+
+<A NAME="EigenDecomposition(org.apache.commons.math3.linear.RealMatrix, double)"><!-- --></A><H3>
+EigenDecomposition</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public <B>EigenDecomposition</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;matrix,
+                                     double&nbsp;splitTolerance)
+                   throws <A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>in 3.1 (to be removed in 4.0) due to unused parameter</I>
+<P>
+<DD>Calculates the eigen decomposition of the given real matrix.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>matrix</CODE> - Matrix to decompose.<DD><CODE>splitTolerance</CODE> - Dummy parameter (present for backward
+ compatibility only).
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</A></CODE> - if the decomposition of a general matrix
+ results in a matrix with zero norm
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if the algorithm fails to converge.</DL>
+</DL>
+<HR>
+
+<A NAME="EigenDecomposition(double[], double[])"><!-- --></A><H3>
+EigenDecomposition</H3>
+<PRE>
+public <B>EigenDecomposition</B>(double[]&nbsp;main,
+                          double[]&nbsp;secondary)</PRE>
+<DL>
+<DD>Calculates the eigen decomposition of the symmetric tridiagonal
+ matrix.  The Householder matrix is assumed to be the identity matrix.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>main</CODE> - Main diagonal of the symmetric tridiagonal form.<DD><CODE>secondary</CODE> - Secondary of the tridiagonal form.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if the algorithm fails to converge.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DL>
+<HR>
+
+<A NAME="EigenDecomposition(double[], double[], double)"><!-- --></A><H3>
+EigenDecomposition</H3>
+<PRE>
+<FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public <B>EigenDecomposition</B>(double[]&nbsp;main,
+                                     double[]&nbsp;secondary,
+                                     double&nbsp;splitTolerance)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>in 3.1 (to be removed in 4.0) due to unused parameter</I>
+<P>
+<DD>Calculates the eigen decomposition of the symmetric tridiagonal
+ matrix.  The Householder matrix is assumed to be the identity matrix.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>main</CODE> - Main diagonal of the symmetric tridiagonal form.<DD><CODE>secondary</CODE> - Secondary of the tridiagonal form.<DD><CODE>splitTolerance</CODE> - Dummy parameter (present for backward
+ compatibility only).
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if the algorithm fails to converge.</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getV()"><!-- --></A><H3>
+getV</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>getV</B>()</PRE>
+<DL>
+<DD>Gets the matrix V of the decomposition.
+ V is an orthogonal matrix, i.e. its transpose is also its inverse.
+ The columns of V are the eigenvectors of the original matrix.
+ No assumption is made about the orientation of the system axes formed
+ by the columns of V (e.g. in a 3-dimension space, V can form a left-
+ or right-handed system).
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the V matrix.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getD()"><!-- --></A><H3>
+getD</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>getD</B>()</PRE>
+<DL>
+<DD>Gets the block diagonal matrix D of the decomposition.
+ D is a block diagonal matrix.
+ Real eigenvalues are on the diagonal while complex values are on
+ 2x2 blocks { {real +imaginary}, {-imaginary, real} }.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the D matrix.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getRealEigenvalues()"><CODE>getRealEigenvalues()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getImagEigenvalues()"><CODE>getImagEigenvalues()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getVT()"><!-- --></A><H3>
+getVT</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>getVT</B>()</PRE>
+<DL>
+<DD>Gets the transpose of the matrix V of the decomposition.
+ V is an orthogonal matrix, i.e. its transpose is also its inverse.
+ The columns of V are the eigenvectors of the original matrix.
+ No assumption is made about the orientation of the system axes formed
+ by the columns of V (e.g. in a 3-dimension space, V can form a left-
+ or right-handed system).
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the transpose of the V matrix.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hasComplexEigenvalues()"><!-- --></A><H3>
+hasComplexEigenvalues</H3>
+<PRE>
+public boolean <B>hasComplexEigenvalues</B>()</PRE>
+<DL>
+<DD>Returns whether the calculated eigen values are complex or real.
+ <p>The method performs a zero check for each element of the
+ <A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getImagEigenvalues()"><CODE>getImagEigenvalues()</CODE></A> array and returns <code>true</code> if any
+ element is not equal to zero.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if the eigen values are complex, <code>false</code> otherwise<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRealEigenvalues()"><!-- --></A><H3>
+getRealEigenvalues</H3>
+<PRE>
+public double[] <B>getRealEigenvalues</B>()</PRE>
+<DL>
+<DD>Gets a copy of the real parts of the eigenvalues of the original matrix.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a copy of the real parts of the eigenvalues of the original matrix.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getD()"><CODE>getD()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getRealEigenvalue(int)"><CODE>getRealEigenvalue(int)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getImagEigenvalues()"><CODE>getImagEigenvalues()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRealEigenvalue(int)"><!-- --></A><H3>
+getRealEigenvalue</H3>
+<PRE>
+public double <B>getRealEigenvalue</B>(int&nbsp;i)</PRE>
+<DL>
+<DD>Returns the real part of the i<sup>th</sup> eigenvalue of the original
+ matrix.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>i</CODE> - index of the eigenvalue (counting from 0)
+<DT><B>Returns:</B><DD>real part of the i<sup>th</sup> eigenvalue of the original
+ matrix.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getD()"><CODE>getD()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getRealEigenvalues()"><CODE>getRealEigenvalues()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getImagEigenvalue(int)"><CODE>getImagEigenvalue(int)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getImagEigenvalues()"><!-- --></A><H3>
+getImagEigenvalues</H3>
+<PRE>
+public double[] <B>getImagEigenvalues</B>()</PRE>
+<DL>
+<DD>Gets a copy of the imaginary parts of the eigenvalues of the original
+ matrix.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a copy of the imaginary parts of the eigenvalues of the original
+ matrix.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getD()"><CODE>getD()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getImagEigenvalue(int)"><CODE>getImagEigenvalue(int)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getRealEigenvalues()"><CODE>getRealEigenvalues()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getImagEigenvalue(int)"><!-- --></A><H3>
+getImagEigenvalue</H3>
+<PRE>
+public double <B>getImagEigenvalue</B>(int&nbsp;i)</PRE>
+<DL>
+<DD>Gets the imaginary part of the i<sup>th</sup> eigenvalue of the original
+ matrix.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>i</CODE> - Index of the eigenvalue (counting from 0).
+<DT><B>Returns:</B><DD>the imaginary part of the i<sup>th</sup> eigenvalue of the original
+ matrix.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getD()"><CODE>getD()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getImagEigenvalues()"><CODE>getImagEigenvalues()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getRealEigenvalue(int)"><CODE>getRealEigenvalue(int)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEigenvector(int)"><!-- --></A><H3>
+getEigenvector</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>getEigenvector</B>(int&nbsp;i)</PRE>
+<DL>
+<DD>Gets a copy of the i<sup>th</sup> eigenvector of the original matrix.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>i</CODE> - Index of the eigenvector (counting from 0).
+<DT><B>Returns:</B><DD>a copy of the i<sup>th</sup> eigenvector of the original matrix.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getD()"><CODE>getD()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDeterminant()"><!-- --></A><H3>
+getDeterminant</H3>
+<PRE>
+public double <B>getDeterminant</B>()</PRE>
+<DL>
+<DD>Computes the determinant of the matrix.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the determinant of the matrix.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSquareRoot()"><!-- --></A><H3>
+getSquareRoot</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>getSquareRoot</B>()</PRE>
+<DL>
+<DD>Computes the square-root of the matrix.
+ This implementation assumes that the matrix is symmetric and positive
+ definite.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the square-root of the matrix.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathUnsupportedOperationException.html" title="class in org.apache.commons.math3.exception">MathUnsupportedOperationException</A></CODE> - if the matrix is not
+ symmetric or not positive definite.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSolver()"><!-- --></A><H3>
+getSolver</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/DecompositionSolver.html" title="interface in org.apache.commons.math3.linear">DecompositionSolver</A> <B>getSolver</B>()</PRE>
+<DL>
+<DD>Gets a solver for finding the A &times; X = B solution in exact
+ linear sense.
+ <p>
+ Since 3.1, eigen decomposition of a general matrix is supported,
+ but the <A HREF="../../../../../org/apache/commons/math3/linear/DecompositionSolver.html" title="interface in org.apache.commons.math3.linear"><CODE>DecompositionSolver</CODE></A> only supports real eigenvalues.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a solver
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MathUnsupportedOperationException.html" title="class in org.apache.commons.math3.exception">MathUnsupportedOperationException</A></CODE> - if the decomposition resulted in
+ complex eigenvalues</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/EigenDecomposition.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/DiagonalMatrix.html" title="class in org.apache.commons.math3.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/FieldDecompositionSolver.html" title="interface in org.apache.commons.math3.linear"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/linear/EigenDecomposition.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="EigenDecomposition.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

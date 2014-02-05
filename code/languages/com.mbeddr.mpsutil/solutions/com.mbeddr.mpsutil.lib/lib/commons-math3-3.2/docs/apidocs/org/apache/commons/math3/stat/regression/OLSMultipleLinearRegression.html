@@ -1,0 +1,637 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+OLSMultipleLinearRegression (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="OLSMultipleLinearRegression (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/OLSMultipleLinearRegression.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html" title="class in org.apache.commons.math3.stat.regression"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="OLSMultipleLinearRegression.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.stat.regression</FONT>
+<BR>
+Class OLSMultipleLinearRegression</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression">org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.stat.regression.OLSMultipleLinearRegression</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">MultipleLinearRegression</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>OLSMultipleLinearRegression</B><DT>extends <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression">AbstractMultipleLinearRegression</A></DL>
+</PRE>
+
+<P>
+<p>Implements ordinary least squares (OLS) to estimate the parameters of a
+ multiple linear regression model.</p>
+
+ <p>The regression coefficients, <code>b</code>, satisfy the normal equations:
+ <pre><code> X<sup>T</sup> X b = X<sup>T</sup> y </code></pre></p>
+
+ <p>To solve the normal equations, this implementation uses QR decomposition
+ of the <code>X</code> matrix. (See <A HREF="../../../../../../org/apache/commons/math3/linear/QRDecomposition.html" title="class in org.apache.commons.math3.linear"><CODE>QRDecomposition</CODE></A> for details on the
+ decomposition algorithm.) The <code>X</code> matrix, also known as the <i>design matrix,</i>
+ has rows corresponding to sample observations and columns corresponding to independent
+ variables.  When the model is estimated using an intercept term (i.e. when
+ <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#isNoIntercept()"><CODE>isNoIntercept</CODE></A> is false as it is by default), the <code>X</code>
+ matrix includes an initial column identically equal to 1.  We solve the normal equations
+ as follows:
+ <pre><code> X<sup>T</sup>X b = X<sup>T</sup> y
+ (QR)<sup>T</sup> (QR) b = (QR)<sup>T</sup>y
+ R<sup>T</sup> (Q<sup>T</sup>Q) R b = R<sup>T</sup> Q<sup>T</sup> y
+ R<sup>T</sup> R b = R<sup>T</sup> Q<sup>T</sup> y
+ (R<sup>T</sup>)<sup>-1</sup> R<sup>T</sup> R b = (R<sup>T</sup>)<sup>-1</sup> R<sup>T</sup> Q<sup>T</sup> y
+ R b = Q<sup>T</sup> y </code></pre></p>
+
+ <p>Given <code>Q</code> and <code>R</code>, the last equation is solved by back-substitution.</p>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: OLSMultipleLinearRegression.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#OLSMultipleLinearRegression()">OLSMultipleLinearRegression</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateAdjustedRSquared()">calculateAdjustedRSquared</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the adjusted R-squared statistic, defined by the formula 
+ R<sup>2</sup><sub>adj</sub> = 1 - [SSR (n - 1)] / [SSTO (n - p)]
+ 
+ where SSR is the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateResidualSumOfSquares()"><CODE>sum of squared residuals</CODE></A>,
+ SSTO is the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateTotalSumOfSquares()"><CODE>total sum of squares</CODE></A>, n is the number
+ of observations and p is the number of parameters estimated (including the intercept).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateBeta()">calculateBeta</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the regression coefficients using OLS.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateBetaVariance()">calculateBetaVariance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the variance-covariance matrix of the regression parameters.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateHat()">calculateHat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the "hat" matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateResidualSumOfSquares()">calculateResidualSumOfSquares</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of squared residuals.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateRSquared()">calculateRSquared</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the R-Squared statistic, defined by the formula 
+ R<sup>2</sup> = 1 - SSR / SSTO
+ 
+ where SSR is the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateResidualSumOfSquares()"><CODE>sum of squared residuals</CODE></A>
+ and SSTO is the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateTotalSumOfSquares()"><CODE>total sum of squares</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateTotalSumOfSquares()">calculateTotalSumOfSquares</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of squared deviations of Y from its mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#newSampleData(double[], double[][])">newSampleData</A></B>(double[]&nbsp;y,
+              double[][]&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loads model x and y sample data, overriding any previous sample.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#newSampleData(double[], int, int)">newSampleData</A></B>(double[]&nbsp;data,
+              int&nbsp;nobs,
+              int&nbsp;nvars)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loads model x and y sample data from a flat input array, overriding any previous sample.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#newXSampleData(double[][])">newXSampleData</A></B>(double[][]&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loads new x sample data, overriding any previous data.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.stat.regression.<A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression">AbstractMultipleLinearRegression</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#calculateErrorVariance()">calculateErrorVariance</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#calculateResiduals()">calculateResiduals</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#calculateYVariance()">calculateYVariance</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateErrorVariance()">estimateErrorVariance</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateRegressandVariance()">estimateRegressandVariance</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateRegressionParameters()">estimateRegressionParameters</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateRegressionParametersStandardErrors()">estimateRegressionParametersStandardErrors</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateRegressionParametersVariance()">estimateRegressionParametersVariance</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateRegressionStandardError()">estimateRegressionStandardError</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateResiduals()">estimateResiduals</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#getX()">getX</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#getY()">getY</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#isNoIntercept()">isNoIntercept</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#newYSampleData(double[])">newYSampleData</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#setNoIntercept(boolean)">setNoIntercept</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#validateCovarianceData(double[][], double[][])">validateCovarianceData</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#validateSampleData(double[][], double[])">validateSampleData</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="OLSMultipleLinearRegression()"><!-- --></A><H3>
+OLSMultipleLinearRegression</H3>
+<PRE>
+public <B>OLSMultipleLinearRegression</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="newSampleData(double[], double[][])"><!-- --></A><H3>
+newSampleData</H3>
+<PRE>
+public void <B>newSampleData</B>(double[]&nbsp;y,
+                          double[][]&nbsp;x)
+                   throws <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Loads model x and y sample data, overriding any previous sample.
+
+ Computes and caches QR decomposition of the X matrix.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>y</CODE> - the [n,1] array representing the y sample<DD><CODE>x</CODE> - the [n,k] array representing the x sample
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the x and y array data are not
+             compatible for the regression</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newSampleData(double[], int, int)"><!-- --></A><H3>
+newSampleData</H3>
+<PRE>
+public void <B>newSampleData</B>(double[]&nbsp;data,
+                          int&nbsp;nobs,
+                          int&nbsp;nvars)</PRE>
+<DL>
+<DD><p>Loads model x and y sample data from a flat input array, overriding any previous sample.
+ </p>
+ <p>Assumes that rows are concatenated with y values first in each row.  For example, an input
+ <code>data</code> array containing the sequence of values (1, 2, 3, 4, 5, 6, 7, 8, 9) with
+ <code>nobs = 3</code> and <code>nvars = 2</code> creates a regression dataset with two
+ independent variables, as below:
+ <pre>
+   y   x[0]  x[1]
+   --------------
+   1     2     3
+   4     5     6
+   7     8     9
+ </pre>
+ </p>
+ <p>Note that there is no need to add an initial unitary column (column of 1's) when
+ specifying a model including an intercept term.  If <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#isNoIntercept()"><CODE>AbstractMultipleLinearRegression.isNoIntercept()</CODE></A> is <code>true</code>,
+ the X matrix will be created without an initial column of "1"s; otherwise this column will
+ be added.
+ </p>
+ <p>Throws IllegalArgumentException if any of the following preconditions fail:
+ <ul><li><code>data</code> cannot be null</li>
+ <li><code>data.length = nobs * (nvars + 1)</li>
+ <li><code>nobs > nvars</code></li></ul>
+ </p>
+ <p>This implementation computes and caches the QR decomposition of the X matrix.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#newSampleData(double[], int, int)">newSampleData</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression">AbstractMultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>data</CODE> - input data array<DD><CODE>nobs</CODE> - number of observations (rows)<DD><CODE>nvars</CODE> - number of independent variables (columns, not counting y)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="calculateHat()"><!-- --></A><H3>
+calculateHat</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>calculateHat</B>()</PRE>
+<DL>
+<DD><p>Compute the "hat" matrix.
+ </p>
+ <p>The hat matrix is defined in terms of the design matrix X
+  by X(X<sup>T</sup>X)<sup>-1</sup>X<sup>T</sup>
+ </p>
+ <p>The implementation here uses the QR decomposition to compute the
+ hat matrix as Q I<sub>p</sub>Q<sup>T</sup> where I<sub>p</sub> is the
+ p-dimensional identity matrix augmented by 0's.  This computational
+ formula is from "The Hat Matrix in Regression and ANOVA",
+ David C. Hoaglin and Roy E. Welsch,
+ <i>The American Statistician</i>, Vol. 32, No. 1 (Feb., 1978), pp. 17-22.
+ </p>
+ <p>Data for the model must have been successfully loaded using one of
+ the <code>newSampleData</code> methods before invoking this method; otherwise
+ a <code>NullPointerException</code> will be thrown.</p>
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the hat matrix</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="calculateTotalSumOfSquares()"><!-- --></A><H3>
+calculateTotalSumOfSquares</H3>
+<PRE>
+public double <B>calculateTotalSumOfSquares</B>()
+                                  throws <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><p>Returns the sum of squared deviations of Y from its mean.</p>
+
+ <p>If the model has no intercept term, <code>0</code> is used for the
+ mean of Y - i.e., what is returned is the sum of the squared Y values.</p>
+
+ <p>The value returned by this method is the SSTO value used in
+ the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateRSquared()"><CODE>R-squared</CODE></A> computation.</p>
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>SSTO - the total sum of squares
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the sample has not been set or does
+ not contain at least 3 observations<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#isNoIntercept()"><CODE>AbstractMultipleLinearRegression.isNoIntercept()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="calculateResidualSumOfSquares()"><!-- --></A><H3>
+calculateResidualSumOfSquares</H3>
+<PRE>
+public double <B>calculateResidualSumOfSquares</B>()</PRE>
+<DL>
+<DD>Returns the sum of squared residuals.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>residual sum of squares<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="calculateRSquared()"><!-- --></A><H3>
+calculateRSquared</H3>
+<PRE>
+public double <B>calculateRSquared</B>()
+                         throws <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Returns the R-Squared statistic, defined by the formula <pre>
+ R<sup>2</sup> = 1 - SSR / SSTO
+ </pre>
+ where SSR is the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateResidualSumOfSquares()"><CODE>sum of squared residuals</CODE></A>
+ and SSTO is the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateTotalSumOfSquares()"><CODE>total sum of squares</CODE></A>
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>R-square statistic
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the sample has not been set or does
+ not contain at least 3 observations<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="calculateAdjustedRSquared()"><!-- --></A><H3>
+calculateAdjustedRSquared</H3>
+<PRE>
+public double <B>calculateAdjustedRSquared</B>()
+                                 throws <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD><p>Returns the adjusted R-squared statistic, defined by the formula <pre>
+ R<sup>2</sup><sub>adj</sub> = 1 - [SSR (n - 1)] / [SSTO (n - p)]
+ </pre>
+ where SSR is the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateResidualSumOfSquares()"><CODE>sum of squared residuals</CODE></A>,
+ SSTO is the <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateTotalSumOfSquares()"><CODE>total sum of squares</CODE></A>, n is the number
+ of observations and p is the number of parameters estimated (including the intercept).</p>
+
+ <p>If the regression is estimated without an intercept term, what is returned is <pre>
+ <code> 1 - (1 - <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateRSquared()"><CODE>calculateRSquared()</CODE></A>) * (n / (n - p)) </code>
+ </pre></p>
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>adjusted R-Squared statistic
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the sample has not been set or does
+ not contain at least 3 observations<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#isNoIntercept()"><CODE>AbstractMultipleLinearRegression.isNoIntercept()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newXSampleData(double[][])"><!-- --></A><H3>
+newXSampleData</H3>
+<PRE>
+protected void <B>newXSampleData</B>(double[][]&nbsp;x)</PRE>
+<DL>
+<DD><p>Loads new x sample data, overriding any previous data.
+ </p>
+ The input <code>x</code> array should have one row for each sample
+ observation, with columns corresponding to independent variables.
+ For example, if <pre>
+ <code> x = new double[][] {{1, 2}, {3, 4}, {5, 6}} </code></pre>
+ then <code>setXSampleData(x) </code> results in a model with two independent
+ variables and 3 observations:
+ <pre>
+   x[0]  x[1]
+   ----------
+     1    2
+     3    4
+     5    6
+ </pre>
+ </p>
+ <p>Note that there is no need to add an initial unitary column (column of 1's) when
+ specifying a model including an intercept term.
+ </p>
+ <p>This implementation computes and caches the QR decomposition of the X matrix
+ once it is successfully loaded.</p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#newXSampleData(double[][])">newXSampleData</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression">AbstractMultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - the rectangular array representing the x sample</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="calculateBeta()"><!-- --></A><H3>
+calculateBeta</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>calculateBeta</B>()</PRE>
+<DL>
+<DD>Calculates the regression coefficients using OLS.
+
+ <p>Data for the model must have been successfully loaded using one of
+ the <code>newSampleData</code> methods before invoking this method; otherwise
+ a <code>NullPointerException</code> will be thrown.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#calculateBeta()">calculateBeta</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression">AbstractMultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>beta</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="calculateBetaVariance()"><!-- --></A><H3>
+calculateBetaVariance</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>calculateBetaVariance</B>()</PRE>
+<DL>
+<DD><p>Calculates the variance-covariance matrix of the regression parameters.
+ </p>
+ <p>Var(b) = (X<sup>T</sup>X)<sup>-1</sup>
+ </p>
+ <p>Uses QR decomposition to reduce (X<sup>T</sup>X)<sup>-1</sup>
+ to (R<sup>T</sup>R)<sup>-1</sup>, with only the top p rows of
+ R included, where p = the length of the beta vector.</p>
+
+ <p>Data for the model must have been successfully loaded using one of
+ the <code>newSampleData</code> methods before invoking this method; otherwise
+ a <code>NullPointerException</code> will be thrown.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#calculateBetaVariance()">calculateBetaVariance</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression">AbstractMultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The beta variance-covariance matrix</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/OLSMultipleLinearRegression.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html" title="class in org.apache.commons.math3.stat.regression"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="OLSMultipleLinearRegression.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

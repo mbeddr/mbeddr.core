@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ConvergenceChecker (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ConvergenceChecker (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ConvergenceChecker.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/optimization/BaseOptimizer.html" title="interface in org.apache.commons.math3.optimization"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/optimization/DifferentiableMultivariateMultiStartOptimizer.html" title="class in org.apache.commons.math3.optimization"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/optimization/ConvergenceChecker.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ConvergenceChecker.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.optimization</FONT>
+<BR>
+Interface ConvergenceChecker&lt;PAIR&gt;</H2>
+<DL>
+<DT><DT><B>Type Parameters:</B><DD><CODE>PAIR</CODE> - Type of the (point, objective value) pair.</DL>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../org/apache/commons/math3/optimization/AbstractConvergenceChecker.html" title="class in org.apache.commons.math3.optimization">AbstractConvergenceChecker</A>, <A HREF="../../../../../org/apache/commons/math3/optimization/SimplePointChecker.html" title="class in org.apache.commons.math3.optimization">SimplePointChecker</A>, <A HREF="../../../../../org/apache/commons/math3/optimization/univariate/SimpleUnivariateValueChecker.html" title="class in org.apache.commons.math3.optimization.univariate">SimpleUnivariateValueChecker</A>, <A HREF="../../../../../org/apache/commons/math3/optimization/SimpleValueChecker.html" title="class in org.apache.commons.math3.optimization">SimpleValueChecker</A>, <A HREF="../../../../../org/apache/commons/math3/optimization/SimpleVectorValueChecker.html" title="class in org.apache.commons.math3.optimization">SimpleVectorValueChecker</A></DD>
+</DL>
+<HR>
+<B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0).</I>
+<P>
+<DL>
+<DT><PRE><FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public interface <B>ConvergenceChecker&lt;PAIR&gt;</B></DL>
+</PRE>
+
+<P>
+This interface specifies how to check if an optimization algorithm has
+ converged.
+ <br/>
+ Deciding if convergence has been reached is a problem-dependent issue. The
+ user should provide a class implementing this interface to allow the
+ optimization algorithm to stop its search according to the problem at hand.
+ <br/>
+ For convenience, three implementations that fit simple needs are already
+ provided: <A HREF="../../../../../org/apache/commons/math3/optimization/SimpleValueChecker.html" title="class in org.apache.commons.math3.optimization"><CODE>SimpleValueChecker</CODE></A>, <A HREF="../../../../../org/apache/commons/math3/optimization/SimpleVectorValueChecker.html" title="class in org.apache.commons.math3.optimization"><CODE>SimpleVectorValueChecker</CODE></A> and
+ <A HREF="../../../../../org/apache/commons/math3/optimization/SimplePointChecker.html" title="class in org.apache.commons.math3.optimization"><CODE>SimplePointChecker</CODE></A>. The first two consider that convergence is
+ reached when the objective function value does not change much anymore, it
+ does not use the point set at all.
+ The third one considers that convergence is reached when the input point
+ set does not change much anymore, it does not use objective function value
+ at all.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>3.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: ConvergenceChecker.java 1422230 2012-12-15 12:11:13Z erans $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/optimization/SimplePointChecker.html" title="class in org.apache.commons.math3.optimization"><CODE>SimplePointChecker</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/optimization/SimpleValueChecker.html" title="class in org.apache.commons.math3.optimization"><CODE>SimpleValueChecker</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/optimization/SimpleVectorValueChecker.html" title="class in org.apache.commons.math3.optimization"><CODE>SimpleVectorValueChecker</CODE></A></DL>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html#converged(int, PAIR, PAIR)">converged</A></B>(int&nbsp;iteration,
+          <A HREF="../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="type parameter in ConvergenceChecker">PAIR</A>&nbsp;previous,
+          <A HREF="../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="type parameter in ConvergenceChecker">PAIR</A>&nbsp;current)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Check if the optimization algorithm has converged.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="converged(int,java.lang.Object,java.lang.Object)"><!-- --></A><A NAME="converged(int, PAIR, PAIR)"><!-- --></A><H3>
+converged</H3>
+<PRE>
+boolean <B>converged</B>(int&nbsp;iteration,
+                  <A HREF="../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="type parameter in ConvergenceChecker">PAIR</A>&nbsp;previous,
+                  <A HREF="../../../../../org/apache/commons/math3/optimization/ConvergenceChecker.html" title="type parameter in ConvergenceChecker">PAIR</A>&nbsp;current)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Check if the optimization algorithm has converged.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>iteration</CODE> - Current iteration.<DD><CODE>previous</CODE> - Best point in the previous iteration.<DD><CODE>current</CODE> - Best point in the current iteration.
+<DT><B>Returns:</B><DD><code>true</code> if the algorithm is considered to have converged.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ConvergenceChecker.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/optimization/BaseOptimizer.html" title="interface in org.apache.commons.math3.optimization"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/optimization/DifferentiableMultivariateMultiStartOptimizer.html" title="class in org.apache.commons.math3.optimization"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/optimization/ConvergenceChecker.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ConvergenceChecker.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

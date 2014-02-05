@@ -1,0 +1,519 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+PolynomialFunctionLagrangeForm (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="PolynomialFunctionLagrangeForm (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/PolynomialFunctionLagrangeForm.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunction.Parametric.html" title="class in org.apache.commons.math3.analysis.polynomials"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionNewtonForm.html" title="class in org.apache.commons.math3.analysis.polynomials"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="PolynomialFunctionLagrangeForm.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.analysis.polynomials</FONT>
+<BR>
+Class PolynomialFunctionLagrangeForm</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>PolynomialFunctionLagrangeForm</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A></DL>
+</PRE>
+
+<P>
+Implements the representation of a real polynomial function in
+ <a href="http://mathworld.wolfram.com/LagrangeInterpolatingPolynomial.html">
+ Lagrange Form</a>. For reference, see <b>Introduction to Numerical
+ Analysis</b>, ISBN 038795452X, chapter 2.
+ <p>
+ The approximated function should be smooth enough for Lagrange polynomial
+ to work well. Otherwise, consider using splines instead.</p>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>1.2</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: PolynomialFunctionLagrangeForm.java 1455194 2013-03-11 15:45:54Z luc $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html#PolynomialFunctionLagrangeForm(double[], double[])">PolynomialFunctionLagrangeForm</A></B>(double[]&nbsp;x,
+                               double[]&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a Lagrange polynomial with the given abscissas and function
+ values.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html#computeCoefficients()">computeCoefficients</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculate the coefficients of Lagrange polynomial from the
+ interpolation data.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html#degree()">degree</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the degree of the polynomial.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html#evaluate(double[], double[], double)">evaluate</A></B>(double[]&nbsp;x,
+         double[]&nbsp;y,
+         double&nbsp;z)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evaluate the Lagrange polynomial using
+ <a href="http://mathworld.wolfram.com/NevillesAlgorithm.html">
+ Neville's Algorithm</a>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html#getCoefficients()">getCoefficients</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a copy of the coefficients array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html#getInterpolatingPoints()">getInterpolatingPoints</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a copy of the interpolating points array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html#getInterpolatingValues()">getInterpolatingValues</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a copy of the interpolating values array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html#value(double)">value</A></B>(double&nbsp;z)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculate the function value at the given point.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html#verifyInterpolationArray(double[], double[], boolean)">verifyInterpolationArray</A></B>(double[]&nbsp;x,
+                         double[]&nbsp;y,
+                         boolean&nbsp;abort)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check that the interpolation arrays are valid.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="PolynomialFunctionLagrangeForm(double[], double[])"><!-- --></A><H3>
+PolynomialFunctionLagrangeForm</H3>
+<PRE>
+public <B>PolynomialFunctionLagrangeForm</B>(double[]&nbsp;x,
+                                      double[]&nbsp;y)
+                               throws <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                                      <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                                      <A HREF="../../../../../../org/apache/commons/math3/exception/NonMonotonicSequenceException.html" title="class in org.apache.commons.math3.exception">NonMonotonicSequenceException</A></PRE>
+<DL>
+<DD>Construct a Lagrange polynomial with the given abscissas and function
+ values. The order of interpolating points are not important.
+ <p>
+ The constructor makes copy of the input arrays and assigns them.</p>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - interpolating points<DD><CODE>y</CODE> - function values at interpolating points
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the array lengths are different.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the number of points is less than 2.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NonMonotonicSequenceException.html" title="class in org.apache.commons.math3.exception">NonMonotonicSequenceException</A></CODE> - if two abscissae have the same value.</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="value(double)"><!-- --></A><H3>
+value</H3>
+<PRE>
+public double <B>value</B>(double&nbsp;z)</PRE>
+<DL>
+<DD>Calculate the function value at the given point.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html#value(double)">value</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>z</CODE> - Point at which the function value is to be computed.
+<DT><B>Returns:</B><DD>the function value.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>x</code> and <code>y</code> have
+ different lengths.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NonMonotonicSequenceException.html" title="class in org.apache.commons.math3.exception">NonMonotonicSequenceException</A></CODE> - if <code>x</code> is not sorted in strictly increasing order.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the size of <code>x</code> is less
+ than 2.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="degree()"><!-- --></A><H3>
+degree</H3>
+<PRE>
+public int <B>degree</B>()</PRE>
+<DL>
+<DD>Returns the degree of the polynomial.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the degree of the polynomial</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInterpolatingPoints()"><!-- --></A><H3>
+getInterpolatingPoints</H3>
+<PRE>
+public double[] <B>getInterpolatingPoints</B>()</PRE>
+<DL>
+<DD>Returns a copy of the interpolating points array.
+ <p>
+ Changes made to the returned copy will not affect the polynomial.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a fresh copy of the interpolating points array</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInterpolatingValues()"><!-- --></A><H3>
+getInterpolatingValues</H3>
+<PRE>
+public double[] <B>getInterpolatingValues</B>()</PRE>
+<DL>
+<DD>Returns a copy of the interpolating values array.
+ <p>
+ Changes made to the returned copy will not affect the polynomial.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a fresh copy of the interpolating values array</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCoefficients()"><!-- --></A><H3>
+getCoefficients</H3>
+<PRE>
+public double[] <B>getCoefficients</B>()</PRE>
+<DL>
+<DD>Returns a copy of the coefficients array.
+ <p>
+ Changes made to the returned copy will not affect the polynomial.</p>
+ <p>
+ Note that coefficients computation can be ill-conditioned. Use with caution
+ and only when it is necessary.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a fresh copy of the coefficients array</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="evaluate(double[], double[], double)"><!-- --></A><H3>
+evaluate</H3>
+<PRE>
+public static double <B>evaluate</B>(double[]&nbsp;x,
+                              double[]&nbsp;y,
+                              double&nbsp;z)
+                       throws <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                              <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                              <A HREF="../../../../../../org/apache/commons/math3/exception/NonMonotonicSequenceException.html" title="class in org.apache.commons.math3.exception">NonMonotonicSequenceException</A></PRE>
+<DL>
+<DD>Evaluate the Lagrange polynomial using
+ <a href="http://mathworld.wolfram.com/NevillesAlgorithm.html">
+ Neville's Algorithm</a>. It takes O(n^2) time.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - Interpolating points array.<DD><CODE>y</CODE> - Interpolating values array.<DD><CODE>z</CODE> - Point at which the function value is to be computed.
+<DT><B>Returns:</B><DD>the function value.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>x</code> and <code>y</code> have
+ different lengths.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NonMonotonicSequenceException.html" title="class in org.apache.commons.math3.exception">NonMonotonicSequenceException</A></CODE> - if <code>x</code> is not sorted in strictly increasing order.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the size of <code>x</code> is less
+ than 2.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeCoefficients()"><!-- --></A><H3>
+computeCoefficients</H3>
+<PRE>
+protected void <B>computeCoefficients</B>()</PRE>
+<DL>
+<DD>Calculate the coefficients of Lagrange polynomial from the
+ interpolation data. It takes O(n^2) time.
+ Note that this computation can be ill-conditioned: Use with caution
+ and only when it is necessary.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="verifyInterpolationArray(double[], double[], boolean)"><!-- --></A><H3>
+verifyInterpolationArray</H3>
+<PRE>
+public static boolean <B>verifyInterpolationArray</B>(double[]&nbsp;x,
+                                               double[]&nbsp;y,
+                                               boolean&nbsp;abort)
+                                        throws <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                                               <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                                               <A HREF="../../../../../../org/apache/commons/math3/exception/NonMonotonicSequenceException.html" title="class in org.apache.commons.math3.exception">NonMonotonicSequenceException</A></PRE>
+<DL>
+<DD>Check that the interpolation arrays are valid.
+ The arrays features checked by this method are that both arrays have the
+ same length and this length is at least 2.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - Interpolating points array.<DD><CODE>y</CODE> - Interpolating values array.<DD><CODE>abort</CODE> - Whether to throw an exception if <code>x</code> is not sorted.
+<DT><B>Returns:</B><DD><code>false</code> if the <code>x</code> is not sorted in increasing order,
+ <code>true</code> otherwise.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the array lengths are different.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the number of points is less than 2.
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NonMonotonicSequenceException.html" title="class in org.apache.commons.math3.exception">NonMonotonicSequenceException</A></CODE> - if <code>x</code> is not sorted in strictly increasing order and <code>abort</code>
+ is <code>true</code>.<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html#evaluate(double[], double[], double)"><CODE>evaluate(double[], double[], double)</CODE></A>, 
+<A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html#computeCoefficients()"><CODE>computeCoefficients()</CODE></A></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/PolynomialFunctionLagrangeForm.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunction.Parametric.html" title="class in org.apache.commons.math3.analysis.polynomials"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/analysis/polynomials/PolynomialFunctionNewtonForm.html" title="class in org.apache.commons.math3.analysis.polynomials"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="PolynomialFunctionLagrangeForm.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

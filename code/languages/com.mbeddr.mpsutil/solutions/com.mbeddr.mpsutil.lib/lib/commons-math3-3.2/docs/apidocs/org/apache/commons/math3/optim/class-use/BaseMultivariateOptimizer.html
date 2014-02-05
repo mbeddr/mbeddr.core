@@ -1,0 +1,459 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Class org.apache.commons.math3.optim.BaseMultivariateOptimizer (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class org.apache.commons.math3.optim.BaseMultivariateOptimizer (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/optim//class-useBaseMultivariateOptimizer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="BaseMultivariateOptimizer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Class<br>org.apache.commons.math3.optim.BaseMultivariateOptimizer</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optim"><B>org.apache.commons.math3.optim</B></A></TD>
+<TD>
+  Generally, optimizers are algorithms that will either
+  <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/GoalType.html#MINIMIZE"><CODE>minimize</CODE></A> or
+  <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/GoalType.html#MAXIMIZE"><CODE>maximize</CODE></A>
+  a scalar function, called the
+  <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/ObjectiveFunction.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar"><CODE><em>objective
+  function</em></CODE></A>.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optim.linear"><B>org.apache.commons.math3.optim.linear</B></A></TD>
+<TD>Optimization algorithms for linear constrained problems.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optim.nonlinear.scalar"><B>org.apache.commons.math3.optim.nonlinear.scalar</B></A></TD>
+<TD>Algorithms for optimizing a scalar function.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optim.nonlinear.scalar.gradient"><B>org.apache.commons.math3.optim.nonlinear.scalar.gradient</B></A></TD>
+<TD>This package provides optimization algorithms that require derivatives.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optim.nonlinear.scalar.noderiv"><B>org.apache.commons.math3.optim.nonlinear.scalar.noderiv</B></A></TD>
+<TD>This package provides optimization algorithms that do not require derivatives.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optim.nonlinear.vector"><B>org.apache.commons.math3.optim.nonlinear.vector</B></A></TD>
+<TD>Algorithms for optimizing a vector function.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optim.nonlinear.vector.jacobian"><B>org.apache.commons.math3.optim.nonlinear.vector.jacobian</B></A></TD>
+<TD>This package provides optimization algorithms that require derivatives.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optim"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/package-summary.html">org.apache.commons.math3.optim</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/package-summary.html">org.apache.commons.math3.optim</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultiStartMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultiStartMultivariateOptimizer&lt;PAIR&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base class multi-start optimizer for a multivariate function.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/commons/math3/optim/package-summary.html">org.apache.commons.math3.optim</A> with parameters of type <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultiStartMultivariateOptimizer.html#BaseMultiStartMultivariateOptimizer(org.apache.commons.math3.optim.BaseMultivariateOptimizer, int, org.apache.commons.math3.random.RandomVectorGenerator)">BaseMultiStartMultivariateOptimizer</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultiStartMultivariateOptimizer.html" title="type parameter in BaseMultiStartMultivariateOptimizer">PAIR</A>&gt;&nbsp;optimizer,
+                                    int&nbsp;starts,
+                                    <A HREF="../../../../../../org/apache/commons/math3/random/RandomVectorGenerator.html" title="interface in org.apache.commons.math3.random">RandomVectorGenerator</A>&nbsp;generator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a multi-start optimizer from a single-start optimizer.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optim.linear"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/linear/package-summary.html">org.apache.commons.math3.optim.linear</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/linear/package-summary.html">org.apache.commons.math3.optim.linear</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/linear/LinearOptimizer.html" title="class in org.apache.commons.math3.optim.linear">LinearOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base class for implementing linear optimizers.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/linear/SimplexSolver.html" title="class in org.apache.commons.math3.optim.linear">SimplexSolver</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solves a linear problem using the "Two-Phase Simplex" method.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optim.nonlinear.scalar"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/package-summary.html">org.apache.commons.math3.optim.nonlinear.scalar</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/package-summary.html">org.apache.commons.math3.optim.nonlinear.scalar</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/GradientMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar">GradientMultivariateOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base class for implementing optimizers for multivariate scalar
+ differentiable functions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultiStartMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar">MultiStartMultivariateOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multi-start optimizer.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar">MultivariateOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base class for a multivariate scalar function optimizer.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optim.nonlinear.scalar.gradient"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/gradient/package-summary.html">org.apache.commons.math3.optim.nonlinear.scalar.gradient</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/gradient/package-summary.html">org.apache.commons.math3.optim.nonlinear.scalar.gradient</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/gradient/NonLinearConjugateGradientOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.gradient">NonLinearConjugateGradientOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non-linear conjugate gradient optimizer.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optim.nonlinear.scalar.noderiv"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/package-summary.html">org.apache.commons.math3.optim.nonlinear.scalar.noderiv</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/package-summary.html">org.apache.commons.math3.optim.nonlinear.scalar.noderiv</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv">BOBYQAOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Powell's BOBYQA algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv">CMAESOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An implementation of the active Covariance Matrix Adaptation Evolution Strategy (CMA-ES)
+ for non-linear, non-convex, non-smooth, global function minimization.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/PowellOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv">PowellOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Powell's algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/SimplexOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv">SimplexOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This class implements simplex-based direct search optimization.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optim.nonlinear.vector"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/vector/package-summary.html">org.apache.commons.math3.optim.nonlinear.vector</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/vector/package-summary.html">org.apache.commons.math3.optim.nonlinear.vector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/vector/JacobianMultivariateVectorOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.vector">JacobianMultivariateVectorOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base class for implementing optimizers for multivariate vector
+ differentiable functions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/vector/MultiStartMultivariateVectorOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.vector">MultiStartMultivariateVectorOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multi-start optimizer for a (vector) model function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/vector/MultivariateVectorOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.vector">MultivariateVectorOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base class for a multivariate vector function optimizer.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optim.nonlinear.vector.jacobian"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/vector/jacobian/package-summary.html">org.apache.commons.math3.optim.nonlinear.vector.jacobian</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim">BaseMultivariateOptimizer</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/vector/jacobian/package-summary.html">org.apache.commons.math3.optim.nonlinear.vector.jacobian</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/vector/jacobian/AbstractLeastSquaresOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.vector.jacobian">AbstractLeastSquaresOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base class for implementing least-squares optimizers.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/vector/jacobian/GaussNewtonOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.vector.jacobian">GaussNewtonOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gauss-Newton least-squares solver.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.vector.jacobian">LevenbergMarquardtOptimizer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This class solves a least-squares problem using the Levenberg-Marquardt
+ algorithm.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/commons/math3/optim/BaseMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/optim//class-useBaseMultivariateOptimizer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="BaseMultivariateOptimizer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

@@ -1,0 +1,725 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+RegressionResults (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="RegressionResults (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RegressionResults.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html" title="class in org.apache.commons.math3.stat.regression"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/regression/RegressionResults.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RegressionResults.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.stat.regression</FONT>
+<BR>
+Class RegressionResults</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.stat.regression.RegressionResults</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>RegressionResults</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DL>
+</PRE>
+
+<P>
+Results of a Multiple Linear Regression model fit.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>3.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: RegressionResults.java 1392342 2012-10-01 14:08:52Z psteitz $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../serialized-form.html#org.apache.commons.math3.stat.regression.RegressionResults">Serialized Form</A></DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#RegressionResults(double[], double[][], boolean, long, int, double, double, double, boolean, boolean)">RegressionResults</A></B>(double[]&nbsp;parameters,
+                  double[][]&nbsp;varcov,
+                  boolean&nbsp;isSymmetricCompressed,
+                  long&nbsp;nobs,
+                  int&nbsp;rank,
+                  double&nbsp;sumy,
+                  double&nbsp;sumysq,
+                  double&nbsp;sse,
+                  boolean&nbsp;containsConstant,
+                  boolean&nbsp;copyData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructor for Regression Results.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getAdjustedRSquared()">getAdjustedRSquared</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the adjusted R-squared statistic, defined by the formula 
+ R<sup>2</sup><sub>adj</sub> = 1 - [SSR (n - 1)] / [SSTO (n - p)]
+ 
+ where SSR is the sum of squared residuals},
+ SSTO is the total sum of squares}, n is the number
+ of observations and p is the number of parameters estimated (including the intercept).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getCovarianceOfParameters(int, int)">getCovarianceOfParameters</A></B>(int&nbsp;i,
+                          int&nbsp;j)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the covariance between regression parameters i and j.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getErrorSumSquares()">getErrorSumSquares</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://www.xycoon.com/SumOfSquares.htm">
+ sum of squared errors</a> (SSE) associated with the regression
+ model.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getMeanSquareError()">getMeanSquareError</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of squared errors divided by the degrees of freedom,
+ usually abbreviated MSE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getN()">getN</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the number of observations added to the regression model.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getNumberOfParameters()">getNumberOfParameters</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the number of parameters estimated in the model.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getParameterEstimate(int)">getParameterEstimate</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the parameter estimate for the regressor at the given index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getParameterEstimates()">getParameterEstimates</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a copy of the regression parameters estimates.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getRegressionSumSquares()">getRegressionSumSquares</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of squared deviations of the predicted y values about
+ their mean (which equals the mean of y).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getRSquared()">getRSquared</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://www.xycoon.com/coefficient1.htm">
+ coefficient of multiple determination</a>,
+ usually denoted r-square.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getStdErrorOfEstimate(int)">getStdErrorOfEstimate</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://www.xycoon.com/standerrorb(1).htm">standard
+ error of the parameter estimate at index</a>,
+ usually denoted s(b<sub>index</sub>).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getStdErrorOfEstimates()">getStdErrorOfEstimates</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <a href="http://www.xycoon.com/standerrorb(1).htm">standard
+ error of the parameter estimates</a>,
+ usually denoted s(b<sub>i</sub>).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getTotalSumSquares()">getTotalSumSquares</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the sum of squared deviations of the y values about their mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#hasIntercept()">hasIntercept</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if the regression model has been computed including an intercept.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="RegressionResults(double[], double[][], boolean, long, int, double, double, double, boolean, boolean)"><!-- --></A><H3>
+RegressionResults</H3>
+<PRE>
+public <B>RegressionResults</B>(double[]&nbsp;parameters,
+                         double[][]&nbsp;varcov,
+                         boolean&nbsp;isSymmetricCompressed,
+                         long&nbsp;nobs,
+                         int&nbsp;rank,
+                         double&nbsp;sumy,
+                         double&nbsp;sumysq,
+                         double&nbsp;sse,
+                         boolean&nbsp;containsConstant,
+                         boolean&nbsp;copyData)</PRE>
+<DL>
+<DD>Constructor for Regression Results.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>parameters</CODE> - a double array with the regression slope estimates<DD><CODE>varcov</CODE> - the variance covariance matrix, stored either in a square matrix
+ or as a compressed<DD><CODE>isSymmetricCompressed</CODE> - a flag which denotes that the variance covariance
+ matrix is in symmetric compressed format<DD><CODE>nobs</CODE> - the number of observations of the regression estimation<DD><CODE>rank</CODE> - the number of independent variables in the regression<DD><CODE>sumy</CODE> - the sum of the independent variable<DD><CODE>sumysq</CODE> - the sum of the squared independent variable<DD><CODE>sse</CODE> - sum of squared errors<DD><CODE>containsConstant</CODE> - true model has constant,  false model does not have constant<DD><CODE>copyData</CODE> - if true a deep copy of all input data is made, if false only references
+ are copied and the RegressionResults become mutable</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getParameterEstimate(int)"><!-- --></A><H3>
+getParameterEstimate</H3>
+<PRE>
+public double <B>getParameterEstimate</B>(int&nbsp;index)
+                            throws <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><p>Returns the parameter estimate for the regressor at the given index.</p>
+
+ <p>A redundant regressor will have its redundancy flag set, as well as
+  a parameters estimated equal to <code>Double.NaN</code></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - Index.
+<DT><B>Returns:</B><DD>the parameters estimated for regressor at index.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if <code>index</code> is not in the interval
+ <code>[0, number of parameters)</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParameterEstimates()"><!-- --></A><H3>
+getParameterEstimates</H3>
+<PRE>
+public double[] <B>getParameterEstimates</B>()</PRE>
+<DL>
+<DD><p>Returns a copy of the regression parameters estimates.</p>
+
+ <p>The parameter estimates are returned in the natural order of the data.</p>
+
+ <p>A redundant regressor will have its redundancy flag set, as will
+  a parameter estimate equal to <code>Double.NaN</code>.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>array of parameter estimates, null if no estimation occurred</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStdErrorOfEstimate(int)"><!-- --></A><H3>
+getStdErrorOfEstimate</H3>
+<PRE>
+public double <B>getStdErrorOfEstimate</B>(int&nbsp;index)
+                             throws <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Returns the <a href="http://www.xycoon.com/standerrorb(1).htm">standard
+ error of the parameter estimate at index</a>,
+ usually denoted s(b<sub>index</sub>).
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - Index.
+<DT><B>Returns:</B><DD>the standard errors associated with parameters estimated at index.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if <code>index</code> is not in the interval
+ <code>[0, number of parameters)</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStdErrorOfEstimates()"><!-- --></A><H3>
+getStdErrorOfEstimates</H3>
+<PRE>
+public double[] <B>getStdErrorOfEstimates</B>()</PRE>
+<DL>
+<DD><p>Returns the <a href="http://www.xycoon.com/standerrorb(1).htm">standard
+ error of the parameter estimates</a>,
+ usually denoted s(b<sub>i</sub>).</p>
+
+ <p>If there are problems with an ill conditioned design matrix then the regressor
+ which is redundant will be assigned <code>Double.NaN</code>. </p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>an array standard errors associated with parameters estimates,
+  null if no estimation occurred</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCovarianceOfParameters(int, int)"><!-- --></A><H3>
+getCovarianceOfParameters</H3>
+<PRE>
+public double <B>getCovarianceOfParameters</B>(int&nbsp;i,
+                                        int&nbsp;j)
+                                 throws <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD><p>Returns the covariance between regression parameters i and j.</p>
+
+ <p>If there are problems with an ill conditioned design matrix then the covariance
+ which involves redundant columns will be assigned <code>Double.NaN</code>. </p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>i</CODE> - <code>i</code>th regression parameter.<DD><CODE>j</CODE> - <code>j</code>th regression parameter.
+<DT><B>Returns:</B><DD>the covariance of the parameter estimates.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if <code>i</code> or <code>j</code> is not in the
+ interval <code>[0, number of parameters)</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNumberOfParameters()"><!-- --></A><H3>
+getNumberOfParameters</H3>
+<PRE>
+public int <B>getNumberOfParameters</B>()</PRE>
+<DL>
+<DD><p>Returns the number of parameters estimated in the model.</p>
+
+ <p>This is the maximum number of regressors, some techniques may drop
+ redundant parameters</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>number of regressors, -1 if not estimated</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getN()"><!-- --></A><H3>
+getN</H3>
+<PRE>
+public long <B>getN</B>()</PRE>
+<DL>
+<DD>Returns the number of observations added to the regression model.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>Number of observations, -1 if an error condition prevents estimation</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTotalSumSquares()"><!-- --></A><H3>
+getTotalSumSquares</H3>
+<PRE>
+public double <B>getTotalSumSquares</B>()</PRE>
+<DL>
+<DD><p>Returns the sum of squared deviations of the y values about their mean.</p>
+
+ <p>This is defined as SSTO
+ <a href="http://www.xycoon.com/SumOfSquares.htm">here</a>.</p>
+
+ <p>If <code>n &lt; 2</code>, this returns <code>Double.NaN</code>.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>sum of squared deviations of y values</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRegressionSumSquares()"><!-- --></A><H3>
+getRegressionSumSquares</H3>
+<PRE>
+public double <B>getRegressionSumSquares</B>()</PRE>
+<DL>
+<DD><p>Returns the sum of squared deviations of the predicted y values about
+ their mean (which equals the mean of y).</p>
+
+ <p>This is usually abbreviated SSR or SSM.  It is defined as SSM
+ <a href="http://www.xycoon.com/SumOfSquares.htm">here</a></p>
+
+ <p><strong>Preconditions</strong>: <ul>
+ <li>At least two observations (with at least two different x values)
+ must have been added before invoking this method. If this method is
+ invoked before a model can be estimated, <code>Double.NaN</code> is
+ returned.
+ </li></ul></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>sum of squared deviations of predicted y values</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getErrorSumSquares()"><!-- --></A><H3>
+getErrorSumSquares</H3>
+<PRE>
+public double <B>getErrorSumSquares</B>()</PRE>
+<DL>
+<DD><p>Returns the <a href="http://www.xycoon.com/SumOfSquares.htm">
+ sum of squared errors</a> (SSE) associated with the regression
+ model.</p>
+
+ <p>The return value is constrained to be non-negative - i.e., if due to
+ rounding errors the computational formula returns a negative result,
+ 0 is returned.</p>
+
+ <p><strong>Preconditions</strong>: <ul>
+ <li>numberOfParameters data pairs
+ must have been added before invoking this method. If this method is
+ invoked before a model can be estimated, <code>Double,NaN</code> is
+ returned.
+ </li></ul></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>sum of squared errors associated with the regression model</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMeanSquareError()"><!-- --></A><H3>
+getMeanSquareError</H3>
+<PRE>
+public double <B>getMeanSquareError</B>()</PRE>
+<DL>
+<DD><p>Returns the sum of squared errors divided by the degrees of freedom,
+ usually abbreviated MSE.</p>
+
+ <p>If there are fewer than <strong>numberOfParameters + 1</strong> data pairs in the model,
+ or if there is no variation in <code>x</code>, this returns
+ <code>Double.NaN</code>.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>sum of squared deviations of y values</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRSquared()"><!-- --></A><H3>
+getRSquared</H3>
+<PRE>
+public double <B>getRSquared</B>()</PRE>
+<DL>
+<DD><p>Returns the <a href="http://www.xycoon.com/coefficient1.htm">
+ coefficient of multiple determination</a>,
+ usually denoted r-square.</p>
+
+ <p><strong>Preconditions</strong>: <ul>
+ <li>At least numberOfParameters observations (with at least numberOfParameters different x values)
+ must have been added before invoking this method. If this method is
+ invoked before a model can be estimated, <code>Double,NaN</code> is
+ returned.
+ </li></ul></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>r-square, a double in the interval [0, 1]</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAdjustedRSquared()"><!-- --></A><H3>
+getAdjustedRSquared</H3>
+<PRE>
+public double <B>getAdjustedRSquared</B>()</PRE>
+<DL>
+<DD><p>Returns the adjusted R-squared statistic, defined by the formula <pre>
+ R<sup>2</sup><sub>adj</sub> = 1 - [SSR (n - 1)] / [SSTO (n - p)]
+ </pre>
+ where SSR is the sum of squared residuals},
+ SSTO is the total sum of squares}, n is the number
+ of observations and p is the number of parameters estimated (including the intercept).</p>
+
+ <p>If the regression is estimated without an intercept term, what is returned is <pre>
+ <code> 1 - (1 - <A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getRSquared()"><CODE>getRSquared()</CODE></A> ) * (n / (n - p)) </code>
+ </pre></p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>adjusted R-Squared statistic</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hasIntercept()"><!-- --></A><H3>
+hasIntercept</H3>
+<PRE>
+public boolean <B>hasIntercept</B>()</PRE>
+<DL>
+<DD>Returns true if the regression model has been computed including an intercept.
+ In this case, the coefficient of the intercept is the first element of the
+ <A HREF="../../../../../../org/apache/commons/math3/stat/regression/RegressionResults.html#getParameterEstimates()"><CODE>parameter estimates</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if the model has an intercept term</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RegressionResults.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/SimpleRegression.html" title="class in org.apache.commons.math3.stat.regression"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/regression/RegressionResults.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RegressionResults.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

@@ -1,0 +1,2049 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Class org.apache.commons.math3.linear.RealVector (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class org.apache.commons.math3.linear.RealVector (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/linear//class-useRealVector.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RealVector.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Class<br>org.apache.commons.math3.linear.RealVector</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.filter"><B>org.apache.commons.math3.filter</B></A></TD>
+<TD>Implementations of common discrete-time linear filters.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.linear"><B>org.apache.commons.math3.linear</B></A></TD>
+<TD>Linear algebra support.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optim.linear"><B>org.apache.commons.math3.optim.linear</B></A></TD>
+<TD>Optimization algorithms for linear constrained problems.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optimization.linear"><B>org.apache.commons.math3.optimization.linear</B></A></TD>
+<TD>This package provides optimization algorithms for linear constrained problems.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.regression"><B>org.apache.commons.math3.stat.regression</B></A></TD>
+<TD>Statistical routines involving multivariate data.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.filter"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> in <A HREF="../../../../../../org/apache/commons/math3/filter/package-summary.html">org.apache.commons.math3.filter</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/filter/package-summary.html">org.apache.commons.math3.filter</A> that return <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>DefaultProcessModel.</B><B><A HREF="../../../../../../org/apache/commons/math3/filter/DefaultProcessModel.html#getInitialStateEstimate()">getInitialStateEstimate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the initial state estimation vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ProcessModel.</B><B><A HREF="../../../../../../org/apache/commons/math3/filter/ProcessModel.html#getInitialStateEstimate()">getInitialStateEstimate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the initial state estimation vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>KalmanFilter.</B><B><A HREF="../../../../../../org/apache/commons/math3/filter/KalmanFilter.html#getStateEstimationVector()">getStateEstimationVector</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a copy of the current state estimation vector.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/filter/package-summary.html">org.apache.commons.math3.filter</A> with parameters of type <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>KalmanFilter.</B><B><A HREF="../../../../../../org/apache/commons/math3/filter/KalmanFilter.html#correct(org.apache.commons.math3.linear.RealVector)">correct</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;z)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correct the current state estimate with an actual measurement.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>KalmanFilter.</B><B><A HREF="../../../../../../org/apache/commons/math3/filter/KalmanFilter.html#predict(org.apache.commons.math3.linear.RealVector)">predict</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;u)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Predict the internal state estimation one time step ahead.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/commons/math3/filter/package-summary.html">org.apache.commons.math3.filter</A> with parameters of type <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/filter/DefaultProcessModel.html#DefaultProcessModel(org.apache.commons.math3.linear.RealMatrix, org.apache.commons.math3.linear.RealMatrix, org.apache.commons.math3.linear.RealMatrix, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealMatrix)">DefaultProcessModel</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;stateTransition,
+                    <A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;control,
+                    <A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;processNoise,
+                    <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;initialStateEstimate,
+                    <A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;initialErrorCovariance)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new <A HREF="../../../../../../org/apache/commons/math3/filter/ProcessModel.html" title="interface in org.apache.commons.math3.filter"><CODE>ProcessModel</CODE></A>, taking double arrays as input parameters.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.linear"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> in <A HREF="../../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> in <A HREF="../../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This class implements the <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> interface with a double array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of version 3.1, this class is deprecated, for reasons exposed
+ in this JIRA
+ <a href="https://issues.apache.org/jira/browse/MATH-870">ticket</a>. This
+ class will be removed in version 4.0.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/SparseRealVector.html" title="class in org.apache.commons.math3.linear">SparseRealVector</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of version 3.1, this class is deprecated, for reasons exposed
+ in this JIRA
+ <a href="https://issues.apache.org/jira/browse/MATH-870">ticket</a>. This
+ class will be removed in version 4.0.</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A> that return <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#add(org.apache.commons.math3.linear.RealVector)">add</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the sum of this vector and <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>OpenMapRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#add(org.apache.commons.math3.linear.RealVector)">add</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Compute the sum of this vector and <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#append(double)">append</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new vector by appending a double to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#append(double)">append</A></B>(double&nbsp;in)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new vector by appending a double to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#append(org.apache.commons.math3.linear.RealVector)">append</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new vector by appending a vector to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#append(org.apache.commons.math3.linear.RealVector)">append</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new vector by appending a vector to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#combine(double, double, org.apache.commons.math3.linear.RealVector)">combine</A></B>(double&nbsp;a,
+        double&nbsp;b,
+        <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a new vector representing <code>a * this + b * y</code>, the linear
+ combination of <code>this</code> and <code>y</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#combineToSelf(double, double, org.apache.commons.math3.linear.RealVector)">combineToSelf</A></B>(double&nbsp;a,
+              double&nbsp;b,
+              <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates <code>this</code> with the linear combination of <code>this</code> and
+ <code>y</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#copy()">copy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a (deep) copy of this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/MatrixUtils.html#createRealVector(double[])">createRealVector</A></B>(double[]&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> using the data from the input array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#ebeDivide(org.apache.commons.math3.linear.RealVector)">ebeDivide</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of version 3.1, this method is deprecated, and will be
+ removed in version 4.0. This decision follows the discussion reported in
+ <a href="https://issues.apache.org/jira/browse/MATH-803?focusedCommentId=13399150#comment-13399150">MATH-803</a>.
+ Uses of this method involving sparse implementations of
+ <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> might lead to wrong results. Since there is no
+ satisfactory correction to this bug, this method is deprecated. Users who
+ want to preserve this feature are advised to implement
+ <A HREF="../../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear"><CODE>RealVectorPreservingVisitor</CODE></A> (possibly ignoring corner cases for
+ the sake of efficiency).</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#ebeMultiply(org.apache.commons.math3.linear.RealVector)">ebeMultiply</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of version 3.1, this method is deprecated, and will be
+ removed in version 4.0. This decision follows the discussion reported in
+ <a href="https://issues.apache.org/jira/browse/MATH-803?focusedCommentId=13399150#comment-13399150">MATH-803</a>.
+ Uses of this method involving sparse implementations of
+ <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> might lead to wrong results. Since there is no
+ satisfactory correction to this bug, this method is deprecated. Users who
+ want to preserve this feature are advised to implement
+ <A HREF="../../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear"><CODE>RealVectorPreservingVisitor</CODE></A> (possibly ignoring corner cases for
+ the sake of efficiency).</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractRealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getColumnVector(int)">getColumnVector</A></B>(int&nbsp;column)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the entries at the given column index as a vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html#getColumnVector(int)">getColumnVector</A></B>(int&nbsp;column)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the entries at the given column index as a vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>BlockRealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/BlockRealMatrix.html#getColumnVector(int)">getColumnVector</A></B>(int&nbsp;column)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the entries at the given column index as a vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>EigenDecomposition.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/EigenDecomposition.html#getEigenvector(int)">getEigenvector</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a copy of the i<sup>th</sup> eigenvector of the original matrix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>DefaultIterativeLinearSolverEvent.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/DefaultIterativeLinearSolverEvent.html#getResidual()">getResidual</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Returns the residual.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>IterativeLinearSolverEvent.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/IterativeLinearSolverEvent.html#getResidual()">getResidual</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Returns the residual.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>DefaultIterativeLinearSolverEvent.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/DefaultIterativeLinearSolverEvent.html#getRightHandSideVector()">getRightHandSideVector</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the current right-hand side of the linear system to be solved.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>IterativeLinearSolverEvent.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/IterativeLinearSolverEvent.html#getRightHandSideVector()">getRightHandSideVector</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the current right-hand side of the linear system to be solved.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractRealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#getRowVector(int)">getRowVector</A></B>(int&nbsp;row)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the entries in row number <code>row</code> as a vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html#getRowVector(int)">getRowVector</A></B>(int&nbsp;row)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the entries in row number <code>row</code> as a vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>BlockRealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/BlockRealMatrix.html#getRowVector(int)">getRowVector</A></B>(int&nbsp;row)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the entries in row number <code>row</code> as a vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>DefaultIterativeLinearSolverEvent.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/DefaultIterativeLinearSolverEvent.html#getSolution()">getSolution</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the current estimate of the solution to the linear system to be
+ solved.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>IterativeLinearSolverEvent.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/IterativeLinearSolverEvent.html#getSolution()">getSolution</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the current estimate of the solution to the linear system to be
+ solved.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#getSubVector(int, int)">getSubVector</A></B>(int&nbsp;index,
+             int&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a subvector from consecutive elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getSubVector(int, int)">getSubVector</A></B>(int&nbsp;index,
+             int&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a subvector from consecutive elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#map(org.apache.commons.math3.analysis.UnivariateFunction)">map</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;function)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acts as if implemented as:
+ 
+  return copy().mapToSelf(function);
+ 
+ Returns a new vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#mapAdd(double)">mapAdd</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a value to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#mapAddToSelf(double)">mapAddToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a value to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#mapAddToSelf(double)">mapAddToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a value to each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#mapDivide(double)">mapDivide</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Divide each entry by the argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#mapDivideToSelf(double)">mapDivideToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Divide each entry by the argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#mapDivideToSelf(double)">mapDivideToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Divide each entry by the argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#mapMultiply(double)">mapMultiply</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiply each entry by the argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#mapMultiplyToSelf(double)">mapMultiplyToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiply each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#mapMultiplyToSelf(double)">mapMultiplyToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiply each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#mapSubtract(double)">mapSubtract</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract a value from each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#mapSubtractToSelf(double)">mapSubtractToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract a value from each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#mapSubtractToSelf(double)">mapSubtractToSelf</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract a value from each entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#mapToSelf(org.apache.commons.math3.analysis.UnivariateFunction)">mapToSelf</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;function)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acts as if it is implemented as:
+ 
+  Entry e = null;
+  for(Iterator<Entry> it = iterator(); it.hasNext(); e = it.next()) {
+      e.setValue(function.value(e.getValue()));
+  }
+ 
+ Entries of this vector are modified in-place by this method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>JacobiPreconditioner.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/JacobiPreconditioner.html#operate(org.apache.commons.math3.linear.RealVector)">operate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying <code>this</code> by the vector <code>x</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealLinearOperator.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html#operate(org.apache.commons.math3.linear.RealVector)">operate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying <code>this</code> by the vector <code>x</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractRealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#operate(org.apache.commons.math3.linear.RealVector)">operate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying <code>this</code> by the vector <code>x</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html#operate(org.apache.commons.math3.linear.RealVector)">operate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealLinearOperator.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html#operateTranspose(org.apache.commons.math3.linear.RealVector)">operateTranspose</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying the transpose of <code>this</code> operator
+ by the vector <code>x</code> (optional operation).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractRealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#preMultiply(org.apache.commons.math3.linear.RealVector)">preMultiply</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (row) vector result of premultiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html#preMultiply(org.apache.commons.math3.linear.RealVector)">preMultiply</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (row) vector result of premultiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#projection(org.apache.commons.math3.linear.RealVector)">projection</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find the orthogonal projection of this vector onto another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, boolean, double)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      boolean&nbsp;goodb,
+      double&nbsp;shift)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system (A - shift
+ &middot; I) &middot; x = b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>IterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, boolean, double)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      boolean&nbsp;goodb,
+      double&nbsp;shift)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the solution to the system (A - shift &middot; I) &middot; x = b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>IterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>DecompositionSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/DecompositionSolver.html#solve(org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solve the linear equation A &times; X = B for matrices A.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ConjugateGradient.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ConjugateGradient.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector, boolean, double)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x,
+             boolean&nbsp;goodb,
+             double&nbsp;shift)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system (A - shift
+ &middot; I) &middot; x = b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>IterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#subtract(org.apache.commons.math3.linear.RealVector)">subtract</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract <code>v</code> from this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>OpenMapRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#subtract(org.apache.commons.math3.linear.RealVector)">subtract</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Subtract <code>v</code> from this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#unitVector()">unitVector</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a unit vector pointing in the direction of this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#unmodifiableRealVector(org.apache.commons.math3.linear.RealVector)">unmodifiableRealVector</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an unmodifiable view of the specified vector.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A> with parameters of type <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#add(org.apache.commons.math3.linear.RealVector)">add</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the sum of this vector and <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#add(org.apache.commons.math3.linear.RealVector)">add</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the sum of this vector and <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>OpenMapRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#add(org.apache.commons.math3.linear.RealVector)">add</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Compute the sum of this vector and <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#append(org.apache.commons.math3.linear.RealVector)">append</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new vector by appending a vector to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#append(org.apache.commons.math3.linear.RealVector)">append</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new vector by appending a vector to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B>OpenMapRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#append(org.apache.commons.math3.linear.RealVector)">append</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Construct a new vector by appending a vector to this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#checkParameters(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">checkParameters</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+                <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+                <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+                <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs all dimension checks on the parameters of
+ <A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)"><CODE>solve</CODE></A>
+ and
+ <A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)"><CODE>solveInPlace</CODE></A>,
+ and throws an exception if one of the checks fails.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>IterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html#checkParameters(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">checkParameters</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+                <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+                <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs all dimension checks on the parameters of
+ <A HREF="../../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)"><CODE>solve</CODE></A> and
+ <A HREF="../../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)"><CODE>solveInPlace</CODE></A>,
+ and throws an exception if one of the checks fails.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#checkVectorDimensions(org.apache.commons.math3.linear.RealVector)">checkVectorDimensions</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if instance and specified vectors have the same dimension.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#checkVectorDimensions(org.apache.commons.math3.linear.RealVector)">checkVectorDimensions</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if instance and specified vectors have the same dimension.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#combine(double, double, org.apache.commons.math3.linear.RealVector)">combine</A></B>(double&nbsp;a,
+        double&nbsp;b,
+        <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a new vector representing <code>a * this + b * y</code>, the linear
+ combination of <code>this</code> and <code>y</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#combine(double, double, org.apache.commons.math3.linear.RealVector)">combine</A></B>(double&nbsp;a,
+        double&nbsp;b,
+        <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a new vector representing <code>a * this + b * y</code>, the linear
+ combination of <code>this</code> and <code>y</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#combineToSelf(double, double, org.apache.commons.math3.linear.RealVector)">combineToSelf</A></B>(double&nbsp;a,
+              double&nbsp;b,
+              <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates <code>this</code> with the linear combination of <code>this</code> and
+ <code>y</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#combineToSelf(double, double, org.apache.commons.math3.linear.RealVector)">combineToSelf</A></B>(double&nbsp;a,
+              double&nbsp;b,
+              <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates <code>this</code> with the linear combination of <code>this</code> and
+ <code>y</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#cosine(org.apache.commons.math3.linear.RealVector)">cosine</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the cosine of the angle between this vector and the
+ argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#dotProduct(org.apache.commons.math3.linear.RealVector)">dotProduct</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the dot product of this vector with <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#dotProduct(org.apache.commons.math3.linear.RealVector)">dotProduct</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the dot product of this vector with <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#ebeDivide(org.apache.commons.math3.linear.RealVector)">ebeDivide</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of version 3.1, this method is deprecated, and will be
+ removed in version 4.0. This decision follows the discussion reported in
+ <a href="https://issues.apache.org/jira/browse/MATH-803?focusedCommentId=13399150#comment-13399150">MATH-803</a>.
+ Uses of this method involving sparse implementations of
+ <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> might lead to wrong results. Since there is no
+ satisfactory correction to this bug, this method is deprecated. Users who
+ want to preserve this feature are advised to implement
+ <A HREF="../../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear"><CODE>RealVectorPreservingVisitor</CODE></A> (possibly ignoring corner cases for
+ the sake of efficiency).</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ebeDivide(org.apache.commons.math3.linear.RealVector)">ebeDivide</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Element-by-element division.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B>OpenMapRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#ebeDivide(org.apache.commons.math3.linear.RealVector)">ebeDivide</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Element-by-element division.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#ebeMultiply(org.apache.commons.math3.linear.RealVector)">ebeMultiply</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of version 3.1, this method is deprecated, and will be
+ removed in version 4.0. This decision follows the discussion reported in
+ <a href="https://issues.apache.org/jira/browse/MATH-803?focusedCommentId=13399150#comment-13399150">MATH-803</a>.
+ Uses of this method involving sparse implementations of
+ <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> might lead to wrong results. Since there is no
+ satisfactory correction to this bug, this method is deprecated. Users who
+ want to preserve this feature are advised to implement
+ <A HREF="../../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear"><CODE>RealVectorPreservingVisitor</CODE></A> (possibly ignoring corner cases for
+ the sake of efficiency).</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ebeMultiply(org.apache.commons.math3.linear.RealVector)">ebeMultiply</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Element-by-element multiplication.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</A></CODE></FONT></TD>
+<TD><CODE><B>OpenMapRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#ebeMultiply(org.apache.commons.math3.linear.RealVector)">ebeMultiply</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Element-by-element multiplication.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B>RealVectorFormat.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVectorFormat.html#format(org.apache.commons.math3.linear.RealVector)">format</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method calls <A HREF="../../../../../../org/apache/commons/math3/linear/RealVectorFormat.html#format(org.apache.commons.math3.linear.RealVector, java.lang.StringBuffer, java.text.FieldPosition)"><CODE>RealVectorFormat.format(RealVector,StringBuffer,FieldPosition)</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang">StringBuffer</A></CODE></FONT></TD>
+<TD><CODE><B>RealVectorFormat.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVectorFormat.html#format(org.apache.commons.math3.linear.RealVector, java.lang.StringBuffer, java.text.FieldPosition)">format</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;vector,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang">StringBuffer</A>&nbsp;toAppendTo,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/text/FieldPosition.html?is-external=true" title="class or interface in java.text">FieldPosition</A>&nbsp;pos)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formats a <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A> object to produce a string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#getDistance(org.apache.commons.math3.linear.RealVector)">getDistance</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getDistance(org.apache.commons.math3.linear.RealVector)">getDistance</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>OpenMapRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#getDistance(org.apache.commons.math3.linear.RealVector)">getDistance</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#getL1Distance(org.apache.commons.math3.linear.RealVector)">getL1Distance</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getL1Distance(org.apache.commons.math3.linear.RealVector)">getL1Distance</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>OpenMapRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#getL1Distance(org.apache.commons.math3.linear.RealVector)">getL1Distance</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#getLInfDistance(org.apache.commons.math3.linear.RealVector)">getLInfDistance</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#getLInfDistance(org.apache.commons.math3.linear.RealVector)">getLInfDistance</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>OpenMapRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#getLInfDistance(org.apache.commons.math3.linear.RealVector)">getLInfDistance</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Distance between two vectors.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>JacobiPreconditioner.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/JacobiPreconditioner.html#operate(org.apache.commons.math3.linear.RealVector)">operate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying <code>this</code> by the vector <code>x</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealLinearOperator.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html#operate(org.apache.commons.math3.linear.RealVector)">operate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying <code>this</code> by the vector <code>x</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractRealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#operate(org.apache.commons.math3.linear.RealVector)">operate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying <code>this</code> by the vector <code>x</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html#operate(org.apache.commons.math3.linear.RealVector)">operate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealLinearOperator.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html#operateTranspose(org.apache.commons.math3.linear.RealVector)">operateTranspose</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the result of multiplying the transpose of <code>this</code> operator
+ by the vector <code>x</code> (optional operation).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#outerProduct(org.apache.commons.math3.linear.RealVector)">outerProduct</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the outer product.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#outerProduct(org.apache.commons.math3.linear.RealVector)">outerProduct</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the outer product.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractRealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#preMultiply(org.apache.commons.math3.linear.RealVector)">preMultiply</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (row) vector result of premultiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html#preMultiply(org.apache.commons.math3.linear.RealVector)">preMultiply</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the (row) vector result of premultiplying this by the vector <code>v</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#projection(org.apache.commons.math3.linear.RealVector)">projection</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find the orthogonal projection of this vector onto another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/MatrixUtils.html#serializeRealVector(org.apache.commons.math3.linear.RealVector, java.io.ObjectOutputStream)">serializeRealVector</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;vector,
+                    <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html?is-external=true" title="class or interface in java.io">ObjectOutputStream</A>&nbsp;oos)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serialize a <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><CODE>RealVector</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractRealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#setColumnVector(int, org.apache.commons.math3.linear.RealVector)">setColumnVector</A></B>(int&nbsp;column,
+                <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;vector)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the specified <code>column</code> of <code>this</code> matrix to the entries
+ of the specified <code>vector</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>RealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html#setColumnVector(int, org.apache.commons.math3.linear.RealVector)">setColumnVector</A></B>(int&nbsp;column,
+                <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;vector)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the specified <code>column</code> of <code>this</code> matrix to the entries
+ of the specified <code>vector</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BlockRealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/BlockRealMatrix.html#setColumnVector(int, org.apache.commons.math3.linear.RealVector)">setColumnVector</A></B>(int&nbsp;column,
+                <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;vector)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the specified <code>column</code> of <code>this</code> matrix to the entries
+ of the specified <code>vector</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractRealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html#setRowVector(int, org.apache.commons.math3.linear.RealVector)">setRowVector</A></B>(int&nbsp;row,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;vector)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the specified <code>row</code> of <code>this</code> matrix to the entries of
+ the specified <code>vector</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>RealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html#setRowVector(int, org.apache.commons.math3.linear.RealVector)">setRowVector</A></B>(int&nbsp;row,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;vector)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the specified <code>row</code> of <code>this</code> matrix to the entries of
+ the specified <code>vector</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BlockRealMatrix.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/BlockRealMatrix.html#setRowVector(int, org.apache.commons.math3.linear.RealVector)">setRowVector</A></B>(int&nbsp;row,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;vector)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the specified <code>row</code> of <code>this</code> matrix to the entries of
+ the specified <code>vector</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#setSubVector(int, org.apache.commons.math3.linear.RealVector)">setSubVector</A></B>(int&nbsp;index,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set a sequence of consecutive elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#setSubVector(int, org.apache.commons.math3.linear.RealVector)">setSubVector</A></B>(int&nbsp;index,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set a sequence of consecutive elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>OpenMapRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#setSubVector(int, org.apache.commons.math3.linear.RealVector)">setSubVector</A></B>(int&nbsp;index,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Set a sequence of consecutive elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, boolean, double)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      boolean&nbsp;goodb,
+      double&nbsp;shift)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system (A - shift
+ &middot; I) &middot; x = b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>IterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, boolean, double)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      boolean&nbsp;goodb,
+      double&nbsp;shift)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the solution to the system (A - shift &middot; I) &middot; x = b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>IterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>DecompositionSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/DecompositionSolver.html#solve(org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solve the linear equation A &times; X = B for matrices A.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ConjugateGradient.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ConjugateGradient.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector, boolean, double)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x,
+             boolean&nbsp;goodb,
+             double&nbsp;shift)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system (A - shift
+ &middot; I) &middot; x = b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>PreconditionedIterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>IterativeLinearSolver.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x0)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>SymmLQ.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/SymmLQ.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/MatrixUtils.html#solveLowerTriangularSystem(org.apache.commons.math3.linear.RealMatrix, org.apache.commons.math3.linear.RealVector)">solveLowerTriangularSystem</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;rm,
+                           <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solve  a  system of composed of a Lower Triangular Matrix
+ <A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear"><CODE>RealMatrix</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MatrixUtils.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/MatrixUtils.html#solveUpperTriangularSystem(org.apache.commons.math3.linear.RealMatrix, org.apache.commons.math3.linear.RealVector)">solveUpperTriangularSystem</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A>&nbsp;rm,
+                           <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solver a  system composed  of an Upper Triangular Matrix
+ <A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear"><CODE>RealMatrix</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#subtract(org.apache.commons.math3.linear.RealVector)">subtract</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract <code>v</code> from this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A></CODE></FONT></TD>
+<TD><CODE><B>ArrayRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#subtract(org.apache.commons.math3.linear.RealVector)">subtract</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract <code>v</code> from this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>OpenMapRealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#subtract(org.apache.commons.math3.linear.RealVector)">subtract</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Subtract <code>v</code> from this vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>RealVector.</B><B><A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html#unmodifiableRealVector(org.apache.commons.math3.linear.RealVector)">unmodifiableRealVector</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an unmodifiable view of the specified vector.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</A> with parameters of type <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(org.apache.commons.math3.linear.ArrayRealVector, org.apache.commons.math3.linear.RealVector)">ArrayRealVector</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v1,
+                <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(org.apache.commons.math3.linear.RealVector)">ArrayRealVector</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector from another vector, using a deep copy.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html#ArrayRealVector(org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.ArrayRealVector)">ArrayRealVector</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v1,
+                <A HREF="../../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</A>&nbsp;v2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a vector by appending one vector to another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/DefaultIterativeLinearSolverEvent.html#DefaultIterativeLinearSolverEvent(java.lang.Object, int, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector, double)">DefaultIterativeLinearSolverEvent</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;source,
+                                  int&nbsp;iterations,
+                                  <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x,
+                                  <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+                                  double&nbsp;rnorm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new instance of this class.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/DefaultIterativeLinearSolverEvent.html#DefaultIterativeLinearSolverEvent(java.lang.Object, int, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector, double)">DefaultIterativeLinearSolverEvent</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;source,
+                                  int&nbsp;iterations,
+                                  <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x,
+                                  <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+                                  <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;r,
+                                  double&nbsp;rnorm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new instance of this class.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html#OpenMapRealVector(org.apache.commons.math3.linear.RealVector)">OpenMapRealVector</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generic copy constructor.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optim.linear"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> in <A HREF="../../../../../../org/apache/commons/math3/optim/linear/package-summary.html">org.apache.commons.math3.optim.linear</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optim/linear/package-summary.html">org.apache.commons.math3.optim.linear</A> that return <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>LinearConstraint.</B><B><A HREF="../../../../../../org/apache/commons/math3/optim/linear/LinearConstraint.html#getCoefficients()">getCoefficients</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the coefficients of the constraint (left hand side).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>LinearObjectiveFunction.</B><B><A HREF="../../../../../../org/apache/commons/math3/optim/linear/LinearObjectiveFunction.html#getCoefficients()">getCoefficients</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the coefficients of the linear equation being optimized.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optim/linear/package-summary.html">org.apache.commons.math3.optim.linear</A> with parameters of type <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>LinearObjectiveFunction.</B><B><A HREF="../../../../../../org/apache/commons/math3/optim/linear/LinearObjectiveFunction.html#value(org.apache.commons.math3.linear.RealVector)">value</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the value of the linear equation at the current point.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/commons/math3/optim/linear/package-summary.html">org.apache.commons.math3.optim.linear</A> with parameters of type <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/linear/LinearConstraint.html#LinearConstraint(org.apache.commons.math3.linear.RealVector, double, org.apache.commons.math3.optim.linear.Relationship, org.apache.commons.math3.linear.RealVector, double)">LinearConstraint</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;lhsCoefficients,
+                 double&nbsp;lhsConstant,
+                 <A HREF="../../../../../../org/apache/commons/math3/optim/linear/Relationship.html" title="enum in org.apache.commons.math3.optim.linear">Relationship</A>&nbsp;relationship,
+                 <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;rhsCoefficients,
+                 double&nbsp;rhsConstant)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a constraint involving two linear equations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/linear/LinearConstraint.html#LinearConstraint(org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.optim.linear.Relationship, double)">LinearConstraint</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;coefficients,
+                 <A HREF="../../../../../../org/apache/commons/math3/optim/linear/Relationship.html" title="enum in org.apache.commons.math3.optim.linear">Relationship</A>&nbsp;relationship,
+                 double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a constraint involving a single linear equation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optim/linear/LinearObjectiveFunction.html#LinearObjectiveFunction(org.apache.commons.math3.linear.RealVector, double)">LinearObjectiveFunction</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;coefficients,
+                        double&nbsp;constantTerm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optimization.linear"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> in <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/package-summary.html">org.apache.commons.math3.optimization.linear</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/package-summary.html">org.apache.commons.math3.optimization.linear</A> that return <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>LinearConstraint.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearConstraint.html#getCoefficients()">getCoefficients</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get the coefficients of the constraint (left hand side).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>LinearObjectiveFunction.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearObjectiveFunction.html#getCoefficients()">getCoefficients</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get the coefficients of the linear equation being optimized.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/package-summary.html">org.apache.commons.math3.optimization.linear</A> with parameters of type <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>LinearObjectiveFunction.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearObjectiveFunction.html#getValue(org.apache.commons.math3.linear.RealVector)">getValue</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Compute the value of the linear equation at the current point</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/package-summary.html">org.apache.commons.math3.optimization.linear</A> with parameters of type <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearConstraint.html#LinearConstraint(org.apache.commons.math3.linear.RealVector, double, org.apache.commons.math3.optimization.linear.Relationship, org.apache.commons.math3.linear.RealVector, double)">LinearConstraint</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;lhsCoefficients,
+                 double&nbsp;lhsConstant,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/Relationship.html" title="enum in org.apache.commons.math3.optimization.linear">Relationship</A>&nbsp;relationship,
+                 <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;rhsCoefficients,
+                 double&nbsp;rhsConstant)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a constraint involving two linear equations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearConstraint.html#LinearConstraint(org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.optimization.linear.Relationship, double)">LinearConstraint</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;coefficients,
+                 <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/Relationship.html" title="enum in org.apache.commons.math3.optimization.linear">Relationship</A>&nbsp;relationship,
+                 double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Build a constraint involving a single linear equation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearObjectiveFunction.html#LinearObjectiveFunction(org.apache.commons.math3.linear.RealVector, double)">LinearObjectiveFunction</A></B>(<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;coefficients,
+                        double&nbsp;constantTerm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.regression"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/regression/package-summary.html">org.apache.commons.math3.stat.regression</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/stat/regression/package-summary.html">org.apache.commons.math3.stat.regression</A> that return <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>GLSMultipleLinearRegression.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/GLSMultipleLinearRegression.html#calculateBeta()">calculateBeta</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates beta by GLS.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractMultipleLinearRegression.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#calculateBeta()">calculateBeta</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the beta of multiple linear regression in matrix notation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>OLSMultipleLinearRegression.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html#calculateBeta()">calculateBeta</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the regression coefficients using OLS.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractMultipleLinearRegression.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#calculateResiduals()">calculateResiduals</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the residuals of multiple linear regression in matrix
+ notation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractMultipleLinearRegression.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#getY()">getY</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/linear//class-useRealVector.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RealVector.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>
