@@ -1,0 +1,1096 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+AbstractIntegrator (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractIntegrator (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractIntegrator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/ode/AbstractParameterizable.html" title="class in org.apache.commons.math3.ode"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/ode/AbstractIntegrator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractIntegrator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.ode</FONT>
+<BR>
+Class AbstractIntegrator</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.ode.AbstractIntegrator</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderIntegrator.html" title="interface in org.apache.commons.math3.ode">FirstOrderIntegrator</A>, <A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">AdaptiveStepsizeIntegrator</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/RungeKuttaIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">RungeKuttaIntegrator</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>AbstractIntegrator</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderIntegrator.html" title="interface in org.apache.commons.math3.ode">FirstOrderIntegrator</A></DL>
+</PRE>
+
+<P>
+Base class managing common boilerplate for all integrators.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: AbstractIntegrator.java 1463684 2013-04-02 19:04:13Z luc $</DD>
+</DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#isLastStep">isLastStep</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicator for last step.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#resetOccurred">resetOccurred</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicator that a state or derivative reset was triggered by some event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../org/apache/commons/math3/ode/sampling/StepHandler.html" title="interface in org.apache.commons.math3.ode.sampling">StepHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#stepHandlers">stepHandlers</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#stepSize">stepSize</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current stepsize.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#stepStart">stepStart</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current step start time.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#AbstractIntegrator()">AbstractIntegrator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build an instance with a null name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#AbstractIntegrator(java.lang.String)">AbstractIntegrator</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build an instance.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#acceptStep(org.apache.commons.math3.ode.sampling.AbstractStepInterpolator, double[], double[], double)">acceptStep</A></B>(<A HREF="../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">AbstractStepInterpolator</A>&nbsp;interpolator,
+           double[]&nbsp;y,
+           double[]&nbsp;yDot,
+           double&nbsp;tEnd)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accept a step, triggering events and step handlers.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#addEventHandler(org.apache.commons.math3.ode.events.EventHandler, double, double, int)">addEventHandler</A></B>(<A HREF="../../../../../org/apache/commons/math3/ode/events/EventHandler.html" title="interface in org.apache.commons.math3.ode.events">EventHandler</A>&nbsp;handler,
+                double&nbsp;maxCheckInterval,
+                double&nbsp;convergence,
+                int&nbsp;maxIterationCount)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add an event handler to the integrator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#addEventHandler(org.apache.commons.math3.ode.events.EventHandler, double, double, int, org.apache.commons.math3.analysis.solvers.UnivariateSolver)">addEventHandler</A></B>(<A HREF="../../../../../org/apache/commons/math3/ode/events/EventHandler.html" title="interface in org.apache.commons.math3.ode.events">EventHandler</A>&nbsp;handler,
+                double&nbsp;maxCheckInterval,
+                double&nbsp;convergence,
+                int&nbsp;maxIterationCount,
+                <A HREF="../../../../../org/apache/commons/math3/analysis/solvers/UnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers">UnivariateSolver</A>&nbsp;solver)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add an event handler to the integrator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#addStepHandler(org.apache.commons.math3.ode.sampling.StepHandler)">addStepHandler</A></B>(<A HREF="../../../../../org/apache/commons/math3/ode/sampling/StepHandler.html" title="interface in org.apache.commons.math3.ode.sampling">StepHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a step handler to this integrator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#clearEventHandlers()">clearEventHandlers</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remove all the event handlers that have been added to the integrator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#clearStepHandlers()">clearStepHandlers</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remove all the step handlers that have been added to the integrator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#computeDerivatives(double, double[], double[])">computeDerivatives</A></B>(double&nbsp;t,
+                   double[]&nbsp;y,
+                   double[]&nbsp;yDot)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the derivatives and check the number of evaluations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getCurrentSignedStepsize()">getCurrentSignedStepsize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the current signed value of the integration stepsize.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getCurrentStepStart()">getCurrentStepStart</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the current value of the step start time t<sub>i</sub>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getEvaluations()">getEvaluations</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the number of evaluations of the differential equations function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html" title="class in org.apache.commons.math3.util">Incrementor</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getEvaluationsCounter()">getEvaluationsCounter</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the evaluations counter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../org/apache/commons/math3/ode/events/EventHandler.html" title="interface in org.apache.commons.math3.ode.events">EventHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getEventHandlers()">getEventHandlers</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get all the event handlers that have been added to the integrator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/commons/math3/ode/ExpandableStatefulODE.html" title="class in org.apache.commons.math3.ode">ExpandableStatefulODE</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getExpandable()">getExpandable</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the differential equations to integrate.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getMaxEvaluations()">getMaxEvaluations</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the maximal number of functions evaluations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getName()">getName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the name of the method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../org/apache/commons/math3/ode/sampling/StepHandler.html" title="interface in org.apache.commons.math3.ode.sampling">StepHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getStepHandlers()">getStepHandlers</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get all the step handlers that have been added to the integrator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#initIntegration(double, double[], double)">initIntegration</A></B>(double&nbsp;t0,
+                double[]&nbsp;y0,
+                double&nbsp;t)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prepare the start of an integration.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#integrate(org.apache.commons.math3.ode.ExpandableStatefulODE, double)">integrate</A></B>(<A HREF="../../../../../org/apache/commons/math3/ode/ExpandableStatefulODE.html" title="class in org.apache.commons.math3.ode">ExpandableStatefulODE</A>&nbsp;equations,
+          double&nbsp;t)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integrate a set of differential equations up to the given time.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#integrate(org.apache.commons.math3.ode.FirstOrderDifferentialEquations, double, double[], double, double[])">integrate</A></B>(<A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderDifferentialEquations.html" title="interface in org.apache.commons.math3.ode">FirstOrderDifferentialEquations</A>&nbsp;equations,
+          double&nbsp;t0,
+          double[]&nbsp;y0,
+          double&nbsp;t,
+          double[]&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integrate the differential equations up to the given time.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#sanityChecks(org.apache.commons.math3.ode.ExpandableStatefulODE, double)">sanityChecks</A></B>(<A HREF="../../../../../org/apache/commons/math3/ode/ExpandableStatefulODE.html" title="class in org.apache.commons.math3.ode">ExpandableStatefulODE</A>&nbsp;equations,
+             double&nbsp;t)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check the integration span.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#setEquations(org.apache.commons.math3.ode.ExpandableStatefulODE)">setEquations</A></B>(<A HREF="../../../../../org/apache/commons/math3/ode/ExpandableStatefulODE.html" title="class in org.apache.commons.math3.ode">ExpandableStatefulODE</A>&nbsp;equations)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the equations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#setMaxEvaluations(int)">setMaxEvaluations</A></B>(int&nbsp;maxEvaluations)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the maximal number of differential equations function evaluations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#setStateInitialized(boolean)">setStateInitialized</A></B>(boolean&nbsp;stateInitialized)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the stateInitialized flag.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="stepHandlers"><!-- --></A><H3>
+stepHandlers</H3>
+<PRE>
+protected <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../org/apache/commons/math3/ode/sampling/StepHandler.html" title="interface in org.apache.commons.math3.ode.sampling">StepHandler</A>&gt; <B>stepHandlers</B></PRE>
+<DL>
+<DD>Step handler.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="stepStart"><!-- --></A><H3>
+stepStart</H3>
+<PRE>
+protected double <B>stepStart</B></PRE>
+<DL>
+<DD>Current step start time.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="stepSize"><!-- --></A><H3>
+stepSize</H3>
+<PRE>
+protected double <B>stepSize</B></PRE>
+<DL>
+<DD>Current stepsize.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="isLastStep"><!-- --></A><H3>
+isLastStep</H3>
+<PRE>
+protected boolean <B>isLastStep</B></PRE>
+<DL>
+<DD>Indicator for last step.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="resetOccurred"><!-- --></A><H3>
+resetOccurred</H3>
+<PRE>
+protected boolean <B>resetOccurred</B></PRE>
+<DL>
+<DD>Indicator that a state or derivative reset was triggered by some event.
+<P>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AbstractIntegrator(java.lang.String)"><!-- --></A><H3>
+AbstractIntegrator</H3>
+<PRE>
+public <B>AbstractIntegrator</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name)</PRE>
+<DL>
+<DD>Build an instance.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>name</CODE> - name of the method</DL>
+</DL>
+<HR>
+
+<A NAME="AbstractIntegrator()"><!-- --></A><H3>
+AbstractIntegrator</H3>
+<PRE>
+protected <B>AbstractIntegrator</B>()</PRE>
+<DL>
+<DD>Build an instance with a null name.
+<P>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getName()"><!-- --></A><H3>
+getName</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getName</B>()</PRE>
+<DL>
+<DD>Get the name of the method.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getName()">getName</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>name of the method</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addStepHandler(org.apache.commons.math3.ode.sampling.StepHandler)"><!-- --></A><H3>
+addStepHandler</H3>
+<PRE>
+public void <B>addStepHandler</B>(<A HREF="../../../../../org/apache/commons/math3/ode/sampling/StepHandler.html" title="interface in org.apache.commons.math3.ode.sampling">StepHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD>Add a step handler to this integrator.
+ <p>The handler will be called by the integrator for each accepted
+ step.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#addStepHandler(org.apache.commons.math3.ode.sampling.StepHandler)">addStepHandler</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - handler for the accepted steps<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getStepHandlers()"><CODE>ODEIntegrator.getStepHandlers()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#clearStepHandlers()"><CODE>ODEIntegrator.clearStepHandlers()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStepHandlers()"><!-- --></A><H3>
+getStepHandlers</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../org/apache/commons/math3/ode/sampling/StepHandler.html" title="interface in org.apache.commons.math3.ode.sampling">StepHandler</A>&gt; <B>getStepHandlers</B>()</PRE>
+<DL>
+<DD>Get all the step handlers that have been added to the integrator.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getStepHandlers()">getStepHandlers</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>an unmodifiable collection of the added events handlers<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#addStepHandler(org.apache.commons.math3.ode.sampling.StepHandler)"><CODE>ODEIntegrator.addStepHandler(StepHandler)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#clearStepHandlers()"><CODE>ODEIntegrator.clearStepHandlers()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearStepHandlers()"><!-- --></A><H3>
+clearStepHandlers</H3>
+<PRE>
+public void <B>clearStepHandlers</B>()</PRE>
+<DL>
+<DD>Remove all the step handlers that have been added to the integrator.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#clearStepHandlers()">clearStepHandlers</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#addStepHandler(org.apache.commons.math3.ode.sampling.StepHandler)"><CODE>ODEIntegrator.addStepHandler(StepHandler)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getStepHandlers()"><CODE>ODEIntegrator.getStepHandlers()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addEventHandler(org.apache.commons.math3.ode.events.EventHandler, double, double, int)"><!-- --></A><H3>
+addEventHandler</H3>
+<PRE>
+public void <B>addEventHandler</B>(<A HREF="../../../../../org/apache/commons/math3/ode/events/EventHandler.html" title="interface in org.apache.commons.math3.ode.events">EventHandler</A>&nbsp;handler,
+                            double&nbsp;maxCheckInterval,
+                            double&nbsp;convergence,
+                            int&nbsp;maxIterationCount)</PRE>
+<DL>
+<DD>Add an event handler to the integrator.
+ Uses a default <A HREF="../../../../../org/apache/commons/math3/analysis/solvers/UnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers"><CODE>UnivariateSolver</CODE></A>
+ with an absolute accuracy equal to the given convergence threshold,
+ as root-finding algorithm to detect the state events.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#addEventHandler(org.apache.commons.math3.ode.events.EventHandler, double, double, int)">addEventHandler</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - event handler<DD><CODE>maxCheckInterval</CODE> - maximal time interval between switching
+ function checks (this interval prevents missing sign changes in
+ case the integration steps becomes very large)<DD><CODE>convergence</CODE> - convergence threshold in the event time search<DD><CODE>maxIterationCount</CODE> - upper limit of the iteration count in
+ the event time search<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getEventHandlers()"><CODE>ODEIntegrator.getEventHandlers()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#clearEventHandlers()"><CODE>ODEIntegrator.clearEventHandlers()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addEventHandler(org.apache.commons.math3.ode.events.EventHandler, double, double, int, org.apache.commons.math3.analysis.solvers.UnivariateSolver)"><!-- --></A><H3>
+addEventHandler</H3>
+<PRE>
+public void <B>addEventHandler</B>(<A HREF="../../../../../org/apache/commons/math3/ode/events/EventHandler.html" title="interface in org.apache.commons.math3.ode.events">EventHandler</A>&nbsp;handler,
+                            double&nbsp;maxCheckInterval,
+                            double&nbsp;convergence,
+                            int&nbsp;maxIterationCount,
+                            <A HREF="../../../../../org/apache/commons/math3/analysis/solvers/UnivariateSolver.html" title="interface in org.apache.commons.math3.analysis.solvers">UnivariateSolver</A>&nbsp;solver)</PRE>
+<DL>
+<DD>Add an event handler to the integrator.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#addEventHandler(org.apache.commons.math3.ode.events.EventHandler, double, double, int, org.apache.commons.math3.analysis.solvers.UnivariateSolver)">addEventHandler</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - event handler<DD><CODE>maxCheckInterval</CODE> - maximal time interval between switching
+ function checks (this interval prevents missing sign changes in
+ case the integration steps becomes very large)<DD><CODE>convergence</CODE> - convergence threshold in the event time search<DD><CODE>maxIterationCount</CODE> - upper limit of the iteration count in
+ the event time search<DD><CODE>solver</CODE> - The root-finding algorithm to use to detect the state
+ events.<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getEventHandlers()"><CODE>ODEIntegrator.getEventHandlers()</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#clearEventHandlers()"><CODE>ODEIntegrator.clearEventHandlers()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEventHandlers()"><!-- --></A><H3>
+getEventHandlers</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../org/apache/commons/math3/ode/events/EventHandler.html" title="interface in org.apache.commons.math3.ode.events">EventHandler</A>&gt; <B>getEventHandlers</B>()</PRE>
+<DL>
+<DD>Get all the event handlers that have been added to the integrator.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getEventHandlers()">getEventHandlers</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>an unmodifiable collection of the added events handlers<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#addEventHandler(org.apache.commons.math3.ode.events.EventHandler, double, double, int)"><CODE>ODEIntegrator.addEventHandler(EventHandler, double, double, int)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#clearEventHandlers()"><CODE>ODEIntegrator.clearEventHandlers()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearEventHandlers()"><!-- --></A><H3>
+clearEventHandlers</H3>
+<PRE>
+public void <B>clearEventHandlers</B>()</PRE>
+<DL>
+<DD>Remove all the event handlers that have been added to the integrator.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#clearEventHandlers()">clearEventHandlers</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#addEventHandler(org.apache.commons.math3.ode.events.EventHandler, double, double, int)"><CODE>ODEIntegrator.addEventHandler(EventHandler, double, double, int)</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getEventHandlers()"><CODE>ODEIntegrator.getEventHandlers()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCurrentStepStart()"><!-- --></A><H3>
+getCurrentStepStart</H3>
+<PRE>
+public double <B>getCurrentStepStart</B>()</PRE>
+<DL>
+<DD>Get the current value of the step start time t<sub>i</sub>.
+ <p>This method can be called during integration (typically by
+ the object implementing the <A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderDifferentialEquations.html" title="interface in org.apache.commons.math3.ode"><CODE>differential equations</CODE></A> problem) if the value of the current step that
+ is attempted is needed.</p>
+ <p>The result is undefined if the method is called outside of
+ calls to <code>integrate</code>.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getCurrentStepStart()">getCurrentStepStart</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>current value of the step start time t<sub>i</sub></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCurrentSignedStepsize()"><!-- --></A><H3>
+getCurrentSignedStepsize</H3>
+<PRE>
+public double <B>getCurrentSignedStepsize</B>()</PRE>
+<DL>
+<DD>Get the current signed value of the integration stepsize.
+ <p>This method can be called during integration (typically by
+ the object implementing the <A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderDifferentialEquations.html" title="interface in org.apache.commons.math3.ode"><CODE>differential equations</CODE></A> problem) if the signed value of the current stepsize
+ that is tried is needed.</p>
+ <p>The result is undefined if the method is called outside of
+ calls to <code>integrate</code>.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getCurrentSignedStepsize()">getCurrentSignedStepsize</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>current signed value of the stepsize</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMaxEvaluations(int)"><!-- --></A><H3>
+setMaxEvaluations</H3>
+<PRE>
+public void <B>setMaxEvaluations</B>(int&nbsp;maxEvaluations)</PRE>
+<DL>
+<DD>Set the maximal number of differential equations function evaluations.
+ <p>The purpose of this method is to avoid infinite loops which can occur
+ for example when stringent error constraints are set or when lots of
+ discrete events are triggered, thus leading to many rejected steps.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#setMaxEvaluations(int)">setMaxEvaluations</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>maxEvaluations</CODE> - maximal number of function evaluations (negative
+ values are silently converted to maximal integer value, thus representing
+ almost unlimited evaluations)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMaxEvaluations()"><!-- --></A><H3>
+getMaxEvaluations</H3>
+<PRE>
+public int <B>getMaxEvaluations</B>()</PRE>
+<DL>
+<DD>Get the maximal number of functions evaluations.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getMaxEvaluations()">getMaxEvaluations</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>maximal number of functions evaluations</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEvaluations()"><!-- --></A><H3>
+getEvaluations</H3>
+<PRE>
+public int <B>getEvaluations</B>()</PRE>
+<DL>
+<DD>Get the number of evaluations of the differential equations function.
+ <p>
+ The number of evaluations corresponds to the last call to the
+ <code>integrate</code> method. It is 0 if the method has not been called yet.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getEvaluations()">getEvaluations</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>number of evaluations of the differential equations function</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="initIntegration(double, double[], double)"><!-- --></A><H3>
+initIntegration</H3>
+<PRE>
+protected void <B>initIntegration</B>(double&nbsp;t0,
+                               double[]&nbsp;y0,
+                               double&nbsp;t)</PRE>
+<DL>
+<DD>Prepare the start of an integration.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>t0</CODE> - start value of the independent <i>time</i> variable<DD><CODE>y0</CODE> - array containing the start value of the state vector<DD><CODE>t</CODE> - target time for the integration</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEquations(org.apache.commons.math3.ode.ExpandableStatefulODE)"><!-- --></A><H3>
+setEquations</H3>
+<PRE>
+protected void <B>setEquations</B>(<A HREF="../../../../../org/apache/commons/math3/ode/ExpandableStatefulODE.html" title="class in org.apache.commons.math3.ode">ExpandableStatefulODE</A>&nbsp;equations)</PRE>
+<DL>
+<DD>Set the equations.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>equations</CODE> - equations to set</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getExpandable()"><!-- --></A><H3>
+getExpandable</H3>
+<PRE>
+protected <A HREF="../../../../../org/apache/commons/math3/ode/ExpandableStatefulODE.html" title="class in org.apache.commons.math3.ode">ExpandableStatefulODE</A> <B>getExpandable</B>()</PRE>
+<DL>
+<DD>Get the differential equations to integrate.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>differential equations to integrate<DT><B>Since:</B></DT>
+  <DD>3.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEvaluationsCounter()"><!-- --></A><H3>
+getEvaluationsCounter</H3>
+<PRE>
+protected <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html" title="class in org.apache.commons.math3.util">Incrementor</A> <B>getEvaluationsCounter</B>()</PRE>
+<DL>
+<DD>Get the evaluations counter.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>evaluations counter<DT><B>Since:</B></DT>
+  <DD>3.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="integrate(org.apache.commons.math3.ode.FirstOrderDifferentialEquations, double, double[], double, double[])"><!-- --></A><H3>
+integrate</H3>
+<PRE>
+public double <B>integrate</B>(<A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderDifferentialEquations.html" title="interface in org.apache.commons.math3.ode">FirstOrderDifferentialEquations</A>&nbsp;equations,
+                        double&nbsp;t0,
+                        double[]&nbsp;y0,
+                        double&nbsp;t,
+                        double[]&nbsp;y)
+                 throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></PRE>
+<DL>
+<DD>Integrate the differential equations up to the given time.
+ <p>This method solves an Initial Value Problem (IVP).</p>
+ <p>Since this method stores some internal state variables made
+ available in its public interface during integration (<A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html#getCurrentSignedStepsize()"><CODE>ODEIntegrator.getCurrentSignedStepsize()</CODE></A>), it is <em>not</em> thread-safe.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderIntegrator.html#integrate(org.apache.commons.math3.ode.FirstOrderDifferentialEquations, double, double[], double, double[])">integrate</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderIntegrator.html" title="interface in org.apache.commons.math3.ode">FirstOrderIntegrator</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>equations</CODE> - differential equations to integrate<DD><CODE>t0</CODE> - initial time<DD><CODE>y0</CODE> - initial value of the state vector at t0<DD><CODE>t</CODE> - target time for the integration
+ (can be set to a value smaller than <code>t0</code> for backward integration)<DD><CODE>y</CODE> - placeholder where to put the state vector at each successful
+  step (and hence at the end of integration), can be the same object as y0
+<DT><B>Returns:</B><DD>stop time, will be the same as target time if integration reached its
+ target, but may be different if some <A HREF="../../../../../org/apache/commons/math3/ode/events/EventHandler.html" title="interface in org.apache.commons.math3.ode.events"><CODE>EventHandler</CODE></A> stops it at some point.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if arrays dimension do not match equations settings
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if integration step is too small
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if the number of functions evaluations is exceeded
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></CODE> - if the location of an event cannot be bracketed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="integrate(org.apache.commons.math3.ode.ExpandableStatefulODE, double)"><!-- --></A><H3>
+integrate</H3>
+<PRE>
+public abstract void <B>integrate</B>(<A HREF="../../../../../org/apache/commons/math3/ode/ExpandableStatefulODE.html" title="class in org.apache.commons.math3.ode">ExpandableStatefulODE</A>&nbsp;equations,
+                               double&nbsp;t)
+                        throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></PRE>
+<DL>
+<DD>Integrate a set of differential equations up to the given time.
+ <p>This method solves an Initial Value Problem (IVP).</p>
+ <p>The set of differential equations is composed of a main set, which
+ can be extended by some sets of secondary equations. The set of
+ equations must be already set up with initial time and partial states.
+ At integration completion, the final time and partial states will be
+ available in the same object.</p>
+ <p>Since this method stores some internal state variables made
+ available in its public interface during integration (<A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getCurrentSignedStepsize()"><CODE>getCurrentSignedStepsize()</CODE></A>), it is <em>not</em> thread-safe.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>equations</CODE> - complete set of differential equations to integrate<DD><CODE>t</CODE> - target time for the integration
+ (can be set to a value smaller than <code>t0</code> for backward integration)
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if integration step is too small
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the dimension of the complete state does not
+ match the complete equations sets dimension
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if the number of functions evaluations is exceeded
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></CODE> - if the location of an event cannot be bracketed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeDerivatives(double, double[], double[])"><!-- --></A><H3>
+computeDerivatives</H3>
+<PRE>
+public void <B>computeDerivatives</B>(double&nbsp;t,
+                               double[]&nbsp;y,
+                               double[]&nbsp;yDot)
+                        throws <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Compute the derivatives and check the number of evaluations.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>t</CODE> - current value of the independent <I>time</I> variable<DD><CODE>y</CODE> - array containing the current value of the state vector<DD><CODE>yDot</CODE> - placeholder array where to put the time derivative of the state vector
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if the number of functions evaluations is exceeded
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if arrays dimensions do not match equations settings</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setStateInitialized(boolean)"><!-- --></A><H3>
+setStateInitialized</H3>
+<PRE>
+protected void <B>setStateInitialized</B>(boolean&nbsp;stateInitialized)</PRE>
+<DL>
+<DD>Set the stateInitialized flag.
+ <p>This method must be called by integrators with the value
+ <code>false</code> before they start integration, so a proper lazy
+ initialization is done automatically on the first step.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>stateInitialized</CODE> - new value for the flag<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="acceptStep(org.apache.commons.math3.ode.sampling.AbstractStepInterpolator, double[], double[], double)"><!-- --></A><H3>
+acceptStep</H3>
+<PRE>
+protected double <B>acceptStep</B>(<A HREF="../../../../../org/apache/commons/math3/ode/sampling/AbstractStepInterpolator.html" title="class in org.apache.commons.math3.ode.sampling">AbstractStepInterpolator</A>&nbsp;interpolator,
+                            double[]&nbsp;y,
+                            double[]&nbsp;yDot,
+                            double&nbsp;tEnd)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A>,
+                            <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                            <A HREF="../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></PRE>
+<DL>
+<DD>Accept a step, triggering events and step handlers.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>interpolator</CODE> - step interpolator<DD><CODE>y</CODE> - state vector at step end time, must be reset if an event
+ asks for resetting or if an events stops integration during the step<DD><CODE>yDot</CODE> - placeholder array where to put the time derivative of the state vector<DD><CODE>tEnd</CODE> - final integration time
+<DT><B>Returns:</B><DD>time at end of step
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if the interpolator throws one because
+ the number of functions evaluations is exceeded
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></CODE> - if the location of an event cannot be bracketed
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if arrays dimensions do not match equations settings<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sanityChecks(org.apache.commons.math3.ode.ExpandableStatefulODE, double)"><!-- --></A><H3>
+sanityChecks</H3>
+<PRE>
+protected void <B>sanityChecks</B>(<A HREF="../../../../../org/apache/commons/math3/ode/ExpandableStatefulODE.html" title="class in org.apache.commons.math3.ode">ExpandableStatefulODE</A>&nbsp;equations,
+                            double&nbsp;t)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                            <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></PRE>
+<DL>
+<DD>Check the integration span.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>equations</CODE> - set of differential equations<DD><CODE>t</CODE> - target time for the integration
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if integration span is too small
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if adaptive step size integrators
+ tolerance arrays dimensions are not compatible with equations settings</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractIntegrator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/ode/AbstractParameterizable.html" title="class in org.apache.commons.math3.ode"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/ode/AbstractIntegrator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractIntegrator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

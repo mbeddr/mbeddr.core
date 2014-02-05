@@ -1,0 +1,606 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Interface org.apache.commons.math3.geometry.partitioning.Hyperplane (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Interface org.apache.commons.math3.geometry.partitioning.Hyperplane (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/geometry/partitioning//class-useHyperplane.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Hyperplane.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Interface<br>org.apache.commons.math3.geometry.partitioning.Hyperplane</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.geometry.euclidean.oned"><B>org.apache.commons.math3.geometry.euclidean.oned</B></A></TD>
+<TD>
+ This package provides basic 1D geometry components.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.geometry.euclidean.threed"><B>org.apache.commons.math3.geometry.euclidean.threed</B></A></TD>
+<TD>
+ This package provides basic 3D geometry components.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.geometry.euclidean.twod"><B>org.apache.commons.math3.geometry.euclidean.twod</B></A></TD>
+<TD>
+ This package provides basic 2D geometry components.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.geometry.partitioning"><B>org.apache.commons.math3.geometry.partitioning</B></A></TD>
+<TD>This package provides classes to implement Binary Space Partition trees.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.geometry.euclidean.oned"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A> in <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/package-summary.html">org.apache.commons.math3.geometry.euclidean.oned</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/package-summary.html">org.apache.commons.math3.geometry.euclidean.oned</A> that implement <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/OrientedPoint.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">OrientedPoint</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This class represents a 1D oriented hyperplane.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/package-summary.html">org.apache.commons.math3.geometry.euclidean.oned</A> with parameters of type <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">AbstractSubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>,<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubOrientedPoint.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#buildNew(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">buildNew</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane,
+         <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a sub-hyperplane from an hyperplane and a region.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>OrientedPoint.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/OrientedPoint.html#sameOrientationAs(org.apache.commons.math3.geometry.partitioning.Hyperplane)">sameOrientationAs</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;other)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if the instance has the same orientation as another hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Side.html" title="enum in org.apache.commons.math3.geometry.partitioning">Side</A></CODE></FONT></TD>
+<TD><CODE><B>SubOrientedPoint.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#side(org.apache.commons.math3.geometry.partitioning.Hyperplane)">side</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the relative position of the instance with respect
+ to an hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.SplitSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">SubHyperplane.SplitSubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubOrientedPoint.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#split(org.apache.commons.math3.geometry.partitioning.Hyperplane)">split</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Split the instance in two parts by an hyperplane.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/package-summary.html">org.apache.commons.math3.geometry.euclidean.oned</A> with parameters of type <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#SubOrientedPoint(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">SubOrientedPoint</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane,
+                 <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple constructor.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.geometry.euclidean.threed"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A> in <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</A> that implement <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Plane.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Plane</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The class represent planes in a three dimensional space.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</A> with parameters of type <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">AbstractSubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>,<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubPlane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/SubPlane.html#buildNew(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">buildNew</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>&gt;&nbsp;hyperplane,
+         <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a sub-hyperplane from an hyperplane and a region.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>Plane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Plane.html#sameOrientationAs(org.apache.commons.math3.geometry.partitioning.Hyperplane)">sameOrientationAs</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>&gt;&nbsp;other)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if the instance has the same orientation as another hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Side.html" title="enum in org.apache.commons.math3.geometry.partitioning">Side</A></CODE></FONT></TD>
+<TD><CODE><B>SubPlane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/SubPlane.html#side(org.apache.commons.math3.geometry.partitioning.Hyperplane)">side</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the relative position of the instance with respect
+ to an hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.SplitSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">SubHyperplane.SplitSubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubPlane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/SubPlane.html#split(org.apache.commons.math3.geometry.partitioning.Hyperplane)">split</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Split the instance in two parts by an hyperplane.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</A> with parameters of type <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/SubPlane.html#SubPlane(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">SubPlane</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Euclidean3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Euclidean3D</A>&gt;&nbsp;hyperplane,
+         <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple constructor.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.geometry.euclidean.twod"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A> in <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html">org.apache.commons.math3.geometry.euclidean.twod</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html">org.apache.commons.math3.geometry.euclidean.twod</A> that implement <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Line.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Line</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This class represents an oriented line in the 2D plane.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html">org.apache.commons.math3.geometry.euclidean.twod</A> with parameters of type <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">AbstractSubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>,<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubLine.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/SubLine.html#buildNew(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">buildNew</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>&gt;&nbsp;hyperplane,
+         <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a sub-hyperplane from an hyperplane and a region.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>Line.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Line.html#sameOrientationAs(org.apache.commons.math3.geometry.partitioning.Hyperplane)">sameOrientationAs</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>&gt;&nbsp;other)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if the instance has the same orientation as another hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Side.html" title="enum in org.apache.commons.math3.geometry.partitioning">Side</A></CODE></FONT></TD>
+<TD><CODE><B>SubLine.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/SubLine.html#side(org.apache.commons.math3.geometry.partitioning.Hyperplane)">side</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the relative position of the instance with respect
+ to an hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.SplitSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">SubHyperplane.SplitSubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubLine.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/SubLine.html#split(org.apache.commons.math3.geometry.partitioning.Hyperplane)">split</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Split the instance in two parts by an hyperplane.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html">org.apache.commons.math3.geometry.euclidean.twod</A> with parameters of type <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/SubLine.html#SubLine(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">SubLine</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>&gt;&nbsp;hyperplane,
+        <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple constructor.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.geometry.partitioning"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A> in <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/package-summary.html">org.apache.commons.math3.geometry.partitioning</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/package-summary.html">org.apache.commons.math3.geometry.partitioning</A> that return <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="type parameter in Transform">S</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>Transform.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html#apply(org.apache.commons.math3.geometry.partitioning.Hyperplane)">apply</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="type parameter in Transform">S</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transform an hyperplane of a space.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="type parameter in Hyperplane">S</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>Hyperplane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html#copySelf()">copySelf</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy the instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html" title="type parameter in SubHyperplane">S</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubHyperplane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html#getHyperplane()">getHyperplane</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the underlying hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="type parameter in AbstractSubHyperplane">S</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractSubHyperplane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html#getHyperplane()">getHyperplane</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the underlying hyperplane.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/package-summary.html">org.apache.commons.math3.geometry.partitioning</A> with parameters of type <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="type parameter in Transform">S</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>Transform.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html#apply(org.apache.commons.math3.geometry.partitioning.Hyperplane)">apply</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="type parameter in Transform">S</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transform an hyperplane of a space.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">SubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="type parameter in Transform">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>Transform.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html#apply(org.apache.commons.math3.geometry.partitioning.SubHyperplane, org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Hyperplane)">apply</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">SubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="type parameter in Transform">T</A>&gt;&nbsp;sub,
+      <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="type parameter in Transform">S</A>&gt;&nbsp;original,
+      <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="type parameter in Transform">S</A>&gt;&nbsp;transformed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transform a sub-hyperplane embedded in an hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">SubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="type parameter in Transform">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>Transform.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html#apply(org.apache.commons.math3.geometry.partitioning.SubHyperplane, org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Hyperplane)">apply</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">SubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="type parameter in Transform">T</A>&gt;&nbsp;sub,
+      <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="type parameter in Transform">S</A>&gt;&nbsp;original,
+      <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="type parameter in Transform">S</A>&gt;&nbsp;transformed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transform a sub-hyperplane embedded in an hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/RegionFactory.html" title="type parameter in RegionFactory">S</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>RegionFactory.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/RegionFactory.html#buildConvex(org.apache.commons.math3.geometry.partitioning.Hyperplane...)">buildConvex</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/RegionFactory.html" title="type parameter in RegionFactory">S</A>&gt;...&nbsp;hyperplanes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a convex region from a collection of bounding hyperplanes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">AbstractSubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="type parameter in AbstractSubHyperplane">S</A>,<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="type parameter in AbstractSubHyperplane">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractSubHyperplane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html#buildNew(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">buildNew</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="type parameter in AbstractSubHyperplane">S</A>&gt;&nbsp;hyper,
+         <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="type parameter in AbstractSubHyperplane">T</A>&gt;&nbsp;remaining)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a sub-hyperplane from an hyperplane and a region.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>BSPTree.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/BSPTree.html#insertCut(org.apache.commons.math3.geometry.partitioning.Hyperplane)">insertCut</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/BSPTree.html" title="type parameter in BSPTree">S</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insert a cut sub-hyperplane in a node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>Hyperplane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html#sameOrientationAs(org.apache.commons.math3.geometry.partitioning.Hyperplane)">sameOrientationAs</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="type parameter in Hyperplane">S</A>&gt;&nbsp;other)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if the instance has the same orientation as another hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Side.html" title="enum in org.apache.commons.math3.geometry.partitioning">Side</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractRegion.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractRegion.html#side(org.apache.commons.math3.geometry.partitioning.Hyperplane)">side</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractRegion.html" title="type parameter in AbstractRegion">S</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the relative position of the instance with respect to an
+ hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Side.html" title="enum in org.apache.commons.math3.geometry.partitioning">Side</A></CODE></FONT></TD>
+<TD><CODE><B>SubHyperplane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html#side(org.apache.commons.math3.geometry.partitioning.Hyperplane)">side</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html" title="type parameter in SubHyperplane">S</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the relative position of the instance with respect
+ to an hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Side.html" title="enum in org.apache.commons.math3.geometry.partitioning">Side</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractSubHyperplane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html#side(org.apache.commons.math3.geometry.partitioning.Hyperplane)">side</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="type parameter in AbstractSubHyperplane">S</A>&gt;&nbsp;hyper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the relative position of the instance with respect
+ to an hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Side.html" title="enum in org.apache.commons.math3.geometry.partitioning">Side</A></CODE></FONT></TD>
+<TD><CODE><B>Region.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html#side(org.apache.commons.math3.geometry.partitioning.Hyperplane)">side</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="type parameter in Region">S</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the relative position of the instance with respect to an
+ hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.SplitSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">SubHyperplane.SplitSubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html" title="type parameter in SubHyperplane">S</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubHyperplane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html#split(org.apache.commons.math3.geometry.partitioning.Hyperplane)">split</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html" title="type parameter in SubHyperplane">S</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Split the instance in two parts by an hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.SplitSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">SubHyperplane.SplitSubHyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="type parameter in AbstractSubHyperplane">S</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractSubHyperplane.</B><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html#split(org.apache.commons.math3.geometry.partitioning.Hyperplane)">split</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="type parameter in AbstractSubHyperplane">S</A>&gt;&nbsp;hyper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Split the instance in two parts by an hyperplane.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/package-summary.html">org.apache.commons.math3.geometry.partitioning</A> with parameters of type <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractRegion.html#AbstractRegion(org.apache.commons.math3.geometry.partitioning.Hyperplane[])">AbstractRegion</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractRegion.html" title="type parameter in AbstractRegion">S</A>&gt;[]&nbsp;hyperplanes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a convex region from an array of bounding hyperplanes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html#AbstractSubHyperplane(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">AbstractSubHyperplane</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="type parameter in AbstractSubHyperplane">S</A>&gt;&nbsp;hyperplane,
+                      <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="type parameter in AbstractSubHyperplane">T</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a sub-hyperplane from an hyperplane and a region.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/geometry/partitioning//class-useHyperplane.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Hyperplane.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

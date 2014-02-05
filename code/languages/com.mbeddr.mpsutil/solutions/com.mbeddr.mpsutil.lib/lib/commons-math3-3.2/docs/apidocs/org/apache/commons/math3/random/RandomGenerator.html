@@ -1,0 +1,500 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+RandomGenerator (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="RandomGenerator (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RandomGenerator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/RandomDataImpl.html" title="class in org.apache.commons.math3.random"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/RandomVectorGenerator.html" title="interface in org.apache.commons.math3.random"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/random/RandomGenerator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RandomGenerator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.random</FONT>
+<BR>
+Interface RandomGenerator</H2>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../org/apache/commons/math3/random/AbstractRandomGenerator.html" title="class in org.apache.commons.math3.random">AbstractRandomGenerator</A>, <A HREF="../../../../../org/apache/commons/math3/random/AbstractWell.html" title="class in org.apache.commons.math3.random">AbstractWell</A>, <A HREF="../../../../../org/apache/commons/math3/random/BitsStreamGenerator.html" title="class in org.apache.commons.math3.random">BitsStreamGenerator</A>, <A HREF="../../../../../org/apache/commons/math3/random/ISAACRandom.html" title="class in org.apache.commons.math3.random">ISAACRandom</A>, <A HREF="../../../../../org/apache/commons/math3/random/JDKRandomGenerator.html" title="class in org.apache.commons.math3.random">JDKRandomGenerator</A>, <A HREF="../../../../../org/apache/commons/math3/random/MersenneTwister.html" title="class in org.apache.commons.math3.random">MersenneTwister</A>, <A HREF="../../../../../org/apache/commons/math3/random/RandomAdaptor.html" title="class in org.apache.commons.math3.random">RandomAdaptor</A>, <A HREF="../../../../../org/apache/commons/math3/random/SynchronizedRandomGenerator.html" title="class in org.apache.commons.math3.random">SynchronizedRandomGenerator</A>, <A HREF="../../../../../org/apache/commons/math3/random/Well1024a.html" title="class in org.apache.commons.math3.random">Well1024a</A>, <A HREF="../../../../../org/apache/commons/math3/random/Well19937a.html" title="class in org.apache.commons.math3.random">Well19937a</A>, <A HREF="../../../../../org/apache/commons/math3/random/Well19937c.html" title="class in org.apache.commons.math3.random">Well19937c</A>, <A HREF="../../../../../org/apache/commons/math3/random/Well44497a.html" title="class in org.apache.commons.math3.random">Well44497a</A>, <A HREF="../../../../../org/apache/commons/math3/random/Well44497b.html" title="class in org.apache.commons.math3.random">Well44497b</A>, <A HREF="../../../../../org/apache/commons/math3/random/Well512a.html" title="class in org.apache.commons.math3.random">Well512a</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public interface <B>RandomGenerator</B></DL>
+</PRE>
+
+<P>
+Interface extracted from <code>java.util.Random</code>.  This interface is
+ implemented by <A HREF="../../../../../org/apache/commons/math3/random/AbstractRandomGenerator.html" title="class in org.apache.commons.math3.random"><CODE>AbstractRandomGenerator</CODE></A>.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>1.1</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: RandomGenerator.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html#nextBoolean()">nextBoolean</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the next pseudorandom, uniformly distributed
+ <code>boolean</code> value from this random number generator's
+ sequence.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html#nextBytes(byte[])">nextBytes</A></B>(byte[]&nbsp;bytes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generates random bytes and places them into a user-supplied
+ byte array.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html#nextDouble()">nextDouble</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the next pseudorandom, uniformly distributed
+ <code>double</code> value between <code>0.0</code> and
+ <code>1.0</code> from this random number generator's sequence.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;float</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html#nextFloat()">nextFloat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the next pseudorandom, uniformly distributed <code>float</code>
+ value between <code>0.0</code> and <code>1.0</code> from this random
+ number generator's sequence.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html#nextGaussian()">nextGaussian</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the next pseudorandom, Gaussian ("normally") distributed
+ <code>double</code> value with mean <code>0.0</code> and standard
+ deviation <code>1.0</code> from this random number generator's sequence.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html#nextInt()">nextInt</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the next pseudorandom, uniformly distributed <code>int</code>
+ value from this random number generator's sequence.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html#nextInt(int)">nextInt</A></B>(int&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a pseudorandom, uniformly distributed <tt>int</tt> value
+ between 0 (inclusive) and the specified value (exclusive), drawn from
+ this random number generator's sequence.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html#nextLong()">nextLong</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the next pseudorandom, uniformly distributed <code>long</code>
+ value from this random number generator's sequence.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html#setSeed(int)">setSeed</A></B>(int&nbsp;seed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the seed of the underlying random number generator using an
+ <code>int</code> seed.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html#setSeed(int[])">setSeed</A></B>(int[]&nbsp;seed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the seed of the underlying random number generator using an
+ <code>int</code> array seed.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html#setSeed(long)">setSeed</A></B>(long&nbsp;seed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the seed of the underlying random number generator using a
+ <code>long</code> seed.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="setSeed(int)"><!-- --></A><H3>
+setSeed</H3>
+<PRE>
+void <B>setSeed</B>(int&nbsp;seed)</PRE>
+<DL>
+<DD>Sets the seed of the underlying random number generator using an
+ <code>int</code> seed.
+ <p>Sequences of values generated starting with the same seeds
+ should be identical.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>seed</CODE> - the seed value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSeed(int[])"><!-- --></A><H3>
+setSeed</H3>
+<PRE>
+void <B>setSeed</B>(int[]&nbsp;seed)</PRE>
+<DL>
+<DD>Sets the seed of the underlying random number generator using an
+ <code>int</code> array seed.
+ <p>Sequences of values generated starting with the same seeds
+ should be identical.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>seed</CODE> - the seed value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSeed(long)"><!-- --></A><H3>
+setSeed</H3>
+<PRE>
+void <B>setSeed</B>(long&nbsp;seed)</PRE>
+<DL>
+<DD>Sets the seed of the underlying random number generator using a
+ <code>long</code> seed.
+ <p>Sequences of values generated starting with the same seeds
+ should be identical.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>seed</CODE> - the seed value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextBytes(byte[])"><!-- --></A><H3>
+nextBytes</H3>
+<PRE>
+void <B>nextBytes</B>(byte[]&nbsp;bytes)</PRE>
+<DL>
+<DD>Generates random bytes and places them into a user-supplied
+ byte array.  The number of random bytes produced is equal to
+ the length of the byte array.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>bytes</CODE> - the non-null byte array in which to put the
+ random bytes</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextInt()"><!-- --></A><H3>
+nextInt</H3>
+<PRE>
+int <B>nextInt</B>()</PRE>
+<DL>
+<DD>Returns the next pseudorandom, uniformly distributed <code>int</code>
+ value from this random number generator's sequence.
+ All 2<font size="-1"><sup>32</sup></font> possible <tt>int</tt> values
+ should be produced with  (approximately) equal probability.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the next pseudorandom, uniformly distributed <code>int</code>
+  value from this random number generator's sequence</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextInt(int)"><!-- --></A><H3>
+nextInt</H3>
+<PRE>
+int <B>nextInt</B>(int&nbsp;n)</PRE>
+<DL>
+<DD>Returns a pseudorandom, uniformly distributed <tt>int</tt> value
+ between 0 (inclusive) and the specified value (exclusive), drawn from
+ this random number generator's sequence.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>n</CODE> - the bound on the random number to be returned.  Must be
+ positive.
+<DT><B>Returns:</B><DD>a pseudorandom, uniformly distributed <tt>int</tt>
+ value between 0 (inclusive) and n (exclusive).
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</A></CODE> - if n is not positive.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextLong()"><!-- --></A><H3>
+nextLong</H3>
+<PRE>
+long <B>nextLong</B>()</PRE>
+<DL>
+<DD>Returns the next pseudorandom, uniformly distributed <code>long</code>
+ value from this random number generator's sequence.  All
+ 2<font size="-1"><sup>64</sup></font> possible <tt>long</tt> values
+ should be produced with (approximately) equal probability.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the next pseudorandom, uniformly distributed <code>long</code>
+value from this random number generator's sequence</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextBoolean()"><!-- --></A><H3>
+nextBoolean</H3>
+<PRE>
+boolean <B>nextBoolean</B>()</PRE>
+<DL>
+<DD>Returns the next pseudorandom, uniformly distributed
+ <code>boolean</code> value from this random number generator's
+ sequence.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the next pseudorandom, uniformly distributed
+ <code>boolean</code> value from this random number generator's
+ sequence</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextFloat()"><!-- --></A><H3>
+nextFloat</H3>
+<PRE>
+float <B>nextFloat</B>()</PRE>
+<DL>
+<DD>Returns the next pseudorandom, uniformly distributed <code>float</code>
+ value between <code>0.0</code> and <code>1.0</code> from this random
+ number generator's sequence.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the next pseudorandom, uniformly distributed <code>float</code>
+ value between <code>0.0</code> and <code>1.0</code> from this
+ random number generator's sequence</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextDouble()"><!-- --></A><H3>
+nextDouble</H3>
+<PRE>
+double <B>nextDouble</B>()</PRE>
+<DL>
+<DD>Returns the next pseudorandom, uniformly distributed
+ <code>double</code> value between <code>0.0</code> and
+ <code>1.0</code> from this random number generator's sequence.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the next pseudorandom, uniformly distributed
+  <code>double</code> value between <code>0.0</code> and
+  <code>1.0</code> from this random number generator's sequence</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextGaussian()"><!-- --></A><H3>
+nextGaussian</H3>
+<PRE>
+double <B>nextGaussian</B>()</PRE>
+<DL>
+<DD>Returns the next pseudorandom, Gaussian ("normally") distributed
+ <code>double</code> value with mean <code>0.0</code> and standard
+ deviation <code>1.0</code> from this random number generator's sequence.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the next pseudorandom, Gaussian ("normally") distributed
+ <code>double</code> value with mean <code>0.0</code> and
+ standard deviation <code>1.0</code> from this random number
+  generator's sequence</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RandomGenerator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/RandomDataImpl.html" title="class in org.apache.commons.math3.random"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/RandomVectorGenerator.html" title="interface in org.apache.commons.math3.random"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/random/RandomGenerator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RandomGenerator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

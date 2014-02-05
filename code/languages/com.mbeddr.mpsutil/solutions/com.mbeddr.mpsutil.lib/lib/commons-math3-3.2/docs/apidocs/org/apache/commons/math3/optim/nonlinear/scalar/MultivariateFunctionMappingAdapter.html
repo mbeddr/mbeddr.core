@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+MultivariateFunctionMappingAdapter (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MultivariateFunctionMappingAdapter (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/MultivariateFunctionMappingAdapter.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultiStartMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionPenaltyAdapter.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionMappingAdapter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MultivariateFunctionMappingAdapter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.optim.nonlinear.scalar</FONT>
+<BR>
+Class MultivariateFunctionMappingAdapter</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionMappingAdapter</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>MultivariateFunctionMappingAdapter</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A></DL>
+</PRE>
+
+<P>
+<p>Adapter for mapping bounded <A HREF="../../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis"><CODE>MultivariateFunction</CODE></A> to unbounded ones.</p>
+
+ <p>
+ This adapter can be used to wrap functions subject to simple bounds on
+ parameters so they can be used by optimizers that do <em>not</em> directly
+ support simple bounds.
+ </p>
+ <p>
+ The principle is that the user function that will be wrapped will see its
+ parameters bounded as required, i.e when its <code>value</code> method is called
+ with argument array <code>point</code>, the elements array will fulfill requirement
+ <code>lower[i] &lt;= point[i] &lt;= upper[i]</code> for all i. Some of the components
+ may be unbounded or bounded only on one side if the corresponding bound is
+ set to an infinite value. The optimizer will not manage the user function by
+ itself, but it will handle this adapter and it is this adapter that will take
+ care the bounds are fulfilled. The adapter <A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionMappingAdapter.html#value(double[])"><CODE>value(double[])</CODE></A> method will
+ be called by the optimizer with unbound parameters, and the adapter will map
+ the unbounded value to the bounded range using appropriate functions like
+ <A HREF="../../../../../../../org/apache/commons/math3/analysis/function/Sigmoid.html" title="class in org.apache.commons.math3.analysis.function"><CODE>Sigmoid</CODE></A> for double bounded elements for example.
+ </p>
+ <p>
+ As the optimizer sees only unbounded parameters, it should be noted that the
+ start point or simplex expected by the optimizer should be unbounded, so the
+ user is responsible for converting his bounded point to unbounded by calling
+ <A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionMappingAdapter.html#boundedToUnbounded(double[])"><CODE>boundedToUnbounded(double[])</CODE></A> before providing them to the optimizer.
+ For the same reason, the point returned by the <A HREF="../../../../../../../org/apache/commons/math3/optimization/BaseMultivariateOptimizer.html#optimize(int, FUNC, org.apache.commons.math3.optimization.GoalType, double[])"><CODE>BaseMultivariateOptimizer.optimize(int,
+ MultivariateFunction, org.apache.commons.math3.optimization.GoalType, double[])</CODE></A>
+ method is unbounded. So to convert this point to bounded, users must call
+ <A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionMappingAdapter.html#unboundedToBounded(double[])"><CODE>unboundedToBounded(double[])</CODE></A> by themselves!</p>
+ <p>
+ This adapter is only a poor man solution to simple bounds optimization constraints
+ that can be used with simple optimizers like
+ <A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/SimplexOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv"><CODE>SimplexOptimizer</CODE></A>.
+ A better solution is to use an optimizer that directly supports simple bounds like
+ <A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv"><CODE>CMAESOptimizer</CODE></A> or
+ <A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar.noderiv"><CODE>BOBYQAOptimizer</CODE></A>.
+ One caveat of this poor-man's solution is that behavior near the bounds may be
+ numerically unstable as bounds are mapped from infinite values.
+ Another caveat is that convergence values are evaluated by the optimizer with
+ respect to unbounded variables, so there will be scales differences when
+ converted to bounded variables.
+ </p>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>3.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: MultivariateFunctionMappingAdapter.java 1435539 2013-01-19 13:27:24Z tn $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionPenaltyAdapter.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar"><CODE>MultivariateFunctionPenaltyAdapter</CODE></A></DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionMappingAdapter.html#MultivariateFunctionMappingAdapter(org.apache.commons.math3.analysis.MultivariateFunction, double[], double[])">MultivariateFunctionMappingAdapter</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A>&nbsp;bounded,
+                                   double[]&nbsp;lower,
+                                   double[]&nbsp;upper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple constructor.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionMappingAdapter.html#boundedToUnbounded(double[])">boundedToUnbounded</A></B>(double[]&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maps an array from bounded to unbounded.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionMappingAdapter.html#unboundedToBounded(double[])">unboundedToBounded</A></B>(double[]&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maps an array from unbounded to bounded.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionMappingAdapter.html#value(double[])">value</A></B>(double[]&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the underlying function value from an unbounded point.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="MultivariateFunctionMappingAdapter(org.apache.commons.math3.analysis.MultivariateFunction, double[], double[])"><!-- --></A><H3>
+MultivariateFunctionMappingAdapter</H3>
+<PRE>
+public <B>MultivariateFunctionMappingAdapter</B>(<A HREF="../../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A>&nbsp;bounded,
+                                          double[]&nbsp;lower,
+                                          double[]&nbsp;upper)</PRE>
+<DL>
+<DD>Simple constructor.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>bounded</CODE> - bounded function<DD><CODE>lower</CODE> - lower bounds for each element of the input parameters array
+ (some elements may be set to <code>Double.NEGATIVE_INFINITY</code> for
+ unbounded values)<DD><CODE>upper</CODE> - upper bounds for each element of the input parameters array
+ (some elements may be set to <code>Double.POSITIVE_INFINITY</code> for
+ unbounded values)
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if lower and upper bounds are not
+ consistent, either according to dimension or to values</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="unboundedToBounded(double[])"><!-- --></A><H3>
+unboundedToBounded</H3>
+<PRE>
+public double[] <B>unboundedToBounded</B>(double[]&nbsp;point)</PRE>
+<DL>
+<DD>Maps an array from unbounded to bounded.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>point</CODE> - Unbounded values.
+<DT><B>Returns:</B><DD>the bounded values.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="boundedToUnbounded(double[])"><!-- --></A><H3>
+boundedToUnbounded</H3>
+<PRE>
+public double[] <B>boundedToUnbounded</B>(double[]&nbsp;point)</PRE>
+<DL>
+<DD>Maps an array from bounded to unbounded.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>point</CODE> - Bounded values.
+<DT><B>Returns:</B><DD>the unbounded values.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="value(double[])"><!-- --></A><H3>
+value</H3>
+<PRE>
+public double <B>value</B>(double[]&nbsp;point)</PRE>
+<DL>
+<DD>Compute the underlying function value from an unbounded point.
+ <p>
+ This method simply bounds the unbounded point using the mappings
+ set up at construction and calls the underlying function using
+ the bounded point.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html#value(double[])">value</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>point</CODE> - unbounded value
+<DT><B>Returns:</B><DD>underlying function value<DT><B>See Also:</B><DD><A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionMappingAdapter.html#unboundedToBounded(double[])"><CODE>unboundedToBounded(double[])</CODE></A></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/MultivariateFunctionMappingAdapter.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultiStartMultivariateOptimizer.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionPenaltyAdapter.html" title="class in org.apache.commons.math3.optim.nonlinear.scalar"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionMappingAdapter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MultivariateFunctionMappingAdapter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

@@ -1,0 +1,740 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+StandardDeviation (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="StandardDeviation (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/StandardDeviation.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Skewness.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="StandardDeviation.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.stat.descriptive.moment</FONT>
+<BR>
+Class StandardDeviation</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic</A>
+      <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">org.apache.commons.math3.stat.descriptive.AbstractStorelessUnivariateStatistic</A>
+          <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.stat.descriptive.moment.StandardDeviation</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">UnivariateStatistic</A>, <A HREF="../../../../../../../org/apache/commons/math3/util/MathArrays.Function.html" title="interface in org.apache.commons.math3.util">MathArrays.Function</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>StandardDeviation</B><DT>extends <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractStorelessUnivariateStatistic</A><DT>implements <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DL>
+</PRE>
+
+<P>
+Computes the sample standard deviation.  The standard deviation
+ is the positive square root of the variance.  This implementation wraps a
+ <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>Variance</CODE></A> instance.  The <code>isBiasCorrected</code> property of the
+ wrapped Variance instance is exposed, so that this class can be used to
+ compute both the "sample standard deviation" (the square root of the
+ bias-corrected "sample variance") or the "population standard deviation"
+ (the square root of the non-bias-corrected "population variance"). See
+ <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>Variance</CODE></A> for more information.
+ <p>
+ <strong>Note that this implementation is not synchronized.</strong> If
+ multiple threads access an instance of this class concurrently, and at least
+ one of the threads invokes the <code>increment()</code> or
+ <code>clear()</code> method, it must be synchronized externally.</p>
+<P>
+
+<P>
+<DL>
+<DT><B>Version:</B></DT>
+  <DD>$Id: StandardDeviation.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../serialized-form.html#org.apache.commons.math3.stat.descriptive.moment.StandardDeviation">Serialized Form</A></DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#StandardDeviation()">StandardDeviation</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a StandardDeviation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#StandardDeviation(boolean)">StandardDeviation</A></B>(boolean&nbsp;isBiasCorrected)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contructs a StandardDeviation with the specified value for the
+ <code>isBiasCorrected</code> property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#StandardDeviation(boolean, org.apache.commons.math3.stat.descriptive.moment.SecondMoment)">StandardDeviation</A></B>(boolean&nbsp;isBiasCorrected,
+                  <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SecondMoment.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SecondMoment</A>&nbsp;m2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contructs a StandardDeviation with the specified value for the
+ <code>isBiasCorrected</code> property and the supplied external moment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#StandardDeviation(org.apache.commons.math3.stat.descriptive.moment.SecondMoment)">StandardDeviation</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SecondMoment.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SecondMoment</A>&nbsp;m2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a StandardDeviation from an external second moment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#StandardDeviation(org.apache.commons.math3.stat.descriptive.moment.StandardDeviation)">StandardDeviation</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html" title="class in org.apache.commons.math3.stat.descriptive.moment">StandardDeviation</A>&nbsp;original)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy constructor, creates a new <code>StandardDeviation</code> identical
+ to the <code>original</code></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#clear()">clear</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the internal state of the Statistic</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html" title="class in org.apache.commons.math3.stat.descriptive.moment">StandardDeviation</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#copy()">copy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a copy of the statistic with the same internal state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#copy(org.apache.commons.math3.stat.descriptive.moment.StandardDeviation, org.apache.commons.math3.stat.descriptive.moment.StandardDeviation)">copy</A></B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html" title="class in org.apache.commons.math3.stat.descriptive.moment">StandardDeviation</A>&nbsp;source,
+     <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html" title="class in org.apache.commons.math3.stat.descriptive.moment">StandardDeviation</A>&nbsp;dest)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copies source to dest.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#evaluate(double[])">evaluate</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Standard Deviation of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#evaluate(double[], double)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;mean)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Standard Deviation of the entries in the input array, using
+ the precomputed mean value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#evaluate(double[], double, int, int)">evaluate</A></B>(double[]&nbsp;values,
+         double&nbsp;mean,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Standard Deviation of the entries in the specified portion of
+ the input array, using the precomputed mean value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#evaluate(double[], int, int)">evaluate</A></B>(double[]&nbsp;values,
+         int&nbsp;begin,
+         int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Standard Deviation of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#getN()">getN</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the number of values that have been added.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#getResult()">getResult</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the current value of the Statistic.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#increment(double)">increment</A></B>(double&nbsp;d)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the internal state of the statistic to reflect the addition of the new value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#isBiasCorrected()">isBiasCorrected</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html#setBiasCorrected(boolean)">setBiasCorrected</A></B>(boolean&nbsp;isBiasCorrected)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.stat.descriptive.AbstractStorelessUnivariateStatistic"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.stat.descriptive.<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractStorelessUnivariateStatistic</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#equals(java.lang.Object)">equals</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#hashCode()">hashCode</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#incrementAll(double[])">incrementAll</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#incrementAll(double[], int, int)">incrementAll</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.stat.descriptive.<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractUnivariateStatistic</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#evaluate()">evaluate</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#getData()">getData</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#getDataRef()">getDataRef</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#setData(double[])">setData</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#setData(double[], int, int)">setData</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#test(double[], double[], int, int)">test</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#test(double[], double[], int, int, boolean)">test</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#test(double[], int, int)">test</A>, <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractUnivariateStatistic.html#test(double[], int, int, boolean)">test</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="StandardDeviation()"><!-- --></A><H3>
+StandardDeviation</H3>
+<PRE>
+public <B>StandardDeviation</B>()</PRE>
+<DL>
+<DD>Constructs a StandardDeviation.  Sets the underlying <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>Variance</CODE></A>
+ instance's <code>isBiasCorrected</code> property to true.
+<P>
+</DL>
+<HR>
+
+<A NAME="StandardDeviation(org.apache.commons.math3.stat.descriptive.moment.SecondMoment)"><!-- --></A><H3>
+StandardDeviation</H3>
+<PRE>
+public <B>StandardDeviation</B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SecondMoment.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SecondMoment</A>&nbsp;m2)</PRE>
+<DL>
+<DD>Constructs a StandardDeviation from an external second moment.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>m2</CODE> - the external moment</DL>
+</DL>
+<HR>
+
+<A NAME="StandardDeviation(org.apache.commons.math3.stat.descriptive.moment.StandardDeviation)"><!-- --></A><H3>
+StandardDeviation</H3>
+<PRE>
+public <B>StandardDeviation</B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html" title="class in org.apache.commons.math3.stat.descriptive.moment">StandardDeviation</A>&nbsp;original)
+                  throws <A HREF="../../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Copy constructor, creates a new <code>StandardDeviation</code> identical
+ to the <code>original</code>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>original</CODE> - the <code>StandardDeviation</code> instance to copy
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if original is null</DL>
+</DL>
+<HR>
+
+<A NAME="StandardDeviation(boolean)"><!-- --></A><H3>
+StandardDeviation</H3>
+<PRE>
+public <B>StandardDeviation</B>(boolean&nbsp;isBiasCorrected)</PRE>
+<DL>
+<DD>Contructs a StandardDeviation with the specified value for the
+ <code>isBiasCorrected</code> property.  If this property is set to
+ <code>true</code>, the <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>Variance</CODE></A> used in computing results will
+ use the bias-corrected, or "sample" formula.  See <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>Variance</CODE></A> for
+ details.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>isBiasCorrected</CODE> - whether or not the variance computation will use
+ the bias-corrected formula</DL>
+</DL>
+<HR>
+
+<A NAME="StandardDeviation(boolean, org.apache.commons.math3.stat.descriptive.moment.SecondMoment)"><!-- --></A><H3>
+StandardDeviation</H3>
+<PRE>
+public <B>StandardDeviation</B>(boolean&nbsp;isBiasCorrected,
+                         <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/SecondMoment.html" title="class in org.apache.commons.math3.stat.descriptive.moment">SecondMoment</A>&nbsp;m2)</PRE>
+<DL>
+<DD>Contructs a StandardDeviation with the specified value for the
+ <code>isBiasCorrected</code> property and the supplied external moment.
+ If <code>isBiasCorrected</code> is set to <code>true</code>, the
+ <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>Variance</CODE></A> used in computing results will use the bias-corrected,
+ or "sample" formula.  See <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><CODE>Variance</CODE></A> for details.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>isBiasCorrected</CODE> - whether or not the variance computation will use
+ the bias-corrected formula<DD><CODE>m2</CODE> - the external moment</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="increment(double)"><!-- --></A><H3>
+increment</H3>
+<PRE>
+public void <B>increment</B>(double&nbsp;d)</PRE>
+<DL>
+<DD>Updates the internal state of the statistic to reflect the addition of the new value.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html#increment(double)">increment</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#increment(double)">increment</A></CODE> in class <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractStorelessUnivariateStatistic</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>d</CODE> - the new value.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getN()"><!-- --></A><H3>
+getN</H3>
+<PRE>
+public long <B>getN</B>()</PRE>
+<DL>
+<DD>Returns the number of values that have been added.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html#getN()">getN</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the number of values.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getResult()"><!-- --></A><H3>
+getResult</H3>
+<PRE>
+public double <B>getResult</B>()</PRE>
+<DL>
+<DD>Returns the current value of the Statistic.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html#getResult()">getResult</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#getResult()">getResult</A></CODE> in class <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractStorelessUnivariateStatistic</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>value of the statistic, <code>Double.NaN</code> if it
+ has been cleared or just instantiated.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clear()"><!-- --></A><H3>
+clear</H3>
+<PRE>
+public void <B>clear</B>()</PRE>
+<DL>
+<DD>Clears the internal state of the Statistic
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html#clear()">clear</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#clear()">clear</A></CODE> in class <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractStorelessUnivariateStatistic</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="evaluate(double[])"><!-- --></A><H3>
+evaluate</H3>
+<PRE>
+public double <B>evaluate</B>(double[]&nbsp;values)
+                throws <A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Returns the Standard Deviation of the entries in the input array, or
+ <code>Double.NaN</code> if the array is empty.
+ <p>
+ Returns 0 for a single-value (i.e. length = 1) sample.</p>
+ <p>
+ Throws <code>MathIllegalArgumentException</code> if the array is null.</p>
+ <p>
+ Does not change the internal state of the statistic.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html#evaluate(double[])">evaluate</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">UnivariateStatistic</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/util/MathArrays.Function.html#evaluate(double[])">evaluate</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/util/MathArrays.Function.html" title="interface in org.apache.commons.math3.util">MathArrays.Function</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#evaluate(double[])">evaluate</A></CODE> in class <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractStorelessUnivariateStatistic</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - the input array
+<DT><B>Returns:</B><DD>the standard deviation of the values or Double.NaN if length = 0
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the array is null<DT><B>See Also:</B><DD><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html#evaluate(double[])"><CODE>UnivariateStatistic.evaluate(double[])</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="evaluate(double[], int, int)"><!-- --></A><H3>
+evaluate</H3>
+<PRE>
+public double <B>evaluate</B>(double[]&nbsp;values,
+                       int&nbsp;begin,
+                       int&nbsp;length)
+                throws <A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Returns the Standard Deviation of the entries in the specified portion of
+ the input array, or <code>Double.NaN</code> if the designated subarray
+ is empty.
+ <p>
+ Returns 0 for a single-value (i.e. length = 1) sample. </p>
+ <p>
+ Throws <code>MathIllegalArgumentException</code> if the array is null.</p>
+ <p>
+ Does not change the internal state of the statistic.</p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html#evaluate(double[], int, int)">evaluate</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">UnivariateStatistic</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/util/MathArrays.Function.html#evaluate(double[], int, int)">evaluate</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/util/MathArrays.Function.html" title="interface in org.apache.commons.math3.util">MathArrays.Function</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#evaluate(double[], int, int)">evaluate</A></CODE> in class <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractStorelessUnivariateStatistic</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - the input array<DD><CODE>begin</CODE> - index of the first array element to include<DD><CODE>length</CODE> - the number of elements to include
+<DT><B>Returns:</B><DD>the standard deviation of the values or Double.NaN if length = 0
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the array is null or the array index
+  parameters are not valid<DT><B>See Also:</B><DD><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html#evaluate(double[], int, int)"><CODE>UnivariateStatistic.evaluate(double[], int, int)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="evaluate(double[], double, int, int)"><!-- --></A><H3>
+evaluate</H3>
+<PRE>
+public double <B>evaluate</B>(double[]&nbsp;values,
+                       double&nbsp;mean,
+                       int&nbsp;begin,
+                       int&nbsp;length)
+                throws <A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Returns the Standard Deviation of the entries in the specified portion of
+ the input array, using the precomputed mean value.  Returns
+ <code>Double.NaN</code> if the designated subarray is empty.
+ <p>
+ Returns 0 for a single-value (i.e. length = 1) sample.</p>
+ <p>
+ The formula used assumes that the supplied mean value is the arithmetic
+ mean of the sample data, not a known population parameter.  This method
+ is supplied only to save computation when the mean has already been
+ computed.</p>
+ <p>
+ Throws <code>IllegalArgumentException</code> if the array is null.</p>
+ <p>
+ Does not change the internal state of the statistic.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - the input array<DD><CODE>mean</CODE> - the precomputed mean value<DD><CODE>begin</CODE> - index of the first array element to include<DD><CODE>length</CODE> - the number of elements to include
+<DT><B>Returns:</B><DD>the standard deviation of the values or Double.NaN if length = 0
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the array is null or the array index
+  parameters are not valid</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="evaluate(double[], double)"><!-- --></A><H3>
+evaluate</H3>
+<PRE>
+public double <B>evaluate</B>(double[]&nbsp;values,
+                       double&nbsp;mean)
+                throws <A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Returns the Standard Deviation of the entries in the input array, using
+ the precomputed mean value.  Returns
+ <code>Double.NaN</code> if the designated subarray is empty.
+ <p>
+ Returns 0 for a single-value (i.e. length = 1) sample.</p>
+ <p>
+ The formula used assumes that the supplied mean value is the arithmetic
+ mean of the sample data, not a known population parameter.  This method
+ is supplied only to save computation when the mean has already been
+ computed.</p>
+ <p>
+ Throws <code>MathIllegalArgumentException</code> if the array is null.</p>
+ <p>
+ Does not change the internal state of the statistic.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>values</CODE> - the input array<DD><CODE>mean</CODE> - the precomputed mean value
+<DT><B>Returns:</B><DD>the standard deviation of the values or Double.NaN if length = 0
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the array is null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isBiasCorrected()"><!-- --></A><H3>
+isBiasCorrected</H3>
+<PRE>
+public boolean <B>isBiasCorrected</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>Returns the isBiasCorrected.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBiasCorrected(boolean)"><!-- --></A><H3>
+setBiasCorrected</H3>
+<PRE>
+public void <B>setBiasCorrected</B>(boolean&nbsp;isBiasCorrected)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>isBiasCorrected</CODE> - The isBiasCorrected to set.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="copy()"><!-- --></A><H3>
+copy</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html" title="class in org.apache.commons.math3.stat.descriptive.moment">StandardDeviation</A> <B>copy</B>()</PRE>
+<DL>
+<DD>Returns a copy of the statistic with the same internal state.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html#copy()">copy</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html#copy()">copy</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/UnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">UnivariateStatistic</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html#copy()">copy</A></CODE> in class <CODE><A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/AbstractStorelessUnivariateStatistic.html" title="class in org.apache.commons.math3.stat.descriptive">AbstractStorelessUnivariateStatistic</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a copy of the statistic</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="copy(org.apache.commons.math3.stat.descriptive.moment.StandardDeviation, org.apache.commons.math3.stat.descriptive.moment.StandardDeviation)"><!-- --></A><H3>
+copy</H3>
+<PRE>
+public static void <B>copy</B>(<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html" title="class in org.apache.commons.math3.stat.descriptive.moment">StandardDeviation</A>&nbsp;source,
+                        <A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html" title="class in org.apache.commons.math3.stat.descriptive.moment">StandardDeviation</A>&nbsp;dest)
+                 throws <A HREF="../../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Copies source to dest.
+ <p>Neither source nor dest can be null.</p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>source</CODE> - StandardDeviation to copy<DD><CODE>dest</CODE> - StandardDeviation to copy to
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if either source or dest is null</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/StandardDeviation.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Skewness.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/commons/math3/stat/descriptive/moment/Variance.html" title="class in org.apache.commons.math3.stat.descriptive.moment"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/commons/math3/stat/descriptive/moment/StandardDeviation.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="StandardDeviation.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

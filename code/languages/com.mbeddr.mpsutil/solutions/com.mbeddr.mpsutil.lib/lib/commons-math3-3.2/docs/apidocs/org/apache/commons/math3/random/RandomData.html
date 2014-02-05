@@ -1,0 +1,664 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+RandomData (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="RandomData (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RandomData.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/RandomAdaptor.html" title="class in org.apache.commons.math3.random"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/RandomDataGenerator.html" title="class in org.apache.commons.math3.random"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/random/RandomData.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RandomData.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.random</FONT>
+<BR>
+Interface RandomData</H2>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../org/apache/commons/math3/random/RandomDataGenerator.html" title="class in org.apache.commons.math3.random">RandomDataGenerator</A>, <A HREF="../../../../../org/apache/commons/math3/random/RandomDataImpl.html" title="class in org.apache.commons.math3.random">RandomDataImpl</A></DD>
+</DL>
+<HR>
+<B>Deprecated.</B>&nbsp;<I>to be removed in 4.0.  Use <A HREF="../../../../../org/apache/commons/math3/random/RandomDataGenerator.html" title="class in org.apache.commons.math3.random"><CODE>RandomDataGenerator</CODE></A> directly</I>
+<P>
+<DL>
+<DT><PRE>public interface <B>RandomData</B></DL>
+</PRE>
+
+<P>
+Random data generation utilities.
+<P>
+
+<P>
+<DL>
+<DT><B>Version:</B></DT>
+  <DD>$Id: RandomData.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextExponential(double)">nextExponential</A></B>(double&nbsp;mean)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generates a random value from the exponential distribution
+ with specified mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextGaussian(double, double)">nextGaussian</A></B>(double&nbsp;mu,
+             double&nbsp;sigma)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generates a random value from the Normal (or Gaussian) distribution with
+ specified mean and standard deviation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextHexString(int)">nextHexString</A></B>(int&nbsp;len)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generates a random string of hex characters of length <code>len</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextInt(int, int)">nextInt</A></B>(int&nbsp;lower,
+        int&nbsp;upper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generates a uniformly distributed random integer between <code>lower</code>
+ and <code>upper</code> (endpoints included).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextLong(long, long)">nextLong</A></B>(long&nbsp;lower,
+         long&nbsp;upper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generates a uniformly distributed random long integer between
+ <code>lower</code> and <code>upper</code> (endpoints included).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextPermutation(int, int)">nextPermutation</A></B>(int&nbsp;n,
+                int&nbsp;k)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generates an integer array of length <code>k</code> whose entries are selected
+ randomly, without repetition, from the integers <code>0, ..., n - 1</code>
+ (inclusive).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextPoisson(double)">nextPoisson</A></B>(double&nbsp;mean)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generates a random value from the Poisson distribution with the given
+ mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextSample(java.util.Collection, int)">nextSample</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;?&gt;&nbsp;c,
+           int&nbsp;k)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns an array of <code>k</code> objects selected randomly from the
+ Collection <code>c</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextSecureHexString(int)">nextSecureHexString</A></B>(int&nbsp;len)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generates a random string of hex characters from a secure random
+ sequence.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextSecureInt(int, int)">nextSecureInt</A></B>(int&nbsp;lower,
+              int&nbsp;upper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generates a uniformly distributed random integer between <code>lower</code>
+ and <code>upper</code> (endpoints included) from a secure random sequence.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextSecureLong(long, long)">nextSecureLong</A></B>(long&nbsp;lower,
+               long&nbsp;upper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generates a uniformly distributed random long integer between
+ <code>lower</code> and <code>upper</code> (endpoints included) from a secure random
+ sequence.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextUniform(double, double)">nextUniform</A></B>(double&nbsp;lower,
+            double&nbsp;upper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generates a uniformly distributed random value from the open interval
+ <code>(lower, upper)</code> (i.e., endpoints excluded).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextUniform(double, double, boolean)">nextUniform</A></B>(double&nbsp;lower,
+            double&nbsp;upper,
+            boolean&nbsp;lowerInclusive)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Generates a uniformly distributed random value from the interval
+ <code>(lower, upper)</code> or the interval <code>[lower, upper)</code>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="nextHexString(int)"><!-- --></A><H3>
+nextHexString</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>nextHexString</B>(int&nbsp;len)
+                     throws <A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generates a random string of hex characters of length <code>len</code>.
+ <p>
+ The generated string will be random, but not cryptographically
+ secure. To generate cryptographically secure strings, use
+ <A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextSecureHexString(int)"><CODE>nextSecureHexString(int)</CODE></A>.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>len</CODE> - the length of the string to be generated
+<DT><B>Returns:</B><DD>a random string of hex characters of length <code>len</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if <code>len &lt;= 0</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextInt(int, int)"><!-- --></A><H3>
+nextInt</H3>
+<PRE>
+int <B>nextInt</B>(int&nbsp;lower,
+            int&nbsp;upper)
+            throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generates a uniformly distributed random integer between <code>lower</code>
+ and <code>upper</code> (endpoints included).
+ <p>
+ The generated integer will be random, but not cryptographically secure.
+ To generate cryptographically secure integer sequences, use
+ <A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextSecureInt(int, int)"><CODE>nextSecureInt(int, int)</CODE></A>.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>lower</CODE> - lower bound for generated integer<DD><CODE>upper</CODE> - upper bound for generated integer
+<DT><B>Returns:</B><DD>a random integer greater than or equal to <code>lower</code>
+ and less than or equal to <code>upper</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>lower &gt;= upper</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextLong(long, long)"><!-- --></A><H3>
+nextLong</H3>
+<PRE>
+long <B>nextLong</B>(long&nbsp;lower,
+              long&nbsp;upper)
+              throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generates a uniformly distributed random long integer between
+ <code>lower</code> and <code>upper</code> (endpoints included).
+ <p>
+ The generated long integer values will be random, but not
+ cryptographically secure. To generate cryptographically secure sequences
+ of longs, use <A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextSecureLong(long, long)"><CODE>nextSecureLong(long, long)</CODE></A>.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>lower</CODE> - lower bound for generated long integer<DD><CODE>upper</CODE> - upper bound for generated long integer
+<DT><B>Returns:</B><DD>a random long integer greater than or equal to <code>lower</code> and
+ less than or equal to <code>upper</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>lower &gt;= upper</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextSecureHexString(int)"><!-- --></A><H3>
+nextSecureHexString</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>nextSecureHexString</B>(int&nbsp;len)
+                           throws <A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generates a random string of hex characters from a secure random
+ sequence.
+ <p>
+ If cryptographic security is not required, use
+ <A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextHexString(int)"><CODE>nextHexString(int)</CODE></A>.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>len</CODE> - the length of the string to be generated
+<DT><B>Returns:</B><DD>a random string of hex characters of length <code>len</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if <code>len &lt;= 0</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextSecureInt(int, int)"><!-- --></A><H3>
+nextSecureInt</H3>
+<PRE>
+int <B>nextSecureInt</B>(int&nbsp;lower,
+                  int&nbsp;upper)
+                  throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generates a uniformly distributed random integer between <code>lower</code>
+ and <code>upper</code> (endpoints included) from a secure random sequence.
+ <p>
+ Sequences of integers generated using this method will be
+ cryptographically secure. If cryptographic security is not required,
+ <A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextInt(int, int)"><CODE>nextInt(int, int)</CODE></A> should be used instead of this method.</p>
+ <p>
+ <strong>Definition</strong>:
+ <a href="http://en.wikipedia.org/wiki/Cryptographically_secure_pseudo-random_number_generator">
+ Secure Random Sequence</a></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>lower</CODE> - lower bound for generated integer<DD><CODE>upper</CODE> - upper bound for generated integer
+<DT><B>Returns:</B><DD>a random integer greater than or equal to <code>lower</code> and less
+ than or equal to <code>upper</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>lower &gt;= upper</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextSecureLong(long, long)"><!-- --></A><H3>
+nextSecureLong</H3>
+<PRE>
+long <B>nextSecureLong</B>(long&nbsp;lower,
+                    long&nbsp;upper)
+                    throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generates a uniformly distributed random long integer between
+ <code>lower</code> and <code>upper</code> (endpoints included) from a secure random
+ sequence.
+ <p>
+ Sequences of long values generated using this method will be
+ cryptographically secure. If cryptographic security is not required,
+ <A HREF="../../../../../org/apache/commons/math3/random/RandomData.html#nextLong(long, long)"><CODE>nextLong(long, long)</CODE></A> should be used instead of this method.</p>
+ <p>
+ <strong>Definition</strong>:
+ <a href="http://en.wikipedia.org/wiki/Cryptographically_secure_pseudo-random_number_generator">
+ Secure Random Sequence</a></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>lower</CODE> - lower bound for generated integer<DD><CODE>upper</CODE> - upper bound for generated integer
+<DT><B>Returns:</B><DD>a random long integer greater than or equal to <code>lower</code> and
+ less than or equal to <code>upper</code>.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>lower &gt;= upper</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextPoisson(double)"><!-- --></A><H3>
+nextPoisson</H3>
+<PRE>
+long <B>nextPoisson</B>(double&nbsp;mean)
+                 throws <A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generates a random value from the Poisson distribution with the given
+ mean.
+ <p>
+ <strong>Definition</strong>:
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda366j.htm">
+ Poisson Distribution</a></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mean</CODE> - the mean of the Poisson distribution
+<DT><B>Returns:</B><DD>a random value following the specified Poisson distribution
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if <code>mean &lt;= 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextGaussian(double, double)"><!-- --></A><H3>
+nextGaussian</H3>
+<PRE>
+double <B>nextGaussian</B>(double&nbsp;mu,
+                    double&nbsp;sigma)
+                    throws <A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generates a random value from the Normal (or Gaussian) distribution with
+ specified mean and standard deviation.
+ <p>
+ <strong>Definition</strong>:
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm">
+ Normal Distribution</a></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mu</CODE> - the mean of the distribution<DD><CODE>sigma</CODE> - the standard deviation of the distribution
+<DT><B>Returns:</B><DD>a random value following the specified Gaussian distribution
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if <code>sigma &lt;= 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextExponential(double)"><!-- --></A><H3>
+nextExponential</H3>
+<PRE>
+double <B>nextExponential</B>(double&nbsp;mean)
+                       throws <A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generates a random value from the exponential distribution
+ with specified mean.
+ <p>
+ <strong>Definition</strong>:
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda3667.htm">
+ Exponential Distribution</a></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mean</CODE> - the mean of the distribution
+<DT><B>Returns:</B><DD>a random value following the specified exponential distribution
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if <code>mean &lt;= 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextUniform(double, double)"><!-- --></A><H3>
+nextUniform</H3>
+<PRE>
+double <B>nextUniform</B>(double&nbsp;lower,
+                   double&nbsp;upper)
+                   throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A>,
+                          <A HREF="../../../../../org/apache/commons/math3/exception/NotFiniteNumberException.html" title="class in org.apache.commons.math3.exception">NotFiniteNumberException</A>,
+                          <A HREF="../../../../../org/apache/commons/math3/exception/NotANumberException.html" title="class in org.apache.commons.math3.exception">NotANumberException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generates a uniformly distributed random value from the open interval
+ <code>(lower, upper)</code> (i.e., endpoints excluded).
+ <p>
+ <strong>Definition</strong>:
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda3662.htm">
+ Uniform Distribution</a> <code>lower</code> and <code>upper - lower</code> are the
+ <a href = "http://www.itl.nist.gov/div898/handbook/eda/section3/eda364.htm">
+ location and scale parameters</a>, respectively.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>lower</CODE> - the exclusive lower bound of the support<DD><CODE>upper</CODE> - the exclusive upper bound of the support
+<DT><B>Returns:</B><DD>a uniformly distributed random value between lower and upper
+ (exclusive)
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>lower &gt;= upper</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotFiniteNumberException.html" title="class in org.apache.commons.math3.exception">NotFiniteNumberException</A></CODE> - if one of the bounds is infinite
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotANumberException.html" title="class in org.apache.commons.math3.exception">NotANumberException</A></CODE> - if one of the bounds is NaN</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextUniform(double, double, boolean)"><!-- --></A><H3>
+nextUniform</H3>
+<PRE>
+double <B>nextUniform</B>(double&nbsp;lower,
+                   double&nbsp;upper,
+                   boolean&nbsp;lowerInclusive)
+                   throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A>,
+                          <A HREF="../../../../../org/apache/commons/math3/exception/NotFiniteNumberException.html" title="class in org.apache.commons.math3.exception">NotFiniteNumberException</A>,
+                          <A HREF="../../../../../org/apache/commons/math3/exception/NotANumberException.html" title="class in org.apache.commons.math3.exception">NotANumberException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generates a uniformly distributed random value from the interval
+ <code>(lower, upper)</code> or the interval <code>[lower, upper)</code>. The lower
+ bound is thus optionally included, while the upper bound is always
+ excluded.
+ <p>
+ <strong>Definition</strong>:
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda3662.htm">
+ Uniform Distribution</a> <code>lower</code> and <code>upper - lower</code> are the
+ <a href = "http://www.itl.nist.gov/div898/handbook/eda/section3/eda364.htm">
+ location and scale parameters</a>, respectively.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>lower</CODE> - the lower bound of the support<DD><CODE>upper</CODE> - the exclusive upper bound of the support<DD><CODE>lowerInclusive</CODE> - <code>true</code> if the lower bound is inclusive
+<DT><B>Returns:</B><DD>uniformly distributed random value in the <code>(lower, upper)</code>
+ interval, if <code>lowerInclusive</code> is <code>false</code>, or in the
+ <code>[lower, upper)</code> interval, if <code>lowerInclusive</code> is
+ <code>true</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>lower &gt;= upper</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotFiniteNumberException.html" title="class in org.apache.commons.math3.exception">NotFiniteNumberException</A></CODE> - if one of the bounds is infinite
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotANumberException.html" title="class in org.apache.commons.math3.exception">NotANumberException</A></CODE> - if one of the bounds is NaN</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextPermutation(int, int)"><!-- --></A><H3>
+nextPermutation</H3>
+<PRE>
+int[] <B>nextPermutation</B>(int&nbsp;n,
+                      int&nbsp;k)
+                      throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A>,
+                             <A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Generates an integer array of length <code>k</code> whose entries are selected
+ randomly, without repetition, from the integers <code>0, ..., n - 1</code>
+ (inclusive).
+ <p>
+ Generated arrays represent permutations of <code>n</code> taken <code>k</code> at a
+ time.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>n</CODE> - the domain of the permutation<DD><CODE>k</CODE> - the size of the permutation
+<DT><B>Returns:</B><DD>a random <code>k</code>-permutation of <code>n</code>, as an array of
+ integers
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>k &gt; n</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if <code>k &lt;= 0</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextSample(java.util.Collection, int)"><!-- --></A><H3>
+nextSample</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>[] <B>nextSample</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;?&gt;&nbsp;c,
+                    int&nbsp;k)
+                    throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A>,
+                           <A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Returns an array of <code>k</code> objects selected randomly from the
+ Collection <code>c</code>.
+ <p>
+ Sampling from <code>c</code> is without replacement; but if <code>c</code> contains
+ identical objects, the sample may include repeats.  If all elements of
+ <code>c</code> are distinct, the resulting object array represents a
+ <a href="http://rkb.home.cern.ch/rkb/AN16pp/node250.html#SECTION0002500000000000000000">
+ Simple Random Sample</a> of size <code>k</code> from the elements of
+ <code>c</code>.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>c</CODE> - the collection to be sampled<DD><CODE>k</CODE> - the size of the sample
+<DT><B>Returns:</B><DD>a random sample of <code>k</code> elements from <code>c</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</A></CODE> - if <code>k &gt; c.size()</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if <code>k &lt;= 0</code>.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RandomData.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/RandomAdaptor.html" title="class in org.apache.commons.math3.random"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/random/RandomDataGenerator.html" title="class in org.apache.commons.math3.random"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/random/RandomData.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RandomData.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>
