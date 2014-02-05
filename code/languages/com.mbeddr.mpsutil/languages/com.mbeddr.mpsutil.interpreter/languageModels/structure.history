@@ -90,5 +90,29 @@
     </dependencies>
     <rename id="3673.8615074351687302157" type="CHILD" from="conceptEvaluators" to="evaluators" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="14" />
+    </dependencies>
+    <rename id="3673.6663324787725059267" type="CHILD" from="dependencies" to="relationships" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="15" />
+    </dependencies>
+    <rename id="3673.6663324787724559041" type="CONCEPT" from="AbstractInterpreterDependency" to="AbstractInterpreterRelationship" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="16" />
+    </dependencies>
+    <rename id="3673.6663324787725038318" type="CONCEPT" from="InterpretAfterDependency" to="InterpretAfterRelationship" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="17" />
+    </dependencies>
+    <rename id="3673.6663324787724987491" type="CONCEPT" from="InterpretBeforeDependency" to="InterpretBeforeRelationship" />
+  </StructureModification>
 </history>
 
