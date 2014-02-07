@@ -129,3 +129,6 @@ code/languages/offline.sh
 # -----------------------------------------------------------
 # CBMC analyses results temporary files
 code/*/xmlCBMCRawOutput/*
+
+build/**/*.xml
+!build/com.mbeddr.allScripts/build.xml
