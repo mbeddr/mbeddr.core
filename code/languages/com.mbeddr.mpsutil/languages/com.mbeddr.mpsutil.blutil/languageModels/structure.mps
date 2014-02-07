@@ -809,8 +809,8 @@
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6451706574539345419" nodeInfo="ng">
       <property name="role" nameId="tpce.7588428831955550663" value="lineDoc" />
-      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6451706574539345422" nodeInfo="ng">
-        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="tpee.7812454656619025416" resolveInfo="MethodDeclaration" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="8406164770760531146" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="tpee.1178285077437" resolveInfo="ClassifierMember" />
       </node>
     </node>
   </root>
