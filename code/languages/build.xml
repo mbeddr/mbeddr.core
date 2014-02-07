@@ -92,6 +92,12 @@
   <property name="com.mbeddr.platform.build-file.name" value="build.xml" /> 
   <property name="com.mbeddr.platform.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.platform" />  
   
+  <!-- mbeddr.allScripts -->
+  <property name="com.mbeddr.allScripts.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.allScripts/build/artifacts/com.mbeddr.allScripts" />  
+  <property name="com.mbeddr.allScripts.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.allScripts" />    
+  <property name="com.mbeddr.allScripts.build-file.name" value="build.xml" /> 
+  <property name="com.mbeddr.allScripts.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.allScripts" />  
+  
   <!-- multiline -->  
   <property name="multiline.zip-file.name" value="mps-multiline.zip" />
   <property name="multiline.expanded-folder.name" value="mps-multiline" />
@@ -187,6 +193,11 @@
 	  <unzip src="${spawner.build-path}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" /> 	 	  
   </target>
 
+  <target name="build-allScripts">
+	  <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-generated-code.task}" />	  
+      <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${generate-code.task}" />
+  </target>
+  
   <target name="build-mpsutil">
 	  <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${clean-plugins.task}" />
 	  <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${clean-generated-code.task}" />	  
@@ -293,7 +304,7 @@
   </target>     
 
 
-  <target name="build-languages">
+  <target name="build-languages" depends="build-allScripts">
 	  <antcall target="build-mpsutil" />
 	  <antcall target="build-debugger" />
 	  <antcall target="build-platform" />
@@ -311,7 +322,7 @@
 	  <antcall target="build-analyses.cbmc" />	 	  	  	  
   </target>	 
 
-  <target name="build-and-run-tests" >
+  <target name="build-and-run-tests" depends="build-allScripts">
 	   <antcall target="test-debugger" />
    	   <antcall target="test-core" />
    	   <antcall target="test-cc" />
