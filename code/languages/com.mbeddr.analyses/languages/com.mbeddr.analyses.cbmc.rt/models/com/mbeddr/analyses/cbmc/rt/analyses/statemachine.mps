@@ -1384,7 +1384,7 @@
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4637938732750777441" nodeInfo="in" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="4637938732751666495" nodeInfo="ng">
-        <property name="text" nameId="hba4.6451706574539345425" value="Comoutes the arguments." />
+        <property name="text" nameId="hba4.6451706574539345425" value="Computes the arguments." />
       </node>
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="4637938732749884796" nodeInfo="ng">
