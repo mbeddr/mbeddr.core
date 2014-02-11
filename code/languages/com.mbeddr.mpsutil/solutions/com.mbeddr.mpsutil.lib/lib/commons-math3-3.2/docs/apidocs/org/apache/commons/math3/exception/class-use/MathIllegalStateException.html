@@ -1,0 +1,853 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Class org.apache.commons.math3.exception.MathIllegalStateException (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class org.apache.commons.math3.exception.MathIllegalStateException (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/exception//class-useMathIllegalStateException.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MathIllegalStateException.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Class<br>org.apache.commons.math3.exception.MathIllegalStateException</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.complex"><B>org.apache.commons.math3.complex</B></A></TD>
+<TD>Complex number type and implementations of complex transcendental
+     functions.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.exception"><B>org.apache.commons.math3.exception</B></A></TD>
+<TD>Specialized exceptions for algorithms errors.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.fraction"><B>org.apache.commons.math3.fraction</B></A></TD>
+<TD>Fraction number type and fraction number formatting.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.geometry.euclidean.threed"><B>org.apache.commons.math3.geometry.euclidean.threed</B></A></TD>
+<TD>
+ This package provides basic 3D geometry components.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.ode"><B>org.apache.commons.math3.ode</B></A></TD>
+<TD>
+ This package provides classes to solve Ordinary Differential Equations problems.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.optimization.linear"><B>org.apache.commons.math3.optimization.linear</B></A></TD>
+<TD>This package provides optimization algorithms for linear constrained problems.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.random"><B>org.apache.commons.math3.random</B></A></TD>
+<TD>Random number and random data generators.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.descriptive"><B>org.apache.commons.math3.stat.descriptive</B></A></TD>
+<TD>Generic univariate summary statistic objects.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.stat.descriptive.moment"><B>org.apache.commons.math3.stat.descriptive.moment</B></A></TD>
+<TD>Summary statistics based on moments.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.util"><B>org.apache.commons.math3.util</B></A></TD>
+<TD>Convenience routines and common data structures used throughout the commons-math library.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.complex"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/complex/package-summary.html">org.apache.commons.math3.complex</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/complex/package-summary.html">org.apache.commons.math3.complex</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>RootsOfUnity.</B><B><A HREF="../../../../../../org/apache/commons/math3/complex/RootsOfUnity.html#getImaginary(int)">getImaginary</A></B>(int&nbsp;k)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the imaginary part of the <code>k</code>-th <code>n</code>-th root of unity.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>RootsOfUnity.</B><B><A HREF="../../../../../../org/apache/commons/math3/complex/RootsOfUnity.html#getReal(int)">getReal</A></B>(int&nbsp;k)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the real part of the <code>k</code>-th <code>n</code>-th root of unity.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>RootsOfUnity.</B><B><A HREF="../../../../../../org/apache/commons/math3/complex/RootsOfUnity.html#isCounterClockWise()">isCounterClockWise</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>true</code> if <A HREF="../../../../../../org/apache/commons/math3/complex/RootsOfUnity.html#computeRoots(int)"><CODE>RootsOfUnity.computeRoots(int)</CODE></A> was called with a
+ positive value of its argument <code>n</code>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.exception"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/exception/package-summary.html">org.apache.commons.math3.exception</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/exception/package-summary.html">org.apache.commons.math3.exception</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/ConvergenceException.html" title="class in org.apache.commons.math3.exception">ConvergenceException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error thrown when a numerical computation can not be performed because the
+ numerical result failed to converge to a finite value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/MathInternalError.html" title="class in org.apache.commons.math3.exception">MathInternalError</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception triggered when something that shouldn't happen does happen.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/MathParseException.html" title="class in org.apache.commons.math3.exception">MathParseException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Class to signal parse failures.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when some counter maximum value is exceeded.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when the maximal number of evaluations is exceeded.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/exception/TooManyIterationsException.html" title="class in org.apache.commons.math3.exception">TooManyIterationsException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exception to be thrown when the maximal number of iterations is exceeded.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.fraction"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/fraction/package-summary.html">org.apache.commons.math3.fraction</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/fraction/package-summary.html">org.apache.commons.math3.fraction</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/fraction/FractionConversionException.html" title="class in org.apache.commons.math3.fraction">FractionConversionException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error thrown when a double value cannot be converted to a fraction
+ in the allowed number of iterations.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.geometry.euclidean.threed"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/threed/CardanEulerSingularityException.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">CardanEulerSingularityException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This class represents exceptions thrown while extractiong Cardan
+ or Euler angles from a rotation.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.ode"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/ode/package-summary.html">org.apache.commons.math3.ode</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/ode/package-summary.html">org.apache.commons.math3.ode</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SecondOrderIntegrator.</B><B><A HREF="../../../../../../org/apache/commons/math3/ode/SecondOrderIntegrator.html#integrate(org.apache.commons.math3.ode.SecondOrderDifferentialEquations, double, double[], double[], double, double[], double[])">integrate</A></B>(<A HREF="../../../../../../org/apache/commons/math3/ode/SecondOrderDifferentialEquations.html" title="interface in org.apache.commons.math3.ode">SecondOrderDifferentialEquations</A>&nbsp;equations,
+          double&nbsp;t0,
+          double[]&nbsp;y0,
+          double[]&nbsp;yDot0,
+          double&nbsp;t,
+          double[]&nbsp;y,
+          double[]&nbsp;yDot)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integrate the differential equations up to the given time</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.optimization.linear"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/package-summary.html">org.apache.commons.math3.optimization.linear</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/package-summary.html">org.apache.commons.math3.optimization.linear</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/NoFeasibleSolutionException.html" title="class in org.apache.commons.math3.optimization.linear">NoFeasibleSolutionException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0).</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/UnboundedSolutionException.html" title="class in org.apache.commons.math3.optimization.linear">UnboundedSolutionException</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0).</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/optimization/linear/package-summary.html">org.apache.commons.math3.optimization.linear</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractLinearOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/AbstractLinearOptimizer.html#doOptimize()">doOptimize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Perform the bulk of optimization algorithm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractLinearOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/AbstractLinearOptimizer.html#optimize(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction, java.util.Collection, org.apache.commons.math3.optimization.GoalType, boolean)">optimize</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearObjectiveFunction.html" title="class in org.apache.commons.math3.optimization.linear">LinearObjectiveFunction</A>&nbsp;f,
+         <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearConstraint.html" title="class in org.apache.commons.math3.optimization.linear">LinearConstraint</A>&gt;&nbsp;constraints,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+         boolean&nbsp;restrictToNonNegative)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimizes an objective function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/PointValuePair.html" title="class in org.apache.commons.math3.optimization">PointValuePair</A></CODE></FONT></TD>
+<TD><CODE><B>LinearOptimizer.</B><B><A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearOptimizer.html#optimize(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction, java.util.Collection, org.apache.commons.math3.optimization.GoalType, boolean)">optimize</A></B>(<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearObjectiveFunction.html" title="class in org.apache.commons.math3.optimization.linear">LinearObjectiveFunction</A>&nbsp;f,
+         <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/commons/math3/optimization/linear/LinearConstraint.html" title="class in org.apache.commons.math3.optimization.linear">LinearConstraint</A>&gt;&nbsp;constraints,
+         <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goalType,
+         boolean&nbsp;restrictToNonNegative)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Optimizes an objective function.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.random"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/random/package-summary.html">org.apache.commons.math3.random</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/random/package-summary.html">org.apache.commons.math3.random</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ValueServer.</B><B><A HREF="../../../../../../org/apache/commons/math3/random/ValueServer.html#fill(double[])">fill</A></B>(double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fills the input array with values generated using getNext() repeatedly.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B>ValueServer.</B><B><A HREF="../../../../../../org/apache/commons/math3/random/ValueServer.html#fill(int)">fill</A></B>(int&nbsp;length)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of length <code>length</code> with values generated
+ using getNext() repeatedly.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>ValueServer.</B><B><A HREF="../../../../../../org/apache/commons/math3/random/ValueServer.html#getNext()">getNext</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the next generated value, generated according
+ to the mode value (see MODE constants).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>EmpiricalDistribution.</B><B><A HREF="../../../../../../org/apache/commons/math3/random/EmpiricalDistribution.html#getNextValue()">getNextValue</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generates a random value from this distribution.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.descriptive"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/package-summary.html">org.apache.commons.math3.stat.descriptive</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/package-summary.html">org.apache.commons.math3.stat.descriptive</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>DescriptiveStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.html#getPercentile(double)">getPercentile</A></B>(double&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate for the pth percentile of the stored values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>DescriptiveStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.html#removeMostRecentValue()">removeMostRecentValue</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes the most recent value from the dataset.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>DescriptiveStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.html#replaceMostRecentValue(double)">replaceMostRecentValue</A></B>(double&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replaces the most recently stored value with the given value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setGeoMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setGeoMeanImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;geoMeanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the geometric mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setGeoMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setGeoMeanImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;geoMeanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the geometric mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setGeoMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setGeoMeanImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;geoMeanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the geometric mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setGeoMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setGeoMeanImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;geoMeanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the geometric mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setMaxImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setMaxImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;maxImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the maximum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setMaxImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setMaxImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;maxImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the maximum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setMaxImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setMaxImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;maxImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the maximum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setMaxImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setMaxImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;maxImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the maximum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setMeanImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;meanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setMeanImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;meanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setMeanImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;meanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setMeanImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setMeanImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;meanImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the mean.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setMinImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setMinImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;minImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the minimum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setMinImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setMinImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;minImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the minimum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setMinImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setMinImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;minImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the minimum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setMinImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setMinImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;minImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the minimum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setSumImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the Sum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setSumImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the Sum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setSumImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setSumImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;sumImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the Sum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setSumImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setSumImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;sumImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the Sum.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setSumLogImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumLogImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumLogImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the sum of logs.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setSumLogImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumLogImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumLogImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the sum of logs.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setSumLogImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setSumLogImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;sumLogImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the sum of logs.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setSumLogImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setSumLogImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;sumLogImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the sum of logs.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setSumsqImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumsqImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumsqImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the sum of squares.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setSumsqImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumsqImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumsqImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the sum of squares.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedMultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html#setSumsqImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setSumsqImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;sumsqImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the sum of squares.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MultivariateSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html#setSumsqImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic[])">setSumsqImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>[]&nbsp;sumsqImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the sum of squares.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SynchronizedSummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.html#setVarianceImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setVarianceImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;varianceImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the variance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SummaryStatistics.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SummaryStatistics.html#setVarianceImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setVarianceImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;varianceImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Sets the implementation for the variance.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.stat.descriptive.moment"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/package-summary.html">org.apache.commons.math3.stat.descriptive.moment</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/package-summary.html">org.apache.commons.math3.stat.descriptive.moment</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>GeometricMean.</B><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/moment/GeometricMean.html#setSumLogImpl(org.apache.commons.math3.stat.descriptive.StorelessUnivariateStatistic)">setSumLogImpl</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StorelessUnivariateStatistic.html" title="interface in org.apache.commons.math3.stat.descriptive">StorelessUnivariateStatistic</A>&nbsp;sumLogImpl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the implementation for the sum of logs.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.util"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A> in <A HREF="../../../../../../org/apache/commons/math3/util/package-summary.html">org.apache.commons.math3.util</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/commons/math3/util/package-summary.html">org.apache.commons.math3.util</A> that throw <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>ResizableDoubleArray.</B><B><A HREF="../../../../../../org/apache/commons/math3/util/ResizableDoubleArray.html#substituteMostRecentElement(double)">substituteMostRecentElement</A></B>(double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Substitutes <code>value</code> for the most recently added value.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/exception//class-useMathIllegalStateException.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MathIllegalStateException.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

@@ -1,0 +1,585 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+PascalDistribution (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="PascalDistribution (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/PascalDistribution.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/distribution/NormalDistribution.html" title="class in org.apache.commons.math3.distribution"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/distribution/PoissonDistribution.html" title="class in org.apache.commons.math3.distribution"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/distribution/PascalDistribution.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="PascalDistribution.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.commons.math3.distribution.AbstractIntegerDistribution">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.distribution</FONT>
+<BR>
+Class PascalDistribution</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/math3/distribution/AbstractIntegerDistribution.html" title="class in org.apache.commons.math3.distribution">org.apache.commons.math3.distribution.AbstractIntegerDistribution</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.distribution.PascalDistribution</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="../../../../../org/apache/commons/math3/distribution/IntegerDistribution.html" title="interface in org.apache.commons.math3.distribution">IntegerDistribution</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>PascalDistribution</B><DT>extends <A HREF="../../../../../org/apache/commons/math3/distribution/AbstractIntegerDistribution.html" title="class in org.apache.commons.math3.distribution">AbstractIntegerDistribution</A></DL>
+</PRE>
+
+<P>
+<p>
+ Implementation of the Pascal distribution. The Pascal distribution is a
+ special case of the Negative Binomial distribution where the number of
+ successes parameter is an integer.
+ </p>
+ <p>
+ There are various ways to express the probability mass and distribution
+ functions for the Pascal distribution. The present implementation represents
+ the distribution of the number of failures before <code>r</code> successes occur.
+ This is the convention adopted in e.g.
+ <a href="http://mathworld.wolfram.com/NegativeBinomialDistribution.html">MathWorld</a>,
+ but <em>not</em> in
+ <a href="http://en.wikipedia.org/wiki/Negative_binomial_distribution">Wikipedia</a>.
+ </p>
+ <p>
+ For a random variable <code>X</code> whose values are distributed according to this
+ distribution, the probability mass function is given by<br/>
+ <code>P(X = k) = C(k + r - 1, r - 1) * p^r * (1 - p)^k,</code><br/>
+ where <code>r</code> is the number of successes, <code>p</code> is the probability of
+ success, and <code>X</code> is the total number of failures. <code>C(n, k)</code> is
+ the binomial coefficient (<code>n</code> choose <code>k</code>). The mean and variance
+ of <code>X</code> are<br/>
+ <code>E(X) = (1 - p) * r / p, var(X) = (1 - p) * r / p^2.</code><br/>
+ Finally, the cumulative distribution function is given by<br/>
+ <code>P(X &lt;= k) = I(p, r, k + 1)</code>,
+ where I is the regularized incomplete Beta function.
+ </p>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>1.2 (changed to concrete class in 3.0)</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: PascalDistribution.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+<DT><B>See Also:</B><DD><a href="http://en.wikipedia.org/wiki/Negative_binomial_distribution">
+ Negative binomial distribution (Wikipedia)</a>, 
+<a href="http://mathworld.wolfram.com/NegativeBinomialDistribution.html">
+ Negative binomial distribution (MathWorld)</a>, 
+<A HREF="../../../../../serialized-form.html#org.apache.commons.math3.distribution.PascalDistribution">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.commons.math3.distribution.AbstractIntegerDistribution"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.commons.math3.distribution.<A HREF="../../../../../org/apache/commons/math3/distribution/AbstractIntegerDistribution.html" title="class in org.apache.commons.math3.distribution">AbstractIntegerDistribution</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/distribution/AbstractIntegerDistribution.html#random">random</A>, <A HREF="../../../../../org/apache/commons/math3/distribution/AbstractIntegerDistribution.html#randomData">randomData</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/distribution/PascalDistribution.html#PascalDistribution(int, double)">PascalDistribution</A></B>(int&nbsp;r,
+                   double&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a Pascal distribution with the given number of successes and
+ probability of success.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/distribution/PascalDistribution.html#PascalDistribution(org.apache.commons.math3.random.RandomGenerator, int, double)">PascalDistribution</A></B>(<A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html" title="interface in org.apache.commons.math3.random">RandomGenerator</A>&nbsp;rng,
+                   int&nbsp;r,
+                   double&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a Pascal distribution with the given number of successes and
+ probability of success.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/distribution/PascalDistribution.html#cumulativeProbability(int)">cumulativeProbability</A></B>(int&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For a random variable <code>X</code> whose values are distributed according
+ to this distribution, this method returns <code>P(X &lt;= x)</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/distribution/PascalDistribution.html#getNumberOfSuccesses()">getNumberOfSuccesses</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Access the number of successes for this distribution.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/distribution/PascalDistribution.html#getNumericalMean()">getNumericalMean</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use this method to get the numerical value of the mean of this
+ distribution.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/distribution/PascalDistribution.html#getNumericalVariance()">getNumericalVariance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use this method to get the numerical value of the variance of this
+ distribution.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/distribution/PascalDistribution.html#getProbabilityOfSuccess()">getProbabilityOfSuccess</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Access the probability of success for this distribution.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/distribution/PascalDistribution.html#getSupportLowerBound()">getSupportLowerBound</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Access the lower bound of the support.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/distribution/PascalDistribution.html#getSupportUpperBound()">getSupportUpperBound</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Access the upper bound of the support.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/distribution/PascalDistribution.html#isSupportConnected()">isSupportConnected</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use this method to get information about whether the support is
+ connected, i.e. whether all integers between the lower and upper bound of
+ the support are included in the support.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/distribution/PascalDistribution.html#probability(int)">probability</A></B>(int&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For a random variable <code>X</code> whose values are distributed according
+ to this distribution, this method returns <code>P(X = x)</code>.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.distribution.AbstractIntegerDistribution"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.distribution.<A HREF="../../../../../org/apache/commons/math3/distribution/AbstractIntegerDistribution.html" title="class in org.apache.commons.math3.distribution">AbstractIntegerDistribution</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/distribution/AbstractIntegerDistribution.html#cumulativeProbability(int, int)">cumulativeProbability</A>, <A HREF="../../../../../org/apache/commons/math3/distribution/AbstractIntegerDistribution.html#inverseCumulativeProbability(double)">inverseCumulativeProbability</A>, <A HREF="../../../../../org/apache/commons/math3/distribution/AbstractIntegerDistribution.html#reseedRandomGenerator(long)">reseedRandomGenerator</A>, <A HREF="../../../../../org/apache/commons/math3/distribution/AbstractIntegerDistribution.html#sample()">sample</A>, <A HREF="../../../../../org/apache/commons/math3/distribution/AbstractIntegerDistribution.html#sample(int)">sample</A>, <A HREF="../../../../../org/apache/commons/math3/distribution/AbstractIntegerDistribution.html#solveInverseCumulativeProbability(double, int, int)">solveInverseCumulativeProbability</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="PascalDistribution(int, double)"><!-- --></A><H3>
+PascalDistribution</H3>
+<PRE>
+public <B>PascalDistribution</B>(int&nbsp;r,
+                          double&nbsp;p)
+                   throws <A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A>,
+                          <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Create a Pascal distribution with the given number of successes and
+ probability of success.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>r</CODE> - Number of successes.<DD><CODE>p</CODE> - Probability of success.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if the number of successes is not positive
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the probability of success is not in the
+ range <code>[0, 1]</code>.</DL>
+</DL>
+<HR>
+
+<A NAME="PascalDistribution(org.apache.commons.math3.random.RandomGenerator, int, double)"><!-- --></A><H3>
+PascalDistribution</H3>
+<PRE>
+public <B>PascalDistribution</B>(<A HREF="../../../../../org/apache/commons/math3/random/RandomGenerator.html" title="interface in org.apache.commons.math3.random">RandomGenerator</A>&nbsp;rng,
+                          int&nbsp;r,
+                          double&nbsp;p)
+                   throws <A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A>,
+                          <A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></PRE>
+<DL>
+<DD>Create a Pascal distribution with the given number of successes and
+ probability of success.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>rng</CODE> - Random number generator.<DD><CODE>r</CODE> - Number of successes.<DD><CODE>p</CODE> - Probability of success.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if the number of successes is not positive
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if the probability of success is not in the
+ range <code>[0, 1]</code>.<DT><B>Since:</B></DT>
+  <DD>3.1</DD>
+</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getNumberOfSuccesses()"><!-- --></A><H3>
+getNumberOfSuccesses</H3>
+<PRE>
+public int <B>getNumberOfSuccesses</B>()</PRE>
+<DL>
+<DD>Access the number of successes for this distribution.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the number of successes.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProbabilityOfSuccess()"><!-- --></A><H3>
+getProbabilityOfSuccess</H3>
+<PRE>
+public double <B>getProbabilityOfSuccess</B>()</PRE>
+<DL>
+<DD>Access the probability of success for this distribution.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the probability of success.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="probability(int)"><!-- --></A><H3>
+probability</H3>
+<PRE>
+public double <B>probability</B>(int&nbsp;x)</PRE>
+<DL>
+<DD>For a random variable <code>X</code> whose values are distributed according
+ to this distribution, this method returns <code>P(X = x)</code>. In other
+ words, this method represents the probability mass function (PMF)
+ for the distribution.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - the point at which the PMF is evaluated
+<DT><B>Returns:</B><DD>the value of the probability mass function at <code>x</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cumulativeProbability(int)"><!-- --></A><H3>
+cumulativeProbability</H3>
+<PRE>
+public double <B>cumulativeProbability</B>(int&nbsp;x)</PRE>
+<DL>
+<DD>For a random variable <code>X</code> whose values are distributed according
+ to this distribution, this method returns <code>P(X &lt;= x)</code>.  In other
+ words, this method represents the (cumulative) distribution function
+ (CDF) for this distribution.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - the point at which the CDF is evaluated
+<DT><B>Returns:</B><DD>the probability that a random variable with this
+ distribution takes a value less than or equal to <code>x</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNumericalMean()"><!-- --></A><H3>
+getNumericalMean</H3>
+<PRE>
+public double <B>getNumericalMean</B>()</PRE>
+<DL>
+<DD>Use this method to get the numerical value of the mean of this
+ distribution.
+
+ For number of successes <code>r</code> and probability of success <code>p</code>,
+ the mean is <code>r * (1 - p) / p</code>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the mean or <code>Double.NaN</code> if it is not defined</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNumericalVariance()"><!-- --></A><H3>
+getNumericalVariance</H3>
+<PRE>
+public double <B>getNumericalVariance</B>()</PRE>
+<DL>
+<DD>Use this method to get the numerical value of the variance of this
+ distribution.
+
+ For number of successes <code>r</code> and probability of success <code>p</code>,
+ the variance is <code>r * (1 - p) / p^2</code>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the variance (possibly <code>Double.POSITIVE_INFINITY</code> or
+ <code>Double.NaN</code> if it is not defined)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSupportLowerBound()"><!-- --></A><H3>
+getSupportLowerBound</H3>
+<PRE>
+public int <B>getSupportLowerBound</B>()</PRE>
+<DL>
+<DD>Access the lower bound of the support. This method must return the same
+ value as <code>inverseCumulativeProbability(0)</code>. In other words, this
+ method must return
+ <p><code>inf {x in Z | P(X <= x) > 0}</code>.</p>
+
+ The lower bound of the support is always 0 no matter the parameters.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>lower bound of the support (always 0)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSupportUpperBound()"><!-- --></A><H3>
+getSupportUpperBound</H3>
+<PRE>
+public int <B>getSupportUpperBound</B>()</PRE>
+<DL>
+<DD>Access the upper bound of the support. This method must return the same
+ value as <code>inverseCumulativeProbability(1)</code>. In other words, this
+ method must return
+ <p><code>inf {x in R | P(X <= x) = 1}</code>.</p>
+
+ The upper bound of the support is always positive infinity no matter the
+ parameters. Positive infinity is symbolized by <code>Integer.MAX_VALUE</code>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>upper bound of the support (always <code>Integer.MAX_VALUE</code>
+ for positive infinity)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSupportConnected()"><!-- --></A><H3>
+isSupportConnected</H3>
+<PRE>
+public boolean <B>isSupportConnected</B>()</PRE>
+<DL>
+<DD>Use this method to get information about whether the support is
+ connected, i.e. whether all integers between the lower and upper bound of
+ the support are included in the support.
+
+ The support of this distribution is connected.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/PascalDistribution.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/distribution/NormalDistribution.html" title="class in org.apache.commons.math3.distribution"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/distribution/PoissonDistribution.html" title="class in org.apache.commons.math3.distribution"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/distribution/PascalDistribution.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="PascalDistribution.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.commons.math3.distribution.AbstractIntegerDistribution">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

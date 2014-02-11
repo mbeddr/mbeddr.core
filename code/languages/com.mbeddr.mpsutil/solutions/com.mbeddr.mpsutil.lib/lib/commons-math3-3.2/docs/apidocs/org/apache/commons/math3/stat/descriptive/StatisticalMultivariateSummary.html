@@ -1,0 +1,474 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+StatisticalMultivariateSummary (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="StatisticalMultivariateSummary (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/StatisticalMultivariateSummary.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html" title="class in org.apache.commons.math3.stat.descriptive"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="StatisticalMultivariateSummary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.stat.descriptive</FONT>
+<BR>
+Interface StatisticalMultivariateSummary</H2>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html" title="class in org.apache.commons.math3.stat.descriptive">MultivariateSummaryStatistics</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/SynchronizedMultivariateSummaryStatistics.html" title="class in org.apache.commons.math3.stat.descriptive">SynchronizedMultivariateSummaryStatistics</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public interface <B>StatisticalMultivariateSummary</B></DL>
+</PRE>
+
+<P>
+Reporting interface for basic multivariate statistics.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>1.2</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: StatisticalMultivariateSummary.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html#getCovariance()">getCovariance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the covariance of the available values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html#getDimension()">getDimension</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the dimension of the data</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html#getGeometricMean()">getGeometricMean</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array whose i<sup>th</sup> entry is the
+ geometric mean of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html#getMax()">getMax</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array whose i<sup>th</sup> entry is the
+ maximum of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html#getMean()">getMean</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array whose i<sup>th</sup> entry is the
+ mean of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html#getMin()">getMin</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array whose i<sup>th</sup> entry is the
+ minimum of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html#getN()">getN</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the number of available values</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html#getStandardDeviation()">getStandardDeviation</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array whose i<sup>th</sup> entry is the
+ standard deviation of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html#getSum()">getSum</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array whose i<sup>th</sup> entry is the
+ sum of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html#getSumLog()">getSumLog</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array whose i<sup>th</sup> entry is the
+ sum of logs of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html#getSumSq()">getSumSq</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array whose i<sup>th</sup> entry is the
+ sum of squares of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getDimension()"><!-- --></A><H3>
+getDimension</H3>
+<PRE>
+int <B>getDimension</B>()</PRE>
+<DL>
+<DD>Returns the dimension of the data
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The dimension of the data</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMean()"><!-- --></A><H3>
+getMean</H3>
+<PRE>
+double[] <B>getMean</B>()</PRE>
+<DL>
+<DD>Returns an array whose i<sup>th</sup> entry is the
+ mean of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the array of component means</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCovariance()"><!-- --></A><H3>
+getCovariance</H3>
+<PRE>
+<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>getCovariance</B>()</PRE>
+<DL>
+<DD>Returns the covariance of the available values.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The covariance, null if no multivariate sample
+ have been added or a zeroed matrix for a single value set.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStandardDeviation()"><!-- --></A><H3>
+getStandardDeviation</H3>
+<PRE>
+double[] <B>getStandardDeviation</B>()</PRE>
+<DL>
+<DD>Returns an array whose i<sup>th</sup> entry is the
+ standard deviation of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the array of component standard deviations</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMax()"><!-- --></A><H3>
+getMax</H3>
+<PRE>
+double[] <B>getMax</B>()</PRE>
+<DL>
+<DD>Returns an array whose i<sup>th</sup> entry is the
+ maximum of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the array of component maxima</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMin()"><!-- --></A><H3>
+getMin</H3>
+<PRE>
+double[] <B>getMin</B>()</PRE>
+<DL>
+<DD>Returns an array whose i<sup>th</sup> entry is the
+ minimum of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the array of component minima</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getN()"><!-- --></A><H3>
+getN</H3>
+<PRE>
+long <B>getN</B>()</PRE>
+<DL>
+<DD>Returns the number of available values
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The number of available values</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getGeometricMean()"><!-- --></A><H3>
+getGeometricMean</H3>
+<PRE>
+double[] <B>getGeometricMean</B>()</PRE>
+<DL>
+<DD>Returns an array whose i<sup>th</sup> entry is the
+ geometric mean of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the array of component geometric means</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSum()"><!-- --></A><H3>
+getSum</H3>
+<PRE>
+double[] <B>getSum</B>()</PRE>
+<DL>
+<DD>Returns an array whose i<sup>th</sup> entry is the
+ sum of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the array of component sums</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSumSq()"><!-- --></A><H3>
+getSumSq</H3>
+<PRE>
+double[] <B>getSumSq</B>()</PRE>
+<DL>
+<DD>Returns an array whose i<sup>th</sup> entry is the
+ sum of squares of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the array of component sums of squares</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSumLog()"><!-- --></A><H3>
+getSumLog</H3>
+<PRE>
+double[] <B>getSumLog</B>()</PRE>
+<DL>
+<DD>Returns an array whose i<sup>th</sup> entry is the
+ sum of logs of the i<sup>th</sup> entries of the arrays
+ that correspond to each multivariate sample
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the array of component log sums</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/StatisticalMultivariateSummary.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.html" title="class in org.apache.commons.math3.stat.descriptive"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/descriptive/StatisticalMultivariateSummary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="StatisticalMultivariateSummary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

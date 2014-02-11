@@ -34,6 +34,12 @@
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.rcp" />
     <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.rcp.branding" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-mbeddr-branding.xml" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056431151" nodeInfo="ng">
+      <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
+      <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
+      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="16" />
+      <property name="inplace" nameId="kdzh.4297162197621031140" value="true" />
+    </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8628756186118380495" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr.github.core.home" />
       <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="5590523698994462437" nodeInfo="ng">
@@ -188,6 +194,12 @@
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.rcp" />
     <property name="name" nameId="tpck.1169194664001" value="jetbrains.mps.standalone" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-standalone-mps.xml" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056431236" nodeInfo="ng">
+      <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
+      <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
+      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="16" />
+      <property name="inplace" nameId="kdzh.4297162197621031140" value="true" />
+    </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="6168924288978819717" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mps.home" />
     </node>
@@ -360,6 +372,12 @@
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.rcp" />
     <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.rcp.distrib" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-mbeddr-distrib.xml" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056444119" nodeInfo="ng">
+      <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
+      <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
+      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="16" />
+      <property name="inplace" nameId="kdzh.4297162197621031140" value="true" />
+    </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildVariableMacro" typeId="3ior.3767587139141066978" id="6168924288978682996" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="version" />
       <node role="initialValue" roleId="3ior.2755237150521975432" type="3ior.BuildVariableMacroInitWithString" typeId="3ior.2755237150521975431" id="6168924288978683007" nodeInfo="ng">

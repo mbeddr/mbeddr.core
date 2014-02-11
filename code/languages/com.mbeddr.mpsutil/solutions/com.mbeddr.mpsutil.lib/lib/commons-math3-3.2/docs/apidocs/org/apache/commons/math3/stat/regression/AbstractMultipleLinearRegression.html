@@ -1,0 +1,864 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+AbstractMultipleLinearRegression (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractMultipleLinearRegression (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractMultipleLinearRegression.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/GLSMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractMultipleLinearRegression.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.stat.regression</FONT>
+<BR>
+Class AbstractMultipleLinearRegression</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">MultipleLinearRegression</A></DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../org/apache/commons/math3/stat/regression/GLSMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression">GLSMultipleLinearRegression</A>, <A HREF="../../../../../../org/apache/commons/math3/stat/regression/OLSMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression">OLSMultipleLinearRegression</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>AbstractMultipleLinearRegression</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">MultipleLinearRegression</A></DL>
+</PRE>
+
+<P>
+Abstract base class for implementations of MultipleLinearRegression.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: AbstractMultipleLinearRegression.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#AbstractMultipleLinearRegression()">AbstractMultipleLinearRegression</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#calculateBeta()">calculateBeta</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the beta of multiple linear regression in matrix notation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#calculateBetaVariance()">calculateBetaVariance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the beta variance of multiple linear regression in matrix
+ notation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#calculateErrorVariance()">calculateErrorVariance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the variance of the error term.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#calculateResiduals()">calculateResiduals</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the residuals of multiple linear regression in matrix
+ notation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#calculateYVariance()">calculateYVariance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates the variance of the y values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateErrorVariance()">estimateErrorVariance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimates the variance of the error.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateRegressandVariance()">estimateRegressandVariance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the variance of the regressand, ie Var(y).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateRegressionParameters()">estimateRegressionParameters</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimates the regression parameters b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateRegressionParametersStandardErrors()">estimateRegressionParametersStandardErrors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the standard errors of the regression parameters.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[][]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateRegressionParametersVariance()">estimateRegressionParametersVariance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimates the variance of the regression parameters, ie Var(b).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateRegressionStandardError()">estimateRegressionStandardError</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimates the standard error of the regression.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#estimateResiduals()">estimateResiduals</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimates the residuals, ie u = y - X*b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#getX()">getX</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#getY()">getY</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#isNoIntercept()">isNoIntercept</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#newSampleData(double[], int, int)">newSampleData</A></B>(double[]&nbsp;data,
+              int&nbsp;nobs,
+              int&nbsp;nvars)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loads model x and y sample data from a flat input array, overriding any previous sample.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#newXSampleData(double[][])">newXSampleData</A></B>(double[][]&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loads new x sample data, overriding any previous data.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#newYSampleData(double[])">newYSampleData</A></B>(double[]&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loads new y sample data, overriding any previous data.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#setNoIntercept(boolean)">setNoIntercept</A></B>(boolean&nbsp;noIntercept)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#validateCovarianceData(double[][], double[][])">validateCovarianceData</A></B>(double[][]&nbsp;x,
+                       double[][]&nbsp;covariance)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Validates that the x data and covariance matrix have the same
+ number of rows and that the covariance matrix is square.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#validateSampleData(double[][], double[])">validateSampleData</A></B>(double[][]&nbsp;x,
+                   double[]&nbsp;y)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Validates sample data.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AbstractMultipleLinearRegression()"><!-- --></A><H3>
+AbstractMultipleLinearRegression</H3>
+<PRE>
+public <B>AbstractMultipleLinearRegression</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getX()"><!-- --></A><H3>
+getX</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>getX</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the X sample data.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getY()"><!-- --></A><H3>
+getY</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>getY</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the Y sample data.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isNoIntercept()"><!-- --></A><H3>
+isNoIntercept</H3>
+<PRE>
+public boolean <B>isNoIntercept</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if the model has no intercept term; false otherwise<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setNoIntercept(boolean)"><!-- --></A><H3>
+setNoIntercept</H3>
+<PRE>
+public void <B>setNoIntercept</B>(boolean&nbsp;noIntercept)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>noIntercept</CODE> - true means the model is to be estimated without an intercept term<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newSampleData(double[], int, int)"><!-- --></A><H3>
+newSampleData</H3>
+<PRE>
+public void <B>newSampleData</B>(double[]&nbsp;data,
+                          int&nbsp;nobs,
+                          int&nbsp;nvars)</PRE>
+<DL>
+<DD><p>Loads model x and y sample data from a flat input array, overriding any previous sample.
+ </p>
+ <p>Assumes that rows are concatenated with y values first in each row.  For example, an input
+ <code>data</code> array containing the sequence of values (1, 2, 3, 4, 5, 6, 7, 8, 9) with
+ <code>nobs = 3</code> and <code>nvars = 2</code> creates a regression dataset with two
+ independent variables, as below:
+ <pre>
+   y   x[0]  x[1]
+   --------------
+   1     2     3
+   4     5     6
+   7     8     9
+ </pre>
+ </p>
+ <p>Note that there is no need to add an initial unitary column (column of 1's) when
+ specifying a model including an intercept term.  If <A HREF="../../../../../../org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html#isNoIntercept()"><CODE>isNoIntercept()</CODE></A> is <code>true</code>,
+ the X matrix will be created without an initial column of "1"s; otherwise this column will
+ be added.
+ </p>
+ <p>Throws IllegalArgumentException if any of the following preconditions fail:
+ <ul><li><code>data</code> cannot be null</li>
+ <li><code>data.length = nobs * (nvars + 1)</li>
+ <li><code>nobs > nvars</code></li></ul>
+ </p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>data</CODE> - input data array<DD><CODE>nobs</CODE> - number of observations (rows)<DD><CODE>nvars</CODE> - number of independent variables (columns, not counting y)
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the data array is null
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the length of the data array is not equal
+ to <code>nobs * (nvars + 1)</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if <code>nobs</code> is smaller than
+ <code>nvars</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newYSampleData(double[])"><!-- --></A><H3>
+newYSampleData</H3>
+<PRE>
+protected void <B>newYSampleData</B>(double[]&nbsp;y)</PRE>
+<DL>
+<DD>Loads new y sample data, overriding any previous data.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>y</CODE> - the array representing the y sample
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if y is null
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></CODE> - if y is empty</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newXSampleData(double[][])"><!-- --></A><H3>
+newXSampleData</H3>
+<PRE>
+protected void <B>newXSampleData</B>(double[][]&nbsp;x)</PRE>
+<DL>
+<DD><p>Loads new x sample data, overriding any previous data.
+ </p>
+ The input <code>x</code> array should have one row for each sample
+ observation, with columns corresponding to independent variables.
+ For example, if <pre>
+ <code> x = new double[][] {{1, 2}, {3, 4}, {5, 6}} </code></pre>
+ then <code>setXSampleData(x) </code> results in a model with two independent
+ variables and 3 observations:
+ <pre>
+   x[0]  x[1]
+   ----------
+     1    2
+     3    4
+     5    6
+ </pre>
+ </p>
+ <p>Note that there is no need to add an initial unitary column (column of 1's) when
+ specifying a model including an intercept term.
+ </p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - the rectangular array representing the x sample
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if x is null
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></CODE> - if x is empty
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if x is not rectangular</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateSampleData(double[][], double[])"><!-- --></A><H3>
+validateSampleData</H3>
+<PRE>
+protected void <B>validateSampleData</B>(double[][]&nbsp;x,
+                                  double[]&nbsp;y)
+                           throws <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Validates sample data.  Checks that
+ <ul><li>Neither x nor y is null or empty;</li>
+ <li>The length (i.e. number of rows) of x equals the length of y</li>
+ <li>x has at least one more row than it has columns (i.e. there is
+ sufficient data to estimate regression coefficients for each of the
+ columns in x plus an intercept.</li>
+ </ul>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - the [n,k] array representing the x data<DD><CODE>y</CODE> - the [n,1] array representing the y data
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>x</code> or <code>y</code> is null
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>x</code> and <code>y</code> do not
+ have the same length
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></CODE> - if <code>x</code> or <code>y</code> are zero-length
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if the number of rows of <code>x</code>
+ is not larger than the number of columns + 1</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateCovarianceData(double[][], double[][])"><!-- --></A><H3>
+validateCovarianceData</H3>
+<PRE>
+protected void <B>validateCovarianceData</B>(double[][]&nbsp;x,
+                                      double[][]&nbsp;covariance)</PRE>
+<DL>
+<DD>Validates that the x data and covariance matrix have the same
+ number of rows and that the covariance matrix is square.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - the [n,k] array representing the x sample<DD><CODE>covariance</CODE> - the [n,n] array representing the covariance matrix
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the number of rows in x is not equal
+ to the number of rows in covariance
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/linear/NonSquareMatrixException.html" title="class in org.apache.commons.math3.linear">NonSquareMatrixException</A></CODE> - if the covariance matrix is not square</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="estimateRegressionParameters()"><!-- --></A><H3>
+estimateRegressionParameters</H3>
+<PRE>
+public double[] <B>estimateRegressionParameters</B>()</PRE>
+<DL>
+<DD>Estimates the regression parameters b.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html#estimateRegressionParameters()">estimateRegressionParameters</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">MultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The [k,1] array representing b</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="estimateResiduals()"><!-- --></A><H3>
+estimateResiduals</H3>
+<PRE>
+public double[] <B>estimateResiduals</B>()</PRE>
+<DL>
+<DD>Estimates the residuals, ie u = y - X*b.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html#estimateResiduals()">estimateResiduals</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">MultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The [n,1] array representing the residuals</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="estimateRegressionParametersVariance()"><!-- --></A><H3>
+estimateRegressionParametersVariance</H3>
+<PRE>
+public double[][] <B>estimateRegressionParametersVariance</B>()</PRE>
+<DL>
+<DD>Estimates the variance of the regression parameters, ie Var(b).
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html#estimateRegressionParametersVariance()">estimateRegressionParametersVariance</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">MultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The [k,k] array representing the variance of b</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="estimateRegressionParametersStandardErrors()"><!-- --></A><H3>
+estimateRegressionParametersStandardErrors</H3>
+<PRE>
+public double[] <B>estimateRegressionParametersStandardErrors</B>()</PRE>
+<DL>
+<DD>Returns the standard errors of the regression parameters.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html#estimateRegressionParametersStandardErrors()">estimateRegressionParametersStandardErrors</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">MultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>standard errors of estimated regression parameters</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="estimateRegressandVariance()"><!-- --></A><H3>
+estimateRegressandVariance</H3>
+<PRE>
+public double <B>estimateRegressandVariance</B>()</PRE>
+<DL>
+<DD>Returns the variance of the regressand, ie Var(y).
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html#estimateRegressandVariance()">estimateRegressandVariance</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/commons/math3/stat/regression/MultipleLinearRegression.html" title="interface in org.apache.commons.math3.stat.regression">MultipleLinearRegression</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The double representing the variance of y</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="estimateErrorVariance()"><!-- --></A><H3>
+estimateErrorVariance</H3>
+<PRE>
+public double <B>estimateErrorVariance</B>()</PRE>
+<DL>
+<DD>Estimates the variance of the error.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>estimate of the error variance<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="estimateRegressionStandardError()"><!-- --></A><H3>
+estimateRegressionStandardError</H3>
+<PRE>
+public double <B>estimateRegressionStandardError</B>()</PRE>
+<DL>
+<DD>Estimates the standard error of the regression.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>regression standard error<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="calculateBeta()"><!-- --></A><H3>
+calculateBeta</H3>
+<PRE>
+protected abstract <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>calculateBeta</B>()</PRE>
+<DL>
+<DD>Calculates the beta of multiple linear regression in matrix notation.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>beta</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="calculateBetaVariance()"><!-- --></A><H3>
+calculateBetaVariance</H3>
+<PRE>
+protected abstract <A HREF="../../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</A> <B>calculateBetaVariance</B>()</PRE>
+<DL>
+<DD>Calculates the beta variance of multiple linear regression in matrix
+ notation.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>beta variance</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="calculateYVariance()"><!-- --></A><H3>
+calculateYVariance</H3>
+<PRE>
+protected double <B>calculateYVariance</B>()</PRE>
+<DL>
+<DD>Calculates the variance of the y values.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>Y variance</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="calculateErrorVariance()"><!-- --></A><H3>
+calculateErrorVariance</H3>
+<PRE>
+protected double <B>calculateErrorVariance</B>()</PRE>
+<DL>
+<DD><p>Calculates the variance of the error term.</p>
+ Uses the formula <pre>
+ var(u) = u &middot; u / (n - k)
+ </pre>
+ where n and k are the row and column dimensions of the design
+ matrix X.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>error variance estimate<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="calculateResiduals()"><!-- --></A><H3>
+calculateResiduals</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>calculateResiduals</B>()</PRE>
+<DL>
+<DD>Calculates the residuals of multiple linear regression in matrix
+ notation.
+
+ <pre>
+ u = y - X * b
+ </pre>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The residuals [n,1] matrix</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractMultipleLinearRegression.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/regression/GLSMultipleLinearRegression.html" title="class in org.apache.commons.math3.stat.regression"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/regression/AbstractMultipleLinearRegression.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractMultipleLinearRegression.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

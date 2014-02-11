@@ -1,0 +1,524 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Class org.apache.commons.math3.geometry.euclidean.oned.Euclidean1D (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class org.apache.commons.math3.geometry.euclidean.oned.Euclidean1D (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../../index.html?org/apache/commons/math3/geometry/euclidean/oned//class-useEuclidean1D.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Euclidean1D.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Class<br>org.apache.commons.math3.geometry.euclidean.oned.Euclidean1D</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.geometry.euclidean.oned"><B>org.apache.commons.math3.geometry.euclidean.oned</B></A></TD>
+<TD>
+ This package provides basic 1D geometry components.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.geometry.euclidean.threed"><B>org.apache.commons.math3.geometry.euclidean.threed</B></A></TD>
+<TD>
+ This package provides basic 3D geometry components.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.commons.math3.geometry.euclidean.twod"><B>org.apache.commons.math3.geometry.euclidean.twod</B></A></TD>
+<TD>
+ This package provides basic 2D geometry components.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.geometry.euclidean.oned"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A> in <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/package-summary.html">org.apache.commons.math3.geometry.euclidean.oned</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/package-summary.html">org.apache.commons.math3.geometry.euclidean.oned</A> that return <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A></CODE></FONT></TD>
+<TD><CODE><B>Euclidean1D.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html#getInstance()">getInstance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the unique instance.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/package-summary.html">org.apache.commons.math3.geometry.euclidean.oned</A> that return types with arguments of type <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">AbstractSubHyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>,<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubOrientedPoint.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#buildNew(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">buildNew</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane,
+         <A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a sub-hyperplane from an hyperplane and a region.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">AbstractSubHyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>,<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubOrientedPoint.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#buildNew(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">buildNew</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane,
+         <A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a sub-hyperplane from an hyperplane and a region.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.SplitSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">SubHyperplane.SplitSubHyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubOrientedPoint.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#split(org.apache.commons.math3.geometry.partitioning.Hyperplane)">split</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Split the instance in two parts by an hyperplane.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Method parameters in <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/package-summary.html">org.apache.commons.math3.geometry.euclidean.oned</A> with type arguments of type <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Vector1D</A></CODE></FONT></TD>
+<TD><CODE><B>Vector1D.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html#add(double, org.apache.commons.math3.geometry.Vector)">add</A></B>(double&nbsp;factor,
+    <A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a scaled vector to the instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Vector1D</A></CODE></FONT></TD>
+<TD><CODE><B>Vector1D.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html#add(org.apache.commons.math3.geometry.Vector)">add</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a vector to the instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">IntervalsSet</A></CODE></FONT></TD>
+<TD><CODE><B>IntervalsSet.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.html#buildNew(org.apache.commons.math3.geometry.partitioning.BSPTree)">buildNew</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/BSPTree.html" title="class in org.apache.commons.math3.geometry.partitioning">BSPTree</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;tree)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a region using the instance as a prototype.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">AbstractSubHyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>,<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubOrientedPoint.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#buildNew(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">buildNew</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane,
+         <A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a sub-hyperplane from an hyperplane and a region.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">AbstractSubHyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>,<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubOrientedPoint.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#buildNew(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">buildNew</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane,
+         <A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a sub-hyperplane from an hyperplane and a region.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Vector1D.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html#distance(org.apache.commons.math3.geometry.Vector)">distance</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the distance between the instance and another vector according to the L<sub>2</sub> norm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Vector1D.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html#distance1(org.apache.commons.math3.geometry.Vector)">distance1</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the distance between the instance and another vector according to the L<sub>1</sub> norm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Vector1D.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html#distanceInf(org.apache.commons.math3.geometry.Vector)">distanceInf</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the distance between the instance and another vector according to the L<sub>&infin;</sub> norm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Vector1D.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html#distanceSq(org.apache.commons.math3.geometry.Vector)">distanceSq</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the square of the distance between the instance and another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>Vector1D.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html#dotProduct(org.apache.commons.math3.geometry.Vector)">dotProduct</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the dot-product of the instance and another vector.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang">StringBuffer</A></CODE></FONT></TD>
+<TD><CODE><B>Vector1DFormat.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1DFormat.html#format(org.apache.commons.math3.geometry.Vector, java.lang.StringBuffer, java.text.FieldPosition)">format</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;vector,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang">StringBuffer</A>&nbsp;toAppendTo,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/text/FieldPosition.html?is-external=true" title="class or interface in java.text">FieldPosition</A>&nbsp;pos)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formats a <A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry"><CODE>Vector</CODE></A> object to produce a string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B>OrientedPoint.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/OrientedPoint.html#getOffset(org.apache.commons.math3.geometry.Vector)">getOffset</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the offset (oriented distance) of a point.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>OrientedPoint.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/OrientedPoint.html#sameOrientationAs(org.apache.commons.math3.geometry.partitioning.Hyperplane)">sameOrientationAs</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;other)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if the instance has the same orientation as another hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Side.html" title="enum in org.apache.commons.math3.geometry.partitioning">Side</A></CODE></FONT></TD>
+<TD><CODE><B>SubOrientedPoint.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#side(org.apache.commons.math3.geometry.partitioning.Hyperplane)">side</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the relative position of the instance with respect
+ to an hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.SplitSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">SubHyperplane.SplitSubHyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubOrientedPoint.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#split(org.apache.commons.math3.geometry.partitioning.Hyperplane)">split</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Split the instance in two parts by an hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Vector1D</A></CODE></FONT></TD>
+<TD><CODE><B>Vector1D.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html#subtract(double, org.apache.commons.math3.geometry.Vector)">subtract</A></B>(double&nbsp;factor,
+         <A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract a scaled vector from the instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Vector1D</A></CODE></FONT></TD>
+<TD><CODE><B>Vector1D.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Vector1D.html#subtract(org.apache.commons.math3.geometry.Vector)">subtract</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract a vector from the instance.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructor parameters in <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/package-summary.html">org.apache.commons.math3.geometry.euclidean.oned</A> with type arguments of type <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.html#IntervalsSet(org.apache.commons.math3.geometry.partitioning.BSPTree)">IntervalsSet</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/BSPTree.html" title="class in org.apache.commons.math3.geometry.partitioning">BSPTree</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;tree)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build an intervals set from an inside/outside BSP tree.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.html#IntervalsSet(java.util.Collection)">IntervalsSet</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">SubHyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&gt;&nbsp;boundary)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build an intervals set from a Boundary REPresentation (B-rep).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#SubOrientedPoint(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">SubOrientedPoint</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane,
+                 <A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple constructor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/SubOrientedPoint.html#SubOrientedPoint(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">SubOrientedPoint</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;hyperplane,
+                 <A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple constructor.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.geometry.euclidean.threed"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A> in <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Method parameters in <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</A> with type arguments of type <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Vector3D.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">Vector3D</A></CODE></FONT></TD>
+<TD><CODE><B>Line.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/Line.html#toSpace(org.apache.commons.math3.geometry.Vector)">toSpace</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transform a sub-space point into a space point.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.commons.math3.geometry.euclidean.twod"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A> in <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html">org.apache.commons.math3.geometry.euclidean.twod</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html">org.apache.commons.math3.geometry.euclidean.twod</A> that return <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A></CODE></FONT></TD>
+<TD><CODE><B>Euclidean2D.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html#getSubSpace()">getSubSpace</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the n-1 dimension subspace of this space.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html">org.apache.commons.math3.geometry.euclidean.twod</A> that return types with arguments of type <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">AbstractSubHyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>,<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubLine.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/SubLine.html#buildNew(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">buildNew</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>&gt;&nbsp;hyperplane,
+         <A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a sub-hyperplane from an hyperplane and a region.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="interface in org.apache.commons.math3.geometry.partitioning">Transform</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>,<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>Line.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Line.html#getTransform(java.awt.geom.AffineTransform)">getTransform</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/awt/geom/AffineTransform.html?is-external=true" title="class or interface in java.awt.geom">AffineTransform</A>&nbsp;transform)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a <A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="interface in org.apache.commons.math3.geometry.partitioning"><CODE>Transform</CODE></A> embedding an affine transform.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Method parameters in <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html">org.apache.commons.math3.geometry.euclidean.twod</A> with type arguments of type <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">AbstractSubHyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>,<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SubLine.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/SubLine.html#buildNew(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">buildNew</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>&gt;&nbsp;hyperplane,
+         <A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a sub-hyperplane from an hyperplane and a region.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Vector2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Vector2D</A></CODE></FONT></TD>
+<TD><CODE><B>Line.</B><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Line.html#toSpace(org.apache.commons.math3.geometry.Vector)">toSpace</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/Vector.html" title="interface in org.apache.commons.math3.geometry">Vector</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;point)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transform a sub-space point into a space point.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructor parameters in <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html">org.apache.commons.math3.geometry.euclidean.twod</A> with type arguments of type <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/SubLine.html#SubLine(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)">SubLine</A></B>(<A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/twod/Euclidean2D.html" title="class in org.apache.commons.math3.geometry.euclidean.twod">Euclidean2D</A>&gt;&nbsp;hyperplane,
+        <A HREF="../../../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region</A>&lt;<A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D</A>&gt;&nbsp;remainingRegion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple constructor.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.html" title="class in org.apache.commons.math3.geometry.euclidean.oned"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../../index.html?org/apache/commons/math3/geometry/euclidean/oned//class-useEuclidean1D.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Euclidean1D.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

@@ -7,9 +7,9 @@
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <language namespace="774bf8a0-62e5-41e1-af63-f4812e60e48b(jetbrains.mps.baseLanguage.checkedDots)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="15" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" />
-  <import index="p15z" modelUID="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" version="1" />
+  <import index="p15z" modelUID="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" version="2" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
   <import index="ec5l" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" version="-1" />
@@ -1926,12 +1926,12 @@
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="6451706574539345561" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="toggleLineDoc" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="doc" />
-    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="tpee.7812454656619025416" resolveInfo="MethodDeclaration" />
+    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="tpee.1178285077437" resolveInfo="ClassifierMember" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="6451706574539345562" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6451706574539345563" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6451706574539346928" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6451706574539346927" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="toggle line doc" />
+            <property name="value" nameId="tpee.1070475926801" value="Toggle line doc" />
           </node>
         </node>
       </node>
@@ -1945,7 +1945,7 @@
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6451706574539369508" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="6451706574539369282" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="6451706574539374293" nodeInfo="nn">
-                    <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="6451706574539950175" nodeInfo="ng">
+                    <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="8406164770760536490" nodeInfo="ng">
                       <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="hba4.6451706574539345403" resolveInfo="MethodLineDoc" />
                     </node>
                   </node>
@@ -1958,7 +1958,7 @@
             <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6451706574539357342" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="6451706574539357085" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="6451706574539362475" nodeInfo="nn">
-                <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="6451706574539949686" nodeInfo="ng">
+                <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="8406164770760535794" nodeInfo="ng">
                   <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="hba4.6451706574539345403" resolveInfo="MethodLineDoc" />
                 </node>
               </node>
@@ -1972,7 +1972,7 @@
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6451706574539378599" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="6451706574539378373" nodeInfo="nn" />
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="6451706574539383385" nodeInfo="nn">
-                      <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="6451706574539951358" nodeInfo="ng">
+                      <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="8406164770760537206" nodeInfo="ng">
                         <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="hba4.6451706574539345403" resolveInfo="MethodLineDoc" />
                       </node>
                     </node>

@@ -1,0 +1,337 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+org.apache.commons.math3.geometry.partitioning (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="org.apache.commons.math3.geometry.partitioning (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html"><B>PREV PACKAGE</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/utilities/package-summary.html"><B>NEXT PACKAGE</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/geometry/partitioning/package-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="package-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<H2>
+Package org.apache.commons.math3.geometry.partitioning
+</H2>
+This package provides classes to implement Binary Space Partition trees.
+<P>
+<B>See:</B>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#package_description"><B>Description</B></A>
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Interface Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/BSPTree.LeafMerger.html" title="interface in org.apache.commons.math3.geometry.partitioning">BSPTree.LeafMerger&lt;S extends Space&gt;</A></B></TD>
+<TD>This interface gather the merging operations between a BSP tree
+ leaf and another BSP tree.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/BSPTreeVisitor.html" title="interface in org.apache.commons.math3.geometry.partitioning">BSPTreeVisitor&lt;S extends Space&gt;</A></B></TD>
+<TD>This interface is used to visit <A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/BSPTree.html" title="class in org.apache.commons.math3.geometry.partitioning"><CODE>BSP tree</CODE></A> nodes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/Embedding.html" title="interface in org.apache.commons.math3.geometry.partitioning">Embedding&lt;S extends Space,T extends Space&gt;</A></B></TD>
+<TD>This interface defines mappers between a space and one of its sub-spaces.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">Hyperplane&lt;S extends Space&gt;</A></B></TD>
+<TD>This interface represents an hyperplane of a space.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning">Region&lt;S extends Space&gt;</A></B></TD>
+<TD>This interface represents a region of a space as a partition.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning">SubHyperplane&lt;S extends Space&gt;</A></B></TD>
+<TD>This interface represents the remaining parts of an hyperplane after
+ other parts have been chopped off.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/Transform.html" title="interface in org.apache.commons.math3.geometry.partitioning">Transform&lt;S extends Space,T extends Space&gt;</A></B></TD>
+<TD>This interface represents an inversible affine transform in a space.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractRegion.html" title="class in org.apache.commons.math3.geometry.partitioning">AbstractRegion&lt;S extends Space,T extends Space&gt;</A></B></TD>
+<TD>Abstract class for all regions, independently of geometry type or dimension.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/AbstractSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">AbstractSubHyperplane&lt;S extends Space,T extends Space&gt;</A></B></TD>
+<TD>This class implements the dimension-independent parts of <A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning"><CODE>SubHyperplane</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/BoundaryAttribute.html" title="class in org.apache.commons.math3.geometry.partitioning">BoundaryAttribute&lt;S extends Space&gt;</A></B></TD>
+<TD>Class holding boundary attributes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/BSPTree.html" title="class in org.apache.commons.math3.geometry.partitioning">BSPTree&lt;S extends Space&gt;</A></B></TD>
+<TD>This class represent a Binary Space Partition tree.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/RegionFactory.html" title="class in org.apache.commons.math3.geometry.partitioning">RegionFactory&lt;S extends Space&gt;</A></B></TD>
+<TD>This class is a factory for <A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning"><CODE>Region</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.SplitSubHyperplane.html" title="class in org.apache.commons.math3.geometry.partitioning">SubHyperplane.SplitSubHyperplane&lt;U extends Space&gt;</A></B></TD>
+<TD>Class holding the results of the <A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/SubHyperplane.html#split(org.apache.commons.math3.geometry.partitioning.Hyperplane)"><CODE>split</CODE></A> method.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Enum Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/BSPTreeVisitor.Order.html" title="enum in org.apache.commons.math3.geometry.partitioning">BSPTreeVisitor.Order</A></B></TD>
+<TD>Enumerate for visit order with respect to plus sub-tree, minus sub-tree and cut sub-hyperplane.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/Region.Location.html" title="enum in org.apache.commons.math3.geometry.partitioning">Region.Location</A></B></TD>
+<TD>Enumerate for the location of a point with respect to the region.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/Side.html" title="enum in org.apache.commons.math3.geometry.partitioning">Side</A></B></TD>
+<TD>Enumerate representing the location of an element with respect to an
+ <A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/Hyperplane.html" title="interface in org.apache.commons.math3.geometry.partitioning"><CODE>hyperplane</CODE></A> of a space.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P>
+<A NAME="package_description"><!-- --></A><H2>
+Package org.apache.commons.math3.geometry.partitioning Description
+</H2>
+
+<P>
+This package provides classes to implement Binary Space Partition trees.
+
+ <p>
+ <A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/BSPTree.html" title="class in org.apache.commons.math3.geometry.partitioning"><CODE>BSP trees</CODE></A>
+ are an efficient way to represent parts of space and in particular
+ polytopes (line segments in 1D, polygons in 2D and polyhedrons in 3D)
+ and to operate on them. The main principle is to recursively subdivide
+ the space using simple hyperplanes (points in 1D, lines in 2D, planes
+ in 3D).
+ </p>
+
+ <p>
+ We start with a tree composed of a single node without any cut
+ hyperplane: it represents the complete space, which is a convex
+ part. If we add a cut hyperplane to this node, this represents a
+ partition with the hyperplane at the node level and two half spaces at
+ each side of the cut hyperplane. These half-spaces are represented by
+ two child nodes without any cut hyperplanes associated, the plus child
+ which represents the half space on the plus side of the cut hyperplane
+ and the minus child on the other side. Continuing the subdivisions, we
+ end up with a tree having internal nodes that are associated with a
+ cut hyperplane and leaf nodes without any hyperplane which correspond
+ to convex parts.
+ </p>
+
+ <p>
+ When BSP trees are used to represent polytopes, the convex parts are
+ known to be completely inside or outside the polytope as long as there
+ is no facet in the part (which is obviously the case if the cut
+ hyperplanes have been chosen as the underlying hyperplanes of the
+ facets (this is called an autopartition) and if the subdivision
+ process has been continued until all facets have been processed. It is
+ important to note that the polytope is <em>not</em> defined by a
+ single part, but by several convex ones. This is the property that
+ allows BSP-trees to represent non-convex polytopes despites all parts
+ are convex. The <A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/Region.html" title="interface in org.apache.commons.math3.geometry.partitioning"><CODE>Region</CODE></A> class is
+ devoted to this representation, it is build on top of the <A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/BSPTree.html" title="class in org.apache.commons.math3.geometry.partitioning"><CODE>BSPTree</CODE></A> class using
+ boolean objects as the leaf nodes attributes to represent the
+ inside/outside property of each leaf part, and also adds various
+ methods dealing with boundaries (i.e. the separation between the
+ inside and the outside parts).
+ </p>
+
+ <p>
+ Rather than simply associating the internal nodes with an hyperplane,
+ we consider <em>sub-hyperplanes</em> which correspond to the part of
+ the hyperplane that is inside the convex part defined by all the
+ parent nodes (this implies that the sub-hyperplane at root node is in
+ fact a complete hyperplane, because there is no parent to bound
+ it). Since the parts are convex, the sub-hyperplanes are convex, in
+ 3D the convex parts are convex polyhedrons, and the sub-hyperplanes
+ are convex polygons that cut these polyhedrons in two
+ sub-polyhedrons. Using this definition, a BSP tree completely
+ partitions the space. Each point either belongs to one of the
+ sub-hyperplanes in an internal node or belongs to one of the leaf
+ convex parts.
+ </p>
+
+ <p>
+ In order to determine where a point is, it is sufficient to check its
+ position with respect to the root cut hyperplane, to select the
+ corresponding child tree and to repeat the procedure recursively,
+ until either the point appears to be exactly on one of the hyperplanes
+ in the middle of the tree or to be in one of the leaf parts. For
+ this operation, it is sufficient to consider the complete hyperplanes,
+ there is no need to check the points with the boundary of the
+ sub-hyperplanes, because this check has in fact already been realized
+ by the recursive descent in the tree. This is very easy to do and very
+ efficient, especially if the tree is well balanced (the cost is
+ <code>O(log(n))</code> where <code>n</code> is the number of facets)
+ or if the first tree levels close to the root discriminate large parts
+ of the total space.
+ </p>
+
+ <p>
+ One of the main sources for the development of this package was Bruce
+ Naylor, John Amanatides and William Thibault paper <a
+ href="http://www.cs.yorku.ca/~amana/research/bsptSetOp.pdf">Merging
+ BSP Trees Yields Polyhedral Set Operations</a> Proc. Siggraph '90,
+ Computer Graphics 24(4), August 1990, pp 115-124, published by the
+ Association for Computing Machinery (ACM). The same paper can also be
+ found <a
+ href="http://www.cs.utexas.edu/users/fussell/courses/cs384g/bsp_treemerge.pdf">here</a>.
+ </p>
+<P>
+
+<P>
+<DL>
+</DL>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/geometry/euclidean/twod/package-summary.html"><B>PREV PACKAGE</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/geometry/partitioning/utilities/package-summary.html"><B>NEXT PACKAGE</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/geometry/partitioning/package-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="package-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

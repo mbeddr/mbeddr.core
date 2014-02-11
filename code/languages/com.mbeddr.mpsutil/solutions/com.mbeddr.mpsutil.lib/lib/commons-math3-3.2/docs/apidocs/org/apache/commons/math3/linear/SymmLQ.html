@@ -1,0 +1,962 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+SymmLQ (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SymmLQ (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SymmLQ.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseRealVector.html" title="class in org.apache.commons.math3.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/linear/SymmLQ.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SymmLQ.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.linear</FONT>
+<BR>
+Class SymmLQ</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">org.apache.commons.math3.linear.IterativeLinearSolver</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">org.apache.commons.math3.linear.PreconditionedIterativeLinearSolver</A>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.linear.SymmLQ</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>SymmLQ</B><DT>extends <A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">PreconditionedIterativeLinearSolver</A></DL>
+</PRE>
+
+<P>
+<p>
+ Implementation of the SYMMLQ iterative linear solver proposed by <a
+ href="#PAIG1975">Paige and Saunders (1975)</a>. This implementation is
+ largely based on the FORTRAN code by Pr. Michael A. Saunders, available <a
+ href="http://www.stanford.edu/group/SOL/software/symmlq/f77/">here</a>.
+ </p>
+ <p>
+ SYMMLQ is designed to solve the system of linear equations A &middot; x = b
+ where A is an n &times; n self-adjoint linear operator (defined as a
+ <A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear"><CODE>RealLinearOperator</CODE></A>), and b is a given vector. The operator A is not
+ required to be positive definite. If A is known to be definite, the method of
+ conjugate gradients might be preferred, since it will require about the same
+ number of iterations as SYMMLQ but slightly less work per iteration.
+ </p>
+ <p>
+ SYMMLQ is designed to solve the system (A - shift &middot; I) &middot; x = b,
+ where shift is a specified scalar value. If shift and b are suitably chosen,
+ the computed vector x may approximate an (unnormalized) eigenvector of A, as
+ in the methods of inverse iteration and/or Rayleigh-quotient iteration.
+ Again, the linear operator (A - shift &middot; I) need not be positive
+ definite (but <em>must</em> be self-adjoint). The work per iteration is very
+ slightly less if shift = 0.
+ </p>
+ <h3>Preconditioning</h3>
+ <p>
+ Preconditioning may reduce the number of iterations required. The solver may
+ be provided with a positive definite preconditioner
+ M = P<sup>T</sup> &middot; P
+ that is known to approximate
+ (A - shift &middot; I)<sup>-1</sup> in some sense, where matrix-vector
+ products of the form M &middot; y = x can be computed efficiently. Then
+ SYMMLQ will implicitly solve the system of equations
+ P &middot; (A - shift &middot; I) &middot; P<sup>T</sup> &middot;
+ x<sub>hat</sub> = P &middot; b, i.e.
+ A<sub>hat</sub> &middot; x<sub>hat</sub> = b<sub>hat</sub>,
+ where
+ A<sub>hat</sub> = P &middot; (A - shift &middot; I) &middot; P<sup>T</sup>,
+ b<sub>hat</sub> = P &middot; b,
+ and return the solution
+ x = P<sup>T</sup> &middot; x<sub>hat</sub>.
+ The associated residual is
+ r<sub>hat</sub> = b<sub>hat</sub> - A<sub>hat</sub> &middot; x<sub>hat</sub>
+                 = P &middot; [b - (A - shift &middot; I) &middot; x]
+                 = P &middot; r.
+ </p>
+ <p>
+ In the case of preconditioning, the <A HREF="../../../../../org/apache/commons/math3/linear/IterativeLinearSolverEvent.html" title="class in org.apache.commons.math3.linear"><CODE>IterativeLinearSolverEvent</CODE></A>s that
+ this solver fires are such that
+ <A HREF="../../../../../org/apache/commons/math3/linear/IterativeLinearSolverEvent.html#getNormOfResidual()"><CODE>IterativeLinearSolverEvent.getNormOfResidual()</CODE></A> returns the norm of
+ the <em>preconditioned</em>, updated residual, ||P &middot; r||, not the norm
+ of the <em>true</em> residual ||r||.
+ </p>
+ <h3><a id="stopcrit">Default stopping criterion</a></h3>
+ <p>
+ A default stopping criterion is implemented. The iterations stop when || rhat
+ || &le; &delta; || Ahat || || xhat ||, where xhat is the current estimate of
+ the solution of the transformed system, rhat the current estimate of the
+ corresponding residual, and &delta; a user-specified tolerance.
+ </p>
+ <h3>Iteration count</h3>
+ <p>
+ In the present context, an iteration should be understood as one evaluation
+ of the matrix-vector product A &middot; x. The initialization phase therefore
+ counts as one iteration. If the user requires checks on the symmetry of A,
+ this entails one further matrix-vector product in the initial phase. This
+ further product is <em>not</em> accounted for in the iteration count. In
+ other words, the number of iterations required to reach convergence will be
+ identical, whether checks have been required or not.
+ </p>
+ <p>
+ The present definition of the iteration count differs from that adopted in
+ the original FOTRAN code, where the initialization phase was <em>not</em>
+ taken into account.
+ </p>
+ <h3><a id="initguess">Initial guess of the solution</a></h3>
+ <p>
+ The <code>x</code> parameter in
+ <ul>
+ <li><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)"><CODE>solve(RealLinearOperator, RealVector, RealVector)</CODE></A>,</li>
+ <li><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)"><CODE>solve(RealLinearOperator, RealLinearOperator, RealVector, RealVector)</CODE></A>},</li>
+ <li><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)"><CODE>solveInPlace(RealLinearOperator, RealVector, RealVector)</CODE></A>,</li>
+ <li><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)"><CODE>solveInPlace(RealLinearOperator, RealLinearOperator, RealVector, RealVector)</CODE></A>,</li>
+ <li><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector, boolean, double)"><CODE>solveInPlace(RealLinearOperator, RealLinearOperator, RealVector, RealVector, boolean, double)</CODE></A>,</li>
+ </ul>
+ should not be considered as an initial guess, as it is set to zero in the
+ initial phase. If x<sub>0</sub> is known to be a good approximation to x, one
+ should compute r<sub>0</sub> = b - A &middot; x, solve A &middot; dx = r0,
+ and set x = x<sub>0</sub> + dx.
+ </p>
+ <h3><a id="context">Exception context</a></h3>
+ <p>
+ Besides standard <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception"><CODE>DimensionMismatchException</CODE></A>, this class might throw
+ <A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear"><CODE>NonSelfAdjointOperatorException</CODE></A> if the linear operator or the
+ preconditioner are not symmetric. In this case, the <A HREF="../../../../../org/apache/commons/math3/exception/util/ExceptionContext.html" title="class in org.apache.commons.math3.exception.util"><CODE>ExceptionContext</CODE></A>
+ provides more information
+ <ul>
+ <li>key <code>"operator"</code> points to the offending linear operator, say L,</li>
+ <li>key <code>"vector1"</code> points to the first offending vector, say x,
+ <li>key <code>"vector2"</code> points to the second offending vector, say y, such
+ that x<sup>T</sup> &middot; L &middot; y &ne; y<sup>T</sup> &middot; L
+ &middot; x (within a certain accuracy).</li>
+ </ul>
+ </p>
+ <p>
+ <A HREF="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear"><CODE>NonPositiveDefiniteOperatorException</CODE></A> might also be thrown in case the
+ preconditioner is not positive definite. The relevant keys to the
+ <A HREF="../../../../../org/apache/commons/math3/exception/util/ExceptionContext.html" title="class in org.apache.commons.math3.exception.util"><CODE>ExceptionContext</CODE></A> are
+ <ul>
+ <li>key <code>"operator"</code>, which points to the offending linear operator,
+ say L,</li>
+ <li>key <code>"vector"</code>, which points to the offending vector, say x, such
+ that x<sup>T</sup> &middot; L &middot; x < 0.</li>
+ </ul>
+ </p>
+ <h3>References</h3>
+ <dl>
+ <dt><a id="PAIG1975">Paige and Saunders (1975)</a></dt>
+ <dd>C. C. Paige and M. A. Saunders, <a
+ href="http://www.stanford.edu/group/SOL/software/symmlq/PS75.pdf"><em>
+ Solution of Sparse Indefinite Systems of Linear Equations</em></a>, SIAM
+ Journal on Numerical Analysis 12(4): 617-629, 1975</dd>
+ </dl>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>3.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: SymmLQ.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#SymmLQ(int, double, boolean)">SymmLQ</A></B>(int&nbsp;maxIterations,
+       double&nbsp;delta,
+       boolean&nbsp;check)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new instance of this class, with <a href="#stopcrit">default
+ stopping criterion</a>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#SymmLQ(org.apache.commons.math3.util.IterationManager, double, boolean)">SymmLQ</A></B>(<A HREF="../../../../../org/apache/commons/math3/util/IterationManager.html" title="class in org.apache.commons.math3.util">IterationManager</A>&nbsp;manager,
+       double&nbsp;delta,
+       boolean&nbsp;check)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new instance of this class, with <a href="#stopcrit">default
+ stopping criterion</a> and custom iteration manager.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#getCheck()">getCheck</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>true</code> if symmetry of the matrix, and symmetry as well as
+ positive definiteness of the preconditioner should be checked.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, boolean, double)">solve</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      boolean&nbsp;goodb,
+      double&nbsp;shift)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system (A - shift
+ &middot; I) &middot; x = b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+      <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, boolean, double)">solve</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      boolean&nbsp;goodb,
+      double&nbsp;shift)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the solution to the system (A - shift &middot; I) &middot; x = b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+      <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+      <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+             <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector, boolean, double)">solveInPlace</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+             <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x,
+             boolean&nbsp;goodb,
+             double&nbsp;shift)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system (A - shift
+ &middot; I) &middot; x = b.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+             <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+             <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an estimate of the solution to the linear system A &middot; x =
+ b.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.linear.PreconditionedIterativeLinearSolver"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.linear.<A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">PreconditionedIterativeLinearSolver</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#checkParameters(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">checkParameters</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.linear.IterativeLinearSolver"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.linear.<A HREF="../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">IterativeLinearSolver</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html#checkParameters(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">checkParameters</A>, <A HREF="../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html#getIterationManager()">getIterationManager</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="SymmLQ(int, double, boolean)"><!-- --></A><H3>
+SymmLQ</H3>
+<PRE>
+public <B>SymmLQ</B>(int&nbsp;maxIterations,
+              double&nbsp;delta,
+              boolean&nbsp;check)</PRE>
+<DL>
+<DD>Creates a new instance of this class, with <a href="#stopcrit">default
+ stopping criterion</a>. Note that setting <code>check</code> to <code>true</code>
+ entails an extra matrix-vector product in the initial phase.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>maxIterations</CODE> - the maximum number of iterations<DD><CODE>delta</CODE> - the &delta; parameter for the default stopping criterion<DD><CODE>check</CODE> - <code>true</code> if self-adjointedness of both matrix and
+ preconditioner should be checked</DL>
+</DL>
+<HR>
+
+<A NAME="SymmLQ(org.apache.commons.math3.util.IterationManager, double, boolean)"><!-- --></A><H3>
+SymmLQ</H3>
+<PRE>
+public <B>SymmLQ</B>(<A HREF="../../../../../org/apache/commons/math3/util/IterationManager.html" title="class in org.apache.commons.math3.util">IterationManager</A>&nbsp;manager,
+              double&nbsp;delta,
+              boolean&nbsp;check)</PRE>
+<DL>
+<DD>Creates a new instance of this class, with <a href="#stopcrit">default
+ stopping criterion</a> and custom iteration manager. Note that setting
+ <code>check</code> to <code>true</code> entails an extra matrix-vector product in
+ the initial phase.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>manager</CODE> - the custom iteration manager<DD><CODE>delta</CODE> - the &delta; parameter for the default stopping criterion<DD><CODE>check</CODE> - <code>true</code> if self-adjointedness of both matrix and
+ preconditioner should be checked</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getCheck()"><!-- --></A><H3>
+getCheck</H3>
+<PRE>
+public final boolean <B>getCheck</B>()</PRE>
+<DL>
+<DD>Returns <code>true</code> if symmetry of the matrix, and symmetry as well as
+ positive definiteness of the preconditioner should be checked.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if the tests are to be performed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+solve</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>solve</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)
+                 throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A></PRE>
+<DL>
+<DD>Returns an estimate of the solution to the linear system A &middot; x =
+ b.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">PreconditionedIterativeLinearSolver</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - the linear operator A of the system<DD><CODE>m</CODE> - the preconditioner, M (can be <code>null</code>)<DD><CODE>b</CODE> - the right-hand side vector
+<DT><B>Returns:</B><DD>a new vector containing the solution
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A></CODE> - if <A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#getCheck()"><CODE>getCheck()</CODE></A> is
+ <code>true</code>, and <code>a</code> or <code>m</code> is not self-adjoint
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</A></CODE> - if <code>m</code> is not
+ positive definite
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A></CODE> - if <code>a</code> is ill-conditioned
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if one of the parameters is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A></CODE> - if <code>a</code> or <code>m</code> is not
+ square
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>m</code> or <code>b</code> have
+ dimensions inconsistent with <code>a</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - at exhaustion of the iteration count,
+ unless a custom
+ <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><CODE>callback</CODE></A>
+ has been set at construction of the <A HREF="../../../../../org/apache/commons/math3/util/IterationManager.html" title="class in org.apache.commons.math3.util"><CODE>IterationManager</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, boolean, double)"><!-- --></A><H3>
+solve</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>solve</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+                        boolean&nbsp;goodb,
+                        double&nbsp;shift)
+                 throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A></PRE>
+<DL>
+<DD>Returns an estimate of the solution to the linear system (A - shift
+ &middot; I) &middot; x = b.
+ <p>
+ If the solution x is expected to contain a large multiple of <code>b</code>
+ (as in Rayleigh-quotient iteration), then better precision may be
+ achieved with <code>goodb</code> set to <code>true</code>; this however requires an
+ extra call to the preconditioner.
+ </p>
+ <p>
+ <code>shift</code> should be zero if the system A &middot; x = b is to be
+ solved. Otherwise, it could be an approximation to an eigenvalue of A,
+ such as the Rayleigh quotient b<sup>T</sup> &middot; A &middot; b /
+ (b<sup>T</sup> &middot; b) corresponding to the vector b. If b is
+ sufficiently like an eigenvector corresponding to an eigenvalue near
+ shift, then the computed x may have very large components. When
+ normalized, x may be closer to an eigenvector than b.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - the linear operator A of the system<DD><CODE>m</CODE> - the preconditioner, M (can be <code>null</code>)<DD><CODE>b</CODE> - the right-hand side vector<DD><CODE>goodb</CODE> - usually <code>false</code>, except if <code>x</code> is expected to
+ contain a large multiple of <code>b</code><DD><CODE>shift</CODE> - the amount to be subtracted to all diagonal elements of A
+<DT><B>Returns:</B><DD>a reference to <code>x</code> (shallow copy)
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if one of the parameters is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A></CODE> - if <code>a</code> or <code>m</code> is not square
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>m</code> or <code>b</code> have dimensions
+ inconsistent with <code>a</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - at exhaustion of the iteration count,
+ unless a custom
+ <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><CODE>callback</CODE></A>
+ has been set at construction of the <A HREF="../../../../../org/apache/commons/math3/util/IterationManager.html" title="class in org.apache.commons.math3.util"><CODE>IterationManager</CODE></A>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A></CODE> - if <A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#getCheck()"><CODE>getCheck()</CODE></A> is
+ <code>true</code>, and <code>a</code> or <code>m</code> is not self-adjoint
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</A></CODE> - if <code>m</code> is not
+ positive definite
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A></CODE> - if <code>a</code> is ill-conditioned</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+solve</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>solve</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)
+                 throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns an estimate of the solution to the linear system A &middot; x =
+ b.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">PreconditionedIterativeLinearSolver</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - not meaningful in this implementation; should not be considered
+ as an initial guess (<a href="#initguess">more</a>)<DD><CODE>a</CODE> - the linear operator A of the system<DD><CODE>m</CODE> - the preconditioner, M (can be <code>null</code>)<DD><CODE>b</CODE> - the right-hand side vector
+<DT><B>Returns:</B><DD>a new vector containing the solution
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A></CODE> - if <A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#getCheck()"><CODE>getCheck()</CODE></A> is
+ <code>true</code>, and <code>a</code> or <code>m</code> is not self-adjoint
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</A></CODE> - if <code>m</code> is not positive
+ definite
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A></CODE> - if <code>a</code> is ill-conditioned
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if one of the parameters is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A></CODE> - if <code>a</code> or <code>m</code> is not
+ square
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>m</code>, <code>b</code> or
+ <code>x0</code> have dimensions inconsistent with <code>a</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - at exhaustion of the iteration count,
+ unless a custom
+ <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><CODE>callback</CODE></A>
+ has been set at construction of the <A HREF="../../../../../org/apache/commons/math3/util/IterationManager.html" title="class in org.apache.commons.math3.util"><CODE>IterationManager</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+solve</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>solve</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b)
+                 throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns an estimate of the solution to the linear system A &middot; x =
+ b.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector)">solve</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">PreconditionedIterativeLinearSolver</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - the linear operator A of the system<DD><CODE>b</CODE> - the right-hand side vector
+<DT><B>Returns:</B><DD>a new vector containing the solution
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A></CODE> - if <A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#getCheck()"><CODE>getCheck()</CODE></A> is
+ <code>true</code>, and <code>a</code> is not self-adjoint
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A></CODE> - if <code>a</code> is ill-conditioned
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if one of the parameters is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A></CODE> - if <code>a</code> is not square
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>b</code> has dimensions
+ inconsistent with <code>a</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - at exhaustion of the iteration count,
+ unless a custom
+ <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><CODE>callback</CODE></A>
+ has been set at construction of the <A HREF="../../../../../org/apache/commons/math3/util/IterationManager.html" title="class in org.apache.commons.math3.util"><CODE>IterationManager</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, boolean, double)"><!-- --></A><H3>
+solve</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>solve</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+                        boolean&nbsp;goodb,
+                        double&nbsp;shift)
+                 throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns the solution to the system (A - shift &middot; I) &middot; x = b.
+ <p>
+ If the solution x is expected to contain a large multiple of <code>b</code>
+ (as in Rayleigh-quotient iteration), then better precision may be
+ achieved with <code>goodb</code> set to <code>true</code>.
+ </p>
+ <p>
+ <code>shift</code> should be zero if the system A &middot; x = b is to be
+ solved. Otherwise, it could be an approximation to an eigenvalue of A,
+ such as the Rayleigh quotient b<sup>T</sup> &middot; A &middot; b /
+ (b<sup>T</sup> &middot; b) corresponding to the vector b. If b is
+ sufficiently like an eigenvector corresponding to an eigenvalue near
+ shift, then the computed x may have very large components. When
+ normalized, x may be closer to an eigenvector than b.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - the linear operator A of the system<DD><CODE>b</CODE> - the right-hand side vector<DD><CODE>goodb</CODE> - usually <code>false</code>, except if <code>x</code> is expected to
+ contain a large multiple of <code>b</code><DD><CODE>shift</CODE> - the amount to be subtracted to all diagonal elements of A
+<DT><B>Returns:</B><DD>a reference to <code>x</code>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if one of the parameters is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A></CODE> - if <code>a</code> is not square
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>b</code> has dimensions
+ inconsistent with <code>a</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - at exhaustion of the iteration count,
+ unless a custom
+ <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><CODE>callback</CODE></A>
+ has been set at construction of the <A HREF="../../../../../org/apache/commons/math3/util/IterationManager.html" title="class in org.apache.commons.math3.util"><CODE>IterationManager</CODE></A>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A></CODE> - if <A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#getCheck()"><CODE>getCheck()</CODE></A> is
+ <code>true</code>, and <code>a</code> is not self-adjoint
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A></CODE> - if <code>a</code> is ill-conditioned</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+solve</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>solve</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)
+                 throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A>,
+                        <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns an estimate of the solution to the linear system A &middot; x =
+ b.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solve(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solve</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">PreconditionedIterativeLinearSolver</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - not meaningful in this implementation; should not be considered
+ as an initial guess (<a href="#initguess">more</a>)<DD><CODE>a</CODE> - the linear operator A of the system<DD><CODE>b</CODE> - the right-hand side vector
+<DT><B>Returns:</B><DD>a new vector containing the solution
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A></CODE> - if <A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#getCheck()"><CODE>getCheck()</CODE></A> is
+ <code>true</code>, and <code>a</code> is not self-adjoint
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A></CODE> - if <code>a</code> is ill-conditioned
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if one of the parameters is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A></CODE> - if <code>a</code> is not square
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>b</code> or <code>x0</code> have
+ dimensions inconsistent with <code>a</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - at exhaustion of the iteration count,
+ unless a custom
+ <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><CODE>callback</CODE></A>
+ has been set at construction of the <A HREF="../../../../../org/apache/commons/math3/util/IterationManager.html" title="class in org.apache.commons.math3.util"><CODE>IterationManager</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+solveInPlace</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>solveInPlace</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)
+                        throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns an estimate of the solution to the linear system A &middot; x =
+ b. The solution is computed in-place (initial guess is modified).
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">PreconditionedIterativeLinearSolver</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - the vector to be updated with the solution; <code>x</code> should
+ not be considered as an initial guess (<a href="#initguess">more</a>)<DD><CODE>a</CODE> - the linear operator A of the system<DD><CODE>m</CODE> - the preconditioner, M (can be <code>null</code>)<DD><CODE>b</CODE> - the right-hand side vector
+<DT><B>Returns:</B><DD>a reference to <code>x0</code> (shallow copy) updated with the
+ solution
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A></CODE> - if <A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#getCheck()"><CODE>getCheck()</CODE></A> is
+ <code>true</code>, and <code>a</code> or <code>m</code> is not self-adjoint
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</A></CODE> - if <code>m</code> is not
+ positive definite
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A></CODE> - if <code>a</code> is ill-conditioned
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if one of the parameters is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A></CODE> - if <code>a</code> or <code>m</code> is not
+ square
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>m</code>, <code>b</code> or
+ <code>x0</code> have dimensions inconsistent with <code>a</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - at exhaustion of the iteration count,
+ unless a custom
+ <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><CODE>callback</CODE></A>
+ has been set at construction of the <A HREF="../../../../../org/apache/commons/math3/util/IterationManager.html" title="class in org.apache.commons.math3.util"><CODE>IterationManager</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector, boolean, double)"><!-- --></A><H3>
+solveInPlace</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>solveInPlace</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;m,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x,
+                               boolean&nbsp;goodb,
+                               double&nbsp;shift)
+                        throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns an estimate of the solution to the linear system (A - shift
+ &middot; I) &middot; x = b. The solution is computed in-place.
+ <p>
+ If the solution x is expected to contain a large multiple of <code>b</code>
+ (as in Rayleigh-quotient iteration), then better precision may be
+ achieved with <code>goodb</code> set to <code>true</code>; this however requires an
+ extra call to the preconditioner.
+ </p>
+ <p>
+ <code>shift</code> should be zero if the system A &middot; x = b is to be
+ solved. Otherwise, it could be an approximation to an eigenvalue of A,
+ such as the Rayleigh quotient b<sup>T</sup> &middot; A &middot; b /
+ (b<sup>T</sup> &middot; b) corresponding to the vector b. If b is
+ sufficiently like an eigenvector corresponding to an eigenvalue near
+ shift, then the computed x may have very large components. When
+ normalized, x may be closer to an eigenvector than b.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>a</CODE> - the linear operator A of the system<DD><CODE>m</CODE> - the preconditioner, M (can be <code>null</code>)<DD><CODE>b</CODE> - the right-hand side vector<DD><CODE>x</CODE> - the vector to be updated with the solution; <code>x</code> should
+ not be considered as an initial guess (<a href="#initguess">more</a>)<DD><CODE>goodb</CODE> - usually <code>false</code>, except if <code>x</code> is expected to
+ contain a large multiple of <code>b</code><DD><CODE>shift</CODE> - the amount to be subtracted to all diagonal elements of A
+<DT><B>Returns:</B><DD>a reference to <code>x</code> (shallow copy).
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if one of the parameters is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A></CODE> - if <code>a</code> or <code>m</code> is not square
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>m</code>, <code>b</code> or <code>x</code>
+ have dimensions inconsistent with <code>a</code>.
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - at exhaustion of the iteration count,
+ unless a custom
+ <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><CODE>callback</CODE></A>
+ has been set at construction of the <A HREF="../../../../../org/apache/commons/math3/util/IterationManager.html" title="class in org.apache.commons.math3.util"><CODE>IterationManager</CODE></A>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A></CODE> - if <A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#getCheck()"><CODE>getCheck()</CODE></A> is
+ <code>true</code>, and <code>a</code> or <code>m</code> is not self-adjoint
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</A></CODE> - if <code>m</code> is not positive
+ definite
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A></CODE> - if <code>a</code> is ill-conditioned</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)"><!-- --></A><H3>
+solveInPlace</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A> <B>solveInPlace</B>(<A HREF="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</A>&nbsp;a,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;b,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</A>&nbsp;x)
+                        throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A>,
+                               <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns an estimate of the solution to the linear system A &middot; x =
+ b. The solution is computed in-place (initial guess is modified).
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html#solveInPlace(org.apache.commons.math3.linear.RealLinearOperator, org.apache.commons.math3.linear.RealVector, org.apache.commons.math3.linear.RealVector)">solveInPlace</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">PreconditionedIterativeLinearSolver</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>x</CODE> - the vector to be updated with the solution; <code>x</code> should
+ not be considered as an initial guess (<a href="#initguess">more</a>)<DD><CODE>a</CODE> - the linear operator A of the system<DD><CODE>b</CODE> - the right-hand side vector
+<DT><B>Returns:</B><DD>a reference to <code>x0</code> (shallow copy) updated with the
+ solution
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</A></CODE> - if <A HREF="../../../../../org/apache/commons/math3/linear/SymmLQ.html#getCheck()"><CODE>getCheck()</CODE></A> is
+ <code>true</code>, and <code>a</code> is not self-adjoint
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</A></CODE> - if <code>a</code> is ill-conditioned
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if one of the parameters is <code>null</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</A></CODE> - if <code>a</code> is not square
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if <code>b</code> or <code>x0</code> have
+ dimensions inconsistent with <code>a</code>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - at exhaustion of the iteration count,
+ unless a custom
+ <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><CODE>callback</CODE></A>
+ has been set at construction of the <A HREF="../../../../../org/apache/commons/math3/util/IterationManager.html" title="class in org.apache.commons.math3.util"><CODE>IterationManager</CODE></A></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SymmLQ.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/SparseRealVector.html" title="class in org.apache.commons.math3.linear"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/linear/SymmLQ.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SymmLQ.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

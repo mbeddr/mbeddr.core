@@ -1,0 +1,724 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+MultistepIntegrator (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MultistepIntegrator (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/MultistepIntegrator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/ode/MainStateJacobianProvider.html" title="interface in org.apache.commons.math3.ode"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.NordsieckTransformer.html" title="interface in org.apache.commons.math3.ode"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/ode/MultistepIntegrator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MultistepIntegrator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.ode</FONT>
+<BR>
+Class MultistepIntegrator</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html" title="class in org.apache.commons.math3.ode">org.apache.commons.math3.ode.AbstractIntegrator</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">org.apache.commons.math3.ode.nonstiff.AdaptiveStepsizeIntegrator</A>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.ode.MultistepIntegrator</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderIntegrator.html" title="interface in org.apache.commons.math3.ode">FirstOrderIntegrator</A>, <A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdamsIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">AdamsIntegrator</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>MultistepIntegrator</B><DT>extends <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">AdaptiveStepsizeIntegrator</A></DL>
+</PRE>
+
+<P>
+This class is the base class for multistep integrators for Ordinary
+ Differential Equations.
+ <p>We define scaled derivatives s<sub>i</sub>(n) at step n as:
+ <pre>
+ s<sub>1</sub>(n) = h y'<sub>n</sub> for first derivative
+ s<sub>2</sub>(n) = h<sup>2</sup>/2 y''<sub>n</sub> for second derivative
+ s<sub>3</sub>(n) = h<sup>3</sup>/6 y'''<sub>n</sub> for third derivative
+ ...
+ s<sub>k</sub>(n) = h<sup>k</sup>/k! y<sup>(k)</sup><sub>n</sub> for k<sup>th</sup> derivative
+ </pre></p>
+ <p>Rather than storing several previous steps separately, this implementation uses
+ the Nordsieck vector with higher degrees scaled derivatives all taken at the same
+ step (y<sub>n</sub>, s<sub>1</sub>(n) and r<sub>n</sub>) where r<sub>n</sub> is defined as:
+ <pre>
+ r<sub>n</sub> = [ s<sub>2</sub>(n), s<sub>3</sub>(n) ... s<sub>k</sub>(n) ]<sup>T</sup>
+ </pre>
+ (we omit the k index in the notation for clarity)</p>
+ <p>
+ Multistep integrators with Nordsieck representation are highly sensitive to
+ large step changes because when the step is multiplied by factor a, the
+ k<sup>th</sup> component of the Nordsieck vector is multiplied by a<sup>k</sup>
+ and the last components are the least accurate ones. The default max growth
+ factor is therefore set to a quite low value: 2<sup>1/order</sup>.
+ </p>
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: MultistepIntegrator.java 1463684 2013-04-02 19:04:13Z luc $</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdamsBashforthIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>AdamsBashforthIntegrator</CODE></A>, 
+<A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdamsMoultonIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>AdamsMoultonIntegrator</CODE></A></DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.NordsieckTransformer.html" title="interface in org.apache.commons.math3.ode">MultistepIntegrator.NordsieckTransformer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transformer used to convert the first step to Nordsieck representation.</TD>
+</TR>
+</TABLE>
+&nbsp;<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowRealMatrix.html" title="class in org.apache.commons.math3.linear">Array2DRowRealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#nordsieck">nordsieck</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nordsieck matrix of the higher scaled derivatives.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#scaled">scaled</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First scaled derivative (h y').</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.commons.math3.ode.nonstiff.AdaptiveStepsizeIntegrator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.commons.math3.ode.nonstiff.<A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">AdaptiveStepsizeIntegrator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#mainSetDimension">mainSetDimension</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#scalAbsoluteTolerance">scalAbsoluteTolerance</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#scalRelativeTolerance">scalRelativeTolerance</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#vecAbsoluteTolerance">vecAbsoluteTolerance</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#vecRelativeTolerance">vecRelativeTolerance</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.commons.math3.ode.AbstractIntegrator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.commons.math3.ode.<A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html" title="class in org.apache.commons.math3.ode">AbstractIntegrator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#isLastStep">isLastStep</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#resetOccurred">resetOccurred</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#stepHandlers">stepHandlers</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#stepSize">stepSize</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#stepStart">stepStart</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#MultistepIntegrator(java.lang.String, int, int, double, double, double[], double[])">MultistepIntegrator</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+                    int&nbsp;nSteps,
+                    int&nbsp;order,
+                    double&nbsp;minStep,
+                    double&nbsp;maxStep,
+                    double[]&nbsp;vecAbsoluteTolerance,
+                    double[]&nbsp;vecRelativeTolerance)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a multistep integrator with the given stepsize bounds.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#MultistepIntegrator(java.lang.String, int, int, double, double, double, double)">MultistepIntegrator</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+                    int&nbsp;nSteps,
+                    int&nbsp;order,
+                    double&nbsp;minStep,
+                    double&nbsp;maxStep,
+                    double&nbsp;scalAbsoluteTolerance,
+                    double&nbsp;scalRelativeTolerance)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a multistep integrator with the given stepsize bounds.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#computeStepGrowShrinkFactor(double)">computeStepGrowShrinkFactor</A></B>(double&nbsp;error)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute step grow/shrink factor according to normalized error.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#getMaxGrowth()">getMaxGrowth</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the maximal growth factor for stepsize control.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#getMinReduction()">getMinReduction</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the minimal reduction factor for stepsize control.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#getSafety()">getSafety</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the safety factor for stepsize control.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#getStarterIntegrator()">getStarterIntegrator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the starter integrator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;<A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowRealMatrix.html" title="class in org.apache.commons.math3.linear">Array2DRowRealMatrix</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#initializeHighOrderDerivatives(double, double[], double[][], double[][])">initializeHighOrderDerivatives</A></B>(double&nbsp;h,
+                               double[]&nbsp;t,
+                               double[][]&nbsp;y,
+                               double[][]&nbsp;yDot)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initialize the high order scaled derivatives at step start.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#setMaxGrowth(double)">setMaxGrowth</A></B>(double&nbsp;maxGrowth)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the maximal growth factor for stepsize control.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#setMinReduction(double)">setMinReduction</A></B>(double&nbsp;minReduction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the minimal reduction factor for stepsize control.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#setSafety(double)">setSafety</A></B>(double&nbsp;safety)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the safety factor for stepsize control.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#setStarterIntegrator(org.apache.commons.math3.ode.FirstOrderIntegrator)">setStarterIntegrator</A></B>(<A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderIntegrator.html" title="interface in org.apache.commons.math3.ode">FirstOrderIntegrator</A>&nbsp;starterIntegrator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the starter integrator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.html#start(double, double[], double)">start</A></B>(double&nbsp;t0,
+      double[]&nbsp;y0,
+      double&nbsp;t)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start the integration.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.ode.nonstiff.AdaptiveStepsizeIntegrator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.ode.nonstiff.<A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html" title="class in org.apache.commons.math3.ode.nonstiff">AdaptiveStepsizeIntegrator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#filterStep(double, boolean, boolean)">filterStep</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#getCurrentStepStart()">getCurrentStepStart</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#getMaxStep()">getMaxStep</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#getMinStep()">getMinStep</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#initializeStep(boolean, int, double[], double, double[], double[], double[], double[])">initializeStep</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#integrate(org.apache.commons.math3.ode.ExpandableStatefulODE, double)">integrate</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#resetInternalState()">resetInternalState</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#sanityChecks(org.apache.commons.math3.ode.ExpandableStatefulODE, double)">sanityChecks</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#setInitialStepSize(double)">setInitialStepSize</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#setStepSizeControl(double, double, double[], double[])">setStepSizeControl</A>, <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/AdaptiveStepsizeIntegrator.html#setStepSizeControl(double, double, double, double)">setStepSizeControl</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.math3.ode.AbstractIntegrator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.math3.ode.<A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html" title="class in org.apache.commons.math3.ode">AbstractIntegrator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#acceptStep(org.apache.commons.math3.ode.sampling.AbstractStepInterpolator, double[], double[], double)">acceptStep</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#addEventHandler(org.apache.commons.math3.ode.events.EventHandler, double, double, int)">addEventHandler</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#addEventHandler(org.apache.commons.math3.ode.events.EventHandler, double, double, int, org.apache.commons.math3.analysis.solvers.UnivariateSolver)">addEventHandler</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#addStepHandler(org.apache.commons.math3.ode.sampling.StepHandler)">addStepHandler</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#clearEventHandlers()">clearEventHandlers</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#clearStepHandlers()">clearStepHandlers</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#computeDerivatives(double, double[], double[])">computeDerivatives</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getCurrentSignedStepsize()">getCurrentSignedStepsize</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getEvaluations()">getEvaluations</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getEvaluationsCounter()">getEvaluationsCounter</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getEventHandlers()">getEventHandlers</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getExpandable()">getExpandable</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getMaxEvaluations()">getMaxEvaluations</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getName()">getName</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#getStepHandlers()">getStepHandlers</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#initIntegration(double, double[], double)">initIntegration</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#integrate(org.apache.commons.math3.ode.FirstOrderDifferentialEquations, double, double[], double, double[])">integrate</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#setEquations(org.apache.commons.math3.ode.ExpandableStatefulODE)">setEquations</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#setMaxEvaluations(int)">setMaxEvaluations</A>, <A HREF="../../../../../org/apache/commons/math3/ode/AbstractIntegrator.html#setStateInitialized(boolean)">setStateInitialized</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="scaled"><!-- --></A><H3>
+scaled</H3>
+<PRE>
+protected double[] <B>scaled</B></PRE>
+<DL>
+<DD>First scaled derivative (h y').
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="nordsieck"><!-- --></A><H3>
+nordsieck</H3>
+<PRE>
+protected <A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowRealMatrix.html" title="class in org.apache.commons.math3.linear">Array2DRowRealMatrix</A> <B>nordsieck</B></PRE>
+<DL>
+<DD>Nordsieck matrix of the higher scaled derivatives.
+ <p>(h<sup>2</sup>/2 y'', h<sup>3</sup>/6 y''' ..., h<sup>k</sup>/k! y<sup>(k)</sup>)</p>
+<P>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="MultistepIntegrator(java.lang.String, int, int, double, double, double, double)"><!-- --></A><H3>
+MultistepIntegrator</H3>
+<PRE>
+protected <B>MultistepIntegrator</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+                              int&nbsp;nSteps,
+                              int&nbsp;order,
+                              double&nbsp;minStep,
+                              double&nbsp;maxStep,
+                              double&nbsp;scalAbsoluteTolerance,
+                              double&nbsp;scalRelativeTolerance)
+                       throws <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></PRE>
+<DL>
+<DD>Build a multistep integrator with the given stepsize bounds.
+ <p>The default starter integrator is set to the <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/DormandPrince853Integrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Dormand-Prince 8(5,3)</CODE></A> integrator with
+ some defaults settings.</p>
+ <p>
+ The default max growth factor is set to a quite low value: 2<sup>1/order</sup>.
+ </p>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>name</CODE> - name of the method<DD><CODE>nSteps</CODE> - number of steps of the multistep method
+ (excluding the one being computed)<DD><CODE>order</CODE> - order of the method<DD><CODE>minStep</CODE> - minimal step (must be positive even for backward
+ integration), the last step can be smaller than this<DD><CODE>maxStep</CODE> - maximal step (must be positive even for backward
+ integration)<DD><CODE>scalAbsoluteTolerance</CODE> - allowed absolute error<DD><CODE>scalRelativeTolerance</CODE> - allowed relative error
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if number of steps is smaller than 2</DL>
+</DL>
+<HR>
+
+<A NAME="MultistepIntegrator(java.lang.String, int, int, double, double, double[], double[])"><!-- --></A><H3>
+MultistepIntegrator</H3>
+<PRE>
+protected <B>MultistepIntegrator</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+                              int&nbsp;nSteps,
+                              int&nbsp;order,
+                              double&nbsp;minStep,
+                              double&nbsp;maxStep,
+                              double[]&nbsp;vecAbsoluteTolerance,
+                              double[]&nbsp;vecRelativeTolerance)</PRE>
+<DL>
+<DD>Build a multistep integrator with the given stepsize bounds.
+ <p>The default starter integrator is set to the <A HREF="../../../../../org/apache/commons/math3/ode/nonstiff/DormandPrince853Integrator.html" title="class in org.apache.commons.math3.ode.nonstiff"><CODE>Dormand-Prince 8(5,3)</CODE></A> integrator with
+ some defaults settings.</p>
+ <p>
+ The default max growth factor is set to a quite low value: 2<sup>1/order</sup>.
+ </p>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>name</CODE> - name of the method<DD><CODE>nSteps</CODE> - number of steps of the multistep method
+ (excluding the one being computed)<DD><CODE>order</CODE> - order of the method<DD><CODE>minStep</CODE> - minimal step (must be positive even for backward
+ integration), the last step can be smaller than this<DD><CODE>maxStep</CODE> - maximal step (must be positive even for backward
+ integration)<DD><CODE>vecAbsoluteTolerance</CODE> - allowed absolute error<DD><CODE>vecRelativeTolerance</CODE> - allowed relative error</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getStarterIntegrator()"><!-- --></A><H3>
+getStarterIntegrator</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/commons/math3/ode/ODEIntegrator.html" title="interface in org.apache.commons.math3.ode">ODEIntegrator</A> <B>getStarterIntegrator</B>()</PRE>
+<DL>
+<DD>Get the starter integrator.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>starter integrator</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setStarterIntegrator(org.apache.commons.math3.ode.FirstOrderIntegrator)"><!-- --></A><H3>
+setStarterIntegrator</H3>
+<PRE>
+public void <B>setStarterIntegrator</B>(<A HREF="../../../../../org/apache/commons/math3/ode/FirstOrderIntegrator.html" title="interface in org.apache.commons.math3.ode">FirstOrderIntegrator</A>&nbsp;starterIntegrator)</PRE>
+<DL>
+<DD>Set the starter integrator.
+ <p>The various step and event handlers for this starter integrator
+ will be managed automatically by the multi-step integrator. Any
+ user configuration for these elements will be cleared before use.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>starterIntegrator</CODE> - starter integrator</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="start(double, double[], double)"><!-- --></A><H3>
+start</H3>
+<PRE>
+protected void <B>start</B>(double&nbsp;t0,
+                     double[]&nbsp;y0,
+                     double&nbsp;t)
+              throws <A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                     <A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                     <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A>,
+                     <A HREF="../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></PRE>
+<DL>
+<DD>Start the integration.
+ <p>This method computes one step using the underlying starter integrator,
+ and initializes the Nordsieck vector at step start. The starter integrator
+ purpose is only to establish initial conditions, it does not really change
+ time by itself. The top level multistep integrator remains in charge of
+ handling time propagation and events handling as it will starts its own
+ computation right from the beginning. In a sense, the starter integrator
+ can be seen as a dummy one and so it will never trigger any user event nor
+ call any user step handler.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>t0</CODE> - initial time<DD><CODE>y0</CODE> - initial value of the state vector at t0<DD><CODE>t</CODE> - target time for the integration
+ (can be set to a value smaller than <code>t0</code> for backward integration)
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if arrays dimension do not match equations settings
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if integration step is too small
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if the number of functions evaluations is exceeded
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</A></CODE> - if the location of an event cannot be bracketed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="initializeHighOrderDerivatives(double, double[], double[][], double[][])"><!-- --></A><H3>
+initializeHighOrderDerivatives</H3>
+<PRE>
+protected abstract <A HREF="../../../../../org/apache/commons/math3/linear/Array2DRowRealMatrix.html" title="class in org.apache.commons.math3.linear">Array2DRowRealMatrix</A> <B>initializeHighOrderDerivatives</B>(double&nbsp;h,
+                                                                       double[]&nbsp;t,
+                                                                       double[][]&nbsp;y,
+                                                                       double[][]&nbsp;yDot)</PRE>
+<DL>
+<DD>Initialize the high order scaled derivatives at step start.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>h</CODE> - step size to use for scaling<DD><CODE>t</CODE> - first steps times<DD><CODE>y</CODE> - first steps states<DD><CODE>yDot</CODE> - first steps derivatives
+<DT><B>Returns:</B><DD>Nordieck vector at first step (h<sup>2</sup>/2 y''<sub>n</sub>,
+ h<sup>3</sup>/6 y'''<sub>n</sub> ... h<sup>k</sup>/k! y<sup>(k)</sup><sub>n</sub>)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMinReduction()"><!-- --></A><H3>
+getMinReduction</H3>
+<PRE>
+public double <B>getMinReduction</B>()</PRE>
+<DL>
+<DD>Get the minimal reduction factor for stepsize control.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>minimal reduction factor</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMinReduction(double)"><!-- --></A><H3>
+setMinReduction</H3>
+<PRE>
+public void <B>setMinReduction</B>(double&nbsp;minReduction)</PRE>
+<DL>
+<DD>Set the minimal reduction factor for stepsize control.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>minReduction</CODE> - minimal reduction factor</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMaxGrowth()"><!-- --></A><H3>
+getMaxGrowth</H3>
+<PRE>
+public double <B>getMaxGrowth</B>()</PRE>
+<DL>
+<DD>Get the maximal growth factor for stepsize control.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>maximal growth factor</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMaxGrowth(double)"><!-- --></A><H3>
+setMaxGrowth</H3>
+<PRE>
+public void <B>setMaxGrowth</B>(double&nbsp;maxGrowth)</PRE>
+<DL>
+<DD>Set the maximal growth factor for stepsize control.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>maxGrowth</CODE> - maximal growth factor</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSafety()"><!-- --></A><H3>
+getSafety</H3>
+<PRE>
+public double <B>getSafety</B>()</PRE>
+<DL>
+<DD>Get the safety factor for stepsize control.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>safety factor</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSafety(double)"><!-- --></A><H3>
+setSafety</H3>
+<PRE>
+public void <B>setSafety</B>(double&nbsp;safety)</PRE>
+<DL>
+<DD>Set the safety factor for stepsize control.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>safety</CODE> - safety factor</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeStepGrowShrinkFactor(double)"><!-- --></A><H3>
+computeStepGrowShrinkFactor</H3>
+<PRE>
+protected double <B>computeStepGrowShrinkFactor</B>(double&nbsp;error)</PRE>
+<DL>
+<DD>Compute step grow/shrink factor according to normalized error.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>error</CODE> - normalized error of the current step
+<DT><B>Returns:</B><DD>grow/shrink factor for next step</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/MultistepIntegrator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/ode/MainStateJacobianProvider.html" title="interface in org.apache.commons.math3.ode"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/ode/MultistepIntegrator.NordsieckTransformer.html" title="interface in org.apache.commons.math3.ode"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/ode/MultistepIntegrator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MultistepIntegrator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

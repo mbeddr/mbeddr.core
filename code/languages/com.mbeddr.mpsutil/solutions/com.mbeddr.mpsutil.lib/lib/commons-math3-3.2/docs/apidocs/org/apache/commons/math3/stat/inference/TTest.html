@@ -1,0 +1,1671 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+TTest (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="TTest (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/TTest.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/inference/TestUtils.html" title="class in org.apache.commons.math3.stat.inference"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/inference/WilcoxonSignedRankTest.html" title="class in org.apache.commons.math3.stat.inference"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/inference/TTest.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="TTest.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.stat.inference</FONT>
+<BR>
+Class TTest</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.stat.inference.TTest</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>TTest</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+An implementation for Student's t-tests.
+ <p>
+ Tests can be:<ul>
+ <li>One-sample or two-sample</li>
+ <li>One-sided or two-sided</li>
+ <li>Paired or unpaired (for two-sample tests)</li>
+ <li>Homoscedastic (equal variance assumption) or heteroscedastic
+ (for two sample tests)</li>
+ <li>Fixed significance level (boolean-valued) or returning p-values.
+ </li></ul></p>
+ <p>
+ Test statistics are available for all tests.  Methods including "Test" in
+ in their names perform tests, all other methods return t-statistics.  Among
+ the "Test" methods, <code>double-</code>valued methods return p-values;
+ <code>boolean-</code>valued methods perform fixed significance level tests.
+ Significance levels are always specified as numbers between 0 and 0.5
+ (e.g. tests at the 95% level  use <code>alpha=0.05</code>).</p>
+ <p>
+ Input to tests can be either <code>double[]</code> arrays or
+ <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive"><CODE>StatisticalSummary</CODE></A> instances.</p><p>
+ Uses commons-math <A HREF="../../../../../../org/apache/commons/math3/distribution/TDistribution.html" title="class in org.apache.commons.math3.distribution"><CODE>TDistribution</CODE></A>
+ implementation to estimate exact p-values.</p>
+<P>
+
+<P>
+<DL>
+<DT><B>Version:</B></DT>
+  <DD>$Id: TTest.java 1416643 2012-12-03 19:37:14Z tn $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#TTest()">TTest</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#df(double, double, double, double)">df</A></B>(double&nbsp;v1,
+   double&nbsp;v2,
+   double&nbsp;n1,
+   double&nbsp;n2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes approximate degrees of freedom for 2-sample t-test.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticT(double[], double[])">homoscedasticT</A></B>(double[]&nbsp;sample1,
+               double[]&nbsp;sample2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes a 2-sample t statistic,  under the hypothesis of equal
+ subpopulation variances.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticT(double, double, double, double, double, double)">homoscedasticT</A></B>(double&nbsp;m1,
+               double&nbsp;m2,
+               double&nbsp;v1,
+               double&nbsp;v2,
+               double&nbsp;n1,
+               double&nbsp;n2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes t test statistic for 2-sample t-test under the hypothesis
+ of equal subpopulation variances.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticT(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)">homoscedasticT</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats1,
+               <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes a 2-sample t statistic, comparing the means of the datasets
+ described by two <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive"><CODE>StatisticalSummary</CODE></A> instances, under the
+ assumption of equal subpopulation variances.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticTTest(double[], double[])">homoscedasticTTest</A></B>(double[]&nbsp;sample1,
+                   double[]&nbsp;sample2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <i>observed significance level</i>, or
+ <i>p-value</i>, associated with a two-sample, two-tailed t-test
+ comparing the means of the input arrays, under the assumption that
+ the two samples are drawn from subpopulations with equal variances.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticTTest(double[], double[], double)">homoscedasticTTest</A></B>(double[]&nbsp;sample1,
+                   double[]&nbsp;sample2,
+                   double&nbsp;alpha)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm">
+ two-sided t-test</a> evaluating the null hypothesis that <code>sample1</code>
+ and <code>sample2</code> are drawn from populations with the same mean,
+ with significance level <code>alpha</code>,  assuming that the
+ subpopulation variances are equal.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticTTest(double, double, double, double, double, double)">homoscedasticTTest</A></B>(double&nbsp;m1,
+                   double&nbsp;m2,
+                   double&nbsp;v1,
+                   double&nbsp;v2,
+                   double&nbsp;n1,
+                   double&nbsp;n2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes p-value for 2-sided, 2-sample t-test, under the assumption
+ of equal subpopulation variances.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticTTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)">homoscedasticTTest</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats1,
+                   <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <i>observed significance level</i>, or
+ <i>p-value</i>, associated with a two-sample, two-tailed t-test
+ comparing the means of the datasets described by two StatisticalSummary
+ instances, under the hypothesis of equal subpopulation variances.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#pairedT(double[], double[])">pairedT</A></B>(double[]&nbsp;sample1,
+        double[]&nbsp;sample2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes a paired, 2-sample t-statistic based on the data in the input
+ arrays.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#pairedTTest(double[], double[])">pairedTTest</A></B>(double[]&nbsp;sample1,
+            double[]&nbsp;sample2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <i>observed significance level</i>, or
+ <i> p-value</i>, associated with a paired, two-sample, two-tailed t-test
+ based on the data in the input arrays.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#pairedTTest(double[], double[], double)">pairedTTest</A></B>(double[]&nbsp;sample1,
+            double[]&nbsp;sample2,
+            double&nbsp;alpha)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a paired t-test evaluating the null hypothesis that the
+ mean of the paired differences between <code>sample1</code> and
+ <code>sample2</code> is 0 in favor of the two-sided alternative that the
+ mean paired difference is not equal to 0, with significance level
+ <code>alpha</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(double[], double[])">t</A></B>(double[]&nbsp;sample1,
+  double[]&nbsp;sample2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes a 2-sample t statistic, without the hypothesis of equal
+ subpopulation variances.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(double, double[])">t</A></B>(double&nbsp;mu,
+  double[]&nbsp;observed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes a <a href="http://www.itl.nist.gov/div898/handbook/prc/section2/prc22.htm#formula">
+ t statistic </a> given observed values and a comparison constant.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(double, double, double, double)">t</A></B>(double&nbsp;m,
+  double&nbsp;mu,
+  double&nbsp;v,
+  double&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes t test statistic for 1-sample t-test.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(double, double, double, double, double, double)">t</A></B>(double&nbsp;m1,
+  double&nbsp;m2,
+  double&nbsp;v1,
+  double&nbsp;v2,
+  double&nbsp;n1,
+  double&nbsp;n2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes t test statistic for 2-sample t-test.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(double, org.apache.commons.math3.stat.descriptive.StatisticalSummary)">t</A></B>(double&nbsp;mu,
+  <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes a <a href="http://www.itl.nist.gov/div898/handbook/prc/section2/prc22.htm#formula">
+ t statistic </a> to use in comparing the mean of the dataset described by
+ <code>sampleStats</code> to <code>mu</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)">t</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats1,
+  <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes a 2-sample t statistic </a>, comparing the means of the datasets
+ described by two <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive"><CODE>StatisticalSummary</CODE></A> instances, without the
+ assumption of equal subpopulation variances.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double[], double[])">tTest</A></B>(double[]&nbsp;sample1,
+      double[]&nbsp;sample2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <i>observed significance level</i>, or
+ <i>p-value</i>, associated with a two-sample, two-tailed t-test
+ comparing the means of the input arrays.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double[], double[], double)">tTest</A></B>(double[]&nbsp;sample1,
+      double[]&nbsp;sample2,
+      double&nbsp;alpha)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm">
+ two-sided t-test</a> evaluating the null hypothesis that <code>sample1</code>
+ and <code>sample2</code> are drawn from populations with the same mean,
+ with significance level <code>alpha</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double, double[])">tTest</A></B>(double&nbsp;mu,
+      double[]&nbsp;sample)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <i>observed significance level</i>, or
+ <i>p-value</i>, associated with a one-sample, two-tailed t-test
+ comparing the mean of the input array with the constant <code>mu</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double, double[], double)">tTest</A></B>(double&nbsp;mu,
+      double[]&nbsp;sample,
+      double&nbsp;alpha)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm">
+ two-sided t-test</a> evaluating the null hypothesis that the mean of the population from
+ which <code>sample</code> is drawn equals <code>mu</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double, double, double, double)">tTest</A></B>(double&nbsp;m,
+      double&nbsp;mu,
+      double&nbsp;v,
+      double&nbsp;n)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes p-value for 2-sided, 1-sample t-test.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double, double, double, double, double, double)">tTest</A></B>(double&nbsp;m1,
+      double&nbsp;m2,
+      double&nbsp;v1,
+      double&nbsp;v2,
+      double&nbsp;n1,
+      double&nbsp;n2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes p-value for 2-sided, 2-sample t-test.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double, org.apache.commons.math3.stat.descriptive.StatisticalSummary)">tTest</A></B>(double&nbsp;mu,
+      <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <i>observed significance level</i>, or
+ <i>p-value</i>, associated with a one-sample, two-tailed t-test
+ comparing the mean of the dataset described by <code>sampleStats</code>
+ with the constant <code>mu</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double, org.apache.commons.math3.stat.descriptive.StatisticalSummary, double)">tTest</A></B>(double&nbsp;mu,
+      <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats,
+      double&nbsp;alpha)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm">
+ two-sided t-test</a> evaluating the null hypothesis that the mean of the
+ population from which the dataset described by <code>stats</code> is
+ drawn equals <code>mu</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)">tTest</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats1,
+      <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <i>observed significance level</i>, or
+ <i>p-value</i>, associated with a two-sample, two-tailed t-test
+ comparing the means of the datasets described by two StatisticalSummary
+ instances.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary, double)">tTest</A></B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats1,
+      <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats2,
+      double&nbsp;alpha)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm">
+ two-sided t-test</a> evaluating the null hypothesis that
+ <code>sampleStats1</code> and <code>sampleStats2</code> describe
+ datasets drawn from populations with the same mean, with significance
+ level <code>alpha</code>.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="TTest()"><!-- --></A><H3>
+TTest</H3>
+<PRE>
+public <B>TTest</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="pairedT(double[], double[])"><!-- --></A><H3>
+pairedT</H3>
+<PRE>
+public double <B>pairedT</B>(double[]&nbsp;sample1,
+                      double[]&nbsp;sample2)
+               throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                      <A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A>,
+                      <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                      <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></PRE>
+<DL>
+<DD>Computes a paired, 2-sample t-statistic based on the data in the input
+ arrays.  The t-statistic returned is equivalent to what would be returned by
+ computing the one-sample t-statistic <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(double, double[])"><CODE>t(double, double[])</CODE></A>, with
+ <code>mu = 0</code> and the sample array consisting of the (signed)
+ differences between corresponding entries in <code>sample1</code> and
+ <code>sample2.</code>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The input arrays must have the same length and their common length
+ must be at least 2.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sample1</CODE> - array of sample data values<DD><CODE>sample2</CODE> - array of sample data values
+<DT><B>Returns:</B><DD>t statistic
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the arrays are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></CODE> - if the arrays are empty
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the length of the arrays is not equal
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the length of the arrays is &lt; 2</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="pairedTTest(double[], double[])"><!-- --></A><H3>
+pairedTTest</H3>
+<PRE>
+public double <B>pairedTTest</B>(double[]&nbsp;sample1,
+                          double[]&nbsp;sample2)
+                   throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                          <A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A>,
+                          <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                          <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                          <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns the <i>observed significance level</i>, or
+ <i> p-value</i>, associated with a paired, two-sample, two-tailed t-test
+ based on the data in the input arrays.
+ <p>
+ The number returned is the smallest significance level
+ at which one can reject the null hypothesis that the mean of the paired
+ differences is 0 in favor of the two-sided alternative that the mean paired
+ difference is not equal to 0. For a one-sided test, divide the returned
+ value by 2.</p>
+ <p>
+ This test is equivalent to a one-sample t-test computed using
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double, double[])"><CODE>tTest(double, double[])</CODE></A> with <code>mu = 0</code> and the sample
+ array consisting of the signed differences between corresponding elements of
+ <code>sample1</code> and <code>sample2.</code></p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the p-value depends on the assumptions of the parametric
+ t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/ttest_unpaired_ass_viol.html">
+ here</a></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The input array lengths must be the same and their common length must
+ be at least 2.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sample1</CODE> - array of sample data values<DD><CODE>sample2</CODE> - array of sample data values
+<DT><B>Returns:</B><DD>p-value for t-test
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the arrays are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></CODE> - if the arrays are empty
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the length of the arrays is not equal
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the length of the arrays is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="pairedTTest(double[], double[], double)"><!-- --></A><H3>
+pairedTTest</H3>
+<PRE>
+public boolean <B>pairedTTest</B>(double[]&nbsp;sample1,
+                           double[]&nbsp;sample2,
+                           double&nbsp;alpha)
+                    throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                           <A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A>,
+                           <A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A>,
+                           <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                           <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A>,
+                           <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Performs a paired t-test evaluating the null hypothesis that the
+ mean of the paired differences between <code>sample1</code> and
+ <code>sample2</code> is 0 in favor of the two-sided alternative that the
+ mean paired difference is not equal to 0, with significance level
+ <code>alpha</code>.
+ <p>
+ Returns <code>true</code> iff the null hypothesis can be rejected with
+ confidence <code>1 - alpha</code>.  To perform a 1-sided test, use
+ <code>alpha * 2</code></p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the test depends on the assumptions of the parametric
+ t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/ttest_unpaired_ass_viol.html">
+ here</a></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The input array lengths must be the same and their common length
+ must be at least 2.
+ </li>
+ <li> <code> 0 &lt; alpha &lt; 0.5 </code>
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sample1</CODE> - array of sample data values<DD><CODE>sample2</CODE> - array of sample data values<DD><CODE>alpha</CODE> - significance level of the test
+<DT><B>Returns:</B><DD>true if the null hypothesis can be rejected with
+ confidence 1 - alpha
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the arrays are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</A></CODE> - if the arrays are empty
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</A></CODE> - if the length of the arrays is not equal
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the length of the arrays is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if <code>alpha</code> is not in the range (0, 0.5]
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="t(double, double[])"><!-- --></A><H3>
+t</H3>
+<PRE>
+public double <B>t</B>(double&nbsp;mu,
+                double[]&nbsp;observed)
+         throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></PRE>
+<DL>
+<DD>Computes a <a href="http://www.itl.nist.gov/div898/handbook/prc/section2/prc22.htm#formula">
+ t statistic </a> given observed values and a comparison constant.
+ <p>
+ This statistic can be used to perform a one sample t-test for the mean.
+ </p><p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The observed array length must be at least 2.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mu</CODE> - comparison constant<DD><CODE>observed</CODE> - array of values
+<DT><B>Returns:</B><DD>t statistic
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>observed</code> is <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the length of <code>observed</code> is &lt; 2</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="t(double, org.apache.commons.math3.stat.descriptive.StatisticalSummary)"><!-- --></A><H3>
+t</H3>
+<PRE>
+public double <B>t</B>(double&nbsp;mu,
+                <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats)
+         throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></PRE>
+<DL>
+<DD>Computes a <a href="http://www.itl.nist.gov/div898/handbook/prc/section2/prc22.htm#formula">
+ t statistic </a> to use in comparing the mean of the dataset described by
+ <code>sampleStats</code> to <code>mu</code>.
+ <p>
+ This statistic can be used to perform a one sample t-test for the mean.
+ </p><p>
+ <strong>Preconditions</strong>: <ul>
+ <li><code>observed.getN() &ge; 2</code>.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mu</CODE> - comparison constant<DD><CODE>sampleStats</CODE> - DescriptiveStatistics holding sample summary statitstics
+<DT><B>Returns:</B><DD>t statistic
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>sampleStats</code> is <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the number of samples is &lt; 2</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="homoscedasticT(double[], double[])"><!-- --></A><H3>
+homoscedasticT</H3>
+<PRE>
+public double <B>homoscedasticT</B>(double[]&nbsp;sample1,
+                             double[]&nbsp;sample2)
+                      throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                             <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></PRE>
+<DL>
+<DD>Computes a 2-sample t statistic,  under the hypothesis of equal
+ subpopulation variances.  To compute a t-statistic without the
+ equal variances hypothesis, use <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(double[], double[])"><CODE>t(double[], double[])</CODE></A>.
+ <p>
+ This statistic can be used to perform a (homoscedastic) two-sample
+ t-test to compare sample means.</p>
+ <p>
+ The t-statistic is</p>
+ <p>
+ &nbsp;&nbsp;<code>  t = (m1 - m2) / (sqrt(1/n1 +1/n2) sqrt(var))</code>
+ </p><p>
+ where <strong><code>n1</code></strong> is the size of first sample;
+ <strong><code> n2</code></strong> is the size of second sample;
+ <strong><code> m1</code></strong> is the mean of first sample;
+ <strong><code> m2</code></strong> is the mean of second sample</li>
+ </ul>
+ and <strong><code>var</code></strong> is the pooled variance estimate:
+ </p><p>
+ <code>var = sqrt(((n1 - 1)var1 + (n2 - 1)var2) / ((n1-1) + (n2-1)))</code>
+ </p><p>
+ with <strong><code>var1</code></strong> the variance of the first sample and
+ <strong><code>var2</code></strong> the variance of the second sample.
+ </p><p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The observed array lengths must both be at least 2.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sample1</CODE> - array of sample data values<DD><CODE>sample2</CODE> - array of sample data values
+<DT><B>Returns:</B><DD>t statistic
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the arrays are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the length of the arrays is &lt; 2</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="t(double[], double[])"><!-- --></A><H3>
+t</H3>
+<PRE>
+public double <B>t</B>(double[]&nbsp;sample1,
+                double[]&nbsp;sample2)
+         throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></PRE>
+<DL>
+<DD>Computes a 2-sample t statistic, without the hypothesis of equal
+ subpopulation variances.  To compute a t-statistic assuming equal
+ variances, use <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticT(double[], double[])"><CODE>homoscedasticT(double[], double[])</CODE></A>.
+ <p>
+ This statistic can be used to perform a two-sample t-test to compare
+ sample means.</p>
+ <p>
+ The t-statistic is</p>
+ <p>
+ &nbsp;&nbsp; <code>  t = (m1 - m2) / sqrt(var1/n1 + var2/n2)</code>
+ </p><p>
+  where <strong><code>n1</code></strong> is the size of the first sample
+ <strong><code> n2</code></strong> is the size of the second sample;
+ <strong><code> m1</code></strong> is the mean of the first sample;
+ <strong><code> m2</code></strong> is the mean of the second sample;
+ <strong><code> var1</code></strong> is the variance of the first sample;
+ <strong><code> var2</code></strong> is the variance of the second sample;
+ </p><p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The observed array lengths must both be at least 2.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sample1</CODE> - array of sample data values<DD><CODE>sample2</CODE> - array of sample data values
+<DT><B>Returns:</B><DD>t statistic
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the arrays are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the length of the arrays is &lt; 2</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="t(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)"><!-- --></A><H3>
+t</H3>
+<PRE>
+public double <B>t</B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats1,
+                <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats2)
+         throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></PRE>
+<DL>
+<DD>Computes a 2-sample t statistic </a>, comparing the means of the datasets
+ described by two <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive"><CODE>StatisticalSummary</CODE></A> instances, without the
+ assumption of equal subpopulation variances.  Use
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticT(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)"><CODE>homoscedasticT(StatisticalSummary, StatisticalSummary)</CODE></A> to
+ compute a t-statistic under the equal variances assumption.
+ <p>
+ This statistic can be used to perform a two-sample t-test to compare
+ sample means.</p>
+ <p>
+ The returned  t-statistic is</p>
+ <p>
+ &nbsp;&nbsp; <code>  t = (m1 - m2) / sqrt(var1/n1 + var2/n2)</code>
+ </p><p>
+ where <strong><code>n1</code></strong> is the size of the first sample;
+ <strong><code> n2</code></strong> is the size of the second sample;
+ <strong><code> m1</code></strong> is the mean of the first sample;
+ <strong><code> m2</code></strong> is the mean of the second sample
+ <strong><code> var1</code></strong> is the variance of the first sample;
+ <strong><code> var2</code></strong> is the variance of the second sample
+ </p><p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The datasets described by the two Univariates must each contain
+ at least 2 observations.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sampleStats1</CODE> - StatisticalSummary describing data from the first sample<DD><CODE>sampleStats2</CODE> - StatisticalSummary describing data from the second sample
+<DT><B>Returns:</B><DD>t statistic
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the sample statistics are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the number of samples is &lt; 2</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="homoscedasticT(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)"><!-- --></A><H3>
+homoscedasticT</H3>
+<PRE>
+public double <B>homoscedasticT</B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats1,
+                             <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats2)
+                      throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                             <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></PRE>
+<DL>
+<DD>Computes a 2-sample t statistic, comparing the means of the datasets
+ described by two <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive"><CODE>StatisticalSummary</CODE></A> instances, under the
+ assumption of equal subpopulation variances.  To compute a t-statistic
+ without the equal variances assumption, use
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)"><CODE>t(StatisticalSummary, StatisticalSummary)</CODE></A>.
+ <p>
+ This statistic can be used to perform a (homoscedastic) two-sample
+ t-test to compare sample means.</p>
+ <p>
+ The t-statistic returned is</p>
+ <p>
+ &nbsp;&nbsp;<code>  t = (m1 - m2) / (sqrt(1/n1 +1/n2) sqrt(var))</code>
+ </p><p>
+ where <strong><code>n1</code></strong> is the size of first sample;
+ <strong><code> n2</code></strong> is the size of second sample;
+ <strong><code> m1</code></strong> is the mean of first sample;
+ <strong><code> m2</code></strong> is the mean of second sample
+ and <strong><code>var</code></strong> is the pooled variance estimate:
+ </p><p>
+ <code>var = sqrt(((n1 - 1)var1 + (n2 - 1)var2) / ((n1-1) + (n2-1)))</code>
+ </p><p>
+ with <strong><code>var1</code></strong> the variance of the first sample and
+ <strong><code>var2</code></strong> the variance of the second sample.
+ </p><p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The datasets described by the two Univariates must each contain
+ at least 2 observations.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sampleStats1</CODE> - StatisticalSummary describing data from the first sample<DD><CODE>sampleStats2</CODE> - StatisticalSummary describing data from the second sample
+<DT><B>Returns:</B><DD>t statistic
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the sample statistics are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the number of samples is &lt; 2</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tTest(double, double[])"><!-- --></A><H3>
+tTest</H3>
+<PRE>
+public double <B>tTest</B>(double&nbsp;mu,
+                    double[]&nbsp;sample)
+             throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                    <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                    <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns the <i>observed significance level</i>, or
+ <i>p-value</i>, associated with a one-sample, two-tailed t-test
+ comparing the mean of the input array with the constant <code>mu</code>.
+ <p>
+ The number returned is the smallest significance level
+ at which one can reject the null hypothesis that the mean equals
+ <code>mu</code> in favor of the two-sided alternative that the mean
+ is different from <code>mu</code>. For a one-sided test, divide the
+ returned value by 2.</p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the test depends on the assumptions of the parametric
+ t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/ttest_unpaired_ass_viol.html">here</a>
+ </p><p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The observed array length must be at least 2.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mu</CODE> - constant value to compare sample mean against<DD><CODE>sample</CODE> - array of sample data values
+<DT><B>Returns:</B><DD>p-value
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the sample array is <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the length of the array is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tTest(double, double[], double)"><!-- --></A><H3>
+tTest</H3>
+<PRE>
+public boolean <B>tTest</B>(double&nbsp;mu,
+                     double[]&nbsp;sample,
+                     double&nbsp;alpha)
+              throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                     <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                     <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A>,
+                     <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Performs a <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm">
+ two-sided t-test</a> evaluating the null hypothesis that the mean of the population from
+ which <code>sample</code> is drawn equals <code>mu</code>.
+ <p>
+ Returns <code>true</code> iff the null hypothesis can be
+ rejected with confidence <code>1 - alpha</code>.  To
+ perform a 1-sided test, use <code>alpha * 2</code></p>
+ <p>
+ <strong>Examples:</strong><br><ol>
+ <li>To test the (2-sided) hypothesis <code>sample mean = mu </code> at
+ the 95% level, use <br><code>tTest(mu, sample, 0.05) </code>
+ </li>
+ <li>To test the (one-sided) hypothesis <code> sample mean < mu </code>
+ at the 99% level, first verify that the measured sample mean is less
+ than <code>mu</code> and then use
+ <br><code>tTest(mu, sample, 0.02) </code>
+ </li></ol></p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the test depends on the assumptions of the one-sample
+ parametric t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/sg_glos.html#one-sample">here</a>
+ </p><p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The observed array length must be at least 2.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mu</CODE> - constant value to compare sample mean against<DD><CODE>sample</CODE> - array of sample data values<DD><CODE>alpha</CODE> - significance level of the test
+<DT><B>Returns:</B><DD>p-value
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the sample array is <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the length of the array is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if <code>alpha</code> is not in the range (0, 0.5]
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tTest(double, org.apache.commons.math3.stat.descriptive.StatisticalSummary)"><!-- --></A><H3>
+tTest</H3>
+<PRE>
+public double <B>tTest</B>(double&nbsp;mu,
+                    <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats)
+             throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                    <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                    <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns the <i>observed significance level</i>, or
+ <i>p-value</i>, associated with a one-sample, two-tailed t-test
+ comparing the mean of the dataset described by <code>sampleStats</code>
+ with the constant <code>mu</code>.
+ <p>
+ The number returned is the smallest significance level
+ at which one can reject the null hypothesis that the mean equals
+ <code>mu</code> in favor of the two-sided alternative that the mean
+ is different from <code>mu</code>. For a one-sided test, divide the
+ returned value by 2.</p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the test depends on the assumptions of the parametric
+ t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/ttest_unpaired_ass_viol.html">
+ here</a></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The sample must contain at least 2 observations.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mu</CODE> - constant value to compare sample mean against<DD><CODE>sampleStats</CODE> - StatisticalSummary describing sample data
+<DT><B>Returns:</B><DD>p-value
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>sampleStats</code> is <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the number of samples is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tTest(double, org.apache.commons.math3.stat.descriptive.StatisticalSummary, double)"><!-- --></A><H3>
+tTest</H3>
+<PRE>
+public boolean <B>tTest</B>(double&nbsp;mu,
+                     <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats,
+                     double&nbsp;alpha)
+              throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                     <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                     <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A>,
+                     <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Performs a <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm">
+ two-sided t-test</a> evaluating the null hypothesis that the mean of the
+ population from which the dataset described by <code>stats</code> is
+ drawn equals <code>mu</code>.
+ <p>
+ Returns <code>true</code> iff the null hypothesis can be rejected with
+ confidence <code>1 - alpha</code>.  To  perform a 1-sided test, use
+ <code>alpha * 2.</code></p>
+ <p>
+ <strong>Examples:</strong><br><ol>
+ <li>To test the (2-sided) hypothesis <code>sample mean = mu </code> at
+ the 95% level, use <br><code>tTest(mu, sampleStats, 0.05) </code>
+ </li>
+ <li>To test the (one-sided) hypothesis <code> sample mean < mu </code>
+ at the 99% level, first verify that the measured sample mean is less
+ than <code>mu</code> and then use
+ <br><code>tTest(mu, sampleStats, 0.02) </code>
+ </li></ol></p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the test depends on the assumptions of the one-sample
+ parametric t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/sg_glos.html#one-sample">here</a>
+ </p><p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The sample must include at least 2 observations.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mu</CODE> - constant value to compare sample mean against<DD><CODE>sampleStats</CODE> - StatisticalSummary describing sample data values<DD><CODE>alpha</CODE> - significance level of the test
+<DT><B>Returns:</B><DD>p-value
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>sampleStats</code> is <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the number of samples is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if <code>alpha</code> is not in the range (0, 0.5]
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tTest(double[], double[])"><!-- --></A><H3>
+tTest</H3>
+<PRE>
+public double <B>tTest</B>(double[]&nbsp;sample1,
+                    double[]&nbsp;sample2)
+             throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                    <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                    <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns the <i>observed significance level</i>, or
+ <i>p-value</i>, associated with a two-sample, two-tailed t-test
+ comparing the means of the input arrays.
+ <p>
+ The number returned is the smallest significance level
+ at which one can reject the null hypothesis that the two means are
+ equal in favor of the two-sided alternative that they are different.
+ For a one-sided test, divide the returned value by 2.</p>
+ <p>
+ The test does not assume that the underlying popuation variances are
+ equal  and it uses approximated degrees of freedom computed from the
+ sample data to compute the p-value.  The t-statistic used is as defined in
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(double[], double[])"><CODE>t(double[], double[])</CODE></A> and the Welch-Satterthwaite approximation
+ to the degrees of freedom is used,
+ as described
+ <a href="http://www.itl.nist.gov/div898/handbook/prc/section3/prc31.htm">
+ here.</a>  To perform the test under the assumption of equal subpopulation
+ variances, use <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticTTest(double[], double[])"><CODE>homoscedasticTTest(double[], double[])</CODE></A>.</p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the p-value depends on the assumptions of the parametric
+ t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/ttest_unpaired_ass_viol.html">
+ here</a></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The observed array lengths must both be at least 2.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sample1</CODE> - array of sample data values<DD><CODE>sample2</CODE> - array of sample data values
+<DT><B>Returns:</B><DD>p-value for t-test
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the arrays are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the length of the arrays is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="homoscedasticTTest(double[], double[])"><!-- --></A><H3>
+homoscedasticTTest</H3>
+<PRE>
+public double <B>homoscedasticTTest</B>(double[]&nbsp;sample1,
+                                 double[]&nbsp;sample2)
+                          throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                                 <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                                 <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns the <i>observed significance level</i>, or
+ <i>p-value</i>, associated with a two-sample, two-tailed t-test
+ comparing the means of the input arrays, under the assumption that
+ the two samples are drawn from subpopulations with equal variances.
+ To perform the test without the equal variances assumption, use
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double[], double[])"><CODE>tTest(double[], double[])</CODE></A>.</p>
+ <p>
+ The number returned is the smallest significance level
+ at which one can reject the null hypothesis that the two means are
+ equal in favor of the two-sided alternative that they are different.
+ For a one-sided test, divide the returned value by 2.</p>
+ <p>
+ A pooled variance estimate is used to compute the t-statistic.  See
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticT(double[], double[])"><CODE>homoscedasticT(double[], double[])</CODE></A>. The sum of the sample sizes
+ minus 2 is used as the degrees of freedom.</p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the p-value depends on the assumptions of the parametric
+ t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/ttest_unpaired_ass_viol.html">
+ here</a></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The observed array lengths must both be at least 2.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sample1</CODE> - array of sample data values<DD><CODE>sample2</CODE> - array of sample data values
+<DT><B>Returns:</B><DD>p-value for t-test
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the arrays are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the length of the arrays is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tTest(double[], double[], double)"><!-- --></A><H3>
+tTest</H3>
+<PRE>
+public boolean <B>tTest</B>(double[]&nbsp;sample1,
+                     double[]&nbsp;sample2,
+                     double&nbsp;alpha)
+              throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                     <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                     <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A>,
+                     <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Performs a
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm">
+ two-sided t-test</a> evaluating the null hypothesis that <code>sample1</code>
+ and <code>sample2</code> are drawn from populations with the same mean,
+ with significance level <code>alpha</code>.  This test does not assume
+ that the subpopulation variances are equal.  To perform the test assuming
+ equal variances, use
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticTTest(double[], double[], double)"><CODE>homoscedasticTTest(double[], double[], double)</CODE></A>.
+ <p>
+ Returns <code>true</code> iff the null hypothesis that the means are
+ equal can be rejected with confidence <code>1 - alpha</code>.  To
+ perform a 1-sided test, use <code>alpha * 2</code></p>
+ <p>
+ See <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(double[], double[])"><CODE>t(double[], double[])</CODE></A> for the formula used to compute the
+ t-statistic.  Degrees of freedom are approximated using the
+ <a href="http://www.itl.nist.gov/div898/handbook/prc/section3/prc31.htm">
+ Welch-Satterthwaite approximation.</a></p>
+ <p>
+ <strong>Examples:</strong><br><ol>
+ <li>To test the (2-sided) hypothesis <code>mean 1 = mean 2 </code> at
+ the 95% level,  use
+ <br><code>tTest(sample1, sample2, 0.05). </code>
+ </li>
+ <li>To test the (one-sided) hypothesis <code> mean 1 < mean 2 </code>,
+ at the 99% level, first verify that the measured  mean of <code>sample 1</code>
+ is less than the mean of <code>sample 2</code> and then use
+ <br><code>tTest(sample1, sample2, 0.02) </code>
+ </li></ol></p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the test depends on the assumptions of the parametric
+ t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/ttest_unpaired_ass_viol.html">
+ here</a></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The observed array lengths must both be at least 2.
+ </li>
+ <li> <code> 0 < alpha < 0.5 </code>
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sample1</CODE> - array of sample data values<DD><CODE>sample2</CODE> - array of sample data values<DD><CODE>alpha</CODE> - significance level of the test
+<DT><B>Returns:</B><DD>true if the null hypothesis can be rejected with
+ confidence 1 - alpha
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the arrays are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the length of the arrays is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if <code>alpha</code> is not in the range (0, 0.5]
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="homoscedasticTTest(double[], double[], double)"><!-- --></A><H3>
+homoscedasticTTest</H3>
+<PRE>
+public boolean <B>homoscedasticTTest</B>(double[]&nbsp;sample1,
+                                  double[]&nbsp;sample2,
+                                  double&nbsp;alpha)
+                           throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                                  <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                                  <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A>,
+                                  <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Performs a
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm">
+ two-sided t-test</a> evaluating the null hypothesis that <code>sample1</code>
+ and <code>sample2</code> are drawn from populations with the same mean,
+ with significance level <code>alpha</code>,  assuming that the
+ subpopulation variances are equal.  Use
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double[], double[], double)"><CODE>tTest(double[], double[], double)</CODE></A> to perform the test without
+ the assumption of equal variances.
+ <p>
+ Returns <code>true</code> iff the null hypothesis that the means are
+ equal can be rejected with confidence <code>1 - alpha</code>.  To
+ perform a 1-sided test, use <code>alpha * 2.</code>  To perform the test
+ without the assumption of equal subpopulation variances, use
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(double[], double[], double)"><CODE>tTest(double[], double[], double)</CODE></A>.</p>
+ <p>
+ A pooled variance estimate is used to compute the t-statistic. See
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(double[], double[])"><CODE>t(double[], double[])</CODE></A> for the formula. The sum of the sample
+ sizes minus 2 is used as the degrees of freedom.</p>
+ <p>
+ <strong>Examples:</strong><br><ol>
+ <li>To test the (2-sided) hypothesis <code>mean 1 = mean 2 </code> at
+ the 95% level, use <br><code>tTest(sample1, sample2, 0.05). </code>
+ </li>
+ <li>To test the (one-sided) hypothesis <code> mean 1 < mean 2, </code>
+ at the 99% level, first verify that the measured mean of
+ <code>sample 1</code> is less than the mean of <code>sample 2</code>
+ and then use
+ <br><code>tTest(sample1, sample2, 0.02) </code>
+ </li></ol></p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the test depends on the assumptions of the parametric
+ t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/ttest_unpaired_ass_viol.html">
+ here</a></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The observed array lengths must both be at least 2.
+ </li>
+ <li> <code> 0 < alpha < 0.5 </code>
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sample1</CODE> - array of sample data values<DD><CODE>sample2</CODE> - array of sample data values<DD><CODE>alpha</CODE> - significance level of the test
+<DT><B>Returns:</B><DD>true if the null hypothesis can be rejected with
+ confidence 1 - alpha
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the arrays are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the length of the arrays is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if <code>alpha</code> is not in the range (0, 0.5]
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)"><!-- --></A><H3>
+tTest</H3>
+<PRE>
+public double <B>tTest</B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats1,
+                    <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats2)
+             throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                    <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                    <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns the <i>observed significance level</i>, or
+ <i>p-value</i>, associated with a two-sample, two-tailed t-test
+ comparing the means of the datasets described by two StatisticalSummary
+ instances.
+ <p>
+ The number returned is the smallest significance level
+ at which one can reject the null hypothesis that the two means are
+ equal in favor of the two-sided alternative that they are different.
+ For a one-sided test, divide the returned value by 2.</p>
+ <p>
+ The test does not assume that the underlying population variances are
+ equal  and it uses approximated degrees of freedom computed from the
+ sample data to compute the p-value.   To perform the test assuming
+ equal variances, use
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticTTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)"><CODE>homoscedasticTTest(StatisticalSummary, StatisticalSummary)</CODE></A>.</p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the p-value depends on the assumptions of the parametric
+ t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/ttest_unpaired_ass_viol.html">
+ here</a></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The datasets described by the two Univariates must each contain
+ at least 2 observations.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sampleStats1</CODE> - StatisticalSummary describing data from the first sample<DD><CODE>sampleStats2</CODE> - StatisticalSummary describing data from the second sample
+<DT><B>Returns:</B><DD>p-value for t-test
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the sample statistics are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the number of samples is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="homoscedasticTTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)"><!-- --></A><H3>
+homoscedasticTTest</H3>
+<PRE>
+public double <B>homoscedasticTTest</B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats1,
+                                 <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats2)
+                          throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                                 <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                                 <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Returns the <i>observed significance level</i>, or
+ <i>p-value</i>, associated with a two-sample, two-tailed t-test
+ comparing the means of the datasets described by two StatisticalSummary
+ instances, under the hypothesis of equal subpopulation variances. To
+ perform a test without the equal variances assumption, use
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#tTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)"><CODE>tTest(StatisticalSummary, StatisticalSummary)</CODE></A>.
+ <p>
+ The number returned is the smallest significance level
+ at which one can reject the null hypothesis that the two means are
+ equal in favor of the two-sided alternative that they are different.
+ For a one-sided test, divide the returned value by 2.</p>
+ <p>
+ See <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticT(double[], double[])"><CODE>homoscedasticT(double[], double[])</CODE></A> for the formula used to
+ compute the t-statistic. The sum of the  sample sizes minus 2 is used as
+ the degrees of freedom.</p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the p-value depends on the assumptions of the parametric
+ t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/ttest_unpaired_ass_viol.html">here</a>
+ </p><p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The datasets described by the two Univariates must each contain
+ at least 2 observations.
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sampleStats1</CODE> - StatisticalSummary describing data from the first sample<DD><CODE>sampleStats2</CODE> - StatisticalSummary describing data from the second sample
+<DT><B>Returns:</B><DD>p-value for t-test
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the sample statistics are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the number of samples is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary, double)"><!-- --></A><H3>
+tTest</H3>
+<PRE>
+public boolean <B>tTest</B>(<A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats1,
+                     <A HREF="../../../../../../org/apache/commons/math3/stat/descriptive/StatisticalSummary.html" title="interface in org.apache.commons.math3.stat.descriptive">StatisticalSummary</A>&nbsp;sampleStats2,
+                     double&nbsp;alpha)
+              throws <A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A>,
+                     <A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A>,
+                     <A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A>,
+                     <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Performs a
+ <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm">
+ two-sided t-test</a> evaluating the null hypothesis that
+ <code>sampleStats1</code> and <code>sampleStats2</code> describe
+ datasets drawn from populations with the same mean, with significance
+ level <code>alpha</code>.   This test does not assume that the
+ subpopulation variances are equal.  To perform the test under the equal
+ variances assumption, use
+ <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#homoscedasticTTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary, org.apache.commons.math3.stat.descriptive.StatisticalSummary)"><CODE>homoscedasticTTest(StatisticalSummary, StatisticalSummary)</CODE></A>.
+ <p>
+ Returns <code>true</code> iff the null hypothesis that the means are
+ equal can be rejected with confidence <code>1 - alpha</code>.  To
+ perform a 1-sided test, use <code>alpha * 2</code></p>
+ <p>
+ See <A HREF="../../../../../../org/apache/commons/math3/stat/inference/TTest.html#t(double[], double[])"><CODE>t(double[], double[])</CODE></A> for the formula used to compute the
+ t-statistic.  Degrees of freedom are approximated using the
+ <a href="http://www.itl.nist.gov/div898/handbook/prc/section3/prc31.htm">
+ Welch-Satterthwaite approximation.</a></p>
+ <p>
+ <strong>Examples:</strong><br><ol>
+ <li>To test the (2-sided) hypothesis <code>mean 1 = mean 2 </code> at
+ the 95%, use
+ <br><code>tTest(sampleStats1, sampleStats2, 0.05) </code>
+ </li>
+ <li>To test the (one-sided) hypothesis <code> mean 1 < mean 2 </code>
+ at the 99% level,  first verify that the measured mean of
+ <code>sample 1</code> is less than  the mean of <code>sample 2</code>
+ and then use
+ <br><code>tTest(sampleStats1, sampleStats2, 0.02) </code>
+ </li></ol></p>
+ <p>
+ <strong>Usage Note:</strong><br>
+ The validity of the test depends on the assumptions of the parametric
+ t-test procedure, as discussed
+ <a href="http://www.basic.nwu.edu/statguidefiles/ttest_unpaired_ass_viol.html">
+ here</a></p>
+ <p>
+ <strong>Preconditions</strong>: <ul>
+ <li>The datasets described by the two Univariates must each contain
+ at least 2 observations.
+ </li>
+ <li> <code> 0 < alpha < 0.5 </code>
+ </li></ul></p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sampleStats1</CODE> - StatisticalSummary describing sample data values<DD><CODE>sampleStats2</CODE> - StatisticalSummary describing sample data values<DD><CODE>alpha</CODE> - significance level of the test
+<DT><B>Returns:</B><DD>true if the null hypothesis can be rejected with
+ confidence 1 - alpha
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if the sample statistics are <code>null</code>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</A></CODE> - if the number of samples is &lt; 2
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</A></CODE> - if <code>alpha</code> is not in the range (0, 0.5]
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="df(double, double, double, double)"><!-- --></A><H3>
+df</H3>
+<PRE>
+protected double <B>df</B>(double&nbsp;v1,
+                    double&nbsp;v2,
+                    double&nbsp;n1,
+                    double&nbsp;n2)</PRE>
+<DL>
+<DD>Computes approximate degrees of freedom for 2-sample t-test.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>v1</CODE> - first sample variance<DD><CODE>v2</CODE> - second sample variance<DD><CODE>n1</CODE> - first sample n<DD><CODE>n2</CODE> - second sample n
+<DT><B>Returns:</B><DD>approximate degrees of freedom</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="t(double, double, double, double)"><!-- --></A><H3>
+t</H3>
+<PRE>
+protected double <B>t</B>(double&nbsp;m,
+                   double&nbsp;mu,
+                   double&nbsp;v,
+                   double&nbsp;n)</PRE>
+<DL>
+<DD>Computes t test statistic for 1-sample t-test.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>m</CODE> - sample mean<DD><CODE>mu</CODE> - constant to test against<DD><CODE>v</CODE> - sample variance<DD><CODE>n</CODE> - sample n
+<DT><B>Returns:</B><DD>t test statistic</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="t(double, double, double, double, double, double)"><!-- --></A><H3>
+t</H3>
+<PRE>
+protected double <B>t</B>(double&nbsp;m1,
+                   double&nbsp;m2,
+                   double&nbsp;v1,
+                   double&nbsp;v2,
+                   double&nbsp;n1,
+                   double&nbsp;n2)</PRE>
+<DL>
+<DD>Computes t test statistic for 2-sample t-test.
+ <p>
+ Does not assume that subpopulation variances are equal.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>m1</CODE> - first sample mean<DD><CODE>m2</CODE> - second sample mean<DD><CODE>v1</CODE> - first sample variance<DD><CODE>v2</CODE> - second sample variance<DD><CODE>n1</CODE> - first sample n<DD><CODE>n2</CODE> - second sample n
+<DT><B>Returns:</B><DD>t test statistic</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="homoscedasticT(double, double, double, double, double, double)"><!-- --></A><H3>
+homoscedasticT</H3>
+<PRE>
+protected double <B>homoscedasticT</B>(double&nbsp;m1,
+                                double&nbsp;m2,
+                                double&nbsp;v1,
+                                double&nbsp;v2,
+                                double&nbsp;n1,
+                                double&nbsp;n2)</PRE>
+<DL>
+<DD>Computes t test statistic for 2-sample t-test under the hypothesis
+ of equal subpopulation variances.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>m1</CODE> - first sample mean<DD><CODE>m2</CODE> - second sample mean<DD><CODE>v1</CODE> - first sample variance<DD><CODE>v2</CODE> - second sample variance<DD><CODE>n1</CODE> - first sample n<DD><CODE>n2</CODE> - second sample n
+<DT><B>Returns:</B><DD>t test statistic</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tTest(double, double, double, double)"><!-- --></A><H3>
+tTest</H3>
+<PRE>
+protected double <B>tTest</B>(double&nbsp;m,
+                       double&nbsp;mu,
+                       double&nbsp;v,
+                       double&nbsp;n)
+                throws <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A>,
+                       <A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></PRE>
+<DL>
+<DD>Computes p-value for 2-sided, 1-sample t-test.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>m</CODE> - sample mean<DD><CODE>mu</CODE> - constant to test against<DD><CODE>v</CODE> - sample variance<DD><CODE>n</CODE> - sample n
+<DT><B>Returns:</B><DD>p-value
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</A></CODE> - if n is not greater than 1</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tTest(double, double, double, double, double, double)"><!-- --></A><H3>
+tTest</H3>
+<PRE>
+protected double <B>tTest</B>(double&nbsp;m1,
+                       double&nbsp;m2,
+                       double&nbsp;v1,
+                       double&nbsp;v2,
+                       double&nbsp;n1,
+                       double&nbsp;n2)
+                throws <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A>,
+                       <A HREF="../../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></PRE>
+<DL>
+<DD>Computes p-value for 2-sided, 2-sample t-test.
+ <p>
+ Does not assume subpopulation variances are equal. Degrees of freedom
+ are estimated from the data.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>m1</CODE> - first sample mean<DD><CODE>m2</CODE> - second sample mean<DD><CODE>v1</CODE> - first sample variance<DD><CODE>v2</CODE> - second sample variance<DD><CODE>n1</CODE> - first sample n<DD><CODE>n2</CODE> - second sample n
+<DT><B>Returns:</B><DD>p-value
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if the estimated degrees of freedom is not
+ strictly positive</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="homoscedasticTTest(double, double, double, double, double, double)"><!-- --></A><H3>
+homoscedasticTTest</H3>
+<PRE>
+protected double <B>homoscedasticTTest</B>(double&nbsp;m1,
+                                    double&nbsp;m2,
+                                    double&nbsp;v1,
+                                    double&nbsp;v2,
+                                    double&nbsp;n1,
+                                    double&nbsp;n2)
+                             throws <A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A>,
+                                    <A HREF="../../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></PRE>
+<DL>
+<DD>Computes p-value for 2-sided, 2-sample t-test, under the assumption
+ of equal subpopulation variances.
+ <p>
+ The sum of the sample sizes minus 2 is used as degrees of freedom.</p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>m1</CODE> - first sample mean<DD><CODE>m2</CODE> - second sample mean<DD><CODE>v1</CODE> - first sample variance<DD><CODE>v2</CODE> - second sample variance<DD><CODE>n1</CODE> - first sample n<DD><CODE>n2</CODE> - second sample n
+<DT><B>Returns:</B><DD>p-value
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - if an error occurs computing the p-value
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</A></CODE> - if the estimated degrees of freedom is not
+ strictly positive</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/TTest.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/inference/TestUtils.html" title="class in org.apache.commons.math3.stat.inference"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/stat/inference/WilcoxonSignedRankTest.html" title="class in org.apache.commons.math3.stat.inference"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/stat/inference/TTest.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="TTest.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

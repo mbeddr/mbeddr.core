@@ -1,0 +1,468 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+BracketFinder (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="BracketFinder (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/BracketFinder.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BaseUnivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization.univariate"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BrentOptimizer.html" title="class in org.apache.commons.math3.optimization.univariate"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/optimization/univariate/BracketFinder.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="BracketFinder.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.optimization.univariate</FONT>
+<BR>
+Class BracketFinder</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.optimization.univariate.BracketFinder</B>
+</PRE>
+<HR>
+<B>Deprecated.</B>&nbsp;<I>As of 3.1 (to be removed in 4.0).</I>
+<P>
+<DL>
+<DT><PRE><FONT SIZE="-1"><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</A>
+</FONT>public class <B>BracketFinder</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+Provide an interval that brackets a local optimum of a function.
+ This code is based on a Python implementation (from <em>SciPy</em>,
+ module <code>optimize.py</code> v0.5).
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>2.2</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: BracketFinder.java 1422230 2012-12-15 12:11:13Z erans $</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#BracketFinder()">BracketFinder</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Constructor with default values <code>100, 50</code> (see the
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#BracketFinder(double, int)"><CODE>other constructor</CODE></A>).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#BracketFinder(double, int)">BracketFinder</A></B>(double&nbsp;growLimit,
+              int&nbsp;maxEvaluations)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Create a bracketing interval finder.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getEvaluations()">getEvaluations</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getFHi()">getFHi</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get function value at <A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getHi()"><CODE>getHi()</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getFLo()">getFLo</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get function value at <A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getLo()"><CODE>getLo()</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getFMid()">getFMid</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Get function value at <A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getMid()"><CODE>getMid()</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getHi()">getHi</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getLo()">getLo</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getMaxEvaluations()">getMaxEvaluations</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getMid()">getMid</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#search(org.apache.commons.math3.analysis.UnivariateFunction, org.apache.commons.math3.optimization.GoalType, double, double)">search</A></B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;func,
+       <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goal,
+       double&nbsp;xA,
+       double&nbsp;xB)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Search new points that bracket a local optimum of the function.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="BracketFinder()"><!-- --></A><H3>
+BracketFinder</H3>
+<PRE>
+public <B>BracketFinder</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Constructor with default values <code>100, 50</code> (see the
+ <A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#BracketFinder(double, int)"><CODE>other constructor</CODE></A>).
+<P>
+</DL>
+<HR>
+
+<A NAME="BracketFinder(double, int)"><!-- --></A><H3>
+BracketFinder</H3>
+<PRE>
+public <B>BracketFinder</B>(double&nbsp;growLimit,
+                     int&nbsp;maxEvaluations)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Create a bracketing interval finder.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>growLimit</CODE> - Expanding factor.<DD><CODE>maxEvaluations</CODE> - Maximum number of evaluations allowed for finding
+ a bracketing interval.</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="search(org.apache.commons.math3.analysis.UnivariateFunction, org.apache.commons.math3.optimization.GoalType, double, double)"><!-- --></A><H3>
+search</H3>
+<PRE>
+public void <B>search</B>(<A HREF="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</A>&nbsp;func,
+                   <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</A>&nbsp;goal,
+                   double&nbsp;xA,
+                   double&nbsp;xB)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Search new points that bracket a local optimum of the function.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>func</CODE> - Function whose optimum should be bracketed.<DD><CODE>goal</CODE> - <A HREF="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization"><CODE>Goal type</CODE></A>.<DD><CODE>xA</CODE> - Initial point.<DD><CODE>xB</CODE> - Initial point.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</A></CODE> - if the maximum number of evaluations
+ is exceeded.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMaxEvaluations()"><!-- --></A><H3>
+getMaxEvaluations</H3>
+<PRE>
+public int <B>getMaxEvaluations</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD><DL>
+
+<DT><B>Returns:</B><DD>the number of evalutations.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEvaluations()"><!-- --></A><H3>
+getEvaluations</H3>
+<PRE>
+public int <B>getEvaluations</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD><DL>
+
+<DT><B>Returns:</B><DD>the number of evalutations.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLo()"><!-- --></A><H3>
+getLo</H3>
+<PRE>
+public double <B>getLo</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD><DL>
+
+<DT><B>Returns:</B><DD>the lower bound of the bracket.<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getFLo()"><CODE>getFLo()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFLo()"><!-- --></A><H3>
+getFLo</H3>
+<PRE>
+public double <B>getFLo</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Get function value at <A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getLo()"><CODE>getLo()</CODE></A>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>function value at <A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getLo()"><CODE>getLo()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHi()"><!-- --></A><H3>
+getHi</H3>
+<PRE>
+public double <B>getHi</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD><DL>
+
+<DT><B>Returns:</B><DD>the higher bound of the bracket.<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getFHi()"><CODE>getFHi()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFHi()"><!-- --></A><H3>
+getFHi</H3>
+<PRE>
+public double <B>getFHi</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Get function value at <A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getHi()"><CODE>getHi()</CODE></A>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>function value at <A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getHi()"><CODE>getHi()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMid()"><!-- --></A><H3>
+getMid</H3>
+<PRE>
+public double <B>getMid</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD><DL>
+
+<DT><B>Returns:</B><DD>a point in the middle of the bracket.<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getFMid()"><CODE>getFMid()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFMid()"><!-- --></A><H3>
+getFMid</H3>
+<PRE>
+public double <B>getFMid</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Get function value at <A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getMid()"><CODE>getMid()</CODE></A>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>function value at <A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getMid()"><CODE>getMid()</CODE></A></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/BracketFinder.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BaseUnivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization.univariate"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/commons/math3/optimization/univariate/BrentOptimizer.html" title="class in org.apache.commons.math3.optimization.univariate"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/commons/math3/optimization/univariate/BracketFinder.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="BracketFinder.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>

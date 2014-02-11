@@ -1,0 +1,479 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Incrementor (Commons Math 3.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Incrementor (Commons Math 3.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Incrementor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/util/FastMath.html" title="class in org.apache.commons.math3.util"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/util/Incrementor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Incrementor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.commons.math3.util</FONT>
+<BR>
+Class Incrementor</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.math3.util.Incrementor</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>Incrementor</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+Utility that increments a counter until a maximum is reached, at
+ which point, the instance will by default throw a
+ <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception"><CODE>MaxCountExceededException</CODE></A>.
+ However, the user is able to override this behaviour by defining a
+ custom <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><CODE>callback</CODE></A>, in order to e.g.
+ select which exception must be thrown.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>3.0</DD>
+<DT><B>Version:</B></DT>
+  <DD>$Id: Incrementor.java 1455194 2013-03-11 15:45:54Z luc $</DD>
+</DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util">Incrementor.MaxCountExceededCallback</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defines a method to be called at counter exhaustion.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#Incrementor()">Incrementor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Default constructor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#Incrementor(int)">Incrementor</A></B>(int&nbsp;max)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defines a maximal count.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#Incrementor(int, org.apache.commons.math3.util.Incrementor.MaxCountExceededCallback)">Incrementor</A></B>(int&nbsp;max,
+            <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util">Incrementor.MaxCountExceededCallback</A>&nbsp;cb)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defines a maximal count and a callback method to be triggered at
+ counter exhaustion.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#canIncrement()">canIncrement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checks whether a single increment is allowed.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#getCount()">getCount</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the current count.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#getMaximalCount()">getMaximalCount</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the upper limit of the counter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#incrementCount()">incrementCount</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds one to the current iteration count.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#incrementCount(int)">incrementCount</A></B>(int&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs multiple increments.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#resetCount()">resetCount</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resets the counter to 0.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#setMaximalCount(int)">setMaximalCount</A></B>(int&nbsp;max)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the upper limit for the counter.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="Incrementor()"><!-- --></A><H3>
+Incrementor</H3>
+<PRE>
+public <B>Incrementor</B>()</PRE>
+<DL>
+<DD>Default constructor.
+ For the new instance to be useful, the maximal count must be set
+ by calling <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#setMaximalCount(int)"><CODE>setMaximalCount</CODE></A>.
+<P>
+</DL>
+<HR>
+
+<A NAME="Incrementor(int)"><!-- --></A><H3>
+Incrementor</H3>
+<PRE>
+public <B>Incrementor</B>(int&nbsp;max)</PRE>
+<DL>
+<DD>Defines a maximal count.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>max</CODE> - Maximal count.</DL>
+</DL>
+<HR>
+
+<A NAME="Incrementor(int, org.apache.commons.math3.util.Incrementor.MaxCountExceededCallback)"><!-- --></A><H3>
+Incrementor</H3>
+<PRE>
+public <B>Incrementor</B>(int&nbsp;max,
+                   <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util">Incrementor.MaxCountExceededCallback</A>&nbsp;cb)
+            throws <A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></PRE>
+<DL>
+<DD>Defines a maximal count and a callback method to be triggered at
+ counter exhaustion.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>max</CODE> - Maximal count.<DD><CODE>cb</CODE> - Function to be called when the maximal count has been reached.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</A></CODE> - if <code>cb</code> is <code>null</code></DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="setMaximalCount(int)"><!-- --></A><H3>
+setMaximalCount</H3>
+<PRE>
+public void <B>setMaximalCount</B>(int&nbsp;max)</PRE>
+<DL>
+<DD>Sets the upper limit for the counter.
+ This does not automatically reset the current count to zero (see
+ <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#resetCount()"><CODE>resetCount()</CODE></A>).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>max</CODE> - Upper limit of the counter.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMaximalCount()"><!-- --></A><H3>
+getMaximalCount</H3>
+<PRE>
+public int <B>getMaximalCount</B>()</PRE>
+<DL>
+<DD>Gets the upper limit of the counter.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the counter upper limit.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCount()"><!-- --></A><H3>
+getCount</H3>
+<PRE>
+public int <B>getCount</B>()</PRE>
+<DL>
+<DD>Gets the current count.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the current count.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="canIncrement()"><!-- --></A><H3>
+canIncrement</H3>
+<PRE>
+public boolean <B>canIncrement</B>()</PRE>
+<DL>
+<DD>Checks whether a single increment is allowed.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>false</code> if the next call to <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#incrementCount(int)"><CODE>incrementCount</CODE></A> will trigger a <code>MaxCountExceededException</code>,
+ <code>true</code> otherwise.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="incrementCount(int)"><!-- --></A><H3>
+incrementCount</H3>
+<PRE>
+public void <B>incrementCount</B>(int&nbsp;value)
+                    throws <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Performs multiple increments.
+ See the other <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#incrementCount()"><CODE>incrementCount</CODE></A> method).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - Number of increments.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - at counter exhaustion.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="incrementCount()"><!-- --></A><H3>
+incrementCount</H3>
+<PRE>
+public void <B>incrementCount</B>()
+                    throws <A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></PRE>
+<DL>
+<DD>Adds one to the current iteration count.
+ At counter exhaustion, this method will call the
+ <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html#trigger(int)"><CODE>trigger</CODE></A> method of the
+ callback object passed to the
+ <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.html#Incrementor(int, org.apache.commons.math3.util.Incrementor.MaxCountExceededCallback)"><CODE>constructor</CODE></A>.
+ If not explictly set, a default callback is used that will throw
+ a <code>MaxCountExceededException</code>.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</A></CODE> - at counter exhaustion, unless a
+ custom <A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><CODE>callback</CODE></A> has been set at
+ construction.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="resetCount()"><!-- --></A><H3>
+resetCount</H3>
+<PRE>
+public void <B>resetCount</B>()</PRE>
+<DL>
+<DD>Resets the counter to 0.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Incrementor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/util/FastMath.html" title="class in org.apache.commons.math3.util"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/commons/math3/util/Incrementor.MaxCountExceededCallback.html" title="interface in org.apache.commons.math3.util"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/commons/math3/util/Incrementor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Incrementor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2003-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.
+</BODY>
+</HTML>
