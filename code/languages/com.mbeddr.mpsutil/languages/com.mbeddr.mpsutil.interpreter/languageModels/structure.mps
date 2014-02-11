@@ -285,21 +285,21 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6663324787724987491" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Relationship" />
     <property name="name" nameId="tpck.1169194664001" value="InterpretBeforeRelationship" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="run before" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="before" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="run this one before another one" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6663324787724559041" resolveInfo="AbstractInterpreterRelationship" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6663324787725038318" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Relationship" />
     <property name="name" nameId="tpck.1169194664001" value="InterpretAfterRelationship" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="run after" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="after" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="run this one after another one" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6663324787724559041" resolveInfo="AbstractInterpreterRelationship" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8845772667391833376" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="OperationCallExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#-&gt;" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Operation Call Expression" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="calls an operation including stack and positional parameter handling" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Evaluator.BaseLanguageExtensions" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8845772667391848079" nodeInfo="ig">
@@ -316,7 +316,7 @@
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8845772667391847891" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="function" />
+      <property name="role" nameId="tpce.1071599776563" value="operation" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1071489288298" resolveInfo="LinkDeclaration" />
     </node>

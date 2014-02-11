@@ -514,7 +514,7 @@
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="3673.6663324787724987491" resolveInfo="InterpretBeforeRelationship" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6663324787724991868" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6663324787724991875" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="interpret " />
+        <property name="text" nameId="tpc2.1073389577007" value="run" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_ReadOnlyModelAccessor" typeId="tpc2.1225900081164" id="6663324787725088494" nodeInfo="ng">
         <node role="modelAccessor" roleId="tpc2.1225900141900" type="tpc2.ReadOnlyModelAccessor" typeId="tpc2.1225898583838" id="6663324787725088496" nodeInfo="ng">
