@@ -716,7 +716,7 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="4637938732745876372" nodeInfo="nn" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="4637938732745876373" nodeInfo="in" />
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4637938732745876374" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580320021" value="10" />
+        <property name="value" nameId="tpee.1068580320021" value="3" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="4637938732745885229" nodeInfo="ng">
         <property name="text" nameId="hba4.6451706574539345425" value="Default value for the maximum number of threads." />

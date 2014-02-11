@@ -131,4 +131,5 @@ code/languages/offline.sh
 code/*/xmlCBMCRawOutput/*
 
 build/**/*.xml
+build/*/*.xml
 !build/com.mbeddr.allScripts/build.xml

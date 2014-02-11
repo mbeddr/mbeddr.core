@@ -27,6 +27,12 @@
     <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.ext.tests" />
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.ext" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-ex-tests.xml" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056441867" nodeInfo="ng">
+      <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
+      <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
+      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="16" />
+      <property name="inplace" nameId="kdzh.4297162197621031140" value="true" />
+    </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_IdeaPlugin" typeId="kdzh.6592112598314498932" id="9141467591179068752" nodeInfo="ng">
       <property name="id" nameId="kdzh.6592112598314498927" value="dummy" />
       <node role="name" roleId="kdzh.6592112598314499021" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="9141467591179068754" nodeInfo="ng">
@@ -688,6 +694,12 @@
     <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.ts.tests" />
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.ext" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-ts-tests.xml" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056432523" nodeInfo="ng">
+      <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
+      <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
+      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="16" />
+      <property name="inplace" nameId="kdzh.4297162197621031140" value="true" />
+    </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_IdeaPlugin" typeId="kdzh.6592112598314498932" id="1276008224349199009" nodeInfo="ng">
       <property name="id" nameId="kdzh.6592112598314498927" value="dummy" />
       <node role="name" roleId="kdzh.6592112598314499021" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="1276008224349199011" nodeInfo="ng">

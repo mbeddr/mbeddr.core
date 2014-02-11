@@ -1317,14 +1317,14 @@
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Thread%dsleep(long)%cvoid" resolveInfo="sleep" />
                       <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="e2lb.~Thread" resolveInfo="Thread" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5966571986745556367" nodeInfo="nn">
-                        <property name="value" nameId="tpee.1068580320021" value="50" />
+                        <property name="value" nameId="tpee.1068580320021" value="20" />
                       </node>
                     </node>
                   </node>
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2263984427998441996" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusAssignmentExpression" typeId="tpee.1215695189714" id="2263984427998442012" nodeInfo="nn">
                       <node role="rValue" roleId="tpee.1068498886297" type="tpee.FloatingPointConstant" typeId="tpee.1111509017652" id="2263984427998442015" nodeInfo="nn">
-                        <property name="value" nameId="tpee.1113006610751" value="0.05" />
+                        <property name="value" nameId="tpee.1113006610751" value="0.02" />
                       </node>
                       <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="2263984427998441997" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2263984427998441970" resolveInfo="elapsedSeconds" />
