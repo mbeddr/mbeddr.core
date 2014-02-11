@@ -20,11 +20,10 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
   <import index="tp4f" modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" implicit="yes" />
-  <import index="o23b" modelUID="r:d4a8f9bc-78fb-4fb4-8fad-f65eb374c6c1(com.mbeddr.analyses.cbmc.testing.structure)" version="0" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="441761995015387330" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="AssertAnalysisDepth_Tests" />
     <node role="methods" roleId="tp5g.1216993439383" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="5978633916448867546" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="checkFunction" />
+      <property name="name" nameId="tpck.1169194664001" value="checkAsserts" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5978633916448867578" nodeInfo="in">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.5853537697759033507" resolveInfo="CBMCLiftedResult" />
       </node>
@@ -57,24 +56,10 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4716091789692224681" nodeInfo="nn">
-          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4716091789692224682" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="generatorOutputPath" />
-            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4716091789692224680" nodeInfo="in" />
-            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="4716091789692224683" nodeInfo="ng">
-              <property name="fqName" nameId="o23b.559557797393041554" value="analysis_depth" />
-              <property name="name" nameId="o23b.559557797393017702" value="analysis_depth" />
-              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
-            </node>
-          </node>
-        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="5978633916448867636" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="5978633916448867681" nodeInfo="nn">
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
             <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4716091789692231657" nodeInfo="nn">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4716091789692224682" resolveInfo="generatorOutputPath" />
-            </node>
             <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="5978633916448867682" nodeInfo="nn">
               <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
               <property name="name" nameId="tp25.559557797393017702" value="analysis_depth" />
@@ -88,11 +73,6 @@
             </node>
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5978633916448891256" nodeInfo="nn">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5978633916448868737" resolveInfo="config" />
-            </node>
-            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5978633916448867686" nodeInfo="nn">
-              <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="5978633916448867687" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw3h.~EmptyProgressIndicator%d&lt;init&gt;()" resolveInfo="EmptyProgressIndicator" />
-              </node>
             </node>
           </node>
         </node>
@@ -119,7 +99,7 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5978633916448894182" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="5978633916448894185" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5978633916448894187" nodeInfo="nn">
-                <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkFunction" />
+                <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkAsserts" />
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448894249" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="analysisDepth14" />
                 </node>
@@ -149,7 +129,7 @@
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5978633916448902226" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="5978633916448902227" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5978633916448902228" nodeInfo="nn">
-                <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkFunction" />
+                <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkAsserts" />
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448902229" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="analysisDepth14" />
                 </node>
@@ -195,7 +175,7 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5978633916448909950" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="5978633916448909951" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5978633916448909952" nodeInfo="nn">
-                <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkFunction" />
+                <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkAsserts" />
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448909953" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="analysisDepth15" />
                 </node>
@@ -225,7 +205,7 @@
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5978633916448925102" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="5978633916448925103" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5978633916448925104" nodeInfo="nn">
-                <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkFunction" />
+                <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkAsserts" />
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448925105" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="analysisDepth15" />
                 </node>
@@ -272,7 +252,7 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5978633916448925448" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="5978633916448925449" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5978633916448925450" nodeInfo="nn">
-                <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkFunction" />
+                <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkAsserts" />
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448925451" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="analysisDepth17" />
                 </node>
@@ -302,7 +282,7 @@
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5978633916448934471" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="5978633916448934472" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5978633916448934473" nodeInfo="nn">
-                <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkFunction" />
+                <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkAsserts" />
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448934474" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="analysisDepth17" />
                 </node>
