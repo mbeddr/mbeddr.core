@@ -105,13 +105,6 @@
         <property name="stereotype" nameId="tp25.559557797393021807" value="" />
       </node>
     </node>
-    <node role="applicableLanguages" roleId="3673.7019451652830298090" type="3673.ApplicableLanguage" typeId="3673.7019451652830285943" id="7019451652833067414" nodeInfo="ng">
-      <node role="language" roleId="3673.7019451652831666945" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="7019451652833067415" nodeInfo="nn">
-        <property name="fqName" nameId="tp25.559557797393041554" value="com.mbeddr.core." />
-        <property name="name" nameId="tp25.559557797393017702" value="com.mbeddr.core.statements.structure" />
-        <property name="stereotype" nameId="tp25.559557797393021807" value="" />
-      </node>
-    </node>
     <node role="applicableLanguages" roleId="3673.7019451652830298090" type="3673.ApplicableLanguage" typeId="3673.7019451652830285943" id="7019451652831845029" nodeInfo="ng">
       <node role="language" roleId="3673.7019451652831666945" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="7019451652831845030" nodeInfo="nn">
         <property name="fqName" nameId="tp25.559557797393041554" value="com.mbedd" />
@@ -1033,6 +1026,13 @@
   </root>
   <root type="3673.Interpreter" typeId="3673.8615074351687299818" id="8845772667399979147" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="CStatementInterpreter" />
+    <node role="applicableLanguages" roleId="3673.7019451652830298090" type="3673.ApplicableLanguage" typeId="3673.7019451652830285943" id="7019451652833067414" nodeInfo="ng">
+      <node role="language" roleId="3673.7019451652831666945" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="7019451652833067415" nodeInfo="nn">
+        <property name="fqName" nameId="tp25.559557797393041554" value="com.mbeddr.core." />
+        <property name="name" nameId="tp25.559557797393017702" value="com.mbeddr.core.statements.structure" />
+        <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+      </node>
+    </node>
     <node role="evaluators" roleId="3673.8615074351687302157" type="3673.ConceptEvaluator" typeId="3673.8615074351687301435" id="8845772667396526514" nodeInfo="ng">
       <property name="cache" nameId="3673.8845772667389641968" value="true" />
       <link role="concept" roleId="3673.8615074351687302216" targetNodeId="c4fa.4185783222026475861" resolveInfo="StatementList" />
@@ -1115,6 +1115,32 @@
       <node role="evaluator" roleId="3673.5934114435584084790" type="3673.ConceptEvaluatorInline" typeId="3673.5934114435582125873" id="8845772667396732772" nodeInfo="ng">
         <node role="expression" roleId="3673.5934114435582660673" type="3673.InterpretConstraintExpression" typeId="3673.5293529713180742448" id="8845772667396738112" nodeInfo="ng">
           <link role="child" roleId="3673.5293529713180742449" targetNodeId="c4fa.7254843406768833939" />
+        </node>
+      </node>
+    </node>
+    <node role="evaluators" roleId="3673.8615074351687302157" type="3673.ConceptEvaluator" typeId="3673.8615074351687301435" id="8845772667411546031" nodeInfo="ng">
+      <link role="concept" roleId="3673.8615074351687302216" targetNodeId="c4fa.2486081302459354921" resolveInfo="IVariableReference" />
+      <node role="evaluator" roleId="3673.5934114435584084790" type="3673.ConceptEvaluatorInline" typeId="3673.5934114435582125873" id="8845772667411547721" nodeInfo="ng">
+        <node role="expression" roleId="3673.5934114435582660673" type="3673.InterpretExpression" typeId="3673.8615074351687435493" id="8845772667411549908" nodeInfo="ng">
+          <node role="node" roleId="3673.5293529713176663275" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8845772667411550911" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="3673.NodeExpression" typeId="3673.5293529713177831489" id="8845772667411550500" nodeInfo="ng" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8845772667411558757" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.8076351743304603874" resolveInfo="target" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="evaluators" roleId="3673.8615074351687302157" type="3673.ConceptEvaluator" typeId="3673.8615074351687301435" id="8845772667411559646" nodeInfo="ng">
+      <link role="concept" roleId="3673.8615074351687302216" targetNodeId="c4fa.4185783222026475238" resolveInfo="LocalVariableDeclaration" />
+      <node role="evaluator" roleId="3673.5934114435584084790" type="3673.ConceptEvaluatorInline" typeId="3673.5934114435582125873" id="8845772667411579901" nodeInfo="ng">
+        <node role="expression" roleId="3673.5934114435582660673" type="3673.InterpretExpression" typeId="3673.8615074351687435493" id="8845772667411583774" nodeInfo="ng">
+          <node role="node" roleId="3673.5293529713176663275" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8845772667411585451" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="3673.NodeExpression" typeId="3673.5293529713177831489" id="8845772667411583802" nodeInfo="ng" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8845772667411613080" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.6702952168899882809" resolveInfo="getInitExpression" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
