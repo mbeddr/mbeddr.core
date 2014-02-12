@@ -244,6 +244,9 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6118219496720647205" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="hba4.2378878022256321275" resolveInfo="IDeprecatedLangConcept" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1786180596061219795" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
@@ -900,15 +903,29 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6118219496707191509" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
     <property name="name" nameId="tpck.1169194664001" value="SmVarTarget" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6118219496707191704" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.4620120465980511009" resolveInfo="IGenericDotTarget" />
-    </node>
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6118219496719629776" resolveInfo="StatemachineTarget" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6118219496707191706" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="variable" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="5633981208992643165" resolveInfo="StatemachineVariableDeclaration" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6118219496719522740" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
+    <property name="name" nameId="tpck.1169194664001" value="SmInitTarget" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="init" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="initialize the state machine" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6118219496719629776" resolveInfo="StatemachineTarget" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6118219496719629776" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
+    <property name="name" nameId="tpck.1169194664001" value="StatemachineTarget" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6118219496719629777" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.4620120465980511009" resolveInfo="IGenericDotTarget" />
     </node>
   </root>
 </model>

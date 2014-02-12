@@ -2989,5 +2989,12 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6118219496719522964" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="clqz.6118219496719522740" resolveInfo="SmInitTarget" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6118219496719533036" nodeInfo="nn">
+      <property name="text" nameId="tpc2.1073389577007" value="init" />
+    </node>
+  </root>
 </model>
 
