@@ -741,8 +741,8 @@
               </node>
               <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="6118219496686503662" nodeInfo="ng">
                 <link role="property" roleId="hba4.4481811096720581232" targetNodeId="mj1l.2212975673976043696" resolveInfo="value" />
-                <node role="value" roleId="hba4.4481811096720588312" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6118219496686503703" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="3" />
+                <node role="value" roleId="hba4.4481811096720588312" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8845772667429658700" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="3" />
                 </node>
               </node>
             </node>
