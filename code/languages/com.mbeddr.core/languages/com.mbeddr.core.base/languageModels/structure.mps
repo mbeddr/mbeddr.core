@@ -1081,6 +1081,10 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="651821299954673486" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="valueDebugger" />
     <property name="name" nameId="tpck.1169194664001" value="IValueDebuggable" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3822166636462292342" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="value" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="651821299954909200" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="valueDebugger" />
