@@ -112,10 +112,10 @@
       <node role="presentation" roleId="tp1t.3906442776579556548" type="tp1t.ConstraintFunction_ReferentSearchScope_Presentation" typeId="tp1t.3906442776579556545" id="2921294391694061955" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2921294391694061956" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2921294391694068442" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2921294391694070747" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="kqnq.800630853683114728" resolveInfo="getUsefulPresentation" />
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8845772667428729944" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="kqnq.8845772667428697118" resolveInfo="getDetailedConceptPresentation" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="kqnq.800630853683114622" resolveInfo="Util" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp1t.ConstraintFunctionParameter_parameterNode" typeId="tp1t.3906442776579549644" id="2921294391694230866" nodeInfo="nn" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp1t.ConstraintFunctionParameter_parameterNode" typeId="tp1t.3906442776579549644" id="8845772667428729945" nodeInfo="nn" />
             </node>
           </node>
         </node>
@@ -339,7 +339,7 @@
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="800630853688217560" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="800630853688236124" nodeInfo="nn">
             <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="800630853688246442" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="kqnq.800630853683114728" resolveInfo="getUsefulPresentation" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="kqnq.800630853683114728" resolveInfo="getConceptEvaluatorPresentation" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="kqnq.800630853683114622" resolveInfo="Util" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp1t.ConstraintFunctionParameter_parameterNode" typeId="tp1t.3906442776579549644" id="800630853688294746" nodeInfo="nn" />
             </node>
