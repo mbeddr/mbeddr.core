@@ -615,9 +615,6 @@
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454814" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ayz1.1671983567912265689" resolveInfo="mps-richtext.zip" />
             </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454815" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="vlym.7723076858040759355" resolveInfo="mps-editor-override.zip" />
-            </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="651821299952456333" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="g0ku.651821299948806962" resolveInfo="com.mbeddr.platform.zip" />
             </node>
@@ -806,9 +803,6 @@
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318886" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ayz1.1671983567912265689" resolveInfo="mps-richtext.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318887" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="vlym.7723076858040759355" resolveInfo="mps-editor-override.zip" />
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="651821299952456536" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="g0ku.651821299948806962" resolveInfo="com.mbeddr.platform.zip" />
@@ -1198,9 +1192,6 @@
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319378" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ayz1.1671983567912265689" resolveInfo="mps-richtext.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319379" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="vlym.7723076858040759355" resolveInfo="mps-editor-override.zip" />
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="651821299952456583" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="g0ku.651821299948806962" resolveInfo="com.mbeddr.platform.zip" />

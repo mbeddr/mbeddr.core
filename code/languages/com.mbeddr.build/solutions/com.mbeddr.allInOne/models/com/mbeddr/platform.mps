@@ -277,9 +277,6 @@
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="2910276674574450753" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ayz1.1671983567912265689" resolveInfo="mps-richtext.zip" />
           </node>
-          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="2910276674574451486" nodeInfo="ng">
-            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="vlym.7723076858040759355" resolveInfo="mps-editor-override.zip" />
-          </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6778812602665862082" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="o988.2475960130283269725" resolveInfo="mps-tables.zip" />
           </node>
