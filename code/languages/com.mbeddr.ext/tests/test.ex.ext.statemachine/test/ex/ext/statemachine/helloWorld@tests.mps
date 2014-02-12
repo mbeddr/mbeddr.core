@@ -1007,9 +1007,11 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="5753290798447928008" nodeInfo="ng">
-          <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="5753290798447930803" nodeInfo="ng">
-            <link role="state" roleId="clqz.2558982571829202228" targetNodeId="8444296659257885034" resolveInfo="red" />
-            <node role="expr" roleId="clqz.2558982571829189198" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5753290798447933594" nodeInfo="ng">
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="5753290798454704632" nodeInfo="ng">
+            <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmIsInStateTarget" typeId="clqz.5753290798453183908" id="5753290798454705840" nodeInfo="ng">
+              <link role="state" roleId="clqz.5753290798453184116" targetNodeId="8444296659257885034" resolveInfo="red" />
+            </node>
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5753290798454704626" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6118219496728060636" resolveInfo="sm" />
             </node>
           </node>
@@ -1025,9 +1027,11 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="5753290798447952552" nodeInfo="ng">
-          <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="5753290798447952553" nodeInfo="ng">
-            <link role="state" roleId="clqz.2558982571829202228" targetNodeId="8444296659257885035" resolveInfo="green" />
-            <node role="expr" roleId="clqz.2558982571829189198" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5753290798447952554" nodeInfo="ng">
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="5753290798454714903" nodeInfo="ng">
+            <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmIsInStateTarget" typeId="clqz.5753290798453183908" id="5753290798454720007" nodeInfo="ng">
+              <link role="state" roleId="clqz.5753290798453184116" targetNodeId="8444296659257885035" resolveInfo="green" />
+            </node>
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5753290798454714897" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6118219496728060636" resolveInfo="sm" />
             </node>
           </node>
@@ -1047,9 +1051,11 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="5753290798447978809" nodeInfo="ng">
-          <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="5753290798447978810" nodeInfo="ng">
-            <link role="state" roleId="clqz.2558982571829202228" targetNodeId="4249345261280336723" resolveInfo="blue" />
-            <node role="expr" roleId="clqz.2558982571829189198" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5753290798447978811" nodeInfo="ng">
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="5753290798454729073" nodeInfo="ng">
+            <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmIsInStateTarget" typeId="clqz.5753290798453183908" id="5753290798454730287" nodeInfo="ng">
+              <link role="state" roleId="clqz.5753290798453184116" targetNodeId="4249345261280336723" resolveInfo="blue" />
+            </node>
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5753290798454729067" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6118219496728060636" resolveInfo="sm" />
             </node>
           </node>

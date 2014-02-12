@@ -4205,5 +4205,29 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="clqz.6118219496725500902" resolveInfo="SmTriggerTarget" />
     </node>
   </root>
+  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5753290798453321168" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="typeof_SmIsInStateTarget" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5753290798453321169" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="5753290798453322964" nodeInfo="nn">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5753290798453322965" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="5753290798453322966" nodeInfo="nn">
+            <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="5753290798453322967" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5753290798453322968" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="5753290798453322969" nodeInfo="nn">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5753290798453326243" nodeInfo="nn">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5753290798453321171" resolveInfo="iit" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5753290798453321171" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="iit" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="clqz.5753290798453183908" resolveInfo="SmIsInStateTarget" />
+    </node>
+  </root>
 </model>
 
