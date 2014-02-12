@@ -1867,7 +1867,8 @@
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="4207092843067772384" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="1090123905634139959" nodeInfo="igu">
-      <property name="name" nameId="tpck.1169194664001" value="parseResult" />
+      <property name="name" nameId="tpck.1169194664001" value="buildCBMCRawResult" />
+      <property name="isSynchronized" nameId="tpee.4276006055363816570" value="true" />
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7395897388325524716" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="runResult" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7395897388325531620" nodeInfo="in">
