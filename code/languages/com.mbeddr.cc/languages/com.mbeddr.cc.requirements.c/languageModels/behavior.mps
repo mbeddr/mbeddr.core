@@ -631,12 +631,12 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6118219496672566067" resolveInfo="min" />
                 </node>
               </node>
-              <node role="condition" roleId="tpee.1144231399730" type="tpee.LessThanExpression" typeId="tpee.1081506773034" id="6118219496672583965" nodeInfo="nn">
-                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6118219496672584590" nodeInfo="nn">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6118219496672566375" resolveInfo="max" />
-                </node>
-                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6118219496672576023" nodeInfo="nn">
+              <node role="condition" roleId="tpee.1144231399730" type="tpee.LessThanOrEqualsExpression" typeId="tpee.1153422305557" id="2113102233501456965" nodeInfo="nn">
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2113102233501456968" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6118219496672574613" resolveInfo="i" />
+                </node>
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2113102233501456967" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6118219496672566375" resolveInfo="max" />
                 </node>
               </node>
               <node role="iteration" roleId="tpee.1144231408325" type="tpee.PostfixIncrementExpression" typeId="tpee.1214918800624" id="6118219496672588322" nodeInfo="nn">

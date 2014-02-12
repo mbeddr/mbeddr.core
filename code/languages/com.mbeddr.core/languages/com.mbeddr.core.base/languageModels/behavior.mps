@@ -8469,7 +8469,7 @@
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="5654935383979315801" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="5654935383979315803" nodeInfo="nn">
                 <link role="classifier" roleId="tpee.1144433057691" targetNodeId="1t7x.~Color" resolveInfo="Color" />
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1t7x.~Color%dcyan" resolveInfo="cyan" />
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1t7x.~Color%dORANGE" resolveInfo="ORANGE" />
               </node>
             </node>
           </node>
