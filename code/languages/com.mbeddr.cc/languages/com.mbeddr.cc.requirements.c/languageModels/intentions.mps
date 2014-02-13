@@ -558,7 +558,7 @@
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="651821299967322031" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.651821299967223557" resolveInfo="clearAll" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.651821299967223557" resolveInfo="clearAllDebuggers" />
             </node>
           </node>
         </node>
@@ -722,7 +722,7 @@
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="651821299956241588" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="651821299956241574" resolveInfo="nl" />
                 </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="651821299956241589" nodeInfo="nn">
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2113102233505444890" nodeInfo="nn">
                   <link role="property" roleId="tp25.1138056395725" targetNodeId="mj1l.2212975673976043696" resolveInfo="value" />
                 </node>
               </node>
