@@ -3,7 +3,7 @@
   <persistence version="8" />
   <language namespace="7fa12e9c-b949-4976-b4fa-19accbc320b4(jetbrains.mps.lang.dataFlow)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="16" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="17" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" />
   <import index="ktif" modelUID="r:7581afdf-2eec-4ad5-b583-8a9ab51847f7(com.mbeddr.ext.statemachines.behavior)" version="0" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
@@ -658,7 +658,7 @@
     </node>
   </root>
   <root type="tp41.DataFlowBuilderDeclaration" typeId="tp41.1206442055221" id="6827806583615963454" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.deprecated" />
     <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="clqz.1786180596061208520" resolveInfo="InitializeSMStatement" />
     <node role="builderBlock" roleId="tp41.1206442812839" type="tp41.BuilderBlock" typeId="tp41.1206442659665" id="6827806583615963455" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6827806583615963456" nodeInfo="sn">
@@ -848,7 +848,7 @@
     </node>
   </root>
   <root type="tp41.DataFlowBuilderDeclaration" typeId="tp41.1206442055221" id="6827806583616043597" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.deprecated" />
     <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="clqz.7851711690674279259" resolveInfo="TriggerSMStatement" />
     <node role="builderBlock" roleId="tp41.1206442812839" type="tp41.BuilderBlock" typeId="tp41.1206442659665" id="6827806583616043598" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6827806583616043599" nodeInfo="sn">
@@ -1004,7 +1004,7 @@
     </node>
   </root>
   <root type="tp41.DataFlowBuilderDeclaration" typeId="tp41.1206442055221" id="6827806583616083808" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.test" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.deprecated" />
     <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="clqz.2558982571829189197" resolveInfo="IsInStateExpression" />
     <node role="builderBlock" roleId="tp41.1206442812839" type="tp41.BuilderBlock" typeId="tp41.1206442659665" id="6827806583616083809" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6827806583616083810" nodeInfo="sn">
@@ -1020,7 +1020,7 @@
     </node>
   </root>
   <root type="tp41.DataFlowBuilderDeclaration" typeId="tp41.1206442055221" id="6827806583616204512" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.deprecated" />
     <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="clqz.7999989049972989533" resolveInfo="StatemachineExtVarRef" />
     <node role="builderBlock" roleId="tp41.1206442812839" type="tp41.BuilderBlock" typeId="tp41.1206442659665" id="6827806583616204513" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6827806583616204514" nodeInfo="sn">

@@ -3,8 +3,8 @@
   <StructureModification>
     <dependencies>
       <model index="silf" modelUID="r:e2d203fd-94d7-4156-aadb-5d8dfc0eeb05(com.mbeddr.ext.statemachine_mc.typesystem)" version="-1" />
-      <model index="ktif" modelUID="r:7581afdf-2eec-4ad5-b583-8a9ab51847f7(com.mbeddr.ext.statemachine_mc.behavior)" version="-1" />
       <model index="ol92" modelUID="r:3a5367ae-3f46-4e7d-983f-868d317512c8(com.mbeddr.ext.statemachine_mc.generator.template.main@generator)" version="-1" />
+      <model index="ktif" modelUID="r:7581afdf-2eec-4ad5-b583-8a9ab51847f7(com.mbeddr.ext.statemachine_mc.behavior)" version="-1" />
       <model index="3urm" modelUID="r:83bfdebe-5142-4e25-be3f-92ce5f6940d7(com.mbeddr.ext.statemachine_mc.constraints)" version="-1" />
       <model index="know" modelUID="r:775fb93d-1c49-4a5d-832a-a94f24da0fdf(com.mbeddr.ext.statemachine_mc.editor)" version="-1" />
       <model index="bnsy" modelUID="r:1cada1d0-f158-48a9-b4a9-75b2f62d9489(com.mbeddr.ext.statemachine_mc.actions)" version="-1" />
@@ -101,6 +101,12 @@
       <model index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="15" />
     </dependencies>
     <rename id="clqz.6118219496707191509" type="CONCEPT" from="SmVarRef" to="SmVarTarget" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="16" />
+    </dependencies>
+    <rename id="clqz.143519404608467584" type="CONCEPT" from="HasTxFiredTarget" to="SmHasTxFiredTarget" />
   </StructureModification>
 </history>
 

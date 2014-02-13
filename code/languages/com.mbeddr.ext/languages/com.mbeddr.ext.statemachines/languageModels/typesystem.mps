@@ -4,7 +4,7 @@
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="16" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="17" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="5" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
@@ -57,7 +57,7 @@
   </root>
   <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="7851711690674293153" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="check_RunSMStatement" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.deprecated" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="7851711690674293154" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="7851711690674293156" nodeInfo="nn">
         <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="7851711690674293159" nodeInfo="nn">
@@ -626,7 +626,7 @@
   </root>
   <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2558982571829200039" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="typeof_StateOfExpression" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.test" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.deprecated" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2558982571829200040" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="2558982571829200046" nodeInfo="nn">
         <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="2558982571829202238" nodeInfo="ng">
@@ -1157,7 +1157,7 @@
   </root>
   <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="7999989049972989567" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="typeof_StatemachineExtVarRef" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.deprecated" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="7999989049972989568" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="7999989049972989574" nodeInfo="nn">
         <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7999989049972989578" nodeInfo="ng">
@@ -3856,7 +3856,7 @@
   </root>
   <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="6183633367244876839" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="typeof_HasTransitionFiredExpr" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.test" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.deprecated" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="6183633367244876840" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="6183633367244876842" nodeInfo="nn">
         <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="6183633367244876843" nodeInfo="ng">
@@ -4227,6 +4227,30 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5753290798453321171" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="iit" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="clqz.5753290798453183908" resolveInfo="SmIsInStateTarget" />
+    </node>
+  </root>
+  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="143519404608868033" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="typeof_HasTxFiredTarget" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.test" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="143519404608868034" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="143519404608869833" nodeInfo="nn">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="143519404608869834" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="143519404608869835" nodeInfo="nn">
+            <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="143519404608869836" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="143519404608869837" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="143519404608869838" nodeInfo="nn">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="143519404608918168" nodeInfo="nn">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="143519404608868036" resolveInfo="htf" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="143519404608868036" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="htf" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="clqz.143519404608467584" resolveInfo="SmHasTxFiredTarget" />
     </node>
   </root>
 </model>
