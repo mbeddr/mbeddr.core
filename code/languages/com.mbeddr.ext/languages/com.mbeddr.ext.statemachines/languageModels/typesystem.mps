@@ -3927,7 +3927,7 @@
   </root>
   <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="1222391808947468116" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="check_SetStateStatement" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.test" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.deprecated" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="1222391808947468117" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="1222391808947468119" nodeInfo="nn">
         <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="1222391808947468120" nodeInfo="nn">
@@ -4251,6 +4251,34 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="143519404608868036" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="htf" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="clqz.143519404608467584" resolveInfo="SmHasTxFiredTarget" />
+    </node>
+  </root>
+  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="143519404613886305" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="typeof_SmSetStateTarget" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.test" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="143519404613886306" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="143519404613888274" nodeInfo="nn">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="143519404613888297" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="143519404613888293" nodeInfo="nn">
+            <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="143519404613896988" nodeInfo="nn">
+              <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="143519404613896990" nodeInfo="in">
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.7892328519581699353" resolveInfo="VoidType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="143519404613888277" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="143519404613888094" nodeInfo="nn">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="143519404613888133" nodeInfo="nn">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="143519404613886308" resolveInfo="ss" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="143519404613886308" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="ss" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="clqz.143519404613863014" resolveInfo="SmSetStateTarget" />
     </node>
   </root>
 </model>

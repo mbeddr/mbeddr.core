@@ -785,7 +785,7 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1222391808947435174" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.test" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.deprecated" />
     <property name="name" nameId="tpck.1169194664001" value="SetStateStatement" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="sets the state machine into a specific state" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="smSetState" />
@@ -801,6 +801,12 @@
       <property name="role" nameId="tpce.1071599776563" value="expr" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="143519404615174573" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="hba4.2378878022256321275" resolveInfo="IDeprecatedLangConcept" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="143519404615174578" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8409287311039031605" nodeInfo="ig">
@@ -992,6 +998,22 @@
       <property name="role" nameId="tpce.1071599776563" value="transition" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="5778488248013533883" resolveInfo="Transition" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="143519404613863014" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.test" />
+    <property name="name" nameId="tpck.1169194664001" value="SmSetStateTarget" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="setState" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="sets the state machine into a specific state" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6118219496719629776" resolveInfo="StatemachineTarget" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="143519404613863234" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="state" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4249345261280334498" resolveInfo="AbstractState" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="143519404613863747" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="yz9a.3387987015204930488" resolveInfo="IRestrictToTests" />
     </node>
   </root>
 </model>
