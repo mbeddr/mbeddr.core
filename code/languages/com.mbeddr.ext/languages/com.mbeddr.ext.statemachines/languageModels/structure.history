@@ -96,5 +96,17 @@
     </dependencies>
     <move id="clqz.5778488248013533913" to="clqz.1270667558201034238" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="15" />
+    </dependencies>
+    <rename id="clqz.6118219496707191509" type="CONCEPT" from="SmVarRef" to="SmVarTarget" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="16" />
+    </dependencies>
+    <rename id="clqz.143519404608467584" type="CONCEPT" from="HasTxFiredTarget" to="SmHasTxFiredTarget" />
+  </StructureModification>
 </history>
 
