@@ -7984,8 +7984,8 @@
                       <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="5075058691192840047" nodeInfo="nn">
                         <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2113102233505171571" resolveInfo="debugParameter" />
                       </node>
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5075058691192846697" nodeInfo="nn">
-                        <link role="property" roleId="tp25.1138056395725" targetNodeId="vs0r.2113102233505126848" resolveInfo="value" />
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="3566754624522541535" nodeInfo="nn">
+                        <link role="link" roleId="tp25.1138056516764" targetNodeId="vs0r.3566754624522187837" />
                       </node>
                     </node>
                     <node role="lValue" roleId="tpee.1068498886295" type="tp2q.MapElement" typeId="tp2q.1197932370469" id="5075058691192829251" nodeInfo="nn">
