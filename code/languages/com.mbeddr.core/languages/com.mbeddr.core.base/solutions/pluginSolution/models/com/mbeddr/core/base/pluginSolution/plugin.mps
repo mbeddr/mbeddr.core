@@ -13131,5 +13131,15 @@
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="1908346841499860224" resolveInfo="EditorPopup" />
     </node>
   </root>
+  <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="3822166636464654381" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Set Index" />
+    <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="fgky.3822166636464623039" resolveInfo="setIndex" />
+    <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="3822166636464714851" nodeInfo="ng">
+      <link role="param" roleId="4w5v.7518061998923573141" targetNodeId="fgky.3822166636464647710" resolveInfo="indexValue" />
+      <node role="chooser" roleId="4w5v.7518061998923573142" type="4w5v.StringChooser" typeId="4w5v.7518061998923713757" id="3822166636464714853" nodeInfo="ng">
+        <property name="title" nameId="4w5v.7518061998923720371" value="&quot;new index value&quot;" />
+      </node>
+    </node>
+  </root>
 </model>
 
