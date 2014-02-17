@@ -31,6 +31,338 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/META-INF/plugin.xml">
+      <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>com.mbeddr.allScripts</id>
+        <name>com.mbeddr.allScripts</name>
+        <version>1.0</version>
+        <depends>jetbrains.mps.core</depends>
+        <depends>jetbrains.mps.debugger.api</depends>
+        <depends>jetbrains.mps.execution.api</depends>
+        <depends>jetbrains.mps.execution.languages</depends>
+        <depends>de.slisson.mps.richtext</depends>
+        <depends>de.slisson.mps.tables</depends>
+        <depends>de.slisson.mps.editor.multiline</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.cc.req.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.cc.req.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.cc.req.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.cc.req.dev.build" type="solution" uuid="069b04b3-7338-4781-80fa-9e8b854877d2">
+        <dependencies />
+        <sources jar="com.mbeddr.cc.req.dev.build-src.jar" descriptor="build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.cc.req.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.cc.req.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.cc.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.cc.req.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.cc.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cc.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.cc.req.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cc.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.cc.dev.build/build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.cc.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.cc.ple.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.cc.ple.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.cc.ple.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.cc.ple.dev.build" type="solution" uuid="b22c9f3a-bcc2-4f68-901a-f574ebc81e23">
+        <dependencies />
+        <sources jar="com.mbeddr.cc.ple.dev.build-src.jar" descriptor="com.mbeddr.cc.ple.dev.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.cc.ple.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.cc.ple.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.cc.ple.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.cc.ple.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.cc.ple.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cc.ple.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.cc.ple.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cc.ple.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.cc.ple.dev.build/com.mbeddr.cc.ple.dev.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.cc.ple.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.cc.tests.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.cc.tests.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.cc.tests.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.cc.tests.dev.build" type="solution" uuid="ffd31df9-5187-4c9a-bb4f-d84e5f59ffd5">
+        <dependencies />
+        <sources jar="com.mbeddr.cc.tests.dev.build-src.jar" descriptor="com.mbeddr.cc.tests.dev.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.cc.tests.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.cc.tests.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.cc.tests.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.cc.tests.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.cc.tests.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.cc.tests.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.cc.tests.dev.build/com.mbeddr.cc.tests.dev.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.cc.tests.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.doc.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.doc.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.doc.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.doc.dev.build" type="solution" uuid="09682559-86e1-4aeb-96a1-833a77c65c70">
+        <dependencies />
+        <sources jar="com.mbeddr.doc.dev.build-src.jar" descriptor="com.mbeddr.doc.dev.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.doc.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.doc.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.doc.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.doc.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.doc.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.doc.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.doc.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.doc.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.doc.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.units.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.units.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.ext.units.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.ext.units.dev.build" type="solution" uuid="f6afc6fd-b457-466c-a827-e7a30a77eeb1">
+        <dependencies />
+        <sources jar="com.mbeddr.ext.units.dev.build-src.jar" descriptor="com.mbeddr.ext.units.dev.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.ext.units.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.ext.units.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.units.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.ext.units.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.units.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.units.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.ext.units.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.units.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.units.dev.build/com.mbeddr.ext.units.dev.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.units.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.statemachinesInComponents.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.statemachinesInComponents.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.ext.statemachinesInComponents.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.ext.statemachinesInComponents.dev.build" type="solution" uuid="3cecacea-bd21-4633-bae9-d9c2c78f831d">
+        <dependencies />
+        <sources jar="com.mbeddr.ext.statemachinesInComponents.dev.build-src.jar" descriptor="com.mbeddr.ext.statemachinesInComponents.dev.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.ext.statemachinesInComponents.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.ext.statemachinesInComponents.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.statemachinesInComponents.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.ext.statemachinesInComponents.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.statemachinesInComponents.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.statemachinesInComponents.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.ext.statemachinesInComponents.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.statemachinesInComponents.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.statemachinesInComponents.dev.build/com.mbeddr.ext.statemachinesInComponents.dev.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.statemachinesInComponents.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.statemachine.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.statemachine.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.ext.statemachine.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.ext.statemachine.dev.build" type="solution" uuid="5bd95aa5-16b4-4bf5-89f7-cd01297e7f2d">
+        <dependencies />
+        <sources jar="com.mbeddr.ext.statemachine.dev.build-src.jar" descriptor="com.mbeddr.ext.statemachine.dev.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.ext.statemachine.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.ext.statemachine.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.statemachine.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.ext.statemachine.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.statemachine.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.statemachine.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.ext.statemachine.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.statemachine.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.statemachine.dev.build/com.mbeddr.ext.statemachine.dev.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.statemachine.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.components.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.components.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.ext.components.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.ext.components.dev.build" type="solution" uuid="8ea70440-eabe-4c88-95c7-cb0f5588827d">
+        <dependencies />
+        <sources jar="com.mbeddr.ext.components.dev.build-src.jar" descriptor="com.mbeddr.ext.components.dev.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.ext.components.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.ext.components.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.components.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.ext.components.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.components.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.components.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.ext.components.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.components.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.components.dev.build/com.mbeddr.ext.components.dev.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.components.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.ext.tests.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.ext.tests.build" type="solution" uuid="06f4ccb3-313d-4d48-9667-87a8fb963fb2">
+        <dependencies />
+        <sources jar="com.mbeddr.ext.tests.build-src.jar" descriptor="build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.ext.tests.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.ext.tests.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.ext.tests.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.ext.tests.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.build/build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.analyses.cbmc.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.analyses.cbmc.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.analyses.cbmc.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.analyses.cbmc.dev.build" type="solution" uuid="52533894-f4ff-41f6-8bcd-cc454916834d">
+        <dependencies />
+        <sources jar="com.mbeddr.analyses.cbmc.dev.build-src.jar" descriptor="com.mbeddr.analyses.cbmc.dev.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.analyses.cbmc.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.analyses.cbmc.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.cbmc.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.analyses.cbmc.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.cbmc.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.cbmc.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.analyses.cbmc.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.cbmc.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.cbmc.dev.build/com.mbeddr.analyses.cbmc.dev.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.cbmc.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.analyses.base.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.analyses.base.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.analyses.base.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.analyses.base.dev.build" type="solution" uuid="cfe2dde5-9e9a-4804-acb8-311b8adc09dc">
+        <dependencies />
+        <sources jar="com.mbeddr.analyses.base.dev.build-src.jar" descriptor="com.mbeddr.analyses.base.dev.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.analyses.base.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.analyses.base.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.base.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.analyses.base.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.base.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.base.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.analyses.base.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.base.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.base.dev.build/com.mbeddr.analyses.base.dev.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.base.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.analyses.yices.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.analyses.yices.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.analyses.yices.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.analyses.yices.dev.build" type="solution" uuid="f7dff26d-d965-400d-a73f-e89bdc87c05b">
+        <dependencies />
+        <sources jar="com.mbeddr.analyses.yices.dev.build-src.jar" descriptor="com.mbeddr.analyses.yices.dev.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.analyses.yices.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.analyses.yices.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.yices.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.analyses.yices.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.yices.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.yices.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.analyses.yices.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.yices.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.yices.dev.build/com.mbeddr.analyses.yices.dev.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.yices.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.analyses.nusmv.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.analyses.nusmv.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.analyses.nusmv.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.analyses.nusmv.dev.build" type="solution" uuid="e0d58430-60b1-4fb5-a47b-980926b70767">
+        <dependencies />
+        <sources jar="com.mbeddr.analyses.nusmv.dev.build-src.jar" descriptor="com.mbeddr.analyses.nusmv.dev.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.analyses.nusmv.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.nusmv.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.analyses.nusmv.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.nusmv.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.nusmv.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.analyses.nusmv.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.nusmv.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.nusmv.dev.build/com.mbeddr.analyses.nusmv.dev.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.nusmv.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.analyses.tests.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.analyses.tests.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.analyses.tests.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.analyses.tests.dev.build" type="solution" uuid="4c28f257-18f6-416e-b37b-fa69eba1866b">
+        <dependencies />
+        <sources jar="com.mbeddr.analyses.tests.dev.build-src.jar" descriptor="build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.analyses.tests.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.analyses.tests.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.analyses.tests.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.analyses.tests.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.dev.build/build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.dev.build-models" prefix="module/models" />
+    </jar>
+    <zip destfile="${build.layout}/com.mbeddr.allScripts.zip">
+      <fileset dir="${build.tmp}/default/com.mbeddr.allScripts.zip" />
+    </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
@@ -65,6 +397,16 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="16" useInplaceTransform="true" fork="true">
+      <plugin path="${artifacts.mps}/plugins/mps-build" />
+      <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
+      <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-debugger-java" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
+      <plugin path="${artifacts.mps}/plugins/mps-testing" />
+      <plugin path="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
+      <plugin path="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
+      <plugin path="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.checkedDots.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
