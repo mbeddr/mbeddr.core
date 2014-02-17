@@ -703,6 +703,9 @@
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_NodesIncludingImportedOperation" typeId="tp25.1182511038748" id="1017957699896642380" nodeInfo="nn">
                   <link role="concept" roleId="tp25.1182511038750" targetNodeId="nbyu.1017957699896608814" resolveInfo="Isr" />
+                  <node role="scope" roleId="tp25.1182511038749" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="1017957699896642381" nodeInfo="nn">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1017957699896642395" resolveInfo="scope" />
+                  </node>
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="1017957699896642382" nodeInfo="nn">
@@ -735,6 +738,12 @@
           <node role="expression" roleId="tpee.1068580123156" type="tpee.VariableReference" typeId="tpee.1068498886296" id="1017957699896642394" nodeInfo="nn">
             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1017957699896642372" resolveInfo="nodesIncludingImported" />
           </node>
+        </node>
+      </node>
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="1017957699896642395" nodeInfo="ir">
+        <property name="name" nameId="tpck.1169194664001" value="scope" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="1017957699896642396" nodeInfo="in">
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cu2c.~IScope" resolveInfo="IScope" />
         </node>
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="1017957699896642397" nodeInfo="in">
