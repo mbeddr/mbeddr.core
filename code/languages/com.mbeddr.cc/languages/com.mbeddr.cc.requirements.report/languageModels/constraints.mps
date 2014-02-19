@@ -9,7 +9,6 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="9" implicit="yes" />
-  <import index="tpcw" modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5785245534400474253" nodeInfo="ng">
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="9prt.5785245534400474241" resolveInfo="RequirementsParagraph" />
@@ -25,7 +24,6 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_RootsIncludingImportedOperation" typeId="tp25.1176109685393" id="5785245534400475216" nodeInfo="nn">
                 <link role="concept" roleId="tp25.1176109685394" targetNodeId="75wo.8745401669462963169" resolveInfo="RequirementsModule" />
-                <node role="scope" roleId="tp25.1176109762787" type="tpcw.ConceptFunctionParameter_scope" typeId="tpcw.1161622878565" id="5785245534400475218" nodeInfo="nn" />
               </node>
             </node>
           </node>
