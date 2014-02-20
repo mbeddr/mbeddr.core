@@ -4,7 +4,7 @@
   <language namespace="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
+  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="38" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
@@ -68,8 +68,8 @@
           </node>
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226119784" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226119727" resolveInfo="M1a" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="7475861851226119785" nodeInfo="ng">
-              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="4561522810758258648" nodeInfo="ng" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3850060150414542421" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="3850060150414542701" nodeInfo="ng" />
             </node>
           </node>
         </node>
@@ -94,8 +94,8 @@
           </node>
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226252173" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226119799" resolveInfo="M2x" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="7475861851226252174" nodeInfo="ng">
-              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="4561522810758258649" nodeInfo="ng" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3850060150414542109" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="3850060150414542141" nodeInfo="ng" />
             </node>
           </node>
         </node>
@@ -107,8 +107,8 @@
           </node>
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226252168" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226119802" resolveInfo="M2y" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="7475861851226252169" nodeInfo="ng">
-              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="4561522810758258650" nodeInfo="ng" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3850060150414542045" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="3850060150414542077" nodeInfo="ng" />
             </node>
           </node>
         </node>
@@ -123,8 +123,8 @@
           </node>
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226252600" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226145568" resolveInfo="M3g" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="7475861851226252601" nodeInfo="ng">
-              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="4561522810758258651" nodeInfo="ng" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3850060150414541981" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="3850060150414542013" nodeInfo="ng" />
             </node>
           </node>
         </node>
@@ -149,8 +149,8 @@
           </node>
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226252627" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226252614" resolveInfo="M4p" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="7475861851226252628" nodeInfo="ng">
-              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="4561522810758258652" nodeInfo="ng" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3850060150414541917" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="3850060150414541949" nodeInfo="ng" />
             </node>
           </node>
         </node>
@@ -175,7 +175,7 @@
           <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7475861851226119722" resolveInfo="M1" />
         </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="7475861851226252706" nodeInfo="ng">
-          <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="7475861851226252707" nodeInfo="ng" />
+          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="7475861851226252707" nodeInfo="ng" />
         </node>
       </node>
     </node>
