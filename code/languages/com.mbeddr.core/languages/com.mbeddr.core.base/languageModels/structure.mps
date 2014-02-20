@@ -1094,10 +1094,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="valueDebugger" />
     <property name="name" nameId="tpck.1169194664001" value="ValueDebugger" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2113102233502440947" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="debugKeys" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1357587189304431947" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="debugKey" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2113102233502540990" resolveInfo="DebugKey" />
     </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="651821299954909201" nodeInfo="ig">
