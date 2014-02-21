@@ -184,8 +184,10 @@
   </target>
 
   <target name="build-allScripts">
+	  <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-plugins.task}" />	  
 	  <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-generated-code.task}" />	  
       <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${generate-code.task}" />
+      <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${build-plugin.task}" />	  	  
   </target>
   
   <target name="build-mpsutil">
