@@ -6,6 +6,9 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">f3ed62ca-3490-40d0-890b-9b3133cc2ead(com.mbeddr.cc.requirements.c)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)</usedLanguage>
     <usedLanguage>42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)</usedLanguage>
