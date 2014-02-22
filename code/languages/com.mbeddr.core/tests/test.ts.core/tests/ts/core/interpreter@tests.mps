@@ -3245,10 +3245,19 @@
               </node>
             </node>
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8845772667403289228" nodeInfo="nn">
-              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8845772667403289229" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="3673.EnvExpression" typeId="3673.3406009787378976616" id="8845772667403289230" nodeInfo="ng" />
-                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8845772667403289231" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.8845772667392090118" resolveInfo="push" />
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5532084315664019998" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="3673.ContextExpression" typeId="3673.5293529713177875074" id="5532084315664016382" nodeInfo="ng" />
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5532084315664020970" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.2766965525491307042" resolveInfo="pushEnvironment" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="3673.NodeExpression" typeId="3673.5293529713177831489" id="5532084315664024580" nodeInfo="ng" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5532084315664039323" nodeInfo="nn">
+                    <node role="creator" roleId="tpee.1145553007750" type="tp2q.LinkedHashMapCreator" typeId="tp2q.1240216724530" id="5532084315664039317" nodeInfo="nn">
+                      <node role="keyType" roleId="tp2q.1197687026896" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5532084315664039318" nodeInfo="in" />
+                      <node role="valueType" roleId="tp2q.1197687035757" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5532084315664039319" nodeInfo="in">
+                        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -3327,6 +3336,7 @@
                     <node role="operand" roleId="tpee.1197027771414" type="3673.EnvExpression" typeId="3673.3406009787378976616" id="8845772667403289267" nodeInfo="ng" />
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8845772667403289268" nodeInfo="nn">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.8845772667392090193" resolveInfo="pop" />
+                      <node role="actualArgument" roleId="tpee.1068499141038" type="3673.NodeExpression" typeId="3673.5293529713177831489" id="5532084315664043044" nodeInfo="ng" />
                     </node>
                   </node>
                 </node>
