@@ -323,7 +323,7 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4106978568941909536" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="context" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="773573539297398642" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="qdxw.773573539297285923" resolveInfo="IValueSourceContext" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2ahs.5532084315672085418" resolveInfo="IPersistentContext" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="4106978568941909537" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5542116876727674327" resolveInfo="createContextWithEnv" />
@@ -388,11 +388,11 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5542116876727694576" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="ctx" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="773573539297394407" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="qdxw.773573539297285923" resolveInfo="IValueSourceContext" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2ahs.5532084315672085418" resolveInfo="IPersistentContext" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5542116876727694578" nodeInfo="nn">
               <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="5542116876727694579" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qdxw.773573539297255642" resolveInfo="ValueSourceContextImpl" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.5532084315672084957" resolveInfo="PersistentContextImpl" />
               </node>
             </node>
           </node>
@@ -450,7 +450,7 @@
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5542116876727694576" resolveInfo="ctx" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5542116876727694614" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qdxw.3406009787378897463" resolveInfo="getEnvironment" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.5532084315672085419" resolveInfo="getEnvironment" />
                     </node>
                   </node>
                 </node>
@@ -466,7 +466,7 @@
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5542116876727670134" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="773573539297384373" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="qdxw.773573539297285923" resolveInfo="IValueSourceContext" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2ahs.5532084315672085418" resolveInfo="IPersistentContext" />
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5542116876727678520" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="tc" />
