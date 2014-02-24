@@ -1590,5 +1590,11 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4491876417845484924" resolveInfo="Operation" />
     </node>
   </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8471381922721039487" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="InstanceConfigContentsToBeCopiedIntoFlattenedInstanceConfig" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8471381922722277112" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6041318036222235015" resolveInfo="InstanceConfigContents" />
+    </node>
+  </root>
 </model>
 
