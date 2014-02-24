@@ -14,6 +14,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7780999115923829680" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CompositeComponent" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="composite component" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/compositeComp.jpg" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="v7ag.4491876417845474761" resolveInfo="Component" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7780999115923947731" nodeInfo="ig">

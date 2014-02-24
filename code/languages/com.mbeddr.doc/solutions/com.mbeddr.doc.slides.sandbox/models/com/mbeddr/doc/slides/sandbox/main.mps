@@ -3,15 +3,16 @@
   <persistence version="8" />
   <language namespace="94daa6eb-e6a4-4b9f-90b6-4b23682ca120(com.mbeddr.slides)" />
   <language namespace="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" />
+  <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="apd" modelUID="r:3f86baf5-195f-493c-8564-191d759abee5(com.mbeddr.slides.structure)" version="-1" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
   <root type="apd.SlideDeck" typeId="apd.5455967284188316026" id="5455967284188342716" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="HelloWorld" />
-    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="5455967284188430857" resolveInfo="SlideConfig" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="5455967284188430857" resolveInfo="wSlideConfig" />
     <node role="slides" roleId="apd.5455967284188316028" type="apd.Slide" typeId="apd.5455967284188316027" id="5455967284188407761" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Cover" />
       <node role="content" roleId="apd.5455967284188341775" type="apd.ImageSlideContent" typeId="apd.5455967284188416495" id="5455967284188430855" nodeInfo="ng">
@@ -73,7 +74,7 @@
     </node>
   </root>
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="5455967284188430857" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="SlideConfig" />
+    <property name="name" nameId="tpck.1169194664001" value="wSlideConfig" />
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="5455967284188430860" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="images" />
       <node role="pathPicker" roleId="2c95.2642765975824057986" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="2642765975826548522" nodeInfo="ng" />
