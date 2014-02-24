@@ -934,7 +934,7 @@
             </node>
           </node>
           <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1489835966424444556" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Robustness check OK (no Verification Condition found)" />
+            <property name="value" nameId="tpee.1070475926801" value="robustness check OK (no Verification Condition found)" />
           </node>
         </node>
       </node>
