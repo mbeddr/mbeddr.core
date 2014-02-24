@@ -26,6 +26,7 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" implicit="yes" />
+  <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="36827077521943740" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Range_Tests" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="36827077521943741" nodeInfo="ng">
@@ -38,19 +39,26 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="36827077521943746" nodeInfo="in">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.5853537697759033507" resolveInfo="CBMCLiftedResult" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334377738905" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5798154883306050016" resolveInfo="checkAsserts" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334377738906" nodeInfo="nn">
-                <property name="fqName" nameId="tp25.559557797393041554" value="hppc" />
-                <property name="name" nameId="tp25.559557797393017702" value="harness" />
-                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7327349313015281415" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334377738905" nodeInfo="ng">
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5798154883306050016" resolveInfo="checkAsserts" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334377738906" nodeInfo="nn">
+                  <property name="fqName" nameId="tp25.559557797393041554" value="hppc" />
+                  <property name="name" nameId="tp25.559557797393017702" value="harness" />
+                  <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377738907" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="range" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377738908" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="rangeHarnessPositive" />
+                </node>
               </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377738907" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="range" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377738908" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="rangeHarnessPositive" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="7327349313015290008" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7327349313015291201" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="0" />
+                </node>
               </node>
             </node>
           </node>
@@ -77,19 +85,26 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="36827077521944190" nodeInfo="in">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.5853537697759033507" resolveInfo="CBMCLiftedResult" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334377740134" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5798154883306050016" resolveInfo="checkAsserts" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334377740136" nodeInfo="nn">
-                <property name="fqName" nameId="tp25.559557797393041554" value="hppc" />
-                <property name="name" nameId="tp25.559557797393017702" value="harness" />
-                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7327349313015293301" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334377740134" nodeInfo="ng">
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5798154883306050016" resolveInfo="checkAsserts" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334377740136" nodeInfo="nn">
+                  <property name="fqName" nameId="tp25.559557797393041554" value="hppc" />
+                  <property name="name" nameId="tp25.559557797393017702" value="harness" />
+                  <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377740137" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="range" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377740138" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="rangeHarnessNegative" />
+                </node>
               </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377740137" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="range" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377740138" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="rangeHarnessNegative" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="7327349313015301800" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7327349313015302152" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="0" />
+                </node>
               </node>
             </node>
           </node>
@@ -133,19 +148,26 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="36827077522002015" nodeInfo="in">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.5853537697759033507" resolveInfo="CBMCLiftedResult" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334377753543" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5798154883306050016" resolveInfo="checkAsserts" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334377753544" nodeInfo="nn">
-                <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
-                <property name="name" nameId="tp25.559557797393017702" value="harness" />
-                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7327349313015321071" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334377753543" nodeInfo="ng">
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5798154883306050016" resolveInfo="checkAsserts" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334377753544" nodeInfo="nn">
+                  <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
+                  <property name="name" nameId="tp25.559557797393017702" value="harness" />
+                  <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377753545" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="sequencing" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377753546" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="sequencingHarnessPositive" />
+                </node>
               </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377753545" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="sequencing" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377753546" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="sequencingHarnessPositive" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="7327349313015329649" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7327349313015330842" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="0" />
+                </node>
               </node>
             </node>
           </node>
@@ -172,19 +194,26 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="36827077522002035" nodeInfo="in">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.5853537697759033507" resolveInfo="CBMCLiftedResult" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334377753308" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5798154883306050016" resolveInfo="checkAsserts" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334377753309" nodeInfo="nn">
-                <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
-                <property name="name" nameId="tp25.559557797393017702" value="harness" />
-                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7327349313015332929" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334377753308" nodeInfo="ng">
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5798154883306050016" resolveInfo="checkAsserts" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334377753309" nodeInfo="nn">
+                  <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
+                  <property name="name" nameId="tp25.559557797393017702" value="harness" />
+                  <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377753310" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="sequencing" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377753311" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="sequencingHarnessNegative" />
+                </node>
               </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377753310" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="sequencing" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3779605334377753311" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="sequencingHarnessNegative" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="7327349313015341535" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7327349313015341887" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="0" />
+                </node>
               </node>
             </node>
           </node>
@@ -231,19 +260,26 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6222931245095289838" nodeInfo="in">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.5853537697759033507" resolveInfo="CBMCLiftedResult" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="6222931245095289839" nodeInfo="ng">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5798154883306050016" resolveInfo="checkAsserts" />
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="6222931245095289840" nodeInfo="nn">
-                <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
-                <property name="name" nameId="tp25.559557797393017702" value="harness" />
-                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7327349313015306193" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="6222931245095289839" nodeInfo="ng">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5798154883306050016" resolveInfo="checkAsserts" />
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="6222931245095289840" nodeInfo="nn">
+                  <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
+                  <property name="name" nameId="tp25.559557797393017702" value="harness" />
+                  <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6222931245095289841" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="state_machines" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6222931245095289842" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="stateMachineHarness" />
+                </node>
               </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6222931245095289841" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="state_machines" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6222931245095289842" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="stateMachineHarness" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="7327349313015314863" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7327349313015315083" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="0" />
+                </node>
               </node>
             </node>
           </node>
