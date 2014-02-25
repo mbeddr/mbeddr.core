@@ -38,6 +38,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9172009453270399775" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1656687801206572012" resolveInfo="IRequiresConfigItem" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8471381922721100249" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="v7ag.8471381922721039487" resolveInfo="IReferencesRunnable" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9172009453270379331" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="isr.components" />
