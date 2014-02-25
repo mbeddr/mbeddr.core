@@ -199,9 +199,6 @@
               <property name="value" nameId="mj1l.2212975673976043696" value="6" />
             </node>
             <node role="expr" roleId="3vkx.7607106982910476165" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7607106982912699616" nodeInfo="ng">
-              <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.DoubleSumIterator" typeId="3vkx.7607106982910599816" id="7607106982912703982" nodeInfo="ng">
-                <link role="name" roleId="3vkx.7607106982921897702" targetNodeId="3vkx.7607106982921897553" resolveInfo="nameI" />
-              </node>
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7607106982915672098" nodeInfo="ng">
                 <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.SumExpr" typeId="3vkx.6118219496671620192" id="7607106982915674083" nodeInfo="ng">
                   <property name="name" nameId="tpck.1169194664001" value="k" />
@@ -230,6 +227,9 @@
                     <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="7624079424455192808" resolveInfo="a" />
                   </node>
                 </node>
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.DoubleSumIterator" typeId="3vkx.7607106982910599816" id="7607106982912703982" nodeInfo="ng">
+                <link role="name" roleId="3vkx.7607106982921897702" targetNodeId="3vkx.7607106982921897553" resolveInfo="nameI" />
               </node>
             </node>
           </node>
