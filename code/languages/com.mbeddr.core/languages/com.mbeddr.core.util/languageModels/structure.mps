@@ -1333,5 +1333,29 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="handle" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8646254455459908620" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="TrySequentiallyStatement" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="try-sequentially" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tryseq" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8646254455459941393" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="calls" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="x27k.5950410542643524492" resolveInfo="FunctionCall" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8646254455459941395" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="errorHandler" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="c4fa.4185783222026475861" resolveInfo="StatementList" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8646254455461629663" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tryseq" />
+    <property name="name" nameId="tpck.1169194664001" value="ErrorExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="error" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+  </root>
 </model>
 
