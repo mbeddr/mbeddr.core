@@ -5,8 +5,16 @@
   
   <!-- url/mps properties -->
   <property name="plugins.folder.name" value="plugins"/>
-  <property name="base-url" value="http://build.mbeddr.com/guestAuth/repository/download"/>
-  <property name="latest-build" value="latest.lastSuccessful"/>
+  <property name="latest-build" value="status:SUCCESS"/> 
+  <property name="branch.spawner" value="branch:master"/> 
+  <property name="branch.tables" value="branch:31_EAP1-25"/> 
+  <property name="branch.richtext" value="branch:31_EAP"/> 
+  <property name="branch.multiline" value="branch:31_EAP"/> 
+  
+  
+  
+  <property name="base-url" value="https://build.mbeddr.com/guestAuth/app/rest/builds"/>
+
   
   <!-- com.mbeddr.mpsutil -->  
   <property name="com.mbeddr.mpsutil.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />  
@@ -101,23 +109,21 @@
   <!-- multiline -->  
   <property name="multiline.zip-file.name" value="mps-multiline.zip" />
   <property name="multiline.expanded-folder.name" value="mps-multiline" />
-  <property name="multiline.build-id" value="RichtextTables_MpsMultiline" />  
+  <property name="multiline.build-id" value="buildType:RichtextTables_MpsMultiline" />  
   <property name="multiline.build-path" value="${mbeddr.github.core.home}/build/mps-multiline/build/artifacts/mps-multiline" />  
   <property name="artifacts.mps-multiline" value="${multiline.build-path}" />  
     
   <!-- mps-richtext -->  
   <property name="mps-richtext.zip-file.name" value="mps-richtext.zip" />
   <property name="mps-richtext.expanded-folder.name" value="mps-richtext" />
-  <property name="mps-richtext.build-id" value="RichtextTables_MpsRichtext" />
+  <property name="mps-richtext.build-id" value="buildType:RichtextTables_MpsRichtext" />
   <property name="mps-richtext.build-path" value="${mbeddr.github.core.home}/build/mps-richtext/build/artifacts/mps-richtext" />  
   <property name="artifacts.mps-richtext" value="${mps-richtext.build-path}" />  
-  
- 
   
   <!-- mps-tables -->
   <property name="mps-tables.zip-file.name" value="mps-tables.zip" />
   <property name="mps-tables.expanded-folder.name" value="mps-tables" />  
-  <property name="mps-tables.build-id" value="RichtextTables_MpsTables" />   
+  <property name="mps-tables.build-id" value="buildType:RichtextTables_MpsTables" />   
   <property name="mps-tables.build-path" value="${mbeddr.github.core.home}/build/mps-tables/build/artifacts/mps-tables" />  
   <property name="artifacts.mps-tables" value="${mps-tables.build-path}" />  
   
@@ -125,7 +131,7 @@
   <property name="spawner.suburl" value="com.mbeddr.spawner.build" /> 
   <property name="spawner.zip-file.name" value="com.mbeddr.spawner.zip" />
   <property name="spawner.expanded-folder.name" value="mbeddr.spawner" />
-  <property name="spawner.build-id" value="MbeddrCore_BuildSpawner" />
+  <property name="spawner.build-id" value="buildType:MbeddrCore_BuildSpawner" />
   <property name="spawner.build-path" value="${mbeddr.github.core.home}/build/com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />  
   <property name="artifacts.com.mbeddr.spawner.build" value="${spawner.build-path}" />
 
@@ -170,11 +176,11 @@
 	  <delete file="${mps-tables.build-path}/${mps-tables.zip-file.name}"/>
 	  <delete file="${spawner.build-path}/${spawner.zip-file.name}"/>
 	    	  
-	  <!-- download-plugins -->
-	  <get src="${base-url}/${multiline.build-id}/${latest-build}/${multiline.zip-file.name}" dest="${multiline.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	  <get src="${base-url}/${mps-richtext.build-id}/${latest-build}/${mps-richtext.zip-file.name}" dest="${mps-richtext.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	  <get src="${base-url}/${mps-tables.build-id}/${latest-build}/${mps-tables.zip-file.name}" dest="${mps-tables.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	  <get src="${base-url}/${spawner.build-id}/${latest-build}/${spawner.suburl}/${spawner.zip-file.name}" dest="${spawner.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>	 
+	  <!-- download-plugins -->	  
+	  <get src="${base-url}/${branch.multiline},${multiline.build-id},${latest-build}/artifacts/files/${multiline.zip-file.name}" dest="${multiline.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	  <get src="${base-url}/${branch.richtext},${mps-richtext.build-id},${latest-build}/artifacts/files/${mps-richtext.zip-file.name}" dest="${mps-richtext.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	  <get src="${base-url}/${branch.tables},${mps-tables.build-id},${latest-build}/artifacts/files/${mps-tables.zip-file.name}" dest="${mps-tables.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	  <get src="${base-url}/${branch.spawner},${spawner.build-id},${latest-build}/artifacts/files/${spawner.suburl}/${spawner.zip-file.name}" dest="${spawner.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>	 
 	  	 
 	  <!-- unzip-plugins -->
 	  <unzip src="${multiline.build-path}/${multiline.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
