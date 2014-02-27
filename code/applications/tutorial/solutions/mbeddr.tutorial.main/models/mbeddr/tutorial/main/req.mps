@@ -179,22 +179,26 @@
           </node>
         </node>
         <node role="expr" roleId="3vkx.3534497005926949336" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7607106982911865525" nodeInfo="ng">
-          <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.DoubleSumExpr" typeId="3vkx.7607106982910475515" id="7607106982911868606" nodeInfo="ng">
-            <property name="nameI" nameId="3vkx.7607106982921897553" value="i" />
-            <property name="nameJ" nameId="3vkx.7607106982921897555" value="j" />
-            <node role="minI" roleId="3vkx.7607106982910476151" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7607106982911881649" nodeInfo="ng">
+          <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.DoubleSumExpr" typeId="3vkx.7607106982910475515" id="5780913566828282309" nodeInfo="ng">
+            <node role="nameI" roleId="3vkx.5780913566828136633" type="3vkx.DoubleSumVar" typeId="3vkx.5780913566828135637" id="5780913566828282311" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="i" />
+            </node>
+            <node role="nameJ" roleId="3vkx.5780913566828136640" type="3vkx.DoubleSumVar" typeId="3vkx.5780913566828135637" id="5780913566828282313" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="j" />
+            </node>
+            <node role="minI" roleId="3vkx.7607106982910476151" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5780913566828284789" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
-            <node role="maxI" roleId="3vkx.7607106982910476153" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7607106982911892304" nodeInfo="ng">
+            <node role="maxI" roleId="3vkx.7607106982910476153" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5780913566828284833" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="3" />
             </node>
-            <node role="minJ" roleId="3vkx.7607106982910476156" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7607106982911902366" nodeInfo="ng">
+            <node role="minJ" roleId="3vkx.7607106982910476156" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5780913566828284877" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
-            <node role="maxJ" roleId="3vkx.7607106982910476160" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7607106982911912671" nodeInfo="ng">
+            <node role="maxJ" roleId="3vkx.7607106982910476160" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5780913566828284921" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="6" />
             </node>
@@ -220,16 +224,16 @@
                   </node>
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="7607106982911939616" nodeInfo="ng">
-                  <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.DoubleSumIterator" typeId="3vkx.7607106982910599816" id="7607106982912143782" nodeInfo="ng">
-                    <link role="name" roleId="3vkx.7607106982921897702" targetNodeId="3vkx.7607106982921897555" resolveInfo="nameJ" />
+                  <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.DoubleSumIterator" typeId="3vkx.7607106982910599816" id="5780913566828897027" nodeInfo="ng">
+                    <link role="var" roleId="3vkx.5780913566828286748" targetNodeId="5780913566828282313" resolveInfo="j" />
                   </node>
                   <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="7607106982911923219" nodeInfo="ng">
                     <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="7624079424455192808" resolveInfo="a" />
                   </node>
                 </node>
               </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.DoubleSumIterator" typeId="3vkx.7607106982910599816" id="7607106982912703982" nodeInfo="ng">
-                <link role="name" roleId="3vkx.7607106982921897702" targetNodeId="3vkx.7607106982921897553" resolveInfo="nameI" />
+              <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.DoubleSumIterator" typeId="3vkx.7607106982910599816" id="5780913566828894197" nodeInfo="ng">
+                <link role="var" roleId="3vkx.5780913566828286748" targetNodeId="5780913566828282311" resolveInfo="i" />
               </node>
             </node>
           </node>

@@ -330,14 +330,19 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7607106982910475515" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="calc" />
     <property name="name" nameId="tpck.1169194664001" value="DoubleSumExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="doublesum" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7607106982921897553" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="nameI" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5780913566828136633" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="nameI" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="5780913566828135637" resolveInfo="DoubleSumVar" />
     </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7607106982921897555" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="nameJ" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5780913566828136640" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="nameJ" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="5780913566828135637" resolveInfo="DoubleSumVar" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7607106982910476151" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -373,13 +378,20 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7607106982910599816" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="calc" />
     <property name="name" nameId="tpck.1169194664001" value="DoubleSumIterator" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="iterator" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7607106982921897702" nodeInfo="ig">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5780913566828286748" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="name" />
+      <property name="role" nameId="tpce.1071599776563" value="var" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1071489288299" resolveInfo="PropertyDeclaration" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="5780913566828135637" resolveInfo="DoubleSumVar" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5780913566828135637" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="calc" />
+    <property name="name" nameId="tpck.1169194664001" value="DoubleSumVar" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5780913566828135638" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
   </root>
 </model>
