@@ -2165,6 +2165,19 @@
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="7265387141425487611" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.7851711690674263345" resolveInfo="StatemachineType" />
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="8547778417620445467" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="canBeUsedAsPointer" />
+      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="ywuz.8547778417620403976" resolveInfo="canBeUsedAsPointer" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8547778417620445470" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8547778417620451093" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="8547778417620451092" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580123138" value="false" />
+          </node>
+        </node>
+      </node>
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="8547778417620451086" nodeInfo="in" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8547778417620451087" nodeInfo="nn" />
+    </node>
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7882597558648455783" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
       <property name="isVirtual" nameId="1i04.1225194472832" value="false" />
