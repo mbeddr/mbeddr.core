@@ -302,7 +302,7 @@
   </target>     
 
 
-  <target name="build-languages" depends="build-allScripts">
+  <target name="build-languages" >
 	  <antcall target="build-mpsutil" />
 	  <antcall target="build-debugger" />
 	  <antcall target="build-platform" />
@@ -320,7 +320,7 @@
 	  <antcall target="build-analyses.cbmc" />	 	  	  	  
   </target>	 
 
-  <target name="build-and-run-tests" depends="build-allScripts">
+  <target name="build-and-run-tests" >
 	   <antcall target="test-debugger" />
    	   <antcall target="test-core" />
    	   <antcall target="test-cc" />
