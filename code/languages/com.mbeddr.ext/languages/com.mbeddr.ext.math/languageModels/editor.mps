@@ -118,5 +118,38 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5098456557379026758" nodeInfo="ng">
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="cetu.5098456557379026617" resolveInfo="SqrtExpression" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="diuo.SqrtEditor" typeId="diuo.8658283006837849794" id="5098456557379026868" nodeInfo="ng">
+      <node role="body" roleId="diuo.8658283006838153797" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5098456557379026936" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="cetu.5098456557379026898" />
+      </node>
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5098456557379673969" nodeInfo="ng">
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="cetu.5098456557379673781" resolveInfo="PowerExpression" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="diuo.PowerEditor" typeId="diuo.8658283006837849469" id="5098456557379674038" nodeInfo="ng">
+      <node role="base" roleId="diuo.8658283006839229761" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5098456557379674075" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="cetu.5098456557379673865" />
+      </node>
+      <node role="exponent" roleId="diuo.8658283006839229766" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5098456557379674097" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="cetu.5098456557379673903" />
+      </node>
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5098456557380205141" nodeInfo="ng">
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="cetu.5098456557380204918" resolveInfo="LogarithmExpression" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="diuo.SubscriptedFunctionEditor" typeId="diuo.5098456557380306602" id="5098456557380488311" nodeInfo="ng">
+      <node role="functionName" roleId="diuo.5098456557380306635" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5098456557380488351" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="log" />
+      </node>
+      <node role="subscript" roleId="diuo.5098456557380306673" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5098456557380488374" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="cetu.5098456557380205075" />
+      </node>
+      <node role="argument" roleId="diuo.5098456557380306716" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5098456557380488396" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="cetu.5098456557380205019" />
+      </node>
+    </node>
+  </root>
 </model>
 
