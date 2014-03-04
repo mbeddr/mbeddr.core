@@ -2151,6 +2151,61 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8646254455461549979" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1393416439606_9" />
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1739225118172367251" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="someFunction" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1739225118172367253" nodeInfo="ng" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1739225118172364664" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="1739225118172369680" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="something" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="1739225118172369679" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172348961" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917855916_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172351320" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856122_3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172353681" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856531_4" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172353852" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856578_5" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172354025" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856675_6" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172354200" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856729_7" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172354377" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856777_8" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172354556" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856792_9" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172354737" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856846_10" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172354920" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856863_11" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172355105" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856916_12" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172355292" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856944_13" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172355481" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856990_14" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8646254455461498808" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="testGotoFail" />
