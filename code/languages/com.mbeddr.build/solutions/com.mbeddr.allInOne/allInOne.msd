@@ -7,7 +7,6 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">d9577847-5af6-4401-b634-6305196f4f02(com.mbeddr.platform.dev.build)</dependency>
     <dependency reexport="false">cfe2dde5-9e9a-4804-acb8-311b8adc09dc(com.mbeddr.analyses.base.dev.build)</dependency>
     <dependency reexport="false">52533894-f4ff-41f6-8bcd-cc454916834d(com.mbeddr.analyses.cbmc.dev.build)</dependency>
     <dependency reexport="false">e0d58430-60b1-4fb5-a47b-980926b70767(com.mbeddr.analyses.nusmv.dev.build)</dependency>
@@ -24,7 +23,10 @@
     <dependency reexport="false">06f4ccb3-313d-4d48-9667-87a8fb963fb2(com.mbeddr.ext.tests.build)</dependency>
     <dependency reexport="false">f6afc6fd-b457-466c-a827-e7a30a77eeb1(com.mbeddr.ext.units.dev.build)</dependency>
     <dependency reexport="false">dcd3e3f0-fb75-4b63-83e0-7a84aeddbb20(com.mbeddr.mpsutil.dev.build)</dependency>
+    <dependency reexport="false">d9577847-5af6-4401-b634-6305196f4f02(com.mbeddr.platform.dev.build)</dependency>
     <dependency reexport="false">ba19fd84-07a8-4c0c-b27a-83b037421bea(com.mbeddr.spawner.dev.build)</dependency>
+    <dependency reexport="false">b6af8c44-d865-4851-a154-fb6863e68204(de.itemis.mps.editor.bool.build)</dependency>
+    <dependency reexport="false">b41e4920-4afc-46bc-8acd-1d6861414845(de.itemis.mps.editor.math.build)</dependency>
     <dependency reexport="false">830041d3-fd09-4005-819d-9d2e06a676ba(de.slisson.mps.richtext.build)</dependency>
     <dependency reexport="false">f635fc54-10fa-4740-93b9-f8dfe124ea1b(de.slisson.mps.tables.build)</dependency>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
