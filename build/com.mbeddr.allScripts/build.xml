@@ -11,10 +11,14 @@
   <property name="tables.artifacts" location="${lisson.home}/mps-tables/build/artifacts/mps-tables" />
   <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext" />
   <property name="spawner.artifacts" location="${basedir}/../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
+  <property name="math.artifacts" location="${lisson.home}/mps-math-editor/build/artifacts/mps-math-editor" />
+  <property name="bool-editor.artifacts" location="${lisson.home}/mps-bool-editor/build/artifacts/mps-bool-editor" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
   <property name="artifacts.mps-tables" location="${tables.artifacts}" />
+  <property name="artifacts.mps-bool-editor" location="${bool-editor.artifacts}" />
+  <property name="artifacts.mps-math-editor" location="${math.artifacts}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -46,6 +50,8 @@
         <depends>de.slisson.mps.richtext</depends>
         <depends>de.slisson.mps.tables</depends>
         <depends>de.slisson.mps.editor.multiline</depends>
+        <depends>de.itemis.mps.editor.bool</depends>
+        <depends>de.itemis.mps.editor.math</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -712,6 +718,10 @@
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip" />
+    <unzip src="${artifacts.mps-math-editor}/mps-math-editor.zip" dest="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip" />
+    <unzip src="${artifacts.mps-bool-editor}/mps-bool-editor.zip" dest="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -741,6 +751,8 @@
       <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
+      <plugin path="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor" />
+      <plugin path="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor" />
       <plugin path="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
       <plugin path="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
       <plugin path="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables" />
@@ -834,6 +846,8 @@
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+      <library file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
+      <library file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
       <library file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       <library file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
@@ -884,6 +898,8 @@
       <macro name="tables.artifacts" path="${tables.artifacts}" />
       <macro name="richtext.artifacts" path="${richtext.artifacts}" />
       <macro name="spawner.artifacts" path="${spawner.artifacts}" />
+      <macro name="math.artifacts" path="${math.artifacts}" />
+      <macro name="bool-editor.artifacts" path="${bool-editor.artifacts}" />
     </generate>
   </target>
   
@@ -975,6 +991,8 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
