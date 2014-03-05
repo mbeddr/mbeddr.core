@@ -598,15 +598,8 @@
     </node>
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.WatchablesDeclaration" typeId="rpmx.1218249513292256529" id="7599526456372877140" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="instancesAbstract" />
-      <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="7599526456372404832" nodeInfo="ng">
-        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="7599526456372404833" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="instancesAbstract" />
-        </node>
-        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="7599526456372404848" nodeInfo="ng">
-          <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="7599526456372404849" nodeInfo="ng">
-            <property name="value" nameId="rpmx.6894131567068111701" value="instance configuration" />
-          </node>
-        </node>
+      <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4059314064295532239" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="instancesAbstract" />
       </node>
     </node>
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="7599526456372404802" nodeInfo="ng" />

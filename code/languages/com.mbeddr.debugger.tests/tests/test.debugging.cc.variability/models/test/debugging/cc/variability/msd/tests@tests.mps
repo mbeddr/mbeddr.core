@@ -15,7 +15,7 @@
   <language namespace="89c70b13-7f9c-47c3-b3c2-c218b52ed82c(com.mbeddr.core.debug.test)" />
   <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="15" implicit="yes" />
+  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="38" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
@@ -43,91 +43,11 @@
       </node>
     </node>
   </root>
-  <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="8882953773355744099" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="FeatureModels" />
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="8882953773355744100" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="someFM" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="8882953773355744101" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="root" />
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="8882953773355744180" nodeInfo="ng" />
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="8882953773355744181" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="f1" />
-        </node>
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3716885538279443112" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="f2" />
-        </node>
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3716885538279443113" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="f3" />
-          <node role="attributes" roleId="qqyh.6825476687691297429" type="qqyh.FeatureAttribute" typeId="qqyh.6825476687691297431" id="3716885538279497738" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="attr" />
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3716885538279497739" nodeInfo="ng">
-              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-            </node>
-          </node>
-          <node role="attributes" roleId="qqyh.6825476687691297429" type="qqyh.FeatureAttribute" typeId="qqyh.6825476687691297431" id="8842534433307673763" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="blub" />
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8842534433307673765" nodeInfo="ng">
-              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-            </node>
-          </node>
-        </node>
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="8842534433307602154" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="f4" />
-          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="8842534433307602159" nodeInfo="ng" />
-          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="8842534433307602160" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="bla" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="8882953773355744176" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Cfg1" />
-      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="8882953773355744100" resolveInfo="someFM" />
-      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="8882953773355744178" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="8882953773355744101" resolveInfo="root" />
-      </node>
-    </node>
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="8882953773355793962" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Cfg2" />
-      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="8882953773355744100" resolveInfo="someFM" />
-      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="8882953773355793963" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="8882953773355744101" resolveInfo="root" />
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="8882953773355793964" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="8882953773355744181" resolveInfo="f1" />
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="3716885538279497740" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Cfg3" />
-      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="8882953773355744100" resolveInfo="someFM" />
-      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="3716885538279497741" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="8882953773355744101" resolveInfo="root" />
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="3716885538279497743" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="3716885538279443113" resolveInfo="f3" />
-          <node role="values" roleId="qqyh.6825476687691297424" type="qqyh.AttributeValue" typeId="qqyh.6825476687691297413" id="3716885538279497744" nodeInfo="ng">
-            <link role="attribute" roleId="qqyh.6825476687691297415" targetNodeId="3716885538279497738" resolveInfo="attr" />
-            <node role="value" roleId="qqyh.6825476687691297414" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3716885538279497745" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="42" />
-            </node>
-          </node>
-          <node role="values" roleId="qqyh.6825476687691297424" type="qqyh.AttributeValue" typeId="qqyh.6825476687691297413" id="8842534433307673766" nodeInfo="ng">
-            <link role="attribute" roleId="qqyh.6825476687691297415" targetNodeId="8842534433307673763" resolveInfo="blub" />
-            <node role="value" roleId="qqyh.6825476687691297414" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8842534433307673768" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.2212975673976043696" value="2" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8842534433307549168" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="RuntimeVariabiltiy" />
     <node role="contents" roleId="x27k.6437088627575722833" type="yvrq.RtFeatureModel" typeId="yvrq.8882953773355574483" id="8882953773355744171" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <link role="featureModel" roleId="yvrq.8882953773355584900" targetNodeId="8882953773355744100" resolveInfo="someFM" />
+      <link role="featureModel" roleId="yvrq.8882953773355584900" targetNodeId="4059314064295410439" resolveInfo="someFM" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="8882953773355858245" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="cfg" />
@@ -183,7 +103,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.StoreRtConfigStatement" typeId="yvrq.8882953773355830195" id="3716885538279496961" nodeInfo="ng">
           <link role="rtFeatureModel" roleId="yvrq.8000796061690159789" targetNodeId="8882953773355744171" resolveInfo="someFM" />
-          <link role="configModel" roleId="yvrq.8000796061690159814" targetNodeId="3716885538279497740" resolveInfo="Cfg3" />
+          <link role="configModel" roleId="yvrq.8000796061690159814" targetNodeId="4059314064295416180" resolveInfo="Cfg3" />
           <node role="target" roleId="yvrq.8882953773355838792" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="8842534433307562470" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="8882953773355858245" resolveInfo="cfg" />
           </node>
@@ -223,7 +143,7 @@
               </node>
             </node>
             <node role="featureExpression" roleId="yvrq.8882953773355868337" type="yvrq.FeatureRef" typeId="yvrq.8882953773355884814" id="8842534433307562474" nodeInfo="ng">
-              <link role="feature" roleId="yvrq.8882953773355884815" targetNodeId="3716885538279443112" resolveInfo="f2" />
+              <link role="feature" roleId="yvrq.8882953773355884815" targetNodeId="4059314064295411915" resolveInfo="f2" />
             </node>
           </node>
           <node role="options" roleId="yvrq.8882953773355868310" type="yvrq.VariantCase" typeId="yvrq.8882953773355868306" id="3716885538279496972" nodeInfo="ng">
@@ -240,7 +160,7 @@
               </node>
             </node>
             <node role="featureExpression" roleId="yvrq.8882953773355868337" type="yvrq.FeatureRef" typeId="yvrq.8882953773355884814" id="8842534433307562476" nodeInfo="ng">
-              <link role="feature" roleId="yvrq.8882953773355884815" targetNodeId="8882953773355744181" resolveInfo="f1" />
+              <link role="feature" roleId="yvrq.8882953773355884815" targetNodeId="4059314064295411914" resolveInfo="f1" />
             </node>
           </node>
           <node role="options" roleId="yvrq.8882953773355868310" type="yvrq.VariantDefault" typeId="yvrq.8882953773355868308" id="3716885538279496979" nodeInfo="ng">
@@ -705,6 +625,86 @@
     <node role="maxDoubleValue" roleId="mj1l.6658270785788810339" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836823672" nodeInfo="ng">
       <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
       <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+  </root>
+  <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="4059314064295410438" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="FeatureModels" />
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="4059314064295410439" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="someFM" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="4059314064295411500" nodeInfo="ng">
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4059314064295411914" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="f1" />
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4059314064295411915" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="f2" />
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4059314064295411916" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="f3" />
+          <node role="attributes" roleId="qqyh.6825476687691297429" type="qqyh.FeatureAttribute" typeId="qqyh.6825476687691297431" id="4059314064295411917" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="attr" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4059314064295411918" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+          <node role="attributes" roleId="qqyh.6825476687691297429" type="qqyh.FeatureAttribute" typeId="qqyh.6825476687691297431" id="4059314064295411919" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="blub" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4059314064295411920" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4059314064295411921" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="f4" />
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="4059314064295411922" nodeInfo="ng" />
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4059314064295411923" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="bla" />
+          </node>
+        </node>
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="4059314064295411501" nodeInfo="ng" />
+      </node>
+    </node>
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="4059314064295413735" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Cfg1" />
+      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="4059314064295410439" resolveInfo="someFM" />
+      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4059314064295414137" nodeInfo="ng">
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4059314064295411500" resolveInfo="someFM_root" />
+      </node>
+    </node>
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="4059314064295415329" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Cfg2" />
+      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="4059314064295410439" resolveInfo="someFM" />
+      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4059314064295416128" nodeInfo="ng">
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4059314064295411500" resolveInfo="someFM_root" />
+        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4059314064295416130" nodeInfo="ng">
+          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4059314064295411914" resolveInfo="f1" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="4059314064295416180" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Cfg3" />
+      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="4059314064295410439" resolveInfo="someFM" />
+      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4059314064295416204" nodeInfo="ng">
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4059314064295411500" resolveInfo="someFM_root" />
+        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4059314064295416216" nodeInfo="ng">
+          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4059314064295411916" resolveInfo="f3" />
+          <node role="values" roleId="qqyh.6825476687691297424" type="qqyh.AttributeValue" typeId="qqyh.6825476687691297413" id="4059314064295416217" nodeInfo="ng">
+            <link role="attribute" roleId="qqyh.6825476687691297415" targetNodeId="4059314064295411917" resolveInfo="attr" />
+            <node role="value" roleId="qqyh.6825476687691297414" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4059314064295416435" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="42" />
+            </node>
+          </node>
+          <node role="values" roleId="qqyh.6825476687691297424" type="qqyh.AttributeValue" typeId="qqyh.6825476687691297413" id="4059314064295416218" nodeInfo="ng">
+            <link role="attribute" roleId="qqyh.6825476687691297415" targetNodeId="4059314064295411919" resolveInfo="blub" />
+            <node role="value" roleId="qqyh.6825476687691297414" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4059314064295417026" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>
