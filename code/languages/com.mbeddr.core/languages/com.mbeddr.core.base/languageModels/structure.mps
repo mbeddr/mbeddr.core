@@ -1094,11 +1094,6 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="valueDebugger" />
     <property name="name" nameId="tpck.1169194664001" value="ValueDebugger" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5532084315654448316" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="debugKey" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2113102233502540990" resolveInfo="DebugKey" />
-    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="651821299954909201" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
@@ -1106,6 +1101,10 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="651821299954909202" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="expanded" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3011556196713113766" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="debugKeyString" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="651821299954909203" nodeInfo="ng">
       <property name="role" nameId="tpce.7588428831955550663" value="debugger" />

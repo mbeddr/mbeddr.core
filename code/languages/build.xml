@@ -9,7 +9,9 @@
   <property name="branch.spawner" value="branch:master"/> 
   <property name="branch.tables" value="branch:31_EAP1-25"/> 
   <property name="branch.richtext" value="branch:31_EAP"/> 
-  <property name="branch.multiline" value="branch:31_EAP"/> 
+  <property name="branch.multiline" value="branch:31_EAP"/>
+  <property name="branch.math" value="branch:master"/>
+  <property name="branch.bool-editor" value="branch:master"/> 
   
   
   
@@ -106,6 +108,20 @@
   <property name="com.mbeddr.allScripts.build-file.name" value="build.xml" /> 
   <property name="com.mbeddr.allScripts.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.allScripts" />  
   
+  <!-- boolean editor -->  
+  <property name="mps-bool-editor.zip-file.name" value="mps-bool-editor.zip" />
+  <property name="mps-bool-editor.expanded-folder.name" value="mps-bool-editor" />
+  <property name="mps-bool-editor.build-id" value="buildType:RichtextTables_MpsBooleanEditor" />  
+  <property name="mps-bool-editor.build-path" value="${mbeddr.github.core.home}/build/mps-bool-editor/build/artifacts/mps-bool-editor" />  
+  <property name="artifacts.mps-bool-editor" value="${mps-bool-editor.build-path}" />
+
+  <!-- math -->  
+  <property name="mps-math.zip-file.name" value="mps-math-editor.zip" />
+  <property name="mps-math.expanded-folder.name" value="mps-math-editor" />
+  <property name="mps-math.build-id" value="buildType:RichtextTables_MpsMath" />  
+  <property name="mps-math.build-path" value="${mbeddr.github.core.home}/build/mps-math-editor/build/artifacts/mps-math-editor" />  
+  <property name="artifacts.mps-math-editor" value="${mps-math.build-path}" />  
+  
   <!-- multiline -->  
   <property name="multiline.zip-file.name" value="mps-multiline.zip" />
   <property name="multiline.expanded-folder.name" value="mps-multiline" />
@@ -162,27 +178,50 @@
 	  <!-- create directory structure -->
 	  <mkdir dir="${multiline.build-path}"/>
 	  <mkdir dir="${mps-richtext.build-path}"/>
-	  <mkdir dir="${mps-tables.build-path}"/>	  
+	  <mkdir dir="${mps-tables.build-path}"/>
+	  <mkdir dir="${mps-math.build-path}"/>
+	  <mkdir dir="${mps-bool-editor.build-path}"/>	  
 	  <mkdir dir="${spawner.build-path}"/> 
 	  
 	  <!-- clean-plugin-folder -->
+	  <echo message=""/>
+  	  <echo message="DELETING PLUGINS"/>
+  	  <echo message=""/>
 	  <delete dir="${mps.home}/${plugins.folder.name}/${multiline.expanded-folder.name}" verbose="true" />
 	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-richtext.expanded-folder.name}" verbose="true" />
 	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-tables.expanded-folder.name}" verbose="true" />
 	  <delete dir="${mps.home}/${plugins.folder.name}/${spawner.expanded-folder.name}" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-bool-editor.expanded-folder.name}" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-math.expanded-folder.name}" verbose="true" />
 	  
+	  
+	  <echo message=""/>
+  	  <echo message="DELETING ARTIFACTS"/>
+  	  <echo message=""/>
+	  <delete file="${mps-math.build-path}/${mps-math.zip-file.name}"/>
+	  <delete file="${mps-bool-editor.build-path}/${mps-bool-editor.zip-file.name}"/>
 	  <delete file="${multiline.build-path}/${multiline.zip-file.name}"/>	  
 	  <delete file="${mps-richtext.build-path}/${mps-richtext.zip-file.name}"/>
 	  <delete file="${mps-tables.build-path}/${mps-tables.zip-file.name}"/>
 	  <delete file="${spawner.build-path}/${spawner.zip-file.name}"/>
 	    	  
-	  <!-- download-plugins -->	  
+	  <!-- download-plugins -->	
+	  <echo message=""/>
+  	  <echo message="DOWNLOADING ARTIFACTS"/>
+  	  <echo message=""/>  
 	  <get src="${base-url}/${branch.multiline},${multiline.build-id},${latest-build}/artifacts/files/${multiline.zip-file.name}" dest="${multiline.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${branch.richtext},${mps-richtext.build-id},${latest-build}/artifacts/files/${mps-richtext.zip-file.name}" dest="${mps-richtext.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${branch.tables},${mps-tables.build-id},${latest-build}/artifacts/files/${mps-tables.zip-file.name}" dest="${mps-tables.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	  <get src="${base-url}/${branch.math},${mps-bool-editor.build-id},${latest-build}/artifacts/files/${mps-bool-editor.zip-file.name}" dest="${mps-bool-editor.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	  <get src="${base-url}/${branch.bool-editor},${mps-math.build-id},${latest-build}/artifacts/files/${mps-math.zip-file.name}" dest="${mps-math.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${branch.spawner},${spawner.build-id},${latest-build}/artifacts/files/${spawner.suburl}/${spawner.zip-file.name}" dest="${spawner.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>	 
 	  	 
 	  <!-- unzip-plugins -->
+	  <echo message=""/>
+  	  <echo message="INSTALLING PLUGINS"/>
+  	  <echo message=""/>
+  	  <unzip src="${mps-math.build-path}/${mps-math.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
+  	  <unzip src="${mps-bool-editor.build-path}/${mps-bool-editor.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${multiline.build-path}/${multiline.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${mps-richtext.build-path}/${mps-richtext.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${mps-tables.build-path}/${mps-tables.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
