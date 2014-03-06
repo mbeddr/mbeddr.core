@@ -18,6 +18,7 @@
         <facet type="java" />
       </facets>
       <external-templates>
+        <generator generatorUID="9b03dd0d-f0d2-42fc-8909-d7710e678ca3(jetbrains.mps.build.mps#3189788309732033979)" />
         <generator generatorUID="14663b86-7294-4d82-bdbf-e858bd3af9b1(jetbrains.mps.build#3595702787188034882)" />
       </external-templates>
       <dependencies>
@@ -47,6 +48,20 @@
           </greater-priority-mapping>
           <lesser-priority-mapping>
             <generator generatorUID="14663b86-7294-4d82-bdbf-e858bd3af9b1(jetbrains.mps.build#3595702787188034882)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_after">
+          <greater-priority-mapping>
+            <generator generatorUID="61e59150-761a-49c0-a214-8c839856658b(com.mbeddr.mpsutil.buildutil#6600513366548883903)" />
+            <external-mapping>
+              <mapping-node modelUID="r:dac974ca-e827-4809-a62a-5199eda4a1c2(com.mbeddr.mpsutil.buildutil.generator.buildhack@generator)" nodeID="1812588819720603811" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="9b03dd0d-f0d2-42fc-8909-d7710e678ca3(jetbrains.mps.build.mps#3189788309732033979)" />
             <external-mapping>
               <all-local-mappings />
             </external-mapping>
