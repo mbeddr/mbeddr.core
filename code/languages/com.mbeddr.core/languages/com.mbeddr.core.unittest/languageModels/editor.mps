@@ -36,7 +36,7 @@
                       </node>
                     </node>
                     <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4923301433312975499" nodeInfo="nn">
-                      <property name="value" nameId="tpee.1070475926801" value="test case " />
+                      <property name="value" nameId="tpee.1070475926801" value="testcase " />
                     </node>
                   </node>
                 </node>
