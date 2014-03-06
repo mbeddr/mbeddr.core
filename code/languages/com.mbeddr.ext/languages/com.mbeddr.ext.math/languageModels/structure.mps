@@ -12,6 +12,7 @@
     <property name="name" nameId="tpck.1169194664001" value="SumExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="sum" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="compute sum of expression ∑" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5098456557377504841" resolveInfo="MathLoopExpression" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8665580541610256919" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.3661327589519741847" resolveInfo="IExpressionWrapper" />
@@ -22,6 +23,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="971707942815320487" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="LoopVariableReference" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="971707942815596071" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -34,6 +36,7 @@
     <property name="name" nameId="tpck.1169194664001" value="MathLoopExpression" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="971707942815410149" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -70,6 +73,7 @@
     <property name="name" nameId="tpck.1169194664001" value="ProductLoopExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="product" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="compute product of expression ∏" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5098456557377504841" resolveInfo="MathLoopExpression" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8665580541610256908" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.3661327589519741847" resolveInfo="IExpressionWrapper" />
@@ -79,6 +83,7 @@
     <property name="name" nameId="tpck.1169194664001" value="SqrtExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="sqrt" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="square root √" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5098456557379026898" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -94,6 +99,7 @@
     <property name="name" nameId="tpck.1169194664001" value="PowerExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="pow" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="n^m" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5098456557379673865" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -112,6 +118,7 @@
     <property name="name" nameId="tpck.1169194664001" value="LogarithmExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="log" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="n log m" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5098456557380205019" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -130,6 +137,7 @@
     <property name="name" nameId="tpck.1169194664001" value="AbsExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="abs" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="absolute value" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5098456557381295267" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -145,6 +153,7 @@
     <property name="name" nameId="tpck.1169194664001" value="FractionExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="frac" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="fraction bar" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5098456557382006592" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
