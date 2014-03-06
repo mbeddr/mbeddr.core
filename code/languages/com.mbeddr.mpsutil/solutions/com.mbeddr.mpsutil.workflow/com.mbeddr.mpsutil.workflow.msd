@@ -20,7 +20,9 @@
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+    <dependency reexport="false">c7a315e6-1d93-4186-85bc-2dfafd1ccc21(com.mbeddr.mpsutil.common)</dependency>
     <dependency reexport="false">ebc3846f-fa92-4849-93e4-dec2faf6b78f(com.mbeddr.mpsutil.lib)</dependency>
+    <dependency reexport="false">06fe08d3-cb67-4405-ab1b-ede102080c22(com.mbeddr.mpsutil.workflow)</dependency>
     <dependency reexport="false">3c072366-1506-4c3b-a477-574f82320efb(com.mbeddr.mpsutil.workflow.pluginSolution)</dependency>
   </dependencies>
   <usedLanguages>
