@@ -1,1 +1,1 @@
-ant build-languages
+ant build-offline

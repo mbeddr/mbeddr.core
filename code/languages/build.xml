@@ -1,4 +1,4 @@
-<project name="mbeddr download and deploy plugins" default="build-languages">
+<project name="mbeddr download and deploy plugins" default="build-online" >
 	
   <property file="build.properties"/>  
   <taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" classpath="${mbeddr.github.core.home}/tools/ant/tasks/MakeTestsTask.jar" />
@@ -12,7 +12,8 @@
   <property name="branch.multiline" value="branch:31_EAP"/>
   <property name="branch.math" value="branch:master"/>
   <property name="branch.bool-editor" value="branch:master"/> 
-  
+  <property name="server.url" value="mbeddr-build.itemis.de"/>   
+  <property name="server.port" value="80"/>       
   
   
   <property name="base-url" value="https://build.mbeddr.com/guestAuth/app/rest/builds"/>
@@ -173,8 +174,33 @@
           </not>
       </condition>
   </fail>
-	    	    	    	  
+  
+  <target name="check-server"> 
+    <echo message="trying to reach mbeddr build server" /> 
+    <waitfor maxwait="3" maxwaitunit="second" timeoutproperty="server.not.reachable" > 
+      <and> 
+        <socket server="${server.url}" port="${server.port}" /> 
+      </and> 
+    </waitfor> 
+    <fail message="server is not available, please check your internet connection!" if="server.not.reachable" /> 
+    <echo message="server is available." /> 
+  </target> 
+  
+  <target name="build-online" >
+    <antcall target="install-plugins" />
+    <antcall target="build-allScripts" />
+    <antcall target="build-languages" />		
+  </target>
+  
+  <target name="build-offline" >
+    <antcall target="build-allScripts" />
+    <antcall target="build-languages" />		
+  </target>
+    	    	    	     	  
   <target name="install-plugins">
+	  <!-- verify server is reachable -->
+	  <antcall target="check-server" />
+	  
 	  <!-- create directory structure -->
 	  <mkdir dir="${multiline.build-path}"/>
 	  <mkdir dir="${mps-richtext.build-path}"/>
@@ -226,8 +252,8 @@
 	  <unzip src="${mps-richtext.build-path}/${mps-richtext.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${mps-tables.build-path}/${mps-tables.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${spawner.build-path}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" /> 	 	  
-  </target>
-
+  </target>  
+  
   <target name="build-allScripts">
 	  <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-plugins.task}" />	  
 	  <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-generated-code.task}" />	  

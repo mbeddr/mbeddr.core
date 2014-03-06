@@ -1,1 +1,1 @@
-call ant build-languages
+call ant build-offline
