@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.build/build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.ext.components/components.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.ext.math/com.mbeddr.math.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.ext.statemachines/statemachines.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.physicalunits/physicalunits.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.statemachinesInComponents/statemachinesInComponents.devkit" folder="" />
