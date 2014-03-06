@@ -10,7 +10,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">ebc3846f-fa92-4849-93e4-dec2faf6b78f(com.mbeddr.mpsutil.lib)</dependency>
-    <dependency reexport="false">dcacdf27-f972-4e7a-98ee-5c39c2a3e110(com.mbeddr.mpsutil.workflow)</dependency>
+    <dependency reexport="false">dcacdf27-f972-4e7a-98ee-5c39c2a3e110(com.mbeddr.mpsutil.workflow.rt)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)</usedLanguage>
