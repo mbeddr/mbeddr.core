@@ -453,22 +453,29 @@
                 <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.platform" />
               </node>
             </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="4560053160898371970" nodeInfo="ng">
-              <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="4560053160898371971" nodeInfo="ng">
-                <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="4560053160898371979" nodeInfo="ng">
-                  <property name="text" nameId="3ior.4903714810883755350" value="artifacts" />
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="4492014791448042976" nodeInfo="ng">
+              <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="4492014791448042978" nodeInfo="ng">
+                <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="4492014791448043010" nodeInfo="ng">
+                  <property name="text" nameId="3ior.4903714810883755350" value="build" />
                 </node>
               </node>
-              <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="4560053160898371982" nodeInfo="ng">
-                <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="4560053160897355181" nodeInfo="ng">
-                  <link role="target" roleId="3ior.5610619299013057365" targetNodeId="g0ku.651821299948806961" />
-                  <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="4560053160898367863" nodeInfo="ng">
-                    <property name="pattern" nameId="3ior.5248329904288051101" value="*.zip" />
+              <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="4560053160898371970" nodeInfo="ng">
+                <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="4560053160898371971" nodeInfo="ng">
+                  <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="4560053160898371979" nodeInfo="ng">
+                    <property name="text" nameId="3ior.4903714810883755350" value="artifacts" />
                   </node>
                 </node>
-                <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="4560053160898371983" nodeInfo="ng">
-                  <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="4560053160898371988" nodeInfo="ng">
-                    <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.platform.build" />
+                <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="4560053160898371982" nodeInfo="ng">
+                  <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="4560053160897355181" nodeInfo="ng">
+                    <link role="target" roleId="3ior.5610619299013057365" targetNodeId="g0ku.651821299948806961" />
+                    <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="4560053160898367863" nodeInfo="ng">
+                      <property name="pattern" nameId="3ior.5248329904288051101" value="*.zip" />
+                    </node>
+                  </node>
+                  <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="4560053160898371983" nodeInfo="ng">
+                    <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="4560053160898371988" nodeInfo="ng">
+                      <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.platform.build" />
+                    </node>
                   </node>
                 </node>
               </node>
