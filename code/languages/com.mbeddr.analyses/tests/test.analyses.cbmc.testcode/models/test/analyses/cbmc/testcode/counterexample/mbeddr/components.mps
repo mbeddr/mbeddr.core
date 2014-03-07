@@ -8,7 +8,7 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="22" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="27" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
@@ -827,14 +827,14 @@
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="3809413254167226556" resolveInfo="Component1" />
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="3809413254167226575" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="comp" />
+        <property name="name" nameId="tpck.1169194664001" value="comp1" />
         <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="3809413254167226576" nodeInfo="ng">
           <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="3809413254167226557" resolveInfo="int2" />
           <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="3809413254167226574" resolveInfo="sp" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="3809413254167236176" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="comp" />
+        <property name="name" nameId="tpck.1169194664001" value="comp2" />
         <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="3809413254167236177" nodeInfo="ng">
           <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="3809413254167226574" resolveInfo="sp" />
           <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="3809413254167228446" resolveInfo="int1" />
@@ -857,7 +857,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="3809413254167237715" nodeInfo="ng">
             <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="3809413254167226987" resolveInfo="set" />
             <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="3809413254167237601" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="3809413254167236176" resolveInfo="comp" />
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="3809413254167236176" resolveInfo="comp2" />
             </node>
             <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="7255548950669996498" nodeInfo="ng">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="7255548950669996372" nodeInfo="ng">
@@ -878,7 +878,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="3809413254167226582" nodeInfo="ng">
             <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="3809413254167226551" resolveInfo="aFun" />
             <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="3809413254167226583" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="3809413254167226575" resolveInfo="comp" />
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="3809413254167226575" resolveInfo="comp1" />
             </node>
             <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3809413254167226584" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
