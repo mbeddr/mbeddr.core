@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:3025abe7-1803-43f8-8d3a-b2cf3629bc2d(test.ex.ext.math.simple)">
+<model modelUID="r:3025abe7-1803-43f8-8d3a-b2cf3629bc2d(test.ex.ext.math.simple@tests)">
   <persistence version="8" />
   <language namespace="b574d547-b77e-4fed-9f60-c349c4410765(com.mbeddr.ext.math)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
