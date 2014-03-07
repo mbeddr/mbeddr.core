@@ -1,3 +1,1 @@
-ant build-allScripts
-ant install-plugins
-ant build-languages
+ant build-online
