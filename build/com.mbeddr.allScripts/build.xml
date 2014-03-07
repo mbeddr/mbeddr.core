@@ -572,6 +572,28 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.components.dev.build-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.math.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.math.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.ext.math.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.ext.math.dev.build" type="solution" uuid="8870edb3-5927-4d26-8874-5af9498349c5">
+        <dependencies />
+        <sources jar="com.mbeddr.ext.math.dev.build-src.jar" descriptor="com.mbeddr.ext.math.dev.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.ext.math.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.ext.math.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.math.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.ext.math.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.math.dev.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.math.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.ext.math.dev.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.math.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.math.dev.build/com.mbeddr.ext.math.dev.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.math.dev.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.build.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.build.jar/META-INF" />
     <echoxml file="${build.tmp}/default/com.mbeddr.ext.tests.build.jar/META-INF/module.xml">
@@ -731,7 +753,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.spawner.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.mpsutil.buildutil, java.compile.com.mbeddr.mpsutil.buildutil#6600513366548883903, java.compile.com.mbeddr.mpsutil.blutil, java.compile.com.mbeddr.mpsutil.blutil#374287044672169667, java.compile.com.mbeddr.mpsutil.blutil.rt, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.cbmc.dev.build, java.compile.com.mbeddr.analyses.base.dev.build, java.compile.com.mbeddr.analyses.yices.dev.build, java.compile.com.mbeddr.analyses.nusmv.dev.build, java.compile.com.mbeddr.analyses.tests.dev.build" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.spawner.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.mpsutil.buildutil, java.compile.com.mbeddr.mpsutil.buildutil#6600513366548883903, java.compile.com.mbeddr.mpsutil.blutil, java.compile.com.mbeddr.mpsutil.blutil#374287044672169667, java.compile.com.mbeddr.mpsutil.blutil.rt, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.math.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.cbmc.dev.build, java.compile.com.mbeddr.analyses.base.dev.build, java.compile.com.mbeddr.analyses.yices.dev.build, java.compile.com.mbeddr.analyses.nusmv.dev.build, java.compile.com.mbeddr.analyses.tests.dev.build" />
   
   <target name="processResources" />
   
@@ -879,6 +901,7 @@
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.components.dev.build/com.mbeddr.ext.components.dev.build.msd" />
+        <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.math.dev.build/com.mbeddr.ext.math.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.statemachine.dev.build/com.mbeddr.ext.statemachine.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.statemachinesInComponents.dev.build/com.mbeddr.ext.statemachinesInComponents.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.build/build.msd" />
@@ -888,7 +911,9 @@
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.build.build/com.mbeddr.build.build.msd" />
       </chunk>
       <jvmargs>
-        <arg value="-Xmx512m" />
+        <!--HACK STARTS HERE-->
+        <arg value="-Xmx2g" />
+        <arg value="-XX:MaxPermSize=512m" />
       </jvmargs>
       <macro name="mps.home" path="${mps.home}" />
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
@@ -909,7 +934,7 @@
   
   <target name="makeDependents" />
   
-  <target name="java.compile.com.mbeddr.tutorial.dev.build" depends="java.compile.com.mbeddr.analyses.base.dev.build, java.compile.com.mbeddr.analyses.cbmc.dev.build, java.compile.com.mbeddr.analyses.nusmv.dev.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.analyses.yices.dev.build, java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, fetchDependencies">
+  <target name="java.compile.com.mbeddr.tutorial.dev.build" depends="java.compile.com.mbeddr.analyses.base.dev.build, java.compile.com.mbeddr.analyses.cbmc.dev.build, java.compile.com.mbeddr.analyses.nusmv.dev.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.analyses.yices.dev.build, java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.math.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, fetchDependencies">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.build.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.tutorial.dev.build" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.tutorial.dev.build" fork="true" includeantruntime="false">
@@ -929,6 +954,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.debugger.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.math.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.statemachine.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.tests.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.units.dev.build" />
@@ -957,6 +983,7 @@
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1532,7 +1559,28 @@
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.ext.tests.build" depends="java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, fetchDependencies">
+  <target name="java.compile.com.mbeddr.ext.math.dev.build" depends="java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, fetchDependencies">
+    <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.ext.math.dev.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.math.dev.build" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.math.dev.build" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.build}/solutions/com.mbeddr.ext.math.dev.build/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.debugger.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.com.mbeddr.ext.tests.build" depends="java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.math.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, fetchDependencies">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.tests.build" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.tests.build" fork="true" includeantruntime="false">
@@ -1544,12 +1592,14 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.debugger.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.math.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.statemachine.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.statemachinesInComponents.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.units.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1724,6 +1774,7 @@
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.debugger-test.build.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.doc.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.ext.components.dev.build/source_gen" />
+    <delete dir="${mbeddr.build}/solutions/com.mbeddr.ext.math.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.ext.statemachine.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.ext.statemachinesInComponents.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/source_gen" />

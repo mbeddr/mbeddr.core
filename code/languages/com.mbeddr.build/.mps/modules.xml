@@ -22,6 +22,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" folder="doc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.build/build.msd" folder="ext" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.components.dev.build/com.mbeddr.ext.components.dev.build.msd" folder="ext" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.math.dev.build/com.mbeddr.ext.math.dev.build.msd" folder="ext" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.statemachine.dev.build/com.mbeddr.ext.statemachine.dev.build.msd" folder="ext" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.statemachinesInComponents.dev.build/com.mbeddr.ext.statemachinesInComponents.dev.build.msd" folder="ext" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.units.dev.build/com.mbeddr.ext.units.dev.build.msd" folder="ext" />
