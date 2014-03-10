@@ -19,8 +19,9 @@
   <import index="tp4k" modelUID="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" version="35" implicit="yes" />
   <import index="tp4f" modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="4gky" modelUID="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" version="1" implicit="yes" />
+  <import index="4gky" modelUID="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" version="3" implicit="yes" />
   <import index="tbr6" modelUID="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" version="1" implicit="yes" />
+  <import index="tprs" modelUID="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" version="-1" implicit="yes" />
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="2564556814935439673" nodeInfo="ng" />
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="2564556814935439725" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="PasteLatexCode" />
@@ -1308,6 +1309,18 @@
         <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+shift" />
         <property name="keycode" nameId="tp4k.1207318242774" value="VK_V" />
       </node>
+    </node>
+  </root>
+  <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="3423332308621327040" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="docGroup" />
+    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="3423332308621367234" nodeInfo="ng">
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="3423332308621376601" nodeInfo="ng" />
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="3423332308621373951" nodeInfo="ng">
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="2564556814935439725" resolveInfo="PasteLatexCode" />
+      </node>
+    </node>
+    <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3423332308621373954" nodeInfo="ng">
+      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.2003512433031648168" resolveInfo="EditorPopupEx" />
     </node>
   </root>
 </model>
