@@ -1360,7 +1360,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918088213" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" However, pre- and\npostconditions are " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" However, pre- and postconditions are " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="4521089000918088283" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000918088284" nodeInfo="ng">
