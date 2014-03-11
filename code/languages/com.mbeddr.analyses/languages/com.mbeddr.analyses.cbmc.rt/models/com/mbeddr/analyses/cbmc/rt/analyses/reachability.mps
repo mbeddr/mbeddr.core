@@ -146,7 +146,7 @@
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="5853537697759015176" nodeInfo="igu">
       <property name="name" nameId="tpck.1169194664001" value="buildCBMCReachabilityResult" />
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5853537697759015177" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="rawResult" />
+        <property name="name" nameId="tpck.1169194664001" value="raw" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5853537697759015178" nodeInfo="in">
           <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rbq9.7255863045967840923" resolveInfo="CBMCRawResult" />
         </node>
@@ -171,7 +171,7 @@
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="8ear.7727902157494621368" resolveInfo="CBMCLiftedResultBuilder" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="8ear.7727902157494621409" resolveInfo="buildCBMCLiftedResult" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="5853537697759015349" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5853537697759015177" resolveInfo="rawResult" />
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5853537697759015177" resolveInfo="raw" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="6956265874576509544" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6956265874576509541" resolveInfo="concept" />
