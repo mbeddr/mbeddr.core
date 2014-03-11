@@ -1682,6 +1682,7 @@
         <link role="protocolErrorMsgTable" roleId="v7ag.6209278014151498295" targetNodeId="1731059994647781355" resolveInfo="ContractMessages" />
         <link role="ppcErrorMsgDef" roleId="v7ag.2546541902879119265" targetNodeId="1731059994647781356" resolveInfo="contractFailed" />
         <link role="ppcErrorMsgTable" roleId="v7ag.2546541902879119266" targetNodeId="1731059994647781355" resolveInfo="ContractMessages" />
+        <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.EmptyInterfaceContents" typeId="v7ag.6870096341748053862" id="3295536956444562679" nodeInfo="ng" />
         <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="1731059994647814090" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="store" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1731059994647814091" nodeInfo="ng">
@@ -1704,7 +1705,17 @@
               <property name="name" nameId="tpck.1169194664001" value="full" />
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="3295536956444559486" nodeInfo="ng">
+            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3295536956444559487" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3295536956444559488" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3295536956444559489" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="store goes from the initial state to a new state full" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
+        <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.EmptyInterfaceContents" typeId="v7ag.6870096341748053862" id="3295536956444562711" nodeInfo="ng" />
         <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="1731059994647814107" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="get" />
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="1731059994647814108" nodeInfo="ng">
@@ -1722,7 +1733,17 @@
               <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="1731059994647814106" resolveInfo="full" />
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="3295536956444622405" nodeInfo="ng">
+            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3295536956444622406" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3295536956444622407" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3295536956444622408" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="get expects the state to be full, and remains there" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
+        <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.EmptyInterfaceContents" typeId="v7ag.6870096341748053862" id="3295536956444622447" nodeInfo="ng" />
         <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="1731059994647814116" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="take" />
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="1731059994647814117" nodeInfo="ng">
@@ -1744,13 +1765,32 @@
             </node>
             <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="1731059994647814130" nodeInfo="ng" />
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="3295536956444682146" nodeInfo="ng">
+            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3295536956444682147" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3295536956444682148" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3295536956444682149" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="take expects to be full and then becomes empty (i.e. init)" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
+        <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.EmptyInterfaceContents" typeId="v7ag.6870096341748053862" id="3295536956444682226" nodeInfo="ng" />
         <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="1731059994647814131" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="isEmpty" />
           <property name="isQuery" nameId="v7ag.6591434695301777601" value="true" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="1731059994647814132" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="3295536956444741930" nodeInfo="ng">
+            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3295536956444741931" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3295536956444741932" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3295536956444741933" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="isEmpty has no effect on the protocol state" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1803,6 +1843,16 @@
         <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1731059994647814157" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="store_store" />
           <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1731059994647814158" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3295536956444782969" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="3295536956444783507" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3295536956444783968" nodeInfo="ng">
+                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2531151654389679941" resolveInfo="tp" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="3295536956444782968" nodeInfo="ng">
+                  <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="1731059994647814189" resolveInfo="storedTP" />
+                </node>
+              </node>
+            </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="992938658464504189" nodeInfo="ng" />
           </node>
           <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="1731059994647814160" nodeInfo="ng">

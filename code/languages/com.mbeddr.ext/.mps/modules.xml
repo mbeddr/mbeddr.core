@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.build/build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.ext.components/components.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.ext.math/com.mbeddr.math.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.ext.statemachines/statemachines.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.physicalunits/physicalunits.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.statemachinesInComponents/statemachinesInComponents.devkit" folder="" />
@@ -15,6 +16,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components/components.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components/solutions/pluginSolution/pluginSolution.msd" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.compositecomponents/compositecomponents.mpl" folder="components" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.math/com.mbeddr.ext.math.mpl" folder="math" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.physicalunits.c/c.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.physicalunits/physicalunits.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/pluginSolution/com.mbeddr.ext.statemachines.pluginSolution.msd" folder="statemachine" />
@@ -23,6 +25,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.compositecomponents/compositecomponents.msd" folder="tests.comp" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.math/test.ex.ext.math.msd" folder="tests.math" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.physicalunits.c/c.msd" folder="tests.units" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.statemachine/statemachine.msd" folder="tests.sm" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.components/components.msd" folder="tests.comp" />
