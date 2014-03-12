@@ -14394,19 +14394,11 @@
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4957808595240569176" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4957808595240569177" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4957808595240569181" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4957808595240576310" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4957808595240569183" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4957808595240569182" nodeInfo="nn" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4957808595240569187" nodeInfo="nn">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.1302968767135003934" />
-              </node>
-            </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4957808595240576314" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="exl8.3298295153090279188" resolveInfo="contributeStepIntoStrategiesForContext" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="2782528880864117503" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2782528880863723497" resolveInfo="resultStrategies" />
-              </node>
+        <node role="statement" roleId="tpee.1068581517665" type="talm.BreakOnNodeStatement" typeId="talm.1389340506572349111" id="6199110895076942458" nodeInfo="ng">
+          <node role="nodeToBreak" roleId="talm.1389340506572349280" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6199110895076942952" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="6199110895076942530" nodeInfo="nn" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6199110895076944977" nodeInfo="nn">
+              <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.1302968767135003934" />
             </node>
           </node>
         </node>
@@ -16234,8 +16226,8 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="5626675291297270829" nodeInfo="nn">
-                <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="5626675291297270831" nodeInfo="nn">
-                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.9184727592626165260" resolveInfo="ComponentRunnableRef" />
+                <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="6199110895076857738" nodeInfo="nn">
+                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="2gv2.1389340506540662105" resolveInfo="ISuspendableNode" />
                 </node>
               </node>
             </node>
@@ -16250,6 +16242,19 @@
             </node>
           </node>
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="5626675291297270686" nodeInfo="sn">
+            <node role="statement" roleId="tpee.1068581517665" type="talm.BreakOnNodeStatement" typeId="talm.1389340506572349111" id="6199110895076903381" nodeInfo="ng">
+              <node role="nodeToBreak" roleId="talm.1389340506572349280" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="6199110895076921139" nodeInfo="nn">
+                <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="6199110895076921140" nodeInfo="nn">
+                  <link role="concept" roleId="tp25.1140138128738" targetNodeId="2gv2.1389340506540662105" resolveInfo="ISuspendableNode" />
+                  <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6199110895076921141" nodeInfo="nn">
+                    <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="6199110895076921142" nodeInfo="nn" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6199110895076921143" nodeInfo="nn">
+                      <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.9184727592626165252" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5626675291297270832" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5626675291297270981" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5626675291297270953" nodeInfo="nn">
