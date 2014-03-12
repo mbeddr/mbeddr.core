@@ -1128,5 +1128,9 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8998906896747633114" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="ITreeViewable" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tree" />
+  </root>
 </model>
 
