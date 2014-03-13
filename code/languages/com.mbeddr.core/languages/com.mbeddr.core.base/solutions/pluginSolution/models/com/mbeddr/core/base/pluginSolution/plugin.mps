@@ -13042,13 +13042,13 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="clipboardStuff" />
     <property name="name" nameId="tpck.1169194664001" value="clipboardStuffInContextMenu" />
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="3977235049180100788" nodeInfo="ng">
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="3977235049181991355" nodeInfo="ng" />
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="3977235049180100796" nodeInfo="ng">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="209357004273856515" resolveInfo="copyNodeURLToClipboard" />
       </node>
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3977235049180100798" nodeInfo="ng">
-      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="1908346841499860224" resolveInfo="EditorPopup" />
+      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="5831200338848379901" resolveInfo="mbeddrPlatformEditorPopupGroup" />
+      <link role="point" roleId="tp4k.1204992316090" targetNodeId="5831200338848379965" resolveInfo="mbeddrPlatformEditorPopupExtensions" />
     </node>
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="9045154772521899966" nodeInfo="ig">
@@ -16050,13 +16050,13 @@
     <property name="name" nameId="tpck.1169194664001" value="genericTreeGroup" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="tree" />
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="9045154772521280144" nodeInfo="ng">
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="2382294775784795822" nodeInfo="ng" />
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="8998906896751889428" nodeInfo="ng">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="9045154772520854796" resolveInfo="OpenGenericTreeTool" />
       </node>
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="9045154772521280151" nodeInfo="ng">
-      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="1908346841499860224" resolveInfo="EditorPopup" />
+      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="5831200338848379901" resolveInfo="mbeddrPlatformEditorPopupGroup" />
+      <link role="point" roleId="tp4k.1204992316090" targetNodeId="5831200338848379965" resolveInfo="mbeddrPlatformEditorPopupExtensions" />
     </node>
   </root>
   <root type="tp4k.KeymapChangesDeclaration" typeId="tp4k.1562714432501166197" id="1089679054537218848" nodeInfo="ng">
@@ -16068,6 +16068,18 @@
         <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
         <property name="keycode" nameId="tp4k.1207318242774" value="VK_O" />
       </node>
+    </node>
+  </root>
+  <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="5831200338848379901" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="mbeddrPlatformEditorPopupGroup" />
+    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="5831200338848379957" nodeInfo="ng">
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="5831200338848379960" nodeInfo="ng" />
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.GroupAnchor" typeId="tp4k.1203680534665" id="5831200338848379965" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="mbeddrPlatformEditorPopupExtensions" />
+      </node>
+    </node>
+    <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="5831200338848379969" nodeInfo="ng">
+      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="1908346841499860224" resolveInfo="EditorPopup" />
     </node>
   </root>
 </model>
