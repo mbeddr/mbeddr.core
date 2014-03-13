@@ -37,7 +37,7 @@
   <import index="f19x" modelUID="r:d02579d5-8c48-4c03-9742-38fb8f18f018(com.mbeddr.mpsutil.nodeviewer.structure)" version="-1" implicit="yes" />
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="8029218887504608073" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="InfoNodeAction" />
-    <property name="caption" nameId="tp4k.1205250923097" value="View Details" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Show Node Info " />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="6472990431939816279" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx1.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
@@ -125,7 +125,7 @@
   </root>
   <root type="tp4k.ToolDeclaration" typeId="tp4k.1203071677434" id="8029218887504247430" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="InfoNodeViewer" />
-    <property name="caption" nameId="tp4k.6547237850567462620" value="Node Viewer" />
+    <property name="caption" nameId="tp4k.6547237850567462620" value="Node Info" />
     <property name="position" nameId="tp4k.2498620720770664572" value="RIGHT" />
     <node role="methodDeclaration" roleId="tp4k.6547237850567462848" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="8029218887504707037" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="loadNode" />
@@ -796,5 +796,15 @@
     </node>
   </root>
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="8029218887504247339" nodeInfo="ng" />
+  <root type="tp4k.KeymapChangesDeclaration" typeId="tp4k.1562714432501166197" id="5698726047039910022" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="infoNode" />
+    <node role="shortcutChange" roleId="tp4k.1562714432501166199" type="tp4k.SimpleShortcutChange" typeId="tp4k.1562714432501166198" id="5698726047039910026" nodeInfo="ng">
+      <link role="action" roleId="tp4k.6193305307616734326" targetNodeId="8029218887504608073" resolveInfo="InfoNodeAction" />
+      <node role="keystroke" roleId="tp4k.1562714432501166206" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="5698726047039910028" nodeInfo="ng">
+        <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
+        <property name="keycode" nameId="tp4k.1207318242774" value="VK_I" />
+      </node>
+    </node>
+  </root>
 </model>
 
