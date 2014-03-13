@@ -15,7 +15,6 @@
     <stubModelEntry path="${module}/lib/smack/smackx-experimental-0.1-0cec571.jar" />
     <stubModelEntry path="${module}/lib/smack/smackx-jingle-3.4.1-0cec571.jar" />
     <stubModelEntry path="${module}/lib/smack/smackx-workgroup-3.4.1-0cec571.jar" />
-    <stubModelEntry path="${mps_home}/plugins/git4idea/lib/git4idea.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -28,9 +27,6 @@
     <dependency reexport="false">06fe08d3-cb67-4405-ab1b-ede102080c22(com.mbeddr.mpsutil.workflow)</dependency>
     <dependency reexport="false">3c072366-1506-4c3b-a477-574f82320efb(com.mbeddr.mpsutil.workflow.pluginSolution)</dependency>
     <dependency reexport="false">019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)</dependency>
-    <dependency reexport="false">b0d98700-54f0-4c39-a8e0-bb27733b8b38(jetbrains.mps.ide.vcs)</dependency>
-    <dependency reexport="false">85836058-a162-41d7-bb1d-52e99d873f28(jetbrains.mps.ide.vcs.core)</dependency>
-    <dependency reexport="false">6fd1293f-7f65-4ffd-99dc-4719eca7c171(jetbrains.mps.ide.vcs.platform)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
