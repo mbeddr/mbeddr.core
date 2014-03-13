@@ -6659,8 +6659,8 @@
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="295213795666516349" nodeInfo="ng" />
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3969129843280035681" nodeInfo="ng">
-      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="295213795664246603" resolveInfo="mbeddrPlatformViewGroup" />
-      <link role="point" roleId="tp4k.1204992316090" targetNodeId="295213795664246606" resolveInfo="mbeddrPlatformViewExtensions" />
+      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="295213795664246603" resolveInfo="mbeddrPlatformProjectionModeGroup" />
+      <link role="point" roleId="tp4k.1204992316090" targetNodeId="295213795664246606" resolveInfo="mbeddrPlatformProjectionModes" />
     </node>
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="3969129843280202135" nodeInfo="ng">
@@ -16113,12 +16113,12 @@
     </node>
   </root>
   <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="295213795664246603" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="mbeddrPlatformViewGroup" />
+    <property name="name" nameId="tpck.1169194664001" value="mbeddrPlatformProjectionModeGroup" />
     <property name="isPopup" nameId="tp4k.1213283637680" value="true" />
     <property name="caption" nameId="tp4k.1204991940915" value="Projection Mode" />
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="295213795664246604" nodeInfo="ng">
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.GroupAnchor" typeId="tp4k.1203680534665" id="295213795664246606" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="mbeddrPlatformViewExtensions" />
+        <property name="name" nameId="tpck.1169194664001" value="mbeddrPlatformProjectionModes" />
       </node>
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="295213795664246607" nodeInfo="ng">
@@ -16129,6 +16129,10 @@
   <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="295213795667018223" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="CodeMenuExtensions" />
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="295213795667018261" nodeInfo="ng">
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="295213795667322984" nodeInfo="ng" />
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.GroupAnchor" typeId="tp4k.1203680534665" id="295213795667323001" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="WizardStuff" />
+      </node>
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="295213795667018264" nodeInfo="ng" />
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.GroupAnchor" typeId="tp4k.1203680534665" id="295213795667018272" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="CodeMenuStuff" />
@@ -16136,6 +16140,20 @@
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="295213795667018278" nodeInfo="ng">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="9oh.5176948551392218541" resolveInfo="IDEACode" />
+    </node>
+  </root>
+  <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="295213795667323011" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="mbeddrPlatformWizards" />
+    <property name="isPopup" nameId="tp4k.1213283637680" value="true" />
+    <property name="caption" nameId="tp4k.1204991940915" value="Wizards" />
+    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="295213795667323012" nodeInfo="ng">
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.GroupAnchor" typeId="tp4k.1203680534665" id="295213795667323013" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="mbeddrPlatformWizards" />
+      </node>
+    </node>
+    <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="295213795667323014" nodeInfo="ng">
+      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="295213795667018223" resolveInfo="CodeMenuExtensions" />
+      <link role="point" roleId="tp4k.1204992316090" targetNodeId="295213795667323001" resolveInfo="WizardStuff" />
     </node>
   </root>
 </model>
