@@ -1,31 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.plantuml.pluginSolution" uuid="c0488c1e-322f-4f38-92d4-5520a7ce96c1" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${module}/lib/batik-anim.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-awt-util.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-bridge.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-codec.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-css.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-dom.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-ext.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-extension.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-gui-util.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-gvt.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-parser.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-script.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-svg-dom.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-svggen.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-swing.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-transcoder.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-util.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik-xml.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/batik.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/js.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/plantuml.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/xalan-2.6.0.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/xerces_2_5_0.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/xml-apis-ext.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/xml-apis.jar" type="java_classes" />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-anim.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-awt-util.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-bridge.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-codec.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-css.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-dom.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-ext.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-extension.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-gui-util.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-gvt.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-parser.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-script.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-svg-dom.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-svggen.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-swing.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-transcoder.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-util.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-xml.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="js.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="plantuml.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="xalan-2.6.0.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="xerces_2_5_0.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="xml-apis-ext.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="xml-apis.jar" />
+    </modelRoot>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
@@ -63,6 +113,7 @@
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
+    <dependency reexport="false">9e24fcdc-a232-4d24-8c95-1f525946191a(com.mbeddr.core.base.pluginSolution)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
   </dependencies>
   <usedLanguages>
