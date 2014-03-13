@@ -1,4 +1,4 @@
- Mbeddr core
+Mbeddr core
 ===========
 
 To install: please, visit http://mbeddr.com for instructions!
