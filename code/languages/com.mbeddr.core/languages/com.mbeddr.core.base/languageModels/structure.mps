@@ -1132,5 +1132,12 @@
     <property name="name" nameId="tpck.1169194664001" value="ITreeViewable" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="tree" />
   </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="176285146686936640" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tree" />
+    <property name="name" nameId="tpck.1169194664001" value="ITreeViewRoot" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="176285146686937016" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8998906896747633114" resolveInfo="ITreeViewable" />
+    </node>
+  </root>
 </model>
 

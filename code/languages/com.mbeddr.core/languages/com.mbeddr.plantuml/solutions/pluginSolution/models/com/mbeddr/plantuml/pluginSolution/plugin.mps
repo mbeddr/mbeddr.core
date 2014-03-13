@@ -12,9 +12,9 @@
   <import index="1t7x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" version="-1" />
   <import index="8q6x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.event(JDK/java.awt.event@java_stub)" version="-1" />
   <import index="dbrf" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" version="-1" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="22" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" />
   <import index="ekwn" modelUID="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" version="-1" />
-  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="11" />
+  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
   <import index="a8zf" modelUID="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#net.sourceforge.plantuml(com.mbeddr.plantuml.pluginSolution/net.sourceforge.plantuml@java_stub)" version="-1" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
   <import index="tu4w" modelUID="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.util(com.mbeddr.plantuml.pluginSolution/org.apache.batik.util@java_stub)" version="-1" />
@@ -38,6 +38,7 @@
   <import index="fxg8" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(java.io@java_stub)" version="-1" />
   <import index="82u" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.wm(MPS.IDEA/com.intellij.openapi.wm@java_stub)" version="-1" />
   <import index="5xh9" modelUID="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.actions(MPS.Platform/jetbrains.mps.ide.actions@java_stub)" version="-1" />
+  <import index="d244" modelUID="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tgbt" modelUID="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" version="1" implicit="yes" />
@@ -54,7 +55,7 @@
   <root type="tp4k.ToolDeclaration" typeId="tp4k.1203071677434" id="2253533512441990797" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SVGViewer" />
     <property name="position" nameId="tp4k.2498620720770664572" value="RIGHT" />
-    <property name="caption" nameId="tp4k.6547237850567462620" value="mbeddr Visualization" />
+    <property name="caption" nameId="tp4k.6547237850567462620" value="Visualization" />
     <node role="methodDeclaration" roleId="tp4k.6547237850567462848" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="1315009641672136518" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="load" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1315009641672136521" nodeInfo="in" />
@@ -1430,6 +1431,9 @@
         </node>
       </node>
     </node>
+    <node role="toolIcon" roleId="tp4k.6791676465872004185" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="5831200338848144758" nodeInfo="ng">
+      <property name="path" nameId="1oap.8974276187400029899" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.base/solutions/pluginSolution/icons/vis.png" />
+    </node>
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2253533512442025070" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MbeddrUserAgent" />
@@ -2069,6 +2073,9 @@
         </node>
       </node>
     </node>
+    <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="5831200338848152988" nodeInfo="ng">
+      <property name="path" nameId="1oap.8974276187400029899" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.base/solutions/pluginSolution/icons/vis.png" />
+    </node>
   </root>
   <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="1315009641672076209" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="VisualizeActionGroup" />
@@ -2082,7 +2089,8 @@
       <link role="point" roleId="tp4k.1204992316090" targetNodeId="tprs.1217598172089" resolveInfo="customTools" />
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="4276766474763251569" nodeInfo="ng">
-      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="ekwn.1755502566255660782" resolveInfo="EditorPopup" />
+      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="d244.5831200338848379901" resolveInfo="mbeddrPlatformEditorPopupGroup" />
+      <link role="point" roleId="tp4k.1204992316090" targetNodeId="d244.5831200338848379965" resolveInfo="mbeddrPlatformEditorPopupExtensions" />
     </node>
   </root>
   <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="1315009641672127213" nodeInfo="ng">
