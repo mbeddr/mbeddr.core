@@ -7,6 +7,7 @@
   <import index="gei" modelUID="r:5cdf3a47-0d4c-40a6-92a8-735c2d404db7(com.mbeddr.mpsutil.editor.querylist.demolang.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="gei.RootConcept" typeId="gei.6202678563380435581" id="1872840520877841796" nodeInfo="ng">
+    <property name="showExpressions" nameId="gei.6202678563380449077" value="true" />
     <node role="statements" roleId="gei.6202678563380518754" type="tpee.Statement" typeId="tpee.1068580123157" id="1872840520877841805" nodeInfo="nn" />
     <node role="statements" roleId="gei.6202678563380518754" type="tpee.Statement" typeId="tpee.1068580123157" id="1872840520877841797" nodeInfo="nn" />
     <node role="statements" roleId="gei.6202678563380518754" type="tpee.Statement" typeId="tpee.1068580123157" id="1872840520877841800" nodeInfo="nn" />
@@ -35,11 +36,11 @@
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="1872840520877987865" nodeInfo="in" />
           <node role="initializer" roleId="tpee.1068431790190" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="1872840520877988583" nodeInfo="nn">
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1872840520877988586" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="10" />
-            </node>
             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.VariableReference" typeId="tpee.1068498886296" id="1872840520877987916" nodeInfo="nn">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1872840520877986362" resolveInfo="a" />
+            </node>
+            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5820306262934100342" nodeInfo="nn">
+              <property name="value" nameId="tpee.1068580320021" value="1" />
             </node>
           </node>
         </node>
