@@ -19,6 +19,7 @@
     <dependency reexport="false">5454dbfd-2075-4de0-b85e-fa645eb6957e(com.mbeddr.core.lib.xml)</dependency>
     <dependency reexport="false">019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
+    <dependency reexport="false">cac2fef0-41a6-4fcd-923f-f893d536b2ab(jetbrains.mps.ide.mpsdevkit)</dependency>
     <dependency reexport="false">8d29d73f-ed99-4652-ae0a-083cdfe53c34(jetbrains.mps.ide.platform)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
   </dependencies>
