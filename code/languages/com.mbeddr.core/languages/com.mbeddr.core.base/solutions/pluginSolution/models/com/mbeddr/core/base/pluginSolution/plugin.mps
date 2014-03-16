@@ -15695,6 +15695,10 @@
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.GroupAnchor" typeId="tp4k.1203680534665" id="5831200338848379965" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="mbeddrPlatformEditorPopupExtensions" />
       </node>
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="3624303650270131659" nodeInfo="ng" />
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.GroupAnchor" typeId="tp4k.1203680534665" id="3624303650270131686" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="mbeddrPlatformEditorPopupAnalysisExtensions" />
+      </node>
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="5831200338848379969" nodeInfo="ng">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="1908346841499860224" resolveInfo="EditorPopup" />
@@ -16103,18 +16107,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </root>
-  <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="3624303650269422408" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="mbeddrPlatformEditorPopupAnalysisGroup" />
-    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="3624303650269422409" nodeInfo="ng">
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="3624303650269422410" nodeInfo="ng" />
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.GroupAnchor" typeId="tp4k.1203680534665" id="3624303650269422411" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="mbeddrPlatformEditorPopupAnalysisExtensions" />
-      </node>
-    </node>
-    <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3624303650269422412" nodeInfo="ng">
-      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="1908346841499860224" resolveInfo="EditorPopup" />
     </node>
   </root>
 </model>
