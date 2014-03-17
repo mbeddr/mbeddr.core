@@ -48,6 +48,10 @@
             <property name="flag" nameId="tpc2.1186414551515" value="true" />
           </node>
         </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="393429538060236868" nodeInfo="ng">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="gei.6202678563380518754" />
+          <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="393429538060236869" nodeInfo="nn" />
+        </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5820306262932808249" nodeInfo="nn" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="5820306262932808250" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
@@ -431,6 +435,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node role="emptyCellModel" roleId="bbp5.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="393429538060436762" nodeInfo="nn">
+          <property name="nullText" nameId="tpc2.1082639509531" value="&lt;no statements in other class&gt;" />
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="393429538060160874" nodeInfo="nn">
