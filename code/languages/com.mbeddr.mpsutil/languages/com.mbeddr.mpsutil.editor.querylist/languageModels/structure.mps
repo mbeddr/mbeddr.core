@@ -59,6 +59,11 @@
       <property name="role" nameId="tpce.1071599776563" value="insertNewNode" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="5820306262933110156" resolveInfo="Function_InsertNewNode" />
     </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="459067182340669610" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="deleteNode" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="5820306262934114343" resolveInfo="Function_DeleteElement" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1140524464360" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="cellLayout" />
@@ -122,6 +127,20 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5820306262933951366" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Paramter_insertBefore" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="insertBefore" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5820306262934114343" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Function_DeleteElement" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1137021947720" resolveInfo="ConceptFunction" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="459067182341460208" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Parameter_ChildNode" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="childNode" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="459067182341492618" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Parameter_NodeToDelete" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nodeToDelete" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
   </root>
 </model>
