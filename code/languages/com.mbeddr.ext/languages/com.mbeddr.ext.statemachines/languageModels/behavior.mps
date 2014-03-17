@@ -1045,17 +1045,17 @@
           <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7919846782124611509" nodeInfo="nn">
             <node role="creator" roleId="tpee.1145553007750" type="tpee.ArrayCreatorWithInitializer" typeId="tpee.1154542696413" id="7919846782124611535" nodeInfo="nn">
               <node role="componentType" roleId="tpee.1154542793668" type="tpee.StringType" typeId="tpee.1225271177708" id="7919846782124611514" nodeInfo="in" />
-              <node role="initValue" roleId="tpee.1154542803372" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7919846782124611537" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="statechart" />
-              </node>
               <node role="initValue" roleId="tpee.1154542803372" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6899320312454319744" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="statechart (short)" />
               </node>
-              <node role="initValue" roleId="tpee.1154542803372" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6899320312455481345" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="statechart (2D)" />
+              <node role="initValue" roleId="tpee.1154542803372" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7919846782124611537" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="statechart" />
               </node>
               <node role="initValue" roleId="tpee.1154542803372" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6899320312455481346" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="statechart (2D, short)" />
+              </node>
+              <node role="initValue" roleId="tpee.1154542803372" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6899320312455481345" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="statechart (2D)" />
               </node>
             </node>
           </node>
