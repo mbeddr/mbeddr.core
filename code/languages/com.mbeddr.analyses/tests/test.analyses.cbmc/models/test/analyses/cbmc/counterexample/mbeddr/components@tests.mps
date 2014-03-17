@@ -287,7 +287,7 @@
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="156369466848703325" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="sp.as.inner.b" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="0ll" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="156369466848703326" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845649014" resolveInfo="ComponentInstance" />
             </node>
