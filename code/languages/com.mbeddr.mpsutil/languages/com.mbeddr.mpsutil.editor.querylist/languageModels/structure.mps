@@ -44,10 +44,6 @@
       <property name="name" nameId="tpck.1169194664001" value="allowEmptyText" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6202678563381206102" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="reverse" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6202678563380433923" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="query" />
@@ -64,16 +60,16 @@
       <property name="role" nameId="tpce.1071599776563" value="deleteNode" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="5820306262934114343" resolveInfo="Function_DeleteElement" />
     </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="393429538058605400" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="getSubstituteInfo" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="393429538058152781" resolveInfo="Function_GetSubstituteInfo" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1140524464360" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="cellLayout" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1106270491082" resolveInfo="CellLayout" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1176897874615" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="nodeFactory" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1176897764478" resolveInfo="QueryFunction_NodeFactory" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1140524464359" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -141,6 +137,15 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="459067182341492618" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Parameter_NodeToDelete" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nodeToDelete" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="393429538058152781" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Function_GetSubstituteInfo" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1137021947720" resolveInfo="ConceptFunction" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="393429538058833026" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Parameter_SubstituteInfoFactory" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="factory" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
   </root>
 </model>
