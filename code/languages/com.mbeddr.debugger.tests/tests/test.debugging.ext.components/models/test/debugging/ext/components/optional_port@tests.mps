@@ -423,7 +423,11 @@
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="7599526456373283657" nodeInfo="ng">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="7599526456373283658" nodeInfo="ng">
+<<<<<<< HEAD
           <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="6795452657533279725" nodeInfo="ng">
+=======
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="1575640428659807538" nodeInfo="ng">
+>>>>>>> de08e4296a440ecb64c0cc59128f2b8041b7a463
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="7599526456373124149" resolveInfo="stmntAfter1stWhenConnected" />
           </node>
         </node>
