@@ -8,9 +8,6 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="gei.RootConcept" typeId="gei.6202678563380435581" id="1872840520877841796" nodeInfo="ng">
     <property name="showExpressions" nameId="gei.6202678563380449077" value="true" />
-    <node role="statements" roleId="gei.6202678563380518754" type="tpee.Statement" typeId="tpee.1068580123157" id="1872840520877841805" nodeInfo="nn" />
-    <node role="statements" roleId="gei.6202678563380518754" type="tpee.Statement" typeId="tpee.1068580123157" id="1872840520877841797" nodeInfo="nn" />
-    <node role="statements" roleId="gei.6202678563380518754" type="tpee.Statement" typeId="tpee.1068580123157" id="1872840520877841800" nodeInfo="nn" />
     <node role="statementList" roleId="gei.6202678563380435709" type="tpee.StatementList" typeId="tpee.1068580123136" id="1872840520877986343" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="1872840520877986359" nodeInfo="nn">
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="1872840520877986362" nodeInfo="nr">
@@ -56,6 +53,28 @@
           <node role="type" roleId="tpee.5680397130376446158" type="tpee.DoubleType" typeId="tpee.1070534513062" id="5820306262932853206" nodeInfo="in" />
           <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5820306262932853255" nodeInfo="nn">
             <property name="value" nameId="tpee.1068580320021" value="40" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="statementWrappers" roleId="gei.393429538060968390" type="gei.StatementWrapper" typeId="gei.393429538060968329" id="6349134796176268696" nodeInfo="ng">
+      <node role="statement" roleId="gei.393429538060968385" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6349134796176268691" nodeInfo="nn">
+        <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6349134796176268694" nodeInfo="nr">
+          <property name="name" nameId="tpck.1169194664001" value="a" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="6349134796176268690" nodeInfo="in" />
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6349134796176268737" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580320021" value="10" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="statementWrappers" roleId="gei.393429538060968390" type="gei.StatementWrapper" typeId="gei.393429538060968329" id="6349134796176268771" nodeInfo="ng">
+      <node role="statement" roleId="gei.393429538060968385" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6349134796176268792" nodeInfo="nn">
+        <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6349134796176268795" nodeInfo="nr">
+          <property name="name" nameId="tpck.1169194664001" value="b" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="6349134796176268790" nodeInfo="in" />
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6349134796176268829" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580320021" value="20" />
           </node>
         </node>
       </node>
