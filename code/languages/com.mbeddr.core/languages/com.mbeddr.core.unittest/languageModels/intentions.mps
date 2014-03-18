@@ -12,7 +12,7 @@
   <import index="srng" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" version="-1" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" />
-  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="12" />
+  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp3j" modelUID="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" version="8" implicit="yes" />
@@ -22,6 +22,7 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" implicit="yes" />
+  <import index="rmg4" modelUID="r:18211265-1331-48c8-8298-565ed01be497(com.mbeddr.core.unittest.behavior)" version="-1" implicit="yes" />
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="186853311768108747" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="addReportAnnotation" />
     <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="c4fa.2093108837558113914" resolveInfo="LocalVarRef" />
@@ -322,7 +323,7 @@
             <property name="name" nameId="tpck.1169194664001" value="all" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="7727566415687713884" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7727566415687713885" nodeInfo="in">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="yz9a.6275792049641586523" resolveInfo="TestCase" />
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="yz9a.6937839081833780722" resolveInfo="ITestContext" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7727566415687713886" nodeInfo="nn">
@@ -350,7 +351,7 @@
                   <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="7727566415687713898" nodeInfo="sn">
                     <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7727566415687713899" nodeInfo="nn">
                       <node role="expression" roleId="tpee.1068580123156" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="7727566415687713900" nodeInfo="nn">
-                        <link role="concept" roleId="tp25.1140138128738" targetNodeId="yz9a.6275792049641586523" resolveInfo="TestCase" />
+                        <link role="concept" roleId="tp25.1140138128738" targetNodeId="yz9a.6937839081833780722" resolveInfo="ITestContext" />
                         <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7727566415687713901" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7727566415687713902" resolveInfo="it" />
                         </node>
@@ -380,28 +381,14 @@
                   <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7727566415687714040" nodeInfo="nr">
                     <property name="name" nameId="tpck.1169194664001" value="ref" />
                     <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7727566415687714041" nodeInfo="in">
-                      <link role="concept" roleId="tp25.1138405853777" targetNodeId="yz9a.5686538669182340985" resolveInfo="TestCaseRef" />
+                      <link role="concept" roleId="tp25.1138405853777" targetNodeId="yz9a.3209727427932249622" resolveInfo="ICanBeExecutedAsTest" />
                     </node>
-                    <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7727566415687714043" nodeInfo="nn">
-                      <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="7727566415687714044" nodeInfo="nn">
-                        <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7727566415687714045" nodeInfo="in">
-                          <link role="concept" roleId="tp25.1138405853777" targetNodeId="yz9a.5686538669182340985" resolveInfo="TestCaseRef" />
-                        </node>
+                    <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="239987334348628022" nodeInfo="nn">
+                      <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="239987334348619186" nodeInfo="nn">
+                        <link role="variable" roleId="tp2q.1153944258490" targetNodeId="7727566415687713907" resolveInfo="tc" />
                       </node>
-                    </node>
-                  </node>
-                </node>
-                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7727566415687714047" nodeInfo="nn">
-                  <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="7727566415687714097" nodeInfo="nn">
-                    <node role="rValue" roleId="tpee.1068498886297" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="7727566415687714100" nodeInfo="nn">
-                      <link role="variable" roleId="tp2q.1153944258490" targetNodeId="7727566415687713907" resolveInfo="tc" />
-                    </node>
-                    <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7727566415687714069" nodeInfo="nn">
-                      <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6584628407655047471" nodeInfo="nn">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7727566415687714040" resolveInfo="ref" />
-                      </node>
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7727566415687714075" nodeInfo="nn">
-                        <link role="link" roleId="tp25.1138056516764" targetNodeId="yz9a.5686538669182340986" />
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="239987334348644354" nodeInfo="nn">
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="rmg4.239987334348639807" resolveInfo="createNewTestRefToThisTest" />
                       </node>
                     </node>
                   </node>
@@ -432,7 +419,7 @@
                       </node>
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="3209727427932249694" nodeInfo="ng">
-                      <link role="concept" roleId="hba4.17217465924316851" targetNodeId="yz9a.5686538669182340985" resolveInfo="TestCaseRef" />
+                      <link role="concept" roleId="hba4.17217465924316851" targetNodeId="yz9a.3209727427932249622" resolveInfo="ICanBeExecutedAsTest" />
                     </node>
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp2q.AnyOperation" typeId="tp2q.1235566554328" id="7727566415687713967" nodeInfo="nn">
@@ -447,8 +434,8 @@
                               <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7727566415687713973" nodeInfo="nn">
                                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7727566415687713970" resolveInfo="it" />
                               </node>
-                              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7727566415687714000" nodeInfo="nn">
-                                <link role="link" roleId="tp25.1138056516764" targetNodeId="yz9a.5686538669182340986" />
+                              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="239987334348616028" nodeInfo="nn">
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="rmg4.239987334348540140" resolveInfo="referencedTest" />
                               </node>
                             </node>
                           </node>
