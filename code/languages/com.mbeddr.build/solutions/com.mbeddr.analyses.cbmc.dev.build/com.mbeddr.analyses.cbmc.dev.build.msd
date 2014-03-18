@@ -8,7 +8,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">cfe2dde5-9e9a-4804-acb8-311b8adc09dc(com.mbeddr.analyses.base.dev.build)</dependency>
-    <dependency reexport="false">f7dff26d-d965-400d-a73f-e89bdc87c05b(com.mbeddr.analyses.yices.dev.build)</dependency>
     <dependency reexport="false">b22c9f3a-bcc2-4f68-901a-f574ebc81e23(com.mbeddr.cc.ple.dev.build)</dependency>
     <dependency reexport="false">069b04b3-7338-4781-80fa-9e8b854877d2(com.mbeddr.cc.req.dev.build)</dependency>
     <dependency reexport="false">7f0575ee-ce26-49b7-a897-0e0b348b06af(com.mbeddr.core.dev.build)</dependency>
