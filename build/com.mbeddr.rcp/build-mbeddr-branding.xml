@@ -20,7 +20,7 @@
         <dialogs-image url="/mbeddr-logo.png" />
         <package code="code" />
         <names product="mbeddr" fullname="mbeddr IDE" />
-        <welcome-screen caption-url="/mbeddr-logo.png" slogan-url="/null" logo-url="/null" />
+        <welcome-screen caption-url="/mbeddr-logo.png" slogan-url="/mbeddr-logo.png" logo-url="/mbeddr-logo.png" />
         <feedback release-url="http://itemis.de" />
       </component>
     </echoxml>
@@ -28,8 +28,8 @@
       <fileset file="${mbeddr.github.core.home}/rcp/icons/MPS_16.png" />
       <fileset file="${mbeddr.github.core.home}/rcp/icons/MPS_16.png" />
       <fileset file="${mbeddr.github.core.home}/rcp/icons/mbeddr-logo.png" />
-      <fileset file="${basedir}" />
-      <fileset file="${basedir}" />
+      <fileset file="${mbeddr.github.core.home}/rcp/icons/mbeddr-logo.png" />
+      <fileset file="${mbeddr.github.core.home}/rcp/icons/mbeddr-logo.png" />
       <fileset file="${mbeddr.github.core.home}/rcp/icons/splash.png" />
       <fileset file="${mbeddr.github.core.home}/rcp/icons/mbeddr-logo.png" />
       <fileset file="${mbeddr.github.core.home}/rcp/icons/mbeddr-logo.png" />

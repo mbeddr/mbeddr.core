@@ -125,8 +125,6 @@
           </node>
         </node>
       </node>
-      <node role="welcomeSlogan" roleId="kdzh.6108265972537335222" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6168924288978682809" nodeInfo="ng" />
-      <node role="welcomeLogo" roleId="kdzh.772379520210716142" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6168924288978682811" nodeInfo="ng" />
       <node role="dialogImage" roleId="kdzh.8108467228800445684" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5590523698994462518" nodeInfo="ng">
         <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462521" nodeInfo="nn">
@@ -162,6 +160,30 @@
       <node role="feedbackUrl" roleId="kdzh.8877724874822185910" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="4608439585964924876" nodeInfo="ng">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="4608439585964924875" nodeInfo="ng">
           <property name="text" nameId="3ior.4903714810883755350" value="http://itemis.de" />
+        </node>
+      </node>
+      <node role="welcomeSlogan" roleId="kdzh.6108265972537335222" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3808399212034418964" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418965" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418966" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="icons" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418967" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="mbeddr-logo.png" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="welcomeLogo" roleId="kdzh.772379520210716142" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3808399212034418984" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418985" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418986" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="icons" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418987" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="mbeddr-logo.png" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
