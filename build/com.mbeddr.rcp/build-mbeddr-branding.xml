@@ -6,8 +6,7 @@
   <property name="mbeddr.github.core.home" location="${basedir}/../.." />
   <property name="platformBuild" value="133" />
   <property name="applicationBuild" value="001" />
-  <property name="buildPrefix" value="${applicationBuild}." />
-  <property name="buildNumber" value="${buildPrefix}${applicationBuild}" />
+  <property name="buildNumber" value="${platformBuild}.${applicationBuild}" />
   <property name="buildData" value="20140318" />
   <property name="platform.artifacts" location="" />
   
@@ -40,7 +39,7 @@
       <fileset file="${mbeddr.github.core.home}/rcp/icons/mbeddr-logo.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
     </jar>
-    <echo file="${build.layout}/build.properties">com.mbeddr.rcp.branding.platformBuild=${platformBuild}${line.separator}com.mbeddr.rcp.branding.applicationBuild=${applicationBuild}${line.separator}com.mbeddr.rcp.branding.buildPrefix=${buildPrefix}${line.separator}com.mbeddr.rcp.branding.buildNumber=${buildNumber}${line.separator}com.mbeddr.rcp.branding.buildData=${buildData}</echo>
+    <echo file="${build.layout}/build.properties">com.mbeddr.rcp.branding.platformBuild=${platformBuild}${line.separator}com.mbeddr.rcp.branding.applicationBuild=${applicationBuild}${line.separator}com.mbeddr.rcp.branding.buildNumber=${buildNumber}${line.separator}com.mbeddr.rcp.branding.buildData=${buildData}</echo>
   </target>
   
   <target name="buildDependents" />
