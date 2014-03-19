@@ -5,15 +5,10 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="ise1" modelUID="r:d3b473f0-41f2-48e5-b869-60cf216c8be3(com.mbeddr.mpsutil.workflow.rt.workflow)" version="-1" />
   <import index="fhjb" modelUID="r:7701324e-4f9a-4f68-b5bc-700bc9f518aa(com.mbeddr.mpsutil.workflow.pluginSolution.plugin)" version="-1" />
-  <import index="lnpm" modelUID="f:java_stub#dcacdf27-f972-4e7a-98ee-5c39c2a3e110#org.jivesoftware.smack.provider(com.mbeddr.mpsutil.workflow.rt/org.jivesoftware.smack.provider@java_stub)" version="-1" />
-  <import index="khzl" modelUID="f:java_stub#dcacdf27-f972-4e7a-98ee-5c39c2a3e110#org.jivesoftware.smack.filter(com.mbeddr.mpsutil.workflow.rt/org.jivesoftware.smack.filter@java_stub)" version="-1" />
   <import index="zn91" modelUID="f:java_stub#dcacdf27-f972-4e7a-98ee-5c39c2a3e110#org.jivesoftware.smack(com.mbeddr.mpsutil.workflow.rt/org.jivesoftware.smack@java_stub)" version="-1" />
   <import index="gfmp" modelUID="f:java_stub#dcacdf27-f972-4e7a-98ee-5c39c2a3e110#org.jivesoftware.smack.packet(com.mbeddr.mpsutil.workflow.rt/org.jivesoftware.smack.packet@java_stub)" version="-1" />
-  <import index="neyv" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#com.google.common.collect(MPS.Core/com.google.common.collect@java_stub)" version="-1" />
   <import index="rl4q" modelUID="r:72bc3a97-6a66-47f6-8cf2-f88ab2ada651(com.mbeddr.mpsutil.common.model)" version="-1" />
-  <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="o01a" modelUID="r:a07e6053-1d7b-4a9a-bd7c-f92c92c781cb(com.mbeddr.mpsutil.workflow.rt.langbridge)" version="-1" />
-  <import index="sbop" modelUID="r:027498a5-a4a4-4ae9-8312-3afe1332269b(com.mbeddr.mpsutil.workflow.rt.comm)" version="-1" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="o27i" modelUID="r:a2819fc7-9232-4ae3-92f8-e72149f5442b(com.mbeddr.mpsutil.workflow.structure)" version="-1" />
   <import index="mdji" modelUID="r:e3a6925c-4d60-47da-9387-1d44b04999cc(com.mbeddr.mpsutil.workflow.rt.lock)" version="-1" />

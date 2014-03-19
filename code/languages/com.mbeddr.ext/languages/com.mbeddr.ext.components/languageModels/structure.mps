@@ -307,6 +307,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4390760819952509212" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4390760819952509116" resolveInfo="ITriggeredByOperation" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7683547462058381676" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090279176" resolveInfo="ISteppableContext" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845641673" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
@@ -565,6 +568,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9141254329931613676" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.8793291511880188110" resolveInfo="IStopReshuffling" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3001129236135654964" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090251326" resolveInfo="IStepIntoable" />
+    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8076351743317491932" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.8076351743304603872" resolveInfo="IReference" />
     </node>
@@ -596,9 +602,6 @@
       <link role="specializedLink" roleId="tpce.1071599698500" targetNodeId="mj1l.7254843406768839760" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="8105003328815039001" resolveInfo="PortAdapterRefExpr" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4468327413562698642" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090251326" resolveInfo="IStepIntoable" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="466603768608442377" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
@@ -611,9 +614,6 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="8105003328815208362" resolveInfo="PortRefExpr" />
       <link role="specializedLink" roleId="tpce.1071599698500" targetNodeId="mj1l.7254843406768839760" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3298295153090251335" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090251326" resolveInfo="IStepIntoable" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="591155063063570513" nodeInfo="ig">
@@ -1199,9 +1199,6 @@
     <property name="name" nameId="tpck.1169194664001" value="InterfaceTypeOpCallExpr" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8105003328815071749" resolveInfo="InterfaceOperationCallExpr" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4075471389393921685" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090251326" resolveInfo="IStepIntoable" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1539255704409294347" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.ports" />
@@ -1540,8 +1537,8 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4390760819952509116" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.debug" />
     <property name="name" nameId="tpck.1169194664001" value="ITriggeredByOperation" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4390760819952510528" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090279176" resolveInfo="ISteppableContext" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7683547462058353581" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.1389340506540662105" resolveInfo="ISuspendableNode" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8594519220734380168" nodeInfo="ig">

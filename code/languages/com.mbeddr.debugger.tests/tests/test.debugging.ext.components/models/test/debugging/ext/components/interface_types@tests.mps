@@ -16,7 +16,7 @@
   <language namespace="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606(com.mbeddr.ext.components.gen_nomw)" />
   <language namespace="97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="15" implicit="yes" />
+  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="38" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
@@ -209,7 +209,7 @@
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="558204211618013057" resolveInfo="onInit" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="558204211618013031" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="init" />
+        <property name="name" nameId="tpck.1169194664001" value="onInit_init2" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="558204211618013032" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1139274356257158984" nodeInfo="ng">
             <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="1139274356257158988" nodeInfo="ng">
@@ -222,13 +222,13 @@
             </node>
           </node>
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="558204211618013033" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="558204211618013062" nodeInfo="ng">
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="558204211618013060" resolveInfo="onInit" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="558204211618013058" resolveInfo="init2" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3001129236135644606" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="558204211618013034" nodeInfo="ng" />
@@ -300,7 +300,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="558204211618014034" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="558204211618014035" nodeInfo="ng">
-            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="558204211618013031" resolveInfo="init" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="558204211618013031" resolveInfo="onInit_init2" />
             <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="558204211618013043" resolveInfo="instances" />
             <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="558204211618013046" resolveInfo="global" />
           </node>
