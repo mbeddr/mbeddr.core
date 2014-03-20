@@ -13,6 +13,7 @@
     <stubModelEntry path="${module}/lib/commons-primitives-1.0.jar" />
     <stubModelEntry path="${module}/lib/commons-math3-3.2.jar" />
     <stubModelEntry path="${module}/lib/commons-lang3-3.2.1.jar" />
+    <stubModelEntry path="${module}/lib/commons-codec-1.9.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
