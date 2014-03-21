@@ -2152,6 +2152,9 @@
               <link role="outsidePort" roleId="g88q.7780999115924218311" targetNodeId="1136269059645977400" resolveInfo="iFace" />
               <link role="internalInstance" roleId="g88q.7780999115924272957" targetNodeId="1136269059645977524" resolveInfo="ac1" />
               <link role="internalPort" roleId="g88q.7780999115924272958" targetNodeId="1136269059645977490" resolveInfo="iFace" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="8473757169831413434" nodeInfo="ng">
+                <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="8473757169831413435" nodeInfo="ng" />
+              </node>
             </node>
             <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="1136269059645977554" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="ac2" />
@@ -2161,6 +2164,9 @@
               <link role="outsidePort" roleId="g88q.7780999115924218311" targetNodeId="1136269059645977400" resolveInfo="iFace" />
               <link role="internalPort" roleId="g88q.7780999115924272958" targetNodeId="1136269059645977490" resolveInfo="iFace" />
               <link role="internalInstance" roleId="g88q.7780999115924272957" targetNodeId="1136269059645977554" resolveInfo="ac2" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="8473757169831414189" nodeInfo="ng">
+                <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="8473757169831414190" nodeInfo="ng" />
+              </node>
             </node>
           </node>
         </node>
