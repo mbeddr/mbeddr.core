@@ -6,6 +6,7 @@
   <import index="eeq1" modelUID="r:ffdd60a4-b701-4fa0-8428-8164ac782869(com.mbeddr.mpsutil.spreferences.demolang.structure)" version="-1" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="93055092064794554" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="RootConcept" />
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
@@ -15,6 +16,11 @@
       <property name="role" nameId="tpce.1071599776563" value="preferences" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="93055092064794852" resolveInfo="Preference" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7078749075796352642" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="statementList" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068580123136" resolveInfo="StatementList" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="93055092064794852" nodeInfo="ig">

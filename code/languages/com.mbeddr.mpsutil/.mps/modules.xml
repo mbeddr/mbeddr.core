@@ -22,6 +22,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.runtime/com.mbeddr.mpsutil.editor.querylist.runtime.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox.msd" folder="querylist" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.spreferences.demolang2/com.mbeddr.mpsutil.spreferences.demolang2.msd" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.spreferences.demoplugin/com.mbeddr.mpsutil.spreferences.demoplugin.msd" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.spreferences.runtime/com.mbeddr.mpsutil.spreferences.runtime.msd" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.test/com.mbeddr.mpsutil.test.msd" folder="" />
