@@ -1892,6 +1892,14 @@
               <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="4164314043639158314" resolveInfo="MyEnum" />
             </node>
           </node>
+          <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="134187273198260804" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="e1" />
+            <property name="initField" nameId="v7ag.785275130114861516" value="true" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="134187273198302453" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4164314043639142060" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="empty_1390382398347_5" />
@@ -1908,6 +1916,13 @@
               <link role="field" roleId="v7ag.785275130114861598" targetNodeId="4164314043639158435" resolveInfo="e" />
               <node role="value" roleId="v7ag.785275130114861599" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="4164314043639159169" nodeInfo="ng">
                 <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="4164314043639158315" resolveInfo="a" />
+              </node>
+            </node>
+            <node role="initializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="134187273198302523" nodeInfo="ng">
+              <link role="field" roleId="v7ag.785275130114861598" targetNodeId="134187273198260804" resolveInfo="e1" />
+              <node role="value" roleId="v7ag.785275130114861599" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="134187273198302577" nodeInfo="ng">
+                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="10" />
               </node>
             </node>
           </node>
