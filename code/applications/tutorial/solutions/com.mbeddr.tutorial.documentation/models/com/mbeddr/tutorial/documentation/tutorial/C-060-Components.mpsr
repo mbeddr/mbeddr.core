@@ -1642,10 +1642,296 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4098353292122311572" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="visual" />
         <property name="text" nameId="2c95.3350625596580064225" value="Visualing Components" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2112775524680026727" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2112775524680026728" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2112775524680026729" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr's diagramming capabilities are put to use in two ways in the context of\ncomponents: component/interface dependencies and instance diagrams.\n\n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="2112775524680040882" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2112775524680040883" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2112775524680040884" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="* Component/Interface Dependencies" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2112775524680040881" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Select a component or an interface\nand execute the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="2112775524680040892" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2112775524680040893" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2112775524680040894" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Visualize" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2112775524680040891" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" action from the context menu (or press\n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2112775524680040979" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2112775524680040980" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2112775524680040981" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Ctrl-Alt-V" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2112775524680040978" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="7979854108175355997" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="2112775524680345223" resolveInfo="vcomponents" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175355996" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows the result.\n" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="2112775524680345223" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="vcomponents" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="2112775524680345257" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/v_components.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2112775524680345227" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2112775524680345228" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2112775524680345229" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The interface/components dependency diagram shows all components\nvisible from the current module, the interfaces, and the provided (solid\nlines) and required ports (dashed lines)." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="2112775524680345231" nodeInfo="ng" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2112775524680339600" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2112775524680339601" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2112775524680350863" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="2112775524680350860" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2112775524680350861" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2112775524680350862" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="* Instance/Wiring Diagrams" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2112775524680350859" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" You can also select an instance configuration\nand visualize it. You'll get a diagram that shows component instances and their\nconnections (" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="7979854108175355988" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="2112775524680350931" resolveInfo="vinstances" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175355987" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=")." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="2112775524680350931" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="vinstances" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="2112775524680350976" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/v_instances.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2112775524680350935" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2112775524680350936" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2112775524680350937" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="This diagram shows component instances and their connectors. The label\nin the instance boxes contain the instance name and the component name (after\nthe colon). The edges represent connectors. The label shows the required port\n(before the arrow, the provided port name (after the arrow), and the name of\nthe interface used by the two ports (on the new line)." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="2112775524680350939" nodeInfo="ng" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2112775524680350900" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1394868521113_6" />
+        </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4098353292122312056" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="contract" />
         <property name="text" nameId="2c95.3350625596580064225" value="Contract Verification" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108175400074" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108175400075" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175400076" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr comes with support for verifying contracts of components statically. This\nverification is based on C-level dataflow analysis with CBMC. Let's set up our\ntutorial to use verification.\n\nLet us verify the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108175409102" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108175409103" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175409104" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="InMemoryStorage" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175409101" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" component. To do so, \nfirst add the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108175414711" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108175414712" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175414713" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.analyses.componentcontracts" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175414710" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to the model\nthat contains the components code. Then use an intention to\nadd the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108175420324" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108175420325" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175420326" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="verifiable" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175420323" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" flag to the component. To make the verification work,\nyou will have to provide some more information in the inspector:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="7979854108175437175" nodeInfo="ng">
+          <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
+          <property name="text" nameId="2c95.8730648445434044906" value="  entry point: verification   &#10;  loops unwinding: 2         &#10;  unwinding assertions: false" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108175448394" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108175448395" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175448396" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us look at the three parameters you have to set here: The first one\ndetermines from where the program is \&quot;executed\&quot;. The entry point should be\nselected to be \&quot;close\&quot; to the to-be-verified component (if you verify the whole\nsystem, then, at least for big systems, this will take long). In our case we use\na special test case " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108175448418" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108175448419" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175448420" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="verification" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175448417" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", which looks as follows:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="7979854108175966379" nodeInfo="ng">
+          <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
+          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.1634970928501130997" resolveInfo="verificationInstances" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="7979854108175966431" nodeInfo="ng">
+          <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
+          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.1634970928501131025" resolveInfo="verification" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108175972085" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108175972086" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175972087" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The second line in the configuration determines how often a loop is executed.\nYou should start with low numbers to keep verification times low. Finally, the\nthird parameter determines if the verification should fail in case it cannot be\nproven that the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108175972118" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108175972119" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175972120" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="unwinding loops" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175972117" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" number is sufficient.\n\nYou can now run the verification by selecting the component and executing the\n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108175977727" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108175977728" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175977729" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Verify Component" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175977726" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" action. After a few seconds, you'll get a result table\nthat reports everything as ok (see " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="7979854108176034333" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="7979854108175988977" resolveInfo="verificationOK" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176034332" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="): every precondition of\nevery operation in every provided port has been proven to be correct." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7979854108175988977" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="verificationOK" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7979854108175989029" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/verificationOK.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7979854108175988981" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108175988982" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175988983" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The table that shows the verification results; everything is ok in\nthis case." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="7979854108175989031" nodeInfo="ng">
+            <property name="percentage" nameId="2c95.8624890525767637977" value="70" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108175994678" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108175994679" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108175994680" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us introduce an error. The following version of the\n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176000328" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176000329" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176000330" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="trackpointStore_store" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176000327" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" runnable does not actually store the trackpoint.\nThis violates the postcondition, which claims that " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176005937" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176005938" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176005939" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="storedTP != null" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176005936" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Note\nthat have to have the return: for the analysis to work, all paths through the\nbody of a function (or a runnable) must end with a return (you'll get an in-IDE\nerror if you don't do this). " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="7979854108176017204" nodeInfo="ng">
+          <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
+          <property name="text" nameId="2c95.8730648445434044906" value="void trackpointStore_store(Trackpoint* tp) &lt;- op store.store { &#10;  return; &#10;} " />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176022916" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176022917" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176022918" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us rerun the verification. Now we get an error, as shown in\n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="7979854108176034324" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="7979854108176023036" resolveInfo="verificationNotOK" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176034323" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Note how the lower part of the table now shows the\nexecution trace that led to the contract violation. You should check the\n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176028715" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176028716" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176028717" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Call/Return" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176028714" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" checkbox to filter the trace to only show the\ncall/return-granularity, and not every statement. You can also double-click onto\nthe trace elements to select the particular program element in the code." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7979854108176023036" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="verificationNotOK" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7979854108176023109" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/verificationNotOK.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7979854108176023040" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176023041" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176023042" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The table that shows the verification results; now we have an error,\nand the trace in the bottom half shows an example execution that led to the\nerror." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="7979854108176028711" nodeInfo="ng">
+            <property name="percentage" nameId="2c95.8624890525767637977" value="70" />
+          </node>
+        </node>
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4199862776468633022" nodeInfo="ng">
