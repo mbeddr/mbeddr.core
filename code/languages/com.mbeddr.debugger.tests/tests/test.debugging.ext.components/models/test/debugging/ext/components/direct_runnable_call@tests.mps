@@ -86,6 +86,7 @@
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="5710167937130238625" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="1stCalledRunnable" />
         </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="v7ag.DirectRunnableCallable" typeId="v7ag.8473757169836531451" id="8473757169833560568" nodeInfo="ng" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8230733038425038014" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="getStuff" />
@@ -117,6 +118,7 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="v7ag.DirectRunnableCallable" typeId="v7ag.8473757169836531451" id="8473757169833560565" nodeInfo="ng" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8230733038425038006" nodeInfo="ng">
