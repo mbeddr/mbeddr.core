@@ -1248,6 +1248,7 @@
             </node>
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="1252295221377549539" nodeInfo="ng" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="v7ag.DirectRunnableCallable" typeId="v7ag.8473757169836531451" id="3264731151658169965" nodeInfo="ng" />
         </node>
         <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4957503999940715097" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="init" />
