@@ -131,12 +131,12 @@
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7048485364474213374" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="doSth" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7048485364474213375" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7048485364474213409" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="7048485364474213445" nodeInfo="ng">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7048485364474213408" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="9101132143316010409" nodeInfo="ng">
+            <node role="expression" roleId="x27k.8967919205527146150" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="9101132143316011577" nodeInfo="ng">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="9101132143316010815" nodeInfo="ng">
                 <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7048485364466793639" resolveInfo="globalInts" />
               </node>
-              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7048485364474213925" nodeInfo="ng">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9101132143316012447" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="0" />
               </node>
