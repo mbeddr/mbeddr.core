@@ -167,7 +167,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5882395403881875736" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="su" />
     <property name="name" nameId="tpck.1169194664001" value="Member" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="9101132143320200657" resolveInfo="SUContent" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5882395403881875738" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
     </node>
@@ -258,7 +258,7 @@
     <property name="name" nameId="tpck.1169194664001" value="SUDeclaration" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="su" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="9101132143320200657" resolveInfo="SUContent" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7099329415459817975" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
     </node>
@@ -272,7 +272,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="members" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5882395403881875736" resolveInfo="Member" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="9101132143320200657" resolveInfo="SUContent" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7099329415460395995" nodeInfo="ig">
@@ -437,6 +437,21 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="5882395403881875736" resolveInfo="Member" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9101132143319158312" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="su" />
+    <property name="name" nameId="tpck.1169194664001" value="PragmaSUContent" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#pragma" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="9101132143320200657" resolveInfo="SUContent" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="9101132143319197064" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="text" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9101132143320200657" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="su" />
+    <property name="name" nameId="tpck.1169194664001" value="SUContent" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
   </root>
 </model>
 
