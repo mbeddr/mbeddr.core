@@ -253,6 +253,9 @@
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="1201580182936438736" nodeInfo="ngu" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="775367619499638791" nodeInfo="ng">
+      <property name="text" nameId="hba4.6451706574539345425" value="Builder for robustness results." />
+    </node>
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7727902157492226605" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="RobustnessAnalyzer" />
