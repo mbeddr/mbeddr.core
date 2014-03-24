@@ -17,7 +17,7 @@
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="22" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
@@ -410,6 +410,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5512262613064826754" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="emitCurrentSpeed" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5512262613064826755" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5512262613064826756" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="time" />
@@ -813,10 +814,25 @@
       <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="false" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="5512262613064826873" resolveInfo="interruptHandler" />
     </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.RobustnessCBMCAnalysis" typeId="q5q6.9047848667681355291" id="5798154883308364179" nodeInfo="ng">
+      <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="-1" />
+      <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
+      <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="false" />
+      <property name="timeoutForSingleAnalysis" nameId="q5q6.1340502417502745346" value="60" />
+      <property name="check_div_by_zero" nameId="q5q6.9047848667681374187" value="true" />
+      <property name="check_pointer" nameId="q5q6.9047848667681376986" value="true" />
+      <property name="check_signed_overflow" nameId="q5q6.9047848667681377015" value="true" />
+      <property name="check_unsigned_overflow" nameId="q5q6.9047848667681377016" value="true" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="5512262613064826873" resolveInfo="interruptHandler" />
+    </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.ComponentsCBMCAnalysis" typeId="q5q6.6472990431939799912" id="5512262613064826868" nodeInfo="ng">
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="200" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="60" />
+      <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
       <link role="analyzedComponent" roleId="q5q6.6472990431939799913" targetNodeId="5512262613064826645" resolveInfo="PlauzibilizedSpeedComputer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="5512262613064826754" resolveInfo="emitCurrentSpeed" />
     </node>
