@@ -21,8 +21,10 @@
     <dependency reexport="false">05bb02f1-9d98-4854-9173-66e072421464(mps-multiline.build)</dependency>
   </dependencies>
   <usedLanguages>
+    <usedLanguage>692e0a46-0d23-4c8a-8ce0-ea4c2266672a(com.mbeddr.mpsutil.buildutil)</usedLanguage>
     <usedLanguage>798100da-4f0a-421a-b991-71f8c50ce5d2(jetbrains.mps.build)</usedLanguage>
     <usedLanguage>0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)</usedLanguage>
+    <usedLanguage>3600cb0a-44dd-4a5b-9968-22924406419e(jetbrains.mps.build.mps.tests)</usedLanguage>
   </usedLanguages>
 </solution>
 

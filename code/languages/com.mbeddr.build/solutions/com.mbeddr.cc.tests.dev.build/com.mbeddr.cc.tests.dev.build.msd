@@ -13,6 +13,7 @@
     <dependency reexport="false">16f4da20-e2ec-436c-9423-ccaadb6e9c38(com.mbeddr.debugger.dev.build)</dependency>
     <dependency reexport="false">09682559-86e1-4aeb-96a1-833a77c65c70(com.mbeddr.doc.dev.build)</dependency>
     <dependency reexport="false">8ea70440-eabe-4c88-95c7-cb0f5588827d(com.mbeddr.ext.components.dev.build)</dependency>
+    <dependency reexport="false">06f4ccb3-313d-4d48-9667-87a8fb963fb2(com.mbeddr.ext.tests.build)</dependency>
     <dependency reexport="false">dcd3e3f0-fb75-4b63-83e0-7a84aeddbb20(com.mbeddr.mpsutil.dev.build)</dependency>
     <dependency reexport="false">d9577847-5af6-4401-b634-6305196f4f02(com.mbeddr.platform.dev.build)</dependency>
     <dependency reexport="false">ba19fd84-07a8-4c0c-b27a-83b037421bea(com.mbeddr.spawner.dev.build)</dependency>
@@ -22,6 +23,7 @@
     <dependency reexport="false">05bb02f1-9d98-4854-9173-66e072421464(mps-multiline.build)</dependency>
   </dependencies>
   <usedLanguages>
+    <usedLanguage>692e0a46-0d23-4c8a-8ce0-ea4c2266672a(com.mbeddr.mpsutil.buildutil)</usedLanguage>
     <usedLanguage>798100da-4f0a-421a-b991-71f8c50ce5d2(jetbrains.mps.build)</usedLanguage>
     <usedLanguage>0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)</usedLanguage>
     <usedLanguage>3600cb0a-44dd-4a5b-9968-22924406419e(jetbrains.mps.build.mps.tests)</usedLanguage>
