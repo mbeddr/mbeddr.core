@@ -35,5 +35,23 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090251326" resolveInfo="IStepIntoable" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="572633089222371456" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="DirectFieldAccess" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="§" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="direct field access" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="572633089222373887" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="field" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.5308710777891512019" resolveInfo="Field" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="572633089222373874" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="yz9a.3387987015204930488" resolveInfo="IRestrictToTests" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="572633089222373882" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="v7ag.1482737808881210672" resolveInfo="IReferencesInstance" />
+    </node>
+  </root>
 </model>
 

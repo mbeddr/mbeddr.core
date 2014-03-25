@@ -1443,6 +1443,7 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="8473757169833799792" nodeInfo="ng" />
         <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1731059994647866545" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="processor_process" />
           <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1731059994647866546" nodeInfo="ng">
@@ -1997,6 +1998,14 @@
           <property name="name" nameId="tpck.1169194664001" value="store" />
           <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="1731059994647814153" resolveInfo="InMemoryStorage" />
         </node>
+        <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="8473757169834022639" nodeInfo="ng" />
+        <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="8473757169834023128" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="verificationInterpolator" />
+          <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="8473757169834023129" nodeInfo="ng">
+            <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="1634970928501131003" resolveInfo="interpol" />
+            <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="1731059994647866539" resolveInfo="processor" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="x27k.6512473996287153139" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1634970928501131023" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_1361191907033_4" />
@@ -2080,25 +2089,27 @@
               </node>
             </node>
           </node>
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1634970928501131069" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="1634970928501131070" nodeInfo="ng">
-              <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="1634970928501130997" resolveInfo="verificationInstances" />
-              <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="1634970928501131003" resolveInfo="interpol" />
-              <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="1731059994647866545" resolveInfo="processor_process" />
-              <node role="actuals" roleId="v0r9.8230733038424928677" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1634970928501131071" nodeInfo="ng">
-                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1634970928501131085" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8473757169834023341" nodeInfo="ng">
+            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="8473757169834023427" nodeInfo="ng">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="1731059994647588217" resolveInfo="process" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="8473757169834023340" nodeInfo="ng">
+                <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="8473757169834023128" resolveInfo="verificationInterpolator" />
+              </node>
+              <node role="actuals" roleId="v7ag.8105003328815091213" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="8473757169834023462" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8473757169834023520" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1634970928501131037" resolveInfo="p1" />
                 </node>
               </node>
             </node>
           </node>
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1634970928501131099" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="1634970928501131100" nodeInfo="ng">
-              <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="1634970928501130997" resolveInfo="verificationInstances" />
-              <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="1634970928501131003" resolveInfo="interpol" />
-              <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="1731059994647866545" resolveInfo="processor_process" />
-              <node role="actuals" roleId="v0r9.8230733038424928677" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1634970928501131101" nodeInfo="ng">
-                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1634970928501131150" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8473757169834066942" nodeInfo="ng">
+            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="8473757169834066943" nodeInfo="ng">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="1731059994647588217" resolveInfo="process" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="8473757169834066944" nodeInfo="ng">
+                <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="8473757169834023128" resolveInfo="verificationInterpolator" />
+              </node>
+              <node role="actuals" roleId="v7ag.8105003328815091213" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="8473757169834066945" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8473757169834067213" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1634970928501131050" resolveInfo="p2" />
                 </node>
               </node>
@@ -8409,6 +8420,7 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="v7ag.DirectRunnableCallable" typeId="v7ag.8473757169836531451" id="8473757169833560562" nodeInfo="ng" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6700886800242040151" nodeInfo="ng">

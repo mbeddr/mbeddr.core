@@ -784,7 +784,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="857825425327997988" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="RingBufferType" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ringbuffer" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="x27k.5936743812040996206" resolveInfo="TypeWithDeclaration" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3601652329323379598" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="ringbuffer" />
@@ -1147,7 +1147,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="291293396405106761" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="StackType" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="stack" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="x27k.5936743812040996206" resolveInfo="TypeWithDeclaration" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="291293396405106762" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="stack" />
