@@ -102,5 +102,8 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6573709714619075947" resolveInfo="WorkflowParticipant" />
     </node>
   </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6655271458286598720" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="ISemanticVersionable" />
+  </root>
 </model>
 
