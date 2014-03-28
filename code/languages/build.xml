@@ -187,14 +187,14 @@
   
   <target name="build-online" >
     <antcall target="install-plugins" />
-	<antcall target="clean" />
     <antcall target="build-allScripts" />
+	<antcall target="clean" />
     <antcall target="build-languages" />		
   </target>
   
   <target name="build-offline" >
-    <antcall target="clean" />
     <antcall target="build-allScripts" />
+    <antcall target="clean" />
     <antcall target="build-languages" />		
   </target>
     	    	    	     	  
