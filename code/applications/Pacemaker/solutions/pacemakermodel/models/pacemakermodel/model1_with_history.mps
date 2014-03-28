@@ -245,6 +245,7 @@
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="10000" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
       <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="true" />
+      <property name="showUnwindingDepthInfo" nameId="q5q6.1015192564308444976" value="true" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="172131536229024106" resolveInfo="DDD_Verification" />
     </node>
     <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="172131536229023630" nodeInfo="ng">
