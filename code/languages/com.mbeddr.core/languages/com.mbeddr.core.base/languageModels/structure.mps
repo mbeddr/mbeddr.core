@@ -2,6 +2,7 @@
 <model modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
+  <language namespace="79685937-8b0a-4e7d-8f8c-0888f1581774(com.mbeddr.mpsutil.nodeviewer)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -11,6 +12,7 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
+  <import index="f19x" modelUID="r:d02579d5-8c48-4c03-9742-38fb8f18f018(com.mbeddr.mpsutil.nodeviewer.structure)" version="-1" implicit="yes" />
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7024921229555594291" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IIdentifierNamedConcept" />
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292" nodeInfo="ig">
@@ -857,6 +859,9 @@
     <property name="name" nameId="tpck.1169194664001" value="AssessmentResult" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8598172824483159001" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="f19x.1165977097524835372" resolveInfo="IInfoNodeProvider" />
+    </node>
   </root>
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="8389796016067541245" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment" />
