@@ -1817,8 +1817,6 @@
   <root type="tpd4.OverloadedOpRulesContainer" typeId="tpd4.1236165709895" id="8399455261460730076" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="binaryLogicalOperation" />
     <node role="rule" roleId="tpd4.1236165725858" type="tpd4.OverloadedOperatorTypeRule" typeId="tpd4.1236083041311" id="8399455261460730077" nodeInfo="ng">
-      <property name="leftIsExact" nameId="tpd4.1236771579180" value="true" />
-      <property name="rightIsExact" nameId="tpd4.1236771585835" value="true" />
       <node role="operationConcept" roleId="tpd4.8124453027370845341" type="tp25.ConceptReference" typeId="tp25.1154546950173" id="8399455261460730133" nodeInfo="ng">
         <link role="concept" roleId="tp25.1154546997487" targetNodeId="mj1l.8399455261460717638" resolveInfo="BinaryLogicalExpression" />
       </node>
