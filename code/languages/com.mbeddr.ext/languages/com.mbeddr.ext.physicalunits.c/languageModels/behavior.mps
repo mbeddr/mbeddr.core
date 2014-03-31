@@ -2123,7 +2123,7 @@
               <node role="elsifClauses" roleId="tpee.1206060520071" type="tpee.ElsifClause" typeId="tpee.1206060495898" id="4389341767734114504" nodeInfo="ng">
                 <node role="condition" roleId="tpee.1206060619838" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="4389341767734126291" nodeInfo="nn">
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.CharConstant" typeId="tpee.1200397529627" id="4389341767734145858" nodeInfo="nn">
-                    <property name="charConstant" nameId="tpee.1200397540847" value="µ" />
+                    <property name="charConstant" nameId="tpee.1200397540847" value="\u00B5" />
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="4389341767734124709" nodeInfo="nn">
                     <link role="variable" roleId="tp2q.1153944258490" targetNodeId="7308356872494700648" resolveInfo="c" />
