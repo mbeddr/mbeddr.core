@@ -13,17 +13,16 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="cepq" modelUID="r:785288ce-1c40-4b37-8bcd-f2a2ba641c25(com.mbeddr.core.buildvalidation.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
-  <root type="cepq.BuildValidationConfig" typeId="cepq.8622759486284932892" id="8622759486285397943" nodeInfo="ng">
+  <root type="cepq.BuildValidationConfig" typeId="cepq.8622759486284932892" id="1048192791548624667" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="mpsutil" />
-    <node role="rules" roleId="cepq.8622759486285113018" type="cepq.CheckModulesInPathRule" typeId="cepq.8622759486285113021" id="8622759486285804852" nodeInfo="ng">
-      <node role="path" roleId="cepq.8622759486285134000" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="8622759486285804853" nodeInfo="ng">
-        <property name="path" nameId="vs0r.6156524541422553710" value="../../../" />
+    <node role="rules" roleId="cepq.8622759486285113018" type="cepq.CheckModulesInPathRule" typeId="cepq.8622759486285113021" id="8297282968577836879" nodeInfo="ng">
+      <node role="path" roleId="cepq.8622759486285134000" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="8297282968577836880" nodeInfo="ng">
+        <property name="path" nameId="vs0r.6156524541422553710" value="../../../com.mbeddr.mpsutil" />
       </node>
     </node>
-    <node role="targets" roleId="cepq.8622759486285113016" type="cepq.BuildProjectTarget" typeId="cepq.8622759486284933587" id="8622759486285805389" nodeInfo="ng">
+    <node role="targets" roleId="cepq.8622759486285113016" type="cepq.BuildProjectTarget" typeId="cepq.8622759486284933587" id="8297282968577837493" nodeInfo="ng">
       <link role="prj" roleId="cepq.8622759486284933588" targetNodeId="al5i.8628756186118380491" resolveInfo="com.mbeddr.mpsutil.build" />
     </node>
-    <node role="targets" roleId="cepq.8622759486285113016" type="cepq.ValidationTarget" typeId="cepq.8622759486284933586" id="2199236040111267147" nodeInfo="ng" />
   </root>
 </model>
 
