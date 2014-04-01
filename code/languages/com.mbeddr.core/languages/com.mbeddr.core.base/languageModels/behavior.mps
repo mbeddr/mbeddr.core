@@ -5,7 +5,7 @@
   <language namespace="63650c59-16c8-498a-99c8-005c7ee9515d(jetbrains.mps.lang.access)" />
   <language namespace="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" />
   <import index="tbr6" modelUID="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" version="1" />
   <import index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="4" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
@@ -14050,7 +14050,7 @@
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8297282968580444760" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="pathAndFile" />
-    <link role="concept" roleId="1i04.1225194240799" targetNodeId="vs0r.8297282968580444334" resolveInfo="PathFilePicker" />
+    <link role="concept" roleId="1i04.1225194240799" targetNodeId="vs0r.8297282968580444334" resolveInfo="MacroFilePicker" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8297282968580444761" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8297282968580444762" nodeInfo="sn" />
     </node>

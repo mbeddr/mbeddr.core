@@ -25,8 +25,9 @@
   <language namespace="96ee7a94-411d-4cf8-9b94-96cad7e52411(jetbrains.mps.baseLanguage.jdk7)" />
   <import index="al5i" modelUID="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="cepq" modelUID="r:785288ce-1c40-4b37-8bcd-f2a2ba641c25(com.mbeddr.core.buildvalidation.structure)" version="3" implicit="yes" />
+  <import index="cepq" modelUID="r:785288ce-1c40-4b37-8bcd-f2a2ba641c25(com.mbeddr.core.buildvalidation.structure)" version="4" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="38" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8297282968578104113" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="BuildCheck" />
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8297282968578104836" nodeInfo="ng">
@@ -35,22 +36,19 @@
         <node role="targets" roleId="cepq.8622759486285113016" type="cepq.BuildProjectTarget" typeId="cepq.8622759486284933587" id="8297282968578104862" nodeInfo="ng">
           <link role="prj" roleId="cepq.8622759486284933588" targetNodeId="al5i.8628756186118380491" resolveInfo="com.mbeddr.mpsutil.build" />
         </node>
-        <node role="rules" roleId="cepq.8622759486285113018" type="cepq.CheckModulesInPathRule" typeId="cepq.8622759486285113021" id="8297282968579928056" nodeInfo="ng">
-          <property name="path" nameId="cepq.8297282968579276978" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
-          <node role="ignoredModules" roleId="cepq.8622759486285213087" type="cepq.IgnoredModule" typeId="cepq.8622759486285134042" id="8297282968579928062" nodeInfo="ng">
+        <node role="rules" roleId="cepq.8622759486285113018" type="cepq.CheckModulesInPathRule" typeId="cepq.8622759486285113021" id="8297282968589419117" nodeInfo="ng">
+          <node role="pathpicker" roleId="cepq.8297282968580840312" type="vs0r.MacroFilePicker" typeId="vs0r.8297282968580444334" id="8297282968589419119" nodeInfo="ng">
+            <property name="macro" nameId="vs0r.8297282968580474541" value="mbeddr.github.core.home" />
+            <property name="path" nameId="vs0r.6156524541422553710" value="code/languages/com.mbeddr.mpsutil" />
+          </node>
+          <node role="ignoredModules" roleId="cepq.8622759486285213087" type="cepq.IgnoredModule" typeId="cepq.8622759486285134042" id="8297282968589419127" nodeInfo="ng">
+            <property name="filename" nameId="cepq.2199236040109326344" value="tests/test.ts.match/match.msd" />
+          </node>
+          <node role="ignoredModules" roleId="cepq.8622759486285213087" type="cepq.IgnoredModule" typeId="cepq.8622759486285134042" id="8297282968589419130" nodeInfo="ng">
             <property name="filename" nameId="cepq.2199236040109326344" value="solutions/com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox.msd" />
           </node>
-          <node role="ignoredModules" roleId="cepq.8622759486285213087" type="cepq.IgnoredModule" typeId="cepq.8622759486285134042" id="8297282968579928067" nodeInfo="ng">
-            <property name="filename" nameId="cepq.2199236040109326344" value="solutions/com.mbeddr.mpsutil.editor.querylist.runtime/com.mbeddr.mpsutil.editor.querylist.runtime.msd" />
-          </node>
-          <node role="ignoredModules" roleId="cepq.8622759486285213087" type="cepq.IgnoredModule" typeId="cepq.8622759486285134042" id="8297282968579928074" nodeInfo="ng">
-            <property name="filename" nameId="cepq.2199236040109326344" value="languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.mpl" />
-          </node>
-          <node role="ignoredModules" roleId="cepq.8622759486285213087" type="cepq.IgnoredModule" typeId="cepq.8622759486285134042" id="8297282968579928083" nodeInfo="ng">
+          <node role="ignoredModules" roleId="cepq.8622759486285213087" type="cepq.IgnoredModule" typeId="cepq.8622759486285134042" id="8297282968589419135" nodeInfo="ng">
             <property name="filename" nameId="cepq.2199236040109326344" value="languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" />
-          </node>
-          <node role="ignoredModules" roleId="cepq.8622759486285213087" type="cepq.IgnoredModule" typeId="cepq.8622759486285134042" id="8297282968579960091" nodeInfo="ng">
-            <property name="filename" nameId="cepq.2199236040109326344" value="tests/test.ts.match/match.msd" />
           </node>
         </node>
       </node>
