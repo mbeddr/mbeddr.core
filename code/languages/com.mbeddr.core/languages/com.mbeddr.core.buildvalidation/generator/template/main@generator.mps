@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:49c71725-306a-4283-b8a1-08ade9339f67(com.mbeddr.mpsutil.buildvalidation.generator.template.main@generator)">
+<model modelUID="r:49c71725-306a-4283-b8a1-08ade9339f67(com.mbeddr.core.buildvalidation.generator.template.main@generator)" version="0">
   <persistence version="8" />
-  <language namespace="44578659-6701-41b0-87f4-226fbab2b1f4(com.mbeddr.mpsutil.buildvalidation)" />
+  <language namespace="44578659-6701-41b0-87f4-226fbab2b1f4(com.mbeddr.core.buildvalidation)" />
   <language namespace="d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <language namespace="b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)" />
