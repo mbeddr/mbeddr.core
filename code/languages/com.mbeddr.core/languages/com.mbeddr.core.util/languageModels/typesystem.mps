@@ -4482,5 +4482,37 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="k146.8646254455459908620" resolveInfo="TrySequentiallyStatement" />
     </node>
   </root>
+  <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="4389341767733093206" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="check_NamedArgStructInitExpression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4389341767733093207" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="4389341767733098406" nodeInfo="nn">
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="4389341767733098407" nodeInfo="sn">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.WarningStatement" typeId="tpd4.1207055528241" id="4389341767733101408" nodeInfo="nn">
+            <node role="warningText" roleId="tpd4.1207055552304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4389341767733101438" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="not all members were set" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4389341767733101932" nodeInfo="nn">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4389341767733093209" resolveInfo="namedArgStructInitExpression" />
+            </node>
+          </node>
+        </node>
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="4389341767733098430" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4389341767733098992" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4389341767733098458" nodeInfo="nn">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4389341767733093209" resolveInfo="namedArgStructInitExpression" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4389341767733101167" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="yi43.4389341767733048135" resolveInfo="isComplete" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="4389341767733093209" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="namedArgStructInitExpression" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="k146.3059865549680361316" resolveInfo="NamedArgStructInitExpression" />
+    </node>
+  </root>
 </model>
 
