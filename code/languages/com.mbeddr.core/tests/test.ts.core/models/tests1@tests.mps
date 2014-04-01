@@ -5682,6 +5682,14 @@
               </node>
               <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="4389341767734203859" nodeInfo="ng" />
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5052165294434845349" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="constBool" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="5052165294434845350" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="true" />
+              </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="5052165294434845351" nodeInfo="ng" />
+            </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4389341767734210179" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4389341767734210608" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="4389341767734210834" nodeInfo="ng">
@@ -5691,6 +5699,20 @@
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4389341767734210607" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4389341767734203436" resolveInfo="nonVolatileBool" />
                 </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5052165294434779413" nodeInfo="ng" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="5052165294434844848" nodeInfo="ng">
+              <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5052165294434844849" nodeInfo="ng" />
+              <node role="condition" roleId="c4fa.6275792049641600984" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5052165294434845337" nodeInfo="ng">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4389341767734203857" resolveInfo="volatileBool" />
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5052165294434846726" nodeInfo="ng" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="5052165294434846116" nodeInfo="ng">
+              <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5052165294434846117" nodeInfo="ng" />
+              <node role="condition" roleId="c4fa.6275792049641600984" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5052165294434847335" nodeInfo="ng">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5052165294434845349" resolveInfo="constBool" />
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3030532866322822297" nodeInfo="ng" />
@@ -5707,6 +5729,9 @@
             </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.DoNotAnalyzeDataFlowAnnotation" typeId="vs0r.7307224057853283254" id="1682138447509495748" nodeInfo="ng" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="159275153964966945" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1396348433296_1" />
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="4861891518412267323" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="aFuncitonToTestConstGVD" />
