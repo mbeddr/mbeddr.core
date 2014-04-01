@@ -19,6 +19,9 @@
       <node role="path" roleId="cepq.8622759486285134000" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="8297282968577836880" nodeInfo="ng">
         <property name="path" nameId="vs0r.6156524541422553710" value="../../../com.mbeddr.mpsutil" />
       </node>
+      <node role="ignoredModules" roleId="cepq.8622759486285213087" type="cepq.IgnoredModule" typeId="cepq.8622759486285134042" id="8297282968578011087" nodeInfo="ng">
+        <property name="filename" nameId="cepq.2199236040109326344" value="tests/test.ts.match/match.msd" />
+      </node>
     </node>
     <node role="targets" roleId="cepq.8622759486285113016" type="cepq.BuildProjectTarget" typeId="cepq.8622759486284933587" id="8297282968577837493" nodeInfo="ng">
       <link role="prj" roleId="cepq.8622759486284933588" targetNodeId="al5i.8628756186118380491" resolveInfo="com.mbeddr.mpsutil.build" />
