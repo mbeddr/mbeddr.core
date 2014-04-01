@@ -13879,7 +13879,7 @@
     <property name="name" nameId="tpck.1169194664001" value="GenericTreeTool" />
     <property name="position" nameId="tp4k.2498620720770664572" value="RIGHT" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="tree" />
-    <property name="caption" nameId="tp4k.6547237850567462620" value="Outline" />
+    <property name="caption" nameId="tp4k.6547237850567462620" value="Tree " />
     <node role="fieldDeclaration" roleId="tp4k.6547237850567462849" type="tp4f.DefaultClassifierFieldDeclaration" typeId="tp4f.1213999088275" id="9045154772521909689" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="root" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="9045154772521909690" nodeInfo="nn" />
