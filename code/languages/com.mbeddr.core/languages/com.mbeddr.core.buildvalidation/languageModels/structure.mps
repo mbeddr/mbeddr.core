@@ -63,11 +63,9 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8622759486285113021" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CheckModulesInPathRule" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8622759486285113015" resolveInfo="Rule" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8622759486285134000" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="path" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="vs0r.2642765975824060179" resolveInfo="SolutionRelativeDirPicker" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8297282968579276978" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="path" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8622759486285213087" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
