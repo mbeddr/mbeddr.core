@@ -39,7 +39,7 @@
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056434318" nodeInfo="ng">
       <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
       <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
-      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="16" />
+      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="4" />
       <property name="inplace" nameId="kdzh.4297162197621031140" value="true" />
     </node>
     <node role="plugins" roleId="3ior.6647099934206700656" type="3ior.BuildJavaPlugin" typeId="3ior.6647099934206700647" id="4699195107803748710" nodeInfo="ng" />
@@ -753,7 +753,7 @@
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056440471" nodeInfo="ng">
       <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
       <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
-      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="16" />
+      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="4" />
       <property name="inplace" nameId="kdzh.4297162197621031140" value="true" />
     </node>
     <node role="aspects" roleId="3ior.3542413272732620719" type="5tjl.BuildMpsLayout_TestModules" typeId="5tjl.4560297596904469357" id="5553437610557122687" nodeInfo="nn">
@@ -1053,7 +1053,7 @@
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056432576" nodeInfo="ng">
       <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
       <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
-      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="16" />
+      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="4" />
       <property name="inplace" nameId="kdzh.4297162197621031140" value="true" />
     </node>
     <node role="plugins" roleId="3ior.6647099934206700656" type="3ior.BuildJavaPlugin" typeId="3ior.6647099934206700647" id="1373401575434228865" nodeInfo="ng" />

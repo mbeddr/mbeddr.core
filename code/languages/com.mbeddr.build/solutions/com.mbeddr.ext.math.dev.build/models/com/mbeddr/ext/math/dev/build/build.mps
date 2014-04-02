@@ -15,7 +15,7 @@
   <import index="2ikx" modelUID="r:a6a1817a-0262-429f-994d-28bcdfc8eac8(mps-multiline.build)" version="-1" />
   <import index="3ior" modelUID="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" version="2" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="fnbo" modelUID="r:d89d60fc-e488-474b-a7de-9d6e3b77d10d(com.mbeddr.mpsutil.buildutil.structure)" version="-1" implicit="yes" />
+  <import index="fnbo" modelUID="r:d89d60fc-e488-474b-a7de-9d6e3b77d10d(com.mbeddr.mpsutil.buildutil.structure)" version="0" implicit="yes" />
   <import index="kdzh" modelUID="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" version="3" implicit="yes" />
   <root type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="8334796989975391369" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.ext.math" />
@@ -24,7 +24,7 @@
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056432014" nodeInfo="ng">
       <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
       <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
-      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="16" />
+      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="4" />
       <property name="inplace" nameId="kdzh.4297162197621031140" value="true" />
     </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8334796989975391370" nodeInfo="ng">
