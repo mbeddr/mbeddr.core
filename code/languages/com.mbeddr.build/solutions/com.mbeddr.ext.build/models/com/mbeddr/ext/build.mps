@@ -436,20 +436,39 @@
           </node>
         </node>
       </node>
-      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="2313709844245205420" nodeInfo="ng">
+      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="5361947209018566538" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="d40b843d-a866-4fb1-8401-eb1e53ed8f40" />
         <property name="name" nameId="tpck.1169194664001" value="test.ex.ext.math" />
+        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources and tests" />
+        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5361947209018566539" nodeInfo="ng">
+          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427554923" resolveInfo="mbeddr.ext" />
+          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5361947209018566540" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="tests" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5361947209018566541" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="test.ex.ext.math" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5361947209018566542" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="test.ex.ext.math.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="2313709844245205420" nodeInfo="ng">
+        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
+        <property name="uuid" nameId="kdzh.322010710375892619" value="af2a3290-7101-4a18-8717-201d09570085" />
+        <property name="name" nameId="tpck.1169194664001" value="test.ex.ext.components.sri" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources and tests" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2313709844245205421" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427554923" resolveInfo="mbeddr.ext" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2313709844245205422" nodeInfo="nn">
             <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2313709844245205423" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="test.ex.ext.math" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2313709844245206537" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="test.ex.ext.math.msd" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5361947209018568472" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="test.ex.ext.components.sri" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5361947209018569116" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="sri.msd" />
               </node>
             </node>
           </node>
