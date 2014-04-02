@@ -14,7 +14,7 @@
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" />
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
   <import index="1v9t" modelUID="r:ad2e741a-fd00-4d35-bff4-cd40053b55fe(com.mbeddr.cc.requirements.c.intentions)" version="3" />
   <import index="neyv" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#com.google.common.collect(com.google.common.collect@java_stub)" version="-1" />
@@ -27,8 +27,8 @@
   <import index="1t7x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(java.awt@java_stub)" version="-1" />
   <import index="b2mh" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(com.intellij.openapi.project@java_stub)" version="-1" />
   <import index="vsqj" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(jetbrains.mps.project@java_stub)" version="-1" />
-  <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="8" />
-  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="-1" />
+  <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="4" />
+  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" />
   <import index="6bll" modelUID="r:d9293246-b636-408d-a2f1-e29fc568656d(test.ts.requirements.reqs)" version="-1" />
   <import index="88zw" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(org.jetbrains.mps.openapi.module@java_stub)" version="-1" />
   <import index="auou" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi(com.intellij.openapi@java_stub)" version="-1" />
@@ -36,6 +36,7 @@
   <import index="joqk" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.mock(com.intellij.mock@java_stub)" version="-1" />
   <import index="jrbx" modelUID="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.project(jetbrains.mps.project@java_stub)" version="-1" />
   <import index="ec5l" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(org.jetbrains.mps.openapi.model@java_stub)" version="-1" />
+  <import index="tpcu" modelUID="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="38" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
@@ -43,7 +44,6 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
-  <import index="tpcu" modelUID="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" version="-1" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp4f" modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" implicit="yes" />
   <import index="neyw" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#com.google.common.collect(MPS.Core/com.google.common.collect@java_stub)" version="-1" implicit="yes" />
@@ -55,6 +55,10 @@
   <import index="ec5m" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" version="-1" implicit="yes" />
   <import index="9a9" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" version="-1" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
+  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="5780913566829282780" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="InterpreterValueDebuggerTests" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="3011556196727611439" nodeInfo="ng">
@@ -778,285 +782,285 @@
       </node>
     </node>
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="5852313043440316421" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type=".com.mbeddr.cc.requirements.c.structure.RCalculation" id="5852313043440320066" nodeInfo="ng">
-        <property name="name" value="test" />
-        <node role="tests" type=".com.mbeddr.cc.requirements.c.structure.RTestCase" id="5852313043440320067" nodeInfo="ng">
-          <node role="expected" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="5852313043440320068" nodeInfo="ng">
-            <property name="unsigned" value="false" />
-            <property name="value" value="497" />
+      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="3vkx.RCalculation" typeId="3vkx.3534497005926949315" id="5852313043440320066" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="test" />
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="5852313043440320067" nodeInfo="ng">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5852313043440320068" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="497" />
           </node>
-          <node role="params" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="5852313043440320069" nodeInfo="ng">
-            <property name="unsigned" value="false" />
-            <property name="value" value="2" />
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5852313043440320069" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="2" />
           </node>
-          <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320070" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320070" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="test" />
           </node>
         </node>
-        <node role="params" type=".com.mbeddr.cc.requirements.c.structure.RParam" id="5852313043440320071" nodeInfo="ng">
-          <property name="name" value="a" />
-          <property name="description" value="asdf" />
-          <node role="type" type=".com.mbeddr.core.expressions.structure.Int8tType" id="5852313043440320072" nodeInfo="ng">
-            <property name="volatile" value="false" />
-            <property name="const" value="false" />
+        <node role="params" roleId="3vkx.3534497005926949334" type="3vkx.RParam" typeId="3vkx.3534497005926949316" id="5852313043440320071" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="a" />
+          <property name="description" nameId="3vkx.3534497005926949331" value="asdf" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5852313043440320072" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
-        <node role="doc" type=".com.mbeddr.core.base.structure.TextBlock" id="5852313043440320073" nodeInfo="ng">
-          <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="5852313043440320074" nodeInfo="ng">
+        <node role="doc" roleId="3vkx.1711211267079259366" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5852313043440320073" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5852313043440320074" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5852313043440320075" nodeInfo="ng" />
           </node>
         </node>
-        <node role="expr" type=".com.mbeddr.core.expressions.structure.PlusExpression" id="5852313043440320076" nodeInfo="ng">
-          <node role="right" type=".com.mbeddr.cc.requirements.c.structure.DoubleSumExpr" id="5852313043440320077" nodeInfo="ng">
-            <node role="nameI" type=".com.mbeddr.cc.requirements.c.structure.DoubleSumVar" id="5852313043440320078" nodeInfo="ng">
-              <property name="name" value="i" />
+        <node role="expr" roleId="3vkx.3534497005926949336" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5852313043440320076" nodeInfo="ng">
+          <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.DoubleSumExpr" typeId="3vkx.7607106982910475515" id="5852313043440320077" nodeInfo="ng">
+            <node role="nameI" roleId="3vkx.5780913566828136633" type="3vkx.DoubleSumVar" typeId="3vkx.5780913566828135637" id="5852313043440320078" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="i" />
             </node>
-            <node role="nameJ" type=".com.mbeddr.cc.requirements.c.structure.DoubleSumVar" id="5852313043440320079" nodeInfo="ng">
-              <property name="name" value="j" />
+            <node role="nameJ" roleId="3vkx.5780913566828136640" type="3vkx.DoubleSumVar" typeId="3vkx.5780913566828135637" id="5852313043440320079" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="j" />
             </node>
-            <node role="minI" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="5852313043440320080" nodeInfo="ng">
-              <property name="unsigned" value="false" />
-              <property name="value" value="1" />
+            <node role="minI" roleId="3vkx.7607106982910476151" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5852313043440320080" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
-            <node role="maxI" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="5852313043440320081" nodeInfo="ng">
-              <property name="unsigned" value="false" />
-              <property name="value" value="3" />
+            <node role="maxI" roleId="3vkx.7607106982910476153" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5852313043440320081" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="3" />
             </node>
-            <node role="minJ" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="5852313043440320082" nodeInfo="ng">
-              <property name="unsigned" value="false" />
-              <property name="value" value="2" />
+            <node role="minJ" roleId="3vkx.7607106982910476156" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5852313043440320082" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
-            <node role="maxJ" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="5852313043440320083" nodeInfo="ng">
-              <property name="unsigned" value="false" />
-              <property name="value" value="6" />
+            <node role="maxJ" roleId="3vkx.7607106982910476160" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5852313043440320083" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="6" />
             </node>
-            <node role="expr" type=".com.mbeddr.core.expressions.structure.PlusExpression" id="5852313043440320084" nodeInfo="ng">
-              <node role="right" type=".com.mbeddr.core.expressions.structure.PlusExpression" id="5852313043440320085" nodeInfo="ng">
-                <node role="left" type=".com.mbeddr.cc.requirements.c.structure.SumExpr" id="5852313043440320086" nodeInfo="ng">
-                  <property name="name" value="k" />
-                  <node role="expr" type=".com.mbeddr.core.expressions.structure.PlusExpression" id="5852313043440320087" nodeInfo="ng">
-                    <node role="right" type=".com.mbeddr.cc.requirements.c.structure.RParamRef" id="5852313043440320088" nodeInfo="ng">
-                      <link role="param" targetNodeId="5852313043440320071" resolveInfo="a" />
+            <node role="expr" roleId="3vkx.7607106982910476165" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5852313043440320084" nodeInfo="ng">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5852313043440320085" nodeInfo="ng">
+                <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.SumExpr" typeId="3vkx.6118219496671620192" id="5852313043440320086" nodeInfo="ng">
+                  <property name="name" nameId="tpck.1169194664001" value="k" />
+                  <node role="expr" roleId="3vkx.6118219496671688504" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5852313043440320087" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="5852313043440320088" nodeInfo="ng">
+                      <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="5852313043440320071" resolveInfo="a" />
                     </node>
-                    <node role="left" type=".com.mbeddr.cc.requirements.c.structure.SumIterator" id="5852313043440320089" nodeInfo="ng">
-                      <link role="sum" targetNodeId="5852313043440320086" resolveInfo="k" />
+                    <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.SumIterator" typeId="3vkx.6118219496672616758" id="5852313043440320089" nodeInfo="ng">
+                      <link role="sum" roleId="3vkx.6118219496672912000" targetNodeId="5852313043440320086" resolveInfo="k" />
                     </node>
-                    <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320090" nodeInfo="ng">
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320090" nodeInfo="ng">
                       <property name="name" nameId="tpck.1169194664001" value="sumKBody" />
                     </node>
                   </node>
-                  <node role="min" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="5852313043440320091" nodeInfo="ng">
-                    <property name="unsigned" value="false" />
-                    <property name="value" value="2" />
+                  <node role="min" roleId="3vkx.6118219496671696518" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5852313043440320091" nodeInfo="ng">
+                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                   </node>
-                  <node role="max" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="5852313043440320092" nodeInfo="ng">
-                    <property name="unsigned" value="false" />
-                    <property name="value" value="4" />
+                  <node role="max" roleId="3vkx.6118219496671696521" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5852313043440320092" nodeInfo="ng">
+                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="4" />
                   </node>
-                  <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320093" nodeInfo="ng">
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320093" nodeInfo="ng">
                     <property name="name" nameId="tpck.1169194664001" value="sumK" />
                   </node>
                 </node>
-                <node role="right" type=".com.mbeddr.core.expressions.structure.MultiExpression" id="5852313043440320094" nodeInfo="ng">
-                  <node role="right" type=".com.mbeddr.cc.requirements.c.structure.DoubleSumIterator" id="5852313043440320095" nodeInfo="ng">
-                    <link role="var" targetNodeId="5852313043440320079" resolveInfo="j" />
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="5852313043440320094" nodeInfo="ng">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.DoubleSumIterator" typeId="3vkx.7607106982910599816" id="5852313043440320095" nodeInfo="ng">
+                    <link role="var" roleId="3vkx.5780913566828286748" targetNodeId="5852313043440320079" resolveInfo="j" />
                   </node>
-                  <node role="left" type=".com.mbeddr.cc.requirements.c.structure.RParamRef" id="5852313043440320096" nodeInfo="ng">
-                    <link role="param" targetNodeId="5852313043440320071" resolveInfo="a" />
+                  <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="5852313043440320096" nodeInfo="ng">
+                    <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="5852313043440320071" resolveInfo="a" />
                   </node>
-                  <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320097" nodeInfo="ng">
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320097" nodeInfo="ng">
                     <property name="name" nameId="tpck.1169194664001" value="paramMult" />
                   </node>
                 </node>
               </node>
-              <node role="left" type=".com.mbeddr.cc.requirements.c.structure.DoubleSumIterator" id="5852313043440320098" nodeInfo="ng">
-                <link role="var" targetNodeId="5852313043440320078" resolveInfo="i" />
+              <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.DoubleSumIterator" typeId="3vkx.7607106982910599816" id="5852313043440320098" nodeInfo="ng">
+                <link role="var" roleId="3vkx.5780913566828286748" targetNodeId="5852313043440320078" resolveInfo="i" />
               </node>
-              <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320099" nodeInfo="ng">
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320099" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="doublesumBody" />
               </node>
             </node>
-            <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320100" nodeInfo="ng">
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320100" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="doublesum" />
             </node>
           </node>
-          <node role="left" type=".com.mbeddr.core.expressions.structure.PlusExpression" id="5852313043440320101" nodeInfo="ng">
-            <node role="right" type=".com.mbeddr.cc.requirements.c.structure.SumExpr" id="5852313043440320102" nodeInfo="ng">
-              <property name="name" value="i" />
-              <node role="expr" type=".com.mbeddr.core.expressions.structure.MultiExpression" id="5852313043440320103" nodeInfo="ng">
-                <node role="right" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="5852313043440320104" nodeInfo="ng">
-                  <property name="unsigned" value="false" />
-                  <property name="value" value="2" />
+          <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5852313043440320101" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.SumExpr" typeId="3vkx.6118219496671620192" id="5852313043440320102" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="i" />
+              <node role="expr" roleId="3vkx.6118219496671688504" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="5852313043440320103" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5852313043440320104" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                 </node>
-                <node role="left" type=".com.mbeddr.cc.requirements.c.structure.SumIterator" id="5852313043440320105" nodeInfo="ng">
-                  <link role="sum" targetNodeId="5852313043440320102" resolveInfo="i" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.SumIterator" typeId="3vkx.6118219496672616758" id="5852313043440320105" nodeInfo="ng">
+                  <link role="sum" roleId="3vkx.6118219496672912000" targetNodeId="5852313043440320102" resolveInfo="i" />
                 </node>
-                <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320106" nodeInfo="ng">
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320106" nodeInfo="ng">
                   <property name="name" nameId="tpck.1169194664001" value="sumIBody" />
                 </node>
               </node>
-              <node role="min" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="5852313043440320107" nodeInfo="ng">
-                <property name="unsigned" value="false" />
-                <property name="value" value="1" />
+              <node role="min" roleId="3vkx.6118219496671696518" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5852313043440320107" nodeInfo="ng">
+                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="1" />
               </node>
-              <node role="max" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="5852313043440320108" nodeInfo="ng">
-                <property name="unsigned" value="false" />
-                <property name="value" value="10" />
+              <node role="max" roleId="3vkx.6118219496671696521" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5852313043440320108" nodeInfo="ng">
+                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="10" />
               </node>
-              <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320109" nodeInfo="ng">
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440320109" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="sumI" />
               </node>
             </node>
-            <node role="left" type=".com.mbeddr.core.expressions.structure.PlusExpression" id="5852313043440320110" nodeInfo="ng">
-              <node role="left" type=".com.mbeddr.cc.requirements.c.structure.RParamRef" id="5852313043440320111" nodeInfo="ng">
-                <link role="param" targetNodeId="5852313043440320071" resolveInfo="a" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5852313043440320110" nodeInfo="ng">
+              <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="5852313043440320111" nodeInfo="ng">
+                <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="5852313043440320071" resolveInfo="a" />
               </node>
-              <node role="right" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="5852313043440320112" nodeInfo="ng">
-                <property name="unsigned" value="false" />
-                <property name="value" value="10" />
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5852313043440320112" nodeInfo="ng">
+                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="10" />
               </node>
             </node>
           </node>
-          <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440331166" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="5852313043440331166" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="result" />
           </node>
         </node>
       </node>
     </node>
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="3011556196713089393" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type=".com.mbeddr.cc.requirements.c.structure.RCalculation" id="3011556196713094307" nodeInfo="ng">
-        <property name="name" value="test2" />
-        <node role="doc" type=".com.mbeddr.core.base.structure.TextBlock" id="3011556196713094308" nodeInfo="ng">
-          <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="3011556196713094309" nodeInfo="ng">
+      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="3vkx.RCalculation" typeId="3vkx.3534497005926949315" id="3011556196713094307" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="test2" />
+        <node role="doc" roleId="3vkx.1711211267079259366" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3011556196713094308" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3011556196713094309" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3011556196713094310" nodeInfo="ng" />
           </node>
         </node>
-        <node role="expr" type=".com.mbeddr.cc.requirements.c.structure.SumExpr" id="3011556196713094680" nodeInfo="ng">
-          <property name="name" value="i" />
-          <node role="expr" type=".com.mbeddr.cc.requirements.c.structure.SumExpr" id="3011556196713094889" nodeInfo="ng">
-            <property name="name" value="j" />
-            <node role="expr" type=".com.mbeddr.core.expressions.structure.MultiExpression" id="3011556196713095341" nodeInfo="ng">
-              <node role="right" type=".com.mbeddr.cc.requirements.c.structure.SumIterator" id="3011556196713095385" nodeInfo="ng">
-                <link role="sum" targetNodeId="3011556196713094889" resolveInfo="j" />
-                <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196714793970" nodeInfo="ng">
+        <node role="expr" roleId="3vkx.3534497005926949336" type="3vkx.SumExpr" typeId="3vkx.6118219496671620192" id="3011556196713094680" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="i" />
+          <node role="expr" roleId="3vkx.6118219496671688504" type="3vkx.SumExpr" typeId="3vkx.6118219496671620192" id="3011556196713094889" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="j" />
+            <node role="expr" roleId="3vkx.6118219496671688504" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="3011556196713095341" nodeInfo="ng">
+              <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.SumIterator" typeId="3vkx.6118219496672616758" id="3011556196713095385" nodeInfo="ng">
+                <link role="sum" roleId="3vkx.6118219496672912000" targetNodeId="3011556196713094889" resolveInfo="j" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196714793970" nodeInfo="ng">
                   <property name="name" nameId="tpck.1169194664001" value="j2" />
                 </node>
               </node>
-              <node role="left" type=".com.mbeddr.cc.requirements.c.structure.SumIterator" id="3011556196713095133" nodeInfo="ng">
-                <link role="sum" targetNodeId="3011556196713094680" resolveInfo="i" />
-                <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196714792972" nodeInfo="ng">
+              <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.SumIterator" typeId="3vkx.6118219496672616758" id="3011556196713095133" nodeInfo="ng">
+                <link role="sum" roleId="3vkx.6118219496672912000" targetNodeId="3011556196713094680" resolveInfo="i" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196714792972" nodeInfo="ng">
                   <property name="name" nameId="tpck.1169194664001" value="i2" />
                 </node>
               </node>
-              <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196714794968" nodeInfo="ng">
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196714794968" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="mult2" />
               </node>
             </node>
-            <node role="min" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="3011556196713094925" nodeInfo="ng">
-              <property name="unsigned" value="false" />
-              <property name="value" value="1" />
+            <node role="min" roleId="3vkx.6118219496671696518" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3011556196713094925" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
-            <node role="max" type=".com.mbeddr.cc.requirements.c.structure.SumIterator" id="3011556196713094973" nodeInfo="ng">
-              <link role="sum" targetNodeId="3011556196713094680" resolveInfo="i" />
+            <node role="max" roleId="3vkx.6118219496671696521" type="3vkx.SumIterator" typeId="3vkx.6118219496672616758" id="3011556196713094973" nodeInfo="ng">
+              <link role="sum" roleId="3vkx.6118219496672912000" targetNodeId="3011556196713094680" resolveInfo="i" />
             </node>
-            <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196714791815" nodeInfo="ng">
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196714791815" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="sumJ2" />
             </node>
           </node>
-          <node role="min" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="3011556196713094708" nodeInfo="ng">
-            <property name="unsigned" value="false" />
-            <property name="value" value="1" />
+          <node role="min" roleId="3vkx.6118219496671696518" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3011556196713094708" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="1" />
           </node>
-          <node role="max" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="3011556196713094752" nodeInfo="ng">
-            <property name="unsigned" value="false" />
-            <property name="value" value="10" />
+          <node role="max" roleId="3vkx.6118219496671696521" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3011556196713094752" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="10" />
           </node>
-          <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196714790567" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196714790567" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="sumI2" />
           </node>
         </node>
-        <node role="tests" type=".com.mbeddr.cc.requirements.c.structure.RTestCase" id="3011556196713095823" nodeInfo="ng">
-          <node role="expected" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="3011556196713095929" nodeInfo="ng">
-            <property name="unsigned" value="false" />
-            <property name="value" value="1705" />
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3011556196713095823" nodeInfo="ng">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3011556196713095929" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="1705" />
           </node>
-          <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196714790121" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196714790121" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="test2" />
           </node>
         </node>
       </node>
     </node>
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="3011556196729983240" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type=".com.mbeddr.cc.requirements.c.structure.RCalculation" id="3011556196729988801" nodeInfo="ng">
-        <property name="name" value="test3" />
-        <node role="doc" type=".com.mbeddr.core.base.structure.TextBlock" id="3011556196729988802" nodeInfo="ng">
-          <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="3011556196729988803" nodeInfo="ng">
+      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="3vkx.RCalculation" typeId="3vkx.3534497005926949315" id="3011556196729988801" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="test3" />
+        <node role="doc" roleId="3vkx.1711211267079259366" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3011556196729988802" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3011556196729988803" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3011556196729988804" nodeInfo="ng" />
           </node>
         </node>
-        <node role="expr" type=".com.mbeddr.cc.requirements.c.structure.DoubleSumExpr" id="3011556196729988805" nodeInfo="ng">
-          <node role="nameI" type=".com.mbeddr.cc.requirements.c.structure.DoubleSumVar" id="3011556196729988806" nodeInfo="ng">
-            <property name="name" value="i" />
+        <node role="expr" roleId="3vkx.3534497005926949336" type="3vkx.DoubleSumExpr" typeId="3vkx.7607106982910475515" id="3011556196729988805" nodeInfo="ng">
+          <node role="nameI" roleId="3vkx.5780913566828136633" type="3vkx.DoubleSumVar" typeId="3vkx.5780913566828135637" id="3011556196729988806" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="i" />
           </node>
-          <node role="nameJ" type=".com.mbeddr.cc.requirements.c.structure.DoubleSumVar" id="3011556196729988807" nodeInfo="ng">
-            <property name="name" value="j" />
+          <node role="nameJ" roleId="3vkx.5780913566828136640" type="3vkx.DoubleSumVar" typeId="3vkx.5780913566828135637" id="3011556196729988807" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="j" />
           </node>
-          <node role="minI" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="3011556196729988808" nodeInfo="ng">
-            <property name="unsigned" value="false" />
-            <property name="value" value="1" />
+          <node role="minI" roleId="3vkx.7607106982910476151" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3011556196729988808" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="1" />
           </node>
-          <node role="maxI" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="3011556196729988809" nodeInfo="ng">
-            <property name="unsigned" value="false" />
-            <property name="value" value="4" />
+          <node role="maxI" roleId="3vkx.7607106982910476153" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3011556196729988809" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="4" />
           </node>
-          <node role="minJ" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="3011556196729988810" nodeInfo="ng">
-            <property name="unsigned" value="false" />
-            <property name="value" value="4" />
+          <node role="minJ" roleId="3vkx.7607106982910476156" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3011556196729988810" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="4" />
           </node>
-          <node role="maxJ" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="3011556196729988811" nodeInfo="ng">
-            <property name="unsigned" value="false" />
-            <property name="value" value="6" />
+          <node role="maxJ" roleId="3vkx.7607106982910476160" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3011556196729988811" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="6" />
           </node>
-          <node role="expr" type=".com.mbeddr.core.expressions.structure.PlusExpression" id="3011556196729988812" nodeInfo="ng">
-            <node role="right" type=".com.mbeddr.cc.requirements.c.structure.SumExpr" id="3011556196729988813" nodeInfo="ng">
-              <property name="name" value="k" />
-              <node role="expr" type=".com.mbeddr.core.expressions.structure.MultiExpression" id="3011556196729988814" nodeInfo="ng">
-                <node role="right" type=".com.mbeddr.cc.requirements.c.structure.DoubleSumIterator" id="3011556196729988815" nodeInfo="ng">
-                  <link role="var" targetNodeId="3011556196729988807" resolveInfo="j" />
+          <node role="expr" roleId="3vkx.7607106982910476165" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="3011556196729988812" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.SumExpr" typeId="3vkx.6118219496671620192" id="3011556196729988813" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="k" />
+              <node role="expr" roleId="3vkx.6118219496671688504" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="3011556196729988814" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.DoubleSumIterator" typeId="3vkx.7607106982910599816" id="3011556196729988815" nodeInfo="ng">
+                  <link role="var" roleId="3vkx.5780913566828286748" targetNodeId="3011556196729988807" resolveInfo="j" />
                 </node>
-                <node role="left" type=".com.mbeddr.cc.requirements.c.structure.DoubleSumIterator" id="3011556196729988816" nodeInfo="ng">
-                  <link role="var" targetNodeId="3011556196729988806" resolveInfo="i" />
-                  <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196729991902" nodeInfo="ng">
+                <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.DoubleSumIterator" typeId="3vkx.7607106982910599816" id="3011556196729988816" nodeInfo="ng">
+                  <link role="var" roleId="3vkx.5780913566828286748" targetNodeId="3011556196729988806" resolveInfo="i" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196729991902" nodeInfo="ng">
                     <property name="name" nameId="tpck.1169194664001" value="i3" />
                   </node>
                 </node>
               </node>
-              <node role="min" type=".com.mbeddr.cc.requirements.c.structure.DoubleSumIterator" id="3011556196729988817" nodeInfo="ng">
-                <link role="var" targetNodeId="3011556196729988806" resolveInfo="i" />
+              <node role="min" roleId="3vkx.6118219496671696518" type="3vkx.DoubleSumIterator" typeId="3vkx.7607106982910599816" id="3011556196729988817" nodeInfo="ng">
+                <link role="var" roleId="3vkx.5780913566828286748" targetNodeId="3011556196729988806" resolveInfo="i" />
               </node>
-              <node role="max" type=".com.mbeddr.cc.requirements.c.structure.DoubleSumIterator" id="3011556196729988818" nodeInfo="ng">
-                <link role="var" targetNodeId="3011556196729988807" resolveInfo="j" />
+              <node role="max" roleId="3vkx.6118219496671696521" type="3vkx.DoubleSumIterator" typeId="3vkx.7607106982910599816" id="3011556196729988818" nodeInfo="ng">
+                <link role="var" roleId="3vkx.5780913566828286748" targetNodeId="3011556196729988807" resolveInfo="j" />
               </node>
             </node>
-            <node role="left" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="3011556196729988819" nodeInfo="ng">
-              <property name="unsigned" value="false" />
-              <property name="value" value="5" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3011556196729988819" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="5" />
             </node>
           </node>
-          <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196729990643" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196729990643" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="doublesum3" />
           </node>
         </node>
-        <node role="tests" type=".com.mbeddr.cc.requirements.c.structure.RTestCase" id="3011556196729988820" nodeInfo="ng">
-          <node role="expected" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="3011556196729988821" nodeInfo="ng">
-            <property name="unsigned" value="false" />
-            <property name="value" value="530" />
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3011556196729988820" nodeInfo="ng">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3011556196729988821" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="530" />
           </node>
-          <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196729990111" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196729990111" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="test3" />
           </node>
         </node>
-        <node role="smodelAttribute" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196730227984" nodeInfo="ng">
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="3011556196730227984" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="calc3" />
         </node>
       </node>
@@ -1770,24 +1774,24 @@
       </node>
     </node>
   </root>
-  <root type=".com.mbeddr.doc.structure.DocumentConfig" id="5785245534400491065" nodeInfo="ng">
-    <property name="name" value="Config" />
-    <node role="defaultTempPath" type=".com.mbeddr.doc.structure.PathDefinition" id="5785245534401252446" nodeInfo="ng">
-      <property name="name" value="temp" />
-      <node role="pathPicker" type=".com.mbeddr.core.base.structure.SolutionRelativeDirPicker" id="2642765975830091404" nodeInfo="ng" />
+  <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="5785245534400491065" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Config" />
+    <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="5785245534401252446" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="temp" />
+      <node role="pathPicker" roleId="2c95.2642765975824057986" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="2642765975830091404" nodeInfo="ng" />
     </node>
   </root>
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="5852313043440297527" nodeInfo="ng">
     <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc" />
   </root>
-  <root type=".com.mbeddr.core.buildconfig.structure.BuildConfiguration" id="4689372641050727147" nodeInfo="ng">
-    <node role="target" type=".com.mbeddr.core.buildconfig.structure.DesktopPlatform" id="4689372641050727148" nodeInfo="ng">
-      <property name="compiler" value="gcc" />
-      <property name="compilerOptions" value="-std=c99" />
-      <property name="debugOptions" value="-g" />
+  <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="4689372641050727147" nodeInfo="ng">
+    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4689372641050727148" nodeInfo="ng">
+      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
+      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
+      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
     </node>
-    <node role="configurationItems" type=".com.mbeddr.core.util.structure.ReportingConfiguration" id="4689372641050727149" nodeInfo="ng">
-      <node role="strategy" type=".com.mbeddr.core.util.structure.PrintfReportingStrategy" id="4689372641050727150" nodeInfo="ng" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4689372641050727149" nodeInfo="ng">
+      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4689372641050727150" nodeInfo="ng" />
     </node>
   </root>
 </model>
