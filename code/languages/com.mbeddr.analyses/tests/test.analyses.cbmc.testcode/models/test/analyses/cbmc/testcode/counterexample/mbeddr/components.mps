@@ -563,13 +563,13 @@
       <property name="name" nameId="tpck.1169194664001" value="AllInstances" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="4985219442642860154" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="comp" />
+        <property name="name" nameId="tpck.1169194664001" value="com" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="4985219442642860110" resolveInfo="component" />
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="4985219442642860155" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="comp" />
         <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4985219442642860156" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4985219442642860154" resolveInfo="comp" />
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4985219442642860154" resolveInfo="com" />
           <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="4985219442642860111" resolveInfo="interf" />
         </node>
       </node>
