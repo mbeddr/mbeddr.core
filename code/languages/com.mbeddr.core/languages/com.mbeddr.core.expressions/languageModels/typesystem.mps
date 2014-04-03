@@ -10,7 +10,7 @@
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="7" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <import index="tpd5" modelUID="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" version="-1" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" />
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" />
   <import index="tpcu" modelUID="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" version="-1" />
@@ -11363,6 +11363,41 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7048485364467137160" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="ic" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1l.8515777736166452576" resolveInfo="IInitializationContext" />
+    </node>
+  </root>
+  <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="3478150665348641469" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="check_IncompleteLeftParenthesis" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="3478150665348641470" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="3478150665348646671" nodeInfo="nn">
+        <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3478150665348646689" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="You must input a right parenthesis to close this one!" />
+        </node>
+        <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="3478150665348646765" nodeInfo="nn">
+          <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="3478150665348641472" resolveInfo="incompleteLeftParenthesis" />
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="3478150665348641472" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="incompleteLeftParenthesis" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1l.3478150665348636787" resolveInfo="IncompleteLeftParenthesis" />
+    </node>
+  </root>
+  <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="3478150665349160203" nodeInfo="ng">
+    <property name="overrides" nameId="tpd4.1195213689297" value="false" />
+    <property name="name" nameId="tpck.1169194664001" value="check_IncompleteRightParethesis" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="3478150665349160206" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="3478150665349169513" nodeInfo="nn">
+        <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3478150665349169531" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="You must input a left parenthesis to close this one!" />
+        </node>
+        <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="3478150665349170029" nodeInfo="nn">
+          <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="3478150665349160207" resolveInfo="incompleteRightParethesis" />
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="3478150665349160207" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="incompleteRightParethesis" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1l.3478150665349159839" resolveInfo="IncompleteRightParethesis" />
     </node>
   </root>
 </model>
