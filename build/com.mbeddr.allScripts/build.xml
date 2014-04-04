@@ -765,7 +765,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="16" useInplaceTransform="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="4" useInplaceTransform="true" fork="true">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
@@ -1311,6 +1311,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1399,6 +1400,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1421,6 +1423,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1445,6 +1448,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1466,6 +1470,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1487,6 +1492,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1510,6 +1516,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1531,6 +1538,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1552,6 +1560,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1573,6 +1582,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1599,6 +1609,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
@@ -1607,7 +1618,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.analyses.cbmc.dev.build" depends="java.compile.com.mbeddr.analyses.base.dev.build, java.compile.com.mbeddr.analyses.yices.dev.build, java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, fetchDependencies">
+  <target name="java.compile.com.mbeddr.analyses.cbmc.dev.build" depends="java.compile.com.mbeddr.analyses.base.dev.build, java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, fetchDependencies">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.analyses.cbmc.dev.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.analyses.cbmc.dev.build" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.cbmc.dev.build" fork="true" includeantruntime="false">
@@ -1617,7 +1628,6 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.analyses.base.dev.build" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.analyses.yices.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.ple.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.req.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.dev.build" />
@@ -1630,6 +1640,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1656,6 +1667,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1683,6 +1695,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1712,6 +1725,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1745,6 +1759,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />

@@ -11,6 +11,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.nusmv.dev.build/com.mbeddr.analyses.nusmv.dev.build.msd" folder="analyses" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.yices.dev.build/com.mbeddr.analyses.yices.dev.build.msd" folder="analyses" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.build.build/com.mbeddr.build.build.msd" folder="tutorial" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.build.tests.dev.build/com.mbeddr.build.tests.dev.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.cc.dev.build/build.msd" folder="cc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.cc.ple.dev.build/com.mbeddr.cc.ple.dev.build.msd" folder="cc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.cc.tests.dev.build/com.mbeddr.cc.tests.dev.build.msd" folder="cc" />
@@ -29,6 +30,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dev.build/build.msd" folder="mpsutil" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform.dev.build/com.mbeddr.platform.dev.build.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.spawner.dev.build/debugger.msd" folder="spawner" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.core.buildvalidation/test.com.mbeddr.mpsutil.build.msd" folder="" />
     </projectModules>
   </component>
 </project>
