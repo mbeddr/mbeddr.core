@@ -352,6 +352,9 @@
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="7683547462171861552" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="onRunnable" />
+        </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5710167937132109956" nodeInfo="ng">
@@ -622,8 +625,8 @@
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="5626675291297345527" nodeInfo="ng">
-          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="5626675291297345533" nodeInfo="ng">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8203091774020968206" resolveInfo="firstStmntInCalledComponent" />
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="7683547462171862450" nodeInfo="ng">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="7683547462171861552" resolveInfo="onRunnable" />
           </node>
         </node>
       </node>
