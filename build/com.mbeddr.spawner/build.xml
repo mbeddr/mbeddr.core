@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.spawner.build" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.spawner.build" />
-  <property name="mps.home" location="${basedir}/../../../../MPS/MPS-3.1EAP-19.app" />
+  <property name="mps.home" location="${basedir}/../../../../MPS/MPS-3.1-EAP1-27.app" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="mbeddr.core" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.spawner" />
   <property name="platform.artifacts" location="" />
