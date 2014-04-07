@@ -2277,9 +2277,9 @@
         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095882358357" nodeInfo="ng" />
         <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095882358375" nodeInfo="ng">
           <property name="extID" nameId="vs0r.806361095879170783" value="a1" />
-          <property name="hash" nameId="vs0r.806361095879170784" value="1816441281" />
-          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a1" />
-          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396887991732" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="[-80, -80, 72, 13, -41, 41, -125, -120, 72, 117, 127, -24, 86, -57, -77, 19, -41, -32, 39, 84]" />
+          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a1xx" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396898166478" />
         </node>
       </node>
     </node>
@@ -2297,9 +2297,9 @@
         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095888508900" nodeInfo="ng" />
         <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095888508901" nodeInfo="ng">
           <property name="extID" nameId="vs0r.806361095879170783" value="a2" />
-          <property name="hash" nameId="vs0r.806361095879170784" value="1816441282" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="[51, -40, 24, 95, -57, -90, -117, -64, -47, 70, -58, -95, 55, 79, 116, -8, 23, -64, 96, 3]" />
           <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a2" />
-          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396887980452" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396898109037" />
         </node>
       </node>
     </node>
@@ -2317,9 +2317,9 @@
         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095888508963" nodeInfo="ng" />
         <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095888508964" nodeInfo="ng">
           <property name="extID" nameId="vs0r.806361095879170783" value="a3" />
-          <property name="hash" nameId="vs0r.806361095879170784" value="1816441283" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="[-128, -18, 80, 80, 41, -46, 115, -107, -21, 54, 70, -103, -30, -67, 101, -78, 7, -127, 9, 89]" />
           <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a3" />
-          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396887975223" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396898111231" />
         </node>
       </node>
     </node>
@@ -2331,8 +2331,8 @@
       <property name="name" nameId="tpck.1169194664001" value="externalReqsStillValid" />
       <property name="mustBeOk" nameId="vs0r.3815661793603523593" value="true" />
       <node role="query" roleId="vs0r.865293814733115677" type="vs0r.CheckHashAssessmentQuery" typeId="vs0r.806361095877923648" id="806361095884549819" nodeInfo="ng" />
-      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="806361095891106816" nodeInfo="ng">
-        <property name="totalCount" nameId="vs0r.671216505796623805" value="1" />
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="5560473797809547057" nodeInfo="ng">
+        <property name="totalCount" nameId="vs0r.671216505796623805" value="0" />
         <property name="newlyAdded" nameId="vs0r.671216505796623807" value="0" />
         <property name="ok" nameId="vs0r.671216505796623806" value="0" />
       </node>
