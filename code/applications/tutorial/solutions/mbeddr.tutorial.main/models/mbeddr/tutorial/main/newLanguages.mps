@@ -2262,7 +2262,7 @@
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="806361095882319968" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ExternalReqTest" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="examples.exref" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="806361095882321168" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="someFunction" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
@@ -2322,7 +2322,7 @@
     </node>
   </root>
   <root type="vs0r.AssessmentContainer" typeId="vs0r.865293814733114043" id="806361095884549814" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="examples.exref" />
     <property name="name" nameId="tpck.1169194664001" value="ExternalReqStuff" />
     <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="806361095884549815" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="externalReqsStillValid" />
