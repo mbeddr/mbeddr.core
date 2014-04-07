@@ -13,6 +13,8 @@
   <language namespace="8f78d0b6-57c9-4fa8-86fe-8c30d0d5b15c(mbeddr.tutorial.smtrigger)" />
   <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <language namespace="783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)" />
+  <language namespace="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" />
+  <language namespace="4930e34b-b776-4ccb-b2ff-c6f31789e126(mbeddr.tutorial.extreqref)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -38,6 +40,8 @@
   <import index="uj5" modelUID="r:629e0a9b-c3a1-42af-b223-2aea2640ad4f(mbeddr.tutorial.smtrigger.structure)" version="-1" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="3" implicit="yes" />
+  <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="5" implicit="yes" />
+  <import index="2yyc" modelUID="r:79803cd7-885d-4e28-8672-973d389d71b6(mbeddr.tutorial.extreqref.structure)" version="-1" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7727566415687867284" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SafeHeap" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
@@ -2253,6 +2257,42 @@
             <property name="value" nameId="mj1l.2212975673976043696" value="33" />
           </node>
         </node>
+      </node>
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="806361095882319968" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="ExternalReqTest" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="806361095882321168" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="someFunction" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="806361095882321170" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="806361095882321171" nodeInfo="ng" />
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="806361095882320925" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="806361095882358356" nodeInfo="ng">
+        <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095882358357" nodeInfo="ng" />
+        <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095882358375" nodeInfo="ng">
+          <property name="extID" nameId="vs0r.806361095879170783" value="a1" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="1816441281" />
+          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a1" />
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="vs0r.AssessmentContainer" typeId="vs0r.865293814733114043" id="806361095884549814" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
+    <property name="name" nameId="tpck.1169194664001" value="ExternalReqStuff" />
+    <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="806361095884549815" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="externalReqsStillValid" />
+      <node role="query" roleId="vs0r.865293814733115677" type="vs0r.CheckHashAssessmentQuery" typeId="vs0r.806361095877923648" id="806361095884549819" nodeInfo="ng" />
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="806361095886068035" nodeInfo="ng">
+        <property name="totalCount" nameId="vs0r.671216505796623805" value="0" />
+        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="0" />
+        <property name="ok" nameId="vs0r.671216505796623806" value="0" />
       </node>
     </node>
   </root>

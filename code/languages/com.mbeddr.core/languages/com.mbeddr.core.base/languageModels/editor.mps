@@ -9089,8 +9089,8 @@
                       <link role="link" roleId="tp25.1138056516764" targetNodeId="vs0r.806361095877994774" />
                     </node>
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="806361095878032674" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.806361095879179281" resolveInfo="getDescription" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="806361095883193915" nodeInfo="nn">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.806361095883185453" resolveInfo="getCurrentDescription" />
                   </node>
                 </node>
               </node>
