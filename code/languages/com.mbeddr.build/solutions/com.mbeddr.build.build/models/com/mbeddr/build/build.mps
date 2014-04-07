@@ -534,6 +534,29 @@
           </node>
         </node>
       </node>
+      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="806361095880289901" nodeInfo="ng">
+        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="mbeddr.tutorial.extreqref" />
+        <property name="uuid" nameId="kdzh.322010710375892619" value="4930e34b-b776-4ccb-b2ff-c6f31789e126" />
+        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="806361095880289902" nodeInfo="ng">
+          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="4699195107803792028" resolveInfo="tutorial.home" />
+          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="806361095880289903" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="806361095880289904" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="mbeddr.tutorial.extreqref" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="806361095880293719" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="mbeddr.tutorial.extreqref.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="generator" roleId="kdzh.9200313594498201639" type="kdzh.BuildMps_Generator" typeId="kdzh.5507251971038816436" id="806361095880294285" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="mbeddr.tutorial.extreqref#806361095879876987" />
+          <property name="uuid" nameId="kdzh.322010710375892619" value="21c37609-af7b-42be-b233-a3cfdf5a20e3" />
+          <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        </node>
+      </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="4699195107803749336" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="mbeddr.tutorial.metadata" />
