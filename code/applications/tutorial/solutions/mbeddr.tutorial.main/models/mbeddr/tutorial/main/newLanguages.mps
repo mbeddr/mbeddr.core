@@ -2277,9 +2277,9 @@
         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095882358357" nodeInfo="ng" />
         <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095882358375" nodeInfo="ng">
           <property name="extID" nameId="vs0r.806361095879170783" value="a1" />
-          <property name="hash" nameId="vs0r.806361095879170784" value="[-80, -80, 72, 13, -41, 41, -125, -120, 72, 117, 127, -24, 86, -57, -77, 19, -41, -32, 39, 84]" />
-          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a1xx" />
-          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396898166478" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="[-102, 90, -38, -13, 101, 101, -11, -15, 104, -7, -33, 69, 113, -128, 100, -76, -66, -114, 17, 37]" />
+          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a1x" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396903495428" />
         </node>
       </node>
     </node>
@@ -2287,7 +2287,8 @@
       <property name="name" nameId="tpck.1169194664001" value="someFunction2" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="806361095888508896" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="806361095888508897" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5560473797810242582" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5560473797810242584" nodeInfo="ng" />
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="806361095888508898" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2297,9 +2298,9 @@
         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095888508900" nodeInfo="ng" />
         <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095888508901" nodeInfo="ng">
           <property name="extID" nameId="vs0r.806361095879170783" value="a2" />
-          <property name="hash" nameId="vs0r.806361095879170784" value="[51, -40, 24, 95, -57, -90, -117, -64, -47, 70, -58, -95, 55, 79, 116, -8, 23, -64, 96, 3]" />
-          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a2" />
-          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396898109037" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="[-18, -42, -82, -34, 4, 111, 95, 10, -84, -1, -83, -11, 98, 88, 103, -112, -92, -63, 55, -126]" />
+          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a2x" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396903484624" />
         </node>
       </node>
     </node>
@@ -2317,9 +2318,9 @@
         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095888508963" nodeInfo="ng" />
         <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095888508964" nodeInfo="ng">
           <property name="extID" nameId="vs0r.806361095879170783" value="a3" />
-          <property name="hash" nameId="vs0r.806361095879170784" value="[-128, -18, 80, 80, 41, -46, 115, -107, -21, 54, 70, -103, -30, -67, 101, -78, 7, -127, 9, 89]" />
-          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a3" />
-          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396898111231" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="[-89, 22, -93, -56, 31, 74, 111, -91, 125, 15, -36, -66, -50, 16, 67, -45, 12, 121, -55, -71]" />
+          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a3x" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396903482636" />
         </node>
       </node>
     </node>
@@ -2331,7 +2332,7 @@
       <property name="name" nameId="tpck.1169194664001" value="externalReqsStillValid" />
       <property name="mustBeOk" nameId="vs0r.3815661793603523593" value="true" />
       <node role="query" roleId="vs0r.865293814733115677" type="vs0r.CheckHashAssessmentQuery" typeId="vs0r.806361095877923648" id="806361095884549819" nodeInfo="ng" />
-      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="5560473797809547057" nodeInfo="ng">
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="729562387465041459" nodeInfo="ng">
         <property name="totalCount" nameId="vs0r.671216505796623805" value="0" />
         <property name="newlyAdded" nameId="vs0r.671216505796623807" value="0" />
         <property name="ok" nameId="vs0r.671216505796623806" value="0" />
