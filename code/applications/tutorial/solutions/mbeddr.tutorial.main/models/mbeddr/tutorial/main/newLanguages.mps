@@ -2279,6 +2279,7 @@
           <property name="extID" nameId="vs0r.806361095879170783" value="a1" />
           <property name="hash" nameId="vs0r.806361095879170784" value="1816441281" />
           <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a1" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396887991732" />
         </node>
       </node>
     </node>
@@ -2298,6 +2299,7 @@
           <property name="extID" nameId="vs0r.806361095879170783" value="a2" />
           <property name="hash" nameId="vs0r.806361095879170784" value="1816441282" />
           <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a2" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396887980452" />
         </node>
       </node>
     </node>
@@ -2315,8 +2317,9 @@
         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095888508963" nodeInfo="ng" />
         <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095888508964" nodeInfo="ng">
           <property name="extID" nameId="vs0r.806361095879170783" value="a3" />
-          <property name="hash" nameId="vs0r.806361095879170784" value="475105013" />
-          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a3X" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="1816441283" />
+          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a3" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396887975223" />
         </node>
       </node>
     </node>
@@ -2326,35 +2329,10 @@
     <property name="name" nameId="tpck.1169194664001" value="ExternalReqStuff" />
     <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="806361095884549815" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="externalReqsStillValid" />
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="806361095888633018" nodeInfo="ng">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1396886540532" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="806361095888633019" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="806361095888633020" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="806361095888633021" nodeInfo="ng" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="vs0r.CheckHashAssessmentResult" typeId="vs0r.806361095877986078" id="806361095888633012" nodeInfo="ng">
-          <property name="kind" nameId="vs0r.806361095878057905" value="outdatedHash" />
-          <link role="exref" roleId="vs0r.806361095877994774" targetNodeId="806361095888508901" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="806361095888633014" nodeInfo="ng">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1396886540532" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="806361095888633015" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="806361095888633016" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="806361095888633017" nodeInfo="ng" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="vs0r.CheckHashAssessmentResult" typeId="vs0r.806361095877986078" id="806361095888633011" nodeInfo="ng">
-          <property name="kind" nameId="vs0r.806361095878057905" value="outdatedHash" />
-          <link role="exref" roleId="vs0r.806361095877994774" targetNodeId="806361095882358375" />
-        </node>
-      </node>
+      <property name="mustBeOk" nameId="vs0r.3815661793603523593" value="true" />
       <node role="query" roleId="vs0r.865293814733115677" type="vs0r.CheckHashAssessmentQuery" typeId="vs0r.806361095877923648" id="806361095884549819" nodeInfo="ng" />
-      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="806361095888633082" nodeInfo="ng">
-        <property name="totalCount" nameId="vs0r.671216505796623805" value="2" />
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="806361095891106816" nodeInfo="ng">
+        <property name="totalCount" nameId="vs0r.671216505796623805" value="1" />
         <property name="newlyAdded" nameId="vs0r.671216505796623807" value="0" />
         <property name="ok" nameId="vs0r.671216505796623806" value="0" />
       </node>
