@@ -19,5 +19,17 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2656703252204616219" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="WeatherTraceTarget" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="weather" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="26ao.806361095880421377" resolveInfo="GenericTraceTarget" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2656703252204616220" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.806361095879159361" resolveInfo="IExtRef" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2656703252204616221" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="descr" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+  </root>
 </model>
 

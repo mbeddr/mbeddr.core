@@ -2277,9 +2277,9 @@
         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095882358357" nodeInfo="ng" />
         <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095882358375" nodeInfo="ng">
           <property name="extID" nameId="vs0r.806361095879170783" value="a1" />
-          <property name="hash" nameId="vs0r.806361095879170784" value="[-102, 90, -38, -13, 101, 101, -11, -15, 104, -7, -33, 69, 113, -128, 100, -76, -66, -114, 17, 37]" />
-          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a1x" />
-          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396903495428" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="[56, 104, 73, 26, 84, -88, -16, -10, -61, -83, -14, 34, 82, -28, 23, -40, 53, -31, -55, -111]" />
+          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a1" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396959891974" />
         </node>
       </node>
     </node>
@@ -2298,9 +2298,9 @@
         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095888508900" nodeInfo="ng" />
         <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095888508901" nodeInfo="ng">
           <property name="extID" nameId="vs0r.806361095879170783" value="a2" />
-          <property name="hash" nameId="vs0r.806361095879170784" value="[-18, -42, -82, -34, 4, 111, 95, 10, -84, -1, -83, -11, 98, 88, 103, -112, -92, -63, 55, -126]" />
-          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a2x" />
-          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396903484624" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="[51, -40, 24, 95, -57, -90, -117, -64, -47, 70, -58, -95, 55, 79, 116, -8, 23, -64, 96, 3]" />
+          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a2" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396959889328" />
         </node>
       </node>
     </node>
@@ -2316,11 +2316,11 @@
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="806361095888508962" nodeInfo="ng">
         <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095888508963" nodeInfo="ng" />
-        <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095888508964" nodeInfo="ng">
-          <property name="extID" nameId="vs0r.806361095879170783" value="a3" />
-          <property name="hash" nameId="vs0r.806361095879170784" value="[-89, 22, -93, -56, 31, 74, 111, -91, 125, 15, -36, -66, -50, 16, 67, -45, 12, 121, -55, -71]" />
-          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a3x" />
-          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396903482636" />
+        <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.WeatherTraceTarget" typeId="2yyc.2656703252204616219" id="2656703252205190787" nodeInfo="ng">
+          <property name="descr" nameId="2yyc.2656703252204616221" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;current&gt;&#10;  &lt;city id=&quot;5913695&quot; name=&quot;Cambridge&quot;&gt;&#10;    &lt;coord lon=&quot;-80.31&quot; lat=&quot;43.36&quot;/&gt;&#10;    &lt;country&gt;CA&lt;/country&gt;&#10;    &lt;sun rise=&quot;2014-04-08T10:49:23&quot; set=&quot;2014-04-08T23:56:26&quot;/&gt;&#10;  &lt;/city&gt;&#10;  &lt;temperature value=&quot;274.88&quot; min=&quot;273.71&quot; max=&quot;276.48&quot; unit=&quot;kelvin&quot;/&gt;&#10;  &lt;humidity value=&quot;93&quot; unit=&quot;%&quot;/&gt;&#10;  &lt;pressure value=&quot;996&quot; unit=&quot;hPa&quot;/&gt;&#10;  &lt;wind&gt;&#10;    &lt;speed value=&quot;7.27&quot; name=&quot;Moderate breeze&quot;/&gt;&#10;    &lt;direction value=&quot;334&quot; code=&quot;NNW&quot; name=&quot;North-northwest&quot;/&gt;&#10;  &lt;/wind&gt;&#10;  &lt;clouds value=&quot;92&quot; name=&quot;overcast clouds&quot;/&gt;&#10;  &lt;precipitation value=&quot;4.2&quot; mode=&quot;rain&quot; unit=&quot;3h&quot;/&gt;&#10;  &lt;weather number=&quot;501&quot; value=&quot;moderate rain&quot; icon=&quot;10d&quot;/&gt;&#10;  &lt;lastupdate value=&quot;2014-04-08T13:23:03&quot;/&gt;&#10;&lt;/current&gt;&#10;&#10;" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396963481873" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="[-28, 117, 100, 37, -25, -5, 53, 52, -118, 14, -88, 40, 119, -8, -7, -111, -56, -51, -55, -75]" />
+          <property name="extID" nameId="vs0r.806361095879170783" value="Cambridge" />
         </node>
       </node>
     </node>
@@ -2332,7 +2332,7 @@
       <property name="name" nameId="tpck.1169194664001" value="externalReqsStillValid" />
       <property name="mustBeOk" nameId="vs0r.3815661793603523593" value="true" />
       <node role="query" roleId="vs0r.865293814733115677" type="vs0r.CheckHashAssessmentQuery" typeId="vs0r.806361095877923648" id="806361095884549819" nodeInfo="ng" />
-      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="729562387465041459" nodeInfo="ng">
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="2656703252205496295" nodeInfo="ng">
         <property name="totalCount" nameId="vs0r.671216505796623805" value="0" />
         <property name="newlyAdded" nameId="vs0r.671216505796623807" value="0" />
         <property name="ok" nameId="vs0r.671216505796623806" value="0" />
