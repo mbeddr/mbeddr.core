@@ -6,7 +6,6 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" />
   <import index="4gxl" modelUID="r:f8eec28d-6d5f-454b-ac48-6974f9c47f0b(com.mbeddr.analyses.cbmc.statemachines.experimental.structure)" version="3" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="17" />
-  <import index="4a75" modelUID="r:331f85c5-7ac8-4198-8beb-9132375a37ce(com.mbeddr.analyses.cbmc.statemachines.behavior)" version="3" />
   <import index="ibaf" modelUID="r:8fbceb95-5437-47ec-87fe-da385400abe6(com.mbeddr.analyses.cbmc.statemachines.experimental.behavior)" version="3" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="7" implicit="yes" />

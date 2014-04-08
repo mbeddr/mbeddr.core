@@ -14,6 +14,9 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.statemachines/com.mbeddr.analyses.statemachines.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.unittests/unittests.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base/base.mpl" folder="base" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.base/com.mbeddr.analyses.cbmc.base.mpl" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.components/com.mbeddr.analyses.cbmc.components.mpl" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.core/com.mbeddr.analyses.cbmc.core.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.rt/rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.statemachines.experimental/com.mbeddr.analyses.cbmc.statemachines.experimental.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.statemachines/com.mbeddr.analyses.cbmc.statemachines.mpl" folder="cbmc" />

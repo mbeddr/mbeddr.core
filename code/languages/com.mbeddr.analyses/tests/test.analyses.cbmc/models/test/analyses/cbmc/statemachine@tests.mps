@@ -18,13 +18,13 @@
   <import index="fw3h" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" version="-1" />
   <import index="i6z9" modelUID="r:3041f924-a514-41d1-a2fb-90cc92dce2ec(test.analyses.cbmc.counterexample.mbeddr.statemachines@tests)" version="-1" />
   <import index="iehc" modelUID="r:a88a6004-6899-496e-945f-3e0df069d4b7(com.mbeddr.analyses.cbmc.statemachines.rt.analyses.statemachines)" version="-1" />
+  <import index="hn71" modelUID="r:040c5e7a-c584-4bab-a098-633832b4c444(com.mbeddr.analyses.cbmc.statemachines.rt.testing_utils)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="38" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="7554338819202026229" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="StatemachineSmokeTests" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="7554338819202026230" nodeInfo="ng">
@@ -34,9 +34,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7554338819202026233" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7554338819202026234" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378416299" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.7554338819202040865" resolveInfo="checkStatemachine" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897301909" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hn71.6638119994897301822" resolveInfo="checkStatemachine" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="hn71.6638119994897291906" resolveInfo="CProverStatemachinesTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378416301" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="ver" />
                 <property name="name" nameId="tp25.559557797393017702" value="statemachines" />
@@ -178,9 +178,9 @@
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="iehc.4799680529822728040" resolveInfo="StatemachineResult" />
               </node>
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378446505" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.7554338819202040865" resolveInfo="checkStatemachine" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897301908" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hn71.6638119994897301822" resolveInfo="checkStatemachine" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="hn71.6638119994897291906" resolveInfo="CProverStatemachinesTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4750493146100557427" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4750493146100557425" resolveInfo="crtModel" />
               </node>

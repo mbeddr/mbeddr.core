@@ -14,13 +14,13 @@
   <import index="eqhl" modelUID="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" version="1" />
   <import index="fxhk" modelUID="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" version="-1" />
   <import index="cxn8" modelUID="r:f6afb032-8176-40c3-ac1d-b6bc982ddd19(com.mbeddr.analyses.cbmc.components.rt.analyses.components)" version="-1" />
+  <import index="dxnt" modelUID="r:0d4b6d23-66b7-4746-b1f2-4af0b87d423c(com.mbeddr.analyses.cbmc.components.rt.testing_utils)" version="-1" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="38" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="1190855822935839990" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="PPC_Tests" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="1190855822935839991" nodeInfo="ng">
@@ -35,9 +35,9 @@
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cxn8.4799680529823105590" resolveInfo="PPCResult" />
               </node>
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334377995198" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8514070329609207106" resolveInfo="checkPrePostCondition" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897241772" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897241689" resolveInfo="checkPrePostCondition" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334377995199" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="ppc" />
@@ -74,9 +74,9 @@
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cxn8.4799680529823105590" resolveInfo="PPCResult" />
               </node>
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378010681" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8514070329609207106" resolveInfo="checkPrePostCondition" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897241774" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897241689" resolveInfo="checkPrePostCondition" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378010683" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="ppc" />
@@ -240,9 +240,9 @@
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cxn8.4799680529823105590" resolveInfo="PPCResult" />
               </node>
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378040200" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8514070329609207106" resolveInfo="checkPrePostCondition" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897241771" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897241689" resolveInfo="checkPrePostCondition" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378040201" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="ppc" />
@@ -488,9 +488,9 @@
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cxn8.4799680529823105590" resolveInfo="PPCResult" />
               </node>
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378049376" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8514070329609207106" resolveInfo="checkPrePostCondition" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897241776" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897241689" resolveInfo="checkPrePostCondition" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378049378" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="ppc" />
@@ -736,9 +736,9 @@
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cxn8.4799680529823105590" resolveInfo="PPCResult" />
               </node>
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378066320" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8514070329609207106" resolveInfo="checkPrePostCondition" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897241773" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897241689" resolveInfo="checkPrePostCondition" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378066322" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="ppc" />

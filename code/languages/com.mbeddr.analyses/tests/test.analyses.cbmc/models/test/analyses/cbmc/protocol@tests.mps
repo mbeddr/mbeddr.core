@@ -18,13 +18,13 @@
   <import index="fw3h" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" version="-1" />
   <import index="eqhl" modelUID="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" version="1" />
   <import index="cxn8" modelUID="r:f6afb032-8176-40c3-ac1d-b6bc982ddd19(com.mbeddr.analyses.cbmc.components.rt.analyses.components)" version="-1" />
+  <import index="dxnt" modelUID="r:0d4b6d23-66b7-4746-b1f2-4af0b87d423c(com.mbeddr.analyses.cbmc.components.rt.testing_utils)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="38" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="12378219274955012" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ProtocolUnwindingLoops" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="12378219274955013" nodeInfo="ng">
@@ -34,9 +34,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8381166274823495225" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8381166274823495226" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378407624" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897271086" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897270977" resolveInfo="checkProtocol" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378407626" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="protocol_unwinding_loops" />
@@ -188,9 +188,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="12378219275018787" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="12378219275018788" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378081473" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897271080" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897270977" resolveInfo="checkProtocol" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378081474" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="p" />
                 <property name="name" nameId="tp25.559557797393017702" value="protocol_extended_component" />
@@ -252,9 +252,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="535044775891205955" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="535044775891205956" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="535044775891205957" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897271090" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897270977" resolveInfo="checkProtocol" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064801104" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
@@ -397,9 +397,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="535044775891206017" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="535044775891206018" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378166422" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897271083" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897270977" resolveInfo="checkProtocol" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378166423" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
@@ -542,9 +542,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="535044775891206079" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="535044775891206080" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378184371" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897271093" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897270977" resolveInfo="checkProtocol" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378184373" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
@@ -670,9 +670,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="535044775891206134" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="535044775891206135" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378218557" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897271082" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897270977" resolveInfo="checkProtocol" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378218559" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
@@ -798,9 +798,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="535044775891206189" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="535044775891206190" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378251141" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897271089" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897270977" resolveInfo="checkProtocol" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378251143" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
@@ -1028,9 +1028,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="535044775891206286" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="535044775891206287" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378282192" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897271091" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897270977" resolveInfo="checkProtocol" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378282194" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
@@ -1122,9 +1122,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="535044775891206327" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="535044775891206328" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378316723" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897271088" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897270977" resolveInfo="checkProtocol" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378316725" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
@@ -1216,9 +1216,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="535044775891206368" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="535044775891206369" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378354140" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897271092" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897270977" resolveInfo="checkProtocol" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378354141" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
@@ -1310,9 +1310,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="535044775891206409" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="535044775891206410" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378376144" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897271084" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897270977" resolveInfo="checkProtocol" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378376145" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
@@ -1395,9 +1395,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="535044775891206447" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="535044775891206448" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="res" />
-            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="3779605334378397247" nodeInfo="ng">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638119994897271081" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dxnt.6638119994897270977" resolveInfo="checkProtocol" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="dxnt.6638119994897228303" resolveInfo="CProverComponentsTestingFacade" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="3779605334378397248" nodeInfo="nn">
                 <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
                 <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />

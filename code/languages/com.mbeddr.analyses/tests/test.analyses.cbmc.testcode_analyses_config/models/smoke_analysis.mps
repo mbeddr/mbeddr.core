@@ -4,6 +4,7 @@
   <language namespace="5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)" />
   <language namespace="42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)" />
   <language namespace="daa1849d-6955-4fef-afe3-8aea1f61e6fa(com.mbeddr.analyses.cbmc.statemachines)" />
+  <language namespace="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f(com.mbeddr.analyses.cbmc.components)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
@@ -16,9 +17,10 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="17" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="37" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="40" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
   <import index="lcpc" modelUID="r:a2e68184-e5ff-4dfa-983c-d957a5690db9(com.mbeddr.analyses.cbmc.statemachines.structure)" version="4" implicit="yes" />
+  <import index="c4ml" modelUID="r:965f5cbb-2e6c-4aa6-8166-554f0fb0053f(com.mbeddr.analyses.cbmc.components.structure)" version="1" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6472990431939782584" nodeInfo="ng">
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.StaticLibrary" typeId="51wr.2671893947946158498" id="6472990431939782763" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="lib" />
@@ -59,11 +61,11 @@
   </root>
   <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="6472990431939785837" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="AC" />
-    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.ComponentsCBMCAnalysis" typeId="q5q6.6472990431939799912" id="6472990431939785838" nodeInfo="ng">
+    <node role="analyses" roleId="q46j.6472990431939692464" type="c4ml.ComponentsCBMCAnalysis" typeId="c4ml.807751914255908947" id="6472990431939785838" nodeInfo="ng">
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="10" />
-      <link role="analyzedComponent" roleId="q5q6.6472990431939799913" targetNodeId="4ysy.6472990431939782665" resolveInfo="ReaderImpls" />
+      <link role="analyzedComponent" roleId="c4ml.807751914255908948" targetNodeId="4ysy.6472990431939782665" resolveInfo="ReaderImpls" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.6472990431939782743" resolveInfo="client" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.AssertionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="6598859022322998583" nodeInfo="ng">

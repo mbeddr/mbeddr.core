@@ -23,7 +23,6 @@
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="v54s" modelUID="r:2a0fe383-d602-4f5b-813c-e41afdbbb97e(jetbrains.mps.lang.extension.structure)" version="-1" implicit="yes" />
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3202308034910435169" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="FunctionReturnsLifterStatemachinesExperimental" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="3202308034910435170" nodeInfo="ngu" />
@@ -214,20 +213,6 @@
     </node>
     <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3202308034911822394" nodeInfo="in">
       <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8ear.8408742697214216710" resolveInfo="FunctionCallsAndReturnsLifterBase" />
-    </node>
-  </root>
-  <root type="v54s.ExtensionDeclaration" typeId="v54s.3729007189729192404" id="3202308034911806483" nodeInfo="ng">
-    <link role="extensionPoint" roleId="v54s.3729007189729192405" targetNodeId="8ear.3202308034911453444" resolveInfo="CBMCRawFunctionReturnLifter" />
-    <node role="objectGetter" roleId="v54s.8029776554053057811" type="v54s.ExtensionObjectGetter" typeId="v54s.8029776554053043557" id="3202308034911806484" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3202308034911806485" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3202308034911806538" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3202308034911806536" nodeInfo="nn">
-            <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="3202308034911843107" nodeInfo="nn">
-              <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="3202308034910435169" resolveInfo="FunctionReturnsLifterStatemachinesExperimental" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </root>
 </model>

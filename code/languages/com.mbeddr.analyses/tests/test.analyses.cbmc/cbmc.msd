@@ -30,6 +30,7 @@
     <dependency reexport="false">094b2842-e972-4406-b60e-898cdcdb9de5(test.analyses.cbmc.testcode)</dependency>
   </dependencies>
   <usedLanguages>
+    <usedLanguage>0a02a8f9-14d0-4970-9bd2-ca35a097c80d(com.mbeddr.analyses.cbmc.core)</usedLanguage>
     <usedLanguage>7e09729e-68e4-4442-9bc8-024c5cdac3a2(com.mbeddr.analyses.cbmc.testing)</usedLanguage>
     <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
     <usedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</usedLanguage>

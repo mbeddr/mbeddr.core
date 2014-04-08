@@ -9,6 +9,7 @@
   <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
   <language namespace="42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)" />
   <language namespace="5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)" />
+  <language namespace="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f(com.mbeddr.analyses.cbmc.components)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="gajs" modelUID="r:0d50476e-dbdf-49c3-8f0d-2b0350a5f1c6(com.mbeddr.ext.components.pluginSolution.plugin)" version="-1" />
@@ -21,9 +22,10 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="27" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="39" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="2" implicit="yes" />
+  <import index="c4ml" modelUID="r:965f5cbb-2e6c-4aa6-8166-554f0fb0053f(com.mbeddr.analyses.cbmc.components.structure)" version="1" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2161187783549496715" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Contracts" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2161187783549496716" nodeInfo="ng">
@@ -383,10 +385,10 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.VerificationConfigurationAttribute" typeId="q5q6.535044775891207547" id="5512262613064823618" nodeInfo="ng">
-        <property name="unwindingDepth" nameId="q5q6.2017717622748544591" value="10" />
-        <property name="analysisDepth" nameId="q5q6.441761995015233437" value="1000" />
-        <link role="verificationEntryPoint" roleId="q5q6.535044775891209632" targetNodeId="2161187783549496759" resolveInfo="emitCurrentSpeed" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="c4ml.VerificationConfigurationAttribute" typeId="c4ml.6638119994895244601" id="5512262613064823618" nodeInfo="ng">
+        <property name="unwindingDepth" nameId="c4ml.6638119994895244604" value="10" />
+        <property name="analysisDepth" nameId="c4ml.6638119994895244606" value="1000" />
+        <link role="verificationEntryPoint" roleId="c4ml.6638119994895244607" targetNodeId="2161187783549496759" resolveInfo="emitCurrentSpeed" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2161187783549496753" nodeInfo="ng">
@@ -884,20 +886,20 @@
   </root>
   <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="5512262613064823786" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="demo" />
-    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.ComponentsCBMCAnalysis" typeId="q5q6.6472990431939799912" id="5512262613064823787" nodeInfo="ng">
+    <node role="analyses" roleId="q46j.6472990431939692464" type="c4ml.ComponentsCBMCAnalysis" typeId="c4ml.807751914255908947" id="5512262613064823787" nodeInfo="ng">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="60" />
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
-      <link role="analyzedComponent" roleId="q5q6.6472990431939799913" targetNodeId="2161187783549496738" resolveInfo="PlauzibilizedSpeedComputer" />
+      <link role="analyzedComponent" roleId="c4ml.807751914255908948" targetNodeId="2161187783549496738" resolveInfo="PlauzibilizedSpeedComputer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="2161187783549496759" resolveInfo="emitCurrentSpeed" />
     </node>
-    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.ComponentsCBMCAnalysis" typeId="q5q6.6472990431939799912" id="5512262613064823789" nodeInfo="ng">
+    <node role="analyses" roleId="q46j.6472990431939692464" type="c4ml.ComponentsCBMCAnalysis" typeId="c4ml.807751914255908947" id="5512262613064823789" nodeInfo="ng">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="true" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="60" />
-      <link role="analyzedComponent" roleId="q5q6.6472990431939799913" targetNodeId="2161187783549496738" resolveInfo="PlauzibilizedSpeedComputer" />
+      <link role="analyzedComponent" roleId="c4ml.807751914255908948" targetNodeId="2161187783549496738" resolveInfo="PlauzibilizedSpeedComputer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="2161187783549496783" resolveInfo="main" />
     </node>
   </root>
