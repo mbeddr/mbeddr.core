@@ -42,8 +42,6 @@
   <import index="q9jj" modelUID="r:9bb65e44-f83e-4e38-ac95-7e443359a2f7(com.mbeddr.analyses.utils.log)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <import index="lcpc" modelUID="r:a2e68184-e5ff-4dfa-983c-d957a5690db9(com.mbeddr.analyses.cbmc.statemachines.structure)" version="4" />
-  <import index="sptv" modelUID="f:project#0a31509b-f803-4558-b840-db9f6dc14b2f(jetbrains.mps.lang.project.modules/module.com.mbeddr.analyses.cbmc.statemachines.rt@project_stub)" version="-1" />
-  <import index="32z4" modelUID="f:project#603a3466-f1f4-442a-b544-048f481ec3bb(jetbrains.mps.lang.project.modules/module.com.mbeddr.analyses.cbmc.components.rt@project_stub)" version="-1" />
   <import index="v1t" modelUID="r:2b84bd38-e7f0-40db-aa8f-50189fe395ca(com.mbeddr.analyses.cbmc.components.rt.counterexample.lifted.builder)" version="-1" />
   <import index="irjt" modelUID="r:b0443557-eb80-47bb-b801-2cdf54bd38ca(com.mbeddr.analyses.cbmc.statemachines.rt.counterexample.lifted.builder)" version="-1" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
