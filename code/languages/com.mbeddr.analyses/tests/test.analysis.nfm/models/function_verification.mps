@@ -826,6 +826,7 @@
       <property name="check_pointer" nameId="q5q6.9047848667681376986" value="true" />
       <property name="check_signed_overflow" nameId="q5q6.9047848667681377015" value="true" />
       <property name="check_unsigned_overflow" nameId="q5q6.9047848667681377016" value="true" />
+      <property name="showUnwindingDepthInfo" nameId="q5q6.1015192564308444976" value="true" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="5512262613064826873" resolveInfo="interruptHandler" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.ComponentsCBMCAnalysis" typeId="q5q6.6472990431939799912" id="5512262613064826868" nodeInfo="ng">
@@ -897,7 +898,6 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5512262613064826887" nodeInfo="ng" />
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5512262613064826888" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
