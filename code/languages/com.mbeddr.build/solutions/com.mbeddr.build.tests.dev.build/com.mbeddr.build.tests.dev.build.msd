@@ -7,6 +7,7 @@
   </models>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">dcd3e3f0-fb75-4b63-83e0-7a84aeddbb20(com.mbeddr.mpsutil.dev.build)</dependency>
     <dependency reexport="false">b6af8c44-d865-4851-a154-fb6863e68204(de.itemis.mps.editor.bool.build)</dependency>
     <dependency reexport="false">b41e4920-4afc-46bc-8acd-1d6861414845(de.itemis.mps.editor.math.build)</dependency>
     <dependency reexport="false">830041d3-fd09-4005-819d-9d2e06a676ba(de.slisson.mps.richtext.build)</dependency>
