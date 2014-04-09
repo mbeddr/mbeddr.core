@@ -34,6 +34,7 @@
     <usedLanguage>7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</usedLanguage>
     <usedLanguage>07b580a3-cb92-4b5d-ab7c-9e2d58b9d602(mbeddr.tutorial.blocks)</usedLanguage>
     <usedLanguage>01cd75cf-892b-47a7-b594-744f9e06e5e4(mbeddr.tutorial.complex)</usedLanguage>
+    <usedLanguage>4930e34b-b776-4ccb-b2ff-c6f31789e126(mbeddr.tutorial.extreqref)</usedLanguage>
     <usedLanguage>32128dbe-9db6-4d05-9eaa-43601c29f276(mbeddr.tutorial.foreach)</usedLanguage>
     <usedLanguage>16ff087a-23cd-49b8-9c5b-a2c20cea9d3e(mbeddr.tutorial.heap)</usedLanguage>
     <usedLanguage>7fc59e55-0f30-4694-b8e3-d334e472c924(mbeddr.tutorial.metadata)</usedLanguage>
