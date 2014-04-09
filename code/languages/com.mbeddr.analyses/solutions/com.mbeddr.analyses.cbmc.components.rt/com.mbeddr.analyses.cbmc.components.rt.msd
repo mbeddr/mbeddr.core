@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.analyses.cbmc.components.rt" uuid="603a3466-f1f4-442a-b544-048f481ec3bb" compileInMPS="true">
+<solution name="com.mbeddr.analyses.cbmc.components.rt" uuid="603a3466-f1f4-442a-b544-048f481ec3bb" pluginKind="PLUGIN_EDITOR" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

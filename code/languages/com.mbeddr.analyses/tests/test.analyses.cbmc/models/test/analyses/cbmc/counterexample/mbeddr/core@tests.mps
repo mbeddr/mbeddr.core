@@ -363,11 +363,11 @@
             </node>
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="7592754314266345231" nodeInfo="ng">
-            <property name="nodeKind" nameId="o23b.4791280061046124024" value="arg2" />
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="arg1" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="2" />
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="7592754314266345288" nodeInfo="ng">
-            <property name="nodeKind" nameId="o23b.4791280061046124024" value="arg1" />
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="arg2" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="2" />
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046331515" nodeInfo="ng">

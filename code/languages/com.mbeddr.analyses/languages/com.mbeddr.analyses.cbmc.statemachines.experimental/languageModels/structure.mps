@@ -11,7 +11,6 @@
   <import index="4gxl" modelUID="r:f8eec28d-6d5f-454b-ac48-6974f9c47f0b(com.mbeddr.analyses.cbmc.statemachines.experimental.structure)" version="3" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="4svy" modelUID="r:2cdf76e9-cb19-4fba-bb87-cafeec133c93(com.mbeddr.analyses.cbmc.base.structure)" version="2" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6085839724195388619" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="statemachines" />
     <property name="name" nameId="tpck.1169194664001" value="CycleLengthExpression" />
@@ -351,13 +350,6 @@
       <property name="role" nameId="tpce.1071599776563" value="sm" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4912263511295883514" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="StatemachinesExperimentalLifterFactory" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4912263511295884346" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4svy.6654258257675985048" resolveInfo="LiftingFactoryInterface" />
     </node>
   </root>
 </model>
