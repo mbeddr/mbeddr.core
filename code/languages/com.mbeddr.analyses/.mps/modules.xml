@@ -14,7 +14,11 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.statemachines/com.mbeddr.analyses.statemachines.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.unittests/unittests.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base/base.mpl" folder="base" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.components/com.mbeddr.analyses.cbmc.components.mpl" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.core/com.mbeddr.analyses.cbmc.core.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.rt/rt.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.statemachines.experimental/com.mbeddr.analyses.cbmc.statemachines.experimental.mpl" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.statemachines/com.mbeddr.analyses.cbmc.statemachines.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc/cbmc.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc/solutions/pluginSolution/pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.nusmv.rt/rt.msd" folder="nusmv" />
@@ -30,6 +34,13 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices.rt/rt.msd" folder="yices" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices/yices.mpl" folder="yices" />
       <modulePath path="$PROJECT_DIR$/languages/testing/com.mbeddr.analyses.cbmc.testing.mpl" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.components.pluginSolution/com.mbeddr.analyses.cbmc.components.pluginSolution.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.components.rt/com.mbeddr.analyses.cbmc.components.rt.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.core.pluginSolution/com.mbeddr.analyses.cbmc.core.pluginSolution.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.core.rt/com.mbeddr.analyses.cbmc.core.rt.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.experimental.rt/com.mbeddr.analyses.cbmc.statemachines.experimental.rt.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.pluginSolution/com.mbeddr.analyses.cbmc.statemachines.pluginSolution.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.rt/com.mbeddr.analyses.cbmc.statemachines.rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/test.analyses.base/test.analyses.base.msd" folder="test.base" />
       <modulePath path="$PROJECT_DIR$/solutions/test.analysis.screen_casts/test.analysis.screen_casts.msd" folder="test.examples" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode/testcode.msd" folder="test.cbmc" />

@@ -37,6 +37,7 @@
   <property name="com.mbeddr.core.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.core" />    
   <property name="com.mbeddr.core.main-build-file.name" value="build.xml" />  
   <property name="com.mbeddr.core.ts-tests-build-file.name" value="build-ts-tests.xml" />  
+    <property name="com.mbeddr.core.performance-tests-build-file.name" value="build-performance-tests.xml" />  
   <property name="com.mbeddr.core.ex-tests-build-file.name" value="build-ex-tests.xml" />  
   <property name="com.mbeddr.core.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />  
   
@@ -462,6 +463,7 @@
   <target name="build-and-run-tests" >
 	   <antcall target="test-debugger" />
    	   <antcall target="test-core" />
+         <antcall target="test-performance" />
    	   <antcall target="test-cc" />
    	   <antcall target="test-ext" />
    	   <antcall target="test-analyses" />
@@ -519,6 +521,12 @@
 	  <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />	  
 	  <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${run-tests.task}" />
+  </target>
+
+   <target name="test-performance">    
+    <ant antfile="${com.mbeddr.core.performance-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
+    <ant antfile="${com.mbeddr.core.performance-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />    
+    <ant antfile="${com.mbeddr.core.performance-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${run-tests.task}" />
   </target>
 	  
   <target name="test-debugger">
