@@ -242,7 +242,7 @@
 	  <get src="${base-url}/${branch.tables},${mps-tables.build-id},${latest-build}/artifacts/files/${mps-tables.zip-file.name}" dest="${mps-tables.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${branch.math},${mps-bool-editor.build-id},${latest-build}/artifacts/files/${mps-bool-editor.zip-file.name}" dest="${mps-bool-editor.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${branch.bool-editor},${mps-math.build-id},${latest-build}/artifacts/files/${mps-math.zip-file.name}" dest="${mps-math.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	  <get src="${base-url}/${branch.spawner},${spawner.build-id},${latest-build}/artifacts/files/${spawner.suburl}/${spawner.zip-file.name}" dest="${spawner.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>	 
+	  <get src="${base-url}/${spawner.build-id},${latest-build}/artifacts/files/${spawner.suburl}/${spawner.zip-file.name}" dest="${spawner.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>	 
 	  	 
 	  <!-- unzip-plugins -->
 	  <echo message=""/>
