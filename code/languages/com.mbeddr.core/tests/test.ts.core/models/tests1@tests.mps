@@ -2630,9 +2630,43 @@
               </node>
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5939454523706571837" nodeInfo="ng">
+            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="5939454523706571838" nodeInfo="ng" />
+          </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5939454523703549567" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="empty_1397467096947_2" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="5939454523704100453" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="cyclicStructs1" />
+          <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="5939454523704105810" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="m" />
+            <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5939454523704105809" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="5939454523704100667" resolveInfo="cyclicStructs2" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5939454523706571820" nodeInfo="ng">
+            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="5939454523706571821" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5939454523704100881" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1397467334136_5" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="5939454523704100667" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="cyclicStructs2" />
+          <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="5939454523704105839" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="n" />
+            <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5939454523704105838" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="5939454523704100453" resolveInfo="cyclicStructs1" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5939454523706571928" nodeInfo="ng">
+            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="5939454523706571929" nodeInfo="ng" />
+          </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5939454523703553223" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="empty_1397467097021_3" />

@@ -2484,6 +2484,9 @@
             <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5573381609868594293" nodeInfo="nn">
               <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5573381609868445525" resolveInfo="suDeclaration" />
             </node>
+            <node role="messageTarget" roleId="tpd4.1227096836496" type="tpd4.PropertyMessageTarget" typeId="tpd4.1227096498176" id="5939454523704102358" nodeInfo="ng">
+              <link role="propertyDeclaration" roleId="tpd4.1227096521710" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+            </node>
           </node>
         </node>
         <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="5573381609868591642" nodeInfo="nn">
