@@ -1035,12 +1035,6 @@
         <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975404212" resolveInfo="tables.artifacts" />
       </node>
     </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="3735529244758006116" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="evw.7723076858040759348" resolveInfo="mps-bool-editor" />
-      <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3735529244758006130" nodeInfo="ng">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8741510193914567554" resolveInfo="bool.artifacts" />
-      </node>
-    </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="651821299949653119" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="g0ku.651821299948806798" resolveInfo="com.mbeddr.platform.build" />
       <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5302886665841776067" nodeInfo="ng">
@@ -1103,6 +1097,9 @@
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="8334796989975404254" nodeInfo="ng">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="2ikx.5063083321524165986" />
+      </node>
+      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="4869850357128703103" nodeInfo="ng">
+        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="evw.7723076858040759359" />
       </node>
       <node role="containerName" roleId="kdzh.6592112598314855574" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8334796989975404255" nodeInfo="ng">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8334796989975404256" nodeInfo="ng">

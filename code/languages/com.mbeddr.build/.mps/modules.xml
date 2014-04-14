@@ -17,6 +17,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.cc.tests.dev.build/com.mbeddr.cc.tests.dev.build.msd" folder="cc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.dev.build/build.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.tests.build/com.mbeddr.core.tests.build.msd" folder="core" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.tests.performance.build/com.mbeddr.core.tests.performance.build.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" folder="debugger-testing" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.debugger.dev.build/debugger.msd" folder="debugger" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.debugger.tests.dev.build/com.mbeddr.debugger.tests.dev.build.msd" folder="debugger" />

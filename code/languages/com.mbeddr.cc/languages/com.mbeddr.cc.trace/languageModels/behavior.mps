@@ -104,46 +104,6 @@
         </node>
       </node>
     </node>
-    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="203206806985580679" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="getInfoNode" />
-      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="i9nw.1165977097524835501" resolveInfo="getInfoNode" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="203206806985580682" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="203206806985580852" nodeInfo="nn">
-          <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="203206806985580853" nodeInfo="sn">
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="203206806985594245" nodeInfo="nn">
-              <node role="expression" roleId="tpee.1068581517676" type="tpee.DotExpression" typeId="tpee.1197027756228" id="203206806985611328" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="203206806985600615" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="203206806985594505" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="203206806985594290" nodeInfo="nn" />
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="203206806985596617" nodeInfo="nn">
-                      <link role="link" roleId="tp25.1138056546658" targetNodeId="26ao.4577779292081946445" />
-                    </node>
-                  </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetFirstOperation" typeId="tp2q.1165525191778" id="203206806985607683" nodeInfo="nn" />
-                </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="203206806985614512" nodeInfo="nn">
-                  <link role="link" roleId="tp25.1138056516764" targetNodeId="26ao.439567521322959431" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="203206806985587036" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="203206806985581088" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="203206806985580858" nodeInfo="nn" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="203206806985583066" nodeInfo="nn">
-                <link role="link" roleId="tp25.1138056546658" targetNodeId="26ao.4577779292081946445" />
-              </node>
-            </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsNotEmptyOperation" typeId="tp2q.1176501494711" id="203206806985594078" nodeInfo="nn" />
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="203206806985615530" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="203206806985615528" nodeInfo="nn" />
-        </node>
-      </node>
-      <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeType" typeId="tp25.1138055754698" id="203206806985580848" nodeInfo="in" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="203206806985580849" nodeInfo="nn" />
-    </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="439567521322956200" nodeInfo="ng">
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="26ao.439567521322956196" resolveInfo="ITraceTargetProvider" />

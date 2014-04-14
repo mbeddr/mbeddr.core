@@ -821,6 +821,9 @@
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="3860690561157309364" nodeInfo="ng">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="ayz1.1671983567912265693" />
       </node>
+      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="4869850357128661611" nodeInfo="ng">
+        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="evw.7723076858040759359" />
+      </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="8334796989983244778" nodeInfo="ng">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="dogi.8334796989975391434" />
       </node>

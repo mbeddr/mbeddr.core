@@ -9,6 +9,7 @@
   <sourcePath />
   <usedLanguages>
     <usedLanguage>42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)</usedLanguage>
+    <usedLanguage>daa1849d-6955-4fef-afe3-8aea1f61e6fa(com.mbeddr.analyses.cbmc.statemachines)</usedLanguage>
     <usedLanguage>d62d6e81-9ae0-456b-b2c3-d71c0f373ded(com.mbeddr.analyses.nusmv.statemachine)</usedLanguage>
     <usedLanguage>c365dd1e-9817-4719-bfd1-5d70f3d565a6(com.mbeddr.analyses.yices.dectab)</usedLanguage>
     <usedLanguage>ad5c6649-337c-4447-8651-e0cc8f4ffe24(com.mbeddr.analyses.yices.fm)</usedLanguage>

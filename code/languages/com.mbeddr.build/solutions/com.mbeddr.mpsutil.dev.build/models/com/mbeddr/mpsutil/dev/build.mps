@@ -109,17 +109,17 @@
         </node>
       </node>
     </node>
-    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="3735529244757571405" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="bool-editor.artifacts" />
-      <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3735529244757571406" nodeInfo="ng">
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8741510193914184283" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="bool.artifacts" />
+      <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8741510193914237538" nodeInfo="ng">
         <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="1595841535647058899" resolveInfo="lisson.home" />
-        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3735529244757571407" nodeInfo="nn">
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8741510193914237539" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value="mps-bool-editor" />
-          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3735529244757571408" nodeInfo="nn">
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8741510193914237540" nodeInfo="nn">
             <property name="head" nameId="3ior.8618885170173601779" value="build" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3735529244757571409" nodeInfo="nn">
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8741510193914237541" nodeInfo="nn">
               <property name="head" nameId="3ior.8618885170173601779" value="artifacts" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3735529244757571491" nodeInfo="nn">
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8741510193914239178" nodeInfo="nn">
                 <property name="head" nameId="3ior.8618885170173601779" value="mps-bool-editor" />
               </node>
             </node>
