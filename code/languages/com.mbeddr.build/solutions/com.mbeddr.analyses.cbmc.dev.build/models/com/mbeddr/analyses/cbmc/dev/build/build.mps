@@ -1212,6 +1212,18 @@
               <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="8334796989975410788" resolveInfo="com.mbeddr.analyses.cbmc.rt" />
             </node>
           </node>
+          <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="5728183882435279093" nodeInfo="nn">
+            <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="5728183882435279094" nodeInfo="ng">
+              <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+              <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="g8gn.8628756186118765656" resolveInfo="com.mbeddr.core.pointers" />
+            </node>
+          </node>
+          <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="5728183882435279095" nodeInfo="nn">
+            <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="5728183882435279096" nodeInfo="ng">
+              <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+              <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="ffeo.413682502717652307" resolveInfo="JDK" />
+            </node>
+          </node>
         </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="8334796989975410749" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="8334796989975410750" nodeInfo="ng">
