@@ -17,7 +17,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.legacy/legacy.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.legacy/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.lib.xml/com.mbeddr.core.lib.xml.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.make/make.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.modules.gen/gen.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.modules/modules.mpl" folder="core" />

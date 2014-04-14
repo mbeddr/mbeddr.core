@@ -2,30 +2,35 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.mpsutil.dev.build/build.msd" folder="" />
+      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.mpsutil.dev.build/build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.blutil/solutions/com.mbeddr.mpsutil.blutil.rt.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.buildvalidation/com.mbeddr.mpsutil.buildvalidation.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.mpl" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter/runtime/com.mbeddr.mpsutil.interpreter.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.langstats/langstats.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodeviewer/com.mbeddr.mpsutil.nodeviewer.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.mpl" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.typsystem.trace/com.mbeddr.mpsutil.typsystem.trace.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.workflow/com.mbeddr.mpsutil.workflow.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.runtime/com.mbeddr.mpsutil.editor.querylist.runtime.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox.msd" folder="querylist" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpserver/com.mbeddr.mpsutil.httpserver.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpsupport.rt/com.mbeddr.mpsutil.httpsupport.rt.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/pluginSolution.msd" folder="plantuml" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.serializer.xml/com.mbeddr.mpsutil.serializer.xml.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.test/com.mbeddr.mpsutil.test.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.workflow.pluginSolution/com.mbeddr.mpsutil.workflow.pluginSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.workflow/com.mbeddr.mpsutil.workflow.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/test.com.mbeddr.mpsutil.build/test.com.mbeddr.mpsutil.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.match/match.msd" folder="" />
     </projectModules>
   </component>

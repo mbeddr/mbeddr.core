@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">b6af8c44-d865-4851-a154-fb6863e68204(de.itemis.mps.editor.bool.build)</dependency>
+    <dependency reexport="false">b6af8c44-d865-4851-a154-fb6863e68204(mps-bool-editor.build)</dependency>
     <dependency reexport="false">b41e4920-4afc-46bc-8acd-1d6861414845(de.itemis.mps.editor.math.build)</dependency>
     <dependency reexport="false">830041d3-fd09-4005-819d-9d2e06a676ba(de.slisson.mps.richtext.build)</dependency>
     <dependency reexport="false">f635fc54-10fa-4740-93b9-f8dfe124ea1b(de.slisson.mps.tables.build)</dependency>
