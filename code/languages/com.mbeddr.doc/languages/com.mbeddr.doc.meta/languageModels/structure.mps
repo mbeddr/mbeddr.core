@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)">
+<model modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="0">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
+  <language namespace="86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" />
-  <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
+  <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="7" />
+  <import index="t3eg" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" version="-1" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" />
+  <import index="hypd" modelUID="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" version="-1" />
+  <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="9" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
-  <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="-1" implicit="yes" />
+  <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="0" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4715820023543872565" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="LangDefWord" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ref" />
@@ -87,6 +91,53 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8375407818528998149" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ILanguageDefWord" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8408742697223012410" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ref" />
+    <property name="name" nameId="tpck.1169194664001" value="LanguageRefWord" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="reference a language" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@language" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4715820023543872565" resolveInfo="LangDefWord" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4220250885135135527" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="moduleRef" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="hypd.1855399583446016268" resolveInfo="ModuleReference" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4220250885134170056" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ref" />
+    <property name="name" nameId="tpck.1169194664001" value="ConstraintsRefWord" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="references a constraint (restriction)" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4715820023543872565" resolveInfo="LangDefWord" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4220250885134173649" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="constraint" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tp1t.1213093968558" resolveInfo="ConceptConstraints" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4220250885134289743" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ref" />
+    <property name="name" nameId="tpck.1169194664001" value="NonTypesystemRuleRefWord" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="references a non type-system rule (restriction)" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4715820023543872565" resolveInfo="LangDefWord" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4220250885134289784" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="rule" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpd4.1195214364922" resolveInfo="NonTypesystemRule" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4220250885135455427" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ref" />
+    <property name="name" nameId="tpck.1169194664001" value="DevKitRefWord" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="reference a devkit" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@devkit" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4715820023543872565" resolveInfo="LangDefWord" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4220250885135455428" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="moduleRef" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="hypd.1855399583446016268" resolveInfo="ModuleReference" />
+    </node>
   </root>
 </model>
 

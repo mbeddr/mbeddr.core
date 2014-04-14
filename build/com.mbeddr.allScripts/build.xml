@@ -753,7 +753,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.spawner.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.mpsutil.buildutil, java.compile.com.mbeddr.mpsutil.buildutil#6600513366548883903, java.compile.com.mbeddr.mpsutil.blutil, java.compile.com.mbeddr.mpsutil.blutil#374287044672169667, java.compile.com.mbeddr.mpsutil.blutil.rt, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.math.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.cbmc.dev.build, java.compile.com.mbeddr.analyses.base.dev.build, java.compile.com.mbeddr.analyses.yices.dev.build, java.compile.com.mbeddr.analyses.nusmv.dev.build, java.compile.com.mbeddr.analyses.tests.dev.build" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.spawner.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.mpsutil.buildutil, java.compile.com.mbeddr.mpsutil.buildutil#6600513366548883903, java.compile.com.mbeddr.mpsutil.blutil, java.compile.com.mbeddr.mpsutil.blutil#374287044672169667, java.compile.com.mbeddr.mpsutil.blutil.rt, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.math.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.cbmc.dev.build, java.compile.com.mbeddr.analyses.base.dev.build, java.compile.com.mbeddr.analyses.yices.dev.build, java.compile.com.mbeddr.analyses.nusmv.dev.build, java.compile.com.mbeddr.analyses.tests.dev.build" />
   
   <target name="processResources" />
   
@@ -898,6 +898,7 @@
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.cc.tests.dev.build/com.mbeddr.cc.tests.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.dev.build/build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.build/com.mbeddr.core.tests.build.msd" />
+        <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.performance.build/com.mbeddr.core.tests.performance.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.components.dev.build/com.mbeddr.ext.components.dev.build.msd" />
@@ -983,6 +984,7 @@
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
@@ -1279,6 +1281,7 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1333,6 +1336,29 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.com.mbeddr.core.tests.performance.build" depends="java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, fetchDependencies">
+    <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.tests.performance.build" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.tests.performance.build" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.debugger.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
         <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
         <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
@@ -1786,6 +1812,7 @@
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.core.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/source_gen" />
+    <delete dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.debugger-test.build.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.doc.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.ext.components.dev.build/source_gen" />

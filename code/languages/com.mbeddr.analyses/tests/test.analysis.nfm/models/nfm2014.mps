@@ -21,20 +21,23 @@
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="96ee7a94-411d-4cf8-9b94-96cad7e52411(jetbrains.mps.baseLanguage.jdk7)" />
+  <language namespace="daa1849d-6955-4fef-afe3-8aea1f61e6fa(com.mbeddr.analyses.cbmc.statemachines)" />
+  <language namespace="e462c189-8b5a-4c70-b928-a493585c0765(com.mbeddr.analyses.cbmc.statemachines.experimental)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="22" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="27" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="42" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
-  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="15" implicit="yes" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="17" implicit="yes" />
   <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="2" implicit="yes" />
+  <import index="4gxl" modelUID="r:f8eec28d-6d5f-454b-ac48-6974f9c47f0b(com.mbeddr.analyses.cbmc.statemachines.experimental.structure)" version="3" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3212431740133389815" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Statemachines" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3212431740133389816" nodeInfo="ng">
@@ -541,10 +544,10 @@
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8559686898069115335" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8559686898069115336" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.StateMachineStateSubset" typeId="q5q6.697164800619673343" id="8559686898069565109" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="4gxl.StateMachineStateSubset" typeId="4gxl.6085839724195388645" id="8559686898069565109" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="CycleStarts" />
-          <link role="stateMachine" roleId="q5q6.697164800619745501" targetNodeId="8559686898069428271" resolveInfo="DDD" />
-          <node role="constraints" roleId="q5q6.697164800619697541" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="8559686898069632087" nodeInfo="ng">
+          <link role="stateMachine" roleId="4gxl.6085839724195388647" targetNodeId="8559686898069428271" resolveInfo="DDD" />
+          <node role="constraints" roleId="4gxl.6085839724195388646" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="8559686898069632087" nodeInfo="ng">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="8559686898069682657" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="8559686898069683583" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8559686898069683820" nodeInfo="ng">
@@ -553,12 +556,12 @@
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineExtVarRef" typeId="clqz.7999989049972989533" id="8559686898069683104" nodeInfo="ng">
                   <link role="var" roleId="clqz.7999989049972989534" targetNodeId="8559686898069636160" resolveInfo="timeSinceLastEvent" />
-                  <node role="statemachine" roleId="clqz.7999989049972989535" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="8559686898069682872" nodeInfo="ng" />
+                  <node role="statemachine" roleId="clqz.7999989049972989535" type="4gxl.StateMachineReference" typeId="4gxl.6085839724195388644" id="8559686898069682872" nodeInfo="ng" />
                 </node>
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="8559686898069587108" nodeInfo="ng">
                 <link role="state" roleId="clqz.2558982571829202228" targetNodeId="8559686898069432098" resolveInfo="Init" />
-                <node role="expr" roleId="clqz.2558982571829189198" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="8559686898069631749" nodeInfo="ng" />
+                <node role="expr" roleId="clqz.2558982571829189198" type="4gxl.StateMachineReference" typeId="4gxl.6085839724195388644" id="8559686898069631749" nodeInfo="ng" />
               </node>
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="8559686898069637429" nodeInfo="ng">
@@ -567,7 +570,7 @@
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineExtVarRef" typeId="clqz.7999989049972989533" id="8559686898069637170" nodeInfo="ng">
                 <link role="var" roleId="clqz.7999989049972989534" targetNodeId="8559686898069636160" resolveInfo="timeSinceLastEvent" />
-                <node role="statemachine" roleId="clqz.7999989049972989535" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="8559686898069637147" nodeInfo="ng" />
+                <node role="statemachine" roleId="clqz.7999989049972989535" type="4gxl.StateMachineReference" typeId="4gxl.6085839724195388644" id="8559686898069637147" nodeInfo="ng" />
               </node>
             </node>
           </node>
@@ -789,9 +792,9 @@
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8559686898069451513" nodeInfo="ng" />
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8559686898069447537" nodeInfo="ng" />
-          <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.NonDeterministicInit" typeId="q5q6.7759126187580038177" id="8559686898069459054" nodeInfo="ng">
-            <link role="subSpace" roleId="q5q6.7095497658884020427" targetNodeId="8559686898069565109" resolveInfo="CycleStarts" />
-            <node role="statemachine" roleId="q5q6.1786180596061208522" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="8559686898069699809" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="4gxl.NonDeterministicInit" typeId="4gxl.6085839724197496271" id="8559686898069459054" nodeInfo="ng">
+            <link role="subSpace" roleId="4gxl.6085839724197496274" targetNodeId="8559686898069565109" resolveInfo="CycleStarts" />
+            <node role="statemachine" roleId="4gxl.6085839724197496272" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="8559686898069699809" nodeInfo="ng">
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="8559686898069573115" resolveInfo="ddd" />
             </node>
           </node>
@@ -827,9 +830,9 @@
             <node role="p" roleId="q5q6.7392194941658581813" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8559686898069457303" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8559686898069411155" resolveInfo="startingEvent" />
             </node>
-            <node role="q" roleId="q5q6.7392194941658581814" type="q5q6.SMInStateSubset" typeId="q5q6.9005445548778024784" id="8559686898069700132" nodeInfo="ng">
-              <link role="stateSubset" roleId="q5q6.9005445548778024787" targetNodeId="8559686898069565109" resolveInfo="CycleStarts" />
-              <node role="stateMachine" roleId="q5q6.9005445548778024785" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="8559686898069700146" nodeInfo="ng">
+            <node role="q" roleId="q5q6.7392194941658581814" type="4gxl.SMInStateSubset" typeId="4gxl.6085839724195388637" id="8559686898069700132" nodeInfo="ng">
+              <link role="stateSubset" roleId="4gxl.6085839724195388639" targetNodeId="8559686898069565109" resolveInfo="CycleStarts" />
+              <node role="stateMachine" roleId="4gxl.6085839724195388638" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="8559686898069700146" nodeInfo="ng">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="8559686898069573115" resolveInfo="ddd" />
               </node>
             </node>
