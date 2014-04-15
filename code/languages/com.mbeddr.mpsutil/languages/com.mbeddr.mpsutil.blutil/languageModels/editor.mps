@@ -2768,5 +2768,27 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="6451706574539345453" nodeInfo="nn" />
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3253504201087213833" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="profiler" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="hba4.3253504201087213830" resolveInfo="PerformanceProfiler" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3253504201087213834" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3253504201087213835" nodeInfo="nn">
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3253504201087213836" nodeInfo="nn">
+          <property name="flag" nameId="tpc2.1186414551515" value="false" />
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3253504201087213837" nodeInfo="nn">
+          <property name="text" nameId="tpc2.1073389577007" value="profile:" />
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="3253504201087213838" nodeInfo="ng">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.3253504201087213832" resolveInfo="name" />
+        </node>
+        <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="3253504201087213839" nodeInfo="nn" />
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="3253504201087213840" nodeInfo="ng">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.3253504201087213831" />
+        </node>
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="3253504201087213841" nodeInfo="nn" />
+    </node>
+  </root>
 </model>
 
