@@ -69,6 +69,9 @@
           </node>
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226119784" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226119727" resolveInfo="M1a" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3375384988163849954" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="3375384988163849955" nodeInfo="ng" />
+            </node>
           </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7475861851226119790" nodeInfo="ng">
@@ -92,6 +95,9 @@
           </node>
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226252173" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226119799" resolveInfo="M2x" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3375384988163851213" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="3375384988163851214" nodeInfo="ng" />
+            </node>
           </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7475861851226252164" nodeInfo="ng">
@@ -102,6 +108,9 @@
           </node>
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226252168" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226119802" resolveInfo="M2y" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3375384988163851521" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="3375384988163851522" nodeInfo="ng" />
+            </node>
           </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7475861851226119805" nodeInfo="ng">
@@ -115,6 +124,9 @@
           </node>
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226252600" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226145568" resolveInfo="M3g" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3375384988163852311" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="3375384988163852312" nodeInfo="ng" />
+            </node>
           </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7475861851226252603" nodeInfo="ng">
@@ -138,6 +150,9 @@
           </node>
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226252627" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226252614" resolveInfo="M4p" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3375384988163852916" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="3375384988163852917" nodeInfo="ng" />
+            </node>
           </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7475861851226252622" nodeInfo="ng">
@@ -365,6 +380,10 @@
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7475861851226145566" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="M3" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="3375384988163851568" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="true" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7475861851226252612" resolveInfo="M4" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7475861851226145567" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1364212442086_9" />
     </node>
@@ -389,10 +408,6 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7475861851226145573" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1364212442558_11" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7475861851226252620" nodeInfo="ng">
-      <property name="reexport" nameId="x27k.7475861851226119808" value="true" />
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7475861851226252612" resolveInfo="M4" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7475861851226252612" nodeInfo="ng">

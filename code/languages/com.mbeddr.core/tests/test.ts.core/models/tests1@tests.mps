@@ -13697,6 +13697,9 @@
         <property name="name" nameId="tpck.1169194664001" value="reportingParameters" />
         <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="5724839270941843922" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="Struct" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3375384988163822433" nodeInfo="ng">
+            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeWarningCheckOperation" typeId="tp5g.1215511704609" id="3375384988163822434" nodeInfo="ng" />
+          </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5724839270941843921" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="empty_1342346778053_4" />
