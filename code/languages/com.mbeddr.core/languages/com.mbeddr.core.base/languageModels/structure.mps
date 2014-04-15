@@ -966,6 +966,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8320481498024573336" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="176285146686936640" resolveInfo="ITreeViewRoot" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5939454523706029594" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5939454523704167063" resolveInfo="IDetectCycle" />
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7139820346881807063" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="chunk" />
@@ -1159,19 +1162,6 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
-  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="806361095878057900" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="exref" />
-    <property name="name" nameId="tpck.1169194664001" value="ResultKind" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="806361095878057901" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="invalidID" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="invalidID" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="806361095878057902" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="outdatedHash" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="outdatedHash" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="806361095877923648" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="exref" />
     <property name="name" nameId="tpck.1169194664001" value="CheckHashAssessmentQuery" />
@@ -1193,6 +1183,19 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="806361095879159361" resolveInfo="IExtRef" />
     </node>
   </root>
+  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="806361095878057900" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="exref" />
+    <property name="name" nameId="tpck.1169194664001" value="ResultKind" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="806361095878057901" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="invalidID" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="invalidID" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="806361095878057902" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="outdatedHash" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="outdatedHash" />
+    </node>
+  </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="806361095879159361" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="exref" />
     <property name="name" nameId="tpck.1169194664001" value="IExtRef" />
@@ -1207,6 +1210,12 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="806361095889337969" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="lastUpdated" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5939454523704167063" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IDetectCycle" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5939454523705921303" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
     </node>
   </root>
 </model>
