@@ -3,7 +3,7 @@
   <persistence version="8" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="srlk" modelUID="f:java_stub#c2788093-51e8-4cfe-943b-eefd5ff309ff#javax.servlet.http(com.mbeddr.mpsutil.httpserver/javax.servlet.http@java_stub)" version="-1" />
+  <import index="m87u" modelUID="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet.http@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="7" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
@@ -16,8 +16,8 @@
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="5573986434797767429" nodeInfo="nn">
         <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5573986434797767460" nodeInfo="ng">
           <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="5573986434797767456" nodeInfo="nn">
-            <node role="quotedNode" roleId="tp3r.1196350785114" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8564455257661090205" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="srlk.~HttpServletRequest" resolveInfo="HttpServletRequest" />
+            <node role="quotedNode" roleId="tp3r.1196350785114" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3379970138994675738" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="m87u.~HttpServletRequest" resolveInfo="HttpServletRequest" />
             </node>
           </node>
         </node>
@@ -41,8 +41,8 @@
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="5573986434797781882" nodeInfo="nn">
         <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5573986434797781883" nodeInfo="ng">
           <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="5573986434797781884" nodeInfo="nn">
-            <node role="quotedNode" roleId="tp3r.1196350785114" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8564455257661090728" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="srlk.~HttpServletResponse" resolveInfo="HttpServletResponse" />
+            <node role="quotedNode" roleId="tp3r.1196350785114" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3379970138995037573" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="m87u.~HttpServletResponse" resolveInfo="HttpServletResponse" />
             </node>
           </node>
         </node>

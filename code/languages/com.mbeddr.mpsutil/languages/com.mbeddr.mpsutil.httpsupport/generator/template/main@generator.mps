@@ -8,10 +8,10 @@
   <language namespace="c0080a47-7e37-4558-bee9-9ae18e690549(jetbrains.mps.lang.extension)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="znf8" modelUID="r:139b3778-ac9f-4ca9-a48f-e685c023e800(com.mbeddr.mpsutil.httpsupport.rt.model)" version="-1" />
-  <import index="srlk" modelUID="f:java_stub#c2788093-51e8-4cfe-943b-eefd5ff309ff#javax.servlet.http(com.mbeddr.mpsutil.httpserver/javax.servlet.http@java_stub)" version="-1" />
-  <import index="gzvg" modelUID="r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver.plugin)" version="-1" />
   <import index="s4al" modelUID="r:193e03e1-dca4-4048-aad0-de84622e3490(com.mbeddr.mpsutil.httpsupport.structure)" version="-1" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" />
+  <import index="gzvg" modelUID="r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver.plugin)" version="-1" />
+  <import index="m87u" modelUID="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet.http@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
@@ -226,8 +226,8 @@
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="8564455257661568094" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="request" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8564455257661578640" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="srlk.~HttpServletRequest" resolveInfo="HttpServletRequest" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3379970138994682065" nodeInfo="in">
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="m87u.~HttpServletRequest" resolveInfo="HttpServletRequest" />
         </node>
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8564455257661568096" nodeInfo="sn">
@@ -274,13 +274,13 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="8564455257661568106" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="request" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8564455257661568107" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="srlk.~HttpServletRequest" resolveInfo="HttpServletRequest" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="m87u.~HttpServletRequest" resolveInfo="HttpServletRequest" />
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="8564455257661568108" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="response" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8564455257661568109" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="srlk.~HttpServletResponse" resolveInfo="HttpServletResponse" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="m87u.~HttpServletResponse" resolveInfo="HttpServletResponse" />
         </node>
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8564455257661568110" nodeInfo="sn">
