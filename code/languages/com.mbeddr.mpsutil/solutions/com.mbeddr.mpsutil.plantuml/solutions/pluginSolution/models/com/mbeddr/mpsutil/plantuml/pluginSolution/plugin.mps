@@ -40,6 +40,7 @@
   <import index="a8zf" modelUID="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/net.sourceforge.plantuml@java_stub)" version="-1" />
   <import index="22fg" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" version="-1" />
   <import index="abz6" modelUID="r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess.plugin)" version="-1" />
+  <import index="gzvg" modelUID="r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver.plugin)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tgbt" modelUID="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" version="1" implicit="yes" />
@@ -1587,8 +1588,8 @@
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="3051167946407079818" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dstartsWith(java%dlang%dString)%cboolean" resolveInfo="startsWith" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="3051167946407080112" nodeInfo="nn">
-                    <link role="classifier" roleId="tpee.1144433057691" targetNodeId="abz6.4599114268639106038" resolveInfo="ServerUtil" />
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="abz6.3051167946407065195" resolveInfo="LOCAL_ADDRESS" />
+                    <link role="classifier" roleId="tpee.1144433057691" targetNodeId="gzvg.4599114268639106038" resolveInfo="ServerUtil" />
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="gzvg.3051167946407065195" resolveInfo="LOCAL_ADDRESS" />
                   </node>
                 </node>
               </node>
