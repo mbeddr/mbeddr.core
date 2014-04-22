@@ -1416,8 +1416,8 @@
       <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="3478150665348637125" nodeInfo="ng">
         <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="8860443239512128050" resolveInfo="Expression" />
       </node>
-      <node role="multiple" roleId="tpce.7588428831955550186" type="tpce.AttributeInfo_IsMultiple" typeId="tpce.6054523464626862044" id="6517529011889830033" nodeInfo="ng">
-        <property name="value" nameId="tpce.6054523464626875854" value="false" />
+      <node role="multiple" roleId="tpce.7588428831955550186" type="tpce.AttributeInfo_IsMultiple" typeId="tpce.6054523464626862044" id="3484744453008563006" nodeInfo="ng">
+        <property name="value" nameId="tpce.6054523464626875854" value="true" />
       </node>
     </node>
   </root>
@@ -1429,8 +1429,8 @@
       <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="3478150665349159846" nodeInfo="ng">
         <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="8860443239512128050" resolveInfo="Expression" />
       </node>
-      <node role="multiple" roleId="tpce.7588428831955550186" type="tpce.AttributeInfo_IsMultiple" typeId="tpce.6054523464626862044" id="6517529011889830031" nodeInfo="ng">
-        <property name="value" nameId="tpce.6054523464626875854" value="false" />
+      <node role="multiple" roleId="tpce.7588428831955550186" type="tpce.AttributeInfo_IsMultiple" typeId="tpce.6054523464626862044" id="3484744453008563300" nodeInfo="ng">
+        <property name="value" nameId="tpce.6054523464626875854" value="true" />
       </node>
     </node>
   </root>
