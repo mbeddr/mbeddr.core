@@ -3,8 +3,8 @@
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="33" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" />
+  <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="bbp5" modelUID="r:ea4f2df6-5e5c-49de-8679-6112ec7dd9c3(com.mbeddr.mpsutil.editor.querylist.structure)" version="0" implicit="yes" />
@@ -102,9 +102,20 @@
       <property name="role" nameId="tpce.1071599776563" value="elementMenuDescriptor" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1164824717996" resolveInfo="CellMenuDescriptor" />
     </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7238779735251877228" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="editorComponent" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7238779735251712681" resolveInfo="QueryListInlineEditorComponent" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1173177718857" nodeInfo="ig">
       <property name="role" nameId="tpce.1071599776563" value="elementActionMap" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1139535219966" resolveInfo="CellActionMapDeclaration" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="730823979350682502" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="elementsConcept" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1169125787135" resolveInfo="AbstractConceptDeclaration" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6202678563380238499" nodeInfo="ig">
@@ -147,6 +158,10 @@
     <property name="name" nameId="tpck.1169194664001" value="Parameter_SubstituteInfoFactory" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="factory" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7238779735251712681" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="QueryListInlineEditorComponent" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpc2.1088185857835" resolveInfo="InlineEditorComponent" />
   </root>
 </model>
 
