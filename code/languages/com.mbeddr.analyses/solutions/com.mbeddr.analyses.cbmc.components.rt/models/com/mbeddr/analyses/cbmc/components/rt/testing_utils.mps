@@ -232,6 +232,7 @@
         <property name="text" nameId="hba4.6451706574539345425" value="Facade for checking the pre/post of a component." />
       </node>
     </node>
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="8182258236802989588" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="6638119994897270977" nodeInfo="igu">
       <property name="name" nameId="tpck.1169194664001" value="checkProtocol" />
       <node role="returnType" roleId="tpee.1068580123133" type="tp2q.ListType" typeId="tp2q.1151688443754" id="6638119994897270978" nodeInfo="in">
