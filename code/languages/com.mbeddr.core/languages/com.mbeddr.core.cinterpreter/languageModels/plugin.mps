@@ -14,56 +14,13 @@
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="5" />
   <import index="6f5b" modelUID="r:9ffe1487-be32-45f7-abe0-e5fa20142da5(com.mbeddr.mpsutil.interpreter.plugin)" version="-1" />
-  <import index="v54s" modelUID="r:2a0fe383-d602-4f5b-813c-e41afdbbb97e(jetbrains.mps.lang.extension.structure)" version="-1" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="18" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
-  <root type="v54s.ExtensionDeclaration" typeId="v54s.3729007189729192404" id="7648974255076611012" nodeInfo="ng">
-    <link role="extensionPoint" roleId="v54s.3729007189729192405" targetNodeId="6f5b.4222583594238956182" />
-    <node role="objectGetter" roleId="v54s.8029776554053057811" type="v54s.ExtensionObjectGetter" typeId="v54s.8029776554053043557" id="7648974255076611013" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7648974255076611014" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="7648974255076611015" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068581517676" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7648974255076611016" nodeInfo="nn">
-            <node role="creator" roleId="tpee.1145553007750" type="3673.InterpreterCreator" typeId="3673.3799977499684156231" id="7648974255076611017" nodeInfo="ng">
-              <link role="interpreter" roleId="3673.3799977499684158543" targetNodeId="7648974255076652288" resolveInfo="CInterpreter" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root type="v54s.ExtensionDeclaration" typeId="v54s.3729007189729192404" id="7648974255076611018" nodeInfo="ng">
-    <link role="extensionPoint" roleId="v54s.3729007189729192405" targetNodeId="6f5b.4222583594238956182" />
-    <node role="objectGetter" roleId="v54s.8029776554053057811" type="v54s.ExtensionObjectGetter" typeId="v54s.8029776554053043557" id="7648974255076611019" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7648974255076611020" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="7648974255076611021" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068581517676" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7648974255076611022" nodeInfo="nn">
-            <node role="creator" roleId="tpee.1145553007750" type="3673.InterpreterCreator" typeId="3673.3799977499684156231" id="7648974255076611023" nodeInfo="ng">
-              <link role="interpreter" roleId="3673.3799977499684158543" targetNodeId="7648974255076652494" resolveInfo="CStatementInterpreter" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root type="v54s.ExtensionDeclaration" typeId="v54s.3729007189729192404" id="7648974255076611024" nodeInfo="ng">
-    <link role="extensionPoint" roleId="v54s.3729007189729192405" targetNodeId="6f5b.4222583594238956182" />
-    <node role="objectGetter" roleId="v54s.8029776554053057811" type="v54s.ExtensionObjectGetter" typeId="v54s.8029776554053043557" id="7648974255076611025" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7648974255076611026" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="7648974255076611027" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068581517676" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7648974255076611028" nodeInfo="nn">
-            <node role="creator" roleId="tpee.1145553007750" type="3673.InterpreterCreator" typeId="3673.3799977499684156231" id="7648974255076611029" nodeInfo="ng">
-              <link role="interpreter" roleId="3673.3799977499684158543" targetNodeId="7648974255076652260" resolveInfo="CFunctionInterpreter" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
   <root type="3673.Interpreter" typeId="3673.8615074351687299818" id="7648974255076652138" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="CExtInterpreter" />
     <node role="applicableLanguages" roleId="3673.7019451652830298090" type="3673.ApplicableLanguage" typeId="3673.7019451652830285943" id="7648974255076652139" nodeInfo="ng">
@@ -1074,20 +1031,6 @@
     </node>
     <node role="relationships" roleId="3673.6663324787725059267" type="3673.InterpretAfterRelationship" typeId="3673.6663324787725038318" id="7648974255076652546" nodeInfo="ng">
       <link role="target" roleId="3673.6663324787724987489" targetNodeId="7648974255076652288" resolveInfo="CInterpreter" />
-    </node>
-  </root>
-  <root type="v54s.ExtensionDeclaration" typeId="v54s.3729007189729192404" id="7648974255076663538" nodeInfo="ng">
-    <link role="extensionPoint" roleId="v54s.3729007189729192405" targetNodeId="6f5b.4222583594238956182" resolveInfo="InterpreterExtensionPoint" />
-    <node role="objectGetter" roleId="v54s.8029776554053057811" type="v54s.ExtensionObjectGetter" typeId="v54s.8029776554053043557" id="7648974255076663539" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7648974255076663540" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="7648974255076666673" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068581517676" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7648974255076666734" nodeInfo="nn">
-            <node role="creator" roleId="tpee.1145553007750" type="3673.InterpreterCreator" typeId="3673.3799977499684156231" id="7648974255076680286" nodeInfo="ng">
-              <link role="interpreter" roleId="3673.3799977499684158543" targetNodeId="7648974255076652138" resolveInfo="CExtInterpreter" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </root>
 </model>
