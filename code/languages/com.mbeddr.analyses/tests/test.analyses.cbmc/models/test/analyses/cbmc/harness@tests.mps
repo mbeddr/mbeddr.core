@@ -998,7 +998,7 @@
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="776451177275536277" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="matrix[1][1]" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="16405" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="11" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="776451177275536278" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="q5q6.8985851583396455245" resolveInfo="NondetVarAssignment" />
             </node>

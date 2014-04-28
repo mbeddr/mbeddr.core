@@ -805,13 +805,6 @@
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6610873504380335822" resolveInfo="GlobalVariableDeclaration" />
             </node>
           </node>
-          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="156369466848717614" nodeInfo="ng">
-            <property name="nodeKind" nameId="o23b.4791280061046124024" value="anIntVar" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="10" />
-            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="156369466848717615" nodeInfo="in">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6610873504380335822" resolveInfo="GlobalVariableDeclaration" />
-            </node>
-          </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="156369466848717616" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="aPerson.name" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
@@ -823,6 +816,13 @@
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="aPerson.age" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8408742697206954957" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6610873504380335822" resolveInfo="GlobalVariableDeclaration" />
+            </node>
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="156369466848717614" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="anIntVar" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="10" />
+            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="156369466848717615" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6610873504380335822" resolveInfo="GlobalVariableDeclaration" />
             </node>
           </node>
@@ -926,21 +926,21 @@
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="8408742697203295464" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="x" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="2" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="224708880705766967" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.7892328519581704407" resolveInfo="Argument" />
             </node>
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="8408742697203299835" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="a" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="12" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8408742697206446605" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.7254843406768833938" resolveInfo="ExpressionStatement" />
             </node>
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="8408742697203300076" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="bb" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="4" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8408742697206446608" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.4185783222026475238" resolveInfo="LocalVariableDeclaration" />
             </node>
@@ -954,7 +954,7 @@
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="8408742697205662521" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="a" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="13" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8408742697206447585" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.4185783222026475238" resolveInfo="LocalVariableDeclaration" />
             </node>
@@ -968,14 +968,14 @@
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="8408742697203300811" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="a" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="13" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8408742697206447595" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.4185783222026475238" resolveInfo="LocalVariableDeclaration" />
             </node>
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="8408742697203301047" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="b" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="4" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8408742697206447601" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.4185783222026475238" resolveInfo="LocalVariableDeclaration" />
             </node>
