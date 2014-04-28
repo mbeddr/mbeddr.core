@@ -388,12 +388,6 @@
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4053481679317021593" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4053481679317021599" resolveInfo="tool" />
               </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4053481679317021594" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4053481679317021595" nodeInfo="nn" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4053481679317021596" nodeInfo="nn">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="hj5x.4053481679317021373" resolveInfo="timeoutForSingleAnalysis" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
