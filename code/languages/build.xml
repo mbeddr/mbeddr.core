@@ -12,7 +12,7 @@
   <property name="branch.multiline" value="branch:31_EAP"/>
   <property name="branch.math" value="branch:master"/>
   <property name="branch.bool-editor" value="branch:master"/> 
-  <property name="server.url" value="https://build.mbeddr.com"/>   
+  <property name="server.url" value="http://build.mbeddr.com"/>   
   <property name="server.port" value="80"/>    
   <property name="base-url" value="https://build.mbeddr.com/guestAuth/app/rest/builds"/>
 
@@ -258,6 +258,12 @@
   	  <antcall target="clean-languages" />
 	  <antcall target="clean-tests" />
 	  <antcall target="clean-tutorial" />
+	  <echo message=""/>
+	  <echo message="Deleting all source_gen, source_gen.caches, classes_gen, test_gen and test_gen.caches directories..."/>
+	  <delete includeemptydirs="true">
+	  	<fileset dir="." includes="**/source_gen/,**/source_gen.caches/,**/classes_gen/,**/test_gen/,**/test_gen.caches/" defaultexcludes="false"/>
+	  </delete>
+  	  <echo message="... Done"/>
   </target>	
   
   <target name="clean-tutorial">
