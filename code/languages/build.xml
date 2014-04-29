@@ -12,7 +12,7 @@
   <property name="branch.multiline" value="branch:31_EAP"/>
   <property name="branch.math" value="branch:master"/>
   <property name="branch.bool-editor" value="branch:master"/> 
-  <property name="server.url" value="https://build.mbeddr.com"/>   
+  <property name="server.url" value="http://build.mbeddr.com"/>   
   <property name="server.port" value="80"/>    
   <property name="base-url" value="https://build.mbeddr.com/guestAuth/app/rest/builds"/>
 
