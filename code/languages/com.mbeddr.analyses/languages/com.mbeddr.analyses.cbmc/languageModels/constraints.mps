@@ -125,5 +125,9 @@
       </node>
     </node>
   </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8676616451799025845" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expressions" />
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5q6.8676616451799017117" resolveInfo="BelongsToInterval" />
+  </root>
 </model>
 
