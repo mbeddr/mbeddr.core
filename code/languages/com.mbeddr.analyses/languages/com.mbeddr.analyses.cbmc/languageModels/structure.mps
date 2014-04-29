@@ -310,11 +310,19 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="c4fa.2486081302459354921" resolveInfo="IVariableReference" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4648213823229041321" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="C99Bool" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="_Bool" />
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6521653180368581925" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128058" resolveInfo="BooleanType" />
+    <property name="name" nameId="tpck.1169194664001" value="CPROVERbitvector" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="bitvector" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128056" resolveInfo="PrimitiveType" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6521653180368582366" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="unsigned" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6521653180368582368" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="length" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
   </root>
 </model>
 
