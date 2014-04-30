@@ -295,42 +295,6 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5270842844355901551" nodeInfo="nn" />
     </node>
   </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5921690033619037701" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="harness.nondet_val" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q5q6.5921690033619037700" resolveInfo="NondetInt" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5921690033619065055" nodeInfo="nn">
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5921690033619065056" nodeInfo="nn" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5921690033619065057" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="nondet_int()" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5921690033619065059" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value=":" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5921690033619065062" nodeInfo="ng">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.318113533128716676" />
-      </node>
-    </node>
-  </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8616087288193573562" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="harness.nondet_val" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q5q6.8616087288193573558" resolveInfo="NondetFloat" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8616087288193573564" nodeInfo="nn">
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8616087288193573565" nodeInfo="nn" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8616087288193573566" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="nondet_float()" />
-      </node>
-    </node>
-  </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8616087288193573581" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="harness.nondet_val" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q5q6.8616087288193573574" resolveInfo="NondetDouble" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8616087288193573583" nodeInfo="nn">
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8616087288193573584" nodeInfo="nn" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8616087288193573585" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="nondet_double()" />
-      </node>
-    </node>
-  </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8985851583396646847" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="harness" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q5q6.8985851583396634740" resolveInfo="GuardedCall" />

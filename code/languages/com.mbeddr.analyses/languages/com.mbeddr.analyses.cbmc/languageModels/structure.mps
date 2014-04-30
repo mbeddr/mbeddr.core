@@ -215,27 +215,6 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8616087288193573574" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="harness.nondet_val" />
-    <property name="name" nameId="tpck.1169194664001" value="NondetDouble" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nondet_double" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8616087288193573558" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="harness.nondet_val" />
-    <property name="name" nameId="tpck.1169194664001" value="NondetFloat" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nondet_float" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5921690033619037700" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="harness.nondet_val" />
-    <property name="name" nameId="tpck.1169194664001" value="NondetInt" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nondet_int" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5921690033619065061" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.318113533128716675" resolveInfo="ITyped" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2609337213949315030" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
     <property name="name" nameId="tpck.1169194664001" value="AfterQUntilRExistsP" />
