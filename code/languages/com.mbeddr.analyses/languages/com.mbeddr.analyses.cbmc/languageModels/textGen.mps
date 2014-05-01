@@ -38,45 +38,6 @@
       </node>
     </node>
   </root>
-  <root type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="5921690033619050486" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="harness.nondet_val" />
-    <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="q5q6.5921690033619037700" resolveInfo="NondetInt" />
-    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="5921690033619050487" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5921690033619050488" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="5921690033619050489" nodeInfo="nn">
-          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="5921690033619050491" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="nondet_int()" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="8616087288193573569" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="harness.nondet_val" />
-    <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="q5q6.8616087288193573558" resolveInfo="NondetFloat" />
-    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="8616087288193573570" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8616087288193573571" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="8616087288193573572" nodeInfo="nn">
-          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="8616087288193573573" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="nondet_float()" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="8616087288193573576" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="harness.nondet_val" />
-    <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="q5q6.8616087288193573574" resolveInfo="NondetDouble" />
-    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="8616087288193573577" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8616087288193573578" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="8616087288193573579" nodeInfo="nn">
-          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="8616087288193573580" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="nondet_double()" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
   <root type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="6521653180368597929" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
     <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="q5q6.6521653180368581925" resolveInfo="CPROVERbitvector" />
