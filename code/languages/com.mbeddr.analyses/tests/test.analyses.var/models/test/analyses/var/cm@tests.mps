@@ -38,8 +38,8 @@
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="oe3g.538267308513614536" resolveInfo="VariabilityTestingUtils" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="oe3g.538267308516084585" resolveInfo="checkConfigurationModelConsistency" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="538267308516329647" nodeInfo="nn">
-                <property name="fqName" nameId="tp25.559557797393041554" value="fm" />
-                <property name="name" nameId="tp25.559557797393017702" value="test.analyses.var.testcode.fm" />
+                <property name="fqName" nameId="tp25.559557797393041554" value="test.analyses.var.testcode.cm" />
+                <property name="name" nameId="tp25.559557797393017702" value="test.analyses.var.testcode.cm" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="538267308516329648" nodeInfo="nn">
@@ -68,8 +68,8 @@
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="oe3g.538267308513614536" resolveInfo="VariabilityTestingUtils" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="oe3g.538267308516084585" resolveInfo="checkConfigurationModelConsistency" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="538267308516329451" nodeInfo="nn">
-                <property name="fqName" nameId="tp25.559557797393041554" value="fm" />
-                <property name="name" nameId="tp25.559557797393017702" value="test.analyses.var.testcode.fm" />
+                <property name="fqName" nameId="tp25.559557797393041554" value="test.analyses.var.testcode.cm" />
+                <property name="name" nameId="tp25.559557797393017702" value="test.analyses.var.testcode.cm" />
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="538267308516329452" nodeInfo="nn">
@@ -82,6 +82,126 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertFalse" typeId="tpe3.1171983834376" id="538267308516328370" nodeInfo="nn">
           <node role="condition" roleId="tpe3.1171983854940" type="tpee.VariableReference" typeId="tpee.1068498886296" id="538267308516328371" nodeInfo="nn">
             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="538267308516328364" resolveInfo="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="4339520093129872344" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="testXorFeaturesPositive" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="4339520093129872345" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4339520093129872346" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4339520093129872347" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4339520093129872348" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="res" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4339520093129872349" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="4339520093129872350" nodeInfo="ng">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="oe3g.538267308513614536" resolveInfo="VariabilityTestingUtils" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="oe3g.538267308516084585" resolveInfo="checkConfigurationModelConsistency" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4339520093129872351" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="test.analyses.var.testcode.cm" />
+                <property name="name" nameId="tp25.559557797393017702" value="test.analyses.var.testcode.cm" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4339520093129872352" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="ConfigModelForXorPositive" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4339520093129872353" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertTrue" typeId="tpe3.1171981022339" id="4339520093129873322" nodeInfo="nn">
+          <node role="condition" roleId="tpe3.1171981057159" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4339520093129873427" nodeInfo="nn">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4339520093129872348" resolveInfo="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="4339520093129873579" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="testXorFeaturesNegative1" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="4339520093129873580" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4339520093129873581" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4339520093129873582" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4339520093129873583" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="res" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4339520093129873584" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="4339520093129873585" nodeInfo="ng">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="oe3g.538267308513614536" resolveInfo="VariabilityTestingUtils" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="oe3g.538267308516084585" resolveInfo="checkConfigurationModelConsistency" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4339520093129873586" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="test.analyses.var.testcode.cm" />
+                <property name="name" nameId="tp25.559557797393017702" value="test.analyses.var.testcode.cm" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4339520093129873587" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="ConfigModelForXorNegative1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4339520093129873588" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertFalse" typeId="tpe3.1171983834376" id="4339520093129874489" nodeInfo="nn">
+          <node role="condition" roleId="tpe3.1171983854940" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4339520093129874600" nodeInfo="nn">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4339520093129873583" resolveInfo="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="4339520093129874758" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="testXorFeaturesNegative2" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="4339520093129874759" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4339520093129874760" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4339520093129874761" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4339520093129874762" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="res" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4339520093129874763" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="4339520093129874764" nodeInfo="ng">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="oe3g.538267308516084585" resolveInfo="checkConfigurationModelConsistency" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="oe3g.538267308513614536" resolveInfo="VariabilityTestingUtils" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4339520093129874765" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="test.analyses.var.testcode.cm" />
+                <property name="name" nameId="tp25.559557797393017702" value="test.analyses.var.testcode.cm" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4339520093129874766" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="ConfigModelForXorNegative2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4339520093129874767" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertFalse" typeId="tpe3.1171983834376" id="4339520093129874768" nodeInfo="nn">
+          <node role="condition" roleId="tpe3.1171983854940" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4339520093129874769" nodeInfo="nn">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4339520093129874762" resolveInfo="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="4339520093129875138" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="testXorFeaturesNegative3" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="4339520093129875139" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4339520093129875140" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4339520093129875141" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4339520093129875142" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="res" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4339520093129875143" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="4339520093129875144" nodeInfo="ng">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="oe3g.538267308516084585" resolveInfo="checkConfigurationModelConsistency" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="oe3g.538267308513614536" resolveInfo="VariabilityTestingUtils" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="4339520093129875145" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="test.analyses.var.testcode.cm" />
+                <property name="name" nameId="tp25.559557797393017702" value="test.analyses.var.testcode.cm" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4339520093129875146" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="ConfigModelForXorNegative3" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4339520093129875147" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertFalse" typeId="tpe3.1171983834376" id="4339520093129875148" nodeInfo="nn">
+          <node role="condition" roleId="tpe3.1171983854940" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4339520093129875149" nodeInfo="nn">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4339520093129875142" resolveInfo="res" />
           </node>
         </node>
       </node>
