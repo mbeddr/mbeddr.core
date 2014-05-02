@@ -25,6 +25,7 @@
       </facets>
       <external-templates>
         <generator generatorUID="ea79507d-33bf-45ac-af32-13a874687ef0(com.mbeddr.ext.statemachines#8836799689252270723)" />
+        <generator generatorUID="ac68b774-6cee-4087-a40f-475cf32c89bc(com.mbeddr.analyses.cbmc.statemachines.experimental#6085839724194682255)" />
       </external-templates>
       <dependencies>
         <dependency reexport="false">e462c189-8b5a-4c70-b928-a493585c0765(com.mbeddr.analyses.cbmc.statemachines.experimental)</dependency>
@@ -75,6 +76,7 @@
   </usedDevKits>
   <extendedLanguages>
     <extendedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</extendedLanguage>
+    <extendedLanguage>e462c189-8b5a-4c70-b928-a493585c0765(com.mbeddr.analyses.cbmc.statemachines.experimental)</extendedLanguage>
   </extendedLanguages>
 </language>
 
