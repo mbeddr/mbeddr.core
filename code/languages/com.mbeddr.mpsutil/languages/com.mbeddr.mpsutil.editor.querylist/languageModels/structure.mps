@@ -167,5 +167,10 @@
     <property name="name" nameId="tpck.1169194664001" value="QueryListInlineEditorComponent" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpc2.1088185857835" resolveInfo="InlineEditorComponent" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7908147594175279209" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="CellModel_DefaultEditor" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="default editor" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpc2.1073389214265" resolveInfo="EditorCellModel" />
+  </root>
 </model>
 
