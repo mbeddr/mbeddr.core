@@ -37,6 +37,119 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="4689096352576325007" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="OptionalFeaturesInConflict2" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="4689096352576325008" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="4689096352576325009" nodeInfo="ng" />
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576325010" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="mc21" />
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="4689096352576325011" nodeInfo="ng" />
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576325012" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="mc22" />
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="4689096352576325142" nodeInfo="ng" />
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576325143" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="mc221" />
+          </node>
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576336646" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="mc222" />
+          </node>
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576336649" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="mc223" />
+            <node role="crossConstraints" roleId="qqyh.8433257123783652307" type="qqyh.ConflictsConstraint" typeId="qqyh.8433257123783652305" id="4689096352576336653" nodeInfo="ng">
+              <link role="feature" roleId="qqyh.8433257123783652292" targetNodeId="4689096352576325143" resolveInfo="mc221" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="4689096352576405803" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="OptionalFeaturesInConflict3" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="4689096352576405804" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="4689096352576405805" nodeInfo="ng" />
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576405806" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="c31" />
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="4689096352576405807" nodeInfo="ng" />
+          <node role="crossConstraints" roleId="qqyh.8433257123783652307" type="qqyh.RequiresConstraint" typeId="qqyh.8433257123783652291" id="4689096352576405938" nodeInfo="ng">
+            <link role="feature" roleId="qqyh.8433257123783652292" targetNodeId="4689096352576405810" resolveInfo="c321" />
+          </node>
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576405808" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="c32" />
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="4689096352576405809" nodeInfo="ng" />
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576405810" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="c321" />
+          </node>
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576405811" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="c322" />
+            <node role="crossConstraints" roleId="qqyh.8433257123783652307" type="qqyh.ConflictsConstraint" typeId="qqyh.8433257123783652305" id="4689096352576405936" nodeInfo="ng">
+              <link role="feature" roleId="qqyh.8433257123783652292" targetNodeId="4689096352576405810" resolveInfo="c321" />
+            </node>
+          </node>
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576405812" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="c323" />
+            <node role="crossConstraints" roleId="qqyh.8433257123783652307" type="qqyh.ConflictsConstraint" typeId="qqyh.8433257123783652305" id="4689096352576405813" nodeInfo="ng">
+              <link role="feature" roleId="qqyh.8433257123783652292" targetNodeId="4689096352576405810" resolveInfo="c321" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="4689096352576340407" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="XorFeaturesInConflict3" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="4689096352576340408" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.XorConstraint" typeId="qqyh.6825476687691317633" id="4689096352576340453" nodeInfo="ng" />
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576340410" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="mc31" />
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="4689096352576340411" nodeInfo="ng" />
+          <node role="crossConstraints" roleId="qqyh.8433257123783652307" type="qqyh.ConflictsConstraint" typeId="qqyh.8433257123783652305" id="4689096352576340459" nodeInfo="ng">
+            <link role="feature" roleId="qqyh.8433257123783652292" targetNodeId="4689096352576340414" resolveInfo="mc321" />
+          </node>
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576340412" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="mc32" />
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="4689096352576340456" nodeInfo="ng" />
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576340414" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="mc321" />
+          </node>
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576340415" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="mc322" />
+          </node>
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576340416" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="mc323" />
+            <node role="crossConstraints" roleId="qqyh.8433257123783652307" type="qqyh.ConflictsConstraint" typeId="qqyh.8433257123783652305" id="4689096352576340417" nodeInfo="ng">
+              <link role="feature" roleId="qqyh.8433257123783652292" targetNodeId="4689096352576340412" resolveInfo="mc32" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="4689096352576342248" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="XorFeaturesRequire4" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="4689096352576342249" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.XorConstraint" typeId="qqyh.6825476687691317633" id="4689096352576342250" nodeInfo="ng" />
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576342251" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="mc41" />
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="4689096352576342252" nodeInfo="ng" />
+          <node role="crossConstraints" roleId="qqyh.8433257123783652307" type="qqyh.RequiresConstraint" typeId="qqyh.8433257123783652291" id="4689096352576342316" nodeInfo="ng">
+            <link role="feature" roleId="qqyh.8433257123783652292" targetNodeId="4689096352576342257" resolveInfo="mc422" />
+          </node>
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576342254" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="mc42" />
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="4689096352576342255" nodeInfo="ng" />
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576342256" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="mc421" />
+          </node>
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4689096352576342257" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="mc422" />
+            <node role="crossConstraints" roleId="qqyh.8433257123783652307" type="qqyh.RequiresConstraint" typeId="qqyh.8433257123783652291" id="4689096352576420297" nodeInfo="ng">
+              <link role="feature" roleId="qqyh.8433257123783652292" targetNodeId="4689096352576342251" resolveInfo="mc41" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="4339520093129722894" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DerivedFeatures" />
