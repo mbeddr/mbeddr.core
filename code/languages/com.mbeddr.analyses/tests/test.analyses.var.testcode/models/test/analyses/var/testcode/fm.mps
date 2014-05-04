@@ -385,6 +385,39 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235934" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="IntelligentActuatorFamily" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530793218074" nodeInfo="ng">
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="1328910530793218075" nodeInfo="ng" />
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235936" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="Diagnosis" />
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235937" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="Logging" />
+            <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="2912335823209235938" nodeInfo="ng" />
+            <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235939" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="Centralized" />
+            </node>
+            <node role="crossConstraints" roleId="qqyh.8433257123783652307" type="qqyh.RequiresConstraint" typeId="qqyh.8433257123783652291" id="2912335823209235940" nodeInfo="ng">
+              <link role="feature" roleId="qqyh.8433257123783652292" targetNodeId="2912335823209235945" resolveInfo="CAN" />
+            </node>
+          </node>
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235941" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="HeartBeat" />
+          </node>
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.XorConstraint" typeId="qqyh.6825476687691317633" id="2912335823209235942" nodeInfo="ng" />
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235943" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="CommProtocol" />
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="2912335823209235944" nodeInfo="ng" />
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235945" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="CAN" />
+          </node>
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235946" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="TCP_IP" />
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
 </model>
 
