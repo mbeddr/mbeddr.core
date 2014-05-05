@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/jetbrains.mps.standalone" />
   <property name="build.layout" location="${build.dir}/artifacts/jetbrains.mps.standalone" />
   <property name="mps.home" location="${basedir}/../../../../MPS 3.1 EAP.app" />
-  <property name="buildnumber" value="130.001" />
+  <property name="buildnumber" value="135.001" />
   <property name="date" value="20130805" />
   <property name="artifacts.mpsStandalone" location="${mps.home}" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
