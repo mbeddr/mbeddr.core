@@ -258,12 +258,12 @@
   	  <antcall target="clean-languages" />
 	  <antcall target="clean-tests" />
 	  <antcall target="clean-tutorial" />
-	  <echo message="">
-	  <echo message="Deleting all source_gen, source_gen.caches, classes_gen, test_gen and test_gen.caches directories...">
+	  <echo message=""/>
+	  <echo message="Deleting all source_gen, source_gen.caches, classes_gen, test_gen and test_gen.caches directories..."/>
 	  <delete includeemptydirs="true">
 	  	<fileset dir="." includes="**/source_gen/,**/source_gen.caches/,**/classes_gen/,**/test_gen/,**/test_gen.caches/" defaultexcludes="false"/>
 	  </delete>
-  	  <echo message="... Done">
+  	  <echo message="... Done"/>
   </target>	
   
   <target name="clean-tutorial">
