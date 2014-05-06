@@ -465,5 +465,23 @@
     </dependencies>
     <rename id="talm.1358930484548440228" type="CONCEPT" from="PropertyFromTraceExpression" to="PropertiesFromTraceExpression" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="54" />
+    </dependencies>
+    <rename id="talm.3717740633333182653" type="CONCEPT" from="Prefix" to="PrefixModuleName" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="55" />
+    </dependencies>
+    <rename id="talm.3717740633333250298" type="CHILD" from="Expression" to="postfix" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="56" />
+    </dependencies>
+    <rename id="talm.3717740633333250298" type="CHILD" from="string" to="postfix" />
+  </StructureModification>
 </history>
 
