@@ -495,5 +495,17 @@
     </dependencies>
     <rename id="talm.3717740633333182653" type="CONCEPT" from="PrefixWithNodeName" to="ConstructMangledName" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="59" />
+    </dependencies>
+    <rename id="talm.3126808387881942089" type="CHILD" from="prefix" to="element" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="60" />
+    </dependencies>
+    <rename id="talm.3126808387881942089" type="CHILD" from="element" to="parts" />
+  </StructureModification>
 </history>
 
