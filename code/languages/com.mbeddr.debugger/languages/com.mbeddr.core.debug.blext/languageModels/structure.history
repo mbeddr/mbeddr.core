@@ -483,5 +483,17 @@
     </dependencies>
     <rename id="talm.3717740633333250298" type="CHILD" from="string" to="postfix" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="57" />
+    </dependencies>
+    <rename id="talm.3717740633333182653" type="CONCEPT" from="PrefixModuleName" to="PrefixWithNodeName" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="58" />
+    </dependencies>
+    <rename id="talm.3717740633333182653" type="CONCEPT" from="PrefixWithNodeName" to="ConstructMangledName" />
+  </StructureModification>
 </history>
 
