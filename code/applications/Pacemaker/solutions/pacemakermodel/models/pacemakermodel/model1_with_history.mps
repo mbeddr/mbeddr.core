@@ -246,7 +246,7 @@
     <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.AssertionsCBMCAnalysis" typeId="hj5x.4053481679317021363" id="172131536229023629" nodeInfo="ng">
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="30" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="20" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="10000" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="120" />
       <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="true" />
