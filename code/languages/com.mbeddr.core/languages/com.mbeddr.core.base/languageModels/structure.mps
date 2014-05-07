@@ -854,6 +854,14 @@
       <property name="name" nameId="tpck.1169194664001" value="status" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8389796016067541245" resolveInfo="EntryStatus" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2711621784017387481" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="markedOk" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2711621784018180488" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="isNew" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6619757161337247129" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="lastFound" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
