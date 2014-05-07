@@ -21,13 +21,13 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4053481679317021363" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="AssertionsCBMCAnalysis" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="assertions_analysis_config" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Assertions Analysis" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="q5q6.8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4053481679317021364" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="DecTabCBMCAnalysis" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="decTab_analysis_config" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Decision Table Analysis" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="q5q6.8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4053481679317021365" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -38,7 +38,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4053481679317021366" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     <property name="name" nameId="tpck.1169194664001" value="RobustnessCBMCAnalysis" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="robustness_analysis_config" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Robustness Analysis" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="q5q6.8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4053481679317021367" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="check_div_by_zero" />

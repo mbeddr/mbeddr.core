@@ -20,8 +20,14 @@
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="6085839724192268158" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
         </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="638602945402156251" nodeInfo="nn">
+          <property name="text" nameId="tpc2.1073389577007" value="State Machine Analysis" />
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="638602945402157933" nodeInfo="nn">
+          <property name="text" nameId="tpc2.1073389577007" value="based on" />
+        </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6085839724192268159" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="CBMC-based" />
+          <property name="text" nameId="tpc2.1073389577007" value="CBMC" />
           <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="srwo.1634970928500780281" resolveInfo="verification" />
           <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="6085839724192268160" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6085839724192268161" nodeInfo="sn">
@@ -40,7 +46,7 @@
           </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6085839724192268167" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="SatAbs-based" />
+          <property name="text" nameId="tpc2.1073389577007" value="SATABS" />
           <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="srwo.1634970928500780281" resolveInfo="verification" />
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="6085839724192268168" nodeInfo="nn">
             <property name="color" nameId="tpc2.1186403713874" value="DARK_MAGENTA" />
@@ -62,7 +68,7 @@
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6085839724192268176" nodeInfo="nn" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6085839724192268177" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="statemachine analysis:" />
+          <property name="text" nameId="tpc2.1073389577007" value=":" />
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6085839724192268178" nodeInfo="nn">
