@@ -15,21 +15,21 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="568116135000816591" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ISteppable" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1389340506540666010" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1389340506540662105" resolveInfo="ISuspendableNode" />
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3205769394890863066" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IStackFrameContributor" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="callstack" />
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="9057217260024409663" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IWatchablesProvider" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4474148880361719194" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
     <property name="name" nameId="tpck.1169194664001" value="IWatchablesProviderContext" />
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8811944678849085924" nodeInfo="ig">
@@ -37,29 +37,29 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="breakpoint" />
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3298295153090251326" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
     <property name="name" nameId="tpck.1169194664001" value="IStepIntoable" />
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3298295153090279176" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
     <property name="name" nameId="tpck.1169194664001" value="ISteppableContext" />
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1389340506540665759" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1389340506540662105" resolveInfo="ISuspendableNode" />
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2425085581001949605" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
     <property name="name" nameId="tpck.1169194664001" value="ISteppableUnit" />
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1061857790208788191" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="callstack" />
     <property name="name" nameId="tpck.1169194664001" value="IVirtualStackFrameContributor" />
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1061857790208788314" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3205769394890863066" resolveInfo="IStackFrameContributor" />
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1061857790208788243" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="callstack" />
     <property name="name" nameId="tpck.1169194664001" value="IRealStackFrameContributor" />
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1061857790208788317" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3205769394890863066" resolveInfo="IStackFrameContributor" />
@@ -89,13 +89,14 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7179305966071579075" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IPermanentBreakpointsProvider" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="breakpoint" />
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1389340506540662105" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
     <property name="name" nameId="tpck.1169194664001" value="ISuspendableNode" />
   </root>
   <root type="tpee.Interface" typeId="tpee.1107796713796" id="1358930484543726190" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="callstack" />
     <property name="name" nameId="tpck.1169194664001" value="IStackFrameMapping" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="1358930484543726213" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="1358930484543726314" nodeInfo="igu">
