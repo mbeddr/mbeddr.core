@@ -5,13 +5,14 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="5" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4457500422381536784" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ContentRefWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="top level C constructs (module contents)" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@cc" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2c95.3350625596580108706" resolveInfo="DocumentWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4457500422381536794" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -63,6 +64,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="794010416819955528" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ModuleRefWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="references a module" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@module" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2c95.3350625596580108706" resolveInfo="DocumentWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="794010416819955529" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />

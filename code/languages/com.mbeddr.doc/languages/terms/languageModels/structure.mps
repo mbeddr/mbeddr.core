@@ -11,6 +11,7 @@
   <import index="kwxp" modelUID="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" version="-1" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8574110643282370464" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TermRefWord" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="[" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8574110643282370465" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="87nw.2557074442922392300" resolveInfo="IWord" />
@@ -46,6 +47,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1233689874746925900" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TermRelationshipText" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-&gt;" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2c95.6165313375055797476" resolveInfo="FormattedText" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4224548511521359213" nodeInfo="ig">

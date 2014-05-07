@@ -5,7 +5,7 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
@@ -213,6 +213,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2992054467184168918" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="pricetable" />
     <property name="name" nameId="tpck.1169194664001" value="VarWord" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2992054467184168970" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="87nw.2557074442922392300" resolveInfo="IWord" />
@@ -224,6 +225,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2992054467184775334" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="pricetable" />
     <property name="name" nameId="tpck.1169194664001" value="PEqWord" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#(" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2992054467184775426" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -258,6 +260,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1711211267079432105" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="calc" />
     <property name="name" nameId="tpck.1169194664001" value="RParamRefWord" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1711211267079439040" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
