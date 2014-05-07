@@ -17,7 +17,7 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="568116135000816592" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="2gv2.568116135000816591" resolveInfo="ISteppable" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="3459385192073379390" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="true" />
@@ -98,7 +98,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3205769394890863067" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="callstack" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="2gv2.3205769394890863066" resolveInfo="IStackFrameContributor" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="3205769394890863070" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="true" />
@@ -209,7 +209,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="9057217260024703805" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7691049327860234868" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
@@ -280,7 +280,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4474148880361722775" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="2gv2.4474148880361719194" resolveInfo="IWatchablesProviderContext" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="666086264355541887" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
@@ -433,7 +433,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3298295153090251327" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="2gv2.3298295153090251326" resolveInfo="IStepIntoable" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="3298295153090251330" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="true" />
@@ -470,7 +470,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3298295153090279177" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="2gv2.3298295153090279176" resolveInfo="ISteppableContext" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="3298295153090279180" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="true" />
@@ -523,7 +523,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2425085581001949606" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="2gv2.2425085581001949605" resolveInfo="ISteppableUnit" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="2425085581001949609" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="true" />
@@ -542,7 +542,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="1061857790208788259" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="callstack" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="2gv2.1061857790208788191" resolveInfo="IVirtualStackFrameContributor" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="1061857790208788260" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1061857790208788261" nodeInfo="sn" />
@@ -683,6 +683,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="7179305966071579076" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="breakpoint" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="2gv2.7179305966071579075" resolveInfo="IPermanentBreakpointsProvider" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7179305966071579079" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="true" />
@@ -699,7 +700,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="1389340506540665420" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="2gv2.1389340506540662105" resolveInfo="ISuspendableNode" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="1389340506540665719" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
@@ -722,7 +723,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3126808387884303714" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="callstack" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="2gv2.1061857790208788243" resolveInfo="IRealStackFrameContributor" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="3126808387884996466" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="false" />

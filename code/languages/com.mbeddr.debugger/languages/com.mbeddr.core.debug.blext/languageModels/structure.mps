@@ -457,17 +457,17 @@
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="87867697806781688" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
     <property name="name" nameId="tpck.1169194664001" value="SteppingCommand" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="87867697806781689" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="step-into" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="0" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="step-into" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="87867697806781690" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="step-over" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="step-over" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="87867697806781695" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="2" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="step-out" />
       <property name="externalValue" nameId="tpce.1083923523172" value="step-out" />
     </node>
   </root>
