@@ -1068,6 +1068,10 @@
       <property name="name" nameId="tpck.1169194664001" value="path" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2711621784026951428" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="fileMustExist" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6156524541423588207" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="pathAndFile" />
