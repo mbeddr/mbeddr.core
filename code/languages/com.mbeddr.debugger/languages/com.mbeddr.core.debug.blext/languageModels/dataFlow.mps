@@ -25,11 +25,5 @@
       </node>
     </node>
   </root>
-  <root type="tp41.DataFlowBuilderDeclaration" typeId="tp41.1206442055221" id="1358930484548349610" nodeInfo="ng">
-    <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="talm.1358930484543774076" resolveInfo="CreateStackFrameExpression" />
-    <node role="builderBlock" roleId="tp41.1206442812839" type="tp41.BuilderBlock" typeId="tp41.1206442659665" id="1358930484548349611" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1358930484548349612" nodeInfo="sn" />
-    </node>
-  </root>
 </model>
 
