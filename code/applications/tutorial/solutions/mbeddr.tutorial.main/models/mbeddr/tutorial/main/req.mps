@@ -1686,7 +1686,7 @@
         </node>
       </node>
       <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="1626886780547224809" nodeInfo="ng">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="status" nameId="vs0r.8389796016067541249" value="2" />
         <property name="lastFound" nameId="vs0r.6619757161337247129" value="1372266732852" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1626886780547224810" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1626886780547224811" nodeInfo="ng">
