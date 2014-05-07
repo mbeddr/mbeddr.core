@@ -905,6 +905,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation.words" />
     <property name="name" nameId="tpck.1169194664001" value="ModuleContentRefWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="references module contents" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@mc" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.4052432714772706104" resolveInfo="CDocWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4052432714773079905" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -917,6 +918,7 @@
     <property name="name" nameId="tpck.1169194664001" value="ArgRefWord" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation.words" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="references an argument" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@arg" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.4052432714772706104" resolveInfo="CDocWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4052432714772706113" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -929,6 +931,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation.words" />
     <property name="name" nameId="tpck.1169194664001" value="NamedSiblingRefWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="references local named element" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@child" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.4052432714772706104" resolveInfo="CDocWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6068976060903808907" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -941,6 +944,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation.words" />
     <property name="name" nameId="tpck.1169194664001" value="ModuleRefWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="references a module" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@module" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.4052432714772706104" resolveInfo="CDocWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6068976060903930233" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />

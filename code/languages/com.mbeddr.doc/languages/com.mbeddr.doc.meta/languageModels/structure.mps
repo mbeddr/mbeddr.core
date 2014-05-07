@@ -4,7 +4,7 @@
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" />
+  <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="7" />
   <import index="t3eg" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" version="-1" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" />
@@ -30,6 +30,7 @@
     <property name="name" nameId="tpck.1169194664001" value="ConceptRefWord" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ref" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="references a concept (structure)" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@concept" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4715820023543872565" resolveInfo="LangDefWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4715820023543872580" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -42,6 +43,7 @@
     <property name="name" nameId="tpck.1169194664001" value="EditorRefWord" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ref" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="references an editor" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@editor" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4715820023543872565" resolveInfo="LangDefWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4715820023543873538" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -103,6 +105,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ref" />
     <property name="name" nameId="tpck.1169194664001" value="ConstraintsRefWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="references a constraint (restriction)" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@constraint" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4715820023543872565" resolveInfo="LangDefWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4220250885134173649" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -115,6 +118,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ref" />
     <property name="name" nameId="tpck.1169194664001" value="NonTypesystemRuleRefWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="references a non type-system rule (restriction)" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@nonTypeSysRule" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4715820023543872565" resolveInfo="LangDefWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4220250885134289784" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -129,6 +133,13 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@devkit" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4411878964391805161" resolveInfo="AbstractModuleRefWord" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4411878964391860302" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ref" />
+    <property name="name" nameId="tpck.1169194664001" value="SolutionRefWord" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="reference a solution" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@solution" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4411878964391805161" resolveInfo="AbstractModuleRefWord" />
+  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4411878964391805161" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ref" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
@@ -140,13 +151,6 @@
       <property name="role" nameId="tpce.1071599776563" value="moduleRef" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="hypd.1855399583446016268" resolveInfo="ModuleReference" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4411878964391860302" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="ref" />
-    <property name="name" nameId="tpck.1169194664001" value="SolutionRefWord" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="reference a solution" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@solution" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4411878964391805161" resolveInfo="AbstractModuleRefWord" />
   </root>
 </model>
 
