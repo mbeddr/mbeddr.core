@@ -12,6 +12,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5378658552263149308" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="VariableDef" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="defines an inline variable" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="$var" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2c95.3350625596580108706" resolveInfo="DocumentWord" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5378658552263149311" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
@@ -23,6 +24,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5378658552263151447" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Equation" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="an equation using variables" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="$eq" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2c95.3350625596580108706" resolveInfo="DocumentWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5378658552263151449" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
