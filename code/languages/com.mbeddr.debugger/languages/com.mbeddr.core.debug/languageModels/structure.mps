@@ -11,7 +11,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="13" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="568116135000816591" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ISteppable" />
@@ -93,10 +93,6 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1389340506540662105" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="control" />
     <property name="name" nameId="tpck.1169194664001" value="ISuspendableNode" />
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1358930484543725141" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
-    <property name="name" nameId="tpck.1169194664001" value="ICallStackContributor" />
   </root>
   <root type="tpee.Interface" typeId="tpee.1107796713796" id="1358930484543726190" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
