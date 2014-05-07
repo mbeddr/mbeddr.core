@@ -531,6 +531,12 @@
           <property name="uuid" nameId="kdzh.322010710375892619" value="864be1b4-10fc-4e1f-9112-c5b47ae9adec" />
           <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="7787579437375975792" nodeInfo="nn">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="7787579437375975793" nodeInfo="ng">
+            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="g0ku.651821299948807131" resolveInfo="com.mbeddr.core.base" />
+          </node>
+        </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="8607331426312061497" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
