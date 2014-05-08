@@ -13,9 +13,7 @@
           <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
-      <external-templates>
-        <generator generatorUID="996a24a9-6231-48b3-bb70-d8c04cde5f96(com.mbeddr.cc.var.buildconfig#6617704999132074775)" />
-      </external-templates>
+      <external-templates />
       <dependencies>
         <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
       </dependencies>
@@ -54,7 +52,6 @@
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <extendedLanguages>
-    <extendedLanguage>3e8a5813-64ae-4b14-9e62-3ced1ced6f42(com.mbeddr.cc.var.buildconfig)</extendedLanguage>
     <extendedLanguage>017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)</extendedLanguage>
     <extendedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</extendedLanguage>
     <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>
