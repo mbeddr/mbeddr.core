@@ -467,6 +467,7 @@
     <property name="name" nameId="tpck.1169194664001" value="ReqRefWord" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="ref. to a requirement; rendered as the req. name" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@req" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3352153450712436945" resolveInfo="AbstractReqRefWord" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2588579461811719528" nodeInfo="ig">
@@ -784,6 +785,7 @@
     <property name="name" nameId="tpck.1169194664001" value="CfReqWord" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="ref. to a requirement; rendered to (cf. SomeReq)" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@cfreq" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3352153450712436945" resolveInfo="AbstractReqRefWord" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3352153450712436945" nodeInfo="ig">
@@ -806,6 +808,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="name" nameId="tpck.1169194664001" value="CfReqModRefWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="ref. to a req. module; rendered as (cf. Module)" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@cfmod" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7717508395849194446" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />

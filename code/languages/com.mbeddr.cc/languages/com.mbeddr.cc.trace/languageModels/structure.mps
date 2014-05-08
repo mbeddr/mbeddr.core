@@ -97,6 +97,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4577779292081946446" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TraceWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="trace to a requirements (or other traceable)" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@trace" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4577779292081951513" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="87nw.2557074442922392300" resolveInfo="IWord" />

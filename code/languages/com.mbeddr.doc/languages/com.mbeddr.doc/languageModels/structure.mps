@@ -145,6 +145,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="name" nameId="tpck.1169194664001" value="SectRefWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="references a section" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@sect" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580108706" resolveInfo="DocumentWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3350625596580108719" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -248,6 +249,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="name" nameId="tpck.1169194664001" value="ImgRefWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a reference to a figure" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@fig" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580108706" resolveInfo="DocumentWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6386504476136420174" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -352,6 +354,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
     <property name="name" nameId="tpck.1169194664001" value="CodeFormattedText" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="text formatted in code font" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\code" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6165313375055797476" resolveInfo="FormattedText" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4457500422381845279" nodeInfo="ig">
@@ -378,6 +381,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="name" nameId="tpck.1169194664001" value="ShortcutRefWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="embeds and expands a shortcut" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@short" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580108706" resolveInfo="DocumentWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4457500422381979449" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -415,6 +419,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
     <property name="name" nameId="tpck.1169194664001" value="ShortcutArgRef" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="referenes an argument" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@arg" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4457500422381931845" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -461,6 +466,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
     <property name="name" nameId="tpck.1169194664001" value="MathFormattedText" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="text formatted as math" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\math" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6165313375055797476" resolveInfo="FormattedText" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6165313375055797476" nodeInfo="ig">
@@ -789,6 +795,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
     <property name="name" nameId="tpck.1169194664001" value="EmphFormattedText" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="emphasized text" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\emph" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6165313375055797476" resolveInfo="FormattedText" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2588579461812060090" nodeInfo="ig">
@@ -876,11 +883,13 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
     <property name="name" nameId="tpck.1169194664001" value="BoldFormattedText" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bold text" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\bold" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6165313375055797476" resolveInfo="FormattedText" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2642765975832553408" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="AttachmentWord" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@attachment" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580108706" resolveInfo="DocumentWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2642765975832553413" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -895,6 +904,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2728443031450669962" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="name" nameId="tpck.1169194664001" value="FootnoteWord" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\footnote" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580108706" resolveInfo="DocumentWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2728443031450670151" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -906,6 +916,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4220250885135199523" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="name" nameId="tpck.1169194664001" value="ToDoWord" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\ToDo" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580108706" resolveInfo="DocumentWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4220250885135204208" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
