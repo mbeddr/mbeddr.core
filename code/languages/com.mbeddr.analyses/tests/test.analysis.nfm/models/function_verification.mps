@@ -824,7 +824,6 @@
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="-1" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
-      <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="false" />
       <property name="timeoutForSingleAnalysis" nameId="hj5x.4053481679317021373" value="60" />
       <property name="check_div_by_zero" nameId="hj5x.4053481679317021367" value="true" />
       <property name="check_pointer" nameId="hj5x.4053481679317021368" value="true" />
