@@ -319,14 +319,15 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="9141254329931944282" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="9141254329931944283" nodeInfo="ng" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="7308356872494809780" nodeInfo="ng" />
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="1731059994647804473" nodeInfo="ng">
       <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="1731059994647804475" nodeInfo="ng">
         <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
         <property name="wireStatically" nameId="p7vm.1553713790141527405" value="false" />
       </node>
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="yvrq.VarRTConfigItem" typeId="yvrq.8882953773355809617" id="869116753978169842" nodeInfo="ng" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="6183633367245147491" nodeInfo="ng">
+      <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
+    </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qdv7.VariabilityConfigItem" typeId="qdv7.6514264311693667923" id="869116753978169844" nodeInfo="ng">
       <node role="config" roleId="qdv7.6514264311693667924" type="qdv7.VariabilityTransformationConfig" typeId="qdv7.6617704999132114004" id="869116753978169845" nodeInfo="ng">
         <node role="mappings" roleId="qdv7.6617704999132114005" type="qdv7.ConfigurationMapping" typeId="qdv7.6617704999132114000" id="869116753978298044" nodeInfo="ng">
@@ -335,9 +336,8 @@
         </node>
       </node>
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="6183633367245147491" nodeInfo="ng">
-      <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
-    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="7308356872494809780" nodeInfo="ng" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="yvrq.VarRTConfigItem" typeId="yvrq.8882953773355809617" id="869116753978169842" nodeInfo="ng" />
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="26ao.TracingConfigItem" typeId="26ao.8626086128969157722" id="8626086128969525852" nodeInfo="ng" />
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="9141254329931944284" nodeInfo="ng">
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
