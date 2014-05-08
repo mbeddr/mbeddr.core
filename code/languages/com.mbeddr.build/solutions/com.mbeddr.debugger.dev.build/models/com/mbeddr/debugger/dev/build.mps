@@ -214,7 +214,9 @@
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7526893795421297083" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="al5i.8628756186118380491" resolveInfo="com.mbeddr.mpsutil.build" />
-      <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="7526893795421304174" nodeInfo="ng" />
+      <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="7526893795421506739" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="7526893795421311562" resolveInfo="mpsutil.artifacts" />
+      </node>
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="8334796989980735515" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="og8s.6247780594427434811" resolveInfo="com.mbeddr.spawner.build" />
