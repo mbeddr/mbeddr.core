@@ -1413,6 +1413,9 @@
                       </node>
                       <node role="creator" roleId="tpee.1145553007750" type="3673.InterpreterCreator" typeId="3673.3799977499684156231" id="4689372641056692906" nodeInfo="ng">
                         <link role="interpreter" roleId="3673.3799977499684158543" targetNodeId="4689372641051180965" resolveInfo="TypeMappingInterpreter1" />
+                        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="2181941881729523262" nodeInfo="ng">
+                          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeWarningCheckOperation" typeId="tp5g.1215511704609" id="2181941881729523263" nodeInfo="ng" />
+                        </node>
                       </node>
                     </node>
                   </node>
