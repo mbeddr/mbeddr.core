@@ -783,8 +783,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601027" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="For example, you reference the interface " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="8730648445433601028" nodeInfo="ng">
-              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ContentRefWord" typeId="soy0.4726949060948575731" id="8730648445433601028" nodeInfo="ng">
+              <link role="content" roleId="soy0.4726949060948575732" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601029" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" using the " />
@@ -809,9 +809,9 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601037" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" element. For example, you\ncan refer to an argument " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="8730648445433601038" nodeInfo="ng">
-              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
-              <link role="detail" roleId="rh4a.4509696981881923017" targetNodeId="bskg.8730648445433600016" resolveInfo="x" />
+            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ContentRefWord" typeId="soy0.4726949060948575731" id="8730648445433601038" nodeInfo="ng">
+              <link role="content" roleId="soy0.4726949060948575732" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+              <link role="detail" roleId="soy0.4726949060948575733" targetNodeId="bskg.8730648445433600016" resolveInfo="x" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601039" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=". If you want to reference things that\ndo not have a name, you can attach a name label to an element (using the \n" />
@@ -836,10 +836,10 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601053" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" language\nin the respective mbeddr model to get the intention. For example, we can refer to\n" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="8730648445433601055" nodeInfo="ng">
-              <property name="referenceText" nameId="rh4a.4509696981882039909" value="a precondition" />
-              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
-              <link role="detail" roleId="rh4a.4509696981881923017" targetNodeId="bskg.8730648445433601044" resolveInfo="aPreCondition" />
+            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ContentRefWord" typeId="soy0.4726949060948575731" id="8730648445433601055" nodeInfo="ng">
+              <property name="referenceText" nameId="soy0.4726949060948575734" value="a precondition" />
+              <link role="content" roleId="soy0.4726949060948575732" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+              <link role="detail" roleId="soy0.4726949060948575733" targetNodeId="bskg.8730648445433601044" resolveInfo="aPreCondition" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601056" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
@@ -1126,8 +1126,8 @@
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433858427" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The " />
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="8730648445433875932" nodeInfo="ng">
-                <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="bskg.8730648445433858446" resolveInfo="TrafficLights" />
+              <node role="words" roleId="87nw.2557074442922392302" type="soy0.ContentRefWord" typeId="soy0.4726949060948575731" id="8730648445433875932" nodeInfo="ng">
+                <link role="content" roleId="soy0.4726949060948575732" targetNodeId="bskg.8730648445433858446" resolveInfo="TrafficLights" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433875933" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state machine as a graph." />
