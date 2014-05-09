@@ -21,5 +21,10 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2181941881730108005" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="InlineXmlElement" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;inlineElement/&gt;" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="iuxj.6666499814681415858" resolveInfo="XmlElement" />
+  </root>
 </model>
 
