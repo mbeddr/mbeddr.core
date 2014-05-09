@@ -1072,7 +1072,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="4689096352582898277" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="674029395497102067" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Inconsistency Results" />
+            <property name="value" nameId="tpee.1070475926801" value="Analysis Result" />
           </node>
         </node>
       </node>
