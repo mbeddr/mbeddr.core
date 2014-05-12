@@ -33,6 +33,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices.fm/solutions/pluginSolution/pluginSolution.msd" folder="yices" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices.rt/rt.msd" folder="yices" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices/yices.mpl" folder="yices" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.lantest/com.mbeddr.lantest.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/testing/com.mbeddr.analyses.cbmc.testing.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.components.pluginSolution/com.mbeddr.analyses.cbmc.components.pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.components.rt/com.mbeddr.analyses.cbmc.components.rt.msd" folder="cbmc" />
@@ -41,6 +42,10 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.experimental.rt/com.mbeddr.analyses.cbmc.statemachines.experimental.rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.pluginSolution/com.mbeddr.analyses.cbmc.statemachines.pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.rt/com.mbeddr.analyses.cbmc.statemachines.rt.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.pluginSolution/com.mbeddr.lantest.pluginSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.results/com.mbeddr.lantest.results.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.rt/com.mbeddr.lantest.rt.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.testdata/com.mbeddr.lantest.testdata.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/test.analyses.base/test.analyses.base.msd" folder="test.base" />
       <modulePath path="$PROJECT_DIR$/solutions/test.analysis.screen_casts/test.analysis.screen_casts.msd" folder="test.examples" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode/testcode.msd" folder="test.cbmc" />
