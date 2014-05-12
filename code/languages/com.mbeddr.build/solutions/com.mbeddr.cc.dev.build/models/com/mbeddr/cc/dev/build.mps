@@ -1616,6 +1616,9 @@
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="5050445633038458625" nodeInfo="ng">
           <link role="language" roleId="kdzh.322010710375832947" targetNodeId="ayz1.1671983567912265703" resolveInfo="de.slisson.mps.richtext" />
         </node>
+        <node role="extends" roleId="kdzh.322010710375805250" type="kdzh.BuildMps_DevKitRef" typeId="kdzh.322010710375805242" id="6924893766646656138" nodeInfo="ng">
+          <link role="devkit" roleId="kdzh.322010710375805243" targetNodeId="fswa.8607331426312061541" resolveInfo="com.mbeddr.documentation" />
+        </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="8334796989982104302" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
