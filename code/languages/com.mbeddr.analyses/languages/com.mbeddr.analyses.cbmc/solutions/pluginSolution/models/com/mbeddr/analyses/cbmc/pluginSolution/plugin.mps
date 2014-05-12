@@ -1406,6 +1406,13 @@
         <property name="value" nameId="tpee.1068580320021" value="600" />
       </node>
     </node>
+    <node role="persistenPropertyDeclaration" roleId="tp4k.1210179829398" type="tp4k.PersistentPropertyDeclaration" typeId="tp4k.1210179190070" id="4138212153610631875" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="rebuildModelsBeforeAnalysis" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4138212153610636270" nodeInfo="in" />
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4138212153610661656" nodeInfo="nn">
+        <property name="value" nameId="tpee.1068580123138" value="true" />
+      </node>
+    </node>
     <node role="persistenPropertyDeclaration" roleId="tp4k.1210179829398" type="tp4k.PersistentPropertyDeclaration" typeId="tp4k.1210179190070" id="8676616451792083683" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="unwindingDepth" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="8676616451792086178" nodeInfo="in" />
