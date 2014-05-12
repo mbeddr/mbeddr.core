@@ -4937,7 +4937,7 @@
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="epq1.~BigInteger%dcompareTo(java%dmath%dBigInteger)%cint" resolveInfo="compareTo" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="468045725833528441" nodeInfo="nn">
                     <link role="classifier" roleId="tpee.1144433057691" targetNodeId="468045725833523329" resolveInfo="NumberValues" />
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="468045725833523335" resolveInfo="UINT8" />
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="468045725833523335" resolveInfo="UINT8_MAX" />
                   </node>
                 </node>
               </node>
@@ -5006,7 +5006,7 @@
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="epq1.~BigInteger%dcompareTo(java%dmath%dBigInteger)%cint" resolveInfo="compareTo" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="468045725833528509" nodeInfo="nn">
                       <link role="classifier" roleId="tpee.1144433057691" targetNodeId="468045725833523329" resolveInfo="NumberValues" />
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="468045725833523349" resolveInfo="UINT16" />
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="468045725833523349" resolveInfo="UINT16_MAX" />
                     </node>
                   </node>
                 </node>
@@ -5060,7 +5060,7 @@
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="epq1.~BigInteger%dcompareTo(java%dmath%dBigInteger)%cint" resolveInfo="compareTo" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="468045725833528522" nodeInfo="nn">
                       <link role="classifier" roleId="tpee.1144433057691" targetNodeId="468045725833523329" resolveInfo="NumberValues" />
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="468045725833523357" resolveInfo="UINT32" />
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="468045725833523357" resolveInfo="UINT32_MAX" />
                     </node>
                   </node>
                 </node>
@@ -5114,7 +5114,7 @@
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="epq1.~BigInteger%dcompareTo(java%dmath%dBigInteger)%cint" resolveInfo="compareTo" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="4306897540476564081" nodeInfo="nn">
                       <link role="classifier" roleId="tpee.1144433057691" targetNodeId="468045725833523329" resolveInfo="NumberValues" />
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4306897540476564054" resolveInfo="UINT64" />
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4306897540476564054" resolveInfo="UINT64_MAX" />
                     </node>
                   </node>
                 </node>
@@ -6435,7 +6435,7 @@
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="468045725833523335" nodeInfo="igu">
-      <property name="name" nameId="tpck.1169194664001" value="UINT8" />
+      <property name="name" nameId="tpck.1169194664001" value="UINT8_MAX" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="468045725833528447" nodeInfo="nn" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="468045725833523338" nodeInfo="in">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="epq1.~BigInteger" resolveInfo="BigInteger" />
@@ -6450,7 +6450,7 @@
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="468045725833523349" nodeInfo="igu">
-      <property name="name" nameId="tpck.1169194664001" value="UINT16" />
+      <property name="name" nameId="tpck.1169194664001" value="UINT16_MAX" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="468045725833528449" nodeInfo="nn" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="468045725833523351" nodeInfo="in">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="epq1.~BigInteger" resolveInfo="BigInteger" />
@@ -6465,7 +6465,7 @@
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="468045725833523357" nodeInfo="igu">
-      <property name="name" nameId="tpck.1169194664001" value="UINT32" />
+      <property name="name" nameId="tpck.1169194664001" value="UINT32_MAX" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="468045725833528450" nodeInfo="nn" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="468045725833523359" nodeInfo="in">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="epq1.~BigInteger" resolveInfo="BigInteger" />
@@ -6480,7 +6480,7 @@
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="4306897540476564054" nodeInfo="igu">
-      <property name="name" nameId="tpck.1169194664001" value="UINT64" />
+      <property name="name" nameId="tpck.1169194664001" value="UINT64_MAX" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4306897540476564055" nodeInfo="nn" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4306897540476564056" nodeInfo="in">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="epq1.~BigInteger" resolveInfo="BigInteger" />
@@ -14523,12 +14523,33 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="3165701247831367541" nodeInfo="in" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3165701247831367542" nodeInfo="nn" />
     </node>
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7348068575557818435" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="isSideeffectFree" />
+      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="7938383052438474217" resolveInfo="isSideeffectFree" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7348068575557818438" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7348068575557818680" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7348068575557823985" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7348068575557819064" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="7348068575557818679" nodeInfo="nn" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7348068575557822003" nodeInfo="nn">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.6610873504380029782" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7348068575557826770" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7938383052438474217" resolveInfo="isSideeffectFree" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="7348068575557818673" nodeInfo="in" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7348068575557818674" nodeInfo="nn" />
+    </node>
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="358309236632815016" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="isStaticallyEvaluatable" />
       <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="3788988821852141811" resolveInfo="isStaticallyEvaluatable" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="358309236632815019" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7735160886813292675" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="7735160886813292674" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="7348068575570373601" nodeInfo="nn">
             <property name="value" nameId="tpee.1068580123138" value="false" />
           </node>
         </node>
