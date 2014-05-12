@@ -516,13 +516,9 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="767492017435773100" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
     <property name="name" nameId="tpck.1169194664001" value="SelectNameFilter" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="name" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="767492017435773106" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="name" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="767492017435773104" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="767492017435773103" resolveInfo="ISelectVarFilter" />
     </node>
@@ -580,6 +576,29 @@
       <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080498517" nodeInfo="ng">
         <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
       </node>
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3655016528991318324" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
+    <property name="name" nameId="tpck.1169194664001" value="SelectSingleNameFilter" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="name" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="767492017435773100" resolveInfo="SelectNameFilter" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="767492017435773106" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="name" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3655016528991328261" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
+    <property name="name" nameId="tpck.1169194664001" value="SelectOneOfManyNamesFilter" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="names" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="767492017435773100" resolveInfo="SelectNameFilter" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3655016528991328394" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="names" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
   </root>
 </model>
