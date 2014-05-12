@@ -1288,7 +1288,7 @@
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="1270667558202071617" nodeInfo="nn">
                   <node role="argument" roleId="tp2q.1160612519549" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="1270667558202071618" nodeInfo="nn">
-                    <link role="concept" roleId="tp25.1140138128738" targetNodeId="clqz.1786180596061233739" resolveInfo="Trigger" />
+                    <link role="concept" roleId="tp25.1140138128738" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
                     <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1270667558202071619" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="1270667558202071620" nodeInfo="nn" />
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1270667558202071621" nodeInfo="nn">
@@ -1309,8 +1309,8 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="1270667558202071627" nodeInfo="nn">
-                <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="1270667558202071628" nodeInfo="nn">
-                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="clqz.1786180596061233739" resolveInfo="Trigger" />
+                <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="3655016529000716317" nodeInfo="nn">
+                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
                 </node>
               </node>
             </node>
