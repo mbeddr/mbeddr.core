@@ -967,7 +967,7 @@
     </node>
   </root>
   <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="3225038607909139500" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="clipboardStuffInEditMenu" />
+    <property name="name" nameId="tpck.1169194664001" value="clipboardStuffInEditMenuCopySpecial" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="clipboard" />
     <property name="isPopup" nameId="tp4k.1213283637680" value="true" />
     <property name="caption" nameId="tp4k.1204991940915" value="Copy Special" />
@@ -991,9 +991,6 @@
       </node>
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="3225038607909139509" nodeInfo="ng">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="3225038607909139685" resolveInfo="copyNodeURLToClipboard" />
-      </node>
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="3225038607909139510" nodeInfo="ng">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="3225038607909139809" resolveInfo="selectNodeFromClipboardURL" />
       </node>
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3225038607909139511" nodeInfo="ng">
@@ -2517,6 +2514,20 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8564455257661557445" nodeInfo="nn" />
       </node>
+    </node>
+  </root>
+  <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="9294901212836936" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="clipboardStuffInEditMenuDirect" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="clipboard" />
+    <property name="caption" nameId="tp4k.1204991940915" value="Copy Special" />
+    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="9294901212836937" nodeInfo="ng">
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="9294901212836946" nodeInfo="ng">
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="3225038607909139809" resolveInfo="selectNodeFromClipboardURL" />
+      </node>
+    </node>
+    <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="9294901212836947" nodeInfo="ng">
+      <link role="point" roleId="tp4k.1204992316090" targetNodeId="tprs.1207910902706" resolveInfo="custom" />
+      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.1204991235731" resolveInfo="Edit" />
     </node>
   </root>
 </model>
