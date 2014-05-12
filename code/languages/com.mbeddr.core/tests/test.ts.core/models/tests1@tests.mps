@@ -16851,7 +16851,7 @@
           <property name="name" nameId="tpck.1169194664001" value="empty_1399886564126_4" />
         </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9294901211928796" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeTypeSystemWarningCheckOperation" typeId="tp5g.8578280453509464010" id="9294901211928798" nodeInfo="ng" />
+          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="9294901220808856" nodeInfo="ng" />
         </node>
       </node>
     </node>
