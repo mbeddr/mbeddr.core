@@ -15,6 +15,7 @@
       </models>
       <external-templates>
         <generator generatorUID="f67f2765-82bd-410a-ae85-01e3e66beca4(com.mbeddr.core.util#745648737914842687)" />
+        <generator generatorUID="1872b356-435d-4b43-9f1c-af4a300747c0(com.mbeddr.ext.physicalunits.c#7720784317543457155)" />
       </external-templates>
       <dependencies>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
@@ -91,6 +92,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="55c68101-5eda-4792-814e-5816de39ea7e(com.mbeddr.analyses.cbmc#2161187783549497010)" />
+            <external-mapping>
+              <mapping-node modelUID="r:51abddd1-d8c6-4327-8b7d-224746b8e705(com.mbeddr.analyses.cbmc.generator.nondet@generator)" nodeID="8985300201480096846" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="1872b356-435d-4b43-9f1c-af4a300747c0(com.mbeddr.ext.physicalunits.c#7720784317543457155)" />
+            <external-mapping>
+              <mapping-node modelUID="r:f20bd7bd-bd26-4aaa-b8d5-9f01f9c28af4(com.mbeddr.ext.physicalunits.c.generator.template.main@generator)" nodeID="7720784317543457156" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
@@ -128,9 +143,10 @@
   </runtime>
   <extendedLanguages>
     <extendedLanguage>5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)</extendedLanguage>
-    <extendedLanguage>a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</extendedLanguage>
     <extendedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</extendedLanguage>
+    <extendedLanguage>a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</extendedLanguage>
     <extendedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</extendedLanguage>
+    <extendedLanguage>d72d3ee4-7395-438a-9a07-74a38a82cb0e(com.mbeddr.ext.physicalunits.c)</extendedLanguage>
   </extendedLanguages>
 </language>
 
