@@ -37,6 +37,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices.fm/solutions/pluginSolution/pluginSolution.msd" folder="yices" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices.rt/rt.msd" folder="yices" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices/yices.mpl" folder="yices" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.lantest/com.mbeddr.core.lantest.mpl" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/languages/testing/com.mbeddr.analyses.cbmc.testing.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.components.pluginSolution/com.mbeddr.analyses.cbmc.components.pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.components.rt/com.mbeddr.analyses.cbmc.components.rt.msd" folder="cbmc" />
@@ -48,6 +49,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm.pluginSolution/com.mbeddr.analyses.sat4j.fm.pluginSolution.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm/com.mbeddr.analyses.sat4j.fm.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j/com.mbeddr.analyses.sat4j.msd" folder="sat4j" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.results/com.mbeddr.lantest.results.msd" folder="lantest" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.testdata/com.mbeddr.lantest.testdata.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/test.analyses.base/test.analyses.base.msd" folder="test.base" />
       <modulePath path="$PROJECT_DIR$/solutions/test.analysis.screen_casts/test.analysis.screen_casts.msd" folder="test.examples" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode/testcode.msd" folder="test.cbmc" />
