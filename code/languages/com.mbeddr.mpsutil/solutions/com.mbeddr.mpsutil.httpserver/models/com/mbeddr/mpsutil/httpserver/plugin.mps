@@ -803,5 +803,28 @@
       <link role="classifier" roleId="tpee.1107535924139" targetNodeId="znf8.8564455257661560778" resolveInfo="IRequestHandler" />
     </node>
   </root>
+  <root type="tgbt.ApplicationPluginDeclaration" typeId="tgbt.481983775135178840" id="2083596773714650603" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="HttpServerAppPlugin" />
+    <node role="initBlock" roleId="tgbt.481983775135178842" type="tgbt.ApplicationPluginInitBlock" typeId="tgbt.481983775135178851" id="2083596773714685558" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2083596773714685559" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2083596773714713515" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2083596773714713528" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3225038607909437126" resolveInfo="ensureServerRunning" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="4599114268639106038" resolveInfo="ServerUtil" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="disposeBlock" roleId="tgbt.481983775135178843" type="tgbt.ApplicationPluginDisposeBlock" typeId="tgbt.481983775135178846" id="2083596773714685568" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2083596773714685569" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2083596773714714363" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2083596773714714381" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4599114268639108625" resolveInfo="stopServer" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="4599114268639106038" resolveInfo="ServerUtil" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
 </model>
 
