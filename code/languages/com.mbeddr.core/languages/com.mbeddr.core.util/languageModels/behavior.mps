@@ -2881,14 +2881,6 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="1504611252350518442" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1504611252350518443" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="talm.MapByNameStatement" typeId="talm.8483575004407084862" id="799315515021355724" nodeInfo="ng">
-          <node role="unmappedName" roleId="talm.8483575004407084863" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="767492017423130398" nodeInfo="nn">
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x30c.767492017422417157" resolveInfo="TracingUtility" />
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.767492017423081984" resolveInfo="getPropertyForConcept" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="767492017423130399" nodeInfo="nn" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ConceptRefExpression" typeId="tp25.1172424058054" id="767492017423130400" nodeInfo="nn">
-              <link role="conceptDeclaration" roleId="tp25.1172424100906" targetNodeId="c4fa.7254843406768606755" resolveInfo="ForVarDecl" />
-            </node>
-          </node>
           <node role="highlightedNode" roleId="talm.8483575004407084868" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="799315515021355745" nodeInfo="nn" />
           <node role="mappedName" roleId="talm.8483575004407084865" type="tpee.DotExpression" typeId="tpee.1197027756228" id="799315515021355734" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="799315515021355735" nodeInfo="nn" />
@@ -2899,7 +2891,7 @@
           <node role="typeExpr" roleId="talm.8483575004407084864" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="799315515021355738" nodeInfo="nn">
             <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="799315515021355739" nodeInfo="nn">
               <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="799315515021355740" nodeInfo="in">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8860443239512128056" resolveInfo="PrimitiveType" />
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8463282783691490869" resolveInfo="PrimitiveC99IntegralType" />
               </node>
             </node>
           </node>
@@ -2912,6 +2904,13 @@
           </node>
           <node role="categoryName" roleId="talm.8236113172499118431" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="799315515021355744" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="local variables" />
+          </node>
+          <node role="unmappedName" roleId="talm.8483575004407084863" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8326082846000426116" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="talm.PropertiesFromTraceExpression" typeId="talm.1358930484548440228" id="8326082846000110752" nodeInfo="ng">
+              <property name="manyCardinality" nameId="talm.1358930484562631807" value="true" />
+              <link role="concept" roleId="talm.1358930484561468874" targetNodeId="c4fa.7254843406768606755" resolveInfo="ForVarDecl" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetFirstOperation" typeId="tp2q.1165525191778" id="8326082846000439191" nodeInfo="nn" />
           </node>
         </node>
       </node>
