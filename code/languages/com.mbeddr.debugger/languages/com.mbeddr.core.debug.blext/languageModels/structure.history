@@ -549,5 +549,17 @@
     </dependencies>
     <rename id="talm.4193597469137492628" type="CONCEPT" from="MarkerAnnotation" to="RequiresTransformationAnnotation" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="68" />
+    </dependencies>
+    <rename id="talm.4172743831448809171" type="CHILD" from="variable" to="concept" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="69" />
+    </dependencies>
+    <rename id="talm.3620245844557692369" type="CHILD" from="value" to="children" />
+  </StructureModification>
 </history>
 
