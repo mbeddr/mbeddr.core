@@ -19,7 +19,7 @@
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
@@ -305,11 +305,11 @@
                   </node>
                 </node>
               </node>
-              <node role="def" roleId="k146.4143042878078342166" type="mj1l.UnsafeCastExpression" typeId="mj1l.7664133259366168728" id="5512262613064826717" nodeInfo="ng">
-                <node role="expr" roleId="mj1l.7664133259366168729" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5512262613064826718" nodeInfo="ng">
+              <node role="def" roleId="k146.4143042878078342166" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="1129035407337869308" nodeInfo="ng">
+                <node role="expr" roleId="mj1l.6610873504380029782" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5512262613064826718" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="1.0" />
                 </node>
-                <node role="targetType" roleId="mj1l.7664133259366168730" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="5512262613064826719" nodeInfo="ng">
+                <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="5512262613064826719" nodeInfo="ng">
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 </node>
