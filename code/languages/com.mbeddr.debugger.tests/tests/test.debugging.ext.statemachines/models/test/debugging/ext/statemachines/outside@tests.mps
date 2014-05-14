@@ -93,6 +93,9 @@
             </node>
             <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmInitTarget" typeId="clqz.6118219496719522740" id="9294901222093930" nodeInfo="ng" />
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082846001923508" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="initSM" />
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6713970538440332748" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="blaaa" />
@@ -115,6 +118,9 @@
             <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmTriggerTarget" typeId="clqz.6118219496725500902" id="9294901222094364" nodeInfo="ng">
               <link role="event" roleId="clqz.6118219496725502924" targetNodeId="8444296659257885036" resolveInfo="seitch" />
             </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082846001926484" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="triggerSM" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2468281964189310586" nodeInfo="ng">
@@ -151,6 +157,9 @@
             <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmSetStateTarget" typeId="clqz.143519404613863014" id="9294901222094463" nodeInfo="ng">
               <link role="state" roleId="clqz.143519404613863234" targetNodeId="8444296659257885035" resolveInfo="green" />
             </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082846001929190" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="setState" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="411439109350938642" nodeInfo="ng">
@@ -431,7 +440,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2468281964189312564" nodeInfo="sn" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2468281964189312566" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2468281964189312567" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2468281964189312544" resolveInfo="initSM" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082846001923508" resolveInfo="initSM" />
         </node>
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2468281964189312568" nodeInfo="ng">
@@ -478,7 +487,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2468281964189310572" nodeInfo="sn" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2468281964189312554" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2468281964189312555" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2468281964189312545" resolveInfo="triggerSM" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082846001926484" resolveInfo="triggerSM" />
         </node>
       </node>
       <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="2468281964189312556" nodeInfo="ng">
@@ -508,7 +517,7 @@
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2468281964189319774" nodeInfo="ng">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="2468281964189319775" nodeInfo="ng">
           <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2468281964189319776" nodeInfo="ng">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2468281964189317916" resolveInfo="setState" />
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8326082846001929190" resolveInfo="setState" />
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="2468281964189331595" nodeInfo="ng">
@@ -550,7 +559,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2468281964189319784" nodeInfo="sn" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2468281964189319785" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2468281964189319790" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2468281964189317916" resolveInfo="setState" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082846001929190" resolveInfo="setState" />
         </node>
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2468281964189319787" nodeInfo="ng">
