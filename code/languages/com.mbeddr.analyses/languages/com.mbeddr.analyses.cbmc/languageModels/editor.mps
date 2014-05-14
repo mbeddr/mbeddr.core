@@ -627,7 +627,7 @@
             </node>
             <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="2618498709922556217" nodeInfo="nn" />
             <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="275841289472609720" nodeInfo="nn">
-              <property name="text" nameId="tpc2.1073389577007" value="slicing off" />
+              <property name="text" nameId="tpc2.1073389577007" value="slicing on" />
             </node>
             <node role="childCellModel" roleId="tpc2.1073389446424" type="wfif.CellModel_Checkbox" typeId="wfif.4900677560559655527" id="2618498709922572445" nodeInfo="ng">
               <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.9134944440162076206" resolveInfo="sliceFormula" />

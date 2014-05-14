@@ -16,6 +16,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter/runtime/com.mbeddr.mpsutil.interpreter.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.langstats/langstats.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.mpl" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodeviewer/com.mbeddr.mpsutil.nodeviewer.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.mpl" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="" />
@@ -26,6 +27,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpserver/com.mbeddr.mpsutil.httpserver.msd" folder="httpSupport" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpsupport.rt/com.mbeddr.mpsutil.httpsupport.rt.msd" folder="httpSupport" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.pluginSolution/com.mbeddr.mpsutil.lantest.pluginSolution.msd" folder="lantest" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/pluginSolution.msd" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.serializer.xml/com.mbeddr.mpsutil.serializer.xml.msd" folder="" />
