@@ -8,6 +8,8 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.mpl" folder="querylist" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.rt/com.mbeddr.mpsutil.emf.rt.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.mpl" folder="httpSupport" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.mpl" folder="" />
