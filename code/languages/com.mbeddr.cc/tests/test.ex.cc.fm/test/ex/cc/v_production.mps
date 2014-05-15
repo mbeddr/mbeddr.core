@@ -34,11 +34,9 @@
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605983071029" nodeInfo="ng" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qdv7.VariabilityConfigItem" typeId="qdv7.6514264311693667923" id="4055870397237244744" nodeInfo="ng">
-      <node role="config" type="qdv7.VariabilityTransformationConfig" typeId="qdv7.6617704999132114004" id="4055870397237244745" nodeInfo="ng">
-        <node role="mappings" roleId="qdv7.6617704999132114005" type="qdv7.ConfigurationMapping" typeId="qdv7.6617704999132114000" id="4055870397237244746" nodeInfo="ng">
-          <link role="featureModel" roleId="qdv7.6617704999132114002" targetNodeId="n76k.6617704999132170930" resolveInfo="DeploymentConfiguration" />
-          <link role="configurationModel" roleId="qdv7.6617704999132114003" targetNodeId="n76k.6617704999132170939" resolveInfo="Production" />
-        </node>
+      <node role="mappings" roleId="qdv7.4920787109780106774" type="qdv7.ConfigurationMapping" typeId="qdv7.6617704999132114000" id="4055870397237244746" nodeInfo="ng">
+        <link role="featureModel" roleId="qdv7.6617704999132114002" targetNodeId="n76k.6617704999132170930" resolveInfo="DeploymentConfiguration" />
+        <link role="configurationModel" roleId="qdv7.6617704999132114003" targetNodeId="n76k.6617704999132170939" resolveInfo="Production" />
       </node>
     </node>
   </root>

@@ -152,6 +152,9 @@
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3149431289167064693" resolveInfo="sm" />
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082846001632407" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="onInit" />
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="3149431289167065015" nodeInfo="ng">
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="4059314064294291983" nodeInfo="ng">
@@ -475,7 +478,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4059314064294290673" nodeInfo="sn" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="4059314064294290686" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="4059314064294292017" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="4059314064294291967" resolveInfo="onInit" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082846001632407" resolveInfo="onInit" />
         </node>
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="4059314064294292019" nodeInfo="ng">

@@ -102,6 +102,9 @@
             <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="6151459193021387719" resolveInfo="instances" />
             <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="6151459193021389088" resolveInfo="triggerSM" />
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082846001712259" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="inRunnable" />
+          </node>
         </node>
       </node>
     </node>
@@ -585,13 +588,13 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6151459193021761935" nodeInfo="sn" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="6151459193021761953" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="6151459193021761954" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="6151459193021761929" resolveInfo="inRunnable" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082846001712259" resolveInfo="inRunnable" />
         </node>
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="6151459193021761955" nodeInfo="ng">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="6151459193021761956" nodeInfo="ng">
           <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="6151459193021761957" nodeInfo="ng">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="6151459193021761929" resolveInfo="inRunnable" />
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8326082846001712259" resolveInfo="inRunnable" />
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="6151459193021761959" nodeInfo="ng">
@@ -608,7 +611,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6151459193021761940" nodeInfo="sn" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="6151459193021761941" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="6151459193021761942" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="6151459193021761929" resolveInfo="inRunnable" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082846001712259" resolveInfo="inRunnable" />
         </node>
       </node>
       <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="6151459193021761943" nodeInfo="ng">
