@@ -2026,9 +2026,9 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7992580511417530077" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="keymap" />
         <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
-        <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7992580511417531737" nodeInfo="ng">
-          <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/keymapbuild.png" />
-          <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+        <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="1857875798968153166" nodeInfo="ng">
+          <property name="fileName" nameId="2c95.6386504476136521408" value="keymapbuild.png" />
+          <link role="path" roleId="2c95.6386504476136521409" targetNodeId="1857875798963653080" resolveInfo="imagesTutorial" />
         </node>
         <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7992580511417530081" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417530082" nodeInfo="ng">
