@@ -12,7 +12,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6165313375056112024" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CCodeParagraph" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="embed mbeddr code as text" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="embed code" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="embed code as text" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6416473402306160259" resolveInfo="AbstractCCodeParagraph" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6363363735479324452" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="text" />
@@ -70,7 +70,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6416473402306197330" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CCodeAsImageParagraph" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="embed image" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="embed code as image" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="embed mbeddr code as an image" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6416473402306160259" resolveInfo="AbstractCCodeParagraph" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6416473402306197356" nodeInfo="ig">
