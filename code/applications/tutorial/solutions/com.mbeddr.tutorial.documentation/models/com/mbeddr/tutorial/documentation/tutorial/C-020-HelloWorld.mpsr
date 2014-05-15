@@ -129,7 +129,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7992580511422642804" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="NewProject" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7992580511422643874" nodeInfo="ng">
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722414418" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="core/NewProject.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
@@ -189,8 +189,8 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7992580511422648189" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="workspaceContent" />
-          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7992580511422648351" nodeInfo="ng">
+          <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722414415" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="core/workspacecontents.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
@@ -287,7 +287,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7992580511422653248" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="AddDependencies" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7992580511422653490" nodeInfo="ng">
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722414398" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="core/AddDependencies.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
@@ -459,7 +459,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="949722786950938716" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="ContextMenuNewModule" />
           <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="949722786950938912" nodeInfo="ng">
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722414404" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="core/ContextMenuNewModule.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
@@ -526,7 +526,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="949722786950958034" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="EmptyModule" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="949722786950958296" nodeInfo="ng">
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722414401" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="core/EmptyModule.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
@@ -607,7 +607,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="949722786950961654" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="addDefaultTSC" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="949722786950961949" nodeInfo="ng">
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722414412" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="core/AddDefaultTSC.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
@@ -975,10 +975,14 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950985699" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement in the main function, specify the message list " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.c.structure.ContentRefWord" id="949722786950986155" nodeInfo="ng">
-              <link role="content" targetNodeId="zxcx.8265078645304658397" resolveInfo="log" />
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4208238404718639748" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4208238404718639749" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4208238404718639750" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="log" />
+                </node>
+              </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950986156" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4208238404718639747" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and select the message " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="949722786950985705" nodeInfo="ng">

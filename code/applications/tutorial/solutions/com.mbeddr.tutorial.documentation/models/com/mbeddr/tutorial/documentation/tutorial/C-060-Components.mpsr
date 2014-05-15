@@ -1687,7 +1687,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="2112775524680345223" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="vcomponents" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="2112775524680345257" nodeInfo="ng">
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722428112" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/v_components.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
@@ -1846,7 +1846,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7979854108175988977" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="verificationOK" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7979854108175989029" nodeInfo="ng">
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722428106" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/verificationOK.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
@@ -1917,7 +1917,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7979854108176023036" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="verificationNotOK" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7979854108176023109" nodeInfo="ng">
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722428109" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/verificationNotOK.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
