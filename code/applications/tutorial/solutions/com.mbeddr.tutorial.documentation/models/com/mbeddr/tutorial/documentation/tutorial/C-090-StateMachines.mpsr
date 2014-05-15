@@ -10,7 +10,7 @@
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="3458996998996953631" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-090-StateMachines" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3458996998996997414" nodeInfo="ng">
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561787741" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="statemachines" />
       <property name="text" nameId="2c95.3350625596580064225" value="State Machines" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997039525" nodeInfo="ng">
