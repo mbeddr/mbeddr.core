@@ -975,8 +975,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950985699" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement in the main function, specify the message list " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="949722786950986155" nodeInfo="ng">
-              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="zxcx.8265078645304658397" resolveInfo="log" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.c.structure.ContentRefWord" id="949722786950986155" nodeInfo="ng">
+              <link role="content" targetNodeId="zxcx.8265078645304658397" resolveInfo="log" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950986156" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and select the message " />
