@@ -58,7 +58,7 @@
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.PlatformSpecificValidations" typeId="rpmx.2033545087487794832" id="4052797720682627083" nodeInfo="ng">
           <node role="validations" roleId="rpmx.2033545087487794833" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="4052797720682627099" nodeInfo="ng">
             <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="4052797720682632795" nodeInfo="ng">
-              <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="3450485464476995112" resolveInfo="transitionFromRedToGreen" />
+              <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8326082846002254764" resolveInfo="transitionFromRedToGreen" />
             </node>
           </node>
         </node>
@@ -66,7 +66,7 @@
           <property name="platform" nameId="rpmx.2033545087487794834" value="nux" />
           <node role="validations" roleId="rpmx.2033545087487794833" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="9082533278989421338" nodeInfo="ng">
             <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="9082533278989497365" nodeInfo="ng">
-              <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="3450485464477218240" resolveInfo="transitionFromGreenToBlue" />
+              <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8326082846002258956" resolveInfo="transitionFromGreenToBlue" />
             </node>
           </node>
         </node>
@@ -186,6 +186,9 @@
               <link role="event" roleId="clqz.6118219496725502924" targetNodeId="8444296659257885036" resolveInfo="seitch" />
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082846002254764" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="transitionFromRedToGreen" />
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9294901222103404" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="9294901222103403" nodeInfo="ng">
@@ -195,6 +198,9 @@
             <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmTriggerTarget" typeId="clqz.6118219496725500902" id="9294901222103402" nodeInfo="ng">
               <link role="event" roleId="clqz.6118219496725502924" targetNodeId="8444296659257885036" resolveInfo="seitch" />
             </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082846002258956" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="transitionFromGreenToBlue" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9294901222103351" nodeInfo="ng">

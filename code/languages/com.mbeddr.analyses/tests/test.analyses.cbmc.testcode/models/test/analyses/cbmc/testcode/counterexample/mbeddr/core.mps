@@ -670,11 +670,11 @@
                 <property name="value" nameId="mj1l.2212975673976043696" value="9" />
               </node>
             </node>
-            <node role="def" roleId="k146.4143042878078342166" type="mj1l.UnsafeCastExpression" typeId="mj1l.7664133259366168728" id="33311699572831233" nodeInfo="ng">
-              <node role="expr" roleId="mj1l.7664133259366168729" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="33311699572831232" nodeInfo="ng">
+            <node role="def" roleId="k146.4143042878078342166" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="1129035407337869305" nodeInfo="ng">
+              <node role="expr" roleId="mj1l.6610873504380029782" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="33311699572831232" nodeInfo="ng">
                 <property name="value" nameId="mj1l.2212975673976043696" value="9" />
               </node>
-              <node role="targetType" roleId="mj1l.7664133259366168730" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="33311699572831234" nodeInfo="ng">
+              <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="33311699572831234" nodeInfo="ng">
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>

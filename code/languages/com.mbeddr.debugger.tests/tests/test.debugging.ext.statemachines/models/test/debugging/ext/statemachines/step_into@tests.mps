@@ -102,6 +102,9 @@
               <link role="event" roleId="clqz.6118219496725502924" targetNodeId="2536856479943206754" resolveInfo="seitch" />
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082845994235061" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="triggerAfterInit" />
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9294901222098136" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="9294901222098135" nodeInfo="ng">
@@ -112,6 +115,9 @@
               <link role="event" roleId="clqz.6118219496725502924" targetNodeId="2536856479943208800" resolveInfo="nothing" />
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082845994237130" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="noTransTriggered" />
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9294901222098191" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="9294901222098190" nodeInfo="ng">
@@ -121,6 +127,9 @@
             <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmTriggerTarget" typeId="clqz.6118219496725500902" id="9294901222098189" nodeInfo="ng">
               <link role="event" roleId="clqz.6118219496725502924" targetNodeId="2536856479943206754" resolveInfo="seitch" />
             </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082845994236793" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="triggering2ndTrans" />
           </node>
         </node>
       </node>
@@ -294,7 +303,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2536856479943206809" nodeInfo="sn" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2536856479943206810" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2536856479943206811" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2536856479943206801" resolveInfo="triggerAfterInit" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082845994235061" resolveInfo="triggerAfterInit" />
         </node>
       </node>
       <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="2536856479943206812" nodeInfo="ng">
@@ -317,7 +326,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2536856479943208811" nodeInfo="sn" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2536856479943208812" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2536856479943208813" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2536856479943208796" resolveInfo="noTransTriggered" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082845994237130" resolveInfo="noTransTriggered" />
         </node>
       </node>
       <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="2536856479943208814" nodeInfo="ng">
@@ -328,7 +337,7 @@
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2536856479943208816" nodeInfo="ng">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="2536856479943208817" nodeInfo="ng">
           <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2536856479943208819" nodeInfo="ng">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2536856479943208807" resolveInfo="triggering2ndTrans" />
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8326082845994236793" resolveInfo="triggering2ndTrans" />
           </node>
         </node>
       </node>
@@ -345,7 +354,7 @@
       </node>
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2536856479943208828" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2536856479943208829" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2536856479943208807" resolveInfo="triggering2ndTrans" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082845994236793" resolveInfo="triggering2ndTrans" />
         </node>
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2536856479943208830" nodeInfo="ng">
@@ -363,7 +372,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2536856479943571903" nodeInfo="sn" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2536856479943571904" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2536856479943571905" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2536856479943208807" resolveInfo="triggering2ndTrans" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082845994236793" resolveInfo="triggering2ndTrans" />
         </node>
       </node>
       <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="2536856479943571906" nodeInfo="ng">
