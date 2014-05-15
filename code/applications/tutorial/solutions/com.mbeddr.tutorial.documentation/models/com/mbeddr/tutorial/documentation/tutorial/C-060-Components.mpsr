@@ -4,8 +4,8 @@
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="yes" />
-  <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" implicit="yes" />
+  <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4199862776468632873" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-060-Components" />
@@ -30,8 +30,10 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type=".com.mbeddr.doc.c.structure.RootCodeParagraph" id="4199862776471847691" nodeInfo="ng">
-        <link role="root" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="4208238404723149359" nodeInfo="ng">
+        <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
+        <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+        <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4199862776472278007" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="interfWithContract" />
@@ -1687,7 +1689,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="2112775524680345223" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="vcomponents" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="2112775524680345257" nodeInfo="ng">
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722428112" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/v_components.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
@@ -1846,7 +1848,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7979854108175988977" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="verificationOK" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7979854108175989029" nodeInfo="ng">
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722428106" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/verificationOK.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
@@ -1917,7 +1919,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7979854108176023036" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="verificationNotOK" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7979854108176023109" nodeInfo="ng">
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722428109" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/verificationNotOK.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>

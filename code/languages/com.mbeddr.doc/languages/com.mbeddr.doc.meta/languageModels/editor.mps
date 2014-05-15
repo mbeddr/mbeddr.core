@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:aa291b23-b575-4ed2-ad34-a48cecfddd30(com.mbeddr.doc.meta.editor)">
+<model modelUID="r:aa291b23-b575-4ed2-ad34-a48cecfddd30(com.mbeddr.doc.meta.editor)" version="0">
   <persistence version="8" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="0" />
+  <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="1" />
   <import index="rl4q" modelUID="r:72bc3a97-6a66-47f6-8cf2-f88ab2ada651(com.mbeddr.mpsutil.common.model)" version="-1" />
   <import index="tpco" modelUID="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" version="-1" />
-  <import index="xmkr" modelUID="r:bce11d92-6b70-464d-8d15-a91ee9ecc04a(com.mbeddr.doc.meta.behavior)" version="-1" />
+  <import index="xmkr" modelUID="r:bce11d92-6b70-464d-8d15-a91ee9ecc04a(com.mbeddr.doc.meta.behavior)" version="0" />
   <import index="hypd" modelUID="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" version="-1" />
   <import index="tpcu" modelUID="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" version="-1" />
-  <import index="mkfm" modelUID="r:f4588adc-1966-4e6d-8bea-4fe2404fbaa1(com.mbeddr.doc.c.editor)" version="-1" />
+  <import index="mkfm" modelUID="r:f4588adc-1966-4e6d-8bea-4fe2404fbaa1(com.mbeddr.doc.c.editor)" version="0" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="13" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
@@ -570,56 +571,6 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4726949060948575761" nodeInfo="ng">
         <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="soy0.4726949060948575734" resolveInfo="referenceText" />
-      </node>
-    </node>
-  </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4726949060948575762" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="embed" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="soy0.4726949060948575727" resolveInfo="NameAnnotation" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4726949060948575763" nodeInfo="nn">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_AttributedNodeCell" typeId="tpc2.1149850725784" id="4726949060948575764" nodeInfo="ng" />
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4726949060948575765" nodeInfo="nn" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4726949060948575766" nodeInfo="nn">
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="4726949060948575767" nodeInfo="nn">
-          <property name="flag" nameId="tpc2.1186414551515" value="true" />
-        </node>
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="4726949060948575768" nodeInfo="nn">
-          <property name="color" nameId="tpc2.1186403713874" value="gray" />
-        </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4726949060948575769" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="^" />
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="4726949060948575770" nodeInfo="nn">
-            <property name="flag" nameId="tpc2.1186414551515" value="true" />
-          </node>
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="4726949060948575771" nodeInfo="nn">
-            <property name="color" nameId="tpc2.1186403713874" value="lightGray" />
-          </node>
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="4726949060948575772" nodeInfo="nn">
-            <property name="color" nameId="tpc2.1186403713874" value="darkGray" />
-          </node>
-        </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4726949060948575773" nodeInfo="ng">
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="4726949060948575774" nodeInfo="nn">
-            <property name="color" nameId="tpc2.1186403713874" value="lightGray" />
-          </node>
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="4726949060948575775" nodeInfo="nn">
-            <property name="color" nameId="tpc2.1186403713874" value="darkGray" />
-          </node>
-        </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4726949060948575776" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="^" />
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="4726949060948575777" nodeInfo="nn">
-            <property name="flag" nameId="tpc2.1186414551515" value="true" />
-          </node>
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="4726949060948575778" nodeInfo="nn">
-            <property name="color" nameId="tpc2.1186403713874" value="lightGray" />
-          </node>
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="4726949060948575779" nodeInfo="nn">
-            <property name="color" nameId="tpc2.1186403713874" value="darkGray" />
-          </node>
-        </node>
-        <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4726949060948575780" nodeInfo="nn" />
       </node>
     </node>
   </root>

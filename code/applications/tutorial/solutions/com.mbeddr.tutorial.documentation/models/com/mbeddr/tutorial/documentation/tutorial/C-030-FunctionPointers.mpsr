@@ -233,7 +233,7 @@
           <property name="detailMode" nameId="rh4a.5110473669964270411" value="upto" />
           <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
           <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
-          <link role="detail" roleId="rh4a.6416473402306189931" targetNodeId="e1tx.5110473669962036844" resolveInfo="assert1" />
+          <link role="detail" roleId="rh4a.6416473402306189931" targetNodeId="e1tx.4208238404721389419" resolveInfo="assert0" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5110473669967366024" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5110473669967366025" nodeInfo="ng">
@@ -660,7 +660,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="5110473669967481145" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="errorOutput" />
           <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5110473669967481289" nodeInfo="ng">
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722428103" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/erroroutput.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>

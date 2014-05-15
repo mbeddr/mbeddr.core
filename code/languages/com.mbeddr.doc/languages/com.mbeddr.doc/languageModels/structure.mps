@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12">
+<model modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="13">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
+  <import index="kwxp" modelUID="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
-  <import index="kwxp" modelUID="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" version="-1" implicit="yes" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="13" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3350625596579911728" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Document" />
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
@@ -943,6 +943,37 @@
       <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="8030928911746592073" nodeInfo="ng">
         <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
       </node>
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4208238404719201400" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="NameAnnotation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="embed" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4208238404719201401" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="4208238404719201402" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="nameAnnotation" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="4208238404719201403" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+      </node>
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4208238404723595132" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
+    <property name="name" nameId="tpck.1169194664001" value="UrlFormattedText" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="text formatted as a URL" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\url" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6165313375055797476" resolveInfo="FormattedText" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4208238404730191274" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Chapter" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="structure" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="chapter" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a chapter in the document" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580064222" resolveInfo="AbstractSection" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4208238404730191275" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3857533489766146432" resolveInfo="IDocumentable" />
     </node>
   </root>
 </model>
