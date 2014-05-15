@@ -1183,6 +1183,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="trafo" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qdv7.6617704999132114000" resolveInfo="ConfigurationMapping" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6617704999132114020" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1267649463818588164" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="fm" />
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="6617704999132114022" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qdv7.6617704999132114002" />
         <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="6617704999132114023" nodeInfo="ng">
