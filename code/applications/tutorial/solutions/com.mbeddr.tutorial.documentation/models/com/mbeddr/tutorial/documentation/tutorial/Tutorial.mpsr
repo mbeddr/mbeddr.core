@@ -12,7 +12,8 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
     <node role="renderer" roleId="2c95.6068976060904007487" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="794010416819641048" nodeInfo="ng">
       <property name="prolog" nameId="g9w8.4755612053022149513" value="mbeddr-prolog.ltx" />
-      <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
+      <property name="documentClass" nameId="g9w8.4457500422381351717" value="scrbook" />
+      <property name="hasTOC" nameId="g9w8.5185579450379315413" value="true" />
     </node>
     <node role="root" roleId="2c95.6068976060904007489" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="6403595147461062099" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="6403595147461056875" resolveInfo="C-000-Overview" />

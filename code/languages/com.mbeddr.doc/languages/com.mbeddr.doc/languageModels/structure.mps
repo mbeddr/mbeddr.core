@@ -966,5 +966,15 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\url" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6165313375055797476" resolveInfo="FormattedText" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4208238404730191274" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Chapter" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="structure" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="chapter" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a chapter in the document" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580064222" resolveInfo="AbstractSection" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4208238404730191275" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3857533489766146432" resolveInfo="IDocumentable" />
+    </node>
+  </root>
 </model>
 
