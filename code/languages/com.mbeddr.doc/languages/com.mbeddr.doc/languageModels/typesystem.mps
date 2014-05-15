@@ -659,5 +659,14 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="2c95.2588579461812060090" resolveInfo="Visualization" />
     </node>
   </root>
+  <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="4208238404723719508" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="check_UrlFormattedText" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4208238404723719509" nodeInfo="sn" />
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="4208238404723719511" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="uft" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="2c95.4208238404723595132" resolveInfo="UrlFormattedText" />
+    </node>
+  </root>
 </model>
 

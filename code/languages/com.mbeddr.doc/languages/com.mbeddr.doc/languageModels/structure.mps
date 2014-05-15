@@ -959,5 +959,12 @@
       </node>
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4208238404723595132" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
+    <property name="name" nameId="tpck.1169194664001" value="UrlFormattedText" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="text formatted as a URL" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\url" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6165313375055797476" resolveInfo="FormattedText" />
+  </root>
 </model>
 
