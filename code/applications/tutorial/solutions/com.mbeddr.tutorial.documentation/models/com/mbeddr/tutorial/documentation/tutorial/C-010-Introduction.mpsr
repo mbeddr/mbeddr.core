@@ -977,9 +977,9 @@
             <property name="name" nameId="tpck.1169194664001" value="globalLibraries" />
             <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
             <property name="center" nameId="2c95.8730648445434174368" value="true" />
-            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="2564556814935136615" nodeInfo="ng">
-              <property name="fileName" nameId="2c95.6386504476136521408" value="core/SettingsGlobalLibraries.png" />
-              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="1857875798963653078" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="SettingsGlobalLibraries.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="1857875798963647015" resolveInfo="imagesCore" />
             </node>
             <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2564556814935136502" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935136503" nodeInfo="ng">

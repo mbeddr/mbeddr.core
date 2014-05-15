@@ -45,11 +45,11 @@
     <property name="name" nameId="tpck.1169194664001" value="main" />
     <property name="topPriorityGroup" nameId="tpf8.1184950341882" value="true" />
     <node role="preMappingScript" roleId="tpf8.1195502100749" type="tpf8.MappingScriptReference" typeId="tpf8.1195502151594" id="6514264311693707700" nodeInfo="ng">
-      <link role="mappingScript" roleId="tpf8.1195502167610" targetNodeId="6617704999132074777" resolveInfo="removePLEStuff" />
+      <link role="mappingScript" roleId="tpf8.1195502167610" targetNodeId="6617704999132074777" resolveInfo="pleProcessPresenceConditions" />
     </node>
   </root>
   <root type="tpf8.MappingScript" typeId="tpf8.1195499912406" id="6617704999132074777" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="removePLEStuff" />
+    <property name="name" nameId="tpck.1169194664001" value="pleProcessPresenceConditions" />
     <property name="scriptKind" nameId="tpf8.1195595592106" value="pre_processing" />
     <property name="modifiesModel" nameId="tpf8.1195595611951" value="true" />
     <node role="codeBlock" roleId="tpf8.1195501105008" type="tpf8.MappingScript_CodeBlock" typeId="tpf8.1195500722856" id="6617704999132074778" nodeInfo="nn">
@@ -160,6 +160,9 @@
                           <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5050445633036710659" nodeInfo="nn">
                             <property name="value" nameId="tpee.1070475926801" value="no mapping specified for feature model " />
                           </node>
+                        </node>
+                        <node role="referenceNode" roleId="tpf3.1217960407512" type="tpee.VariableReference" typeId="tpee.1068498886296" id="1857875798962289547" nodeInfo="nn">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4920787109781639897" resolveInfo="item" />
                         </node>
                       </node>
                     </node>
