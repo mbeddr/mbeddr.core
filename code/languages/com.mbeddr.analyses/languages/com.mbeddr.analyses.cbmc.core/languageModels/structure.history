@@ -3,10 +3,10 @@
   <StructureModification>
     <dependencies>
       <model index="hj5x" modelUID="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" version="-1" />
-      <model index="dse1" modelUID="r:c6046c4f-0234-4750-a1af-b5fc6021371a(com.mbeddr.analyses.cbmc.core.editor)" version="-1" />
       <model index="3jm3" modelUID="r:51ae9da6-14dd-47e1-ae73-75110946125d(com.mbeddr.analyses.cbmc.core.behavior)" version="-1" />
-      <model index="th2u" modelUID="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" version="8" />
+      <model index="dse1" modelUID="r:c6046c4f-0234-4750-a1af-b5fc6021371a(com.mbeddr.analyses.cbmc.core.editor)" version="-1" />
       <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="40" />
+      <model index="th2u" modelUID="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" version="8" />
       <model index="b4h4" modelUID="r:d1d2f189-b1e7-4902-9fc0-3cfa1dc70519(com.mbeddr.analyses.cbmc.editor)" version="9" />
     </dependencies>
     <move id="q5q6.2161187783549671007" to="hj5x.4053481679316838003" />
@@ -27,13 +27,13 @@
       <model index="r698" modelUID="r:4902bee6-83cf-4185-bb21-db8bbed45484(com.mbeddr.analyses.cbmc.core.constraints)" version="-1" />
       <model index="hj5x" modelUID="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" version="0" />
       <model index="nsjo" modelUID="r:5a1a5556-31c6-4b58-ab31-cdb132b414fb(com.mbeddr.analyses.cbmc.core.typesystem)" version="-1" />
-      <model index="dse1" modelUID="r:c6046c4f-0234-4750-a1af-b5fc6021371a(com.mbeddr.analyses.cbmc.core.editor)" version="0" />
       <model index="3jm3" modelUID="r:51ae9da6-14dd-47e1-ae73-75110946125d(com.mbeddr.analyses.cbmc.core.behavior)" version="0" />
-      <model index="th2u" modelUID="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" version="9" />
+      <model index="dse1" modelUID="r:c6046c4f-0234-4750-a1af-b5fc6021371a(com.mbeddr.analyses.cbmc.core.editor)" version="0" />
       <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="41" />
+      <model index="th2u" modelUID="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" version="9" />
       <model index="b4h4" modelUID="r:d1d2f189-b1e7-4902-9fc0-3cfa1dc70519(com.mbeddr.analyses.cbmc.editor)" version="10" />
-      <model index="cvx4" modelUID="r:191d4094-120c-4eb3-b601-c05696ec8de9(com.mbeddr.analyses.cbmc.typesystem)" version="4" />
       <model index="n78d" modelUID="r:0d8878fc-7bca-4b55-ae8b-7a540c99e6a0(com.mbeddr.analyses.cbmc.constraints)" version="6" />
+      <model index="cvx4" modelUID="r:191d4094-120c-4eb3-b601-c05696ec8de9(com.mbeddr.analyses.cbmc.typesystem)" version="4" />
     </dependencies>
     <move id="q5q6.5070503009225669554" to="hj5x.4053481679317021365" />
     <move id="q5q6.9047848667681377016" to="hj5x.4053481679317021371" />
@@ -462,6 +462,13 @@
     <move id="cvx4.6375603587899678639" to="nsjo.4053481679317021778" />
     <move id="cvx4.6375603587899678766" to="nsjo.4053481679317021787" />
     <move id="cvx4.6375603587899678756" to="nsjo.4053481679317021784" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="hj5x" modelUID="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" version="1" />
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="42" />
+    </dependencies>
+    <move id="hj5x.4053481679317021373" to="q5q6.5889520553258614000" />
   </StructureModification>
 </history>
 
