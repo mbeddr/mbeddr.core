@@ -13,7 +13,7 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="11" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="2" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <import index="hj5x" modelUID="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" version="1" implicit="yes" />
@@ -333,22 +333,22 @@
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="5238885390132005025" resolveInfo="HeartbeatMessage" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.UnsafeCastExpression" typeId="mj1l.7664133259366168728" id="2235685551247982123" nodeInfo="ng">
-            <node role="expr" roleId="mj1l.7664133259366168729" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="2235685551247971270" nodeInfo="ng">
-              <node role="target" roleId="mj1l.7034214596252529803" type="clbe.GenericMemberRef" typeId="clbe.7034214596253391076" id="2235685551247973142" nodeInfo="ng">
-                <link role="member" roleId="clbe.7034214596253391078" targetNodeId="5238885390132005655" resolveInfo="data" />
-              </node>
-              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2235685551247971220" nodeInfo="ng">
-                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="5238885390132006040" resolveInfo="ssl3" />
-              </node>
-            </node>
-            <node role="targetType" roleId="mj1l.7664133259366168730" type="yq40.PointerType" typeId="yq40.279446265608459824" id="2235685551247979774" nodeInfo="ng">
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="2328210843520192052" nodeInfo="ng">
+            <node role="targetType" roleId="mj1l.6610873504380029790" type="yq40.PointerType" typeId="yq40.279446265608459824" id="2235685551247979774" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               <node role="baseType" roleId="yq40.2963921683065158286" type="clbe.StructType" typeId="clbe.6394819151180597816" id="2235685551247979773" nodeInfo="ng">
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="5238885390132005025" resolveInfo="HeartbeatMessage" />
+              </node>
+            </node>
+            <node role="expr" roleId="mj1l.6610873504380029782" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="2235685551247971270" nodeInfo="ng">
+              <node role="target" roleId="mj1l.7034214596252529803" type="clbe.GenericMemberRef" typeId="clbe.7034214596253391076" id="2235685551247973142" nodeInfo="ng">
+                <link role="member" roleId="clbe.7034214596253391078" targetNodeId="5238885390132005655" resolveInfo="data" />
+              </node>
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2235685551247971220" nodeInfo="ng">
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="5238885390132006040" resolveInfo="ssl3" />
               </node>
             </node>
           </node>
@@ -502,22 +502,22 @@
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="5238885390132005025" resolveInfo="HeartbeatMessage" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.UnsafeCastExpression" typeId="mj1l.7664133259366168728" id="1580907961283740732" nodeInfo="ng">
-            <node role="expr" roleId="mj1l.7664133259366168729" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="1580907961283740733" nodeInfo="ng">
-              <node role="target" roleId="mj1l.7034214596252529803" type="clbe.GenericMemberRef" typeId="clbe.7034214596253391076" id="1580907961283740734" nodeInfo="ng">
-                <link role="member" roleId="clbe.7034214596253391078" targetNodeId="5238885390132005655" resolveInfo="data" />
-              </node>
-              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1580907961283740735" nodeInfo="ng">
-                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="1580907961283740778" resolveInfo="ssl3" />
-              </node>
-            </node>
-            <node role="targetType" roleId="mj1l.7664133259366168730" type="yq40.PointerType" typeId="yq40.279446265608459824" id="1580907961283740736" nodeInfo="ng">
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="2328210843520192440" nodeInfo="ng">
+            <node role="targetType" roleId="mj1l.6610873504380029790" type="yq40.PointerType" typeId="yq40.279446265608459824" id="1580907961283740736" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               <node role="baseType" roleId="yq40.2963921683065158286" type="clbe.StructType" typeId="clbe.6394819151180597816" id="1580907961283740737" nodeInfo="ng">
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="5238885390132005025" resolveInfo="HeartbeatMessage" />
+              </node>
+            </node>
+            <node role="expr" roleId="mj1l.6610873504380029782" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="1580907961283740733" nodeInfo="ng">
+              <node role="target" roleId="mj1l.7034214596252529803" type="clbe.GenericMemberRef" typeId="clbe.7034214596253391076" id="1580907961283740734" nodeInfo="ng">
+                <link role="member" roleId="clbe.7034214596253391078" targetNodeId="5238885390132005655" resolveInfo="data" />
+              </node>
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1580907961283740735" nodeInfo="ng">
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="1580907961283740778" resolveInfo="ssl3" />
               </node>
             </node>
           </node>
