@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="HearBleedImpl" uuid="1d9e6da7-9a83-410c-b177-32cc0c2e3c03" compileInMPS="true">
+<solution name="HeartBleedImpl" uuid="1d9e6da7-9a83-410c-b177-32cc0c2e3c03" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
