@@ -736,7 +736,7 @@
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="10" />
             </node>
-            <node role="baseType" roleId="yq40.2963921683065158286" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2328210843525647874" nodeInfo="ng">
+            <node role="baseType" roleId="yq40.2963921683065158286" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="2328210843525747085" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
@@ -752,7 +752,7 @@
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="20" />
             </node>
-            <node role="baseType" roleId="yq40.2963921683065158286" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2328210843525647975" nodeInfo="ng">
+            <node role="baseType" roleId="yq40.2963921683065158286" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="2328210843525766435" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
@@ -770,7 +770,7 @@
             </node>
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2328210843525648452" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.2212975673976043696" value="20" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="5" />
             </node>
           </node>
         </node>
@@ -996,7 +996,7 @@
     <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.RobustnessCBMCAnalysis" typeId="hj5x.4053481679317021366" id="1580907961283789831" nodeInfo="ng">
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="40" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="showUnwindingDepthInfo" nameId="q5q6.1015192564308444976" value="true" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="-1" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
@@ -1007,6 +1007,7 @@
       <property name="check_signed_overflow" nameId="hj5x.4053481679317021370" value="true" />
       <property name="check_unsigned_overflow" nameId="hj5x.4053481679317021371" value="true" />
       <property name="check_nan" nameId="hj5x.4053481679317021372" value="true" />
+      <property name="check_div_by_zero" nameId="hj5x.4053481679317021367" value="true" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="2235685551247669654" resolveInfo="verification" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.RobustnessCBMCAnalysis" typeId="hj5x.4053481679317021366" id="2335965092199014242" nodeInfo="ng">
@@ -1019,7 +1020,11 @@
       <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="false" />
       <property name="timeoutForSingleAnalysis" nameId="hj5x.4053481679317021373" value="60" />
       <property name="check_array_bounds" nameId="hj5x.4053481679317021369" value="true" />
+      <property name="check_signed_overflow" nameId="hj5x.4053481679317021370" value="true" />
       <property name="check_pointer" nameId="hj5x.4053481679317021368" value="true" />
+      <property name="check_div_by_zero" nameId="hj5x.4053481679317021367" value="true" />
+      <property name="check_unsigned_overflow" nameId="hj5x.4053481679317021371" value="true" />
+      <property name="check_nan" nameId="hj5x.4053481679317021372" value="true" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="1580907961283784455" resolveInfo="verificationFixed" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.RobustnessCBMCAnalysis" typeId="hj5x.4053481679317021366" id="2328210843525672767" nodeInfo="ng">
@@ -1031,11 +1036,6 @@
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
       <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="false" />
       <property name="timeoutForSingleAnalysis" nameId="hj5x.4053481679317021373" value="60" />
-      <property name="check_array_bounds" nameId="hj5x.4053481679317021369" value="true" />
-      <property name="check_div_by_zero" nameId="hj5x.4053481679317021367" value="true" />
-      <property name="check_nan" nameId="hj5x.4053481679317021372" value="true" />
-      <property name="check_pointer" nameId="hj5x.4053481679317021368" value="true" />
-      <property name="check_signed_overflow" nameId="hj5x.4053481679317021370" value="true" />
       <property name="check_unsigned_overflow" nameId="hj5x.4053481679317021371" value="true" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="2328210843525641661" resolveInfo="testRobustness" />
     </node>
