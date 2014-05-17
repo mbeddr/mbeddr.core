@@ -75,12 +75,9 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6403595147461164507" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" folder). This will simplify some of the command line work you may want to do.\nAfter installing MPS using the platform-specific installer, please follow the platform specific steps mentioned below." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" folder). This will simplify some of the command line work you may want to do. After installing MPS using the platform-specific installer, please follow the platform specific steps mentioned below." />
             </node>
           </node>
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2564556814933922823" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_1382094998387_1" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="6403595147461164845" nodeInfo="ng">
           <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="6403595147461164847" nodeInfo="ng">
@@ -1063,7 +1060,6 @@
           </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="2564556814935136498" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="globalLibraries" />
-            <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
             <property name="center" nameId="2c95.8730648445434174368" value="true" />
             <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722414395" nodeInfo="ng">
               <property name="fileName" nameId="2c95.6386504476136521408" value="core/SettingsGlobalLibraries.png" />
