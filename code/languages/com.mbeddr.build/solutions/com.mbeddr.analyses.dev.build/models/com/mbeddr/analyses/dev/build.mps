@@ -965,6 +965,7 @@
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="2842557153921755706" nodeInfo="ng">
       <property name="copyResources" nameId="3ior.927724900262033862" value="true" />
+      <property name="heapSize" nameId="3ior.927724900262398947" value="2048" />
       <node role="resourceSelectors" roleId="3ior.927724900262033863" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="2842557153921766593" nodeInfo="ng">
         <property name="pattern" nameId="3ior.5248329904288051101" value="**/*.info" />
       </node>
@@ -1926,6 +1927,20 @@
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4768044799519884558" nodeInfo="nn">
                 <property name="head" nameId="3ior.8618885170173601779" value="test.analyses.cbmc.testcode" />
                 <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4768044799519885745" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="source_gen" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Files" typeId="3ior.2750015747481074431" id="5665549241462362596" nodeInfo="ng">
+          <node role="path" roleId="3ior.2750015747481074432" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5665549241462362727" nodeInfo="ng">
+            <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="9141467591178534027" resolveInfo="mbeddr.analyses" />
+            <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5665549241462363055" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="tests" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5665549241462363383" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="test.analyses.cbmc.testcode_analyses_config" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5665549241462363711" nodeInfo="nn">
                   <property name="head" nameId="3ior.8618885170173601779" value="source_gen" />
                 </node>
               </node>

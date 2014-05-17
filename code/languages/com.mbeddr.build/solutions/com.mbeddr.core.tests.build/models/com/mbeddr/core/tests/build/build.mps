@@ -879,6 +879,9 @@
     <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.ts-tests.build" />
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.core" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-ts-tests.xml" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="2844724322557177011" nodeInfo="ng">
+      <property name="heapSize" nameId="3ior.927724900262398947" value="2048" />
+    </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056441762" nodeInfo="ng">
       <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
       <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
@@ -1915,7 +1918,7 @@
       <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="8334796989975357394" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="8334796989975357308" resolveInfo="test.ts.core.dataflow" />
       </node>
-      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="2166848101821210617" nodeInfo="nn">
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="2844724322557393568" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="2166848101821127088" resolveInfo="test.editor.core" />
       </node>
     </node>
