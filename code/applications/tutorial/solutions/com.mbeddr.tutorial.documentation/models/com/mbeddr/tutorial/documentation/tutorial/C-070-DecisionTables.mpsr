@@ -10,7 +10,7 @@
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="7979854108176280683" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-070-DecisionTables" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7979854108176280684" nodeInfo="ng">
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561787127" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="decisionTables" />
       <property name="text" nameId="2c95.3350625596580064225" value="Decision Tables" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176300286" nodeInfo="ng">
