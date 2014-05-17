@@ -5420,5 +5420,15 @@
       <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="r4b4.8668993231196772281" resolveInfo="presentationMode" />
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5369777174348980340" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="2c95.620304030119138923" resolveInfo="BoldFormattedText" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5369777174348982607" nodeInfo="ng">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.6165313375055797477" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="5369777174348982712" nodeInfo="nn">
+        <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
+      </node>
+    </node>
+  </root>
 </model>
 
