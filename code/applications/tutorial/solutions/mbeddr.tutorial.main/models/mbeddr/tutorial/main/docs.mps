@@ -396,9 +396,6 @@
       <property name="name" nameId="2c95.126932837435370851" value="John Doe" />
       <property name="email" nameId="2c95.126932837435370852" value="joh@doe.org" />
     </node>
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416819641037" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1362234784407_10" />
-    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967058" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="newLanguages" />
       <property name="text" nameId="2c95.3350625596580064225" value="New Languages" />
