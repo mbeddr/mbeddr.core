@@ -5,16 +5,12 @@
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.base.dev.build/com.mbeddr.analyses.base.dev.build.msd" folder="_build" />
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.cbmc.dev.build/com.mbeddr.analyses.cbmc.dev.build.msd" folder="_build" />
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.dev.build/build.msd" folder="_build" />
-      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.nusmv.dev.build/com.mbeddr.analyses.nusmv.dev.build.msd" folder="_build" />
-      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.yices.dev.build/com.mbeddr.analyses.yices.dev.build.msd" folder="_build" />
+      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.sat4j.dev.build/com.mbeddr.analyses.sat4j.dev.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.assertions/com.mbeddr.analyses.assertions.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.componentcontracts/componentcontracts.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.decisiontables/com.mbeddr.analyses.decisiontables.devkit" folder="cbmc" />
-      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.dectab/dectab.devkit" folder="yices" />
-      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="yices" />
-      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.nusmv.statemachine/statemachine.devkit" folder="nusmv" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.robustness/com.mbeddr.analyses.robustness.devkit" folder="cbmc" />
-      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.smtlangs.yices/yices.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.statemachines/com.mbeddr.analyses.statemachines.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.unittests/unittests.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base/base.mpl" folder="base" />
@@ -25,18 +21,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.statemachines/com.mbeddr.analyses.cbmc.statemachines.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc/cbmc.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc/solutions/pluginSolution/pluginSolution.msd" folder="cbmc" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.nusmv.rt/rt.msd" folder="nusmv" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.nusmv.statemachine.tests/tests.mpl" folder="nusmv" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.nusmv.statemachine/nusmv.statemachine.mpl" folder="nusmv" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.nusmv.statemachine/solutions/pluginSolution/pluginSolution.msd" folder="nusmv" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.nusmv/nusmv.mpl" folder="nusmv" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.utils/utils.msd" folder="base" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices.dectab/dectabyices.mpl" folder="yices" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices.dectab/solutions/pluginSolution/pluginSolution.msd" folder="yices" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices.fm/fmyices.mpl" folder="yices" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices.fm/solutions/pluginSolution/pluginSolution.msd" folder="yices" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices.rt/rt.msd" folder="yices" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices/yices.mpl" folder="yices" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.lantest/com.mbeddr.core.lantest.mpl" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/languages/testing/com.mbeddr.analyses.cbmc.testing.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.components.pluginSolution/com.mbeddr.analyses.cbmc.components.pluginSolution.msd" folder="cbmc" />
@@ -58,15 +43,8 @@
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc/cbmc.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var.testcode/test.analyses.var.testcode.msd" folder="test.sat4j" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var/test.analyses.var.msd" folder="test.sat4j" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analysis.fmod/test.ts.analyses.fmod.msd" folder="test.yices" />
       <modulePath path="$PROJECT_DIR$/tests/test.analysis.formsera/formsera.msd" folder="test.examples" />
       <modulePath path="$PROJECT_DIR$/tests/test.analysis.nfm/nfm.msd" folder="test.examples" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ex.analyses.nusmv/solution.msd" folder="test.nusmv" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ex.analyses.yices/yices.msd" folder="test.yices" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.analyses.fm/fm.msd" folder="test.yices" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.analyses.statemachine/statemachine.msd" folder="test.nusmv" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.analyses.yices.dectab/test.ts.analyses.yices.dectab.msd" folder="test.yices" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.analysis.statemachine/test.ts.analysis.statemachine.msd" folder="test.nusmv" />
     </projectModules>
   </component>
 </project>
