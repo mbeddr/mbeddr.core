@@ -1636,6 +1636,9 @@
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="651821299949868483" nodeInfo="ng">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="g0ku.651821299948806992" />
       </node>
+      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7863105988439305197" nodeInfo="ng">
+        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="ffeo.5548512857136492227" />
+      </node>
     </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="9141467591178534010" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mps.home" />
