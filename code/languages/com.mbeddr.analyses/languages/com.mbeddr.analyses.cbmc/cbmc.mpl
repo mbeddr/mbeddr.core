@@ -92,20 +92,6 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_before">
-          <greater-priority-mapping>
-            <generator generatorUID="55c68101-5eda-4792-814e-5816de39ea7e(com.mbeddr.analyses.cbmc#2161187783549497010)" />
-            <external-mapping>
-              <mapping-node modelUID="r:51abddd1-d8c6-4327-8b7d-224746b8e705(com.mbeddr.analyses.cbmc.generator.nondet@generator)" nodeID="*" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="1872b356-435d-4b43-9f1c-af4a300747c0(com.mbeddr.ext.physicalunits.c#7720784317543457155)" />
-            <external-mapping>
-              <mapping-node modelUID="r:f20bd7bd-bd26-4aaa-b8d5-9f01f9c28af4(com.mbeddr.ext.physicalunits.c.generator.template.main@generator)" nodeID="7720784317543457156" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
