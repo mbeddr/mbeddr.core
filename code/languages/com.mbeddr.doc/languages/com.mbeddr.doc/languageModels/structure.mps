@@ -980,5 +980,19 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3857533489766146432" resolveInfo="IDocumentable" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2286331641391049225" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
+    <property name="name" nameId="tpck.1169194664001" value="KeyPressFormattedText" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="text formatted in keyboard font" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\key" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6165313375055797476" resolveInfo="FormattedText" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2286331641392318852" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
+    <property name="name" nameId="tpck.1169194664001" value="MenuFormattedText" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="text formatted in menu font" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\menu" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6165313375055797476" resolveInfo="FormattedText" />
+  </root>
 </model>
 

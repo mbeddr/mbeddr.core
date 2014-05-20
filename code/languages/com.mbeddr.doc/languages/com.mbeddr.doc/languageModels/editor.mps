@@ -5812,5 +5812,37 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2286331641391049676" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="2c95.2286331641391049225" resolveInfo="KeyPressFormattedText" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2286331641391052122" nodeInfo="ng">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.6165313375055797477" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="2286331641391741866" nodeInfo="nn">
+        <property name="style" nameId="tpc2.1186403771423" value="BOLD_ITALIC" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2286331641391741867" nodeInfo="nn">
+        <property name="color" nameId="tpc2.1186403713874" value="DARK_BLUE" />
+      </node>
+    </node>
+    <node role="contextHints" roleId="tpc2.2597348684684069742" type="tpc2.ConceptEditorHintDeclarationReference" typeId="tpc2.6822301196700715228" id="2286331641391052107" nodeInfo="ig">
+      <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="r4b4.8668993231196772281" resolveInfo="presentationMode" />
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2286331641392318904" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="2c95.2286331641392318852" resolveInfo="MenuFormattedText" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2286331641392318927" nodeInfo="ng">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.6165313375055797477" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="2286331641392318928" nodeInfo="nn">
+        <property name="style" nameId="tpc2.1186403771423" value="ITALIC" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2286331641392318929" nodeInfo="nn">
+        <property name="color" nameId="tpc2.1186403713874" value="DARK_GREEN" />
+      </node>
+    </node>
+    <node role="contextHints" roleId="tpc2.2597348684684069742" type="tpc2.ConceptEditorHintDeclarationReference" typeId="tpc2.6822301196700715228" id="2286331641392318938" nodeInfo="ig">
+      <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="r4b4.8668993231196772281" resolveInfo="presentationMode" />
+    </node>
+  </root>
 </model>
 
