@@ -9,9 +9,8 @@
   <dependencies>
     <dependency reexport="false">cfe2dde5-9e9a-4804-acb8-311b8adc09dc(com.mbeddr.analyses.base.dev.build)</dependency>
     <dependency reexport="false">52533894-f4ff-41f6-8bcd-cc454916834d(com.mbeddr.analyses.cbmc.dev.build)</dependency>
-    <dependency reexport="false">e0d58430-60b1-4fb5-a47b-980926b70767(com.mbeddr.analyses.nusmv.dev.build)</dependency>
+    <dependency reexport="false">67b86323-605f-472c-8224-92bb0748a95b(com.mbeddr.analyses.sat4j.dev.build)</dependency>
     <dependency reexport="false">4c28f257-18f6-416e-b37b-fa69eba1866b(com.mbeddr.analyses.tests.dev.build)</dependency>
-    <dependency reexport="false">f7dff26d-d965-400d-a73f-e89bdc87c05b(com.mbeddr.analyses.yices.dev.build)</dependency>
     <dependency reexport="false">b22c9f3a-bcc2-4f68-901a-f574ebc81e23(com.mbeddr.cc.ple.dev.build)</dependency>
     <dependency reexport="false">069b04b3-7338-4781-80fa-9e8b854877d2(com.mbeddr.cc.req.dev.build)</dependency>
     <dependency reexport="false">ffd31df9-5187-4c9a-bb4f-d84e5f59ffd5(com.mbeddr.cc.tests.dev.build)</dependency>

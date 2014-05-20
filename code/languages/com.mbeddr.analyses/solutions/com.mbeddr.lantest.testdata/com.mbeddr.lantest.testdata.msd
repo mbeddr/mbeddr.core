@@ -23,7 +23,6 @@
     <usedLanguage>5ef691b5-60ce-4ece-a04e-25e642dfa128(com.mbeddr.mpsutil.lantest)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
-    <usedDevKit>3ae5f2c6-853c-4009-b232-436187467ab6(com.lmsintl.accent)</usedDevKit>
     <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
   </usedDevKits>
 </solution>
