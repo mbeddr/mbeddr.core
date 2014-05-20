@@ -47,6 +47,10 @@
       <property name="name" nameId="tpck.1169194664001" value="detailMode" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="5110473669964270400" resolveInfo="DetailMode" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2900587364575749384" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="showCode" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6416473402306160260" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2c95.4755612053022326353" resolveInfo="IInterspersed" />
     </node>

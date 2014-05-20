@@ -83,8 +83,7 @@
   <property name="com.mbeddr.analyses.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.analyses" />     
   <property name="com.mbeddr.analyses.base-build-file.name" value="build-base.xml" /> 
   <property name="com.mbeddr.analyses.cbmc-build-file.name" value="build-cbmc.xml" /> 
-  <property name="com.mbeddr.analyses.nusmv-build-file.name" value="build-nusmv.xml" /> 
-  <property name="com.mbeddr.analyses.yices-build-file.name" value="build-yices.xml" /> 
+  <property name="com.mbeddr.analyses.sat4j-build-file.name" value="build-sat4j.xml" /> 
   <property name="com.mbeddr.analyses.ex-tests-build-file.name" value="build-ex-tests.xml" /> 
   <property name="com.mbeddr.analyses.ts-tests-build-file.name" value="build-ts-tests.xml" /> 
   <property name="com.mbeddr.analyses.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses" />  
@@ -349,11 +348,8 @@
 	  <ant antfile="${com.mbeddr.analyses.base-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />	
 	  <ant antfile="${com.mbeddr.analyses.base-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />
 	  
-	  <ant antfile="${com.mbeddr.analyses.nusmv-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />
-	  <ant antfile="${com.mbeddr.analyses.nusmv-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />     
-	  
-	  <ant antfile="${com.mbeddr.analyses.yices-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />	  
-	  <ant antfile="${com.mbeddr.analyses.yices-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />
+	  <ant antfile="${com.mbeddr.analyses.sat4j-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />
+	  <ant antfile="${com.mbeddr.analyses.sat4j-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />     
 	  
 	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />
 	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />
@@ -429,14 +425,9 @@
       <ant antfile="${com.mbeddr.analyses.base-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />         
   </target> 
   
-  <target name="build-analyses.nusmv">   
-      <ant antfile="${com.mbeddr.analyses.nusmv-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />
-      <ant antfile="${com.mbeddr.analyses.nusmv-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />
-  </target> 
-
-  <target name="build-analyses.yices">
-      <ant antfile="${com.mbeddr.analyses.yices-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />
-      <ant antfile="${com.mbeddr.analyses.yices-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />       
+  <target name="build-analyses.sat4j">   
+      <ant antfile="${com.mbeddr.analyses.sat4j-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />
+      <ant antfile="${com.mbeddr.analyses.sat4j-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />
   </target> 
 
   <target name="build-analyses.cbmc">
@@ -459,15 +450,14 @@
 	  <antcall target="build-cc.ple" />
 	  <antcall target="build-cc.req" />	  
 	  <antcall target="build-analyses.base" />	 
-	  <antcall target="build-analyses.nusmv" />	 
-	  <antcall target="build-analyses.yices" />	 
+	  <antcall target="build-analyses.sat4j" />	 
 	  <antcall target="build-analyses.cbmc" />	 	  	  	  
   </target>	 
 
   <target name="build-and-run-tests" >
 	   <antcall target="test-debugger" />
    	   <antcall target="test-core" />
-         <antcall target="test-performance" />
+       <antcall target="test-performance" />
    	   <antcall target="test-cc" />
    	   <antcall target="test-ext" />
    	   <antcall target="test-analyses" />
