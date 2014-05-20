@@ -216,14 +216,14 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511422649634" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=", prefixed with the solution's name: select " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.MathFormattedText" typeId="2c95.6165313375055755361" id="7992580511422649635" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511422649636" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511422649638" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.MenuFormattedText" typeId="2c95.2286331641392318852" id="2286331641393309664" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2286331641393309665" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2286331641393309666" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="New -&gt; Model" />
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511422649639" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2286331641393309663" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" from the solution's context menu. No sterotype." />
             </node>
           </node>
@@ -274,9 +274,6 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit." />
             </node>
           </node>
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="133516147904059264" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_1400581920708_1" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7992580511422653248" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="AddDependencies" />
@@ -467,14 +464,14 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950941400" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="This operation, as well as almost all others, can be performed with the keyboard as well. Take a look at " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.MathFormattedText" typeId="2c95.6165313375055755361" id="949722786950941592" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950941593" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950941595" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.MenuFormattedText" typeId="2c95.2286331641392318852" id="2286331641393310983" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2286331641393310984" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2286331641393310985" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="File -&gt; Settings -&gt; Keymap" />
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950941596" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2286331641393310982" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to find out or change keyboard mappings." />
             </node>
           </node>
