@@ -522,39 +522,30 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950943934" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="s can be added later." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="s can be added later. Specify " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5777244129531518144" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5777244129531518145" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531518146" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="HelloWorld" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531518100" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" as the name of the module. " />
             </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="133516147904181322" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
+          <property name="removeEmpties" nameId="rh4a.5777244129531124537" value="true" />
           <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="zxcx.8265078645304658397" resolveInfo="log" />
-          <link role="detail" roleId="rh4a.6416473402306189931" targetNodeId="zxcx.8265078645304658991" resolveInfo="hello" />
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="949722786950958034" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="EmptyModule" />
-          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4208238404722414401" nodeInfo="ng">
-            <property name="fileName" nameId="2c95.6386504476136521408" value="core/EmptyModule.png" />
-            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          <node role="removals" roleId="rh4a.133516147906394971" type="rh4a.CodeRemoval" typeId="rh4a.133516147906394505" id="5777244129531120856" nodeInfo="ng">
+            <link role="removedNode" roleId="rh4a.133516147906394530" targetNodeId="zxcx.133516147900947425" resolveInfo="main" />
           </node>
-          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="949722786950958038" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950958039" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950958040" nodeInfo="ng" />
-            </node>
+          <node role="removals" roleId="rh4a.133516147906394971" type="rh4a.CodeRemoval" typeId="rh4a.133516147906394505" id="5777244129531122708" nodeInfo="ng">
+            <link role="removedNode" roleId="rh4a.133516147906394530" targetNodeId="zxcx.8265078645304658397" resolveInfo="log" />
           </node>
-          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="949722786950958042" nodeInfo="ng" />
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="949722786950958533" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950958534" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950958535" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Next, specify \\ic{HelloWorld} as the name for the implementation module." />
-            </node>
-          </node>
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="949722786950960593" nodeInfo="ng">
-          <property name="text" nameId="2c95.8730648445434044906" value="module HelloWorld imports nothing {                                &#10;&#10;}" />
-          <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="949722786950961109" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950961110" nodeInfo="ng">
@@ -599,7 +590,17 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950961354" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" type size configuration, which can be added to a module via an intention \\intention{Create default type sizeconfiguration}  on the module in the editor. You may have to press " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" type size configuration, which can be added to a module via an intention " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5777244129531522943" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5777244129531523060" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531523061" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Create Default Type Size Configuration" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531522942" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" on the module in the editor. You may have to press " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="949722786950961357" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950961358" nodeInfo="ng">
@@ -609,7 +610,11 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950961361" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to make the red underline go away. For more details on type size configurations see chapter \\ref{PrimitiveNumericDatatypes}" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to make the red underline go away. For more details on type size configurations see " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="5777244129531523064" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531523065" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
             </node>
           </node>
         </node>
@@ -700,7 +705,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950963339" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=") and then enter a name and the opening parentheses(Entering a type and a name makes it a global variable. As soon as you enter the " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=") and then enter a name and the opening parentheses. Entering a type and a name makes it a global variable. As soon as you enter the " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="949722786950963340" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950963341" nodeInfo="ng">
@@ -744,43 +749,59 @@
               </node>
             </node>
           </node>
-          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="949722786950964077" nodeInfo="ng">
-            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="949722786950964078" nodeInfo="ng">
-              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950964079" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950964080" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="At this point, we are ready to implement the " />
-                </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="949722786950964118" nodeInfo="ng">
-                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950964119" nodeInfo="ng">
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950964121" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Hello World" />
-                    </node>
-                  </node>
-                </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950964122" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" program. Our aim is to simply output a log message and return " />
-                </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="949722786950964123" nodeInfo="ng">
-                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950964124" nodeInfo="ng">
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950964126" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="0" />
-                    </node>
-                  </node>
-                </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950964127" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=". To add a return value, move the cursor into the function body and type " />
-                </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="949722786950964128" nodeInfo="ng">
-                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950964129" nodeInfo="ng">
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950964131" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="return 0" />
-                    </node>
-                  </node>
-                </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950964132" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5777244129531526570" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5777244129531526571" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531526572" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The result looks like this:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="5777244129531527436" nodeInfo="ng">
+          <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
+          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
+          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="zxcx.133516147900947425" resolveInfo="main" />
+          <node role="removals" roleId="rh4a.133516147906394971" type="rh4a.CodeRemoval" typeId="rh4a.133516147906394505" id="5777244129531595882" nodeInfo="ng">
+            <link role="removedNode" roleId="rh4a.133516147906394530" targetNodeId="zxcx.5777244129531528231" resolveInfo="ret" />
+          </node>
+          <node role="removals" roleId="rh4a.133516147906394971" type="rh4a.CodeRemoval" typeId="rh4a.133516147906394505" id="5777244129531597917" nodeInfo="ng">
+            <link role="removedNode" roleId="rh4a.133516147906394530" targetNodeId="zxcx.5777244129531528031" resolveInfo="report" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5777244129531524415" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5777244129531524416" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531524417" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="At this point, we are ready to implement the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5777244129531525278" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5777244129531525279" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531525280" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Hello World" />
                 </node>
               </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531525277" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" program. Our aim is to simply output a log message and return " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5777244129531613227" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5777244129531613228" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531613229" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="0" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531613226" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". To add a return value, move the cursor into the function body and type " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5777244129531613255" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5777244129531613256" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531613257" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="return 0;" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531613254" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
             </node>
           </node>
         </node>
@@ -788,6 +809,9 @@
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
           <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="zxcx.133516147900947425" resolveInfo="main" />
+          <node role="removals" roleId="rh4a.133516147906394971" type="rh4a.CodeRemoval" typeId="rh4a.133516147906394505" id="5777244129531613251" nodeInfo="ng">
+            <link role="removedNode" roleId="rh4a.133516147906394530" targetNodeId="zxcx.5777244129531528031" resolveInfo="report" />
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="949722786950981367" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950981368" nodeInfo="ng">
@@ -822,7 +846,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950981721" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or the target platform has no display available, so we use a special language extension for logging. It will be translated in a suitable way, depending on the available facilities on the target platform. Also, specific log messages can be deactivated in which case they are completely removed from the program. Below our main function we create a new " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or the target platform has no display available, so we use a special language extension for logging. It will be translated in a suitable way, depending on the available facilities on the target platform. Also, specific log messages can be deactivated in which case they are completely removed from the program. In our implementation module we create a new " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="949722786950981722" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950981723" nodeInfo="ng">
@@ -1018,10 +1042,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="949722786950986249" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="zxcx.949722786950986653" resolveInfo="mainWithLog" />
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="949722786950985750" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_1382548045968_25" />
+          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="zxcx.133516147900947425" resolveInfo="main" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5779779775762773957" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5779779775762773958" nodeInfo="ng">
@@ -1076,7 +1097,17 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5779779775762786735" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (via the model's context menu, see figure below)." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (via the model's context menu; the build configuration is in the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5777244129531618556" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5777244129531618557" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531618558" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="c.m.c.buildconfig" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531618555" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" language)." />
             </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5779779775762774367" nodeInfo="ng">

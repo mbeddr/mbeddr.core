@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model modelUID="r:af51c5c3-b54b-4a75-a1e6-409757d1a380(com.mbeddr.tutorial.documentation.code)" content="root">
+  <persistence version="8" />
+  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="yes" />
+  <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5777244129531618669" nodeInfo="ng" />
+</model>
+
