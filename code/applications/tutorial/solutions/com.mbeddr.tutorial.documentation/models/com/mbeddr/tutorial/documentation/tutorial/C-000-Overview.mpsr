@@ -5,6 +5,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="6403595147461056875" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-000-Overview" />
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="0" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="6403595147461065812" nodeInfo="ng">
       <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="6403595147461065818" nodeInfo="ng">

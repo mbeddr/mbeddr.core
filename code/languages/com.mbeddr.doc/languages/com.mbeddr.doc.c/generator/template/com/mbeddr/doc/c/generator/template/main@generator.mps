@@ -356,6 +356,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="2726240646375887072" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="2726240646375887073" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
+          <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="0" />
           <link role="config" roleId="2c95.6657644269295214800" targetNodeId="4755612053022494311" resolveInfo="DummyCfg" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="2726240646375887074" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="img" />
