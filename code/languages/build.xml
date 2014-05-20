@@ -6,18 +6,19 @@
   <!-- url/mps properties -->
   <property name="plugins.folder.name" value="plugins"/>
   <property name="latest-build" value="status:SUCCESS"/> 
-  <property name="branch.spawner" value="branch:master"/> 
-  <property name="branch.tables" value="branch:31_EAP1-25"/> 
-  <property name="branch.richtext" value="branch:31_EAP"/> 
-  <property name="branch.multiline" value="branch:31_EAP"/>
-  <property name="branch.math" value="branch:master"/>
-  <property name="branch.bool-editor" value="branch:master"/> 
+  <property name="branch.spawner" value="branch:master"/>
   <property name="server.url" value="http://build.mbeddr.com"/>   
   <property name="server.port" value="80"/>    
   <property name="base-url" value="https://build.mbeddr.com/guestAuth/app/rest/builds"/>
 
-  
-  <!-- com.mbeddr.mpsutil -->  
+  <!-- de.slisson.mps.all -->
+  <property name="de.slisson.mps.all.build-path.postfix" value="${mbeddr.github.core.home}/build/mps-sl-all/build/artifacts/mps-sl-all" />
+  <property name="de.slisson.mps.all.build-file.location" value="${mbeddr.github.core.home}/code/plugins/sl-all" />
+  <property name="de.slisson.mps.all.build-file.name" value="build.xml" />
+  <property name="de.slisson.mps.all.working-dir" value="${mbeddr.github.core.home}/code/plugins/sl-all" />
+
+
+  <!-- com.mbeddr.mpsutil -->
   <property name="com.mbeddr.mpsutil.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />  
   <property name="com.mbeddr.mpsutil.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.mpsutil" />    
   <property name="com.mbeddr.mpsutil.build-file.name" value="build.xml" />  
@@ -108,40 +109,12 @@
   <property name="com.mbeddr.allScripts.build-file.name" value="build.xml" /> 
   <property name="com.mbeddr.allScripts.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.allScripts" />  
   
-  <!-- boolean editor -->  
-  <property name="mps-bool-editor.zip-file.name" value="mps-bool-editor.zip" />
-  <property name="mps-bool-editor.expanded-folder.name" value="mps-bool-editor" />
-  <property name="mps-bool-editor.build-id" value="buildType:RichtextTables_MpsBooleanEditor" />  
-  <property name="mps-bool-editor.build-path" value="${mbeddr.github.core.home}/build/mps-bool-editor/build/artifacts/mps-bool-editor" />  
-  <property name="artifacts.mps-bool-editor" value="${mps-bool-editor.build-path}" />
-
-  <!-- math -->  
-  <property name="mps-math.zip-file.name" value="mps-math-editor.zip" />
-  <property name="mps-math.expanded-folder.name" value="mps-math-editor" />
-  <property name="mps-math.build-id" value="buildType:RichtextTables_MpsMath" />  
-  <property name="mps-math.build-path" value="${mbeddr.github.core.home}/build/mps-math-editor/build/artifacts/mps-math-editor" />  
-  <property name="artifacts.mps-math-editor" value="${mps-math.build-path}" />  
-  
-  <!-- multiline -->  
-  <property name="multiline.zip-file.name" value="mps-multiline.zip" />
-  <property name="multiline.expanded-folder.name" value="mps-multiline" />
-  <property name="multiline.build-id" value="buildType:RichtextTables_MpsMultiline" />  
-  <property name="multiline.build-path" value="${mbeddr.github.core.home}/build/mps-multiline/build/artifacts/mps-multiline" />  
-  <property name="artifacts.mps-multiline" value="${multiline.build-path}" />  
-    
-  <!-- mps-richtext -->  
-  <property name="mps-richtext.zip-file.name" value="mps-richtext.zip" />
-  <property name="mps-richtext.expanded-folder.name" value="mps-richtext" />
-  <property name="mps-richtext.build-id" value="buildType:RichtextTables_MpsRichtext" />
-  <property name="mps-richtext.build-path" value="${mbeddr.github.core.home}/build/mps-richtext/build/artifacts/mps-richtext" />  
-  <property name="artifacts.mps-richtext" value="${mps-richtext.build-path}" />  
-  
   <!-- mps-tables -->
-  <property name="mps-tables.zip-file.name" value="mps-tables.zip" />
-  <property name="mps-tables.expanded-folder.name" value="mps-tables" />  
-  <property name="mps-tables.build-id" value="buildType:RichtextTables_MpsTables" />   
-  <property name="mps-tables.build-path" value="${mbeddr.github.core.home}/build/mps-tables/build/artifacts/mps-tables" />  
-  <property name="artifacts.mps-tables" value="${mps-tables.build-path}" />  
+  <property name="mps-sl-all.zip-file.name" value="mps-sl-all.zip" />
+  <property name="mps-sl-all.expanded-folder.name" value="mps-sl-all" />  
+  <property name="mps-sl-all.build-id" value="buildType:RichtextTables_MpsSlAll" />   
+  <property name="mps-sl-all.build-path" value="${mbeddr.github.core.home}/build/mps-sl-all/build/artifacts/mps-sl-all" />  
+  <property name="artifacts.mps-sl-all" value="${mps-sl-all.build-path}" />  
   
   <!-- spawner -->
   <property name="spawner.suburl" value="com.mbeddr.spawner.build" /> 
@@ -201,55 +174,31 @@
 	  <antcall target="check-server" />
 	  
 	  <!-- create directory structure -->
-	  <mkdir dir="${multiline.build-path}"/>
-	  <mkdir dir="${mps-richtext.build-path}"/>
-	  <mkdir dir="${mps-tables.build-path}"/>
-	  <mkdir dir="${mps-math.build-path}"/>
-	  <mkdir dir="${mps-bool-editor.build-path}"/>	  
+	  <mkdir dir="${mps-sl-all.build-path}"/>  
 	  <mkdir dir="${spawner.build-path}"/> 
 	  
 	  <!-- clean-plugin-folder -->
 	  <echo message=""/>
   	  <echo message="DELETING PLUGINS"/>
   	  <echo message=""/>
-	  <delete dir="${mps.home}/${plugins.folder.name}/${multiline.expanded-folder.name}" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-richtext.expanded-folder.name}" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-tables.expanded-folder.name}" verbose="true" />
 	  <delete dir="${mps.home}/${plugins.folder.name}/${spawner.expanded-folder.name}" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-bool-editor.expanded-folder.name}" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-math.expanded-folder.name}" verbose="true" />
 	  
 	  
 	  <echo message=""/>
   	  <echo message="DELETING ARTIFACTS"/>
   	  <echo message=""/>
-	  <delete file="${mps-math.build-path}/${mps-math.zip-file.name}"/>
-	  <delete file="${mps-bool-editor.build-path}/${mps-bool-editor.zip-file.name}"/>
-	  <delete file="${multiline.build-path}/${multiline.zip-file.name}"/>	  
-	  <delete file="${mps-richtext.build-path}/${mps-richtext.zip-file.name}"/>
-	  <delete file="${mps-tables.build-path}/${mps-tables.zip-file.name}"/>
 	  <delete file="${spawner.build-path}/${spawner.zip-file.name}"/>
 	    	  
 	  <!-- download-plugins -->	
 	  <echo message=""/>
   	  <echo message="DOWNLOADING ARTIFACTS"/>
   	  <echo message=""/>  
-	  <get src="${base-url}/${branch.multiline},${multiline.build-id},${latest-build}/artifacts/files/${multiline.zip-file.name}" dest="${multiline.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	  <get src="${base-url}/${branch.richtext},${mps-richtext.build-id},${latest-build}/artifacts/files/${mps-richtext.zip-file.name}" dest="${mps-richtext.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	  <get src="${base-url}/${branch.tables},${mps-tables.build-id},${latest-build}/artifacts/files/${mps-tables.zip-file.name}" dest="${mps-tables.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	  <get src="${base-url}/${branch.math},${mps-bool-editor.build-id},${latest-build}/artifacts/files/${mps-bool-editor.zip-file.name}" dest="${mps-bool-editor.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	  <get src="${base-url}/${branch.bool-editor},${mps-math.build-id},${latest-build}/artifacts/files/${mps-math.zip-file.name}" dest="${mps-math.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${spawner.build-id},${latest-build}/artifacts/files/${spawner.suburl}/${spawner.zip-file.name}" dest="${spawner.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>	 
 	  	 
 	  <!-- unzip-plugins -->
 	  <echo message=""/>
   	  <echo message="INSTALLING PLUGINS"/>
   	  <echo message=""/>
-  	  <unzip src="${mps-math.build-path}/${mps-math.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
-  	  <unzip src="${mps-bool-editor.build-path}/${mps-bool-editor.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
-	  <unzip src="${multiline.build-path}/${multiline.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
-	  <unzip src="${mps-richtext.build-path}/${mps-richtext.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
-	  <unzip src="${mps-tables.build-path}/${mps-tables.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${spawner.build-path}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" /> 	 	  
   </target>  
 
@@ -307,9 +256,12 @@
   
   <target name="clean-languages">
 	  <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-plugins.task}" />	  
-	  <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-generated-code.task}" />	  
-	  
-	  <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${clean-plugins.task}" />
+	  <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-generated-code.task}" />
+
+      <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${clean-plugins.task}" />
+      <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${clean-generated-code.task}" />
+
+      <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${clean-plugins.task}" />
 	  <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${clean-generated-code.task}" />	  
 	  
 	  <ant antfile="${com.mbeddr.debugger.main-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${clean-plugins.task}" />
@@ -355,10 +307,17 @@
 	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />
   </target>    
   
-  <target name="build-allScripts">
+  <target name="build-allScripts" depends="build-sl-all">
       <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${generate-code.task}" />
   </target>
-  
+
+  <target name="build-sl-all">
+    <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${generate-code.task}" />
+    <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${build-plugin.task}" />
+    <copyfile src="${de.slisson.mps.all.working-dir}/build/artifacts/mps-sl-all/mps-sl-all.zip" dest="${de.slisson.mps.all.build-path.postfix}/mps-sl-all.zip" />
+  </target>
+
+
   <target name="build-mpsutil">
       <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${generate-code.task}" />
       <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${build-plugin.task}" />	  
@@ -437,6 +396,7 @@
 
 
   <target name="build-languages" >
+      <antcall target="build-sl-all" />
 	  <antcall target="build-mpsutil" />
 	  <antcall target="build-debugger" />
 	  <antcall target="build-platform" />

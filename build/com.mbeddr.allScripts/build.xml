@@ -6,19 +6,10 @@
   <property name="mps.home" location="${basedir}/../../../../../.." />
   <property name="mbeddr.github.core.home" location="${basedir}/../.." />
   <property name="mbeddr.build" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.build" />
-  <property name="lisson.home" location="${mbeddr.github.core.home}/build" />
-  <property name="multiline.artifacts" location="${lisson.home}/mps-multiline/build/artifacts/mps-multiline" />
-  <property name="tables.artifacts" location="${lisson.home}/mps-tables/build/artifacts/mps-tables" />
-  <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext" />
   <property name="spawner.artifacts" location="${basedir}/../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
-  <property name="math.artifacts" location="${lisson.home}/mps-math-editor/build/artifacts/mps-math-editor" />
-  <property name="bool-editor.artifacts" location="${lisson.home}/mps-bool-editor/build/artifacts/mps-bool-editor" />
+  <property name="sl.all" location="${mbeddr.github.core.home}/code/plugins/sl-all/build/artifacts/mps-sl-all" />
   <property name="artifacts.mps" location="${mps.home}" />
-  <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
-  <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
-  <property name="artifacts.mps-tables" location="${tables.artifacts}" />
-  <property name="artifacts.mps-bool-editor" location="${bool-editor.artifacts}" />
-  <property name="artifacts.mps-math-editor" location="${math.artifacts}" />
+  <property name="artifacts.mps-sl-all" location="${sl.all}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -47,11 +38,7 @@
         <depends>jetbrains.mps.debugger.api</depends>
         <depends>jetbrains.mps.execution.api</depends>
         <depends>jetbrains.mps.execution.languages</depends>
-        <depends>de.slisson.mps.richtext</depends>
-        <depends>de.slisson.mps.tables</depends>
-        <depends>de.slisson.mps.editor.multiline</depends>
-        <depends>de.itemis.mps.editor.bool</depends>
-        <depends>de.itemis.mps.editor.math</depends>
+        <depends>de.slisson.mps.all</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -712,16 +699,8 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <unzip src="${artifacts.mps-tables}/mps-tables.zip" dest="${build.tmp}/deps/mps-tables/mps-tables.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip" />
-    <unzip src="${artifacts.mps-math-editor}/mps-math-editor.zip" dest="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip" />
-    <unzip src="${artifacts.mps-bool-editor}/mps-bool-editor.zip" dest="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
+    <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -731,7 +710,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.spawner.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.mpsutil.buildutil, java.compile.com.mbeddr.mpsutil.buildutil#6600513366548883903, java.compile.com.mbeddr.mpsutil.blutil, java.compile.com.mbeddr.mpsutil.blutil#374287044672169667, java.compile.com.mbeddr.mpsutil.blutil.rt, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.math.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.cbmc.dev.build, java.compile.com.mbeddr.analyses.base.dev.build, java.compile.com.mbeddr.analyses.sat4j.dev.build, java.compile.com.mbeddr.analyses.tests.dev.build" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.spawner.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.mpsutil.buildutil, java.compile.com.mbeddr.mpsutil.buildutil#6600513366548883903, java.compile.com.mbeddr.mpsutil.blutil, java.compile.com.mbeddr.mpsutil.blutil#374287044672169667, java.compile.com.mbeddr.mpsutil.blutil.rt, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.java.modules.cycle.1, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.math.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.cbmc.dev.build, java.compile.com.mbeddr.analyses.base.dev.build, java.compile.com.mbeddr.analyses.sat4j.dev.build, java.compile.com.mbeddr.analyses.tests.dev.build" />
   
   <target name="processResources" />
   
@@ -751,11 +730,7 @@
       <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
-      <plugin path="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor" />
-      <plugin path="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor" />
-      <plugin path="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
-      <plugin path="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
-      <plugin path="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables" />
+      <plugin path="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.checkedDots.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -845,15 +820,11 @@
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
-      <library file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-      <library file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.jar" />
-      <library file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
-      <library file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-      <library file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
-      <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-      <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
-      <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-      <library file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
+      <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+      <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.jar" />
+      <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+      <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
+      <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
       <chunk>
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/solutions/com.mbeddr.mpsutil.blutil.rt.msd" />
@@ -896,13 +867,8 @@
       <macro name="mps.home" path="${mps.home}" />
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
       <macro name="mbeddr.build" path="${mbeddr.build}" />
-      <macro name="lisson.home" path="${lisson.home}" />
-      <macro name="multiline.artifacts" path="${multiline.artifacts}" />
-      <macro name="tables.artifacts" path="${tables.artifacts}" />
-      <macro name="richtext.artifacts" path="${richtext.artifacts}" />
       <macro name="spawner.artifacts" path="${spawner.artifacts}" />
-      <macro name="math.artifacts" path="${math.artifacts}" />
-      <macro name="bool-editor.artifacts" path="${bool-editor.artifacts}" />
+      <macro name="sl.all" path="${sl.all}" />
     </generate>
   </target>
   
@@ -960,11 +926,7 @@
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1008,11 +970,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1038,8 +996,7 @@
         <path location="${mbeddr.build}/solutions/com.mbeddr.mpsutil.dev.build/source_gen" />
       </src>
       <classpath>
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1164,7 +1121,7 @@
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -1282,10 +1239,8 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -1301,7 +1256,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1317,8 +1271,7 @@
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1349,10 +1302,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1384,10 +1334,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1419,10 +1366,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1439,8 +1383,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.debugger.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1477,14 +1420,52 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.cc.tests.dev.build" depends="java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, fetchDependencies">
+  <target name="java.compile.java.modules.cycle.1" depends="java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.math.dev.build, java.compile.com.mbeddr.ext.units.dev.build, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.1" />
+    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" nowarn="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/source_gen" />
+        <path location="${mbeddr.build}/solutions/com.mbeddr.ext.statemachinesInComponents.dev.build/source_gen" />
+        <path location="${mbeddr.build}/solutions/com.mbeddr.ext.build/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.3.2.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.ple.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.req.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.debugger.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.platform.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.statemachine.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.math.dev.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.units.dev.build" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.com.mbeddr.cc.tests.dev.build" depends="java.compile.com.mbeddr.cc.ple.dev.build, java.compile.com.mbeddr.cc.req.dev.build, java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.doc.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.tests.dev.build" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.tests.dev.build" fork="true" includeantruntime="false">
@@ -1499,7 +1480,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.debugger.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.dev.build" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.tests.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
@@ -1516,10 +1496,8 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
   </target>
@@ -1552,10 +1530,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1590,10 +1565,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1625,10 +1597,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1660,15 +1629,12 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build" depends="java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, fetchDependencies">
+  <target name="java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build" depends="java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.ext.statemachinesInComponents.dev.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.statemachinesInComponents.dev.build" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.statemachinesInComponents.dev.build" fork="true" includeantruntime="false">
@@ -1697,10 +1663,8 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
   </target>
@@ -1732,10 +1696,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1767,10 +1728,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1802,15 +1760,12 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.ext.tests.build" depends="java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.math.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.statemachinesInComponents.dev.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, fetchDependencies">
+  <target name="java.compile.com.mbeddr.ext.tests.build" depends="java.compile.com.mbeddr.core.dev.build, java.compile.com.mbeddr.debugger.dev.build, java.compile.com.mbeddr.ext.components.dev.build, java.compile.com.mbeddr.ext.math.dev.build, java.compile.com.mbeddr.ext.statemachine.dev.build, java.compile.com.mbeddr.ext.units.dev.build, java.compile.com.mbeddr.mpsutil.dev.build, java.compile.com.mbeddr.platform.dev.build, java.compile.com.mbeddr.spawner.dev.build, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.tests.build" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.tests.build" fork="true" includeantruntime="false">
@@ -1824,7 +1779,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.math.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.statemachine.dev.build" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.statemachinesInComponents.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.units.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.dev.build" />
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -1842,11 +1796,8 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-math-editor/mps-math-editor.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
   </target>
@@ -1886,10 +1837,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1926,10 +1874,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -1967,10 +1912,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -2013,10 +1955,7 @@
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-bool-editor/mps-bool-editor.zip/mps-bool-editor/languages/mps-bool-editor/de.itemis.mps.editor.bool.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-tables/mps-tables.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.build.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
   </target>
