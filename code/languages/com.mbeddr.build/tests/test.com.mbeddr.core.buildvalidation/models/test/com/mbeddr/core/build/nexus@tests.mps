@@ -43,13 +43,14 @@
   <import index="byw8" modelUID="r:cee07942-9166-46aa-b335-023165803fb1(com.mbeddr.analyses.base.dev.build.build)" version="-1" />
   <import index="cres" modelUID="r:37e76d82-365d-4087-8d5c-8fc0b02b7601(com.mbeddr.analyses.cbmc.dev.build.build)" version="-1" />
   <import index="tdj5" modelUID="r:6dfd98e4-b741-4c12-a184-aeb928d8348e(com.mbeddr.analyses.dev.build)" version="-1" />
-  <import index="d8e8" modelUID="r:3ffe2aaa-23d7-415d-96b2-1cdad1cd8ced(com.mbeddr.analyses.nusmv.dev.build.build)" version="-1" />
-  <import index="yexh" modelUID="r:7cdaacc1-b188-42d1-b224-bdfc4ad1a4f9(com.mbeddr.analyses.yices.dev.build.build)" version="-1" />
   <import index="i9f1" modelUID="r:63dd2f77-4801-4ccd-8b5b-f40c8164059b(com.mbeddr.build.build)" version="-1" />
+  <import index="msuh" modelUID="r:4f53fb5d-a9a2-4725-8153-7d8ec10b5f7f(com.mbeddr.analyses.sat4j.dev.build.build)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="cepq" modelUID="r:785288ce-1c40-4b37-8bcd-f2a2ba641c25(com.mbeddr.core.buildvalidation.structure)" version="4" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="39" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
+  <import index="yexh" modelUID="r:7cdaacc1-b188-42d1-b224-bdfc4ad1a4f9(com.mbeddr.analyses.yices.dev.build.build)" version="-1" implicit="yes" />
+  <import index="d8e8" modelUID="r:3ffe2aaa-23d7-415d-96b2-1cdad1cd8ced(com.mbeddr.analyses.nusmv.dev.build.build)" version="-1" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8297282968578104113" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="BuildCheck" />
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="5361947209018000845" nodeInfo="ng">

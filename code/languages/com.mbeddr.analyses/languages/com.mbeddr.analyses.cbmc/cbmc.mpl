@@ -92,7 +92,7 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_before">
+        <mapping-priority-rule kind="strictly_after">
           <greater-priority-mapping>
             <generator generatorUID="55c68101-5eda-4792-814e-5816de39ea7e(com.mbeddr.analyses.cbmc#2161187783549497010)" />
             <external-mapping>

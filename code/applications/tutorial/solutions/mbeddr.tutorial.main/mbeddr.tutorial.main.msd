@@ -12,6 +12,8 @@
   <usedLanguages>
     <usedLanguage>5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)</usedLanguage>
     <usedLanguage>42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)</usedLanguage>
+    <usedLanguage>0a02a8f9-14d0-4970-9bd2-ca35a097c80d(com.mbeddr.analyses.cbmc.core)</usedLanguage>
+    <usedLanguage>daa1849d-6955-4fef-afe3-8aea1f61e6fa(com.mbeddr.analyses.cbmc.statemachines)</usedLanguage>
     <usedLanguage>f3ed62ca-3490-40d0-890b-9b3133cc2ead(com.mbeddr.cc.requirements.c)</usedLanguage>
     <usedLanguage>7a52ca96-9053-41d2-ae13-8cee05f36698(com.mbeddr.cc.requirements.c2doc)</usedLanguage>
     <usedLanguage>983e02f8-8062-426e-b60d-bc044a46b93a(com.mbeddr.cc.requirements.report)</usedLanguage>
@@ -46,8 +48,7 @@
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>f5226c26-1a3d-4ca7-8823-0d9ca197c4ac(com.mbeddr.analyses.componentcontracts)</usedDevKit>
-    <usedDevKit>9e5aaffe-404b-44dd-9dc5-daf7ffdbd380(com.mbeddr.analyses.dectab)</usedDevKit>
-    <usedDevKit>2bdeee47-6092-4bbf-b31d-6be5dbbba49d(com.mbeddr.analyses.nusmv.statemachines)</usedDevKit>
+    <usedDevKit>0d9470ba-d59f-4411-a2ce-12f6b6bdec49(com.mbeddr.analyses.fm)</usedDevKit>
     <usedDevKit>a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)</usedDevKit>
     <usedDevKit>b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)</usedDevKit>
     <usedDevKit>24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)</usedDevKit>
