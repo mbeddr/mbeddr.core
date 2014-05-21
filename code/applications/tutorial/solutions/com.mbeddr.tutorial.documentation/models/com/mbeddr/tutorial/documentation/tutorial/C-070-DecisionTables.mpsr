@@ -9,6 +9,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="7979854108176280683" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-070-DecisionTables" />
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561787127" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="decisionTables" />
@@ -43,7 +44,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="7979854108176311519" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
         <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
-        <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.1731059994647919766" resolveInfo="FlightJudger" />
+        <link role="code" roleId="rh4a.2286331641396216122" targetNodeId="e1tx.1731059994647919766" resolveInfo="FlightJudger" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176311547" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176311548" nodeInfo="ng">
@@ -158,7 +159,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="7979854108176442535" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
         <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
-        <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.5160057464294662008" resolveInfo="instancesJudging" />
+        <link role="code" roleId="rh4a.2286331641396216122" targetNodeId="e1tx.5160057464294662008" resolveInfo="instancesJudging" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176448253" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176448254" nodeInfo="ng">
@@ -220,7 +221,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="7979854108176472248" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
         <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
-        <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.5160057464294655278" resolveInfo="testJudging" />
+        <link role="code" roleId="rh4a.2286331641396216122" targetNodeId="e1tx.5160057464294655278" resolveInfo="testJudging" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="7979854108176472331" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_1394875531895_21" />

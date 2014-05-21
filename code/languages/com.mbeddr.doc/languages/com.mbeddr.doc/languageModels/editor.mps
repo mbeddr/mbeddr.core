@@ -5844,5 +5844,27 @@
       <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="r4b4.8668993231196772281" resolveInfo="presentationMode" />
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2286331641395252262" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="codepointer" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="2c95.2286331641395238583" resolveInfo="CodePointer" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="2286331641395257169" nodeInfo="ng">
+      <property name="separatorText" nameId="tpc2.1140524450557" value="." />
+      <property name="separatorLayoutConstraint" nameId="tpc2.1156252885376" value="punctuation" />
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.2286331641395252236" />
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2286331641396387064" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="codepointer" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="2c95.2286331641395252232" resolveInfo="CPElement" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="2286331641396387175" nodeInfo="ng">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.2286331641395252233" />
+      <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="2286331641396387176" nodeInfo="ng">
+        <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2286331641396387200" nodeInfo="ng">
+          <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
+    </node>
+  </root>
 </model>
 
