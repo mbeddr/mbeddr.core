@@ -10,6 +10,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4574736324932010379" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="A-010-Introduction" />
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="qsic.2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="4574736324932019985" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="analyses_introduction" />
@@ -197,9 +198,6 @@
               </node>
             </node>
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4574736324933140602" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="empty_1400659627707_1" />
-          </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="4574736324933140631" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="fm_example" />
             <property name="center" nameId="2c95.8730648445434174368" value="true" />
@@ -274,9 +272,97 @@
               <link role="base" roleId="2c95.8624890525767800818" targetNodeId="qsic.8624890525768078255" resolveInfo="width80" />
             </node>
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4574736324934027138" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="empty_1400663408359_1" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2825187286274051367" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1400671866761_2" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2825187286274051633" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="cm_analyzer" />
+          <property name="text" nameId="2c95.3350625596580064225" value="CM-Analyzer" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2825187286274051634" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2825187286274051635" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2825187286274051636" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the figure below we present an example of a configuration model defined in mbeddr. Each configuration model contains a subset of features from the feature model it configures." />
+              </node>
+            </node>
           </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="2825187286274051637" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="cm_example" />
+            <property name="center" nameId="2c95.8730648445434174368" value="true" />
+            <property name="border" nameId="2c95.4755612053022517119" value="true" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="2825187286274051638" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="analyses\cm_example.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="qsic.4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2825187286274051639" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2825187286274051640" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2825187286274051641" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="A configuration model contains a sub-set of features." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="2825187286274051642" nodeInfo="ng">
+              <link role="base" roleId="2c95.8624890525767800818" targetNodeId="qsic.8624890525768078255" resolveInfo="width80" />
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2825187286274051643" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="empty_1400660000565_3" />
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2825187286274051644" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2825187286274051645" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2825187286274051646" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The CM-Analyzer can be started by right-clicking on the feature model node and selecting the corresponding menu entry. " />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="2825187286274051647" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="cm_analyzer" />
+            <property name="center" nameId="2c95.8730648445434174368" value="true" />
+            <property name="border" nameId="2c95.4755612053022517119" value="true" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="2825187286274051648" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="analyses\cm_analyzer_start.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="qsic.4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2825187286274051649" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2825187286274051650" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2825187286274051651" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="One-click starting of the CM-Analyzer." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="2825187286274051652" nodeInfo="ng">
+              <link role="base" roleId="2c95.8624890525767800818" targetNodeId="qsic.8624890525768078255" resolveInfo="width80" />
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2825187286274051653" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2825187286274051654" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2825187286274051655" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="CM-Analyzer will open a window with the result of the analysis. In the case when the analysis fails, CM-Analyzer provides an explanation about the cause of failure. " />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="2825187286274051656" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="cm_analyzer_results" />
+            <property name="center" nameId="2c95.8730648445434174368" value="true" />
+            <property name="border" nameId="2c95.4755612053022517119" value="true" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="2825187286274051657" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="analyses\cm_analyzer_results.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="qsic.4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2825187286274051658" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2825187286274051659" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2825187286274051660" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Results provided by the CM-Analyzer. The failure is caused by the fact that the feature 'Communication' cannot have both sub-features 'CAN' and 'FlexRay' at the same time." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="2825187286274051661" nodeInfo="ng">
+              <link role="base" roleId="2c95.8624890525767800818" targetNodeId="qsic.8624890525768078255" resolveInfo="width80" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2825187286274051456" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1400671867816_3" />
         </node>
       </node>
     </node>
