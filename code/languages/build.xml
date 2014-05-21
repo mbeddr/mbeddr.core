@@ -304,7 +304,7 @@
 	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />
   </target>    
   
-  <target name="build-allScripts" depends="build-sl-all">
+  <target name="build-allScripts">
       <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${generate-code.task}" />
   </target>
 
