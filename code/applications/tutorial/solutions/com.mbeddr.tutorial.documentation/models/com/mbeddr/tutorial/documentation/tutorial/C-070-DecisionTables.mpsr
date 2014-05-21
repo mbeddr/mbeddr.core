@@ -44,10 +44,10 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="7979854108176311519" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
         <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958058" nodeInfo="ng">
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958059" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958059" nodeInfo="ng">
             <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
           </node>
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958060" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958060" nodeInfo="ng">
             <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647919766" resolveInfo="FlightJudger" />
           </node>
         </node>
@@ -165,10 +165,10 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="7979854108176442535" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
         <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958276" nodeInfo="ng">
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958277" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958277" nodeInfo="ng">
             <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
           </node>
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958278" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958278" nodeInfo="ng">
             <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464294662008" resolveInfo="instancesJudging" />
           </node>
         </node>
@@ -233,10 +233,10 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="7979854108176472248" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
         <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958201" nodeInfo="ng">
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958202" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958202" nodeInfo="ng">
             <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
           </node>
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958203" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958203" nodeInfo="ng">
             <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464294655278" resolveInfo="testJudging" />
           </node>
         </node>

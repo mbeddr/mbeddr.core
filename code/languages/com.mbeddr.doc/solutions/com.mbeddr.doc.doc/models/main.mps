@@ -9,7 +9,7 @@
   <language namespace="c61970b4-87fb-4429-8a3a-c87719f000a3(com.mbeddr.doc.terms)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="bskg" modelUID="r:be2272c0-bc2d-4ac4-a164-b072c9e60516(exampleCCode)" version="-1" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="13" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="14" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
@@ -867,10 +867,10 @@
             <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8730648445434214488" resolveInfo="smallCodeShot" />
           </node>
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704529535" nodeInfo="ng">
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704529536" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704529536" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
             </node>
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704529537" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704529537" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
             </node>
           </node>
@@ -890,8 +890,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601073" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" node. For example,\nhere we refer to the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ModuleRefWord" typeId="rh4a.794010416819955528" id="8730648445433601074" nodeInfo="ng">
-              <link role="module" roleId="rh4a.794010416819955529" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.c.structure.ModuleRefWord" id="8730648445433601074" nodeInfo="ng">
+              <link role="module" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601075" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module." />
@@ -990,13 +990,13 @@
             <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8730648445434214488" resolveInfo="smallCodeShot" />
           </node>
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704530132" nodeInfo="ng">
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704530133" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704530133" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
             </node>
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704530134" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704530134" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
             </node>
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704530135" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704530135" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433600014" resolveInfo="add" />
             </node>
           </node>
@@ -1044,10 +1044,10 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="8730648445433854307" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704530143" nodeInfo="ng">
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704530144" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704530144" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
             </node>
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704530145" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704530145" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
             </node>
           </node>
