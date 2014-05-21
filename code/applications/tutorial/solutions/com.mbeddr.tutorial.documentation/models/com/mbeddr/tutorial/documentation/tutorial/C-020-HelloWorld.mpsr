@@ -527,7 +527,7 @@
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <property name="removeEmpties" nameId="rh4a.5777244129531124537" value="true" />
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641396987123" nodeInfo="ng">
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641398548615" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641398548615" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
             </node>
           </node>
@@ -757,10 +757,10 @@
             <link role="removedNode" roleId="rh4a.133516147906394530" targetNodeId="zxcx.5777244129531528031" resolveInfo="report" />
           </node>
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641396384764" nodeInfo="ng">
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641396384770" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641396384770" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
             </node>
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641400592433" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641400592433" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.133516147900947425" resolveInfo="main" />
             </node>
           </node>
@@ -772,7 +772,7 @@
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CodeRefWord" typeId="rh4a.2716892068771066089" id="2716892068772765477" nodeInfo="ng">
               <node role="codeptr" roleId="rh4a.2716892068771066132" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2716892068772765478" nodeInfo="ng">
-                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2716892068772765503" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2716892068772765503" nodeInfo="ng">
                   <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
                 </node>
               </node>
@@ -808,10 +808,10 @@
             <link role="removedNode" roleId="rh4a.133516147906394530" targetNodeId="zxcx.5777244129531528031" resolveInfo="report" />
           </node>
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399957928" nodeInfo="ng">
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399957929" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399957929" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
             </node>
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399957930" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399957930" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.133516147900947425" resolveInfo="main" />
             </node>
           </node>
@@ -993,10 +993,10 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="949722786950984107" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399957801" nodeInfo="ng">
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399957802" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399957802" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
             </node>
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399957803" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399957803" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.8265078645304658397" resolveInfo="log" />
             </node>
           </node>
@@ -1051,10 +1051,10 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="949722786950986249" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399957902" nodeInfo="ng">
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399957903" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399957903" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
             </node>
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399957904" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399957904" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.133516147900947425" resolveInfo="main" />
             </node>
           </node>
@@ -1141,7 +1141,7 @@
             <link role="removedNode" roleId="rh4a.133516147906394530" targetNodeId="zxcx.5777244129531800781" resolveInfo="HelloWorld" />
           </node>
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958354" nodeInfo="ng">
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958355" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958355" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.5777244129531618669" resolveInfo="BuildConfiguration (c.m.t.d.code)" />
             </node>
           </node>
@@ -1166,10 +1166,10 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="2286331641389379936" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958084" nodeInfo="ng">
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958085" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958085" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.5777244129531618669" resolveInfo="BuildConfiguration (c.m.t.d.code)" />
             </node>
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958086" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958086" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.5777244129531800797" resolveInfo="platform" />
             </node>
           </node>
@@ -1204,10 +1204,10 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="2286331641389409339" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399957915" nodeInfo="ng">
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399957916" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399957916" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.5777244129531618669" resolveInfo="BuildConfiguration (c.m.t.d.code)" />
             </node>
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399957917" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399957917" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.2286331641389332124" resolveInfo="reporting" />
             </node>
           </node>
@@ -1242,10 +1242,10 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="2286331641389614029" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958424" nodeInfo="ng">
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958425" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958425" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.5777244129531618669" resolveInfo="BuildConfiguration (c.m.t.d.code)" />
             </node>
-            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958426" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958426" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.5777244129531800781" resolveInfo="HelloWorld" />
             </node>
           </node>
