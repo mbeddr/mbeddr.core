@@ -541,7 +541,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="949722786950961109" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950961110" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950961111" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The module name is still underlined in red because of a missing type size configuration. The " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The module name is still underlined in red because of a missing type size configuration.  The " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="949722786950961335" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="949722786950961336" nodeInfo="ng">
@@ -770,14 +770,14 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531524417" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="At this point, we are ready to implement the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5777244129531525278" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5777244129531525279" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531525280" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Hello World" />
+            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CodeRefWord" typeId="rh4a.2716892068771066089" id="2716892068772765477" nodeInfo="ng">
+              <node role="codeptr" roleId="rh4a.2716892068771066132" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2716892068772765478" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2716892068772765503" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531525277" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2716892068772765476" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" program. Our aim is to simply output a log message and return " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5777244129531613227" nodeInfo="ng">
