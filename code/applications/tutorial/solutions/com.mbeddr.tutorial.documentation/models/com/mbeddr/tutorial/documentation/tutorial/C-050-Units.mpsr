@@ -69,8 +69,14 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="620304030110918908" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-        <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
-        <link role="code" roleId="rh4a.2286331641396216122" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+        <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958110" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958111" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+          </node>
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958112" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110929390" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110929391" nodeInfo="ng">
@@ -207,8 +213,14 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="620304030110960776" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-        <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.6657613005452170119" resolveInfo="UnitDeclarations" />
-        <link role="code" roleId="rh4a.2286331641396216122" targetNodeId="e1tx.6657613005452170120" resolveInfo="mps" />
+        <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958123" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958124" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6657613005452170119" resolveInfo="UnitDeclarations" />
+          </node>
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958125" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6657613005452170120" resolveInfo="mps" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110964989" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110964990" nodeInfo="ng">
@@ -266,9 +278,17 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="620304030111005927" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-        <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
-        <link role="code" roleId="rh4a.2286331641396216122" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
-        <link role="detail" roleId="rh4a.6416473402306189931" targetNodeId="e1tx.9141254329931945927" resolveInfo="i1" />
+        <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958406" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958407" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
+          </node>
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958408" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
+          </node>
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958409" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931945927" resolveInfo="i1" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111029810" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111029811" nodeInfo="ng">
@@ -279,9 +299,17 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="620304030111030022" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-        <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
-        <link role="code" roleId="rh4a.2286331641396216122" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
-        <link role="detail" roleId="rh4a.6416473402306189931" targetNodeId="e1tx.4208238404721389419" resolveInfo="assert0" />
+        <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958388" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958389" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
+          </node>
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958390" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
+          </node>
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958391" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.4208238404721389419" resolveInfo="assert0" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111044308" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111044309" nodeInfo="ng">
@@ -384,9 +412,17 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="620304030111073728" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
         <property name="detailMode" nameId="rh4a.5110473669964270411" value="from" />
-        <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
-        <link role="code" roleId="rh4a.2286331641396216122" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
-        <link role="detail" roleId="rh4a.6416473402306189931" targetNodeId="e1tx.4208238404721608711" resolveInfo="structDecl" />
+        <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958258" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958259" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
+          </node>
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958260" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
+          </node>
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958261" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.4208238404721608711" resolveInfo="structDecl" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="620304030111062770" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_1383666780597_21" />
