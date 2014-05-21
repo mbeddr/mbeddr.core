@@ -411,7 +411,6 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="620304030111073728" nodeInfo="ng">
         <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-        <property name="detailMode" value="from" />
         <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958258" nodeInfo="ng">
           <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641399958259" nodeInfo="ng">
             <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />

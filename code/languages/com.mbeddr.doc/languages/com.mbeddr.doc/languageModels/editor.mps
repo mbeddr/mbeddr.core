@@ -5851,6 +5851,7 @@
       <property name="separatorText" nameId="tpc2.1140524450557" value="." />
       <property name="separatorLayoutConstraint" nameId="tpc2.1156252885376" value="punctuation" />
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.2286331641395252236" />
+      <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="4457500422381536804" resolveInfo="cref" />
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2286331641396387064" nodeInfo="ng">
@@ -5862,6 +5863,18 @@
         <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2286331641396387200" nodeInfo="ng">
           <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="4457500422381536803" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="cref" />
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="4457500422381536804" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="cref" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="4457500422381536805" nodeInfo="nn">
+        <property name="color" nameId="tpc2.1186403713874" value="DARK_GREEN" />
+        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="6165313375055960805" nodeInfo="ng">
+          <property name="value" nameId="tpc2.1225456424731" value="328C26" />
         </node>
       </node>
     </node>
