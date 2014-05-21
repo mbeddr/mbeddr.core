@@ -709,7 +709,7 @@
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="661141253149231555" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="programannotations" />
     <property name="name" nameId="tpck.1169194664001" value="presenceCondition" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="661141253149231556" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="661141253149231556" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="presenceCondition" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="661141253149231557" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="darkGray" />
@@ -1076,7 +1076,7 @@
   </root>
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="2613872510229398165" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="fmstyles" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="2613872510229398166" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="2613872510229398166" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="greyAndSmall" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2613872510229398168" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="WHITE" />
@@ -1110,7 +1110,7 @@
         <property name="color" nameId="tpc2.1186403713874" value="gray" />
       </node>
     </node>
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="31358532779782218" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="31358532779782218" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="greyAndBig" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="31358532779782220" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="WHITE" />

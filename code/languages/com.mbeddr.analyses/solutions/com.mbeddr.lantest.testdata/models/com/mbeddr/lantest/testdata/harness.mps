@@ -18,7 +18,6 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <import index="gfdq" modelUID="r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest.structure)" version="1" implicit="yes" />
-  <import index="w9ex" modelUID="r:f970cb96-9bf5-4bb1-a381-99dd76cafc53(com.lmsintl.accent.blocks.base.structure)" version="20" implicit="yes" />
   <import index="fowb" modelUID="r:bc787de5-8257-43bc-a041-f0a1d7cea433(com.mbeddr.core.lantest.structure)" version="-1" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2041732772365658163" nodeInfo="ng">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="2041732772365658164" nodeInfo="ng">
@@ -299,35 +298,35 @@
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3516382903880064577" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="blocks_testing" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="w9ex.AtomicBlock" typeId="w9ex.2668975618729417377" id="3516382903880066759" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="blk1" />
-      <node role="constructor" roleId="w9ex.4514118643331990630" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3516382903880066760" nodeInfo="ng" />
-      <node role="body" roleId="w9ex.606014627022171710" type="w9ex.CCodeBlockBody" typeId="w9ex.2668975618729426675" id="3516382903880066856" nodeInfo="ng">
-        <node role="updateStatementList" roleId="w9ex.7981187375367035123" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3516382903880066858" nodeInfo="ng" />
-        <node role="statementList" roleId="w9ex.2668975618729426676" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3516382903880066860" nodeInfo="ng">
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.lmsintl.accent.blocks.base.structure.AtomicBlock" id="3516382903880066759" nodeInfo="ng">
+      <property name="name" value="blk1" />
+      <node role="constructor" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3516382903880066760" nodeInfo="ng" />
+      <node role="body" type=".com.lmsintl.accent.blocks.base.structure.CCodeBlockBody" id="3516382903880066856" nodeInfo="ng">
+        <node role="updateStatementList" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3516382903880066858" nodeInfo="ng" />
+        <node role="statementList" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3516382903880066860" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3516382903880066874" nodeInfo="ng">
             <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="3516382903880066886" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3516382903880066889" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="1" />
               </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="w9ex.OutPortRef" typeId="w9ex.2668975618728916565" id="3516382903880083454" nodeInfo="ng">
-                <link role="port" roleId="w9ex.2668975618728916566" targetNodeId="3516382903880083404" resolveInfo="res" />
+              <node role="left" roleId="mj1l.8860443239512128064" type=".com.lmsintl.accent.blocks.base.structure.OutPortRef" id="3516382903880083454" nodeInfo="ng">
+                <link role="port" targetNodeId="3516382903880083404" resolveInfo="res" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node role="inports" roleId="w9ex.573995335905554487" type="w9ex.InPort" typeId="w9ex.573995335905554472" id="3516382903880083373" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="a" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="3516382903880083372" nodeInfo="ng">
+      <node role="inports" type=".com.lmsintl.accent.blocks.base.structure.InPort" id="3516382903880083373" nodeInfo="ng">
+        <property name="name" value="a" />
+        <node role="type" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="3516382903880083372" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
-      <node role="outports" roleId="w9ex.573995335905554488" type="w9ex.OutPort" typeId="w9ex.573995335905554476" id="3516382903880083404" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="res" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="3516382903880083403" nodeInfo="ng">
+      <node role="outports" type=".com.lmsintl.accent.blocks.base.structure.OutPort" id="3516382903880083404" nodeInfo="ng">
+        <property name="name" value="res" />
+        <node role="type" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="3516382903880083403" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>

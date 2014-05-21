@@ -73,7 +73,7 @@
   </root>
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="5378658552263149335" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="expressions" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="5378658552263149336" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="5378658552263149336" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="var" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="5378658552263149337" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="blue" />

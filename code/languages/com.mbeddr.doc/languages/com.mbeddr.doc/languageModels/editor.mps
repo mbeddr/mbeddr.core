@@ -537,7 +537,7 @@
   </root>
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="3350625596580113307" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="structure" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="3350625596580113308" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="3350625596580113308" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="structure" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="3350625596580113309" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="DARK_BLUE" />
@@ -2763,7 +2763,7 @@
   </root>
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="5785245534399625744" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="tableStuff" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="5785245534399625745" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="5785245534399625745" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="cell" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="5785245534399625746" nodeInfo="nn">
         <node role="query" roleId="tpc2.1186403803051" type="tpc2.QueryFunction_Color" typeId="tpc2.1176809959526" id="5785245534399625747" nodeInfo="nn">

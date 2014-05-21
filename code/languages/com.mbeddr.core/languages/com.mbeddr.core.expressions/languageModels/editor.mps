@@ -512,19 +512,19 @@
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="8118534740657810994" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
     <property name="name" nameId="tpck.1169194664001" value="literals" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="8118534740657810995" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="8118534740657810995" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="numbers" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="8118534740657810996" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="DARK_BLUE" />
       </node>
     </node>
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="8118534740657810997" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="8118534740657810997" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="text" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="8118534740657810998" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="DARK_GREEN" />
       </node>
     </node>
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="8118534740657811001" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="8118534740657811001" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="boolean2" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="8118534740657811004" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="darkGray" />
@@ -708,19 +708,19 @@
   </root>
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="3134547887598403853" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="basicStyles" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="3134547887598403854" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="3134547887598403854" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="nothing" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="3134547887598403855" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="lightGray" />
       </node>
     </node>
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="1997463568368978787" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="1997463568368978787" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="gray" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="1997463568368978788" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="gray" />
       </node>
     </node>
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="7728114058480714157" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="7728114058480714157" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="readOnly" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="7728114058480714158" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="gray" />
@@ -950,7 +950,7 @@
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="6631303246401944581" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
     <property name="name" nameId="tpck.1169194664001" value="casting" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="6631303246401958074" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="6631303246401958074" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="cast" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="6631303246401958076" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="orange" />

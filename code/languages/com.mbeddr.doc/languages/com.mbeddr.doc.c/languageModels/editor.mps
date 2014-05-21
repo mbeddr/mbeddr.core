@@ -26,7 +26,7 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="4457500422381536803" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="cred" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="4457500422381536804" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="4457500422381536804" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="cref" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="4457500422381536805" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="DARK_GREEN" />

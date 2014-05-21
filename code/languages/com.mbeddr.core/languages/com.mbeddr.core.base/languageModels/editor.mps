@@ -265,7 +265,7 @@
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="3857533489766382275" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="comment" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="commenting" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="3857533489766382276" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="3857533489766382276" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="wcomment" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="3857533489766382277" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="gray" />
@@ -315,7 +315,7 @@
   </root>
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="5947739078127918694" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="important" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="5947739078127918695" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="5947739078127918695" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="important" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="5947739078127918696" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="DARK_BLUE" />
@@ -324,7 +324,7 @@
   </root>
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="9108052991586064671" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="heading" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="9108052991586064672" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="9108052991586064672" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="heading" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="9108052991586066017" nodeInfo="nn">
         <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
@@ -6839,7 +6839,7 @@
   </root>
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="2963921682950454588" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="brace" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="2963921682950460839" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="2963921682950460839" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="braceMatch" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.MatchingLabelStyleClassItem" typeId="tpc2.1236262245656" id="2963921682950460841" nodeInfo="nn">
         <property name="labelName" nameId="tpc2.1238091709220" value="braces" />
