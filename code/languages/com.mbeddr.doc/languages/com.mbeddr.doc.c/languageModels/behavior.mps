@@ -298,12 +298,6 @@
       </node>
     </node>
   </root>
-  <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6584628407654475875" nodeInfo="ng">
-    <link role="concept" roleId="1i04.1225194240799" targetNodeId="rh4a.794010416819955528" resolveInfo="ModuleRefWord" />
-    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="6584628407654475876" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6584628407654475877" nodeInfo="sn" />
-    </node>
-  </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2900587364575749435" nodeInfo="ng">
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="rh4a.6416473402306160259" resolveInfo="AbstractCCodeParagraph" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="2900587364575749611" nodeInfo="ng">
