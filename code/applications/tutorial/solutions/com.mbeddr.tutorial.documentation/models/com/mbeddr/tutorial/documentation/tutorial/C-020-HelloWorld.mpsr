@@ -526,7 +526,6 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="133516147904181322" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <property name="removeEmpties" nameId="rh4a.5777244129531124537" value="true" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
           <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641396987123" nodeInfo="ng">
             <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2286331641398548615" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
@@ -751,8 +750,6 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="5777244129531527436" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="zxcx.133516147900947425" resolveInfo="main" />
           <node role="removals" roleId="rh4a.133516147906394971" type="rh4a.CodeRemoval" typeId="rh4a.133516147906394505" id="5777244129531595882" nodeInfo="ng">
             <link role="removedNode" roleId="rh4a.133516147906394530" targetNodeId="zxcx.5777244129531528231" resolveInfo="ret" />
           </node>

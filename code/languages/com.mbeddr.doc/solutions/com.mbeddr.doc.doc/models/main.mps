@@ -751,6 +751,7 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="8730648445433290619" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C_EmbeddingMbeddr" />
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2293093897292931470" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445433288571" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="workingWithMbeddr" />
@@ -854,8 +855,6 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="8730648445433601058" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="calculator" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
           <link role="path" roleId="rh4a.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
           <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433601059" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601060" nodeInfo="ng">
@@ -866,6 +865,14 @@
           </node>
           <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434220510" nodeInfo="ng">
             <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8730648445434214488" resolveInfo="smallCodeShot" />
+          </node>
+          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704529535" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704529536" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704529537" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+            </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433601067" nodeInfo="ng">
@@ -971,9 +978,6 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="8730648445433631460" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="addOp" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
-          <link role="detail" roleId="rh4a.6416473402306189931" targetNodeId="bskg.8730648445433600014" resolveInfo="add" />
           <link role="path" roleId="rh4a.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
           <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433631461" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433631462" nodeInfo="ng">
@@ -984,6 +988,17 @@
           </node>
           <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434220511" nodeInfo="ng">
             <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8730648445434214488" resolveInfo="smallCodeShot" />
+          </node>
+          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704530132" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704530133" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704530134" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704530135" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433600014" resolveInfo="add" />
+            </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433854299" nodeInfo="ng">
@@ -1028,8 +1043,14 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="8730648445433854307" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
-          <link role="code" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704530143" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704530144" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPElement" typeId="2c95.2286331641395252232" id="2342111018704530145" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433631470" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="embedding1" />
