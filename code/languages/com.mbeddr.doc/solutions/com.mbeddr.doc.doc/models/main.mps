@@ -14,9 +14,8 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="z5ox" modelUID="r:48b6c04c-173b-45da-963f-54fbbdb59cfc(com.mbeddr.doc.self.structure)" version="-1" implicit="yes" />
-  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="6" implicit="yes" />
+  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.code.structure)" version="7" implicit="yes" />
   <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
-  <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="1" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <import index="8zu2" modelUID="r:04621706-863a-4403-8bd2-5b328fe9405d(com.mbeddr.doc.terms.structure)" version="-1" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
@@ -784,8 +783,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601027" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="For example, you reference the interface " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ContentRefWord" typeId="soy0.4726949060948575731" id="8730648445433601028" nodeInfo="ng">
-              <link role="content" roleId="soy0.4726949060948575732" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ContentRefWord" id="8730648445433601028" nodeInfo="ng">
+              <link role="content" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601029" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" using the " />
@@ -810,9 +809,9 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601037" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" element. For example, you\ncan refer to an argument " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ContentRefWord" typeId="soy0.4726949060948575731" id="8730648445433601038" nodeInfo="ng">
-              <link role="content" roleId="soy0.4726949060948575732" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
-              <link role="detail" roleId="soy0.4726949060948575733" targetNodeId="bskg.8730648445433600016" resolveInfo="x" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ContentRefWord" id="8730648445433601038" nodeInfo="ng">
+              <link role="content" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+              <link role="detail" targetNodeId="bskg.8730648445433600016" resolveInfo="x" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601039" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=". If you want to reference things that\ndo not have a name, you can attach a name label to an element (using the \n" />
@@ -837,10 +836,10 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601053" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" language\nin the respective mbeddr model to get the intention. For example, we can refer to\n" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ContentRefWord" typeId="soy0.4726949060948575731" id="8730648445433601055" nodeInfo="ng">
-              <property name="referenceText" nameId="soy0.4726949060948575734" value="a precondition" />
-              <link role="content" roleId="soy0.4726949060948575732" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
-              <link role="detail" roleId="soy0.4726949060948575733" targetNodeId="bskg.8730648445433601044" resolveInfo="aPreCondition" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ContentRefWord" id="8730648445433601055" nodeInfo="ng">
+              <property name="referenceText" value="a precondition" />
+              <link role="content" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+              <link role="detail" targetNodeId="bskg.8730648445433601044" resolveInfo="aPreCondition" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601056" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
@@ -1147,8 +1146,8 @@
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433858427" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The " />
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="soy0.ContentRefWord" typeId="soy0.4726949060948575731" id="8730648445433875932" nodeInfo="ng">
-                <link role="content" roleId="soy0.4726949060948575732" targetNodeId="bskg.8730648445433858446" resolveInfo="TrafficLights" />
+              <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ContentRefWord" id="8730648445433875932" nodeInfo="ng">
+                <link role="content" targetNodeId="bskg.8730648445433858446" resolveInfo="TrafficLights" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433875933" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state machine as a graph." />
@@ -1263,8 +1262,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053466214" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="To create new paragraphs, you should extend the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ConceptRefWord" typeId="soy0.4715820023543872567" id="7502794012053466217" nodeInfo="ng">
-              <link role="concept" roleId="soy0.4715820023543872580" targetNodeId="2c95.3350625596580089583" resolveInfo="AbstractParagraph" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ConceptRefWord" id="7502794012053466217" nodeInfo="ng">
+              <link role="concept" targetNodeId="2c95.3350625596580089583" resolveInfo="AbstractParagraph" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053466218" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" concept from the " />
@@ -1279,8 +1278,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053466222" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" language. For example, the regular text paragraphs as well as the sections and images are subconcepts of " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ConceptRefWord" typeId="soy0.4715820023543872567" id="7502794012053466223" nodeInfo="ng">
-              <link role="concept" roleId="soy0.4715820023543872580" targetNodeId="2c95.3350625596580089583" resolveInfo="AbstractParagraph" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ConceptRefWord" id="7502794012053466223" nodeInfo="ng">
+              <link role="concept" targetNodeId="2c95.3350625596580089583" resolveInfo="AbstractParagraph" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053466224" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
@@ -1296,14 +1295,14 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053466237" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Concepts that should be embeddable in \&quot;regular\&quot; text paragraphs (such as the one your are reading right now) must implement the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ConceptRefWord" typeId="soy0.4715820023543872567" id="7502794012053466238" nodeInfo="ng">
-              <link role="concept" roleId="soy0.4715820023543872580" targetNodeId="87nw.2557074442922392300" resolveInfo="IWord" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ConceptRefWord" id="7502794012053466238" nodeInfo="ng">
+              <link role="concept" targetNodeId="87nw.2557074442922392300" resolveInfo="IWord" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053466239" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" concept interface. This way they can be embedded in any text paragraph. Of course, this is not what you might want; if you want to restrict their usability to within actual " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ConceptRefWord" typeId="soy0.4715820023543872567" id="7502794012053469761" nodeInfo="ng">
-              <link role="concept" roleId="soy0.4715820023543872580" targetNodeId="2c95.3350625596579911728" resolveInfo="Document" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ConceptRefWord" id="7502794012053469761" nodeInfo="ng">
+              <link role="concept" targetNodeId="2c95.3350625596579911728" resolveInfo="Document" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469762" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=", you have to write a " />
@@ -1318,8 +1317,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469766" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" constraint, or, alternatively, extend the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ConceptRefWord" typeId="soy0.4715820023543872567" id="7502794012053469767" nodeInfo="ng">
-              <link role="concept" roleId="soy0.4715820023543872580" targetNodeId="2c95.3350625596580108706" resolveInfo="DocumentWord" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ConceptRefWord" id="7502794012053469767" nodeInfo="ng">
+              <link role="concept" targetNodeId="2c95.3350625596580108706" resolveInfo="DocumentWord" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469768" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" abstract concept." />
