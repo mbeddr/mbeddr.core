@@ -169,13 +169,13 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="794010416819928756" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" members can have\nphysical units in addition to their types. An example is the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.c.structure.ContentRefWord" id="794010416819928758" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.code.structure.ContentRefWord" id="794010416819928758" nodeInfo="ng">
               <link role="content" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="794010416819928757" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" \nin the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.c.structure.ModuleRefWord" id="794010416819960883" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.code.structure.ModuleRefWord" id="794010416819960883" nodeInfo="ng">
               <link role="module" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="794010416819960882" nodeInfo="ng">
@@ -275,7 +275,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543670772" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that the referneces into the code (such as " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.c.structure.ContentRefWord" id="4715820023543670773" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.code.structure.ContentRefWord" id="4715820023543670773" nodeInfo="ng">
               <link role="content" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543670774" nodeInfo="ng">
@@ -292,7 +292,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435556055" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Interfaces declare operations that can be provided or used by components. Each operation can also declare pre- and postconditions as well as protocols. These can be checked either at runtime or statically. The " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.c.structure.ModuleRefWord" id="126932837435556057" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.code.structure.ModuleRefWord" id="126932837435556057" nodeInfo="ng">
               <link role="module" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435556058" nodeInfo="ng">

@@ -603,7 +603,9 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="949722786950961361" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to make the red underline go away. For more details on type size configurations see " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="5777244129531523064" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="5777244129531523064" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="2900587364561783914" resolveInfo="UsingMbeddr" />
+            </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5777244129531523065" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
             </node>
