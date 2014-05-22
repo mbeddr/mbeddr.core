@@ -64,6 +64,10 @@
       <property name="name" nameId="tpck.1169194664001" value="check_nan" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="9020927825194549928" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="check_memory_leak" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
   </root>
 </model>
 

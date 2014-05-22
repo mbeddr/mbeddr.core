@@ -450,6 +450,18 @@
                 </node>
               </node>
               <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_VerticalGrid" typeId="tpc2.1239814640496" id="2618498709922283440" nodeInfo="nn" />
+              <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="9020927825194551716" nodeInfo="nn">
+                <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="9020927825194551717" nodeInfo="nn">
+                  <property name="flag" nameId="tpc2.1186414551515" value="false" />
+                </node>
+                <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="9020927825194551718" nodeInfo="nn" />
+                <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="9020927825194551719" nodeInfo="nn">
+                  <property name="text" nameId="tpc2.1073389577007" value="memory leak" />
+                </node>
+                <node role="childCellModel" roleId="tpc2.1073389446424" type="wfif.CellModel_Checkbox" typeId="wfif.4900677560559655527" id="9020927825194551720" nodeInfo="ng">
+                  <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hj5x.9020927825194549928" resolveInfo="check_memory_leak" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
