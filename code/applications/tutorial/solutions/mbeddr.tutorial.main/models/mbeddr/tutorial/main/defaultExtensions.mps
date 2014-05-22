@@ -498,7 +498,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="9141254329931945948" nodeInfo="ng">
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.doc.c.structure.NameAnnotation" id="5110473669962036844" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.doc.code.structure.NameAnnotation" id="5110473669962036844" nodeInfo="ng">
             <property name="name" value="assert1" />
           </node>
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="9141254329931952665" nodeInfo="ng">
@@ -596,7 +596,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="620304030111096253" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8135882712510805768" nodeInfo="ng">
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.doc.c.structure.NameAnnotation" id="620304030111086071" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.doc.code.structure.NameAnnotation" id="620304030111086071" nodeInfo="ng">
             <property name="name" value="aStatement" />
           </node>
         </node>
