@@ -13,6 +13,7 @@
     <property name="name" nameId="tpck.1169194664001" value="CCodeParagraph" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="embed mbeddr code as text" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="embed code as text" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/code.png" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6416473402306160259" resolveInfo="AbstractCCodeParagraph" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6363363735479324452" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="text" />
@@ -54,11 +55,15 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6416473402306160260" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2c95.4755612053022326353" resolveInfo="IInterspersed" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3789096399631965939" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.8998906896747633114" resolveInfo="ITreeViewable" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6416473402306197330" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CCodeAsImageParagraph" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="embed code as image" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="embed mbeddr code as an image" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/code.png" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6416473402306160259" resolveInfo="AbstractCCodeParagraph" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6416473402306197356" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
