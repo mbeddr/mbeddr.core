@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="com.mbeddr.analyses.core" uuid="0ca77142-1eea-4b14-b369-69bdaa1c44fb">
+  <exported-language name="5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)" />
+  <exported-language name="42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)" />
+  <exported-language name="0a02a8f9-14d0-4970-9bd2-ca35a097c80d(com.mbeddr.analyses.cbmc.core)" />
+  <extendedDevKits>
+    <extendedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</extendedDevKit>
+  </extendedDevKits>
+  <exported-solutions>
+    <exported-solution>fbe54499-edb8-4097-b473-699993bd8a01(com.mbeddr.analyses.cbmc.core.pluginSolution)</exported-solution>
+    <exported-solution>397da8bd-bcff-4d80-87cb-c4eaba8e2cb2(com.mbeddr.analyses.cbmc.pluginSolution)</exported-solution>
+    <exported-solution>9506d0a9-4e49-4605-b51a-d3aeb0070ba3(com.mbeddr.analyses.cbmc.core.rt)</exported-solution>
+    <exported-solution>a3733d9d-fa94-4706-bdd4-596b968eba8e(com.mbeddr.analyses.cbmc.rt)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+
