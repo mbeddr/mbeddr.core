@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.doc.c" uuid="445de13f-b9dd-436f-be62-42c616f697e2">
+<language namespace="com.mbeddr.doc.code" uuid="445de13f-b9dd-436f-be62-42c616f697e2">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="c2doc" generatorUID="com.mbeddr.doc.c#4457500422381552786" uuid="67c6cb62-06ed-463b-91bd-f5ccab7350e2">
+    <generator name="c2doc" generatorUID="com.mbeddr.doc.code#4457500422381552786" uuid="67c6cb62-06ed-463b-91bd-f5ccab7350e2">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -34,7 +34,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="67c6cb62-06ed-463b-91bd-f5ccab7350e2(com.mbeddr.doc.c#4457500422381552786)" />
+            <generator generatorUID="67c6cb62-06ed-463b-91bd-f5ccab7350e2(com.mbeddr.doc.code#4457500422381552786)" />
             <external-mapping>
               <all-local-mappings />
             </external-mapping>
@@ -54,6 +54,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+    <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
     <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
   </dependencies>
   <usedLanguages>
