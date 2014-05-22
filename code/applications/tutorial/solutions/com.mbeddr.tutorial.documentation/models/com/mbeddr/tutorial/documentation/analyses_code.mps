@@ -62,15 +62,10 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="473952560453957522" nodeInfo="ng">
-        <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="473952560453957523" nodeInfo="ng">
-          <node role="expr" roleId="qdv7.2613872510229282926" type="mj1l.OrExpression" typeId="mj1l.8399455261460717642" id="473952560453957953" nodeInfo="ng">
-            <node role="right" roleId="mj1l.8860443239512128065" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="473952560453957980" nodeInfo="ng">
-              <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="4574736324933138990" resolveInfo="VerboseDebug" />
-            </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="473952560453957546" nodeInfo="ng">
-              <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="4574736324933138989" resolveInfo="MinimumDebug" />
-            </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="9020927825193760712" nodeInfo="ng">
+        <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="9020927825193760713" nodeInfo="ng">
+          <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="9020927825193760914" nodeInfo="ng">
+            <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="4574736324933138989" resolveInfo="MinimumDebug" />
           </node>
         </node>
       </node>
