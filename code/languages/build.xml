@@ -179,7 +179,11 @@
   	  <echo message="DELETING PLUGINS"/>
   	  <echo message=""/>
 	  <delete dir="${mps.home}/${plugins.folder.name}/${spawner.expanded-folder.name}" verbose="true" />
-	  
+	  <delete dir="${mps.home}/${plugins.folder.name}/mps-multiline" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/mps-richtext" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/mps-tables" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/mps-bool-editor" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/mps-math" verbose="true" />
 	  
 	  <echo message=""/>
   	  <echo message="DELETING ARTIFACTS"/>
