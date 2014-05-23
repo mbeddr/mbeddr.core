@@ -20,6 +20,7 @@
   <property name="mps-sl-all.expanded-folder.name" value="mps-sl-all" />
   <property name="mps-sl-all.build-id" value="buildType:RichtextTables_MpsSlAll" />
   <property name="mps-sl-all.build-path" value="${mbeddr.github.core.home}/code/plugins/sl-all/build/artifacts/mps-sl-all" />
+  <property name="mps-sl-all.build-tmp" value="${mbeddr.github.core.home}/code/plugins/sl-all/build/tmp" />
   <property name="artifacts.mps-sl-all" value="${mps-sl-all.build-path}" />
 
   <!-- com.mbeddr.mpsutil -->
@@ -179,7 +180,11 @@
   	  <echo message="DELETING PLUGINS"/>
   	  <echo message=""/>
 	  <delete dir="${mps.home}/${plugins.folder.name}/${spawner.expanded-folder.name}" verbose="true" />
-	  
+	  <delete dir="${mps.home}/${plugins.folder.name}/mps-multiline" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/mps-richtext" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/mps-tables" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/mps-bool-editor" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/mps-math" verbose="true" />
 	  
 	  <echo message=""/>
   	  <echo message="DELETING ARTIFACTS"/>
@@ -311,6 +316,7 @@
   <target name="build-sl-all">
     <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${generate-code.task}" />
     <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${build-plugin.task}" />
+    <delete dir="${mps-sl-all.build-tmp}" />
   </target>
 
 

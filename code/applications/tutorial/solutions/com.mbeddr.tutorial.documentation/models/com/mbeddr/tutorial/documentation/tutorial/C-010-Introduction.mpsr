@@ -1229,7 +1229,7 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can now start writing mbeddr code. " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="7959141310100659936" nodeInfo="ng">
-              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="2900587364561783914" resolveInfo="HelloWorld" />
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="2723638869557407836" resolveInfo="HelloWorld" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7959141310100659935" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" contains a tutorial that shows how to write the simplest possible program, the ubiquitous Hello, World. We suggest to take a look at this section next. In this section we explain some of the ways how you can productively edit code with MPS. MPS is a projectional editor. It does not parse text and build an Abstract Syntax Tree (AST). Instead the AST is created directly by user editing actions, and what you see in terms of text (or other notations) is a projection. This has many advantages, but it also means that some of the well-known editing gestures we know from normal text editing don't work. So in this section we explain some keyboard shortcuts that are essential to work with MPS.\n\nSince the very first experience a projectional editor is somewhat different from what you are accustomed to in a text editor, we recommendyou watch the following screencast: " />
@@ -3272,7 +3272,7 @@
       </node>
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="7959141310100659933" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7959141310100646277" resolveInfo="C-020-HelloWorld" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7959141310100646277" resolveInfo="C-020-Basics" />
     </node>
   </root>
 </model>
