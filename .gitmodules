@@ -1,0 +1,4 @@
+[submodule "code/plugins/sl-all"]
+	path = code/plugins/sl-all
+	url = https://github.com/slisson/mps-all.git
+	branch = master
