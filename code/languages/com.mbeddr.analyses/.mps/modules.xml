@@ -6,11 +6,9 @@
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.cbmc.dev.build/com.mbeddr.analyses.cbmc.dev.build.msd" folder="_build" />
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.dev.build/build.msd" folder="_build" />
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.sat4j.dev.build/com.mbeddr.analyses.sat4j.dev.build.msd" folder="_build" />
-      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.assertions/com.mbeddr.analyses.assertions.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.componentcontracts/componentcontracts.devkit" folder="cbmc" />
-      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.decisiontables/com.mbeddr.analyses.decisiontables.devkit" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.core/com.mbeddr.analyses.core.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="sat4j" />
-      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.robustness/com.mbeddr.analyses.robustness.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.statemachines/com.mbeddr.analyses.statemachines.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.unittests/unittests.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base/base.mpl" folder="base" />

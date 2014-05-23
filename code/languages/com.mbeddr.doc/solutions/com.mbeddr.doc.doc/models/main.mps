@@ -889,7 +889,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601073" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" node. For example,\nhere we refer to the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.c.structure.ModuleRefWord" id="8730648445433601074" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.code.structure.ModuleRefWord" id="8730648445433601074" nodeInfo="ng">
               <link role="module" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601075" nodeInfo="ng">

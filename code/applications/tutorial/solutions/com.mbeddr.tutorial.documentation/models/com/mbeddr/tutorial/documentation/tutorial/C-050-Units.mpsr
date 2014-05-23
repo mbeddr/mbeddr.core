@@ -8,7 +8,7 @@
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="620304030110860646" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-050-Units" />
-    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="5" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561785343" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="units" />
@@ -123,10 +123,14 @@
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931507" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Since this is not an SI base unit we first have to define it. We creata new implementation module called " />
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.c.structure.ModuleRefWord" id="620304030110933965" nodeInfo="ng">
-            <link role="module" targetNodeId="e1tx.6657613005452170119" resolveInfo="UnitDeclarations" />
+          <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CodeRefWord" typeId="rh4a.2716892068771066089" id="3626429504011671482" nodeInfo="ng">
+            <node role="codeptr" roleId="rh4a.2716892068771066132" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="3626429504011671483" nodeInfo="ng">
+              <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="3626429504011671546" nodeInfo="ng">
+                <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6657613005452170119" resolveInfo="UnitDeclarations" />
+              </node>
+            </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110933964" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3626429504011671481" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value=". In it we  create a " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931528" nodeInfo="ng">

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="com.mbeddr.analyses.nusmv.statemachines" uuid="2bdeee47-6092-4bbf-b31d-6be5dbbba49d">
-  <exported-solutions>
-    <exported-solution>4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)</exported-solution>
-  </exported-solutions>
-</dev-kit>
-
