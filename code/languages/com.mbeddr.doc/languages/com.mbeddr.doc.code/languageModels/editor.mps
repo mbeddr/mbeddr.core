@@ -115,6 +115,7 @@
           </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="bbp5.CellModel_QueryList" typeId="bbp5.6202678563380233810" id="2900587364575859849" nodeInfo="ng">
+          <property name="duplicatesSafe" nameId="bbp5.730823979356023502" value="true" />
           <link role="elementsConcept" roleId="bbp5.730823979350682502" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
           <node role="query" roleId="bbp5.6202678563380433923" type="bbp5.Function_GetElements" typeId="bbp5.6202678563380238499" id="2900587364575859894" nodeInfo="ng">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2900587364575859895" nodeInfo="sn">
