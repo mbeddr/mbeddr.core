@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.analyses.cbmc.statemachines.pluginSolution" uuid="93df2f50-c615-4300-ad92-915871dcae02" compileInMPS="true">
+<solution name="com.mbeddr.analyses.cbmc.statemachines.pluginSolution" uuid="93df2f50-c615-4300-ad92-915871dcae02" pluginKind="PLUGIN_EDITOR" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

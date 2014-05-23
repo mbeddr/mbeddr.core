@@ -132,4 +132,8 @@ code/*/xmlCBMCRawOutput/*
 
 build/**/*.xml
 build/*/*.xml
-!build/com.mbeddr.allScripts/build.xml
+build/com.mbeddr.allScripts/build.xml
+
+
+#This is restored with 'git submodule update --init --recursive'
+code/plugins/sl-all
