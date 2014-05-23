@@ -28,7 +28,7 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_AttributedNodeCell" typeId="tpc2.1149850725784" id="4053481679316838011" nodeInfo="ng" />
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4053481679316838012" nodeInfo="nn" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4053481679316838013" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="verifiable" />
+        <property name="text" nameId="tpc2.1073389577007" value="checked" />
         <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="srwo.1634970928500780281" resolveInfo="verification" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.DrawBracketsStyleClassItem" typeId="tpc2.1219226236603" id="4053481679316838014" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
