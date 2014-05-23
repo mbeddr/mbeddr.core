@@ -11,12 +11,13 @@
   <import index="tp3j" modelUID="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" version="8" implicit="yes" />
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="133516147906420844" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="addRemoval" />
+    <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
     <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="rh4a.6416473402306160259" resolveInfo="AbstractCCodeParagraph" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="133516147906420845" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="133516147906420846" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="133516147906421551" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="133516147906421550" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Add Code Removal" />
+            <property name="value" nameId="tpee.1070475926801" value="Add Code Exception" />
           </node>
         </node>
       </node>
