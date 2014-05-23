@@ -4,15 +4,15 @@
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="5" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="14" />
   <import index="xvsr" modelUID="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)" version="1" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" />
+  <import index="kwxp" modelUID="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
-  <import index="kwxp" modelUID="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" version="-1" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8745401669462952101" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Requirement" />
     <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/requirement.jpg" />
@@ -467,6 +467,7 @@
     <property name="name" nameId="tpck.1169194664001" value="ReqRefWord" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="ref. to a requirement; rendered as the req. name" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@req" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3352153450712436945" resolveInfo="AbstractReqRefWord" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2588579461811719528" nodeInfo="ig">
@@ -784,6 +785,7 @@
     <property name="name" nameId="tpck.1169194664001" value="CfReqWord" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="ref. to a requirement; rendered to (cf. SomeReq)" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@cfreq" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3352153450712436945" resolveInfo="AbstractReqRefWord" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3352153450712436945" nodeInfo="ig">
@@ -806,6 +808,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="name" nameId="tpck.1169194664001" value="CfReqModRefWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="ref. to a req. module; rendered as (cf. Module)" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@cfmod" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7717508395849194446" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />

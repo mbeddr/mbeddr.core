@@ -7,8 +7,9 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="3458996998997927112" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-100-Requirements" />
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="10" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3458996998997943233" nodeInfo="ng">
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561788649" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="requirements" />
       <property name="text" nameId="2c95.3350625596580064225" value="Requirements" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="3458996998997956131" nodeInfo="ng">
@@ -17,7 +18,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997993913" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997993915" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997993917" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the previous chapter we implemented a state machine that judged flights based\non a set of rules. These rules were: " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the previous chapter we implemented a state machine that judged flights based on a set of rules. These rules were: " />
           </node>
         </node>
       </node>
@@ -53,7 +54,7 @@
           <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998998018048" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998018049" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998018050" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="You should land as short as possible; for each trackpoint where you are\n  on the ground, rolling, you get 1 point deducted." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="You should land as short as possible; for each trackpoint where you are   on the ground, rolling, you get 1 point deducted." />
               </node>
             </node>
           </node>
@@ -71,7 +72,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998032767" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998032770" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998032771" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let is capture these rules as requirements explicitly in the tool. To do so,\ncreate a new model " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let is capture these rules as requirements explicitly in the tool. To do so, create a new model " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998037567" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998037568" nodeInfo="ng">
@@ -81,7 +82,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998037566" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and add the\n" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and add the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998037576" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998037577" nodeInfo="ng">
@@ -91,7 +92,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998037575" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to it. Inside the model, create a new\n" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to it. Inside the model, create a new " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998037589" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998037590" nodeInfo="ng">
@@ -134,7 +135,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998084285" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998084286" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998084287" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can now enter the requirements from above. Make up a useful name for each of\nthem and copy the text above into the summary or into the detail description\ntext box. To build hierarchies you can add child requirements with an intention.\nHere is how the result looks for me:" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can now enter the requirements from above. Make up a useful name for each of them and copy the text above into the summary or into the detail description text box. To build hierarchies you can add child requirements with an intention. Here is how the result looks for me:" />
           </node>
         </node>
       </node>
@@ -170,7 +171,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998118547" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998118548" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998118549" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Of course, now that we have captured the requirements we want to relate them to\nthe implementation code, which is, in this case, a state machine. So let's go\nback to the state machine we built in the previous chapter. To be able to trace\nfrom the state machine to these requirements we first have to make the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Of course, now that we have captured the requirements we want to relate them to the implementation code, which is, in this case, a state machine. So let's go back to the state machine we built in the previous chapter. To be able to trace from the state machine to these requirements we first have to make the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998125168" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998125169" nodeInfo="ng">
@@ -180,7 +181,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998125167" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nmodel visible to the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" model visible to the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998125177" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998125178" nodeInfo="ng">
@@ -190,7 +191,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998125176" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" model that contains the state machine. Open\n" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" model that contains the state machine. Open " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998125190" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998125191" nodeInfo="ng">
@@ -210,7 +211,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998125206" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" section and add the\n" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" section and add the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998125229" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998125230" nodeInfo="ng">
@@ -235,7 +236,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998125283" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" import between the models (XML\nfiles essentially), whereas the " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" import between the models (XML files essentially), whereas the " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998125293" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998125294" nodeInfo="ng">
@@ -245,7 +246,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998125292" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" clause on modules is a\n" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" clause on modules is a " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3458996998998125306" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998125307" nodeInfo="ng">
@@ -291,7 +292,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998151907" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=", you can also add the\n" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=", you can also add the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998151918" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998151919" nodeInfo="ng">
@@ -324,7 +325,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998148547" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998148548" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998148549" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="We want to establish traces between implementation code and the requirements we\njust captured. To make this possible we first have to specify that the\n " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="We want to establish traces between implementation code and the requirements we just captured. To make this possible we first have to specify that the  " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998152098" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998152099" nodeInfo="ng">
@@ -334,7 +335,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998152097" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" implementation module contains code that traces to the \n" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" implementation module contains code that traces to the  " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998152107" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998152108" nodeInfo="ng">
@@ -375,7 +376,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998196152" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998196153" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998196154" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now add traces in the state machine. Remember the contents of the\n" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now add traces in the state machine. Remember the contents of the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998202771" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998202772" nodeInfo="ng">
@@ -406,7 +407,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998216371" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nconstant). This is an implementation of the first requirement/rule. Select the \nexit action and execute the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" constant). This is an implementation of the first requirement/rule. Select the  exit action and execute the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998216382" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998216383" nodeInfo="ng">
@@ -416,7 +417,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998216381" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" action. Doing this on the other\nrelevant program elements leads to a program with traces. The color of the\ntrace actually depends on the kind of trace; the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" action. Doing this on the other relevant program elements leads to a program with traces. The color of the trace actually depends on the kind of trace; the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998216395" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998216396" nodeInfo="ng">
@@ -426,7 +427,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998216394" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" kind defaults\nto green:" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" kind defaults to green:" />
           </node>
         </node>
       </node>
@@ -447,7 +448,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998300256" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998300257" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998300258" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note how we attach traces to constants, transitions and actions: the trace\nfacility is orthogonal with regards to the language constructs that are\nannotated. It works for all. \n\nReturning back to the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note how we attach traces to constants, transitions and actions: the trace facility is orthogonal with regards to the language constructs that are annotated. It works for all.   Returning back to the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998303680" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998303681" nodeInfo="ng">
@@ -457,7 +458,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998303679" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" requirements, we can select the\nheading and run the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" requirements, we can select the heading and run the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998303690" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998303691" nodeInfo="ng">
@@ -467,7 +468,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998303689" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" intention. Requirements that are\ntraced from program code are marked blue:" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" intention. Requirements that are traced from program code are marked blue:" />
           </node>
         </node>
       </node>
@@ -503,7 +504,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998338690" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998338691" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998338692" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="We notice that the \\ic{FullStop} requirement is still red, so it seems we\nhaven't trace it correctly. Maybe we mixed something up with the landing stuff.\nLet's find out from where we trace to the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="We notice that the \\ic{FullStop} requirement is still red, so it seems we haven't trace it correctly. Maybe we mixed something up with the landing stuff. Let's find out from where we trace to the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998338914" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998338915" nodeInfo="ng">
@@ -513,7 +514,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998338913" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" requirement. To\ndo this, select the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" requirement. To do this, select the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998338924" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998338925" nodeInfo="ng">
@@ -523,7 +524,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998338923" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" entry from the context menu on the\n" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" entry from the context menu on the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998338937" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998338938" nodeInfo="ng">
@@ -533,7 +534,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998338936" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" requirement. In the dialog that opens uncheck all Finders\nexcept " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" requirement. In the dialog that opens uncheck all Finders except " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998338988" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998338989" nodeInfo="ng">
@@ -599,7 +600,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998365682" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to two elements.\nA transition and an entry action. That's wrong: the second one should have been\nthe " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to two elements. A transition and an entry action. That's wrong: the second one should have been the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998365692" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998365693" nodeInfo="ng">
@@ -619,7 +620,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998365706" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" on the\nrequirements module, and everything should be blue.\n\nFinally, if you are annoyed by your beautiful state machine being polluted by\nall these requirements traces, you can hide them: select " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" on the requirements module, and everything should be blue.  Finally, if you are annoyed by your beautiful state machine being polluted by all these requirements traces, you can hide them: select " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998365724" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998365725" nodeInfo="ng">
@@ -629,7 +630,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998365723" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" for\n" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" for " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998365746" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998365747" nodeInfo="ng">
@@ -649,7 +650,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998365770" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nrequirements module. The traces are still there, of course (and remain attached\nas you copy, paste or move program elements), but they are not shown." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" requirements module. The traces are still there, of course (and remain attached as you copy, paste or move program elements), but they are not shown." />
           </node>
         </node>
       </node>
@@ -671,7 +672,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998366080" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998366081" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998366082" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="This part of the tutorial only provided a few examples of Requirements and Tracing.\nFor a full discussion of Requirements and Tracing see Section xxx." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="This part of the tutorial only provided a few examples of Requirements and Tracing. For a full discussion of Requirements and Tracing see Section xxx." />
           </node>
         </node>
       </node>

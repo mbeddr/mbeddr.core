@@ -7,11 +7,11 @@
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="14" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
-  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" implicit="yes" />
+  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.code.structure)" version="7" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="2637267020265430783" nodeInfo="ng">
@@ -169,14 +169,14 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="794010416819928756" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" members can have\nphysical units in addition to their types. An example is the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="794010416819928758" nodeInfo="ng">
-              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.code.structure.ContentRefWord" id="794010416819928758" nodeInfo="ng">
+              <link role="content" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="794010416819928757" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" \nin the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ModuleRefWord" typeId="rh4a.794010416819955528" id="794010416819960883" nodeInfo="ng">
-              <link role="module" roleId="rh4a.794010416819955529" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.code.structure.ModuleRefWord" id="794010416819960883" nodeInfo="ng">
+              <link role="module" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="794010416819960882" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module. Here is the " />
@@ -195,8 +195,14 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="794010416819974413" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958289" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958290" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958291" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="794010416820037028" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="794010416820037029" nodeInfo="ng">
@@ -217,9 +223,17 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="794010416820037079" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.1731059994647781810" resolveInfo="Nuller" />
-          <link role="detail" roleId="rh4a.6416473402306189931" targetNodeId="e1tx.1731059994647782993" resolveInfo="processor_process" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399957858" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399957859" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399957860" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647781810" resolveInfo="Nuller" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399957861" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647782993" resolveInfo="processor_process" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="126932837435541955" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435541956" nodeInfo="ng">
@@ -261,8 +275,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543670772" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that the referneces into the code (such as " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="4715820023543670773" nodeInfo="ng">
-              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.code.structure.ContentRefWord" id="4715820023543670773" nodeInfo="ng">
+              <link role="content" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543670774" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=") are actually real \npointers. So if the element is renamed, it gets renamed in the docs. When deleted, the\nreference breaks, and we get an error. Also, the embedded pieces of code are not copied in, they are taked from the actual mbeddr programs during generation. In other words, they also stay consistent with the code automatically." />
@@ -278,8 +292,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435556055" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Interfaces declare operations that can be provided or used by components. Each operation can also declare pre- and postconditions as well as protocols. These can be checked either at runtime or statically. The " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ModuleRefWord" typeId="rh4a.794010416819955528" id="126932837435556057" nodeInfo="ng">
-              <link role="module" roleId="rh4a.794010416819955529" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.code.structure.ModuleRefWord" id="126932837435556057" nodeInfo="ng">
+              <link role="module" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435556058" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module contains examples. Below is an interface:" />
@@ -288,8 +302,14 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="126932837435556060" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.1731059994647814010" resolveInfo="TrackpointStore1" />
+          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958315" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958316" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958317" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647814010" resolveInfo="TrackpointStore1" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543612302" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543612303" nodeInfo="ng">
@@ -395,9 +415,6 @@
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="126932837435452521" nodeInfo="ng">
       <property name="name" nameId="2c95.126932837435370851" value="John Doe" />
       <property name="email" nameId="2c95.126932837435370852" value="joh@doe.org" />
-    </node>
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416819641037" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1362234784407_10" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967058" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="newLanguages" />

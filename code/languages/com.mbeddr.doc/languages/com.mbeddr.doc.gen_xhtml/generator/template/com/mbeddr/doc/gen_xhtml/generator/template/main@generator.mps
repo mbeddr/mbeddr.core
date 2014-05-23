@@ -6,23 +6,30 @@
   <language namespace="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" />
   <language namespace="2dec0852-3a21-4c4e-a68c-b05236cc37f2(com.mbeddr.doc.gen_xhtml)" />
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
+  <language namespace="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9(com.mbeddr.mpsutil.httpsupport)" />
+  <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" />
-  <import index="4gky" modelUID="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" version="3" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="14" />
+  <import index="4gky" modelUID="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" version="4" />
   <import index="tbr6" modelUID="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" version="1" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="ec5l" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" version="-1" />
+  <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="1" />
+  <import index="abz6" modelUID="r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess.plugin)" version="-1" />
+  <import index="cu2c" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" version="-1" />
+  <import index="xmkr" modelUID="r:bce11d92-6b70-464d-8d15-a91ee9ecc04a(com.mbeddr.doc.meta.behavior)" version="0" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
-  <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="iuxj" modelUID="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" version="2" implicit="yes" />
   <import index="tpcw" modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tpf3" modelUID="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" version="0" implicit="yes" />
+  <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
+  <import index="s4al" modelUID="r:193e03e1-dca4-4048-aad0-de84622e3490(com.mbeddr.mpsutil.httpsupport.structure)" version="-1" implicit="yes" />
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="3350625596580276073" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="main" />
     <node role="preMappingScript" roleId="tpf8.1195502100749" type="tpf8.MappingScriptReference" typeId="tpf8.1195502151594" id="6386504476136566559" nodeInfo="ng">
@@ -134,7 +141,8 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="6386504476136222203" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.3350625596580108709" resolveInfo="SectRefWord" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="6386504476136222212" nodeInfo="ng">
-        <node role="templateNode" roleId="tpf8.1177093586806" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="6386504476136230656" nodeInfo="ng">
+        <node role="templateNode" roleId="tpf8.1177093586806" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730469609" nodeInfo="ng">
+          <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
           <property name="tagName" nameId="iuxj.6666499814681415862" value="b" />
           <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlText" typeId="iuxj.1622293396948952339" id="6386504476136230661" nodeInfo="nn">
             <property name="value" nameId="iuxj.1622293396948953704" value="text" />
@@ -222,8 +230,9 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="6386504476136435990" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.6386504476136420159" resolveInfo="ImgRefWord" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="6386504476136435991" nodeInfo="ng">
-        <node role="templateNode" roleId="tpf8.1177093586806" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="6386504476136435992" nodeInfo="ng">
-          <property name="tagName" nameId="iuxj.6666499814681415862" value="font" />
+        <node role="templateNode" roleId="tpf8.1177093586806" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730471120" nodeInfo="ng">
+          <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
+          <property name="tagName" nameId="iuxj.6666499814681415862" value="span" />
           <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlText" typeId="iuxj.1622293396948952339" id="6386504476136436027" nodeInfo="nn">
             <property name="value" nameId="iuxj.1622293396948953704" value="Figure" />
           </node>
@@ -253,11 +262,73 @@
         </node>
       </node>
     </node>
+    <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="2181941881730119293" nodeInfo="ng">
+      <property name="applyToConceptInheritors" nameId="tpf8.1167272244852" value="true" />
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="soy0.4715820023543872565" resolveInfo="LangDefWord" />
+      <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="2181941881730121891" nodeInfo="ng">
+        <node role="templateNode" roleId="tpf8.1177093586806" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730121897" nodeInfo="ng">
+          <property name="tagName" nameId="iuxj.6666499814681415862" value="a" />
+          <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlText" typeId="iuxj.1622293396948952339" id="2181941881730122924" nodeInfo="nn">
+            <property name="value" nameId="iuxj.1622293396948953704" value="text" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="2181941881730122925" nodeInfo="nn">
+              <property name="propertyName" nameId="tpck.1757699476691236117" value="value" />
+              <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="2181941881730122926" nodeInfo="nn">
+                <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2181941881730122927" nodeInfo="sn">
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2181941881730122928" nodeInfo="nn">
+                    <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2181941881730122929" nodeInfo="nn">
+                      <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2181941881730122930" nodeInfo="nn" />
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="2181941881730122931" nodeInfo="nn">
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="xmkr.2181941881726251610" resolveInfo="getTextualRepresentation" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="2181941881730121900" nodeInfo="ng">
+            <property name="attrName" nameId="iuxj.6666499814681447926" value="href" />
+            <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="2181941881730121954" nodeInfo="ng">
+              <property name="text" nameId="iuxj.6666499814681541920" value="linkToMbeddr" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="2181941881730121955" nodeInfo="nn">
+                <property name="propertyName" nameId="tpck.1757699476691236117" value="text" />
+                <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="2181941881730121956" nodeInfo="nn">
+                  <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2181941881730121957" nodeInfo="sn">
+                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2181941881730121958" nodeInfo="nn">
+                      <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2181941881730121959" nodeInfo="nn">
+                        <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="abz6.209357004266279224" resolveInfo="MbeddrURLHelper" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="abz6.209357004266323887" resolveInfo="createURLForNode" />
+                        <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2181941881730121960" nodeInfo="nn">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpcw.ConceptFunctionParameter_operationContext" typeId="tpcw.1161622753914" id="2181941881730121961" nodeInfo="nn" />
+                          <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2181941881730121962" nodeInfo="nn">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~IOperationContext%dgetProject()%cjetbrains%dmps%dproject%dProject" resolveInfo="getProject" />
+                          </node>
+                        </node>
+                        <node role="actualArgument" roleId="tpee.1068499141038" type="s4al.ApplicationID" typeId="s4al.3379970138993099772" id="2181941881730121963" nodeInfo="ng">
+                          <link role="requestHandler" roleId="s4al.3379970138993099791" targetNodeId="abz6.8564455257661324548" resolveInfo="NodeOpenRequest" />
+                        </node>
+                        <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2181941881730121964" nodeInfo="nn">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2181941881730121965" nodeInfo="nn" />
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="2181941881730121966" nodeInfo="nn">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="xmkr.2181941881726259815" resolveInfo="getTargetNode" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="2642765975833416821" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.2642765975832553408" resolveInfo="AttachmentWord" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="2642765975833416822" nodeInfo="ng">
-        <node role="templateNode" roleId="tpf8.1177093586806" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="2642765975833416823" nodeInfo="ng">
-          <property name="tagName" nameId="iuxj.6666499814681415862" value="font" />
+        <node role="templateNode" roleId="tpf8.1177093586806" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730472010" nodeInfo="ng">
+          <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
+          <property name="tagName" nameId="iuxj.6666499814681415862" value="span" />
           <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlText" typeId="iuxj.1622293396948952339" id="2642765975833416824" nodeInfo="nn">
             <property name="value" nameId="iuxj.1622293396948953704" value="Attachment" />
           </node>
@@ -317,8 +388,9 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="4457500422381572013" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.4457500422381571986" resolveInfo="CodeFormattedText" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="4457500422381572014" nodeInfo="ng">
-        <node role="templateNode" roleId="tpf8.1177093586806" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="4457500422381572015" nodeInfo="ng">
-          <property name="tagName" nameId="iuxj.6666499814681415862" value="font" />
+        <node role="templateNode" roleId="tpf8.1177093586806" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730472957" nodeInfo="ng">
+          <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
+          <property name="tagName" nameId="iuxj.6666499814681415862" value="code" />
           <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="4457500422381572016" nodeInfo="ng">
             <property name="attrName" nameId="iuxj.6666499814681447926" value="class" />
             <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="4457500422381572017" nodeInfo="ng">
@@ -348,8 +420,9 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="4400783559374141886" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.4400783559374052800" resolveInfo="EmphFormattedText" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="4400783559374141887" nodeInfo="ng">
-        <node role="templateNode" roleId="tpf8.1177093586806" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="4400783559374141888" nodeInfo="ng">
-          <property name="tagName" nameId="iuxj.6666499814681415862" value="font" />
+        <node role="templateNode" roleId="tpf8.1177093586806" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730473163" nodeInfo="ng">
+          <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
+          <property name="tagName" nameId="iuxj.6666499814681415862" value="em" />
           <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="4400783559374141889" nodeInfo="ng">
             <property name="attrName" nameId="iuxj.6666499814681447926" value="class" />
             <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="4400783559374141890" nodeInfo="ng">
@@ -379,8 +452,9 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="620304030119339466" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.620304030119138923" resolveInfo="BoldFormattedText" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="620304030119339467" nodeInfo="ng">
-        <node role="templateNode" roleId="tpf8.1177093586806" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="620304030119339468" nodeInfo="ng">
-          <property name="tagName" nameId="iuxj.6666499814681415862" value="font" />
+        <node role="templateNode" roleId="tpf8.1177093586806" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730473369" nodeInfo="ng">
+          <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
+          <property name="tagName" nameId="iuxj.6666499814681415862" value="strong" />
           <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="620304030119339469" nodeInfo="ng">
             <property name="attrName" nameId="iuxj.6666499814681447926" value="class" />
             <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="620304030119339470" nodeInfo="ng">
@@ -410,8 +484,9 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="6165313375055772812" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.6165313375055755361" resolveInfo="MathFormattedText" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="6165313375055772813" nodeInfo="ng">
-        <node role="templateNode" roleId="tpf8.1177093586806" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="6165313375055772814" nodeInfo="ng">
-          <property name="tagName" nameId="iuxj.6666499814681415862" value="font" />
+        <node role="templateNode" roleId="tpf8.1177093586806" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730473575" nodeInfo="ng">
+          <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
+          <property name="tagName" nameId="iuxj.6666499814681415862" value="span" />
           <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="6165313375055772815" nodeInfo="ng">
             <property name="attrName" nameId="iuxj.6666499814681447926" value="class" />
             <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="6165313375055772816" nodeInfo="ng">
@@ -503,9 +578,9 @@
                 </node>
               </node>
             </node>
-            <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="6386504476136436046" nodeInfo="ng">
-              <property name="tagName" nameId="iuxj.6666499814681415862" value="img" />
+            <node role="content" roleId="iuxj.1622293396948928802" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730474808" nodeInfo="ng">
               <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="true" />
+              <property name="tagName" nameId="iuxj.6666499814681415862" value="img" />
               <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="6386504476136436047" nodeInfo="ng">
                 <property name="attrName" nameId="iuxj.6666499814681447926" value="src" />
                 <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="6386504476136436048" nodeInfo="ng">
@@ -571,7 +646,8 @@
                   <property name="text" nameId="iuxj.6666499814681541920" value="caption" />
                 </node>
               </node>
-              <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="6386504476136436205" nodeInfo="ng">
+              <node role="content" roleId="iuxj.1622293396948928802" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730473781" nodeInfo="ng">
+                <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
                 <property name="tagName" nameId="iuxj.6666499814681415862" value="b" />
                 <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlText" typeId="iuxj.1622293396948952339" id="6386504476136436063" nodeInfo="nn">
                   <property name="value" nameId="iuxj.1622293396948953704" value="Figure" />
@@ -689,7 +765,8 @@
               <property name="text" nameId="iuxj.6666499814681541920" value="body" />
             </node>
           </node>
-          <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="5185579450379300336" nodeInfo="ng">
+          <node role="content" roleId="iuxj.1622293396948928802" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730476032" nodeInfo="ng">
+            <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
             <property name="tagName" nameId="iuxj.6666499814681415862" value="b" />
             <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlText" typeId="iuxj.1622293396948952339" id="5185579450379300337" nodeInfo="nn">
               <property name="value" nameId="iuxj.1622293396948953704" value="header" />
@@ -834,7 +911,8 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="3126418051240159461" nodeInfo="ng">
         <node role="templateNode" roleId="tpf8.1177093586806" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="3126418051240159462" nodeInfo="ng">
           <property name="tagName" nameId="iuxj.6666499814681415862" value="div" />
-          <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="3126418051240159463" nodeInfo="ng">
+          <node role="content" roleId="iuxj.1622293396948928802" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730477040" nodeInfo="ng">
+            <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
             <property name="tagName" nameId="iuxj.6666499814681415862" value="h1" />
             <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="3126418051240159464" nodeInfo="ng">
               <property name="attrName" nameId="iuxj.6666499814681447926" value="id" />
@@ -925,7 +1003,8 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="5185579450379235332" nodeInfo="ng">
         <node role="templateNode" roleId="tpf8.1177093586806" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="5185579450379235333" nodeInfo="ng">
           <property name="tagName" nameId="iuxj.6666499814681415862" value="div" />
-          <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="5185579450379235334" nodeInfo="ng">
+          <node role="content" roleId="iuxj.1622293396948928802" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730478731" nodeInfo="ng">
+            <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
             <property name="tagName" nameId="iuxj.6666499814681415862" value="h2" />
             <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="5185579450379235335" nodeInfo="ng">
               <property name="attrName" nameId="iuxj.6666499814681447926" value="id" />
@@ -1016,7 +1095,8 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="5185579450379235371" nodeInfo="ng">
         <node role="templateNode" roleId="tpf8.1177093586806" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="5185579450379235372" nodeInfo="ng">
           <property name="tagName" nameId="iuxj.6666499814681415862" value="div" />
-          <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="5185579450379235373" nodeInfo="ng">
+          <node role="content" roleId="iuxj.1622293396948928802" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730480422" nodeInfo="ng">
+            <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
             <property name="tagName" nameId="iuxj.6666499814681415862" value="h3" />
             <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="5185579450379235374" nodeInfo="ng">
               <property name="attrName" nameId="iuxj.6666499814681447926" value="id" />
@@ -1107,7 +1187,8 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="3126418051240320801" nodeInfo="ng">
         <node role="templateNode" roleId="tpf8.1177093586806" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="3126418051240320802" nodeInfo="ng">
           <property name="tagName" nameId="iuxj.6666499814681415862" value="div" />
-          <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="3126418051240320803" nodeInfo="ng">
+          <node role="content" roleId="iuxj.1622293396948928802" type="lsus.InlineXmlElement" typeId="lsus.2181941881730108005" id="2181941881730482113" nodeInfo="ng">
+            <property name="shortEmptyNotation" nameId="iuxj.6999033275467544021" value="false" />
             <property name="tagName" nameId="iuxj.6666499814681415862" value="h4" />
             <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="3126418051240320804" nodeInfo="ng">
               <property name="attrName" nameId="iuxj.6666499814681447926" value="id" />

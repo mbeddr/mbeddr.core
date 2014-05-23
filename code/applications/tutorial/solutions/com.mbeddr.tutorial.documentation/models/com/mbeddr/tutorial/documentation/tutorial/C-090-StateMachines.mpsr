@@ -5,18 +5,19 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
-  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" implicit="yes" />
+  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.code.structure)" implicit="yes" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="3458996998996953631" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-090-StateMachines" />
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="9" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3458996998996997414" nodeInfo="ng">
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561787741" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="statemachines" />
       <property name="text" nameId="2c95.3350625596580064225" value="State Machines" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997039525" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997039526" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997039527" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Next to components and units, state machines are one of the main C extensions\navailable in mbeddr. They can be used directly in C programs, or alternatively,\nembedded into components. To keep the overall complexity of the example\nmanageable, we will show state machine use directly in C." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Next to components and units, state machines are one of the main C extensions available in mbeddr. They can be used directly in C programs, or alternatively, embedded into components. To keep the overall complexity of the example manageable, we will show state machine use directly in C." />
           </node>
         </node>
       </node>
@@ -26,7 +27,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997052438" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997052439" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997052440" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To use state machines, the respective model has to use the\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To use state machines, the respective model has to use the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997052448" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997052449" nodeInfo="ng">
@@ -36,7 +37,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997052447" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit. We then create a new module\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit. We then create a new module " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997052457" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997052458" nodeInfo="ng">
@@ -46,7 +47,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997052456" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and add it to the build configuration. We can also create a\ntest case and call it from " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and add it to the build configuration. We can also create a test case and call it from " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997052470" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997052471" nodeInfo="ng">
@@ -66,7 +67,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997052486" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nexpression that automatically adds all test cases that are visible).\n\nOur example state machine once again deals with judging a flight. Here are the\nrules:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" expression that automatically adds all test cases that are visible).  Our example state machine once again deals with judging a flight. Here are the rules:" />
             </node>
           </node>
         </node>
@@ -102,7 +103,7 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997071931" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997071932" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997071933" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="You should land as short as possible; for each trackpoint where you are\n  on the ground, rolling, you get 1 point deducted." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="You should land as short as possible; for each trackpoint where you are   on the ground, rolling, you get 1 point deducted." />
                 </node>
               </node>
             </node>
@@ -120,7 +121,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997088136" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997088137" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997088138" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This may not be the best example for a state machine, but it does show all of\nthe state machine's features while staying with our example so far :-)\nSo let's get started with a state machine." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This may not be the best example for a state machine, but it does show all of the state machine's features while staying with our example so far :-) So let's get started with a state machine." />
             </node>
           </node>
         </node>
@@ -131,7 +132,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997107664" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997107665" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997107666" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We know that the airplane will be in various states: on the ground, flying,\nlanding (and still rolling), landed, and crashed. So let's add the states. Once\nyou add the first of these states, the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We know that the airplane will be in various states: on the ground, flying, landing (and still rolling), landed, and crashed. So let's add the states. Once you add the first of these states, the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997110940" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997110941" nodeInfo="ng">
@@ -141,7 +142,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997110939" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state will be set; of course it can\nbe changed later:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state will be set; of course it can be changed later:" />
             </node>
           </node>
         </node>
@@ -152,7 +153,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997141863" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997141864" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997141865" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Our state machine is also a little bit untypical in that it only takes one\nevent " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Our state machine is also a little bit untypical in that it only takes one event " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997148371" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997148372" nodeInfo="ng">
@@ -162,7 +163,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997148370" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", which represents the next trackpoint submitted for evaluation.\nNote how an event can have arguments of arbitrary C types, " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", which represents the next trackpoint submitted for evaluation. Note how an event can have arguments of arbitrary C types, " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997148380" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997148381" nodeInfo="ng">
@@ -172,7 +173,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997148379" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in\nthe example. There is one more event that resets the analyzer:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in the example. There is one more event that resets the analyzer:" />
             </node>
           </node>
         </node>
@@ -193,7 +194,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997168004" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" that keeps track of the points as they\naccumulate over the flight analysis:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" that keeps track of the points as they accumulate over the flight analysis:" />
             </node>
           </node>
         </node>
@@ -204,7 +205,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997181130" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997181131" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997181132" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now implement the rules outlined above using transitions and actions. Let\nus start with some simple ones. Whenever we enter " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now implement the rules outlined above using transitions and actions. Let us start with some simple ones. Whenever we enter " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997181210" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997181211" nodeInfo="ng">
@@ -214,7 +215,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997181209" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" we reset the\npoints to 0. We can achieve this with an entry action in " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" we reset the points to 0. We can achieve this with an entry action in " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997181219" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997181220" nodeInfo="ng">
@@ -255,7 +256,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997194484" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nevent must transition back to the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" event must transition back to the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997194498" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997194499" nodeInfo="ng">
@@ -265,7 +266,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997194497" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Note that as a consequence\nof the entry action in the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Note that as a consequence of the entry action in the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997194515" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997194516" nodeInfo="ng">
@@ -275,7 +276,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997194514" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state, the points get resetted in\nall three cases:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state, the points get resetted in all three cases:" />
             </node>
           </node>
         </node>
@@ -286,7 +287,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997305817" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997305818" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997305819" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now implement the rules. As soon as we submit a trackpoint where the\naltitude is greater than zero we can transition to the airborne state. This\nmeans we have successfully taken off, and we should get 100 points in bonus.\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now implement the rules. As soon as we submit a trackpoint where the altitude is greater than zero we can transition to the airborne state. This means we have successfully taken off, and we should get 100 points in bonus. " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997306038" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997306039" nodeInfo="ng">
@@ -301,7 +302,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997306048" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997306049" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997306050" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="#define TAKEOFF =\n100;" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="#define TAKEOFF = 100;" />
                 </node>
               </node>
             </node>
@@ -317,7 +318,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997312999" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997313000" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997313001" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us look at what can happen while we are in the air. First of all, if when we\nare airborne we receive a trackpoint with zero altitude and zero speed\n(without going through an orderly landing process), we have crashed. If we are\nat altitute zero with a speed greater than zero, we are in the process of\nlanding. The other two cases deal with flying at over 200 and over 100 mps. In\nthis case we stay in the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us look at what can happen while we are in the air. First of all, if when we are airborne we receive a trackpoint with zero altitude and zero speed (without going through an orderly landing process), we have crashed. If we are at altitute zero with a speed greater than zero, we are in the process of landing. The other two cases deal with flying at over 200 and over 100 mps. In this case we stay in the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997319578" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997319579" nodeInfo="ng">
@@ -327,7 +328,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997319577" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state (by transitioning to itself) but we\nincrease the points:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state (by transitioning to itself) but we increase the points:" />
             </node>
           </node>
         </node>
@@ -338,7 +339,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997326432" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997326433" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997326434" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that the transitions are checked in the order of their appearance in the\nstate machine; if several of them are ready to fire, the first one is picked. So\nbe careful to put the \&quot;tighter cases\&quot; first. The landing process is essentially\nsimilar:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that the transitions are checked in the order of their appearance in the state machine; if several of them are ready to fire, the first one is picked. So be careful to put the \&quot;tighter cases\&quot; first. The landing process is essentially similar:" />
             </node>
           </node>
         </node>
@@ -363,7 +364,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997364778" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state? Assume this flight analyzer is\nrunning on some kind of server, analyzing flights that are submitted via the web\n(a bit like " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state? Assume this flight analyzer is running on some kind of server, analyzing flights that are submitted via the web (a bit like " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997364788" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997364789" nodeInfo="ng">
@@ -373,7 +374,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997364787" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="). If we detect a crash, we want to\nnotify a bunch of people of the event, so they can call the the BFU or whatever.\nIn any case, assume we want to call external code. You can do this in two ways.\nThe first one is probably obvious. We simply create a function which we call\nfrom an entry or exit action:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="). If we detect a crash, we want to notify a bunch of people of the event, so they can call the the BFU or whatever. In any case, assume we want to call external code. You can do this in two ways. The first one is probably obvious. We simply create a function which we call from an entry or exit action:" />
             </node>
           </node>
         </node>
@@ -384,7 +385,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997374513" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997374514" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997374515" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Another alternative, which is more suitable for formal analysis (as we will see\nlater) involves out events. From the entry action we " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Another alternative, which is more suitable for formal analysis (as we will see later) involves out events. From the entry action we " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997377757" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997377758" nodeInfo="ng">
@@ -394,7 +395,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997377756" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" an out event,\nwhich we define earlier. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" an out event, which we define earlier. " />
             </node>
           </node>
         </node>
@@ -405,7 +406,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997384278" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997384279" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997384280" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Sending an event this way has no effect (yet), but we express from within the\nstate machine that something that corresponds semantically to a crash\nnotification will happen at this point (as we will see, this allows us to write\nmodel checkers that verify that a crash notification will go out). What remains\nto be done is to bind this event to application code. We can do this by adding a\nbinding to the out event declaration:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Sending an event this way has no effect (yet), but we express from within the state machine that something that corresponds semantically to a crash notification will happen at this point (as we will see, this allows us to write model checkers that verify that a crash notification will go out). What remains to be done is to bind this event to application code. We can do this by adding a binding to the out event declaration:" />
             </node>
           </node>
         </node>
@@ -416,7 +417,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997397278" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997397279" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997397280" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The effect is the best of both worlds: in the generated code we do call the\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The effect is the best of both worlds: in the generated code we do call the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997403758" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997403759" nodeInfo="ng">
@@ -426,7 +427,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997403757" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" function, but on the state machine level we have abstracted the\nimplementation from the intent. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" function, but on the state machine level we have abstracted the implementation from the intent. " />
             </node>
           </node>
         </node>
@@ -440,7 +441,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997417046" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997417047" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997417048" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us write some test code that interacts with a state machine. To do a\nmeaningful test, we will have to create a whole lot of trackpoints. So to do\nthis we create helper functions. These in turn need " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us write some test code that interacts with a state machine. To do a meaningful test, we will have to create a whole lot of trackpoints. So to do this we create helper functions. These in turn need " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997423502" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997423503" nodeInfo="ng">
@@ -460,7 +461,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997423510" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=",\nso we first create an additional external module that represents " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", so we first create an additional external module that represents " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997423524" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997423525" nodeInfo="ng">
@@ -481,19 +482,25 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997467384" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997467385" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997467386" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now create a helper function that creates a new trackpoint based on an\naltitude and speed passed in as arguments:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now create a helper function that creates a new trackpoint based on an altitude and speed passed in as arguments:" />
             </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="3458996998997491853" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.7727566415687767140" resolveInfo="makeTP" />
+          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958149" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958150" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958151" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687767140" resolveInfo="makeTP" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997498368" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997498369" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997498370" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now start writing (and running!) the test. We first create an instance of\nthe state machine (state machines act as types and can be instantiated). We then\ninitialize the state machine by using the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now start writing (and running!) the test. We first create an instance of the state machine (state machines act as types and can be instantiated). We then initialize the state machine by using the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997498420" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997498421" nodeInfo="ng">
@@ -524,7 +531,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997511448" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state. We can check this with an\nassertion:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state. We can check this with an assertion:" />
             </node>
           </node>
         </node>
@@ -545,7 +552,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997524509" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are zero initially. To be able to\nwrite a constraint that checks this we first have to make the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are zero initially. To be able to write a constraint that checks this we first have to make the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997524519" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997524520" nodeInfo="ng">
@@ -555,7 +562,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997524518" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nvariable " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" variable " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997524532" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997524533" nodeInfo="ng">
@@ -565,7 +572,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997524531" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" from the outside. An intention on the variable achieves\nthis. We can then write:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" from the outside. An intention on the variable achieves this. We can then write:" />
             </node>
           </node>
         </node>
@@ -576,7 +583,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997537605" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997537606" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997537607" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us now create the first trackpoint and pass it in. This one has speed, but\nno altitude, so we are in the take-off run. We assume that we remain in the\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us now create the first trackpoint and pass it in. This one has speed, but no altitude, so we are in the take-off run. We assume that we remain in the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997537665" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997537666" nodeInfo="ng">
@@ -608,7 +615,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997557640" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997557641" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997557642" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="So as you can see it is easy to interact from regular C code with a state\nmachine. For testing, we have special support that checks if the state machine\ntransitions to the desired state if a specific event is triggered. Here is some\nexample code (note that you can use the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="So as you can see it is easy to interact from regular C code with a state machine. For testing, we have special support that checks if the state machine transitions to the desired state if a specific event is triggered. Here is some example code (note that you can use the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997564168" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997564169" nodeInfo="ng">
@@ -618,7 +625,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997564167" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" construct only\nwithin test cases):" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" construct only within test cases):" />
             </node>
           </node>
         </node>
@@ -629,7 +636,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997574090" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997574091" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997574092" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This concludes our discussion of state machines. If you are a C buff, you may\nhave noticed that our application contains a memory leak. We allocate all kinds\nof heap data (in the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This concludes our discussion of state machines. If you are a C buff, you may have noticed that our application contains a memory leak. We allocate all kinds of heap data (in the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997577401" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997577402" nodeInfo="ng">
@@ -639,14 +646,14 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997577400" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" function), but we never free it again. Read the\nchapter \\todo{ref} to do something about that." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" function), but we never free it again. Read the chapter \\todo{ref} to do something about that." />
             </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997583945" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997583946" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997583947" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="==&gt; This part of the tutorial only provided a few examples of State Machines. For a full\ndiscussion of State Machines see Section xxx." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="==&gt; This part of the tutorial only provided a few examples of State Machines. For a full discussion of State Machines see Section xxx." />
             </node>
           </node>
         </node>
@@ -657,7 +664,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997591015" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997591016" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997591017" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Just like decision tables, state machines can also be verified. While in\ndecision tables the verification is based on SMT solving, the state machine\nverification uses model checking. However, the fundamental approach is similar: " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Just like decision tables, state machines can also be verified. While in decision tables the verification is based on SMT solving, the state machine verification uses model checking. However, the fundamental approach is similar: " />
             </node>
           </node>
         </node>
@@ -685,7 +692,7 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997604214" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997604215" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997604216" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Verifiable state machines are restricted in some ways, so after marking\n  the state machine as " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Verifiable state machines are restricted in some ways, so after marking   the state machine as " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997610678" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997610679" nodeInfo="ng">
@@ -695,7 +702,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997610677" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=", you may have to refactor it in a way so\n  it is inside the verifiable subset. For example, it is not possible to assign\n  to the same variable more than once during one transition (taking into\n  account all exit and entry actions)." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=", you may have to refactor it in a way so   it is inside the verifiable subset. For example, it is not possible to assign   to the same variable more than once during one transition (taking into   account all exit and entry actions)." />
                 </node>
               </node>
             </node>
@@ -714,7 +721,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997617159" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to\n  run the verification." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to   run the verification." />
                 </node>
               </node>
             </node>
@@ -732,7 +739,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997630130" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997630131" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997630132" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Model checking requires that users specify a set of properties which the state\nmachine must implement. The model checker checks for each property whether it\nholds " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Model checking requires that users specify a set of properties which the state machine must implement. The model checker checks for each property whether it holds " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3458996998997630170" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997630171" nodeInfo="ng">
@@ -742,7 +749,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997630169" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". If it doesn't, the result of the model checker shows\na counter example, i.e. one possible execution of the state machine that leads\nto a situation where the property does not hold. In mbeddr, every state machine\nis checked for a specific set of properties " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". If it doesn't, the result of the model checker shows a counter example, i.e. one possible execution of the state machine that leads to a situation where the property does not hold. In mbeddr, every state machine is checked for a specific set of properties " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3458996998997630180" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997630181" nodeInfo="ng">
@@ -752,7 +759,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997630179" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", so you as the\nuser don't have to specify them. These automatic checks include the following:\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", so you as the user don't have to specify them. These automatic checks include the following: " />
             </node>
           </node>
         </node>
@@ -771,7 +778,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997636739" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" sequence of events\n  in the state machine that leads into each state. If not, the state is dead and\n  can be removed." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" sequence of events   in the state machine that leads into each state. If not, the state is dead and   can be removed." />
                 </node>
               </node>
             </node>
@@ -790,7 +797,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997643212" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\n  sequence of events that fires each transition. If not, the transition could be\n  removed." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="   sequence of events that fires each transition. If not, the transition could be   removed." />
                 </node>
               </node>
             </node>
@@ -799,12 +806,12 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997646446" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997646447" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997646448" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Are all transitions deterministic, i.e. is it always clear which\n  transition must fire. If not, more than one transition could fire at a given\n  time, and the decision which one to fire is unclear" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Are all transitions deterministic, i.e. is it always clear which   transition must fire. If not, more than one transition could fire at a given   time, and the decision which one to fire is unclear" />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.FootnoteWord" typeId="2c95.2728443031450669962" id="3458996998997649695" nodeInfo="ng">
                   <node role="text" roleId="2c95.2728443031450670151" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997649696" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997649697" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the mbeddr\n  implementation (based on a " />
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the mbeddr   implementation (based on a " />
                     </node>
                     <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997649704" nodeInfo="ng">
                       <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997649705" nodeInfo="ng">
@@ -814,7 +821,7 @@
                       </node>
                     </node>
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997649703" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement) the first of these\n  transitions will fire. However, one should not rely on this fact and the\n  verifier marks it as a problem." />
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement) the first of these   transitions will fire. However, one should not rely on this fact and the   verifier marks it as a problem." />
                     </node>
                   </node>
                 </node>
@@ -828,7 +835,7 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997649713" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997649714" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997649715" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The state machines language supports bounded integers (i.e. integers\n  that specify a value range). For each variable that uses a bounded integer\n  type, the verifier checks that the variable actually stays within the\n  specified bounds." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The state machines language supports bounded integers (i.e. integers   that specify a value range). For each variable that uses a bounded integer   type, the verifier checks that the variable actually stays within the   specified bounds." />
                 </node>
               </node>
             </node>
@@ -844,7 +851,7 @@
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997662726" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997662727" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997662728" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The view that shows the results of the verfication of the\n" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The view that shows the results of the verfication of the " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997701508" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997701509" nodeInfo="ng">
@@ -875,7 +882,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997708148" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nflag to the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" flag to the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997708158" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997708159" nodeInfo="ng">
@@ -885,13 +892,13 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997708157" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state machine and run the verifier.\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state machine and run the verifier. " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="3458996998997708171" nodeInfo="ng">
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="3458996998997662722" resolveInfo="smverres" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997708170" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows the result. It has two problems. First, it claims that the\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows the result. It has two problems. First, it claims that the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997708184" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997708185" nodeInfo="ng">
@@ -914,7 +921,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.GreyBoxParagraph" typeId="2c95.7992580511422656150" id="3458996998997727866" nodeInfo="ng">
           <node role="text" roleId="2c95.7992580511422656152" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997727867" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997727868" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Contrary to intuition, the actually problematic step may not be the\nlast one! In the example here, the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Contrary to intuition, the actually problematic step may not be the last one! In the example here, the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997734428" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997734429" nodeInfo="ng">
@@ -951,13 +958,23 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997741127" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" event is fired\nand results in non-determinism. Let us look at the code: " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" event is fired and results in non-determinism. Let us look at the code: " />
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="3458996998997756018" nodeInfo="ng">
-          <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
-          <property name="text" nameId="2c95.8730648445434044906" value="state landing { &#10;  on next [tp-&gt;speed == 0 mps] -&gt; landed &#10;  on next [ ] -&gt; landing { points--; }  &#10;  on reset [ ] -&gt; beforeFlight &#10;} " />
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="5369777174349568207" nodeInfo="ng">
+          <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
+          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958240" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958241" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958242" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958243" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762903" resolveInfo="landing" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997762718" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997762719" nodeInfo="ng">
@@ -972,7 +989,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997766074" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", which is the case for\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", which is the case for " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997766086" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997766087" nodeInfo="ng">
@@ -982,7 +999,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997766085" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The second one fires in any case. Of course what we wanted to\nexpress there is that this one should only fire " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The second one fires in any case. Of course what we wanted to express there is that this one should only fire " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3458996998997766099" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997766100" nodeInfo="ng">
@@ -992,7 +1009,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997766098" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". In the\ngenerated C code it happens to work correctly because of the ordering of the\ntransitions. But in general, the situation is ambiguous: " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". In the generated C code it happens to work correctly because of the ordering of the transitions. But in general, the situation is ambiguous: " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997766117" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997766118" nodeInfo="ng">
@@ -1002,14 +1019,14 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997766116" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="\npotentially fires both. We can fix the problem by adding another guard\ncondition (rerun the model checker to test this!):" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" potentially fires both. We can fix the problem by adding another guard condition (rerun the model checker to test this!):" />
             </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997772730" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997772731" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997772732" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="state landing { \n  on next [tp-&gt;speed == 0 mps] -&gt; landed \n  on next [tp-&gt;speed != 0 mps ] -&gt; landing { points--; }  \n  on reset [ ] -&gt; beforeFlight \n} " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="state landing {    on next [tp-&gt;speed == 0 mps] -&gt; landed    on next [tp-&gt;speed != 0 mps ] -&gt; landing { points--; }     on reset [ ] -&gt; beforeFlight  } " />
             </node>
           </node>
         </node>
@@ -1041,7 +1058,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997779954" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state. Once again, the actual problem\nis in the second-to-last step: " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state. Once again, the actual problem is in the second-to-last step: " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997779965" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997779966" nodeInfo="ng">
@@ -1062,7 +1079,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997798454" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997798455" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997798456" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The first problem we observe is that transition 4 is also true whenever\ntransition 3 is true as well. So we should change transition four to" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The first problem we observe is that transition 4 is also true whenever transition 3 is true as well. So we should change transition four to" />
             </node>
           </node>
         </node>
@@ -1073,7 +1090,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997812034" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997812035" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997812036" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="However, rerunning the verification still FAILs this state. The real problem is\nan ambiguity between transition 2 and transition 4, because we do not check\nfor the altitude in transitions 3 and 4. Once again, we imply an ordering of the\nguard conditions ... the C implementation works fine.  Here is the correct\nformulation of the state's transitions:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="However, rerunning the verification still FAILs this state. The real problem is an ambiguity between transition 2 and transition 4, because we do not check for the altitude in transitions 3 and 4. Once again, we imply an ordering of the guard conditions ... the C implementation works fine.  Here is the correct formulation of the state's transitions:" />
             </node>
           </node>
         </node>
@@ -1088,7 +1105,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997843582" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997843583" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997843584" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="State machines can also be hierarchical. This means that a state may contain\nessentially a sub-state machine. The following piece of code shows an example.\nHere are the semantics:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="State machines can also be hierarchical. This means that a state may contain essentially a sub-state machine. The following piece of code shows an example. Here are the semantics:" />
             </node>
           </node>
         </node>
@@ -1097,7 +1114,7 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997843601" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997843602" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997843603" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="When a transition from outside a composite state targets\na composite state, the initial state in that composite state is activated." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="When a transition from outside a composite state targets a composite state, the initial state in that composite state is activated." />
                 </node>
               </node>
             </node>
@@ -1106,7 +1123,7 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997850057" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997850058" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997850059" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="A composite state can have transitions. These act as if they were\n  defined for each of the states of the composite state." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="A composite state can have transitions. These act as if they were   defined for each of the states of the composite state." />
                 </node>
               </node>
             </node>
@@ -1115,7 +1132,7 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997856517" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997856518" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997856519" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="If a transition from an inner state A crosses a composite\n  state-boundary (B), then the actions happen in the following order: exit\n  actions of A, exit actions of B, transition action, and entry action of the\n  transition's target." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="If a transition from an inner state A crosses a composite   state-boundary (B), then the actions happen in the following order: exit   actions of A, exit actions of B, transition action, and entry action of the   transition's target." />
                 </node>
               </node>
             </node>
@@ -1123,8 +1140,14 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="3458996998997880975" nodeInfo="ng">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.8528611498588547081" resolveInfo="HierarchicalFlightAnalyzer" />
+          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958032" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958033" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958034" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.8528611498588547081" resolveInfo="HierarchicalFlightAnalyzer" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="3458996998997880994" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="empty_1396689313677_79" />
@@ -1150,7 +1173,7 @@
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997894841" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997894842" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997894843" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="A visualization of a state machine in mbeddr. You can click on the\nstates and transitions to select the respective element in the editor." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="A visualization of a state machine in mbeddr. You can click on the states and transitions to select the respective element in the editor." />
               </node>
             </node>
           </node>

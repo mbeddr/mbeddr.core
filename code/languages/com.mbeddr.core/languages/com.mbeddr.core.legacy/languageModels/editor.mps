@@ -5,7 +5,7 @@
   <import index="s5bn" modelUID="r:a92dafc6-eacf-4328-984c-d7620d951c7f(com.mbeddr.core.legacy.structure)" version="1" />
   <import index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="2" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" />
-  <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
+  <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="161793846860239138" nodeInfo="ng">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="s5bn.161793846860238632" resolveInfo="UncheckedSymbol" />
@@ -51,30 +51,30 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6514339890562589804" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8037912318727741647" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="[[" />
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="7097640331099648923" resolveInfo="manualChangesInImportedHeader" />
+        <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="7097640331099648923" resolveInfo="manualChangesInImportedHeader" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="8037912318727742014" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6514339890562936081" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="s5bn.6514339890562936079" />
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="7097640331099648923" resolveInfo="manualChangesInImportedHeader" />
+        <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="7097640331099648923" resolveInfo="manualChangesInImportedHeader" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6514339890562589813" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value=":" />
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="7097640331099648923" resolveInfo="manualChangesInImportedHeader" />
+        <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="7097640331099648923" resolveInfo="manualChangesInImportedHeader" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="8037912318727742410" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7097640331099648928" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.318113533128716676" />
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="7097640331099648923" resolveInfo="manualChangesInImportedHeader" />
+        <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="7097640331099648923" resolveInfo="manualChangesInImportedHeader" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6514339890562589806" nodeInfo="nn" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8037912318727741649" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="]]" />
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="7097640331099648923" resolveInfo="manualChangesInImportedHeader" />
+        <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="7097640331099648923" resolveInfo="manualChangesInImportedHeader" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="8037912318727742015" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -86,7 +86,7 @@
   </root>
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="7097640331099648922" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="legacy" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="7097640331099648923" nodeInfo="ng">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="7097640331099648923" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="manualChangesInImportedHeader" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="7097640331099648924" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="LIGHT_BLUE" />
