@@ -2571,16 +2571,19 @@
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_DevKit" typeId="kdzh.322010710375794190" id="40029861256392297" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.analyses.assertions" />
-        <property name="uuid" nameId="kdzh.322010710375892619" value="6f34a159-34b5-450b-9d47-eaf00108d0e8" />
+        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.analyses.core" />
+        <property name="uuid" nameId="kdzh.322010710375892619" value="0ca77142-1eea-4b14-b369-69bdaa1c44fb" />
+        <node role="extends" roleId="kdzh.322010710375805250" type="kdzh.BuildMps_DevKitRef" typeId="kdzh.322010710375805242" id="9020927825194895678" nodeInfo="ng">
+          <link role="devkit" roleId="kdzh.322010710375805243" targetNodeId="g8gn.8628756186118765599" resolveInfo="com.mbeddr.core" />
+        </node>
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="40029861256393186" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975410642" resolveInfo="mbeddr.analyses" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="40029861256393476" nodeInfo="nn">
             <property name="head" nameId="3ior.8618885170173601779" value="devkits" />
             <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="40029861256394048" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.analyses.assertions" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="40029861257078339" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.analyses.assertions.devkit" />
+              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.analyses.core" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9020927825194895167" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.analyses.core.devkit" />
               </node>
             </node>
           </node>
@@ -2597,63 +2600,14 @@
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportSolution" typeId="kdzh.322010710375832954" id="7634203028841243018" nodeInfo="ng">
           <link role="solution" roleId="kdzh.322010710375832955" targetNodeId="8334796989975410788" resolveInfo="com.mbeddr.analyses.cbmc.rt" />
         </node>
-      </node>
-      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_DevKit" typeId="kdzh.322010710375794190" id="40029861257084523" nodeInfo="ng">
-        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.analyses.decisiontables" />
-        <property name="uuid" nameId="kdzh.322010710375892619" value="3f862faa-0d46-490e-bf92-2a83be657a49" />
-        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="40029861257084524" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975410642" resolveInfo="mbeddr.analyses" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="40029861257084525" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="devkits" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="40029861257084526" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.analyses.decisiontables" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="40029861257086105" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.analyses.decisiontables.devkit" />
-              </node>
-            </node>
-          </node>
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="9020927825194895679" nodeInfo="ng">
+          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="4912263511297995600" resolveInfo="com.mbeddr.analyses.cbmc.core" />
         </node>
-        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="40029861257084528" nodeInfo="ng">
-          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="byw8.8334796989975404260" resolveInfo="com.mbeddr.analyses.base" />
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportSolution" typeId="kdzh.322010710375832954" id="9020927825194895680" nodeInfo="ng">
+          <link role="solution" roleId="kdzh.322010710375832955" targetNodeId="7634203028841233070" resolveInfo="com.mbeddr.analyses.cbmc.core.pluginSolution" />
         </node>
-        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="4912263511297868934" nodeInfo="ng">
-          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="8334796989975410715" resolveInfo="com.mbeddr.analyses.cbmc" />
-        </node>
-        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportSolution" typeId="kdzh.322010710375832954" id="7634203028841243019" nodeInfo="ng">
-          <link role="solution" roleId="kdzh.322010710375832955" targetNodeId="8334796989975410755" resolveInfo="com.mbeddr.analyses.cbmc.pluginSolution" />
-        </node>
-        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportSolution" typeId="kdzh.322010710375832954" id="7634203028841243020" nodeInfo="ng">
-          <link role="solution" roleId="kdzh.322010710375832955" targetNodeId="8334796989975410788" resolveInfo="com.mbeddr.analyses.cbmc.rt" />
-        </node>
-      </node>
-      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_DevKit" typeId="kdzh.322010710375794190" id="40029861257086815" nodeInfo="ng">
-        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.analyses.robustness" />
-        <property name="uuid" nameId="kdzh.322010710375892619" value="0ca77142-1eea-4b14-b369-69bdaa1c44fb" />
-        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="40029861257086816" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975410642" resolveInfo="mbeddr.analyses" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="40029861257086817" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="devkits" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="40029861257086818" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.analyses.robustness" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="40029861257088433" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.analyses.robustness.devkit" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="40029861257086820" nodeInfo="ng">
-          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="byw8.8334796989975404260" resolveInfo="com.mbeddr.analyses.base" />
-        </node>
-        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="4912263511297868935" nodeInfo="ng">
-          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="8334796989975410715" resolveInfo="com.mbeddr.analyses.cbmc" />
-        </node>
-        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportSolution" typeId="kdzh.322010710375832954" id="7634203028841243021" nodeInfo="ng">
-          <link role="solution" roleId="kdzh.322010710375832955" targetNodeId="8334796989975410755" resolveInfo="com.mbeddr.analyses.cbmc.pluginSolution" />
-        </node>
-        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportSolution" typeId="kdzh.322010710375832954" id="7634203028841243022" nodeInfo="ng">
-          <link role="solution" roleId="kdzh.322010710375832955" targetNodeId="8334796989975410788" resolveInfo="com.mbeddr.analyses.cbmc.rt" />
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportSolution" typeId="kdzh.322010710375832954" id="9020927825194895681" nodeInfo="ng">
+          <link role="solution" roleId="kdzh.322010710375832955" targetNodeId="7634203028841233107" resolveInfo="com.mbeddr.analyses.cbmc.core.rt" />
         </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_DevKit" typeId="kdzh.322010710375794190" id="40029861257089143" nodeInfo="ng">

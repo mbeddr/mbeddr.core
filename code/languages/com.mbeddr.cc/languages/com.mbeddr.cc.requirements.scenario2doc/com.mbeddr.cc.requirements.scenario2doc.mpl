@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.cc.requirements.scenario2doc" uuid="b9f5080f-7f6a-4d86-b994-77d4c982153a" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.cc.requirements.scenario2doc" uuid="b9f5080f-7f6a-4d86-b994-77d4c982153a">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="scenario2doc" generatorUID="com.mbeddr.cc.requirements.scenario2doc#5785245534401182239" uuid="68b152cd-852d-499c-ae8a-4acde1c7a2d1">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates />
       <dependencies>
@@ -38,8 +42,8 @@
   </usedDevKits>
   <extendedLanguages>
     <extendedLanguage>2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</extendedLanguage>
-    <extendedLanguage>445de13f-b9dd-436f-be62-42c616f697e2(com.mbeddr.doc.c)</extendedLanguage>
     <extendedLanguage>d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)</extendedLanguage>
+    <extendedLanguage>445de13f-b9dd-436f-be62-42c616f697e2(com.mbeddr.doc.code)</extendedLanguage>
   </extendedLanguages>
 </language>
 
