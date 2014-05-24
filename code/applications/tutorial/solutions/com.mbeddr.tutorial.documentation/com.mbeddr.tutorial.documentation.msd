@@ -36,7 +36,6 @@
     <usedLanguage>7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
-    <usedDevKit>f5226c26-1a3d-4ca7-8823-0d9ca197c4ac(com.mbeddr.analyses.componentcontracts)</usedDevKit>
     <usedDevKit>315c0ec2-38ff-4e9c-9d15-fd0848b5f062(com.mbeddr.analyses.components)</usedDevKit>
     <usedDevKit>0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)</usedDevKit>
     <usedDevKit>0d9470ba-d59f-4411-a2ce-12f6b6bdec49(com.mbeddr.analyses.fm)</usedDevKit>
