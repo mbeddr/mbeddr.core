@@ -3116,7 +3116,7 @@
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="865293814733115693" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="query:       " />
+          <property name="text" nameId="tpc2.1073389577007" value="query:     " />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="865293814733115695" nodeInfo="ng">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="vs0r.865293814733115677" />
