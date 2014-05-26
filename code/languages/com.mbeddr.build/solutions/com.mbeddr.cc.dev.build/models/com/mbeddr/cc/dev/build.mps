@@ -1346,11 +1346,6 @@
             <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="fswa.8607331426312061489" resolveInfo="com.mbeddr.doc" />
           </node>
         </node>
-        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="8173591141095071053" nodeInfo="nn">
-          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="8173591141095071054" nodeInfo="ng">
-            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="fswa.8607331426312061497" resolveInfo="com.mbeddr.doc.c" />
-          </node>
-        </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="8173591141095071057" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="8173591141095071058" nodeInfo="ng">
             <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="8830345602921178438" resolveInfo="com.mbeddr.cc.requirements.scenarios" />
@@ -1388,11 +1383,6 @@
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="1021502391328612456" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="1021502391328612457" nodeInfo="ng">
             <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="fswa.8607331426312061489" resolveInfo="com.mbeddr.doc" />
-          </node>
-        </node>
-        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="1021502391328612458" nodeInfo="nn">
-          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="1021502391328612459" nodeInfo="ng">
-            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="fswa.8607331426312061497" resolveInfo="com.mbeddr.doc.c" />
           </node>
         </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="1021502391328612460" nodeInfo="nn">

@@ -4,7 +4,6 @@
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="yes" />
-  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.code.structure)" implicit="yes" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="620304030110860646" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-050-Units" />
@@ -13,432 +12,523 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561785343" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="units" />
       <property name="text" nameId="2c95.3350625596580064225" value="Units" />
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110902309" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110902310" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110902311" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us go back to the definition of " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110909892" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110909897" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110909917" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Trackpoint" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110909946" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and make it more useful. Our application is supposed to work with tracking data (captured from a bike computer or a flight logger). For the examples until now we were not interested in the physical units. " />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5000085652827867735" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5000085652827867736" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5000085652827867737" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The purpose of physical units is to annotate types and variables with additional information -- units -- used to improve type checking. Many embedded systems work with real-world quantities, and many of those have a physical unit associated with them. " />
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110925047" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110925048" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925049" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us now explore how we can work with physical units, adding more semantics to this data structure. We add the " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110925064" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110925065" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925067" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.physicalunits" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5000085652829234023" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="basicPhysicalUnits" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Physical Units Basics" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110902309" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110902310" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110902311" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us go back to the definition of " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110909892" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110909897" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110909917" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Trackpoint" />
+                </node>
               </node>
             </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925068" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to the model properties. Then we can add units to the members. To add a unit, simply press " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110925069" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110925070" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925072" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="/" />
-              </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110909946" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" introduced in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="5000085652829103969" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="2900587364561784776" resolveInfo="functionPointers" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5000085652829103968" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and make it more useful. Our application is supposed to work with tracking data (captured from a bike computer or a flight logger). For the examples until now we were not interested in the physical units. " />
             </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925073" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" at the right side of one of the " />
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5000085652829104178" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Defining and Attaching Units" />
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110925074" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110925075" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925077" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="int8" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110925047" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110925048" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925049" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us now explore how we can work with physical units, adding more semantics to this data structure. We add the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110925064" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110925065" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925067" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.physicalunits" />
+                </node>
               </node>
             </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925068" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to the model properties. Then we can add units to the members. To add a unit, simply press " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="5000085652829103987" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5000085652829103990" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5000085652829103991" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="/" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925073" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" at the right side of one of the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110925074" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110925075" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925077" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="int8" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925078" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" types. This leads to the following code:" />
+            </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110925078" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" types. This leads to the following code:" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="620304030110918908" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958110" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958111" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958112" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110929390" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110929391" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110929392" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931488" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931489" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931491" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="s" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931492" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931493" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931494" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931496" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="m" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931497" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are SI base units, so they are available by default. For the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931498" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931499" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931501" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="speed" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931502" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" member we need to add " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931503" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931504" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931506" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="m/s" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931507" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Since this is not an SI base unit we first have to define it. We creata new implementation module called " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="3626429504011671482" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="3626429504011671483" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="3626429504011671546" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6657613005452170119" resolveInfo="UnitDeclarations" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3626429504011671481" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". In it we  create a " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931528" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931529" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931531" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="derived unit" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931532" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Entering the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931533" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931534" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931536" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="mps" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931537" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931538" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931539" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931541" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="speed" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931542" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is trivial. Entering the meters per second is a bit more work: press " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931543" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931544" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931546" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="m" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931547" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" for the meters, press " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110958525" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110958526" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110958527" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="*" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110958524" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931553" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931554" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931556" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="s" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931557" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" for the seconds and then type " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931558" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931559" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931561" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="-1" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931562" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" directly on the right side of the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931563" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931564" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931566" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="s" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931567" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to enter the exponent:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="620304030110960776" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958123" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958124" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6657613005452170119" resolveInfo="UnitDeclarations" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958125" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6657613005452170120" resolveInfo="mps" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110964989" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110964990" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110964991" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now go back to the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110967140" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110967141" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110967143" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Trackpoint" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110967144" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and make the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110967145" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110967146" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110967148" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="speed" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110967149" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" property use a unit: " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110967150" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110967151" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110967153" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="int8/mps/ speed;" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110967154" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110993497" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110993498" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110993499" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Adding these units may result in errors in the existing code (depending on whether you had added them in previous tutorial steps) because you cannot simply assign a plain number to a variable or member whose type includes a physical unit (" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110995663" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110995664" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110995666" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="int8/m/ length = 3;" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110995667" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is illegal). Instead you have to add units to the literals as well. You can simply type the unit after the literal to get to the following:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="620304030111005927" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958406" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958407" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958408" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958409" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931945927" resolveInfo="i1" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111029810" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111029811" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111029812" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="You also have to add them to the comparison in the assertions as well, for example in this one:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="620304030111030022" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958388" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958389" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958390" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5000085652827368433" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.2723638869559977934" resolveInfo="firstAssertion" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111044308" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111044309" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111044310" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="If you try to rebuild now you will run into build errors: " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="620304030111044609" nodeInfo="ng">
+          <property name="text" nameId="2c95.8730648445434044906" value="no configuration item &quot;physical units&quot; found in this model. Please add a configuration item in your Build Configuration.&#10;" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111051024" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111051025" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111051026" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To fix this we have to go to the build configuration and add the respective configuration item:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="620304030111053321" nodeInfo="ng">
+          <property name="text" nameId="2c95.8730648445434044906" value="Configuration Items &#10;  reporting: printf (add labels false) &#10;  physical units &#10;" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111063127" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111063128" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111063129" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="If we rebuild now, everything should generate normally and we should be able to run the test again. Nothing should have changed so far. However, if we were to write the following code, we would get an error:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="620304030111063333" nodeInfo="ng">
+          <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
+          <property name="text" nameId="2c95.8730648445434044906" value="int8 someInt = i1.x + i1.speed; // error, adding apples and pears&#10;" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111067586" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111067587" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111067588" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The problem with this code is that you cannot add a length (" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030111069779" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111069780" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069782" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="i1.x" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069783" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=") and a speed (" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030111069784" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111069785" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069787" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="i1.speed" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069788" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="). And the result is certainly not a plain " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030111069789" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111069790" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069792" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="int8" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069793" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", so you cannot assign the result to " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030111069794" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111069795" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069797" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="someInt" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069798" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Adding " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030111069799" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111069800" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069802" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="i1.x" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069803" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030111069804" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111069805" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069807" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="i1.y" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069808" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" will work, though. Also, you can calculate with units to write the following code. This gives you an additional level of type safety." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="620304030111073728" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958258" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958259" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958260" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5000085652827398507" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5000085652827384520" resolveInfo="moreTypeSafety" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5000085652830175221" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5000085652830175222" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5000085652830175223" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5000085652830175907" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5000085652830175908" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5000085652830175918" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5000085652830175926" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.2328978735727159228" resolveInfo="calcVerticalSpeed" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5000085652830175909" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" provides a few more examples of working with units in expressions:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="5000085652830186144" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5000085652830186146" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5000085652830186506" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5000085652830186514" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.2328978735727159228" resolveInfo="calcVerticalSpeed" />
+            </node>
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="620304030110918908" nodeInfo="ng">
-        <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-        <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958110" nodeInfo="ng">
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958111" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
-          </node>
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958112" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5000085652829236414" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="GettingRidOfUnits" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Getting Rid of and Adding Units" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5000085652830349029" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5000085652830349030" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5000085652830349031" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us assume we have an existing (legacy or external) function that does not know about physial units. An example is " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5000085652831035405" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5000085652831035406" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5000085652831035416" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5000085652831035424" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5000085652830222076" resolveInfo="anExistingFunction" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5000085652831035407" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=": " />
+            </node>
           </node>
         </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110929390" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110929391" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110929392" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931488" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931489" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931491" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="s" />
-              </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="5000085652831241121" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5000085652831241122" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5000085652831241123" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
             </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931492" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931493" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931494" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931496" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="m" />
-              </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5000085652831241124" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5000085652830222076" resolveInfo="anExistingFunction" />
             </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931497" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are SI base units, so they are available by default.  For the " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931498" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931499" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931501" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="speed" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931502" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" member we need to add " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931503" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931504" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931506" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="m/s" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931507" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Since this is not an SI base unit we first have to define it. We creata new implementation module called " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CodeRefWord" typeId="rh4a.2716892068771066089" id="3626429504011671482" nodeInfo="ng">
-            <node role="codeptr" roleId="rh4a.2716892068771066132" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="3626429504011671483" nodeInfo="ng">
-              <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="3626429504011671546" nodeInfo="ng">
-                <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6657613005452170119" resolveInfo="UnitDeclarations" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3626429504011671481" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". In it we  create a " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931528" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931529" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931531" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="derived unit" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931532" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Entering the " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931533" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931534" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931536" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="mps" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931537" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931538" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931539" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931541" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="speed" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931542" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is trivial. Entering the meters per second is a bit more work: press " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931543" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931544" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931546" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="m" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931547" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" for the meters, press " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110958525" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110958526" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110958527" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="*" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110958524" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=", " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931553" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931554" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931556" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="s" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931557" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" for the seconds and then type " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931558" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931559" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931561" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="-1" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931562" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" directly on the right side of the " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931563" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931564" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931566" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="s" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931567" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to enter the exponent:" />
           </node>
         </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="620304030110960776" nodeInfo="ng">
-        <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-        <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958123" nodeInfo="ng">
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958124" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6657613005452170119" resolveInfo="UnitDeclarations" />
-          </node>
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958125" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6657613005452170120" resolveInfo="mps" />
-          </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5000085652830090912" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110964989" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110964990" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110964991" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now go back to the " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110967140" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110967141" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110967143" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Trackpoint" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110967144" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and make the " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110967145" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110967146" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110967148" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="speed" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110967149" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" property use a unit: " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110967150" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110967151" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110967153" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="int8/mps/ speed;" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110967154" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" " />
-          </node>
-        </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5000085652830089862" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="UnitConversions" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Unit Conversions" />
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110993497" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110993498" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110993499" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Adding these units may result in errors in the existing code (depending on whether you had added them in previous tutorial steps) because you cannot simply assign a plain number to a variable or member whose type includes a physical unit (" />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110995663" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110995664" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110995666" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="int8/m/ length = 3;" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110995667" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is illegal). Instead you have to add units to the literals as well. You can simply type the unit after the literal to get to the following:" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="620304030111005927" nodeInfo="ng">
-        <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-        <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958406" nodeInfo="ng">
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958407" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
-          </node>
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958408" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
-          </node>
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958409" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931945927" resolveInfo="i1" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111029810" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111029811" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111029812" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="You also have to add them to the comparison in the assertions as well, for example in this one:" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="620304030111030022" nodeInfo="ng">
-        <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-        <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958388" nodeInfo="ng">
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958389" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
-          </node>
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958390" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
-          </node>
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958391" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.4208238404721389419" resolveInfo="assert0" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111044308" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111044309" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111044310" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="If you try to rebuild now you will run into build errors: " />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="620304030111044609" nodeInfo="ng">
-        <property name="text" nameId="2c95.8730648445434044906" value="no configuration item &quot;physical units&quot; found in this model. Please add a configuration item in your Build Configuration.&#10;" />
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111051024" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111051025" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111051026" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="To fix this we have to go to the build configuration and add the respective configuration item:" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="620304030111053321" nodeInfo="ng">
-        <property name="text" nameId="2c95.8730648445434044906" value="Configuration Items &#10;  reporting: printf (add labels false) &#10;  physical units (config = Units Declarations (mbeddr.tutorial.main.m1)) &#10;" />
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111063127" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111063128" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111063129" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="If we rebuild now, everything should generate normally and we should be able to run the test again. Nothing should have changed so far. However, if we were to write the following code, we would get an error:" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="620304030111063333" nodeInfo="ng">
-        <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
-        <property name="text" nameId="2c95.8730648445434044906" value="int8 someInt = i1.x + i1.speed; // error, adding apples and pears&#10;" />
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111067586" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111067587" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111067588" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The problem with this code is that you cannot add a length (" />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030111069779" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111069780" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069782" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="i1.x" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069783" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=") and a speed (" />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030111069784" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111069785" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069787" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="i1.speed" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069788" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="). And the result is certainly not a plain " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030111069789" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111069790" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069792" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="int8" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069793" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=", so you cannot assign the result to " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030111069794" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111069795" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069797" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="someInt" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069798" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Adding " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030111069799" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111069800" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069802" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="i1.x" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069803" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030111069804" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111069805" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069807" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="i1.y" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111069808" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" will work, though. Also, you can calculate with units to write the following code. This gives you an additional level of type safety." />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="620304030111073728" nodeInfo="ng">
-        <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-        <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958258" nodeInfo="ng">
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958259" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
-          </node>
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958260" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931945898" resolveInfo="testProcessing" />
-          </node>
-          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958261" nodeInfo="ng">
-            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.4208238404721608711" resolveInfo="structDecl" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="620304030111062770" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1383666780597_21" />
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="620304030111062888" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1383666780743_22" />
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="620304030111063007" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1383666780910_23" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5000085652830090559" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="GenericUnits" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Generic Units" />
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="620304030110860653" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1383658449039_29" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5000085652829103984" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="5110473669961000550" resolveInfo="C-030-FunctionPointers" />
     </node>
   </root>
 </model>

@@ -7,10 +7,9 @@
   <import index="qsic" modelUID="r:eec9fdff-7d49-4d97-a04e-350ceb9ae0b0(com.mbeddr.tutorial.documentation.tutorial)" version="-1" />
   <import index="1yl6" modelUID="r:9bae0493-3d57-4bb7-af86-c94f4734b531(com.mbeddr.tutorial.documentation.analyses_code)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="14" implicit="yes" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="15" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
-  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.code.structure)" version="7" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4574736324932010379" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="A-010-Introduction" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
@@ -840,17 +839,17 @@
           <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="9020927825194723956" nodeInfo="ng" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="9020927825194724187" nodeInfo="ng" />
-        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="4315280228448010745" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="4315280228448010745" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="verification_config_robustness_item_example" />
-          <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4315280228448010747" nodeInfo="ng">
+          <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4315280228448010747" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448010748" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448010749" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="For each configuration item the users can fine-tune which robustness properties will be checked and the entry point in the verification." />
               </node>
             </node>
           </node>
-          <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="4315280228448010751" nodeInfo="ng" />
-          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="4315280228448010753" nodeInfo="ng">
+          <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="4315280228448010751" nodeInfo="ng" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="4315280228448010753" nodeInfo="ng">
             <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="4315280228448010875" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.9020927825194463376" resolveInfo="DemoAnalysesConfigurations" />
             </node>
@@ -905,9 +904,9 @@
               </node>
             </node>
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="4315280228446701758" nodeInfo="ng">
-            <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-            <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="4315280228446701760" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="4315280228446701758" nodeInfo="ng">
+            <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+            <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="4315280228446701760" nodeInfo="ng">
               <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="4315280228446716028" nodeInfo="ng">
                 <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.4006179876939558559" resolveInfo="RobustnessExtensionsExamples" />
               </node>
@@ -977,17 +976,17 @@
             </node>
             <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="4315280228447133130" nodeInfo="ng" />
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="4315280228448010413" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="4315280228448010413" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="verification_dectab_configuration_item" />
-            <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4315280228448010415" nodeInfo="ng">
+            <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4315280228448010415" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448010416" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448010417" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="A configuration item for verifying a decision table." />
                 </node>
               </node>
             </node>
-            <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="4315280228448010419" nodeInfo="ng" />
-            <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="4315280228448010421" nodeInfo="ng">
+            <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="4315280228448010419" nodeInfo="ng" />
+            <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="4315280228448010421" nodeInfo="ng">
               <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="4315280228448010525" nodeInfo="ng">
                 <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.9020927825194463376" resolveInfo="DemoAnalysesConfigurations" />
               </node>
@@ -1044,9 +1043,9 @@
               </node>
             </node>
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="4315280228448025150" nodeInfo="ng">
-            <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-            <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="4315280228448025462" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="4315280228448025150" nodeInfo="ng">
+            <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+            <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="4315280228448025462" nodeInfo="ng">
               <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="4315280228448025468" nodeInfo="ng">
                 <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.4315280228447482213" resolveInfo="RobustnessStatemachinedExamples" />
               </node>
@@ -1065,9 +1064,9 @@
               </node>
             </node>
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="4315280228448026537" nodeInfo="ng">
-            <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-            <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="4315280228448026538" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="4315280228448026537" nodeInfo="ng">
+            <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+            <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="4315280228448026538" nodeInfo="ng">
               <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="4315280228448026539" nodeInfo="ng">
                 <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.4315280228447482213" resolveInfo="RobustnessStatemachinedExamples" />
               </node>
@@ -1093,17 +1092,17 @@
               </node>
             </node>
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="4315280228448025177" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="4315280228448025177" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="verification_statemachine_configuration_item" />
-            <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4315280228448025178" nodeInfo="ng">
+            <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4315280228448025178" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448025179" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448025180" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="A configuration item for verifying the state-machine." />
                 </node>
               </node>
             </node>
-            <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="4315280228448025181" nodeInfo="ng" />
-            <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="4315280228448025182" nodeInfo="ng">
+            <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="4315280228448025181" nodeInfo="ng" />
+            <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="4315280228448025182" nodeInfo="ng">
               <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="4315280228448025183" nodeInfo="ng">
                 <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.9020927825194463376" resolveInfo="DemoAnalysesConfigurations" />
               </node>
@@ -1161,17 +1160,17 @@
               </node>
             </node>
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="7590231220342181849" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="7590231220342181849" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="assertion_example" />
-            <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342181851" nodeInfo="ng">
+            <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342181851" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342181852" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342181853" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="We specify that the time should be positive." />
                 </node>
               </node>
             </node>
-            <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220342181855" nodeInfo="ng" />
-            <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7590231220342181857" nodeInfo="ng">
+            <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220342181855" nodeInfo="ng" />
+            <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7590231220342181857" nodeInfo="ng">
               <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="7590231220342181881" nodeInfo="ng">
                 <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.7590231220342169711" resolveInfo="Assertions" />
               </node>
@@ -1204,17 +1203,17 @@
             </node>
             <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220342211945" nodeInfo="ng" />
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="7590231220342213922" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="7590231220342213922" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="assertions_analysis_config" />
-            <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342213924" nodeInfo="ng">
+            <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342213924" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342213925" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342213926" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="An assertion analysis configuration item allows mbeddr users to fine tune different verification parameters." />
                 </node>
               </node>
             </node>
-            <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220342213928" nodeInfo="ng" />
-            <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7590231220342213930" nodeInfo="ng">
+            <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220342213928" nodeInfo="ng" />
+            <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7590231220342213930" nodeInfo="ng">
               <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="7590231220342213988" nodeInfo="ng">
                 <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.9020927825194463376" resolveInfo="DemoAnalysesConfigurations" />
               </node>
@@ -1247,17 +1246,17 @@
               </node>
             </node>
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="7590231220342733648" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="7590231220342733648" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="speed_computer_interface" />
-            <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342733650" nodeInfo="ng">
+            <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342733650" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342733651" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342733652" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Example of an interface with pre-/postconditions and protocol attached to its functions." />
                 </node>
               </node>
             </node>
-            <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220342733654" nodeInfo="ng" />
-            <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7590231220342733656" nodeInfo="ng">
+            <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220342733654" nodeInfo="ng" />
+            <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7590231220342733656" nodeInfo="ng">
               <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="7590231220342733680" nodeInfo="ng">
                 <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.2161187783549496715" resolveInfo="ComponentsContracts" />
               </node>
@@ -1273,17 +1272,17 @@
               </node>
             </node>
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="7590231220342733813" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="7590231220342733813" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="plauzibilized_speed_computer_component" />
-            <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342733814" nodeInfo="ng">
+            <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342733814" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342733815" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342733816" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="A component implements all methods of the interface. The contracts defined by all interfaces are automatically transfered to the component." />
                 </node>
               </node>
             </node>
-            <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220342733817" nodeInfo="ng" />
-            <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7590231220342733818" nodeInfo="ng">
+            <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220342733817" nodeInfo="ng" />
+            <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7590231220342733818" nodeInfo="ng">
               <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="7590231220342733819" nodeInfo="ng">
                 <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.2161187783549496715" resolveInfo="ComponentsContracts" />
               </node>
@@ -1299,17 +1298,17 @@
               </node>
             </node>
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="7590231220342734490" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="7590231220342734490" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="component_clients" />
-            <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342734492" nodeInfo="ng">
+            <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342734492" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342734493" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342734494" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Example of a client of the component. " />
                 </node>
               </node>
             </node>
-            <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220342734496" nodeInfo="ng" />
-            <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7590231220342734498" nodeInfo="ng">
+            <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220342734496" nodeInfo="ng" />
+            <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7590231220342734498" nodeInfo="ng">
               <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="7590231220342736901" nodeInfo="ng">
                 <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.2161187783549496715" resolveInfo="ComponentsContracts" />
               </node>
@@ -1342,18 +1341,18 @@
             </node>
             <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220342749950" nodeInfo="ng" />
           </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="7590231220344597381" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="7590231220344597381" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="components_configuration_item" />
-            <property name="showCode" nameId="rh4a.2900587364575749384" value="true" />
-            <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220344597383" nodeInfo="ng">
+            <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+            <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220344597383" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220344597384" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220344597385" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Example of a configuration item for components analyses." />
                 </node>
               </node>
             </node>
-            <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220344597387" nodeInfo="ng" />
-            <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7590231220344597389" nodeInfo="ng">
+            <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7590231220344597387" nodeInfo="ng" />
+            <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7590231220344597389" nodeInfo="ng">
               <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="7590231220344597509" nodeInfo="ng">
                 <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.9020927825194463376" resolveInfo="DemoAnalysesConfigurations" />
               </node>
@@ -1402,9 +1401,9 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="2496896684167186858" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="2496896684167186858" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="system_under_verification" />
-          <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2496896684167186860" nodeInfo="ng">
+          <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2496896684167186860" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2496896684167186861" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684167186862" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let's consider for example that our system under verification is a simple function that computes the speed of a car. This function takes two parameters: a distance and a time interval, both of type " />
@@ -1421,8 +1420,8 @@
               </node>
             </node>
           </node>
-          <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="2496896684167186864" nodeInfo="ng" />
-          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2496896684167186866" nodeInfo="ng">
+          <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="2496896684167186864" nodeInfo="ng" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2496896684167186866" nodeInfo="ng">
             <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2496896684167186892" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.2496896684167181425" resolveInfo="VerificationEnvironment" />
             </node>
@@ -1448,10 +1447,10 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="2496896684167199944" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="2496896684167199944" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="environment_definition" />
-          <property name="showCode" nameId="rh4a.2900587364575749384" value="true" />
-          <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2496896684167199946" nodeInfo="ng">
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2496896684167199946" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2496896684167199947" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684167199948" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The function " />
@@ -1478,8 +1477,8 @@
               </node>
             </node>
           </node>
-          <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="2496896684167199950" nodeInfo="ng" />
-          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2496896684167199952" nodeInfo="ng">
+          <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="2496896684167199950" nodeInfo="ng" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2496896684167199952" nodeInfo="ng">
             <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2496896684167200016" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.2496896684167181425" resolveInfo="VerificationEnvironment" />
             </node>
