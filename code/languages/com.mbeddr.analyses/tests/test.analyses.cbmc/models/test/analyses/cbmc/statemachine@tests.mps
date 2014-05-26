@@ -417,7 +417,7 @@
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetSizeOperation" typeId="tp2q.1162935959151" id="955060170563731352" nodeInfo="nn" />
           </node>
           <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="955060170565503352" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580320021" value="16" />
+            <property name="value" nameId="tpee.1068580320021" value="19" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="955060170563731353" nodeInfo="nn" />
@@ -569,6 +569,43 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="699772479378322835" nodeInfo="nn">
+          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="699772479378322836" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="State S5 is reachable" />
+          </node>
+          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.DotExpression" typeId="tpee.1197027756228" id="699772479378322837" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="699772479378322838" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="699772479378322839" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="955060170563731328" resolveInfo="res" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="699772479378322840" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="699772479378330808" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="4" />
+                </node>
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="699772479378322842" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eqhl.4247873267530556854" resolveInfo="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertTrue" typeId="tpe3.1171981022339" id="699772479378322843" nodeInfo="nn">
+          <node role="condition" roleId="tpe3.1171981057159" type="tpee.DotExpression" typeId="tpee.1197027756228" id="699772479378322844" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="699772479378322845" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="699772479378322846" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="955060170563731328" resolveInfo="res" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="699772479378322847" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="699772479378330620" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="4" />
+                </node>
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="699772479378322849" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eqhl.7364716885853664708" resolveInfo="propertyHolds" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="9020927825191631433" nodeInfo="nn">
           <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9020927825191631434" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="State S5A is reachable" />
@@ -579,8 +616,8 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="955060170563731328" resolveInfo="res" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191631438" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191634256" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="4" />
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="699772479378330996" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="5" />
                 </node>
               </node>
             </node>
@@ -596,8 +633,8 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="955060170563731328" resolveInfo="res" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191631445" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191634444" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="4" />
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="699772479378331926" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="5" />
                 </node>
               </node>
             </node>
@@ -616,8 +653,8 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="955060170563731328" resolveInfo="res" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191634857" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191664596" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="5" />
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="699772479378331184" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="6" />
                 </node>
               </node>
             </node>
@@ -633,8 +670,8 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="955060170563731328" resolveInfo="res" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191634864" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191665160" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="5" />
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="699772479378342574" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="6" />
                 </node>
               </node>
             </node>
@@ -653,8 +690,8 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="955060170563731328" resolveInfo="res" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191640863" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191664784" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="6" />
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="699772479378331372" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="7" />
                 </node>
               </node>
             </node>
@@ -670,8 +707,8 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="955060170563731328" resolveInfo="res" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191640870" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191665348" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="6" />
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="699772479378342762" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="7" />
                 </node>
               </node>
             </node>
@@ -690,8 +727,8 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="955060170563731328" resolveInfo="res" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191647597" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191664972" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="7" />
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="699772479378331560" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="8" />
                 </node>
               </node>
             </node>
@@ -707,8 +744,8 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="955060170563731328" resolveInfo="res" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191647604" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191665536" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="7" />
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="699772479378342950" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="8" />
                 </node>
               </node>
             </node>
@@ -717,7 +754,6 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="9020927825191644216" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="9020927825191709812" nodeInfo="nn">
           <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9020927825191709813" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="Transition 0 of state S1 can be fired" />
@@ -728,8 +764,8 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="955060170563731328" resolveInfo="res" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191709817" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191715710" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="8" />
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="699772479378343326" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="9" />
                 </node>
               </node>
             </node>
@@ -745,8 +781,8 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="955060170563731328" resolveInfo="res" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191709824" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191716241" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="8" />
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="699772479378343138" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="9" />
                 </node>
               </node>
             </node>
@@ -767,7 +803,7 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191731918" nodeInfo="nn">
                 <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191731919" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="11" />
+                  <property name="value" nameId="tpee.1068580320021" value="14" />
                 </node>
               </node>
             </node>
@@ -784,7 +820,7 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191731925" nodeInfo="nn">
                 <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191736911" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="11" />
+                  <property name="value" nameId="tpee.1068580320021" value="14" />
                 </node>
               </node>
             </node>
@@ -804,7 +840,7 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191737443" nodeInfo="nn">
                 <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191737444" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="12" />
+                  <property name="value" nameId="tpee.1068580320021" value="15" />
                 </node>
               </node>
             </node>
@@ -821,7 +857,7 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="9020927825191737450" nodeInfo="nn">
                 <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9020927825191737451" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="12" />
+                  <property name="value" nameId="tpee.1068580320021" value="15" />
                 </node>
               </node>
             </node>

@@ -2790,5 +2790,31 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="3253504201087213841" nodeInfo="nn" />
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5753587520027644768" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="model_access" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="hba4.5753587520027641499" resolveInfo="SafeReadAction" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8974276187400348187" nodeInfo="nn">
+      <property name="vertical" nameId="tpc2.1073389446425" value="true" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5753587520027887332" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="safe read action:" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="5753587520028444833" nodeInfo="nn">
+          <property name="style" nameId="tpc2.1186403771423" value="BOLD_ITALIC" />
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="5753587520028522169" nodeInfo="nn">
+          <property name="color" nameId="tpc2.1186403713874" value="DARK_BLUE" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8974276187400348191" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.5753587520027644759" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5753587520029177152" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="end action" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="5753587520029252927" nodeInfo="nn">
+          <property name="color" nameId="tpc2.1186403713874" value="lightGray" />
+        </node>
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8974276187400348196" nodeInfo="nn" />
+    </node>
+  </root>
 </model>
 

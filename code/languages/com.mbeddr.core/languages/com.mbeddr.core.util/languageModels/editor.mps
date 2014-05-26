@@ -1344,25 +1344,6 @@
       </node>
     </node>
   </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8822919774164774734" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="dectab" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.8822919774164774731" resolveInfo="YicesContainer" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8822919774164774743" nodeInfo="nn">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8822919774164774736" nodeInfo="nn">
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8822919774164774739" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="yices container" />
-        </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8822919774164774742" nodeInfo="ng">
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-        </node>
-        <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="8822919774164774738" nodeInfo="nn" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8822919774164831674" nodeInfo="ng">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.8822919774164774733" />
-      </node>
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="8822919774164774744" nodeInfo="nn" />
-    </node>
-  </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6307143892175911069" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="range" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.6307143892175911066" resolveInfo="RangeExpression" />

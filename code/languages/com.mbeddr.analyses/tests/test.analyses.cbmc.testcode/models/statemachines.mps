@@ -631,7 +631,7 @@
     <node role="analyses" roleId="q46j.6472990431939692464" type="lcpc.StatemachineCBMCAnalysis" typeId="lcpc.6085839724192268104" id="473952560455090541" nodeInfo="ng">
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="10" />
       <property name="showUnwindingDepthInfo" nameId="q5q6.1015192564308444976" value="true" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="-1" />
       <property name="hasSpecifiedTimeout" nameId="q5q6.5889520553258812025" value="false" />
