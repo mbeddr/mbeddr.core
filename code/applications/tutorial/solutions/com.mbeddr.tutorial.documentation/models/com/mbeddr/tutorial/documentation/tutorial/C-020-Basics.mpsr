@@ -531,10 +531,10 @@
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
             </node>
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2286331641400589068" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2286331641400589068" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="zxcx.133516147900947425" resolveInfo="main" />
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2286331641400590357" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2286331641400590357" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="zxcx.8265078645304658397" resolveInfo="log" />
           </node>
         </node>
@@ -752,10 +752,10 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="5777244129531527436" nodeInfo="ng">
           <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="5777244129531595882" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="5777244129531595882" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="zxcx.5777244129531528231" resolveInfo="ret" />
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="5777244129531597917" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="5777244129531597917" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="zxcx.5777244129531528031" resolveInfo="report" />
           </node>
           <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641396384764" nodeInfo="ng">
@@ -806,7 +806,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="949722786950980718" nodeInfo="ng">
           <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="5777244129531613251" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="5777244129531613251" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="zxcx.5777244129531528031" resolveInfo="report" />
           </node>
           <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399957928" nodeInfo="ng">
@@ -1133,13 +1133,13 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="5777244129531722762" nodeInfo="ng">
           <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2286331641389376830" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2286331641389376830" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="zxcx.5777244129531800797" resolveInfo="platform" />
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2286331641389376852" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2286331641389376852" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="zxcx.2286331641389332124" resolveInfo="reporting" />
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2286331641389376877" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2286331641389376877" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="zxcx.5777244129531800781" resolveInfo="HelloWorld" />
           </node>
           <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958354" nodeInfo="ng">
@@ -1776,16 +1776,16 @@
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1187244948808232621" resolveInfo="SimpleTestCase" />
             </node>
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190737" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190737" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.1187244948808238502" resolveInfo="testAdding" />
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190738" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190738" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.1187244948808244464" resolveInfo="testDivision" />
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190739" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190739" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.1187244948808241069" resolveInfo="main" />
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190740" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190740" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.2723638869554146355" resolveInfo="testHelperFunction" />
           </node>
         </node>
@@ -1810,10 +1810,10 @@
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1187244948808238502" resolveInfo="testAdding" />
             </node>
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190749" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190749" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.2723638869553119311" resolveInfo="aAssertEquals" />
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190750" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190750" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.2723638869555079988" resolveInfo="funCall" />
           </node>
         </node>
@@ -2023,16 +2023,16 @@
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1187244948808232621" resolveInfo="SimpleTestCase" />
             </node>
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190811" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190811" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.1187244948808237961" resolveInfo="add" />
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190812" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190812" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.1187244948808242016" resolveInfo="divide" />
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190813" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190813" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.1187244948808244464" resolveInfo="testDivision" />
           </node>
-          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.CodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190814" nodeInfo="ng">
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="2723638869555190814" nodeInfo="ng">
             <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.1187244948808241069" resolveInfo="main" />
           </node>
         </node>
