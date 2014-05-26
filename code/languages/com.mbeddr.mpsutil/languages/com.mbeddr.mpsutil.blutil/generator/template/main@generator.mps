@@ -5940,6 +5940,11 @@
                         <property name="propertyName" nameId="tpck.1757699476691236117" value="value" />
                         <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="6692669201411965591" nodeInfo="nn">
                           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6692669201411965592" nodeInfo="sn">
+                            <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6918224746579981327" nodeInfo="nn">
+                              <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6918224746579982447" nodeInfo="nn">
+                                <property name="text" nameId="tpee.6329021646629104958" value="TODO: Disabled as operationcontext is not propertly reduced in the headless generator" />
+                              </node>
+                            </node>
                             <node role="statement" roleId="tpee.1068581517665" type="tpee.CommentedStatementsBlock" typeId="tpee.1177326519037" id="6918224746579948354" nodeInfo="nn">
                               <node role="statement" roleId="tpee.1177326540772" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6692669201413150743" nodeInfo="nn">
                                 <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6692669201413150744" nodeInfo="nr">
@@ -5983,9 +5988,7 @@
                               </node>
                             </node>
                             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6918224746579954507" nodeInfo="nn">
-                              <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6918224746579954506" nodeInfo="nn">
-                                <property name="value" nameId="tpee.1070475926801" value="No URL" />
-                              </node>
+                              <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6918224746579954506" nodeInfo="nn" />
                             </node>
                           </node>
                         </node>
