@@ -9,12 +9,11 @@
   <language namespace="c61970b4-87fb-4429-8a3a-c87719f000a3(com.mbeddr.doc.terms)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="bskg" modelUID="r:be2272c0-bc2d-4ac4-a164-b072c9e60516(exampleCCode)" version="-1" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="14" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="15" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="z5ox" modelUID="r:48b6c04c-173b-45da-963f-54fbbdb59cfc(com.mbeddr.doc.self.structure)" version="-1" implicit="yes" />
-  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.code.structure)" version="7" implicit="yes" />
   <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <import index="8zu2" modelUID="r:04621706-863a-4403-8bd2-5b328fe9405d(com.mbeddr.doc.terms.structure)" version="-1" implicit="yes" />
@@ -852,20 +851,20 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="8730648445433601058" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="8730648445433601058" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="calculator" />
-          <link role="path" roleId="rh4a.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-          <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433601059" nodeInfo="ng">
+          <link role="path" roleId="2c95.6955693250238922828" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+          <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433601059" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601060" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601061" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="An interface with a marker on a precondition, so it can be referenced. " />
               </node>
             </node>
           </node>
-          <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434220510" nodeInfo="ng">
+          <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434220510" nodeInfo="ng">
             <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8730648445434214488" resolveInfo="smallCodeShot" />
           </node>
-          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704529535" nodeInfo="ng">
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704529535" nodeInfo="ng">
             <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704529536" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
             </node>
@@ -975,20 +974,20 @@
             <property name="text" nameId="2c95.5185579450379273119" value="Embed as Image" />
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="8730648445433631460" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="8730648445433631460" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="addOp" />
-          <link role="path" roleId="rh4a.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-          <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433631461" nodeInfo="ng">
+          <link role="path" roleId="2c95.6955693250238922828" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+          <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433631461" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433631462" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433631463" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="An example of how to embed only a part of a module content as an image." />
               </node>
             </node>
           </node>
-          <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434220511" nodeInfo="ng">
+          <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434220511" nodeInfo="ng">
             <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8730648445434214488" resolveInfo="smallCodeShot" />
           </node>
-          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704530132" nodeInfo="ng">
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704530132" nodeInfo="ng">
             <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704530133" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
             </node>
@@ -1040,9 +1039,9 @@
             <property name="text" nameId="2c95.5185579450379273119" value="Embedding as Text" />
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="8730648445433854307" nodeInfo="ng">
-          <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-          <node role="codeptr" roleId="rh4a.2286331641396216122" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704530143" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="8730648445433854307" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704530143" nodeInfo="ng">
             <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704530144" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
             </node>
