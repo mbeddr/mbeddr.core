@@ -185,6 +185,7 @@
 	  <delete dir="${mps.home}/${plugins.folder.name}/mps-tables" verbose="true" />
 	  <delete dir="${mps.home}/${plugins.folder.name}/mps-bool-editor" verbose="true" />
 	  <delete dir="${mps.home}/${plugins.folder.name}/mps-math" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/mps-math-editor" verbose="true" />
 	  
 	  <echo message=""/>
   	  <echo message="DELETING ARTIFACTS"/>
