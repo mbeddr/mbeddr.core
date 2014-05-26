@@ -1473,8 +1473,8 @@
       <node role="contents" roleId="x27k.6512473996287153139" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="1731059994647588216" nodeInfo="ng">
         <property name="exported" nameId="x27k.1317894735999272944" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="TrackpointProcessor" />
-        <link role="ppcErrorMsgTable" roleId="v7ag.2546541902879119266" targetNodeId="1731059994647781355" resolveInfo="ContractMessages" />
         <link role="ppcErrorMsgDef" roleId="v7ag.2546541902879119265" targetNodeId="1731059994647781356" resolveInfo="contractFailed" />
+        <link role="ppcErrorMsgTable" roleId="v7ag.2546541902879119266" targetNodeId="1731059994647781355" resolveInfo="ContractMessages" />
         <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="1731059994647588217" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="process" />
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="1731059994647781326" nodeInfo="ng">

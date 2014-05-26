@@ -942,7 +942,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4220250885135199523" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="name" nameId="tpck.1169194664001" value="ToDoWord" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\ToDo" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\todo" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580108706" resolveInfo="DocumentWord" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4220250885135204208" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
