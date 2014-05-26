@@ -97,9 +97,9 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="3202308034910435196" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dcontains(java%dlang%dCharSequence)%cboolean" resolveInfo="contains" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="3202308034911824092" nodeInfo="nn">
-                  <link role="classifier" roleId="tpee.1144433057691" targetNodeId="irjt.4799680529822716930" resolveInfo="FunctionReturnsLifterStateMachines" />
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="irjt.4799680529822716936" resolveInfo="STATEMACHINE_TRIGGER_MARKER" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="1350215515446642541" nodeInfo="nn">
+                  <link role="classifier" roleId="tpee.1144433057691" targetNodeId="irjt.4799680529822711731" resolveInfo="FunctionCallsLifterStateMachines" />
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="irjt.1350215515446642534" resolveInfo="STATEMACHINE_TRIGGER_MARKER" />
                 </node>
               </node>
             </node>

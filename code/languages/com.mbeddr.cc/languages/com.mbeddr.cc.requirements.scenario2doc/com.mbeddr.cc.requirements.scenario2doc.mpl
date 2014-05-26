@@ -43,7 +43,6 @@
   <extendedLanguages>
     <extendedLanguage>2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</extendedLanguage>
     <extendedLanguage>d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)</extendedLanguage>
-    <extendedLanguage>445de13f-b9dd-436f-be62-42c616f697e2(com.mbeddr.doc.code)</extendedLanguage>
   </extendedLanguages>
 </language>
 
