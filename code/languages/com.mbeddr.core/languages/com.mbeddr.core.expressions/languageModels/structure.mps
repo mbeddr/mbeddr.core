@@ -1407,6 +1407,9 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4620120465980511009" resolveInfo="IGenericDotTarget" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2236575242771906796" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.4474148880361719194" resolveInfo="IWatchablesProviderContext" />
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4620120465980511009" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IGenericDotTarget" />
