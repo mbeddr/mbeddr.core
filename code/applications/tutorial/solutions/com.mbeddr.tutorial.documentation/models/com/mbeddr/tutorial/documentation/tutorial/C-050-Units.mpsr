@@ -553,10 +553,116 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5000085652830089862" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="UnitConversions" />
         <property name="text" nameId="2c95.3350625596580064225" value="Unit Conversions" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6955693250244950047" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250244950048" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250244950049" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="So far, we have used units only for type checking. However, sometimes you have several units for the same physical quantity. For example, speed can be measured in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6955693250244950056" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250244950057" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250244950058" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="meters per second" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250244950059" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6955693250244950070" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250244950071" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250244950072" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="kilometers per hour" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250244950073" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". For this purpose, " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="6955693250244950092" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250244950093" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250244950094" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="convertible units" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250244950096" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" can be defined, together with the necessary conversion rules. Note that these have to be separately for both directions, if required. " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6955693250244985439" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6955693250244985440" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6955693250244985441" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6657613005452170119" resolveInfo="UnitDeclarations" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6955693250244985442" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6955693250244965998" resolveInfo="conversionStuff" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6955693250245156504" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250245156505" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250245156506" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can now invoke this conversion as follows:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6955693250245236301" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6955693250245236302" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6955693250245236303" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6955693250245236304" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6955693250245022629" resolveInfo="somethingWithConversion" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6955693250245236377" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250245236378" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250245236379" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The convert expression does not explicitly refer to any specific conversion rule. Instead, it only specifies the source and target units. The system will find the respective conversions, if one is defined. Note that we have to cast in this case because the conversion results in a " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6955693250245236439" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250245236440" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250245236441" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="float" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250245236442" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", because of the division by " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6955693250245236453" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250245236454" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250245236455" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.6" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250245236456" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5000085652830090559" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="GenericUnits" />
         <property name="text" nameId="2c95.3350625596580064225" value="Generic Units" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6955693250245262733" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250245262734" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250245262745" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="6955693250245262742" nodeInfo="ng">
+              <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250245262743" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250245262744" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Fill in Generic Units" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250245262746" nodeInfo="ng" />
+          </node>
+        </node>
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="620304030110860653" nodeInfo="ng">

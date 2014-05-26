@@ -950,6 +950,9 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="87nw.2557074442922380897" resolveInfo="Text" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6955693250252453272" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6955693250252452797" resolveInfo="IQAReview" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8030928911746210970" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ReviewComment" />
@@ -969,6 +972,9 @@
       <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="8030928911746592073" nodeInfo="ng">
         <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
       </node>
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6955693250252453275" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6955693250252452797" resolveInfo="IQAReview" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4208238404719201400" nodeInfo="ig">
@@ -1153,6 +1159,26 @@
       <property name="role" nameId="tpce.1071599776563" value="removedNode" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6955693250252452797" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IQAReview" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6955693250252453284" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="QAAssessmentQuery" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="QA relevant stuff in documents" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.865293814733115675" resolveInfo="AssessmentQuery" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6955693250252476295" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment" />
+    <property name="name" nameId="tpck.1169194664001" value="QAAssessmentResult" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.865293814733133833" resolveInfo="AssessmentResult" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6955693250252476406" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="node" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6955693250252452797" resolveInfo="IQAReview" />
     </node>
   </root>
 </model>
