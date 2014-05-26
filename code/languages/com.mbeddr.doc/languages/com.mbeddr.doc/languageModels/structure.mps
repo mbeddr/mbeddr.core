@@ -1203,5 +1203,22 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1071489090640" resolveInfo="ConceptDeclaration" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2179458690449473542" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="code" />
+    <property name="name" nameId="tpck.1169194664001" value="CodeEmbeddingPrefix" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2179458690449479999" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="prefix" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2286331641395238583" resolveInfo="CodePointer" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="2179458690449474086" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="codeEmbeddingPrefix" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="2179458690449474089" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="3350625596579911728" resolveInfo="Document" />
+      </node>
+    </node>
+  </root>
 </model>
 
