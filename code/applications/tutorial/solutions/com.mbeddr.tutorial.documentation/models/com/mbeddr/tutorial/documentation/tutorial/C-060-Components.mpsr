@@ -2326,6 +2326,40 @@
             <property name="percentage" nameId="2c95.8624890525767637977" value="70" />
           </node>
         </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="6669194810542205892" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="interfaceTypes" />
+          <property name="text" nameId="2c95.3350625596580064225" value="Interface Types" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6669194810542205972" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6669194810542205973" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810542205981" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="6669194810542205978" nodeInfo="ng">
+                <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="6669194810542205979" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810542205980" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="To be written: Interface Types" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810542205982" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="6669194810542205988" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="compositeComponents" />
+          <property name="text" nameId="2c95.3350625596580064225" value="Composite Components" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6669194810542205989" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6669194810542205990" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810542205991" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="6669194810542205992" nodeInfo="ng">
+                <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="6669194810542205993" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810542205994" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="To be written: Composite Components" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810542205995" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4199862776468633022" nodeInfo="ng">
