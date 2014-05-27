@@ -11,55 +11,48 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <root type="7krq.Review" typeId="7krq.1159656764133526153" id="1159656764134538836" nodeInfo="ng">
     <link role="reviewedRoot" roleId="7krq.5652920968054438484" targetNodeId="1159656764134567329" resolveInfo="ExampleClass" />
-    <node role="notes" roleId="7krq.1159656764133526257" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="1159656764134732997" nodeInfo="ng">
-      <property name="creator" nameId="7krq.5652920968054438487" value="kjhökl" />
-      <property name="created" nameId="7krq.5652920968054438504" value="May 26, 2014 1:20:23 PM" />
-      <property name="attachedCellId" nameId="elym.8039098920897639409" value="BMDNCC_property_name" />
-      <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1159656764134567374" resolveInfo="myFunc" />
-      <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="1159656764134732998" nodeInfo="ng">
-        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1159656764134732999" nodeInfo="ng" />
-      </node>
-    </node>
-    <node role="notes" roleId="7krq.1159656764133526257" type="7krq.ReviewReplyNote" typeId="7krq.1159656764133538905" id="1159656764135675233" nodeInfo="ng">
+    <node role="notes" roleId="7krq.1159656764133526257" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="139842848995978401" nodeInfo="ng">
       <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-      <property name="created" nameId="7krq.5652920968054438504" value="May 26, 2014 1:49:25 PM" />
-      <property name="attachedCellId" nameId="elym.8039098920897639409" value="BMDNCC_property_name" />
-      <link role="repliedNote" roleId="7krq.1159656764133538906" targetNodeId="1159656764134732997" />
-      <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1159656764134567374" resolveInfo="myFunc" />
-      <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="1159656764135675234" nodeInfo="ng">
-        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1159656764135675235" nodeInfo="ng" />
-      </node>
-    </node>
-    <node role="notes" roleId="7krq.1159656764133526257" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="1159656764136330491" nodeInfo="ng">
-      <property name="creator" nameId="7krq.5652920968054438487" value="888" />
-      <property name="created" nameId="7krq.5652920968054438504" value="May 26, 2014 2:36:26 PM" />
+      <property name="created" nameId="7krq.5652920968054438504" value="May 27, 2014 12:58:38 PM" />
       <property name="attachedCellId" nameId="elym.8039098920897639409" value="VDNCC_property_name" />
       <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1159656764134567396" resolveInfo="i" />
-      <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="1159656764136330492" nodeInfo="ng">
-        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1159656764136330493" nodeInfo="ng">
-          <property name="escapedValue" nameId="87nw.2557074442922438158" value="asd\u00F6kl hf\u00F6ao485.yknb y. \u2026\u00E7v w.o8h\u00F6o8v.  \u00F6yo.ciny o.bhy\u00F6.y y.o -ih y- hy- -yvyh -3h -yvh -y9h-yl ny- -yvn y-hyt hbfnxfcn xlo48" />
+      <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="139842848995978402" nodeInfo="ng">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="139842848995978403" nodeInfo="ng">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="sdgsdfgdg" />
         </node>
       </node>
     </node>
-    <node role="notes" roleId="7krq.1159656764133526257" type="7krq.ReviewReplyNote" typeId="7krq.1159656764133538905" id="1159656764144135547" nodeInfo="ng">
-      <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-      <property name="created" nameId="7krq.5652920968054438504" value="May 27, 2014 8:11:44 AM" />
-      <property name="attachedCellId" nameId="elym.8039098920897639409" value="VDNCC_property_name" />
-      <link role="repliedNote" roleId="7krq.1159656764133538906" targetNodeId="1159656764136330491" />
-      <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1159656764134567396" resolveInfo="i" />
-      <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="1159656764144135548" nodeInfo="ng">
-        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1159656764144135549" nodeInfo="ng" />
+    <node role="notes" roleId="7krq.1159656764133526257" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="139842848996298936" nodeInfo="ng">
+      <property name="creator" nameId="7krq.5652920968054438487" value="niko" />
+      <property name="created" nameId="7krq.5652920968054438504" value="May 27, 2014 1:01:35 PM" />
+      <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_value" />
+      <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1159656764134567437" />
+      <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="139842848996298937" nodeInfo="ng">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="139842848996298938" nodeInfo="ng" />
       </node>
     </node>
-    <node role="notes" roleId="7krq.1159656764133526257" type="7krq.ReviewReplyNote" typeId="7krq.1159656764133538905" id="1159656764144135597" nodeInfo="ng">
+    <node role="notes" roleId="7krq.1159656764133526257" type="7krq.ReviewReplyNote" typeId="7krq.1159656764133538905" id="139842848996298945" nodeInfo="ng">
       <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-      <property name="created" nameId="7krq.5652920968054438504" value="May 27, 2014 8:12:07 AM" />
-      <property name="attachedCellId" nameId="elym.8039098920897639409" value="VDNCC_property_name" />
-      <link role="repliedNote" roleId="7krq.1159656764133538906" targetNodeId="1159656764144135547" />
-      <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1159656764134567396" resolveInfo="i" />
-      <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="1159656764144135598" nodeInfo="ng">
-        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1159656764144135599" nodeInfo="ng">
-          <property name="escapedValue" nameId="87nw.2557074442922438158" value="as\u00F6dlfkjas\u00F6dflkjasd\u00F6flkj asd\u00F6lfkja\u00F6e9our yil.v hao\u00F6r y\u00F6vilna 3orh y.kvn y.8 y.dv8h aw3" />
+      <property name="created" nameId="7krq.5652920968054438504" value="May 27, 2014 1:01:41 PM" />
+      <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_value" />
+      <link role="repliedNote" roleId="7krq.1159656764133538906" targetNodeId="139842848996298936" />
+      <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1159656764134567437" />
+      <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="139842848996298946" nodeInfo="ng">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="139842848996298947" nodeInfo="ng">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum feugiat velit pulvinar euismod. Pellentesque vel libero vel neque bibendum consequat. In consequat risus non facilisis aliquam. Duis consequat felis quis est mollis, vel tempus lorem posuere. Aenean ut porta massa, at hendrerit nulla. Aliquam iaculis magna vel scelerisque gravida. Vivamus rutrum varius convallis. Ut gravida elit molestie, aliquet enim sit amet, luctus sem. Praesent vel urna tristique tortor placerat vestibulum. Aliquam a congue nunc, congue varius nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo sit amet nibh accumsan dignissim. Quisque scelerisque eros in turpis lobortis venenatis. Phasellus lacinia arcu in massa porttitor tempor. Aenean interdum quam eget velit euismod pellentesque. Vestibulum pretium at sapien eget pretium. " />
+        </node>
+      </node>
+    </node>
+    <node role="notes" roleId="7krq.1159656764133526257" type="7krq.ReviewReplyNote" typeId="7krq.1159656764133538905" id="139842848996298957" nodeInfo="ng">
+      <property name="creator" nameId="7krq.5652920968054438487" value="stotz" />
+      <property name="created" nameId="7krq.5652920968054438504" value="May 27, 2014 1:01:43 PM" />
+      <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_value" />
+      <property name="collapsed" nameId="7krq.1625232190766291478" value="true" />
+      <link role="repliedNote" roleId="7krq.1159656764133538906" targetNodeId="139842848996298945" />
+      <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1159656764134567437" />
+      <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="139842848996298958" nodeInfo="ng">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="139842848996298959" nodeInfo="ng">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="Maecenas ac volutpat risus, vitae iaculis nisi. Nulla porttitor metus odio, ut suscipit lacus sollicitudin vitae. Pellentesque dictum tortor augue. Suspendisse et tristique dolor, vel commodo turpis. Phasellus eleifend nisl ut turpis eleifend cursus. Nulla cursus sagittis felis, non molestie massa sodales sit amet. Aliquam consectetur est ligula, eget sagittis arcu accumsan pulvinar. Vivamus rutrum, justo eu tempus auctor, urna magna vehicula quam, a aliquam libero orci vel odio. Vivamus eu malesuada erat. Vivamus quis tristique erat, in facilisis nunc. Aenean ut felis commodo, sodales augue eget, eleifend dui. Aenean id luctus leo. Curabitur ultricies augue nec vulputate euismod. " />
         </node>
       </node>
     </node>
