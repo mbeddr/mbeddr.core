@@ -5,6 +5,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
+  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="6403595147461065811" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-010-Introduction" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
@@ -3273,6 +3274,13 @@
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="7959141310100659933" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7959141310100646277" resolveInfo="C-020-Basics" />
+    </node>
+    <node role="comments" roleId="2c95.4710956728216410452" type="2c95.MarginComment" typeId="2c95.4710956728216410713" id="8649545046766047670" nodeInfo="ng">
+      <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word3" />
+      <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="4208238404726550994" />
+      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8649545046766047671" nodeInfo="ng">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8649545046766047672" nodeInfo="ng" />
+      </node>
     </node>
   </root>
 </model>
