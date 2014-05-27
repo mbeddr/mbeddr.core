@@ -477,20 +477,15 @@
                     <node role="rValue" roleId="tpee.1068498886297" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2716892068771184545" nodeInfo="nn">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tbr6.6165313375055666180" resolveInfo="createTextFromSingleString" />
                       <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="tbr6.6165313375055634598" resolveInfo="RichTextUtil" />
-                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2716892068771241825" nodeInfo="nn">
-                        <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2716892068771184546" nodeInfo="nn">
-                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2716892068771184547" nodeInfo="nn">
-                            <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2716892068771184548" nodeInfo="nn" />
-                            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2716892068771188565" nodeInfo="nn">
-                              <link role="link" roleId="tp25.1138056516764" targetNodeId="2c95.6955693250238922839" />
-                            </node>
-                          </node>
-                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="2716892068771232125" nodeInfo="nn">
-                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4gky.2716892068771206277" resolveInfo="targetNode" />
+                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2716892068771184546" nodeInfo="nn">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2716892068771184547" nodeInfo="nn">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2716892068771184548" nodeInfo="nn" />
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2716892068771188565" nodeInfo="nn">
+                            <link role="link" roleId="tp25.1138056516764" targetNodeId="2c95.6955693250238922839" />
                           </node>
                         </node>
-                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2716892068771243300" nodeInfo="nn">
-                          <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6669194810534324531" nodeInfo="nn">
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4gky.6669194810534312357" resolveInfo="targetNodeName" />
                         </node>
                       </node>
                     </node>
@@ -602,8 +597,8 @@
                   <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2588579461812124655" nodeInfo="nn">
                     <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2588579461812124648" resolveInfo="v" />
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2588579461812124656" nodeInfo="nn">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="2c95.2588579461812060095" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6669194810533381391" nodeInfo="nn">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4gky.6669194810533269886" resolveInfo="getVisualizableElement" />
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="2588579461812124657" nodeInfo="nn">
@@ -764,14 +759,15 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="4755612053022495287" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="4755612053022495289" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <link role="config" roleId="2c95.6657644269295214800" targetNodeId="4755612053022494311" resolveInfo="DummyCfg" />
+          <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="0" />
+          <link role="config" roleId="2c95.6657644269295214800" targetNodeId="6955693250239196568" resolveInfo="DummyCfg" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="4755612053022495290" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="img" />
             <property name="border" nameId="2c95.4755612053022517119" value="true" />
             <property name="center" nameId="2c95.8730648445434174368" value="true" />
             <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4755612053022495305" nodeInfo="ng">
               <property name="fileName" nameId="2c95.6386504476136521408" value="var" />
-              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4755612053022494313" resolveInfo="p" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="6955693250239196569" resolveInfo="p" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4755612053022495314" nodeInfo="nn">
                 <property name="linkRole" nameId="tpck.1757699476691236116" value="path" />
                 <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="4755612053022495315" nodeInfo="nn">

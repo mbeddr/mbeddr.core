@@ -1152,7 +1152,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000917966301" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" another one. More specifically it only expresses a requirement towards an interface, " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" another interface, " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4521089000917966311" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000917966312" nodeInfo="ng">
@@ -1162,7 +1162,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000917966310" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in our case. Any component that implements this interface can be used to fulfil this requirement (we'll discuss how below). Second, we use an " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Any component that implements this interface can be used to fulfil this requirement (we'll discuss how, below). Second, we use an " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4521089000917966324" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000917966325" nodeInfo="ng">
@@ -1172,7 +1172,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000917966323" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" field. This is a regular field from the perspective of the component (i.e. it can be accessed from within the implementation), but it is special in that a value for it has to be supplied when the component is instantiated. Third, this example shows how to call operations on required interfaces (" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" field. This is a regular field from the perspective of the component (i.e. it can be accessed from within the implementation), but it is special in that a value for it has to be supplied when the component is instantiated. Third, this example shows how to call operations on required ports (" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4521089000917966341" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000917966342" nodeInfo="ng">
@@ -1182,17 +1182,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000917966340" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=").  The only remaining step before running the test is to define the instances. Here is the code:" />
-            </node>
-          </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.ReviewComment" typeId="2c95.8030928911746210970" id="2179458690455238861" nodeInfo="ng">
-            <property name="reviewer" nameId="2c95.8030928911746244797" value="markusvoelter" />
-            <node role="text" roleId="2c95.8030928911746244802" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2179458690455238862" nodeInfo="ng">
-              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2179458690455238863" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2179458690455238864" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="I am here." />
-                </node>
-              </node>
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="). The only remaining step before running the test is to define the instances. Here is the code:" />
             </node>
           </node>
         </node>
@@ -1330,7 +1320,63 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918019585" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=".  You can run the test case now. On my machine here it works successfully :-) " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". You can run the test case now. On my machine here it works successfully :-) " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6669194810541020679" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6669194810541020680" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810541020681" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To better understand the connections between component instances, a graphical editor will be built in the future. In the meantime you can render a visualization by pressing " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="6669194810541021943" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6669194810541021944" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810541021945" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Ctrl-Shift-V" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810541021946" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or by selecting the respective option from the instance configuration's context menu. The resulting diagram is shown in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="6669194810541021952" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6669194810533217645" resolveInfo="interpInstances" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810541021953" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Visualization" typeId="2c95.2588579461812060090" id="6669194810533217645" nodeInfo="ng">
+          <property name="category" nameId="2c95.2588579461812060097" value="instances" />
+          <property name="name" nameId="tpck.1169194664001" value="interpInstances" />
+          <node role="description" roleId="2c95.2588579461812060099" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6669194810533217647" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6669194810533217648" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810533217649" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Instances and their connections (from " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="6669194810541021962" nodeInfo="ng">
+                <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6669194810541021968" nodeInfo="ng">
+                  <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6669194810541021969" nodeInfo="ng">
+                    <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+                  </node>
+                  <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6669194810541021975" nodeInfo="ng">
+                    <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647878529" resolveInfo="interpolatorInstances" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810541021961" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=") shown via a visualization." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.2588579461812060100" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6669194810533217651" nodeInfo="ng" />
+          <node role="codeptr" roleId="2c95.6669194810533249758" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6669194810541020446" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6669194810541020450" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6669194810541020455" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647878529" resolveInfo="interpolatorInstances" />
             </node>
           </node>
         </node>
