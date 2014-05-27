@@ -2836,6 +2836,9 @@
           <node role="statements" roleId="c4fa.4185783222026475862" type="mxvz.ValidateMock" typeId="mxvz.2151335435833463260" id="5160057464294711544" nodeInfo="ng">
             <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="5160057464294711452" resolveInfo="interpolatorInstancesWithMock" />
             <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="5160057464294711453" resolveInfo="storeMock" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="6669194810550686742" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="aValidateMock" />
+            </node>
           </node>
         </node>
       </node>

@@ -7,6 +7,7 @@
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
+  <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4199862776468632873" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-060-Components" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="6" />
@@ -1421,9 +1422,16 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="4521089000918053413" nodeInfo="ng">
-          <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
-          <property name="text" nameId="2c95.8730648445434044906" value="exported test case testInterpolator { &#10;  initialize interpolatorInstances; &#10;  Trackpoint p1 = {...}; &#10;  Trackpoint p2 = {...}; &#10;  &#10;  ip.process(&amp;p1); &#10;  assert(0) p1.speed == 10 mps; &#10;&#10;  ip.process(&amp;p2); &#10;  assert(1) p2.speed == 15 mps; &#10;}&#10;" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6669194810550473808" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6669194810550473809" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6669194810550473810" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6669194810550473811" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647878542" resolveInfo="testInterpolator" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4521089000918058355" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000918058356" nodeInfo="ng">
@@ -1478,7 +1486,14 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918058438" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to be called first. We can test for this behavior explicitly via a mock. A mock is a component that specifies the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to be called first. " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6669194810550488231" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6669194810550488232" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810550488233" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can test for this behavior explicitly via a mock. A mock is a component that specifies the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="4521089000918058464" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000918058465" nodeInfo="ng">
@@ -1498,7 +1513,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918058492" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" test case.  The crucial point about mocks is that a mock implements each operation " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" test case. The crucial point about mocks is that a mock implements each operation " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="4521089000918058526" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000918058527" nodeInfo="ng">
@@ -1518,7 +1533,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918058562" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="s below), whereas a regular component or even a stub just describe each operation with " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="s below), whereas a regular component or even a stub just describes each operation with " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="4521089000918058604" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000918058605" nodeInfo="ng">
@@ -1528,7 +1543,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918058603" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" implementation. This makes a mock implementation much simpler --- it doesn't have to replicate the algorithmic implementation of the real component. Let us look at the implementation:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" implementation. This makes a mock implementation much simpler -- it doesn't have to replicate the algorithmic implementation of the real component. Let us look at the implementation:" />
             </node>
           </node>
         </node>
@@ -1696,12 +1711,12 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918088148" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=": this violates the postcondition! " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=": this violates the postcondition!" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="4521089000918088214" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000918088215" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918088216" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="CHECK: Return null seems not to be true. What was intended?" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
                 </node>
               </node>
             </node>
@@ -1750,14 +1765,28 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="4521089000918117501" nodeInfo="ng">
-          <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
-          <property name="text" nameId="2c95.8730648445434044906" value="ipMock.process(&amp;p1); &#10;ipMock.process(&amp;p2); &#10;" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6669194810550587338" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6669194810550587339" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6669194810550587340" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6669194810550587341" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464294670930" resolveInfo="testInterpolatorWithMock" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="6669194810550653407" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="mxvz.2151335435833463260" resolveInfo="ValidateMock" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="6669194810550554061" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4521089000918120246" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000918120247" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918120248" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Two more steps are required for this thing to work. The first one is the instances and the wiring. Notice how we now connect the interpolator with the mock:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Two more steps are required for this test to work. The first one is the instances and the wiring. Notice how we now connect the interpolator with the mock:" />
             </node>
           </node>
         </node>
@@ -1785,17 +1814,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918128512" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement in the test. Here is the complete test case (notice the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4521089000918128522" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000918128523" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918128524" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="validate mock" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918128521" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in the last line):" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement in the test:" />
             </node>
           </node>
         </node>
@@ -1808,17 +1827,37 @@
             <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958364" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464294670930" resolveInfo="testInterpolatorWithMock" />
             </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6669194810550724224" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6669194810550686742" resolveInfo="aValidateMock" />
+            </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4521089000918153016" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_1394271672735_22" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6669194810550724455" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6669194810550724456" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810550724457" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Check out the complete " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="6669194810550724820" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6669194810550724827" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6669194810550724828" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6669194810550724834" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647878542" resolveInfo="testInterpolator" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810550724822" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" test case." />
+            </node>
+          </node>
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4098353292122404093" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_1392530971278_9" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4098353292122311090" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="srintf" />
+        <property name="name" nameId="tpck.1169194664001" value="senderReceiver" />
         <property name="text" nameId="2c95.3350625596580064225" value="Sender/Receiver Interfaces" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4521089000918155631" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000918155632" nodeInfo="ng">
@@ -2017,6 +2056,16 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4521089000918219365" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4521089000918219366" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="This part of the tutorial only provided a few examples of Interfaces and Components. For a full discussion of Interfaces and Components see \\fordetails{Interfaces and Components}{\\sect{details_components}}" />
+            </node>
+          </node>
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.ReviewComment" typeId="2c95.8030928911746210970" id="6669194810550745388" nodeInfo="ng">
+          <property name="reviewer" nameId="2c95.8030928911746244797" value="markusvoelter" />
+          <node role="text" roleId="2c95.8030928911746244802" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6669194810550745389" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6669194810550745390" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6669194810550745391" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here" />
+              </node>
             </node>
           </node>
         </node>
