@@ -22,6 +22,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.modules.gen/gen.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.modules/modules.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.modules/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.qa/com.mbeddr.core.qa.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.runconfiguration/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.statements/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.statements/statements.mpl" folder="core" />
