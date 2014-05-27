@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="tzm" modelUID="r:f3cb7ba2-c397-425a-8cd1-9ae05aa1f6ca(com.i2s.common.review.plugin)" version="-1" />
+      <model index="72r5" modelUID="r:88b37120-551f-4055-ab79-3976d34b2ab2(com.i2s.common.review.editor)" version="-1" />
+      <model index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.i2s.common.review.structure)" version="-1" />
+      <model index="u01t" modelUID="r:02034875-87ad-4b47-a381-b8cb34e24d38(com.i2s.common.review.behavior)" version="-1" />
+      <model index="8iqj" modelUID="r:53021994-700d-46f0-ae2e-5f64b2dfefdb(com.i2s.common.review.generator.template.main@generator)" version="-1" />
+      <model index="70fm" modelUID="r:ced11614-a823-409d-8333-494302703538(com.i2s.common.review.constraints)" version="-1" />
+      <model index="wzxj" modelUID="r:0b7e6ef5-201c-4258-821d-589a800f4ed0(com.i2s.common.review.typesystem)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:88b37120-551f-4055-ab79-3976d34b2ab2(com.i2s.common.review.editor)" newModel="r:88b37120-551f-4055-ab79-3976d34b2ab2(com.mbeddr.mpsutil.review.editor)" />
+    <RenameModel oldModel="r:f3cb7ba2-c397-425a-8cd1-9ae05aa1f6ca(com.i2s.common.review.plugin)" newModel="r:f3cb7ba2-c397-425a-8cd1-9ae05aa1f6ca(com.mbeddr.mpsutil.review.plugin)" />
+    <RenameModel oldModel="r:02034875-87ad-4b47-a381-b8cb34e24d38(com.i2s.common.review.behavior)" newModel="r:02034875-87ad-4b47-a381-b8cb34e24d38(com.mbeddr.mpsutil.review.behavior)" />
+    <RenameModel oldModel="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.i2s.common.review.structure)" newModel="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" />
+    <RenameModel oldModel="r:0b7e6ef5-201c-4258-821d-589a800f4ed0(com.i2s.common.review.typesystem)" newModel="r:0b7e6ef5-201c-4258-821d-589a800f4ed0(com.mbeddr.mpsutil.review.typesystem)" />
+    <RenameModel oldModel="r:ced11614-a823-409d-8333-494302703538(com.i2s.common.review.constraints)" newModel="r:ced11614-a823-409d-8333-494302703538(com.mbeddr.mpsutil.review.constraints)" />
+    <RenameModel oldModel="r:53021994-700d-46f0-ae2e-5f64b2dfefdb(com.i2s.common.review.generator.template.main@generator)" newModel="r:53021994-700d-46f0-ae2e-5f64b2dfefdb(com.mbeddr.mpsutil.review.generator.template.main@generator)" />
+  </StructureModification>
+</history>
+
