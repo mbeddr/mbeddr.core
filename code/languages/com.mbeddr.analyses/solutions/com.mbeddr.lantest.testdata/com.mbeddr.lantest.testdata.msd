@@ -11,10 +11,10 @@
     <dependency reexport="false">713f461e-ea20-43f2-8bc5-c76a080ce8ac(com.mbeddr.lantest.results)</dependency>
   </dependencies>
   <usedLanguages>
+    <usedLanguage>0316e52b-aaa9-47f4-9c0b-ca0d60cdc961(com.mbeddr.analyses.lantest)</usedLanguage>
     <usedLanguage>2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</usedLanguage>
     <usedLanguage>783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)</usedLanguage>
     <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
-    <usedLanguage>0316e52b-aaa9-47f4-9c0b-ca0d60cdc961(com.mbeddr.core.lantest)</usedLanguage>
     <usedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</usedLanguage>
     <usedLanguage>3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)</usedLanguage>
     <usedLanguage>a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</usedLanguage>

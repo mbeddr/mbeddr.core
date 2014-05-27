@@ -2,10 +2,8 @@
 <model modelUID="r:4fe232f3-fb6d-4b7b-87f5-edad0c502ca4(com.mbeddr.lantest.testdata.harness)">
   <persistence version="8" />
   <language namespace="5ef691b5-60ce-4ece-a04e-25e642dfa128(com.mbeddr.mpsutil.lantest)" />
-  <language namespace="0316e52b-aaa9-47f4-9c0b-ca0d60cdc961(com.mbeddr.core.lantest)" />
-  <language namespace="0aa7a488-a49e-431e-b271-0de1c2aa708e(com.lmsintl.accent.blocks.base)" />
+  <language namespace="0316e52b-aaa9-47f4-9c0b-ca0d60cdc961(com.mbeddr.analyses.lantest)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <devkit namespace="3ae5f2c6-853c-4009-b232-436187467ab6(com.lmsintl.accent)" />
   <import index="5z2a" modelUID="r:3f7465f3-614b-4941-b3e1-bd22812e1152(com.mbeddr.lantest.results.c_compiler_alignment_bugs)" version="-1" />
   <import index="439q" modelUID="r:e38f3b38-944f-4527-bfa1-5b21e722e4b0(com.mbeddr.lantest.results.generation_failures_bugs)" version="-1" />
   <import index="glmp" modelUID="r:6db31ce2-3d66-43be-aeff-a6d733d7a40a(com.mbeddr.lantest.testdata.temp)" version="-1" />
@@ -18,7 +16,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <import index="gfdq" modelUID="r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest.structure)" version="1" implicit="yes" />
-  <import index="fowb" modelUID="r:bc787de5-8257-43bc-a041-f0a1d7cea433(com.mbeddr.core.lantest.structure)" version="-1" implicit="yes" />
+  <import index="fowb" modelUID="r:bc787de5-8257-43bc-a041-f0a1d7cea433(com.mbeddr.analyses.lantest.structure)" version="0" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2041732772365658163" nodeInfo="ng">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="2041732772365658164" nodeInfo="ng">
       <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
