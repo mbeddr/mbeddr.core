@@ -525,9 +525,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="elym.MarginCell" typeId="elym.3020585710860926251" id="1159656764133747853" nodeInfo="ng">
         <link role="styleClass" roleId="elym.1159656764144608565" targetNodeId="tzm.1159656764144823150" resolveInfo="ReviewMarginCellStyle" />
-        <node role="childCell" roleId="elym.1159656764131929303" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="1159656764133761030" nodeInfo="ng">
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="7krq.1159656764133526257" />
-        </node>
+        <link role="children" roleId="elym.1073390211987" targetNodeId="7krq.1159656764133526257" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="5652920968054853874" nodeInfo="nn" />
     </node>
