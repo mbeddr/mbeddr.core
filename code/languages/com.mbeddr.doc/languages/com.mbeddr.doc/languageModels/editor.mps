@@ -4172,6 +4172,9 @@
           </node>
         </node>
       </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="elym.MarginCell" typeId="elym.3020585710860926251" id="4249802922175340299" nodeInfo="ng">
+        <link role="children" roleId="elym.1073390211987" targetNodeId="2c95.4710956728216410452" />
+      </node>
     </node>
     <node role="contextHints" roleId="tpc2.2597348684684069742" type="tpc2.ConceptEditorHintDeclarationReference" typeId="tpc2.6822301196700715228" id="9175596284079165541" nodeInfo="ig">
       <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="r4b4.8668993231196772281" resolveInfo="presentationMode" />
