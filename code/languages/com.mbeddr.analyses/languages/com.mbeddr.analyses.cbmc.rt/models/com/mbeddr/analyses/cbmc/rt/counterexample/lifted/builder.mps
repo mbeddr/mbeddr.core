@@ -3967,7 +3967,7 @@
                                           <link role="decl" roleId="hba4.7946676408104688923" targetNodeId="224708880705618365" resolveInfo="as" />
                                         </node>
                                         <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="224708880706300564" nodeInfo="nn">
-                                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e22t.4053481679312938303" resolveInfo="getVarName" />
+                                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e22t.8616186505452687241" resolveInfo="getVarName" />
                                         </node>
                                       </node>
                                     </node>
@@ -4084,7 +4084,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="clsType" roleId="hba4.7946676408104638531" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="224708880705618539" nodeInfo="in">
+                    <node role="clsType" roleId="hba4.7946676408104638531" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8616186505453082998" nodeInfo="in">
                       <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e22t.4053481679312938213" resolveInfo="AssignmentState" />
                     </node>
                     <node role="var" roleId="hba4.7946676408104688987" type="hba4.TypeSwitchCaseVariableDeclaration" typeId="hba4.7946676408104688781" id="224708880705618365" nodeInfo="ng">
@@ -4267,7 +4267,7 @@
                     </node>
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8512648932378130257" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Class%dgetCanonicalName()%cjava%dlang%dString" resolveInfo="getCanonicalName" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Class%dgetSimpleName()%cjava%dlang%dString" resolveInfo="getSimpleName" />
                   </node>
                 </node>
               </node>
