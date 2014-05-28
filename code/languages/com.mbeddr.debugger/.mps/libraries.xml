@@ -3,11 +3,19 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="spawner.build">
+        <entry key="mbeddr.core">
           <value>
             <Library>
-              <option name="name" value="spawner.build" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build" />
+              <option name="name" value="mbeddr.core" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mpsutil">
+          <value>
+            <Library>
+              <option name="name" value="mpsutil" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
             </Library>
           </value>
         </entry>
@@ -16,6 +24,14 @@
             <Library>
               <option name="name" value="sl-all" />
               <option name="path" value="${mbeddr.github.core.home}/code/plugins" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="spawner.build">
+          <value>
+            <Library>
+              <option name="name" value="spawner.build" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build" />
             </Library>
           </value>
         </entry>
