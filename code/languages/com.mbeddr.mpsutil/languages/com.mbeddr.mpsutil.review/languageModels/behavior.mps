@@ -11,7 +11,7 @@
   <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" version="0" />
   <import index="srng" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" version="-1" />
   <import index="nu8v" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" version="-1" />
-  <import index="tzm" modelUID="r:f3cb7ba2-c397-425a-8cd1-9ae05aa1f6ca(com.mbeddr.mpsutil.review.plugin)" version="0" />
+  <import index="fmr2" modelUID="r:2b3b5f84-66ef-4014-bab0-8d3017aa7a4e(com.mbeddr.mpsutil.review.runtime)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
@@ -339,8 +339,8 @@
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1159656764145149821" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nu8v.~EditorCell%dputUserObject(java%dlang%dObject,java%dlang%dObject)%cvoid" resolveInfo="putUserObject" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="1159656764145149899" nodeInfo="nn">
-                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="tzm.1159656764144823150" resolveInfo="ReviewMarginCellStyle" />
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="tzm.1159656764145113813" resolveInfo="CREATOR_KEY" />
+                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="fmr2.8455208232410320102" resolveInfo="ReviewMarginCellStyle" />
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="fmr2.8455208232410320103" resolveInfo="CREATOR_KEY" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1159656764145151007" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="1159656764145150662" nodeInfo="nn" />

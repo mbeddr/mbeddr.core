@@ -2,16 +2,18 @@
 <model modelUID="r:433b90b3-577b-4f14-ae08-fd7449eafcf1(com.mbeddr.mpsutil.review.intentions)">
   <persistence version="8" />
   <language namespace="d7a92d38-f7db-40d0-8431-763b0c3c9f20(jetbrains.mps.lang.intentions)" />
+  <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" version="0" />
+  <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" version="-1" />
+  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" version="0" />
+  <import index="srng" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" version="-1" />
+  <import index="nu8v" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp3j" modelUID="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" version="8" implicit="yes" />
   <import index="tpcw" modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" implicit="yes" />
-  <import index="srng" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" version="-1" implicit="yes" />
-  <import index="nu8v" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" version="-1" implicit="yes" />
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="8455208232405775103" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="AddCommentContainerAnnotation" />
     <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
@@ -32,7 +34,7 @@
               <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="8455208232405786451" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="8455208232405786909" nodeInfo="nn">
                 <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="8455208232405787040" nodeInfo="ng">
-                  <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="7krq.8455208232405717087" resolveInfo="CommentAnnotationContainer" />
+                  <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="oqy7.8455208232410333108" resolveInfo="CommentAnnotationContainer" />
                 </node>
               </node>
             </node>
@@ -50,7 +52,7 @@
                 <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="8455208232405915440" nodeInfo="nn" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="8455208232405916479" nodeInfo="nn">
                   <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="8455208232405916957" nodeInfo="ng">
-                    <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="7krq.8455208232405717087" resolveInfo="CommentAnnotationContainer" />
+                    <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="oqy7.8455208232410333108" resolveInfo="CommentAnnotationContainer" />
                   </node>
                 </node>
               </node>
@@ -97,12 +99,12 @@
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="8455208232405823372" nodeInfo="nn">
                     <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="8455208232405823373" nodeInfo="ng">
-                      <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="7krq.8455208232405717087" resolveInfo="CommentAnnotationContainer" />
+                      <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="oqy7.8455208232410333108" resolveInfo="CommentAnnotationContainer" />
                     </node>
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="8455208232405823374" nodeInfo="nn">
-                  <link role="link" roleId="tp25.1138056546658" targetNodeId="7krq.8455208232405734524" />
+                  <link role="link" roleId="tp25.1138056546658" targetNodeId="oqy7.8455208232410333109" />
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.LinkList_AddNewChildOperation" typeId="tp25.1139184414036" id="8455208232405823375" nodeInfo="nn" />
@@ -159,7 +161,7 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="8455208232405805527" nodeInfo="nn">
                 <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="8455208232405806347" nodeInfo="ng">
-                  <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="7krq.8455208232405717087" resolveInfo="CommentAnnotationContainer" />
+                  <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="oqy7.8455208232410333108" resolveInfo="CommentAnnotationContainer" />
                 </node>
               </node>
             </node>
