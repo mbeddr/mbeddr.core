@@ -398,9 +398,12 @@
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5018201659090371521" nodeInfo="nn">
               <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="5018201659090371522" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cxoc.~LanguageErrorsComponent%d&lt;init&gt;(org%djetbrains%dmps%dopenapi%dmodel%dSNode)" resolveInfo="LanguageErrorsComponent" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5018201659090371523" nodeInfo="nn">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5018201659090221485" resolveInfo="aNode" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cxoc.~LanguageErrorsComponent%d&lt;init&gt;(org%djetbrains%dmps%dopenapi%dmodel%dSModel)" resolveInfo="LanguageErrorsComponent" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2735105012907010208" nodeInfo="nn">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5018201659090371523" nodeInfo="nn">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5018201659090221485" resolveInfo="aNode" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetModelOperation" typeId="tp25.1143234257716" id="2735105012907053231" nodeInfo="nn" />
                 </node>
               </node>
             </node>
@@ -412,15 +415,16 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5018201659090371514" resolveInfo="cc" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5018201659090371527" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cxoc.~ConstraintsChecker%dcheckNode(org%djetbrains%dmps%dopenapi%dmodel%dSNode,jetbrains%dmps%dcheckers%dLanguageErrorsComponent,jetbrains%dmps%dsmodel%dIOperationContext)%cvoid" resolveInfo="checkNode" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cxoc.~ConstraintsChecker%dcheckNode(org%djetbrains%dmps%dopenapi%dmodel%dSNode,jetbrains%dmps%dcheckers%dLanguageErrorsComponent,org%djetbrains%dmps%dopenapi%dmodule%dSRepository)%cvoid" resolveInfo="checkNode" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5018201659090407566" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5018201659090221485" resolveInfo="aNode" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5018201659090371529" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5018201659090371519" resolveInfo="lec" />
               </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3814371183048931972" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3814371183048919471" resolveInfo="moc" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2735105012907221261" nodeInfo="nn">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~MPSModuleRepository%dgetInstance()%cjetbrains%dmps%dsmodel%dMPSModuleRepository" resolveInfo="getInstance" />
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="cu2c.~MPSModuleRepository" resolveInfo="MPSModuleRepository" />
               </node>
             </node>
           </node>
