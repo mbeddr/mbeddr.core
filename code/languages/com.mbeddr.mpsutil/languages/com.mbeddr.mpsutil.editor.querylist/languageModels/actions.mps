@@ -72,13 +72,37 @@
                   <link role="link" roleId="tp25.1138056516764" targetNodeId="bbp5.6202678563380433923" />
                 </node>
               </node>
-              <node role="rValue" roleId="tpee.1068498886297" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="3813940761427500451" nodeInfo="nn">
-                <node role="quotedNode" roleId="tp3r.1196350785114" type="bbp5.Function_GetElements" typeId="bbp5.6202678563380238499" id="3813940761427437613" nodeInfo="ng">
-                  <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3813940761427437618" nodeInfo="sn">
-                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3813940761427445170" nodeInfo="nn">
-                      <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3813940761427445168" nodeInfo="nn">
-                        <node role="creator" roleId="tpee.1145553007750" type="tp2q.SequenceCreator" typeId="tp2q.1224414427926" id="3813940761427458307" nodeInfo="nn">
-                          <node role="elementType" roleId="tp2q.1224414456414" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3813940761427459214" nodeInfo="in" />
+              <node role="rValue" roleId="tpee.1068498886297" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="8155560600366480631" nodeInfo="nn">
+                <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="8155560600366480619" nodeInfo="nn">
+                  <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="bbp5.6202678563380238499" resolveInfo="Function_GetElements" />
+                  <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitLink" typeId="tp3r.5455284157994012186" id="8155560600366480630" nodeInfo="ng">
+                    <link role="link" roleId="tp3r.5455284157994012188" targetNodeId="tpee.1137022507850" />
+                    <node role="expression" roleId="tp3r.5455284157993911094" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="8155560600366480620" nodeInfo="nn">
+                      <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="tpee.1068580123136" resolveInfo="StatementList" />
+                      <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitLink" typeId="tp3r.5455284157994012186" id="8155560600366480628" nodeInfo="ng">
+                        <link role="link" roleId="tp3r.5455284157994012188" targetNodeId="tpee.1068581517665" />
+                        <node role="expression" roleId="tp3r.5455284157993911094" type="tp3r.NodeBuilderList" typeId="tp3r.8182547171709738802" id="8155560600366480629" nodeInfo="nn">
+                          <node role="nodes" roleId="tp3r.8182547171709738803" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="8155560600366480621" nodeInfo="nn">
+                            <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="tpee.1068580123155" resolveInfo="ExpressionStatement" />
+                            <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitLink" typeId="tp3r.5455284157994012186" id="8155560600366480627" nodeInfo="ng">
+                              <link role="link" roleId="tp3r.5455284157994012188" targetNodeId="tpee.1068580123156" />
+                              <node role="expression" roleId="tp3r.5455284157993911094" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="8155560600366480622" nodeInfo="nn">
+                                <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="tpee.1145552977093" resolveInfo="GenericNewExpression" />
+                                <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitLink" typeId="tp3r.5455284157994012186" id="8155560600366480626" nodeInfo="ng">
+                                  <link role="link" roleId="tp3r.5455284157994012188" targetNodeId="tpee.1145553007750" />
+                                  <node role="expression" roleId="tp3r.5455284157993911094" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="8155560600366480623" nodeInfo="nn">
+                                    <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="tp2q.1224414427926" resolveInfo="SequenceCreator" />
+                                    <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitLink" typeId="tp3r.5455284157994012186" id="8155560600366480625" nodeInfo="ng">
+                                      <link role="link" roleId="tp3r.5455284157994012188" targetNodeId="tp2q.1224414456414" />
+                                      <node role="expression" roleId="tp3r.5455284157993911094" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="8155560600366480624" nodeInfo="nn">
+                                        <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="tp25.1138055754698" resolveInfo="SNodeType" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
