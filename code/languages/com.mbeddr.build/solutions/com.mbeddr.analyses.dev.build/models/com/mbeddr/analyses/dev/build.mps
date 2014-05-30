@@ -595,6 +595,9 @@
           </node>
         </node>
       </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="1473973664047316573" nodeInfo="ng">
+        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="1473973664046893016" resolveInfo="test.analyses.base" />
+      </node>
       <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="1276008224353464876" nodeInfo="ng">
         <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="4181193460689023069" resolveInfo="test.analyses.cbmc" />
       </node>
