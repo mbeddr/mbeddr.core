@@ -688,7 +688,13 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="1137664353847103226" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="Statemachine" />
-            <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="1137664353847119623" resolveInfo="Composite" />
+            <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="1437179237659235202" resolveInfo="Init" />
+            <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="1437179237659211670" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="event" />
+            </node>
+            <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="1437179237659235202" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="Init" />
+            </node>
             <node role="contents" roleId="clqz.7835233251114737454" type="clqz.CompositeState" typeId="clqz.4249345261280336724" id="1137664353847119623" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="Composite" />
               <link role="initial" roleId="clqz.4249345261280591928" targetNodeId="1137664353847126857" resolveInfo="A" />
