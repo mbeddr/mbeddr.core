@@ -947,7 +947,7 @@
                 <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3543818856008845655" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="CompositeStates" />
+                <property name="value" nameId="tpee.1070475926801" value="TestCompositeStates" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3543818856008845656" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="CompositeStatesSM" />
