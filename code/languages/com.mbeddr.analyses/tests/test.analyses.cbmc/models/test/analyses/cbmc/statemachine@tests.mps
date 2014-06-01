@@ -1003,8 +1003,8 @@
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetSizeOperation" typeId="tp2q.1162935959151" id="1473973664048831037" nodeInfo="nn" />
           </node>
-          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1473973664048831038" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580320021" value="19" />
+          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5907680836689000818" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580320021" value="8" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1473973664048831039" nodeInfo="nn" />
