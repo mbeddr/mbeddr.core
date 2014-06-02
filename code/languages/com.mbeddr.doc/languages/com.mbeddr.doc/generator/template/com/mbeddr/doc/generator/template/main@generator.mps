@@ -927,8 +927,8 @@
                   <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="1777614315919789874" nodeInfo="nn">
                     <link role="variable" roleId="tp2q.1153944258490" targetNodeId="6416473402306272613" resolveInfo="cc" />
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1777614315919808936" nodeInfo="nn">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="2c95.6955693250238922828" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="2204660597127998342" nodeInfo="nn">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4gky.4509696981881823276" resolveInfo="getPath" />
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1777614315919835932" nodeInfo="nn">
@@ -945,8 +945,8 @@
                     <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="1777614315919900822" nodeInfo="nn">
                       <link role="variable" roleId="tp2q.1153944258490" targetNodeId="6416473402306272613" resolveInfo="cc" />
                     </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1777614315919900823" nodeInfo="nn">
-                      <link role="link" roleId="tp25.1138056516764" targetNodeId="2c95.6955693250238922828" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="2204660597127994255" nodeInfo="nn">
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4gky.4509696981881823276" resolveInfo="getPath" />
                     </node>
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1777614315919900824" nodeInfo="nn">
