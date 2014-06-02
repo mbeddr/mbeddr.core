@@ -306,7 +306,7 @@
             <property name="exported" nameId="x27k.1317894735999272944" value="false" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3209727427932255160" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3209727427932325926" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="__failures" />
+                <property name="name" nameId="tpck.1169194664001" value="___failures" />
                 <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="3209727427932412020" nodeInfo="ng">
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -344,13 +344,13 @@
                     </node>
                     <node role="left" roleId="mj1l.8860443239512128064" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="3209727427932412025" nodeInfo="ng">
                       <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3209727427932325938" nodeInfo="ng">
-                        <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3209727427932325926" resolveInfo="__failures" />
+                        <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3209727427932325926" resolveInfo="___failures" />
                       </node>
                     </node>
                   </node>
                   <node role="left" roleId="mj1l.8860443239512128064" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="3209727427932412022" nodeInfo="ng">
                     <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3209727427932325932" nodeInfo="ng">
-                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3209727427932325926" resolveInfo="__failures" />
+                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3209727427932325926" resolveInfo="___failures" />
                     </node>
                   </node>
                 </node>
@@ -377,7 +377,7 @@
                 <node role="expression" roleId="x27k.8967919205527146150" type="k146.BlockExpression" typeId="k146.5686538669182273028" id="5686538669182343454" nodeInfo="ng">
                   <node role="body" roleId="k146.5686538669182273029" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5686538669182343455" nodeInfo="ng">
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3209727427932412007" nodeInfo="ng">
-                      <property name="name" nameId="tpck.1169194664001" value="failures" />
+                      <property name="name" nameId="tpck.1169194664001" value="___failuresVal" />
                       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="3209727427932412008" nodeInfo="ng">
                         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -388,10 +388,10 @@
                       </node>
                     </node>
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5686538669182343456" nodeInfo="ng">
-                      <property name="name" nameId="tpck.1169194664001" value="__failures" />
+                      <property name="name" nameId="tpck.1169194664001" value="___failures" />
                       <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="3209727427932412012" nodeInfo="ng">
                         <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3209727427932412014" nodeInfo="ng">
-                          <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3209727427932412007" resolveInfo="failures" />
+                          <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3209727427932412007" resolveInfo="___failuresVal" />
                         </node>
                       </node>
                       <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="3209727427932412011" nodeInfo="ng">
@@ -403,11 +403,11 @@
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643576" nodeInfo="ng">
                       <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643577" nodeInfo="ng">
                         <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5686538669182343880" nodeInfo="ng">
-                          <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5686538669182343456" resolveInfo="__failures" />
+                          <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5686538669182343456" resolveInfo="___failures" />
                         </node>
                         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5686538669182343885" nodeInfo="ng">
                           <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5686538669182343884" nodeInfo="ng">
-                            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5686538669182343456" resolveInfo="__failures" />
+                            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5686538669182343456" resolveInfo="___failures" />
                           </node>
                           <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3209727427932325967" nodeInfo="ng">
                             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -432,7 +432,7 @@
                     </node>
                     <node role="statements" roleId="c4fa.4185783222026475862" type="k146.YieldStatement" typeId="k146.5686538669182296661" id="5686538669182343464" nodeInfo="ng">
                       <node role="expr" roleId="k146.5686538669182296662" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3209727427932412016" nodeInfo="ng">
-                        <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3209727427932412007" resolveInfo="failures" />
+                        <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3209727427932412007" resolveInfo="___failuresVal" />
                       </node>
                     </node>
                   </node>
@@ -470,7 +470,7 @@
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348344" nodeInfo="ng">
                     <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="5232867887045275790" nodeInfo="ng">
                       <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="5232867887045275791" nodeInfo="ng">
-                        <property name="text" nameId="c4fa.3830958861296879114" value="(*__failures)++;" />
+                        <property name="text" nameId="c4fa.3830958861296879114" value="(*___failures)++;" />
                       </node>
                     </node>
                   </node>
@@ -586,7 +586,7 @@
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7755897872837168085" nodeInfo="ng">
                     <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7755897872837168086" nodeInfo="ng">
                       <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="7755897872837168087" nodeInfo="ng">
-                        <property name="text" nameId="c4fa.3830958861296879114" value="(*__failures)++;" />
+                        <property name="text" nameId="c4fa.3830958861296879114" value="(*___failures)++;" />
                       </node>
                     </node>
                   </node>
@@ -979,7 +979,7 @@
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348345" nodeInfo="ng">
                     <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="1937609356306125856" nodeInfo="ng">
                       <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="1937609356306125857" nodeInfo="ng">
-                        <property name="text" nameId="c4fa.3830958861296879114" value="(*__failures)++;" />
+                        <property name="text" nameId="c4fa.3830958861296879114" value="(*___failures)++;" />
                       </node>
                     </node>
                   </node>
@@ -1067,7 +1067,7 @@
               </node>
             </node>
             <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="9125142491355336651" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="__failures" />
+              <property name="name" nameId="tpck.1169194664001" value="___failures" />
               <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="9125142491355336656" nodeInfo="ng">
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1185,7 +1185,7 @@
             <property name="name" nameId="tpck.1169194664001" value="f" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9125142491355336469" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="9125142491355336817" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="__failures" />
+                <property name="name" nameId="tpck.1169194664001" value="___failures" />
                 <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="9125142491355884906" nodeInfo="ng">
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1242,7 +1242,7 @@
                     </node>
                   </node>
                   <node role="actuals" roleId="x27k.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="9125142491355336823" nodeInfo="ng">
-                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="9125142491355336817" resolveInfo="__failures" />
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="9125142491355336817" resolveInfo="___failures" />
                   </node>
                 </node>
               </node>
@@ -1409,7 +1409,7 @@
         <property name="exported" nameId="x27k.1317894735999272944" value="true" />
         <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6275792049641599036" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5232867887045275779" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="__failuresVal" />
+            <property name="name" nameId="tpck.1169194664001" value="___failuresVal" />
             <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5232867887045275782" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="0" />
             </node>
@@ -1419,7 +1419,7 @@
             </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="9125142491355884879" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="__failures" />
+            <property name="name" nameId="tpck.1169194664001" value="___failures" />
             <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="9125142491355884881" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1430,7 +1430,7 @@
             </node>
             <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="9125142491355884901" nodeInfo="ng">
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="9125142491355884903" nodeInfo="ng">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5232867887045275779" resolveInfo="__failuresVal" />
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5232867887045275779" resolveInfo="___failuresVal" />
               </node>
             </node>
           </node>
@@ -1481,7 +1481,7 @@
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="5232867887045275784" nodeInfo="ng">
             <node role="expression" roleId="x27k.8967919205527146150" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5232867887045275786" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5232867887045275779" resolveInfo="__failuresVal" />
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5232867887045275779" resolveInfo="___failuresVal" />
             </node>
           </node>
         </node>
