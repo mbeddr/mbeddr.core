@@ -135,6 +135,10 @@ build/**/*.xml
 build/*/*.xml
 build/com.mbeddr.allScripts/build.xml
 
+# -----------------------------------------------------------
+# tutorial build
+
+build/com.mbeddr.tutorial/null/*.puml
 
 #This is restored with 'git submodule update --init --recursive'
 code/plugins/sl-all
