@@ -249,7 +249,7 @@
               <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="4492014791447832662" nodeInfo="ng">
                 <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="3698968274975561199" nodeInfo="ng">
                   <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="4492014791447832663" nodeInfo="ng">
-                    <link role="target" roleId="3ior.5610619299013057365" targetNodeId="90a9.3410197114991840790" resolveInfo="mps-sl-all.zip" />
+                    <link role="target" roleId="3ior.5610619299013057365" targetNodeId="90a9.3410197114990977228" />
                     <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="4492014791447832664" nodeInfo="ng">
                       <property name="pattern" nameId="3ior.5248329904288051101" value="*.zip" />
                     </node>
