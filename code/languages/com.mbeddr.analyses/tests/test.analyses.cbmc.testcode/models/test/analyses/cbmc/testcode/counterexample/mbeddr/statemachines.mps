@@ -297,6 +297,7 @@
           </node>
         </node>
       </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3543818856011149487" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4985219442642863647" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1368056552050_1" />
@@ -1268,6 +1269,17 @@
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="1437179237661125670" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="e" />
       </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="5907680836686613567" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="lv" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5907680836686613637" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5907680836686613683" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+        </node>
+      </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="1437179237661125671" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Init" />
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="1437179237661125675" nodeInfo="ng">
@@ -1281,9 +1293,27 @@
         <property name="name" nameId="tpck.1169194664001" value="S1" />
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EpsilonTransition" typeId="clqz.1270667558201034251" id="1437179237661126817" nodeInfo="ng">
           <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="1437179237661126397" resolveInfo="S2" />
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5907680836686614007" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5907680836686614324" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5907680836686613995" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5907680836686613567" resolveInfo="lv" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EpsilonTransition" typeId="clqz.1270667558201034251" id="1437179237661126825" nodeInfo="ng">
           <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="1437179237661126501" resolveInfo="S3" />
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="5907680836686615042" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5907680836686615773" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5907680836686615030" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5907680836686613567" resolveInfo="lv" />
+            </node>
+          </node>
         </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="1437179237661126397" nodeInfo="ng">
