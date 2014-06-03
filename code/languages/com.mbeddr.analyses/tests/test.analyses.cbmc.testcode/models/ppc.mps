@@ -178,6 +178,7 @@
               </node>
             </node>
           </node>
+          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="4116609257239437808" nodeInfo="ng" />
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517985724" nodeInfo="ng">
           <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517985709" resolveInfo="compWithNoPpc" />
