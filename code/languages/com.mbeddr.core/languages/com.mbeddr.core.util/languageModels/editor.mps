@@ -3,6 +3,7 @@
   <persistence version="8" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <language namespace="7e450f4e-1ac3-41ef-a851-4598161bdb94(de.slisson.mps.tables)" />
+  <language namespace="f89904fb-9486-43a1-865e-5ad0375a8a88(de.itemis.mps.editor.bool)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" />
   <import index="1t7x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" version="-1" />
@@ -21,6 +22,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="16" implicit="yes" />
+  <import index="wfif" modelUID="r:ff3199af-19b4-4b1a-8045-000a02c06e38(de.itemis.mps.editor.bool.structure)" version="-1" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5686538669182273030" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="blockexpr" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.5686538669182273028" resolveInfo="BlockExpression" />
@@ -2623,34 +2625,57 @@
           <node role="columnHeaders" roleId="bnk3.1397920687864864726" type="bnk3.StaticHeader" typeId="bnk3.1397920687864864270" id="4944376863001028671" nodeInfo="ng">
             <property name="text" nameId="bnk3.1397920687864864274" value="item" />
             <node role="style" roleId="bnk3.5662204344887343006" type="bnk3.TableStyle" typeId="bnk3.5662204344885763446" id="4944376863002614995" nodeInfo="ng">
-              <node role="items" roleId="bnk3.3785936898437886280" type="bnk3.RowShadeColor" typeId="bnk3.1925286362805506099" id="4944376863002614997" nodeInfo="ng">
+              <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.RowShadeColor" typeId="bnk3.1925286362805506099" id="4944376863002614997" nodeInfo="ng">
                 <property name="color" nameId="bnk3.1186403713874" value="lightGray" />
               </node>
-              <node role="items" roleId="bnk3.3785936898437886280" type="bnk3.RowBorderBottomWidthStyleItem" typeId="bnk3.1925286362805485372" id="4944376863002615002" nodeInfo="ng">
+              <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.RowBorderBottomWidthStyleItem" typeId="bnk3.1925286362805485372" id="4944376863002615002" nodeInfo="ng">
                 <property name="value" nameId="bnk3.3785936898437424562" value="2" />
               </node>
-              <node role="items" roleId="bnk3.3785936898437886280" type="bnk3.RowBorderBottomColorItem" typeId="bnk3.1925286362805485371" id="4944376863002615010" nodeInfo="ng">
+              <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.RowBorderBottomColorItem" typeId="bnk3.1925286362805485371" id="4944376863002615010" nodeInfo="ng">
                 <property name="color" nameId="bnk3.1186403713874" value="darkGray" />
               </node>
-              <node role="items" roleId="bnk3.3785936898437886280" type="bnk3.RowBorderTopColorItem" typeId="bnk3.1925286362805485377" id="2054775350261421678" nodeInfo="ng">
+              <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.RowBorderTopColorItem" typeId="bnk3.1925286362805485377" id="2054775350261421678" nodeInfo="ng">
                 <property name="color" nameId="bnk3.1186403713874" value="darkGray" />
               </node>
-              <node role="items" roleId="bnk3.3785936898437886280" type="bnk3.RowBorderTopWidthStyleItem" typeId="bnk3.1925286362805485378" id="2054775350261421690" nodeInfo="ng">
+              <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.RowBorderTopWidthStyleItem" typeId="bnk3.1925286362805485378" id="2054775350261421690" nodeInfo="ng">
                 <property name="value" nameId="bnk3.3785936898437424562" value="2" />
+              </node>
+              <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.HorizontalAlignmentStyleItem" typeId="bnk3.4384308856523593884" id="1795495746005102170" nodeInfo="ng">
+                <property name="alignment" nameId="bnk3.4384308856523593885" value="CENTER" />
               </node>
             </node>
           </node>
           <node role="columnHeaders" roleId="bnk3.1397920687864864726" type="bnk3.StaticHeader" typeId="bnk3.1397920687864864270" id="4944376863001028676" nodeInfo="ng">
             <property name="text" nameId="bnk3.1397920687864864274" value="type" />
+            <node role="style" roleId="bnk3.5662204344887343006" type="bnk3.TableStyle" typeId="bnk3.5662204344885763446" id="1795495746005102191" nodeInfo="ng">
+              <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.HorizontalAlignmentStyleItem" typeId="bnk3.4384308856523593884" id="1795495746005102198" nodeInfo="ng">
+                <property name="alignment" nameId="bnk3.4384308856523593885" value="CENTER" />
+              </node>
+            </node>
           </node>
           <node role="columnHeaders" roleId="bnk3.1397920687864864726" type="bnk3.StaticHeader" typeId="bnk3.1397920687864864270" id="4944376863001028684" nodeInfo="ng">
             <property name="text" nameId="bnk3.1397920687864864274" value="size" />
+            <node role="style" roleId="bnk3.5662204344887343006" type="bnk3.TableStyle" typeId="bnk3.5662204344885763446" id="1795495746005102202" nodeInfo="ng">
+              <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.HorizontalAlignmentStyleItem" typeId="bnk3.4384308856523593884" id="1795495746005102210" nodeInfo="ng">
+                <property name="alignment" nameId="bnk3.4384308856523593885" value="CENTER" />
+              </node>
+            </node>
           </node>
           <node role="columnHeaders" roleId="bnk3.1397920687864864726" type="bnk3.StaticHeader" typeId="bnk3.1397920687864864270" id="3267857377793658617" nodeInfo="ng">
             <property name="text" nameId="bnk3.1397920687864864274" value="init" />
+            <node role="style" roleId="bnk3.5662204344887343006" type="bnk3.TableStyle" typeId="bnk3.5662204344885763446" id="1795495746005102214" nodeInfo="ng">
+              <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.HorizontalAlignmentStyleItem" typeId="bnk3.4384308856523593884" id="1795495746005102221" nodeInfo="ng">
+                <property name="alignment" nameId="bnk3.4384308856523593885" value="CENTER" />
+              </node>
+            </node>
           </node>
           <node role="columnHeaders" roleId="bnk3.1397920687864864726" type="bnk3.StaticHeader" typeId="bnk3.1397920687864864270" id="2054775350250926653" nodeInfo="ng">
             <property name="text" nameId="bnk3.1397920687864864274" value="active?" />
+            <node role="style" roleId="bnk3.5662204344887343006" type="bnk3.TableStyle" typeId="bnk3.5662204344885763446" id="1795495746005102225" nodeInfo="ng">
+              <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.HorizontalAlignmentStyleItem" typeId="bnk3.4384308856523593884" id="1795495746005102232" nodeInfo="ng">
+                <property name="alignment" nameId="bnk3.4384308856523593885" value="CENTER" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="4944376863001028456" nodeInfo="nn">
@@ -2849,17 +2874,34 @@
           <node role="editorCell" roleId="bnk3.1397920687865064647" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4944376863001029998" nodeInfo="ng">
             <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.4944376863000971585" resolveInfo="size" />
           </node>
+          <node role="style" roleId="bnk3.5662204344887343006" type="bnk3.TableStyle" typeId="bnk3.5662204344885763446" id="1795495746006115956" nodeInfo="ng">
+            <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.HorizontalAlignmentStyleItem" typeId="bnk3.4384308856523593884" id="1795495746006115963" nodeInfo="ng">
+              <property name="alignment" nameId="bnk3.4384308856523593885" value="RIGHT" />
+            </node>
+          </node>
         </node>
         <node role="childTableNodes" roleId="bnk3.1397920687864997171" type="bnk3.TableCell" typeId="bnk3.1397920687864997143" id="3267857377793647663" nodeInfo="ng">
           <node role="editorCell" roleId="bnk3.1397920687865064647" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="3267857377793653386" nodeInfo="ng">
             <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.3267857377793644829" />
           </node>
+          <node role="style" roleId="bnk3.5662204344887343006" type="bnk3.TableStyle" typeId="bnk3.5662204344885763446" id="1795495746006115945" nodeInfo="ng">
+            <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.HorizontalAlignmentStyleItem" typeId="bnk3.4384308856523593884" id="1795495746005609885" nodeInfo="ng">
+              <property name="alignment" nameId="bnk3.4384308856523593885" value="RIGHT" />
+            </node>
+          </node>
         </node>
         <node role="childTableNodes" roleId="bnk3.1397920687864997171" type="bnk3.TableCell" typeId="bnk3.1397920687864997143" id="4944376863001029976" nodeInfo="ng">
-          <node role="editorCell" roleId="bnk3.1397920687865064647" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4944376863001029980" nodeInfo="ng">
+          <node role="style" roleId="bnk3.5662204344887343006" type="bnk3.TableStyle" typeId="bnk3.5662204344885763446" id="2054775350261788216" nodeInfo="ng">
+            <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.HorizontalAlignmentStyleItem" typeId="bnk3.4384308856523593884" id="1795495746004593528" nodeInfo="ng">
+              <property name="alignment" nameId="bnk3.4384308856523593885" value="CENTER" />
+            </node>
+            <node role="styleItem" roleId="tpc2.1219418656006" type="bnk3.VerticalAlignmentStyleItem" typeId="bnk3.4384308856523540092" id="1795495746004593539" nodeInfo="ng">
+              <property name="alignment" nameId="bnk3.4384308856523581138" value="CENTER" />
+            </node>
+          </node>
+          <node role="editorCell" roleId="bnk3.1397920687865064647" type="wfif.CellModel_Checkbox" typeId="wfif.4900677560559655527" id="1795495746004087450" nodeInfo="ng">
             <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.2054775350250915337" resolveInfo="active" />
           </node>
-          <node role="style" roleId="bnk3.5662204344887343006" type="bnk3.TableStyle" typeId="bnk3.5662204344885763446" id="2054775350261788216" nodeInfo="ng" />
         </node>
       </node>
     </node>
