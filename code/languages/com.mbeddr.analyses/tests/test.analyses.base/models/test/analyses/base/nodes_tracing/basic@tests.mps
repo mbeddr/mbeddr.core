@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:6085288f-d943-42ca-aca4-76b43d0cc076(test.analyses.base.nodes@tests)">
+<model modelUID="r:6085288f-d943-42ca-aca4-76b43d0cc076(test.analyses.base.nodes_tracing.basic@tests)">
   <persistence version="8" />
   <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
   <language namespace="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
