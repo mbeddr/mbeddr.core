@@ -283,53 +283,14 @@
       </node>
     </node>
   </root>
-  <root type="gfdq.LantestConfig" typeId="gfdq.5722030627681234131" id="3262406899569904123" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="try" />
-    <property name="maximumNumberOfTries" nameId="gfdq.5722030627681373924" value="100" />
-    <property name="maximalDepth" nameId="gfdq.5722030627681465498" value="1" />
+  <root type="gfdq.LantestConfig" typeId="gfdq.5722030627681234131" id="4116609257239821110" nodeInfo="ng">
+    <property name="maximalDepth" nameId="gfdq.5722030627681465498" value="2" />
+    <property name="maximumNumberOfTries" nameId="gfdq.5722030627681373924" value="50" />
+    <property name="name" nameId="tpck.1169194664001" value="config1" />
     <link role="savingResults" roleId="gfdq.5722030627681369430" targetNodeId="glmp.2041732772365658055" resolveInfo="saverMarker" />
-    <link role="startingPoint" roleId="gfdq.5722030627681276512" targetNodeId="3516382903880064577" resolveInfo="blocks_testing" />
-    <node role="seedChooser" roleId="gfdq.3262406899569270462" type="gfdq.ConceptSeed" typeId="gfdq.3262406899569937377" id="3516382903880083680" nodeInfo="ng">
-      <link role="concept" roleId="gfdq.3262406899569972235" targetNodeId="mj1l.8864856114140038681" resolveInfo="DoubleType" />
-    </node>
-    <node role="langSpecificConfig" roleId="gfdq.3516382903881173796" type="fowb.MbeddrCoreConfig" typeId="fowb.3516382903881191515" id="3516382903882132142" nodeInfo="ng" />
-  </root>
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3516382903880064577" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="blocks_testing" />
-    <node role="contents" roleId="x27k.6437088627575722833" type=".com.lmsintl.accent.blocks.base.structure.AtomicBlock" id="3516382903880066759" nodeInfo="ng">
-      <property name="name" value="blk1" />
-      <node role="constructor" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3516382903880066760" nodeInfo="ng" />
-      <node role="body" type=".com.lmsintl.accent.blocks.base.structure.CCodeBlockBody" id="3516382903880066856" nodeInfo="ng">
-        <node role="updateStatementList" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3516382903880066858" nodeInfo="ng" />
-        <node role="statementList" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3516382903880066860" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3516382903880066874" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="3516382903880066886" nodeInfo="ng">
-              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3516382903880066889" nodeInfo="ng">
-                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.2212975673976043696" value="1" />
-              </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type=".com.lmsintl.accent.blocks.base.structure.OutPortRef" id="3516382903880083454" nodeInfo="ng">
-                <link role="port" targetNodeId="3516382903880083404" resolveInfo="res" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="inports" type=".com.lmsintl.accent.blocks.base.structure.InPort" id="3516382903880083373" nodeInfo="ng">
-        <property name="name" value="a" />
-        <node role="type" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="3516382903880083372" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="outports" type=".com.lmsintl.accent.blocks.base.structure.OutPort" id="3516382903880083404" nodeInfo="ng">
-        <property name="name" value="res" />
-        <node role="type" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="3516382903880083403" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-    </node>
+    <link role="startingPoint" roleId="gfdq.5722030627681276512" targetNodeId="2041732772365658055" resolveInfo="module" />
+    <node role="seedChooser" roleId="gfdq.3262406899569270462" type="gfdq.RandomDescendantSeed" typeId="gfdq.3262406899569270472" id="4116609257239821113" nodeInfo="ng" />
+    <node role="langSpecificConfig" roleId="gfdq.3516382903881173796" type="fowb.MbeddrCoreConfig" typeId="fowb.3516382903881191515" id="4116609257239932437" nodeInfo="ng" />
   </root>
 </model>
 
