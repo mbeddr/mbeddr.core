@@ -35,7 +35,7 @@
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="8455208232410333605" nodeInfo="ng" />
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="8455208232410333657" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="AddReview" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Add Review" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Add Comment" />
     <node role="executeFunction" roleId="tp4k.1203083461638" type="tp4k.ExecuteBlock" typeId="tp4k.1203083511112" id="8455208232410333658" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8455208232410333659" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8455208232410333667" nodeInfo="nn">
@@ -206,7 +206,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="8455208232410333734" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DeleteReview" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Delete Review" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Delete" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="8455208232410333735" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="editorComponent" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="1d7m.~MPSEditorDataKeys%dEDITOR_COMPONENT" resolveInfo="EDITOR_COMPONENT" />
@@ -290,7 +290,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="8455208232410333771" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="JumpToReview" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Jump to Review" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Jump to Comment" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="8455208232410333772" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="editorComponent" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="1d7m.~MPSEditorDataKeys%dEDITOR_COMPONENT" resolveInfo="EDITOR_COMPONENT" />
@@ -383,7 +383,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="8455208232410333813" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="JumpToReviewed" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Jump to Reviewed Element" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Select Commented Node" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="8455208232410333814" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="editorComponent" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="1d7m.~MPSEditorDataKeys%dEDITOR_COMPONENT" resolveInfo="EDITOR_COMPONENT" />
@@ -953,6 +953,9 @@
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8455208232410334064" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9a8.~EditorComponent%dgetEditorContext()%cjetbrains%dmps%dnodeEditor%dEditorContext" resolveInfo="getEditorContext" />
                 </node>
+              </node>
+              <node role="cellSelector" roleId="tpc2.1948540814635895774" type="tpc2.PredefinedSelector" typeId="tpc2.3547227755871693971" id="244664330392415814" nodeInfo="ng">
+                <property name="cellId" nameId="tpc2.2162403111523065396" value="firstEditable" />
               </node>
             </node>
           </node>
