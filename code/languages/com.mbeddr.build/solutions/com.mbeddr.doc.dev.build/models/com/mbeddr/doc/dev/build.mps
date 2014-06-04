@@ -1403,6 +1403,12 @@
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="4926855601834244818" nodeInfo="ng">
           <link role="language" roleId="kdzh.322010710375832947" targetNodeId="90a9.1671983567912265703" resolveInfo="de.slisson.mps.richtext" />
         </node>
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="4505117942653024140" nodeInfo="ng">
+          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="al5i.1625232190765381164" resolveInfo="com.mbeddr.mpsutil.review" />
+        </node>
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="4505117942653024141" nodeInfo="ng">
+          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="al5i.3680100162975660411" resolveInfo="com.mbeddr.mpsutil.review.annotation" />
+        </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="8334796989972929856" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
