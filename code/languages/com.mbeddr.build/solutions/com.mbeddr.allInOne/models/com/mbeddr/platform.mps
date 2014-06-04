@@ -243,19 +243,26 @@
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="4492014791447832659" nodeInfo="ng">
               <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="4492014791447832660" nodeInfo="ng">
                 <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="4492014791447832661" nodeInfo="ng">
-                  <property name="text" nameId="3ior.4903714810883755350" value="artifacts" />
+                  <property name="text" nameId="3ior.4903714810883755350" value="build" />
                 </node>
               </node>
               <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="4492014791447832662" nodeInfo="ng">
-                <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="4492014791447832663" nodeInfo="ng">
-                  <link role="target" roleId="3ior.5610619299013057365" targetNodeId="90a9.3410197114991840790" resolveInfo="mps-sl-all.zip" />
-                  <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="4492014791447832664" nodeInfo="ng">
-                    <property name="pattern" nameId="3ior.5248329904288051101" value="*.zip" />
+                <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="3698968274975561199" nodeInfo="ng">
+                  <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="4492014791447832663" nodeInfo="ng">
+                    <link role="target" roleId="3ior.5610619299013057365" targetNodeId="90a9.3410197114990977228" />
+                    <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="4492014791447832664" nodeInfo="ng">
+                      <property name="pattern" nameId="3ior.5248329904288051101" value="*.zip" />
+                    </node>
+                  </node>
+                  <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="3698968274975561201" nodeInfo="ng">
+                    <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="3698968274975561207" nodeInfo="ng">
+                      <property name="text" nameId="3ior.4903714810883755350" value="mps-sl-all.build" />
+                    </node>
                   </node>
                 </node>
                 <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="4492014791447832665" nodeInfo="ng">
                   <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="4492014791447832666" nodeInfo="ng">
-                    <property name="text" nameId="3ior.4903714810883755350" value="mps-sl-all" />
+                    <property name="text" nameId="3ior.4903714810883755350" value="artifacts" />
                   </node>
                 </node>
               </node>
