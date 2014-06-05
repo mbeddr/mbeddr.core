@@ -146,6 +146,7 @@
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="425959417804914050" nodeInfo="ng">
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="3127880198517389398" resolveInfo="IntelligentSensorFamily" />
+      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="20776903375352463" resolveInfo="Production" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645303307147" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="3127880198517389397" resolveInfo="IntelligentSensors" />
@@ -329,12 +330,10 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="3127880198517389473" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="3127880198517389474" nodeInfo="ng" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qdv7.VariabilityConfigItem" typeId="qdv7.6514264311693667923" id="1328910530790918011" nodeInfo="ng">
-      <node role="config" type="qdv7.VariabilityTransformationConfig" typeId="qdv7.6617704999132114004" id="1328910530790918013" nodeInfo="ng">
-        <node role="mappings" roleId="qdv7.6617704999132114005" type="qdv7.ConfigurationMapping" typeId="qdv7.6617704999132114000" id="1328910530790918019" nodeInfo="ng">
-          <link role="featureModel" roleId="qdv7.6617704999132114002" targetNodeId="3127880198517389398" resolveInfo="IntelligentSensorFamily" />
-          <link role="configurationModel" roleId="qdv7.6617704999132114003" targetNodeId="20776903375352463" resolveInfo="Production" />
-        </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qdv7.VariabilityConfigItem" typeId="qdv7.6514264311693667923" id="3370114936326542112" nodeInfo="ng">
+      <node role="mappings" roleId="qdv7.4920787109780106774" type="qdv7.ConfigurationMapping" typeId="qdv7.6617704999132114000" id="3370114936326542117" nodeInfo="ng">
+        <link role="featureModel" roleId="qdv7.6617704999132114002" targetNodeId="3127880198517389398" resolveInfo="IntelligentSensorFamily" />
+        <link role="configurationModel" roleId="qdv7.6617704999132114003" targetNodeId="20776903375352463" resolveInfo="Production" />
       </node>
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="3127880198517389475" nodeInfo="ng">
