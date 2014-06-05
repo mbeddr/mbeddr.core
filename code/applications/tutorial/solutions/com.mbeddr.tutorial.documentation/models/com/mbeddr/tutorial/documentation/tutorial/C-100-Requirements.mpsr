@@ -119,6 +119,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="3458996998998071237" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="reqmodule" />
         <property name="center" nameId="2c95.8730648445434174368" value="true" />
+        <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
         <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="3458996998998077759" nodeInfo="ng">
           <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/reqmodule.png" />
           <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
@@ -144,14 +145,18 @@
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998098719" nodeInfo="ng" />
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458996998998098716" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998098717" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998098718" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="TODO:" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="536680812409531742" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="536680812409531739" nodeInfo="ng">
+                <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="536680812409531740" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="536680812409531741" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Replace with embed code pointing to FlightJudgementRules module." />
+                  </node>
+                </node>
               </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="536680812409531743" nodeInfo="ng" />
             </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998098720" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Replace with embed code pointing to FlightJudgementRules module." />
-          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998098720" nodeInfo="ng" />
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="3458996998998105477" nodeInfo="ng">
@@ -325,7 +330,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998148547" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998148548" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998148549" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="We want to establish traces between implementation code and the requirements we just captured. To make this possible we first have to specify that the  " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="We want to establish traces between implementation code and the requirements we just captured. To make this possible we first have to specify that the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998152098" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998152099" nodeInfo="ng">
@@ -335,7 +340,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998152097" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" implementation module contains code that traces to the  " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" implementation module contains code that traces to the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998152107" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998152108" nodeInfo="ng">
@@ -448,7 +453,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998300256" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998300257" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998300258" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note how we attach traces to constants, transitions and actions: the trace facility is orthogonal with regards to the language constructs that are annotated. It works for all.   Returning back to the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note how we attach traces to constants, transitions and actions: the trace facility is orthogonal with regards to the language constructs that are annotated. It works for all. Returning back to the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998303680" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998303681" nodeInfo="ng">
@@ -474,17 +479,21 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998323976" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998323977" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998324189" nodeInfo="ng" />
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458996998998324186" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998324187" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998324188" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="TODO:" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="536680812409531753" nodeInfo="ng" />
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="536680812409531750" nodeInfo="ng">
+            <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="536680812409531751" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="536680812409531752" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the new setup, it's not clear how to see this difference in being traced or not. Picture below is outdated." />
               </node>
             </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998324190" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" In the new setup, it's not clear how to see this difference in being traced or not. Picture below is outdated." />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="536680812409531754" nodeInfo="ng" />
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458996998998324186" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998324187" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998324188" nodeInfo="ng" />
+            </node>
           </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998324190" nodeInfo="ng" />
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="3458996998998328572" nodeInfo="ng">
@@ -519,7 +528,7 @@
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998338924" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998338925" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998338926" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Find Usages" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Find Usages Settings" />
               </node>
             </node>
           </node>
@@ -572,21 +581,6 @@
         </node>
         <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="3458996998998352017" nodeInfo="ng" />
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998345304" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998345305" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998345554" nodeInfo="ng" />
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458996998998345551" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998345552" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998345553" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="TODO:" />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998345555" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" New find usage doesn't show the entry() text??" />
-          </node>
-        </node>
-      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998998358975" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998358976" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998358977" nodeInfo="ng">
@@ -600,7 +594,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998365682" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to two elements. A transition and an entry action. That's wrong: the second one should have been the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to two elements. A transition and an entry action. That's wrong: the entry action should have been the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998998365692" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998365693" nodeInfo="ng">
@@ -659,13 +653,19 @@
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998386923" nodeInfo="ng" />
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458996998998386920" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998998386921" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998386922" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="TODO:" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998386922" nodeInfo="ng" />
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998386924" nodeInfo="ng" />
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="536680812409665959" nodeInfo="ng">
+            <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="536680812409665960" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="536680812409665961" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="How to disable/enable req traces in new setup?" />
               </node>
             </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998998386924" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" How to disable/enable req traces in new setup?" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="536680812409665958" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" " />
           </node>
         </node>
       </node>
