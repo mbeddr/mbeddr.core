@@ -13,6 +13,8 @@
   <language namespace="8f78d0b6-57c9-4fa8-86fe-8c30d0d5b15c(mbeddr.tutorial.smtrigger)" />
   <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <language namespace="783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)" />
+  <language namespace="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" />
+  <language namespace="4930e34b-b776-4ccb-b2ff-c6f31789e126(mbeddr.tutorial.extreqref)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -22,10 +24,10 @@
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="11" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
   <import index="rijl" modelUID="r:a56eacaf-7e31-441b-a2cd-6d0aa7af811f(mbeddr.tutorial.heap.structure)" version="-1" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="f8ij" modelUID="r:ddffbaac-6bb7-469e-a768-5fcd76552224(mbeddr.tutorial.foreach.structure)" version="-1" implicit="yes" />
@@ -38,6 +40,8 @@
   <import index="uj5" modelUID="r:629e0a9b-c3a1-42af-b223-2aea2640ad4f(mbeddr.tutorial.smtrigger.structure)" version="-1" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="3" implicit="yes" />
+  <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="5" implicit="yes" />
+  <import index="2yyc" modelUID="r:79803cd7-885d-4e28-8672-973d389d71b6(mbeddr.tutorial.extreqref.structure)" version="-1" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7727566415687867284" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SafeHeap" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
@@ -1885,9 +1889,12 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.InitializeSMStatement" typeId="clqz.1786180596061208520" id="2051642899460644239" nodeInfo="ng">
-          <node role="statemachine" roleId="clqz.1786180596061208522" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2051642899460644241" nodeInfo="ng">
-            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2051642899460593325" resolveInfo="protocol" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5025675239155931333" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="5025675239155931332" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2051642899460644241" nodeInfo="ng">
+              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2051642899460593325" resolveInfo="protocol" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmInitTarget" typeId="clqz.6118219496719522740" id="5025675239155931331" nodeInfo="ng" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2051642899460644243" nodeInfo="ng">
@@ -2051,8 +2058,8 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8646254455461543577" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8646254455461543576" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="242678292442087110" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="242678292442087234" nodeInfo="ng">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
@@ -2088,8 +2095,8 @@
       <property name="name" nameId="tpck.1169194664001" value="dealWithPartTwoOfVerification" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8646254455461497297" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8646254455461539856" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8646254455461539855" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="242678292442126978" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="242678292442126979" nodeInfo="ng">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="33" />
           </node>
@@ -2129,8 +2136,8 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8646254455461550873" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8646254455461550872" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="242678292442139329" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="242678292442139330" nodeInfo="ng">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
@@ -2250,6 +2257,85 @@
             <property name="value" nameId="mj1l.2212975673976043696" value="33" />
           </node>
         </node>
+      </node>
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="806361095882319968" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="ExternalReqTest" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="examples.exref" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="806361095882321168" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="someFunction" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="806361095882321170" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="806361095882321171" nodeInfo="ng" />
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="806361095882320925" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="806361095882358356" nodeInfo="ng">
+        <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095882358357" nodeInfo="ng" />
+        <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095882358375" nodeInfo="ng">
+          <property name="extID" nameId="vs0r.806361095879170783" value="a1" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="[56, 104, 73, 26, 84, -88, -16, -10, -61, -83, -14, 34, 82, -28, 23, -40, 53, -31, -55, -111]" />
+          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a1" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396959891974" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="806361095888508895" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="someFunction2" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="806361095888508896" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5560473797810242582" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5560473797810242584" nodeInfo="ng" />
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="806361095888508898" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="806361095888508899" nodeInfo="ng">
+        <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095888508900" nodeInfo="ng" />
+        <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.ExtReqTraceTarget" typeId="2yyc.806361095882102418" id="806361095888508901" nodeInfo="ng">
+          <property name="extID" nameId="vs0r.806361095879170783" value="a2" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="[51, -40, 24, 95, -57, -90, -117, -64, -47, 70, -58, -95, 55, 79, 116, -8, 23, -64, 96, 3]" />
+          <property name="descr" nameId="2yyc.806361095882106853" value="This is requirement a2" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396959889328" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="806361095888508958" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="someFunction3" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="806361095888508959" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="806361095888508960" nodeInfo="ng" />
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="806361095888508961" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="806361095888508962" nodeInfo="ng">
+        <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="806361095888508963" nodeInfo="ng" />
+        <node role="refs" roleId="26ao.4577779292081946445" type="2yyc.WeatherTraceTarget" typeId="2yyc.2656703252204616219" id="2656703252205190787" nodeInfo="ng">
+          <property name="descr" nameId="2yyc.2656703252204616221" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;current&gt;&#10;  &lt;city id=&quot;5913695&quot; name=&quot;Cambridge&quot;&gt;&#10;    &lt;coord lon=&quot;-80.31&quot; lat=&quot;43.36&quot;/&gt;&#10;    &lt;country&gt;CA&lt;/country&gt;&#10;    &lt;sun rise=&quot;2014-04-08T10:49:23&quot; set=&quot;2014-04-08T23:56:26&quot;/&gt;&#10;  &lt;/city&gt;&#10;  &lt;temperature value=&quot;274.88&quot; min=&quot;273.71&quot; max=&quot;276.48&quot; unit=&quot;kelvin&quot;/&gt;&#10;  &lt;humidity value=&quot;93&quot; unit=&quot;%&quot;/&gt;&#10;  &lt;pressure value=&quot;996&quot; unit=&quot;hPa&quot;/&gt;&#10;  &lt;wind&gt;&#10;    &lt;speed value=&quot;7.27&quot; name=&quot;Moderate breeze&quot;/&gt;&#10;    &lt;direction value=&quot;334&quot; code=&quot;NNW&quot; name=&quot;North-northwest&quot;/&gt;&#10;  &lt;/wind&gt;&#10;  &lt;clouds value=&quot;92&quot; name=&quot;overcast clouds&quot;/&gt;&#10;  &lt;precipitation value=&quot;4.2&quot; mode=&quot;rain&quot; unit=&quot;3h&quot;/&gt;&#10;  &lt;weather number=&quot;501&quot; value=&quot;moderate rain&quot; icon=&quot;10d&quot;/&gt;&#10;  &lt;lastupdate value=&quot;2014-04-08T13:23:03&quot;/&gt;&#10;&lt;/current&gt;&#10;&#10;" />
+          <property name="lastUpdated" nameId="vs0r.806361095889337969" value="1396963481873" />
+          <property name="hash" nameId="vs0r.806361095879170784" value="[-28, 117, 100, 37, -25, -5, 53, 52, -118, 14, -88, 40, 119, -8, -7, -111, -56, -51, -55, -75]" />
+          <property name="extID" nameId="vs0r.806361095879170783" value="Cambridge" />
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="vs0r.AssessmentContainer" typeId="vs0r.865293814733114043" id="806361095884549814" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="examples.exref" />
+    <property name="name" nameId="tpck.1169194664001" value="ExternalReqStuff" />
+    <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="806361095884549815" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="externalReqsStillValid" />
+      <property name="mustBeOk" nameId="vs0r.3815661793603523593" value="true" />
+      <node role="query" roleId="vs0r.865293814733115677" type="vs0r.CheckHashAssessmentQuery" typeId="vs0r.806361095877923648" id="806361095884549819" nodeInfo="ng" />
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="2656703252205496295" nodeInfo="ng">
+        <property name="totalCount" nameId="vs0r.671216505796623805" value="0" />
+        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="0" />
+        <property name="ok" nameId="vs0r.671216505796623806" value="0" />
       </node>
     </node>
   </root>

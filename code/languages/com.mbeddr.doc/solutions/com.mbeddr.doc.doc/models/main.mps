@@ -9,18 +9,16 @@
   <language namespace="c61970b4-87fb-4429-8a3a-c87719f000a3(com.mbeddr.doc.terms)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="bskg" modelUID="r:be2272c0-bc2d-4ac4-a164-b072c9e60516(exampleCCode)" version="-1" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="15" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="z5ox" modelUID="r:48b6c04c-173b-45da-963f-54fbbdb59cfc(com.mbeddr.doc.self.structure)" version="-1" implicit="yes" />
-  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="5" implicit="yes" />
   <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
-  <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="-1" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <import index="8zu2" modelUID="r:04621706-863a-4403-8bd2-5b328fe9405d(com.mbeddr.doc.terms.structure)" version="-1" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="2293093897292931468" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="A_Introduction" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2293093897292931470" resolveInfo="Config" />
@@ -751,6 +749,7 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="8730648445433290619" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C_EmbeddingMbeddr" />
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2293093897292931470" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445433288571" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="workingWithMbeddr" />
@@ -783,8 +782,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601027" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="For example, you reference the interface " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="8730648445433601028" nodeInfo="ng">
-              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ContentRefWord" id="8730648445433601028" nodeInfo="ng">
+              <link role="content" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601029" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" using the " />
@@ -809,9 +808,9 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601037" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" element. For example, you\ncan refer to an argument " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="8730648445433601038" nodeInfo="ng">
-              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
-              <link role="detail" roleId="rh4a.4509696981881923017" targetNodeId="bskg.8730648445433600016" resolveInfo="x" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ContentRefWord" id="8730648445433601038" nodeInfo="ng">
+              <link role="content" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+              <link role="detail" targetNodeId="bskg.8730648445433600016" resolveInfo="x" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601039" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=". If you want to reference things that\ndo not have a name, you can attach a name label to an element (using the \n" />
@@ -836,10 +835,10 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601053" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" language\nin the respective mbeddr model to get the intention. For example, we can refer to\n" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="8730648445433601055" nodeInfo="ng">
-              <property name="referenceText" nameId="rh4a.4509696981882039909" value="a precondition" />
-              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
-              <link role="detail" roleId="rh4a.4509696981881923017" targetNodeId="bskg.8730648445433601044" resolveInfo="aPreCondition" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ContentRefWord" id="8730648445433601055" nodeInfo="ng">
+              <property name="referenceText" value="a precondition" />
+              <link role="content" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+              <link role="detail" targetNodeId="bskg.8730648445433601044" resolveInfo="aPreCondition" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601056" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
@@ -852,20 +851,26 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="8730648445433601058" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="8730648445433601058" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="calculator" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
-          <link role="path" roleId="rh4a.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-          <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433601059" nodeInfo="ng">
+          <link role="path" roleId="2c95.6955693250238922828" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+          <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433601059" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601060" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601061" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="An interface with a marker on a precondition, so it can be referenced. " />
               </node>
             </node>
           </node>
-          <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434220510" nodeInfo="ng">
+          <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434220510" nodeInfo="ng">
             <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8730648445434214488" resolveInfo="smallCodeShot" />
+          </node>
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704529535" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704529536" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704529537" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+            </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433601067" nodeInfo="ng">
@@ -883,8 +888,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601073" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" node. For example,\nhere we refer to the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ModuleRefWord" typeId="rh4a.794010416819955528" id="8730648445433601074" nodeInfo="ng">
-              <link role="module" roleId="rh4a.794010416819955529" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.code.structure.ModuleRefWord" id="8730648445433601074" nodeInfo="ng">
+              <link role="module" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601075" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module." />
@@ -969,21 +974,29 @@
             <property name="text" nameId="2c95.5185579450379273119" value="Embed as Image" />
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="8730648445433631460" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="8730648445433631460" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="addOp" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
-          <link role="detail" roleId="rh4a.6416473402306189931" targetNodeId="bskg.8730648445433600014" resolveInfo="add" />
-          <link role="path" roleId="rh4a.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-          <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433631461" nodeInfo="ng">
+          <link role="path" roleId="2c95.6955693250238922828" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+          <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433631461" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433631462" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433631463" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="An example of how to embed only a part of a module content as an image." />
               </node>
             </node>
           </node>
-          <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434220511" nodeInfo="ng">
+          <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434220511" nodeInfo="ng">
             <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8730648445434214488" resolveInfo="smallCodeShot" />
+          </node>
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704530132" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704530133" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704530134" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704530135" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433600014" resolveInfo="add" />
+            </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433854299" nodeInfo="ng">
@@ -1026,10 +1039,16 @@
             <property name="text" nameId="2c95.5185579450379273119" value="Embedding as Text" />
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="8730648445433854307" nodeInfo="ng">
-          <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
-          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="8730648445433854307" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2342111018704530143" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704530144" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2342111018704530145" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433631470" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="embedding1" />
@@ -1126,8 +1145,8 @@
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433858427" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The " />
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="8730648445433875932" nodeInfo="ng">
-                <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="bskg.8730648445433858446" resolveInfo="TrafficLights" />
+              <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ContentRefWord" id="8730648445433875932" nodeInfo="ng">
+                <link role="content" targetNodeId="bskg.8730648445433858446" resolveInfo="TrafficLights" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433875933" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state machine as a graph." />
@@ -1242,8 +1261,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053466214" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="To create new paragraphs, you should extend the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ConceptRefWord" typeId="soy0.4715820023543872567" id="7502794012053466217" nodeInfo="ng">
-              <link role="concept" roleId="soy0.4715820023543872580" targetNodeId="2c95.3350625596580089583" resolveInfo="AbstractParagraph" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ConceptRefWord" id="7502794012053466217" nodeInfo="ng">
+              <link role="concept" targetNodeId="2c95.3350625596580089583" resolveInfo="AbstractParagraph" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053466218" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" concept from the " />
@@ -1258,8 +1277,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053466222" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" language. For example, the regular text paragraphs as well as the sections and images are subconcepts of " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ConceptRefWord" typeId="soy0.4715820023543872567" id="7502794012053466223" nodeInfo="ng">
-              <link role="concept" roleId="soy0.4715820023543872580" targetNodeId="2c95.3350625596580089583" resolveInfo="AbstractParagraph" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ConceptRefWord" id="7502794012053466223" nodeInfo="ng">
+              <link role="concept" targetNodeId="2c95.3350625596580089583" resolveInfo="AbstractParagraph" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053466224" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
@@ -1275,14 +1294,14 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053466237" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Concepts that should be embeddable in \&quot;regular\&quot; text paragraphs (such as the one your are reading right now) must implement the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ConceptRefWord" typeId="soy0.4715820023543872567" id="7502794012053466238" nodeInfo="ng">
-              <link role="concept" roleId="soy0.4715820023543872580" targetNodeId="87nw.2557074442922392300" resolveInfo="IWord" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ConceptRefWord" id="7502794012053466238" nodeInfo="ng">
+              <link role="concept" targetNodeId="87nw.2557074442922392300" resolveInfo="IWord" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053466239" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" concept interface. This way they can be embedded in any text paragraph. Of course, this is not what you might want; if you want to restrict their usability to within actual " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ConceptRefWord" typeId="soy0.4715820023543872567" id="7502794012053469761" nodeInfo="ng">
-              <link role="concept" roleId="soy0.4715820023543872580" targetNodeId="2c95.3350625596579911728" resolveInfo="Document" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ConceptRefWord" id="7502794012053469761" nodeInfo="ng">
+              <link role="concept" targetNodeId="2c95.3350625596579911728" resolveInfo="Document" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469762" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=", you have to write a " />
@@ -1297,8 +1316,8 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469766" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" constraint, or, alternatively, extend the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="soy0.ConceptRefWord" typeId="soy0.4715820023543872567" id="7502794012053469767" nodeInfo="ng">
-              <link role="concept" roleId="soy0.4715820023543872580" targetNodeId="2c95.3350625596580108706" resolveInfo="DocumentWord" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.meta.structure.ConceptRefWord" id="7502794012053469767" nodeInfo="ng">
+              <link role="concept" targetNodeId="2c95.3350625596580108706" resolveInfo="DocumentWord" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469768" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" abstract concept." />

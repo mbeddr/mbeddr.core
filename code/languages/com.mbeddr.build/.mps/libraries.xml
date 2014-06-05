@@ -11,11 +11,11 @@
             </Library>
           </value>
         </entry>
-        <entry key="mps-richtext">
+        <entry key="sl-all">
           <value>
             <Library>
-              <option name="name" value="mps-richtext" />
-              <option name="path" value="$PROJECT_DIR$/../../../../mps-richtext" />
+              <option name="name" value="sl-all" />
+              <option name="path" value="${mbeddr.github.core.home}/code/plugins" />
             </Library>
           </value>
         </entry>

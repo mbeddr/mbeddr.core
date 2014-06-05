@@ -6,12 +6,12 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="cetu" modelUID="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" version="0" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5098456557381619915" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="HelloMath" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5945796720326778606" nodeInfo="ng">
@@ -21,8 +21,9 @@
       <property name="name" nameId="tpck.1169194664001" value="sumUpIntArray" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5945796720326853242" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7040583391080080352" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="cetu.SumExpression" typeId="cetu.971707942815320323" id="7040583391080080288" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2900587364563001064" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6031816228745282578" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="cetu.SumExpression" typeId="cetu.971707942815320323" id="7040583391080080288" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="i" />
             <node role="varType" roleId="cetu.971707942815429390" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7040583391080080345" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -79,8 +80,8 @@
       <property name="name" nameId="tpck.1169194664001" value="averageIntArray" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7040583391080110401" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7040583391080110402" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="7040583391080113267" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6031816228745282713" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="7040583391080113267" nodeInfo="ng">
             <node role="left" roleId="cetu.5098456557382006592" type="cetu.SumExpression" typeId="cetu.971707942815320323" id="7040583391080110403" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="i" />
               <node role="varType" roleId="cetu.971707942815429390" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7040583391080110404" nodeInfo="ng">
@@ -142,8 +143,8 @@
       <property name="name" nameId="tpck.1169194664001" value="midnight1" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7040583391080129356" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7040583391080132046" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="7040583391080132040" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6031816228745282898" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="7040583391080132040" nodeInfo="ng">
             <node role="left" roleId="cetu.5098456557382006592" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7040583391080132136" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="cetu.SqrtExpression" typeId="cetu.5098456557379026617" id="7040583391080132201" nodeInfo="ng">
                 <node role="expression" roleId="cetu.5098456557379026898" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="7040583391080132819" nodeInfo="ng">
@@ -226,8 +227,8 @@
       <property name="name" nameId="tpck.1169194664001" value="midnight2" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7040583391080149509" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7040583391080149510" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="7040583391080149511" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6031816228745283843" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="7040583391080149511" nodeInfo="ng">
             <node role="left" roleId="cetu.5098456557382006592" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7040583391080149512" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="cetu.SqrtExpression" typeId="cetu.5098456557379026617" id="7040583391080149513" nodeInfo="ng">
                 <node role="expression" roleId="cetu.5098456557379026898" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="7040583391080154811" nodeInfo="ng">
@@ -319,8 +320,8 @@
       <property name="name" nameId="tpck.1169194664001" value="midnightInt" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7040583391080138728" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7040583391080138729" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="7040583391080147719" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6031816228745284609" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="7040583391080147719" nodeInfo="ng">
             <node role="expr" roleId="mj1l.6610873504380029782" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="7040583391080138730" nodeInfo="ng">
               <node role="left" roleId="cetu.5098456557382006592" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7040583391080138731" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="cetu.SqrtExpression" typeId="cetu.5098456557379026617" id="7040583391080138732" nodeInfo="ng">
@@ -427,8 +428,9 @@
         </node>
       </node>
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7040583391080744558" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7040583391080766768" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="cetu.SumExpression" typeId="cetu.971707942815320323" id="7040583391080766759" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2916137779955151643" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6031816228745285495" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="cetu.SumExpression" typeId="cetu.971707942815320323" id="7040583391080766759" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="k" />
             <node role="varType" roleId="cetu.971707942815429390" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7040583391080766761" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -441,31 +443,37 @@
             <node role="upper" roleId="cetu.971707942815320383" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="7040583391080766937" nodeInfo="ng">
               <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="7040583391080766572" resolveInfo="size" />
             </node>
-            <node role="body" roleId="cetu.971707942815320390" type="cetu.ProductLoopExpression" typeId="cetu.5098456557377598835" id="7040583391080767398" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="i" />
-              <node role="varType" roleId="cetu.971707942815429390" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7040583391080767400" nodeInfo="ng">
-                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-              </node>
-              <node role="lower" roleId="cetu.971707942815410149" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7040583391080767482" nodeInfo="ng">
+            <node role="body" roleId="cetu.971707942815320390" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="2916137779955246121" nodeInfo="ng">
+              <node role="right" roleId="cetu.5098456557382006631" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2916137779955246513" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
-              <node role="upper" roleId="cetu.971707942815320383" type="cetu.LoopVariableReference" typeId="cetu.971707942815320487" id="7040583391080767550" nodeInfo="ng">
-                <link role="loop" roleId="cetu.971707942815596071" targetNodeId="7040583391080766759" resolveInfo="k" />
-              </node>
-              <node role="body" roleId="cetu.971707942815320390" type="cetu.LogarithmExpression" typeId="cetu.5098456557380204918" id="7040583391080768207" nodeInfo="ng">
-                <node role="logOf" roleId="cetu.5098456557380205019" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="7040583391080768862" nodeInfo="ng">
-                  <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="7040583391080768476" nodeInfo="ng">
-                    <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="7040583391080766569" resolveInfo="arr" />
-                  </node>
-                  <node role="index" roleId="yq40.6282313788306893059" type="cetu.LoopVariableReference" typeId="cetu.971707942815320487" id="7040583391080769140" nodeInfo="ng">
-                    <link role="loop" roleId="cetu.971707942815596071" targetNodeId="7040583391080767398" resolveInfo="i" />
-                  </node>
+              <node role="left" roleId="cetu.5098456557382006592" type="cetu.ProductLoopExpression" typeId="cetu.5098456557377598835" id="7040583391080767398" nodeInfo="ng">
+                <property name="name" nameId="tpck.1169194664001" value="i" />
+                <node role="varType" roleId="cetu.971707942815429390" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="7040583391080767400" nodeInfo="ng">
+                  <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                  <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 </node>
-                <node role="base" roleId="cetu.5098456557380205075" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7040583391080768274" nodeInfo="ng">
+                <node role="lower" roleId="cetu.971707942815410149" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7040583391080767482" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                  <property name="value" nameId="mj1l.2212975673976043696" value="2" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+                </node>
+                <node role="upper" roleId="cetu.971707942815320383" type="cetu.LoopVariableReference" typeId="cetu.971707942815320487" id="7040583391080767550" nodeInfo="ng">
+                  <link role="loop" roleId="cetu.971707942815596071" targetNodeId="7040583391080766759" resolveInfo="k" />
+                </node>
+                <node role="body" roleId="cetu.971707942815320390" type="cetu.LogarithmExpression" typeId="cetu.5098456557380204918" id="7040583391080768207" nodeInfo="ng">
+                  <node role="logOf" roleId="cetu.5098456557380205019" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="7040583391080768862" nodeInfo="ng">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="7040583391080768476" nodeInfo="ng">
+                      <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="7040583391080766569" resolveInfo="arr" />
+                    </node>
+                    <node role="index" roleId="yq40.6282313788306893059" type="cetu.LoopVariableReference" typeId="cetu.971707942815320487" id="7040583391080769140" nodeInfo="ng">
+                      <link role="loop" roleId="cetu.971707942815596071" targetNodeId="7040583391080767398" resolveInfo="i" />
+                    </node>
+                  </node>
+                  <node role="base" roleId="cetu.5098456557380205075" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7040583391080768274" nodeInfo="ng">
+                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="2" />
+                  </node>
                 </node>
               </node>
             </node>

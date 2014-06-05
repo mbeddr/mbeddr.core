@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.spawner.build" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.spawner.build" />
-  <property name="mps.home" location="${basedir}/../../../../MPS/MPS-3.1EAP-19.app" />
+  <property name="mps.home" location="${basedir}/../../../../MPS/MPS-3.1-EAP1-27.app" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="mbeddr.core" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.spawner" />
   <property name="platform.artifacts" location="" />
@@ -86,7 +86,7 @@
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/languages/com.mbeddr.spawner.dev.build-src.jar">
-      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/source_gen" includes="**/*.java" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/source_gen" />
       <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/debugger.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.spawner.dev.build-models" prefix="module/models" />
     </jar>
@@ -121,7 +121,7 @@
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/lib/com.mbeddr.spawner-src.jar">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/source_gen" includes="**/*.java" />
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/source_gen" />
       <zipfileset file="${mbeddr.core}/languages/com.mbeddr.core.spawner/spawner.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.spawner" prefix="module/" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.spawner-models" prefix="module/models" />
@@ -181,7 +181,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" fork="true">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -205,7 +205,6 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationParameters.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.intentions.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.pattern.jar" />
@@ -279,7 +278,7 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.2.1.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.3.2.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />

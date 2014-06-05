@@ -1134,5 +1134,17 @@
     <move id="hwgx.6584628407655574512" to="p15z.2378878022256322443" />
     <move id="hwgx.8265078645292955229" to="p15z.2378878022256322458" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" />
+    </dependencies>
+    <rename id="vs0r.8297282968580444334" type="CONCEPT" from="PathFilePicker" to="MacroFilePicker" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="24" />
+    </dependencies>
+    <rename id="vs0r.2711621784026951428" type="PROPERTY" from="fileMustExist" to="pointOnlyToExistingFile" />
+  </StructureModification>
 </history>
 

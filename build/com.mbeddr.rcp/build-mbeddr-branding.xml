@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.rcp.branding" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.rcp.branding" />
   <property name="mbeddr.github.core.home" location="${basedir}/../.." />
-  <property name="platformBuild" value="133" />
+  <property name="platformBuild" value="135" />
   <property name="applicationBuild" value="001" />
   <property name="buildNumber" value="${platformBuild}.${applicationBuild}" />
   <property name="buildData" value="20140318" />

@@ -5,6 +5,8 @@
   <language namespace="42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)" />
   <language namespace="564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)" />
   <language namespace="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" />
+  <language namespace="0a02a8f9-14d0-4970-9bd2-ca35a097c80d(com.mbeddr.analyses.cbmc.core)" />
+  <language namespace="daa1849d-6955-4fef-afe3-8aea1f61e6fa(com.mbeddr.analyses.cbmc.statemachines)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="1a986be1-0ef0-4f9f-9d8a-81c3ea7227ae(com.mbeddr.physicalunits)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
@@ -13,16 +15,18 @@
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="17" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="27" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="43" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="11" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="2" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="5" implicit="yes" />
+  <import index="lcpc" modelUID="r:a2e68184-e5ff-4dfa-983c-d957a5690db9(com.mbeddr.analyses.cbmc.statemachines.structure)" version="4" implicit="yes" />
+  <import index="hj5x" modelUID="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" version="2" implicit="yes" />
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="1265644944846176380" nodeInfo="ng">
     <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="1265644944846176381" nodeInfo="ng">
       <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -218,11 +222,6 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
       </node>
     </node>
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="1265644944846176424" nodeInfo="ng">
-      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
-      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
-      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
-    </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="1265644944846176425" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="1265644944846176426" nodeInfo="ng" />
     </node>
@@ -234,42 +233,45 @@
   </root>
   <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="1265644944846176449" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="FlightAnalyzer" />
-    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.AssertionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="1265644944846176450" nodeInfo="ng">
+    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.AssertionsCBMCAnalysis" typeId="hj5x.4053481679317021363" id="1265644944846176450" nodeInfo="ng">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="-1" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
-      <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="33" />
+      <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
+      <property name="showUnwindingDepthInfo" nameId="q5q6.1015192564308444976" value="false" />
+      <property name="timeoutForSingleAnalysis" nameId="q5q6.5889520553258614000" value="none" />
+      <property name="hasSpecifiedTimeout" nameId="q5q6.5889520553258812025" value="false" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="3791647284633043932" resolveInfo="flightAnalyzerVerification" />
     </node>
-    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.StatemachineCBMCAnalysis" typeId="q5q6.8376973589777602107" id="2613206384568804354" nodeInfo="ng">
+    <node role="analyses" roleId="q46j.6472990431939692464" type="lcpc.StatemachineCBMCAnalysis" typeId="lcpc.6085839724192268104" id="2613206384568804354" nodeInfo="ng">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="26" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="40" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="44" />
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
-      <link role="satemachine" roleId="q5q6.8376973589777602108" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+      <link role="satemachine" roleId="lcpc.6085839724192268105" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="e1tx.7727566415687697331" resolveInfo="testFlightAnalyzer" />
     </node>
-    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.StatemachineCBMCAnalysis" typeId="q5q6.8376973589777602107" id="9047848667681071713" nodeInfo="ng">
+    <node role="analyses" roleId="q46j.6472990431939692464" type="lcpc.StatemachineCBMCAnalysis" typeId="lcpc.6085839724192268104" id="9047848667681071713" nodeInfo="ng">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
-      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="40" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="-1" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="44" />
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
-      <link role="satemachine" roleId="q5q6.8376973589777602108" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+      <link role="satemachine" roleId="lcpc.6085839724192268105" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="3791647284633043932" resolveInfo="flightAnalyzerVerification" />
     </node>
-    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.RobustnessCBMCAnalysis" typeId="q5q6.9047848667681355291" id="8041491615601642957" nodeInfo="ng">
+    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.RobustnessCBMCAnalysis" typeId="hj5x.4053481679317021366" id="8041491615601642957" nodeInfo="ng">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
-      <property name="check_array_bounds" nameId="q5q6.9047848667681376987" value="true" />
-      <property name="check_div_by_zero" nameId="q5q6.9047848667681374187" value="true" />
-      <property name="check_pointer" nameId="q5q6.9047848667681376986" value="true" />
-      <property name="check_signed_overflow" nameId="q5q6.9047848667681377015" value="true" />
+      <property name="check_array_bounds" nameId="hj5x.4053481679317021369" value="true" />
+      <property name="check_div_by_zero" nameId="hj5x.4053481679317021367" value="true" />
+      <property name="check_pointer" nameId="hj5x.4053481679317021368" value="true" />
+      <property name="check_signed_overflow" nameId="hj5x.4053481679317021370" value="true" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="55" />
-      <property name="timeoutForSingleAnalysis" nameId="q5q6.1340502417502745346" value="60" />
+      <property name="timeoutForSingleAnalysis" nameId="q5q6.5889520553258614000" value="60" />
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="3791647284633043932" resolveInfo="flightAnalyzerVerification" />
     </node>
@@ -316,6 +318,7 @@
             <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5665549241467207058" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2254649581716713537" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="2254649581716713536" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3791647284633043937" nodeInfo="ng">

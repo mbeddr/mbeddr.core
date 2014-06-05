@@ -14,16 +14,16 @@
   <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="15" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
+  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
-  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="15" implicit="yes" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="17" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="89" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2536856479943206732" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="dummy" />
@@ -85,35 +85,50 @@
             <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="2536856479943206745" resolveInfo="SM" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.InitializeSMStatement" typeId="clqz.1786180596061208520" id="2536856479943206791" nodeInfo="ng">
-          <node role="statemachine" roleId="clqz.1786180596061208522" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2536856479943206793" nodeInfo="ng">
-            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2536856479943206780" resolveInfo="sm" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9294901222097995" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="9294901222097994" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2536856479943206793" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2536856479943206780" resolveInfo="sm" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmInitTarget" typeId="clqz.6118219496719522740" id="9294901222097993" nodeInfo="ng" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="2536856479943206795" nodeInfo="ng">
-          <link role="event" roleId="clqz.1786180596061231919" targetNodeId="2536856479943206754" resolveInfo="seitch" />
-          <node role="statemachine" roleId="clqz.7851711690674279260" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2536856479943206797" nodeInfo="ng">
-            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2536856479943206780" resolveInfo="sm" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9294901222097743" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="9294901222097742" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2536856479943206797" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2536856479943206780" resolveInfo="sm" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmTriggerTarget" typeId="clqz.6118219496725500902" id="9294901222097741" nodeInfo="ng">
+              <link role="event" roleId="clqz.6118219496725502924" targetNodeId="2536856479943206754" resolveInfo="seitch" />
+            </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="2536856479943206801" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082845994235061" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="triggerAfterInit" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="2536856479943208792" nodeInfo="ng">
-          <link role="event" roleId="clqz.1786180596061231919" targetNodeId="2536856479943208800" resolveInfo="nothing" />
-          <node role="statemachine" roleId="clqz.7851711690674279260" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2536856479943208794" nodeInfo="ng">
-            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2536856479943206780" resolveInfo="sm" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9294901222098136" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="9294901222098135" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2536856479943208794" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2536856479943206780" resolveInfo="sm" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmTriggerTarget" typeId="clqz.6118219496725500902" id="9294901222098134" nodeInfo="ng">
+              <link role="event" roleId="clqz.6118219496725502924" targetNodeId="2536856479943208800" resolveInfo="nothing" />
+            </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="2536856479943208796" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082845994237130" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="noTransTriggered" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="2536856479943208803" nodeInfo="ng">
-          <link role="event" roleId="clqz.1786180596061231919" targetNodeId="2536856479943206754" resolveInfo="seitch" />
-          <node role="statemachine" roleId="clqz.7851711690674279260" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2536856479943208805" nodeInfo="ng">
-            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2536856479943206780" resolveInfo="sm" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9294901222098191" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="9294901222098190" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2536856479943208805" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2536856479943206780" resolveInfo="sm" />
+            </node>
+            <node role="target" roleId="mj1l.7034214596252529803" type="clqz.SmTriggerTarget" typeId="clqz.6118219496725500902" id="9294901222098189" nodeInfo="ng">
+              <link role="event" roleId="clqz.6118219496725502924" targetNodeId="2536856479943206754" resolveInfo="seitch" />
+            </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="2536856479943208807" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8326082845994236793" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="triggering2ndTrans" />
           </node>
         </node>
@@ -130,15 +145,9 @@
         <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2536856479943206747" nodeInfo="ng">
           <property name="value" nameId="mj1l.2212975673976043696" value="3" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="2536856479943206748" nodeInfo="ng">
-          <property name="min" value="0" />
-          <property name="max" value="5" />
-          <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2536856479943206749" nodeInfo="ng">
-            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
-          </node>
-          <node role="max" roleId="clqz.1656687801206292531" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2536856479943206750" nodeInfo="ng">
-            <property name="value" nameId="mj1l.2212975673976043696" value="5" />
-          </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="9294901222098635" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="2536856479943206751" nodeInfo="ng">
@@ -294,7 +303,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2536856479943206809" nodeInfo="sn" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2536856479943206810" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2536856479943206811" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2536856479943206801" resolveInfo="triggerAfterInit" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082845994235061" resolveInfo="triggerAfterInit" />
         </node>
       </node>
       <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="2536856479943206812" nodeInfo="ng">
@@ -317,7 +326,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2536856479943208811" nodeInfo="sn" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2536856479943208812" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2536856479943208813" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2536856479943208796" resolveInfo="noTransTriggered" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082845994237130" resolveInfo="noTransTriggered" />
         </node>
       </node>
       <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="2536856479943208814" nodeInfo="ng">
@@ -328,7 +337,7 @@
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2536856479943208816" nodeInfo="ng">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="2536856479943208817" nodeInfo="ng">
           <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2536856479943208819" nodeInfo="ng">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2536856479943208807" resolveInfo="triggering2ndTrans" />
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8326082845994236793" resolveInfo="triggering2ndTrans" />
           </node>
         </node>
       </node>
@@ -345,7 +354,7 @@
       </node>
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2536856479943208828" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2536856479943208829" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2536856479943208807" resolveInfo="triggering2ndTrans" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082845994236793" resolveInfo="triggering2ndTrans" />
         </node>
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2536856479943208830" nodeInfo="ng">
@@ -363,7 +372,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2536856479943571903" nodeInfo="sn" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2536856479943571904" nodeInfo="ng">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2536856479943571905" nodeInfo="ng">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2536856479943208807" resolveInfo="triggering2ndTrans" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="8326082845994236793" resolveInfo="triggering2ndTrans" />
         </node>
       </node>
       <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="2536856479943571906" nodeInfo="ng">

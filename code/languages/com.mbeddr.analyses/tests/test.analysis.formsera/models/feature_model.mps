@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:6189846e-cb7c-4c6e-bcf8-c0318e3217c7(feature_model)">
   <persistence version="8" />
-  <language-engaged-on-generation namespace="ad5c6649-337c-4447-8651-e0cc8f4ffe24(com.mbeddr.analyses.yices.fm)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="0d9470ba-d59f-4411-a2ce-12f6b6bdec49(com.mbeddr.analyses.fm)" />
   <devkit namespace="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />
@@ -10,12 +9,11 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="22" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="9" implicit="yes" />
-  <import index="4r5s" modelUID="r:877cb3b3-b593-43b4-ac12-3f0d2829688a(com.mbeddr.analyses.yices.fm.structure)" version="2" implicit="yes" />
   <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="3127880198517389397" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="IntelligentSensors" />
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="3127880198517389398" nodeInfo="ng">
@@ -55,7 +53,6 @@
           <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="4359602154373149689" nodeInfo="ng" />
         </node>
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.FeatureModelVerifiableAttribute" typeId="4r5s.7519116116714294488" id="7519116116714539953" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="20776903375352463" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Production" />
@@ -84,7 +81,6 @@
           </node>
         </node>
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="4r5s.ConfigurationModelVerifiableAttribute" typeId="4r5s.7519116116714540431" id="7519116116714542513" nodeInfo="ng" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3127880198517389416" nodeInfo="ng">
@@ -150,6 +146,7 @@
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="425959417804914050" nodeInfo="ng">
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="3127880198517389398" resolveInfo="IntelligentSensorFamily" />
+      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="20776903375352463" resolveInfo="Production" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8265078645303307147" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="3127880198517389397" resolveInfo="IntelligentSensors" />
@@ -333,12 +330,10 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="3127880198517389473" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="3127880198517389474" nodeInfo="ng" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qdv7.VariabilityConfigItem" typeId="qdv7.6514264311693667923" id="1328910530790918011" nodeInfo="ng">
-      <node role="config" roleId="qdv7.6514264311693667924" type="qdv7.VariabilityTransformationConfig" typeId="qdv7.6617704999132114004" id="1328910530790918013" nodeInfo="ng">
-        <node role="mappings" roleId="qdv7.6617704999132114005" type="qdv7.ConfigurationMapping" typeId="qdv7.6617704999132114000" id="1328910530790918019" nodeInfo="ng">
-          <link role="featureModel" roleId="qdv7.6617704999132114002" targetNodeId="3127880198517389398" resolveInfo="IntelligentSensorFamily" />
-          <link role="configurationModel" roleId="qdv7.6617704999132114003" targetNodeId="20776903375352463" resolveInfo="Production" />
-        </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qdv7.VariabilityConfigItem" typeId="qdv7.6514264311693667923" id="3370114936326542112" nodeInfo="ng">
+      <node role="mappings" roleId="qdv7.4920787109780106774" type="qdv7.ConfigurationMapping" typeId="qdv7.6617704999132114000" id="3370114936326542117" nodeInfo="ng">
+        <link role="featureModel" roleId="qdv7.6617704999132114002" targetNodeId="3127880198517389398" resolveInfo="IntelligentSensorFamily" />
+        <link role="configurationModel" roleId="qdv7.6617704999132114003" targetNodeId="20776903375352463" resolveInfo="Production" />
       </node>
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="3127880198517389475" nodeInfo="ng">

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="cepq" modelUID="r:785288ce-1c40-4b37-8bcd-f2a2ba641c25(com.mbeddr.mpsutil.buildvalidation.structure)" version="-1" />
+    </dependencies>
+    <rename id="cepq.8622759486284932892" type="CONCEPT" from="BuildValidationRules" to="BuildValidationConfig" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="cepq" modelUID="r:785288ce-1c40-4b37-8bcd-f2a2ba641c25(com.mbeddr.mpsutil.buildvalidation.structure)" version="0" />
+      <model index="fnbo" modelUID="r:d89d60fc-e488-474b-a7de-9d6e3b77d10d(com.mbeddr.mpsutil.buildutil.structure)" version="-1" />
+    </dependencies>
+    <move id="fnbo.8622759486285134025" to="cepq.8622759486285134042" />
+    <move id="fnbo.8622759486285134026" to="cepq.8622759486285134043" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="cepq" modelUID="r:785288ce-1c40-4b37-8bcd-f2a2ba641c25(com.mbeddr.mpsutil.buildvalidation.structure)" version="1" />
+    </dependencies>
+    <rename id="cepq.8622759486285129695" type="CHILD" from="marcros" to="macros" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="6yag" modelUID="r:ae83f939-5676-4040-a347-de182f3e9879(com.mbeddr.mpsutil.buildvalidation.constraints)" version="-1" />
+      <model index="cepq" modelUID="r:785288ce-1c40-4b37-8bcd-f2a2ba641c25(com.mbeddr.mpsutil.buildvalidation.structure)" version="2" />
+      <model index="ibum" modelUID="r:2d56cc9b-0538-4f2b-95cb-4eb75d12fe79(com.mbeddr.mpsutil.buildvalidation.editor)" version="-1" />
+      <model index="p8c7" modelUID="r:a81d40ef-e0ca-4e82-b235-4b068157ec1c(com.mbeddr.mpsutil.buildvalidation.behavior)" version="-1" />
+      <model index="qdfh" modelUID="r:1083cc90-dbb0-4d3e-b36d-fb72279678a1(com.mbeddr.mpsutil.buildvalidation.typesystem)" version="-1" />
+      <model index="1bho" modelUID="r:49c71725-306a-4283-b8a1-08ade9339f67(com.mbeddr.mpsutil.buildvalidation.generator.template.main@generator)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:2d56cc9b-0538-4f2b-95cb-4eb75d12fe79(com.mbeddr.mpsutil.buildvalidation.editor)" newModel="r:2d56cc9b-0538-4f2b-95cb-4eb75d12fe79(com.mbeddr.core.buildvalidation.editor)" />
+    <RenameModel oldModel="r:a81d40ef-e0ca-4e82-b235-4b068157ec1c(com.mbeddr.mpsutil.buildvalidation.behavior)" newModel="r:a81d40ef-e0ca-4e82-b235-4b068157ec1c(com.mbeddr.core.buildvalidation.behavior)" />
+    <RenameModel oldModel="r:785288ce-1c40-4b37-8bcd-f2a2ba641c25(com.mbeddr.mpsutil.buildvalidation.structure)" newModel="r:785288ce-1c40-4b37-8bcd-f2a2ba641c25(com.mbeddr.core.buildvalidation.structure)" />
+    <RenameModel oldModel="r:1083cc90-dbb0-4d3e-b36d-fb72279678a1(com.mbeddr.mpsutil.buildvalidation.typesystem)" newModel="r:1083cc90-dbb0-4d3e-b36d-fb72279678a1(com.mbeddr.core.buildvalidation.typesystem)" />
+    <RenameModel oldModel="r:ae83f939-5676-4040-a347-de182f3e9879(com.mbeddr.mpsutil.buildvalidation.constraints)" newModel="r:ae83f939-5676-4040-a347-de182f3e9879(com.mbeddr.core.buildvalidation.constraints)" />
+    <RenameModel oldModel="r:49c71725-306a-4283-b8a1-08ade9339f67(com.mbeddr.mpsutil.buildvalidation.generator.template.main@generator)" newModel="r:49c71725-306a-4283-b8a1-08ade9339f67(com.mbeddr.core.buildvalidation.generator.template.main@generator)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="cepq" modelUID="r:785288ce-1c40-4b37-8bcd-f2a2ba641c25(com.mbeddr.core.buildvalidation.structure)" version="3" />
+    </dependencies>
+    <rename id="cepq.8297282968580840312" type="CHILD" from="pathpp" to="pathpicker" />
+  </StructureModification>
+</history>
+

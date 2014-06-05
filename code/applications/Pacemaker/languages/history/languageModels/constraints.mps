@@ -6,7 +6,7 @@
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="9" implicit="yes" />
   <import index="xnma" modelUID="r:0a98087a-fdcc-42b7-8559-9142aa01be5d(history.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1006354465704165783" nodeInfo="ng">
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="xnma.1006354465700605897" resolveInfo="HistoryDepth" />
     <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="1006354465704165835" nodeInfo="ng">
@@ -15,7 +15,7 @@
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1006354465704165838" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1006354465704244459" nodeInfo="nn">
             <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1006354465704244458" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="NiceName" />
+              <property name="value" nameId="tpee.1070475926801" value="niceName" />
             </node>
           </node>
         </node>

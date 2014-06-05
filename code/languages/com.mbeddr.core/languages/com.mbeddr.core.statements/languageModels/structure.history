@@ -8,15 +8,15 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="-1" />
       <model index="yvc7" modelUID="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)" version="-1" />
+      <model index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="-1" />
       <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="-1" />
       <model index="7kf" modelUID="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)" version="0" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="0" />
       <model index="3ho" modelUID="r:5464eee6-9739-45c3-be18-bcd3e5d07f5a(com.mbeddr.core.base.textGen)" version="-1" />
       <model index="j4gk" modelUID="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" version="-1" />
-      <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" />
       <model index="gfi" modelUID="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)" version="-1" />
+      <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" />
       <model index="rj8d" modelUID="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" version="-1" />
     </dependencies>
     <move id="c4fa.1679452829930469420" to="vs0r.3857533489766146432" />
@@ -1165,6 +1165,12 @@
     <move id="go54.1357038773597018008" to="j807.7350547698080062218" />
     <move id="go54.1357038773597017978" to="j807.7350547698080062262" />
     <move id="pzvh.5095889050032140240" to="hzzn.7350547698080062310" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" />
+    </dependencies>
+    <rename id="c4fa.5485104033529954230" type="CONCEPT" from="TextPrefix" to="TextAttributePrefix" />
   </StructureModification>
 </history>
 
