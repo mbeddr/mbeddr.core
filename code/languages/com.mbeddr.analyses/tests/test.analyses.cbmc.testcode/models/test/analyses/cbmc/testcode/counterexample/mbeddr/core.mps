@@ -288,6 +288,11 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7927989444115620799" resolveInfo="literals" />
       </node>
     </node>
+    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="8082808502117782575" nodeInfo="ng">
+      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
+      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
+      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+    </node>
   </root>
   <root type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="20776903375366586" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="std" />
@@ -2884,6 +2889,28 @@
             <property name="value" nameId="mj1l.1054289341113496567" value="111100" />
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8082808502117446181" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="floatLiteral" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="8082808502117446179" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8082808502117447364" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="5.1" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8082808502117448524" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="doubleLiteral" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="8082808502117448522" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8082808502117449666" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="5.1" />
+          </node>
+        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7927989444115626830" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="trueLiteral" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7927989444115626828" nodeInfo="ng">
@@ -2935,6 +2962,28 @@
             </node>
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8082808502117219303" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="stringArray" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="8082808502117219818" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="yq40.2963921683065158286" type="yq40.StringType" typeId="yq40.6113173064528067332" id="8082808502117219301" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ArrayInitExpression" typeId="yq40.7350547698080060956" id="8082808502117221350" nodeInfo="ng">
+            <node role="exprs" roleId="yq40.7350547698080060962" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="8082808502117221913" nodeInfo="ng">
+              <property name="value" nameId="yq40.6113173064526131578" value="a" />
+            </node>
+            <node role="exprs" roleId="yq40.7350547698080060962" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="8082808502117223351" nodeInfo="ng">
+              <property name="value" nameId="yq40.6113173064526131578" value="b" />
+            </node>
+            <node role="exprs" roleId="yq40.7350547698080060962" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="8082808502117224844" nodeInfo="ng">
+              <property name="value" nameId="yq40.6113173064526131578" value="c" />
+            </node>
+          </node>
+        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.Assert" typeId="q5q6.6973658835837826905" id="3370114936326783218" nodeInfo="ng">
           <node role="exp" roleId="q5q6.6973658835837826906" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="3370114936326783488" nodeInfo="ng" />
         </node>
@@ -2943,6 +2992,9 @@
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8082808502118361599" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1402041590878_2" />
     </node>
   </root>
 </model>

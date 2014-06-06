@@ -46,7 +46,7 @@
     <property name="name" nameId="tpck.1169194664001" value="com_mbeddr_ext_components" />
     <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="1437179237661092689" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="ComponentsConceptsCoverageInCounterexampleTests" />
-      <property name="lastUpdatedOn" nameId="vs0r.4423545983997782838" value="1401721713885" />
+      <property name="lastUpdatedOn" nameId="vs0r.4423545983997782838" value="1401966540065" />
       <property name="lastUdpatedBy" nameId="vs0r.4423545983997787056" value="z003cemm" />
       <property name="mustBeOk" nameId="vs0r.3815661793603523593" value="true" />
       <node role="query" roleId="vs0r.865293814733115677" type="79wq.ConceptCoverageAssessment" typeId="79wq.347451455539224225" id="1437179237661092955" nodeInfo="ng">
@@ -61,7 +61,7 @@
           </node>
         </node>
       </node>
-      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="6656616888322415852" nodeInfo="ng">
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="8677143158023891371" nodeInfo="ng">
         <property name="totalCount" nameId="vs0r.671216505796623805" value="21" />
         <property name="newlyAdded" nameId="vs0r.671216505796623807" value="21" />
         <property name="ok" nameId="vs0r.671216505796623806" value="0" />
@@ -89,7 +89,7 @@
     <property name="name" nameId="tpck.1169194664001" value="com_mbeddr_ext_core" />
     <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="6656616888322479378" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="CoreConceptsCoverageInCounterexampleTests" />
-      <property name="lastUpdatedOn" nameId="vs0r.4423545983997782838" value="1401778679415" />
+      <property name="lastUpdatedOn" nameId="vs0r.4423545983997782838" value="1402039441158" />
       <property name="lastUdpatedBy" nameId="vs0r.4423545983997787056" value="z003cemm" />
       <property name="mustBeOk" nameId="vs0r.3815661793603523593" value="true" />
       <node role="query" roleId="vs0r.865293814733115677" type="79wq.ConceptCoverageAssessment" typeId="79wq.347451455539224225" id="6656616888324512825" nodeInfo="ng">
@@ -125,9 +125,9 @@
           </node>
         </node>
       </node>
-      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="6656616888324513860" nodeInfo="ng">
-        <property name="totalCount" nameId="vs0r.671216505796623805" value="183" />
-        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="183" />
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="8082808502117208172" nodeInfo="ng">
+        <property name="totalCount" nameId="vs0r.671216505796623805" value="177" />
+        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="177" />
         <property name="ok" nameId="vs0r.671216505796623806" value="0" />
       </node>
     </node>
