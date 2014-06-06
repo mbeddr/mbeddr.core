@@ -6,7 +6,11 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+  </dependencies>
   <usedLanguages>
+    <usedLanguage>c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1(com.mbeddr.mpsutil.spreferences)</usedLanguage>
     <usedLanguage>e941ddc5-c164-428a-9268-ecbc864f1e98(com.mbeddr.mpsutil.spreferences.demolang)</usedLanguage>
   </usedLanguages>
 </solution>
