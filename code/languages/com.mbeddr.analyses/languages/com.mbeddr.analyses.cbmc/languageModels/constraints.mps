@@ -12,30 +12,6 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4811430974075522147" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expressions" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5q6.4887422885165654650" resolveInfo="Implies" />
-    <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="4811430974075522148" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4811430974075522149" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4811430974075522150" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4811430974075522196" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4811430974075522168" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintFunctionParameter_parentNode" typeId="tp1t.1202989658459" id="4811430974075526058" nodeInfo="nn" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="4811430974075522174" nodeInfo="nn">
-                <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="4811430974075522175" nodeInfo="ng">
-                  <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="4811430974075522179" nodeInfo="nn">
-                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="x27k.6437088627575722813" resolveInfo="Module" />
-                  </node>
-                </node>
-                <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Inclusion" typeId="tp25.1144100932627" id="4811430974075526060" nodeInfo="ng" />
-              </node>
-            </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsNullOperation" typeId="tp25.1171999116870" id="4811430974075522201" nodeInfo="nn" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8985851583396699515" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="harness" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5q6.8985851583396455245" resolveInfo="NondetVarAssignment" />
@@ -125,10 +101,6 @@
         </node>
       </node>
     </node>
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8676616451799025845" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expressions" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5q6.8676616451799017117" resolveInfo="BelongsToInterval" />
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6521653180368927194" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
