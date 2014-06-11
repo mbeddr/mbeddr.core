@@ -11,7 +11,7 @@
   <import index="eqhl" modelUID="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" version="2" />
   <import index="rbq9" modelUID="r:e9339685-9249-4681-a8f5-318d0236a4a8(com.mbeddr.analyses.cbmc.rt.counterexample.raw)" version="-1" />
   <import index="3h46" modelUID="r:d540de81-ea7d-4732-953c-fa9c34672949(com.mbeddr.analyses.cbmc.core.rt.testing_utils)" version="-1" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="43" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="44" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" />
   <import index="fxhk" modelUID="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" version="-1" />
@@ -1063,7 +1063,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6521653180370412161" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6521653180370454287" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: y == 0 || y == 1" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: y == 0 || y == 1" />
               </node>
             </node>
           </node>
@@ -1092,7 +1092,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6521653180370412161" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6521653180370458145" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: y != 1" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: y != 1" />
               </node>
             </node>
           </node>
@@ -1121,7 +1121,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6521653180370412161" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6521653180370459474" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: y != 0" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: y != 0" />
               </node>
             </node>
           </node>
@@ -1184,7 +1184,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2627968989056888301" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2627968989056937070" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: x &gt; 1 &amp;&amp; x &lt;= 40" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x &gt; 1 &amp;&amp; x &lt;= 40" />
               </node>
             </node>
           </node>
@@ -1213,7 +1213,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2627968989056888301" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2627968989056937081" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: x != 1" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x != 1" />
               </node>
             </node>
           </node>
@@ -1242,7 +1242,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2627968989056888301" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2627968989056944358" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: x != 25" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x != 25" />
               </node>
             </node>
           </node>
@@ -1271,7 +1271,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2627968989056888301" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2627968989056937092" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: x != 40" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x != 40" />
               </node>
             </node>
           </node>
@@ -1300,7 +1300,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2627968989056888301" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2627968989057124947" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: x &gt; 1 &amp;&amp; x &lt;= 255" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x &gt; 1 &amp;&amp; x &lt;= 255" />
               </node>
             </node>
           </node>
@@ -1361,7 +1361,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2627968989057238268" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2627968989057238281" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: x &gt; -50 &amp;&amp; x &lt;= 60" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x &gt; -50 &amp;&amp; x &lt;= 60" />
               </node>
             </node>
           </node>
@@ -1390,7 +1390,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2627968989057238268" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2627968989057238292" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: x != -50" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x != -50" />
               </node>
             </node>
           </node>
@@ -1419,7 +1419,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2627968989057238268" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2627968989057238303" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: x != 25" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x != 25" />
               </node>
             </node>
           </node>
@@ -1448,7 +1448,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2627968989057238268" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2627968989057238314" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: x != 60" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x != 60" />
               </node>
             </node>
           </node>
@@ -1477,7 +1477,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2627968989057238268" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2627968989057238325" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: x &gt; -100 &amp;&amp; x &lt;= 127" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x &gt; -100 &amp;&amp; x &lt;= 127" />
               </node>
             </node>
           </node>
@@ -1493,6 +1493,99 @@
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="2627968989057238330" nodeInfo="nn" />
+      </node>
+    </node>
+  </root>
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8807044630333029565" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Implies" />
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="8807044630333029566" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="testImplies" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8807044630333029567" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8807044630333029568" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8807044630333029569" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8807044630333029570" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="results" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="8807044630333029571" nodeInfo="in">
+              <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8807044630333029572" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.5853537697759033507" resolveInfo="CBMCLiftedResult" />
+              </node>
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8807044630333029573" nodeInfo="nn">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="3h46.7634203028839870183" resolveInfo="TestingFacade" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3h46.7634203028839887957" resolveInfo="checkAsserts" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="8807044630333029574" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="hppc" />
+                <property name="name" nameId="tp25.559557797393017702" value="harness" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8807044630333029575" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="implies" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8807044630333029576" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="impliesEntry" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8807044630333029577" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8807044630333029578" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8807044630333029579" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="res0" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8807044630333029580" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.5853537697759033507" resolveInfo="CBMCLiftedResult" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8807044630333029581" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.6521653180370427112" resolveInfo="findResultByMessage" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.6521653180370426832" resolveInfo="TestingUtils" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8807044630333029582" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8807044630333029570" resolveInfo="results" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8807044630333029583" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x &gt;= 0 -&gt; x &lt; 255" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertTrue" typeId="tpe3.1171981022339" id="8807044630333029584" nodeInfo="nn">
+          <node role="condition" roleId="tpe3.1171981057159" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8807044630333029585" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8807044630333029586" nodeInfo="nn">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8807044630333029579" resolveInfo="res0" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8807044630333029587" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eqhl.7364716885853664738" resolveInfo="propertyFails" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8807044630333029588" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8807044630333111078" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8807044630333111079" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="res1" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8807044630333111080" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.5853537697759033507" resolveInfo="CBMCLiftedResult" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8807044630333111081" nodeInfo="nn">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.6521653180370426832" resolveInfo="TestingUtils" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.6521653180370427112" resolveInfo="findResultByMessage" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8807044630333111082" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8807044630333029570" resolveInfo="results" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8807044630333111083" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x &gt;= 0 -&gt; x &lt;= 255" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertTrue" typeId="tpe3.1171981022339" id="8807044630333111084" nodeInfo="nn">
+          <node role="condition" roleId="tpe3.1171981057159" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8807044630333111085" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8807044630333111086" nodeInfo="nn">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8807044630333111079" resolveInfo="res1" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8807044630333111087" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eqhl.7364716885853664708" resolveInfo="propertyHolds" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8807044630333110792" nodeInfo="nn" />
       </node>
     </node>
   </root>

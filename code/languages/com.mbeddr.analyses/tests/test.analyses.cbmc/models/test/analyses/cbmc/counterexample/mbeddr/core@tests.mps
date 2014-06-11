@@ -11,7 +11,7 @@
   <import index="eqhl" modelUID="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" version="2" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="43" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="44" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" />
   <import index="3h46" modelUID="r:d540de81-ea7d-4732-953c-fa9c34672949(com.mbeddr.analyses.cbmc.core.rt.testing_utils)" version="-1" />
   <import index="rbq9" modelUID="r:e9339685-9249-4681-a8f5-318d0236a4a8(com.mbeddr.analyses.cbmc.rt.counterexample.raw)" version="-1" />
@@ -1589,14 +1589,14 @@
                 <property name="value" nameId="tpee.1070475926801" value="translateRectangle" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="776451177275599601" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: r.lowerRight.x != 10" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: r.lowerRight.x != 10" />
               </node>
             </node>
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="8985300201478022532" nodeInfo="nn">
           <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8985300201478022806" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Assert Checks: r.lowerRight.x != 10" />
+            <property name="value" nameId="tpee.1070475926801" value="Assert: r.lowerRight.x != 10" />
           </node>
           <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8985300201478054034" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8985300201478053901" nodeInfo="nn">
@@ -1856,7 +1856,7 @@
                 <property name="value" nameId="tpee.1070475926801" value="translateRectangleWithArray" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="776451177275601968" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: r.points[1].x != 10" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: r.points[1].x != 10" />
               </node>
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8985300201473357491" nodeInfo="nn">
@@ -1866,7 +1866,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="8985300201478054727" nodeInfo="nn">
           <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8985300201478054728" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Assert Checks: r.points[1].x != 10" />
+            <property name="value" nameId="tpee.1070475926801" value="Assert: r.points[1].x != 10" />
           </node>
           <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8985300201478054729" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8985300201478054730" nodeInfo="nn">
@@ -2140,7 +2140,7 @@
                 <property name="value" nameId="tpee.1070475926801" value="translateComplexForm" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8985300201479588725" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: r.lowerRight.x != 10" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: r.lowerRight.x != 10" />
               </node>
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8985300201475509041" nodeInfo="nn">
@@ -2150,7 +2150,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="8985300201478089029" nodeInfo="nn">
           <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8985300201478089030" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Assert Checks: r.lowerRight.x != 10" />
+            <property name="value" nameId="tpee.1070475926801" value="Assert: r.lowerRight.x != 10" />
           </node>
           <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8985300201478089031" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8985300201478089032" nodeInfo="nn">
@@ -2354,7 +2354,7 @@
                 <property name="value" nameId="tpee.1070475926801" value="twoDimensionalMatrix" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="776451177271905968" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert Checks: element != 2" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: element != 2" />
               </node>
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.VariableReference" typeId="tpee.1068498886296" id="776451177271905969" nodeInfo="nn">
@@ -4391,7 +4391,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="o23b.CBMCCounterexampleTest" typeId="o23b.4791280061046135693" id="970538627130071849" nodeInfo="ng">
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="970538627130071850" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="entryGlobalConstants" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="entryMacro" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="970538627130071851" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575724001" resolveInfo="Function" />
             </node>
