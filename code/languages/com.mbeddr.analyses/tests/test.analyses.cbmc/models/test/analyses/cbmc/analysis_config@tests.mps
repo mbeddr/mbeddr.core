@@ -142,7 +142,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3730003159909600378" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="3730003159909530628" nodeInfo="nn">
           <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3730003159909530629" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580320021" value="28" />
+            <property name="value" nameId="tpee.1068580320021" value="27" />
           </node>
           <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3730003159909530630" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3730003159909534115" nodeInfo="nn">
@@ -637,7 +637,7 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="3730003159909530840" nodeInfo="nn">
                 <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3730003159909530841" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="27" />
+                  <property name="value" nameId="tpee.1068580320021" value="26" />
                 </node>
               </node>
             </node>

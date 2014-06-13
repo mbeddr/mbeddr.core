@@ -113,7 +113,6 @@
       <property name="check_array_bounds" nameId="hj5x.4053481679317021369" value="true" />
       <property name="check_div_by_zero" nameId="hj5x.4053481679317021367" value="true" />
       <property name="check_nan" nameId="hj5x.4053481679317021372" value="true" />
-      <property name="check_pointer" nameId="hj5x.4053481679317021368" value="true" />
       <property name="check_signed_overflow" nameId="hj5x.4053481679317021370" value="true" />
       <property name="check_unsigned_overflow" nameId="hj5x.4053481679317021371" value="true" />
       <property name="check_memory_leak" nameId="hj5x.9020927825194549928" value="true" />

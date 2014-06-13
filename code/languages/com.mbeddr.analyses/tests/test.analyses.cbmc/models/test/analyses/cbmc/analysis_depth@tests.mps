@@ -164,7 +164,7 @@
                   <property name="value" nameId="tpee.1070475926801" value="analysisDepth14" />
                 </node>
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5978633916448902230" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="13" />
+                  <property name="value" nameId="tpee.1068580320021" value="15" />
                 </node>
               </node>
             </node>
@@ -193,7 +193,7 @@
       </node>
     </node>
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="441761995015387643" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="testAnalysisDepth14" />
+      <property name="name" nameId="tpck.1169194664001" value="testAnalysisDepth15" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="441761995015387644" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="441761995015387645" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="441761995015387658" nodeInfo="nn">
@@ -263,8 +263,8 @@
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448925105" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="analysisDepth15" />
                 </node>
-                <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5978633916448925106" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="14" />
+                <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7498385757422511108" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="20" />
                 </node>
               </node>
             </node>
@@ -365,7 +365,7 @@
                   <property name="value" nameId="tpee.1070475926801" value="analysisDepth17" />
                 </node>
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5978633916448934475" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="16" />
+                  <property name="value" nameId="tpee.1068580320021" value="20" />
                 </node>
               </node>
             </node>
