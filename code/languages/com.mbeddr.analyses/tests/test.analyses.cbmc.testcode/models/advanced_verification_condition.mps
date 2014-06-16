@@ -15,7 +15,7 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="43" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="44" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="7573444803550978951" nodeInfo="ng">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="7573444803550978952" nodeInfo="ng">
@@ -35,16 +35,16 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7392194941658594388" resolveInfo="after_then" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="7392194941658610244" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7392194941658610167" resolveInfo="until_must" />
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7392194941658610167" resolveInfo="before_must" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3693493944569860963" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3693493944569247934" resolveInfo="after_until_must" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2609337213949805527" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2609337213949641052" resolveInfo="between_and_exists" />
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2609337213949641052" resolveInfo="after_until_exists" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2609337213949805529" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2609337213949641216" resolveInfo="until_exists" />
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2609337213949641216" resolveInfo="before_exists" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2609337213949805531" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2609337213949641332" resolveInfo="precedes" />
@@ -388,12 +388,12 @@
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7392194941658610167" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="until_must" />
+    <property name="name" nameId="tpck.1169194664001" value="before_must" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7392194941658610168" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1346846121984_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7392194941658610169" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="untilMust" />
+      <property name="name" nameId="tpck.1169194664001" value="beforeMust" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7392194941658610170" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.BeforePMustQ" typeId="q5q6.7392194941658528658" id="7392194941658610227" nodeInfo="ng">
@@ -438,12 +438,12 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1365004666378_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7392194941658610184" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="untilMustPositiveTests" />
+      <property name="name" nameId="tpck.1169194664001" value="beforeMustPositiveTests" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7392194941658610185" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7392194941658610186" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7392194941658610187" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="7392194941658610169" resolveInfo="untilMust" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="7392194941658610169" resolveInfo="beforeMust" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7392194941658610188" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
@@ -466,7 +466,7 @@
           <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7392194941658610194" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7392194941658610195" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7392194941658610196" nodeInfo="ng">
-                <link role="function" roleId="x27k.5950410542643524493" targetNodeId="7392194941658610169" resolveInfo="untilMust" />
+                <link role="function" roleId="x27k.5950410542643524493" targetNodeId="7392194941658610169" resolveInfo="beforeMust" />
                 <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7392194941658610197" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                 </node>
@@ -501,7 +501,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1365056663879_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7392194941658610207" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="untilMustNegativeTests" />
+      <property name="name" nameId="tpck.1169194664001" value="beforeMustNegativeTests" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7392194941658610208" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ForStatement" typeId="c4fa.7254843406768596598" id="7392194941658610210" nodeInfo="ng">
@@ -518,7 +518,7 @@
           <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7392194941658610214" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7392194941658610215" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7392194941658610216" nodeInfo="ng">
-                <link role="function" roleId="x27k.5950410542643524493" targetNodeId="7392194941658610169" resolveInfo="untilMust" />
+                <link role="function" roleId="x27k.5950410542643524493" targetNodeId="7392194941658610169" resolveInfo="beforeMust" />
                 <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7392194941658610217" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
                 </node>
@@ -842,12 +842,12 @@
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2609337213949641052" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="between_and_exists" />
+    <property name="name" nameId="tpck.1169194664001" value="after_until_exists" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641053" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1346846121984_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641054" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="betweenAndExists" />
+      <property name="name" nameId="tpck.1169194664001" value="afterUntilExists" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641055" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.AfterQUntilRExistsP" typeId="q5q6.2609337213949315030" id="2609337213949641140" nodeInfo="ng">
@@ -907,12 +907,12 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1365004666378_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641074" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="betweenAndExistsPositiveTests" />
+      <property name="name" nameId="tpck.1169194664001" value="afterUntilExistsPositiveTests" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641075" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641076" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641077" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="afterUntilExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641078" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
@@ -926,7 +926,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641081" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641082" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="afterUntilExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641083" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
@@ -940,7 +940,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641169" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641170" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="afterUntilExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641171" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
@@ -954,7 +954,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641174" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641175" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="afterUntilExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641176" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
@@ -968,7 +968,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641097" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641098" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="afterUntilExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641099" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
@@ -982,7 +982,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641179" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641180" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="afterUntilExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641181" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
@@ -996,7 +996,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641184" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641185" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="afterUntilExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641186" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
@@ -1010,7 +1010,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641102" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641103" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="afterUntilExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641104" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
@@ -1032,12 +1032,12 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1365056663879_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641120" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="betweenAndExistsNegativeTests" />
+      <property name="name" nameId="tpck.1169194664001" value="afterUntilExistsNegativeTests" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641121" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641189" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641190" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="afterUntilExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641191" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
@@ -1051,7 +1051,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641194" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641195" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="afterUntilExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641196" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
@@ -1065,7 +1065,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641209" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641210" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="afterUntilExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641211" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
@@ -1088,12 +1088,12 @@
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2609337213949641216" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="until_exists" />
+    <property name="name" nameId="tpck.1169194664001" value="before_exists" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641217" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1346846121984_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641218" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="untilExists" />
+      <property name="name" nameId="tpck.1169194664001" value="beforeExists" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641219" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.BeforeQExistsP" typeId="q5q6.2609337213949315048" id="2609337213949641275" nodeInfo="ng">
@@ -1138,12 +1138,12 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1365004666378_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641233" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="untilExistsPositiveTests" />
+      <property name="name" nameId="tpck.1169194664001" value="beforeExistsPositiveTests" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641234" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641298" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641299" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="untilExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="beforeExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641300" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
@@ -1154,7 +1154,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641304" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641305" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="untilExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="beforeExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641306" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
@@ -1165,7 +1165,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641312" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641313" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="untilExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="beforeExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641314" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
@@ -1176,7 +1176,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641318" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641319" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="untilExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="beforeExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641320" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="-1" />
             </node>
@@ -1187,7 +1187,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641322" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641323" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="untilExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="beforeExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641324" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
@@ -1207,12 +1207,12 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1365056663879_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641256" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="untilExistsNegativeTests" />
+      <property name="name" nameId="tpck.1169194664001" value="beforeExistsNegativeTests" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641257" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641326" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641327" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="untilExists" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="beforeExists" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641329" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
