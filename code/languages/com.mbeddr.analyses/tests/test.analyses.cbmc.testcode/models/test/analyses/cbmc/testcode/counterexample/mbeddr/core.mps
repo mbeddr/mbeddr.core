@@ -4017,12 +4017,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8022057952244444338" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="addrAsInt" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8022057952244445135" nodeInfo="ng">
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="1933745515790223531" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="yq40.Pointer2Int" typeId="yq40.7863679314024295441" id="8022057952244444340" nodeInfo="ng">
-            <node role="type" roleId="yq40.4415315037677926511" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8022057952244445162" nodeInfo="ng">
+            <node role="type" roleId="yq40.4415315037677926511" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="1933745515790225042" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>

@@ -4498,7 +4498,7 @@
     </node>
   </root>
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8022057952244688456" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Poitners" />
+    <property name="name" nameId="tpck.1169194664001" value="Pointers" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="8022057952244688457" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="testSimplePointers" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8022057952244688458" nodeInfo="in" />
