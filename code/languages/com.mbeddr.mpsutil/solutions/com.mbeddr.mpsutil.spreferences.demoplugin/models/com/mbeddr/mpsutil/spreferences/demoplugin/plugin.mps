@@ -27,6 +27,7 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <root type="tmud.PreferencePageDescription" typeId="tmud.6547806146467473938" id="1415668757616643758" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Abcd Efg Hijklmn" />
+    <property name="applicationScope" nameId="tmud.1192914765655705572" value="true" />
     <link role="rootConcept" roleId="tmud.6547806146467491221" targetNodeId="tpee.1068390468198" resolveInfo="ClassConcept" />
     <node role="moduleSettings" roleId="tmud.1551477140197502033" type="tmud.ModuleSettings" typeId="tmud.1551477140197502032" id="2067852065321960437" nodeInfo="ng">
       <node role="importedModels" roleId="tmud.1551477140197679196" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="2067852065322602341" nodeInfo="nn">
