@@ -22,30 +22,52 @@
   <import index="cpzd" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.inspector(MPS.Editor/jetbrains.mps.nodeEditor.inspector@java_stub)" version="-1" />
   <import index="vsqj" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" version="-1" />
   <import index="ajxo" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.apache.log4j(MPS.Core/org.apache.log4j@java_stub)" version="-1" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tmud" modelUID="r:8d0fa52a-32d1-4359-892e-669a9b66600c(com.mbeddr.mpsutil.spreferences.structure)" version="-1" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
-  <root type="tmud.PreferencePageDescription" typeId="tmud.6547806146467473938" id="6547806146468856560" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Java Class Preferences" />
+  <root type="tmud.PreferencePageDescription" typeId="tmud.6547806146467473938" id="1415668757616643758" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Abcd Efg Hijklmn" />
     <link role="rootConcept" roleId="tmud.6547806146467491221" targetNodeId="tpee.1068390468198" resolveInfo="ClassConcept" />
-    <node role="moduleSettings" roleId="tmud.1551477140197502033" type="tmud.ModuleSettings" typeId="tmud.1551477140197502032" id="1551477140197556077" nodeInfo="ng">
-      <node role="importedModels" roleId="tmud.1551477140197679196" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="1551477140197707588" nodeInfo="nn">
-        <property name="fqName" nameId="tp25.559557797393041554" value="java.util" />
+    <node role="moduleSettings" roleId="tmud.1551477140197502033" type="tmud.ModuleSettings" typeId="tmud.1551477140197502032" id="2067852065321960437" nodeInfo="ng">
+      <node role="importedModels" roleId="tmud.1551477140197679196" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="2067852065322602341" nodeInfo="nn">
         <property name="name" nameId="tp25.559557797393017702" value="java.util" />
         <property name="stereotype" nameId="tp25.559557797393021807" value="java_stub" />
       </node>
-      <node role="importedModels" roleId="tmud.1551477140197679196" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="1551477140197707666" nodeInfo="nn">
-        <property name="name" nameId="tp25.559557797393017702" value="java.awt.color" />
-        <property name="stereotype" nameId="tp25.559557797393021807" value="java_stub" />
-      </node>
-      <node role="usedLanguages" roleId="tmud.1551477140197679137" type="tp25.LanguageReferenceExpression" typeId="tp25.4040588429969069898" id="1551477140197586163" nodeInfo="nn">
+      <node role="usedLanguages" roleId="tmud.1551477140197679137" type="tp25.LanguageReferenceExpression" typeId="tp25.4040588429969069898" id="2067852065322085726" nodeInfo="nn">
         <property name="moduleId" nameId="tp25.4040588429969021683" value="f3061a53-9226-4cc5-a443-f952ceaf5816" />
       </node>
-      <node role="usedLanguages" roleId="tmud.1551477140197679137" type="tp25.LanguageReferenceExpression" typeId="tp25.4040588429969069898" id="1551477140197586171" nodeInfo="nn">
-        <property name="moduleId" nameId="tp25.4040588429969021683" value="774bf8a0-62e5-41e1-af63-f4812e60e48b" />
+      <node role="devkits" roleId="tmud.6044976435765739263" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="6044976435766047824" nodeInfo="nn">
+        <property name="moduleId" nameId="tp25.4040588429969021683" value="fbc25dd2-5da4-483a-8b19-70928e1b62d7" />
       </node>
-      <node role="usedLanguages" roleId="tmud.1551477140197679137" type="tp25.LanguageReferenceExpression" typeId="tp25.4040588429969069898" id="1551477140197669524" nodeInfo="nn">
-        <property name="moduleId" nameId="tp25.4040588429969021683" value="fd392034-7849-419d-9071-12563d152375" />
+    </node>
+    <node role="initFunction" roleId="tmud.6044976435766357656" type="tmud.InitPageNode" typeId="tmud.6044976435766352430" id="6044976435766460783" nodeInfo="ng">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6044976435766460784" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="6044976435766491681" nodeInfo="nn">
+          <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="6044976435766491684" nodeInfo="sn">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6044976435766466305" nodeInfo="nn">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6044976435766490583" nodeInfo="nn">
+                <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6044976435766490599" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="Unnamed" />
+                </node>
+                <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6044976435766466771" nodeInfo="nn">
+                  <node role="operand" roleId="tpee.1197027771414" type="tmud.Parameter_PageNode" typeId="tmud.6044976435766352514" id="6044976435766466304" nodeInfo="ng" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6044976435766477889" nodeInfo="nn">
+                    <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6044976435766504287" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6044976435766492310" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tmud.Parameter_PageNode" typeId="tmud.6044976435766352514" id="6044976435766491733" nodeInfo="ng" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6044976435766495577" nodeInfo="nn">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.IsEmptyOperation" typeId="tpee.1225271369338" id="6044976435766510507" nodeInfo="nn" />
+          </node>
+        </node>
       </node>
     </node>
   </root>
