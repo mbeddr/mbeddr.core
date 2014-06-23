@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.modelcache" uuid="7b932f6b-eb08-4f90-a93b-1e22f1f2a962" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.modelcache" uuid="7b932f6b-eb08-4f90-a93b-1e22f1f2a962" pluginKind="PLUGIN_CORE" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
