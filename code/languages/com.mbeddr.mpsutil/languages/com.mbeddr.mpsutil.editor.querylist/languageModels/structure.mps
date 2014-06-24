@@ -121,6 +121,9 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1169125787135" resolveInfo="AbstractConceptDeclaration" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="943947710604878113" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="943947710604875620" resolveInfo="IInlineEditorContainer" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6202678563380238499" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Function_GetElements" />
@@ -167,10 +170,47 @@
     <property name="name" nameId="tpck.1169194664001" value="QueryListInlineEditorComponent" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpc2.1088185857835" resolveInfo="InlineEditorComponent" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="943947710602559009" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="CellModel_QueryLink" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="querylink" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpc2.1073389214265" resolveInfo="EditorCellModel" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="943947710603674333" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="elementConcept" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1169125787135" resolveInfo="AbstractConceptDeclaration" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="943947710603591567" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="editorComponent" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7238779735251712681" resolveInfo="QueryListInlineEditorComponent" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="943947710603662307" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="query" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="943947710603615961" resolveInfo="Function_LoadQueryLinkData" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="943947710604882058" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="943947710604875620" resolveInfo="IInlineEditorContainer" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="943947710603615961" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Function_LoadQueryLinkData" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1137021947720" resolveInfo="ConceptFunction" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="943947710603632321" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Parameter_QueryLinkData" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="queryLinkData" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
+  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7908147594175279209" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CellModel_DefaultEditor" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="default editor" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpc2.1073389214265" resolveInfo="EditorCellModel" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="943947710604875620" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IInlineEditorContainer" />
   </root>
 </model>
 
