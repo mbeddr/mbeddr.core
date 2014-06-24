@@ -173,6 +173,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="943947710602559009" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CellModel_QueryLink" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="querylink" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="link" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpc2.1073389214265" resolveInfo="EditorCellModel" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="943947710603674333" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -197,11 +198,13 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="943947710603615961" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Function_LoadQueryLinkData" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="link" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1137021947720" resolveInfo="ConceptFunction" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="943947710603632321" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Parameter_QueryLinkData" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="queryLinkData" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="link" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7908147594175279209" nodeInfo="ig">
@@ -211,6 +214,122 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="943947710604875620" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IInlineEditorContainer" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="147976780035481717" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="CellModel_QueryLinkList" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="querylinklist" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="linklist" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpc2.1073389214265" resolveInfo="EditorCellModel" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1145360728033" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="reverse" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="147976780035763509" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="separatorLayoutConstraint" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpc2.1138197387103" resolveInfo="_Layout_Constraints_Enum" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="147976780035711722" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="separatorText" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="147976780035691116" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="usesFolding" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="147976780035674619" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="usesBraces" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="147976780035572837" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="elementConcept" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1169125787135" resolveInfo="AbstractConceptDeclaration" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="147976780035550096" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="query" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="147976780035550100" resolveInfo="Function_LoadQueryLinkListData" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="147976780035611921" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="emptyCellModel" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1073389214265" resolveInfo="EditorCellModel" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="147976780035644501" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="editorComponent" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7238779735251712681" resolveInfo="QueryListInlineEditorComponent" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1182233390675" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="filter" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1182191800432" resolveInfo="QueryFunction_NodeListFilter" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="147976780035662183" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="cellLayout" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1106270491082" resolveInfo="CellLayout" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="147976780035699173" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="usesFoldingCondition" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1142886221719" resolveInfo="QueryFunction_NodeCondition" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="147976780035723825" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="separatorTextQuery" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.709996738298806197" resolveInfo="QueryFunction_SeparatorText" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="147976780035771568" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="separatorStyle" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1233148810477" resolveInfo="InlineStyleDeclaration" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1176897874615" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="nodeFactory" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1176897764478" resolveInfo="QueryFunction_NodeFactory" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="147976780035821802" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="elementMenuDescriptor" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1164824717996" resolveInfo="CellMenuDescriptor" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="147976780035808524" nodeInfo="ig">
+      <property name="role" nameId="tpce.1071599776563" value="elementActionMap" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1139535219966" resolveInfo="CellActionMapDeclaration" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7279578193766667846" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="addHints" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.4653693564097968040" resolveInfo="ContextHintsSpecification" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7279578193766667847" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="removeHints" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.4653693564097968040" resolveInfo="ContextHintsSpecification" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="147976780036596619" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="foldedCellModel" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1073389214265" resolveInfo="EditorCellModel" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="147976780035550100" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Function_LoadQueryLinkListData" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="linklist" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1137021947720" resolveInfo="ConceptFunction" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="147976780035556419" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Parameter_QueryLinkListData" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="queryData" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="linklist" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
   </root>
 </model>
 
