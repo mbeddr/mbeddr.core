@@ -9,6 +9,7 @@
   <root type="gei.RootConcept" typeId="gei.6202678563380435581" id="1872840520877841796" nodeInfo="ng">
     <property name="showExpressions" nameId="gei.6202678563380449077" value="true" />
     <property name="showQueryLink" nameId="gei.1646868633684830515" value="true" />
+    <property name="myProperty" nameId="gei.4299801941279353937" value="sdfa" />
     <link role="classReference" roleId="gei.1646868633684300706" targetNodeId="459067182341659552" resolveInfo="Othesdfgfhjhass" />
     <node role="statementList" roleId="gei.6202678563380435709" type="tpee.StatementList" typeId="tpee.1068580123136" id="1872840520877986343" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3813940761425280740" nodeInfo="nn" />

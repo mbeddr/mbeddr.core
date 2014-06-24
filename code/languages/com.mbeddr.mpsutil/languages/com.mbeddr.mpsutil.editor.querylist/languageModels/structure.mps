@@ -331,5 +331,28 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="linklist" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4299801941278870712" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="CellModel_QueryProperty" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="queryproperty" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="property" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpc2.1073389214265" resolveInfo="EditorCellModel" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4299801941278904153" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="query" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4299801941278883756" resolveInfo="Function_LoadQueryPropertyData" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4299801941278883756" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="property" />
+    <property name="name" nameId="tpck.1169194664001" value="Function_LoadQueryPropertyData" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1137021947720" resolveInfo="ConceptFunction" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4299801941278883994" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="property" />
+    <property name="name" nameId="tpck.1169194664001" value="Parameter_QueryPropertyData" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="queryPropertyData" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
+  </root>
 </model>
 
