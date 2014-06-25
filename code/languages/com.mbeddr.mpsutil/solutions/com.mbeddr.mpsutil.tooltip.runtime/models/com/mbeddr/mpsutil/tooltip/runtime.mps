@@ -2312,12 +2312,22 @@
     <property name="name" nameId="tpck.1169194664001" value="TooltipComponent" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="8803049869097862864" nodeInfo="igu">
       <property name="isDeprecated" nameId="tpee.1224848525476" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="PADDING" />
+      <property name="name" nameId="tpck.1169194664001" value="X_PADDING" />
       <property name="isFinal" nameId="tpee.1176718929932" value="true" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="8803049869097862355" nodeInfo="in" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="8803049869097860530" nodeInfo="nn" />
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8803049869097862737" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580320021" value="6" />
+        <property name="value" nameId="tpee.1068580320021" value="4" />
+      </node>
+    </node>
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="3664616740523743121" nodeInfo="igu">
+      <property name="isDeprecated" nameId="tpee.1224848525476" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="Y_PADDING" />
+      <property name="isFinal" nameId="tpee.1176718929932" value="true" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="3664616740523743122" nodeInfo="in" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="3664616740523743123" nodeInfo="nn" />
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3664616740523743124" nodeInfo="nn">
+        <property name="value" nameId="tpee.1068580320021" value="2" />
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="8803049869097858714" nodeInfo="ngu" />
@@ -2383,10 +2393,10 @@
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8803049869095871722" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nu8v.~EditorCell%dmoveTo(int,int)%cvoid" resolveInfo="moveTo" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8803049869097867283" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8803049869097862864" resolveInfo="PADDING" />
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8803049869097862864" resolveInfo="X_PADDING" />
               </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8803049869097867605" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8803049869097862864" resolveInfo="PADDING" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3664616740523951070" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3664616740523743121" resolveInfo="Y_PADDING" />
               </node>
             </node>
           </node>
@@ -2403,7 +2413,7 @@
                       <property name="value" nameId="tpee.1068580320021" value="2" />
                     </node>
                     <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8803049869097867903" nodeInfo="nn">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8803049869097862864" resolveInfo="PADDING" />
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8803049869097862864" resolveInfo="X_PADDING" />
                     </node>
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8803049869096257466" nodeInfo="nn">
@@ -2420,8 +2430,8 @@
                     <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8803049869097870874" nodeInfo="nn">
                       <property name="value" nameId="tpee.1068580320021" value="2" />
                     </node>
-                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8803049869097870005" nodeInfo="nn">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8803049869097862864" resolveInfo="PADDING" />
+                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3664616740523905246" nodeInfo="nn">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3664616740523743121" resolveInfo="Y_PADDING" />
                     </node>
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8803049869096264492" nodeInfo="nn">
