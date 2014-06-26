@@ -75,6 +75,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="name" nameId="tpck.1169194664001" value="SmallWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="text formatted in &lt;small&gt;" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\small" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5455967284188346755" resolveInfo="SlideWord" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5455967284188347162" nodeInfo="ig">
@@ -108,6 +109,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
     <property name="name" nameId="tpck.1169194664001" value="LinkWord" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="text formatted as a link" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="@link" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5455967284188346755" resolveInfo="SlideWord" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5455967284188413423" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="url" />
