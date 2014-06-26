@@ -775,7 +775,7 @@
                           <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="e2lb.~Math" resolveInfo="Math" />
                           <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DivExpression" typeId="tpee.1095950406618" id="8609451857843067755" nodeInfo="nn">
                             <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8609451857843067765" nodeInfo="nn">
-                              <property name="value" nameId="tpee.1068580320021" value="400" />
+                              <property name="value" nameId="tpee.1068580320021" value="150" />
                             </node>
                             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.UnaryMinus" typeId="tpee.8064396509828172209" id="8609451857843066179" nodeInfo="nn">
                               <node role="expression" roleId="tpee.1239714902950" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8609451857843066797" nodeInfo="nn">
