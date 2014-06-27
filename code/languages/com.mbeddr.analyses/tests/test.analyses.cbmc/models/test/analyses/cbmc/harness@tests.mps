@@ -1477,7 +1477,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2627968989057238268" resolveInfo="results" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6819581653496637017" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Assert: x &gt; -100 &amp;&amp; x &lt;= 127" />
+                <property name="value" nameId="tpee.1070475926801" value="Assert: x &gt; -100 &amp;&amp; x &lt; 128" />
               </node>
             </node>
           </node>
@@ -1488,7 +1488,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6819581653496637013" resolveInfo="res4" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6819581653496637021" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eqhl.7364716885853664708" resolveInfo="propertyHolds" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eqhl.7364716885853664738" resolveInfo="propertyFails" />
             </node>
           </node>
         </node>
