@@ -9,7 +9,7 @@
   <language namespace="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" />
   <language namespace="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="44" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="45" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="5" />
   <import index="tzyt" modelUID="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" version="7" />
@@ -420,7 +420,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4723851297114354020" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4723851297114358029" nodeInfo="nn">
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4723851297114358065" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="after an event occurs, from the next step on, the condition should be true forever" />
+              <property name="value" nameId="tpee.1070475926801" value="after event 'P' occurs, from the next step on, the condition 'Q' should be true forever" />
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4723851297114354314" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4723851297114354019" nodeInfo="nn" />
@@ -543,7 +543,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4723851297114546267" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4723851297114550279" nodeInfo="nn">
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4723851297114555702" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="before event 'p' occurs first time, condition 'q' must be always true; if 'p' becomes true then 'q' need not be 'true' anymore" />
+              <property name="value" nameId="tpee.1070475926801" value="before event 'P' occurs first time, condition 'Q' must be always true; \nif 'P' becomes true then 'Q' need not be true anymore" />
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4723851297114546564" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4723851297114546266" nodeInfo="nn" />
@@ -558,7 +558,7 @@
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4723851297113578015" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
-    <link role="concept" roleId="1i04.1225194240799" targetNodeId="q5q6.2609337213949315048" resolveInfo="BeforeQExistsP" />
+    <link role="concept" roleId="1i04.1225194240799" targetNodeId="q5q6.2609337213949315048" resolveInfo="BeforePExistsQ" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="4723851297113578072" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="renderReadable" />
       <property name="isVirtual" nameId="1i04.1225194472832" value="false" />
@@ -615,7 +615,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4723851297114681490" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4723851297114687423" nodeInfo="nn">
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4723851297114687618" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="before event 'p' occurs first time, condition 'q' must be true at least once" />
+              <property name="value" nameId="tpee.1070475926801" value="before event 'P' occurs first time, condition 'Q' must be true at least once" />
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4723851297114681784" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4723851297114681489" nodeInfo="nn" />
@@ -687,7 +687,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4723851297114798677" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4723851297114802651" nodeInfo="nn">
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4723851297114802687" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="always one step before event 'q' is true, we should have event 'p'" />
+              <property name="value" nameId="tpee.1070475926801" value="always one step before event 'Q' is true, event 'P' should be true" />
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4723851297114798974" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4723851297114798676" nodeInfo="nn" />
@@ -777,7 +777,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4723851297114809579" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4723851297114813553" nodeInfo="nn">
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4723851297114813589" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="strictly after event 'q' occurs, until 'r' occurs, excluding the time of 'r', condition 'p' should be true at least once" />
+              <property name="value" nameId="tpee.1070475926801" value="strictly after event 'Q' occurs, until 'R' occurs, condition 'P' should be true at least once" />
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4723851297114809876" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4723851297114809578" nodeInfo="nn" />
@@ -873,7 +873,7 @@
               </node>
             </node>
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4723851297114899402" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="strictly after event 'q' occurs, until 'r' occurs, excluding the time of 'r', condition 'p' should be always true" />
+              <property name="value" nameId="tpee.1070475926801" value="strictly after event 'Q' occurs, until 'R' occurs, condition 'P' should be always true" />
             </node>
           </node>
         </node>
