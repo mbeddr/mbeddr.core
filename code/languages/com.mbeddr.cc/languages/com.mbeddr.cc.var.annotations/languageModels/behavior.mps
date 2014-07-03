@@ -1989,7 +1989,11 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3011040663209495802" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3011040663209495798" nodeInfo="nn">
-            <node role="creator" roleId="tpee.1145553007750" type="tp2q.SequenceCreator" typeId="tp2q.1224414427926" id="3011040663209508470" nodeInfo="nn" />
+            <node role="creator" roleId="tpee.1145553007750" type="tp2q.SequenceCreator" typeId="tp2q.1224414427926" id="3011040663209508470" nodeInfo="nn">
+              <node role="elementType" roleId="tp2q.1224414456414" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7137425448762017949" nodeInfo="in">
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="qqyh.6825476687691337712" resolveInfo="VariabilitySupport" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
