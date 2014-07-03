@@ -13,12 +13,21 @@
   <devkit namespace="74a1428c-a8b1-49f6-8abb-f4008cf591e6(com.mbeddr.analyses.statemachines)" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="17" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" />
+  <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" />
+  <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="3" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="11" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="45" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
-  <import index="79wq" modelUID="r:ad7435e2-263f-4d16-a250-c987f2fa9599(com.mbeddr.core.qa.structure)" version="-1" implicit="yes" />
+  <import index="79wq" modelUID="r:ad7435e2-263f-4d16-a250-c987f2fa9599(com.mbeddr.core.qa.structure)" version="0" implicit="yes" />
   <root type="vs0r.AssessmentContainer" typeId="vs0r.865293814733114043" id="5738929523990066370" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="com_mbeddr_ext_statemachines" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="concepts_coverage" />
     <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="1437179237660969396" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="StatemachinesConceptsCoverageInCounterexampleLiftingTests" />
       <property name="lastUpdatedOn" nameId="vs0r.4423545983997782838" value="1401513632140" />
@@ -44,6 +53,7 @@
   </root>
   <root type="vs0r.AssessmentContainer" typeId="vs0r.865293814733114043" id="1437179237660979252" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="com_mbeddr_ext_components" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="concepts_coverage" />
     <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="1437179237661092689" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="ComponentsConceptsCoverageInCounterexampleTests" />
       <property name="lastUpdatedOn" nameId="vs0r.4423545983997782838" value="1401966540065" />
@@ -87,9 +97,10 @@
   </root>
   <root type="vs0r.AssessmentContainer" typeId="vs0r.865293814733114043" id="6656616888322479377" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="com_mbeddr_ext_core" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="concepts_coverage" />
     <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="6656616888322479378" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="CoreConceptsCoverageInCounterexampleTests" />
-      <property name="lastUpdatedOn" nameId="vs0r.4423545983997782838" value="1402039441158" />
+      <property name="lastUpdatedOn" nameId="vs0r.4423545983997782838" value="1403266431877" />
       <property name="lastUdpatedBy" nameId="vs0r.4423545983997787056" value="z003cemm" />
       <property name="mustBeOk" nameId="vs0r.3815661793603523593" value="true" />
       <node role="query" roleId="vs0r.865293814733115677" type="79wq.ConceptCoverageAssessment" typeId="79wq.347451455539224225" id="6656616888324512825" nodeInfo="ng">
@@ -125,9 +136,9 @@
           </node>
         </node>
       </node>
-      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="8082808502117208172" nodeInfo="ng">
-        <property name="totalCount" nameId="vs0r.671216505796623805" value="177" />
-        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="177" />
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="8012488810008891166" nodeInfo="ng">
+        <property name="totalCount" nameId="vs0r.671216505796623805" value="145" />
+        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="145" />
         <property name="ok" nameId="vs0r.671216505796623806" value="0" />
       </node>
     </node>
@@ -172,9 +183,10 @@
   </root>
   <root type="vs0r.AssessmentContainer" typeId="vs0r.865293814733114043" id="6656616888325162490" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="com_mbeddr_analyses" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="concepts_coverage" />
     <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="6656616888325162624" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="ConceptsFromAnalysesProject" />
-      <property name="lastUpdatedOn" nameId="vs0r.4423545983997782838" value="1401794561586" />
+      <property name="lastUpdatedOn" nameId="vs0r.4423545983997782838" value="1403852236601" />
       <property name="lastUdpatedBy" nameId="vs0r.4423545983997787056" value="z003cemm" />
       <node role="query" roleId="vs0r.865293814733115677" type="79wq.ConceptCoverageAssessment" typeId="79wq.347451455539224225" id="6656616888325208072" nodeInfo="ng">
         <node role="langs" roleId="79wq.347451455539224226" type="79wq.LanguagePrefix" typeId="79wq.347451455539224231" id="6656616888325208073" nodeInfo="ng">
@@ -187,11 +199,36 @@
           <node role="scope" roleId="79wq.6656616888324914904" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="6656616888325251916" nodeInfo="nn">
             <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
           </node>
+          <node role="scope" roleId="79wq.6656616888324914904" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="8807044630331317085" nodeInfo="nn">
+            <property name="moduleId" nameId="tp25.4040588429969021683" value="6af06b95-db74-4451-8977-23aaf6f14307" />
+          </node>
+          <node role="scope" roleId="79wq.6656616888324914904" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="8807044630331613114" nodeInfo="nn">
+            <property name="moduleId" nameId="tp25.4040588429969021683" value="442a4e82-a129-41ad-b27c-6d57089d3c83" />
+          </node>
         </node>
       </node>
-      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="4130267619639640635" nodeInfo="ng">
-        <property name="totalCount" nameId="vs0r.671216505796623805" value="9" />
-        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="9" />
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="6819581653494306054" nodeInfo="ng">
+        <property name="totalCount" nameId="vs0r.671216505796623805" value="2" />
+        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="0" />
+        <property name="ok" nameId="vs0r.671216505796623806" value="0" />
+      </node>
+    </node>
+  </root>
+  <root type="vs0r.AssessmentContainer" typeId="vs0r.865293814733114043" id="6819581653494306073" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="com_mbeddr_analyses_generator" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="generator_coverage" />
+    <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="6819581653494306074" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="com_mbeddr_analyses_generator" />
+      <property name="lastUpdatedOn" nameId="vs0r.4423545983997782838" value="1403877054810" />
+      <property name="lastUdpatedBy" nameId="vs0r.4423545983997787056" value="z003cemm" />
+      <node role="query" roleId="vs0r.865293814733115677" type="79wq.GeneratorCoverageAssessment" typeId="79wq.8022057952247994428" id="6819581653494306080" nodeInfo="ng">
+        <node role="langs" roleId="79wq.8022057952247994488" type="79wq.LanguagePrefix" typeId="79wq.347451455539224231" id="6819581653494306088" nodeInfo="ng">
+          <property name="prefix" nameId="79wq.347451455539224232" value="com.mbeddr.analyses.cbmc" />
+        </node>
+      </node>
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="6819581653502288101" nodeInfo="ng">
+        <property name="totalCount" nameId="vs0r.671216505796623805" value="0" />
+        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="0" />
         <property name="ok" nameId="vs0r.671216505796623806" value="0" />
       </node>
     </node>
