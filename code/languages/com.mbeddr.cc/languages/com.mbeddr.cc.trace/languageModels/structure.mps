@@ -123,6 +123,8 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="806361095880421377" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="GenericTraceTarget" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
   </root>
 </model>
