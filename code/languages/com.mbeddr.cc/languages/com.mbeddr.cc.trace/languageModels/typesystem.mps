@@ -69,13 +69,16 @@
           <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7379700031914259335" nodeInfo="in">
             <link role="concept" roleId="tp25.1138405853777" targetNodeId="26ao.439567521322928994" resolveInfo="TraceAnnotation" />
           </node>
-          <node role="initializer" roleId="tpee.1068431790190" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="7379700031914259338" nodeInfo="nn">
-            <link role="concept" roleId="tp25.1140138128738" targetNodeId="26ao.439567521322928994" resolveInfo="TraceAnnotation" />
-            <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7379700031914259339" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7379700031914259340" nodeInfo="nn">
-                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="7379700031914192622" resolveInfo="tk" />
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2914353497744894477" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2914353497744894072" nodeInfo="nn">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="7379700031914192622" resolveInfo="tk" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="2914353497744895791" nodeInfo="nn">
+              <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="2914353497744895793" nodeInfo="ng">
+                <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2914353497744895938" nodeInfo="nn">
+                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="26ao.439567521322928994" resolveInfo="TraceAnnotation" />
+                </node>
               </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="7379700031914259341" nodeInfo="nn" />
             </node>
           </node>
         </node>
