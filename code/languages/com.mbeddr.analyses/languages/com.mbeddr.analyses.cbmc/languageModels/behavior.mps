@@ -113,14 +113,15 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="441761995015090613" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="441761995015140313" nodeInfo="nn">
-            <node role="rValue" roleId="tpee.1068498886297" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="441761995015140316" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="-1" />
-            </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="441761995015090635" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="441761995015090614" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="441761995015140291" nodeInfo="nn">
                 <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.441761995014974059" resolveInfo="analysisDepth" />
               </node>
+            </node>
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="6401356680183757583" nodeInfo="nn">
+              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="tzyt.2017717622748485020" resolveInfo="VerificationConfigurationUtils" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="tzyt.6401356680183682909" resolveInfo="NO_ANALYSIS_DEPTH" />
             </node>
           </node>
         </node>
