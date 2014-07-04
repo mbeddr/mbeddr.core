@@ -422,6 +422,7 @@
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="3134547887598563909" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="StatementTests" />
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
+      <property name="needsColoring" nameId="51wr.3638754930750410708" value="true" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3134547887598563910" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3134547887598563903" resolveInfo="Driver" />
       </node>

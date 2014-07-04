@@ -142,7 +142,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="9103993088055847296" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="pleVariantActive" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Detailed Product Line" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Variant Product Line" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="9103993088055847297" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx1.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
