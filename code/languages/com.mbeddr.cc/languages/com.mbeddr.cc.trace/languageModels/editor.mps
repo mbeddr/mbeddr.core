@@ -126,6 +126,9 @@
         </node>
       </node>
     </node>
+    <node role="contextHints" roleId="tpc2.2597348684684069742" type="tpc2.ConceptEditorHintDeclarationReference" typeId="tpc2.6822301196700715228" id="2914353497746709805" nodeInfo="ig">
+      <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="2914353497746453169" resolveInfo="detailedTraces" />
+    </node>
   </root>
   <root type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="439567521322929318" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="deleteTrace" />
@@ -565,15 +568,12 @@
     </node>
     <node role="hints" roleId="tpc2.5944657839000877563" type="tpc2.ConceptEditorHintDeclaration" typeId="tpc2.5944657839003601246" id="2914353497746453169" nodeInfo="ig">
       <property name="showInUI" nameId="tpc2.168363875802087287" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="noTraces" />
-      <property name="presentation" nameId="tpc2.5944657839012629576" value="no traces" />
+      <property name="name" nameId="tpck.1169194664001" value="detailedTraces" />
+      <property name="presentation" nameId="tpc2.5944657839012629576" value="detailed traces" />
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2914353497746455252" nodeInfo="ng">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="26ao.439567521322928994" resolveInfo="TraceAnnotation" />
-    <node role="contextHints" roleId="tpc2.2597348684684069742" type="tpc2.ConceptEditorHintDeclarationReference" typeId="tpc2.6822301196700715228" id="2914353497746457296" nodeInfo="ig">
-      <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="2914353497746453169" resolveInfo="noTraces" />
-    </node>
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_AttributedNodeCell" typeId="tpc2.1149850725784" id="2914353497746455255" nodeInfo="ng" />
   </root>
 </model>
