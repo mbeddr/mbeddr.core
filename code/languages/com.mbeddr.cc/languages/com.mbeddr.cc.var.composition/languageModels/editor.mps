@@ -97,7 +97,7 @@
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="11rw.4585428266437068782" resolveInfo="ComposeOnlyAnnotation" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4585428266437068812" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4585428266437068819" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="COMPOSE-ONLY" />
+        <property name="text" nameId="tpc2.1073389577007" value="[COMPOSE-ONLY]" />
         <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="4585428266438201123" resolveInfo="annotations" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="4585428266437068815" nodeInfo="nn" />
@@ -137,10 +137,10 @@
         <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="4585428266438201123" resolveInfo="annotations" />
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="4585428266438237953" nodeInfo="nn" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4585428266438237919" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="MATCH" />
+          <property name="text" nameId="tpc2.1073389577007" value="[MATCH" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4585428266438237962" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="[" />
+          <property name="text" nameId="tpc2.1073389577007" value="/" />
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="4585428266438238089" nodeInfo="nn">
             <property name="flag" nameId="tpc2.1186414551515" value="true" />
           </node>
