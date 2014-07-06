@@ -119,12 +119,6 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1267649463820261291" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="rpdm.5050445633036581093" resolveInfo="missingMappings" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1267649463820261292" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpcw.ConceptFunctionParameter_model" typeId="tpcw.1161622665029" id="1267649463820261293" nodeInfo="nn" />
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_RootsOperation" typeId="tp25.1171315804604" id="1267649463820261294" nodeInfo="nn">
-                    <link role="concept" roleId="tp25.1171315804605" targetNodeId="qqyh.6825476687691337712" resolveInfo="VariabilitySupport" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
