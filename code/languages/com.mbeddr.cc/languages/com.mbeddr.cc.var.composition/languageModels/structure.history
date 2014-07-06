@@ -6,5 +6,11 @@
     </dependencies>
     <rename id="11rw.4585428266437115181" type="CONCEPT" from="ComposeChundRef" to="ComposeChunkRef" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="11rw" modelUID="r:7d4741f1-b780-4151-bf5a-811bc0aa7587(com.mbeddr.cc.var.composition.structure)" version="0" />
+    </dependencies>
+    <rename id="11rw.4585428266438237950" type="CHILD" from="strategy" to="matchStrategy" />
+  </StructureModification>
 </history>
 
