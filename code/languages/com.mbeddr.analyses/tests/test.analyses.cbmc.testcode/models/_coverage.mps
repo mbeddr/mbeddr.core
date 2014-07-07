@@ -86,6 +86,10 @@
         <node role="langs" roleId="79wq.347451455539224226" type="79wq.LanguagePrefix" typeId="79wq.347451455539224231" id="1437179237660979261" nodeInfo="ng">
           <property name="prefix" nameId="79wq.347451455539224232" value="com.mbeddr.ext.components" />
         </node>
+        <node role="langs" roleId="79wq.347451455539224226" type="79wq.LanguagePrefix" typeId="79wq.347451455539224231" id="3833004075500835137" nodeInfo="ng">
+          <property name="prefix" nameId="79wq.347451455539224232" value="com.mbeddr.ext.components.embedded" />
+        </node>
+        <node role="langs" roleId="79wq.347451455539224226" type="79wq.LanguagePrefix" typeId="79wq.347451455539224231" id="3833004075500914158" nodeInfo="ng" />
         <node role="scope" roleId="79wq.347451455539224227" type="79wq.GlobalScope" typeId="79wq.347451455539224230" id="1437179237661095411" nodeInfo="ng" />
       </node>
       <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="1219198797543193015" nodeInfo="ng">

@@ -192,8 +192,8 @@
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1965414175734799191" nodeInfo="ng">
-              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="1965414175734798662" resolveInfo="nonExportedVar" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4090491717000844326" nodeInfo="ng">
+              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="1965414175734798983" resolveInfo="exportedVar" />
             </node>
           </node>
         </node>
@@ -206,7 +206,7 @@
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1965414175734800644" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1965414175734800645" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1965414175734800646" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="must be in c-file and prototype as extern inline in header" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="must be in h-file only" />
             </node>
           </node>
         </node>

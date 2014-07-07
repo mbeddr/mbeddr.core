@@ -14,6 +14,7 @@
         </modelRoot>
       </models>
       <external-templates>
+        <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
         <generator generatorUID="fe10a44b-439e-41f5-be93-710ac733b4b3(com.mbeddr.cc.requirements#5044281954033843801)" />
       </external-templates>
       <usedLanguages>
@@ -36,6 +37,20 @@
             <generator generatorUID="fe10a44b-439e-41f5-be93-710ac733b4b3(com.mbeddr.cc.requirements#5044281954033843801)" />
             <external-mapping>
               <all-local-mappings />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_after">
+          <greater-priority-mapping>
+            <generator generatorUID="80ee4470-3cae-4976-9b3d-fbd572ff06d9(com.mbeddr.cc.requirements.c#3534497005926849038)" />
+            <external-mapping>
+              <mapping-node modelUID="r:9590a8b4-24e6-4baf-b498-d58326d5ed83(com.mbeddr.cc.requirements.c.generator.template.main@generator)" nodeID="3534497005926849081" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
+            <external-mapping>
+              <mapping-node modelUID="r:5f62df63-885f-42f0-80d6-e13ad6c51489(com.mbeddr.core.modules.gen.generator.template.main@generator)" nodeID="1252295221377568075" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
