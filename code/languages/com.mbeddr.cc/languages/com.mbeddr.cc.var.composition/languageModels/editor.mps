@@ -145,17 +145,14 @@
         <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="4585428266438201123" resolveInfo="annotations" />
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="4585428266438237953" nodeInfo="nn" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4585428266438237919" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="[MATCH" />
+          <property name="text" nameId="tpc2.1073389577007" value="[MATCH:" />
           <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5966716731423742342" resolveInfo="deleteAnnotation" />
-        </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4585428266438237962" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="/" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4585428266438237980" nodeInfo="ng">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="11rw.4585428266438237950" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4585428266438448560" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="/" />
+          <property name="text" nameId="tpc2.1073389577007" value="-&gt;" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4585428266438448580" nodeInfo="ng">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="11rw.4585428266438448548" />

@@ -3,6 +3,7 @@
   <persistence version="8" />
   <language namespace="21ac77a4-1b66-44c5-aaec-94e43bb86519(com.mbeddr.cc.var.composition)" />
   <language namespace="03f78d94-3f33-4789-ad35-5950b32fdad8(com.mbeddr.cc.var.composition.c)" />
+  <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
@@ -15,7 +16,8 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
-  <import index="xr8g" modelUID="r:a34fe219-429e-4501-bb74-7bfdd6e6bfc5(com.mbeddr.cc.var.composition.c.structure)" version="-1" implicit="yes" />
+  <import index="xr8g" modelUID="r:a34fe219-429e-4501-bb74-7bfdd6e6bfc5(com.mbeddr.cc.var.composition.c.structure)" version="2" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4585428266437380012" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="CompTest1" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="4585428266438189425" nodeInfo="ng">
@@ -316,7 +318,10 @@
         <link role="binary" roleId="11rw.4585428266436910674" targetNodeId="4585428266437380115" resolveInfo="CompTest1" />
       </node>
       <node role="compositionChunks" roleId="11rw.4585428266437091052" type="11rw.ComposeChunkRef" typeId="11rw.4585428266437115181" id="5966716731425453881" nodeInfo="ng">
-        <link role="chunk" roleId="11rw.4585428266437115182" targetNodeId="5966716731425451133" resolveInfo="Logging" />
+        <link role="chunk" roleId="11rw.4585428266437115182" targetNodeId="5966716731425451133" resolveInfo="LoggingGeneric" />
+      </node>
+      <node role="compositionChunks" roleId="11rw.4585428266437091052" type="11rw.ComposeChunkRef" typeId="11rw.4585428266437115181" id="6477445114790691779" nodeInfo="ng">
+        <link role="chunk" roleId="11rw.4585428266437115182" targetNodeId="6477445114790683043" resolveInfo="LoggingSpecific" />
       </node>
       <node role="compositionChunks" roleId="11rw.4585428266437091052" type="11rw.ComposeChunkRef" typeId="11rw.4585428266437115181" id="4585428266437386844" nodeInfo="ng">
         <link role="chunk" roleId="11rw.4585428266437115182" targetNodeId="4585428266437386840" resolveInfo="ChangeFunction" />
@@ -333,7 +338,10 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4585428266437386840" resolveInfo="ChangeFunction" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5966716731425453888" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5966716731425451133" resolveInfo="Logging" />
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5966716731425451133" resolveInfo="LoggingGeneric" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6477445114790691788" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6477445114790683043" resolveInfo="LoggingSpecific" />
       </node>
     </node>
   </root>
@@ -367,16 +375,10 @@
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5966716731425451133" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Logging" />
+    <property name="name" nameId="tpck.1169194664001" value="LoggingGeneric" />
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="11rw.ComposeOnlyAnnotation" typeId="11rw.4585428266437068782" id="5966716731425451134" nodeInfo="ng" />
     <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="5966716731425451135" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="4585428266437380012" resolveInfo="CompTest1" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5966716731425451144" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1404679768955_2" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5966716731425451149" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1404679836978_5" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5966716731425451150" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="logging" />
@@ -410,6 +412,34 @@
         <node role="compositionStrategy" roleId="11rw.4585428266438448548" type="11rw.ChildControlledCompositionStrategy" typeId="11rw.5966716731424941122" id="6477445114790462983" nodeInfo="ng" />
       </node>
     </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6477445114790683043" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="LoggingSpecific" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6477445114790683053" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="logging2" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6477445114790683054" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6477445114790683055" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6477445114790691758" nodeInfo="ng">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6477445114790691760" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6477445114790691761" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6477445114790691762" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="useless comment" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="11rw.MatchAnnotation" typeId="11rw.4585428266438237835" id="6477445114790683121" nodeInfo="ng">
+        <node role="matchStrategy" roleId="11rw.4585428266438237950" type="xr8g.FunctionMatcher" typeId="xr8g.6477445114790513326" id="6477445114790683137" nodeInfo="ng" />
+        <node role="compositionStrategy" roleId="11rw.4585428266438448548" type="xr8g.FunctionStatementMerger" typeId="xr8g.6477445114790514764" id="6477445114790683139" nodeInfo="ng">
+          <node role="op" roleId="xr8g.6477445114790528148" type="xr8g.PrependOp" typeId="xr8g.6477445114790514766" id="6477445114790691743" nodeInfo="ng" />
+        </node>
+      </node>
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="11rw.ComposeOnlyAnnotation" typeId="11rw.4585428266437068782" id="6477445114790683119" nodeInfo="ng" />
   </root>
 </model>
 

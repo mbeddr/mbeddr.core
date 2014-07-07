@@ -715,6 +715,7 @@
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6477445114789678099" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5966716731425456191" resolveInfo="target" />
                       </node>
+                      <node role="actualArgument" roleId="tpee.1068499141038" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="6477445114791476980" nodeInfo="nn" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6477445114789678100" nodeInfo="nn">
                         <property name="value" nameId="tpee.1070475926801" value="cannot compose child operations; see details" />
                       </node>
@@ -841,6 +842,12 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5966716731425612685" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="matchedNode" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5966716731425613158" nodeInfo="in" />
+      </node>
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="6477445114791466495" nodeInfo="ir">
+        <property name="name" nameId="tpck.1169194664001" value="strategy" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6477445114791467271" nodeInfo="in">
+          <link role="concept" roleId="tp25.1138405853777" targetNodeId="11rw.4585428266438448359" resolveInfo="CompositionStrategy" />
+        </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5966716731425464656" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="message" />
@@ -1318,6 +1325,9 @@
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5966716731425464642" resolveInfo="CompositionResultFail" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5966716731425842779" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5966716731425757445" resolveInfo="nodeWithOp" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6477445114791473067" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5966716731425780834" resolveInfo="strategy" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5966716731425845278" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="cannot deal with CC:ADD" />
