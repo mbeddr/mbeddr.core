@@ -19,6 +19,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.annotations/fm.mpl" folder="ple_var" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.annotations/solutions/pluginSolution/pluginSolution.msd" folder="ple_var" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.c/c.mpl" folder="ple_var" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.composition.c/com.mbeddr.cc.var.composition.c.mpl" folder="ple_var" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.composition/com.mbeddr.cc.var.composition.mpl" folder="ple_var" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.fm/fm.mpl" folder="ple_var" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.rt.comp/comp.mpl" folder="ple_var" />

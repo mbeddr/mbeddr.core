@@ -130,6 +130,12 @@
         <property name="color" nameId="tpc2.1186403713874" value="DARK_BLUE" />
       </node>
     </node>
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="5966716731426747252" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="keywords" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="5966716731426747254" nodeInfo="nn">
+        <property name="color" nameId="tpc2.1186403713874" value="DARK_BLUE" />
+      </node>
+    </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4585428266438237910" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
@@ -270,7 +276,10 @@
         <property name="text" nameId="tpc2.1073389577007" value="ADD" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5966716731425307215" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="at" />
+        <property name="text" nameId="tpc2.1073389577007" value="@" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="5966716731426549531" nodeInfo="nn">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5966716731425307223" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="11rw.5966716731425307204" />

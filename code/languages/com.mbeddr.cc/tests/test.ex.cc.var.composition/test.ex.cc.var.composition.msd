@@ -8,6 +8,7 @@
   <sourcePath />
   <usedLanguages>
     <usedLanguage>21ac77a4-1b66-44c5-aaec-94e43bb86519(com.mbeddr.cc.var.composition)</usedLanguage>
+    <usedLanguage>03f78d94-3f33-4789-ad35-5950b32fdad8(com.mbeddr.cc.var.composition.c)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)</usedDevKit>

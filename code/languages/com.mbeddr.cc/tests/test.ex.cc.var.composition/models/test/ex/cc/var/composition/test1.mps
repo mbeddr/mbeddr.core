@@ -2,6 +2,7 @@
 <model modelUID="r:f851a47f-7845-4bc0-9e4f-fd2e0e992069(test.ex.cc.var.composition.test1)">
   <persistence version="8" />
   <language namespace="21ac77a4-1b66-44c5-aaec-94e43bb86519(com.mbeddr.cc.var.composition)" />
+  <language namespace="03f78d94-3f33-4789-ad35-5950b32fdad8(com.mbeddr.cc.var.composition.c)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
@@ -14,6 +15,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
+  <import index="xr8g" modelUID="r:a34fe219-429e-4501-bb74-7bfdd6e6bfc5(com.mbeddr.cc.var.composition.c.structure)" version="-1" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4585428266437380012" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="CompTest1" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="4585428266438189425" nodeInfo="ng">
@@ -383,12 +385,10 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5966716731425453954" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="5966716731425453953" nodeInfo="ng">
             <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="5966716731425453968" nodeInfo="ng">
-              <property name="text" nameId="c4fa.3830958861296879114" value="printf(" />
+              <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;entering %s\n&quot;, " />
             </node>
             <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AnyNodeItem" typeId="c4fa.745648737914844472" id="5966716731425454021" nodeInfo="ng">
-              <node role="theNode" roleId="c4fa.745648737914844473" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="5966716731425454036" nodeInfo="ng">
-                <property name="value" nameId="yq40.6113173064526131578" value="dummy" />
-              </node>
+              <node role="theNode" roleId="c4fa.745648737914844473" type="xr8g.ContextTargetNodeName" typeId="xr8g.5966716731426624152" id="5966716731426743364" nodeInfo="ng" />
             </node>
             <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="5966716731425453993" nodeInfo="ng">
               <property name="text" nameId="c4fa.3830958861296879114" value=")" />
@@ -396,7 +396,7 @@
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="11rw.ChildControlAnnotation" typeId="11rw.5966716731424980183" id="5966716731425454080" nodeInfo="ng">
             <node role="op" roleId="11rw.5966716731425076225" type="11rw.ChildControlAdd" typeId="11rw.5966716731425076232" id="5966716731425454092" nodeInfo="ng">
-              <node role="location" roleId="11rw.5966716731425307204" type="11rw.AddLocationFront" typeId="11rw.5966716731425307146" id="5966716731425454096" nodeInfo="ng" />
+              <node role="location" roleId="11rw.5966716731425307204" type="11rw.AddLocationFront" typeId="11rw.5966716731425307146" id="5966716731426549217" nodeInfo="ng" />
             </node>
           </node>
         </node>
@@ -407,7 +407,7 @@
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="11rw.MatchAnnotation" typeId="11rw.4585428266438237835" id="5966716731425451159" nodeInfo="ng">
         <node role="matchStrategy" roleId="11rw.4585428266438237950" type="11rw.MatchAllSameConcepts" typeId="11rw.5966716731424554225" id="5966716731425451160" nodeInfo="ng" />
-        <node role="compositionStrategy" roleId="11rw.4585428266438448548" type="11rw.ChildControlledCompositionStrategy" typeId="11rw.5966716731424941122" id="5966716731425451161" nodeInfo="ng" />
+        <node role="compositionStrategy" roleId="11rw.4585428266438448548" type="11rw.ChildControlledCompositionStrategy" typeId="11rw.5966716731424941122" id="6477445114790462983" nodeInfo="ng" />
       </node>
     </node>
   </root>
