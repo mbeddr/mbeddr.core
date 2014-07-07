@@ -78,6 +78,10 @@
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="11rw.4585428266436860866" resolveInfo="CompositionConfigItem" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.AbandonInput_RuleConsequence" typeId="tpf8.1202776937179" id="4585428266437393564" nodeInfo="ng" />
     </node>
+    <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="6477445114792306298" nodeInfo="ng">
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="11rw.6477445114792303109" resolveInfo="HookAnnotation" />
+      <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.AbandonInput_RuleConsequence" typeId="tpf8.1202776937179" id="6477445114792307287" nodeInfo="ng" />
+    </node>
   </root>
   <root type="tpf8.MappingScript" typeId="tpf8.1195499912406" id="4585428266437393555" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="runComposition" />

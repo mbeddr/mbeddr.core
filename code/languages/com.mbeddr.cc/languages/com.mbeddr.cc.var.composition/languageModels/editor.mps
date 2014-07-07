@@ -297,5 +297,41 @@
       <property name="text" nameId="tpc2.1073389577007" value="end" />
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6477445114792303225" nodeInfo="ng">
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="11rw.6477445114792303109" resolveInfo="HookAnnotation" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6477445114792303385" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_AttributedNodeCell" typeId="tpc2.1149850725784" id="6477445114792303398" nodeInfo="ng" />
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="6477445114792303388" nodeInfo="nn" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6477445114792303404" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="[HOOK:" />
+        <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="4585428266438201123" resolveInfo="annotations" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5966716731423742342" resolveInfo="deleteAnnotation" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="6477445114792303830" nodeInfo="nn">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6477445114792303721" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+        <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="4585428266438201123" resolveInfo="annotations" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6477445114792303711" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="]" />
+        <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="4585428266438201123" resolveInfo="annotations" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5966716731423742342" resolveInfo="deleteAnnotation" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="6477445114792303936" nodeInfo="nn">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="6477445114792304045" nodeInfo="nn">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.DrawBracketsStyleClassItem" typeId="tpc2.1219226236603" id="6477445114792304153" nodeInfo="nn">
+        <property name="flag" nameId="tpc2.1186414551515" value="true" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BracketColorStyleClassItem" typeId="tpc2.1186413799158" id="6477445114792304210" nodeInfo="nn">
+        <property name="color" nameId="tpc2.1186403713874" value="LIGHT_BLUE" />
+      </node>
+    </node>
+  </root>
 </model>
 
