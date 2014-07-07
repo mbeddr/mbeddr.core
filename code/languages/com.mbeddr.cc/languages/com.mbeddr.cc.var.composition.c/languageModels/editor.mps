@@ -21,6 +21,9 @@
       <property name="text" nameId="tpc2.1073389577007" value="functions" />
       <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="mntj.4585428266438201123" resolveInfo="annotations" />
     </node>
+    <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6477445114793535490" nodeInfo="ng">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="mntj.6477445114793535380" resolveInfo="pointcutEditor" />
+    </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6477445114790514790" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
