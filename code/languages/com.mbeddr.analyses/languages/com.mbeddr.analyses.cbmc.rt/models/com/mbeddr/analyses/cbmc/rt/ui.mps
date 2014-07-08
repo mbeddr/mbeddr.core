@@ -5195,7 +5195,7 @@
                 <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="1933745515792898352" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dbrf.~JLabel%d&lt;init&gt;(java%dlang%dString)" resolveInfo="JLabel" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1933745515792898353" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="Run make before analysis: " />
+                    <property name="value" nameId="tpee.1070475926801" value="Run C-make before analysis: " />
                   </node>
                 </node>
               </node>
