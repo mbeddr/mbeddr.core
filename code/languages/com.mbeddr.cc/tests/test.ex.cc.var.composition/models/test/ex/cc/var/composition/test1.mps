@@ -20,9 +20,6 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <import index="xr8g" modelUID="r:a34fe219-429e-4501-bb74-7bfdd6e6bfc5(com.mbeddr.cc.var.composition.c.structure)" version="2" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
-  <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4585428266437380012" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SubjectModule" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="4585428266438189425" nodeInfo="ng">
@@ -578,28 +575,7 @@
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="11rw.MatchAnnotation" typeId="11rw.4585428266438237835" id="6477445114792784573" nodeInfo="ng">
         <node role="matchStrategy" roleId="11rw.4585428266438237950" type="xr8g.FunctionMatcher" typeId="xr8g.6477445114790513326" id="6477445114792784589" nodeInfo="ng">
-          <node role="pointcut" roleId="11rw.6477445114793535354" type="11rw.Pointcut" typeId="11rw.6477445114794072989" id="6477445114794250384" nodeInfo="ng">
-            <node role="function" roleId="11rw.6477445114794073160" type="11rw.PointCutFunction" typeId="11rw.6477445114793478059" id="6477445114794250385" nodeInfo="ng">
-              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6477445114794250386" nodeInfo="sn">
-                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6477445114794251726" nodeInfo="nn">
-                  <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6477445114794270812" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6477445114794253154" nodeInfo="nn">
-                      <node role="operand" roleId="tpee.1197027771414" type="11rw.CandidateParameter" typeId="11rw.6477445114793482134" id="6477445114794251723" nodeInfo="ng" />
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6477445114794263963" nodeInfo="nn">
-                        <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                      </node>
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6477445114794276432" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dstartsWith(java%dlang%dString)%cboolean" resolveInfo="startsWith" />
-                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6477445114794277581" nodeInfo="nn">
-                        <property name="value" nameId="tpee.1070475926801" value="a" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
+          <node role="pointcut" roleId="11rw.6477445114793535354" type="11rw.Pointcut" typeId="11rw.6477445114794072989" id="6477445114794250384" nodeInfo="ng" />
         </node>
         <node role="compositionStrategy" roleId="11rw.4585428266438448548" type="xr8g.FunctionStatementMerger" typeId="xr8g.6477445114790514764" id="6477445114792784596" nodeInfo="ng">
           <node role="op" roleId="xr8g.6477445114790528148" type="xr8g.ReplaceHookOp" typeId="xr8g.6477445114792615395" id="6477445114792784600" nodeInfo="ng">

@@ -379,8 +379,8 @@
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6477445114794073060" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="pointcut" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="11rw.6477445114794072989" resolveInfo="Pointcut" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6477445114794073163" nodeInfo="ng">
-      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="11rw.6477445114794073160" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1592009653101638857" nodeInfo="nn">
+      <property name="text" nameId="tpc2.1073389577007" value="pointcut tbd." />
     </node>
   </root>
 </model>
