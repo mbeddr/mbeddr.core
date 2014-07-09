@@ -2423,8 +2423,8 @@
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3638754930750453619" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="3638754930750453382" nodeInfo="nn" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3638754930750456275" nodeInfo="nn">
-                <link role="property" roleId="tp25.1138056395725" targetNodeId="51wr.3638754930750410708" resolveInfo="needsColoring" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2376493146850538079" nodeInfo="nn">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="51wr.3431613015799084476" resolveInfo="isTest" />
               </node>
             </node>
           </node>
