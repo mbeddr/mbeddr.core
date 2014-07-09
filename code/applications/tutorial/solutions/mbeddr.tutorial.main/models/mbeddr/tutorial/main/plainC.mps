@@ -4,11 +4,11 @@
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="31" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="32" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="12" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="13" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="699350427876703513" nodeInfo="ng">
@@ -94,20 +94,20 @@
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="clbe.InitExpression" typeId="clbe.5263526619091902513" id="5978585654712817262" nodeInfo="ng">
-            <node role="elements" roleId="clbe.5263526619091933806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654712817712" nodeInfo="ng">
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.InitExpression" typeId="mj1l.774931011683827853" id="5978585654712817262" nodeInfo="ng">
+            <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654712817712" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
-            <node role="elements" roleId="clbe.5263526619091933806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654712817864" nodeInfo="ng">
+            <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654712817864" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
-            <node role="elements" roleId="clbe.5263526619091933806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654712817920" nodeInfo="ng">
+            <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654712817920" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="3" />
             </node>
-            <node role="elements" roleId="clbe.5263526619091933806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654712818115" nodeInfo="ng">
+            <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654712818115" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="4" />
             </node>
@@ -135,23 +135,23 @@
               <property name="value" nameId="mj1l.2212975673976043696" value="4" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="clbe.InitExpression" typeId="clbe.5263526619091902513" id="5978585654713104826" nodeInfo="ng">
-            <node role="elements" roleId="clbe.5263526619091933806" type="clbe.InitExpression" typeId="clbe.5263526619091902513" id="5978585654713106084" nodeInfo="ng">
-              <node role="elements" roleId="clbe.5263526619091933806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654713106664" nodeInfo="ng">
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.InitExpression" typeId="mj1l.774931011683827853" id="5978585654713104826" nodeInfo="ng">
+            <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.InitExpression" typeId="mj1l.774931011683827853" id="5978585654713106084" nodeInfo="ng">
+              <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654713106664" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="1" />
               </node>
-              <node role="elements" roleId="clbe.5263526619091933806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654713106905" nodeInfo="ng">
+              <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654713106905" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
             </node>
-            <node role="elements" roleId="clbe.5263526619091933806" type="clbe.InitExpression" typeId="clbe.5263526619091902513" id="5978585654713126480" nodeInfo="ng">
-              <node role="elements" roleId="clbe.5263526619091933806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2361101588840586256" nodeInfo="ng">
+            <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.InitExpression" typeId="mj1l.774931011683827853" id="5978585654713126480" nodeInfo="ng">
+              <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2361101588840586256" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="4" />
               </node>
-              <node role="elements" roleId="clbe.5263526619091933806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2361101588840588374" nodeInfo="ng">
+              <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2361101588840588374" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="6" />
               </node>
@@ -165,22 +165,22 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="4202685725779231352" resolveInfo="Test" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="clbe.InitExpression" typeId="clbe.5263526619091902513" id="4202685725779241104" nodeInfo="ng">
-            <node role="elements" roleId="clbe.5263526619091933806" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="5978585654712812712" nodeInfo="ng">
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.InitExpression" typeId="mj1l.774931011683827853" id="4202685725779241104" nodeInfo="ng">
+            <node role="elements" roleId="mj1l.774931011683827854" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="5978585654712812712" nodeInfo="ng">
               <link role="element" roleId="clbe.4202685725779391329" targetNodeId="4202685725779240849" resolveInfo="a" />
               <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654712812766" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
             </node>
-            <node role="elements" roleId="clbe.5263526619091933806" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="5978585654712813530" nodeInfo="ng">
+            <node role="elements" roleId="mj1l.774931011683827854" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="5978585654712813530" nodeInfo="ng">
               <link role="element" roleId="clbe.4202685725779391329" targetNodeId="4202685725779240879" resolveInfo="b" />
               <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654712813930" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="3" />
               </node>
             </node>
-            <node role="elements" roleId="clbe.5263526619091933806" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="5978585654712814853" nodeInfo="ng">
+            <node role="elements" roleId="mj1l.774931011683827854" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="5978585654712814853" nodeInfo="ng">
               <link role="element" roleId="clbe.4202685725779391329" targetNodeId="4202685725779240913" resolveInfo="c" />
               <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5978585654712815333" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -196,24 +196,24 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="4202685725781218454" resolveInfo="Test2" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="clbe.InitExpression" typeId="clbe.5263526619091902513" id="4202685725781277036" nodeInfo="ng">
-            <node role="elements" roleId="clbe.5263526619091933806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4202685725781277076" nodeInfo="ng">
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.InitExpression" typeId="mj1l.774931011683827853" id="4202685725781277036" nodeInfo="ng">
+            <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4202685725781277076" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="4" />
             </node>
-            <node role="elements" roleId="clbe.5263526619091933806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4202685725781282672" nodeInfo="ng">
+            <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4202685725781282672" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="6" />
             </node>
-            <node role="elements" roleId="clbe.5263526619091933806" type="clbe.InitExpression" typeId="clbe.5263526619091902513" id="4202685725781283056" nodeInfo="ng">
-              <node role="elements" roleId="clbe.5263526619091933806" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="5733928339810219170" nodeInfo="ng">
+            <node role="elements" roleId="mj1l.774931011683827854" type="mj1l.InitExpression" typeId="mj1l.774931011683827853" id="4202685725781283056" nodeInfo="ng">
+              <node role="elements" roleId="mj1l.774931011683827854" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="5733928339810219170" nodeInfo="ng">
                 <link role="element" roleId="clbe.4202685725779391329" targetNodeId="4202685725779240849" resolveInfo="a" />
                 <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5733928339810219665" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.2212975673976043696" value="4" />
                 </node>
               </node>
-              <node role="elements" roleId="clbe.5263526619091933806" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="5733928339810256169" nodeInfo="ng">
+              <node role="elements" roleId="mj1l.774931011683827854" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="5733928339810256169" nodeInfo="ng">
                 <link role="element" roleId="clbe.4202685725779391329" targetNodeId="4202685725779240879" resolveInfo="b" />
                 <node role="value" roleId="clbe.4202685725779390438" type="mj1l.Expression" typeId="mj1l.8860443239512128050" id="5733928339810256170" nodeInfo="ng" />
               </node>
