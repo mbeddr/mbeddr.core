@@ -71,7 +71,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8118534740657855680" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="8118534740657855681" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="8118534740657855683" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="1" />
+            <property name="value" nameId="2omo.1237305576108" value="true" />
           </node>
         </node>
       </node>
@@ -102,7 +102,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8118534740657855718" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="8118534740657855719" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="8118534740657855721" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="0" />
+            <property name="value" nameId="2omo.1237305576108" value="false" />
           </node>
         </node>
       </node>
@@ -327,7 +327,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6631303246402170971" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="6631303246402170972" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="6631303246402170978" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="int8_t" />
+            <property name="value" nameId="2omo.1237305576108" value="bool" />
           </node>
         </node>
       </node>
