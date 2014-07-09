@@ -35,7 +35,7 @@
     </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="441761995014974059" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="analysisDepth" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4626864039426341465" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="useCbmc" />
@@ -315,6 +315,20 @@
       <property name="role" nameId="tpce.1071599776563" value="statement" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5364934889221928049" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
+    <property name="name" nameId="tpck.1169194664001" value="CPROVERfloatbv" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="floatbv" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128056" resolveInfo="PrimitiveType" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5364934889221974644" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="totalSize" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5364934889221976125" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="mantissaSize" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
   </root>
 </model>
