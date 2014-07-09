@@ -4666,11 +4666,11 @@
           <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7366827209122949845" nodeInfo="nn">
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~Arrays%dasList(java%dlang%dObject%d%d%d)%cjava%dutil%dList" resolveInfo="asList" />
             <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="k7g3.~Arrays" resolveInfo="Arrays" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7366827209122950328" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="VCC" />
-            </node>
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7366827209122958678" nodeInfo="nn">
               <property name="value" nameId="tpee.1070475926801" value="GCC" />
+            </node>
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7366827209122950328" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="VCC" />
             </node>
           </node>
         </node>

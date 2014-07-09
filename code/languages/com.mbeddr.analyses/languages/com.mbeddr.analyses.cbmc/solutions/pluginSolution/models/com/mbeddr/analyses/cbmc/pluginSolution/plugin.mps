@@ -1634,7 +1634,7 @@
       <property name="name" nameId="tpck.1169194664001" value="usedPreprocessor" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="7366827209123280592" nodeInfo="in" />
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7366827209123297516" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="VCC" />
+        <property name="value" nameId="tpee.1070475926801" value="GCC" />
       </node>
     </node>
     <node role="persistenPropertyDeclaration" roleId="tp4k.1210179829398" type="tp4k.PersistentPropertyDeclaration" typeId="tp4k.1210179190070" id="4138212153610631875" nodeInfo="ng">
