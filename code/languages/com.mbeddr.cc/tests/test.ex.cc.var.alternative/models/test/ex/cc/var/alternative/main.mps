@@ -12,7 +12,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" implicit="yes" />
-  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="9" implicit="yes" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="10" implicit="yes" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="8" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7251344243797177754" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="AlternativeTest" />
@@ -31,7 +31,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1404987979520_5" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7251344243797179356" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="anAlternativeConstant" />
+      <property name="name" nameId="tpck.1169194664001" value="anAlterngneraativeConstant" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7251344243797179354" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -41,7 +41,7 @@
         <property name="value" nameId="mj1l.2212975673976043696" value="120" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.ConditionalAlternative" typeId="qdv7.7251344243797106015" id="7251344243797365657" nodeInfo="ng">
-        <link role="replaces" roleId="qdv7.7251344243797106079" targetNodeId="7251344243797178297" resolveInfo="aConstant" />
+        <link role="original" roleId="qdv7.7251344243797106079" targetNodeId="7251344243797178297" resolveInfo="aConstant" />
         <node role="condition" roleId="qdv7.7251344243797106073" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="7251344243797731441" nodeInfo="ng">
           <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="7251344243797971336" nodeInfo="ng">
             <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="7251344243797962232" resolveInfo="condition" />
@@ -68,7 +68,7 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="120" />
           </node>
-          <node role="actual" roleId="yz9a.7755897872837031765" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7251344243797182239" nodeInfo="ng">
+          <node role="actual" roleId="yz9a.7755897872837031765" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7251344243800146768" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7251344243797178297" resolveInfo="aConstant" />
           </node>
         </node>
