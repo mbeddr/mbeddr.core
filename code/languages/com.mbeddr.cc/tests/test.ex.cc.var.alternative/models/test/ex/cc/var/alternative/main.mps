@@ -31,7 +31,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1404987979520_5" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7251344243797179356" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="anAlterngneraativeConstant" />
+      <property name="name" nameId="tpck.1169194664001" value="anAlternativeConstant" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7251344243797179354" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
