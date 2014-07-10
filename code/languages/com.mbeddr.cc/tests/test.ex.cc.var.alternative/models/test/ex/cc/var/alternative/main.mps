@@ -26,12 +26,13 @@
         <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
         <property name="value" nameId="mj1l.2212975673976043696" value="100" />
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.AlternativeOriginal" typeId="qdv7.7251344243804424507" id="7251344243804650389" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7251344243797178921" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1404987979520_5" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7251344243797179356" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="anAlternativeConstant" />
+      <property name="name" nameId="tpck.1169194664001" value="aConstant_alt1" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7251344243797179354" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -43,7 +44,7 @@
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.ConditionalAlternative" typeId="qdv7.7251344243797106015" id="7251344243797365657" nodeInfo="ng">
         <link role="original" roleId="qdv7.7251344243797106079" targetNodeId="7251344243797178297" resolveInfo="aConstant" />
         <node role="condition" roleId="qdv7.7251344243797106073" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="7251344243797731441" nodeInfo="ng">
-          <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="7251344243797971336" nodeInfo="ng">
+          <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="7251344243806108772" nodeInfo="ng">
             <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="7251344243797962232" resolveInfo="condition" />
           </node>
         </node>
@@ -70,6 +71,13 @@
           </node>
           <node role="actual" roleId="yz9a.7755897872837031765" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7251344243800146768" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7251344243797178297" resolveInfo="aConstant" />
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="7251344243801665953" nodeInfo="ng">
+            <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="7251344243801665954" nodeInfo="ng">
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="7251344243801666849" nodeInfo="ng">
+                <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="7251344243797962232" resolveInfo="condition" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -114,6 +122,10 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7251344243797962813" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7251344243797962221" resolveInfo="Var" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="7251344243803150113" nodeInfo="ng">
+      <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="7251344243797962222" resolveInfo="FM" />
+      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="7251344243797962264" resolveInfo="VarAlternative" />
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7251344243797177758" nodeInfo="ng">
