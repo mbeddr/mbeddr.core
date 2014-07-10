@@ -22,7 +22,7 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp4k" modelUID="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" version="35" implicit="yes" />
   <import index="tp4f" modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" implicit="yes" />
-  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="9" implicit="yes" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="10" implicit="yes" />
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="7518061998923367007" nodeInfo="ng" />
   <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="7518061998923645757" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Pull Up Presence Condition" />
@@ -100,7 +100,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="9103993088055845437" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="pleConciseActive" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Concise Product Line" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Compact Product Line" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="9103993088055845438" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx1.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
@@ -142,7 +142,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="9103993088055847296" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="pleVariantActive" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Variant Product Line" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Selected Variant" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="9103993088055847297" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx1.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
@@ -184,7 +184,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="9103993088055849214" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="pleConciseInctive" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Concise Product Line" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Compact Product Line" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="9103993088055849215" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx1.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
@@ -320,7 +320,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="9103993088055853826" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="pleVariantInactive" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Variant Product Line" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Selected Variant" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="9103993088055853827" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx1.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
