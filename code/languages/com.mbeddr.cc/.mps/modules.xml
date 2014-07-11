@@ -27,6 +27,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.fm/fm.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.fmrt/fmrt.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.requirements.c/c.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.var.alternative/test.ex.cc.var.alternative.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.var.c/c.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.var.composition/test.ex.cc.var.composition.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.requirements.report/test.ex.requirements.report.msd" folder="tests" />
