@@ -1270,8 +1270,8 @@
       <property name="isFinal" nameId="tpee.1176718929932" value="false" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="9103993088055227106" nodeInfo="in" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="9103993088055227092" nodeInfo="nn" />
-      <node role="initializer" roleId="tpee.1068431790190" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9103993088055227560" nodeInfo="nn">
-        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9103993088055227193" resolveInfo="CONCISE" />
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4585373103659115326" nodeInfo="nn">
+        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9103993088055227310" resolveInfo="DETAILED" />
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="9103993088055198892" nodeInfo="ngu" />
