@@ -1733,8 +1733,8 @@
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1670233242582100375" resolveInfo="node" />
                         </node>
                       </node>
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3638754930750921404" nodeInfo="nn">
-                        <link role="property" roleId="tp25.1138056395725" targetNodeId="51wr.3638754930750410708" resolveInfo="needsColoring" />
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2376493146850648638" nodeInfo="nn">
+                        <link role="property" roleId="tp25.1138056395725" targetNodeId="51wr.3431613015799084476" resolveInfo="isTest" />
                       </node>
                     </node>
                     <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3638754930750913649" nodeInfo="nn">
