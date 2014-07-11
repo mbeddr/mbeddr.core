@@ -217,8 +217,12 @@
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2041732772365658055" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="module" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2507266050827315928" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1397742831748_1" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="4533751096827861246" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="aGlobalVar" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="4533751096827861244" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3814371183050272818" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1398243158612_16" />
@@ -287,13 +291,15 @@
     </node>
   </root>
   <root type="gfdq.LantestConfig" typeId="gfdq.5722030627681234131" id="4116609257239821110" nodeInfo="ng">
-    <property name="maximalDepth" nameId="gfdq.5722030627681465498" value="2" />
-    <property name="maximumNumberOfTries" nameId="gfdq.5722030627681373924" value="50" />
+    <property name="maximalDepth" nameId="gfdq.5722030627681465498" value="1" />
+    <property name="maximumNumberOfTries" nameId="gfdq.5722030627681373924" value="100" />
     <property name="name" nameId="tpck.1169194664001" value="config1" />
     <link role="savingResults" roleId="gfdq.5722030627681369430" targetNodeId="glmp.2041732772365658055" resolveInfo="saverMarker" />
     <link role="startingPoint" roleId="gfdq.5722030627681276512" targetNodeId="2041732772365658055" resolveInfo="module" />
-    <node role="seedChooser" roleId="gfdq.3262406899569270462" type="gfdq.RandomDescendantSeed" typeId="gfdq.3262406899569270472" id="4116609257239821113" nodeInfo="ng" />
-    <node role="langSpecificConfig" roleId="gfdq.3516382903881173796" type="fowb.MbeddrCoreConfig" typeId="fowb.3516382903881191515" id="4116609257239932437" nodeInfo="ng" />
+    <node role="langSpecificConfig" roleId="gfdq.3516382903881173796" type="fowb.MbeddrCoreConfig" typeId="fowb.3516382903881191515" id="4533751096827461000" nodeInfo="ng" />
+    <node role="seedChooser" roleId="gfdq.3262406899569270462" type="gfdq.ConceptSeed" typeId="gfdq.3262406899569937377" id="4533751096827487080" nodeInfo="ng">
+      <link role="concept" roleId="gfdq.3262406899569972235" targetNodeId="mj1l.8463282783691618445" resolveInfo="Int64tType" />
+    </node>
   </root>
 </model>
 
