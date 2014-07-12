@@ -3613,7 +3613,7 @@
                     </node>
                   </node>
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5667201763534047254" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1068580320021" value="3" />
+                    <property name="value" nameId="tpee.1068580320021" value="2" />
                   </node>
                 </node>
               </node>
