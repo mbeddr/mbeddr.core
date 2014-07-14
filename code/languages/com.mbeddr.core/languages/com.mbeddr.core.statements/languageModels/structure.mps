@@ -748,5 +748,8 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8850915533694634148" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IInitAwareType" />
   </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5962675648036354323" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IIndependentIinitExpression" />
+  </root>
 </model>
 
