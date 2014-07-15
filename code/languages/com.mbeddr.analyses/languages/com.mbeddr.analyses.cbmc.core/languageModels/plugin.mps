@@ -81,5 +81,20 @@
       </node>
     </node>
   </root>
+  <root type="v54s.ExtensionDeclaration" typeId="v54s.3729007189729192404" id="4842092295675745305" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="dectab" />
+    <link role="extensionPoint" roleId="v54s.3729007189729192405" targetNodeId="4pdp.5924512713690056983" resolveInfo="AssignmentsLifterProvider" />
+    <node role="objectGetter" roleId="v54s.8029776554053057811" type="v54s.ExtensionObjectGetter" typeId="v54s.8029776554053043557" id="4842092295675745306" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4842092295675745307" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="4842092295675773410" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="4842092295675753483" nodeInfo="nn">
+            <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="4842092295675772750" nodeInfo="nn">
+              <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="qeyn.4842092295675641874" resolveInfo="AssignmentsLifterDecTabCore" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
 </model>
 
