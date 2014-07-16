@@ -53,7 +53,7 @@
             <property name="name" nameId="tpck.1169194664001" value="aFunction" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8230733038425694037" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="268054603277678503" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="__failures" />
+                <property name="name" nameId="tpck.1169194664001" value="___failures" />
                 <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="268054603277678535" nodeInfo="ng">
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -84,7 +84,7 @@
                     </node>
                   </node>
                   <node role="actuals" roleId="x27k.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="268054603277678509" nodeInfo="ng">
-                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="268054603277678503" resolveInfo="__failures" />
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="268054603277678503" resolveInfo="___failures" />
                   </node>
                   <node role="actuals" roleId="x27k.5950410542643524495" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="8230733038425694264" nodeInfo="ng">
                     <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="8230733038425694273" nodeInfo="ng">
@@ -757,15 +757,15 @@
                               </node>
                               <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="268054603277678545" nodeInfo="ng">
                                 <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="yq40.2963921683065158286" />
-                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="268054603277678546" nodeInfo="ng">
-                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="7461505578498714229" nodeInfo="ng">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618440" resolveInfo="Int32tType" />
                                 </node>
                               </node>
                             </node>
                             <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="268054603277678547" nodeInfo="ng">
                               <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
                               <node role="value" roleId="hba4.4481811096720588312" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="268054603277678548" nodeInfo="nn">
-                                <property name="value" nameId="tpee.1070475926801" value="__failures" />
+                                <property name="value" nameId="tpee.1070475926801" value="___failures" />
                               </node>
                             </node>
                           </node>
