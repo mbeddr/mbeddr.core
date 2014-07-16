@@ -34,7 +34,7 @@
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="8" implicit="yes" />
   <import index="yvrq" modelUID="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)" version="2" implicit="yes" />
-  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="9" implicit="yes" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="10" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="8" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
@@ -429,43 +429,43 @@
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="9141254329931945928" nodeInfo="ng">
             <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="9141254329931952630" nodeInfo="ng">
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9141254329931952633" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
-              <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9141254329931952637" nodeInfo="ng">
+          <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108183743" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108183744" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587995" resolveInfo="id" />
+              <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9141254329931952637" nodeInfo="ng">
                 <property name="value" nameId="mj1l.2212975673976043696" value="1" />
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806670" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="time" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806706" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108183745" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587997" resolveInfo="time" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806706" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="8135882712510806707" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806676" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9141254329931952640" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510800820" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108183746" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588001" resolveInfo="x" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510800820" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8135882712510800821" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9141254329931952644" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9141254329931952647" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510800824" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108183747" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588005" resolveInfo="y" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510800824" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8135882712510800825" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9141254329931952651" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9141254329931952654" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510800828" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108183748" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588009" resolveInfo="alt" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510800828" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8135882712510800829" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9141254329931952658" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="100" />
@@ -604,43 +604,43 @@
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="8135882712510805869" nodeInfo="ng">
             <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="8135882712510806187" nodeInfo="ng">
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806188" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
-              <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806189" nodeInfo="ng">
+          <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108056185" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108056186" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587995" resolveInfo="id" />
+              <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806189" nodeInfo="ng">
                 <property name="value" nameId="mj1l.2212975673976043696" value="1" />
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806681" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="time" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806692" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108056187" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587997" resolveInfo="time" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806692" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="8135882712510806693" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806687" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="10" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806190" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806191" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108056188" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588001" resolveInfo="x" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806191" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8135882712510806192" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806193" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="100" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806194" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806195" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108056189" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588005" resolveInfo="y" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806195" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8135882712510806196" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806197" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806198" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806199" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108056190" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588009" resolveInfo="alt" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806199" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8135882712510806200" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806201" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="100" />
@@ -733,43 +733,43 @@
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5160057464295093568" nodeInfo="ng">
             <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="5160057464295093569" nodeInfo="ng">
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464295093570" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
-              <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464295093571" nodeInfo="ng">
+          <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108014785" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108014786" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587995" resolveInfo="id" />
+              <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464295093571" nodeInfo="ng">
                 <property name="value" nameId="mj1l.2212975673976043696" value="1" />
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464295093572" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="time" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464295093573" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108014787" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587997" resolveInfo="time" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464295093573" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="5160057464295093574" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464295093575" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464295093576" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464295093577" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108014788" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588001" resolveInfo="x" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464295093577" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5160057464295093578" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464295093579" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464295093580" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464295093581" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108014789" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588005" resolveInfo="y" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464295093581" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5160057464295093582" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464295093583" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464295093584" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464295093585" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108014790" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588009" resolveInfo="alt" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464295093585" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5160057464295093586" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464295093587" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="50" />
@@ -2214,25 +2214,25 @@
             <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="1634970928501131038" nodeInfo="ng">
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
             </node>
-            <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="1634970928501131039" nodeInfo="ng">
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1634970928501131040" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
-                <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1634970928501131041" nodeInfo="ng">
+            <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108063823" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108063824" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1634970928501131041" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1634970928501131042" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="time" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1634970928501131043" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108063825" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587997" resolveInfo="time" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1634970928501131043" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="1634970928501131044" nodeInfo="ng" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1634970928501131045" nodeInfo="ng">
                     <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                   </node>
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1634970928501131046" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1634970928501131047" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108063826" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588013" resolveInfo="speed" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1634970928501131047" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1634970928501131048" nodeInfo="ng">
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
                   </node>
@@ -2248,25 +2248,25 @@
             <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="1634970928501131051" nodeInfo="ng">
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
             </node>
-            <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="1634970928501131052" nodeInfo="ng">
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1634970928501131053" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
-                <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1634970928501131054" nodeInfo="ng">
+            <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108014759" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108014760" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1634970928501131054" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1634970928501131055" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="time" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1634970928501131056" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108014761" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587997" resolveInfo="time" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1634970928501131056" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="1634970928501131057" nodeInfo="ng" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1634970928501131058" nodeInfo="ng">
                     <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                   </node>
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1634970928501131059" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1634970928501131060" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108014762" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588013" resolveInfo="speed" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1634970928501131060" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1634970928501131061" nodeInfo="ng">
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
                   </node>
@@ -2350,25 +2350,25 @@
             <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="1731059994647783046" nodeInfo="ng">
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
             </node>
-            <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="1731059994647783049" nodeInfo="ng">
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647798013" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
-                <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647798015" nodeInfo="ng">
+            <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108153760" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108153761" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647798015" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="10" />
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647806590" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="time" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647806612" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108153762" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587997" resolveInfo="time" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647806612" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="1731059994647806613" nodeInfo="ng" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647806595" nodeInfo="ng">
                     <property name="value" nameId="mj1l.2212975673976043696" value="10" />
                   </node>
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647807539" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647807552" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108153763" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588009" resolveInfo="alt" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647807552" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="1731059994647807553" nodeInfo="ng" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647807543" nodeInfo="ng">
                     <property name="value" nameId="mj1l.2212975673976043696" value="100" />
@@ -2475,25 +2475,25 @@
             <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="1731059994647878596" nodeInfo="ng">
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
             </node>
-            <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="1731059994647888722" nodeInfo="ng">
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647888723" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
-                <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647888725" nodeInfo="ng">
+            <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108093800" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108093801" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647888725" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647888728" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="time" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647888738" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108093802" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587997" resolveInfo="time" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647888738" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="1731059994647888739" nodeInfo="ng" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647888730" nodeInfo="ng">
                     <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                   </node>
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647888743" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647888754" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108093803" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588013" resolveInfo="speed" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647888754" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1731059994647888755" nodeInfo="ng">
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
                   </node>
@@ -2509,25 +2509,25 @@
             <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="1731059994647888758" nodeInfo="ng">
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
             </node>
-            <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="1731059994647888759" nodeInfo="ng">
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647888760" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
-                <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647888761" nodeInfo="ng">
+            <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108026210" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108026211" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647888761" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647888762" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="time" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647888763" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108026212" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587997" resolveInfo="time" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647888763" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="1731059994647888764" nodeInfo="ng" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647888765" nodeInfo="ng">
                     <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                   </node>
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647888766" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647888767" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108026213" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588013" resolveInfo="speed" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647888767" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1731059994647888768" nodeInfo="ng">
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
                   </node>
@@ -2743,25 +2743,25 @@
             <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5160057464294670935" nodeInfo="ng">
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
             </node>
-            <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="5160057464294670936" nodeInfo="ng">
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670937" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
-                <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464294670938" nodeInfo="ng">
+            <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108123779" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108123780" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464294670938" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670939" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="time" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670940" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108123781" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587997" resolveInfo="time" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670940" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="5160057464294670941" nodeInfo="ng" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464294670942" nodeInfo="ng">
                     <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                   </node>
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670943" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670944" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108123782" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588013" resolveInfo="speed" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670944" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="5160057464294670945" nodeInfo="ng">
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
                   </node>
@@ -2777,25 +2777,25 @@
             <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5160057464294670948" nodeInfo="ng">
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
             </node>
-            <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="5160057464294670949" nodeInfo="ng">
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670950" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
-                <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464294670951" nodeInfo="ng">
+            <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108197247" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108197248" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464294670951" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670952" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="time" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670953" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108197249" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587997" resolveInfo="time" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670953" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="5160057464294670954" nodeInfo="ng" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464294670955" nodeInfo="ng">
                     <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                   </node>
                 </node>
               </node>
-              <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670956" nodeInfo="ng">
-                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
-                <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670957" nodeInfo="ng">
+              <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108197250" nodeInfo="ng">
+                <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588013" resolveInfo="speed" />
+                <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670957" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="5160057464294670958" nodeInfo="ng">
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
                   </node>
@@ -7371,52 +7371,52 @@
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5441227754062477143" nodeInfo="ng">
             <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="5441227754062477144" nodeInfo="ng">
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5441227754062477145" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
-              <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5441227754062477146" nodeInfo="ng">
+          <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108191383" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108191384" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587995" resolveInfo="id" />
+              <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5441227754062477146" nodeInfo="ng">
                 <property name="value" nameId="mj1l.2212975673976043696" value="1" />
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5441227754062477147" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="time" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062477148" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108191385" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587997" resolveInfo="time" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062477148" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="5441227754062477149" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5441227754062477150" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5441227754062477151" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062477152" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108191386" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588001" resolveInfo="x" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062477152" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5441227754062477153" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5441227754062477154" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5441227754062477155" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062477156" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108191387" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588005" resolveInfo="y" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062477156" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5441227754062477157" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5441227754062477158" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5441227754062477159" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062477160" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108191388" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588009" resolveInfo="alt" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062477160" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5441227754062477161" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5441227754062477162" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="50" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5441227754062521911" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062521920" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108191389" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588013" resolveInfo="speed" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062521920" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="5441227754062521921" nodeInfo="ng">
                   <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
                 </node>
@@ -8060,25 +8060,25 @@
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="869116753978119621" nodeInfo="ng">
             <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="869116753978119623" nodeInfo="ng">
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="869116753978119638" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
-              <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="869116753978119648" nodeInfo="ng">
+          <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108022421" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108022422" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647587995" resolveInfo="id" />
+              <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="869116753978119648" nodeInfo="ng">
                 <property name="value" nameId="mj1l.2212975673976043696" value="1" />
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="869116753978119624" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="869116753978119633" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108022423" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588009" resolveInfo="alt" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="869116753978119633" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="869116753978119634" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="869116753978119626" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="2000" />
                 </node>
               </node>
             </node>
-            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="869116753978119635" nodeInfo="ng">
-              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
-              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="869116753978119646" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="7763322639108022424" nodeInfo="ng">
+              <link role="element" roleId="clbe.4202685725779391329" targetNodeId="1731059994647588013" resolveInfo="speed" />
+              <node role="value" roleId="clbe.4202685725779390438" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="869116753978119646" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="869116753978119649" nodeInfo="ng">
                   <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
                 </node>

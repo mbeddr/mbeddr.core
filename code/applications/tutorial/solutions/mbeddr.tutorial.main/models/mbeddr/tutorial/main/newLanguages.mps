@@ -834,20 +834,20 @@
               <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7977993180520090857" resolveInfo="ARRSIZE" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ArrayInitExpression" typeId="yq40.7350547698080060956" id="7977993180520090841" nodeInfo="ng">
-            <node role="exprs" roleId="yq40.7350547698080060962" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520090842" nodeInfo="ng">
+          <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108013135" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520090842" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="1" />
             </node>
-            <node role="exprs" roleId="yq40.7350547698080060962" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520090844" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520090844" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
-            <node role="exprs" roleId="yq40.7350547698080060962" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520090848" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520090848" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="3" />
             </node>
-            <node role="exprs" roleId="yq40.7350547698080060962" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520090850" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520090850" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="4" />
             </node>
-            <node role="exprs" roleId="yq40.7350547698080060962" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520090852" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520090852" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="5" />
             </node>
           </node>

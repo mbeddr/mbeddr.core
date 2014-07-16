@@ -47,11 +47,11 @@
                   <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                 </node>
               </node>
-              <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ArrayInitExpression" typeId="yq40.7350547698080060956" id="7977993180520150394" nodeInfo="ng">
-                <node role="exprs" roleId="yq40.7350547698080060962" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520150395" nodeInfo="ng">
+              <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639108013148" nodeInfo="ng">
+                <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520150395" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                 </node>
-                <node role="exprs" roleId="yq40.7350547698080060962" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520150397" nodeInfo="ng">
+                <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520150397" nodeInfo="ng">
                   <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                 </node>
               </node>
