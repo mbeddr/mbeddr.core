@@ -12,11 +12,11 @@
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="7" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <import index="2rho" modelUID="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" version="2" />
-  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="5" />
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
   <import index="9zoj" modelUID="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" version="2" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="8" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="9" />
   <import index="1s42" modelUID="r:d482a2e6-b3ef-4c45-883b-cf624a56b653(com.mbeddr.core.pointers.behavior)" version="2" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
@@ -947,7 +947,7 @@
                             </node>
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2963921683066308646" nodeInfo="nn">
-                            <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.2963921683065158286" />
+                            <link role="link" roleId="tp25.1138056516764" targetNodeId="c4fa.7763322639126652758" />
                           </node>
                         </node>
                       </node>
@@ -1254,7 +1254,7 @@
                           </node>
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2963921683066317792" nodeInfo="nn">
-                          <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.2963921683065158286" />
+                          <link role="link" roleId="tp25.1138056516764" targetNodeId="c4fa.7763322639126652758" />
                         </node>
                       </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="1385660047241294268" nodeInfo="nn">
@@ -1364,7 +1364,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2963921683066296399" nodeInfo="nn">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.2963921683065158286" />
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="c4fa.7763322639126652758" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="3059865549681082813" nodeInfo="nn">
@@ -2292,7 +2292,7 @@
                             </node>
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7034214596258950434" nodeInfo="nn">
-                            <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.2963921683065158286" />
+                            <link role="link" roleId="tp25.1138056516764" targetNodeId="c4fa.7763322639126652758" />
                           </node>
                         </node>
                       </node>
