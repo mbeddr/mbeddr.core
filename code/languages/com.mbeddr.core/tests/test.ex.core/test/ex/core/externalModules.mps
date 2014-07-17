@@ -84,8 +84,9 @@
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5708867820622277849" nodeInfo="ng" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="9066372830133147052" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="9066372830132809598" resolveInfo="std" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7461505578500202621" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9066372830132809598" resolveInfo="std" />
     </node>
   </root>
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="9066372830133147125" nodeInfo="ng">
@@ -281,8 +282,9 @@
         <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="7705997077751341664" resolveInfo="smallT" />
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7705997077751341676" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7705997077751341663" resolveInfo="ModuleWithTypeDef" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7461505578500190211" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751341663" resolveInfo="ModuleWithTypeDef" />
     </node>
   </root>
 </model>

@@ -230,8 +230,9 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7705997077751339856" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7705997077751331420" resolveInfo="ExtModuleUsesTypeDef" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7461505578500178179" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751331420" resolveInfo="ExtModuleUsesTypeDef" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8463282783691754121" nodeInfo="ng">
@@ -616,9 +617,9 @@
         <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="7705997077751341664" resolveInfo="smallT" />
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7705997077751339852" nodeInfo="ng">
-      <property name="reexport" nameId="x27k.7475861851226119808" value="true" />
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7705997077751331416" resolveInfo="ExtModuleWithTypeDef3" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7461505578500179620" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="true" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751331416" resolveInfo="ExtModuleWithTypeDef3" />
     </node>
     <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="7705997077751341998" nodeInfo="ng">
       <property name="path" nameId="x27k.6116558314501417936" value="&quot;../externalModules/ModuleUsesTypeDef.h&quot;" />

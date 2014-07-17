@@ -790,6 +790,141 @@
         </node>
       </node>
     </node>
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="1270750526732224599" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="testDecisionTableChecked" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1270750526732224600" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1270750526732224601" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="1270750526732224602" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="1270750526732224603" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="res" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="1270750526732224604" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.5853537697759033507" resolveInfo="CBMCLiftedResult" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1270750526732224605" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1270750526732224606" nodeInfo="nn">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3h46.7634203028839887957" resolveInfo="checkAsserts" />
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="3h46.7634203028839870183" resolveInfo="TestingFacade" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1270750526732224607" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6004315309880946803" resolveInfo="currentModel" />
+                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="6004315309880942678" resolveInfo="Utils" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1270750526732224608" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="DecisionTable_Checked" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1270750526732224609" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="decTabCheckedClient" />
+                </node>
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="1270750526732224610" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1270750526732224611" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1270750526732224612" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertTrue" typeId="tpe3.1171981022339" id="1270750526732224613" nodeInfo="nn">
+          <node role="condition" roleId="tpe3.1171981057159" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1270750526732224614" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1270750526732224615" nodeInfo="nn">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1270750526732224603" resolveInfo="res" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1270750526732224616" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eqhl.7364716885853664738" resolveInfo="propertyFails" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1270750526732224617" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="o23b.CBMCCounterexampleTest" typeId="o23b.4791280061046135693" id="1270750526732382069" nodeInfo="ng">
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="1270750526732382070" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="decTabCheckedClient" />
+            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1270750526732382071" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575724001" resolveInfo="Function" />
+            </node>
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="1270750526732382072" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="x" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
+            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1270750526732382073" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.7892328519581704407" resolveInfo="Argument" />
+            </node>
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="1270750526732382074" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="y" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
+            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1270750526732382075" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.7892328519581704407" resolveInfo="Argument" />
+            </node>
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="1270750526732382076" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="decTabContainer" />
+            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1270750526732382077" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.5950410542643524492" resolveInfo="FunctionCall" />
+            </node>
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="1270750526732382078" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="x" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
+            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1270750526732382079" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.7254843406768833938" resolveInfo="ExpressionStatement" />
+            </node>
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="1270750526732382080" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="y" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
+            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1270750526732382081" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.7254843406768833938" resolveInfo="ExpressionStatement" />
+            </node>
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4842092295679360541" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="dt" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
+            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4842092295679360542" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.4185783222026475238" resolveInfo="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="1270750526732382082" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="enter decision table" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
+            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1270750526732382083" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
+            </node>
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="1270750526732382084" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="y" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="1270750526732382085" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="x" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="1270750526732382086" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="leave decision table" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
+            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1270750526732382087" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
+            </node>
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="1270750526732382088" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="dt" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
+            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1270750526732382089" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.4185783222026475238" resolveInfo="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="1270750526732382090" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="FAIL" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="Assertion Violated" />
+          </node>
+          <node role="liftedResult" roleId="o23b.156369466847981785" type="tpee.VariableReference" typeId="tpee.1068498886296" id="1270750526732382091" nodeInfo="nn">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1270750526732224603" resolveInfo="res" />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1270750526732381729" nodeInfo="nn" />
+      </node>
+    </node>
   </root>
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534" nodeInfo="ng">
     <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
