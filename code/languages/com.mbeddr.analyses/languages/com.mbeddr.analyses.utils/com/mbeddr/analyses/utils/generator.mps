@@ -263,10 +263,6 @@
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Iterable" resolveInfo="Iterable" />
         <node role="parameter" roleId="tpee.1109201940907" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6014794391431012833" nodeInfo="in" />
       </node>
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7076139956948092037" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="aModelFromProject" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tp25.SModelType" typeId="tp25.1143226024141" id="7076139956948170141" nodeInfo="in" />
-      </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="7068936249761511788" nodeInfo="ng">
         <property name="text" nameId="hba4.6451706574539345425" value="Returns the list of root nodes from the latest generated model from transient models list before the textgen." />
       </node>

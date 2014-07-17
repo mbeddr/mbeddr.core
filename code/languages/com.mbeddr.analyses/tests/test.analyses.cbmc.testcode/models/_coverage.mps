@@ -237,5 +237,24 @@
       </node>
     </node>
   </root>
+  <root type="vs0r.AssessmentContainer" typeId="vs0r.865293814733114043" id="2611892683787671106" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="com_mbeddr_core_generator" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="generator_coverage" />
+    <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="2611892683787671107" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="com_mbeddr_core_generator" />
+      <property name="lastUpdatedOn" nameId="vs0r.4423545983997782838" value="1405509002600" />
+      <property name="lastUdpatedBy" nameId="vs0r.4423545983997787056" value="z003cemm" />
+      <node role="query" roleId="vs0r.865293814733115677" type="79wq.GeneratorCoverageAssessment" typeId="79wq.8022057952247994428" id="2611892683787671108" nodeInfo="ng">
+        <node role="langs" roleId="79wq.8022057952247994488" type="79wq.LanguagePrefix" typeId="79wq.347451455539224231" id="2611892683787671109" nodeInfo="ng">
+          <property name="prefix" nameId="79wq.347451455539224232" value="com.mbeddr.core*" />
+        </node>
+      </node>
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="2611892683788542947" nodeInfo="ng">
+        <property name="totalCount" nameId="vs0r.671216505796623805" value="103" />
+        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="103" />
+        <property name="ok" nameId="vs0r.671216505796623806" value="0" />
+      </node>
+    </node>
+  </root>
 </model>
 
