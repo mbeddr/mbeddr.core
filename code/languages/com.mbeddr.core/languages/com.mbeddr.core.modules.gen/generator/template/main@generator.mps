@@ -3173,9 +3173,6 @@
     <property name="name" nameId="tpck.1169194664001" value="copyInImportedModules" />
     <property name="topPriorityGroup" nameId="tpf8.1184950341882" value="true" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="topPrioStuff" />
-    <node role="postMappingScript" roleId="tpf8.1195502346405" type="tpf8.MappingScriptReference" typeId="tpf8.1195502151594" id="577369824227250507" nodeInfo="ng">
-      <link role="mappingScript" roleId="tpf8.1195502167610" targetNodeId="577369824225255369" resolveInfo="preventNameManglingForUniqueNodes" />
-    </node>
     <node role="preMappingScript" roleId="tpf8.1195502100749" type="tpf8.MappingScriptReference" typeId="tpf8.1195502151594" id="1252295221377568076" nodeInfo="ng">
       <link role="mappingScript" roleId="tpf8.1195502167610" targetNodeId="55677248263557371" resolveInfo="importReferencedElements" />
     </node>
