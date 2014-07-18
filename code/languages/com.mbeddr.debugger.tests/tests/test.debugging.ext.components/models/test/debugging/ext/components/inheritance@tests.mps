@@ -931,7 +931,7 @@
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="7599526456372946288" nodeInfo="ng">
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="7599526456372946289" nodeInfo="ng">
-            <property name="name" nameId="rpmx.4550138447368290430" value="i_op1" />
+            <property name="name" nameId="rpmx.4550138447368290430" value="i2_op1" />
           </node>
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="7599526456372946290" nodeInfo="ng">
             <property name="name" nameId="rpmx.4550138447368290430" value="testAbstract" />
