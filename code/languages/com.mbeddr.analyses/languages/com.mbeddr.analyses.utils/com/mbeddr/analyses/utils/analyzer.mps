@@ -957,6 +957,9 @@
     <node role="typeVariableDeclaration" roleId="tpee.1109279881614" type="tpee.TypeVariableDeclaration" typeId="tpee.1109279763828" id="7665911526053874228" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="S" />
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="8456127873310913694" nodeInfo="ng">
+      <property name="text" nameId="hba4.6451706574539345425" value="Base class for all analyzers." />
+    </node>
   </root>
   <root type="tpee.Interface" typeId="tpee.1107796713796" id="6451706574542622183" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MPSToolAdapter" />
