@@ -4,11 +4,11 @@
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="8" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="33" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="10" implicit="yes" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="9" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="661141253149231475" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="PresenceCondition" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="programannotations" />
@@ -238,6 +238,17 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="qqyh.6825476687691337710" resolveInfo="IMapping" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7251344243804424507" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="programannotations" />
+    <property name="name" nameId="tpck.1169194664001" value="AlternativeOriginal" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="7251344243804424613" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="original" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="7251344243804424616" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+      </node>
+    </node>
+  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7251344243797106015" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="programannotations" />
     <property name="name" nameId="tpck.1169194664001" value="ConditionalAlternative" />
@@ -257,17 +268,6 @@
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="7251344243797106065" nodeInfo="ng">
       <property name="role" nameId="tpce.7588428831955550663" value="alternative" />
       <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="7251344243797106067" nodeInfo="ng">
-        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-      </node>
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7251344243804424507" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="programannotations" />
-    <property name="name" nameId="tpck.1169194664001" value="AlternativeOriginal" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="7251344243804424613" nodeInfo="ng">
-      <property name="role" nameId="tpce.7588428831955550663" value="original" />
-      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="7251344243804424616" nodeInfo="ng">
         <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
       </node>
     </node>
