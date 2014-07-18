@@ -61,7 +61,7 @@
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Base" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="4429602430543920799" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="i" />
+        <property name="name" nameId="tpck.1169194664001" value="i2" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="4429602430543920792" resolveInfo="Intf2" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4429602430543920801" nodeInfo="ng">
@@ -80,7 +80,7 @@
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4429602430543921983" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="i_op1" />
+        <property name="name" nameId="tpck.1169194664001" value="i2_op1" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4429602430543921984" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="4429602430543921988" nodeInfo="ng">
             <node role="expression" roleId="x27k.8967919205527146150" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="4429602430543921990" nodeInfo="ng">
@@ -96,9 +96,9 @@
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="4429602430543921986" nodeInfo="ng">
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="4429602430543920793" resolveInfo="op1" />
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="4429602430543920799" resolveInfo="i" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="4429602430543920799" resolveInfo="i2" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4429602430543921987" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="522505638444463183" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
@@ -189,7 +189,7 @@
         <property name="name" nameId="tpck.1169194664001" value="si" />
         <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4429602430544163744" nodeInfo="ng">
           <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4429602430544163741" resolveInfo="s1" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="4429602430543920799" resolveInfo="i" />
+          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="4429602430543920799" resolveInfo="i2" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="7239575231152319171" nodeInfo="ng" />
@@ -201,7 +201,7 @@
         <property name="name" nameId="tpck.1169194664001" value="si2" />
         <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="7239575231152317187" nodeInfo="ng">
           <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="7239575231152317185" resolveInfo="s2" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="4429602430543920799" resolveInfo="i" />
+          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="4429602430543920799" resolveInfo="i2" />
         </node>
       </node>
     </node>

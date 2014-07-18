@@ -110,13 +110,6 @@
             <property name="name" nameId="tpck.1169194664001" value="afterWiring" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5710167937133353756" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="5710167937133353757" nodeInfo="ng">
-            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="5710167937133318295" resolveInfo="callable" />
-            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="5710167937132109966" resolveInfo="c" />
-            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="9184727592626069899" resolveInfo="wiring" />
-          </node>
-        </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9184727592626069867" nodeInfo="ng">
@@ -324,8 +317,9 @@
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="5710167937133318295" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="callable" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5710167937133318296" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5710167937133488589" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5710167937133488590" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="5344863858825980413" nodeInfo="ng">
+            <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5344863858825980437" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
           </node>
@@ -339,11 +333,11 @@
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8203091774020964033" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="getOtherBla" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8203091774020964034" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8203091774020965205" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="8203091774020965204" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="5344863858825982546" nodeInfo="ng">
+            <node role="expression" roleId="x27k.8967919205527146150" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="5344863858825992144" nodeInfo="ng">
               <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="5710167937133240339" resolveInfo="someOtherBla" />
             </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8203091774020968206" nodeInfo="ng">
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="5344863858825993710" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="firstStmntInCalledComponent" />
             </node>
           </node>

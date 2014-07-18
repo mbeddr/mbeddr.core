@@ -56,15 +56,15 @@
   </root>
   <root type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="7705997077751331420" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ExtModuleUsesTypeDef" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8093570056081115386" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751331416" resolveInfo="ExtModuleWithTypeDef" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="7705997077751341674" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="smallTTT" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="original" roleId="clbe.6116558314501347862" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="7705997077751341677" nodeInfo="ng">
         <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="7705997077751341664" resolveInfo="smallT" />
       </node>
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7063557260108099672" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751331416" resolveInfo="ExtModuleWithTypeDef" />
     </node>
     <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="7705997077751341998" nodeInfo="ng">
       <property name="path" nameId="x27k.6116558314501417936" value="&quot;ModuleUsesTypeDef.h&quot;" />
@@ -74,15 +74,15 @@
     <property name="name" nameId="tpck.1169194664001" value="ExtModuleWithTypeDef" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7705997077751341670" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="someInt" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="false" />
       <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7705997077751341672" nodeInfo="ng">
         <property name="value" nameId="mj1l.2212975673976043696" value="22" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="7705997077751341664" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="smallT" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="original" roleId="clbe.6116558314501347862" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7705997077751341666" nodeInfo="ng" />
     </node>
     <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="7705997077751341996" nodeInfo="ng">
@@ -98,8 +98,9 @@
         <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="5580547245468785460" resolveInfo="smallT" />
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7705997077751341676" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7705997077751341663" resolveInfo="ModuleWithTypeDef" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8093570056080511003" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751341663" resolveInfo="ModuleWithTypeDef" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7705997077751341663" nodeInfo="ng">
@@ -238,6 +239,12 @@
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8463282783691753842" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="TypeDefFromExternalModule" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8093570056081049144" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751331420" resolveInfo="ExtModuleUsesTypeDef" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8093570056081050361" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751331416" resolveInfo="ExtModuleWithTypeDef" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8463282783691753844" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="auchNeZahl" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -262,7 +269,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7705997077751339871" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="var" />
-          <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="7705997077751341999" nodeInfo="ng">
+          <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="8093570056080621547" nodeInfo="ng">
             <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="7705997077751341674" resolveInfo="smallTTT" />
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7705997077751339874" nodeInfo="ng">
@@ -290,13 +297,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7063557260108319153" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751331420" resolveInfo="ExtModuleUsesTypeDef" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="4059314064295528269" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751331416" resolveInfo="ExtModuleWithTypeDef" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8463282783691753828" nodeInfo="ng">
@@ -409,8 +409,8 @@
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5708867820622277893" nodeInfo="ng" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8463282783691753847" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8463282783691753842" resolveInfo="TypeDefFromExternalModule" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8093570056081113854" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="8463282783691753842" resolveInfo="TypeDefFromExternalModule" />
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578280435" nodeInfo="ng">
