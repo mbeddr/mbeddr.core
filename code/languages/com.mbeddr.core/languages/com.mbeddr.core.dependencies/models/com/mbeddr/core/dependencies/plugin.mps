@@ -295,7 +295,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7350547698093335949" resolveInfo="f" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7350547698093335956" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1t7x.~Window%dsetLocation(int,int)%cvoid" resolveInfo="setLocation" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1t7x.~Component%dsetLocation(int,int)%cvoid" resolveInfo="setLocation" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7350547698093335957" nodeInfo="nn">
                 <property name="value" nameId="tpee.1068580320021" value="300" />
               </node>
