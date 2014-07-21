@@ -701,7 +701,7 @@
                 </node>
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="538267308515016978" nodeInfo="nn">
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="538267308515005934" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="Success: feature model: " />
+                    <property name="value" nameId="tpee.1070475926801" value="SUCCESS:\nFeature Model: " />
                   </node>
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="538267308515037822" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="538267308515034715" nodeInfo="nn">
@@ -740,7 +740,7 @@
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="538267308515080175" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~StringBuilder%dappend(java%dlang%dString)%cjava%dlang%dStringBuilder" resolveInfo="append" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="538267308515080246" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="Fail: " />
+                <property name="value" nameId="tpee.1070475926801" value="FAILURE:\n" />
               </node>
             </node>
           </node>
@@ -765,7 +765,7 @@
                       </node>
                       <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="4689096352580649229" nodeInfo="nn">
                         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4689096352580649899" nodeInfo="nn">
-                          <property name="value" nameId="tpee.1070475926801" value="feature model " />
+                          <property name="value" nameId="tpee.1070475926801" value="Feature Model " />
                         </node>
                         <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4689096352580634093" nodeInfo="nn">
                           <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4689096352580634094" nodeInfo="nn">
@@ -810,7 +810,7 @@
                           </node>
                         </node>
                         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4689096352580669151" nodeInfo="nn">
-                          <property name="value" nameId="tpee.1070475926801" value="derived feature '" />
+                          <property name="value" nameId="tpee.1070475926801" value="Derived Feature '" />
                         </node>
                       </node>
                       <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4689096352585954168" nodeInfo="nn">
@@ -850,7 +850,7 @@
                           </node>
                         </node>
                         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4689096352580657111" nodeInfo="nn">
-                          <property name="value" nameId="tpee.1070475926801" value="feature '" />
+                          <property name="value" nameId="tpee.1070475926801" value="Feature '" />
                         </node>
                       </node>
                       <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4689096352585968818" nodeInfo="nn">
@@ -876,7 +876,7 @@
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="538267308515116250" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~StringBuilder%dappend(java%dlang%dString)%cjava%dlang%dStringBuilder" resolveInfo="append" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="538267308515116321" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="\nExplanation:\n" />
+                <property name="value" nameId="tpee.1070475926801" value="\nDETAILS:\n" />
               </node>
             </node>
           </node>
@@ -900,7 +900,7 @@
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="538267308515137720" nodeInfo="nn">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~StringBuilder%dappend(java%dlang%dString)%cjava%dlang%dStringBuilder" resolveInfo="append" />
                             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="538267308515139908" nodeInfo="nn">
-                              <property name="value" nameId="tpee.1070475926801" value="\t - " />
+                              <property name="value" nameId="tpee.1070475926801" value="- " />
                             </node>
                           </node>
                         </node>
@@ -3070,7 +3070,7 @@
                 </node>
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="538267308515963453" nodeInfo="nn">
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="538267308515963454" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="Success: configuration model: " />
+                    <property name="value" nameId="tpee.1070475926801" value="SUCCESS:\nConfiguration Model " />
                   </node>
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="538267308515963455" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="538267308515963456" nodeInfo="nn">
@@ -3114,7 +3114,7 @@
                 </node>
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="538267308515963470" nodeInfo="nn">
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="538267308515963471" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="Fail: configuration model " />
+                    <property name="value" nameId="tpee.1070475926801" value="FAILURE:\nConfiguration Model " />
                   </node>
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="538267308515963472" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="538267308515963473" nodeInfo="nn">
@@ -3137,7 +3137,7 @@
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="538267308515963478" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~StringBuilder%dappend(java%dlang%dString)%cjava%dlang%dStringBuilder" resolveInfo="append" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="538267308515963479" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="\nExplanation:\n" />
+                <property name="value" nameId="tpee.1070475926801" value="\nREASON:\n" />
               </node>
             </node>
           </node>
@@ -3161,7 +3161,7 @@
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="538267308515963492" nodeInfo="nn">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~StringBuilder%dappend(java%dlang%dString)%cjava%dlang%dStringBuilder" resolveInfo="append" />
                             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="538267308515963493" nodeInfo="nn">
-                              <property name="value" nameId="tpee.1070475926801" value="\t - " />
+                              <property name="value" nameId="tpee.1070475926801" value="- " />
                             </node>
                           </node>
                         </node>
