@@ -16,8 +16,8 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="4130267619640194428" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="check_ConceptCoverageAssessment" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment" />
+    <property name="name" nameId="tpck.1169194664001" value="check_StructureCoverageAssessment" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="structure_cov" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4130267619640194780" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="347451455539224271" nodeInfo="nn">
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="347451455539224272" nodeInfo="nr">
@@ -72,10 +72,10 @@
         </node>
         <node role="inputSequence" roleId="tp2q.1153944424730" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4130267619640253476" nodeInfo="nn">
           <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4130267619640253303" nodeInfo="nn">
-            <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4130267619640194782" resolveInfo="cca" />
+            <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4130267619640194782" resolveInfo="sca" />
           </node>
-          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="4130267619640254171" nodeInfo="nn">
-            <link role="link" roleId="tp25.1138056546658" targetNodeId="79wq.347451455539224226" />
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="97836352113036341" nodeInfo="nn">
+            <link role="link" roleId="tp25.1138056546658" targetNodeId="79wq.97836352113025273" />
           </node>
         </node>
         <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="4130267619640252701" nodeInfo="sn">
@@ -196,8 +196,8 @@
       </node>
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="4130267619640194782" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="cca" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="79wq.347451455539224225" resolveInfo="ConceptCoverageAssessment" />
+      <property name="name" nameId="tpck.1169194664001" value="sca" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="79wq.97836352113023406" resolveInfo="AbstractStructureCoverageAssessment" />
     </node>
   </root>
 </model>
