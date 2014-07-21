@@ -27,18 +27,13 @@
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="13" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="33" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="9" implicit="yes" />
+  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="89" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8463282783691753827" nodeInfo="ng">
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="8463282783691753909" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="TypedefsAndTypes" />
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8463282783691753910" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="8463282783691753828" resolveInfo="TypeDefTest" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="7705997077751340293" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7705997077751331420" resolveInfo="ExtModuleUsesTypeDef" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="7705997077751340296" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7705997077751331416" resolveInfo="ExtModuleWithTypeDef" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8463282783691753912" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="8463282783691753842" resolveInfo="TypeDefFromExternalModule" />
@@ -53,10 +48,130 @@
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605982730216" nodeInfo="ng" />
     </node>
   </root>
-  <root type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="7705997077751331420" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="ExtModuleUsesTypeDef" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8093570056081115386" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751331416" resolveInfo="ExtModuleWithTypeDef" />
+  <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534" nodeInfo="ng">
+    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/" />
+  </root>
+  <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="105850086900752870" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="TypeDef" />
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.StackFramesDeclaration" typeId="rpmx.1218249513292774460" id="5710167937131407965" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="inTypedefTest" />
+      <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131407970" nodeInfo="ng">
+        <property name="name" nameId="rpmx.4550138447368290430" value="TypedefTest" />
+      </node>
+      <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131407969" nodeInfo="ng">
+        <property name="name" nameId="rpmx.4550138447368290430" value="main" />
+      </node>
+    </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131407966" nodeInfo="ng" />
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.WatchablesDeclaration" typeId="rpmx.1218249513292256529" id="5710167937131407968" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="inTypedefTest" />
+      <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5710167937131407973" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="z1" />
+      </node>
+      <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5710167937131407974" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="z2" />
+      </node>
+      <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5710167937131407975" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="res" />
+      </node>
+    </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131407964" nodeInfo="ng" />
+    <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="105850086900752872" nodeInfo="ng">
+      <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="8463282783691753909" resolveInfo="TypedefsAndTypes" />
+    </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438007039" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="stepOverTypeDefDeclaration" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438007040" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8924761790438007041" nodeInfo="sn" />
+      <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="8924761790438007042" nodeInfo="ng">
+        <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="8924761790438007043" nodeInfo="ng">
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="5580547245468785824" resolveInfo="firstTypeDefVariableDeclaration" />
+        </node>
+      </node>
+      <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="8924761790438007044" nodeInfo="ng">
+        <node role="steppingElements" roleId="rpmx.105850086903379390" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="8924761790438007045" nodeInfo="ng">
+          <property name="times" nameId="rpmx.610689949604310287" value="1" />
+        </node>
+      </node>
+      <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="8924761790438007046" nodeInfo="ng">
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8924761790438007047" nodeInfo="ng">
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8924761790438007048" nodeInfo="ng">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5580547245468785825" resolveInfo="secondTypeDefVariableDeclaration" />
+          </node>
+        </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="5710167937131413060" nodeInfo="ng">
+          <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="5710167937131407965" resolveInfo="inTypedefTest" />
+        </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="5710167937131413062" nodeInfo="ng">
+          <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="5710167937131413063" nodeInfo="ng">
+            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="5710167937131407968" resolveInfo="inTypedefTest" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438007059" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="suspendOnTypeDefVariableDeclaration" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438007060" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8924761790438007061" nodeInfo="sn" />
+      <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="8924761790438007062" nodeInfo="ng">
+        <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="8924761790438007063" nodeInfo="ng">
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="5580547245468785824" resolveInfo="firstTypeDefVariableDeclaration" />
+        </node>
+      </node>
+      <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="8924761790438007064" nodeInfo="ng" />
+      <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="8924761790438007065" nodeInfo="ng">
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8924761790438007066" nodeInfo="ng">
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8924761790438007067" nodeInfo="ng">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5580547245468785824" resolveInfo="firstTypeDefVariableDeclaration" />
+          </node>
+        </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="5710167937131413064" nodeInfo="ng">
+          <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="5710167937131407965" resolveInfo="inTypedefTest" />
+        </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="5710167937131413065" nodeInfo="ng">
+          <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="5710167937131413066" nodeInfo="ng">
+            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="5710167937131407968" resolveInfo="inTypedefTest" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438007587" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="stepIntoTypeDefDeclaration" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438007588" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8924761790438007589" nodeInfo="sn" />
+      <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="8924761790438007590" nodeInfo="ng">
+        <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="8924761790438007591" nodeInfo="ng">
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="5580547245468785824" resolveInfo="firstTypeDefVariableDeclaration" />
+        </node>
+      </node>
+      <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="8924761790438007592" nodeInfo="ng">
+        <node role="steppingElements" roleId="rpmx.105850086903379390" type="rpmx.StepIntoCommand" typeId="rpmx.4231345613098876386" id="8924761790438007593" nodeInfo="ng">
+          <property name="times" nameId="rpmx.610689949604310287" value="1" />
+        </node>
+      </node>
+      <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="8924761790438007594" nodeInfo="ng">
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8924761790438007595" nodeInfo="ng">
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8924761790438007596" nodeInfo="ng">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5580547245468785825" resolveInfo="secondTypeDefVariableDeclaration" />
+          </node>
+        </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="5710167937131413067" nodeInfo="ng">
+          <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="5710167937131407965" resolveInfo="inTypedefTest" />
+        </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="5710167937131413068" nodeInfo="ng">
+          <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="5710167937131413069" nodeInfo="ng">
+            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="5710167937131407968" resolveInfo="inTypedefTest" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8463282783691753842" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="TypeDefFromExternalModule" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8463282783691753844" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="auchNeZahl" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="original" roleId="clbe.6116558314501347862" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5569318043967893114" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="7705997077751341674" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="smallTTT" />
@@ -65,12 +180,6 @@
         <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="7705997077751341664" resolveInfo="smallT" />
       </node>
     </node>
-    <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="7705997077751341998" nodeInfo="ng">
-      <property name="path" nameId="x27k.6116558314501417936" value="&quot;ModuleUsesTypeDef.h&quot;" />
-    </node>
-  </root>
-  <root type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="7705997077751331416" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="ExtModuleWithTypeDef" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7705997077751341670" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="someInt" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -83,171 +192,6 @@
       <property name="name" nameId="tpck.1169194664001" value="smallT" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="original" roleId="clbe.6116558314501347862" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7705997077751341666" nodeInfo="ng" />
-    </node>
-    <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="7705997077751341996" nodeInfo="ng">
-      <property name="path" nameId="x27k.6116558314501417936" value="&quot;ModuleWithTypeDef.h&quot;" />
-    </node>
-  </root>
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7705997077751341673" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="ModuleUsesTypeDef" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8093570056080511003" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751341663" resolveInfo="ModuleWithTypeDef" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="5580547245468785456" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="smallTTT" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="original" roleId="clbe.6116558314501347862" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="5580547245468785457" nodeInfo="ng">
-        <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="5580547245468785460" resolveInfo="smallT" />
-      </node>
-    </node>
-  </root>
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7705997077751341663" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="ModuleWithTypeDef" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="5580547245468785458" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="someInt" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5580547245468785459" nodeInfo="ng">
-        <property name="value" nameId="mj1l.2212975673976043696" value="22" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="5580547245468785460" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="smallT" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="original" roleId="clbe.6116558314501347862" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5580547245468785461" nodeInfo="ng" />
-    </node>
-  </root>
-  <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534" nodeInfo="ng">
-    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/" />
-  </root>
-  <root type=".com.mbeddr.core.debug.test.structure.DebuggerTest" id="105850086900752870" nodeInfo="ng">
-    <property name="name" value="TypeDef" />
-    <node role="contents" type=".com.mbeddr.core.debug.test.structure.StackFramesDeclaration" id="5710167937131407965" nodeInfo="ng">
-      <property name="name" value="inTypedefTest" />
-      <node role="stackFrames" type=".com.mbeddr.core.debug.test.structure.StackFrame" id="5710167937131407970" nodeInfo="ng">
-        <property name="name" value="TypedefTest" />
-      </node>
-      <node role="stackFrames" type=".com.mbeddr.core.debug.test.structure.StackFrame" id="5710167937131407969" nodeInfo="ng">
-        <property name="name" value="main" />
-      </node>
-    </node>
-    <node role="contents" type=".com.mbeddr.core.debug.test.structure.EmptyDebuggerContent" id="5710167937131407966" nodeInfo="ng" />
-    <node role="contents" type=".com.mbeddr.core.debug.test.structure.WatchablesDeclaration" id="5710167937131407968" nodeInfo="ng">
-      <property name="name" value="inTypedefTest" />
-      <node role="watchables" type=".com.mbeddr.core.debug.test.structure.WatchableNameExpression" id="5710167937131407973" nodeInfo="ng">
-        <property name="name" value="z1" />
-      </node>
-      <node role="watchables" type=".com.mbeddr.core.debug.test.structure.WatchableNameExpression" id="5710167937131407974" nodeInfo="ng">
-        <property name="name" value="z2" />
-      </node>
-      <node role="watchables" type=".com.mbeddr.core.debug.test.structure.WatchableNameExpression" id="5710167937131407975" nodeInfo="ng">
-        <property name="name" value="res" />
-      </node>
-    </node>
-    <node role="contents" type=".com.mbeddr.core.debug.test.structure.EmptyDebuggerContent" id="5710167937131407964" nodeInfo="ng" />
-    <node role="binaryRef" type=".com.mbeddr.core.debug.test.structure.BinaryRef" id="105850086900752872" nodeInfo="ng">
-      <link role="binary" targetNodeId="8463282783691753909" resolveInfo="TypedefsAndTypes" />
-    </node>
-    <node role="contents" type=".com.mbeddr.core.debug.test.structure.DebuggerTestcase" id="8924761790438007039" nodeInfo="ng">
-      <property name="name" value="stepOverTypeDefDeclaration" />
-      <node role="returnType" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438007040" nodeInfo="in" />
-      <node role="body" type="tpee.StatementList" typeId="tpee.1068580123136" id="8924761790438007041" nodeInfo="sn" />
-      <node role="suspension" type=".com.mbeddr.core.debug.test.structure.SuspensionPointConfiguration" id="8924761790438007042" nodeInfo="ng">
-        <node role="suspensionPoint" type=".com.mbeddr.core.debug.test.structure.MarkerReference" id="8924761790438007043" nodeInfo="ng">
-          <link role="marker" targetNodeId="5580547245468785824" resolveInfo="firstTypeDefVariableDeclaration" />
-        </node>
-      </node>
-      <node role="stepping" type=".com.mbeddr.core.debug.test.structure.SteppingConfiguration" id="8924761790438007044" nodeInfo="ng">
-        <node role="steppingElements" type=".com.mbeddr.core.debug.test.structure.StepOverCommand" id="8924761790438007045" nodeInfo="ng">
-          <property name="times" value="1" />
-        </node>
-      </node>
-      <node role="validation" type=".com.mbeddr.core.debug.test.structure.ValidationConfiguration" id="8924761790438007046" nodeInfo="ng">
-        <node role="validations" type=".com.mbeddr.core.debug.test.structure.ValidateDebuggerSuspended" id="8924761790438007047" nodeInfo="ng">
-          <node role="marker" type=".com.mbeddr.core.debug.test.structure.MarkerRef" id="8924761790438007048" nodeInfo="ng">
-            <link role="marker" targetNodeId="5580547245468785825" resolveInfo="secondTypeDefVariableDeclaration" />
-          </node>
-        </node>
-        <node role="validations" type=".com.mbeddr.core.debug.test.structure.StackFramesReference" id="5710167937131413060" nodeInfo="ng">
-          <link role="declaration" targetNodeId="5710167937131407965" resolveInfo="inTypedefTest" />
-        </node>
-        <node role="validations" type=".com.mbeddr.core.debug.test.structure.WatchablesValidationList" id="5710167937131413062" nodeInfo="ng">
-          <node role="extends" type=".com.mbeddr.core.debug.test.structure.WatchableDeclarationReference" id="5710167937131413063" nodeInfo="ng">
-            <link role="declaration" targetNodeId="5710167937131407968" resolveInfo="inTypedefTest" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="contents" type=".com.mbeddr.core.debug.test.structure.DebuggerTestcase" id="8924761790438007059" nodeInfo="ng">
-      <property name="name" value="suspendOnTypeDefVariableDeclaration" />
-      <node role="returnType" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438007060" nodeInfo="in" />
-      <node role="body" type="tpee.StatementList" typeId="tpee.1068580123136" id="8924761790438007061" nodeInfo="sn" />
-      <node role="suspension" type=".com.mbeddr.core.debug.test.structure.SuspensionPointConfiguration" id="8924761790438007062" nodeInfo="ng">
-        <node role="suspensionPoint" type=".com.mbeddr.core.debug.test.structure.MarkerReference" id="8924761790438007063" nodeInfo="ng">
-          <link role="marker" targetNodeId="5580547245468785824" resolveInfo="firstTypeDefVariableDeclaration" />
-        </node>
-      </node>
-      <node role="stepping" type=".com.mbeddr.core.debug.test.structure.SteppingConfiguration" id="8924761790438007064" nodeInfo="ng" />
-      <node role="validation" type=".com.mbeddr.core.debug.test.structure.ValidationConfiguration" id="8924761790438007065" nodeInfo="ng">
-        <node role="validations" type=".com.mbeddr.core.debug.test.structure.ValidateDebuggerSuspended" id="8924761790438007066" nodeInfo="ng">
-          <node role="marker" type=".com.mbeddr.core.debug.test.structure.MarkerRef" id="8924761790438007067" nodeInfo="ng">
-            <link role="marker" targetNodeId="5580547245468785824" resolveInfo="firstTypeDefVariableDeclaration" />
-          </node>
-        </node>
-        <node role="validations" type=".com.mbeddr.core.debug.test.structure.StackFramesReference" id="5710167937131413064" nodeInfo="ng">
-          <link role="declaration" targetNodeId="5710167937131407965" resolveInfo="inTypedefTest" />
-        </node>
-        <node role="validations" type=".com.mbeddr.core.debug.test.structure.WatchablesValidationList" id="5710167937131413065" nodeInfo="ng">
-          <node role="extends" type=".com.mbeddr.core.debug.test.structure.WatchableDeclarationReference" id="5710167937131413066" nodeInfo="ng">
-            <link role="declaration" targetNodeId="5710167937131407968" resolveInfo="inTypedefTest" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="contents" type=".com.mbeddr.core.debug.test.structure.DebuggerTestcase" id="8924761790438007587" nodeInfo="ng">
-      <property name="name" value="stepIntoTypeDefDeclaration" />
-      <node role="returnType" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438007588" nodeInfo="in" />
-      <node role="body" type="tpee.StatementList" typeId="tpee.1068580123136" id="8924761790438007589" nodeInfo="sn" />
-      <node role="suspension" type=".com.mbeddr.core.debug.test.structure.SuspensionPointConfiguration" id="8924761790438007590" nodeInfo="ng">
-        <node role="suspensionPoint" type=".com.mbeddr.core.debug.test.structure.MarkerReference" id="8924761790438007591" nodeInfo="ng">
-          <link role="marker" targetNodeId="5580547245468785824" resolveInfo="firstTypeDefVariableDeclaration" />
-        </node>
-      </node>
-      <node role="stepping" type=".com.mbeddr.core.debug.test.structure.SteppingConfiguration" id="8924761790438007592" nodeInfo="ng">
-        <node role="steppingElements" type=".com.mbeddr.core.debug.test.structure.StepIntoCommand" id="8924761790438007593" nodeInfo="ng">
-          <property name="times" value="1" />
-        </node>
-      </node>
-      <node role="validation" type=".com.mbeddr.core.debug.test.structure.ValidationConfiguration" id="8924761790438007594" nodeInfo="ng">
-        <node role="validations" type=".com.mbeddr.core.debug.test.structure.ValidateDebuggerSuspended" id="8924761790438007595" nodeInfo="ng">
-          <node role="marker" type=".com.mbeddr.core.debug.test.structure.MarkerRef" id="8924761790438007596" nodeInfo="ng">
-            <link role="marker" targetNodeId="5580547245468785825" resolveInfo="secondTypeDefVariableDeclaration" />
-          </node>
-        </node>
-        <node role="validations" type=".com.mbeddr.core.debug.test.structure.StackFramesReference" id="5710167937131413067" nodeInfo="ng">
-          <link role="declaration" targetNodeId="5710167937131407965" resolveInfo="inTypedefTest" />
-        </node>
-        <node role="validations" type=".com.mbeddr.core.debug.test.structure.WatchablesValidationList" id="5710167937131413068" nodeInfo="ng">
-          <node role="extends" type=".com.mbeddr.core.debug.test.structure.WatchableDeclarationReference" id="5710167937131413069" nodeInfo="ng">
-            <link role="declaration" targetNodeId="5710167937131407968" resolveInfo="inTypedefTest" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8463282783691753842" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="TypeDefFromExternalModule" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8093570056081049144" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751331420" resolveInfo="ExtModuleUsesTypeDef" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8093570056081050361" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7705997077751331416" resolveInfo="ExtModuleWithTypeDef" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8463282783691753844" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="auchNeZahl" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="original" roleId="clbe.6116558314501347862" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5569318043967893114" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7705997077751339857" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1332336603501_1" />
@@ -268,7 +212,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7705997077751339871" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="var" />
-          <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="8093570056080621547" nodeInfo="ng">
+          <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="8888276536873897602" nodeInfo="ng">
             <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="7705997077751341674" resolveInfo="smallTTT" />
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7705997077751339874" nodeInfo="ng">
@@ -280,7 +224,7 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7705997077751415664" nodeInfo="ng">
               <property name="value" nameId="mj1l.2212975673976043696" value="22" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7705997077751415658" nodeInfo="ng">
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8888276536873898513" nodeInfo="ng">
               <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7705997077751341670" resolveInfo="someInt" />
             </node>
           </node>
@@ -325,8 +269,8 @@
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="5083029923012080909" nodeInfo="ng">
             <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="8463282783691753832" resolveInfo="zahl" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.core.debug.test.structure.MarkerAnnotation" id="5580547245468785824" nodeInfo="ng">
-            <property name="name" value="firstTypeDefVariableDeclaration" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="5580547245468785824" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="firstTypeDefVariableDeclaration" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691753848" nodeInfo="ng">
@@ -337,8 +281,8 @@
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="5083029923012081284" nodeInfo="ng">
             <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="8463282783691753844" resolveInfo="auchNeZahl" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.core.debug.test.structure.MarkerAnnotation" id="5580547245468785825" nodeInfo="ng">
-            <property name="name" value="secondTypeDefVariableDeclaration" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="5580547245468785825" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="secondTypeDefVariableDeclaration" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691753853" nodeInfo="ng">
