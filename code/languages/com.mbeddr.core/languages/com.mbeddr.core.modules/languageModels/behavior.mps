@@ -5180,11 +5180,16 @@
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3571263511440817092" nodeInfo="nr">
                 <property name="name" nameId="tpck.1169194664001" value="functions" />
                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="3571263511440817093" nodeInfo="in" />
-                <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3571263511440817094" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.3688896863700072548" resolveInfo="getInstancesOf" />
-                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x30c.3688896863700072542" resolveInfo="MWatchesConfiguration" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ConceptFqNameRefExpression" typeId="tp25.8339862546319741524" id="5292943157847339567" nodeInfo="nn">
-                    <link role="conceptDeclaration" roleId="tp25.8339862546319741525" targetNodeId="x27k.6437088627575724001" resolveInfo="Function" />
+                <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8888276536875591761" nodeInfo="nn">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8888276536875591762" nodeInfo="nn">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.8888276536875293988" resolveInfo="getInstance" />
+                    <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x30c.3688896863700072542" resolveInfo="MDebugSessionConfiguration" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8888276536875591763" nodeInfo="nn">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.8888276536875487170" resolveInfo="getInstancesOf" />
+                    <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ConceptFqNameRefExpression" typeId="tp25.8339862546319741524" id="5292943157847339567" nodeInfo="nn">
+                      <link role="conceptDeclaration" roleId="tp25.8339862546319741525" targetNodeId="x27k.6437088627575724001" resolveInfo="Function" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -5250,11 +5255,16 @@
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3571263511441074420" nodeInfo="nr">
                 <property name="name" nameId="tpck.1169194664001" value="closures" />
                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="3571263511441074421" nodeInfo="in" />
-                <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3571263511441074422" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.3688896863700072548" resolveInfo="getInstancesOf" />
-                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x30c.3688896863700072542" resolveInfo="MWatchesConfiguration" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ConceptFqNameRefExpression" typeId="tp25.8339862546319741524" id="5292943157847369888" nodeInfo="nn">
-                    <link role="conceptDeclaration" roleId="tp25.8339862546319741525" targetNodeId="x27k.8257817273846948841" resolveInfo="Closure" />
+                <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5919609905348113758" nodeInfo="nn">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="5919609905348113759" nodeInfo="nn">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.8888276536875293988" resolveInfo="getInstance" />
+                    <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x30c.3688896863700072542" resolveInfo="MDebugSessionConfiguration" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5919609905348113760" nodeInfo="nn">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.8888276536875487170" resolveInfo="getInstancesOf" />
+                    <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ConceptFqNameRefExpression" typeId="tp25.8339862546319741524" id="5919609905348113761" nodeInfo="nn">
+                      <link role="conceptDeclaration" roleId="tp25.8339862546319741525" targetNodeId="x27k.8257817273846948841" resolveInfo="Closure" />
+                    </node>
                   </node>
                 </node>
               </node>
