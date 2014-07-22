@@ -7,6 +7,7 @@
   <import index="356a" modelUID="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" version="0" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="9" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="13" />
+  <import index="1t7x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="d0vh" modelUID="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" version="-1" implicit="yes" />
@@ -176,6 +177,20 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8456210691460336054" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ICareAboutImportingMyself" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="extending" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2391520863997668666" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="NameShorteningConfiguration" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="name shortening" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="specify if name shortening is allowed" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2391520863997773387" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="allowNameShortening" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2391520863998370245" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.4459718605982007336" resolveInfo="IConfigurationItem" />
+    </node>
   </root>
 </model>
 
