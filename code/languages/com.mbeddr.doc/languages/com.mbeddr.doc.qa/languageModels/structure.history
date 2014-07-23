@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="6otn" modelUID="r:d1c76b51-b992-43d8-94f8-013d38773d9f(com.mbeddr.doc.qa.structure)" version="-1" />
+    </dependencies>
+    <rename id="6otn.97836352114791058" type="CONCEPT" from="RootsCoverageAssessment" to="ConceptsCoverageAssessment" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="6otn" modelUID="r:d1c76b51-b992-43d8-94f8-013d38773d9f(com.mbeddr.doc.qa.structure)" version="0" />
+    </dependencies>
+    <rename id="6otn.97836352114791058" type="CONCEPT" from="ConceptsCoverageAssessment" to="ConceptsSpecificationAssessment" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="6otn" modelUID="r:d1c76b51-b992-43d8-94f8-013d38773d9f(com.mbeddr.doc.qa.structure)" version="1" />
+    </dependencies>
+    <rename id="6otn.97836352114791058" type="CONCEPT" from="ConceptsSpecificationAssessment" to="ConceptsDocumentationAssessment" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="6otn" modelUID="r:d1c76b51-b992-43d8-94f8-013d38773d9f(com.mbeddr.doc.qa.structure)" version="2" />
+    </dependencies>
+    <rename id="6otn.97836352114979448" type="CONCEPT" from="ConceptsDocumentationAssessment" to="NonTypesystemRulesDocumentationAssessment" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="6otn" modelUID="r:d1c76b51-b992-43d8-94f8-013d38773d9f(com.mbeddr.doc.qa.structure)" version="3" />
+    </dependencies>
+    <rename id="6otn.97836352114979448" type="CONCEPT" from="NonTypesystemRulesDocumentationAssessment" to="RulesDocumentationAssessment" />
+  </StructureModification>
+</history>
+

@@ -59,12 +59,13 @@
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="4689096352579010478" nodeInfo="ng">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="4689096352578878852" resolveInfo="ImplementationModuleConsistencyAction" />
       </node>
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="9118111503381836978" nodeInfo="ng" />
     </node>
   </root>
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="7255863045967855958" nodeInfo="ng" />
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="4053481679314419787" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="FeatureModelConsistencyAction" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Check Feature Model Consistency" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Check Consistency" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="4053481679314419788" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx2.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
@@ -378,7 +379,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="538267308516043883" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ConfigurationModelConsistencyAction" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Check Configuration Model Consistency" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Check Consistency" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="538267308516043884" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx2.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
@@ -493,7 +494,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="4689096352578878852" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ImplementationModuleConsistencyAction" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Check Variability Consistency for this Implementation Module" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Check Variability Consistency" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="4689096352578878853" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx2.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />

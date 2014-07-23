@@ -238,11 +238,11 @@
     <dependencies>
       <model index="okc0" modelUID="r:a77b09d3-76cb-4b3b-9620-10102158ec08(com.mbeddr.ext.components.editor)" version="0" />
       <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="21" />
-      <model index="k7w5" modelUID="r:a64617d8-e1ac-471e-92c2-4870bad39a43(com.mbeddr.core.udt.constraints)" version="1" />
-      <model index="fvu6" modelUID="r:8c46b4ec-76a7-4335-baef-93cb86f4b0fc(com.mbeddr.core.udt.typesystem)" version="1" />
       <model index="arsz" modelUID="r:c0dcafae-993e-49da-8bd0-f4eeac6d4bd9(com.mbeddr.core.udt.editor)" version="1" />
-      <model index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="8" />
+      <model index="fvu6" modelUID="r:8c46b4ec-76a7-4335-baef-93cb86f4b0fc(com.mbeddr.core.udt.typesystem)" version="1" />
+      <model index="k7w5" modelUID="r:a64617d8-e1ac-471e-92c2-4870bad39a43(com.mbeddr.core.udt.constraints)" version="1" />
       <model index="bt4i" modelUID="r:4b72363d-e94a-4383-b5ad-ba453d6efac9(com.mbeddr.ext.components.constraints)" version="0" />
+      <model index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="8" />
       <model index="e39d" modelUID="r:c480d4b6-a379-41b5-b76a-c94ccc817c4e(com.mbeddr.ext.components.typesystem)" version="-1" />
     </dependencies>
     <move id="v7ag.2580867847991770005" to="clbe.2003957539749894105" />
@@ -363,10 +363,10 @@
   <StructureModification>
     <dependencies>
       <model index="c9jm" modelUID="r:167d778b-bddc-4b3f-a776-89718ce72b97(com.mbeddr.core.util.typesystem)" version="3" />
-      <model index="k7w5" modelUID="r:a64617d8-e1ac-471e-92c2-4870bad39a43(com.mbeddr.core.udt.constraints)" version="2" />
-      <model index="fvu6" modelUID="r:8c46b4ec-76a7-4335-baef-93cb86f4b0fc(com.mbeddr.core.udt.typesystem)" version="2" />
-      <model index="arsz" modelUID="r:c0dcafae-993e-49da-8bd0-f4eeac6d4bd9(com.mbeddr.core.udt.editor)" version="2" />
       <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" />
+      <model index="arsz" modelUID="r:c0dcafae-993e-49da-8bd0-f4eeac6d4bd9(com.mbeddr.core.udt.editor)" version="2" />
+      <model index="fvu6" modelUID="r:8c46b4ec-76a7-4335-baef-93cb86f4b0fc(com.mbeddr.core.udt.typesystem)" version="2" />
+      <model index="k7w5" modelUID="r:a64617d8-e1ac-471e-92c2-4870bad39a43(com.mbeddr.core.udt.constraints)" version="2" />
       <model index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="10" />
       <model index="h7k5" modelUID="r:2003a7dc-1d33-4109-abf0-90ad1f9028fd(com.mbeddr.core.util.editor)" version="3" />
       <model index="ui8w" modelUID="r:83f53e7f-110f-49f5-be48-95681cbb1402(com.mbeddr.core.util.constraints)" version="1" />
@@ -486,6 +486,199 @@
     <move id="k7w5.2003957539749894214" to="ui8w.7350547698092918737" />
     <move id="k7w5.2003957539749894209" to="ui8w.7350547698092918732" />
     <move id="k7w5.2003957539749894138" to="ui8w.7350547698092918661" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="2" />
+      <model index="fvu6" modelUID="r:8c46b4ec-76a7-4335-baef-93cb86f4b0fc(com.mbeddr.core.udt.typesystem)" version="3" />
+      <model index="arsz" modelUID="r:c0dcafae-993e-49da-8bd0-f4eeac6d4bd9(com.mbeddr.core.udt.editor)" version="3" />
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="31" />
+      <model index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="12" />
+      <model index="n7pc" modelUID="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" version="1" />
+    </dependencies>
+    <move id="clbe.5263526619091902513" to="mj1l.774931011683827853" />
+    <move id="clbe.5263526619091933806" to="mj1l.774931011683827854" />
+    <move id="clbe.4202685725779268688" to="mj1l.774931011683827855" />
+    <move id="arsz.4202685725778660320" to="vrqd.774931011683827886" />
+    <move id="arsz.4202685725778660366" to="vrqd.774931011683827932" />
+    <move id="arsz.4202685725778660313" to="vrqd.774931011683827879" />
+    <move id="arsz.4202685725778660345" to="vrqd.774931011683827911" />
+    <move id="arsz.4202685725778702207" to="vrqd.774931011683827889" />
+    <move id="arsz.4202685725778660312" to="vrqd.774931011683827878" />
+    <move id="arsz.4202685725778660319" to="vrqd.774931011683827885" />
+    <move id="arsz.4202685725778660321" to="vrqd.774931011683827887" />
+    <move id="arsz.4202685725778660349" to="vrqd.774931011683827915" />
+    <move id="arsz.4202685725778660330" to="vrqd.774931011683827896" />
+    <move id="arsz.4202685725778660357" to="vrqd.774931011683827923" />
+    <move id="arsz.4202685725778660351" to="vrqd.774931011683827917" />
+    <move id="arsz.4202685725778619685" to="vrqd.774931011683827856" />
+    <move id="arsz.4202685725778660377" to="vrqd.774931011683827943" />
+    <move id="arsz.4202685725778660298" to="vrqd.774931011683827864" />
+    <move id="arsz.4202685725778660343" to="vrqd.774931011683827909" />
+    <move id="arsz.4202685725778712077" to="vrqd.774931011683827933" />
+    <move id="arsz.4202685725778660324" to="vrqd.774931011683827890" />
+    <move id="arsz.4202685725778660338" to="vrqd.774931011683827904" />
+    <move id="arsz.4202685725778660353" to="vrqd.774931011683827919" />
+    <move id="arsz.4202685725778660303" to="vrqd.774931011683827869" />
+    <move id="arsz.4202685725778660347" to="vrqd.774931011683827913" />
+    <move id="arsz.4202685725778660305" to="vrqd.774931011683827871" />
+    <move id="arsz.4202685725778660309" to="vrqd.774931011683827875" />
+    <move id="arsz.4202685725778660299" to="vrqd.774931011683827865" />
+    <move id="arsz.4202685725778660365" to="vrqd.774931011683827931" />
+    <move id="arsz.4202685725778660348" to="vrqd.774931011683827914" />
+    <move id="arsz.4202685725778660292" to="vrqd.774931011683827858" />
+    <move id="arsz.4202685725778660340" to="vrqd.774931011683827906" />
+    <move id="arsz.4202685725778660316" to="vrqd.774931011683827882" />
+    <move id="arsz.4202685725778660307" to="vrqd.774931011683827873" />
+    <move id="arsz.4202685725778660296" to="vrqd.774931011683827862" />
+    <move id="arsz.4202685725778660335" to="vrqd.774931011683827901" />
+    <move id="arsz.4202685725778660342" to="vrqd.774931011683827908" />
+    <move id="arsz.4202685725778660362" to="vrqd.774931011683827928" />
+    <move id="arsz.4202685725778660331" to="vrqd.774931011683827897" />
+    <move id="arsz.4202685725778660325" to="vrqd.774931011683827891" />
+    <move id="arsz.4202685725778660346" to="vrqd.774931011683827912" />
+    <move id="arsz.4202685725778660368" to="vrqd.774931011683827934" />
+    <move id="arsz.4202685725778660315" to="vrqd.774931011683827881" />
+    <move id="arsz.4202685725778660326" to="vrqd.774931011683827892" />
+    <move id="arsz.4202685725778660364" to="vrqd.774931011683827930" />
+    <move id="arsz.4202685725778660358" to="vrqd.774931011683827924" />
+    <move id="arsz.4202685725778660350" to="vrqd.774931011683827916" />
+    <move id="arsz.4202685725778660297" to="vrqd.774931011683827863" />
+    <move id="arsz.4202685725778660375" to="vrqd.774931011683827941" />
+    <move id="arsz.4202685725778660363" to="vrqd.774931011683827929" />
+    <move id="arsz.4202685725778660355" to="vrqd.774931011683827921" />
+    <move id="arsz.4202685725778660317" to="vrqd.774931011683827883" />
+    <move id="arsz.4202685725778660328" to="vrqd.774931011683827894" />
+    <move id="arsz.4202685725778660372" to="vrqd.774931011683827938" />
+    <move id="arsz.4202685725778660294" to="vrqd.774931011683827860" />
+    <move id="arsz.4202685725778660322" to="vrqd.774931011683827888" />
+    <move id="arsz.4202685725778660337" to="vrqd.774931011683827903" />
+    <move id="arsz.4202685725778660341" to="vrqd.774931011683827907" />
+    <move id="arsz.4202685725778660376" to="vrqd.774931011683827942" />
+    <move id="arsz.4202685725778660310" to="vrqd.774931011683827876" />
+    <move id="arsz.4202685725778660311" to="vrqd.774931011683827877" />
+    <move id="arsz.4202685725778660295" to="vrqd.774931011683827861" />
+    <move id="arsz.4202685725778660352" to="vrqd.774931011683827918" />
+    <move id="arsz.4202685725778660318" to="vrqd.774931011683827884" />
+    <move id="arsz.4202685725778707385" to="vrqd.774931011683827910" />
+    <move id="arsz.4202685725778660300" to="vrqd.774931011683827866" />
+    <move id="arsz.4202685725778660356" to="vrqd.774931011683827922" />
+    <move id="arsz.4202685725778660308" to="vrqd.774931011683827874" />
+    <move id="arsz.4202685725778660370" to="vrqd.774931011683827936" />
+    <move id="arsz.4202685725778660371" to="vrqd.774931011683827937" />
+    <move id="arsz.4202685725778660302" to="vrqd.774931011683827868" />
+    <move id="arsz.4202685725778660327" to="vrqd.774931011683827893" />
+    <move id="arsz.4202685725778660361" to="vrqd.774931011683827927" />
+    <move id="arsz.4202685725778660332" to="vrqd.774931011683827898" />
+    <move id="arsz.4202685725778660329" to="vrqd.774931011683827895" />
+    <move id="arsz.4202685725778694919" to="vrqd.774931011683827870" />
+    <move id="arsz.4202685725778660339" to="vrqd.774931011683827905" />
+    <move id="arsz.4202685725778660314" to="vrqd.774931011683827880" />
+    <move id="arsz.4202685725778660306" to="vrqd.774931011683827872" />
+    <move id="arsz.4202685725778660301" to="vrqd.774931011683827867" />
+    <move id="arsz.4202685725778660291" to="vrqd.774931011683827857" />
+    <move id="arsz.4202685725778660360" to="vrqd.774931011683827926" />
+    <move id="arsz.4202685725778660333" to="vrqd.774931011683827899" />
+    <move id="arsz.4202685725778660359" to="vrqd.774931011683827925" />
+    <move id="arsz.4202685725778660293" to="vrqd.774931011683827859" />
+    <move id="arsz.4202685725778660374" to="vrqd.774931011683827940" />
+    <move id="arsz.4202685725778660373" to="vrqd.774931011683827939" />
+    <move id="arsz.4202685725778660334" to="vrqd.774931011683827900" />
+    <move id="arsz.4202685725778660369" to="vrqd.774931011683827935" />
+    <move id="arsz.4202685725778660336" to="vrqd.774931011683827902" />
+    <move id="arsz.4202685725778660354" to="vrqd.774931011683827920" />
+    <move id="fvu6.774931011678424351" to="n7pc.774931011683827977" />
+    <move id="fvu6.774931011678715295" to="n7pc.774931011683828024" />
+    <move id="fvu6.774931011678708374" to="n7pc.774931011683828032" />
+    <move id="fvu6.4202685725780975985" to="n7pc.774931011683828008" />
+    <move id="fvu6.774931011678716411" to="n7pc.774931011683828029" />
+    <move id="fvu6.774931011678421388" to="n7pc.774931011683827965" />
+    <move id="fvu6.774931011678421416" to="n7pc.774931011683827989" />
+    <move id="fvu6.774931011678714097" to="n7pc.774931011683828018" />
+    <move id="fvu6.774931011678708460" to="n7pc.774931011683828031" />
+    <move id="fvu6.5978585654709641751" to="n7pc.774931011683827948" />
+    <move id="fvu6.5263526619091933968" to="n7pc.774931011683827944" />
+    <move id="fvu6.774931011678421411" to="n7pc.774931011683827984" />
+    <move id="fvu6.774931011678420623" to="n7pc.774931011683827997" />
+    <move id="fvu6.774931011678421409" to="n7pc.774931011683827982" />
+    <move id="fvu6.774931011678714095" to="n7pc.774931011683828016" />
+    <move id="fvu6.774931011678421410" to="n7pc.774931011683827983" />
+    <move id="fvu6.5978585654709644587" to="n7pc.774931011683827950" />
+    <move id="fvu6.774931011678421413" to="n7pc.774931011683827986" />
+    <move id="fvu6.774931011678421415" to="n7pc.774931011683827988" />
+    <move id="fvu6.774931011678707009" to="n7pc.774931011683828011" />
+    <move id="fvu6.4202685725780975675" to="n7pc.774931011683828009" />
+    <move id="fvu6.774931011678714098" to="n7pc.774931011683828019" />
+    <move id="fvu6.774931011678716441" to="n7pc.774931011683828025" />
+    <move id="fvu6.774931011678420717" to="n7pc.774931011683827955" />
+    <move id="fvu6.774931011678421384" to="n7pc.774931011683827961" />
+    <move id="fvu6.774931011678419653" to="n7pc.774931011683827995" />
+    <move id="fvu6.774931011678714101" to="n7pc.774931011683828022" />
+    <move id="fvu6.5263526619091973303" to="n7pc.774931011683827998" />
+    <move id="fvu6.5263526619091973301" to="n7pc.774931011683827952" />
+    <move id="fvu6.774931011678421395" to="n7pc.774931011683827972" />
+    <move id="fvu6.774931011678714094" to="n7pc.774931011683828014" />
+    <move id="fvu6.774931011678421386" to="n7pc.774931011683827963" />
+    <move id="fvu6.5978585654709641411" to="n7pc.774931011683827949" />
+    <move id="fvu6.5263526619091973300" to="n7pc.774931011683827951" />
+    <move id="fvu6.5263526619092102256" to="n7pc.774931011683828001" />
+    <move id="fvu6.774931011678709290" to="n7pc.774931011683828034" />
+    <move id="fvu6.774931011678419739" to="n7pc.774931011683827994" />
+    <move id="fvu6.774931011678420720" to="n7pc.774931011683827956" />
+    <move id="fvu6.774931011678423427" to="n7pc.774931011683827974" />
+    <move id="fvu6.774931011678418621" to="n7pc.774931011683827954" />
+    <move id="fvu6.774931011678714081" to="n7pc.774931011683828015" />
+    <move id="fvu6.774931011678421414" to="n7pc.774931011683827987" />
+    <move id="fvu6.774931011678421387" to="n7pc.774931011683827964" />
+    <move id="fvu6.4202685725780973920" to="n7pc.774931011683828004" />
+    <move id="fvu6.774931011678452684" to="n7pc.774931011683827990" />
+    <move id="fvu6.774931011678715292" to="n7pc.774931011683828023" />
+    <move id="fvu6.774931011678714099" to="n7pc.774931011683828020" />
+    <move id="fvu6.774931011678453633" to="n7pc.774931011683827993" />
+    <move id="fvu6.5978585654709639671" to="n7pc.774931011683827946" />
+    <move id="fvu6.774931011678423343" to="n7pc.774931011683827975" />
+    <move id="fvu6.4202685725780974904" to="n7pc.774931011683828007" />
+    <move id="fvu6.774931011678421391" to="n7pc.774931011683827968" />
+    <move id="fvu6.5263526619091959097" to="n7pc.774931011683828002" />
+    <move id="fvu6.774931011678421408" to="n7pc.774931011683827981" />
+    <move id="fvu6.774931011678421407" to="n7pc.774931011683827980" />
+    <move id="fvu6.774931011678453525" to="n7pc.774931011683827992" />
+    <move id="fvu6.4202685725780973919" to="n7pc.774931011683828003" />
+    <move id="fvu6.774931011678716380" to="n7pc.774931011683828028" />
+    <move id="fvu6.4202685725780973922" to="n7pc.774931011683828035" />
+    <move id="fvu6.774931011678452581" to="n7pc.774931011683827991" />
+    <move id="fvu6.5263526619091973304" to="n7pc.774931011683827999" />
+    <move id="fvu6.5263526619091959095" to="n7pc.774931011683827945" />
+    <move id="fvu6.774931011678714093" to="n7pc.774931011683828013" />
+    <move id="fvu6.774931011678714100" to="n7pc.774931011683828021" />
+    <move id="fvu6.774931011678421383" to="n7pc.774931011683827960" />
+    <move id="fvu6.774931011678716462" to="n7pc.774931011683828026" />
+    <move id="fvu6.774931011678421390" to="n7pc.774931011683827967" />
+    <move id="fvu6.774931011678715671" to="n7pc.774931011683828030" />
+    <move id="fvu6.774931011678421394" to="n7pc.774931011683827971" />
+    <move id="fvu6.774931011678714096" to="n7pc.774931011683828017" />
+    <move id="fvu6.774931011678421389" to="n7pc.774931011683827966" />
+    <move id="fvu6.774931011678707012" to="n7pc.774931011683828012" />
+    <move id="fvu6.4202685725780977458" to="n7pc.774931011683828010" />
+    <move id="fvu6.774931011678420716" to="n7pc.774931011683827957" />
+    <move id="fvu6.774931011678421406" to="n7pc.774931011683827979" />
+    <move id="fvu6.774931011678424268" to="n7pc.774931011683827976" />
+    <move id="fvu6.5978585654709639667" to="n7pc.774931011683827947" />
+    <move id="fvu6.4202685725780974908" to="n7pc.774931011683828006" />
+    <move id="fvu6.774931011678421385" to="n7pc.774931011683827962" />
+    <move id="fvu6.774931011678421405" to="n7pc.774931011683827978" />
+    <move id="fvu6.774931011678420556" to="n7pc.774931011683827996" />
+    <move id="fvu6.774931011678421392" to="n7pc.774931011683827969" />
+    <move id="fvu6.774931011678418618" to="n7pc.774931011683827953" />
+    <move id="fvu6.774931011678709223" to="n7pc.774931011683828033" />
+    <move id="fvu6.5263526619092100579" to="n7pc.774931011683828000" />
+    <move id="fvu6.774931011678716481" to="n7pc.774931011683828027" />
+    <move id="fvu6.774931011678421393" to="n7pc.774931011683827970" />
+    <move id="fvu6.774931011678421412" to="n7pc.774931011683827985" />
+    <move id="fvu6.774931011678421056" to="n7pc.774931011683827958" />
+    <move id="fvu6.4202685725780974907" to="n7pc.774931011683828005" />
+    <move id="fvu6.774931011678421396" to="n7pc.774931011683827973" />
+    <move id="fvu6.774931011678420760" to="n7pc.774931011683827959" />
   </StructureModification>
 </history>
 
