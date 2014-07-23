@@ -372,7 +372,7 @@
                   <node role="operation" roleId="tpee.1197027833540" type="talm.SelectVariableOperation" typeId="talm.767492017434549600" id="3620245844617558486" nodeInfo="ng">
                     <node role="filters" roleId="talm.767492017435859589" type="talm.SelectSingleNameFilter" typeId="talm.3655016528991318324" id="3620245844617558505" nodeInfo="ng">
                       <node role="name" roleId="talm.767492017435773106" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3620245844617558531" nodeInfo="nn">
-                        <property name="value" nameId="tpee.1070475926801" value="___castedInstanceData" />
+                        <property name="value" nameId="tpee.1070475926801" value="___cid" />
                       </node>
                     </node>
                   </node>
@@ -4506,7 +4506,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="talm.HideById" typeId="talm.8483575004407054697" id="5669716118870447938" nodeInfo="ng">
           <property name="variableKind" nameId="talm.8237788667541741106" value="argument" />
           <node role="varName" roleId="talm.8483575004407054700" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5669716118870447940" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="___instanceData" />
+            <property name="value" nameId="tpee.1070475926801" value="___id" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="talm.HideById" typeId="talm.8483575004407054697" id="3629580915884451850" nodeInfo="ng">
