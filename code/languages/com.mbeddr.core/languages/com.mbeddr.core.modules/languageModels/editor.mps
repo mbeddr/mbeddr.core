@@ -298,6 +298,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="6437088627575722867" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.6437088627575722833" />
+        <link role="elementActionMap" roleId="tpc2.1173177718857" targetNodeId="r4b4.653519202319564084" resolveInfo="deleteEmptyStuffInCollection" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutNewLineChildrenStyleClassItem" typeId="tpc2.1237375020029" id="8257817273846903837" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -2316,7 +2317,6 @@
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.8934095934011938595" resolveInfo="EmptyModuleContent" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8934095934011938599" nodeInfo="nn">
       <property name="text" nameId="tpc2.1073389577007" value="" />
-      <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="r4b4.653519202319564084" resolveInfo="deleteEmptyStuffInCollection" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="8933128519014574124" nodeInfo="nn">
         <property name="flag" nameId="tpc2.1186414551515" value="true" />
       </node>
