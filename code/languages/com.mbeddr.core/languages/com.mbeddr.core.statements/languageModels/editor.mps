@@ -795,10 +795,17 @@
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7863679314024570098" nodeInfo="ng">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7863679314024570101" nodeInfo="nn">
-      <property name="text" nameId="tpc2.1073389577007" value="" />
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="7863679314024570102" nodeInfo="nn">
-        <property name="flag" nameId="tpc2.1186414551515" value="true" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="653519202319355977" nodeInfo="nn">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="653519202319355978" nodeInfo="nn" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7863679314024570101" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="r4b4.653519202319564084" resolveInfo="deleteEmptyStuffInCollection" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="7863679314024570102" nodeInfo="nn">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="653519202319357817" nodeInfo="nn">
+        <property name="flag" nameId="tpc2.1186414551515" value="false" />
       </node>
     </node>
   </root>
