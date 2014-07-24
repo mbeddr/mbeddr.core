@@ -278,7 +278,7 @@
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1786180596061190529" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1786180596061190528" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="881042019525800953" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.881042019525800905" resolveInfo="cInitFunctionName" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.881042019525800905" resolveInfo="genInitFunctionName" />
                   </node>
                 </node>
               </node>
@@ -299,7 +299,7 @@
                       <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5708867820621171419" nodeInfo="nn">
                         <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="5708867820621171420" nodeInfo="nn" />
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5708867820621171421" nodeInfo="nn">
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190534" resolveInfo="cStructName" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190534" resolveInfo="genStructName" />
                         </node>
                       </node>
                     </node>
@@ -334,7 +334,7 @@
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="881042019525800925" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="881042019525800926" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="881042019525800927" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190513" resolveInfo="cExecuteFunctionName" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190513" resolveInfo="genExecuteFunctionName" />
                   </node>
                 </node>
               </node>
@@ -355,7 +355,7 @@
                       <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="881042019525800936" nodeInfo="nn">
                         <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="881042019525800937" nodeInfo="nn" />
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="881042019525800938" nodeInfo="nn">
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190534" resolveInfo="cStructName" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190534" resolveInfo="genStructName" />
                         </node>
                       </node>
                     </node>
@@ -377,7 +377,7 @@
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="881042019525800945" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="881042019525800946" nodeInfo="nn" />
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="881042019525800947" nodeInfo="nn">
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061285029" resolveInfo="cInEventsEnumName" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061285029" resolveInfo="genInEventsEnumName" />
                       </node>
                     </node>
                   </node>
@@ -758,7 +758,6 @@
               </node>
               <node role="cases" roleId="c4fa.3134547887598524959" type="c4fa.SwitchCase" typeId="c4fa.3134547887598524928" id="1786180596061307566" nodeInfo="ng">
                 <node role="body" roleId="c4fa.3134547887598524931" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1786180596061307568" nodeInfo="ng">
-                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5059948731779654687" nodeInfo="ng" />
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7949124126995154728" nodeInfo="ng">
                     <property name="isInvisible" nameId="c4fa.4643433264760041409" value="true" />
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7156732329347690371" nodeInfo="ng">
@@ -808,7 +807,6 @@
                       </node>
                     </node>
                   </node>
-                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7949124126995154696" nodeInfo="ng" />
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.SwitchStatement" typeId="c4fa.3134547887598524924" id="1786180596061380051" nodeInfo="ng">
                     <node role="expression" roleId="c4fa.3134547887598524925" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="8444296659257854293" nodeInfo="ng">
                       <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8444296659257854274" resolveInfo="event" />
@@ -1529,7 +1527,6 @@
                 </node>
               </node>
             </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6183633367244809979" nodeInfo="ng" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="6183633367244810004" nodeInfo="ng" />
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3498803321535614017" nodeInfo="ng" />
@@ -1602,7 +1599,7 @@
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8444296659257928502" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="8444296659257928503" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8444296659257928504" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061285029" resolveInfo="cInEventsEnumName" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061285029" resolveInfo="genInEventsEnumName" />
                   </node>
                 </node>
               </node>
@@ -1654,7 +1651,7 @@
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8444296659257928526" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="8444296659257928527" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8444296659257928528" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061208473" resolveInfo="cStatesEnumName" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061208473" resolveInfo="genStatesEnumName" />
                   </node>
                 </node>
               </node>
@@ -1677,7 +1674,7 @@
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3912676515585219868" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="3912676515585219869" nodeInfo="nn" />
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="3912676515585219870" nodeInfo="nn">
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061208473" resolveInfo="cStatesEnumName" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061208473" resolveInfo="genStatesEnumName" />
                       </node>
                     </node>
                   </node>
@@ -1826,7 +1823,7 @@
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8444296659257928561" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="8444296659257928562" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8444296659257928563" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190534" resolveInfo="cStructName" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190534" resolveInfo="genStructName" />
                   </node>
                 </node>
               </node>
@@ -1985,7 +1982,7 @@
                             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1598382569875205498" nodeInfo="nn">
                               <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1598382569875205497" nodeInfo="nn" />
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1598382569875205502" nodeInfo="nn">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190534" resolveInfo="cStructName" />
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190534" resolveInfo="genStructName" />
                               </node>
                             </node>
                           </node>
@@ -2240,7 +2237,7 @@
                               </node>
                             </node>
                             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="881042019525802142" nodeInfo="nn">
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.881042019525800905" resolveInfo="cInitFunctionName" />
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.881042019525800905" resolveInfo="genInitFunctionName" />
                             </node>
                           </node>
                         </node>
@@ -2334,7 +2331,7 @@
                               </node>
                             </node>
                             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6118219496720640264" nodeInfo="nn">
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.881042019525800905" resolveInfo="cInitFunctionName" />
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.881042019525800905" resolveInfo="genInitFunctionName" />
                             </node>
                           </node>
                         </node>
@@ -2742,7 +2739,7 @@
                                 </node>
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="881042019525709352" nodeInfo="nn">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190513" resolveInfo="cExecuteFunctionName" />
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190513" resolveInfo="genExecuteFunctionName" />
                               </node>
                             </node>
                           </node>
@@ -3267,7 +3264,7 @@
                                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6118219496726765296" resolveInfo="m" />
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6118219496725747674" nodeInfo="nn">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190513" resolveInfo="cExecuteFunctionName" />
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190513" resolveInfo="genExecuteFunctionName" />
                               </node>
                             </node>
                           </node>
@@ -3431,7 +3428,7 @@
                               </node>
                             </node>
                             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1582169519238021115" nodeInfo="nn">
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190513" resolveInfo="cExecuteFunctionName" />
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190513" resolveInfo="genExecuteFunctionName" />
                             </node>
                           </node>
                         </node>
@@ -3552,7 +3549,7 @@
                               </node>
                             </node>
                             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1582169519237969186" nodeInfo="nn">
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190513" resolveInfo="cExecuteFunctionName" />
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190513" resolveInfo="genExecuteFunctionName" />
                             </node>
                           </node>
                         </node>
@@ -3812,7 +3809,7 @@
                           </node>
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="3912676515585629790" nodeInfo="nn">
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190534" resolveInfo="cStructName" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190534" resolveInfo="genStructName" />
                         </node>
                       </node>
                     </node>
@@ -5350,7 +5347,7 @@
                           </node>
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5059948731776543730" nodeInfo="nn">
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190534" resolveInfo="cStructName" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.1786180596061190534" resolveInfo="genStructName" />
                         </node>
                       </node>
                     </node>

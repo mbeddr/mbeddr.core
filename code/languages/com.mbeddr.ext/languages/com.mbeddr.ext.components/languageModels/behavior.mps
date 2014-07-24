@@ -247,7 +247,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="talm.SelectVariableOperation" typeId="talm.767492017434549600" id="3655016528967265207" nodeInfo="ng">
                 <node role="filters" roleId="talm.767492017435859589" type="talm.SelectSingleNameFilter" typeId="talm.3655016528991318324" id="3655016528996012501" nodeInfo="ng">
                   <node role="name" roleId="talm.767492017435773106" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3655016528996033115" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="___castedInstanceData" />
+                    <property name="value" nameId="tpee.1070475926801" value="___cid" />
                   </node>
                 </node>
                 <node role="filters" roleId="talm.767492017435859589" type="talm.SelectStateFilter" typeId="talm.767492017435773046" id="3655016528967306972" nodeInfo="ng">
@@ -284,40 +284,21 @@
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3655016528996678778" nodeInfo="nn">
               <node role="creator" roleId="tpee.1145553007750" type="tp2q.ListCreatorWithInit" typeId="tp2q.1160600644654" id="3655016528996681807" nodeInfo="nn">
-                <node role="elementType" roleId="tp2q.1237721435807" type="tpee.StringType" typeId="tpee.1225271177708" id="3655016528996682812" nodeInfo="in" />
-                <node role="initValue" roleId="tp2q.1237721435808" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3655016528996699011" nodeInfo="nn">
-                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3655016528996699012" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="3655016528996699013" nodeInfo="nn" />
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3655016528996699014" nodeInfo="nn">
-                      <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                    </node>
-                  </node>
-                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3655016528996699015" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="portops_" />
-                  </node>
-                </node>
-                <node role="initValue" roleId="tp2q.1237721435808" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3655016528997339121" nodeInfo="nn">
-                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3655016528997339122" nodeInfo="nn">
+                <node role="initValue" roleId="tp2q.1237721435808" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="840952417061816506" nodeInfo="nn">
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3655016528997339122" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="3655016528997339123" nodeInfo="nn" />
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3655016528997339124" nodeInfo="nn">
                       <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
                     </node>
                   </node>
-                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3655016528997339125" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="__srdata_" />
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3655016528997339125" nodeInfo="nn">
+                    <property name="value" nameId="tpee.1070475926801" value="__srdata" />
                   </node>
                 </node>
-                <node role="initValue" roleId="tp2q.1237721435808" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3655016528997340318" nodeInfo="nn">
-                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3655016528997340319" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="3655016528997340320" nodeInfo="nn" />
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3655016528997340321" nodeInfo="nn">
-                      <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                    </node>
-                  </node>
-                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3655016528997340322" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="port_" />
-                  </node>
+                <node role="initValue" roleId="tp2q.1237721435808" type="1i04.LocalBehaviorMethodCall" typeId="1i04.6496299201655527393" id="840952417061810571" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2460736422398470584" resolveInfo="genStructMemberName" />
                 </node>
+                <node role="elementType" roleId="tp2q.1237721435807" type="tpee.StringType" typeId="tpee.1225271177708" id="3655016528996682812" nodeInfo="in" />
               </node>
             </node>
           </node>
@@ -335,7 +316,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="talm.SelectVariableOperation" typeId="talm.767492017434549600" id="3655016528979399323" nodeInfo="ng">
                 <node role="filters" roleId="talm.767492017435859589" type="talm.SelectSingleNameFilter" typeId="talm.3655016528991318324" id="3655016528996012554" nodeInfo="ng">
                   <node role="name" roleId="talm.767492017435773106" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3655016528996033059" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="___castedInstanceData" />
+                    <property name="value" nameId="tpee.1070475926801" value="___cid" />
                   </node>
                 </node>
                 <node role="filters" roleId="talm.767492017435859589" type="talm.SelectStateFilter" typeId="talm.767492017435773046" id="3655016528979408420" nodeInfo="ng">
@@ -987,7 +968,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="talm.SelectVariableOperation" typeId="talm.767492017434549600" id="4172743831431345804" nodeInfo="ng">
                 <node role="filters" roleId="talm.767492017435859589" type="talm.SelectSingleNameFilter" typeId="talm.3655016528991318324" id="4172743831431345824" nodeInfo="ng">
                   <node role="name" roleId="talm.767492017435773106" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4172743831431345829" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="___castedInstanceData" />
+                    <property name="value" nameId="tpee.1070475926801" value="___cid" />
                   </node>
                 </node>
               </node>
@@ -4358,7 +4339,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="talm.SelectVariableOperation" typeId="talm.767492017434549600" id="3655016528995998489" nodeInfo="ng">
                 <node role="filters" roleId="talm.767492017435859589" type="talm.SelectSingleNameFilter" typeId="talm.3655016528991318324" id="3655016528992540403" nodeInfo="ng">
                   <node role="name" roleId="talm.767492017435773106" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3655016528992540435" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="___castedInstanceData" />
+                    <property name="value" nameId="tpee.1070475926801" value="___cid" />
                   </node>
                 </node>
               </node>
@@ -4378,7 +4359,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="talm.SelectVariableOperation" typeId="talm.767492017434549600" id="3655016528952822958" nodeInfo="ng">
                 <node role="filters" roleId="talm.767492017435859589" type="talm.SelectSingleNameFilter" typeId="talm.3655016528991318324" id="3655016528995999246" nodeInfo="ng">
                   <node role="name" roleId="talm.767492017435773106" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3655016528992731677" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="___instanceData" />
+                    <property name="value" nameId="tpee.1070475926801" value="___id" />
                   </node>
                 </node>
               </node>
@@ -9865,7 +9846,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="talm.SelectVariableOperation" typeId="talm.767492017434549600" id="3655016528965720762" nodeInfo="ng">
                 <node role="filters" roleId="talm.767492017435859589" type="talm.SelectSingleNameFilter" typeId="talm.3655016528991318324" id="3655016528992829384" nodeInfo="ng">
                   <node role="name" roleId="talm.767492017435773106" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3655016528992829504" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="___castedInstanceData" />
+                    <property name="value" nameId="tpee.1070475926801" value="___cid" />
                   </node>
                 </node>
               </node>
