@@ -76,13 +76,20 @@
             </node>
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="8337440621612856053" nodeInfo="ng">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8337440621612856112" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4959640877381999835" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8337440621612855927" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="r7kp.AnnotatedExpression" typeId="r7kp.8337440621611212272" id="4959640877380667654" nodeInfo="ng">
+              <node role="innerExpression" roleId="r7kp.8337440621611267898" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4959640877380667653" nodeInfo="ng">
+                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+              </node>
+              <node role="specification" roleId="r7kp.8337440621611353453" type="r7kp.UnitSpecification" typeId="r7kp.8337440621611270429" id="4959640877380667655" nodeInfo="ng">
+                <node role="components" roleId="r7kp.8337440621611297539" type="r7kp.UnitReference" typeId="r7kp.8337440621611273669" id="4959640877380667656" nodeInfo="ng">
+                  <link role="unit" roleId="r7kp.8337440621611297532" targetNodeId="8337440621612554397" resolveInfo="m" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
