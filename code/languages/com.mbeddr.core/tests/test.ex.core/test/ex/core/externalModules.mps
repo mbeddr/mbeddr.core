@@ -212,6 +212,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="7705997077751341674" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="smallTTT" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <node role="original" roleId="clbe.6116558314501347862" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="7705997077751341677" nodeInfo="ng">
         <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="7705997077751341664" resolveInfo="smallT" />
       </node>
