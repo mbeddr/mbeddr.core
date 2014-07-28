@@ -97,9 +97,8 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="3202308034910435196" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dcontains(java%dlang%dCharSequence)%cboolean" resolveInfo="contains" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="1350215515446642541" nodeInfo="nn">
-                  <link role="classifier" roleId="tpee.1144433057691" targetNodeId="irjt.4799680529822711731" resolveInfo="FunctionCallsLifterStateMachines" />
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="irjt.1350215515446642534" resolveInfo="STATEMACHINE_TRIGGER_MARKER" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1110152365769210603" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="_exec" />
                 </node>
               </node>
             </node>
