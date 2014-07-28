@@ -736,7 +736,7 @@
             </node>
             <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="688756255681869911" nodeInfo="ng">
               <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="688756255681873803" nodeInfo="ng">
-                <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="688756255681866764" resolveInfo="SA" />
+                <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="688756255681866764" resolveInfo="A" />
                 <node role="exponent" roleId="qlb5.8337440621611297534" type="qlb5.Exponent" typeId="qlb5.8337440621611273670" id="688756255681883187" nodeInfo="ng">
                   <property name="value" nameId="qlb5.8337440621611273671" value="2" />
                 </node>
@@ -752,14 +752,14 @@
               </node>
               <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="688756255681878547" nodeInfo="ng">
                 <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="688756255681880875" nodeInfo="ng">
-                  <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="688756255681866764" resolveInfo="SA" />
+                  <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="688756255681866764" resolveInfo="A" />
                 </node>
               </node>
             </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qlb5.MetaUnitDeclaration" typeId="qlb5.8337440621613065018" id="688756255681866763" nodeInfo="ng">
             <node role="units" roleId="qlb5.8337440621613065019" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="688756255681866764" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="SA" />
+              <property name="name" nameId="tpck.1169194664001" value="A" />
             </node>
           </node>
         </node>
