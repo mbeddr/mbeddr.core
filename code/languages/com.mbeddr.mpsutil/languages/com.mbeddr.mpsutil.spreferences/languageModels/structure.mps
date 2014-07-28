@@ -107,5 +107,10 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6547806146467473938" resolveInfo="PreferencePageDescription" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5299504751977339944" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Parameter_IsInit" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="isInit" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
+  </root>
 </model>
 

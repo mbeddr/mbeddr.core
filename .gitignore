@@ -29,6 +29,11 @@ source_gen
 source_gen.caches
 
 # -----------------------------------------------------------
+# Type Size Config
+code/languages/com.mbeddr.build/_spreferences
+code/languages/com.mbeddr.mpsutil/_spreferences
+
+# -----------------------------------------------------------
 # * build
 build/*/build
 build/allInOne
