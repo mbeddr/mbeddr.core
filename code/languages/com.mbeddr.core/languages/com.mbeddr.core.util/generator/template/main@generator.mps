@@ -8323,6 +8323,7 @@
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="8046082822449417131" resolveInfo="rb" />
             </node>
             <node role="init" roleId="x27k.2771264470558526601" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639125151235" nodeInfo="ng">
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="4544858137963483000" nodeInfo="ng" />
               <node role="elements" roleId="c4fa.8850915533694634146" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="7763322639125141008" nodeInfo="ng">
                 <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8046082822449417200" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
