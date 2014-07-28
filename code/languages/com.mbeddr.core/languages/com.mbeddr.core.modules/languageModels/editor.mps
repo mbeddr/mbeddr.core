@@ -2218,6 +2218,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="6512473996287153680" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.6512473996287153139" />
+        <link role="elementActionMap" roleId="tpc2.1173177718857" targetNodeId="r4b4.653519202319564084" resolveInfo="deleteEmptyStuffInCollection" />
         <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6512473996287153681" nodeInfo="nn" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="6512473996287153682" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
