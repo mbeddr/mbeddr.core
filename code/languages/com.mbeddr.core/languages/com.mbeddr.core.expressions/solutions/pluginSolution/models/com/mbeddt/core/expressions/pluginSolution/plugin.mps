@@ -15,13 +15,18 @@
     <link role="rootConcept" roleId="tmud.6547806146467491221" targetNodeId="mj1l.3335993110369795380" resolveInfo="TypeSizeConfiguration" />
     <node role="initFunction" roleId="tmud.6044976435766357656" type="tmud.InitPageNode" typeId="tmud.6044976435766352430" id="9174439846097836725" nodeInfo="ng">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="9174439846097861150" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9174439846097902500" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9174439846097914682" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="tmud.Parameter_PageNode" typeId="tmud.6044976435766352514" id="9174439846097902499" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="9174439846098089535" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.7496733358578226782" resolveInfo="populateWithDesktopDefault" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="5299504751977830456" nodeInfo="nn">
+          <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="5299504751977830459" nodeInfo="sn">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9174439846097902500" nodeInfo="nn">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9174439846097914682" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tmud.Parameter_PageNode" typeId="tmud.6044976435766352514" id="9174439846097902499" nodeInfo="ng" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="9174439846098089535" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.7496733358578226782" resolveInfo="populateWithDesktopDefault" />
+                </node>
+              </node>
             </node>
           </node>
+          <node role="condition" roleId="tpee.1068580123160" type="tmud.Parameter_IsInit" typeId="tmud.5299504751977339944" id="5299504751977830596" nodeInfo="ng" />
         </node>
       </node>
     </node>
