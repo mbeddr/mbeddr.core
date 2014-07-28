@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="-1" />
+    </dependencies>
+    <rename id="qlb5.385804577579859948" type="CHILD" from="substitution" to="substitutions" />
+  </StructureModification>
+</history>
+
