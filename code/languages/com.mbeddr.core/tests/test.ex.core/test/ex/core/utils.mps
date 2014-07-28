@@ -715,8 +715,8 @@
       <property name="name" nameId="tpck.1169194664001" value="getTime" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1498485214672341138" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1498485214672342655" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1498485214672342654" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="4544858137978481977" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4544858137978481978" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="1498485214672341291" resolveInfo="curTime" />
           </node>
         </node>
