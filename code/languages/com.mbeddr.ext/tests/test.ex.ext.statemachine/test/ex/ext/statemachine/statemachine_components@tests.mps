@@ -28,7 +28,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="33" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="8" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="9" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="4643433264761468121" nodeInfo="ng">
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="4643433264761468122" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="StatemachineComp" />
@@ -908,76 +908,6 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="268054603277645472" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1359545807637_3" />
-    </node>
-  </root>
-  <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578266352" nodeInfo="ng">
-    <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8863019357864489777" nodeInfo="ng" />
-    <node role="sizeTType" roleId="mj1l.8863019357864392147" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8863019357864489778" nodeInfo="ng" />
-    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489779" nodeInfo="ng">
-      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
-      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.CharType" typeId="mj1l.1664480272136207708" id="8863019357864489780" nodeInfo="ng" />
-      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8863019357864489781" nodeInfo="ng" />
-    </node>
-    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489782" nodeInfo="ng">
-      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
-      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.ShortType" typeId="mj1l.3335993110369949928" id="8863019357864489783" nodeInfo="ng" />
-      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="8863019357864489784" nodeInfo="ng" />
-    </node>
-    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489785" nodeInfo="ng">
-      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
-      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="8863019357864489786" nodeInfo="ng" />
-      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8863019357864489787" nodeInfo="ng" />
-    </node>
-    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489788" nodeInfo="ng">
-      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
-      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.LongType" typeId="mj1l.86532984527104137" id="8863019357864489789" nodeInfo="ng" />
-      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8863019357864489790" nodeInfo="ng" />
-    </node>
-    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489791" nodeInfo="ng">
-      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
-      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.LongLongType" typeId="mj1l.8463282783691596316" id="8863019357864489792" nodeInfo="ng" />
-      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="8863019357864489793" nodeInfo="ng" />
-    </node>
-    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489794" nodeInfo="ng">
-      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
-      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedCharType" typeId="mj1l.8463282783691492716" id="8863019357864489795" nodeInfo="ng" />
-      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="8863019357864489796" nodeInfo="ng" />
-    </node>
-    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489797" nodeInfo="ng">
-      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
-      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedShortType" typeId="mj1l.595416243537320771" id="8863019357864489798" nodeInfo="ng" />
-      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="8863019357864489799" nodeInfo="ng" />
-    </node>
-    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489800" nodeInfo="ng">
-      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
-      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedIntType" typeId="mj1l.8463282783691492730" id="8863019357864489801" nodeInfo="ng" />
-      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="8863019357864489802" nodeInfo="ng" />
-    </node>
-    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489803" nodeInfo="ng">
-      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
-      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedLongType" typeId="mj1l.8463282783691596310" id="8863019357864489804" nodeInfo="ng" />
-      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="8863019357864489805" nodeInfo="ng" />
-    </node>
-    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489806" nodeInfo="ng">
-      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
-      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedLongLongType" typeId="mj1l.8463282783691618471" id="8863019357864489807" nodeInfo="ng" />
-      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt64tType" typeId="mj1l.8463282783691618456" id="8863019357864489808" nodeInfo="ng" />
-    </node>
-    <node role="minFloatValue" roleId="mj1l.6658270785788810330" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836822529" nodeInfo="ng">
-      <property name="prefix" nameId="mj1l.1670233242589904217" value="-1" />
-      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
-    </node>
-    <node role="minDoubleValue" roleId="mj1l.6658270785788810349" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836822530" nodeInfo="ng">
-      <property name="prefix" nameId="mj1l.1670233242589904217" value="-1" />
-      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
-    </node>
-    <node role="maxFloatValue" roleId="mj1l.6658270785788810029" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836822531" nodeInfo="ng">
-      <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
-      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
-    </node>
-    <node role="maxDoubleValue" roleId="mj1l.6658270785788810339" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="4611036548836822532" nodeInfo="ng">
-      <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
-      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5065104421776234663" nodeInfo="ng">
