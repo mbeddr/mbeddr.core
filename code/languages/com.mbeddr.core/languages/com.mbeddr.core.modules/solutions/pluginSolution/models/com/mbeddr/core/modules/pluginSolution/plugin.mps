@@ -224,16 +224,6 @@
       </node>
     </node>
   </root>
-  <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="7518061998923661605" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Replicate" />
-    <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.380699267178693507" resolveInfo="replicate" />
-    <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="7518061998923702692" nodeInfo="ng">
-      <link role="param" roleId="4w5v.7518061998923573141" targetNodeId="e4fp.380699267178696082" resolveInfo="count" />
-      <node role="chooser" roleId="4w5v.7518061998923573142" type="4w5v.StringChooser" typeId="4w5v.7518061998923713757" id="7518061998923722453" nodeInfo="ng">
-        <property name="title" nameId="4w5v.7518061998923720371" value="Count" />
-      </node>
-    </node>
-  </root>
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="7990137026351650149" nodeInfo="ng" />
   <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="2400440333612945069" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Convert into Implementation Module" />
