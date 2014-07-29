@@ -578,15 +578,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7123462210702867708" resolveInfo="ILOCCountProvider" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5724839270942479572" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="reporting" />
-    <property name="name" nameId="tpck.1169194664001" value="LogExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="log" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.3005510381523579442" resolveInfo="UnaryExpression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5724839270942479576" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.2688792604368329409" resolveInfo="ICodeLocationAware" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3059865549680361316" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
     <property name="name" nameId="tpck.1169194664001" value="NamedArgStructInitExpression" />

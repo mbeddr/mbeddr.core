@@ -835,7 +835,6 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3335993110369795380" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TypeSizeConfiguration" />
-    <property name="rootable" nameId="tpce.1096454100552" value="true" />
     <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/typesizeconfig.png" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="define the type size mapping" />
