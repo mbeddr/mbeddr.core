@@ -3059,7 +3059,7 @@
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="8263455477334133490" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="2022934703986763479" nodeInfo="nn">
         <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="2022934703986763687" nodeInfo="nn">
-          <property name="text" nameId="tpee.6329021646629104958" value="omit IAssignmentLikes from the check" />
+          <property name="text" nameId="tpee.6329021646629104958" value="omit IArgumentLike from the check" />
         </node>
       </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2022934703986708586" nodeInfo="nn">
