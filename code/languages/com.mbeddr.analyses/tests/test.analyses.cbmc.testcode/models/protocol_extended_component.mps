@@ -30,9 +30,8 @@
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="9120591063517987727" nodeInfo="ng">
       <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="9120591063517987728" nodeInfo="ng">
-        <property name="wireStatically" nameId="p7vm.1553713790141527405" value="true" />
+        <property name="wireStatically" nameId="p7vm.1553713790141527405" value="false" />
         <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
-        <link role="instanceConfig" roleId="p7vm.1553713790141527407" targetNodeId="9120591063517987809" resolveInfo="AllInstances" />
       </node>
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="9120591063517987729" nodeInfo="ng">

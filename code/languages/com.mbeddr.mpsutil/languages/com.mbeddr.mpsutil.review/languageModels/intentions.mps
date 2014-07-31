@@ -28,7 +28,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8455208232405797314" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8455208232405799248" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8455208232405799247" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Add Comment" />
+            <property name="value" nameId="tpee.1070475926801" value="Add Margin Comment" />
           </node>
         </node>
       </node>

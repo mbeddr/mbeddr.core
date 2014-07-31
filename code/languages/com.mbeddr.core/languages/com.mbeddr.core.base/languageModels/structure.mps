@@ -1244,5 +1244,8 @@
       </node>
     </node>
   </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4527669556367956681" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IInstantiatedOnlyInGenerators" />
+  </root>
 </model>
 
