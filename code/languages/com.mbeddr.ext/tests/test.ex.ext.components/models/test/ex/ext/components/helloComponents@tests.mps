@@ -190,13 +190,16 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="8527604487698715367" nodeInfo="ng">
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Connection" typeId="2qld.2319506556913310852" id="8527604487698715372" nodeInfo="ng" />
-        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="8527604487698715460" nodeInfo="ng">
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="1180267467526219125" nodeInfo="ng">
+        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1180267467526219128" nodeInfo="ng">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="4075471389393077754" resolveInfo="c" />
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4075471389393077732" resolveInfo="helloWorld" />
         </node>
-        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="8527604487698715461" nodeInfo="ng" />
+        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1180267467526219129" nodeInfo="ng">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="4075471389393077752" resolveInfo="s" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4075471389393077724" resolveInfo="helloWorld" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Connection" typeId="2qld.2319506556913310852" id="1180267467526219130" nodeInfo="ng" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4075471389393077750" nodeInfo="ng">
