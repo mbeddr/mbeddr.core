@@ -2164,6 +2164,17 @@
     <property name="name" nameId="tpck.1169194664001" value="supertypesOf_AnnotatedType_InferredAttribute" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="subtyping.annotatedtype" />
     <node role="body" roleId="tpd4.1175147624276" type="tpee.StatementList" typeId="tpee.1068580123136" id="688756255678707215" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="1259114121295109861" nodeInfo="nn">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="1259114121295110449" nodeInfo="nn">
+          <property name="text" nameId="tpee.6329021646629104958" value="Specifies the supertypes of an annotated type with substitutions. The " />
+        </node>
+      </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="1259114121295115670" nodeInfo="nn">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="1259114121295116262" nodeInfo="nn">
+          <property name="text" nameId="tpee.6329021646629104958" value="supertype will be the annotated type where the meta units are resolved. " />
+        </node>
+      </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1259114121295109274" nodeInfo="nn" />
       <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="688756255678707234" nodeInfo="nn">
         <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="688756255678707235" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="688756255679463603" nodeInfo="nn">
@@ -2442,6 +2453,32 @@
     </node>
     <node role="isApplicableClause" roleId="tpd4.3592071576955708909" type="tpd4.IsReplacementRuleApplicable_ConceptFunction" typeId="tpd4.3592071576955708904" id="2205917211688073462" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2205917211688073463" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="1259114121295043091" nodeInfo="nn">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="1259114121295045089" nodeInfo="nn">
+            <property name="text" nameId="tpee.6329021646629104958" value="Adds a subtyping rule between two AnnotatedTypes, where both of them must " />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="1259114121295067483" nodeInfo="nn">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="1259114121295069485" nodeInfo="nn">
+            <property name="text" nameId="tpee.6329021646629104958" value="contain a single meta unit. If multiple meta units are present then the " />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="1259114121295073031" nodeInfo="nn">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="1259114121295075037" nodeInfo="nn">
+            <property name="text" nameId="tpee.6329021646629104958" value="isMatchingUnit call will immediately return false. " />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="1259114121295085072" nodeInfo="nn">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="1259114121295087084" nodeInfo="nn">
+            <property name="text" nameId="tpee.6329021646629104958" value="This rule cannot be applied if:" />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="1259114121295091042" nodeInfo="nn">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="1259114121295093058" nodeInfo="nn">
+            <property name="text" nameId="tpee.6329021646629104958" value="(1) either one of the annotated types does not contain a meta unit" />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1259114121295077028" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2205917211688074117" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2205917211688074120" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="subSpec" />
@@ -2853,7 +2890,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="3301072788976656449" nodeInfo="nn">
           <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="3301072788976657879" nodeInfo="nn">
-            <property name="text" nameId="tpee.6329021646629104958" value="will be treated as the same. " />
+            <property name="text" nameId="tpee.6329021646629104958" value="will be treated as the same type. " />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="3301072788976661384" nodeInfo="nn">
@@ -2863,12 +2900,12 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="3301072788976669156" nodeInfo="nn">
           <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="3301072788976670596" nodeInfo="nn">
-            <property name="text" nameId="tpee.6329021646629104958" value="(2) there is a meta unit in sub" />
+            <property name="text" nameId="tpee.6329021646629104958" value="(1) there is a meta unit in sub" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="3301072788976672840" nodeInfo="nn">
           <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="3301072788976674284" nodeInfo="nn">
-            <property name="text" nameId="tpee.6329021646629104958" value="(3) there is a meta unit in sup" />
+            <property name="text" nameId="tpee.6329021646629104958" value="(2) there is a meta unit in sup" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3301072788976675081" nodeInfo="nn" />
