@@ -13,6 +13,7 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="33" implicit="yes" />
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2093108837558189299" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="localvar" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="c4fa.2093108837558113914" resolveInfo="LocalVarRef" />
@@ -285,6 +286,29 @@
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6252218999077653592" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="arbitraryText" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="c4fa.3830958861296871078" resolveInfo="ArbitraryTextExpression" />
+  </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5337391105143334392" nodeInfo="ng">
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="c4fa.8850915533694634145" resolveInfo="InitExpression" />
+    <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="5337391105143334566" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5337391105143334567" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5337391105143335889" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5337391105143341006" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5337391105143336644" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintFunctionParameter_parentNode" typeId="tp1t.1202989658459" id="5337391105143335888" nodeInfo="nn" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="5337391105143338038" nodeInfo="nn">
+                <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="5337391105143338040" nodeInfo="ng">
+                  <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="8297969787984456623" nodeInfo="nn">
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="mj1l.3196454794517236255" resolveInfo="IDataflowAssignment" />
+                  </node>
+                </node>
+                <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Inclusion" typeId="tp25.1144100932627" id="5337391105143340211" nodeInfo="ng" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsNotNullOperation" typeId="tp25.1172008320231" id="5337391105143342661" nodeInfo="nn" />
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
 </model>
 
