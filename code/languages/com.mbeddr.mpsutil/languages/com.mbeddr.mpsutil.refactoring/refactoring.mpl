@@ -79,6 +79,9 @@
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
+  <runtime>
+    <dependency reexport="false">8f16104e-22e6-406d-8251-ef9688474557(com.mbeddr.mpsutil.refactoring.rt)</dependency>
+  </runtime>
   <extendedLanguages>
     <extendedLanguage>63650c59-16c8-498a-99c8-005c7ee9515d(jetbrains.mps.lang.access)</extendedLanguage>
     <extendedLanguage>28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)</extendedLanguage>
