@@ -39,6 +39,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.dataflow/dataflow.msd" folder="tests.dataflow" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.core.extended/test.ts.core.extended.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.performance/test.ts.core.performance.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core/core.msd" folder="tests" />
     </projectModules>
