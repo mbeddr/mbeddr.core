@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.core.dataflow" uuid="6c8cf18f-5d31-40f7-9860-e8ebedaa290d" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="test.ts.core.extended" uuid="1dddf916-f9bd-4c3b-af45-3f86032dab45" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
