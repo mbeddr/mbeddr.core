@@ -18,6 +18,7 @@
   <import index="tp3r" modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" implicit="yes" />
   <root type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="4959640877380327031" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Expression_PrimitiveType_SpecifyUnit" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="4959640877380327032" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
       <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="4959640877380436218" nodeInfo="ng">
@@ -213,6 +214,7 @@
   </root>
   <root type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="8337440621612679854" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="UnitReference_AddExponent" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="8337440621612679855" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="qlb5.8337440621611273669" resolveInfo="UnitReference" />
       <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="8337440621612685674" nodeInfo="ng">
@@ -264,6 +266,7 @@
   </root>
   <root type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="4959640877380164890" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="UnitReference_InsertNew" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="4959640877380165429" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="qlb5.8337440621611273669" resolveInfo="UnitReference" />
       <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="4959640877380165435" nodeInfo="ng">
@@ -336,6 +339,7 @@
   </root>
   <root type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="385804577579071403" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="UnitReference_IncludeTransformMenuOfAnnotatedExpression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="385804577579408814" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="qlb5.8337440621611273669" resolveInfo="UnitReference" />
       <node role="part" roleId="tpdg.1177442283389" type="tpdg.IncludeRightTransformForNodePart" typeId="tpdg.1180111159572" id="385804577579408846" nodeInfo="ng">
@@ -380,6 +384,7 @@
   </root>
   <root type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="5752745895625208122" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="AnnotatedExpression_AddExponent" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="5752745895625208123" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="qlb5.8337440621611212272" resolveInfo="AnnotatedExpression" />
       <node role="precondition" roleId="tpdg.1154622757656" type="tpdg.SideTransformHintSubstitutePreconditionFunction" typeId="tpdg.1154622616118" id="5752745895625208126" nodeInfo="nn">
