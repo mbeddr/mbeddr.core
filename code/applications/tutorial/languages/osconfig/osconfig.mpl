@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="mbeddr.tutorial.osconfig" uuid="a577a05d-67ad-41db-9547-6e5f0730b85d" doNotGenerateAdapters="true">
+<language namespace="mbeddr.tutorial.osconfig" uuid="a577a05d-67ad-41db-9547-6e5f0730b85d">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}/languageModels" type="default">
+      <sourceRoot location="." />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators />
