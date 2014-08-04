@@ -462,7 +462,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3976803464656556878" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
     <property name="name" nameId="tpck.1169194664001" value="BitwiseNotExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="arithmetic not" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise not" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="~" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4375898003726285484" resolveInfo="UnaryArithmeticExpression" />
   </root>
