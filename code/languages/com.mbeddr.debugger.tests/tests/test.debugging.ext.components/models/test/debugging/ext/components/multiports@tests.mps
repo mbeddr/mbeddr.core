@@ -279,6 +279,9 @@
               <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="3457272138385410189" resolveInfo="getNotificationCount" />
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="496875465993596914" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="afterInstanceRun" />
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="3457272138385410225" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3457272138385410226" nodeInfo="ng">
@@ -453,47 +456,62 @@
         </node>
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="8885587964580294524" nodeInfo="ng">
-        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8885587964580294525" nodeInfo="ng">
-          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8885587964580294526" nodeInfo="ng">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8885587964580294509" resolveInfo="notifyingObservers" />
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.PlatformSpecificValidations" typeId="rpmx.2033545087487794832" id="496875465993606823" nodeInfo="ng">
+          <node role="validations" roleId="rpmx.2033545087487794833" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="496875465993606940" nodeInfo="ng">
+            <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="496875465993606943" nodeInfo="ng">
+              <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="496875465993596914" resolveInfo="afterInstanceRun" />
+            </node>
+          </node>
+          <node role="validations" roleId="rpmx.2033545087487794833" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="496875465993728113" nodeInfo="ng">
+            <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="496875465993728121" nodeInfo="ng">
+              <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8885587964580294530" resolveInfo="globals" />
+            </node>
           </node>
         </node>
-        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="8885587964580482095" nodeInfo="ng">
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482097" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="bla" />
-          </node>
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580482099" nodeInfo="ng">
-            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482100" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="observers" />
-            </node>
-            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8885587964580482101" nodeInfo="ng">
-              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580482102" nodeInfo="ng">
-                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482103" nodeInfo="ng">
-                  <property name="name" nameId="tpck.1169194664001" value="observers[0]" />
-                </node>
-                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964580482104" nodeInfo="ng">
-                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580482105" nodeInfo="ng">
-                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
-                  </node>
-                </node>
-              </node>
-              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580482106" nodeInfo="ng">
-                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482107" nodeInfo="ng">
-                  <property name="name" nameId="tpck.1169194664001" value="observers[1]" />
-                </node>
-                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964580482108" nodeInfo="ng">
-                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580482109" nodeInfo="ng">
-                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
-                  </node>
-                </node>
-              </node>
-              <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580482110" nodeInfo="ng">
-                <property name="value" nameId="rpmx.6894131567068111701" value="ObserverIf[2]" />
-              </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.PlatformSpecificValidations" typeId="rpmx.2033545087487794832" id="496875465993606900" nodeInfo="ng">
+          <property name="platform" nameId="rpmx.2033545087487794834" value="win" />
+          <node role="validations" roleId="rpmx.2033545087487794833" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8885587964580294525" nodeInfo="ng">
+            <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8885587964580294526" nodeInfo="ng">
+              <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8885587964580294509" resolveInfo="notifyingObservers" />
             </node>
           </node>
-          <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8885587964580482096" nodeInfo="ng">
-            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8885587964580294530" resolveInfo="globals" />
+          <node role="validations" roleId="rpmx.2033545087487794833" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="8885587964580482095" nodeInfo="ng">
+            <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482097" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="bla" />
+            </node>
+            <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580482099" nodeInfo="ng">
+              <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482100" nodeInfo="ng">
+                <property name="name" nameId="tpck.1169194664001" value="observers" />
+              </node>
+              <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8885587964580482101" nodeInfo="ng">
+                <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580482102" nodeInfo="ng">
+                  <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482103" nodeInfo="ng">
+                    <property name="name" nameId="tpck.1169194664001" value="observers[0]" />
+                  </node>
+                  <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964580482104" nodeInfo="ng">
+                    <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580482105" nodeInfo="ng">
+                      <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                    </node>
+                  </node>
+                </node>
+                <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580482106" nodeInfo="ng">
+                  <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482107" nodeInfo="ng">
+                    <property name="name" nameId="tpck.1169194664001" value="observers[1]" />
+                  </node>
+                  <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964580482108" nodeInfo="ng">
+                    <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580482109" nodeInfo="ng">
+                      <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                    </node>
+                  </node>
+                </node>
+                <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580482110" nodeInfo="ng">
+                  <property name="value" nameId="rpmx.6894131567068111701" value="ObserverIf[2]" />
+                </node>
+              </node>
+            </node>
+            <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8885587964580482096" nodeInfo="ng">
+              <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8885587964580294530" resolveInfo="globals" />
+            </node>
           </node>
         </node>
       </node>
