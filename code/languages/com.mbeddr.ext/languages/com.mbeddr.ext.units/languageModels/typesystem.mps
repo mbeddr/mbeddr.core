@@ -3431,7 +3431,7 @@
             <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2315408579356724094" nodeInfo="sn">
               <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="2315408579356745686" nodeInfo="nn">
                 <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2315408579356749228" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="The conversion expression must have an annotated type!" />
+                  <property name="value" nameId="tpee.1070475926801" value="The conversion expression must have a type with unit!" />
                 </node>
                 <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2315408579356746061" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2315408579356745704" nodeInfo="nn">
@@ -3585,7 +3585,7 @@
               <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2407073772535903582" nodeInfo="sn">
                 <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="2315408579356860850" nodeInfo="nn">
                   <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2315408579356864228" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="A lazy conversion expression must not evaluate to an annotated type!" />
+                    <property name="value" nameId="tpee.1070475926801" value="A lazy conversion expression must not have a type with unit!" />
                   </node>
                   <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2315408579356861148" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2315408579356860868" nodeInfo="nn">
@@ -4518,12 +4518,17 @@
                 </node>
               </node>
             </node>
-            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="624957442819660203" nodeInfo="nn">
-              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="624957442818091663" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="expression must evaluate to a type with unit but was " />
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="7948518525049620798" nodeInfo="nn">
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7948518525049620801" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="!" />
               </node>
-              <node role="rightExpression" roleId="tpee.1081773367579" type="tpd4.WhenConcreteVariableReference" typeId="tpd4.1205762656241" id="624957442819660628" nodeInfo="nn">
-                <link role="whenConcreteVar" roleId="tpd4.1205762683928" targetNodeId="624957442818084946" resolveInfo="innerType" />
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="624957442819660203" nodeInfo="nn">
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="624957442818091663" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="The expression must evaluate to a type with unit but was " />
+                </node>
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpd4.WhenConcreteVariableReference" typeId="tpd4.1205762656241" id="624957442819660628" nodeInfo="nn">
+                  <link role="whenConcreteVar" roleId="tpd4.1205762683928" targetNodeId="624957442818084946" resolveInfo="innerType" />
+                </node>
               </node>
             </node>
             <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpee.DotExpression" typeId="tpee.1197027756228" id="624957442818093165" nodeInfo="nn">

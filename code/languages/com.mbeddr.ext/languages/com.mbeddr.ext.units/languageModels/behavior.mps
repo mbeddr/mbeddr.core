@@ -1110,7 +1110,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="conversion" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="qlb5.4121031889271022213" resolveInfo="ConvertExpression" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="4141532273714789921" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="getConversionRule" />
+      <property name="name" nameId="tpck.1169194664001" value="getConversionRules" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4141532273714789922" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4141532273714789924" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="624957442818478658" nodeInfo="nn" />
