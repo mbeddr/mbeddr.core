@@ -6,7 +6,9 @@
       <sourceRoot location="languageAccessories" />
     </modelRoot>
   </models>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" />
+  </accessoryModels>
   <generators>
     <generator generatorUID="com.mbeddr.ext.units#7696659106845773538" uuid="4946b1ce-99f4-4894-90b6-e08eb8b6de40">
       <models>
@@ -52,6 +54,7 @@
     <usedLanguage>7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
+    <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
