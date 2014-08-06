@@ -121,8 +121,8 @@
         <property name="name" nameId="tpck.1169194664001" value="s" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="4075471389393077718" resolveInfo="Server" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Node" typeId="2qld.6720495385597071406" id="5367549312417593204" nodeInfo="ng">
-          <property name="bounds_x" nameId="2qld.6720495385597071501" value="470.0" />
-          <property name="bounds_y" nameId="2qld.6720495385597071502" value="148.0" />
+          <property name="bounds_x" nameId="2qld.6720495385597071501" value="475.0" />
+          <property name="bounds_y" nameId="2qld.6720495385597071502" value="173.0" />
           <property name="bounds_width" nameId="2qld.6720495385597071503" value="179.0" />
           <property name="bounds_height" nameId="2qld.6720495385597071504" value="96.0" />
         </node>
@@ -163,11 +163,11 @@
             <property name="y" nameId="2qld.2319506556913310863" value="196.0" />
           </node>
         </node>
-        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3131986095654808994" nodeInfo="ng">
+        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3131986095660053804" nodeInfo="ng">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1180267467532039367" resolveInfo="client" />
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4075471389393077732" resolveInfo="helloWorld" />
         </node>
-        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3131986095654808995" nodeInfo="ng">
+        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3131986095660053805" nodeInfo="ng">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1180267467532039313" resolveInfo="s" />
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4075471389393077724" resolveInfo="helloWorld" />
         </node>
@@ -208,13 +208,26 @@
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="5367549312417595087" nodeInfo="ng">
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Connection" typeId="2qld.2319506556913310852" id="5367549312417595092" nodeInfo="ng" />
-        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3131986095654808996" nodeInfo="ng">
+        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3131986095660053806" nodeInfo="ng">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1180267467532039367" resolveInfo="client" />
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4075471389393077732" resolveInfo="helloWorld" />
         </node>
-        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3131986095654808997" nodeInfo="ng">
+        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3131986095660053807" nodeInfo="ng">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="5367549312417595028" resolveInfo="C3" />
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="5367549312417595071" resolveInfo="helloWorld" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="3131986095660053750" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Server" />
+        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="4075471389393077718" resolveInfo="Server" />
+        <node role="doc" roleId="v7ag.3131986095636624207" type="87nw.Text" typeId="87nw.2557074442922380897" id="3131986095660053751" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3131986095660053752" nodeInfo="ng" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Node" typeId="2qld.6720495385597071406" id="3131986095660053753" nodeInfo="ng">
+          <property name="bounds_x" nameId="2qld.6720495385597071501" value="409.0" />
+          <property name="bounds_y" nameId="2qld.6720495385597071502" value="300.0" />
+          <property name="bounds_width" nameId="2qld.6720495385597071503" value="179.0" />
+          <property name="bounds_height" nameId="2qld.6720495385597071504" value="88.0" />
         </node>
       </node>
     </node>
