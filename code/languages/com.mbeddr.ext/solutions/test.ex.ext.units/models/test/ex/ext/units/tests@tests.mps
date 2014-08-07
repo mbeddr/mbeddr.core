@@ -272,6 +272,9 @@
         <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7948518525041057026" nodeInfo="ng">
           <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="385804577578998282" resolveInfo="DefaultUnits" />
         </node>
+        <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8148561206061538179" nodeInfo="ng">
+          <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="cmgk.624957442821420128" resolveInfo="SIUnits" />
+        </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="7948518525041074109" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="toCheck" />
         </node>
