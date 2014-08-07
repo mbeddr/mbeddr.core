@@ -508,10 +508,6 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3059865549680537566" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.3059865549680361316" resolveInfo="NamedArgStructInitExpression" />
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5065104421776378469" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="util" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.5065104421776378465" resolveInfo="AndedExprList" />
