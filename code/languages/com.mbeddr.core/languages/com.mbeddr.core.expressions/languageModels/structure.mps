@@ -552,9 +552,6 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="329990661091917081" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="329990661091839232" resolveInfo="IAssignmentLike" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5962749441518381743" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="BitwiseAndExpression" />
@@ -1329,6 +1326,9 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4375898003726285484" resolveInfo="UnaryArithmeticExpression" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2943235651224447789" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="329990661091839232" resolveInfo="IAssignmentLike" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7533755140553634202" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
