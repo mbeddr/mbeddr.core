@@ -418,6 +418,9 @@
         <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7948518525041097787" nodeInfo="ng">
           <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="385804577578998282" resolveInfo="DefaultUnits" />
         </node>
+        <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8148561206069064725" nodeInfo="ng">
+          <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="cmgk.624957442821420128" resolveInfo="SIUnits" />
+        </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="7948518525041109336" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="toCheckErrors" />
         </node>
@@ -605,6 +608,9 @@
     </node>
     <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.EmptyUnitContainerContent" typeId="qlb5.6111466015651074424" id="2593029589632758723" nodeInfo="ng" />
     <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.EmptyUnitContainerContent" typeId="qlb5.6111466015651074424" id="2593029589632684380" nodeInfo="ng" />
+    <node role="imports" roleId="qlb5.8148561206068246955" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8148561206068969077" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="cmgk.624957442821420128" resolveInfo="SIUnits" />
+    </node>
   </root>
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="385804577580055618" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="MetaMethods" />
@@ -1442,6 +1448,9 @@
         <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="624957442821617356" nodeInfo="ng">
           <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="385804577578998282" resolveInfo="DefaultUnits" />
         </node>
+        <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8148561206067844132" nodeInfo="ng">
+          <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="cmgk.624957442821420128" resolveInfo="SIUnits" />
+        </node>
       </node>
     </node>
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="3410453932683917760" nodeInfo="ng">
@@ -1964,6 +1973,9 @@
         <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7948518525041211424" nodeInfo="ng">
           <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="385804577578998282" resolveInfo="DefaultUnits" />
         </node>
+        <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8148561206069180351" nodeInfo="ng">
+          <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="cmgk.624957442821420128" resolveInfo="SIUnits" />
+        </node>
       </node>
     </node>
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="3410453932683977460" nodeInfo="ng">
@@ -2293,6 +2305,9 @@
         <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="624957442817792035" nodeInfo="ng">
           <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="385804577578998282" resolveInfo="DefaultUnits" />
         </node>
+        <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8148561206067740936" nodeInfo="ng">
+          <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="cmgk.624957442821420128" resolveInfo="SIUnits" />
+        </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="1791852923073743008" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="toCheck" />
@@ -2303,6 +2318,9 @@
         <property name="name" nameId="tpck.1169194664001" value="TestModule" />
         <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="624957442817793259" nodeInfo="ng">
           <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="385804577578998282" resolveInfo="DefaultUnits" />
+        </node>
+        <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8148561206069303070" nodeInfo="ng">
+          <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="cmgk.624957442821420128" resolveInfo="SIUnits" />
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="1791852923073884863" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="a" />
