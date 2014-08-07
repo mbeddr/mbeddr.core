@@ -609,5 +609,11 @@
     </dependencies>
     <rename id="talm.7495245251398384960" type="PROPERTY" from="hidde" to="hidden" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="78" />
+    </dependencies>
+    <rename id="talm.4985013377831073945" type="CONCEPT" from="InjectDebuggingCodeIntoDebugger" to="InjectDebuggingInformationDebugger" />
+  </StructureModification>
 </history>
 
