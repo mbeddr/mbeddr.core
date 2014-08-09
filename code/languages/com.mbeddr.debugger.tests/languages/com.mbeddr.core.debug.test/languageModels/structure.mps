@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="89">
+<model modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="96">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" />
@@ -9,7 +9,7 @@
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="89" implicit="yes" />
+  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="96" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4193597469137492628" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MarkerAnnotation" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="marker" />
@@ -57,21 +57,6 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="binaryRef" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="5100083648679329379" resolveInfo="BinaryRef" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7048220250906041081" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ValidateCallStackDepth" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.callstack-depth" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="callstack-depth" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="validate that call stack has a given depth" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7048220250906041083" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="depth" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4360423713604470266" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4360423713604419403" resolveInfo="IValidationConfigurationElement" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7048220250906049590" nodeInfo="ig">
@@ -514,42 +499,6 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpfo.1174482743037" resolveInfo="Regexp" />
     </node>
   </root>
-  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="2033545087487743574" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration" />
-    <property name="name" nameId="tpck.1169194664001" value="Platform" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2033545087487743577" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="mac" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="mac" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2033545087487743576" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="linux" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="nux" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2033545087487743578" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="windows" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="win" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2033545087487794832" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.suspended" />
-    <property name="name" nameId="tpck.1169194664001" value="PlatformSpecificValidations" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="platform is" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2033545087487794834" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="platform" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="2033545087487743574" resolveInfo="Platform" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2033545087487794833" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="validations" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4360423713604419403" resolveInfo="IValidationConfigurationElement" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2033545087487817307" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4360423713604419403" resolveInfo="IValidationConfigurationElement" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1218249513292256529" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="declaration" />
     <property name="name" nameId="tpck.1169194664001" value="WatchablesDeclaration" />
@@ -669,74 +618,82 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="105850086903379385" resolveInfo="ISteppingConfigurationElement" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8614636349706653508" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.suspended.versions" />
-    <property name="name" nameId="tpck.1169194664001" value="SpecificGdbVersionValidation" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="gdb version is" />
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5641871277849447479" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element" />
+    <property name="name" nameId="tpck.1169194664001" value="OnPlatform" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="on platform" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8614636349706789292" nodeInfo="ig">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5641871277849477942" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="validations" />
+      <property name="role" nameId="tpce.1071599776563" value="children" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4360423713604419403" resolveInfo="IValidationConfigurationElement" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8614636349707506817" nodeInfo="ig">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5641871277850143726" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="version" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8614636349706973811" resolveInfo="VersionExpression" />
+      <property name="role" nameId="tpce.1071599776563" value="elseOnPart" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="5641871277850133578" resolveInfo="ElseOnPlatform" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8614636349706653653" nodeInfo="ig">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5641871277849447637" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4360423713604419403" resolveInfo="IValidationConfigurationElement" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5641871277852618477" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5641871277852617673" resolveInfo="PlatformValidationElement" />
+    </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8614636349706789132" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.suspended" />
-    <property name="name" nameId="tpck.1169194664001" value="PlatformValidation" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="platform is" />
+  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="5641871277849449014" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
+    <property name="name" nameId="tpck.1169194664001" value="Platforms" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5641871277849450833" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="mac" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="mac" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5641871277849449015" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="windows" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="win" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5641871277849450838" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="linux" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="nux" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5641871277850133578" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
+    <property name="name" nameId="tpck.1169194664001" value="ElseOnPlatform" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="else" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8614636349706789286" nodeInfo="ig">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5641871277850143723" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="children" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4360423713604419403" resolveInfo="IValidationConfigurationElement" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5641871277850163791" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="elseOn" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="5641871277850133578" resolveInfo="ElseOnPlatform" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5641871277852618469" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5641871277852617673" resolveInfo="PlatformValidationElement" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5641871277852617673" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
+    <property name="name" nameId="tpck.1169194664001" value="PlatformValidationElement" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5641871277852618466" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="platform" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="2033545087487743574" resolveInfo="Platform" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="5641871277849449014" resolveInfo="Platforms" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8614636349706973811" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.suspended.versions" />
-    <property name="name" nameId="tpck.1169194664001" value="VersionExpression" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5641871277853139329" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
+    <property name="name" nameId="tpck.1169194664001" value="EmptyValidationConfigurationElement" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value=" " />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8614636349706973812" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.suspended.versions" />
-    <property name="name" nameId="tpck.1169194664001" value="FromToVersionExpression" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8614636349706973811" resolveInfo="VersionExpression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8614636349706991618" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="minor" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8614636349706973813" resolveInfo="SingleVersionExpression" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5641871277853139381" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4360423713604419403" resolveInfo="IValidationConfigurationElement" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8614636349706991620" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="major" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8614636349706973813" resolveInfo="SingleVersionExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8614636349706973813" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.suspended.versions" />
-    <property name="name" nameId="tpck.1169194664001" value="SingleVersionExpression" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8614636349706973811" resolveInfo="VersionExpression" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8614636349706973814" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="version" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8614636349706991607" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.suspended.versions" />
-    <property name="name" nameId="tpck.1169194664001" value="AnyVersionExpression" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8614636349706973813" resolveInfo="SingleVersionExpression" />
   </root>
 </model>
 
