@@ -153,10 +153,6 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8729447926330241147" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="range" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.8729447926330198396" resolveInfo="ForRangeStatement" />
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5470497459579426806" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="reporting" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.2688792604367903085" resolveInfo="MessageDefinitionTable" />
@@ -508,10 +504,6 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5065104421776378469" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="util" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.5065104421776378465" resolveInfo="AndedExprList" />
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3643500611635929670" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ringbuffer" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.6573338596884805798" resolveInfo="RingBufferDotOrArrowExpression" />
@@ -758,10 +750,6 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2054775350263838901" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger.config" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.2054775350263837585" resolveInfo="DLPrintfImmediately" />
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2054775350263839275" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger.config" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.2054775350263837562" resolveInfo="DLGenStrategy" />
@@ -949,9 +937,6 @@
         </node>
       </node>
     </node>
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1358930484586899901" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8801157290035110566" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="datalogger" />
