@@ -17,10 +17,6 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" implicit="yes" />
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6275792049641587308" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="asserts" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="yz9a.6275792049641587287" resolveInfo="AssertStatement" />
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5686538669182340987" nodeInfo="ng">
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="yz9a.5686538669182340985" resolveInfo="TestCaseRef" />
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="5686538669182340988" nodeInfo="ng">
@@ -84,9 +80,6 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8811614583515780721" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="yz9a.8811614583515780719" resolveInfo="TypeExpression" />
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8551646674110384398" nodeInfo="ng">
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="yz9a.8551646674110384354" resolveInfo="SameTypeTestStatement" />
     <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="8551646674110384399" nodeInfo="nn">
@@ -126,9 +119,6 @@
         </node>
       </node>
     </node>
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2151335435833436552" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="yz9a.2151335435833436550" resolveInfo="TestSpecificStatement" />
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3387987015204930489" nodeInfo="ng">
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="yz9a.3387987015204930488" resolveInfo="IRestrictToTests" />
