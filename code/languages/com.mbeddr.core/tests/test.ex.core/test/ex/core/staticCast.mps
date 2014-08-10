@@ -891,41 +891,25 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="961388415860274592" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="961388415860275013" nodeInfo="ng">
-          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="961388415860275015" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="961388415860275016" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="961388415860275017" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="4455560581543481354" nodeInfo="ng">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4455560581543481356" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4455560581543481357" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4455560581543481358" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="the following line does not generate correctly !" />
               </node>
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="961388415858999493" nodeInfo="ng">
-          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="961388415859081853" nodeInfo="ng">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="961388415859082880" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
-            </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ConstCast" typeId="mj1l.8428744930541292309" id="4434160810406103966" nodeInfo="ng">
-              <property name="shortDescription" nameId="tpck.1156234966388" value="0" />
-              <property name="alias" nameId="tpck.1156235010670" value="0" />
-              <property name="virtualPackage" nameId="tpck.1193676396447" value="0" />
-              <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.BitwiseRightShiftExpression" typeId="mj1l.9013371069685947728" id="4434160810406103967" nodeInfo="ng">
-                <property name="shortDescription" nameId="tpck.1156234966388" value="0" />
-                <property name="alias" nameId="tpck.1156235010670" value="0" />
-                <property name="virtualPackage" nameId="tpck.1193676396447" value="0" />
-                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="961388415858733274" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                  <property name="value" nameId="mj1l.2212975673976043696" value="2" />
-                </node>
-                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="961388415858694653" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                  <property name="value" nameId="mj1l.2212975673976043696" value="1" />
-                </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="4455560581543481958" nodeInfo="ng">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4455560581543481960" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4455560581543481961" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4455560581543481962" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="assert(1) constcast(2 &gt;&gt; 1) == 1;" />
               </node>
             </node>
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4455560581542699969" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="961388415866689589" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="961388415866690250" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="961388415866690655" nodeInfo="ng">
