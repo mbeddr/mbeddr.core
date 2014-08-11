@@ -5503,15 +5503,6 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1l.22102029902365709" resolveInfo="AssignmentExpr" />
     </node>
   </root>
-  <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="7350547698080062154" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="arrays" />
-    <property name="name" nameId="tpck.1169194664001" value="checkForUnboundTypeVariables" />
-    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="7350547698080062155" nodeInfo="sn" />
-    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7350547698080062198" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="arrayInitExpression" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="yq40.7350547698080060956" resolveInfo="ArrayInitExpression" />
-    </node>
-  </root>
   <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="8547778417620422807" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="check_PointerType" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="pointers" />

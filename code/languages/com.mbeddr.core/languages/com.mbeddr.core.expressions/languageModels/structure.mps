@@ -1350,6 +1350,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
     <property name="name" nameId="tpck.1169194664001" value="ScientificNumber" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128090" resolveInfo="Literal" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="961388415867826894" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
+    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1670233242589904217" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="prefix" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />

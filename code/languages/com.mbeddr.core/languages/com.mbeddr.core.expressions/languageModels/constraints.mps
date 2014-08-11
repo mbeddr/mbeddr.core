@@ -14,13 +14,6 @@
   <import index="tpfo" modelUID="r:00000000-0000-4000-0000-011c89590518(jetbrains.mps.baseLanguage.regexp.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7389581223062052853" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.8860443239512128052" resolveInfo="BinaryExpression" />
-    <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="7389581223062052854" nodeInfo="ng">
-      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="tpck.1156235010670" resolveInfo="alias" />
-    </node>
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4739982148980424998" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.8860443239512128103" resolveInfo="NumberLiteral" />
@@ -420,10 +413,6 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4375898003726285648" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.4375898003726285486" resolveInfo="PostIncrementExpression" />
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1054289341113450471" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.1054289341113450444" resolveInfo="HexNumberLiteral" />
@@ -597,10 +586,6 @@
         </node>
       </node>
     </node>
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3335993110370442127" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.3335993110369795381" resolveInfo="TypeSizeSpecification" />
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3989465615018333148" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
@@ -913,9 +898,6 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7265792597306893610" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.7265792597306864412" resolveInfo="NotParsedExpression" />
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1670233242589916457" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.1670233242589902798" resolveInfo="ScientificNumber" />
@@ -1042,9 +1024,6 @@
         </node>
       </node>
     </node>
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4620120465980633110" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.4620120465980402700" resolveInfo="GenericDotExpression" />
   </root>
 </model>
 
