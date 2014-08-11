@@ -433,10 +433,6 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5095889050031607172" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="su.struct" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.5095889050031607156" resolveInfo="StructInitExpression" />
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6183845377104662874" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.6183845377104662871" resolveInfo="UnsignedBitType" />
@@ -726,10 +722,6 @@
         </node>
       </node>
     </node>
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1049346859912887604" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="su.struct" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.1049346859912632490" resolveInfo="StructCastExpression" />
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7034214596253458672" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="su" />

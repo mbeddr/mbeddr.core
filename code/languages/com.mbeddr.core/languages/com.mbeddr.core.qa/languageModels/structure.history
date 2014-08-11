@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="79wq" modelUID="r:ad7435e2-263f-4d16-a250-c987f2fa9599(com.mbeddr.core.qa.structure)" version="0" />
+    </dependencies>
+    <rename id="79wq.4455560581543810794" type="CONCEPT" from="RedundantConstraints" to="RedundantConstraintsAssessment" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="79wq" modelUID="r:ad7435e2-263f-4d16-a250-c987f2fa9599(com.mbeddr.core.qa.structure)" version="1" />
+    </dependencies>
+    <rename id="79wq.4455560581543810794" type="CONCEPT" from="RedundantConstraintsAssessment" to="RedundancyAssessment" />
+  </StructureModification>
+</history>
+
