@@ -13,7 +13,6 @@
     <dependency reexport="false">b1deed8c-68b2-424a-806a-664b47188e43(com.mbeddr.mpsutil.contextsidebar)</dependency>
   </dependencies>
   <usedLanguages>
-    <usedLanguage>b1deed8c-68b2-424a-806a-664b47188e43(com.mbeddr.mpsutil.contextsidebar)</usedLanguage>
     <usedLanguage>654422bf-e75f-44dc-936d-188890a746ce(de.slisson.mps.reflection)</usedLanguage>
     <usedLanguage>443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)</usedLanguage>
     <usedLanguage>fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)</usedLanguage>
