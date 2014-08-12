@@ -454,6 +454,7 @@
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="8257817273847094244" resolveInfo="aHOF" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.Closure" typeId="x27k.8257817273846948841" id="7071566612400371431" nodeInfo="ng">
                 <node role="body" roleId="x27k.8257817273846948844" type="x27k.ClosureStatementList" typeId="x27k.8389787570822353384" id="7071566612400371432" nodeInfo="ng">
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8915003362269824468" nodeInfo="ng" />
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2179155938639636894" nodeInfo="ng">
                     <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="2179155938639636896" nodeInfo="ng">
                       <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ClosureParameterRef" typeId="x27k.8257817273846948862" id="2179155938639636895" nodeInfo="ng">
@@ -526,19 +527,23 @@
                     <property name="name" nameId="tpck.1169194664001" value="1stStmntinside2ndClosure" />
                   </node>
                 </node>
-                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8389787570822494887" nodeInfo="ng">
-                  <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="8389787570822494889" nodeInfo="ng">
-                    <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ClosureParameterRef" typeId="x27k.8257817273846948862" id="8389787570822494892" nodeInfo="ng">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8915003362253709845" nodeInfo="ng">
+                  <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="8915003362253713440" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ClosureParameterRef" typeId="x27k.8257817273846948862" id="8915003362253713443" nodeInfo="ng">
                       <link role="param" roleId="x27k.8257817273846948863" targetNodeId="8389787570822494886" resolveInfo="a" />
                     </node>
-                    <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8389787570822494888" nodeInfo="ng">
+                    <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8915003362253710084" nodeInfo="ng">
+                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                       <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                     </node>
                   </node>
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="211881811397635582" nodeInfo="ng">
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8915003362253730364" nodeInfo="ng">
                     <property name="name" nameId="tpck.1169194664001" value="2ndStmntinside2ndClosure" />
                   </node>
                 </node>
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8915003362269429819" nodeInfo="ng" />
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8915003362269429873" nodeInfo="ng" />
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8915003362269433068" nodeInfo="ng" />
               </node>
               <node role="parameters" roleId="x27k.8257817273846948843" type="x27k.ClosureParameter" typeId="x27k.8257817273846948842" id="8389787570822494886" nodeInfo="ng">
                 <property name="name" nameId="tpck.1169194664001" value="a" />
