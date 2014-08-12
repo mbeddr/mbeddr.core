@@ -7,6 +7,9 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">~_PreferencesModule#__spreferences.PlatformTemplates(__spreferences.PlatformTemplates)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)</usedLanguage>
   </usedLanguages>
