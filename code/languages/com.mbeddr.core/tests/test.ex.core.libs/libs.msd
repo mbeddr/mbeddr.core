@@ -8,7 +8,6 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">~_PreferencesModule#__spreferences.PlatformTemplates(__spreferences.PlatformTemplates)</dependency>
     <dependency reexport="false">ac9da4f2-d564-40a2-a35a-213ed1655172(aLibrary)</dependency>
   </dependencies>
   <usedLanguages>
