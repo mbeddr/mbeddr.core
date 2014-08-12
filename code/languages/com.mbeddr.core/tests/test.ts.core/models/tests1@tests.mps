@@ -974,6 +974,32 @@
                 </node>
               </node>
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4212528160149310985" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="4212528160149310986" nodeInfo="ng">
+                <property name="shortDescription" nameId="tpck.1156234966388" value="0" />
+                <property name="alias" nameId="tpck.1156235010670" value="0" />
+                <property name="virtualPackage" nameId="tpck.1193676396447" value="0" />
+                <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="4212528160149310987" nodeInfo="ng">
+                  <property name="shortDescription" nameId="tpck.1156234966388" value="0" />
+                  <property name="alias" nameId="tpck.1156235010670" value="0" />
+                  <property name="virtualPackage" nameId="tpck.1193676396447" value="0" />
+                  <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="4212528160149310989" nodeInfo="ng">
+                    <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                    <property name="const" nameId="mj1l.2941277002445651368" value="true" />
+                    <property name="shortDescription" nameId="tpck.1156234966388" value="0" />
+                    <property name="alias" nameId="tpck.1156235010670" value="0" />
+                    <property name="virtualPackage" nameId="tpck.1193676396447" value="0" />
+                  </node>
+                  <node role="expr" roleId="mj1l.6610873504380029782" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4455560581552590195" nodeInfo="ng">
+                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+                  </node>
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="4455560581552657778" nodeInfo="ng">
+                    <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4455560581552657779" nodeInfo="ng" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2780428631946237973" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8297969787989710073" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="aConstant" />
@@ -986,14 +1012,36 @@
                 <property name="value" nameId="mj1l.2212975673976043696" value="2" />
               </node>
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4455560581554058664" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="4455560581554058660" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="4455560581554065102" nodeInfo="ng">
+                  <node role="expr" roleId="mj1l.6610873504380029782" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4455560581554066318" nodeInfo="ng">
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8297969787989710073" resolveInfo="aConstant" />
+                  </node>
+                  <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4455560581554065634" nodeInfo="ng">
+                    <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                    <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8297969787989745127" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="8297969787989745123" nodeInfo="ng">
-                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8297969787989750437" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="4455560581554483191" nodeInfo="ng">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8297969787989750437" nodeInfo="ng">
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8297969787989710073" resolveInfo="aConstant" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4455560581554465359" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="4455560581554465355" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4455560581554472557" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8297969787989710073" resolveInfo="aConstant" />
                 </node>
               </node>
             </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2780428631945811531" nodeInfo="ng" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4455560581554473858" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2780428631945823716" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="aRegisterVar" />
               <property name="storeInRegister" nameId="c4fa.5806551411806985511" value="true" />
