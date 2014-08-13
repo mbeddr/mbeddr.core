@@ -21,7 +21,6 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
-  <import index="53qa" modelUID="r:30bd260c-eeef-48cc-bdac-128d01e18a6f(aLibrary.lib)" version="-1" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6500545468170850174" nodeInfo="ng">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.PlatformReference" typeId="51wr.8719112291175211294" id="2247576005004140643" nodeInfo="ng">
       <link role="template" roleId="51wr.8719112291175211414" targetNodeId="flbw.5249744164295560869" resolveInfo="Desktop Platform" />
@@ -44,8 +43,8 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6500545468170850180" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6500545468170850462" resolveInfo="ExpressionTests2" />
       </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6500545468170850181" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="53qa.5920472724568242881" resolveInfo="HelperFunctions" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8036140299075189239" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5920472724568242881" resolveInfo="HelperFunctions" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4473962241762480454" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4473962241759839839" resolveInfo="FloatTest" />
@@ -712,10 +711,6 @@
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6500545468170850462" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ExpressionTests2" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="5920472724568475687" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="53qa.5920472724568242881" resolveInfo="HelperFunctions" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850463" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="testMinus" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850464" nodeInfo="ng">
