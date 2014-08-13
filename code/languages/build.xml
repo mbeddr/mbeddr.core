@@ -41,7 +41,8 @@
   <property name="com.mbeddr.core.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.core" />    
   <property name="com.mbeddr.core.main-build-file.name" value="build.xml" />  
   <property name="com.mbeddr.core.ts-tests-build-file.name" value="build-ts-tests.xml" />  
-    <property name="com.mbeddr.core.performance-tests-build-file.name" value="build-performance-tests.xml" />  
+  <property name="com.mbeddr.core.aLibrary-build-file.name" value="build-aLibrary.xml" />  
+  <property name="com.mbeddr.core.performance-tests-build-file.name" value="build-performance-tests.xml" />  
   <property name="com.mbeddr.core.ex-tests-build-file.name" value="build-ex-tests.xml" />  
   <property name="com.mbeddr.core.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />  
   
@@ -468,7 +469,13 @@
 	  <ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
   </target>
 
-  <target name="test-core">	  
+  <target name="test-core">	  	  
+	  <ant antfile="${com.mbeddr.core.aLibrary-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
+	  <ant antfile="${com.mbeddr.core.aLibrary-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />
+	  <antcall target="make-tests">
+	      <param name="make-tests.dir" value="${com.mbeddr.core.working-dir}/tests/aLibrary"/>
+	  </antcall>
+
 	  <ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />
 	  <antcall target="make-tests">
