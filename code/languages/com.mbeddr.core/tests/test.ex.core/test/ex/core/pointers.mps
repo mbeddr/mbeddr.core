@@ -16,8 +16,9 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="279446265608457321" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="pointerStuff" />
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6173518449210280458" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6173518449210279095" resolveInfo="stdlib" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="4455560581551673932" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6173518449210279095" resolveInfo="stdlib" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6610873504380018296" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
