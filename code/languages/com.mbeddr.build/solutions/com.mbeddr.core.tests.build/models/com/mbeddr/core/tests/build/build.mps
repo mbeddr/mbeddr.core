@@ -57,7 +57,7 @@
         <property name="uuid" nameId="kdzh.322010710375892619" value="~_PreferencesModule#com.mbeddr.core.__spreferences.PlatformTemplates" />
         <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.__spreferences.PlatformTemplates" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
-        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources and tests" />
+        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2247576005004606020" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357006" resolveInfo="mbeddr.core" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2247576005004606021" nodeInfo="nn">
@@ -400,7 +400,7 @@
         <property name="uuid" nameId="kdzh.322010710375892619" value="~_PreferencesModule#com.mbeddr.core.__spreferences.PlatformTemplates" />
         <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.__spreferences.PlatformTemplates" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
-        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources and tests" />
+        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8334796989975357298" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8334796989975357345" resolveInfo="mbeddr.core" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8334796989975357299" nodeInfo="nn">
@@ -699,9 +699,6 @@
     </node>
     <node role="aspects" roleId="3ior.3542413272732620719" type="5tjl.BuildMpsLayout_TestModules" typeId="5tjl.4560297596904469357" id="8334796989975357391" nodeInfo="nn">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.tests" />
-      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="8334796989975357393" nodeInfo="nn">
-        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="8334796989975357297" resolveInfo="com.mbeddr.core.__spreferences.PlatformTemplates" />
-      </node>
       <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="8334796989975357394" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="8334796989975357308" resolveInfo="test.ts.core.dataflow" />
       </node>
