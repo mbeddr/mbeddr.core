@@ -533,6 +533,19 @@
                 </node>
               </node>
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4942779807001902265" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostDecrementExpression" typeId="mj1l.3976803464656498416" id="4942779807001904291" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.SizeOfExpr" typeId="yq40.279446265608352903" id="4942779807001902261" nodeInfo="ng">
+                  <node role="type2Calculate" roleId="yq40.279446265608352905" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4942779807001903891" nodeInfo="ng">
+                    <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                    <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                  </node>
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="4942779807001907997" nodeInfo="ng">
+                    <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4942779807001907998" nodeInfo="ng" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915287" nodeInfo="ng" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.DoNotAnalyzeDataFlowAnnotation" typeId="vs0r.7307224057853283254" id="4633402679181378323" nodeInfo="ng" />
