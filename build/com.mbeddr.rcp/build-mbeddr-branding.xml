@@ -16,7 +16,7 @@
     <mkdir dir="${build.tmp}/default/branding.jar/idea" />
     <echoxml file="${build.tmp}/default/branding.jar/idea/IdeaApplicationInfo.xml">
       <component>
-        <version codename="mbeddr" major="0" minor="1" eap="false" />
+        <version codename="mbeddr" major="0" minor="1" eap="false" update-channel="mbeddr" />
         <build date="${buildData}" number="${buildNumber}" />
         <logo url="/splash.png" textcolor="002387" />
         <about url="/mbeddr-logo.png" />
@@ -24,6 +24,7 @@
         <dialogs-image url="/mbeddr-logo.png" />
         <package code="code" />
         <names product="mbeddr" fullname="mbeddr IDE" />
+        <update-urls check="http://mbeddr.com/updates/update.xml" update="https://github.com/mbeddr/mbeddr.core/releases" />
         <welcome-screen caption-url="/mbeddr-logo.png" slogan-url="/mbeddr-logo.png" logo-url="/mbeddr-logo.png" />
         <feedback release-url="http://itemis.de" />
       </component>
