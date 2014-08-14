@@ -615,11 +615,17 @@
       <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="2166848101821209338" nodeInfo="ng">
         <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="2166848101821127088" resolveInfo="test.editor.core" />
       </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="2009878946844079388" nodeInfo="ng">
+        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="2247576005004591711" resolveInfo="test.ts.core" />
+      </node>
     </node>
     <node role="aspects" roleId="3ior.3542413272732620719" type="5tjl.BuildMpsLayout_TestModules" typeId="5tjl.4560297596904469357" id="8334796989975357391" nodeInfo="nn">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.tests" />
       <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="8334796989975357394" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="8334796989975357308" resolveInfo="test.ts.core.dataflow" />
+      </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="2009878946844046033" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="2247576005004591711" resolveInfo="test.ts.core" />
       </node>
       <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="2844724322557393568" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="2166848101821127088" resolveInfo="test.editor.core" />
