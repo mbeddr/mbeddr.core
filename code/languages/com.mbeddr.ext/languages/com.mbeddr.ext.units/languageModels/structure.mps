@@ -267,7 +267,7 @@
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="624957442818227315" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="conversionRule" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="1069230850837260491" resolveInfo="CBasedConversionRule" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1069230850837260212" resolveInfo="ConversionRule" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4121031889271053290" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
