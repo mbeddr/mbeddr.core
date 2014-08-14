@@ -9,6 +9,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">ac9da4f2-d564-40a2-a35a-213ed1655172(aLibrary)</dependency>
+    <dependency reexport="false">~_PreferencesModule#com.mbeddr.core.__spreferences.PlatformTemplates(com.mbeddr.core.__spreferences.PlatformTemplates)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)</usedLanguage>
