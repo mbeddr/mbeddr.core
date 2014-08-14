@@ -202,7 +202,7 @@
               <property name="usesFolding" nameId="tpc2.1160590307797" value="true" />
               <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.1317894735999304826" />
               <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1317894735999313178" nodeInfo="nn">
-                <property name="text" nameId="tpc2.1073389577007" value="nothing" />
+                <property name="nullText" nameId="tpc2.1082639509531" value="nothing" />
                 <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="vrqd.3134547887598403854" resolveInfo="nothing" />
                 <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="4244536020173529194" nodeInfo="nn">
                   <property name="flag" nameId="tpc2.1186414551515" value="true" />
@@ -2218,6 +2218,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="6512473996287153680" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.6512473996287153139" />
+        <link role="elementActionMap" roleId="tpc2.1173177718857" targetNodeId="r4b4.653519202319564084" resolveInfo="deleteEmptyStuffInCollection" />
         <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6512473996287153681" nodeInfo="nn" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="6512473996287153682" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
