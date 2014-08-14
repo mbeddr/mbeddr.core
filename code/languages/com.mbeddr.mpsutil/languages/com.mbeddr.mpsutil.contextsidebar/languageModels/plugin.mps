@@ -836,14 +836,21 @@
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="fiq3.394049958337144676" resolveInfo="IContextSection" />
               </node>
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="9102031102128854262" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="neyv.~Sets%ddifference(java%dutil%dSet,java%dutil%dSet)%ccom%dgoogle%dcommon%dcollect%dSets$SetView" resolveInfo="difference" />
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="neyv.~Sets" resolveInfo="Sets" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9102031102128854263" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9102031102128585887" resolveInfo="allSections" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9102031102128854264" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9102031102128619274" resolveInfo="existingSections" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7246201347639732596" nodeInfo="nn">
+              <node role="creator" roleId="tpee.1145553007750" type="tp2q.LinkedHashSetCreator" typeId="tp2q.1240217271293" id="7246201347639987490" nodeInfo="nn">
+                <node role="elementType" roleId="tp2q.1237721435807" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7246201347639993347" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="fiq3.394049958337144676" resolveInfo="IContextSection" />
+                </node>
+                <node role="copyFrom" roleId="tp2q.1237731803878" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="9102031102128854262" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="neyv.~Sets%ddifference(java%dutil%dSet,java%dutil%dSet)%ccom%dgoogle%dcommon%dcollect%dSets$SetView" resolveInfo="difference" />
+                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="neyv.~Sets" resolveInfo="Sets" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9102031102128854263" nodeInfo="nn">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9102031102128585887" resolveInfo="allSections" />
+                  </node>
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9102031102128854264" nodeInfo="nn">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9102031102128619274" resolveInfo="existingSections" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -856,14 +863,21 @@
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="fiq3.394049958337144676" resolveInfo="IContextSection" />
               </node>
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="9102031102128934478" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="neyv.~Sets%ddifference(java%dutil%dSet,java%dutil%dSet)%ccom%dgoogle%dcommon%dcollect%dSets$SetView" resolveInfo="difference" />
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="neyv.~Sets" resolveInfo="Sets" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9102031102128934479" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9102031102128619274" resolveInfo="existingSections" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9102031102128934480" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9102031102128585887" resolveInfo="allSections" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7246201347640005199" nodeInfo="nn">
+              <node role="creator" roleId="tpee.1145553007750" type="tp2q.LinkedHashSetCreator" typeId="tp2q.1240217271293" id="7246201347640010491" nodeInfo="nn">
+                <node role="elementType" roleId="tp2q.1237721435807" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7246201347640015684" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="fiq3.394049958337144676" resolveInfo="IContextSection" />
+                </node>
+                <node role="copyFrom" roleId="tp2q.1237731803878" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="9102031102128934478" nodeInfo="nn">
+                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="neyv.~Sets" resolveInfo="Sets" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="neyv.~Sets%ddifference(java%dutil%dSet,java%dutil%dSet)%ccom%dgoogle%dcommon%dcollect%dSets$SetView" resolveInfo="difference" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9102031102128934479" nodeInfo="nn">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9102031102128619274" resolveInfo="existingSections" />
+                  </node>
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9102031102128934480" nodeInfo="nn">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9102031102128585887" resolveInfo="allSections" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
