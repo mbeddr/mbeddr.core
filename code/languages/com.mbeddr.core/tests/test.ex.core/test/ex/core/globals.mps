@@ -2,6 +2,7 @@
 <model modelUID="r:ff99c50a-56b2-4bc8-b5d3-9960f5b3b6fa(test.ex.core.globals)">
   <persistence version="8" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
+  <import index="flbw" modelUID="r:e2a5a0f1-a4a9-37f5-82d2-429bae822a23(com.mbeddr.core.__spreferences.PlatformTemplates)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="33" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="9" implicit="yes" />
@@ -229,10 +230,8 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6610873504380377800" resolveInfo="GlobalModule2" />
       </node>
     </node>
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4459718605982730238" nodeInfo="ng">
-      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
-      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
-      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+    <node role="target" roleId="51wr.5323740605968447026" type="51wr.PlatformReference" typeId="51wr.8719112291175211294" id="2247576005004140641" nodeInfo="ng">
+      <link role="template" roleId="51wr.8719112291175211414" targetNodeId="flbw.5249744164295560869" resolveInfo="Desktop Platform" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4459718605982730239" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605982730240" nodeInfo="ng" />

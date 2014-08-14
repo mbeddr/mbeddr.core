@@ -5462,6 +5462,7 @@
     <property name="name" nameId="tpck.1169194664001" value="VisibleContentsOfTypeCache" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="chunk" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7139820346889798951" nodeInfo="nn" />
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="4031972409963524513" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="7139820346889798952" nodeInfo="igu">
       <property name="name" nameId="tpck.1169194664001" value="cache" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="7139820346889798953" nodeInfo="nn" />
@@ -5485,11 +5486,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="7139820346889798967" nodeInfo="igu">
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7139820346889798968" nodeInfo="in" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7139820346889798969" nodeInfo="nn" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7139820346889798970" nodeInfo="sn" />
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="8243255892342803316" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="7139820346889798971" nodeInfo="igu">
@@ -5598,7 +5594,6 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8243255892341176245" nodeInfo="nn" />
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7139820346889799009" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="targetConcept" />
@@ -5615,6 +5610,7 @@
         </node>
       </node>
     </node>
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="4031972409963524107" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="7139820346889799016" nodeInfo="igu">
       <property name="name" nameId="tpck.1169194664001" value="get" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7139820346889799017" nodeInfo="nn" />
@@ -9757,6 +9753,7 @@
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="1777614315915103305" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CellEditorScreenshooter" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="1777614315915103306" nodeInfo="nn" />
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="8845474088395277573" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="1777614315915103307" nodeInfo="igu">
       <property name="name" nameId="tpck.1169194664001" value="takeScreenshot" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1777614315915103308" nodeInfo="in" />
@@ -9796,6 +9793,7 @@
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="1777614315918218737" nodeInfo="in" />
       </node>
     </node>
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="8845474088395278491" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="1777614315915103325" nodeInfo="igu">
       <property name="name" nameId="tpck.1169194664001" value="createImage" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="1777614315915103326" nodeInfo="nn" />
