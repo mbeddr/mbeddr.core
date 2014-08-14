@@ -26,7 +26,7 @@
   <import index="j9pa" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" version="-1" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="p15z" modelUID="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" version="2" />
-  <import index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="2" />
+  <import index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="4" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="16" />
   <import index="tpco" modelUID="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" version="-1" />
   <import index="f21f" modelUID="r:4a0e833e-2a72-40dd-9dd5-8d4cbc79a7bc(com.mbeddr.cc.trace.editor)" version="1" />
@@ -631,7 +631,7 @@
                       <node role="cls" roleId="tpee.1182160096073" type="tpee.AnonymousClass" typeId="tpee.1170345865475" id="3969129843279934149" nodeInfo="ig">
                         <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
                         <link role="classifier" roleId="tpee.1170346070688" targetNodeId="r4b4.3969129843280250311" resolveInfo="CommandButton" />
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r4b4.3969129843280250354" resolveInfo="CommandButton" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%d&lt;init&gt;()" resolveInfo="Object" />
                         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3969129843279934150" nodeInfo="nn" />
                         <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="3969129843279934151" nodeInfo="igu">
                           <property name="name" nameId="tpck.1169194664001" value="perform" />
@@ -694,7 +694,7 @@
                       <node role="cls" roleId="tpee.1182160096073" type="tpee.AnonymousClass" typeId="tpee.1170345865475" id="3969129843279982685" nodeInfo="ig">
                         <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
                         <link role="classifier" roleId="tpee.1170346070688" targetNodeId="r4b4.3969129843280250311" resolveInfo="CommandButton" />
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r4b4.3969129843280250354" resolveInfo="CommandButton" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%d&lt;init&gt;()" resolveInfo="Object" />
                         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3969129843279982686" nodeInfo="nn" />
                         <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="3969129843279982687" nodeInfo="igu">
                           <property name="name" nameId="tpck.1169194664001" value="perform" />
@@ -757,7 +757,7 @@
                       <node role="cls" roleId="tpee.1182160096073" type="tpee.AnonymousClass" typeId="tpee.1170345865475" id="3969129843279964904" nodeInfo="ig">
                         <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
                         <link role="classifier" roleId="tpee.1170346070688" targetNodeId="r4b4.3969129843280250311" resolveInfo="CommandButton" />
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r4b4.3969129843280250354" resolveInfo="CommandButton" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%d&lt;init&gt;()" resolveInfo="Object" />
                         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3969129843279964905" nodeInfo="nn" />
                         <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="3969129843279964906" nodeInfo="igu">
                           <property name="name" nameId="tpck.1169194664001" value="perform" />
@@ -820,7 +820,7 @@
                       <node role="cls" roleId="tpee.1182160096073" type="tpee.AnonymousClass" typeId="tpee.1170345865475" id="3969129843279982713" nodeInfo="ig">
                         <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
                         <link role="classifier" roleId="tpee.1170346070688" targetNodeId="r4b4.3969129843280250311" resolveInfo="CommandButton" />
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r4b4.3969129843280250354" resolveInfo="CommandButton" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%d&lt;init&gt;()" resolveInfo="Object" />
                         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3969129843279982714" nodeInfo="nn" />
                         <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="3969129843279982715" nodeInfo="igu">
                           <property name="name" nameId="tpck.1169194664001" value="perform" />
@@ -883,7 +883,7 @@
                         <node role="cls" roleId="tpee.1182160096073" type="tpee.AnonymousClass" typeId="tpee.1170345865475" id="735623405491847956" nodeInfo="ig">
                           <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
                           <link role="classifier" roleId="tpee.1170346070688" targetNodeId="r4b4.735623405491817184" resolveInfo="UtilButton" />
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r4b4.735623405491817417" resolveInfo="UtilButton" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%d&lt;init&gt;()" resolveInfo="Object" />
                           <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="735623405491847957" nodeInfo="nn" />
                           <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="735623405491847958" nodeInfo="igu">
                             <property name="name" nameId="tpck.1169194664001" value="perform" />
@@ -943,7 +943,7 @@
                         <node role="cls" roleId="tpee.1182160096073" type="tpee.AnonymousClass" typeId="tpee.1170345865475" id="9089687724112100834" nodeInfo="ig">
                           <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
                           <link role="classifier" roleId="tpee.1170346070688" targetNodeId="r4b4.735623405491817184" resolveInfo="UtilButton" />
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r4b4.735623405491817417" resolveInfo="UtilButton" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%d&lt;init&gt;()" resolveInfo="Object" />
                           <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9089687724112100835" nodeInfo="nn" />
                           <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="9089687724112100836" nodeInfo="igu">
                             <property name="name" nameId="tpck.1169194664001" value="perform" />
@@ -1034,7 +1034,7 @@
                         <node role="cls" roleId="tpee.1182160096073" type="tpee.AnonymousClass" typeId="tpee.1170345865475" id="735623405491903145" nodeInfo="ig">
                           <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
                           <link role="classifier" roleId="tpee.1170346070688" targetNodeId="r4b4.735623405491817184" resolveInfo="UtilButton" />
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r4b4.735623405491817417" resolveInfo="UtilButton" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%d&lt;init&gt;()" resolveInfo="Object" />
                           <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="735623405491903146" nodeInfo="nn" />
                           <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="735623405491903147" nodeInfo="igu">
                             <property name="name" nameId="tpck.1169194664001" value="perform" />
@@ -1113,7 +1113,7 @@
                         <node role="cls" roleId="tpee.1182160096073" type="tpee.AnonymousClass" typeId="tpee.1170345865475" id="9089687724112100658" nodeInfo="ig">
                           <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
                           <link role="classifier" roleId="tpee.1170346070688" targetNodeId="r4b4.735623405491817184" resolveInfo="UtilButton" />
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r4b4.735623405491817417" resolveInfo="UtilButton" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%d&lt;init&gt;()" resolveInfo="Object" />
                           <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9089687724112100659" nodeInfo="nn" />
                           <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="9089687724112100660" nodeInfo="igu">
                             <property name="name" nameId="tpck.1169194664001" value="perform" />
