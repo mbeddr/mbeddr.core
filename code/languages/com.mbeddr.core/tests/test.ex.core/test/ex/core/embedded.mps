@@ -58,6 +58,9 @@
             <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="8621731602413425634" nodeInfo="ng">
               <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="8621731602413425619" resolveInfo="testCase1" />
             </node>
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="9036556345220861776" nodeInfo="ng">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="9036556345220829187" resolveInfo="testCaseInterrupts" />
+            </node>
           </node>
         </node>
       </node>
@@ -171,6 +174,9 @@
         </node>
       </node>
     </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="9036556345220860642" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9036556345220829163" resolveInfo="InterruptsTests" />
+    </node>
   </root>
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8621731602413425732" nodeInfo="ng">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.PlatformReference" typeId="51wr.8719112291175211294" id="2247576005004140640" nodeInfo="ng">
@@ -190,6 +196,67 @@
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8621731602413425737" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="8621731602413425633" resolveInfo="EmbeddedTests" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9036556345220866843" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9036556345220829163" resolveInfo="InterruptsTests" />
+      </node>
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9036556345220829163" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="InterruptsTests" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="9036556345220850604" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="reset_count" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="9036556345220850602" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="9036556345220850279" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="watchdog_reset" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Isr" typeId="nbyu.1017957699896608814" id="9036556345220850432" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="handleReset" />
+      <link role="interrupt" roleId="nbyu.1017957699896608820" targetNodeId="9036556345220850279" resolveInfo="watchdog_reset" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9036556345220850433" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="nbyu.1017957699896608816" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9036556345220850435" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9036556345220852310" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="9036556345220853142" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="9036556345220852309" nodeInfo="ng">
+              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="9036556345220850604" resolveInfo="reset_count" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9036556345220850355" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1408021259729_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="9036556345220829187" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testCaseInterrupts" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9036556345220829188" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9036556345220829189" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9036556345220853558" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="nbyu.ISRCallExpression" typeId="nbyu.1017957699896642407" id="9036556345220853557" nodeInfo="ng">
+            <link role="isr" roleId="nbyu.1017957699896642408" targetNodeId="9036556345220850432" resolveInfo="handleReset" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9036556345220853574" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="9036556345220853590" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9036556345220854003" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+          </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="9036556345220853612" nodeInfo="ng">
+            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="9036556345220850604" resolveInfo="reset_count" />
+          </node>
+        </node>
       </node>
     </node>
   </root>
