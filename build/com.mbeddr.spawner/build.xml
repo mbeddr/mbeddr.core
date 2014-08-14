@@ -86,7 +86,9 @@
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/languages/com.mbeddr.spawner.dev.build-src.jar">
-      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/source_gen" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/source_gen">
+        <exclude name="**/trace.info" />
+      </fileset>
       <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/debugger.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.spawner.dev.build-models" prefix="module/models" />
     </jar>
@@ -121,7 +123,9 @@
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/lib/com.mbeddr.spawner-src.jar">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/source_gen" />
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/source_gen">
+        <exclude name="**/trace.info" />
+      </fileset>
       <zipfileset file="${mbeddr.core}/languages/com.mbeddr.core.spawner/spawner.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.spawner" prefix="module/" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.spawner-models" prefix="module/models" />
@@ -282,6 +286,7 @@
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
