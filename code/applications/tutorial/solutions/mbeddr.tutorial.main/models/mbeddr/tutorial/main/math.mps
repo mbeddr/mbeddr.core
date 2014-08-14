@@ -549,6 +549,9 @@
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="5098456557381620027" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="HelloWorld" />
+      <node role="linkables" roleId="51wr.4809476668198796998" type="51wr.Linkable" typeId="51wr.4809476668198796988" id="5105303971767455406" nodeInfo="ng">
+        <property name="name" nameId="51wr.4809476668198808306" value="m" />
+      </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5098456557381620028" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5098456557381619915" resolveInfo="HelloMath" />
       </node>
