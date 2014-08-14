@@ -541,7 +541,7 @@
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5098456557381620023" nodeInfo="ng">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="5098456557381620024" nodeInfo="ng">
       <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
-      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
+      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99 -lm" />
       <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="5098456557381620025" nodeInfo="ng">
@@ -549,11 +549,11 @@
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="5098456557381620027" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="HelloWorld" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5098456557381620028" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5098456557381619915" resolveInfo="HelloMath" />
-      </node>
       <node role="linkables" roleId="51wr.4809476668198796998" type="51wr.Linkable" typeId="51wr.4809476668198796988" id="5105303971767455406" nodeInfo="ng">
         <property name="name" nameId="51wr.4809476668198808306" value="m" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5098456557381620028" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5098456557381619915" resolveInfo="HelloMath" />
       </node>
     </node>
   </root>
