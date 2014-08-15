@@ -283,10 +283,6 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6252218999077653592" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="arbitraryText" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="c4fa.3830958861296871078" resolveInfo="ArbitraryTextExpression" />
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5337391105143334392" nodeInfo="ng">
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="c4fa.8850915533694634145" resolveInfo="InitExpression" />
     <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="5337391105143334566" nodeInfo="nn">

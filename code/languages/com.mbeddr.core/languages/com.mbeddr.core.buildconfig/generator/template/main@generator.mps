@@ -10,6 +10,7 @@
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <language namespace="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" />
+  <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" />
@@ -31,7 +32,7 @@
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" implicit="yes" />
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="7717755763392579407" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="desktop" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary.desktop" />
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="2671893947946228230" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="51wr.2671893947946158498" resolveInfo="StaticLibrary" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="2671893947946260413" nodeInfo="ng">
@@ -504,6 +505,7 @@
   </root>
   <root type="i2y7.Makefile" typeId="i2y7.5950410542643585247" id="7717755763392579560" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Makefile" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary.desktop" />
     <node role="targets" roleId="i2y7.5950410542643587173" type="i2y7.Target" typeId="i2y7.5950410542643587165" id="7717755763392632955" nodeInfo="ng">
       <property name="label" nameId="i2y7.5950410542643587166" value="all" />
       <node role="dependencies" roleId="i2y7.5950410542643587171" type="i2y7.TargetDependency" typeId="i2y7.745648737914657273" id="5048824311957635026" nodeInfo="ng">
@@ -1557,6 +1559,7 @@
   </root>
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="440773076688627983" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="nothing" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
     <node role="condition" roleId="tpf8.7830515785164764091" type="tpf8.MappingConfiguration_Condition" typeId="tpf8.7830515785164762753" id="440773076688628146" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="440773076688628147" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8230733038425060703" nodeInfo="nn">
@@ -1687,6 +1690,42 @@
                         <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5095889050032751974" resolveInfo="n" />
                       </node>
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="5249744164295482493" nodeInfo="ng">
+    <property name="topPriorityGroup" nameId="tpf8.1184950341882" value="true" />
+    <property name="name" nameId="tpck.1169194664001" value="replacePlatformReference" />
+    <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="5249744164295482607" nodeInfo="ng">
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="51wr.8719112291175211294" resolveInfo="PlatformReference" />
+      <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="5249744164295483975" nodeInfo="ng">
+        <node role="templateNode" roleId="tpf8.1177093586806" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="5249744164295484019" nodeInfo="ng">
+          <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
+          <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
+          <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="5249744164295484023" nodeInfo="nn">
+            <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="5249744164295484024" nodeInfo="nn">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5249744164295484025" nodeInfo="sn">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5249744164295484031" nodeInfo="nn">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5249744164295487980" nodeInfo="nn">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5249744164295485526" nodeInfo="nn">
+                      <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5249744164295484026" nodeInfo="nn">
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5249744164295484029" nodeInfo="nn">
+                          <link role="link" roleId="tp25.1138056516764" targetNodeId="51wr.8719112291175211414" />
+                        </node>
+                        <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="5249744164295484030" nodeInfo="nn" />
+                      </node>
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5249744164295487108" nodeInfo="nn">
+                        <link role="link" roleId="tp25.1138056516764" targetNodeId="51wr.8719112291174069823" />
+                      </node>
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_CopyOperation" typeId="tp25.1144146199828" id="5249744164295489654" nodeInfo="nn" />
                   </node>
                 </node>
               </node>

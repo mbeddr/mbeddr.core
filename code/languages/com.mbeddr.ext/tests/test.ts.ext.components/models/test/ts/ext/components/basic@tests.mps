@@ -1387,10 +1387,10 @@
                 </node>
                 <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="843825774842270747" nodeInfo="ng">
                   <link role="element" roleId="k146.3073566081777391258" targetNodeId="352800964937262206" resolveInfo="atomicPosition" />
-                  <node role="value" roleId="k146.3073566081777391257" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="843825774842270750" nodeInfo="ng">
-                    <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="843825774842270753" nodeInfo="ng">
-                      <link role="element" roleId="k146.3073566081777391258" targetNodeId="352800964937262200" resolveInfo="y" />
-                      <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="843825774842270755" nodeInfo="ng">
+                  <node role="value" roleId="k146.3073566081777391257" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="1290699813662475103" nodeInfo="ng">
+                    <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="1290699813662475381" nodeInfo="ng">
+                      <link role="element" roleId="clbe.4202685725779391329" targetNodeId="352800964937262200" resolveInfo="y" />
+                      <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1290699813662475860" nodeInfo="ng">
                         <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                         <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                       </node>
@@ -1406,10 +1406,10 @@
                 </node>
                 <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="843825774842270761" nodeInfo="ng">
                   <link role="element" roleId="k146.3073566081777391258" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
-                  <node role="value" roleId="k146.3073566081777391257" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="843825774842270768" nodeInfo="ng">
-                    <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="843825774842270772" nodeInfo="ng">
-                      <link role="element" roleId="k146.3073566081777391258" targetNodeId="352800964937262200" resolveInfo="y" />
-                      <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="843825774842270774" nodeInfo="ng">
+                  <node role="value" roleId="k146.3073566081777391257" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="1290699813662477674" nodeInfo="ng">
+                    <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="1290699813662480040" nodeInfo="ng">
+                      <link role="element" roleId="clbe.4202685725779391329" targetNodeId="352800964937262200" resolveInfo="y" />
+                      <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1290699813662481273" nodeInfo="ng">
                         <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                         <property name="value" nameId="mj1l.2212975673976043696" value="3" />
                       </node>

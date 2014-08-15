@@ -93,13 +93,6 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7024921229556319962" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="commenting" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="vs0r.7024921229556133803" resolveInfo="ICommentedCode" />
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6021475212426107481" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="vs0r.8628579007224192794" resolveInfo="INameFirstCharLowerCase" />
-  </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5706473467948754894" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CIdentifierHelper" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5706473467948754895" nodeInfo="nn" />
@@ -214,11 +207,6 @@
       <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SetType" typeId="tp2q.1226511727824" id="5706473467948755402" nodeInfo="in">
         <node role="elementType" roleId="tp2q.1226511765987" type="tpee.StringType" typeId="tpee.1225271177708" id="5706473467948755404" nodeInfo="in" />
       </node>
-    </node>
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="5706473467948754896" nodeInfo="igu">
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="5706473467948754897" nodeInfo="in" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5706473467948754898" nodeInfo="nn" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5706473467948754899" nodeInfo="sn" />
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="5706473467948755362" nodeInfo="igu">
       <property name="name" nameId="tpck.1169194664001" value="isCKeyword" />
@@ -512,10 +500,6 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6156524541430401530" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="pathAndFile" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="vs0r.6156524541422549000" resolveInfo="AbstractFilePicker" />
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="747084250477061857" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="chunk" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="vs0r.747084250476811597" resolveInfo="DefaultGenericChunkDependency" />
@@ -690,10 +674,6 @@
         </node>
       </node>
     </node>
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2113102233502562986" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="valueDebugger" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="vs0r.2113102233502540990" resolveInfo="DebugKey" />
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="806361095882365367" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="exref" />

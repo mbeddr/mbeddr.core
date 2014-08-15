@@ -322,10 +322,6 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8551646674110502902" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="functionrefs" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="x27k.8551646674110395547" resolveInfo="FunctionRefType" />
-  </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8257817273846948871" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functionrefs.closure" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="x27k.8257817273846948842" resolveInfo="ClosureParameter" />
@@ -397,18 +393,6 @@
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8257817273847125630" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functionrefs.closure" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="x27k.8257817273846948841" resolveInfo="Closure" />
-    <node role="canBeAncestor" roleId="tp1t.7852712695066883424" type="tp1t.ConstraintFunction_CanBeAnAncestor" typeId="tp1t.7855321458717464197" id="8257817273847125631" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8257817273847125632" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8257817273847125633" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="8257817273847125635" nodeInfo="nn">
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tp25.ConceptRefExpression" typeId="tp25.1172424058054" id="8257817273847125638" nodeInfo="nn">
-              <link role="conceptDeclaration" roleId="tp25.1172424100906" targetNodeId="c4fa.2093108837558113914" resolveInfo="LocalVarRef" />
-            </node>
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tp1t.ConstraintFunctionParameter_childConcept" typeId="tp1t.1203001236505" id="8257817273847125634" nodeInfo="nn" />
-          </node>
-        </node>
-      </node>
-    </node>
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2168163703056320953" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
@@ -892,13 +876,6 @@
         </node>
       </node>
     </node>
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1195383328911860500" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="external" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="x27k.6116558314501417934" resolveInfo="ExternalResourceDescriptor" />
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4998503984087164855" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="x27k.6116558314501417950" resolveInfo="ObjResourceDescriptor" />
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4998503984087164857" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="external" />

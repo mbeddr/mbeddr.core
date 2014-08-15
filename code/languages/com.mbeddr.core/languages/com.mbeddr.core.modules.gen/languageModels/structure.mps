@@ -181,8 +181,8 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2391520863997668666" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="NameShorteningConfiguration" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="name shortening" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="specify if name shortening is allowed" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="prevent name mangling" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="prevent name mangling for unique names" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2391520863997773387" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="allowNameShortening" />
