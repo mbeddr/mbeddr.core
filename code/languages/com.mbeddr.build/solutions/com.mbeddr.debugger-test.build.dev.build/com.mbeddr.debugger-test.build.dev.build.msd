@@ -7,9 +7,8 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">7f0575ee-ce26-49b7-a897-0e0b348b06af(com.mbeddr.core.dev.build)</dependency>
+    <dependency reexport="false">7ac0dfb8-7d5f-4573-ab80-81af2106ce03(com.mbeddr.build)</dependency>
     <dependency reexport="false">06f4ccb3-313d-4d48-9667-87a8fb963fb2(com.mbeddr.ext.tests.build)</dependency>
-    <dependency reexport="false">ba19fd84-07a8-4c0c-b27a-83b037421bea(com.mbeddr.spawner.dev.build)</dependency>
     <dependency reexport="false">f1fb7b1c-ce0d-423c-9369-4a661d600029(de.slisson.mps.all.build)</dependency>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
   </dependencies>
