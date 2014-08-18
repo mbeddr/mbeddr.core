@@ -141,6 +141,52 @@
       <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.debugger-test.build.dev.build-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.core.tests.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.core.tests.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.core.tests.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.core.tests.build" type="solution" uuid="d47a3921-8b42-4664-bed6-25e3e4fd6efb">
+        <dependencies />
+        <sources jar="com.mbeddr.core.tests.build-src.jar" descriptor="com.mbeddr.core.tests.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.core.tests.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.core.tests.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.core.tests.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.core.tests.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.core.tests.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/source_gen">
+        <exclude name="**/trace.info" />
+      </fileset>
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.build/com.mbeddr.core.tests.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.core.tests.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.core.tests.performance.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.core.tests.performance.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.core.tests.performance.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.core.tests.performance.build" type="solution" uuid="b4b96a11-a253-4152-8bd6-6444c1b087e8">
+        <dependencies />
+        <sources jar="com.mbeddr.core.tests.performance.build-src.jar" descriptor="com.mbeddr.core.tests.performance.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.core.tests.performance.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.core.tests.performance.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.performance.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.core.tests.performance.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.core.tests.performance.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.core.tests.performance.build-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/source_gen">
+        <exclude name="**/trace.info" />
+      </fileset>
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.performance.build/com.mbeddr.core.tests.performance.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.core.tests.performance.build-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.debugger.tests.dev.build.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.debugger.tests.dev.build.jar/META-INF" />
     <echoxml file="${build.tmp}/default/com.mbeddr.debugger.tests.dev.build.jar/META-INF/module.xml">
@@ -274,7 +320,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.build, java.compile.de.slisson.mps.all.build" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.platform, java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.build, java.compile.de.slisson.mps.all.build" />
   
   <target name="processResources" />
   
@@ -351,9 +397,12 @@
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.dev.build/build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.build/com.mbeddr.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.cc.tests.dev.build/com.mbeddr.cc.tests.dev.build.msd" />
+        <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.build/com.mbeddr.core.tests.build.msd" />
+        <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.performance.build/com.mbeddr.core.tests.performance.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.tests.dev.build/com.mbeddr.debugger.tests.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.build/build.msd" />
+        <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.build.build/com.mbeddr.build.build.msd" />
         <module file="${mbeddr.github.core.home}/code/plugins/sl-all/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" />
       </chunk>
@@ -381,6 +430,36 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.debugger-test.build.dev.build/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
+        <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.com.mbeddr.core.tests.build" depends="java.compile.com.mbeddr.build, java.compile.de.slisson.mps.all.build">
+    <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.tests.build" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.tests.build" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
+        <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.com.mbeddr.core.tests.performance.build" depends="java.compile.com.mbeddr.build, java.compile.de.slisson.mps.all.build">
+    <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.tests.performance.build" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.tests.performance.build" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/source_gen" />
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
@@ -450,6 +529,21 @@
     </javac>
   </target>
   
+  <target name="java.compile.com.mbeddr.platform" depends="java.compile.com.mbeddr.build, java.compile.de.slisson.mps.all.build">
+    <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.platform" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.platform" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
+        <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
+      </classpath>
+    </javac>
+  </target>
+  
   <target name="java.compile.com.mbeddr.tutorial.dev.build" depends="java.compile.com.mbeddr.build, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.build.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.tutorial.dev.build" />
@@ -509,9 +603,12 @@
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.analyses.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/source_gen" />
+    <delete dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/source_gen" />
+    <delete dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.debugger-test.build.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.debugger.tests.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/source_gen" />
+    <delete dir="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.build.build/source_gen" />
     <delete dir="${mbeddr.github.core.home}/code/plugins/sl-all/solutions/de.slisson.mps.all.build/source_gen" />
   </target>
