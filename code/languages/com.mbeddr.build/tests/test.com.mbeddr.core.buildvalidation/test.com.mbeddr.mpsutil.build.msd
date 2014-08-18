@@ -6,19 +6,7 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">4c28f257-18f6-416e-b37b-fa69eba1866b(com.mbeddr.analyses.tests.dev.build)</dependency>
-    <dependency reexport="false">ffd31df9-5187-4c9a-bb4f-d84e5f59ffd5(com.mbeddr.cc.tests.dev.build)</dependency>
-    <dependency reexport="false">7f0575ee-ce26-49b7-a897-0e0b348b06af(com.mbeddr.core.dev.build)</dependency>
-    <dependency reexport="false">d47a3921-8b42-4664-bed6-25e3e4fd6efb(com.mbeddr.core.tests.build)</dependency>
-    <dependency reexport="false">2098f9e9-7b8d-4ee4-8e3f-46840f7fc3dd(com.mbeddr.debugger.tests.dev.build)</dependency>
-    <dependency reexport="false">06f4ccb3-313d-4d48-9667-87a8fb963fb2(com.mbeddr.ext.tests.build)</dependency>
-    <dependency reexport="false">ba19fd84-07a8-4c0c-b27a-83b037421bea(com.mbeddr.spawner.dev.build)</dependency>
-    <dependency reexport="false">eec9a7f2-5b3c-476d-b489-9e438da7a02c(com.mbeddr.tutorial.dev.build)</dependency>
-  </dependencies>
   <usedLanguages>
-    <usedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</usedLanguage>
-    <usedLanguage>44578659-6701-41b0-87f4-226fbab2b1f4(com.mbeddr.core.buildvalidation)</usedLanguage>
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
     <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
     <usedLanguage>443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)</usedLanguage>
