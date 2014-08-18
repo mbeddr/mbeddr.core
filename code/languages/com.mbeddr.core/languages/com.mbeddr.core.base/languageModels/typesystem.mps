@@ -6,7 +6,6 @@
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
-  <language namespace="2e589a6f-51c3-423f-8ea2-0d769a5cc288(com.mbeddr.mpsutil.typsystem.trace)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
@@ -17,7 +16,6 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
-  <import index="32fn" modelUID="r:c1f6b4a3-d5ba-4a16-9105-fec55e3ea263(com.mbeddr.mpsutil.typsystem.trace.structure)" version="0" implicit="yes" />
   <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="4459718605982014131" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="check_IConfigurationContainer" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -1315,9 +1313,6 @@
       <property name="name" nameId="tpck.1169194664001" value="afp" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="vs0r.6156524541422549000" resolveInfo="AbstractFilePicker" />
     </node>
-  </root>
-  <root type="32fn.TraceTypesystem" typeId="32fn.5632795803933258786" id="9065867070409859492" nodeInfo="ng">
-    <property name="enabled" nameId="32fn.5632795803934811660" value="true" />
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7433385753576361939" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TypesystemUtil" />
