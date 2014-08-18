@@ -1,4 +1,4 @@
-  <project name="mbeddr download and deploy plugins" default="build-online" >
+  <project name="mbeddr download and deploy plugins" default="clean-and-build" >
 	
   <property file="build.properties"/>  
   <taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" classpath="${mbeddr.github.core.home}/tools/ant/tasks/MakeTestsTask.jar" />
@@ -23,7 +23,7 @@
   <property name="mps-sl-all.build-tmp" value="${mbeddr.github.core.home}/code/plugins/sl-all/build/tmp" />
   <property name="artifacts.mps-sl-all" value="${mps-sl-all.build-path}" />
 
-  <!-- com.mbeddr.mpsutil -->
+  <!-- com.mbeddr.mbeddr -->
   <property name="com.mbeddr.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.build/build/artifacts/com.mbeddr.build.build" />  
   <property name="com.mbeddr.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.build" />    
   <property name="com.mbeddr.build-file.name" value="build.xml" />  
@@ -32,7 +32,6 @@
   <!-- com.mbeddr.debugger -->  
   <property name="com.mbeddr.debugger.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.debugger/build/artifacts/com.mbeddr.debugger.build" />  
   <property name="com.mbeddr.debugger.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.debugger" />    
-
   <property name="com.mbeddr.debugger.tests-build-file.name" value="build-tests.xml" />  
   <property name="com.mbeddr.debugger.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />  
   
@@ -40,7 +39,7 @@
   <property name="com.mbeddr.core.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.core/build/artifacts/com.mbeddr.core.build" />  
   <property name="com.mbeddr.core.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.core" />    
   <property name="com.mbeddr.core.ts-tests-build-file.name" value="build-ts-tests.xml" />  
-    <property name="com.mbeddr.core.performance-tests-build-file.name" value="build-performance-tests.xml" />  
+  <property name="com.mbeddr.core.performance-tests-build-file.name" value="build-performance-tests.xml" />  
   <property name="com.mbeddr.core.ex-tests-build-file.name" value="build-ex-tests.xml" />  
   <property name="com.mbeddr.core.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />  
   
@@ -102,15 +101,6 @@
   <property name="com.mbeddr.allScripts.build-file.name" value="build.xml" /> 
   <property name="com.mbeddr.allScripts.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.allScripts" />  
 
-  <!-- spawner -->
-  <property name="spawner.suburl" value="com.mbeddr.spawner.build" /> 
-  <property name="spawner.zip-file.name" value="com.mbeddr.spawner.zip" />
-  <property name="spawner.expanded-folder.name" value="mbeddr.spawner" />
-  <property name="spawner.build-id" value="buildType:MbeddrCore_BuildSpawner" />
-  <property name="spawner.build-path" value="${mbeddr.github.core.home}/build/com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />  
-  <property name="artifacts.com.mbeddr.spawner.build" value="${spawner.build-path}" />
-
-  
   <!-- misc -->
   <property name="clean-generated-code.task" value="cleanSources" /> 
   <property name="clean-plugins.task" value="clean" /> 
@@ -140,58 +130,18 @@
 	</condition> 	
     <fail message="server is not available, please check your internet connection!" unless="server.not.reachable" /> 
     <echo message="server is available." /> 
-  </target> 
+  </target>   
   
-  <target name="build-online" >
-    <antcall target="install-plugins" />
-    <antcall target="build-allScripts" />
-	<antcall target="clean" />
-    <antcall target="build-languages" />		
-  </target>
-  
-  <target name="build-offline" >
+  <target name="clean-and-build" >
     <antcall target="build-allScripts" />
     <antcall target="clean" />
-    <antcall target="build-languages" />		
+    <antcall target="build-languages" />	
+	<antcall target="copy-spawner" />
   </target>
-    	    	    	     	  
-  <target name="install-plugins">
-	  <!-- verify server is reachable -->
-	  <antcall target="check-server" />
-	  
-	  <!-- create directory structure -->
-	  <mkdir dir="${mps-sl-all.build-path}"/>  
-	  <mkdir dir="${spawner.build-path}"/> 
-	  
-	  <!-- clean-plugin-folder -->
-	  <echo message=""/>
-  	  <echo message="DELETING PLUGINS"/>
-  	  <echo message=""/>
-	  <delete dir="${mps.home}/${plugins.folder.name}/${spawner.expanded-folder.name}" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder.name}/mps-multiline" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder.name}/mps-richtext" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder.name}/mps-tables" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder.name}/mps-bool-editor" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder.name}/mps-math" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder.name}/mps-math-editor" verbose="true" />
-	  
-	  <echo message=""/>
-  	  <echo message="DELETING ARTIFACTS"/>
-  	  <echo message=""/>
-	  <delete file="${spawner.build-path}/${spawner.zip-file.name}"/>
-	    	  
-	  <!-- download-plugins -->	
-	  <echo message=""/>
-  	  <echo message="DOWNLOADING ARTIFACTS"/>
-  	  <echo message=""/>  
-	  <get src="${base-url}/${spawner.build-id},${latest-build}/artifacts/files/${spawner.suburl}/${spawner.zip-file.name}" dest="${spawner.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>	 
-	  	 
-	  <!-- unzip-plugins -->
-	  <echo message=""/>
-  	  <echo message="INSTALLING PLUGINS"/>
-  	  <echo message=""/>
-	  <unzip src="${spawner.build-path}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" /> 	 	  
-  </target>  
+
+  <target name="copy-spawner">
+	  <copy file="${spawner.build-path}/${spawner.zip-file.name}" todir="${mps.home}/${plugins.folder.name}"/>	
+  </target>	    	    	    	     	 
 
   <target name="clean">
   	  <antcall target="clean-languages" />
@@ -271,9 +221,7 @@
   <target name="build-mbeddr">
       <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${generate-code.task}" />
       <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${build-plugin.task}" />	  
-  </target>
-  
-
+  </target>  
 
   <target name="build-languages" >
       <antcall target="build-sl-all" />
