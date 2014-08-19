@@ -4,24 +4,6 @@
   <language namespace="798100da-4f0a-421a-b991-71f8c50ce5d2(jetbrains.mps.build)" />
   <language namespace="0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)" />
   <import index="ffeo" modelUID="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" version="-1" />
-  <import index="og8s" modelUID="r:6a3757e1-3dbd-4a12-9bbe-b9bb1cb70974(com.mbeddr.spawner.dev.build)" version="-1" />
-  <import index="tdj5" modelUID="r:6dfd98e4-b741-4c12-a184-aeb928d8348e(com.mbeddr.analyses.dev.build)" version="-1" />
-  <import index="auf4" modelUID="r:80ab9f35-0383-4b63-8d33-f5ba921f506c(com.mbeddr.cc.dev.build)" version="0" />
-  <import index="g8gn" modelUID="r:db0f191d-ac3f-4168-aa3a-d27e25360adc(com.mbeddr.core.dev.build)" version="-1" />
-  <import index="fswa" modelUID="r:dcaa4f4c-83be-42b8-84c4-b6fa4fbc9604(com.mbeddr.doc.dev.build)" version="-1" />
-  <import index="pyq9" modelUID="r:03dd57e2-3edc-4361-a061-60ea71ecad78(com.mbeddr.ext.build)" version="-1" />
-  <import index="xsd6" modelUID="r:ca2b582e-fdcb-4767-9d74-cf61b47911f2(com.mbeddr.allInOne)" version="-1" />
-  <import index="al5i" modelUID="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" version="-1" />
-  <import index="ax0f" modelUID="r:eb33d266-6ba4-4e53-8309-b2d526db977f(com.mbeddr.debugger.dev.build)" version="-1" />
-  <import index="xahx" modelUID="r:a40fc11f-cd88-4bc0-8401-459c3bdebd26(com.mbeddr.cc.ple.dev.build)" version="0" />
-  <import index="h4fd" modelUID="r:0d72e6f8-3d8a-4b48-87dc-89e04c007bf9(com.mbeddr.ext.units.dev.build.build)" version="-1" />
-  <import index="8jli" modelUID="r:a3923394-7824-41b2-a673-4356e18a8046(com.mbeddr.ext.statemachinesInComponents.dev.build.build)" version="-1" />
-  <import index="8vru" modelUID="r:3825aa79-6b00-47ce-bd95-4f08458a0165(com.mbeddr.ext.statemachine.dev.build.build)" version="-1" />
-  <import index="dogi" modelUID="r:d2be0b6c-ba23-4242-a629-c2b5b0cf8789(com.mbeddr.ext.components.dev.build.build)" version="-1" />
-  <import index="byw8" modelUID="r:cee07942-9166-46aa-b335-023165803fb1(com.mbeddr.analyses.base.dev.build.build)" version="-1" />
-  <import index="cres" modelUID="r:37e76d82-365d-4087-8d5c-8fc0b02b7601(com.mbeddr.analyses.cbmc.dev.build.build)" version="-1" />
-  <import index="g0ku" modelUID="r:102c17b7-1774-4e79-a077-ed1501f7bf35(com.mbeddr.platform.dev.build.build)" version="-1" />
-  <import index="msuh" modelUID="r:4f53fb5d-a9a2-4725-8153-7d8ec10b5f7f(com.mbeddr.analyses.sat4j.dev.build.build)" version="-1" />
   <import index="90a9" modelUID="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" version="-1" />
   <import index="3ior" modelUID="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" version="2" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -96,6 +78,23 @@
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Branding" typeId="kdzh.7753544965996377997" id="6168924288978682793" nodeInfo="ng">
       <property name="major" nameId="kdzh.3497141547781541444" value="0" />
       <property name="minor" nameId="kdzh.3497141547781541445" value="1" />
+      <node role="updateWebsite" roleId="kdzh.6108265972537335245" type="kdzh.BuildMps_BrandingUpdateSite" typeId="kdzh.7753544965996489991" id="3347698799603761423" nodeInfo="ng">
+        <node role="checkUrl" roleId="kdzh.6108265972537335224" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="3347698799603761946" nodeInfo="ng">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="3347698799603772552" nodeInfo="ng">
+            <property name="text" nameId="3ior.4903714810883755350" value="http://mbeddr.com/updates/update.xml" />
+          </node>
+        </node>
+        <node role="updateUrl" roleId="kdzh.6108265972537335225" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="3347698799603764353" nodeInfo="ng">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="3347698799603773145" nodeInfo="ng">
+            <property name="text" nameId="3ior.4903714810883755350" value="https://github.com/mbeddr/mbeddr.core/releases" />
+          </node>
+        </node>
+        <node role="updateChannel" roleId="kdzh.8795525031433091059" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="3347698799603773148" nodeInfo="ng">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="3347698799603773147" nodeInfo="ng">
+            <property name="text" nameId="3ior.4903714810883755350" value="mbeddr" />
+          </node>
+        </node>
+      </node>
       <node role="splashScreen" roleId="kdzh.6108265972537182996" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5590523698994462494" nodeInfo="ng">
         <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462497" nodeInfo="nn">
@@ -224,23 +223,6 @@
             <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418987" nodeInfo="nn">
               <property name="head" nameId="3ior.8618885170173601779" value="mbeddr-logo.png" />
             </node>
-          </node>
-        </node>
-      </node>
-      <node role="updateWebsite" roleId="kdzh.6108265972537335245" type="kdzh.BuildMps_BrandingUpdateSite" typeId="kdzh.7753544965996489991" id="3347698799603761423" nodeInfo="ng">
-        <node role="checkUrl" roleId="kdzh.6108265972537335224" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="3347698799603761946" nodeInfo="ng">
-          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="3347698799603772552" nodeInfo="ng">
-            <property name="text" nameId="3ior.4903714810883755350" value="http://mbeddr.com/updates/update.xml" />
-          </node>
-        </node>
-        <node role="updateUrl" roleId="kdzh.6108265972537335225" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="3347698799603764353" nodeInfo="ng">
-          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="3347698799603773145" nodeInfo="ng">
-            <property name="text" nameId="3ior.4903714810883755350" value="https://github.com/mbeddr/mbeddr.core/releases" />
-          </node>
-        </node>
-        <node role="updateChannel" roleId="kdzh.8795525031433091059" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="3347698799603773148" nodeInfo="ng">
-          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="3347698799603773147" nodeInfo="ng">
-            <property name="text" nameId="3ior.4903714810883755350" value="mbeddr" />
           </node>
         </node>
       </node>
@@ -699,54 +681,6 @@
                 <property name="pattern" nameId="3ior.5248329904288051112" value="migrationAssistant.jar" />
               </node>
             </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454797" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="xahx.8334796989973521570" resolveInfo="com.mbeddr.cc.ple.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454798" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="auf4.6247780594427548298" resolveInfo="com.mbeddr.cc.req.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454799" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="g8gn.8628756186118765535" resolveInfo="com.mbeddr.core.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454800" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="og8s.4699195107807380428" resolveInfo="com.mbeddr.spawner.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454801" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="dogi.8334796989975391430" resolveInfo="com.mbeddr.ext.components.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454803" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="8vru.8334796989975381530" resolveInfo="com.mbeddr.ext.statemachine.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454804" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="8jli.8334796989975375511" resolveInfo="com.mbeddr.ext.statemachineInComponents.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454805" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="h4fd.8334796989975361847" resolveInfo="com.mbeddr.ext.units.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454806" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ax0f.8628756186118765535" resolveInfo="com.mbeddr.core.debugger.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454807" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="al5i.8628756186118380502" resolveInfo="com.mbeddr.mpsutil.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454808" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="byw8.8334796989975404237" resolveInfo="com.mbeddr.analyses.base.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454809" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="cres.8334796989975410691" resolveInfo="com.mbeddr.analyses.cbmc.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454810" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="msuh.8334796989975465219" resolveInfo="com.mbeddr.analyses.sat4j.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454812" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="fswa.8607331426312061453" resolveInfo="com.mbeddr.doc.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698994454813" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="90a9.3410197114991840790" resolveInfo="mps-sl-all.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="651821299952456333" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="g0ku.651821299948806962" resolveInfo="com.mbeddr.platform.zip" />
-            </node>
             <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8607776404756316253" nodeInfo="ng">
               <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8607776404756316287" nodeInfo="ng">
                 <property name="text" nameId="3ior.4903714810883755350" value="plugins" />
@@ -908,54 +842,6 @@
               <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="3191954501586557024" nodeInfo="ng">
                 <property name="pattern" nameId="3ior.5248329904288051112" value="migrationAssistant.jar" />
               </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318869" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="xahx.8334796989973521570" resolveInfo="com.mbeddr.cc.ple.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318870" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="auf4.6247780594427548298" resolveInfo="com.mbeddr.cc.req.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318871" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="g8gn.8628756186118765535" resolveInfo="com.mbeddr.core.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318872" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="og8s.4699195107807380428" resolveInfo="com.mbeddr.spawner.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318873" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="dogi.8334796989975391430" resolveInfo="com.mbeddr.ext.components.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318875" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="8vru.8334796989975381530" resolveInfo="com.mbeddr.ext.statemachine.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318876" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="8jli.8334796989975375511" resolveInfo="com.mbeddr.ext.statemachineInComponents.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318877" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="h4fd.8334796989975361847" resolveInfo="com.mbeddr.ext.units.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318878" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ax0f.8628756186118765535" resolveInfo="com.mbeddr.core.debugger.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318879" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="al5i.8628756186118380502" resolveInfo="com.mbeddr.mpsutil.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318880" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="byw8.8334796989975404237" resolveInfo="com.mbeddr.analyses.base.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318881" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="cres.8334796989975410691" resolveInfo="com.mbeddr.analyses.cbmc.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318882" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="msuh.8334796989975465219" resolveInfo="com.mbeddr.analyses.sat4j.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318884" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="fswa.8607331426312061453" resolveInfo="com.mbeddr.doc.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756318885" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="90a9.3410197114991840790" resolveInfo="mps-sl-all.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="651821299952456536" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="g0ku.651821299948806962" resolveInfo="com.mbeddr.platform.zip" />
             </node>
             <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8607776404756318692" nodeInfo="ng">
               <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8607776404756318808" nodeInfo="ng">
@@ -1319,54 +1205,6 @@
                 <property name="pattern" nameId="3ior.5248329904288051112" value="migrationAssistant.jar" />
               </node>
             </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319361" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="xahx.8334796989973521570" resolveInfo="com.mbeddr.cc.ple.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319362" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="auf4.6247780594427548298" resolveInfo="com.mbeddr.cc.req.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319363" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="g8gn.8628756186118765535" resolveInfo="com.mbeddr.core.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319364" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="og8s.4699195107807380428" resolveInfo="com.mbeddr.spawner.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319365" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="dogi.8334796989975391430" resolveInfo="com.mbeddr.ext.components.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319367" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="8vru.8334796989975381530" resolveInfo="com.mbeddr.ext.statemachine.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319368" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="8jli.8334796989975375511" resolveInfo="com.mbeddr.ext.statemachineInComponents.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319369" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="h4fd.8334796989975361847" resolveInfo="com.mbeddr.ext.units.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319370" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ax0f.8628756186118765535" resolveInfo="com.mbeddr.core.debugger.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319371" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="al5i.8628756186118380502" resolveInfo="com.mbeddr.mpsutil.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319372" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="byw8.8334796989975404237" resolveInfo="com.mbeddr.analyses.base.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319373" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="cres.8334796989975410691" resolveInfo="com.mbeddr.analyses.cbmc.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319374" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="msuh.8334796989975465219" resolveInfo="com.mbeddr.analyses.sat4j.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319376" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="fswa.8607331426312061453" resolveInfo="com.mbeddr.doc.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8607776404756319377" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="90a9.3410197114991840790" resolveInfo="mps-sl-all.zip" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="651821299952456583" nodeInfo="ng">
-              <link role="target" roleId="3ior.5610619299013057365" targetNodeId="g0ku.651821299948806962" resolveInfo="com.mbeddr.platform.zip" />
-            </node>
             <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8607776404756319233" nodeInfo="ng">
               <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8607776404756319300" nodeInfo="ng">
                 <property name="text" nameId="3ior.4903714810883755350" value="plugins" />
@@ -1575,51 +1413,6 @@
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="5590523698994453643" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="6168924288978819495" resolveInfo="jetbrains.mps.standalone" />
     </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965052" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="al5i.8628756186118380491" resolveInfo="com.mbeddr.mpsutil.build" />
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965071" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="og8s.6247780594427434811" resolveInfo="com.mbeddr.spawner.build" />
-      <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="7586528038048696663" nodeInfo="ng">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="5174058198465336505" resolveInfo="spawner.artifacts" />
-      </node>
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965054" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="g8gn.8628756186118765524" resolveInfo="com.mbeddr.core.build" />
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965056" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="dogi.8334796989975391369" resolveInfo="com.mbeddr.ext.components" />
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965060" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="8vru.8334796989975381468" resolveInfo="com.mbeddr.ext.statemachine" />
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965062" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="8jli.8334796989975375432" resolveInfo="com.mbeddr.ext.statemachinesInComponents" />
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965065" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="h4fd.8334796989975361786" resolveInfo="com.mbeddr.ext.units" />
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965067" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="xahx.8334796989973521374" resolveInfo="com.mbeddr.cc.ple.build" />
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6247780594427965069" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="auf4.6247780594427548258" resolveInfo="com.mbeddr.cc.req.build" />
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="5100083648679014637" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="ax0f.6247780594427434811" resolveInfo="com.mbeddr.debugger.build" />
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538998606" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="byw8.8334796989975404069" resolveInfo="com.mbeddr.analyses.base" />
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538998608" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="cres.8334796989975410459" resolveInfo="com.mbeddr.analyses.cbmc" />
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="4595259704536922723" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="msuh.8334796989975465017" resolveInfo="com.mbeddr.analyses.sat4j" />
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="2042272859110657423" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="fswa.8607331426312061444" resolveInfo="com.mbeddr.doc.build" />
-    </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6168924288978668326" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="ffeo.1392391688312941958" resolveInfo="mpsStandalone" />
       <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6168924288978668327" nodeInfo="ng">
@@ -1675,12 +1468,6 @@
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="ffeo.4301118715654192646" resolveInfo="mps" />
       <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5152824560131915307" nodeInfo="ng">
         <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427965027" resolveInfo="mps.home" />
-      </node>
-    </node>
-    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="651821299952456243" nodeInfo="ng">
-      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="g0ku.651821299948806798" resolveInfo="com.mbeddr.platform.build" />
-      <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5302886665841809905" nodeInfo="ng">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="5302886665841638051" resolveInfo="platform.artifacts" />
       </node>
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="4926855601834234471" nodeInfo="ng">

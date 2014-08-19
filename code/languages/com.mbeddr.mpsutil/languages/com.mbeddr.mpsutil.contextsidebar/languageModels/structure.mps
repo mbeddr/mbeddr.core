@@ -13,7 +13,7 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="394049958337067598" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IContextSection" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="section" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="common" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="394049958337067609" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="JComponentContextSection" />
@@ -101,12 +101,12 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1137021947720" resolveInfo="ConceptFunction" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="394049958337750960" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="section" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="common" />
     <property name="name" nameId="tpck.1169194664001" value="IsApplicableFunction" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1137021947720" resolveInfo="ConceptFunction" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="394049958337750965" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="section" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="common" />
     <property name="name" nameId="tpck.1169194664001" value="ContextParameter" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="context" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />

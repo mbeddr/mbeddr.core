@@ -2,7 +2,6 @@
 <model modelUID="r:54210dde-4071-421e-b973-a22bb864eeac(com.mbeddr.core.pointers.typesystem)" version="2">
   <persistence version="8" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
-  <language namespace="2e589a6f-51c3-423f-8ea2-0d769a5cc288(com.mbeddr.mpsutil.typsystem.trace)" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" />
   <language namespace="63650c59-16c8-498a-99c8-005c7ee9515d(jetbrains.mps.lang.access)" />
@@ -33,17 +32,16 @@
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
   <import index="9zoj" modelUID="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" version="2" />
-  <import index="e2lc" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(java.lang@java_stub)" version="-1" />
-  <import index="lgbc" modelUID="r:a296e8c9-b717-45da-a3a4-9f0b7cc360c0(com.mbeddt.core.expressions.pluginSolution.plugin)" version="-1" />
   <import index="bt5b" modelUID="r:10548ca1-8094-4342-a65a-87d986241875(com.mbeddr.core.pointers.utils)" version="-1" />
+  <import index="lgbc" modelUID="r:a296e8c9-b717-45da-a3a4-9f0b7cc360c0(com.mbeddt.core.expressions.pluginSolution.plugin)" version="-1" />
   <import index="tp3r" modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpib" modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
-  <import index="32fn" modelUID="r:c1f6b4a3-d5ba-4a16-9105-fec55e3ea263(com.mbeddr.mpsutil.typsystem.trace.structure)" version="0" implicit="yes" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" implicit="yes" />
+  <import index="e2lc" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(java.lang@java_stub)" version="-1" implicit="yes" />
   <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="279446265608353445" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="typeof_SizeOfExpr" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="279446265608353446" nodeInfo="sn">
@@ -2249,11 +2247,11 @@
               </node>
               <node role="argument" roleId="tpd4.1185805056450" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="7664133259366892291" nodeInfo="nn">
                 <node role="term" roleId="tpd4.1174657509053" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7664133259366892396" nodeInfo="nn">
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7664133259366892402" nodeInfo="nn">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.3813668170744198630" />
-                  </node>
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4344544710997725076" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4344544710997724717" resolveInfo="tsc" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7664133259366892402" nodeInfo="nn">
+                    <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.3813668170744198630" />
                   </node>
                 </node>
               </node>
@@ -4715,9 +4713,6 @@
       <property name="name" nameId="tpck.1169194664001" value="sat" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="yq40.5684014141267595977" resolveInfo="StringArrayType" />
     </node>
-  </root>
-  <root type="32fn.TraceTypesystem" typeId="32fn.5632795803933258786" id="9065867070409954937" nodeInfo="ng">
-    <property name="enabled" nameId="32fn.5632795803934811660" value="true" />
   </root>
   <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="7350547698080476137" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="check_ArrayInit" />
