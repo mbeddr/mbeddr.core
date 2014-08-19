@@ -280,6 +280,31 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.dev.build-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr-platform" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.platform.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.platform.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.platform.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.platform" type="solution" uuid="3ae9cfda-f938-4524-b4ca-fbcba3b0525b">
+        <dependencies />
+        <sources jar="com.mbeddr.platform-src.jar" descriptor="com.mbeddr.platform.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr-platform/com.mbeddr.platform.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.platform" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.platform.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.platform-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.platform/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr-platform/com.mbeddr.platform-src.jar">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen">
+        <exclude name="**/trace.info" />
+      </fileset>
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.platform-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
     <mkdir dir="${build.tmp}/default/de.slisson.mps.all.build.jar" />
     <mkdir dir="${build.tmp}/default/de.slisson.mps.all.build.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.slisson.mps.all.build.jar/META-INF/module.xml">
@@ -320,7 +345,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.platform, java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.build, java.compile.de.slisson.mps.all.build" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.platform, java.compile.com.mbeddr.build, java.compile.de.slisson.mps.all.build" />
   
   <target name="processResources" />
   
@@ -529,21 +554,6 @@
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.platform" depends="java.compile.com.mbeddr.build, java.compile.de.slisson.mps.all.build">
-    <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/com.mbeddr.platform" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.platform" fork="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
-      </src>
-      <classpath>
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
-        <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
-      </classpath>
-    </javac>
-  </target>
-  
   <target name="java.compile.com.mbeddr.tutorial.dev.build" depends="java.compile.com.mbeddr.build, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.build.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.tutorial.dev.build" />
@@ -574,7 +584,19 @@
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.build" depends="java.compile.de.slisson.mps.all.build">
+  <target name="java.compile.com.mbeddr.platform" depends="java.compile.de.slisson.mps.all.build">
+    <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.platform" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.platform" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
+      </src>
+      <classpath path="${build.tmp}/java/out/de.slisson.mps.all.build" />
+    </javac>
+  </target>
+  
+  <target name="java.compile.com.mbeddr.build" depends="java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.build" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.build" fork="true" includeantruntime="false">
@@ -582,7 +604,10 @@
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.build/source_gen" />
       </src>
-      <classpath path="${build.tmp}/java/out/de.slisson.mps.all.build" />
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
+        <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
+      </classpath>
     </javac>
   </target>
   
