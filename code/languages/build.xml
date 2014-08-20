@@ -207,6 +207,8 @@
       <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${clean-plugins.task}" />
       <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${clean-generated-code.task}" />
 
+      <ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-plugins.task}" />
+      <ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-generated-code.task}" />   
       <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-plugins.task}" />
 	  <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-generated-code.task}" />	  
 	 
@@ -222,6 +224,11 @@
     <delete dir="${mps-sl-all.build-tmp}" />
   </target>
 
+<target name="build-platform">
+      <ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${generate-code.task}" />
+      <ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${build-plugin.task}" />   
+  </target>  
+
 
   <target name="build-mbeddr">
       <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${generate-code.task}" />
@@ -229,7 +236,8 @@
   </target>  
 
   <target name="build-languages" >
-      <antcall target="build-sl-all" />
+        <antcall target="build-sl-all" />
+        <antcall target="build-platform" />
 	  <antcall target="build-mbeddr" />  	  
   </target>	 
 
