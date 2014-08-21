@@ -20,8 +20,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="2528815649421349246" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="2528815649421349247" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.1" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857371185" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="2528815649421349248" nodeInfo="ng">
@@ -80,8 +80,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427434829" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427434830" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857428686" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="789268116059671042" nodeInfo="ng">
@@ -113,8 +113,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8628756186118765542" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8628756186118765543" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857438834" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="1083738745966489287" nodeInfo="ng">
@@ -183,8 +183,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8334796989975391443" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8334796989975391444" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857442254" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="8334796989975391445" nodeInfo="ng">
@@ -216,8 +216,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="4938592026145691217" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="4938592026145691218" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857445673" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="4938592026145691219" nodeInfo="ng">
@@ -237,8 +237,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8334796989975381537" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8334796989975381538" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857449092" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="8334796989975381539" nodeInfo="ng">
@@ -276,8 +276,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8334796989975375518" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8334796989975375519" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857452511" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="8334796989975375520" nodeInfo="ng">
@@ -321,8 +321,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8334796989975361854" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8334796989975361855" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857455930" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="8334796989975361856" nodeInfo="ng">
@@ -363,8 +363,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8334796989973521577" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8334796989973521578" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857459349" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="8334796989973521579" nodeInfo="ng">
@@ -409,8 +409,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427548306" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427548307" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857462768" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="6247780594427548308" nodeInfo="ng">
@@ -446,8 +446,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="2964657368046578186" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="2964657368046578187" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857466187" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="2964657368046590502" nodeInfo="ng">
@@ -489,8 +489,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8334796989975404244" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8334796989975404245" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857469606" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="4926855601835113737" nodeInfo="ng">
@@ -547,8 +547,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8334796989975410698" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8334796989975410699" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857473025" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="5924512713689134216" nodeInfo="ng">
@@ -605,8 +605,8 @@
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8334796989975465226" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8334796989975465227" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="3129238182857476444" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="al5i.3129238182857352323" resolveInfo="version" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="8334796989975465228" nodeInfo="ng">
