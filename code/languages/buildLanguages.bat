@@ -1,1 +1,1 @@
-call ant build-online
+call ant clean-and-build
