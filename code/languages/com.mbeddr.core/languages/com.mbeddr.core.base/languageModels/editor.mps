@@ -10044,5 +10044,32 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="2964657368046274223" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="basicStyles" />
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="2964657368046274224" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="nothing" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2964657368046274225" nodeInfo="nn">
+        <property name="color" nameId="tpc2.1186403713874" value="lightGray" />
+      </node>
+    </node>
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="2964657368046274226" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="gray" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2964657368046274227" nodeInfo="nn">
+        <property name="color" nameId="tpc2.1186403713874" value="gray" />
+      </node>
+    </node>
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="2964657368046274228" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="readOnly" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2964657368046274229" nodeInfo="nn">
+        <property name="color" nameId="tpc2.1186403713874" value="gray" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="2964657368046274230" nodeInfo="nn">
+        <property name="flag" nameId="tpc2.1186414551515" value="false" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="2964657368046274231" nodeInfo="nn">
+        <property name="flag" nameId="tpc2.1186414551515" value="false" />
+      </node>
+    </node>
+  </root>
 </model>
 

@@ -24,10 +24,12 @@
   <property name="artifacts.mps-sl-all" value="${mps-sl-all.build-path}" />
 
   <!-- com.mbeddr.mbeddr -->
-  <property name="com.mbeddr.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.build/build/artifacts/com.mbeddr.build.build" />  
+  <property name="com.mbeddr.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.build/build/artifacts/mbeddr" />  
   <property name="com.mbeddr.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.build" />    
   <property name="com.mbeddr.build-file.name" value="build.xml" />  
   <property name="com.mbeddr.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.build" />  
+  <property name="spawner.zip-file.name" value="com.mbeddr.spawner.zip" />
+    
   
   <!-- com.mbeddr.debugger -->  
   <property name="com.mbeddr.debugger.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.debugger/build/artifacts/com.mbeddr.debugger.build" />  
@@ -101,11 +103,6 @@
   <property name="com.mbeddr.allScripts.build-file.name" value="build.xml" /> 
   <property name="com.mbeddr.allScripts.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.allScripts" />  
   
-  <!-- spawner -->
-  <property name="spawner.zip-file.name" value="com.mbeddr.spawner.zip" />
-  <property name="spawner.expanded-folder.name" value="mbeddr.spawner" />
-  <property name="spawner.build-path" value="${mbeddr.github.core.home}/build/com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />  
-    
   <!-- misc -->
   <property name="clean-generated-code.task" value="cleanSources" /> 
   <property name="clean-plugins.task" value="clean" /> 
@@ -126,16 +123,7 @@
               </resourcecount>
           </not>
       </condition>
-  </fail>
-  
-  <target name="check-server"> 
-    <echo message="trying to reach mbeddr build server" /> 	
-	<condition property="server.not.reachable"> 
-	   <http url="${server.url}"/> 
-	</condition> 	
-    <fail message="server is not available, please check your internet connection!" unless="server.not.reachable" /> 
-    <echo message="server is available." /> 
-  </target>   
+  </fail> 
   
   <target name="clean-and-build" >
     <antcall target="build-allScripts" />
@@ -145,8 +133,8 @@
   </target>
 
   <target name="copy-spawner">
-	  <unzip src="${spawner.build-path}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" />
-  </target>	    	    	    	     	 
+	  <unzip src="${com.mbeddr.build-path.postfix}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" />
+  </target>
 
   <target name="clean">
   	  <antcall target="clean-languages" />
