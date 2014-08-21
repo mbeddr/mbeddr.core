@@ -113,10 +113,52 @@
             <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="4465510224861492539" nodeInfo="ng">
               <property name="pattern" nameId="3ior.5248329904288051112" value="plugins/**" />
             </node>
+            <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760092616100" nodeInfo="ng">
+              <property name="pattern" nameId="3ior.5248329904288051112" value="bin/idea.properties" />
+            </node>
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8607776404756316251" nodeInfo="ng">
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="3191954501586557096" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688313033194" resolveInfo="plugins" />
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093408382" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="migrationAssistant.jar" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093408684" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-execution-configurations/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093408989" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-java/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093409298" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-make/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093409609" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-trove/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093409924" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mpsmigration.jar" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093410242" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="samples.jar" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093410862" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="cvsIntegration/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093411185" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="jetpad/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093411511" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-console/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093411840" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-devkit/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412172" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="diagramEditor/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093407771" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="ideaIntegration.jar" />
+              </node>
             </node>
             <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8607776404756316253" nodeInfo="ng">
               <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8607776404756316287" nodeInfo="ng">
@@ -126,13 +168,21 @@
           </node>
           <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6168924288978686004" nodeInfo="ng">
             <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6168924288978686005" nodeInfo="ng">
-              <property name="text" nameId="3ior.4903714810883755350" value="mbeddr " />
-            </node>
-            <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="6168924288978686006" nodeInfo="ng">
-              <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="ffeo.6592112598314709133" resolveInfo="version" />
+              <property name="text" nameId="3ior.4903714810883755350" value="mbeddr IDE" />
             </node>
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="6168924288978686008" nodeInfo="ng">
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="3129238182857514568" nodeInfo="ng">
+              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3129238182857514595" nodeInfo="ng">
+                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3129238182857514598" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3129238182857514602" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="idea.properties" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="6168924288978686009" nodeInfo="ng">
               <property name="filemode" nameId="3ior.9126048691955221291" value="755" />
               <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6168924288978686010" nodeInfo="ng">
@@ -174,17 +224,6 @@
                   <property name="head" nameId="3ior.8618885170173601779" value="bin" />
                   <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6168924288978686023" nodeInfo="nn">
                     <property name="head" nameId="3ior.8618885170173601779" value="mps.vmoptions" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="3129238182857514568" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3129238182857514595" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3129238182857514598" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3129238182857514602" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="idea.properties" />
                   </node>
                 </node>
               </node>
@@ -242,10 +281,52 @@
             <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="4465510224861492534" nodeInfo="ng">
               <property name="pattern" nameId="3ior.5248329904288051112" value="plugins/**" />
             </node>
+            <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760092616094" nodeInfo="ng">
+              <property name="pattern" nameId="3ior.5248329904288051112" value="bin/idea.properties" />
+            </node>
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8607776404756318690" nodeInfo="ng">
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="3191954501586557015" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688313033194" resolveInfo="plugins" />
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412544" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="migrationAssistant.jar" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412545" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-execution-configurations/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412546" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-java/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412547" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-make/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412548" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-trove/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412549" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mpsmigration.jar" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412550" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="samples.jar" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412551" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="cvsIntegration/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412552" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="jetpad/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412553" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-console/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412554" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-devkit/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412555" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="diagramEditor/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412556" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="ideaIntegration.jar" />
+              </node>
             </node>
             <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8607776404756318692" nodeInfo="ng">
               <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8607776404756318808" nodeInfo="ng">
@@ -572,8 +653,8 @@
             <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6168924288978686153" nodeInfo="ng">
               <property name="text" nameId="3ior.4903714810883755350" value="mbeddr " />
             </node>
-            <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="6168924288978686154" nodeInfo="ng">
-              <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="ffeo.6592112598314709133" resolveInfo="version" />
+            <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="524212760093448108" nodeInfo="ng">
+              <property name="text" nameId="3ior.4903714810883755350" value="IDE" />
             </node>
           </node>
         </node>
@@ -585,10 +666,52 @@
             <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="4465510224861492529" nodeInfo="ng">
               <property name="pattern" nameId="3ior.5248329904288051112" value="plugins/**" />
             </node>
+            <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="1152399386257657357" nodeInfo="ng">
+              <property name="pattern" nameId="3ior.5248329904288051112" value="bin/idea.properties" />
+            </node>
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8607776404756319231" nodeInfo="ng">
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="3191954501586556934" nodeInfo="ng">
               <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688313033194" resolveInfo="plugins" />
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412609" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="migrationAssistant.jar" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412610" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-execution-configurations/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412611" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-java/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412612" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-make/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412613" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-trove/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412614" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mpsmigration.jar" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412615" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="samples.jar" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412616" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="cvsIntegration/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412617" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="jetpad/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412618" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-console/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412619" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-devkit/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412620" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="diagramEditor/**" />
+              </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412621" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="ideaIntegration.jar" />
+              </node>
             </node>
             <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8607776404756319233" nodeInfo="ng">
               <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8607776404756319300" nodeInfo="ng">
@@ -754,14 +877,14 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="3129238182857516414" nodeInfo="ng">
-            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3129238182857516415" nodeInfo="ng">
-              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3129238182857516416" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
-                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3129238182857516417" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="idea.properties" />
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="3129238182857516414" nodeInfo="ng">
+              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3129238182857516415" nodeInfo="ng">
+                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3129238182857516416" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3129238182857516417" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="idea.properties" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -781,13 +904,7 @@
           </node>
           <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6168924288978686219" nodeInfo="ng">
             <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6168924288978686220" nodeInfo="ng">
-              <property name="text" nameId="3ior.4903714810883755350" value="mbeddr " />
-            </node>
-            <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="6168924288978686221" nodeInfo="ng">
-              <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="5220459393254863245" resolveInfo="buildNumber" />
-            </node>
-            <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6168924288978686222" nodeInfo="ng">
-              <property name="text" nameId="3ior.4903714810883755350" value=".app" />
+              <property name="text" nameId="3ior.4903714810883755350" value="mbeddr IDE.app" />
             </node>
           </node>
         </node>
