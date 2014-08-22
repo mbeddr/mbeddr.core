@@ -7,6 +7,7 @@
   </models>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">c34744c1-dc64-4da4-9850-885dee7d4a0c(com.mbeddr.analyses.sat4j.fm)</dependency>
     <dependency reexport="false">7f678a4d-c589-4743-bbdd-9b5c21ba56cf(test.analyses.var.testcode)</dependency>
   </dependencies>
