@@ -20,6 +20,14 @@
       <favorite_root node_ref="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)/3815661793603772590" />
       <favorite_root node_ref="r:eec9fdff-7d49-4d97-a04e-350ceb9ae0b0(com.mbeddr.tutorial.documentation.tutorial)/7959141310100646277" />
     </favorites_list>
+    <favorites_list name="DADA">
+      <favorite_root node_ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)/1731059994647588211" />
+      <favorite_root node_ref="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)/1433966787984154171" />
+      <favorite_root node_ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)/5160057464295358354" />
+      <favorite_root node_ref="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)/3815661793603772590" />
+      <favorite_root node_ref="r:6a63d759-341b-4a55-b0b8-859e3707a9ff(mbeddr.tutorial.main.math)/5098456557381619915" />
+      <favorite_root node_ref="r:252d4127-ccd8-4120-b21c-006b1b59410b(test.ex.core.pointers)/8257817273847094238" />
+    </favorites_list>
   </component>
   <component name="ProjectRootManager" version="2" />
 </project>

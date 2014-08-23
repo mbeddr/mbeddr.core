@@ -383,18 +383,18 @@
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="3vkx.PEqWord" typeId="3vkx.2992054467184775334" id="2992054467185937247" nodeInfo="ng">
                 <link role="varref" roleId="3vkx.2992054467184775386" targetNodeId="2992054467185937241" resolveInfo="actMinPrice" />
-                <node role="expr" roleId="3vkx.2992054467184775426" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2992054467185937248" nodeInfo="ng">
-                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="2992054467185937249" nodeInfo="ng">
-                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467185937250" nodeInfo="ng">
-                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                      <property name="value" nameId="mj1l.2212975673976043696" value="100" />
+                <node role="expr" roleId="3vkx.2992054467184775426" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="1456989016731695377" nodeInfo="ng">
+                  <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="1456989016731695380" nodeInfo="ng">
+                    <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.VarRef" typeId="3vkx.2992054467184778980" id="2992054467185937252" nodeInfo="ng">
+                      <link role="var" roleId="3vkx.2992054467184778981" targetNodeId="2992054467185937243" resolveInfo="baseMinPrice" />
                     </node>
-                    <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.VarRef" typeId="3vkx.2992054467184778980" id="2992054467185937251" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.VarRef" typeId="3vkx.2992054467184778980" id="2992054467185937251" nodeInfo="ng">
                       <link role="var" roleId="3vkx.2992054467184778981" targetNodeId="2992054467185937245" resolveInfo="priceFactor" />
                     </node>
                   </node>
-                  <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.VarRef" typeId="3vkx.2992054467184778980" id="2992054467185937252" nodeInfo="ng">
-                    <link role="var" roleId="3vkx.2992054467184778981" targetNodeId="2992054467185937243" resolveInfo="baseMinPrice" />
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467185937250" nodeInfo="ng">
+                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="100" />
                   </node>
                 </node>
               </node>
