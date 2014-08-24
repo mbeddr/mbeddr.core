@@ -3401,7 +3401,7 @@
     </node>
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2254150758336725431" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ImplementationModuleConsistencyChecker" />
+    <property name="name" nameId="tpck.1169194664001" value="ModuleConsistencyChecker" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="2254150758336725432" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="2254150758336725433" nodeInfo="igu">
       <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
@@ -3417,7 +3417,7 @@
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2254150758336725438" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2254150758336725439" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758336725503" resolveInfo="im" />
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758336725503" resolveInfo="module" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="2254150758336725440" nodeInfo="nn">
                 <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="2254150758336725441" nodeInfo="ng">
@@ -3506,7 +3506,7 @@
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758336725453" resolveInfo="fm" />
                         </node>
                         <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2254150758336725479" nodeInfo="nn">
-                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758336725503" resolveInfo="im" />
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758336725503" resolveInfo="module" />
                         </node>
                       </node>
                     </node>
@@ -3550,7 +3550,7 @@
                       <node role="argument" roleId="tp2q.1160666822012" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="2254150758336725497" nodeInfo="nn">
                         <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2254150758336725510" resolveInfo="checkReferences" />
                         <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2254150758336725498" nodeInfo="nn">
-                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758336725503" resolveInfo="im" />
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758336725503" resolveInfo="module" />
                         </node>
                       </node>
                     </node>
@@ -3569,9 +3569,9 @@
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2254150758336725502" nodeInfo="nn" />
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="2254150758336725503" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="im" />
+        <property name="name" nameId="tpck.1169194664001" value="module" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2254150758336725504" nodeInfo="in">
-          <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
+          <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575722813" resolveInfo="Module" />
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="2254150758336725505" nodeInfo="ng">
@@ -3968,7 +3968,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="2254150758336725669" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="im" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2254150758336725670" nodeInfo="in">
-          <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
+          <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575722813" resolveInfo="Module" />
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="2254150758336725671" nodeInfo="ng">
@@ -4965,7 +4965,7 @@
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2254150758336726101" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2254150758336726102" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758336726236" resolveInfo="im" />
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758336726236" resolveInfo="module" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetDescendantsOperation" typeId="tp25.1171305280644" id="2254150758336726103" nodeInfo="nn">
                 <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="2254150758336726104" nodeInfo="ng">
@@ -5291,9 +5291,9 @@
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="2254150758336726236" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="im" />
+        <property name="name" nameId="tpck.1169194664001" value="module" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2254150758336726237" nodeInfo="in">
-          <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
+          <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575722813" resolveInfo="Module" />
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="2254150758336726238" nodeInfo="ng">

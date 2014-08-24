@@ -49,7 +49,7 @@
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="538267308516043883" resolveInfo="ConfigurationModelConsistencyAction" />
       </node>
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="4689096352579010478" nodeInfo="ng">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="4689096352578878852" resolveInfo="ImplementationModuleConsistencyAction" />
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="4689096352578878852" resolveInfo="ModuleConsistencyAction" />
       </node>
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="9118111503381836978" nodeInfo="ng" />
     </node>
@@ -133,13 +133,13 @@
             <property name="name" nameId="tpck.1169194664001" value="resultsList" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2254150758336131108" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2254150758336131986" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="FMCMAnalysisResult" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="AnalysisResultBase" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2254150758336132157" nodeInfo="nn">
               <node role="creator" roleId="tpee.1145553007750" type="tp2q.LinkedListCreator" typeId="tp2q.1227008614712" id="2254150758336134131" nodeInfo="nn">
                 <node role="elementType" roleId="tp2q.1237721435807" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2254150758336135515" nodeInfo="in">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="FMCMAnalysisResult" />
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="AnalysisResultBase" />
                 </node>
               </node>
             </node>
@@ -269,13 +269,13 @@
             <property name="name" nameId="tpck.1169194664001" value="resultsList" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2254150758336153976" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2254150758336153977" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="FMCMAnalysisResult" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="AnalysisResultBase" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2254150758336153978" nodeInfo="nn">
               <node role="creator" roleId="tpee.1145553007750" type="tp2q.LinkedListCreator" typeId="tp2q.1227008614712" id="2254150758336153979" nodeInfo="nn">
                 <node role="elementType" roleId="tp2q.1237721435807" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2254150758336153980" nodeInfo="in">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="FMCMAnalysisResult" />
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="AnalysisResultBase" />
                 </node>
               </node>
             </node>
@@ -355,7 +355,7 @@
     </node>
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="4689096352578878852" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="ImplementationModuleConsistencyAction" />
+    <property name="name" nameId="tpck.1169194664001" value="ModuleConsistencyAction" />
     <property name="caption" nameId="tp4k.1205250923097" value="Check Variability Consistency" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="4689096352578878853" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
@@ -396,11 +396,11 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4689096352578878870" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="imcc" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4689096352578917445" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.2254150758336725431" resolveInfo="ImplementationModuleConsistencyChecker" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.2254150758336725431" resolveInfo="ModuleConsistencyChecker" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="4689096352578878872" nodeInfo="nn">
               <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="4689096352578979152" nodeInfo="nn">
-                <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="vy7l.2254150758336725431" resolveInfo="ImplementationModuleConsistencyChecker" />
+                <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="vy7l.2254150758336725431" resolveInfo="ModuleConsistencyChecker" />
               </node>
             </node>
           </node>
@@ -476,7 +476,7 @@
               <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2254150758336195353" nodeInfo="nn">
                 <node role="type" roleId="tpee.1070534934091" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2254150758336200037" nodeInfo="in">
                   <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2254150758336201735" nodeInfo="in">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="FMCMAnalysisResult" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="AnalysisResultBase" />
                   </node>
                 </node>
                 <node role="expression" roleId="tpee.1070534934092" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2254150758336194374" nodeInfo="nn">
@@ -544,7 +544,7 @@
         <property name="name" nameId="tpck.1169194664001" value="res" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="4689096352583038719" nodeInfo="in">
           <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2254150758336128532" nodeInfo="in">
-            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="FMCMAnalysisResult" />
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="AnalysisResultBase" />
           </node>
         </node>
       </node>
@@ -635,7 +635,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="2254150758333784823" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ModelVariabilityConsistencyAction" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Check Variability Consistency" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Check Consistency of Variabiity Use" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="2254150758333784824" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx1.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
@@ -733,7 +733,7 @@
               <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2254150758336243694" nodeInfo="nn">
                 <node role="type" roleId="tpee.1070534934091" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2254150758336243695" nodeInfo="in">
                   <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2254150758336243696" nodeInfo="in">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="FMCMAnalysisResult" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="AnalysisResultBase" />
                   </node>
                 </node>
                 <node role="expression" roleId="tpee.1070534934092" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2254150758336243697" nodeInfo="nn">
@@ -781,6 +781,9 @@
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="2254150758333798389" nodeInfo="ng">
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="2254150758333808948" nodeInfo="ng">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="2254150758333784823" resolveInfo="ModelVariabilityConsistencyAction" />
+      </node>
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="2254150758338190160" nodeInfo="ng">
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="2254150758338143782" resolveInfo="ModelVariabilityDefConsistencyAction" />
       </node>
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="2254150758333808945" nodeInfo="ng">
@@ -888,7 +891,7 @@
               <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2254150758336241192" nodeInfo="nn">
                 <node role="type" roleId="tpee.1070534934091" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2254150758336241193" nodeInfo="in">
                   <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2254150758336241194" nodeInfo="in">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="FMCMAnalysisResult" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="AnalysisResultBase" />
                   </node>
                 </node>
                 <node role="expression" roleId="tpee.1070534934092" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2254150758336241195" nodeInfo="nn">
@@ -949,6 +952,137 @@
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="295213795663074580" nodeInfo="ng">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="d244.295213795663061205" resolveInfo="mbeddrPlatformSolutionGroup" />
       <link role="point" roleId="tp4k.1204992316090" targetNodeId="d244.295213795663061208" resolveInfo="mbeddrPlatformSolutionExtensions" />
+    </node>
+  </root>
+  <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="2254150758338143782" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="ModelVariabilityDefConsistencyAction" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Check Consistency of Variability Definition" />
+    <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="2254150758338143783" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="project" />
+      <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx1.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
+      <node role="condition" roleId="tp4k.5538333046911298738" type="tp4k.RequiredCondition" typeId="tp4k.5538333046911348654" id="2254150758338143784" nodeInfo="ng" />
+    </node>
+    <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="2254150758338143785" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="modelDescriptor" />
+      <link role="key" roleId="tp4k.1217252646389" targetNodeId="5xh9.~MPSCommonDataKeys%dCONTEXT_MODEL" resolveInfo="CONTEXT_MODEL" />
+      <node role="condition" roleId="tp4k.5538333046911298738" type="tp4k.RequiredCondition" typeId="tp4k.5538333046911348654" id="2254150758338143786" nodeInfo="ng" />
+    </node>
+    <node role="executeFunction" roleId="tp4k.1203083461638" type="tp4k.ExecuteBlock" typeId="tp4k.1203083511112" id="2254150758338143787" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2254150758338143788" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2254150758338143789" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2254150758338143790" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="mcc" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2254150758338146347" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ky9n.2254150758338061903" resolveInfo="ModelVariabilityDefConsistencyChecker" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2254150758338143792" nodeInfo="nn">
+              <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="2254150758338148165" nodeInfo="nn">
+                <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="ky9n.2254150758338061903" resolveInfo="ModelVariabilityDefConsistencyChecker" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2254150758338143794" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2254150758338143795" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="res" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2254150758338143796" nodeInfo="in">
+              <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2254150758338150786" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vy7l.538267308515894081" resolveInfo="AnalysisResultBase" />
+              </node>
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2254150758338143798" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2254150758338143799" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758338143790" resolveInfo="mcc" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2254150758338143800" nodeInfo="nn">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ky9n.2254150758338061905" resolveInfo="checkConsistency" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2254150758338143801" nodeInfo="nn">
+                  <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="2254150758338143802" nodeInfo="nn" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp4k.ActionDataParameterReferenceOperation" typeId="tp4k.1217252428768" id="2254150758338143803" nodeInfo="nn">
+                    <link role="member" roleId="tp4f.1205756909548" targetNodeId="2254150758338143785" resolveInfo="modelDescriptor" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="2254150758338143804" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2254150758338143805" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2254150758338143806" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="moduleConsistencyTool" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp4k.ToolType" typeId="tp4k.1208528650020" id="2254150758338143807" nodeInfo="in">
+              <link role="tool" roleId="tp4k.1208529537963" targetNodeId="4689096352582037188" resolveInfo="VariabilityConsistencyTool" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2254150758338143808" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2254150758338143809" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="2254150758338143810" nodeInfo="nn" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp4k.ActionDataParameterReferenceOperation" typeId="tp4k.1217252428768" id="2254150758338143811" nodeInfo="nn">
+                  <link role="member" roleId="tp4f.1205756909548" targetNodeId="2254150758338143783" resolveInfo="project" />
+                </node>
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetToolInProjectOperation" typeId="tgbt.681855071694758165" id="2254150758338143812" nodeInfo="nn">
+                <link role="tool" roleId="tgbt.681855071694758166" targetNodeId="4689096352582037188" resolveInfo="VariabilityConsistencyTool" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2254150758338143813" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2254150758338143814" nodeInfo="nn">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2254150758338143815" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="2254150758338143816" nodeInfo="nn" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp4k.ActionDataParameterReferenceOperation" typeId="tp4k.1217252428768" id="2254150758338143817" nodeInfo="nn">
+                <link role="member" roleId="tp4f.1205756909548" targetNodeId="2254150758338143783" resolveInfo="project" />
+              </node>
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2254150758338143818" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2254150758338143819" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758338143806" resolveInfo="moduleConsistencyTool" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierFieldAccessOperation" typeId="tp4f.1213999117680" id="2254150758338143820" nodeInfo="nn">
+                <link role="member" roleId="tp4f.1205756909548" targetNodeId="4689096352583105089" resolveInfo="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2254150758338143821" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2254150758338143822" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2254150758338143823" nodeInfo="nn">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758338143806" resolveInfo="moduleConsistencyTool" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="2254150758338143824" nodeInfo="nn">
+              <link role="member" roleId="tp4f.1205756909548" targetNodeId="4689096352582037189" resolveInfo="setResults" />
+              <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2254150758338151963" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758338143795" resolveInfo="res" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2254150758338143832" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2254150758338143833" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2254150758338143834" nodeInfo="nn">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2254150758338143806" resolveInfo="moduleConsistencyTool" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2254150758338143835" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jwd7.~BaseTool%dopenToolLater(boolean)%cvoid" resolveInfo="openToolLater" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2254150758338143836" nodeInfo="nn">
+                <property name="value" nameId="tpee.1068580123138" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="updateBlock" roleId="tp4k.1203083196627" type="tp4k.IsApplicableBlock" typeId="tp4k.1205681243813" id="2254150758338143837" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2254150758338143838" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2254150758338143839" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2254150758338143840" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580123138" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="2254150758338143841" nodeInfo="ng">
+      <property name="path" nameId="1oap.8974276187400029899" value="${module}/icons/verify.png" />
     </node>
   </root>
 </model>
