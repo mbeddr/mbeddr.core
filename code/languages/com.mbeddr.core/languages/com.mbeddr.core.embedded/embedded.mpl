@@ -51,7 +51,7 @@
           <greater-priority-mapping>
             <generator generatorUID="7f02a174-6bab-4ef7-8a81-22b54a82846a(com.mbeddr.core.embedded#6847490852669402965)" />
             <external-mapping>
-              <mapping-node modelUID="r:07662ee6-795f-4e31-90c2-e6b02f94bc78(com.mbeddr.core.embedded.generator.template.main@generator)" nodeID="529332856714534982" />
+              <mapping-node modelUID="r:07662ee6-795f-4e31-90c2-e6b02f94bc78(com.mbeddr.core.embedded.generator.template.main@generator)" nodeID="*" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>

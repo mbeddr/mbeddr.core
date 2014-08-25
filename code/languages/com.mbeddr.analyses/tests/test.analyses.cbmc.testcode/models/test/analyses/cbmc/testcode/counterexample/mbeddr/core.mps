@@ -149,11 +149,6 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="8022057952245434804" resolveInfo="bits" />
       </node>
     </node>
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="8082808502117782575" nodeInfo="ng">
-      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
-      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
-      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
-    </node>
   </root>
   <root type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="20776903375366586" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="std" />

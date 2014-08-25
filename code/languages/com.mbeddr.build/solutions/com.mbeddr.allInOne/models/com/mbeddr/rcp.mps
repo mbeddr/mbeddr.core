@@ -319,6 +319,9 @@
           <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="6168924288978819652" nodeInfo="ng">
             <property name="pattern" nameId="3ior.5248329904288051101" value="log4j.dtd" />
           </node>
+          <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="1152399386257657357" nodeInfo="ng">
+            <property name="pattern" nameId="3ior.5248329904288051112" value="idea.properties" />
+          </node>
         </node>
         <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="6168924288978819653" nodeInfo="ng">
           <node role="parameters" roleId="3ior.9126048691955220774" type="3ior.BuildLayout_CopyFilterReplaceRegex" typeId="3ior.9184644532457106504" id="6168924288978819654" nodeInfo="ng">

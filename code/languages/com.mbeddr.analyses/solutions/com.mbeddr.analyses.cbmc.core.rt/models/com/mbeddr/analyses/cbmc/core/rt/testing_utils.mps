@@ -24,7 +24,7 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7634203028839870183" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="TestingFacade" />
+    <property name="name" nameId="tpck.1169194664001" value="AnalysesCoreTestingFacade" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="7634203028839880822" nodeInfo="igu">
       <property name="name" nameId="tpck.1169194664001" value="checkRobustness" />
       <node role="returnType" roleId="tpee.1068580123133" type="tp2q.ListType" typeId="tp2q.1151688443754" id="7634203028839880823" nodeInfo="in">
