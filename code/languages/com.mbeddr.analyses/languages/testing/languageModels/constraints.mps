@@ -70,8 +70,5 @@
       </node>
     </node>
   </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3342941382617983935" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="o23b.4791280061046135693" resolveInfo="CBMCCounterexampleTest" />
-  </root>
 </model>
 

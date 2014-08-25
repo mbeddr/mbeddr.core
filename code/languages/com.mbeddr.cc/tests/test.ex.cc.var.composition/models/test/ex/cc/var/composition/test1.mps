@@ -129,7 +129,7 @@
             </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="11rw.HookAnnotation" typeId="11rw.6477445114792303109" id="6477445114794282244" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="remove" />
+            <property name="name" nameId="tpck.1169194664001" value="anotherHook" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6477445114794282245" nodeInfo="ng">
@@ -181,24 +181,13 @@
             <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6477445114792547468" resolveInfo="aFunctionWithAHook" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2009878946839943651" nodeInfo="ng">
-          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2009878946839943653" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2009878946839943654" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2009878946839943655" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="TODO @Markus: This line fails. We don't understand the test and how it is different from the previous line" />
-              </node>
-            </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="6477445114794285321" nodeInfo="ng">
+          <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6477445114794285322" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="20" />
           </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentedStatement" typeId="c4fa.7024921229556134722" id="2009878946839941115" nodeInfo="ng">
-          <node role="commentedCode" roleId="vs0r.7024921229556133804" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="6477445114794285321" nodeInfo="ng">
-            <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6477445114794285322" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.2212975673976043696" value="20" />
-            </node>
-            <node role="actual" roleId="yz9a.7755897872837031765" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="6477445114794285976" nodeInfo="ng">
-              <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6477445114794282235" resolveInfo="bFunctionWithAHook" />
-            </node>
+          <node role="actual" roleId="yz9a.7755897872837031765" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="6477445114794285976" nodeInfo="ng">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6477445114794282235" resolveInfo="bFunctionWithAHook" />
           </node>
         </node>
       </node>

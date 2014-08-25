@@ -16,6 +16,7 @@
       <fileset dir="${artifacts.mpsStandalone}/bin">
         <include name="log.xml" />
         <include name="log4j.dtd" />
+        <exclude name="idea.properties" />
       </fileset>
     </copy>
     <copy todir="${build.layout}/bin">
