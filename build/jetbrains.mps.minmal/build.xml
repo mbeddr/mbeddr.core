@@ -39,7 +39,6 @@
         <exclude name="migrationAssistant.jar" />
         <exclude name="mps-execution-configurations/**" />
         <exclude name="mps-java/**" />
-        <exclude name="mps-make/**" />
         <exclude name="mps-trove/**" />
         <exclude name="mpsmigration.jar" />
         <exclude name="samples.jar" />
@@ -68,7 +67,6 @@
       <zipfileset dir="${artifacts.mpsStandalone}/plugins" prefix="mbeddr IDE/plugins">
         <exclude name="migrationAssistant.jar" />
         <exclude name="mps-execution-configurations/**" />
-        <exclude name="mps-java/**" />
         <exclude name="mps-make/**" />
         <exclude name="mps-trove/**" />
         <exclude name="mpsmigration.jar" />
@@ -131,7 +129,6 @@
         <exclude name="migrationAssistant.jar" />
         <exclude name="mps-execution-configurations/**" />
         <exclude name="mps-java/**" />
-        <exclude name="mps-make/**" />
         <exclude name="mps-trove/**" />
         <exclude name="mpsmigration.jar" />
         <exclude name="samples.jar" />
