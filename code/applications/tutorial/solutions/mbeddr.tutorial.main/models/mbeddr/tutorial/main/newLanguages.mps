@@ -15,6 +15,8 @@
   <language namespace="783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)" />
   <language namespace="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" />
   <language namespace="4930e34b-b776-4ccb-b2ff-c6f31789e126(mbeddr.tutorial.extreqref)" />
+  <language namespace="8cb5ab9f-a2c3-418b-a67c-c5690ef7361b(mbeddr.tutorial.layers)" />
+  <language namespace="97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -42,6 +44,8 @@
   <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="3" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="5" implicit="yes" />
   <import index="2yyc" modelUID="r:79803cd7-885d-4e28-8672-973d389d71b6(mbeddr.tutorial.extreqref.structure)" version="-1" implicit="yes" />
+  <import index="49b8" modelUID="r:ae0cd17b-0638-4639-a98b-abf596746b93(mbeddr.tutorial.layers.structure)" version="-1" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7727566415687867284" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SafeHeap" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
@@ -2169,6 +2173,104 @@
         <property name="newlyAdded" nameId="vs0r.671216505796623807" value="0" />
         <property name="ok" nameId="vs0r.671216505796623806" value="0" />
       </node>
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6255755692623459862" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="examples.layers" />
+    <property name="name" nameId="tpck.1169194664001" value="DatabaseStuff" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="49b8.LayerAnnotation" typeId="49b8.6255755692623248319" id="6255755692623462255" nodeInfo="ng" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="6255755692623480048" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="IDatabaseInitializer" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6255755692623480053" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1408947797646_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="6255755692623480060" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="IQuery" />
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6255755692623480071" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="examples.layers" />
+    <property name="name" nameId="tpck.1169194664001" value="PricingEngine" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="49b8.LayerAnnotation" typeId="49b8.6255755692623248319" id="6255755692623480075" nodeInfo="ng">
+      <property name="layer" nameId="49b8.6255755692623248659" value="1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="6255755692623480088" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="IPriceCalculator" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6255755692623480111" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1408947900786_3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6255755692623480119" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="PricingEngine" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="6255755692623480125" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="query" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6255755692623480060" resolveInfo="IQuery" />
+      </node>
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6255755692623480129" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6255755692623459862" resolveInfo="DatabaseStuff" />
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6255755692623480092" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="examples.layers" />
+    <property name="name" nameId="tpck.1169194664001" value="Catalog" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="49b8.LayerAnnotation" typeId="49b8.6255755692623248319" id="6255755692623480096" nodeInfo="ng">
+      <property name="layer" nameId="49b8.6255755692623248659" value="1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="6255755692623480108" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="ICatalogManager" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6255755692623502159" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1408948004637_5" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6255755692623502181" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="CatalogLister" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="6255755692623502186" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="query" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6255755692623480060" resolveInfo="IQuery" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6255755692623502193" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="manager" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6255755692623480108" resolveInfo="ICatalogManager" />
+      </node>
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6255755692623502151" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6255755692623459862" resolveInfo="DatabaseStuff" />
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6255755692623512716" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="examples.layers" />
+    <property name="name" nameId="tpck.1169194664001" value="CatalogUI" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="49b8.LayerAnnotation" typeId="49b8.6255755692623248319" id="6255755692623512720" nodeInfo="ng">
+      <property name="layer" nameId="49b8.6255755692623248659" value="2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6255755692623512733" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="CatalogBrowser" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="6255755692623512736" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="catalog" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6255755692623480108" resolveInfo="ICatalogManager" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="6255755692623567204" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="pricer" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6255755692623480088" resolveInfo="IPriceCalculator" />
+      </node>
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6255755692623541801" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6255755692623480092" resolveInfo="Catalog" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6255755692623554401" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6255755692623459862" resolveInfo="DatabaseStuff" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6255755692623567213" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6255755692623480071" resolveInfo="PricingEngine" />
     </node>
   </root>
 </model>

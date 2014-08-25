@@ -2004,7 +2004,7 @@
             </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Node" typeId="2qld.6720495385597071406" id="1456989016730900748" nodeInfo="ng">
-            <property name="bounds_x" nameId="2qld.6720495385597071501" value="386.0" />
+            <property name="bounds_x" nameId="2qld.6720495385597071501" value="346.0" />
             <property name="bounds_y" nameId="2qld.6720495385597071502" value="84.0" />
             <property name="bounds_width" nameId="2qld.6720495385597071503" value="241.0" />
             <property name="bounds_height" nameId="2qld.6720495385597071504" value="46.0" />
@@ -2012,11 +2012,11 @@
         </node>
         <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="1634970928501131020" nodeInfo="ng">
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Connection" typeId="2qld.2319506556913310852" id="1456989016730900751" nodeInfo="ng" />
-          <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1456989016748194876" nodeInfo="ng">
+          <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="6255755692623717895" nodeInfo="ng">
             <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1634970928501131003" resolveInfo="interpol" />
             <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="1731059994647866541" resolveInfo="store" />
           </node>
-          <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1456989016748194877" nodeInfo="ng">
+          <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="6255755692623717896" nodeInfo="ng">
             <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1634970928501130998" resolveInfo="store" />
             <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="1731059994647814156" resolveInfo="store" />
           </node>
@@ -2025,8 +2025,8 @@
           <property name="name" nameId="tpck.1169194664001" value="store" />
           <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="1731059994647814153" resolveInfo="InMemoryStorage" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Node" typeId="2qld.6720495385597071406" id="1456989016730900624" nodeInfo="ng">
-            <property name="bounds_x" nameId="2qld.6720495385597071501" value="685.0" />
-            <property name="bounds_y" nameId="2qld.6720495385597071502" value="187.0" />
+            <property name="bounds_x" nameId="2qld.6720495385597071501" value="687.0" />
+            <property name="bounds_y" nameId="2qld.6720495385597071502" value="181.0" />
             <property name="bounds_width" nameId="2qld.6720495385597071503" value="241.0" />
             <property name="bounds_height" nameId="2qld.6720495385597071504" value="24.0" />
           </node>
@@ -2175,8 +2175,8 @@
           <property name="name" nameId="tpck.1169194664001" value="nuller" />
           <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="1731059994647781810" resolveInfo="Nuller" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Node" typeId="2qld.6720495385597071406" id="1456989016730912517" nodeInfo="ng">
-            <property name="bounds_x" nameId="2qld.6720495385597071501" value="225.0" />
-            <property name="bounds_y" nameId="2qld.6720495385597071502" value="150.0" />
+            <property name="bounds_x" nameId="2qld.6720495385597071501" value="247.0" />
+            <property name="bounds_y" nameId="2qld.6720495385597071502" value="33.0" />
             <property name="bounds_width" nameId="2qld.6720495385597071503" value="169.0" />
             <property name="bounds_height" nameId="2qld.6720495385597071504" value="24.0" />
           </node>
