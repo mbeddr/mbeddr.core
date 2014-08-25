@@ -737,7 +737,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="4043137993008329858" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="aGlobalVar" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4043137993008329856" nodeInfo="ng">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2254150758337687259" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
@@ -775,6 +775,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="4043137993008345293" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Coutroller" />
       <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="4043137993008346699" resolveInfo="Init" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="2254150758337688017" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="start" />
+      </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="4043137993008346699" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Init" />
       </node>
