@@ -4148,6 +4148,9 @@
         <node role="extends" roleId="kdzh.322010710375805250" type="kdzh.BuildMps_DevKitRef" typeId="kdzh.322010710375805242" id="2553036798617431445" nodeInfo="ng">
           <link role="devkit" roleId="kdzh.322010710375805243" targetNodeId="8628756186118765599" resolveInfo="com.mbeddr.core" />
         </node>
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="7381548626768149604" nodeInfo="ng">
+          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="90a9.4813947565936902895" resolveInfo="de.itemis.mps.editor.diagram" />
+        </node>
       </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="4938592026145682057" nodeInfo="ng">
