@@ -604,6 +604,12 @@
               <link role="req" roleId="75wo.3352153450712436947" targetNodeId="7451725615401720594" resolveInfo="PointsFactor" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4559893981897096194" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" sdf " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="75wo.CfReqModRefWord" typeId="75wo.7717508395849194444" id="2964657368043845275" nodeInfo="ng">
+              <link role="module" roleId="75wo.7717508395849194446" targetNodeId="8119642625901794439" resolveInfo="ArchitecturalComponents" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2964657368043845274" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to calculate the total points." />
             </node>
           </node>

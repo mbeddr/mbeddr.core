@@ -1,1 +1,1 @@
-ant build-online
+ant clean-and-build
