@@ -70,5 +70,26 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="v7ag.4514118643321588318" resolveInfo="IOperationTriggerLike" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7525936201958402473" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="RequiredOperationBinding" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="op" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="calls operation" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7525936201958402476" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="port" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.4491876417845628841" resolveInfo="RequiredPort" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7525936201958402478" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="operation" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.4491876417845484924" resolveInfo="Operation" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7525936201958402474" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="clqz.567269909073788506" resolveInfo="IOutEventBinding" />
+    </node>
+  </root>
 </model>
 

@@ -953,6 +953,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4006257212296812975" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4006257212296812970" resolveInfo="INumeric" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="192349859809494212" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5763383285156300897" resolveInfo="IOrdered" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="595416243537320771" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.basic" />
@@ -1146,46 +1149,12 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
     <property name="name" nameId="tpck.1169194664001" value="ISigned" />
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7664133259366168728" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="UnsafeCastExpression" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unsafe" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="downcast an (incompatible) expression" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128050" resolveInfo="Expression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7664133259366168729" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="expr" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128050" resolveInfo="Expression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7664133259366168730" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="targetType" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128054" resolveInfo="Type" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1129035407343377564" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="hba4.2378878022256321275" resolveInfo="IDeprecatedLangConcept" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8428744930541292309" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
-    <property name="name" nameId="tpck.1169194664001" value="ConstCast" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="constcast" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6035922876555486166" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
     <property name="name" nameId="tpck.1169194664001" value="PtrDiffT" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="ptrdiff_t" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="represents the size of a pointer" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128056" resolveInfo="PrimitiveType" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="333705943706599770" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
-    <property name="name" nameId="tpck.1169194664001" value="VolatileCast" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="volatilecast" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3795266832289055347" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.c99" />
