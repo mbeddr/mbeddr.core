@@ -1043,10 +1043,12 @@
     <node role="contents" roleId="rzjx.7977993180520290882" type="rzjx.TaskDef" typeId="rzjx.7977993180520290857" id="7977993180520291901" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Measurement" />
       <property name="prio" nameId="rzjx.7977993180520290859" value="1" />
+      <property name="wcet" nameId="rzjx.6255755692623108200" value="10" />
     </node>
     <node role="contents" roleId="rzjx.7977993180520290882" type="rzjx.TaskDef" typeId="rzjx.7977993180520290857" id="7977993180520291903" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Kombi" />
       <property name="prio" nameId="rzjx.7977993180520290859" value="2" />
+      <property name="wcet" nameId="rzjx.6255755692623108200" value="100" />
     </node>
     <node role="contents" roleId="rzjx.7977993180520290882" type="wlut.MemoryLayout" typeId="wlut.5485104033530012675" id="5485104033530013776" nodeInfo="ng">
       <node role="regions" roleId="wlut.5485104033530012696" type="wlut.Region" typeId="wlut.5485104033530012680" id="5485104033530015104" nodeInfo="ng">
