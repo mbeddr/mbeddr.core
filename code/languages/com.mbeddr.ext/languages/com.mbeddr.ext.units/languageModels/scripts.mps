@@ -191,20 +191,6 @@
         </node>
       </node>
     </node>
-    <node role="part" roleId="tp33.1177458178889" type="tp33.MigrationScriptPart_Instance" typeId="tp33.1177457850499" id="624957442820741247" nodeInfo="ng">
-      <property name="description" nameId="tp33.1177457972041" value="Delete old UnitContainers" />
-      <link role="affectedInstanceConcept" roleId="tp33.1177457957477" targetNodeId="ym4j.3801772042669047872" resolveInfo="UnitContainer" />
-      <node role="affectedInstanceUpdater" roleId="tp33.1177458005323" type="tp33.MigrationScriptPart_Instance_Updater" typeId="tp33.1177458491964" id="624957442820741249" nodeInfo="nn">
-        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="624957442820741251" nodeInfo="sn">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="624957442820748363" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="624957442820748714" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="tp33.MigrationScriptPart_node" typeId="tp33.1177458237937" id="624957442820748362" nodeInfo="nn" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_DeleteOperation" typeId="tp25.1140133623887" id="624957442820752289" nodeInfo="nn" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node role="part" roleId="tp33.1177458178889" type="tp33.MigrationScriptPart_Instance" typeId="tp33.1177457850499" id="2281067221938012695" nodeInfo="ng">
       <property name="description" nameId="tp33.1177457972041" value="Update UnitDeclaration" />
       <link role="affectedInstanceConcept" roleId="tp33.1177457957477" targetNodeId="ym4j.2078797996880543459" resolveInfo="NamedUnitDeclaration" />
@@ -1041,6 +1027,20 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ReplaceWithNewOperation" typeId="tp25.1139867745658" id="8148561206072360970" nodeInfo="nn">
                 <link role="concept" roleId="tp25.1139867957129" targetNodeId="qlb5.5185104661801317038" resolveInfo="ValExpression" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="part" roleId="tp33.1177458178889" type="tp33.MigrationScriptPart_Instance" typeId="tp33.1177457850499" id="624957442820741247" nodeInfo="ng">
+      <property name="description" nameId="tp33.1177457972041" value="Delete old UnitContainers" />
+      <link role="affectedInstanceConcept" roleId="tp33.1177457957477" targetNodeId="ym4j.3801772042669047872" resolveInfo="UnitContainer" />
+      <node role="affectedInstanceUpdater" roleId="tp33.1177458005323" type="tp33.MigrationScriptPart_Instance_Updater" typeId="tp33.1177458491964" id="624957442820741249" nodeInfo="nn">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="624957442820741251" nodeInfo="sn">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="624957442820748363" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="624957442820748714" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tp33.MigrationScriptPart_node" typeId="tp33.1177458237937" id="624957442820748362" nodeInfo="nn" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_DeleteOperation" typeId="tp25.1140133623887" id="624957442820752289" nodeInfo="nn" />
             </node>
           </node>
         </node>
@@ -2013,8 +2013,25 @@
                       <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.1085404444144943750" />
                     </node>
                   </node>
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7948518525043379050" nodeInfo="nn">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7948518525043306403" resolveInfo="container" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5901937346331800954" nodeInfo="nn">
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="5901937346331871406" nodeInfo="nn">
+                      <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="5901937346331871408" nodeInfo="ng">
+                        <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="5901937346331875546" nodeInfo="nn">
+                          <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="vs0r.7139820346881560230" resolveInfo="Chunk" />
+                        </node>
+                      </node>
+                    </node>
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5901937346333233989" nodeInfo="nn">
+                      <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="5901937346333233990" nodeInfo="nn">
+                        <link role="concept" roleId="tp25.1140138128738" targetNodeId="ym4j.8099136929591173606" resolveInfo="UnitDeclarationRef" />
+                        <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5901937346333233991" nodeInfo="nn">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1791852923077162704" resolveInfo="unitDeclaration" />
+                        </node>
+                      </node>
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5901937346333233992" nodeInfo="nn">
+                        <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.1085404444144943750" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
