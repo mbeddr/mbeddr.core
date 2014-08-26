@@ -26,7 +26,6 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="1oap" modelUID="r:03d44d4c-3d65-461c-9085-0f48e9569e59(jetbrains.mps.lang.resources.structure)" version="0" implicit="yes" />
-  <import index="le9" modelUID="f:java_stub#ebc3846f-fa92-4849-93e4-dec2faf6b78f#org.apache.commons.lang3(com.mbeddr.mpsutil.lib/org.apache.commons.lang3@java_stub)" version="-1" implicit="yes" />
   <root type="nwd3.JComponentContextSection" typeId="nwd3.394049958337067609" id="394049958337997112" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="My Special Section" />
     <node role="componentQuery" roleId="nwd3.394049958337640834" type="nwd3.JComponentFunction" typeId="nwd3.394049958337633375" id="394049958337997113" nodeInfo="ng">
@@ -185,8 +184,8 @@
                 </node>
               </node>
               <node role="rValue" roleId="tpee.1068498886297" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="71640169217132272" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="le9.~StringUtils%dswapCase(java%dlang%dString)%cjava%dlang%dString" resolveInfo="swapCase" />
-                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="le9.~StringUtils" resolveInfo="StringUtils" />
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="v2t1.~StringUtils" resolveInfo="StringUtils" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="v2t1.~StringUtils%dswapCase(java%dlang%dString)%cjava%dlang%dString" resolveInfo="swapCase" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="71640169217141292" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="71640169217140845" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="71640169217132746" resolveInfo="node" />

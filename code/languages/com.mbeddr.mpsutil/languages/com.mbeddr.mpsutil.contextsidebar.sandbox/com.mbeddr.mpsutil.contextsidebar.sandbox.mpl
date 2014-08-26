@@ -34,6 +34,7 @@
     <dependency reexport="false">ebc3846f-fa92-4849-93e4-dec2faf6b78f(com.mbeddr.mpsutil.lib)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
     <dependency reexport="false">28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)</dependency>
+    <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>b1deed8c-68b2-424a-806a-664b47188e43(com.mbeddr.mpsutil.contextsidebar)</usedLanguage>
