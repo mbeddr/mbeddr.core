@@ -20,13 +20,16 @@
     <usedLanguage>53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)</usedLanguage>
     <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
     <usedLanguage>1c5b7d51-0ef3-4332-af36-874466950878(com.mbeddr.doc.expressions)</usedLanguage>
+    <usedLanguage>97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)</usedLanguage>
     <usedLanguage>b574d547-b77e-4fed-9f60-c349c4410765(com.mbeddr.ext.math)</usedLanguage>
     <usedLanguage>fb853ce7-1235-4635-99f2-8ca7447fa202(com.mbeddr.ext.physicalunits)</usedLanguage>
     <usedLanguage>d72d3ee4-7395-438a-9a07-74a38a82cb0e(com.mbeddr.ext.physicalunits.c)</usedLanguage>
+    <usedLanguage>fa13cc63-c476-4d46-9c96-d53670abe7bc(de.itemis.mps.editor.diagram)</usedLanguage>
     <usedLanguage>07b580a3-cb92-4b5d-ab7c-9e2d58b9d602(mbeddr.tutorial.blocks)</usedLanguage>
     <usedLanguage>4930e34b-b776-4ccb-b2ff-c6f31789e126(mbeddr.tutorial.extreqref)</usedLanguage>
     <usedLanguage>32128dbe-9db6-4d05-9eaa-43601c29f276(mbeddr.tutorial.foreach)</usedLanguage>
     <usedLanguage>16ff087a-23cd-49b8-9c5b-a2c20cea9d3e(mbeddr.tutorial.heap)</usedLanguage>
+    <usedLanguage>8cb5ab9f-a2c3-418b-a67c-c5690ef7361b(mbeddr.tutorial.layers)</usedLanguage>
     <usedLanguage>a577a05d-67ad-41db-9547-6e5f0730b85d(mbeddr.tutorial.osconfig)</usedLanguage>
     <usedLanguage>ce2335b7-fcfd-403e-8ace-08dd457fd818(mbeddr.tutorial.osconfig.cimpl)</usedLanguage>
     <usedLanguage>8f78d0b6-57c9-4fa8-86fe-8c30d0d5b15c(mbeddr.tutorial.smtrigger)</usedLanguage>
