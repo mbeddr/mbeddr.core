@@ -705,6 +705,7 @@
     <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="9016963486461264778" nodeInfo="ng">
       <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
       <property name="heapSize" nameId="3ior.927724900262398947" value="2048" />
+      <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="2067439475997557855" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.spawner" />
@@ -3459,6 +3460,9 @@
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="8426159527453554162" nodeInfo="ng">
           <link role="language" roleId="kdzh.322010710375832947" targetNodeId="2515196518058096545" resolveInfo="com.mbeddr.core.cinterpreter" />
         </node>
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="8589448133363768384" nodeInfo="ng">
+          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="90a9.1671983567912265703" resolveInfo="de.slisson.mps.richtext" />
+        </node>
       </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="8334796989975391449" nodeInfo="ng">
@@ -4145,11 +4149,11 @@
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="8597550744273546158" nodeInfo="ng">
           <link role="language" roleId="kdzh.322010710375832947" targetNodeId="8597550744273541878" resolveInfo="com.mbeddr.ext.compositecomponents" />
         </node>
-        <node role="extends" roleId="kdzh.322010710375805250" type="kdzh.BuildMps_DevKitRef" typeId="kdzh.322010710375805242" id="2553036798617431445" nodeInfo="ng">
-          <link role="devkit" roleId="kdzh.322010710375805243" targetNodeId="8628756186118765599" resolveInfo="com.mbeddr.core" />
-        </node>
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="7381548626768149604" nodeInfo="ng">
           <link role="language" roleId="kdzh.322010710375832947" targetNodeId="90a9.4813947565936902895" resolveInfo="de.itemis.mps.editor.diagram" />
+        </node>
+        <node role="extends" roleId="kdzh.322010710375805250" type="kdzh.BuildMps_DevKitRef" typeId="kdzh.322010710375805242" id="2553036798617431445" nodeInfo="ng">
+          <link role="devkit" roleId="kdzh.322010710375805243" targetNodeId="8628756186118765599" resolveInfo="com.mbeddr.core" />
         </node>
       </node>
     </node>
