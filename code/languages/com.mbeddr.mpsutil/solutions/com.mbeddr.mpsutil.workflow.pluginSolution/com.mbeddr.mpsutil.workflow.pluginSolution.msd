@@ -13,6 +13,7 @@
     <dependency reexport="false">06fe08d3-cb67-4405-ab1b-ede102080c22(com.mbeddr.mpsutil.workflow)</dependency>
     <dependency reexport="false">dcacdf27-f972-4e7a-98ee-5c39c2a3e110(com.mbeddr.mpsutil.workflow.rt)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+    <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)</usedLanguage>
