@@ -231,8 +231,8 @@
   </target>	 
 
   <target name="build-and-run-tests" >
- <!--	   <antcall target="test-debugger" />
-   	   <antcall target="test-core" /> -->
+ 	   <antcall target="test-debugger" />
+   	   <antcall target="test-core" /> 
        <antcall target="test-performance" />
    	   <antcall target="test-cc" />
    	   <antcall target="test-ext" />
