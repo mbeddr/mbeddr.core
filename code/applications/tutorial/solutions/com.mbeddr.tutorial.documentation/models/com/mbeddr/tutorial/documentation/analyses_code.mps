@@ -136,7 +136,7 @@
       <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="473952560453959499" nodeInfo="ng">
         <property name="active" nameId="k146.2688792604367947988" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="log_short" />
-        <property name="text" nameId="k146.2688792604367903089" value="&quot;&quot;" />
+        <property name="text" nameId="k146.2688792604367903089" value="s" />
         <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="473952560453962216" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="s" />
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="473952560453962215" nodeInfo="ng">
@@ -2060,17 +2060,20 @@
             <node role="varRef" roleId="q5q6.8985851583396455257" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2496896684167189063" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2496896684167187641" resolveInfo="time" />
             </node>
-            <node role="constraints" roleId="q5q6.8985851583396455261" type="q5q6.BelongsToInterval" typeId="q5q6.8676616451799017117" id="2496896684167190600" nodeInfo="ng">
-              <property name="upperClosed" nameId="q5q6.8676616451799021363" value="true" />
-              <node role="lower" roleId="q5q6.8676616451799021352" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2496896684167190601" nodeInfo="ng">
-                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+            <node role="constraints" roleId="q5q6.8985851583396455261" type="k146.IsInRangeExpression" typeId="k146.6307143892175831839" id="6469013416709405476" nodeInfo="ng">
+              <node role="right" roleId="mj1l.8860443239512128065" type="k146.RangeExpression" typeId="k146.6307143892175911066" id="6469013416709405477" nodeInfo="ng">
+                <property name="rightExclude" nameId="k146.8729447926330623085" value="false" />
+                <property name="leftExclude" nameId="k146.8729447926330623084" value="true" />
+                <node role="left" roleId="k146.6307143892175911067" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6469013416709412125" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+                </node>
+                <node role="right" roleId="k146.6307143892175911068" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6469013416709415810" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+                </node>
               </node>
-              <node role="upper" roleId="q5q6.8676616451799021355" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2496896684167190602" nodeInfo="ng">
-                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.2212975673976043696" value="10" />
-              </node>
-              <node role="var" roleId="q5q6.8676616451799025662" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2496896684167190634" nodeInfo="ng">
+              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6469013416709404970" nodeInfo="ng">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2496896684167187641" resolveInfo="time" />
               </node>
             </node>
