@@ -20,6 +20,7 @@
   <import index="tp4f" modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" implicit="yes" />
   <import index="tgbt" modelUID="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" version="1" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
+  <import index="tprs" modelUID="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" version="-1" implicit="yes" />
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="1909423045450887346" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="PrintEditorAction" />
     <property name="caption" nameId="tp4k.1205250923097" value="Print Editor" />
@@ -489,5 +490,16 @@
     </node>
   </root>
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="1909423045451466188" nodeInfo="ng" />
+  <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="8750715244316967862" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="PrintGroup" />
+    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="8750715244316968129" nodeInfo="ng">
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="8750715244316968134" nodeInfo="ng">
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="1909423045450887346" resolveInfo="PrintEditorAction" />
+      </node>
+    </node>
+    <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="8750715244316968138" nodeInfo="ng">
+      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.885275291024029562" resolveInfo="View" />
+    </node>
+  </root>
 </model>
 
