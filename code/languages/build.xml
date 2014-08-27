@@ -284,6 +284,10 @@
   <target name="test-core">	  
 	  <ant antfile="${com.mbeddr.core.aLibrary-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.core.aLibrary-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />
+	  <antcall target="make-tests">
+	      <param name="make-tests.dir" value="${com.mbeddr.core.working-dir}/tests/aLibrary/source_gen/aLibrary/lib"/>
+	  </antcall>
+	  
 	  
 	  <ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />
