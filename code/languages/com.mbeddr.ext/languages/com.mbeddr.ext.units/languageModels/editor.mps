@@ -16,6 +16,7 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="33" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8337440621611356313" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qlb5.8337440621611212272" resolveInfo="AnnotatedExpression" />
@@ -157,7 +158,7 @@
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qlb5.8337440621611400980" resolveInfo="AnnotatedType" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8337440621611407820" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8337440621611407827" nodeInfo="ng">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qlb5.8337440621611401034" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.7336544617004013388" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8337440621611407823" nodeInfo="nn" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8337440621611407839" nodeInfo="nn">
@@ -471,8 +472,8 @@
                     <link role="concept" roleId="tp25.1140138128738" targetNodeId="qlb5.8337440621611400980" resolveInfo="AnnotatedType" />
                     <node role="leftExpression" roleId="tp25.1140138123956" type="tpc2.CellActionMap_FunctionParm_selectedNode" typeId="tpc2.1402906326895675325" id="1958770732438427807" nodeInfo="nn" />
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1958770732438429886" nodeInfo="nn">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="qlb5.8337440621611401034" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6709190573605338244" nodeInfo="nn">
+                    <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7336544617004013388" />
                   </node>
                 </node>
               </node>
@@ -495,8 +496,8 @@
                     <link role="concept" roleId="tp25.1140138128738" targetNodeId="qlb5.8337440621611400980" resolveInfo="AnnotatedType" />
                     <node role="leftExpression" roleId="tp25.1140138123956" type="tpc2.CellActionMap_FunctionParm_selectedNode" typeId="tpc2.1402906326895675325" id="1958770732438430267" nodeInfo="nn" />
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1958770732438430268" nodeInfo="nn">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="qlb5.8337440621611401034" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6709190573605342078" nodeInfo="nn">
+                    <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7336544617004013388" />
                   </node>
                 </node>
               </node>
