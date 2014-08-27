@@ -1314,6 +1314,9 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="va_list" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="va_list to variable length lists" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128056" resolveInfo="PrimitiveType" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6469013416708123484" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="892278390190631052" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ISelfTypingInBinaryExpression" />
