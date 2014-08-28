@@ -8,6 +8,7 @@
   </models>
   <sourcePath />
   <usedLanguages>
+    <usedLanguage>3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)</usedLanguage>
     <usedLanguage>36a565f1-3fa0-42d6-baac-f87e209c9789(com.mbeddr.ext.components.mock)</usedLanguage>
     <usedLanguage>f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)</usedLanguage>
   </usedLanguages>
