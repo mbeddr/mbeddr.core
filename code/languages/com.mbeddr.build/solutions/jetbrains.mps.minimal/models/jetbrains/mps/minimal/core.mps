@@ -129,9 +129,6 @@
               <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093408989" nodeInfo="ng">
                 <property name="pattern" nameId="3ior.5248329904288051112" value="mps-java/**" />
               </node>
-              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093409298" nodeInfo="ng">
-                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-make/**" />
-              </node>
               <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093409609" nodeInfo="ng">
                 <property name="pattern" nameId="3ior.5248329904288051112" value="mps-trove/**" />
               </node>
@@ -293,9 +290,6 @@
               </node>
               <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412545" nodeInfo="ng">
                 <property name="pattern" nameId="3ior.5248329904288051112" value="mps-execution-configurations/**" />
-              </node>
-              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412546" nodeInfo="ng">
-                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-java/**" />
               </node>
               <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412547" nodeInfo="ng">
                 <property name="pattern" nameId="3ior.5248329904288051112" value="mps-make/**" />
@@ -681,9 +675,6 @@
               </node>
               <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412611" nodeInfo="ng">
                 <property name="pattern" nameId="3ior.5248329904288051112" value="mps-java/**" />
-              </node>
-              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412612" nodeInfo="ng">
-                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-make/**" />
               </node>
               <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412613" nodeInfo="ng">
                 <property name="pattern" nameId="3ior.5248329904288051112" value="mps-trove/**" />

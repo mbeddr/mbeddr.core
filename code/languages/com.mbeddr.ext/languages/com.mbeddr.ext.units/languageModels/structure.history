@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="-1" />
+    </dependencies>
+    <rename id="qlb5.385804577579859948" type="CHILD" from="substitution" to="substitutions" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="0" />
+    </dependencies>
+    <rename id="qlb5.8337440621611267904" type="CHILD" from="units" to="contents" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="1" />
+    </dependencies>
+    <rename id="qlb5.8337440621611267900" type="CONCEPT" from="UnitDeclarations" to="UnitContainer" />
+  </StructureModification>
+</history>
+

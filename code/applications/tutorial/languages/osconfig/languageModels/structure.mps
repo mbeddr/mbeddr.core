@@ -38,6 +38,10 @@
       <property name="name" nameId="tpck.1169194664001" value="prio" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6255755692623108200" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="wcet" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7977993180520290858" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7977993180520290854" resolveInfo="IOSConfigContents" />
     </node>
