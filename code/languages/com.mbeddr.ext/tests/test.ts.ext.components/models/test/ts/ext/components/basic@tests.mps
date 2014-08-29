@@ -242,7 +242,7 @@
           <property name="name" nameId="tpck.1169194664001" value="I" />
           <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="7603351357795625292" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="op" />
-            <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7603351357795625293" nodeInfo="ng">
+            <node role="returnType" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7603351357795625293" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
@@ -615,7 +615,7 @@
           <property name="name" nameId="tpck.1169194664001" value="ClientSpecificCounter" />
           <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6165117700225830708" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="count" />
-            <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6165117700225830709" nodeInfo="ng">
+            <node role="returnType" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6165117700225830709" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
@@ -633,7 +633,7 @@
           <property name="name" nameId="tpck.1169194664001" value="ObserverIf" />
           <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="3457272138385338541" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="op" />
-            <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3457272138385338542" nodeInfo="ng">
+            <node role="returnType" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3457272138385338542" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
@@ -644,7 +644,7 @@
           </node>
           <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="3457272138385408505" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="notify" />
-            <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3457272138385408506" nodeInfo="ng">
+            <node role="returnType" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3457272138385408506" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
@@ -659,7 +659,7 @@
           <property name="name" nameId="tpck.1169194664001" value="Interface2" />
           <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="3457272138385338547" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="op1" />
-            <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3457272138385338548" nodeInfo="ng">
+            <node role="returnType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3457272138385338548" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
@@ -670,7 +670,7 @@
           </node>
           <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="3457272138385408507" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="op2" />
-            <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3457272138385408509" nodeInfo="ng">
+            <node role="returnType" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3457272138385408509" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
@@ -980,7 +980,7 @@
           <property name="name" nameId="tpck.1169194664001" value="Intf" />
           <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="1539255704409481844" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="doStuff" />
-            <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1539255704409481845" nodeInfo="ng">
+            <node role="returnType" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1539255704409481845" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
@@ -2187,14 +2187,14 @@
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
-            <node role="parameters" roleId="v7ag.4491876417845683832" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="6799477538692629937" nodeInfo="ng">
+            <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="6799477538692629937" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="a" />
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6799477538692629936" nodeInfo="ng">
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
             </node>
-            <node role="parameters" roleId="v7ag.4491876417845683832" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="6799477538692629971" nodeInfo="ng">
+            <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="6799477538692629971" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="b" />
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6799477538692629972" nodeInfo="ng">
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
