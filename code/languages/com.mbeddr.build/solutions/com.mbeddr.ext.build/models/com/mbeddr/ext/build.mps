@@ -211,9 +211,6 @@
       <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="9141467591178604523" nodeInfo="ng">
         <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="6247780594427554525" resolveInfo="test.ex.ext.statemachine" />
       </node>
-      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="9141467591178602920" nodeInfo="ng">
-        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="6247780594427554535" resolveInfo="test.ex.ext.physicalunits.c" />
-      </node>
       <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="9141467591178599266" nodeInfo="ng">
         <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="8597550744273547589" resolveInfo="test.ex.ext.compositeComponents" />
       </node>
@@ -265,25 +262,6 @@
               <property name="head" nameId="3ior.8618885170173601779" value="test.ex.ext.statemachine" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6247780594427554997" nodeInfo="nn">
                 <property name="head" nameId="3ior.8618885170173601779" value="statemachine.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="6247780594427554535" nodeInfo="ng">
-        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="uuid" nameId="kdzh.322010710375892619" value="985139fa-26d8-4f35-b671-8ad039ab0965" />
-        <property name="name" nameId="tpck.1169194664001" value="test.ex.ext.physicalunits.c" />
-        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
-        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources and tests" />
-        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6247780594427555002" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427554923" resolveInfo="mbeddr.ext" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6247780594427555003" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6247780594427555004" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="test.ex.ext.physicalunits.c" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6247780594427555005" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="c.msd" />
               </node>
             </node>
           </node>
@@ -592,34 +570,12 @@
       <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="9141467591178606068" nodeInfo="ng">
         <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="9141467591178606107" resolveInfo="test.ts.ext.components" />
       </node>
-      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="9141467591178606070" nodeInfo="ng">
-        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="9141467591178606102" resolveInfo="test.ts.ext.physicalunits.c" />
-      </node>
       <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="2230076513939915309" nodeInfo="ng">
         <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="2230076513939908733" resolveInfo="test.ts.ext.units" />
       </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="9141467591178606101" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.ext.ts.tests" />
-      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="9141467591178606102" nodeInfo="ng">
-        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="uuid" nameId="kdzh.322010710375892619" value="ad0a69f0-b863-4e0e-b8b4-4b0e4ceca144" />
-        <property name="name" nameId="tpck.1169194664001" value="test.ts.ext.physicalunits.c" />
-        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
-        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources and tests" />
-        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="9141467591178606103" nodeInfo="ng">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="9141467591178606027" resolveInfo="mbeddr.ext" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9141467591178606104" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9141467591178606105" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="test.ts.ext.physicalunits.c" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9141467591178606106" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="c.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="9141467591178606107" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="65b00399-c5df-4987-baee-fe04224907ff" />
@@ -669,9 +625,6 @@
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.ext.tests" />
       <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="9141467591178606120" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="9141467591178606107" resolveInfo="test.ts.ext.components" />
-      </node>
-      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="9141467591178606122" nodeInfo="nn">
-        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="9141467591178606102" resolveInfo="test.ts.ext.physicalunits.c" />
       </node>
       <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="5827708969619082170" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="2230076513939908733" resolveInfo="test.ts.ext.units" />
