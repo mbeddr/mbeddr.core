@@ -31,7 +31,6 @@
   <import index="as9o" modelUID="f:java_stub#3f233e7f-b8a6-46d2-a57f-795d56775243#org.jetbrains.annotations(Annotations/org.jetbrains.annotations@java_stub)" version="-1" />
   <import index="ec5l" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" version="-1" />
   <import index="b2mh" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" version="-1" />
-  <import index="lk2n" modelUID="r:da044acc-81a4-4fd8-b89a-91df4cfe6214(jetbrains.mps.execution.api.commands)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
@@ -2080,7 +2079,7 @@
           <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="1113553024393041487" nodeInfo="nn">
             <node role="expression" roleId="tpee.1081516765348" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1113553024393041461" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x3yd.2812390151934842694" resolveInfo="isCommandLineProgramInstalled" />
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x3yd.2812390151934361386" resolveInfo="CommandLineToolsValidator" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x3yd.2812390151934361386" resolveInfo="DebugValidator" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2812390151934842777" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="gcc" />
               </node>
@@ -2104,7 +2103,7 @@
             </node>
             <node role="condition" roleId="tpee.1206060619838" type="tpee.NotExpression" typeId="tpee.1081516740877" id="1113553024393199384" nodeInfo="nn">
               <node role="expression" roleId="tpee.1081516765348" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1113553024393199385" nodeInfo="nn">
-                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x3yd.2812390151934361386" resolveInfo="CommandLineToolsValidator" />
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x3yd.2812390151934361386" resolveInfo="DebugValidator" />
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x3yd.2812390151934842694" resolveInfo="isCommandLineProgramInstalled" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1113553024393199386" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="gdb" />
@@ -2130,7 +2129,7 @@
             </node>
             <node role="condition" roleId="tpee.1206060619838" type="tpee.NotExpression" typeId="tpee.1081516740877" id="1113553024393199389" nodeInfo="nn">
               <node role="expression" roleId="tpee.1081516765348" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1113553024393199390" nodeInfo="nn">
-                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x3yd.2812390151934361386" resolveInfo="CommandLineToolsValidator" />
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x3yd.2812390151934361386" resolveInfo="DebugValidator" />
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x3yd.2812390151934842694" resolveInfo="isCommandLineProgramInstalled" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1113553024393199391" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="make" />

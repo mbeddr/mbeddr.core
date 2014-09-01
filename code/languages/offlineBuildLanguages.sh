@@ -1,0 +1,1 @@
+ant clean-and-build

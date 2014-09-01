@@ -18,7 +18,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="mock" />
     <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/mock.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="mock" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="component with expecations" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="component with expectations" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="v7ag.4491876417845474761" resolveInfo="Component" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8446926885106775907" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.4474148880361719194" resolveInfo="IWatchablesProviderContext" />

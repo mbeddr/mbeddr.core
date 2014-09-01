@@ -1582,7 +1582,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684167202747" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to belong to the desired intervals. In the first nondet assignment we use an explicit construct to specify the interval, in the second assignment we use classical C inequalities. " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to belong to the desired intervals. In the first nondet assignment we use an explicit construct to specify the interval, in the second assignment we use classical C inequalities. When we use the 'in range expression' (as opposed to explicit inequalities), then the harness is generated in an optimal manner and this increases the running efficiency of CBMC." />
               </node>
             </node>
           </node>

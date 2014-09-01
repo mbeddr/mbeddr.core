@@ -152,6 +152,7 @@
     <property name="name" nameId="tpck.1169194664001" value="FunctionPrototype" />
     <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/function.jpg" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a function prototype" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="function prototype" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6437088627575723997" resolveInfo="FunctionSignature" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7123462210703020139" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7123462210702867708" resolveInfo="ILOCCountProvider" />
