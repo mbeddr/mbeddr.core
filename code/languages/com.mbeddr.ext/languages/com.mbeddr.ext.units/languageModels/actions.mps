@@ -545,7 +545,7 @@
             </node>
           </node>
           <node role="matchingText" roleId="tpdg.1177498166690" type="tpdg.SideTransform_SimpleString" typeId="tpdg.1196433923911" id="3311850549210921479" nodeInfo="nn">
-            <property name="text" nameId="tpdg.1196433942569" value="{" />
+            <property name="text" nameId="tpdg.1196433942569" value="/" />
           </node>
         </node>
       </node>

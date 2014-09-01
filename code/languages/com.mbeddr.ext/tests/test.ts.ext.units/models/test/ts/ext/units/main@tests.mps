@@ -792,7 +792,7 @@
             </node>
           </node>
           <node role="init" roleId="x27k.2771264470558526601" type="mj1l.BitwiseRightShiftExpression" typeId="mj1l.9013371069685947728" id="8414886092092081183" nodeInfo="ng">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8414886092092081184" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8414886092095445191" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
