@@ -59,7 +59,7 @@
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="9020927825193691657" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="A-020-Variability" />
+    <property name="name" nameId="tpck.1169194664001" value="A-020-VariabilityVerification" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="qsic.2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="9020927825193691658" nodeInfo="ng">

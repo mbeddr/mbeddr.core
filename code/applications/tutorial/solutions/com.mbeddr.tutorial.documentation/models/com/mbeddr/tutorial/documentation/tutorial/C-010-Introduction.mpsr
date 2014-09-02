@@ -5,6 +5,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
+  <import index="pw5g" modelUID="r:f04a2561-d8a4-47ce-a586-47460c3c18ed(com.mbeddr.tutorial.documentation.analyses)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="6403595147461065811" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-010-Introduction" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
@@ -1090,127 +1091,19 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2564556814935137278" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137279" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137280" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="To be able to use the verifications, you have to install a set of external tools:  \\begin{itemize}   \\item    \\item    \\item You have to install \\ic{CBMC} from \\ic{http://www.cprover.org/cbmc/} to be able   to verify component protocols and contracts. \\end{itemize}  " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="To be able to use the verifications, you have to install a set of external tools as explained in " />
               </node>
-            </node>
-          </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="2564556814935137289" nodeInfo="ng">
-            <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="2564556814935137364" nodeInfo="ng">
-              <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2564556814935137365" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137366" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137367" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="You have to install " />
-                  </node>
-                  <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814935137378" nodeInfo="ng">
-                    <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137379" nodeInfo="ng">
-                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137380" nodeInfo="ng">
-                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="NuSMV" />
-                      </node>
-                    </node>
-                  </node>
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137377" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=" from " />
-                  </node>
-                  <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814935137387" nodeInfo="ng">
-                    <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137388" nodeInfo="ng">
-                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137389" nodeInfo="ng">
-                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://nusmv.fbk.eu" />
-                      </node>
-                    </node>
-                  </node>
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137386" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to be able to verify state machines." />
-                  </node>
-                </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="3156541402775349751" nodeInfo="ng">
+                <link role="target" roleId="2c95.3350625596580108719" targetNodeId="pw5g.9020927825193793094" resolveInfo="formal_verification" />
               </node>
-            </node>
-            <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="2564556814935137472" nodeInfo="ng">
-              <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2564556814935137473" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137474" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137475" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="You have to install " />
-                  </node>
-                  <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814935137572" nodeInfo="ng">
-                    <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137573" nodeInfo="ng">
-                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137574" nodeInfo="ng">
-                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="Yices1" />
-                      </node>
-                    </node>
-                  </node>
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137571" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=" from " />
-                  </node>
-                  <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814935137581" nodeInfo="ng">
-                    <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137582" nodeInfo="ng">
-                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137583" nodeInfo="ng">
-                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://yices.csl.sri.com/" />
-                      </node>
-                    </node>
-                  </node>
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137580" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to be able to verify decision tables and feature models. Note that there is also a " />
-                  </node>
-                  <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814935137594" nodeInfo="ng">
-                    <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137595" nodeInfo="ng">
-                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137596" nodeInfo="ng">
-                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="Yices 2" />
-                      </node>
-                    </node>
-                  </node>
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137593" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=", which does " />
-                  </node>
-                  <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="2564556814935137611" nodeInfo="ng">
-                    <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137612" nodeInfo="ng">
-                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137613" nodeInfo="ng">
-                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="not" />
-                      </node>
-                    </node>
-                  </node>
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137610" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=" work!" />
-                  </node>
-                </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3156541402775349750" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
               </node>
-            </node>
-          </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2564556814935137295" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="empty_1382098200890_19" />
-          </node>
-          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2564556814935137308" nodeInfo="ng">
-            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137309" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137310" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="For each of these tools, the exectuables have to be on the path! You can verify that they are by simply typing " />
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="3156541402775349770" nodeInfo="ng">
+                <link role="target" roleId="2c95.3350625596580108719" targetNodeId="pw5g.9020927825193691658" resolveInfo="analyzing_variability" />
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814935137326" nodeInfo="ng">
-                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137327" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137328" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="nusmv" />
-                  </node>
-                </node>
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137325" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=", " />
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814935137335" nodeInfo="ng">
-                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137336" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137337" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="yices" />
-                  </node>
-                </node>
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137334" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and/or " />
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814935137348" nodeInfo="ng">
-                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137349" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137350" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="cbmc" />
-                  </node>
-                </node>
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935137347" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" somewhere in a console. The respective tools should start, complaining that they need some kind of input to do useful work." />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3156541402775349769" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="  " />
               </node>
             </node>
           </node>
@@ -3273,6 +3166,12 @@
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="7959141310100659933" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7959141310100646277" resolveInfo="C-020-Basics" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3156541402775349788" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="pw5g.9020927825193691657" resolveInfo="A-020-Variability" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3156541402775349763" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="pw5g.9020927825193793093" resolveInfo="A-030-FormalVerification" />
     </node>
   </root>
 </model>

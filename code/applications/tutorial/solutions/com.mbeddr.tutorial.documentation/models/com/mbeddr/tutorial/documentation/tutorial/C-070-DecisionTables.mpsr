@@ -6,6 +6,7 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="yes" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
+  <import index="pw5g" modelUID="r:f04a2561-d8a4-47ce-a586-47460c3c18ed(com.mbeddr.tutorial.documentation.analyses)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="7979854108176280683" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-070-DecisionTables" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="7" />
@@ -249,107 +250,20 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176480985" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176480986" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176480987" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="So far so good. The test case is fine. However, as with many tests, this one only tests part of the overall functionality. And in fact, you may have noticed that an error lurks inside our decision table: for 2000 m of altitude, the table is non-deterministic: both conditions in the column header work! We could find this problem with more tests, or we could use formal verification. Let's use the latter approach. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="So far so good. The test case is fine. However, as with many tests, this one only tests part of the overall functionality. And in fact, you may have noticed that an error lurks inside our decision table: for 2000 m of altitude, the table is non-deterministic: both conditions in the column header work! We could find this problem with more tests, or we could use formal verification as described in " />
             </node>
-          </node>
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176483797" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176483798" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176483799" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To do so, add the " />
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="3156541402775349637" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="pw5g.4315280228446701717" resolveInfo="decision_tables" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176489408" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176489409" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176489410" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.analyses.dectab" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176489407" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit. Go back to the decision table and select the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176500617" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176500618" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176500619" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Toggle Verifiable" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176500616" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" intention. Marking the table this way enables the verification functionality and also reports errors in case the table uses expressions that cannot be verified. For example, if you were to use a non-linear expression " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176506230" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176506231" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176506232" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="(tp-&gt;alt * tp-&gt;alt) &gt; 2000 m2" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176506229" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" as a condition, verification would not work. Our table does not have this problem, so we can now select " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176511847" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176511848" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176511849" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Verify Decision Table" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176511846" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" from the table's context menu." />
-            </node>
-          </node>
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176517491" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176517492" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176517493" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Below is the result we get. First, the checker reports that the table is complete, i.e. that all possible value combinations are taken care of. However, it also reports failires because the cells (1,1) and (2,1) are inconsistent. The problem is -- as we expect -- related to the altitude being 2000 m, because in this case it is not decidable which alternative should be used. " />
-            </node>
-          </node>
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="7979854108176520347" nodeInfo="ng">
-          <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
-          <property name="text" nameId="2c95.8730648445434044906" value="SUCCESS: Table complete.&#10;FAIL: cells (1, 1) and (2, 1) are inconsistent.&#10;&#9;tp.x : 0&#10;&#9;tp.y : 0&#10;&#9;tp.speed : 0&#10;&#9;tp.timestamp : 0&#10;&#9;tp.id : 0&#10;&#9;tp.alt : 2000&#10;FAIL: cells (1, 2) and (2, 2) are inconsistent.&#10;&#9;tp.x : 0&#10;&#9;tp.y : 0&#10;&#9;tp.speed : 150&#10;&#9;tp.timestamp : 0&#10;&#9;tp.id : 0&#10;&#9;tp.alt : 2000" />
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176528803" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176528804" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176528805" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can fix the problem for example by changing the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176534468" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176534469" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176534470" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="tp-&gt;alt &lt;= 2000 m" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176534467" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176540077" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176540078" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176540079" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="tp-&gt;alt &lt; 2000 m" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176540076" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Running the verification again results in this:" />
-            </node>
-          </node>
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="7979854108176540089" nodeInfo="ng">
-          <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
-          <property name="text" nameId="2c95.8730648445434044906" value="SUCCESS: Table complete.&#10;OK: All cells are consistent" />
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176551369" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176551370" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176551371" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="==&gt; This part of the tutorial only provided a few examples of Verifying Decision Tables. For a full discussion of Verifying Decision Tables see Section xxx." />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3156541402775349636" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
             </node>
           </node>
         </node>
       </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3156541402775349633" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="pw5g.9020927825193793093" resolveInfo="A-030-FormalVerification" />
     </node>
   </root>
 </model>
