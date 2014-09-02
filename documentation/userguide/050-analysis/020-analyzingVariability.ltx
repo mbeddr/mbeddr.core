@@ -1,0 +1,122 @@
+\chapter{Analyzing Variability}
+\label{analyzing_variability}
+
+
+mbeddr allows the defition of product lines with the help of feature models, configuration models and attaching advanced presence conditions to the produced artefacts (e.g. programs code, requirements). Feature
+
+\begin{itemize}
+\item \emph{Feature models:} are used to define the variation space for the product line - the so called 200\% configuration. They define which features exist, how are they arranged in a feature-sub-feature hierarchy, what are the relations between a feature and its sub-features (e.g. are sub-features mandatory, optional, or is a sub-feature excluding others), or what are the relations among different features in the hierarchy (e.g. a feature A might require or conflict with another feature B).
+\item \emph{Configuration models:} are used to define single configurations of the product by selecting a subset of features from a feature model. 
+\item \emph{Presence conditions:} are logical expressions based on features that define when an artefact (e.g. a piece of code) is included. 
+\end{itemize}
+
+Based on the above content, mbeddr provides the following analyses:
+
+\begin{itemize}
+\item \emph{FM-Analyzer} checks whether a feature model can be instantiated (i.e. whether there exists configuration models that conform to the feature model). Examples of inconsistencies are mandatory features that conflict with each other, or features that require other features but their parents cannot be parts of the same configuration model.
+\item \emph{CM-Analyzer} checks whether a configuration model is consistent with the feature model that it configures. Examples of inconsistencies are when not all mandatory features are selected, when conflicting features are selected.
+\item \emph{Modules-Analyzer} checks whether a mbeddr-C program whose parts are annotated with presence conditions is consistent. Examples of inconsistencies are when a declaration is annotated with a presence condition  and there exist calls to this function that are not annotated with a presence condition - in this case the function is called when the function itself is not included in the generated code and thereby a compile error will be caused.
+\end{itemize}
+
+\section{FM-Analyzer}
+\label{analyzing_variability.fm_analyzer}
+
+
+In the figure below we present an example of a feature model defined in mbeddr.
+
+\begin{figure}[h]
+\includegraphics[width=0.9\columnwidth]{figures/analyses/fm_example.png}
+\caption{A feature model contains features and relations among them.}
+\label{C-000-Overview.analyzing_variability.fm_analyzer.fm_example}
+\end{figure}
+
+
+The FM-Analyzer can be started by right-clicking on the feature model node and selecting the corresponding menu entry. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.6\columnwidth]{figures/analyses/fm_analyzer_start.png}
+\end{center}
+\caption{One-click starting of the FM-Analyzer.}
+\label{C-000-Overview.analyzing_variability.fm_analyzer.fm_analyzer}
+\end{figure}
+
+
+FM-Analyzer will open a window with the result of the analysis. In the case when the analysis fails, FM-Analyzer provides an explanation about the cause of failure. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\columnwidth]{figures/analyses/fm_analyzer_results.png}
+\end{center}
+\caption{Results provided by the FM-Analyzer. The failure is caused by the fact that the feature 'NoDebug' cannot be selected in any configuration since it conflicts with the 'Optimization' feature which is mandatory. }
+\label{C-000-Overview.analyzing_variability.fm_analyzer.fm_analyzer_results}
+\end{figure}
+
+
+\section{CM-Analyzer}
+\label{analyzing_variability.cm_analyzer}
+
+
+In the figure below we present an example of a configuration model defined in mbeddr. Each configuration model contains a subset of features from the feature model it configures.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.9\columnwidth]{figures/analyses/cm_example.png}
+\end{center}
+\caption{A configuration model contains a sub-set of features.}
+\label{C-000-Overview.analyzing_variability.cm_analyzer.cm_example}
+\end{figure}
+
+
+The CM-Analyzer can be started by right-clicking on the feature model node and selecting the corresponding menu entry. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/analyses/cm_analyzer_start.png}
+\end{center}
+\caption{One-click starting of the CM-Analyzer.}
+\label{C-000-Overview.analyzing_variability.cm_analyzer.cm_analyzer}
+\end{figure}
+
+
+CM-Analyzer will open a window with the result of the analysis. In the case when the analysis fails, CM-Analyzer provides an explanation about the cause of failure. 
+
+\begin{figure}[h]
+\includegraphics[width=1.0\columnwidth]{figures/analyses/cm_analyzer_results.png}
+\caption{Results provided by the CM-Analyzer. The failure is caused by the fact that the feature 'Communication' cannot have both sub-features 'CAN' and 'FlexRay' at the same time.}
+\label{C-000-Overview.analyzing_variability.cm_analyzer.cm_analyzer_results}
+\end{figure}
+
+
+\section{Modules-Analyzer}
+\label{analyzing_variability.modules_analyzer}
+
+
+In the figure below we present an example of an implementation module in mbeddr which has attached presence conditions to several entities. 
+
+\begin{figure}[h]
+\includegraphics[width=1.0\columnwidth]{figures/analyses/module_example.png}
+\caption{An implementation module with annotated presence conditions.}
+\label{C-000-Overview.analyzing_variability.modules_analyzer.module_example}
+\end{figure}
+
+
+The Modules-Analyzer can be started by right-clicking on the feature model node and selecting the corresponding menu entry. It checks whether the implementation module is consistent with respect to the feature model. Example of inconsistencies are cases when for a function (or variable) declaration we have a presence condition, however, for the calls (or references) to this function (or variable) we do not have any presence condition. In this case, if the code generation is performed, we can get a compile error.  
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/analyses/module_analyzer_start.png}
+\end{center}
+\caption{One-click starting of the Module-Analyzer.}
+\label{C-000-Overview.analyzing_variability.modules_analyzer.module_analyzer}
+\end{figure}
+
+
+Module-Analyzer will open a window with the results of the analysis. In the case when the analysis fails, Mo-Analyzer provides an explanation about the cause of failure by giving a possible configuraton (selecting concrete features) that would cause the failure. 
+
+\begin{figure}[h]
+\includegraphics[width=1.0\columnwidth]{figures/analyses/module_analyzer_results.png}
+\caption{Results provided by the Module-Analyzer. The failure is caused by the fact that the function 'log\_debug\_info' has presence condition 'MinimumDebug' and the caller of this function does not have annotated any presence condition.}
+\label{C-000-Overview.analyzing_variability.modules_analyzer.module_analyzer_results}
+\end{figure}
+

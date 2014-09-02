@@ -1,0 +1,10 @@
+\part{Formal Analyses}
+\label{analyses_introduction}
+
+
+Besides increasing the programmers productivity, domain specific languages allow the definition of advanced analyses. In mbeddr we have integrated different formal verification techniques aiming that they are used on a continuous basis in the everyday work of practicing engineers. As of today, we have implemented two different kinds of analyses:
+
+\begin{itemize}
+\item Analyses of variability: mbeddr features advanced support for the definition of product lines using feature models, configuration models and annotation of artefacts with advanced presence conditions. We analyze the consistency of feature models, of configuration models and of the annotated artefacts. To do this we use the SAT4J SAT-solver \url{http://www.sat4j.org/}.
+\item Formal verification of mbeddr-C programs: once programs are written in mbeddr, we enable developers to use advanced formal verification techniques. Our focus is on user-friendlyness of the verification. Besides analyzing the C code we support the analyses of all mbeddr-C extensions.
+\end{itemize}
