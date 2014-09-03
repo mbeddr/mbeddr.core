@@ -611,12 +611,8 @@
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="2407073772535352066" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="5817193010778052777" nodeInfo="nn">
-          <property name="flag" nameId="tpc2.1186414551515" value="false" />
-        </node>
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ReadOnlyStyleClassItem" typeId="tpc2.795210086017940429" id="5817193010778056878" nodeInfo="ng">
-          <property name="flag" nameId="tpc2.1186414551515" value="true" />
-        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="5817193010778052777" nodeInfo="nn" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ReadOnlyStyleClassItem" typeId="tpc2.795210086017940429" id="5817193010778056878" nodeInfo="ng" />
       </node>
     </node>
     <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6496796267915716834" nodeInfo="ng">

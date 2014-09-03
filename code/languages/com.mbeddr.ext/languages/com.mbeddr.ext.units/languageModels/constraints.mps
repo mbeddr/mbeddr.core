@@ -21,7 +21,7 @@
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="688756255686456177" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="7705667014564315527" nodeInfo="nn">
             <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7705667014564315796" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.7705667014564150327" resolveInfo="getUnitReference_Unit" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.7705667014564150327" resolveInfo="getVisibleUnitsFrom" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ndfg.7705667014564139800" resolveInfo="ScopingHelper" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp1t.ConceptParameter_ReferentSearchScope_enclosingNode" typeId="tp1t.1148934636683" id="7705667014564317569" nodeInfo="nn" />
             </node>
@@ -96,22 +96,6 @@
             <node role="condition" roleId="tpee.1068580123160" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="7948518525050176931" nodeInfo="nn">
               <node role="rightExpression" roleId="tpee.1081773367579" type="tp1t.ConstraintFunctionParameter_oldReferentNode" typeId="tp1t.1163202694127" id="7948518525050176964" nodeInfo="nn" />
               <node role="leftExpression" roleId="tpee.1081773367580" type="tp1t.ConstraintFunctionParameter_newReferentNode" typeId="tp1t.1163202640154" id="7948518525050176483" nodeInfo="nn" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8148561206060522214" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="qlb5.8337440621611267903" resolveInfo="Unit" />
-    <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="8148561206060558176" nodeInfo="ng">
-      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-      <node role="propertyValidator" roleId="tp1t.1212097481299" type="tp1t.ConstraintFunction_PropertyValidator" typeId="tp1t.1212096972063" id="8148561206060558180" nodeInfo="nn">
-        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8148561206060558181" nodeInfo="sn">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8148561206060558835" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="8148561206060558834" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="true" />
             </node>
           </node>
         </node>
