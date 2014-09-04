@@ -43,7 +43,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="0" implicit="yes" />
   <import index="cmgk" modelUID="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" version="-1" implicit="yes" />
-  <import index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="2" implicit="yes" />
+  <import index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="4" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9141254329931944222" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Main" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9141254329931944223" nodeInfo="ng">
@@ -1233,7 +1233,7 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="6955693250245202114" nodeInfo="ng">
               <node role="expr" roleId="mj1l.6610873504380029782" type="qlb5.ConvertExpression" typeId="qlb5.4121031889271022213" id="2230076513946422940" nodeInfo="ng">
                 <link role="targetUnit" roleId="qlb5.4121031889271053292" targetNodeId="2230076513944666412" resolveInfo="mps" />
-                <link role="conversionRule" roleId="qlb5.624957442818227315" targetNodeId="2230076513946423034" resolveInfo="kmh -&gt; mps" />
+                <link role="conversionSpecifier" roleId="qlb5.624957442818227315" targetNodeId="7840569452530315622" resolveInfo="kmh -&gt; mps (double)" />
                 <node role="expression" roleId="qlb5.4121031889271053290" type="qlb5.AnnotatedExpression" typeId="qlb5.8337440621611212272" id="2230076513945891859" nodeInfo="ng">
                   <node role="innerExpression" roleId="qlb5.8337440621611267898" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6955693250245033580" nodeInfo="ng">
                     <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -9093,74 +9093,47 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Section" typeId="x27k.6512473996287153137" id="6955693250244965998" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="conversionStuff" />
-      <node role="contents" roleId="x27k.6512473996287153139" type="qlb5.CBasedConversionRule" typeId="qlb5.1069230850837260491" id="2230076513946423104" nodeInfo="ng">
-        <property name="isEager" nameId="qlb5.2315408579355320323" value="true" />
+      <node role="contents" roleId="x27k.6512473996287153139" type="qlb5.ConversionRule" typeId="qlb5.1069230850837260491" id="2230076513946423104" nodeInfo="ng">
+        <property name="isEager" nameId="qlb5.1741902046312150368" value="false" />
         <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-        <link role="sourceUnit" roleId="qlb5.4121031889272874530" targetNodeId="2230076513944666412" resolveInfo="mps" />
-        <link role="targetUnit" roleId="qlb5.4121031889272874534" targetNodeId="2230076513944666600" resolveInfo="kmh" />
-        <node role="conversion" roleId="qlb5.1069230850837260492" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2230076513946423105" nodeInfo="ng">
-          <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="2230076513946423106" nodeInfo="ng">
-            <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="2230076513946423107" nodeInfo="ng">
-              <node role="right" roleId="mj1l.8860443239512128065" type="qlb5.AnnotatedExpression" typeId="qlb5.8337440621611212272" id="2230076513946423108" nodeInfo="ng">
-                <node role="innerExpression" roleId="qlb5.8337440621611267898" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2230076513946423109" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                  <property name="value" nameId="mj1l.2212975673976043696" value="1" />
-                </node>
-                <node role="specification" roleId="qlb5.8337440621611353453" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="2230076513946423110" nodeInfo="ng">
-                  <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="2230076513946423111" nodeInfo="ng">
-                    <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="2230076513944666412" resolveInfo="mps" />
-                  </node>
-                </node>
-              </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="qlb5.AnnotatedExpression" typeId="qlb5.8337440621611212272" id="2230076513946423112" nodeInfo="ng">
-                <node role="innerExpression" roleId="qlb5.8337440621611267898" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2230076513946423113" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                  <property name="value" nameId="mj1l.2212975673976043696" value="3.6" />
-                </node>
-                <node role="specification" roleId="qlb5.8337440621611353453" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="2230076513946423114" nodeInfo="ng">
-                  <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="2230076513946423115" nodeInfo="ng">
-                    <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="2230076513944666600" resolveInfo="kmh" />
-                  </node>
-                </node>
-              </node>
-            </node>
+        <link role="sourceUnit" roleId="qlb5.1741902046312150360" targetNodeId="2230076513944666412" resolveInfo="mps" />
+        <link role="targetUnit" roleId="qlb5.1741902046312150361" targetNodeId="2230076513944666600" resolveInfo="kmh" />
+        <node role="specifiers" roleId="qlb5.1741902046312299423" type="qlb5.ConversionSpecifier" typeId="qlb5.1741902046311368052" id="7840569452530302637" nodeInfo="ng">
+          <node role="type" roleId="qlb5.1741902046316071821" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="7840569452530310661" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="left" roleId="mj1l.8860443239512128064" type="qlb5.ValExpression" typeId="qlb5.5185104661801317038" id="2230076513946461422" nodeInfo="ng" />
-        </node>
-      </node>
-      <node role="contents" roleId="x27k.6512473996287153139" type="qlb5.CBasedConversionRule" typeId="qlb5.1069230850837260491" id="2230076513946423034" nodeInfo="ng">
-        <property name="isEager" nameId="qlb5.2315408579355320323" value="true" />
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-        <link role="sourceUnit" roleId="qlb5.4121031889272874530" targetNodeId="2230076513944666600" resolveInfo="kmh" />
-        <link role="targetUnit" roleId="qlb5.4121031889272874534" targetNodeId="2230076513944666412" resolveInfo="mps" />
-        <node role="conversion" roleId="qlb5.1069230850837260492" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2230076513946423035" nodeInfo="ng">
-          <node role="right" roleId="mj1l.8860443239512128065" type="qlb5.AnnotatedExpression" typeId="qlb5.8337440621611212272" id="2230076513946423036" nodeInfo="ng">
-            <node role="innerExpression" roleId="qlb5.8337440621611267898" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2230076513946423037" nodeInfo="ng">
+          <node role="expression" roleId="qlb5.1741902046311628549" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="7840569452530311689" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7840569452530311768" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="3.6" />
             </node>
-            <node role="specification" roleId="qlb5.8337440621611353453" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="2230076513946423038" nodeInfo="ng">
-              <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="2230076513946423039" nodeInfo="ng">
-                <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="2230076513944666412" resolveInfo="mps" />
-              </node>
-            </node>
-          </node>
-          <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="2230076513946423040" nodeInfo="ng">
-            <node role="right" roleId="mj1l.8860443239512128065" type="qlb5.AnnotatedExpression" typeId="qlb5.8337440621611212272" id="2230076513946423041" nodeInfo="ng">
-              <node role="innerExpression" roleId="qlb5.8337440621611267898" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2230076513946423042" nodeInfo="ng">
-                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.2212975673976043696" value="3.6" />
-              </node>
-              <node role="specification" roleId="qlb5.8337440621611353453" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="2230076513946423043" nodeInfo="ng">
-                <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="2230076513946423044" nodeInfo="ng">
-                  <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="2230076513944666600" resolveInfo="kmh" />
-                </node>
-              </node>
-            </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="qlb5.ValExpression" typeId="qlb5.5185104661801317038" id="2230076513946461428" nodeInfo="ng" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="qlb5.ValExpression" typeId="qlb5.5185104661801317038" id="7840569452530310672" nodeInfo="ng" />
           </node>
         </node>
       </node>
+      <node role="contents" roleId="x27k.6512473996287153139" type="qlb5.ConversionRule" typeId="qlb5.1069230850837260491" id="2230076513946423034" nodeInfo="ng">
+        <property name="isEager" nameId="qlb5.1741902046312150368" value="false" />
+        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+        <link role="sourceUnit" roleId="qlb5.1741902046312150360" targetNodeId="2230076513944666600" resolveInfo="kmh" />
+        <link role="targetUnit" roleId="qlb5.1741902046312150361" targetNodeId="2230076513944666412" resolveInfo="mps" />
+        <node role="specifiers" roleId="qlb5.1741902046312299423" type="qlb5.ConversionSpecifier" typeId="qlb5.1741902046311368052" id="7840569452530315622" nodeInfo="ng">
+          <node role="type" roleId="qlb5.1741902046316071821" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="7840569452530315841" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="expression" roleId="qlb5.1741902046311628549" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="7840569452530316011" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7840569452530316036" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="3.6" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="qlb5.ValExpression" typeId="qlb5.5185104661801317038" id="7840569452530315852" nodeInfo="ng" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7840569452530315931" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1409839628946_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="qlb5.Unit" typeId="qlb5.8337440621611267903" id="2230076513944666412" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mps" />
