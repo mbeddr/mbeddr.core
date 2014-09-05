@@ -18,5 +18,17 @@
     </dependencies>
     <rename id="qlb5.8337440621611267900" type="CONCEPT" from="UnitDeclarations" to="UnitContainer" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="2" />
+    </dependencies>
+    <rename id="qlb5.1069230850837260491" type="CONCEPT" from="CBasedConversionRule" to="ConversionRule" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="3" />
+    </dependencies>
+    <rename id="qlb5.624957442818227315" type="REFERENCE" from="conversionRule" to="conversionSpecifier" />
+  </StructureModification>
 </history>
 

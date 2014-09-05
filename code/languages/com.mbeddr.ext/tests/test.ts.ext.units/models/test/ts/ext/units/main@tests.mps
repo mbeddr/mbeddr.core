@@ -329,21 +329,6 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2445850071394445683" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_1409756185488_1" />
-        </node>
-        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="2445850071394453506" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="anInt" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2445850071394453504" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
-          <node role="init" roleId="x27k.2771264470558526601" type="qlb5.ValExpression" typeId="qlb5.5185104661801317038" id="2445850071394457478" nodeInfo="ng">
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="2445850071394467494" nodeInfo="ng">
-              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="2445850071394467495" nodeInfo="ng" />
-            </node>
-          </node>
-        </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.TestNodeAnnotation" typeId="tp5g.1210673684636" id="8414886092091995851" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="toCheckErrors" />
