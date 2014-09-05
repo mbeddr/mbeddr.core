@@ -184,25 +184,11 @@ You are now ready to build your first project with mbeddr.
 
 \section{Additional Verification Tools}
 
-To be able to use the verifications, you have to install a set of external
-tools:
-
-\begin{itemize}
-  \item You have to install \ic{NuSMV} from \ic{http://nusmv.fbk.eu/} to be able
-  to verify state machines.
-  \item You have to install \ic{Yices 1} from \ic{http://yices.csl.sri.com/} to be
-  able to verify decision tables and feature models. Note that there is also a
-  \ic{Yices 2}, which does \emph{not} work!
-  \item You have to install \ic{CBMC} from \ic{http://www.cprover.org/cbmc/} to be able
-  to verify component protocols and contracts.
-\end{itemize}
-
-For each of these tools, the exectuables have to be on the path! You can verify
-that they are by simply typing \ic{nusmv}, \ic{yices} and/or \ic{cbmc} somewhere
-in a console. The respective tools should start, complaining that they need
+To be able to use the robustness and functional verification, you have to
+install the CBMC model checker -- \ic{http://www.cprover.org/cbmc/} and put the
+executable in the path. You can verify that it is by simply typing \ic{cbmc} somewhere 
+in a console. The CBMC tool should start, complaining that it needs
 some kind of input to do useful work.
-
-
 
 
 \chapter{Writing Code in MPS}
