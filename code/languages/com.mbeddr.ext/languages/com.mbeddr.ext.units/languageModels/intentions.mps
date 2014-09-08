@@ -174,10 +174,10 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="385804577580102396" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="385804577580102392" nodeInfo="nn">
             <node role="ifTrue" roleId="tpee.1163668922816" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="385804577580104003" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="Add Meta Unit Declaration" />
+              <property name="value" nameId="tpee.1070475926801" value="Add Generic Unit Declaration" />
             </node>
             <node role="ifFalse" roleId="tpee.1163668934364" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="385804577580110315" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="Remove Meta Unit Declaration" />
+              <property name="value" nameId="tpee.1070475926801" value="Remove Generic Unit Declaration" />
             </node>
             <node role="condition" roleId="tpee.1163668914799" type="tpee.DotExpression" typeId="tpee.1197027756228" id="385804577580097318" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="385804577580082288" nodeInfo="nn">
