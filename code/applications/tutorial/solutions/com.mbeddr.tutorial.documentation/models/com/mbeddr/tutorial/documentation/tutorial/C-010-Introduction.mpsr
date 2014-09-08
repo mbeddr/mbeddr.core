@@ -3168,7 +3168,7 @@
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7959141310100646277" resolveInfo="C-020-Basics" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3156541402775349788" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="pw5g.9020927825193691657" resolveInfo="A-020-Variability" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="pw5g.9020927825193691657" resolveInfo="A-020-VariabilityVerification" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3156541402775349763" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="pw5g.9020927825193793093" resolveInfo="A-030-FormalVerification" />
