@@ -599,6 +599,44 @@
             </node>
           </node>
         </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="763631999644786503" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1410160799450_5" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="k146.StackDeclaration" typeId="k146.291293396404994003" id="763631999644788285" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="s6" />
+          <node role="baseType" roleId="k146.291293396404994004" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="763631999644789929" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="size" roleId="k146.291293396404994005" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="763631999644789967" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="2.2" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="763631999644792724" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="763631999644792725" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="763631999644793010" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1410160817394_7" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="k146.StackDeclaration" typeId="k146.291293396404994003" id="763631999644795671" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="s7" />
+          <node role="baseType" roleId="k146.291293396404994004" type="yq40.PointerType" typeId="yq40.279446265608459824" id="763631999644797633" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="c4fa.7763322639126652758" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="763631999644797605" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+          <node role="size" roleId="k146.291293396404994005" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="763631999644797680" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="763631999644799935" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="763631999644799936" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </root>
@@ -710,6 +748,40 @@
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4186356103326140087" resolveInfo="size" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="4186356103326299482" nodeInfo="ng">
               <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4186356103326299483" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="763631999644698222" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1410160672250_1" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="k146.RingBufferDeclaration" typeId="k146.3601652329323210591" id="763631999644701387" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="rb6" />
+          <node role="baseType" roleId="k146.3601652329323210592" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="763631999644703031" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="size" roleId="k146.3601652329323210593" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="763631999644703259" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="2.2" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="763631999644706683" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="763631999644706684" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="763631999644707159" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1410160694533_3" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="k146.RingBufferDeclaration" typeId="k146.3601652329323210591" id="763631999644710038" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="rb7" />
+          <node role="baseType" roleId="k146.3601652329323210592" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="763631999644710039" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="size" roleId="k146.3601652329323210593" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="763631999644710040" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="763631999644710041" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="763631999644710042" nodeInfo="ng" />
             </node>
           </node>
         </node>
