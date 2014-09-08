@@ -683,6 +683,9 @@
     <property name="name" nameId="tpck.1169194664001" value="NoopType" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a type representing noop" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8551646674110395547" resolveInfo="FunctionRefType" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5079755785305909547" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7024921229556176022" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CommentedModuleContent" />
