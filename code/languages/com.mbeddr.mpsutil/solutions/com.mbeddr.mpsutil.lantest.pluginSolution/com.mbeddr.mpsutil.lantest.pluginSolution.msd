@@ -8,6 +8,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">5ef691b5-60ce-4ece-a04e-25e642dfa128(com.mbeddr.mpsutil.lantest)</dependency>
     <dependency reexport="false">4ac576d1-143d-4250-b299-9dfff325fcb9(com.mbeddr.mpsutil.lantest.rt)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
