@@ -1352,7 +1352,7 @@
       </node>
     </node>
     <node role="icon" roleId="uhxm.4763274727405873310" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="1611636138415081177" nodeInfo="ng">
-      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/square.png" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${module}/icons/mbeddr-runconfig.png" />
     </node>
   </root>
   <root type="uhxm.RunConfigurationExecutor" typeId="uhxm.7806358006983614956" id="1611636138415081197" nodeInfo="ng">
