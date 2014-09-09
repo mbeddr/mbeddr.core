@@ -248,6 +248,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1741902046312150346" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6111466015651068156" resolveInfo="IUnitContainerContent" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7323976466033497822" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7323976466033483287" resolveInfo="ICanUseNoUnit" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4121031889271022213" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="conversion" />
@@ -337,6 +340,10 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7644849806586334254" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6111466015651068156" resolveInfo="IUnitContainerContent" />
     </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7323976466033483287" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="name" nameId="tpck.1169194664001" value="ICanUseNoUnit" />
   </root>
 </model>
 
