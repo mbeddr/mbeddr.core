@@ -182,9 +182,7 @@ support for model checking state machines and for checking the completeness and
 determinism of decision tables. Below the common platform JetBrains MPS, mbeddr
 integrates existing tools: a C compiler for the implementation side (\ic{gcc} by
 default, but it can be exchanged), as well as the
-NuSMV\footnote{\url{http://nusmv.fbk.eu}} model checker and
-Yices\footnote{\url{http://yices.csl.sri.com}} and
-CVC\footnote{\url{http://www.cs.nyu.edu/acsys/cvc3}} SMT solvers. On top of the
+CBMC\footnote{\url{http://www.cprover.org/cbmc/}} C-model checker. On top of the
 default extensions, users can develop their own application level DSLs. These
 typically rely on the core and default extensions either by directly
 extending (and translating back to) languages from those layers or by embedding

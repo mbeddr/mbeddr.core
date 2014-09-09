@@ -70,7 +70,7 @@
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="3156541402775599011" nodeInfo="ng">
       <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3156541402775599067" nodeInfo="ng">
-        <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="pw5g.9020927825193691657" resolveInfo="A-020-Variability" />
+        <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="pw5g.9020927825193691657" resolveInfo="A-020-VariabilityVerification" />
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="3156541402775599126" nodeInfo="ng">
@@ -115,7 +115,7 @@
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="pw5g.4574736324932010379" resolveInfo="A-010-Introduction" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3156541402775598869" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="pw5g.9020927825193691657" resolveInfo="A-020-Variability" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="pw5g.9020927825193691657" resolveInfo="A-020-VariabilityVerification" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3156541402775598926" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="pw5g.9020927825193793093" resolveInfo="A-030-FormalVerification" />
