@@ -168,7 +168,7 @@
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="385804577580074412" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Function_AddRemoveMetaUnitDeclaration" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
-    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="x27k.6437088627575724001" resolveInfo="Function" />
+    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="x27k.8105003328814797298" resolveInfo="IFunctionLike" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="385804577580074413" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="385804577580074414" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="385804577580102396" nodeInfo="nn">
