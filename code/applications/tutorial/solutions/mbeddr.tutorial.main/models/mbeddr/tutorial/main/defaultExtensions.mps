@@ -9081,6 +9081,7 @@
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6700886800242035160" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="timed_tick" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6700886800242035161" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3324714806676046085" nodeInfo="ng" />
           <node role="statements" roleId="c4fa.4185783222026475862" type="k146.WithStatement" typeId="k146.3073566081777363796" id="6700886800242035238" nodeInfo="ng">
             <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="6700886800242040132" nodeInfo="ng">
               <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
@@ -9095,7 +9096,7 @@
               </node>
             </node>
             <node role="expr" roleId="k146.3073566081777363799" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="6700886800242035243" nodeInfo="ng">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="6700886800242035240" nodeInfo="ng">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="5203533717035936710" nodeInfo="ng">
                 <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="6700886800242035165" resolveInfo="recordedFlight" />
               </node>
               <node role="index" roleId="yq40.6282313788306893059" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="6700886800242035244" nodeInfo="ng">
