@@ -119,6 +119,7 @@
     <property name="name" nameId="tpck.1169194664001" value="UnitContainer" />
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/units.png" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.7139820346881560230" resolveInfo="Chunk" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8337440621611267904" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
