@@ -205,6 +205,9 @@
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6247780594427982580" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="p6ld.8334796989975361847" resolveInfo="com.mbeddr.ext.units.zip" />
           </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="86560528395595078" nodeInfo="ng">
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="p6ld.4160126263865086620" resolveInfo="com.mbeddr.ext.math.zip" />
+          </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5100083648679014643" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="p6ld.4938592026146645836" resolveInfo="com.mbeddr.core.debugger.zip" />
           </node>
