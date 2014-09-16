@@ -56,6 +56,7 @@
       <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="26ao.TracingConfigItem" typeId="26ao.8626086128969157722" id="8626086128969463331" nodeInfo="ng" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qlb5.UnitConfigItem" typeId="qlb5.5348704582971040037" id="8859928641208871577" nodeInfo="ng" />
   </root>
   <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="1265644944846176449" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="FlightAnalyzer" />
