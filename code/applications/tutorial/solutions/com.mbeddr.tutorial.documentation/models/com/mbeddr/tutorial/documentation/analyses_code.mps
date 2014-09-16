@@ -542,6 +542,7 @@
         <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
       </node>
     </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qlb5.UnitConfigItem" typeId="qlb5.5348704582971040037" id="8859928641209551031" nodeInfo="ng" />
   </root>
   <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="9020927825194463376" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DemoAnalysesConfigurations" />

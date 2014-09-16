@@ -1260,5 +1260,12 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5348704582971065110" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qlb5.5348704582971040037" resolveInfo="UnitConfigItem" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5348704582971108827" nodeInfo="nn">
+      <property name="text" nameId="tpc2.1073389577007" value="units" />
+    </node>
+  </root>
 </model>
 

@@ -308,7 +308,17 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111063127" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111063128" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111063129" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="If we rebuild now, everything should generate normally and we should be able to run the test again. Nothing should have changed so far. However, if we were to write the following code, we would get an error:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Now if you try to rebuild the model, you will get an error message, saying that you need to add the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8859928641209659616" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8859928641209659617" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8859928641209659618" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="units" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8859928641209659615" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" configuration item to the build configuration. If you have added this item, the build should be successful and we should be able to run the test again. Nothing should have changed so far. However, if we were to write the following code, we would get an error:" />
             </node>
           </node>
         </node>
