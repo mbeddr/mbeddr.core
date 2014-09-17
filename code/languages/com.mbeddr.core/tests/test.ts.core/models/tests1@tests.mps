@@ -12189,6 +12189,9 @@
             <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringArrayType" typeId="yq40.5684014141267595977" id="3365878121521699469" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5511710344092493690" nodeInfo="ng">
+                <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="5511710344092493691" nodeInfo="ng" />
+              </node>
             </node>
           </node>
         </node>
@@ -12202,6 +12205,10 @@
           <node role="original" roleId="clbe.6116558314501347862" type="yq40.StringArrayType" typeId="yq40.5684014141267595977" id="3365878121521072636" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="size" roleId="yq40.5684014141267595982" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5511710344092493761" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+            </node>
           </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="3365878121521072630" nodeInfo="ng">
@@ -12212,9 +12219,6 @@
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="3365878121521072635" resolveInfo="str" />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3365878121521779835" nodeInfo="ng">
-                <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="3365878121521779836" nodeInfo="ng" />
-              </node>
             </node>
           </node>
           <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="3365878121521072633" nodeInfo="ng">
