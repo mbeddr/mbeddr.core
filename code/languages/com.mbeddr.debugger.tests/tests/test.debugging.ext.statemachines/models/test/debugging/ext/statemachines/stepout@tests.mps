@@ -130,6 +130,7 @@
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="3450485464476995018" nodeInfo="ng">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="4141878798835846468" resolveInfo="StepOutSMTest" />
     </node>
+    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877192719" nodeInfo="ng" />
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4141878798835846406" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="StepOutSMTest" />

@@ -473,6 +473,7 @@
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="4059314064294289331" nodeInfo="ng">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="3149431289167037060" resolveInfo="SMGenericDotExpr" />
     </node>
+    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877190339" nodeInfo="ng" />
   </root>
 </model>
 

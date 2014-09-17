@@ -248,6 +248,7 @@
     <node role="imports" roleId="rpmx.5710167937130937945" type="rpmx.DebuggerTestReference" typeId="rpmx.8924761790438948080" id="5710167937131567054" nodeInfo="ng">
       <link role="test" roleId="rpmx.8924761790438948081" targetNodeId="3853561535654484105" resolveInfo="LoopsLibrary" />
     </node>
+    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877190456" nodeInfo="ng" />
   </root>
   <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="5710167937131567055" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ForStatement" />
@@ -524,6 +525,7 @@
     <node role="imports" roleId="rpmx.5710167937130937945" type="rpmx.DebuggerTestReference" typeId="rpmx.8924761790438948080" id="5710167937131611844" nodeInfo="ng">
       <link role="test" roleId="rpmx.8924761790438948081" targetNodeId="3853561535654484105" resolveInfo="LoopsLibrary" />
     </node>
+    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877190936" nodeInfo="ng" />
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5710167937131567141" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="LoopsTest" />
@@ -1658,6 +1660,7 @@
     <node role="imports" roleId="rpmx.5710167937130937945" type="rpmx.DebuggerTestReference" typeId="rpmx.8924761790438948080" id="5710167937131648351" nodeInfo="ng">
       <link role="test" roleId="rpmx.8924761790438948081" targetNodeId="3853561535654484105" resolveInfo="LoopsLibrary" />
     </node>
+    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877190724" nodeInfo="ng" />
   </root>
   <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="3853561535654484105" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="LoopsLibrary" />
@@ -1756,6 +1759,7 @@
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="3853561535654573965" nodeInfo="ng">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="5710167937131566970" resolveInfo="LoopsTest" />
     </node>
+    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877191402" nodeInfo="ng" />
   </root>
 </model>
 
