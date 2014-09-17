@@ -15,6 +15,7 @@
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
+  <import index="tpco" modelUID="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" version="-1" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4193597469137492659" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="marker" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.4193597469137492628" resolveInfo="MarkerAnnotation" />
@@ -2088,10 +2089,10 @@
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.5641871277853139329" resolveInfo="EmptyValidationConfigurationElement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5641871277853139442" nodeInfo="nn" />
   </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6289137936867886972" nodeInfo="ng">
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.6289137936867337325" resolveInfo="GdbDebuggerBackend" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6289137936867886974" nodeInfo="nn">
-      <property name="text" nameId="tpc2.1073389577007" value="gdb" />
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5911927611425137949" nodeInfo="ng">
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.6289137936867337273" resolveInfo="IDebuggerBackend" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="5911927611425138832" nodeInfo="ng">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
       <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="tpc5.3229274890674099465" resolveInfo="KeyWord" />
     </node>
   </root>
