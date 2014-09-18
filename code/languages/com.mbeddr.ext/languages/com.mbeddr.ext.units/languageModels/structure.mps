@@ -61,8 +61,8 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8337440621611270350" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IUnit" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8337440621611270351" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8241172875069118917" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
     </node>
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5348704582971109356" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1656687801206572012" resolveInfo="IRequiresConfigItem" />
