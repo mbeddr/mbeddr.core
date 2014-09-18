@@ -64,6 +64,9 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8337440621611270351" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5348704582971109356" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1656687801206572012" resolveInfo="IRequiresConfigItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8337440621613064925" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MetaUnit" />
@@ -119,6 +122,7 @@
     <property name="name" nameId="tpck.1169194664001" value="UnitContainer" />
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/units.png" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.7139820346881560230" resolveInfo="Chunk" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8337440621611267904" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -152,6 +156,9 @@
     <property name="name" nameId="tpck.1169194664001" value="UnitReference" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5348704582971633112" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1656687801206572012" resolveInfo="IRequiresConfigItem" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8337440621611297534" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="exponent" />
@@ -251,6 +258,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7323976466033497822" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7323976466033483287" resolveInfo="ICanUseNoUnit" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5348704582971643878" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1656687801206572012" resolveInfo="IRequiresConfigItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4121031889271022213" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="conversion" />
@@ -344,6 +354,15 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7323976466033483287" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
     <property name="name" nameId="tpck.1169194664001" value="ICanUseNoUnit" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5348704582971040037" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="UnitConfigItem" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="units" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5348704582971065084" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.4459718605982007336" resolveInfo="IConfigurationItem" />
+    </node>
   </root>
 </model>
 
