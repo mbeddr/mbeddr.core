@@ -2789,7 +2789,6 @@
           <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="4378677424457831223" resolveInfo="PointerStruct" />
         </node>
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.DoNotAnalyzeDataFlowAnnotation" typeId="vs0r.7307224057853283254" id="4378677424457834152" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4378677424457834185" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1360949846415_11" />
