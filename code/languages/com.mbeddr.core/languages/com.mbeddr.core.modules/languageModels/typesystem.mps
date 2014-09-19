@@ -5973,5 +5973,45 @@
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="3293238331950942316" nodeInfo="ngu" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3293238331950942287" nodeInfo="nn" />
   </root>
+  <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="2325303490894795737" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="check_FunctionRefTypeInITypeContainingType" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="functionrefs" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2325303490894795738" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.AssertStatement" typeId="tpd4.1175517400280" id="2325303490894850071" nodeInfo="nn">
+        <node role="condition" roleId="tpd4.1175517761460" type="tpee.NotExpression" typeId="tpee.1081516740877" id="2325303490894863158" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2325303490894863160" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2325303490894863161" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2325303490894863162" nodeInfo="nn">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2325303490894795740" resolveInfo="iTypeContainingType" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2325303490894863163" nodeInfo="nn">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="c4fa.7763322639126652758" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="2325303490894863164" nodeInfo="nn">
+              <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2325303490894863165" nodeInfo="nn">
+                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="x27k.8551646674110395547" resolveInfo="FunctionRefType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2325303490894862719" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="must not be used with pointers and arrays" />
+        </node>
+        <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2325303490894863556" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2325303490894863378" nodeInfo="nn">
+            <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2325303490894795740" resolveInfo="iTypeContainingType" />
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2325303490894864160" nodeInfo="nn">
+            <link role="link" roleId="tp25.1138056516764" targetNodeId="c4fa.7763322639126652758" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2325303490894795740" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="iTypeContainingType" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="c4fa.7763322639126652757" resolveInfo="ITypeContainingType" />
+    </node>
+  </root>
 </model>
 

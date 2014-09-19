@@ -18924,15 +18924,6 @@
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8931274784797129589" nodeInfo="ng" />
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="8931274784797123896" nodeInfo="ng">
-              <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8931274784797123898" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8931274784797123899" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8931274784797123900" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="TODO: the following code produces generation error - we hould either fix the generator\nor forbid the pointers and arrays to function reference types" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8931274784796688665" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="funRef3" />
               <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="8931274784796691361" nodeInfo="ng">
