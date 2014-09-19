@@ -321,5 +321,15 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3473691595522695973" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="macro" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="i2y7.3473691595522695229" resolveInfo="MacroAll" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3473691595522737255" nodeInfo="nn">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="3473691595522737256" nodeInfo="nn" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3473691595522737257" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="$^" />
+      </node>
+    </node>
+  </root>
 </model>
 
