@@ -2,15 +2,15 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="yvc7" modelUID="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)" version="-1" />
       <model index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="-1" />
+      <model index="yvc7" modelUID="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)" version="-1" />
       <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="-1" />
       <model index="7kf" modelUID="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)" version="0" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="0" />
       <model index="3ho" modelUID="r:5464eee6-9739-45c3-be18-bcd3e5d07f5a(com.mbeddr.core.base.textGen)" version="-1" />
       <model index="j4gk" modelUID="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" version="-1" />
-      <model index="gfi" modelUID="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)" version="-1" />
       <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" />
+      <model index="gfi" modelUID="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)" version="-1" />
       <model index="rj8d" modelUID="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" version="-1" />
     </dependencies>
     <move id="c4fa.1679452829930469420" to="vs0r.3857533489766146432" />
@@ -966,8 +966,8 @@
       <model index="n7pc" modelUID="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" version="2" />
       <model index="j4gk" modelUID="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" version="2" />
       <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="7" />
-      <model index="rj8d" modelUID="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" version="1" />
       <model index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="6" />
+      <model index="rj8d" modelUID="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" version="1" />
     </dependencies>
     <move id="mj1l.774931011683827854" to="c4fa.8850915533694634146" />
     <move id="mj1l.774931011683827855" to="c4fa.8850915533694634147" />
@@ -1168,6 +1168,91 @@
     <move id="n7pc.774931011683828035" to="go54.8850915533694634343" />
     <move id="n7pc.774931011683827970" to="go54.8850915533694634278" />
     <move id="n7pc.774931011683827968" to="go54.8850915533694634276" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="33" />
+      <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="9" />
+      <model index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="7" />
+      <model index="rj8d" modelUID="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" version="2" />
+    </dependencies>
+    <move id="c4fa.7274201720600718487" to="mj1l.2047364827736357260" />
+    <move id="c4fa.8076351743304153735" to="mj1l.2047364827736357261" />
+    <move id="c4fa.7274201720600718485" to="mj1l.2047364827736357259" />
+    <move id="c4fa.2486081302459354921" to="mj1l.2047364827736357258" />
+    <move id="rj8d.7274201720601933972" to="ywuz.2047364827736357277" />
+    <move id="rj8d.8076351743304165031" to="ywuz.2047364827736357272" />
+    <move id="rj8d.8076351743304165572" to="ywuz.2047364827736357271" />
+    <move id="rj8d.7274201720601933967" to="ywuz.2047364827736357274" />
+    <move id="rj8d.7274201720601933964" to="ywuz.2047364827736357273" />
+    <move id="rj8d.2486081302460156150" to="ywuz.2047364827736357262" />
+    <move id="rj8d.8076351743304165026" to="ywuz.2047364827736357267" />
+    <move id="rj8d.7274201720601900548" to="ywuz.2047364827736357285" />
+    <move id="rj8d.7274201720601900540" to="ywuz.2047364827736357287" />
+    <move id="rj8d.7274201720601933993" to="ywuz.2047364827736357276" />
+    <move id="rj8d.7274201720601900569" to="ywuz.2047364827736357284" />
+    <move id="rj8d.8076351743304165573" to="ywuz.2047364827736357270" />
+    <move id="rj8d.7274201720601900546" to="ywuz.2047364827736357283" />
+    <move id="rj8d.2486081302460156157" to="ywuz.2047364827736357265" />
+    <move id="rj8d.7897559875242276956" to="ywuz.2047364827736357286" />
+    <move id="rj8d.7274201720601900539" to="ywuz.2047364827736357282" />
+    <move id="rj8d.7274201720601933999" to="ywuz.2047364827736357278" />
+    <move id="rj8d.7274201720601900541" to="ywuz.2047364827736357288" />
+    <move id="rj8d.2486081302460156152" to="ywuz.2047364827736357290" />
+    <move id="rj8d.8076351743304165027" to="ywuz.2047364827736357268" />
+    <move id="rj8d.8076351743304165030" to="ywuz.2047364827736357269" />
+    <move id="rj8d.2486081302460156154" to="ywuz.2047364827736357264" />
+    <move id="rj8d.7349952699787789178" to="ywuz.2047364827736357280" />
+    <move id="rj8d.2486081302460156156" to="ywuz.2047364827736357266" />
+    <move id="rj8d.2486081302460156153" to="ywuz.2047364827736357263" />
+    <move id="rj8d.2486081302460156151" to="ywuz.2047364827736357289" />
+    <move id="rj8d.7274201720601900536" to="ywuz.2047364827736357281" />
+    <move id="rj8d.7349952699787789177" to="ywuz.2047364827736357279" />
+    <move id="rj8d.7274201720601933970" to="ywuz.2047364827736357275" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="go54" modelUID="r:a7e7800a-15b6-4c02-ae4d-6b40a48c7370(com.mbeddr.core.statements.typesystem)" version="2" />
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="34" />
+      <model index="n7pc" modelUID="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" version="3" />
+      <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="10" />
+      <model index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="8" />
+      <model index="rj8d" modelUID="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" version="3" />
+    </dependencies>
+    <move id="c4fa.8225865834982338524" to="mj1l.2047364827738361463" />
+    <move id="c4fa.7349952699787631189" to="mj1l.2047364827738361464" />
+    <move id="c4fa.2486081302459814099" to="mj1l.2047364827738361461" />
+    <move id="c4fa.704069370490657364" to="mj1l.2047364827738361462" />
+    <move id="c4fa.7897559875242276958" to="mj1l.2047364827738361465" />
+    <move id="rj8d.8263455477334833445" to="ywuz.2047364827738361471" />
+    <move id="rj8d.8263455477334832349" to="ywuz.2047364827738361470" />
+    <move id="rj8d.8263455477334826333" to="ywuz.2047364827738361467" />
+    <move id="rj8d.8263455477334832351" to="ywuz.2047364827738361472" />
+    <move id="rj8d.8263455477334826334" to="ywuz.2047364827738361468" />
+    <move id="rj8d.8263455477334826181" to="ywuz.2047364827738361466" />
+    <move id="rj8d.8263455477334832348" to="ywuz.2047364827738361469" />
+    <move id="rj8d.8263455477334833453" to="ywuz.2047364827738361476" />
+    <move id="rj8d.8263455477334833478" to="ywuz.2047364827738361475" />
+    <move id="rj8d.8263455477334833451" to="ywuz.2047364827738361474" />
+    <move id="rj8d.8263455477334833450" to="ywuz.2047364827738361473" />
+    <move id="go54.4942779806995442611" to="n7pc.2047364827738361494" />
+    <move id="go54.4942779806995452487" to="n7pc.2047364827738361491" />
+    <move id="go54.4942779806995452642" to="n7pc.2047364827738361489" />
+    <move id="go54.4942779806995450763" to="n7pc.2047364827738361480" />
+    <move id="go54.4942779806995452239" to="n7pc.2047364827738361484" />
+    <move id="go54.4942779806995446459" to="n7pc.2047364827738361492" />
+    <move id="go54.4942779806995442609" to="n7pc.2047364827738361478" />
+    <move id="go54.4942779806995446645" to="n7pc.2047364827738361487" />
+    <move id="go54.4942779806995450758" to="n7pc.2047364827738361481" />
+    <move id="go54.4942779806995450895" to="n7pc.2047364827738361483" />
+    <move id="go54.4942779806995445935" to="n7pc.2047364827738361486" />
+    <move id="go54.4942779806995445934" to="n7pc.2047364827738361485" />
+    <move id="go54.4942779806995442608" to="n7pc.2047364827738361477" />
+    <move id="go54.4942779806995446494" to="n7pc.2047364827738361493" />
+    <move id="go54.4942779806995446666" to="n7pc.2047364827738361488" />
+    <move id="go54.4942779806995446041" to="n7pc.2047364827738361490" />
+    <move id="go54.4942779806995450760" to="n7pc.2047364827738361479" />
+    <move id="go54.4942779806995451167" to="n7pc.2047364827738361482" />
   </StructureModification>
 </history>
 
