@@ -77,6 +77,19 @@
             </node>
             <node role="it" roleId="hba4.3543818856011950785" type="hba4.ItExpr" typeId="hba4.8680547451703937984" id="2780428631945866817" nodeInfo="ng" />
           </node>
+          <node role="cases" roleId="hba4.8680547451702410202" type="hba4.CSCase" typeId="hba4.8680547451702410199" id="1769384868157887609" nodeInfo="ng">
+            <link role="concept" roleId="hba4.8680547451702410200" targetNodeId="yq40.6282313788306893057" resolveInfo="ArrayAccessExpr" />
+            <node role="body" roleId="hba4.8680547451702411224" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="1769384868157887610" nodeInfo="nn">
+              <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="1769384868157887611" nodeInfo="sn">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="1769384868157889103" nodeInfo="nn">
+                  <node role="expression" roleId="tpee.1068581517676" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="1769384868157889294" nodeInfo="nn">
+                    <property name="value" nameId="tpee.1068580123138" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="it" roleId="hba4.3543818856011950785" type="hba4.ItExpr" typeId="hba4.8680547451703937984" id="1769384868157887612" nodeInfo="ng" />
+          </node>
           <node role="cases" roleId="hba4.8680547451702410202" type="hba4.CSCase" typeId="hba4.8680547451702410199" id="4455560581554286499" nodeInfo="ng">
             <link role="concept" roleId="hba4.8680547451702410200" targetNodeId="mj1l.5763383285156533447" resolveInfo="ParensExpression" />
             <node role="body" roleId="hba4.8680547451702411224" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="4455560581554286500" nodeInfo="nn">
