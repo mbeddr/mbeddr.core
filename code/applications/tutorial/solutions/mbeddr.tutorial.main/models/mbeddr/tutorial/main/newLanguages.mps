@@ -558,6 +558,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8894472076886085432" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="8894472076886057794" resolveInfo="TasksGlobalData" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3599386332256014430" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="843070037213212048" resolveInfo="GotoFail" />
+      </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="6183633367245147493" nodeInfo="ng">
       <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
@@ -2061,12 +2064,6 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172353852" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856578_5" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172354025" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1393917856675_6" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1739225118172355481" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1393917856990_14" />
