@@ -152,10 +152,12 @@
       </node>
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="699350427876703619" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="p" />
-        <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="699350427876703621" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="8779509957324985530" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           <node role="baseType" roleId="c4fa.7763322639126652758" type="clbe.StructType" typeId="clbe.6394819151180597816" id="699350427876703620" nodeInfo="ng">
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="699350427876703607" resolveInfo="Position" />
           </node>
         </node>
