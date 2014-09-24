@@ -2400,10 +2400,10 @@
             </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Node" typeId="2qld.6720495385597071406" id="1456989016730900748" nodeInfo="ng">
-            <property name="bounds_x" nameId="2qld.6720495385597071501" value="346.0" />
-            <property name="bounds_y" nameId="2qld.6720495385597071502" value="84.0" />
+            <property name="bounds_x" nameId="2qld.6720495385597071501" value="317.00018310546875" />
+            <property name="bounds_y" nameId="2qld.6720495385597071502" value="12.0" />
             <property name="bounds_width" nameId="2qld.6720495385597071503" value="241.0" />
-            <property name="bounds_height" nameId="2qld.6720495385597071504" value="46.0" />
+            <property name="bounds_height" nameId="2qld.6720495385597071504" value="84.0" />
           </node>
         </node>
         <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="1634970928501131020" nodeInfo="ng">
@@ -2421,18 +2421,18 @@
           <property name="name" nameId="tpck.1169194664001" value="store" />
           <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="1731059994647814153" resolveInfo="InMemoryStorage" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Node" typeId="2qld.6720495385597071406" id="1456989016730900624" nodeInfo="ng">
-            <property name="bounds_x" nameId="2qld.6720495385597071501" value="687.0" />
-            <property name="bounds_y" nameId="2qld.6720495385597071502" value="181.0" />
+            <property name="bounds_x" nameId="2qld.6720495385597071501" value="632.0001831054688" />
+            <property name="bounds_y" nameId="2qld.6720495385597071502" value="29.0" />
             <property name="bounds_width" nameId="2qld.6720495385597071503" value="241.0" />
-            <property name="bounds_height" nameId="2qld.6720495385597071504" value="24.0" />
+            <property name="bounds_height" nameId="2qld.6720495385597071504" value="50.0" />
           </node>
         </node>
         <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="8473757169834022639" nodeInfo="ng" />
         <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="8473757169834023128" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="verificationInterpolator" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Node" typeId="2qld.6720495385597071406" id="1456989016748129716" nodeInfo="ng">
-            <property name="bounds_x" nameId="2qld.6720495385597071501" value="51.0" />
-            <property name="bounds_y" nameId="2qld.6720495385597071502" value="20.0" />
+            <property name="bounds_x" nameId="2qld.6720495385597071501" value="12.000100135803223" />
+            <property name="bounds_y" nameId="2qld.6720495385597071502" value="35.99995040893555" />
             <property name="bounds_width" nameId="2qld.6720495385597071503" value="243.0" />
             <property name="bounds_height" nameId="2qld.6720495385597071504" value="36.0" />
           </node>
@@ -3985,6 +3985,12 @@
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="183497161482807718" nodeInfo="ng">
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381518289205" nodeInfo="ng">
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="8779509957325921899" nodeInfo="ng">
+                  <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="8779509957325921900" nodeInfo="ng" />
+                  <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="8779509957325944211" nodeInfo="ng">
+                    <link role="target" roleId="26ao.439567521322959431" targetNodeId="iwll.1433966787984154184" resolveInfo="FullStop" />
+                  </node>
+                </node>
                 <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="183497161482807720" nodeInfo="ng">
                   <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="7727566415687762907" resolveInfo="tp" />
                 </node>
@@ -8435,7 +8441,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="9103993088062047835" nodeInfo="ng">
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5441227754062476995" resolveInfo="FlightProcessor" />
-      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5441227754062477136" resolveInfo="cfgDoNothing" />
+      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5441227754062505657" resolveInfo="cfgNullifyOnly" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="869116753978119547" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1352295983391_1" />
