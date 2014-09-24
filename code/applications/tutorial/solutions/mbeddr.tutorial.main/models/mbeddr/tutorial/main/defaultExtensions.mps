@@ -2122,7 +2122,7 @@
             </node>
           </node>
           <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="1731059994647814092" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="tpsdasdassadsa" />
+            <property name="name" nameId="tpck.1169194664001" value="tp" />
             <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="1731059994647814093" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -2220,7 +2220,6 @@
       <node role="contents" roleId="x27k.6512473996287153139" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1731059994647814153" nodeInfo="ng">
         <property name="exported" nameId="x27k.1317894735999272944" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="InMemoryStorage" />
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="1731059994647814231" nodeInfo="ng" />
         <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1731059994647814156" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="store" />
           <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1731059994647814010" resolveInfo="TrackpointStore1" />
@@ -2427,7 +2426,6 @@
             <property name="bounds_height" nameId="2qld.6720495385597071504" value="50.0" />
           </node>
         </node>
-        <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="8473757169834022639" nodeInfo="ng" />
         <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="8473757169834023128" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="verificationInterpolator" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2qld.Layout_Node" typeId="2qld.6720495385597071406" id="1456989016748129716" nodeInfo="ng">
@@ -4904,7 +4902,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3799849708010390562" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3799849708010390420" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2254649581716602829" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="2254649581716602828" nodeInfo="ng">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7727566415687767312" nodeInfo="ng">
@@ -5029,7 +5026,7 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7727566415687801739" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4328885207276226162" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.StatemachineTestStatement" typeId="clqz.4643433264759945881" id="7727566415687812619" nodeInfo="ng">
           <node role="statemachine" roleId="clqz.4643433264759945883" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7727566415687812621" nodeInfo="ng">
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7727566415687767302" resolveInfo="f" />
