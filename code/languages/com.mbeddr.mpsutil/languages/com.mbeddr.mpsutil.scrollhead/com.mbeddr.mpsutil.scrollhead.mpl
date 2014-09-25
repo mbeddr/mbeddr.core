@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.mpsutil.scrollhead" uuid="a482b416-d0c9-473f-8f67-725ed642b3f3">
+<language namespace="com.mbeddr.mpsutil.breadcrumb" uuid="a482b416-d0c9-473f-8f67-725ed642b3f3">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="" generatorUID="com.mbeddr.mpsutil.scrollhead#4313262807135097306" uuid="dde974a6-90dc-44c0-bac2-c4f66e518635">
+    <generator name="" generatorUID="com.mbeddr.mpsutil.breadcrumb#4313262807135097306" uuid="dde974a6-90dc-44c0-bac2-c4f66e518635">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -22,7 +22,7 @@
         <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
       </dependencies>
       <usedLanguages>
-        <usedLanguage>a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.scrollhead)</usedLanguage>
+        <usedLanguage>a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
       </usedLanguages>
@@ -32,9 +32,9 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_together">
           <greater-priority-mapping>
-            <generator generatorUID="dde974a6-90dc-44c0-bac2-c4f66e518635(com.mbeddr.mpsutil.scrollhead#4313262807135097306)" />
+            <generator generatorUID="dde974a6-90dc-44c0-bac2-c4f66e518635(com.mbeddr.mpsutil.breadcrumb#4313262807135097306)" />
             <external-mapping>
-              <mapping-node modelUID="r:822372fb-a902-4940-b3d4-c27d0fe8d05e(com.mbeddr.mpsutil.scrollhead.generator.template.main@generator)" nodeID="4313262807135097307" />
+              <mapping-node modelUID="r:822372fb-a902-4940-b3d4-c27d0fe8d05e(com.mbeddr.mpsutil.breadcrumb.generator.template.main@generator)" nodeID="4313262807135097307" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
@@ -51,7 +51,7 @@
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
-    <dependency reexport="false">fd28f7ed-d277-425b-a282-684ac4cbead6(com.mbeddr.mpsutil.scrollhead.runtime)</dependency>
+    <dependency reexport="false">fd28f7ed-d277-425b-a282-684ac4cbead6(com.mbeddr.mpsutil.breadcrumb.runtime)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1(com.mbeddr.mpsutil.spreferences)</usedLanguage>
@@ -63,7 +63,7 @@
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <runtime>
-    <dependency reexport="false">fd28f7ed-d277-425b-a282-684ac4cbead6(com.mbeddr.mpsutil.scrollhead.runtime)</dependency>
+    <dependency reexport="false">fd28f7ed-d277-425b-a282-684ac4cbead6(com.mbeddr.mpsutil.breadcrumb.runtime)</dependency>
   </runtime>
   <extendedLanguages>
     <extendedLanguage>18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</extendedLanguage>

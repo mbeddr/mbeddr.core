@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:822372fb-a902-4940-b3d4-c27d0fe8d05e(com.mbeddr.mpsutil.scrollhead.generator.template.main@generator)">
+<model modelUID="r:822372fb-a902-4940-b3d4-c27d0fe8d05e(com.mbeddr.mpsutil.breadcrumb.generator.template.main@generator)" version="0">
   <persistence version="8" />
-  <language namespace="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.scrollhead)" />
+  <language namespace="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" />
   <language namespace="d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)" />
   <language namespace="b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
@@ -11,9 +11,9 @@
   <import index="srng" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" version="-1" />
   <import index="nu8v" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" version="-1" />
   <import index="tpcb" modelUID="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" version="-1" />
-  <import index="jqcv" modelUID="r:3b5e5c58-5a2a-44f7-840e-bf72f3bd68f2(com.mbeddr.mpsutil.scrollhead.runtime.plugin)" version="-1" />
+  <import index="jqcv" modelUID="r:3b5e5c58-5a2a-44f7-840e-bf72f3bd68f2(com.mbeddr.mpsutil.breadcrumb.runtime.plugin)" version="-1" />
   <import index="9a8" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" version="-1" />
-  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.scrollhead.structure)" version="-1" />
+  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="0" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
   <import index="tpf3" modelUID="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" version="0" implicit="yes" />
@@ -23,13 +23,13 @@
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="4313262807135097307" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="main" />
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="4313262807137670436" nodeInfo="ng">
-      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="570t.4313262807137635254" resolveInfo="ScrollheadEditor" />
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="570t.4313262807137635254" resolveInfo="BreadcrumbEditor" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="5827294371090931959" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="tpee.StatementList" typeId="tpee.1068580123136" id="5827294371090931965" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="5827294371090932218" nodeInfo="nn">
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="5827294371090932428" nodeInfo="ng" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateCallMacro" typeId="tpf8.1510949579266781519" id="5827294371090932932" nodeInfo="nn">
-              <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="4313262807137670221" resolveInfo="reduce_ScrollheadEditor" />
+              <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="4313262807137670221" resolveInfo="reduce_BreadcrumbEditor" />
             </node>
           </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="5827294371094641094" nodeInfo="nn" />
@@ -39,8 +39,8 @@
     </node>
   </root>
   <root type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="4313262807137670221" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="reduce_ScrollheadEditor" />
-    <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="570t.4313262807137635254" resolveInfo="ScrollheadEditor" />
+    <property name="name" nameId="tpck.1169194664001" value="reduce_BreadcrumbEditor" />
+    <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="570t.4313262807137635254" resolveInfo="BreadcrumbEditor" />
     <node role="contentNode" roleId="tpf8.1092060348987" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="1139852960722" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="_context_class_" />
       <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="4380765396968483917" nodeInfo="igu">
@@ -81,14 +81,14 @@
           </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4313262807137810192" nodeInfo="nn">
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4313262807137810193" nodeInfo="nr">
-              <property name="name" nameId="tpck.1169194664001" value="scrollheadChangeListener" />
+              <property name="name" nameId="tpck.1169194664001" value="breadcrumbChangeListener" />
               <property name="isFinal" nameId="tpee.1176718929932" value="true" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4313262807137810187" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="jqcv.4313262807137694079" resolveInfo="ScrollheadChangeListener" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="jqcv.4313262807137694079" resolveInfo="BreadcrumbChangeListener" />
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="4313262807137810194" nodeInfo="nn">
                 <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="4313262807137810195" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jqcv.4313262807137703353" resolveInfo="ScrollheadChangeListener" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jqcv.4313262807137703353" resolveInfo="BreadcrumbChangeListener" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4313262807137816345" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4313262807137816339" resolveInfo="editorComponent" />
                   </node>
@@ -121,7 +121,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4313262807137872602" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dbrf.~JViewport%daddChangeListener(javax%dswing%devent%dChangeListener)%cvoid" resolveInfo="addChangeListener" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4313262807137872870" nodeInfo="nn">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4313262807137810193" resolveInfo="scrollheadChangeListener" />
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4313262807137810193" resolveInfo="breadcrumbChangeListener" />
                 </node>
               </node>
             </node>
@@ -162,7 +162,7 @@
                               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4313262807137916274" nodeInfo="nn">
                                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dbrf.~JViewport%dremoveChangeListener(javax%dswing%devent%dChangeListener)%cvoid" resolveInfo="removeChangeListener" />
                                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4313262807137916395" nodeInfo="nn">
-                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4313262807137810193" resolveInfo="scrollheadChangeListener" />
+                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4313262807137810193" resolveInfo="breadcrumbChangeListener" />
                                 </node>
                               </node>
                             </node>
