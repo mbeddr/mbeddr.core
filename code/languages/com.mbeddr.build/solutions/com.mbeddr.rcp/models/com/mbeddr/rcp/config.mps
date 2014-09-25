@@ -10,6 +10,7 @@
   <language namespace="0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)" />
   <import index="p6ld" modelUID="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" version="-1" />
   <import index="al5i" modelUID="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" version="-1" />
+  <import index="ffeo" modelUID="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" version="-1" />
   <import index="3ior" modelUID="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" version="2" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="kdzh" modelUID="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" version="3" implicit="yes" />
@@ -40,6 +41,7 @@
         <link role="pluging" roleId="ncyu.2772668640896749313" targetNodeId="p6ld.8628756186118765539" />
       </node>
     </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="ncyu.RCPMacros" typeId="ncyu.3473691595523435220" id="3473691595523851049" nodeInfo="ng" />
   </root>
 </model>
 
