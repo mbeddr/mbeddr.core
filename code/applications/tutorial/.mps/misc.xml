@@ -49,6 +49,13 @@
     <favorites_list name="HILT">
       <favorite_root node_ref="r:6a63d759-341b-4a55-b0b8-859e3707a9ff(mbeddr.tutorial.main.math)/5098456557381619915" />
       <favorite_root node_ref="r:7a08db64-31ae-45a6-9e47-2cee790d5f4e(mbeddr.tutorial.main.newLanguages)/843070037213212048" />
+      <favorite_root node_ref="r:89ebfe71-1565-4e19-9b45-d21534583dcd(mbeddr.tutorial.main.sensor)/1189162225743755049" />
+      <favorite_root node_ref="r:89ebfe71-1565-4e19-9b45-d21534583dcd(mbeddr.tutorial.main.sensor)/668275938443286046" />
+      <favorite_root node_ref="r:89ebfe71-1565-4e19-9b45-d21534583dcd(mbeddr.tutorial.main.sensor)/1189162225741766602" />
+      <favorite_root node_ref="r:89ebfe71-1565-4e19-9b45-d21534583dcd(mbeddr.tutorial.main.sensor)/1189162225744633186" />
+      <favorite_root node_ref="r:a90dee15-dddd-4bca-abf6-bd0df130c712(mbeddr.tutorial.main.sensor_analyses)/1189162225746051113" />
+      <favorite_root node_ref="r:a90dee15-dddd-4bca-abf6-bd0df130c712(mbeddr.tutorial.main.sensor_analyses)/4754673468436409053" />
+      <favorite_root node_ref="r:0910ea28-e006-46e7-922c-978d4000e81c(mbeddr.tutorial.main.sensor_test)/1189162225742088738" />
     </favorites_list>
   </component>
   <component name="ProjectRootManager" version="2" />
