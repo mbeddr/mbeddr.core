@@ -3821,7 +3821,7 @@
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="6950600009275759169" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.scrollhead.runtime" />
+        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.breadcrumb.runtime" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="fd28f7ed-d277-425b-a282-684ac4cbead6" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6950600009275770000" nodeInfo="ng">
@@ -3835,9 +3835,9 @@
                 <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6950600009275770004" nodeInfo="nn">
                   <property name="head" nameId="3ior.8618885170173601779" value="solutions" />
                   <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6950600009275770005" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.scrollhead.runtime" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6950600009275779201" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.scrollhead.runtime.msd" />
+                    <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.breadcrumb.runtime" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3548825705281907944" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.breadcrumb.runtime.msd" />
                     </node>
                   </node>
                 </node>
@@ -3848,7 +3848,7 @@
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="6950600009275811626" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="6950600009275811627" nodeInfo="ng">
             <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
-            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6950600009275790680" resolveInfo="com.mbeddr.mpsutil.scrollhead" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6950600009275790680" resolveInfo="com.mbeddr.mpsutil.breadcrumb" />
           </node>
         </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="6950600009275811628" nodeInfo="nn">
@@ -3878,7 +3878,7 @@
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="6950600009275790680" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.scrollhead" />
+        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.breadcrumb" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="a482b416-d0c9-473f-8f67-725ed642b3f3" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6950600009275794514" nodeInfo="ng">
@@ -3892,9 +3892,9 @@
                 <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6950600009275794518" nodeInfo="nn">
                   <property name="head" nameId="3ior.8618885170173601779" value="languages" />
                   <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6950600009275794519" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.scrollhead" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6950600009275803781" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.scrollhead.mpl" />
+                    <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.breadcrumb" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3548825705281920263" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.breadcrumb.mpl" />
                     </node>
                   </node>
                 </node>
@@ -3911,7 +3911,7 @@
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="6950600009275806868" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="6950600009275806869" nodeInfo="ng">
             <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
-            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6950600009275759169" resolveInfo="com.mbeddr.mpsutil.scrollhead.runtime" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6950600009275759169" resolveInfo="com.mbeddr.mpsutil.breadcrumb.runtime" />
           </node>
         </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="6950600009275806872" nodeInfo="nn">
@@ -3921,7 +3921,7 @@
           </node>
         </node>
         <node role="runtime" roleId="kdzh.3189788309731917348" type="kdzh.BuildMps_ModuleSolutionRuntime" typeId="kdzh.3189788309731981027" id="6950600009275806874" nodeInfo="ng">
-          <link role="solution" roleId="kdzh.3189788309731981028" targetNodeId="6950600009275759169" resolveInfo="com.mbeddr.mpsutil.scrollhead.runtime" />
+          <link role="solution" roleId="kdzh.3189788309731981028" targetNodeId="6950600009275759169" resolveInfo="com.mbeddr.mpsutil.breadcrumb.runtime" />
         </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="6950600009275806875" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="6950600009275806876" nodeInfo="ng">
@@ -3929,7 +3929,7 @@
           </node>
         </node>
         <node role="generator" roleId="kdzh.9200313594498201639" type="kdzh.BuildMps_Generator" typeId="kdzh.5507251971038816436" id="6950600009275806877" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.scrollhead#4313262807135097306" />
+          <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.breadcrumb#4313262807135097306" />
           <property name="uuid" nameId="kdzh.322010710375892619" value="dde974a6-90dc-44c0-bac2-c4f66e518635" />
           <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
           <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="6950600009275806878" nodeInfo="nn">
