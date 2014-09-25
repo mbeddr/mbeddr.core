@@ -1624,6 +1624,8 @@
               <property name="text" nameId="tpc2.1073389577007" value="loops unwinding" />
             </node>
             <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="275841289472609737" nodeInfo="ng">
+              <property name="noTargetText" nameId="tpc2.1139852716018" value="infinite" />
+              <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
               <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.6472990431939799909" resolveInfo="unwindingDepth" />
             </node>
           </node>
@@ -1668,6 +1670,8 @@
               <property name="text" nameId="tpc2.1073389577007" value="analysis depth" />
             </node>
             <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="275841289472609759" nodeInfo="ng">
+              <property name="noTargetText" nameId="tpc2.1139852716018" value="infinite" />
+              <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
               <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.441761995014974059" resolveInfo="analysisDepth" />
             </node>
             <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="275841289472609760" nodeInfo="nn">
