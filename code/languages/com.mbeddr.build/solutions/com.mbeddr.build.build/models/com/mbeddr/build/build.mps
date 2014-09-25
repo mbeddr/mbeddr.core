@@ -705,6 +705,7 @@
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-tests.xml" />
     <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="2844724322557177011" nodeInfo="ng">
       <property name="heapSize" nameId="3ior.927724900262398947" value="2048" />
+      <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056440471" nodeInfo="ng">
       <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
@@ -1090,6 +1091,48 @@
               <property name="head" nameId="3ior.8618885170173601779" value="mbeddr.tutorial.main" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6601119208929334965" nodeInfo="nn">
                 <property name="head" nameId="3ior.8618885170173601779" value="mbeddr.tutorial.main.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="9077412644305173963" nodeInfo="nn">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="9077412644305173964" nodeInfo="ng">
+            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="9077412644305036064" resolveInfo="tutorial.__spreferences.PlatformTemplates" />
+          </node>
+        </node>
+      </node>
+      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="9077412644305033091" nodeInfo="ng">
+        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="tutorial.__spreferences.TypeSizeConfiguration" />
+        <property name="uuid" nameId="kdzh.322010710375892619" value="~_PreferencesModule#tutorial.__spreferences.TypeSizeConfiguration" />
+        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="9077412644305033092" nodeInfo="ng">
+          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="1373401575434228878" resolveInfo="tutorial.home" />
+          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9077412644305033093" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="_spreferences" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9077412644305033094" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="TypeSizeConfiguration" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9077412644305035984" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="module.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="9077412644305036064" nodeInfo="ng">
+        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="tutorial.__spreferences.PlatformTemplates" />
+        <property name="uuid" nameId="kdzh.322010710375892619" value="~_PreferencesModule#tutorial.__spreferences.PlatformTemplates" />
+        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="9077412644305036065" nodeInfo="ng">
+          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="1373401575434228878" resolveInfo="tutorial.home" />
+          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9077412644305036066" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="_spreferences" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9077412644305036067" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="PlatformTemplates" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9077412644305036068" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="module.msd" />
               </node>
             </node>
           </node>

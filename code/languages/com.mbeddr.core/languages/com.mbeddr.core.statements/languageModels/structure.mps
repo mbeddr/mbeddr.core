@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="9">
+<model modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="33" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" />
   <import index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="13" />
   <import index="356a" modelUID="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" version="0" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="9" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4185783222026464515" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Statement" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="an empty statement" />
@@ -66,13 +66,7 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5806551411806985509" resolveInfo="ICanBeStoredInRegister" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2486081302459814101" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2486081302459814099" resolveInfo="IVariableDeclaration" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7274201720601230889" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.7274201720600672742" resolveInfo="IDataflowValue" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3196454794517288532" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.3196454794517236255" resolveInfo="IDataflowAssignment" />
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.2047364827738361461" resolveInfo="IVariableDeclaration" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5449787351258301333" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5449787351258300532" resolveInfo="IValueLike" />
@@ -115,7 +109,7 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4185783222026475238" resolveInfo="LocalVariableDeclaration" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2486081302459354934" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2486081302459354921" resolveInfo="IVariableReference" />
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.2047364827736357258" resolveInfo="IVariableReference" />
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2093108837558189304" nodeInfo="ig">
@@ -628,35 +622,6 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5485104033529954231" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="text" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2486081302459354921" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="localvar" />
-    <property name="name" nameId="tpck.1169194664001" value="IVariableReference" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7274201720600718485" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.7274201720600672741" resolveInfo="IDataflowVariableAccessor" />
-    </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7274201720600718487" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.7274201720600672742" resolveInfo="IDataflowValue" />
-    </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8076351743304153735" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.8076351743304603872" resolveInfo="IReference" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2486081302459814099" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="localvar" />
-    <property name="name" nameId="tpck.1169194664001" value="IVariableDeclaration" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="704069370490657364" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.704069370490430471" resolveInfo="IDataflowTyped" />
-    </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8225865834982338524" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7349952699787631189" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.7349952699787631186" resolveInfo="IDataflowVariable" />
-    </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7897559875242276958" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.7274201720600672742" resolveInfo="IDataflowValue" />
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8886917924485497795" nodeInfo="ig">

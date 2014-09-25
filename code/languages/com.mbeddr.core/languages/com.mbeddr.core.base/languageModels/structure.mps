@@ -694,22 +694,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4577779292081684434" resolveInfo="IKeepAliveInGeneration" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7307224057853283254" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="dataflow" />
-    <property name="name" nameId="tpck.1169194664001" value="DoNotAnalyzeDataFlowAnnotation" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="--" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080550390" nodeInfo="ng">
-      <property name="role" nameId="tpce.7588428831955550663" value="dataFlowAnnotation" />
-      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="6569298311080550391" nodeInfo="ng">
-        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="2416710259286977851" resolveInfo="IDoNotAnalyzeDataFlowAnnotateable" />
-      </node>
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2416710259286977851" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="dataflow" />
-    <property name="name" nameId="tpck.1169194664001" value="IDoNotAnalyzeDataFlowAnnotateable" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5959167564566976062" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="VisibilityControllingAttribute" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
@@ -1244,6 +1228,9 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4527669556367956681" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IInstantiatedOnlyInGenerators" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3630807745796755534" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="ITemporaryConcept" />
   </root>
 </model>
 
