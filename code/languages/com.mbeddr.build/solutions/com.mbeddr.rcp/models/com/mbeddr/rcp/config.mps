@@ -34,6 +34,10 @@
       <property name="applicationBuildNumber" nameId="ncyu.1541760345699870996" value="2" />
       <property name="platformBuildNumber" nameId="ncyu.1541760345699869253" value="1" />
       <property name="name" nameId="tpck.1169194664001" value="mbeddr" />
+      <node role="plugins" roleId="ncyu.2772668640896749316" type="ncyu.PluginRef" typeId="ncyu.2772668640896749312" id="6332686068371599397" nodeInfo="ng">
+        <property name="deployBundled" nameId="ncyu.2772668640896749323" value="true" />
+        <link role="pluging" roleId="ncyu.2772668640896749313" targetNodeId="al5i.8607331426312061457" />
+      </node>
       <node role="plugins" roleId="ncyu.2772668640896749316" type="ncyu.PluginRef" typeId="ncyu.2772668640896749312" id="9112023735733120511" nodeInfo="ng">
         <link role="pluging" roleId="ncyu.2772668640896749313" targetNodeId="al5i.8628756186118380506" />
       </node>
@@ -41,7 +45,6 @@
         <link role="pluging" roleId="ncyu.2772668640896749313" targetNodeId="p6ld.8628756186118765539" />
       </node>
     </node>
-    <node role="macros" roleId="3ior.5617550519002745378" type="ncyu.RCPMacros" typeId="ncyu.3473691595523435220" id="3473691595523851049" nodeInfo="ng" />
   </root>
 </model>
 
