@@ -36,6 +36,8 @@
   <language namespace="0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)" />
   <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
   <language namespace="0a02a8f9-14d0-4970-9bd2-ca35a097c80d(com.mbeddr.analyses.cbmc.core)" />
+  <language-engaged-on-generation namespace="b574d547-b77e-4fed-9f60-c349c4410765(com.mbeddr.ext.math)" />
+  <language-engaged-on-generation namespace="97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)" />
   <import index="6awg" modelUID="r:89ebfe71-1565-4e19-9b45-d21534583dcd(mbeddr.tutorial.main.sensor)" version="-1" />
   <import index="vyll" modelUID="r:1f509daa-d54a-362a-84cd-bf3516b4665c(tutorial.__spreferences.PlatformTemplates)" version="-1" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
@@ -43,57 +45,31 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" implicit="yes" />
   <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="45" implicit="yes" />
-  <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="2" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="4" implicit="yes" />
-  <import index="hj5x" modelUID="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" version="2" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="5" implicit="yes" />
-  <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="1189162225744731268" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Sensor_AnalysesConfiguration" />
-    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1189162225744734328" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1189162225746051113" resolveInfo="Sensor_Analyses" />
-    </node>
-    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.RobustnessCBMCAnalysis" typeId="hj5x.4053481679317021366" id="1189162225746196696" nodeInfo="ng">
-      <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
-      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
-      <property name="showUnwindingDepthInfo" nameId="q5q6.1015192564308444976" value="true" />
-      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="none" />
-      <property name="hasSpecifiedTimeout" nameId="q5q6.5889520553258812025" value="false" />
-      <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
-      <property name="timeoutForSingleAnalysis" nameId="q5q6.5889520553258614000" value="none" />
-      <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="false" />
-      <property name="check_array_bounds" nameId="hj5x.4053481679317021369" value="true" />
-      <property name="check_div_by_zero" nameId="hj5x.4053481679317021367" value="true" />
-      <property name="check_nan" nameId="hj5x.4053481679317021372" value="true" />
-      <property name="check_pointer" nameId="hj5x.4053481679317021368" value="true" />
-      <property name="check_signed_overflow" nameId="hj5x.4053481679317021370" value="true" />
-      <property name="check_unsigned_overflow" nameId="hj5x.4053481679317021371" value="true" />
-      <property name="check_memory_leak" nameId="hj5x.9020927825194549928" value="true" />
-      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="1189162225746063219" resolveInfo="verifyFunctionRobustness" />
-    </node>
-  </root>
+  <import index="hj5x" modelUID="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" version="2" implicit="yes" />
+  <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="2" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="1189162225744734348" nodeInfo="ng">
-    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="1189162225746051083" nodeInfo="ng">
-      <property name="isTest" nameId="51wr.3431613015799084476" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="Sensor_Analyses" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1189162225746051085" nodeInfo="ng">
+    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.StaticLibrary" typeId="51wr.2671893947946158498" id="4245322156324254634" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="lib" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4245322156324254819" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="1189162225746051113" resolveInfo="Sensor_Analyses" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4245322156324254821" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6awg.1189162225743755049" resolveInfo="Sensor_Home" />
       </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1189162225746051090" nodeInfo="ng">
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4245322156324254822" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6awg.1189162225741766602" resolveInfo="Sensor_Motion" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1189162225746185169" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="1189162225746051113" resolveInfo="Sensor_Analyses" />
       </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qlb5.UnitConfigItem" typeId="qlb5.5348704582971040037" id="1189162225746185174" nodeInfo="ng" />
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="1189162225746185179" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="1189162225746185180" nodeInfo="ng" />
     </node>
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.PlatformReference" typeId="51wr.8719112291175211294" id="4328885207275039659" nodeInfo="ng">
+    <node role="target" roleId="51wr.5323740605968447026" type="51wr.PlatformReference" typeId="51wr.8719112291175211294" id="4245322156324254828" nodeInfo="ng">
       <link role="template" roleId="51wr.8719112291175211414" targetNodeId="vyll.4648263319969682300" resolveInfo="Desktop Platform" />
     </node>
   </root>
@@ -280,6 +256,31 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="4245322156324225185" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Sensor_AnalysesConfiguration" />
+    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.RobustnessCBMCAnalysis" typeId="hj5x.4053481679317021366" id="4245322156324254382" nodeInfo="ng">
+      <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="showUnwindingDepthInfo" nameId="q5q6.1015192564308444976" value="true" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="none" />
+      <property name="hasSpecifiedTimeout" nameId="q5q6.5889520553258812025" value="false" />
+      <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
+      <property name="timeoutForSingleAnalysis" nameId="q5q6.5889520553258614000" value="none" />
+      <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="false" />
+      <property name="check_array_bounds" nameId="hj5x.4053481679317021369" value="true" />
+      <property name="check_div_by_zero" nameId="hj5x.4053481679317021367" value="true" />
+      <property name="check_nan" nameId="hj5x.4053481679317021372" value="true" />
+      <property name="check_pointer" nameId="hj5x.4053481679317021368" value="true" />
+      <property name="check_signed_overflow" nameId="hj5x.4053481679317021370" value="true" />
+      <property name="check_unsigned_overflow" nameId="hj5x.4053481679317021371" value="true" />
+      <property name="check_memory_leak" nameId="hj5x.9020927825194549928" value="true" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="1189162225746063219" resolveInfo="verifyFunctionRobustness" />
+    </node>
+    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="4245322156324254630" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1189162225746051113" resolveInfo="Sensor_Analyses" />
     </node>
   </root>
 </model>
