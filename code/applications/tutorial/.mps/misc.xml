@@ -39,6 +39,17 @@
       <favorite_root node_ref="r:7a08db64-31ae-45a6-9e47-2cee790d5f4e(mbeddr.tutorial.main.newLanguages)/5485104033529950730" />
       <favorite_root node_ref="r:7a08db64-31ae-45a6-9e47-2cee790d5f4e(mbeddr.tutorial.main.newLanguages)/6255755692623512716" />
     </favorites_list>
+    <favorites_list name="FOSD">
+      <favorite_root node_ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)/5441227754062389703" />
+      <favorite_root node_ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)/869116753978119546" />
+      <favorite_root node_ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)/5441227754062389682" />
+      <favorite_root node_ref="r:d25ce6b1-42b0-40de-b80d-9f1697f9b285(test.ex.cc.var.alternative.main)/7251344243797177754" />
+      <favorite_root model_ref="r:f851a47f-7845-4bc0-9e4f-fd2e0e992069(test.ex.cc.var.composition.test1)" />
+    </favorites_list>
+    <favorites_list name="HILT">
+      <favorite_root node_ref="r:6a63d759-341b-4a55-b0b8-859e3707a9ff(mbeddr.tutorial.main.math)/5098456557381619915" />
+      <favorite_root node_ref="r:7a08db64-31ae-45a6-9e47-2cee790d5f4e(mbeddr.tutorial.main.newLanguages)/843070037213212048" />
+    </favorites_list>
   </component>
   <component name="ProjectRootManager" version="2" />
 </project>
