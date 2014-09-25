@@ -6592,7 +6592,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7773837976085536190" resolveInfo="comp" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7773837976085536340" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9a8.~EditorComponent%dsetEnabledHints(java%dutil%dSet)%cvoid" resolveInfo="setEnabledHints" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9a8.~EditorComponent%dsetEnabledHints(java%dutil%dSet)%cboolean" resolveInfo="setEnabledHints" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7773837976085536341" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7773837976085536342" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7773837976085536284" resolveInfo="settings" />
@@ -6610,7 +6610,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7773837976085536190" resolveInfo="comp" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7773837976085536347" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9a8.~EditorComponent%dsetUseCustomHints(boolean)%cvoid" resolveInfo="setUseCustomHints" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9a8.~EditorComponent%dsetUseCustomHints(boolean)%cboolean" resolveInfo="setUseCustomHints" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="7773837976085536348" nodeInfo="nn">
                 <property name="value" nameId="tpee.1068580123138" value="true" />
               </node>
@@ -6767,7 +6767,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7773837976085536190" resolveInfo="comp" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7773837976085536418" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9a8.~EditorComponent%dsetEnabledHints(java%dutil%dSet)%cvoid" resolveInfo="setEnabledHints" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9a8.~EditorComponent%dsetEnabledHints(java%dutil%dSet)%cboolean" resolveInfo="setEnabledHints" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7773837976085536419" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7773837976085536420" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7773837976085536383" resolveInfo="settings" />
@@ -6785,7 +6785,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7773837976085536190" resolveInfo="comp" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7773837976085536425" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9a8.~EditorComponent%dsetUseCustomHints(boolean)%cvoid" resolveInfo="setUseCustomHints" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9a8.~EditorComponent%dsetUseCustomHints(boolean)%cboolean" resolveInfo="setUseCustomHints" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="7773837976085536426" nodeInfo="nn">
                 <property name="value" nameId="tpee.1068580123138" value="true" />
               </node>
