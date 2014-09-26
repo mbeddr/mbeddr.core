@@ -1273,7 +1273,7 @@
       <property name="name" nameId="tpck.1169194664001" value="reviewValid" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="498292997617973178" nodeInfo="nn">
         <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="498292997617974858" nodeInfo="ng">
-          <property name="value" nameId="tpc2.1225456424731" value="B4F5AE" />
+          <property name="value" nameId="tpc2.1225456424731" value="E6FAF0" />
         </node>
       </node>
     </node>
@@ -1281,7 +1281,7 @@
       <property name="name" nameId="tpck.1169194664001" value="reviewInvalid" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="498292997617976811" nodeInfo="nn">
         <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="498292997617976812" nodeInfo="ng">
-          <property name="value" nameId="tpc2.1225456424731" value="F5E2C9" />
+          <property name="value" nameId="tpc2.1225456424731" value="FAE6F0" />
         </node>
       </node>
     </node>
