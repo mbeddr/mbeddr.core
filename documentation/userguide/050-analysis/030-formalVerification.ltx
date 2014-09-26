@@ -66,6 +66,7 @@ The meaning of these settings is briefly described below:
 \item Rebuild models before analysis instructs mbeddr to perform a full "MPS rebuild" of the analyzed model before each analysis (otherwise only an "MPS make" will be run).
 \item Slice formula instructs CBMC to perform program slicing. The analyses will run faster, however, in the case when the analysis fails, the returned counterexample might not contain all intermediate steps.
 \item Unwinding depth instructs CBMC how many times it should unwind loops. If generate unwinding assertions is selected, then CBMC will explicitly check that each loop was unwound enough. For more details about the loops unwinding in CBMC, please look here: \url{http://www.cprover.org/cprover-manual/cbmc-loops.shtml}
+\item Partial loops instructs CBMC to continue the analysis even if unwinding is not enough. Enabling partial loops, increases the number of bugs that can be found, however, it might introduce false positives (properties reported as SUCCESS even if they should FAIL) and false negatives (properties reported as FAILS even if they should be SUCCESS; in these cases, provided counterexamples are not feasible). Unfeasible conterexamples can be returned also in the case when the property FAILS indeed.
 \end{itemize}
 
 \section{Robustness Checks at C-level}
