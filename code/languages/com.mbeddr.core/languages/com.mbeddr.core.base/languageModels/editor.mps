@@ -10071,7 +10071,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment.review" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="vs0r.4901333676674651668" resolveInfo="ReviewAssessmentQuery" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4901333676674651700" nodeInfo="nn">
-      <property name="text" nameId="tpc2.1073389577007" value="review state" />
+      <property name="text" nameId="tpc2.1073389577007" value="code review summary" />
     </node>
   </root>
 </model>

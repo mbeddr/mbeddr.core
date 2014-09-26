@@ -1275,7 +1275,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4901333676674651668" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment.review" />
     <property name="name" nameId="tpck.1169194664001" value="ReviewAssessmentQuery" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="review state" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="code review summary" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="865293814733115675" resolveInfo="AssessmentQuery" />
   </root>
 </model>
