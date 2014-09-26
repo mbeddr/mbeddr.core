@@ -7,6 +7,7 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="f19x" modelUID="r:d02579d5-8c48-4c03-9742-38fb8f18f018(com.mbeddr.mpsutil.nodeviewer.structure)" version="-1" />
   <import index="kwxp" modelUID="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" version="-1" />
+  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="0" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
@@ -1231,6 +1232,33 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3630807745796755534" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ITemporaryConcept" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7941623276298081733" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tree.hierarchicalstructure" />
+    <property name="name" nameId="tpck.1169194664001" value="IHierarchicalStructure" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7941623276298138294" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7941623276301458573" resolveInfo="IHierarchicalStructureBase" />
+    </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7941623276298488127" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="570t.4313262807135907006" resolveInfo="IBreadcrumb" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7941623276301385191" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tree.hierarchicalstructure" />
+    <property name="name" nameId="tpck.1169194664001" value="IHierarchicalStructureRoot" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7941623276301548277" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7941623276301458573" resolveInfo="IHierarchicalStructureBase" />
+    </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7941623276301385193" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="176285146686936640" resolveInfo="ITreeViewRoot" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7941623276301458573" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tree.hierarchicalstructure" />
+    <property name="name" nameId="tpck.1169194664001" value="IHierarchicalStructureBase" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7941623276301505885" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8998906896747633114" resolveInfo="ITreeViewable" />
+    </node>
   </root>
 </model>
 
