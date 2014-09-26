@@ -33,6 +33,10 @@
       <property name="name" nameId="tpck.1169194664001" value="unwindingAssertions" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="786222485499368246" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="partialLoops" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="441761995014974059" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="analysisDepth" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />

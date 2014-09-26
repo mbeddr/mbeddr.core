@@ -36,6 +36,7 @@
   <language namespace="0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)" />
   <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
   <language namespace="0a02a8f9-14d0-4970-9bd2-ca35a097c80d(com.mbeddr.analyses.cbmc.core)" />
+  <language namespace="564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)" />
   <language-engaged-on-generation namespace="b574d547-b77e-4fed-9f60-c349c4410765(com.mbeddr.ext.math)" />
   <language-engaged-on-generation namespace="97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)" />
   <import index="6awg" modelUID="r:89ebfe71-1565-4e19-9b45-d21534583dcd(mbeddr.tutorial.main.sensor)" version="-1" />
@@ -52,26 +53,31 @@
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="5" implicit="yes" />
   <import index="hj5x" modelUID="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" version="2" implicit="yes" />
   <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="2" implicit="yes" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="17" implicit="yes" />
+  <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="5" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="1189162225744734348" nodeInfo="ng">
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.PlatformReference" typeId="51wr.8719112291175211294" id="8466817991205038230" nodeInfo="ng">
-      <link role="template" roleId="51wr.8719112291175211414" targetNodeId="vyll.4648263319969682300" resolveInfo="Desktop Platform" />
-    </node>
-    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="4754673468436409180" nodeInfo="ng">
-      <property name="isTest" nameId="51wr.3431613015799084476" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="Sensor_Analyses" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4754673468436412514" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="1189162225746051113" resolveInfo="Sensor_Analyses" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4754673468436412522" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6awg.1189162225743755049" resolveInfo="Sensor_Home" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4754673468436412535" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6awg.1189162225741766602" resolveInfo="Sensor_Motion" />
-      </node>
-    </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qlb5.UnitConfigItem" typeId="qlb5.5348704582971040037" id="1189162225746185174" nodeInfo="ng" />
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="1189162225746185179" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="1189162225746185180" nodeInfo="ng" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="1265644944846178480" nodeInfo="ng">
+      <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="26ao.TracingConfigItem" typeId="26ao.8626086128969157722" id="5610578079070906398" nodeInfo="ng" />
+    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.StaticLibrary" typeId="51wr.2671893947946158498" id="5610578079070822609" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Sensor_Analyses" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5610578079070822613" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6awg.1189162225743755049" resolveInfo="Sensor_Home" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5610578079070822624" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6awg.1189162225741766602" resolveInfo="Sensor_Motion" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5610578079070822642" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6awg.668275938443286046" resolveInfo="Sensor_Lib" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5610578079070822666" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="1189162225746051113" resolveInfo="Sensor_Analyses" />
+      </node>
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1189162225746051113" nodeInfo="ng">
