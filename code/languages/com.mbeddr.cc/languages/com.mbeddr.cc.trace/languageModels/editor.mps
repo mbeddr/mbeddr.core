@@ -515,8 +515,11 @@
             </node>
           </node>
         </node>
-        <node role="anchor" roleId="q3j0.9185659875393569181" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2914353497744773671" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="[T]" />
+        <node role="anchor" roleId="q3j0.9185659875393569181" type="tpc2.CellModel_ReadOnlyModelAccessor" typeId="tpc2.1225900081164" id="1586057995646589136" nodeInfo="ng">
+          <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="439567521322929318" resolveInfo="deleteTrace" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="1586057995646722090" nodeInfo="nn">
+            <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
+          </node>
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="2914353497745424275" nodeInfo="nn">
             <property name="flag" nameId="tpc2.1186414551515" value="true" />
           </node>
@@ -559,6 +562,35 @@
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4901333676673451609" nodeInfo="nn">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="y6af.2914353497746050715" resolveInfo="getTarget" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="modelAccessor" roleId="tpc2.1225900141900" type="tpc2.ReadOnlyModelAccessor" typeId="tpc2.1225898583838" id="1586057995646589138" nodeInfo="ng">
+            <node role="getter" roleId="tpc2.1225898971709" type="tpc2.QueryFunction_ModelAccess_Getter" typeId="tpc2.1176717841777" id="1586057995646589140" nodeInfo="nn">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1586057995646589142" nodeInfo="sn">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="1586057995646593554" nodeInfo="nn">
+                  <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="1586057995646593555" nodeInfo="sn">
+                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="1586057995646611826" nodeInfo="nn">
+                      <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1586057995646613430" nodeInfo="nn">
+                        <property name="value" nameId="tpee.1070475926801" value="[no trace]" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1586057995646601215" nodeInfo="nn">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1586057995646594278" nodeInfo="nn">
+                      <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="1586057995646593907" nodeInfo="nn" />
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="1586057995646596903" nodeInfo="nn">
+                        <link role="link" roleId="tp25.1138056546658" targetNodeId="26ao.4577779292081946445" />
+                      </node>
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsEmptyOperation" typeId="tp2q.1165530316231" id="1586057995646611018" nodeInfo="nn" />
+                  </node>
+                </node>
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="1586057995646617098" nodeInfo="nn">
+                  <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1586057995646617505" nodeInfo="nn">
+                    <property name="value" nameId="tpee.1070475926801" value="[T]" />
                   </node>
                 </node>
               </node>
