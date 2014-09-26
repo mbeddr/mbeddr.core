@@ -24,6 +24,10 @@
       <property name="name" nameId="tpck.1169194664001" value="lastReviewHash" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4901333676674426578" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="reviewIsCurrent" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="4901333676673876645" nodeInfo="ng">
       <property name="role" nameId="tpce.7588428831955550663" value="codereview" />
       <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="4901333676673876648" nodeInfo="ng">
