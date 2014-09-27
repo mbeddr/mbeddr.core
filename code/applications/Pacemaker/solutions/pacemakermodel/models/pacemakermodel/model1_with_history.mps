@@ -2349,6 +2349,12 @@
                   </node>
                 </node>
               </node>
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="890362184445596077" nodeInfo="ng">
+                <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="890362184445596078" nodeInfo="ng" />
+                <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="890362184445628362" nodeInfo="ng">
+                  <link role="target" roleId="26ao.439567521322959431" targetNodeId="172131536229023669" resolveInfo="atrialPacing" />
+                </node>
+              </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="172131536229024357" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8111704627530385947" nodeInfo="ng">
