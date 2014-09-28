@@ -15,6 +15,7 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
+  <import index="kx8q" modelUID="r:f6bb2961-1957-480b-ad6d-b7323ffe3c12(com.mbeddr.mpsutil.codereview.structure)" version="-1" implicit="yes" />
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7024921229555594291" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IIdentifierNamedConcept" />
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292" nodeInfo="ig">
@@ -1259,6 +1260,23 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7941623276301505885" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8998906896747633114" resolveInfo="ITreeViewable" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4901333676674511261" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment.review" />
+    <property name="name" nameId="tpck.1169194664001" value="ReviewAssessmentResult" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="865293814733133833" resolveInfo="AssessmentResult" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4901333676674512137" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="code" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="kx8q.4901333676673876592" resolveInfo="ICodeReviewEntity" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4901333676674651668" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment.review" />
+    <property name="name" nameId="tpck.1169194664001" value="ReviewAssessmentQuery" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="code review summary" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="865293814733115675" resolveInfo="AssessmentQuery" />
   </root>
 </model>
 
