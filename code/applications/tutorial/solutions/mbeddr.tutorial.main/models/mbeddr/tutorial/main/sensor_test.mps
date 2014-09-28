@@ -296,6 +296,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1189162225742115197" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6awg.1189162225741766602" resolveInfo="Sensor_Motion" />
       </node>
+      <node role="linkables" roleId="51wr.4809476668198796998" type="51wr.Linkable" typeId="51wr.4809476668198796988" id="6929158439839186640" nodeInfo="ng">
+        <property name="name" nameId="51wr.4809476668198808306" value="m" />
+      </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qlb5.UnitConfigItem" typeId="qlb5.5348704582971040037" id="1189162225742119457" nodeInfo="ng" />
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="1189162225742126367" nodeInfo="ng">
