@@ -548,9 +548,9 @@
           <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7068936249763468851" nodeInfo="nn">
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7068936249763468852" nodeInfo="nr">
               <property name="isFinal" nameId="tpee.1176718929932" value="false" />
-              <property name="name" nameId="tpck.1169194664001" value="tmc" />
-              <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7068936249763468853" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="xjo8.~TransientModelsComponent" resolveInfo="TransientModelsComponent" />
+              <property name="name" nameId="tpck.1169194664001" value="tmp" />
+              <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5510460030227848171" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="y5px.~TransientModelsProvider" resolveInfo="TransientModelsProvider" />
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7068936249763468854" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7068936249763468855" nodeInfo="nn">
@@ -558,8 +558,8 @@
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7068936249763468856" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="vsqj.~Project%dgetComponent(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="getComponent" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="7068936249763468857" nodeInfo="nn">
-                    <link role="classifier" roleId="tpee.1116615189566" targetNodeId="xjo8.~TransientModelsComponent" resolveInfo="TransientModelsComponent" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="5510460030227847323" nodeInfo="nn">
+                    <link role="classifier" roleId="tpee.1116615189566" targetNodeId="y5px.~TransientModelsProvider" resolveInfo="TransientModelsProvider" />
                   </node>
                 </node>
               </node>
@@ -695,7 +695,7 @@
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7068936249763468875" resolveInfo="genOpt" />
                     </node>
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8442642908516923172" nodeInfo="nn">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7068936249763468852" resolveInfo="tmc" />
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7068936249763468852" resolveInfo="tmp" />
                     </node>
                   </node>
                 </node>

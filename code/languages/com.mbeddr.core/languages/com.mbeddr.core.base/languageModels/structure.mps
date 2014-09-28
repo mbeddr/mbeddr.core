@@ -7,6 +7,7 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="f19x" modelUID="r:d02579d5-8c48-4c03-9742-38fb8f18f018(com.mbeddr.mpsutil.nodeviewer.structure)" version="-1" />
   <import index="kwxp" modelUID="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" version="-1" />
+  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="0" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
@@ -14,6 +15,7 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
+  <import index="kx8q" modelUID="r:f6bb2961-1957-480b-ad6d-b7323ffe3c12(com.mbeddr.mpsutil.codereview.structure)" version="-1" implicit="yes" />
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7024921229555594291" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IIdentifierNamedConcept" />
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292" nodeInfo="ig">
@@ -1231,6 +1233,50 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3630807745796755534" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ITemporaryConcept" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7941623276298081733" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tree.hierarchicalstructure" />
+    <property name="name" nameId="tpck.1169194664001" value="IHierarchicalStructure" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7941623276298138294" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7941623276301458573" resolveInfo="IHierarchicalStructureBase" />
+    </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7941623276298488127" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="570t.4313262807135907006" resolveInfo="IBreadcrumb" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7941623276301385191" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tree.hierarchicalstructure" />
+    <property name="name" nameId="tpck.1169194664001" value="IHierarchicalStructureRoot" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7941623276301548277" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7941623276301458573" resolveInfo="IHierarchicalStructureBase" />
+    </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7941623276301385193" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="176285146686936640" resolveInfo="ITreeViewRoot" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7941623276301458573" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tree.hierarchicalstructure" />
+    <property name="name" nameId="tpck.1169194664001" value="IHierarchicalStructureBase" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7941623276301505885" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8998906896747633114" resolveInfo="ITreeViewable" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4901333676674511261" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment.review" />
+    <property name="name" nameId="tpck.1169194664001" value="ReviewAssessmentResult" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="865293814733133833" resolveInfo="AssessmentResult" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4901333676674512137" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="code" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="kx8q.4901333676673876592" resolveInfo="ICodeReviewEntity" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4901333676674651668" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment.review" />
+    <property name="name" nameId="tpck.1169194664001" value="ReviewAssessmentQuery" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="code review summary" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="865293814733115675" resolveInfo="AssessmentQuery" />
   </root>
 </model>
 
