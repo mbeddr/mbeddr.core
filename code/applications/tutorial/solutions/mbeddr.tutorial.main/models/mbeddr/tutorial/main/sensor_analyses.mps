@@ -332,9 +332,9 @@
     <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8466817991205361577" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6awg.1189162225743755049" resolveInfo="Sensor_Home" />
     </node>
-    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.RobustnessCBMCAnalysis" typeId="hj5x.4053481679317021366" id="4754673468436409177" nodeInfo="ng">
+    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.RobustnessCBMCAnalysis" typeId="hj5x.4053481679317021366" id="4859857528288110101" nodeInfo="ng">
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
-      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="true" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="showUnwindingDepthInfo" nameId="q5q6.1015192564308444976" value="true" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="none" />
