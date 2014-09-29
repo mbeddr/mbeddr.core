@@ -1315,7 +1315,7 @@
     </node>
   </root>
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="498292997618268742" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="updateValidity" />
+    <property name="name" nameId="tpck.1169194664001" value="updateValidityOnData" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="codereview" />
     <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="vs0r.4901333676673876644" resolveInfo="CodeReviewData" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="498292997618268743" nodeInfo="nn">
@@ -1412,6 +1412,32 @@
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsNotEmptyOperation" typeId="tp2q.1176501494711" id="498292997618315341" nodeInfo="nn" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="4166314869695197639" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="updateValidityOnEntity" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="codereview" />
+    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="vs0r.4901333676673876592" resolveInfo="ICodeReviewEntity" />
+    <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="4166314869695197640" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4166314869695197641" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4166314869695197642" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4166314869695197643" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="Reevaluate Review" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" roleId="tp3j.2522969319638198291" type="tp3j.ExecuteBlock" typeId="tp3j.1192795911897" id="4166314869695197644" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4166314869695197645" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4166314869695197646" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4166314869695197647" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="4166314869695198592" nodeInfo="nn" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4166314869695197652" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.4901333676674291401" resolveInfo="reevaluateReviewData" />
+            </node>
           </node>
         </node>
       </node>
