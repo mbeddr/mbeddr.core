@@ -960,6 +960,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5939454523706029594" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5939454523704167063" resolveInfo="IDetectCycle" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6907031767544011192" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4901333676673876592" resolveInfo="ICodeReviewEntity" />
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7139820346881807063" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="chunk" />
@@ -1276,6 +1279,12 @@
     <property name="name" nameId="tpck.1169194664001" value="ReviewAssessmentQuery" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="code review summary" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="865293814733115675" resolveInfo="AssessmentQuery" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8490595898229198814" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="scope" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8490595898229124356" resolveInfo="AssessmentScope" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4901333676673876644" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CodeReviewData" />
@@ -1360,6 +1369,37 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8059483560567183792" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="text" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8490595898229124356" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="AssessmentScope" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment.scope" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8490595898229124557" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment.scope" />
+    <property name="name" nameId="tpck.1169194664001" value="CurrentModelScope" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="current model" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8490595898229124356" resolveInfo="AssessmentScope" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8490595898229129994" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment.scope" />
+    <property name="name" nameId="tpck.1169194664001" value="CurrentModelScopeAndImported" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="current model and imported" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8490595898229124356" resolveInfo="AssessmentScope" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8490595898229164171" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment.scope" />
+    <property name="name" nameId="tpck.1169194664001" value="ChunkScope" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="chunk" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8490595898229124356" resolveInfo="AssessmentScope" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8490595898229164172" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="chunk" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7139820346881560230" resolveInfo="Chunk" />
     </node>
   </root>
 </model>
