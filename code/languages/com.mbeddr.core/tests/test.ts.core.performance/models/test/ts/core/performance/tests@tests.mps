@@ -537,7 +537,7 @@
               </node>
             </node>
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9018417911788297361" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="simpleFunctionCall" />
+              <property name="value" nameId="tpee.1070475926801" value="recursiveFunctionCall" />
             </node>
           </node>
         </node>
