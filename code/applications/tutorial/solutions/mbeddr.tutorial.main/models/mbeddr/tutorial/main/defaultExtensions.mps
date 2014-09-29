@@ -3537,6 +3537,12 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.CodeReviewData" typeId="vs0r.4901333676673876644" id="8490595898231063298" nodeInfo="ng">
+          <property name="lastReviewHash" nameId="vs0r.4901333676674177040" value="206973739" />
+          <property name="lastReviewTimestamp" nameId="vs0r.4901333676674177026" value="1411993962777" />
+          <property name="lastReviewReviewer" nameId="vs0r.4901333676674177031" value="markusvoelter" />
+          <property name="reviewIsCurrent" nameId="vs0r.4901333676674426578" value="true" />
+        </node>
       </node>
       <node role="contents" roleId="x27k.6512473996287153139" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5160057464294670919" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_1351804522004_3" />

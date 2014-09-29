@@ -10006,6 +10006,41 @@
           <link role="style" roleId="tpc2.9122903797312247166" targetNodeId="2806244489447475433" resolveInfo="reviewMissing" />
         </node>
       </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ApplyStyleClassCondition" typeId="tpc2.9122903797336200704" id="8490595898231214547" nodeInfo="ng">
+        <node role="query" roleId="tpc2.9122903797336200706" type="tpc2.QueryFunction_Boolean" typeId="tpc2.1223387125302" id="8490595898231214548" nodeInfo="nn">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8490595898231214549" nodeInfo="sn">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8490595898231214550" nodeInfo="nn">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.AndExpression" typeId="tpee.1080120340718" id="8490595898231227885" nodeInfo="nn">
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8490595898231231926" nodeInfo="nn">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8490595898231229543" nodeInfo="nn">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="8490595898231228306" nodeInfo="nn" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8490595898231230691" nodeInfo="nn">
+                      <link role="link" roleId="tp25.1138056516764" targetNodeId="vs0r.4901333676674512137" />
+                    </node>
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8490595898231233738" nodeInfo="nn">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.4901333676674580005" resolveInfo="reviewIsValid" />
+                  </node>
+                </node>
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8490595898231214552" nodeInfo="nn">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8490595898231214553" nodeInfo="nn">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="8490595898231214554" nodeInfo="nn" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8490595898231214555" nodeInfo="nn">
+                      <link role="link" roleId="tp25.1138056516764" targetNodeId="vs0r.4901333676674512137" />
+                    </node>
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8490595898231214556" nodeInfo="nn">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.4901333676674287768" resolveInfo="hasBeenReviewed" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="target" roleId="tpc2.1950447826683828796" type="tpc2.StyleReference" typeId="tpc2.9122903797312246523" id="8490595898231225758" nodeInfo="ng">
+          <link role="style" roleId="tpc2.9122903797312247166" targetNodeId="498292997617948189" resolveInfo="reviewValid" />
+        </node>
+      </node>
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ApplyStyleClassCondition" typeId="tpc2.9122903797336200704" id="2806244489447504925" nodeInfo="ng">
         <node role="query" roleId="tpc2.9122903797336200706" type="tpc2.QueryFunction_Boolean" typeId="tpc2.1223387125302" id="2806244489447504926" nodeInfo="nn">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2806244489447504927" nodeInfo="sn">
