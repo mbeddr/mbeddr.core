@@ -4227,12 +4227,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8022057952244484735" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="addrDiff" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.PtrDiffT" typeId="mj1l.6035922876555486166" id="8022057952244484736" nodeInfo="ng">
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="5631670625065024354" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="3120969404911679923" nodeInfo="ng">
-            <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="3120969404911680010" nodeInfo="ng">
+            <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.PtrDiffT" typeId="mj1l.6035922876555486166" id="5631670625065026689" nodeInfo="ng">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
