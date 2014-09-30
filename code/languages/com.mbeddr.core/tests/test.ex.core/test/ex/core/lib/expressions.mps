@@ -686,23 +686,6 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850444" nodeInfo="ng" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6500545468170850445" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="6500545468170850446" nodeInfo="ng">
-            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850447" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850436" resolveInfo="c" />
-            </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.Int2Char" typeId="mj1l.4296381507831569050" id="6500545468170850448" nodeInfo="ng">
-              <node role="expr" roleId="mj1l.4296381507831569052" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170850449" nodeInfo="ng">
-                <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850450" nodeInfo="ng">
-                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850439" resolveInfo="i" />
-                </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850451" nodeInfo="ng">
-                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850436" resolveInfo="c" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850452" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850453" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="6500545468170850454" nodeInfo="ng">
