@@ -746,5 +746,8 @@
       </node>
     </node>
   </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="293752265167408103" nodeInfo="ng">
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="vs0r.293752265167408099" resolveInfo="ConceptDeclarationReference" />
+  </root>
 </model>
 
