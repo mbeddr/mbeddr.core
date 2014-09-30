@@ -1161,8 +1161,10 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="1189162225744685273" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="1189162225744685274" nodeInfo="ng" />
     </node>
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.PlatformReference" typeId="51wr.8719112291175211294" id="1189162225744678628" nodeInfo="ng">
-      <link role="template" roleId="51wr.8719112291175211414" targetNodeId="vyll.4648263319969682300" resolveInfo="Desktop Platform" />
+    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4859857528288097793" nodeInfo="ng">
+      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
+      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99 -lm" />
+      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4328885207275083444" nodeInfo="ng">
@@ -1253,6 +1255,56 @@
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="4328885207275140339" resolveInfo="next" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4328885207275252915" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4859857528285753215" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="communicationChannel_hasNext" />
+        <property name="abstract" nameId="v7ag.4491876417845678667" value="true" />
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="4859857528285753218" nodeInfo="ng">
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="4328885207275224308" resolveInfo="communicationChannel" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="4328885207275140146" resolveInfo="hasNext" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="4859857528285753219" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4859857528285753222" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="communicationChannel_connect" />
+        <property name="abstract" nameId="v7ag.4491876417845678667" value="true" />
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="4859857528285753225" nodeInfo="ng">
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="4328885207275224308" resolveInfo="communicationChannel" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="4328885207275140195" resolveInfo="connect" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="4859857528285753226" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="4859857528285753227" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="address" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="4859857528285753228" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="4859857528285753229" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="timeout" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4859857528285753230" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4859857528285753233" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="communicationChannel_disconnect" />
+        <property name="abstract" nameId="v7ag.4491876417845678667" value="true" />
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="4859857528285753236" nodeInfo="ng">
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="4328885207275224308" resolveInfo="communicationChannel" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="4328885207275140256" resolveInfo="disconnect" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="4859857528285753237" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>

@@ -296,13 +296,18 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1189162225742115197" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6awg.1189162225741766602" resolveInfo="Sensor_Motion" />
       </node>
-    </node>
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.PlatformReference" typeId="51wr.8719112291175211294" id="1189162225742115179" nodeInfo="ng">
-      <link role="template" roleId="51wr.8719112291175211414" targetNodeId="vyll.4648263319969682300" resolveInfo="Desktop Platform" />
+      <node role="linkables" roleId="51wr.4809476668198796998" type="51wr.Linkable" typeId="51wr.4809476668198796988" id="6929158439839186640" nodeInfo="ng">
+        <property name="name" nameId="51wr.4809476668198808306" value="m" />
+      </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qlb5.UnitConfigItem" typeId="qlb5.5348704582971040037" id="1189162225742119457" nodeInfo="ng" />
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="1189162225742126367" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="1189162225742126368" nodeInfo="ng" />
+    </node>
+    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4859857528288109991" nodeInfo="ng">
+      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
+      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99 -lm" />
+      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
     </node>
   </root>
 </model>

@@ -4200,6 +4200,12 @@
             <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6950600009275759169" resolveInfo="com.mbeddr.mpsutil.breadcrumb.runtime" />
           </node>
         </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="5761107734911696462" nodeInfo="nn">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="5761107734911696463" nodeInfo="ng">
+            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="3225038607910801436" resolveInfo="com.mbeddr.mpsutil.serializer.xml" />
+          </node>
+        </node>
       </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="9032846276400331836" nodeInfo="ng">
