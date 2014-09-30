@@ -618,6 +618,43 @@
     </node>
     <node role="plugins" roleId="3ior.6647099934206700656" type="3ior.BuildJavaPlugin" typeId="3ior.6647099934206700647" id="9112023735732474493" nodeInfo="ng" />
     <node role="plugins" roleId="3ior.6647099934206700656" type="kdzh.BuildMPSPlugin" typeId="kdzh.868032131020265945" id="9112023735732474509" nodeInfo="ng" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Branding" typeId="kdzh.7753544965996377997" id="6683987974720178952" nodeInfo="ng">
+      <property name="major" nameId="kdzh.3497141547781541444" value="0" />
+      <property name="minor" nameId="kdzh.3497141547781541445" value="8" />
+      <node role="splashScreen" roleId="kdzh.6108265972537182996" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720178953" nodeInfo="ng" />
+      <node role="aboutScreen" roleId="kdzh.6108265972537182997" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720178954" nodeInfo="ng" />
+      <node role="buildNumber" roleId="kdzh.6108265972537229337" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6683987974720178955" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6683987974720179667" nodeInfo="ng">
+          <property name="text" nameId="3ior.4903714810883755350" value="135.001" />
+        </node>
+      </node>
+      <node role="buildDate" roleId="kdzh.1462305029084462472" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6683987974720178956" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6683987974720179670" nodeInfo="ng">
+          <property name="text" nameId="3ior.4903714810883755350" value="20140930" />
+        </node>
+      </node>
+      <node role="icon32" roleId="kdzh.6108265972537229338" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720178957" nodeInfo="ng" />
+      <node role="icon16" roleId="kdzh.6108265972537229339" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720178958" nodeInfo="ng" />
+      <node role="welcomeLogo" roleId="kdzh.772379520210716142" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720178961" nodeInfo="ng" />
+      <node role="dialogImage" roleId="kdzh.8108467228800445684" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720178962" nodeInfo="ng" />
+      <node role="shortName" roleId="kdzh.6108265972537372847" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6683987974720178963" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6683987974720179655" nodeInfo="ng">
+          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr" />
+        </node>
+      </node>
+      <node role="fullName" roleId="kdzh.6108265972537372848" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6683987974720178964" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6683987974720179664" nodeInfo="ng">
+          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr IDE" />
+        </node>
+      </node>
+      <node role="codename" roleId="kdzh.3497141547781549827" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="6683987974720179659" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6683987974720179658" nodeInfo="ng">
+          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr" />
+        </node>
+      </node>
+      <node role="welcomeSlogan" roleId="kdzh.6108265972537335222" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720195135" nodeInfo="ng" />
+      <node role="welcomeCaption" roleId="kdzh.7753544965996489990" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720195137" nodeInfo="ng" />
+    </node>
   </root>
 </model>
 
