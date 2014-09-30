@@ -1402,5 +1402,25 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7139820346881560230" resolveInfo="Chunk" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="293752265167076767" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="codereview" />
+    <property name="name" nameId="tpck.1169194664001" value="CodeReviewConfig" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="293752265167408155" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="concepts" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="293752265167408099" resolveInfo="ConceptDeclarationReference" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="293752265167408099" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="codereview" />
+    <property name="name" nameId="tpck.1169194664001" value="ConceptDeclarationReference" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7230769188913943177" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="concept" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+  </root>
 </model>
 
