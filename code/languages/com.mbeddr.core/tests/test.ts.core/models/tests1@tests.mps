@@ -11936,8 +11936,8 @@
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4633402679181518102" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2494656796337790956" resolveInfo="s1" />
                 </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3850060150414218921" nodeInfo="ng">
-                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4633402679181518106" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="1291298183852932740" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeWarningCheckOperation" typeId="tp5g.1215511704609" id="1291298183852932741" nodeInfo="ng" />
                 </node>
               </node>
             </node>
@@ -11949,8 +11949,8 @@
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4633402679181518110" nodeInfo="ng">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2494656796337790956" resolveInfo="s1" />
                 </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3850060150414218905" nodeInfo="ng">
-                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4633402679181518114" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="1291298183852942156" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeWarningCheckOperation" typeId="tp5g.1215511704609" id="1291298183852942157" nodeInfo="ng" />
                 </node>
               </node>
             </node>
@@ -11962,8 +11962,8 @@
                 <node role="left" roleId="mj1l.8860443239512128064" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="4633402679181518117" nodeInfo="ng">
                   <property name="value" nameId="yq40.6113173064526131578" value="test" />
                 </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3850060150414218839" nodeInfo="ng">
-                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4633402679181518119" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="1291298183853204133" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeWarningCheckOperation" typeId="tp5g.1215511704609" id="1291298183853204134" nodeInfo="ng" />
                 </node>
               </node>
             </node>
@@ -11975,8 +11975,8 @@
                 <node role="right" roleId="mj1l.8860443239512128065" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="4633402679181518123" nodeInfo="ng">
                   <property name="value" nameId="yq40.6113173064526131578" value="test" />
                 </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3850060150414219175" nodeInfo="ng">
-                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4633402679181518125" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="1291298183853209779" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeWarningCheckOperation" typeId="tp5g.1215511704609" id="1291298183853209780" nodeInfo="ng" />
                 </node>
               </node>
             </node>
