@@ -3003,12 +3003,6 @@
             <link role="op" roleId="mxvz.4957503999940788278" targetNodeId="1731059994647814013" resolveInfo="store" />
           </node>
         </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.CodeReviewData" typeId="vs0r.4901333676673876644" id="5167603879043086900" nodeInfo="ng">
-          <property name="lastReviewHash" nameId="vs0r.4901333676674177040" value="693890798" />
-          <property name="lastReviewTimestamp" nameId="vs0r.4901333676674177026" value="1412085423452" />
-          <property name="lastReviewReviewer" nameId="vs0r.4901333676674177031" value="zaur" />
-          <property name="reviewIsCurrent" nameId="vs0r.4901333676674426578" value="true" />
-        </node>
       </node>
       <node role="contents" roleId="x27k.6512473996287153139" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5160057464294711488" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_1351804875072_15" />
@@ -3239,12 +3233,6 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.CodeReviewData" typeId="vs0r.4901333676673876644" id="5167603879045119580" nodeInfo="ng">
-          <property name="lastReviewHash" nameId="vs0r.4901333676674177040" value="718411561" />
-          <property name="lastReviewTimestamp" nameId="vs0r.4901333676674177026" value="1412087081430" />
-          <property name="lastReviewReviewer" nameId="vs0r.4901333676674177031" value="zaur" />
-          <property name="reviewIsCurrent" nameId="vs0r.4901333676674426578" value="true" />
-        </node>
       </node>
       <node role="contents" roleId="x27k.6512473996287153139" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1731059994647919793" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_1351759632882_7" />
@@ -3434,12 +3422,6 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.CodeReviewData" typeId="vs0r.4901333676673876644" id="5167603879045169954" nodeInfo="ng">
-          <property name="lastReviewHash" nameId="vs0r.4901333676674177040" value="-588424357" />
-          <property name="lastReviewTimestamp" nameId="vs0r.4901333676674177026" value="1412087098203" />
-          <property name="lastReviewReviewer" nameId="vs0r.4901333676674177031" value="zaur" />
-          <property name="reviewIsCurrent" nameId="vs0r.4901333676674426578" value="true" />
-        </node>
       </node>
       <node role="contents" roleId="x27k.6512473996287153139" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7451725615401930901" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_1360696399345_1" />
@@ -3554,12 +3536,6 @@
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-        </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.CodeReviewData" typeId="vs0r.4901333676673876644" id="8490595898231063298" nodeInfo="ng">
-          <property name="lastReviewHash" nameId="vs0r.4901333676674177040" value="206973739" />
-          <property name="lastReviewTimestamp" nameId="vs0r.4901333676674177026" value="1411993962777" />
-          <property name="lastReviewReviewer" nameId="vs0r.4901333676674177031" value="markusvoelter" />
-          <property name="reviewIsCurrent" nameId="vs0r.4901333676674426578" value="true" />
         </node>
       </node>
       <node role="contents" roleId="x27k.6512473996287153139" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5160057464294670919" nodeInfo="ng">
@@ -3796,11 +3772,12 @@
       <node role="contents" roleId="x27k.6512473996287153139" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5160057464294670920" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_1351804522141_4" />
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.CodeReviewData" typeId="vs0r.4901333676673876644" id="5167603879043244540" nodeInfo="ng">
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.CodeReviewData" typeId="vs0r.4901333676673876644" id="6786338284921725062" nodeInfo="ng">
         <property name="lastReviewHash" nameId="vs0r.4901333676674177040" value="-551885647" />
-        <property name="lastReviewTimestamp" nameId="vs0r.4901333676674177026" value="1412085854817" />
+        <property name="lastReviewTimestamp" nameId="vs0r.4901333676674177026" value="1412113345170" />
         <property name="lastReviewReviewer" nameId="vs0r.4901333676674177031" value="zaur" />
-        <property name="reviewIsCurrent" nameId="vs0r.4901333676674426578" value="false" />
+        <property name="reviewIsCurrent" nameId="vs0r.4901333676674426578" value="true" />
+        <property name="codeState" nameId="vs0r.1687004685686364087" value="reviewed" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1731059994647919763" nodeInfo="ng">
