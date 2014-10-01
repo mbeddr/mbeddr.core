@@ -40,7 +40,6 @@
   <import index="v54s" modelUID="r:2a0fe383-d602-4f5b-813c-e41afdbbb97e(jetbrains.mps.lang.extension.structure)" version="-1" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" implicit="yes" />
-  <import index="3iid" modelUID="r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.settingsform.structure)" version="-1" implicit="yes" />
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="7069137304558991781" nodeInfo="ng" />
   <root type="tp4k.ToolDeclaration" typeId="tp4k.1203071677434" id="7069137304558991872" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ContextSidebar" />
@@ -1900,17 +1899,6 @@
     <property name="extensionName" nameId="v54s.5911785528834333590" value="ContextSidebarExtensionPoint" />
     <node role="objectType" roleId="v54s.8029776554053057803" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="394049958337148714" nodeInfo="in">
       <link role="classifier" roleId="tpee.1107535924139" targetNodeId="fiq3.394049958337144676" resolveInfo="IContextSection" />
-    </node>
-  </root>
-  <root type="3iid.PreferencesForm" typeId="3iid.145956936283289547" id="145956936285872939" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="TestContextSidebarSettings" />
-    <node role="properties" roleId="3iid.145956936283569518" type="3iid.CheckBoxPreferencesFormProperty" typeId="3iid.145956936284219644" id="145956936285873064" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="showContextSidebar" />
-      <property name="label" nameId="3iid.145956936284103527" value="Show Context Sidebar" />
-    </node>
-    <node role="properties" roleId="3iid.145956936283569518" type="3iid.TextFieldPreferencesFormProperty" typeId="3iid.145956936284064820" id="145956936285873172" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="sidebarTitle" />
-      <property name="label" nameId="3iid.145956936284103527" value="Sidebar Title" />
     </node>
   </root>
 </model>
