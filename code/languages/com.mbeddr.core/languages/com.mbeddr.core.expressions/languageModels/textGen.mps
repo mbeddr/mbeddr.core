@@ -378,24 +378,6 @@
       </node>
     </node>
   </root>
-  <root type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="4296381507831601381" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
-    <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="mj1l.4296381507831569050" resolveInfo="Int2Char" />
-    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="4296381507831601382" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4296381507831601383" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="4296381507831601384" nodeInfo="nn">
-          <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="4296381507831601398" nodeInfo="ng">
-            <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4296381507831601401" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="2omo.NodeParameter" typeId="2omo.1233748055915" id="4296381507831601400" nodeInfo="nn" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4296381507831601405" nodeInfo="nn">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.4296381507831569052" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
   <root type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="3976803464656225007" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
     <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="mj1l.4375898003726285486" resolveInfo="PostIncrementExpression" />
