@@ -145,5 +145,10 @@ build/com.mbeddr.allScripts/build.xml
 
 build/com.mbeddr.tutorial/null/*.puml
 
+# -----------------------------------------------------------
+# IntelliJ debugging info
+*.iml
+
+
 #This is restored with 'git submodule update --init --recursive'
 code/plugins/sl-all
