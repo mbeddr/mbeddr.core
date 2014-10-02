@@ -32,11 +32,11 @@
     <node role="rootMappingRule" roleId="tpf8.1167514678247" type="tpf8.Root_MappingRule" typeId="tpf8.1167514355419" id="145956936284651658" nodeInfo="ng">
       <property name="keepSourceRoot" nameId="tpf8.1177959072138" value="true" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="3iid.145956936283289547" resolveInfo="PreferenceForm" />
-      <link role="template" roleId="tpf8.1167514355421" targetNodeId="145956936284651661" resolveInfo="map_PreferencesForm_Class" />
+      <link role="template" roleId="tpf8.1167514355421" targetNodeId="145956936284651661" resolveInfo="map_PreferenceForm_Class" />
     </node>
     <node role="rootMappingRule" roleId="tpf8.1167514678247" type="tpf8.Root_MappingRule" typeId="tpf8.1167514355419" id="145956936284281541" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="3iid.145956936283289547" resolveInfo="PreferenceForm" />
-      <link role="template" roleId="tpf8.1167514355421" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+      <link role="template" roleId="tpf8.1167514355421" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
     </node>
     <node role="mappingLabel" roleId="tpf8.1200911492601" type="tpf8.MappingLabelDeclaration" typeId="tpf8.1200911316486" id="145956936286507754" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="generatedPreferenceComponent" />
@@ -135,7 +135,7 @@
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="3iid.145956936287670670" resolveInfo="PreferenceFormType" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="145956936288304531" nodeInfo="ng">
         <node role="templateNode" roleId="tpf8.1177093586806" type="tp4k.PreferencesComponentType" typeId="tp4k.1210184105060" id="145956936288304540" nodeInfo="in">
-          <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+          <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936288304560" nodeInfo="nn">
             <property name="linkRole" nameId="tpck.1757699476691236116" value="componentDeclaration" />
             <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936288304561" nodeInfo="nn">
@@ -174,7 +174,7 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="1210186567454" nodeInfo="nn">
                 <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="532006479111797254" nodeInfo="nn">
-                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="3iid.145956936288329552" resolveInfo="IPreferenceFormPropertyReference" />
+                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="3iid.145956936288329552" resolveInfo="PreferenceFormPropertyReference" />
                 </node>
               </node>
             </node>
@@ -212,7 +212,7 @@
     </node>
   </root>
   <root type="tp4k.PreferencesComponentDeclaration" typeId="tp4k.1210179134063" id="145956936284285579" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="map_PreferencesForm_Component" />
+    <property name="name" nameId="tpck.1169194664001" value="map_PreferenceForm_Component" />
     <node role="persistenPropertyDeclaration" roleId="tp4k.1210179829398" type="tp4k.PersistentPropertyDeclaration" typeId="tp4k.1210179190070" id="145956936284993984" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="prop" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="145956936284995590" nodeInfo="in" />
@@ -244,13 +244,13 @@
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="145956936284871723" nodeInfo="nn">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dbrf.~JComponent%dgetClientProperty(java%dlang%dObject)%cjava%dlang%dObject" resolveInfo="getClientProperty" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="145956936284871724" nodeInfo="nn">
-                        <link role="classifier" roleId="tpee.1144433057691" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+                        <link role="classifier" roleId="tpee.1144433057691" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="rh18.145956936286129976" resolveInfo="OWN_CLIENT_PROPERTY_KEY" />
                       </node>
                     </node>
                   </node>
                   <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936286581699" nodeInfo="in">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="145956936284651661" resolveInfo="map_PreferencesForm_Class" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="145956936284651661" resolveInfo="map_PreferenceForm_Class" />
                     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936286581700" nodeInfo="nn">
                       <property name="linkRole" nameId="tpck.1757699476691236116" value="classifier" />
                       <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936286581701" nodeInfo="nn">
@@ -289,13 +289,13 @@
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="145956936284866768" nodeInfo="nn">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dbrf.~JComponent%dgetClientProperty(java%dlang%dObject)%cjava%dlang%dObject" resolveInfo="getClientProperty" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="145956936284866769" nodeInfo="nn">
-                        <link role="classifier" roleId="tpee.1144433057691" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+                        <link role="classifier" roleId="tpee.1144433057691" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="rh18.145956936286129976" resolveInfo="OWN_CLIENT_PROPERTY_KEY" />
                       </node>
                     </node>
                   </node>
                   <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936286572201" nodeInfo="in">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="145956936284651661" resolveInfo="map_PreferencesForm_Class" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="145956936284651661" resolveInfo="map_PreferenceForm_Class" />
                     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936286572202" nodeInfo="nn">
                       <property name="linkRole" nameId="tpck.1757699476691236116" value="classifier" />
                       <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936286572203" nodeInfo="nn">
@@ -334,13 +334,13 @@
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="145956936284848198" nodeInfo="nn">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dbrf.~JComponent%dgetClientProperty(java%dlang%dObject)%cjava%dlang%dObject" resolveInfo="getClientProperty" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="145956936284848199" nodeInfo="nn">
-                        <link role="classifier" roleId="tpee.1144433057691" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+                        <link role="classifier" roleId="tpee.1144433057691" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="rh18.145956936286129976" resolveInfo="OWN_CLIENT_PROPERTY_KEY" />
                       </node>
                     </node>
                   </node>
                   <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936284849825" nodeInfo="in">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="145956936284651661" resolveInfo="map_PreferencesForm_Class" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="145956936284651661" resolveInfo="map_PreferenceForm_Class" />
                     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936286558370" nodeInfo="nn">
                       <property name="linkRole" nameId="tpck.1757699476691236116" value="classifier" />
                       <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936286558371" nodeInfo="nn">
@@ -386,7 +386,7 @@
       <node role="component" roleId="tp4k.1210686845551" type="tpee.DotExpression" typeId="tpee.1197027756228" id="145956936284821908" nodeInfo="nn">
         <node role="operand" roleId="tpee.1197027771414" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="145956936284803645" nodeInfo="nn">
           <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="145956936284821122" nodeInfo="nn">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="rh18.145956936286129996" resolveInfo="PreferencesFormBase" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="rh18.145956936286129996" resolveInfo="PreferenceFormBase" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936286323949" nodeInfo="nn">
               <property name="linkRole" nameId="tpck.1757699476691236116" value="baseMethodDeclaration" />
               <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936286323950" nodeInfo="nn">
@@ -486,7 +486,7 @@
               <property name="name" nameId="tpck.1169194664001" value="preferenceComponent" />
               <property name="isFinal" nameId="tpee.1176718929932" value="false" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp4k.PreferencesComponentType" typeId="tp4k.1210184105060" id="145956936287443789" nodeInfo="in">
-                <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+                <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936287443790" nodeInfo="nn">
                   <property name="linkRole" nameId="tpck.1757699476691236116" value="componentDeclaration" />
                   <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936287443791" nodeInfo="nn">
@@ -533,9 +533,9 @@
           </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="145956936285039532" nodeInfo="nn">
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="145956936285039533" nodeInfo="nr">
-              <property name="name" nameId="tpck.1169194664001" value="preferencesForm" />
+              <property name="name" nameId="tpck.1169194664001" value="preferenceForm" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936285039534" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
               </node>
             </node>
           </node>
@@ -551,7 +551,7 @@
                       <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="145956936285315679" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="145956936285315680" nodeInfo="nn">
                           <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="145956936285315681" nodeInfo="nn">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="145956936285039533" resolveInfo="preferencesForm" />
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="145956936285039533" resolveInfo="preferenceForm" />
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="145956936285315682" nodeInfo="nn">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="rh18.145956936286130064" resolveInfo="findControl" />
@@ -632,7 +632,7 @@
               <property name="name" nameId="tpck.1169194664001" value="preferenceComponent" />
               <property name="isFinal" nameId="tpee.1176718929932" value="false" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp4k.PreferencesComponentType" typeId="tp4k.1210184105060" id="145956936287452508" nodeInfo="in">
-                <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+                <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936287452509" nodeInfo="nn">
                   <property name="linkRole" nameId="tpck.1757699476691236116" value="componentDeclaration" />
                   <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936287452510" nodeInfo="nn">
@@ -679,9 +679,9 @@
           </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="145956936285333429" nodeInfo="nn">
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="145956936285333430" nodeInfo="nr">
-              <property name="name" nameId="tpck.1169194664001" value="preferencesForm" />
+              <property name="name" nameId="tpck.1169194664001" value="preferenceForm" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936285333431" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
               </node>
             </node>
           </node>
@@ -697,7 +697,7 @@
                       <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="145956936285333440" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="145956936285333441" nodeInfo="nn">
                           <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="145956936285333442" nodeInfo="nn">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="145956936285333430" resolveInfo="preferencesForm" />
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="145956936285333430" resolveInfo="preferenceForm" />
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="145956936285333443" nodeInfo="nn">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="rh18.145956936286130064" resolveInfo="findControl" />
@@ -793,7 +793,7 @@
               <property name="name" nameId="tpck.1169194664001" value="preferenceComponent" />
               <property name="isFinal" nameId="tpee.1176718929932" value="false" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp4k.PreferencesComponentType" typeId="tp4k.1210184105060" id="145956936287467958" nodeInfo="in">
-                <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+                <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936287467959" nodeInfo="nn">
                   <property name="linkRole" nameId="tpck.1757699476691236116" value="componentDeclaration" />
                   <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936287467960" nodeInfo="nn">
@@ -840,9 +840,9 @@
           </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="145956936285406003" nodeInfo="nn">
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="145956936285406004" nodeInfo="nr">
-              <property name="name" nameId="tpck.1169194664001" value="preferencesForm" />
+              <property name="name" nameId="tpck.1169194664001" value="preferenceForm" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936285406005" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
               </node>
             </node>
           </node>
@@ -853,7 +853,7 @@
                 <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="817051807573869410" nodeInfo="nn">
                   <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="817051807573869411" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="817051807573869412" nodeInfo="nn">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="145956936285406004" resolveInfo="preferencesForm" />
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="145956936285406004" resolveInfo="preferenceForm" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="817051807573869413" nodeInfo="nn">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="rh18.145956936286130064" resolveInfo="findControl" />
@@ -924,7 +924,7 @@
               <property name="name" nameId="tpck.1169194664001" value="preferenceComponent" />
               <property name="isFinal" nameId="tpee.1176718929932" value="false" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp4k.PreferencesComponentType" typeId="tp4k.1210184105060" id="145956936287468589" nodeInfo="in">
-                <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+                <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936287468590" nodeInfo="nn">
                   <property name="linkRole" nameId="tpck.1757699476691236116" value="componentDeclaration" />
                   <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936287468591" nodeInfo="nn">
@@ -971,9 +971,9 @@
           </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="145956936285406085" nodeInfo="nn">
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="145956936285406086" nodeInfo="nr">
-              <property name="name" nameId="tpck.1169194664001" value="preferencesForm" />
+              <property name="name" nameId="tpck.1169194664001" value="preferenceForm" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936285406087" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
               </node>
             </node>
           </node>
@@ -984,7 +984,7 @@
                 <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="817051807573789327" nodeInfo="nn">
                   <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="817051807573789328" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="817051807573789329" nodeInfo="nn">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="145956936285406086" resolveInfo="preferencesForm" />
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="145956936285406086" resolveInfo="preferenceForm" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="817051807573789330" nodeInfo="nn">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="rh18.145956936286130064" resolveInfo="findControl" />
@@ -1120,7 +1120,7 @@
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="145956936284581414" nodeInfo="nn">
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dbrf.~JComponent%dputClientProperty(java%dlang%dObject,java%dlang%dObject)%cvoid" resolveInfo="putClientProperty" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="145956936285432246" nodeInfo="nn">
-                      <link role="classifier" roleId="tpee.1144433057691" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+                      <link role="classifier" roleId="tpee.1144433057691" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="rh18.145956936286129984" resolveInfo="CONTROL_CLIENT_PROPERTY_KEY" />
                     </node>
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="145956936284581920" nodeInfo="nn">
@@ -1258,7 +1258,7 @@
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="145956936284641837" nodeInfo="nn">
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dbrf.~JComponent%dputClientProperty(java%dlang%dObject,java%dlang%dObject)%cvoid" resolveInfo="putClientProperty" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="145956936285436795" nodeInfo="nn">
-                      <link role="classifier" roleId="tpee.1144433057691" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+                      <link role="classifier" roleId="tpee.1144433057691" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="rh18.145956936286129984" resolveInfo="CONTROL_CLIENT_PROPERTY_KEY" />
                     </node>
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="145956936284641848" nodeInfo="nn">
@@ -1340,7 +1340,7 @@
               <property name="name" nameId="tpck.1169194664001" value="preferenceComponent" />
               <property name="isFinal" nameId="tpee.1176718929932" value="false" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp4k.PreferencesComponentType" typeId="tp4k.1210184105060" id="145956936287466648" nodeInfo="in">
-                <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+                <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936287466649" nodeInfo="nn">
                   <property name="linkRole" nameId="tpck.1757699476691236116" value="componentDeclaration" />
                   <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936287466650" nodeInfo="nn">
@@ -1387,9 +1387,9 @@
           </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="145956936285370458" nodeInfo="nn">
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="145956936285370459" nodeInfo="nr">
-              <property name="name" nameId="tpck.1169194664001" value="preferencesForm" />
+              <property name="name" nameId="tpck.1169194664001" value="preferenceForm" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936285370460" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
               </node>
             </node>
           </node>
@@ -1438,7 +1438,7 @@
                       <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="817051807573711634" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="817051807573711635" nodeInfo="nn">
                           <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="817051807573711636" nodeInfo="nn">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="145956936285370459" resolveInfo="preferencesForm" />
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="145956936285370459" resolveInfo="preferenceForm" />
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="817051807573711637" nodeInfo="nn">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="rh18.145956936286130064" resolveInfo="findControl" />
@@ -1489,7 +1489,7 @@
               <property name="name" nameId="tpck.1169194664001" value="preferenceComponent" />
               <property name="isFinal" nameId="tpee.1176718929932" value="false" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp4k.PreferencesComponentType" typeId="tp4k.1210184105060" id="145956936287467279" nodeInfo="in">
-                <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+                <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936287467280" nodeInfo="nn">
                   <property name="linkRole" nameId="tpck.1757699476691236116" value="componentDeclaration" />
                   <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936287467281" nodeInfo="nn">
@@ -1536,9 +1536,9 @@
           </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="145956936285405520" nodeInfo="nn">
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="145956936285405521" nodeInfo="nr">
-              <property name="name" nameId="tpck.1169194664001" value="preferencesForm" />
+              <property name="name" nameId="tpck.1169194664001" value="preferenceForm" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936285405522" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
               </node>
             </node>
           </node>
@@ -1561,7 +1561,7 @@
                       <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="817051807573745608" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="817051807573745609" nodeInfo="nn">
                           <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="817051807573745610" nodeInfo="nn">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="145956936285405521" resolveInfo="preferencesForm" />
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="145956936285405521" resolveInfo="preferenceForm" />
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="817051807573745611" nodeInfo="nn">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="rh18.145956936286130064" resolveInfo="findControl" />
@@ -1630,7 +1630,7 @@
     <node role="defaultConsequence" roleId="tpf8.1168558750579" type="tpf8.AbandonInput_RuleConsequence" typeId="tpf8.1202776937179" id="145956936285405881" nodeInfo="ng" />
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="145956936284651661" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="map_PreferencesForm_Class" />
+    <property name="name" nameId="tpck.1169194664001" value="map_PreferenceForm_Class" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="145956936286903435" nodeInfo="igu">
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="145956936286903437" nodeInfo="in" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="145956936286903438" nodeInfo="nn" />
@@ -1647,9 +1647,9 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="817051807572216044" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="817051807571297282" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="817051807571297283" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="preferencesForm" />
+            <property name="name" nameId="tpck.1169194664001" value="preferenceForm" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="817051807571297284" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="817051807571297285" nodeInfo="nn" />
           </node>
@@ -1705,7 +1705,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="145956936285231979" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="preferenceComponent" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp4k.PreferencesComponentType" typeId="tp4k.1210184105060" id="145956936286493241" nodeInfo="in">
-          <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+          <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936286499958" nodeInfo="nn">
             <property name="linkRole" nameId="tpck.1757699476691236116" value="componentDeclaration" />
             <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936286499959" nodeInfo="nn">
@@ -1729,9 +1729,9 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="145956936284898405" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="145956936285034931" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="145956936285034932" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="preferencesForm" />
+            <property name="name" nameId="tpck.1169194664001" value="preferenceForm" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936285034933" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="145956936285034934" nodeInfo="nn" />
           </node>
@@ -1771,7 +1771,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="145956936285281219" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="preferenceComponent" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp4k.PreferencesComponentType" typeId="tp4k.1210184105060" id="145956936286532366" nodeInfo="in">
-          <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+          <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936286532367" nodeInfo="nn">
             <property name="linkRole" nameId="tpck.1757699476691236116" value="componentDeclaration" />
             <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936286532368" nodeInfo="nn">
@@ -1795,9 +1795,9 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="145956936284898419" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="145956936285037194" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="145956936285037195" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="preferencesForm" />
+            <property name="name" nameId="tpck.1169194664001" value="preferenceForm" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936285037196" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="145956936285037197" nodeInfo="nn" />
           </node>
@@ -1837,7 +1837,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="145956936285282586" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="preferenceComponent" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp4k.PreferencesComponentType" typeId="tp4k.1210184105060" id="145956936286532992" nodeInfo="in">
-          <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+          <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="145956936286532993" nodeInfo="nn">
             <property name="linkRole" nameId="tpck.1757699476691236116" value="componentDeclaration" />
             <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="145956936286532994" nodeInfo="nn">
@@ -1861,9 +1861,9 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="145956936284898435" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="145956936285034302" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="145956936285034303" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="preferencesForm" />
+            <property name="name" nameId="tpck.1169194664001" value="preferenceForm" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936285034304" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="145956936285034908" nodeInfo="nn" />
           </node>
@@ -1931,7 +1931,7 @@
       <link role="applicableConcept" roleId="tpf8.1168619429071" targetNodeId="3iid.145956936283289547" resolveInfo="PreferenceForm" />
     </node>
     <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="145956936284880974" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferencesFormBase" />
+      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.145956936286129975" resolveInfo="PreferenceFormBase" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="145956936286239229" nodeInfo="nn">
       <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
@@ -1961,7 +1961,7 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="1210181219469" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="preferenceComponent" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp4k.PreferencesComponentType" typeId="tp4k.1210184105060" id="532006479111826215" nodeInfo="in">
-              <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+              <link role="componentDeclaration" roleId="tp4k.1210184138184" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
             </node>
           </node>
         </node>
@@ -1994,7 +1994,7 @@
                       <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="532006479112344408" nodeInfo="nn">
                         <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="532006479112340284" nodeInfo="nn">
                           <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="532006479112339540" nodeInfo="nn">
-                            <link role="concept" roleId="tp25.1140138128738" targetNodeId="3iid.145956936288329552" resolveInfo="IPreferenceFormPropertyReference" />
+                            <link role="concept" roleId="tp25.1140138128738" targetNodeId="3iid.145956936288329552" resolveInfo="PreferenceFormPropertyReference" />
                             <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="532006479112333076" nodeInfo="nn">
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="532006479112337994" nodeInfo="nn">
                                 <link role="link" roleId="tp25.1138056516764" targetNodeId="tpee.1197027833540" />
@@ -2058,7 +2058,7 @@
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetPreferencesComponentInProjectOperation" typeId="tgbt.681855071694758168" id="532006479112825533" nodeInfo="nn">
-              <link role="componentDeclaration" roleId="tgbt.681855071694758169" targetNodeId="145956936284285579" resolveInfo="map_PreferencesForm_Component" />
+              <link role="componentDeclaration" roleId="tgbt.681855071694758169" targetNodeId="145956936284285579" resolveInfo="map_PreferenceForm_Component" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="532006479112828226" nodeInfo="nn">
                 <property name="linkRole" nameId="tpck.1757699476691236116" value="componentDeclaration" />
                 <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="532006479112828229" nodeInfo="nn">

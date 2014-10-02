@@ -5,9 +5,9 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="3iid" modelUID="r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.settingsform.structure)" version="-1" />
   <import index="tpco" modelUID="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" version="-1" />
+  <import index="tpen" modelUID="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" version="-1" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpen" modelUID="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" version="-1" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="145956936284277591" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="property" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="3iid.145956936284219644" resolveInfo="CheckBoxPreferenceFormProperty" />
@@ -113,6 +113,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="145956936287605098" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="getter" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="3iid.145956936287600982" resolveInfo="GetPreferenceFormInProjectOperation" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="681855071694758208" nodeInfo="nn">
       <property name="vertical" nameId="tpc2.1073389446425" value="false" />
@@ -194,7 +195,7 @@
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="145956936288329603" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="property" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="3iid.145956936288329552" resolveInfo="IPreferenceFormPropertyReference" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="3iid.145956936288329552" resolveInfo="PreferenceFormPropertyReference" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="1210181153278" nodeInfo="ng">
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="3iid.145956936288329555" />
       <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="1210181153279" nodeInfo="ng">

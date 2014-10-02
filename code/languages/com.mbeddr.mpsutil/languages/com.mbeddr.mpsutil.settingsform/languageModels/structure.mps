@@ -80,6 +80,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="145956936287600982" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="GetPreferenceFormInProjectOperation" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="preferenceForm&lt;&lt;{formDeclaration}&gt;&gt;" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="getter" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tp4k.3339131993542057767" resolveInfo="BaseProjectOperation" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="145956936287604889" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -101,7 +102,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="145956936288329552" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="property" />
-    <property name="name" nameId="tpck.1169194664001" value="IPreferenceFormPropertyReference" />
+    <property name="name" nameId="tpck.1169194664001" value="PreferenceFormPropertyReference" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="reference to externalizable form property" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="145956936288329555" nodeInfo="ig">

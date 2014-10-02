@@ -518,7 +518,7 @@
                 <link role="formDeclaration" roleId="3iid.145956936287604889" targetNodeId="532006479112945340" resolveInfo="Breadcrumb Preferences" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type="3iid.IPreferenceFormPropertyReference" typeId="3iid.145956936288329552" id="817051807576287812" nodeInfo="ng">
+            <node role="operation" roleId="tpee.1197027833540" type="3iid.PreferenceFormPropertyReference" typeId="3iid.145956936288329552" id="817051807576287812" nodeInfo="ng">
               <link role="member" roleId="tp4f.1205756909548" targetNodeId="532006479112945341" resolveInfo="showBreadcrumb" />
             </node>
           </node>

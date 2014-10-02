@@ -10,7 +10,7 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="145956936286129975" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="PreferencesFormBase" />
+    <property name="name" nameId="tpck.1169194664001" value="PreferenceFormBase" />
     <property name="abstractClass" nameId="tpee.1075300953594" value="false" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="145956936286129976" nodeInfo="igu">
       <property name="isVolatile" nameId="tpee.6468716278899126575" value="false" />
@@ -25,7 +25,7 @@
         </node>
         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="145956936286129981" nodeInfo="nn">
           <node role="operand" roleId="tpee.1197027771414" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="145956936286129982" nodeInfo="nn">
-            <link role="classifier" roleId="tpee.1116615189566" targetNodeId="145956936286129975" resolveInfo="PreferencesFormBase" />
+            <link role="classifier" roleId="tpee.1116615189566" targetNodeId="145956936286129975" resolveInfo="PreferenceFormBase" />
           </node>
           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="145956936286129983" nodeInfo="nn">
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Class%dgetName()%cjava%dlang%dString" resolveInfo="getName" />
@@ -46,7 +46,7 @@
         </node>
         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="145956936286129989" nodeInfo="nn">
           <node role="operand" roleId="tpee.1197027771414" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="145956936286129990" nodeInfo="nn">
-            <link role="classifier" roleId="tpee.1116615189566" targetNodeId="145956936286129975" resolveInfo="PreferencesFormBase" />
+            <link role="classifier" roleId="tpee.1116615189566" targetNodeId="145956936286129975" resolveInfo="PreferenceFormBase" />
           </node>
           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="145956936286129991" nodeInfo="nn">
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Class%dgetName()%cjava%dlang%dString" resolveInfo="getName" />

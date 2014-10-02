@@ -130,7 +130,7 @@
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="3044950653914726307" nodeInfo="nn">
               <node role="argument" roleId="tp2q.1160612519549" type="tp25.NodeRefExpression" typeId="tp25.1219352745532" id="3044950653914726303" nodeInfo="nn">
-                <link role="referentNode" roleId="tp25.1219352800908" targetNodeId="3iid.145956936288329552" resolveInfo="IPreferenceFormPropertyReference" />
+                <link role="referentNode" roleId="tp25.1219352800908" targetNodeId="3iid.145956936288329552" resolveInfo="PreferenceFormPropertyReference" />
               </node>
             </node>
           </node>
@@ -409,7 +409,7 @@
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="145956936288329689" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="property" />
-    <link role="concept" roleId="1i04.1225194240799" targetNodeId="3iid.145956936288329552" resolveInfo="IPreferenceFormPropertyReference" />
+    <link role="concept" roleId="1i04.1225194240799" targetNodeId="3iid.145956936288329552" resolveInfo="PreferenceFormPropertyReference" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="145956936288329690" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="145956936288329691" nodeInfo="sn" />
     </node>
