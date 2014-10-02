@@ -3999,7 +3999,7 @@
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="817051807576858158" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.settingsform" />
+        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.preferenceform" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="817051807576862577" nodeInfo="ng">
@@ -4013,9 +4013,9 @@
                 <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="817051807576862581" nodeInfo="nn">
                   <property name="head" nameId="3ior.8618885170173601779" value="languages" />
                   <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="817051807576862582" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.settingsform" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="817051807576868851" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.settingsform.mpl" />
+                    <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.preferenceform" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="254976659021630315" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.preferenceform.mpl" />
                     </node>
                   </node>
                 </node>
@@ -4078,7 +4078,7 @@
           </node>
         </node>
         <node role="generator" roleId="kdzh.9200313594498201639" type="kdzh.BuildMps_Generator" typeId="kdzh.5507251971038816436" id="817051807576878066" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.settingsform#145956936283286626" />
+          <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.preferenceform#145956936283286626" />
           <property name="uuid" nameId="kdzh.322010710375892619" value="7d01d37a-2398-4f30-a95d-7e42e5f56c19" />
           <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
           <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="817051807576878067" nodeInfo="nn">
