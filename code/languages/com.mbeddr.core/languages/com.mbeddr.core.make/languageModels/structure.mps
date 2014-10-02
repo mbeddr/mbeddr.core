@@ -170,29 +170,29 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8794027157967672672" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="macro" />
     <property name="name" nameId="tpck.1169194664001" value="MacroAt" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="macro at" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="$@" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="target name macro" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8794027157967696219" resolveInfo="Macro" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8794027157967672687" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="macro" />
     <property name="name" nameId="tpck.1169194664001" value="MacroQuestion" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="$?" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="macro question mark" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="changed dependencies macro" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8794027157967696219" resolveInfo="Macro" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8794027157967672694" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="macro" />
     <property name="name" nameId="tpck.1169194664001" value="MacroLess" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="$&lt;" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="macro less" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="first dependency macro" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8794027157967696219" resolveInfo="Macro" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8794027157967672698" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="macro" />
     <property name="name" nameId="tpck.1169194664001" value="MacroStar" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="macro star" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="$*" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="wildcard macro" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8794027157967696219" resolveInfo="Macro" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8794027157967696219" nodeInfo="ig">
@@ -201,6 +201,13 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3373914745211590944" resolveInfo="CommandItem" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3473691595522695229" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="macro" />
+    <property name="name" nameId="tpck.1169194664001" value="MacroAll" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="$^" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="all dependencies macro" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8794027157967696219" resolveInfo="Macro" />
   </root>
 </model>
 

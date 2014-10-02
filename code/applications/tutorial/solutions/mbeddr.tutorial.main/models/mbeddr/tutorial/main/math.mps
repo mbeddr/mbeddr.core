@@ -143,6 +143,7 @@
       <property name="name" nameId="tpck.1169194664001" value="midnight1" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7040583391080129356" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3599386332253979194" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6031816228745282898" nodeInfo="ng">
           <node role="expression" roleId="x27k.8967919205527146150" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="7040583391080132040" nodeInfo="ng">
             <node role="left" roleId="cetu.5098456557382006592" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7040583391080132136" nodeInfo="ng">
