@@ -24,7 +24,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.margincell/com.mbeddr.mpsutil.margincell.mpl" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodeviewer/com.mbeddr.mpsutil.nodeviewer.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.mpl" folder="plantuml" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.rcpconfig/runtime/com.mbeddr.mpsutil.rcpconfig.runtime.msd" folder="rcpconfig" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.mpl" folder="preferenceform" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring.rt/rt.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.review.annotation/com.mbeddr.mpsutil.review.annotation.mpl" folder="margincell_review" />

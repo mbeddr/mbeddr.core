@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.mpsutil.settingsform" uuid="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265">
+<language namespace="com.mbeddr.mpsutil.preferenceform" uuid="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="" generatorUID="com.mbeddr.mpsutil.settingsform#145956936283286626" uuid="7d01d37a-2398-4f30-a95d-7e42e5f56c19">
+    <generator name="" generatorUID="com.mbeddr.mpsutil.preferenceform#145956936283286626" uuid="7d01d37a-2398-4f30-a95d-7e42e5f56c19">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -23,7 +23,7 @@
         <dependency reexport="false">28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)</dependency>
       </dependencies>
       <usedLanguages>
-        <usedLanguage>1e7c1f95-336c-4cec-b00e-8cc6e0c2b265(com.mbeddr.mpsutil.settingsform)</usedLanguage>
+        <usedLanguage>1e7c1f95-336c-4cec-b00e-8cc6e0c2b265(com.mbeddr.mpsutil.preferenceform)</usedLanguage>
         <usedLanguage>443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
@@ -36,9 +36,9 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="7d01d37a-2398-4f30-a95d-7e42e5f56c19(com.mbeddr.mpsutil.settingsform#145956936283286626)" />
+            <generator generatorUID="7d01d37a-2398-4f30-a95d-7e42e5f56c19(com.mbeddr.mpsutil.preferenceform#145956936283286626)" />
             <external-mapping>
-              <mapping-node modelUID="r:234d8e6f-4f91-4920-a623-ee8dfd3ca830(com.mbeddr.mpsutil.settingsform.generator.template.main@generator)" nodeID="145956936283286627" />
+              <mapping-node modelUID="r:234d8e6f-4f91-4920-a623-ee8dfd3ca830(com.mbeddr.mpsutil.preferenceform.generator.template.main@generator)" nodeID="145956936283286627" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
