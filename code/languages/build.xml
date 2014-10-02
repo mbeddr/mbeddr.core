@@ -214,7 +214,7 @@
     <delete dir="${mps-sl-all.build-tmp}" />
   </target>
   
-  <target name="install-nativelibs-plugin" depends="build-sl-all">
+  <target name="install-nativelibs-plugin" >
     <copy todir="${mps.home}/${plugins.folder.name}">
       <zipfileset src="${mps-sl-all.build-path}/${mps-sl-all.zip-file.name}">
       <patternset>
