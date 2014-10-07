@@ -347,18 +347,22 @@
     <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.Unit" typeId="qlb5.8337440621611267903" id="8414886092092002776" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="dm" />
       <property name="description" nameId="qlb5.8337440621611269512" value="decimeter" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
     </node>
     <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.Unit" typeId="qlb5.8337440621611267903" id="8414886092092002777" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="cm" />
       <property name="description" nameId="qlb5.8337440621611269512" value="centimeter" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
     </node>
     <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.Unit" typeId="qlb5.8337440621611267903" id="8414886092092002778" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mm" />
       <property name="description" nameId="qlb5.8337440621611269512" value="millimeter" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
     </node>
     <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.Unit" typeId="qlb5.8337440621611267903" id="8414886092092002779" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mps" />
       <property name="description" nameId="qlb5.8337440621611269512" value="meter per second" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="spec" roleId="qlb5.8337440621611270427" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="8414886092092002780" nodeInfo="ng">
         <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="8414886092092002781" nodeInfo="ng">
           <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="cmgk.624957442821420404" resolveInfo="m" />
@@ -374,6 +378,7 @@
     <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.Unit" typeId="qlb5.8337440621611267903" id="8414886092092002784" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="a" />
       <property name="description" nameId="qlb5.8337440621611269512" value="acceleration" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="spec" roleId="qlb5.8337440621611270427" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="8414886092092002785" nodeInfo="ng">
         <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="8414886092092002786" nodeInfo="ng">
           <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="cmgk.624957442821420404" resolveInfo="m" />
@@ -389,8 +394,9 @@
     <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.Unit" typeId="qlb5.8337440621611267903" id="5365817535829771252" nodeInfo="ng">
       <property name="description" nameId="qlb5.8337440621611269512" value="percent" />
       <property name="name" nameId="tpck.1169194664001" value="%" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
     </node>
-    <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.EmptyUnitContainerContent" typeId="qlb5.6111466015651074424" id="8414886092092002789" nodeInfo="ng" />
+    <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.EmptyUnitContainerContent" typeId="qlb5.6111466015651074424" id="3156023081154975490" nodeInfo="ng" />
     <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.ConversionRule" typeId="qlb5.1069230850837260491" id="7644849806585018772" nodeInfo="ng">
       <property name="isEager" nameId="qlb5.1741902046312150368" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -1553,8 +1559,8 @@
             <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="3156023081154357599" nodeInfo="ng" />
           </node>
         </node>
-        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6256907951046924750" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_1412669237856_6" />
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3156023081154671947" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1412673972083_5" />
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8414886092092081502" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="test" />
