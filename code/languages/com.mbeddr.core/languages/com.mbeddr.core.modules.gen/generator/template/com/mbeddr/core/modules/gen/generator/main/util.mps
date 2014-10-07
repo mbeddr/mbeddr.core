@@ -2244,7 +2244,7 @@
                       <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="1379519812839379273" nodeInfo="sn">
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1379519812839379274" nodeInfo="nn" />
                         <node role="statement" roleId="tpee.1068581517665" type="tpib.LogStatement" typeId="tpib.1167227138527" id="1379519812839379275" nodeInfo="nn">
-                          <property name="severity" nameId="tpib.1167245565795" value="error" />
+                          <property name="severity" nameId="tpib.1167245565795" value="debug" />
                           <property name="hasException" nameId="tpib.1167228628751" value="true" />
                           <node role="logExpression" roleId="tpib.1167227463056" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="1379519812839379276" nodeInfo="nn">
                             <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1379519812839379277" nodeInfo="nn">
@@ -2753,7 +2753,7 @@
           <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="1379519812838857468" nodeInfo="nn">
             <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="1379519812838857469" nodeInfo="sn">
               <node role="statement" roleId="tpee.1068581517665" type="tpib.LogStatement" typeId="tpib.1167227138527" id="1379519812838858012" nodeInfo="nn">
-                <property name="severity" nameId="tpib.1167245565795" value="error" />
+                <property name="severity" nameId="tpib.1167245565795" value="debug" />
                 <property name="hasException" nameId="tpib.1167228628751" value="true" />
                 <node role="logExpression" roleId="tpib.1167227463056" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="1379519812843126126" nodeInfo="nn">
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1379519812843126781" nodeInfo="nn">
