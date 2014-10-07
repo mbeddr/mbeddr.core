@@ -522,7 +522,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="385804577579522412" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.exponent" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="qlb5.8337440621611273670" resolveInfo="IntegerExponent" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="385804577579522862" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="getPresentation" />
@@ -630,7 +630,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="385804577579861011" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.meta" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="qlb5.385804577579859894" resolveInfo="InferredSubstitution" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="385804577579861012" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="385804577579861013" nodeInfo="sn" />
@@ -676,7 +676,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="385804577579863204" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.meta" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="qlb5.385804577579859935" resolveInfo="InferredAttribute" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="9200699520989017301" nodeInfo="ng">
       <property name="isPrivate" nameId="1i04.1225194472833" value="false" />
@@ -2768,7 +2768,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3204380042154106486" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.meta" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="qlb5.8337440621613064925" resolveInfo="MetaUnit" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="3204380042154106513" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="getPresentation" />
@@ -2887,7 +2887,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3802033421899426221" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.exponent" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="qlb5.3802033421899426197" resolveInfo="Exponent" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="3802033421899426307" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="getNumerator" />
@@ -2918,7 +2918,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3802033421901432068" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.exponent" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="qlb5.3802033421901431993" resolveInfo="FractionalExponent" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="3802033421901646603" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="getPresentation" />

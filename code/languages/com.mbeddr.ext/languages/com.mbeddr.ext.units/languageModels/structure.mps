@@ -53,7 +53,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8337440621611273670" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IntegerExponent" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.exponent" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3802033421899426197" resolveInfo="Exponent" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8337440621611273671" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="value" />
@@ -72,7 +72,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8337440621613064925" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MetaUnit" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.meta" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8337440621613064926" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8337440621611270350" resolveInfo="IUnit" />
@@ -80,7 +80,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8337440621613065018" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MetaUnitDeclaration" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.meta" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8337440621613065019" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -180,7 +180,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="385804577579859894" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="InferredSubstitution" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.meta" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="385804577579859928" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -196,7 +196,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="385804577579859935" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="InferredAttribute" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.meta" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="385804577579859948" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -361,14 +361,14 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3802033421899426197" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.exponent" />
     <property name="name" nameId="tpck.1169194664001" value="Exponent" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3802033421901431993" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.exponent" />
     <property name="name" nameId="tpck.1169194664001" value="FractionalExponent" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3802033421899426197" resolveInfo="Exponent" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3802033421901461982" nodeInfo="ig">

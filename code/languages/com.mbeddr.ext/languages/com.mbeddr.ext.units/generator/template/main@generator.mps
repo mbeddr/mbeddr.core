@@ -22,6 +22,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="7696659106845773539" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="main" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.meta" />
     <node role="rootMappingRule" roleId="tpf8.1167514678247" type="tpf8.Root_MappingRule" typeId="tpf8.1167514355419" id="8066520122893037530" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="qlb5.8337440621611267900" resolveInfo="UnitContainer" />
       <link role="template" roleId="tpf8.1167514355421" targetNodeId="8066520122893037532" resolveInfo="map_UnitContainer" />

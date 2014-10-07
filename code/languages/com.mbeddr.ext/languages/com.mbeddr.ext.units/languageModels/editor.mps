@@ -192,7 +192,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8337440621611275983" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.exponent" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qlb5.8337440621611273670" resolveInfo="IntegerExponent" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8337440621611275992" nodeInfo="ng">
       <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="4959640877380985577" resolveInfo="Exponent_Remove" />
@@ -202,7 +202,7 @@
   </root>
   <root type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="4959640877380985577" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Exponent_Remove" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.exponent" />
     <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="qlb5.3802033421899426197" resolveInfo="Exponent" />
     <node role="item" roleId="tpc2.1139535219969" type="tpc2.CellActionMapItem" typeId="tpc2.1139535280617" id="4959640877380985578" nodeInfo="ng">
       <property name="actionId" nameId="tpc2.1139535298778" value="backspace_action_id" />
@@ -232,7 +232,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8337440621613079621" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.meta" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qlb5.8337440621613065018" resolveInfo="MetaUnitDeclaration" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="385804577580223660" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="385804577580223661" nodeInfo="nn" />
@@ -270,7 +270,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8337440621613065003" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.meta" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qlb5.8337440621613064925" resolveInfo="MetaUnit" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8337440621613065005" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8337440621613065015" nodeInfo="ng">
@@ -376,7 +376,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="385804577579860037" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.meta" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qlb5.385804577579859894" resolveInfo="InferredSubstitution" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="9200699520985118833" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="9200699520985118840" nodeInfo="ng">
@@ -409,7 +409,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="385804577579863230" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.meta" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qlb5.385804577579859935" resolveInfo="InferredAttribute" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="9200699520985130843" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_AttributedNodeCell" typeId="tpc2.1149850725784" id="9200699520985510247" nodeInfo="ng" />
@@ -1253,7 +1253,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3802033421901473961" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.exponent" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qlb5.3802033421901431993" resolveInfo="FractionalExponent" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="3802033421901474014" nodeInfo="ng">
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qlb5.3802033421901461982" />

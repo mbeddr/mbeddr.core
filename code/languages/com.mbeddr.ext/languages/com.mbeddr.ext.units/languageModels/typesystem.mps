@@ -7729,7 +7729,7 @@
   </root>
   <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="3802033421901432130" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="check_FractionalExponent" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.exponent" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="3802033421901432131" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="3802033421901580403" nodeInfo="nn">
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3802033421901580404" nodeInfo="nr">
@@ -7778,7 +7778,7 @@
         <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3802033421901566257" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="3802033421901601572" nodeInfo="nn">
             <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3802033421901601593" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="Only integer number is allowed for the numerator!" />
+              <property name="value" nameId="tpee.1070475926801" value="Only simple integer literal is allowed for the numerator!" />
             </node>
             <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3802033421901601978" nodeInfo="nn">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3802033421901580404" resolveInfo="left" />
@@ -7822,7 +7822,7 @@
         <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3802033421901602840" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="3802033421901602841" nodeInfo="nn">
             <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3802033421901602842" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="Only integer number is allowed for the denumerator!" />
+              <property name="value" nameId="tpee.1070475926801" value="Only simple integer literal is allowed for the denumerator!" />
             </node>
             <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3802033421901602843" nodeInfo="nn">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3802033421901580404" resolveInfo="left" />
