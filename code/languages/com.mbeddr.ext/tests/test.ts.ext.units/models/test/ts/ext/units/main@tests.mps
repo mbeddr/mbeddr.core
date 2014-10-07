@@ -463,7 +463,7 @@
       <link role="sourceUnit" roleId="qlb5.1741902046312150360" targetNodeId="8414886092092002777" resolveInfo="cm" />
       <link role="targetUnit" roleId="qlb5.1741902046312150361" targetNodeId="8414886092092002778" resolveInfo="mm" />
       <node role="specifiers" roleId="qlb5.1741902046312299423" type="qlb5.ConversionSpecifier" typeId="qlb5.1741902046311368052" id="1741902046317509720" nodeInfo="ng">
-        <node role="type" roleId="qlb5.1741902046316071821" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="1741902046317509721" nodeInfo="ng" />
+        <node role="type" roleId="qlb5.1741902046316071821" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="6256907951046382646" nodeInfo="ng" />
         <node role="expression" roleId="qlb5.1741902046311628549" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="1741902046317510783" nodeInfo="ng">
           <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1741902046317510794" nodeInfo="ng">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -479,7 +479,7 @@
       <link role="sourceUnit" roleId="qlb5.1741902046312150360" targetNodeId="cmgk.2418981108290394047" resolveInfo="nounit" />
       <link role="targetUnit" roleId="qlb5.1741902046312150361" targetNodeId="5365817535829771252" resolveInfo="%" />
       <node role="specifiers" roleId="qlb5.1741902046312299423" type="qlb5.ConversionSpecifier" typeId="qlb5.1741902046311368052" id="1741902046319103455" nodeInfo="ng">
-        <node role="type" roleId="qlb5.1741902046316071821" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="1741902046319103456" nodeInfo="ng" />
+        <node role="type" roleId="qlb5.1741902046316071821" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="6256907951045673785" nodeInfo="ng" />
         <node role="expression" roleId="qlb5.1741902046311628549" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="1741902046319105114" nodeInfo="ng">
           <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1741902046319105117" nodeInfo="ng">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -1510,6 +1510,51 @@
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8414886092092081501" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="empty_1407413143140_22" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="qlb5.Unit" typeId="qlb5.8337440621611267903" id="6256907951046591946" nodeInfo="ng">
+          <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+          <property name="name" nameId="tpck.1169194664001" value="circularSimple" />
+          <property name="description" nameId="qlb5.8337440621611269512" value="simple unit defition that uses itself" />
+          <node role="spec" roleId="qlb5.8337440621611270427" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="6256907951046671028" nodeInfo="ng">
+            <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="6256907951046671196" nodeInfo="ng">
+              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="6256907951046591946" resolveInfo="circularSimple" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3156023081154356014" nodeInfo="ng">
+            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="3156023081154356015" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="qlb5.Unit" typeId="qlb5.8337440621611267903" id="6256907951046704212" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="circularNested1" />
+          <property name="description" nameId="qlb5.8337440621611269512" value="circular unit definition" />
+          <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+          <node role="spec" roleId="qlb5.8337440621611270427" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="6256907951046795944" nodeInfo="ng">
+            <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="6256907951046796400" nodeInfo="ng">
+              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="6256907951046763972" resolveInfo="circularNested2" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3156023081154356822" nodeInfo="ng">
+            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="3156023081154356823" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="qlb5.Unit" typeId="qlb5.8337440621611267903" id="6256907951046763972" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="circularNested2" />
+          <property name="description" nameId="qlb5.8337440621611269512" value="circular unit definition" />
+          <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+          <node role="spec" roleId="qlb5.8337440621611270427" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="6256907951046795451" nodeInfo="ng">
+            <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="6256907951046909374" nodeInfo="ng">
+              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="cmgk.624957442821420404" resolveInfo="m" />
+            </node>
+            <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="6256907951046795555" nodeInfo="ng">
+              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="6256907951046704212" resolveInfo="circularNested1" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3156023081154357598" nodeInfo="ng">
+            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="3156023081154357599" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6256907951046924750" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1412669237856_6" />
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8414886092092081502" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="test" />
@@ -4076,9 +4121,6 @@
               </node>
             </node>
           </node>
-        </node>
-        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2380326696568015571" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_1407425677985_2" />
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2380326696568015665" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="empty_1407425465321_1" />
