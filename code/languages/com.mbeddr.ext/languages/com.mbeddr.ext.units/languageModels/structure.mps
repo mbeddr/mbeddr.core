@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="4">
+<model modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="5">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
+  <language namespace="b574d547-b77e-4fed-9f60-c349c4410765(com.mbeddr.ext.math)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
+  <import index="cetu" modelUID="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" version="0" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="4" implicit="yes" />
+  <import index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="5" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8337440621613064289" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="AbstractAnnotatedType" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="annotated type" />
@@ -50,9 +52,9 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8337440621611273670" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Exponent" />
+    <property name="name" nameId="tpck.1169194664001" value="IntegerExponent" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3802033421899426197" resolveInfo="Exponent" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8337440621611273671" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
@@ -156,7 +158,7 @@
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8337440621611297534" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="exponent" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8337440621611273670" resolveInfo="Exponent" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="3802033421899426197" resolveInfo="Exponent" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8337440621611297532" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -356,6 +358,24 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5348704582971065084" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.4459718605982007336" resolveInfo="IConfigurationItem" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3802033421899426197" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="name" nameId="tpck.1169194664001" value="Exponent" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3802033421901431993" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="definition" />
+    <property name="name" nameId="tpck.1169194664001" value="FractionalExponent" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3802033421899426197" resolveInfo="Exponent" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3802033421901461982" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="fraction" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="cetu.5098456557381793727" resolveInfo="FractionExpression" />
     </node>
   </root>
 </model>

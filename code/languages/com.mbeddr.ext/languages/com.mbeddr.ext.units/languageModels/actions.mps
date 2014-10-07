@@ -6,7 +6,7 @@
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" />
-  <import index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="4" />
+  <import index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="5" />
   <import index="ndfg" modelUID="r:8bc36bcc-e1fd-40bc-b05f-b4d974244d15(com.mbeddr.ext.units.util)" version="-1" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="7" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
@@ -236,7 +236,7 @@
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="8337440621612679855" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="qlb5.8337440621611273669" resolveInfo="UnitReference" />
       <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="8337440621612685674" nodeInfo="ng">
-        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="qlb5.8337440621611273670" resolveInfo="Exponent" />
+        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="qlb5.8337440621611273670" resolveInfo="IntegerExponent" />
         <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="8337440621612686431" nodeInfo="ng">
           <node role="handler" roleId="tpdg.1177498207384" type="tpdg.QueryFunction_SideTransform_Handler" typeId="tpdg.1177498227294" id="8337440621612686433" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8337440621612686435" nodeInfo="sn">
@@ -250,7 +250,7 @@
                   </node>
                   <node role="rValue" roleId="tpee.1068498886297" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="8337440621612702632" nodeInfo="nn">
                     <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="7696659106846930011" nodeInfo="nn">
-                      <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="qlb5.8337440621611273670" resolveInfo="Exponent" />
+                      <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="qlb5.8337440621611273670" resolveInfo="IntegerExponent" />
                     </node>
                   </node>
                 </node>
