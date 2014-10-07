@@ -35,6 +35,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.SUContent" typeId="clbe.9101132143320200657" id="8545270286772136134" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="699350427876703581" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1352972365074_5" />
@@ -309,6 +310,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="203206807029090559" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1394961427320_2" />
     </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="972335058777499559" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6684723647386393858" resolveInfo="EditingUsability" />
+    </node>
   </root>
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="699350427876703571" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="dummy" />
@@ -336,7 +340,7 @@
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6684723647386393858" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="EditingUsaility" />
+    <property name="name" nameId="tpck.1169194664001" value="EditingUsability" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6684723647386404412" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="EfficientlyEnteringCode" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
