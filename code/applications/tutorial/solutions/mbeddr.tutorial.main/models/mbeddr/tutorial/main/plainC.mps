@@ -310,9 +310,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="203206807029090559" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1394961427320_2" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="972335058777499559" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="6684723647386393858" resolveInfo="EditingUsability" />
-    </node>
   </root>
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="699350427876703571" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="dummy" />
@@ -334,7 +331,7 @@
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="699350427876703575" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="PlainCDemo" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="699350427876703576" nodeInfo="ng">
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3802033421894510717" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="699350427876703513" resolveInfo="PlainCDemo" />
       </node>
     </node>
