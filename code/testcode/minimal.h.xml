@@ -1,0 +1,299 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- Using DMS PrintASTasXML (v.1.03) -->
+<!-- XML generated on 2014/10/07 15:18:42 -->
+<!-- C~GCC4 Domain Parser Version 2.5.15(26463) -->
+<DMSForest>
+  <tree node="translation_unit" type="2" domain="1" id="za7g" parents="0" line="2" column="1" file="1">
+    <tree node="$NONTERMINALAMBIGUITY" type="1582" nonterminalname="simple_declaration" nonterminaltype="398" domain="1" id="za6a" children="2" line="2" column="1" file="1">
+      <tree node="simple_declaration" type="624" domain="1" id="za7a" line="2" column="1" file="1">
+        <tree node="decl_specifier_seq" type="627" domain="1" id="za6s" children="3" line="2" column="1" file="1">
+          <tree node="decl_specifier" type="629" domain="1" id="z673" parents="2" line="2" column="1" file="1">
+            <precomment child="1" index="1">// bitfield definitions</precomment>
+          </tree>
+          <tree node="struct_or_union_specifier" type="1036" domain="1" id="za6w" parents="2" line="2" column="9" file="1">
+            <tree node="struct_or_union_head" type="1041" domain="1" id="z676" line="2" column="9" file="1"/>
+            <tree node="member_declaration_list" type="1048" domain="1" id="za5f" children="3" line="3" column="5" file="1">
+              <tree node="member_declaration" type="1061" domain="1" id="za4i" line="3" column="5" file="1">
+                <tree node="struct_or_union_specifier" type="1036" domain="1" id="z6cl" line="3" column="5" file="1">
+                  <tree node="struct_or_union_head" type="1039" domain="1" id="z677" line="3" column="5" file="1"/>
+                  <tree node="member_declaration_list" type="1048" domain="1" id="z6av" children="5" line="4" column="9" file="1">
+                    <tree node="$NONTERMINALAMBIGUITY" type="1582" nonterminalname="member_declaration" nonterminaltype="502" domain="1" id="z67i" children="2" line="4" column="9" file="1">
+                      <tree node="member_declaration" type="1062" domain="1" id="z6a2" line="4" column="9" file="1">
+                        <tree node="type_specifier_seq" type="875" domain="1" id="z67q" children="2" line="4" column="9" file="1">
+                          <tree node="simple_type_specifier" type="674" domain="1" id="z67e" parents="2" line="4" column="9" file="1"/>
+                          <tree node="simple_type_specifier" type="666" domain="1" id="z67j" line="4" column="18" file="1">
+                            <tree node="IDENTIFIER" type="1516" domain="1" id="z67d" parents="2" line="4" column="18" file="1">
+                              <literal>C</literal>
+                            </tree>
+                          </tree>
+                        </tree>
+                        <tree node="member_declarator_list" type="1064" domain="1" id="z69x" line="4" column="41" file="1">
+                          <tree node="member_declarator" type="1069" domain="1" id="z69s" line="4" column="41" file="1">
+                            <tree node="primary_expression" type="181" domain="1" id="z682" line="4" column="42" file="1">
+                              <tree node="INT_LITERAL" type="1459" domain="1" id="z67z" parents="2" literal="1" line="4" column="42" file="1"/>
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                      <tree node="member_declaration" type="1062" domain="1" id="z6a3" line="4" column="9" file="1">
+                        <tree node="simple_type_specifier" type="674" domain="1" id="z67e" parents="2" alreadyprinted="true"/>
+                        <tree node="member_declarator_list" type="1064" domain="1" id="z6a0" line="4" column="18" file="1">
+                          <tree node="member_declarator" type="1068" domain="1" id="z69u" line="4" column="18" file="1">
+                            <tree node="direct_declarator" type="842" domain="1" id="z67v" line="4" column="18" file="1">
+                              <tree node="IDENTIFIER" type="1516" domain="1" id="z67d" parents="2" alreadyprinted="true"/>
+                            </tree>
+                            <tree node="primary_expression" type="181" domain="1" id="z683" line="4" column="42" file="1">
+                              <tree node="INT_LITERAL" type="1459" domain="1" id="z67z" parents="2" alreadyprinted="true"/>
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                    </tree>
+                    <tree node="$NONTERMINALAMBIGUITY" type="1582" nonterminalname="member_declaration" nonterminaltype="502" domain="1" id="z67h" children="2" line="5" column="9" file="1">
+                      <tree node="member_declaration" type="1062" domain="1" id="z6at" line="5" column="9" file="1">
+                        <tree node="type_specifier_seq" type="875" domain="1" id="z6ab" children="2" line="5" column="9" file="1">
+                          <tree node="simple_type_specifier" type="674" domain="1" id="z6a9" parents="2" line="5" column="9" file="1"/>
+                          <tree node="simple_type_specifier" type="666" domain="1" id="z6aa" line="5" column="18" file="1">
+                            <tree node="IDENTIFIER" type="1516" domain="1" id="z6a8" parents="2" line="5" column="18" file="1">
+                              <literal>DC</literal>
+                            </tree>
+                          </tree>
+                        </tree>
+                        <tree node="member_declarator_list" type="1064" domain="1" id="z6ao" line="5" column="41" file="1">
+                          <tree node="member_declarator" type="1069" domain="1" id="z6am" line="5" column="41" file="1">
+                            <tree node="primary_expression" type="181" domain="1" id="z6ak" line="5" column="42" file="1">
+                              <tree node="INT_LITERAL" type="1459" domain="1" id="z6ah" parents="2" literal="1" line="5" column="42" file="1"/>
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                      <tree node="member_declaration" type="1062" domain="1" id="z6au" line="5" column="9" file="1">
+                        <tree node="simple_type_specifier" type="674" domain="1" id="z6a9" parents="2" alreadyprinted="true"/>
+                        <tree node="member_declarator_list" type="1064" domain="1" id="z6aq" line="5" column="18" file="1">
+                          <tree node="member_declarator" type="1068" domain="1" id="z6an" line="5" column="18" file="1">
+                            <tree node="direct_declarator" type="842" domain="1" id="z6ag" line="5" column="18" file="1">
+                              <tree node="IDENTIFIER" type="1516" domain="1" id="z6a8" parents="2" alreadyprinted="true"/>
+                            </tree>
+                            <tree node="primary_expression" type="181" domain="1" id="z6al" line="5" column="42" file="1">
+                              <tree node="INT_LITERAL" type="1459" domain="1" id="z6ah" parents="2" alreadyprinted="true"/>
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                    </tree>
+                    <tree node="$NONTERMINALAMBIGUITY" type="1582" nonterminalname="member_declaration" nonterminaltype="502" domain="1" id="z67y" children="2" line="6" column="9" file="1">
+                      <tree node="member_declaration" type="1062" domain="1" id="z6bl" line="6" column="9" file="1">
+                        <tree node="type_specifier_seq" type="875" domain="1" id="z6b5" children="2" line="6" column="9" file="1">
+                          <tree node="simple_type_specifier" type="674" domain="1" id="z6b3" parents="2" line="6" column="9" file="1"/>
+                          <tree node="simple_type_specifier" type="666" domain="1" id="z6b4" line="6" column="18" file="1">
+                            <tree node="IDENTIFIER" type="1516" domain="1" id="z6b2" parents="2" line="6" column="18" file="1">
+                              <literal>Z</literal>
+                            </tree>
+                          </tree>
+                        </tree>
+                        <tree node="member_declarator_list" type="1064" domain="1" id="z6bi" line="6" column="41" file="1">
+                          <tree node="member_declarator" type="1069" domain="1" id="z6bg" line="6" column="41" file="1">
+                            <tree node="primary_expression" type="181" domain="1" id="z6be" line="6" column="42" file="1">
+                              <tree node="INT_LITERAL" type="1459" domain="1" id="z6bb" parents="2" literal="1" line="6" column="42" file="1"/>
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                      <tree node="member_declaration" type="1062" domain="1" id="z6bm" line="6" column="9" file="1">
+                        <tree node="simple_type_specifier" type="674" domain="1" id="z6b3" parents="2" alreadyprinted="true"/>
+                        <tree node="member_declarator_list" type="1064" domain="1" id="z6bj" line="6" column="18" file="1">
+                          <tree node="member_declarator" type="1068" domain="1" id="z6bh" line="6" column="18" file="1">
+                            <tree node="direct_declarator" type="842" domain="1" id="z6ba" line="6" column="18" file="1">
+                              <tree node="IDENTIFIER" type="1516" domain="1" id="z6b2" parents="2" alreadyprinted="true"/>
+                            </tree>
+                            <tree node="primary_expression" type="181" domain="1" id="z6bf" line="6" column="42" file="1">
+                              <tree node="INT_LITERAL" type="1459" domain="1" id="z6bb" parents="2" alreadyprinted="true"/>
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                    </tree>
+                    <tree node="$NONTERMINALAMBIGUITY" type="1582" nonterminalname="member_declaration" nonterminaltype="502" domain="1" id="z67w" children="2" line="7" column="9" file="1">
+                      <tree node="member_declaration" type="1062" domain="1" id="z6ch" line="7" column="9" file="1">
+                        <tree node="type_specifier_seq" type="875" domain="1" id="z6bx" children="2" line="7" column="9" file="1">
+                          <tree node="simple_type_specifier" type="674" domain="1" id="z6bv" parents="2" line="7" column="9" file="1"/>
+                          <tree node="simple_type_specifier" type="666" domain="1" id="z6bw" line="7" column="18" file="1">
+                            <tree node="IDENTIFIER" type="1516" domain="1" id="z6bu" parents="2" line="7" column="18" file="1">
+                              <literal>nPD</literal>
+                            </tree>
+                          </tree>
+                        </tree>
+                        <tree node="member_declarator_list" type="1064" domain="1" id="z6cc" line="7" column="41" file="1">
+                          <tree node="member_declarator" type="1069" domain="1" id="z6ca" line="7" column="41" file="1">
+                            <tree node="primary_expression" type="181" domain="1" id="z6c6" line="7" column="42" file="1">
+                              <tree node="INT_LITERAL" type="1459" domain="1" id="z6c3" parents="2" literal="1" line="7" column="42" file="1"/>
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                      <tree node="member_declaration" type="1062" domain="1" id="z6ci" line="7" column="9" file="1">
+                        <tree node="simple_type_specifier" type="674" domain="1" id="z6bv" parents="2" alreadyprinted="true"/>
+                        <tree node="member_declarator_list" type="1064" domain="1" id="z6cd" line="7" column="18" file="1">
+                          <tree node="member_declarator" type="1068" domain="1" id="z6cb" line="7" column="18" file="1">
+                            <tree node="direct_declarator" type="842" domain="1" id="z6c2" line="7" column="18" file="1">
+                              <tree node="IDENTIFIER" type="1516" domain="1" id="z6bu" parents="2" alreadyprinted="true"/>
+                            </tree>
+                            <tree node="primary_expression" type="181" domain="1" id="z6c7" line="7" column="42" file="1">
+                              <tree node="INT_LITERAL" type="1459" domain="1" id="z6c3" parents="2" alreadyprinted="true"/>
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                    </tree>
+                    <tree node="$NONTERMINALAMBIGUITY" type="1582" nonterminalname="member_declaration" nonterminaltype="502" domain="1" id="z67p" children="2" line="8" column="9" file="1">
+                      <tree node="member_declaration" type="1062" domain="1" id="z6d8" line="8" column="9" file="1">
+                        <tree node="type_specifier_seq" type="875" domain="1" id="z6bs" children="2" line="8" column="9" file="1">
+                          <tree node="simple_type_specifier" type="674" domain="1" id="z6cu" parents="2" line="8" column="9" file="1"/>
+                          <tree node="simple_type_specifier" type="666" domain="1" id="z6cv" line="8" column="18" file="1">
+                            <tree node="IDENTIFIER" type="1516" domain="1" id="z6bn" parents="2" line="8" column="18" file="1">
+                              <literal>nTO</literal>
+                            </tree>
+                          </tree>
+                        </tree>
+                        <tree node="member_declarator_list" type="1064" domain="1" id="z6d5" line="8" column="41" file="1">
+                          <tree node="member_declarator" type="1069" domain="1" id="z6d3" line="8" column="41" file="1">
+                            <tree node="primary_expression" type="181" domain="1" id="z6cz" line="8" column="42" file="1">
+                              <tree node="INT_LITERAL" type="1459" domain="1" id="z6cy" parents="2" literal="1" line="8" column="42" file="1"/>
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                      <tree node="member_declaration" type="1062" domain="1" id="z6d9" line="8" column="9" file="1">
+                        <tree node="simple_type_specifier" type="674" domain="1" id="z6cu" parents="2" alreadyprinted="true"/>
+                        <tree node="member_declarator_list" type="1064" domain="1" id="z6d6" line="8" column="18" file="1">
+                          <tree node="member_declarator" type="1068" domain="1" id="z6d4" line="8" column="18" file="1">
+                            <tree node="direct_declarator" type="842" domain="1" id="z6bt" line="8" column="18" file="1">
+                              <tree node="IDENTIFIER" type="1516" domain="1" id="z6bn" parents="2" alreadyprinted="true"/>
+                            </tree>
+                            <tree node="primary_expression" type="181" domain="1" id="z6d2" line="8" column="42" file="1">
+                              <tree node="INT_LITERAL" type="1459" domain="1" id="z6cy" parents="2" alreadyprinted="true"/>
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                    </tree>
+                  </tree>
+                </tree>
+              </tree>
+              <tree node="member_declaration" type="1061" domain="1" id="za5e" line="10" column="5" file="1">
+                <tree node="struct_or_union_specifier" type="1036" domain="1" id="za59" line="10" column="5" file="1">
+                  <tree node="struct_or_union_head" type="1039" domain="1" id="za4j" line="10" column="5" file="1"/>
+                  <tree node="$NONTERMINALAMBIGUITY" type="1582" nonterminalname="member_declaration" nonterminaltype="502" domain="1" id="z67f" children="2" line="11" column="9" file="1">
+                    <tree node="member_declaration" type="1062" domain="1" id="za56" line="11" column="9" file="1">
+                      <tree node="type_specifier_seq" type="875" domain="1" id="za4p" children="2" line="11" column="9" file="1">
+                        <tree node="simple_type_specifier" type="674" domain="1" id="za4n" parents="2" line="11" column="9" file="1"/>
+                        <tree node="simple_type_specifier" type="666" domain="1" id="za4o" line="11" column="18" file="1">
+                          <tree node="IDENTIFIER" type="1516" domain="1" id="za4m" parents="2" line="11" column="18" file="1">
+                            <literal>CARRY</literal>
+                          </tree>
+                        </tree>
+                      </tree>
+                      <tree node="member_declarator_list" type="1064" domain="1" id="za51" line="11" column="41" file="1">
+                        <tree node="member_declarator" type="1069" domain="1" id="za4z" line="11" column="41" file="1">
+                          <tree node="primary_expression" type="181" domain="1" id="za4w" line="11" column="42" file="1">
+                            <tree node="INT_LITERAL" type="1459" domain="1" id="za4r" parents="2" literal="1" line="11" column="42" file="1"/>
+                          </tree>
+                        </tree>
+                      </tree>
+                    </tree>
+                    <tree node="member_declaration" type="1062" domain="1" id="za57" line="11" column="9" file="1">
+                      <tree node="simple_type_specifier" type="674" domain="1" id="za4n" parents="2" alreadyprinted="true"/>
+                      <tree node="member_declarator_list" type="1064" domain="1" id="za52" line="11" column="18" file="1">
+                        <tree node="member_declarator" type="1068" domain="1" id="za50" line="11" column="18" file="1">
+                          <tree node="direct_declarator" type="842" domain="1" id="za4q" line="11" column="18" file="1">
+                            <tree node="IDENTIFIER" type="1516" domain="1" id="za4m" parents="2" alreadyprinted="true"/>
+                          </tree>
+                          <tree node="primary_expression" type="181" domain="1" id="za4x" line="11" column="42" file="1">
+                            <tree node="INT_LITERAL" type="1459" domain="1" id="za4r" parents="2" alreadyprinted="true"/>
+                          </tree>
+                        </tree>
+                      </tree>
+                    </tree>
+                  </tree>
+                </tree>
+              </tree>
+              <tree node="member_declaration" type="1061" domain="1" id="za6p" line="13" column="5" file="1">
+                <tree node="struct_or_union_specifier" type="1036" domain="1" id="za6o" line="13" column="5" file="1">
+                  <tree node="struct_or_union_head" type="1039" domain="1" id="za5i" line="13" column="5" file="1"/>
+                  <tree node="member_declaration_list" type="1048" domain="1" id="za6h" children="2" line="14" column="9" file="1">
+                    <tree node="member_declaration" type="1062" domain="1" id="za5o" line="14" column="9" file="1">
+                      <tree node="simple_type_specifier" type="674" domain="1" id="za5j" line="14" column="9" file="1"/>
+                      <tree node="member_declarator_list" type="1064" domain="1" id="za5n" line="14" column="41" file="1">
+                        <tree node="member_declarator" type="1069" domain="1" id="za5m" line="14" column="41" file="1">
+                          <tree node="primary_expression" type="181" domain="1" id="za5l" line="14" column="42" file="1">
+                            <tree node="INT_LITERAL" type="1459" domain="1" id="za5k" literal="2" line="14" column="42" file="1"/>
+                          </tree>
+                        </tree>
+                      </tree>
+                    </tree>
+                    <tree node="$NONTERMINALAMBIGUITY" type="1582" nonterminalname="member_declaration" nonterminaltype="502" domain="1" id="z67c" children="2" line="15" column="9" file="1">
+                      <tree node="member_declaration" type="1062" domain="1" id="za6f" line="15" column="9" file="1">
+                        <tree node="type_specifier_seq" type="875" domain="1" id="za5w" children="2" line="15" column="9" file="1">
+                          <tree node="simple_type_specifier" type="674" domain="1" id="za5q" parents="2" line="15" column="9" file="1"/>
+                          <tree node="simple_type_specifier" type="666" domain="1" id="za5t" line="15" column="18" file="1">
+                            <tree node="IDENTIFIER" type="1516" domain="1" id="za5p" parents="2" line="15" column="18" file="1">
+                              <literal>ZERO</literal>
+                            </tree>
+                          </tree>
+                        </tree>
+                        <tree node="member_declarator_list" type="1064" domain="1" id="za69" line="15" column="41" file="1">
+                          <tree node="member_declarator" type="1069" domain="1" id="za65" line="15" column="41" file="1">
+                            <tree node="primary_expression" type="181" domain="1" id="za61" line="15" column="42" file="1">
+                              <tree node="INT_LITERAL" type="1459" domain="1" id="za60" parents="2" literal="1" line="15" column="42" file="1"/>
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                      <tree node="member_declaration" type="1062" domain="1" id="za6g" line="15" column="9" file="1">
+                        <tree node="simple_type_specifier" type="674" domain="1" id="za5q" parents="2" alreadyprinted="true"/>
+                        <tree node="member_declarator_list" type="1064" domain="1" id="za6c" line="15" column="18" file="1">
+                          <tree node="member_declarator" type="1068" domain="1" id="za68" line="15" column="18" file="1">
+                            <tree node="direct_declarator" type="842" domain="1" id="za5x" line="15" column="18" file="1">
+                              <tree node="IDENTIFIER" type="1516" domain="1" id="za5p" parents="2" alreadyprinted="true"/>
+                            </tree>
+                            <tree node="primary_expression" type="181" domain="1" id="za64" line="15" column="42" file="1">
+                              <tree node="INT_LITERAL" type="1459" domain="1" id="za60" parents="2" alreadyprinted="true"/>
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                    </tree>
+                  </tree>
+                </tree>
+              </tree>
+            </tree>
+          </tree>
+          <tree node="simple_type_specifier" type="666" domain="1" id="za6q" line="17" column="3" file="1">
+            <tree node="IDENTIFIER" type="1516" domain="1" id="za6r" parents="2" line="17" column="3" file="1">
+              <literal>STATUSbits_t</literal>
+            </tree>
+          </tree>
+        </tree>
+      </tree>
+      <tree node="simple_declaration" type="623" domain="1" id="za7b" line="2" column="1" file="1">
+        <tree node="decl_specifier_seq" type="627" domain="1" id="za6x" children="2" line="2" column="1" file="1">
+          <tree node="decl_specifier" type="629" domain="1" id="z673" parents="2" alreadyprinted="true"/>
+          <tree node="struct_or_union_specifier" type="1036" domain="1" id="za6w" parents="2" alreadyprinted="true"/>
+        </tree>
+        <tree node="init_declarator_list" type="822" domain="1" id="za79" line="17" column="3" file="1">
+          <tree node="init_declarator" type="825" domain="1" id="za78" line="17" column="3" file="1">
+            <tree node="direct_declarator" type="842" domain="1" id="za6t" line="17" column="3" file="1">
+              <tree node="IDENTIFIER" type="1516" domain="1" id="za6r" parents="2" alreadyprinted="true"/>
+            </tree>
+          </tree>
+        </tree>
+      </tree>
+    </tree>
+  </tree>
+  <FileIndex>
+    <File index="1">E:/source/mbeddr.core/code/testcode/minimal.h</File>
+  </FileIndex>
+  <DomainIndex>
+    <Domain index="1">C~GCC4</Domain>
+  </DomainIndex>
+</DMSForest>
