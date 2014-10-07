@@ -2529,6 +2529,11 @@
             <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="ffeo.413682502717652307" resolveInfo="JDK" />
           </node>
         </node>
+        <node role="generator" roleId="kdzh.9200313594498201639" type="kdzh.BuildMps_Generator" typeId="kdzh.5507251971038816436" id="8733032751518235827" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.udt#8685795338487060854" />
+          <property name="uuid" nameId="kdzh.322010710375892619" value="380650f9-e117-4507-b8ce-a5e5d3b96bc4" />
+          <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="8628756186118765746" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
