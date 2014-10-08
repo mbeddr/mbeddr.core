@@ -7,6 +7,7 @@
   </models>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">0a02a8f9-14d0-4970-9bd2-ca35a097c80d(com.mbeddr.analyses.cbmc.core)</dependency>
     <dependency reexport="false">~_PreferencesModule#tutorial.__spreferences.PlatformTemplates(tutorial.__spreferences.PlatformTemplates)</dependency>
   </dependencies>
   <usedLanguages>
