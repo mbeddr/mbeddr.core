@@ -510,7 +510,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7024921229556134722" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CommentedStatement" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="-- don't use this --" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="comment out code" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4185783222026464515" resolveInfo="Statement" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229556134723" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229556133803" resolveInfo="ICommentedCode" />
