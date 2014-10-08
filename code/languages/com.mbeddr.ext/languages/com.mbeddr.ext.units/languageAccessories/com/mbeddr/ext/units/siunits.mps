@@ -4,7 +4,7 @@
   <language namespace="0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="4" implicit="yes" />
+  <import index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <root type="qlb5.UnitContainer" typeId="qlb5.8337440621611267900" id="624957442821420128" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SIUnits" />
@@ -54,7 +54,7 @@
         </node>
         <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="2418981108291204942" nodeInfo="ng">
           <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="624957442821420404" resolveInfo="m" />
-          <node role="exponent" roleId="qlb5.8337440621611297534" type="qlb5.Exponent" typeId="qlb5.8337440621611273670" id="2418981108291205003" nodeInfo="ng">
+          <node role="exponent" roleId="qlb5.8337440621611297534" type="qlb5.IntegerExponent" typeId="qlb5.8337440621611273670" id="2418981108291205003" nodeInfo="ng">
             <property name="value" nameId="qlb5.8337440621611273671" value="-1" />
           </node>
         </node>
