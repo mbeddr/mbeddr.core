@@ -2473,7 +2473,6 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4703960063092263001" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4703960063092263002" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="talm.MapByNameStatement" typeId="talm.8483575004407084862" id="4703960063092263016" nodeInfo="ng">
-          <property name="variableKind" nameId="talm.6804989120607256930" value="argument" />
           <node role="unmappedName" roleId="talm.8483575004407084863" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4703960063092263050" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4703960063092263029" nodeInfo="nn" />
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4703960063092263056" nodeInfo="nn">
@@ -2497,6 +2496,10 @@
               <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
             </node>
           </node>
+          <node role="variableKinds" roleId="talm.8328524084370301580" type="talm.VariableKindExpression" typeId="talm.8328524084371399528" id="8328524084372544810" nodeInfo="ng">
+            <property name="variableKind" nameId="talm.8328524084371399529" value="argument" />
+          </node>
+          <node role="variableKinds" roleId="talm.8328524084370301580" type="talm.VariableKindExpression" typeId="talm.8328524084371399528" id="8328524084373741456" nodeInfo="ng" />
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5388496118034179318" nodeInfo="ir">
@@ -7022,7 +7025,6 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4703960063092220466" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4703960063092220467" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="talm.MapByNameStatement" typeId="talm.8483575004407084862" id="8236113172499167023" nodeInfo="ng">
-          <property name="variableKind" nameId="talm.6804989120607256930" value="global" />
           <property name="canBeOptimized" nameId="talm.6239935301600030806" value="true" />
           <node role="unmappedName" roleId="talm.8483575004407084863" type="tpee.DotExpression" typeId="tpee.1197027756228" id="311526569068745704" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="311526569068745027" nodeInfo="nn" />
@@ -7046,6 +7048,9 @@
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4703960063092220487" nodeInfo="nn">
               <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
             </node>
+          </node>
+          <node role="variableKinds" roleId="talm.8328524084370301580" type="talm.VariableKindExpression" typeId="talm.8328524084371399528" id="8328524084372546147" nodeInfo="ng">
+            <property name="variableKind" nameId="talm.8328524084371399529" value="global" />
           </node>
         </node>
       </node>
@@ -10133,7 +10138,6 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8924761790439239940" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8924761790439239941" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="talm.MapByNameStatement" typeId="talm.8483575004407084862" id="8924761790439239942" nodeInfo="ng">
-          <property name="variableKind" nameId="talm.6804989120607256930" value="argument" />
           <node role="unmappedName" roleId="talm.8483575004407084863" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8924761790439239943" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="8924761790439239944" nodeInfo="nn" />
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8924761790439239945" nodeInfo="nn">
@@ -10159,6 +10163,9 @@
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8924761790439239954" nodeInfo="nn">
               <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
             </node>
+          </node>
+          <node role="variableKinds" roleId="talm.8328524084370301580" type="talm.VariableKindExpression" typeId="talm.8328524084371399528" id="8328524084372546150" nodeInfo="ng">
+            <property name="variableKind" nameId="talm.8328524084371399529" value="argument" />
           </node>
         </node>
       </node>

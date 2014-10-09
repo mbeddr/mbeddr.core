@@ -4050,6 +4050,9 @@
           <node role="categoryName" roleId="talm.8236113172499118431" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6804989120607264559" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="local variables" />
           </node>
+          <node role="variableKinds" roleId="talm.8328524084370301580" type="talm.VariableKindExpression" typeId="talm.8328524084371399528" id="8328524084372546401" nodeInfo="ng">
+            <property name="variableKind" nameId="talm.8328524084371399529" value="local" />
+          </node>
         </node>
       </node>
     </node>

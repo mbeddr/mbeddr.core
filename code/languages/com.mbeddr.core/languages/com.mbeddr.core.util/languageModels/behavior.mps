@@ -2272,6 +2272,9 @@
             <property name="manyCardinality" nameId="talm.1358930484562631807" value="false" />
             <link role="concept" roleId="talm.1358930484561468874" targetNodeId="c4fa.7254843406768606755" resolveInfo="ForVarDecl" />
           </node>
+          <node role="variableKinds" roleId="talm.8328524084370301580" type="talm.VariableKindExpression" typeId="talm.8328524084371399528" id="8328524084372543072" nodeInfo="ng">
+            <property name="variableKind" nameId="talm.8328524084371399529" value="local" />
+          </node>
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="1504611252350518444" nodeInfo="ir">
@@ -4050,6 +4053,9 @@
                 <link role="link" roleId="tp25.1138056516764" targetNodeId="c4fa.7763322639126652758" />
               </node>
             </node>
+          </node>
+          <node role="variableKinds" roleId="talm.8328524084370301580" type="talm.VariableKindExpression" typeId="talm.8328524084371399528" id="8328524084372544219" nodeInfo="ng">
+            <property name="variableKind" nameId="talm.8328524084371399529" value="local" />
           </node>
         </node>
       </node>
