@@ -152,11 +152,9 @@
         <node role="init" roleId="v7ag.5308710777891512022" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="4095937049776915560" nodeInfo="ng">
           <node role="elements" roleId="c4fa.8850915533694634146" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="4095937049776980083" nodeInfo="ng">
             <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4095937049776983963" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
             <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4095937049776991446" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="3" />
             </node>
           </node>

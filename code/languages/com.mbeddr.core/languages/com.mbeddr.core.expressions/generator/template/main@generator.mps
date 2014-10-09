@@ -33,7 +33,6 @@
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="mj1l.7533755140553634202" resolveInfo="StaticValueExpression" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="540488879270560191" nodeInfo="ng">
         <node role="templateNode" roleId="tpf8.1177093586806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="540488879270560197" nodeInfo="ng">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.2212975673976043696" value="12" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="540488879270560244" nodeInfo="nn">
             <property name="propertyName" nameId="tpck.1757699476691236117" value="value" />

@@ -55,19 +55,15 @@
       </node>
       <node role="init" roleId="x27k.2771264470558526601" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="2468009596596621418" nodeInfo="ng">
         <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2468009596596621769" nodeInfo="ng">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.2212975673976043696" value="1" />
         </node>
         <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2468009596596622524" nodeInfo="ng">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.2212975673976043696" value="2" />
         </node>
         <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2468009596596623321" nodeInfo="ng">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.2212975673976043696" value="3" />
         </node>
         <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2468009596596623591" nodeInfo="ng">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.2212975673976043696" value="4" />
         </node>
       </node>
@@ -81,11 +77,9 @@
       </node>
       <node role="init" roleId="x27k.2771264470558526601" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="2468009596596624897" nodeInfo="ng">
         <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2468009596596624942" nodeInfo="ng">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.2212975673976043696" value="1" />
         </node>
         <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2468009596596625267" nodeInfo="ng">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.2212975673976043696" value="2" />
         </node>
       </node>
@@ -101,14 +95,12 @@
         <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="2468009596596626998" nodeInfo="ng">
           <link role="element" roleId="clbe.4202685725779391329" targetNodeId="2468009596596621140" resolveInfo="a" />
           <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2468009596596627052" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="3" />
           </node>
         </node>
         <node role="elements" roleId="c4fa.8850915533694634146" type="clbe.MemberInitExpression" typeId="clbe.4202685725779366523" id="2468009596596627764" nodeInfo="ng">
           <link role="element" roleId="clbe.4202685725779391329" targetNodeId="2468009596596621174" resolveInfo="b" />
           <node role="value" roleId="clbe.4202685725779390438" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2468009596596628128" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="4" />
           </node>
         </node>
@@ -124,7 +116,6 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2468009596596768615" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2468009596596768622" nodeInfo="ng">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2468009596596768623" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
         </node>

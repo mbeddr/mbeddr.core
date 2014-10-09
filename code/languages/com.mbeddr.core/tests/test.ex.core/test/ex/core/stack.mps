@@ -62,7 +62,6 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="size" roleId="k146.291293396404994005" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407505382" nodeInfo="ng">
-        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
         <property name="value" nameId="mj1l.2212975673976043696" value="3" />
       </node>
     </node>
@@ -115,7 +114,6 @@
             </node>
             <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPush" typeId="k146.291293396405148894" id="291293396407505662" nodeInfo="ng">
               <node role="value" roleId="k146.291293396405148895" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396407505693" nodeInfo="ng">
-                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="10" />
               </node>
             </node>
@@ -129,7 +127,6 @@
             <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPeek" typeId="k146.291293396407757880" id="291293396409894208" nodeInfo="ng" />
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396412804355" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="10" />
           </node>
         </node>
@@ -159,7 +156,6 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="291293396414243039" nodeInfo="ng">
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396414243335" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="10" />
           </node>
           <node role="actual" roleId="yz9a.7755897872837031765" type="mj1l.GenericDotExpression" typeId="mj1l.4620120465980402700" id="8125672381521374165" nodeInfo="ng">
@@ -197,7 +193,6 @@
             </node>
             <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPush" typeId="k146.291293396405148894" id="291293396414245924" nodeInfo="ng">
               <node role="value" roleId="k146.291293396405148895" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396414246172" nodeInfo="ng">
-                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="20" />
               </node>
             </node>
@@ -210,7 +205,6 @@
             </node>
             <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPush" typeId="k146.291293396405148894" id="291293396414248116" nodeInfo="ng">
               <node role="value" roleId="k146.291293396405148895" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396414248406" nodeInfo="ng">
-                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="30" />
               </node>
             </node>
@@ -232,7 +226,6 @@
             <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPeek" typeId="k146.291293396407757880" id="291293396414250246" nodeInfo="ng" />
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396414250247" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="30" />
           </node>
         </node>
@@ -252,7 +245,6 @@
             <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPop" typeId="k146.291293396412804923" id="291293396414255861" nodeInfo="ng" />
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396414253472" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="30" />
           </node>
         </node>
@@ -264,7 +256,6 @@
             <node role="target" roleId="mj1l.7034214596252529803" type="k146.StackPop" typeId="k146.291293396412804923" id="291293396414257983" nodeInfo="ng" />
           </node>
           <node role="expected" roleId="yz9a.7755897872837031764" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="291293396414254106" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="20" />
           </node>
         </node>

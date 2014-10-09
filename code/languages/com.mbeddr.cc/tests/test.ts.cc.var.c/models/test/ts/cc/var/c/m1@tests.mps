@@ -150,7 +150,6 @@
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
               <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1683704241753519677" nodeInfo="ng">
-                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="0" />
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="1683704241753519680" nodeInfo="ng">

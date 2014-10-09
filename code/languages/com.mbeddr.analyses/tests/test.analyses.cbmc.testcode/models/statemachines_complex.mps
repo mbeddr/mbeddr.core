@@ -21,10 +21,10 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="33" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="17" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="9" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
   <import index="lcpc" modelUID="r:a2e68184-e5ff-4dfa-983c-d957a5690db9(com.mbeddr.analyses.cbmc.statemachines.structure)" version="4" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="2" implicit="yes" />
@@ -355,7 +355,6 @@
             <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
           </node>
           <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060857992501" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
         </node>
@@ -378,7 +377,6 @@
             <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
           </node>
           <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060857869233" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
         </node>
@@ -399,7 +397,6 @@
         <node role="init" roleId="clqz.4643433264760912612" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9099045060859346700" nodeInfo="ng">
           <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="9099045060859346701" nodeInfo="ng" />
           <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060859344616" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
         </node>
@@ -582,7 +579,6 @@
                 <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9099045060858009658" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="9099045060858009659" nodeInfo="ng" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060858009660" nodeInfo="ng">
-                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                     <property name="value" nameId="mj1l.2212975673976043696" value="200" />
                   </node>
                 </node>
@@ -596,7 +592,6 @@
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                   </node>
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060858242719" nodeInfo="ng">
-                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                     <property name="value" nameId="mj1l.2212975673976043696" value="20" />
                   </node>
                 </node>
@@ -611,7 +606,6 @@
                   <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                 </node>
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060859037292" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.2212975673976043696" value="30" />
                 </node>
               </node>
@@ -650,7 +644,6 @@
                 <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9099045060858540313" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="9099045060858540314" nodeInfo="ng" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060858540315" nodeInfo="ng">
-                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                     <property name="value" nameId="mj1l.2212975673976043696" value="200" />
                   </node>
                 </node>
@@ -664,7 +657,6 @@
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                   </node>
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060858540309" nodeInfo="ng">
-                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                     <property name="value" nameId="mj1l.2212975673976043696" value="30" />
                   </node>
                 </node>
@@ -679,7 +671,6 @@
                   <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                 </node>
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060859059361" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.2212975673976043696" value="40" />
                 </node>
               </node>
@@ -718,7 +709,6 @@
                 <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9099045060858711160" nodeInfo="ng">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="9099045060858711161" nodeInfo="ng" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060858711162" nodeInfo="ng">
-                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                     <property name="value" nameId="mj1l.2212975673976043696" value="200" />
                   </node>
                 </node>
@@ -732,7 +722,6 @@
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                   </node>
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060858711156" nodeInfo="ng">
-                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                     <property name="value" nameId="mj1l.2212975673976043696" value="40" />
                   </node>
                 </node>
@@ -744,7 +733,6 @@
                   <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                 </node>
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8323789300220498610" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.2212975673976043696" value="50" />
                 </node>
               </node>
@@ -784,7 +772,6 @@
                   <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                 </node>
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060858599707" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.2212975673976043696" value="50" />
                 </node>
               </node>
@@ -799,7 +786,6 @@
               <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9099045060858599711" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="9099045060858599712" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060858599713" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.2212975673976043696" value="200" />
                 </node>
               </node>
@@ -971,7 +957,6 @@
                   <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                 </node>
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060859195679" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.2212975673976043696" value="50" />
                 </node>
               </node>
@@ -986,7 +971,6 @@
               <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9099045060859195683" nodeInfo="ng">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="9099045060859195684" nodeInfo="ng" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060859195685" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.2212975673976043696" value="200" />
                 </node>
               </node>
@@ -1020,7 +1004,6 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9099045060860209414" nodeInfo="ng">
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="9099045060860209415" nodeInfo="ng" />
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860153950" nodeInfo="ng">
-                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="300" />
               </node>
             </node>
@@ -1125,7 +1108,6 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9099045060859601916" nodeInfo="ng">
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="9099045060859601917" nodeInfo="ng" />
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060859548916" nodeInfo="ng">
-                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="300" />
               </node>
             </node>
@@ -1199,7 +1181,6 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860377377" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
         </node>
@@ -1252,7 +1233,6 @@
                               <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                             </node>
                             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860398603" nodeInfo="ng">
-                              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                               <property name="value" nameId="mj1l.2212975673976043696" value="50" />
                             </node>
                           </node>
@@ -1269,7 +1249,6 @@
                               <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                             </node>
                             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860380644" nodeInfo="ng">
-                              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                               <property name="value" nameId="mj1l.2212975673976043696" value="10" />
                             </node>
                           </node>
@@ -1288,7 +1267,6 @@
                               <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                             </node>
                             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860409682" nodeInfo="ng">
-                              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                               <property name="value" nameId="mj1l.2212975673976043696" value="60" />
                             </node>
                           </node>
@@ -1305,7 +1283,6 @@
                               <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                             </node>
                             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860409688" nodeInfo="ng">
-                              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                               <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                             </node>
                           </node>
@@ -1375,7 +1352,6 @@
                           <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9099045060860546354" nodeInfo="ng">
                             <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="9099045060860546355" nodeInfo="ng" />
                             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860546356" nodeInfo="ng">
-                              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                               <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                             </node>
                           </node>
@@ -1384,7 +1360,6 @@
                           <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9099045060860556670" nodeInfo="ng">
                             <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="9099045060860556671" nodeInfo="ng" />
                             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860549135" nodeInfo="ng">
-                              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                               <property name="value" nameId="mj1l.2212975673976043696" value="1000" />
                             </node>
                           </node>
@@ -1439,7 +1414,6 @@
                               <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                             </node>
                             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860568530" nodeInfo="ng">
-                              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                               <property name="value" nameId="mj1l.2212975673976043696" value="50" />
                             </node>
                           </node>
@@ -1456,7 +1430,6 @@
                               <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                             </node>
                             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860568536" nodeInfo="ng">
-                              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                               <property name="value" nameId="mj1l.2212975673976043696" value="10" />
                             </node>
                           </node>
@@ -1509,7 +1482,6 @@
                               <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                             </node>
                             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860585454" nodeInfo="ng">
-                              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                               <property name="value" nameId="mj1l.2212975673976043696" value="60" />
                             </node>
                           </node>
@@ -1526,7 +1498,6 @@
                               <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4064635203923478395" resolveInfo="mps" />
                             </node>
                             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860585460" nodeInfo="ng">
-                              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                               <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                             </node>
                           </node>
@@ -1584,7 +1555,6 @@
           </node>
           <node role="condition" roleId="c4fa.8441331188640771827" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="9099045060860377526" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9099045060860377529" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="10" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="9099045060860377512" nodeInfo="ng">
