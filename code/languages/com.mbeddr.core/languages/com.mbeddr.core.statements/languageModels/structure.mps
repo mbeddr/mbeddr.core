@@ -35,7 +35,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4185783222026475238" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="LocalVariableDeclaration" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="localvar" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.modules/icons/localvar.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/localvar.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="local variable" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4185783222026464515" resolveInfo="Statement" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4129593283361406846" nodeInfo="ig">
