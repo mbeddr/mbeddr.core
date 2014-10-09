@@ -1783,7 +1783,7 @@
                                                       <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetConceptOperation" typeId="tp25.1172323065820" id="6533037995158594924" nodeInfo="nn" />
                                                     </node>
                                                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6533037995158594925" nodeInfo="nn">
-                                                      <property name="value" nameId="tpee.1070475926801" value="icons/globalvar.jpg" />
+                                                      <property name="value" nameId="tpee.1070475926801" value="icons/globalvar.png" />
                                                     </node>
                                                   </node>
                                                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6533037995158594926" nodeInfo="nn">

@@ -14,7 +14,7 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6275792049641586523" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TestCase" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/testcase.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/testcase.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="testcase" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a test case" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
