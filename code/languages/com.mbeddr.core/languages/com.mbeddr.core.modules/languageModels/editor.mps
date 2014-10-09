@@ -35,6 +35,7 @@
   <import index="tp4f" modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="0" implicit="yes" />
+  <import index="wfif" modelUID="r:ff3199af-19b4-4b1a-8045-000a02c06e38(de.itemis.mps.editor.bool.structure)" version="-1" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6437088627575722855" nodeInfo="ng">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="570t.BreadcrumbEditor" typeId="570t.4313262807137635254" id="1948372137355621847" nodeInfo="ng">
@@ -1016,6 +1017,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="external" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.6116558314501417921" resolveInfo="ExternalModule" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="570t.BreadcrumbEditor" typeId="570t.4313262807137635254" id="5954008374098493509" nodeInfo="ng">
+      <property name="showIcons" nameId="570t.6508908841687149034" value="true" />
       <node role="content" roleId="570t.4313262807137944011" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1006091569937120346" nodeInfo="nn">
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3947421596133749619" nodeInfo="nn">
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3947421596133749620" nodeInfo="nn">
@@ -3478,11 +3480,11 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="159275153965500799" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type=".de.itemis.mps.editor.bool.structure.CellModel_BooleanText" id="159275153965619419" nodeInfo="ng">
-        <property name="trueText" value="surrounds" />
-        <property name="falseText" value="only before" />
-        <link role="relationDeclaration" targetNodeId="x27k.159275153965489901" resolveInfo="isSurrounding" />
-        <node role="styleItem" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="159275153966275864" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="wfif.CellModel_BooleanText" typeId="wfif.7122083600695857782" id="159275153965619419" nodeInfo="ng">
+        <property name="trueText" nameId="wfif.7122083600696906118" value="surrounds" />
+        <property name="falseText" nameId="wfif.7122083600696909496" value="only before" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.159275153965489901" resolveInfo="isSurrounding" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="159275153966275864" nodeInfo="nn">
           <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
         </node>
       </node>
