@@ -11,10 +11,11 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="13" implicit="yes" />
+  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="0" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6394819151180597807" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="StructDeclaration" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="su.struct" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/struct.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/struct.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="struct" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a struct declaration" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7099329415459817973" resolveInfo="SUDeclaration" />
@@ -46,7 +47,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6116558314501347857" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TypeDef" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="typedef" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/typedef.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/typedef.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="define new types from existing ones" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="typedef" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
@@ -87,7 +88,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8811614583515725851" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="EnumDeclaration" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="enum" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/enum.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/enum.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="enum" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="an enum declaration" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
@@ -202,7 +203,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5882395403881907066" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="UnionDeclaration" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="su.union" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/struct.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/struct.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="union" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a union declaration" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7099329415459817973" resolveInfo="SUDeclaration" />
@@ -464,6 +465,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="su" />
     <property name="name" nameId="tpck.1169194664001" value="SUContent" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5954008374102363832" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="570t.4313262807135907006" resolveInfo="IBreadcrumb" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1430983428344023681" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="enum" />

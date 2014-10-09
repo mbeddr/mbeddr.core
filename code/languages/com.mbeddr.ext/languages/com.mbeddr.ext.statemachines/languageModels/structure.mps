@@ -30,7 +30,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5778488248013533809" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Statemachine" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/statemachine.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/statemachine.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a state machine" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="statemachine" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
@@ -94,7 +94,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5778488248013533839" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="State" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/state.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/state.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a normal state" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="state" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4249345261280334498" resolveInfo="AbstractState" />
@@ -102,7 +102,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5778488248013533883" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Transition" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states.transitions" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/transition.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/transition.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a transition" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="on" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1270667558200936379" resolveInfo="AbstractTransition" />
@@ -122,7 +122,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5633981208992643165" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="StatemachineVariableDeclaration" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/var.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/var.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a variable owned by a state machine" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="var" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
@@ -294,7 +294,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1786180596061248885" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
     <property name="name" nameId="tpck.1169194664001" value="EventArg" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext/languages/com.mbeddr.ext.components.statemachine/icons/argument.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/argument.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="an argument of an event" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1786180596061248886" nodeInfo="ig">
@@ -461,7 +461,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4643433264760980253" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
     <property name="name" nameId="tpck.1169194664001" value="InEvent" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/inevent.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/inevent.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="in event" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="an event flowing into a state machine" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1786180596061219795" resolveInfo="Event" />
@@ -474,7 +474,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4643433264760980254" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
     <property name="name" nameId="tpck.1169194664001" value="OutEvent" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/outevent.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/outevent.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="out event" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="an event flowing out of the state machine" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1786180596061219795" resolveInfo="Event" />

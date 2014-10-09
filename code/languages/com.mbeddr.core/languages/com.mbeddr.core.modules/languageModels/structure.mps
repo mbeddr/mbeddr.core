@@ -149,7 +149,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6437088627575724000" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
     <property name="name" nameId="tpck.1169194664001" value="FunctionPrototype" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/function.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/function.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a function prototype" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="function prototype" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6437088627575723997" resolveInfo="FunctionSignature" />
@@ -160,7 +160,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6437088627575724001" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
     <property name="name" nameId="tpck.1169194664001" value="Function" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/function.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/function.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a C function" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="function" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6437088627575723997" resolveInfo="FunctionSignature" />
@@ -195,7 +195,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7892328519581704407" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
     <property name="name" nameId="tpck.1169194664001" value="Argument" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/argument.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/argument.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a function argument" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8444296659257707785" nodeInfo="ig">
@@ -328,7 +328,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6610873504380335822" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="GlobalVariableDeclaration" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="global" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/globalvar.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/globalvar.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a global variable declaration" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="=" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
@@ -386,7 +386,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3788988821851860886" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="global" />
     <property name="name" nameId="tpck.1169194664001" value="GlobalConstantDeclaration" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/globalconst.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/globalconst.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a global constant definition" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#constant" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3376775282622142916" resolveInfo="AbstractDefineLike" />
@@ -764,7 +764,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6021475212425916971" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="global" />
     <property name="name" nameId="tpck.1169194664001" value="GlobalConstantFunctionDeclaration" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/globalconst.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/globalconst.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#macro" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a global macro definition" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
