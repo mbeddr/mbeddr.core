@@ -1,8 +1,0 @@
-##### mbeddr installer #####
-
-This is the mbeddr installer, you can run it by executing the mbeddr-installer.exe
-It will ask you to grand administrator permissions to it, after that it will installer mbeddr and it's dependencies.
-
-If you experience any problems please fill a bug report at https://github.com/mbeddr/mbeddr.core/issues/new 
-Beside your description of the problem please also add the content of the installer log  located at %TEMP%/mbeddr/{date and time}.txt 
-
