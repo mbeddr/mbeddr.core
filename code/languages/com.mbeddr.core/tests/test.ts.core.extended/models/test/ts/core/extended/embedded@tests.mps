@@ -27,21 +27,18 @@
           <property name="highSuffix" nameId="nbyu.6847490852669177905" value="h" />
           <node role="setterExpression" roleId="nbyu.6847490852669163176" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="8621731602413439316" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8621731602413439319" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="10" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.RegisterValueExpression" typeId="nbyu.6847490852669234137" id="8621731602413437333" nodeInfo="ng" />
           </node>
           <node role="lowSetterExpr" roleId="nbyu.6847490852669177903" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="8621731602413437679" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8621731602413437682" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.RegisterValueExpression" typeId="nbyu.6847490852669234137" id="8621731602413437620" nodeInfo="ng" />
           </node>
           <node role="highSetterExpr" roleId="nbyu.6847490852669177904" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="8621731602413438511" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8621731602413438514" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.RegisterValueExpression" typeId="nbyu.6847490852669234137" id="8621731602413438098" nodeInfo="ng" />

@@ -2572,7 +2572,6 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectModuloAssignmentExpression" typeId="mj1l.7193082937527768531" id="6500545468170851257" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="1547996354244289925" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1547996354244289928" nodeInfo="ng">
-                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.2212975673976043696" value="1" />
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1547996354244286061" nodeInfo="ng">
@@ -4431,7 +4430,6 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4473962241765205868" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="-53686781.0" />
           </node>
         </node>
@@ -4442,7 +4440,6 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4473962241764975579" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.2212975673976043696" value="-53686781.0f" />
           </node>
         </node>

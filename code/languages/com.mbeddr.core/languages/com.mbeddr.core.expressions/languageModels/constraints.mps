@@ -477,28 +477,14 @@
               <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintsFunctionParameter_propertyValue" typeId="tp1t.1153138554286" id="5420066315456265705" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tpfo.MatchRegexpOperation" typeId="tpfo.1222260469397" id="5420066315456265706" nodeInfo="nn">
                 <node role="regexp" roleId="tpfo.1174653387388" type="tpfo.InlineRegexpExpression" typeId="tpfo.1174510540317" id="5420066315456265707" nodeInfo="nn">
-                  <node role="regexp" roleId="tpfo.1174510571016" type="tpfo.SeqRegexp" typeId="tpfo.1174484562151" id="5420066315456265708" nodeInfo="ng">
-                    <node role="left" roleId="tpfo.1174485176897" type="tpfo.PlusRegexp" typeId="tpfo.1174482804200" id="5420066315456265709" nodeInfo="ng">
-                      <node role="regexp" roleId="tpfo.1174485243418" type="tpfo.ParensRegexp" typeId="tpfo.1174491169200" id="5420066315456265710" nodeInfo="ng">
-                        <node role="expr" roleId="tpfo.1174491174779" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265711" nodeInfo="ng">
-                          <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265735" nodeInfo="ng">
-                            <property name="text" nameId="tpfo.1174482761807" value="0" />
-                          </node>
-                          <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265741" nodeInfo="ng">
-                            <property name="text" nameId="tpfo.1174482761807" value="1" />
-                          </node>
+                  <node role="regexp" roleId="tpfo.1174510571016" type="tpfo.PlusRegexp" typeId="tpfo.1174482804200" id="5420066315456265709" nodeInfo="ng">
+                    <node role="regexp" roleId="tpfo.1174485243418" type="tpfo.ParensRegexp" typeId="tpfo.1174491169200" id="5420066315456265710" nodeInfo="ng">
+                      <node role="expr" roleId="tpfo.1174491174779" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265711" nodeInfo="ng">
+                        <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265735" nodeInfo="ng">
+                          <property name="text" nameId="tpfo.1174482761807" value="0" />
                         </node>
-                      </node>
-                    </node>
-                    <node role="right" roleId="tpfo.1174485181039" type="tpfo.QuestionRegexp" typeId="tpfo.1174552240608" id="5420066315456265736" nodeInfo="ng">
-                      <node role="regexp" roleId="tpfo.1174485243418" type="tpfo.ParensRegexp" typeId="tpfo.1174491169200" id="5420066315456265737" nodeInfo="ng">
-                        <node role="expr" roleId="tpfo.1174491174779" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265738" nodeInfo="ng">
-                          <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265739" nodeInfo="ng">
-                            <property name="text" nameId="tpfo.1174482761807" value="u" />
-                          </node>
-                          <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265740" nodeInfo="ng">
-                            <property name="text" nameId="tpfo.1174482761807" value="U" />
-                          </node>
+                        <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265741" nodeInfo="ng">
+                          <property name="text" nameId="tpfo.1174482761807" value="1" />
                         </node>
                       </node>
                     </node>
@@ -523,58 +509,44 @@
               <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintsFunctionParameter_propertyValue" typeId="tp1t.1153138554286" id="5420066315456265745" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tpfo.MatchRegexpOperation" typeId="tpfo.1222260469397" id="5420066315456265746" nodeInfo="nn">
                 <node role="regexp" roleId="tpfo.1174653387388" type="tpfo.InlineRegexpExpression" typeId="tpfo.1174510540317" id="5420066315456265747" nodeInfo="nn">
-                  <node role="regexp" roleId="tpfo.1174510571016" type="tpfo.SeqRegexp" typeId="tpfo.1174484562151" id="5420066315456265748" nodeInfo="ng">
-                    <node role="left" roleId="tpfo.1174485176897" type="tpfo.PlusRegexp" typeId="tpfo.1174482804200" id="5420066315456265749" nodeInfo="ng">
-                      <node role="regexp" roleId="tpfo.1174485243418" type="tpfo.ParensRegexp" typeId="tpfo.1174491169200" id="5420066315456265750" nodeInfo="ng">
-                        <node role="expr" roleId="tpfo.1174491174779" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265751" nodeInfo="ng">
-                          <node role="right" roleId="tpfo.1174485181039" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265753" nodeInfo="ng">
-                            <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265754" nodeInfo="ng">
-                              <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265755" nodeInfo="ng">
-                                <property name="text" nameId="tpfo.1174482761807" value="6" />
-                              </node>
-                              <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265756" nodeInfo="ng">
-                                <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265757" nodeInfo="ng">
-                                  <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265758" nodeInfo="ng">
-                                    <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265759" nodeInfo="ng">
-                                      <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265760" nodeInfo="ng">
-                                        <property name="text" nameId="tpfo.1174482761807" value="1" />
-                                      </node>
-                                      <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265761" nodeInfo="ng">
-                                        <property name="text" nameId="tpfo.1174482761807" value="2" />
-                                      </node>
-                                    </node>
-                                    <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265762" nodeInfo="ng">
-                                      <property name="text" nameId="tpfo.1174482761807" value="3" />
-                                    </node>
-                                  </node>
-                                  <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265763" nodeInfo="ng">
-                                    <property name="text" nameId="tpfo.1174482761807" value="4" />
-                                  </node>
-                                </node>
-                                <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265764" nodeInfo="ng">
-                                  <property name="text" nameId="tpfo.1174482761807" value="5" />
-                                </node>
-                              </node>
+                  <node role="regexp" roleId="tpfo.1174510571016" type="tpfo.PlusRegexp" typeId="tpfo.1174482804200" id="5420066315456265749" nodeInfo="ng">
+                    <node role="regexp" roleId="tpfo.1174485243418" type="tpfo.ParensRegexp" typeId="tpfo.1174491169200" id="5420066315456265750" nodeInfo="ng">
+                      <node role="expr" roleId="tpfo.1174491174779" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265751" nodeInfo="ng">
+                        <node role="right" roleId="tpfo.1174485181039" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265753" nodeInfo="ng">
+                          <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265754" nodeInfo="ng">
+                            <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265755" nodeInfo="ng">
+                              <property name="text" nameId="tpfo.1174482761807" value="6" />
                             </node>
-                            <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265775" nodeInfo="ng">
-                              <property name="text" nameId="tpfo.1174482761807" value="7" />
+                            <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265756" nodeInfo="ng">
+                              <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265757" nodeInfo="ng">
+                                <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265758" nodeInfo="ng">
+                                  <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265759" nodeInfo="ng">
+                                    <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265760" nodeInfo="ng">
+                                      <property name="text" nameId="tpfo.1174482761807" value="1" />
+                                    </node>
+                                    <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265761" nodeInfo="ng">
+                                      <property name="text" nameId="tpfo.1174482761807" value="2" />
+                                    </node>
+                                  </node>
+                                  <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265762" nodeInfo="ng">
+                                    <property name="text" nameId="tpfo.1174482761807" value="3" />
+                                  </node>
+                                </node>
+                                <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265763" nodeInfo="ng">
+                                  <property name="text" nameId="tpfo.1174482761807" value="4" />
+                                </node>
+                              </node>
+                              <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265764" nodeInfo="ng">
+                                <property name="text" nameId="tpfo.1174482761807" value="5" />
+                              </node>
                             </node>
                           </node>
-                          <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265781" nodeInfo="ng">
-                            <property name="text" nameId="tpfo.1174482761807" value="0" />
+                          <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265775" nodeInfo="ng">
+                            <property name="text" nameId="tpfo.1174482761807" value="7" />
                           </node>
                         </node>
-                      </node>
-                    </node>
-                    <node role="right" roleId="tpfo.1174485181039" type="tpfo.QuestionRegexp" typeId="tpfo.1174552240608" id="5420066315456265776" nodeInfo="ng">
-                      <node role="regexp" roleId="tpfo.1174485243418" type="tpfo.ParensRegexp" typeId="tpfo.1174491169200" id="5420066315456265777" nodeInfo="ng">
-                        <node role="expr" roleId="tpfo.1174491174779" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="5420066315456265778" nodeInfo="ng">
-                          <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265779" nodeInfo="ng">
-                            <property name="text" nameId="tpfo.1174482761807" value="u" />
-                          </node>
-                          <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265780" nodeInfo="ng">
-                            <property name="text" nameId="tpfo.1174482761807" value="U" />
-                          </node>
+                        <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="5420066315456265781" nodeInfo="ng">
+                          <property name="text" nameId="tpfo.1174482761807" value="0" />
                         </node>
                       </node>
                     </node>
