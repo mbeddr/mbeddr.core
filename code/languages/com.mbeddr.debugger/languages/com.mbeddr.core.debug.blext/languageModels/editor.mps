@@ -107,10 +107,12 @@
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8236113172499118461" nodeInfo="nn" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8236113172499118462" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="C variable kind" />
+          <property name="text" nameId="tpc2.1073389577007" value="C variable kinds:" />
         </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6804989120607256931" nodeInfo="ng">
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.6804989120607256930" resolveInfo="variableKind" />
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="8328524084370354395" nodeInfo="ng">
+          <property name="separatorText" nameId="tpc2.1140524450557" value="," />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.8328524084370301580" />
+          <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8328524084370354397" nodeInfo="nn" />
         </node>
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutNewLineStyleClassItem" typeId="tpc2.1237308012275" id="8236113172499118464" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
@@ -1606,6 +1608,13 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.4985013377831074174" resolveInfo="active" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4985013377831079779" nodeInfo="nn" />
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8328524084371399536" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="watches.mapping" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="talm.8328524084371399528" resolveInfo="VariableKindExpression" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8328524084371399538" nodeInfo="ng">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.8328524084371399529" resolveInfo="variableKind" />
     </node>
   </root>
 </model>
