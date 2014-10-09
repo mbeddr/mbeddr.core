@@ -73,7 +73,9 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2418981108294081669" nodeInfo="nr">
               <property name="name" nameId="tpck.1169194664001" value="leftSpec" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="2418981108294081670" nodeInfo="in">
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2418981108294081671" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516194978" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2418981108294081672" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
@@ -89,7 +91,9 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2418981108294081676" nodeInfo="nr">
               <property name="name" nameId="tpck.1169194664001" value="rightSpec" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="2418981108294081677" nodeInfo="in">
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2418981108294081678" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516204856" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2418981108294081679" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
@@ -263,7 +267,9 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2418981108293993733" nodeInfo="nr">
               <property name="name" nameId="tpck.1169194664001" value="leftSpec" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="2418981108293993734" nodeInfo="in">
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2418981108293993735" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516213845" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2418981108293993736" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
@@ -279,7 +285,9 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2418981108293993743" nodeInfo="nr">
               <property name="name" nameId="tpck.1169194664001" value="rightSpec" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="2418981108293993744" nodeInfo="in">
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2418981108293993745" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516223973" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2418981108293993746" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
@@ -467,7 +475,9 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4959640877385593896" nodeInfo="nr">
               <property name="name" nameId="tpck.1169194664001" value="leftSpec" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="4959640877385593897" nodeInfo="in">
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="4959640877385593899" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516232981" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="385804577581219392" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
@@ -491,7 +501,9 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4959640877385593908" nodeInfo="nr">
               <property name="name" nameId="tpck.1169194664001" value="rightSpec" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="4959640877385593909" nodeInfo="in">
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="4959640877385593911" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516246701" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="385804577581232058" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
@@ -656,7 +668,9 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4959640877385870807" nodeInfo="nr">
               <property name="name" nameId="tpck.1169194664001" value="resultSpec" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="4959640877385870798" nodeInfo="in">
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="4959640877385871435" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516249038" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="385804577581234889" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
@@ -1124,7 +1138,9 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2943235651226047527" nodeInfo="nr">
               <property name="name" nameId="tpck.1169194664001" value="leftSpec" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="2943235651226047528" nodeInfo="in">
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2943235651226047529" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516252331" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2943235651226047530" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
@@ -1148,7 +1164,9 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2943235651226047537" nodeInfo="nr">
               <property name="name" nameId="tpck.1169194664001" value="rightSpec" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="2943235651226047538" nodeInfo="in">
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2943235651226047539" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516254673" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2943235651226047540" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
@@ -1525,7 +1543,9 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4959640877386446329" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="subSpec" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="4959640877386446323" nodeInfo="in">
-              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="4959640877386447349" nodeInfo="in" />
+              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515897449" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+              </node>
               <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="385804577581262974" nodeInfo="in">
                 <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
               </node>
@@ -1548,7 +1568,9 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4959640877386462617" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="supSpec" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="4959640877386462618" nodeInfo="in">
-              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="4959640877386462620" nodeInfo="in" />
+              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515900307" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+              </node>
               <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="385804577581260865" nodeInfo="in">
                 <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
               </node>
@@ -1703,7 +1725,9 @@
                         <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="688756255677019614" nodeInfo="in">
                           <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                         </node>
-                        <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="688756255677019711" nodeInfo="in" />
+                        <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516070702" nodeInfo="in">
+                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                        </node>
                       </node>
                     </node>
                     <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="688756255677317490" nodeInfo="nn">
@@ -1719,7 +1743,9 @@
                             <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="688756255677345108" nodeInfo="in">
                               <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                             </node>
-                            <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="688756255677348563" nodeInfo="in" />
+                            <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516076234" nodeInfo="in">
+                              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -1930,7 +1956,9 @@
                                   <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="688756255676964682" nodeInfo="in">
                                     <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                                   </node>
-                                  <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="688756255676964719" nodeInfo="in" />
+                                  <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515984078" nodeInfo="in">
+                                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                                  </node>
                                 </node>
                                 <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="688756255676966508" nodeInfo="nn">
                                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.1958770732437062993" resolveInfo="getUnitMap_UnitSpecification" />
@@ -1956,7 +1984,9 @@
                                   <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="688756255676974872" nodeInfo="in">
                                     <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                                   </node>
-                                  <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="688756255676975097" nodeInfo="in" />
+                                  <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515997426" nodeInfo="in">
+                                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                                  </node>
                                 </node>
                                 <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="688756255676975674" nodeInfo="nn">
                                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.1958770732437062993" resolveInfo="getUnitMap_UnitSpecification" />
@@ -2003,7 +2033,9 @@
                                   <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="688756255677442603" nodeInfo="in">
                                     <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                                   </node>
-                                  <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="688756255677442720" nodeInfo="in" />
+                                  <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516011012" nodeInfo="in">
+                                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                                  </node>
                                 </node>
                                 <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="688756255677455312" nodeInfo="nn">
                                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.688756255677432512" resolveInfo="reduceBy" />
@@ -2032,17 +2064,12 @@
                                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2418981108278989559" nodeInfo="nn">
                                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="688756255677441785" resolveInfo="metaUnitMap" />
                                     </node>
-                                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2418981108278993330" nodeInfo="nn">
-                                      <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2418981108278990859" nodeInfo="nn">
-                                        <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2418981108278990388" nodeInfo="nn">
-                                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="688756255676802138" resolveInfo="metaUnitReference" />
-                                        </node>
-                                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2418981108278992343" nodeInfo="nn">
-                                          <link role="link" roleId="tp25.1138056516764" targetNodeId="qlb5.8337440621611297534" />
-                                        </node>
+                                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2418981108278990859" nodeInfo="nn">
+                                      <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2418981108278990388" nodeInfo="nn">
+                                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="688756255676802138" resolveInfo="metaUnitReference" />
                                       </node>
-                                      <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="3802033421902403118" nodeInfo="nn">
-                                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="lx0c.3802033421899426307" resolveInfo="getNumerator" />
+                                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2418981108278992343" nodeInfo="nn">
+                                        <link role="link" roleId="tp25.1138056516764" targetNodeId="qlb5.8337440621611297534" />
                                       </node>
                                     </node>
                                   </node>
@@ -2050,21 +2077,18 @@
                                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="688756255677441785" resolveInfo="metaUnitMap" />
                                   </node>
                                   <node role="condition" roleId="tpee.1163668914799" type="tpee.AndExpression" typeId="tpee.1080120340718" id="2418981108278985111" nodeInfo="nn">
-                                    <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="2418981108278985112" nodeInfo="nn">
-                                      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2418981108278985113" nodeInfo="nn">
-                                        <property name="value" nameId="tpee.1068580320021" value="1" />
-                                      </node>
-                                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2418981108278985114" nodeInfo="nn">
-                                        <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2418981108278985115" nodeInfo="nn">
-                                          <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2418981108278985116" nodeInfo="nn">
+                                    <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NotExpression" typeId="tpee.1081516740877" id="6014665538516069464" nodeInfo="nn">
+                                      <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6014665538516069466" nodeInfo="nn">
+                                        <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6014665538516069467" nodeInfo="nn">
+                                          <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6014665538516069468" nodeInfo="nn">
                                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="688756255676802138" resolveInfo="metaUnitReference" />
                                           </node>
-                                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2418981108278985117" nodeInfo="nn">
+                                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6014665538516069469" nodeInfo="nn">
                                             <link role="link" roleId="tp25.1138056516764" targetNodeId="qlb5.8337440621611297534" />
                                           </node>
                                         </node>
-                                        <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="3802033421902400971" nodeInfo="nn">
-                                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="lx0c.3802033421899426307" resolveInfo="getNumerator" />
+                                        <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6014665538516069470" nodeInfo="nn">
+                                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="lx0c.6014665538516045659" resolveInfo="isOne" />
                                         </node>
                                       </node>
                                     </node>
@@ -2503,7 +2527,9 @@
                                           <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3410453932681801172" nodeInfo="in">
                                             <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                                           </node>
-                                          <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="3410453932681801213" nodeInfo="in" />
+                                          <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538516084272" nodeInfo="in">
+                                            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                                          </node>
                                         </node>
                                         <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3410453932681802784" nodeInfo="nn">
                                           <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ndfg.4959640877382172657" resolveInfo="UnitConversionUtil" />
@@ -2624,15 +2650,15 @@
                                           <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="3410453932681963726" nodeInfo="nn">
                                             <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="3410453932681963727" nodeInfo="sn">
                                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3410453932681964076" nodeInfo="nn">
-                                                <node role="expression" roleId="tpee.1068580123156" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="3410453932681968432" nodeInfo="nn">
-                                                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3410453932681968808" nodeInfo="nn">
-                                                    <property name="value" nameId="tpee.1068580320021" value="0" />
-                                                  </node>
-                                                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3410453932681964415" nodeInfo="nn">
+                                                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6014665538516095360" nodeInfo="nn">
+                                                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3410453932681964415" nodeInfo="nn">
                                                     <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3410453932681964075" nodeInfo="nn">
                                                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3410453932681963728" resolveInfo="it" />
                                                     </node>
                                                     <node role="operation" roleId="tpee.1197027833540" type="tp2q.ValueAccessOperation" typeId="tp2q.1240824834947" id="3410453932681966382" nodeInfo="nn" />
+                                                  </node>
+                                                  <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6014665538516100849" nodeInfo="nn">
+                                                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.6014665538513517344" resolveInfo="isNonZero" />
                                                   </node>
                                                 </node>
                                               </node>
@@ -3219,7 +3245,9 @@
               <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2205917211688074794" nodeInfo="in">
                 <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
               </node>
-              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2205917211688075802" nodeInfo="in" />
+              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515928725" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+              </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2205917211688081069" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.1958770732437062993" resolveInfo="getUnitMap_UnitSpecification" />
@@ -3242,7 +3270,9 @@
               <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2205917211688093141" nodeInfo="in">
                 <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
               </node>
-              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2205917211688093142" nodeInfo="in" />
+              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515931349" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+              </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2205917211688093143" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ndfg.4959640877382172657" resolveInfo="UnitConversionUtil" />
@@ -3454,7 +3484,9 @@
               <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2205917211688516927" nodeInfo="in">
                 <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
               </node>
-              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2205917211688516928" nodeInfo="in" />
+              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515936569" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+              </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2205917211688516929" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ndfg.4959640877382172657" resolveInfo="UnitConversionUtil" />
@@ -3487,7 +3519,9 @@
               <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2205917211688529243" nodeInfo="in">
                 <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
               </node>
-              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2205917211688529244" nodeInfo="in" />
+              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515939353" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+              </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2205917211688529245" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.688756255678896161" resolveInfo="getUnitMap_UnitSpecification" />
@@ -3640,7 +3674,9 @@
               <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3301072788975894696" nodeInfo="in">
                 <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
               </node>
-              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="3301072788975895704" nodeInfo="in" />
+              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515891121" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+              </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3301072788975898553" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.1958770732437062993" resolveInfo="getUnitMap_UnitSpecification" />
@@ -3663,7 +3699,9 @@
               <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3301072788975904284" nodeInfo="in">
                 <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
               </node>
-              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="3301072788975904285" nodeInfo="in" />
+              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515893297" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+              </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3301072788975904286" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ndfg.4959640877382172657" resolveInfo="UnitConversionUtil" />
@@ -4142,7 +4180,9 @@
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2418981108292327862" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2418981108292327861" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515836268" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2418981108292327866" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.2418981108292152609" resolveInfo="getUnitMap_Type" />
@@ -4168,7 +4208,9 @@
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2418981108292333295" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2418981108292333296" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515837620" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2418981108292333297" nodeInfo="nn">
                 <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ndfg.4959640877382172657" resolveInfo="UnitConversionUtil" />
@@ -5191,7 +5233,9 @@
                     <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="624957442818447402" nodeInfo="in">
                       <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                     </node>
-                    <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="624957442818447403" nodeInfo="in" />
+                    <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515866433" nodeInfo="in">
+                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                    </node>
                   </node>
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="5365817535830433866" nodeInfo="nn">
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.2418981108292152609" resolveInfo="getUnitMap_Type" />
@@ -5217,11 +5261,13 @@
                     <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="624957442818447411" nodeInfo="in">
                       <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                     </node>
-                    <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="624957442818447412" nodeInfo="in" />
+                    <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515867453" nodeInfo="in">
+                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                    </node>
                   </node>
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="624957442818447413" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.4121031889272998278" resolveInfo="getUnitMap_IUnit" />
                     <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ndfg.4959640877382172657" resolveInfo="UnitConversionUtil" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.6014665538515790272" resolveInfo="getUnitMap_IUnit" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1741902046314589950" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="624957442818744563" nodeInfo="nn">
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1741902046314589141" nodeInfo="nn">
@@ -5253,11 +5299,13 @@
                     <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7644849806582109994" nodeInfo="in">
                       <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                     </node>
-                    <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="7644849806582109995" nodeInfo="in" />
+                    <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515868756" nodeInfo="in">
+                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                    </node>
                   </node>
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7644849806582113790" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.4121031889272998278" resolveInfo="getUnitMap_IUnit" />
                     <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ndfg.4959640877382172657" resolveInfo="UnitConversionUtil" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.6014665538515790272" resolveInfo="getUnitMap_IUnit" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7644849806582114349" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7644849806582113982" nodeInfo="nn">
                         <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="78245274156972455" resolveInfo="convertExpression" />
@@ -5279,11 +5327,13 @@
                     <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7644849806582110005" nodeInfo="in">
                       <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                     </node>
-                    <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="7644849806582110006" nodeInfo="in" />
+                    <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515869908" nodeInfo="in">
+                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                    </node>
                   </node>
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7644849806582110007" nodeInfo="nn">
                     <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ndfg.4959640877382172657" resolveInfo="UnitConversionUtil" />
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.4121031889272998278" resolveInfo="getUnitMap_IUnit" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.6014665538515790272" resolveInfo="getUnitMap_IUnit" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7644849806582110008" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7644849806582110009" nodeInfo="nn">
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7644849806582110010" nodeInfo="nn">
@@ -5802,7 +5852,9 @@
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2418981108298350366" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2418981108298350367" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515874689" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2418981108298350368" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.2418981108292152609" resolveInfo="getUnitMap_Type" />
@@ -5828,7 +5880,9 @@
                 <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2418981108298350377" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                 </node>
-                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2418981108298350378" nodeInfo="in" />
+                <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515876041" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                </node>
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2418981108298350379" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.2418981108292152609" resolveInfo="getUnitMap_Type" />
@@ -6540,7 +6594,9 @@
                     <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="9147588085800921495" nodeInfo="in">
                       <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                     </node>
-                    <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="9147588085800921496" nodeInfo="in" />
+                    <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515849795" nodeInfo="in">
+                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                    </node>
                   </node>
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="9147588085800926032" nodeInfo="nn">
                     <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ndfg.4959640877382172657" resolveInfo="UnitConversionUtil" />
@@ -6566,11 +6622,13 @@
                     <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="9147588085800921504" nodeInfo="in">
                       <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
                     </node>
-                    <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="9147588085800921505" nodeInfo="in" />
+                    <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515850680" nodeInfo="in">
+                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+                    </node>
                   </node>
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="9147588085800921506" nodeInfo="nn">
                     <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ndfg.4959640877382172657" resolveInfo="UnitConversionUtil" />
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.4121031889272998278" resolveInfo="getUnitMap_IUnit" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.6014665538515790272" resolveInfo="getUnitMap_IUnit" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9147588085800921507" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1741902046312438132" nodeInfo="nn">
                         <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="1741902046312437568" nodeInfo="nn">
@@ -7232,7 +7290,9 @@
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8560945243076337330" nodeInfo="nr">
           <property name="name" nameId="tpck.1169194664001" value="leftSpec" />
           <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="8560945243076337331" nodeInfo="in">
-            <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="8560945243076337332" nodeInfo="in" />
+            <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515840318" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+            </node>
             <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8560945243076337333" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
             </node>
@@ -7258,7 +7318,9 @@
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8560945243076337340" nodeInfo="nr">
           <property name="name" nameId="tpck.1169194664001" value="rightSpec" />
           <node role="type" roleId="tpee.5680397130376446158" type="tp2q.MapType" typeId="tp2q.1197683403723" id="8560945243076337341" nodeInfo="in">
-            <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="8560945243076337342" nodeInfo="in" />
+            <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515841186" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+            </node>
             <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8560945243076337343" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
             </node>
@@ -7468,7 +7530,9 @@
               <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6876720352521347777" nodeInfo="in">
                 <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
               </node>
-              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="6876720352521347778" nodeInfo="in" />
+              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515912031" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+              </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6876720352521347779" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ndfg.688756255678896161" resolveInfo="getUnitMap_UnitSpecification" />
@@ -7501,7 +7565,9 @@
               <node role="keyType" roleId="tp2q.1197683466920" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6876720352521347790" nodeInfo="in">
                 <link role="concept" roleId="tp25.1138405853777" targetNodeId="qlb5.8337440621611270350" resolveInfo="IUnit" />
               </node>
-              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.IntegerType" typeId="tpee.1070534370425" id="6876720352521347791" nodeInfo="in" />
+              <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6014665538515917563" nodeInfo="in">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ndfg.6014665538512057704" resolveInfo="Fraction" />
+              </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6876720352521347792" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ndfg.4959640877382172657" resolveInfo="UnitConversionUtil" />
