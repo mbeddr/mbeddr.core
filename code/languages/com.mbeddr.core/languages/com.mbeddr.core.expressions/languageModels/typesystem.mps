@@ -11918,8 +11918,13 @@
   </root>
   <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="86069659505565797" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="check_INumericLiteral" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="toBeDeleted" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="86069659505565798" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="86069659506039141" nodeInfo="nn">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="86069659506039341" nodeInfo="nn">
+          <property name="text" nameId="tpee.6329021646629104958" value="TODO delete in one of the coming versions" />
+        </node>
+      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.AssertStatement" typeId="tpd4.1175517400280" id="86069659505571008" nodeInfo="nn">
         <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="86069659505571460" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="unsigned property was removed" />
@@ -11955,7 +11960,7 @@
     </node>
   </root>
   <root type="tpd4.TypesystemQuickFix" typeId="tpd4.1216383170661" id="86069659505572042" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="toBeDeleted" />
     <property name="name" nameId="tpck.1169194664001" value="removeUnsigendProperty" />
     <node role="executeBlock" roleId="tpd4.1216383424566" type="tpd4.QuickFixExecuteBlock" typeId="tpd4.1216383287005" id="86069659505572043" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="86069659505572044" nodeInfo="sn">
