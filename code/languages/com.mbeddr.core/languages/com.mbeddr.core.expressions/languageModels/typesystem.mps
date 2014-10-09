@@ -11916,5 +11916,78 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1l.6035922876555486166" resolveInfo="PtrDiffT" />
     </node>
   </root>
+  <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="86069659505565797" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="check_INumericLiteral" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="86069659505565798" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.AssertStatement" typeId="tpd4.1175517400280" id="86069659505571008" nodeInfo="nn">
+        <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="86069659505571460" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="unsigned property was removed" />
+        </node>
+        <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="86069659505571345" nodeInfo="nn">
+          <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="86069659505565800" resolveInfo="iNumericLiteral" />
+        </node>
+        <node role="condition" roleId="tpd4.1175517761460" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="86069659505571189" nodeInfo="nn">
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="86069659505571192" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="86069659505571193" nodeInfo="nn">
+              <node role="leftExpression" roleId="tp25.1145404616321" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="86069659505571291" nodeInfo="nn">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="86069659505565800" resolveInfo="iNumericLiteral" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="86069659505571195" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ec5l.~SNode%dgetProperty(java%dlang%dString)%cjava%dlang%dString" resolveInfo="getProperty" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="86069659505571196" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="unsigned" />
+              </node>
+            </node>
+          </node>
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="86069659505571191" nodeInfo="nn" />
+        </node>
+        <node role="helginsIntention" roleId="tpd4.1227096802791" type="tpd4.TypesystemIntention" typeId="tpd4.1210784285454" id="86069659505572996" nodeInfo="ng">
+          <property name="applyImmediately" nameId="tpd4.1216127910019" value="true" />
+          <link role="quickFix" roleId="tpd4.1216388525179" targetNodeId="86069659505572042" resolveInfo="removeUnsigendProperty" />
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="86069659505565800" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="iNumericLiteral" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1l.5289481837639973214" resolveInfo="INumericLiteral" />
+    </node>
+  </root>
+  <root type="tpd4.TypesystemQuickFix" typeId="tpd4.1216383170661" id="86069659505572042" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
+    <property name="name" nameId="tpck.1169194664001" value="removeUnsigendProperty" />
+    <node role="executeBlock" roleId="tpd4.1216383424566" type="tpd4.QuickFixExecuteBlock" typeId="tpd4.1216383287005" id="86069659505572043" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="86069659505572044" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="86069659505572137" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="86069659504822392" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="86069659504822393" nodeInfo="nn">
+              <node role="leftExpression" roleId="tp25.1145404616321" type="tpd4.ConceptFunctionParameter_node" typeId="tpd4.1216383337216" id="86069659505572181" nodeInfo="nn" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="86069659504822395" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ec5l.~SNode%dsetProperty(java%dlang%dString,java%dlang%dString)%cvoid" resolveInfo="setProperty" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="86069659504822396" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="unsigned" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="86069659505572542" nodeInfo="nn" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="quickFixArgument" roleId="tpd4.1216383476350" type="tpd4.QuickFixArgument" typeId="tpd4.1216383482742" id="86069659505572065" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="numLiteral" />
+      <node role="argumentType" roleId="tpd4.1216383511839" type="tp25.SNodeType" typeId="tp25.1138055754698" id="86069659505572081" nodeInfo="in" />
+    </node>
+    <node role="descriptionBlock" roleId="tpd4.1216391046856" type="tpd4.QuickFixDescriptionBlock" typeId="tpd4.1216390987552" id="86069659505573195" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="86069659505573196" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="86069659505573879" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="86069659505573878" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="remove unsigned property" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
 </model>
 
