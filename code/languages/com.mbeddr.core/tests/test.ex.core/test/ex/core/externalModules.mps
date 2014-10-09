@@ -210,7 +210,6 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7533755140570696547" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.StaticValueExpression" typeId="mj1l.7533755140553634202" id="7533755140570696548" nodeInfo="ng">
             <node role="expr" roleId="mj1l.7533755140555345895" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7533755140570696549" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="22.12312312" />
             </node>
           </node>
