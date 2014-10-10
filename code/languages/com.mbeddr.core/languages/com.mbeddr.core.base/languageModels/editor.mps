@@ -10969,6 +10969,15 @@
         <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
       </node>
     </node>
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="614750605549565385" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Operator" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="614750605549565500" nodeInfo="nn">
+        <property name="color" nameId="tpc2.1186403713874" value="black" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="614750605549565502" nodeInfo="nn">
+        <property name="style" nameId="tpc2.1186403771423" value="PLAIN" />
+      </node>
+    </node>
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="3038320686444798184" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Identifier" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="3038320686444803092" nodeInfo="nn">
