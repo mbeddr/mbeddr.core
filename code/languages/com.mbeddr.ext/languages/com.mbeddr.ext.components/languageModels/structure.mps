@@ -86,7 +86,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845484922" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ClientServerInterface" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.cs" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/csinterface.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/csinterface.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="cs interface" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="interface with operations" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4491876417845484919" resolveInfo="Interface" />
@@ -130,7 +130,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845484924" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.cs" />
     <property name="name" nameId="tpck.1169194664001" value="Operation" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/operation.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/operation.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="operation" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="an operation that is part of an interface" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
@@ -210,7 +210,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845628840" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.ports" />
     <property name="name" nameId="tpck.1169194664001" value="ProvidedPort" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/providedport.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/providedport.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="services provided by component" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="provides" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4491876417845484930" resolveInfo="Port" />
@@ -230,7 +230,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845628841" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.ports" />
     <property name="name" nameId="tpck.1169194664001" value="RequiredPort" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/requiredport.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/requiredport.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="requires" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="services used by component" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4491876417845484930" resolveInfo="Port" />
@@ -256,7 +256,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845641670" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
     <property name="name" nameId="tpck.1169194664001" value="Runnable" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/runnable.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/runnable.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="runnable" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a &quot;function&quot; in a component" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
@@ -346,7 +346,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845649011" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp" />
     <property name="name" nameId="tpck.1169194664001" value="AtomicComponent" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/component.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/component.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="component" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="component with no instances inside" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4491876417845474761" resolveInfo="Component" />
@@ -448,7 +448,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845649024" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances" />
     <property name="name" nameId="tpck.1169194664001" value="InstanceConfiguration" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/instanceConfiguration.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/instanceConfiguration.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a set of instances and connectors" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="instance config" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7780999115923942144" resolveInfo="AbstractInstanceConfiguration" />
@@ -631,7 +631,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5308710777891512019" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.field" />
     <property name="name" nameId="tpck.1169194664001" value="Field" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/field.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/field.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="field" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="field in component" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
@@ -856,7 +856,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6591434695300950447" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.cs.ppc" />
     <property name="name" nameId="tpck.1169194664001" value="ResultExpression" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/resultexpression.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/resultexpression.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="refer to the result of an operation" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="result" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />

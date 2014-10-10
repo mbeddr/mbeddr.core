@@ -443,7 +443,7 @@
       </node>
     </node>
     <node role="toolIcon" roleId="tp4k.6791676465872004185" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="5022036173483013708" nodeInfo="ng">
-      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/todo.jpg" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${module}/icons/todo.png" />
     </node>
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5426495936043638617" nodeInfo="ig">
@@ -1191,7 +1191,7 @@
       </node>
     </node>
     <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="5022036173483013710" nodeInfo="ng">
-      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/todo.jpg" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${module}/icons/todo.png" />
     </node>
   </root>
   <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="5022036173482689519" nodeInfo="ng">

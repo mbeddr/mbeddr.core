@@ -16,7 +16,7 @@
   <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="0" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8745401669462952101" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Requirement" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/requirement.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/requirement.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="req" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a functional requirement" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />

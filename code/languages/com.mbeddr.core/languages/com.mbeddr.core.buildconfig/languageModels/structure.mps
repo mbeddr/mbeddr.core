@@ -41,7 +41,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7717755763392524107" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ModuleRef" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/moduleref.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/moduleref.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7717755763392524108" nodeInfo="ig">
@@ -59,7 +59,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5046689135693761554" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Executable" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/program.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/program.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="an executable binary" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="executable" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
@@ -83,7 +83,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5046689135693761556" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Binary" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/program.jpg" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/program.png" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="binary" />
