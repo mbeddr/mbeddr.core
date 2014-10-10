@@ -10959,7 +10959,7 @@
   <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="3038320686444741591" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="mbeddrBaseStyles" />
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="3038320686444764198" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Keyword" />
+      <property name="name" nameId="tpck.1169194664001" value="KW" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="3038320686444784065" nodeInfo="nn">
         <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="3038320686444784068" nodeInfo="ng">
           <property name="value" nameId="tpc2.1225456424731" value="000080" />
@@ -10970,7 +10970,7 @@
       </node>
     </node>
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="614750605549565385" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Operator" />
+      <property name="name" nameId="tpck.1169194664001" value="Op" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="614750605549565500" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="black" />
       </node>
@@ -11030,7 +11030,7 @@
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="3038320686466193299" nodeInfo="nn" />
     </node>
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="3038320686444851619" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Parenthesis" />
+      <property name="name" nameId="tpck.1169194664001" value="Parens" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.MatchingLabelStyleClassItem" typeId="tpc2.1236262245656" id="3038320686444851620" nodeInfo="nn">
         <property name="labelName" nameId="tpc2.1238091709220" value="parenthesis" />
       </node>
@@ -11050,7 +11050,7 @@
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="3038320686444919613" nodeInfo="nn" />
     </node>
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="3038320686444924381" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Semicolon" />
+      <property name="name" nameId="tpck.1169194664001" value="Semi" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="3038320686444924384" nodeInfo="nn" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="7254843406768833948" nodeInfo="nn">
         <property name="flag" nameId="tpc2.1186414551515" value="true" />
