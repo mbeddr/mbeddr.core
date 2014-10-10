@@ -7,11 +7,12 @@
   <import index="mntj" modelUID="r:cbcf1573-e9f3-4829-a7ec-4101a2386c4c(com.mbeddr.cc.var.composition.editor)" version="-1" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
+  <import index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="4" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5966716731426624177" nodeInfo="ng">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xr8g.5966716731426624152" resolveInfo="ContextTargetNodeName" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5966716731426624230" nodeInfo="nn">
       <property name="text" nameId="tpc2.1073389577007" value="ctx-target-name" />
-      <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="mntj.5966716731426747252" resolveInfo="keywords" />
+      <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="r4b4.3038320686444764198" resolveInfo="KW" />
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6477445114790513403" nodeInfo="ng">
@@ -37,6 +38,7 @@
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xr8g.6477445114790514795" resolveInfo="AppendOp" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6477445114790514821" nodeInfo="nn">
       <property name="text" nameId="tpc2.1073389577007" value="append" />
+      <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="r4b4.3038320686444764198" resolveInfo="KW" />
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6477445114790514848" nodeInfo="ng">

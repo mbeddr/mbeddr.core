@@ -3428,7 +3428,7 @@
         <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="r4b4.3038320686458022958" resolveInfo="PassiveText" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3038320686455125355" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="&lt;" />
+        <property name="text" nameId="tpc2.1073389577007" value="«" />
         <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="r4b4.3038320686458022958" resolveInfo="PassiveText" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="3038320686455125645" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
@@ -3442,7 +3442,7 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.2212975673976043696" resolveInfo="value" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3038320686455125299" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="u&gt;" />
+        <property name="text" nameId="tpc2.1073389577007" value="u»" />
         <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="r4b4.3038320686458022958" resolveInfo="PassiveText" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="3038320686458029615" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />

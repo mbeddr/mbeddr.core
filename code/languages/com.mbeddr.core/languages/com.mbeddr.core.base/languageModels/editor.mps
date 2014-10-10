@@ -5703,16 +5703,16 @@
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3038320686463092208" nodeInfo="in">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1t7x.~Color" resolveInfo="Color" />
       </node>
-      <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3038320686463092209" nodeInfo="nn">
-        <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="3038320686463092210" nodeInfo="nn">
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="6333681927817551065" nodeInfo="nn">
+        <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="6333681927817640353" nodeInfo="nn">
           <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1t7x.~Color%d&lt;init&gt;(int,int,int)" resolveInfo="Color" />
-          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3038320686463092211" nodeInfo="nn">
+          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6333681927817640396" nodeInfo="nn">
             <property name="value" nameId="tpee.1068580320021" value="0" />
           </node>
-          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3038320686463092212" nodeInfo="nn">
+          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6333681927817641540" nodeInfo="nn">
             <property name="value" nameId="tpee.1068580320021" value="0" />
           </node>
-          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.HexIntegerLiteral" typeId="tpee.1179360813171" id="614750605521284707" nodeInfo="nn">
+          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.HexIntegerLiteral" typeId="tpee.1179360813171" id="6333681927817642853" nodeInfo="nn">
             <property name="value" nameId="tpee.1179360856892" value="80" />
           </node>
         </node>
@@ -7818,6 +7818,7 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="747084250476988699" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="reexport" />
         <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="2992054467173910209" resolveInfo="deleteReexport" />
+        <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="3038320686444764198" resolveInfo="KW" />
         <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="747084250477776255" nodeInfo="nn">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="747084250477776256" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="747084250477776938" nodeInfo="nn">
@@ -10982,8 +10983,16 @@
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="3038320686444764198" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="KW" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="3038320686444784065" nodeInfo="nn">
-        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="3038320686444784068" nodeInfo="ng">
-          <property name="value" nameId="tpc2.1225456424731" value="000080" />
+        <property name="color" nameId="tpc2.1186403713874" value="DARK_MAGENTA" />
+        <node role="query" roleId="tpc2.1186403803051" type="tpc2.QueryFunction_Color" typeId="tpc2.1176809959526" id="6333681927817643919" nodeInfo="nn">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6333681927817643920" nodeInfo="sn">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6333681927817649498" nodeInfo="nn">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="6333681927817649497" nodeInfo="nn">
+                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="5149698356471833219" resolveInfo="BasicColors" />
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3038320686463092206" resolveInfo="KEYWORD_BLUE" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="3038320686444793468" nodeInfo="nn">
@@ -11006,6 +11015,15 @@
       </node>
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="3038320686444803094" nodeInfo="nn">
         <property name="style" nameId="tpc2.1186403771423" value="PLAIN" />
+      </node>
+    </node>
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="6333681927813525555" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="StructuralIdentifier" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="6333681927813525556" nodeInfo="nn">
+        <property name="color" nameId="tpc2.1186403713874" value="black" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="6333681927813525557" nodeInfo="nn">
+        <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
       </node>
     </node>
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="3038320686444807821" nodeInfo="ng">
@@ -11035,8 +11053,16 @@
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="614750605522194982" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Boolean" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="614750605522199908" nodeInfo="nn">
-        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="614750605522199909" nodeInfo="ng">
-          <property name="value" nameId="tpc2.1225456424731" value="000080" />
+        <property name="color" nameId="tpc2.1186403713874" value="DARK_MAGENTA" />
+        <node role="query" roleId="tpc2.1186403803051" type="tpc2.QueryFunction_Color" typeId="tpc2.1176809959526" id="6333681927817658595" nodeInfo="nn">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6333681927817658596" nodeInfo="sn">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6333681927817659355" nodeInfo="nn">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="6333681927817659356" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3038320686463092206" resolveInfo="KEYWORD_BLUE" />
+                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="5149698356471833219" resolveInfo="BasicColors" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="614750605522199910" nodeInfo="nn">
@@ -11158,6 +11184,12 @@
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="3038320686445000812" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="GlobalVariable" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="614750605512898551" nodeInfo="nn">
+        <property name="color" nameId="tpc2.1186403713874" value="DARK_MAGENTA" />
+      </node>
+    </node>
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleClass" typeId="tpc2.3383245079137382180" id="6333681927820894144" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Field" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="6333681927820894145" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="DARK_MAGENTA" />
       </node>
     </node>
