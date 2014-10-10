@@ -47,9 +47,6 @@
             <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="4465510224861492539" nodeInfo="ng">
               <property name="pattern" nameId="3ior.5248329904288051112" value="plugins/**" />
             </node>
-            <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760092616100" nodeInfo="ng">
-              <property name="pattern" nameId="3ior.5248329904288051112" value="bin/idea.properties" />
-            </node>
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8607776404756316251" nodeInfo="ng">
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="3191954501586557096" nodeInfo="ng">
@@ -204,9 +201,6 @@
             <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="4465510224861492534" nodeInfo="ng">
               <property name="pattern" nameId="3ior.5248329904288051112" value="plugins/**" />
             </node>
-            <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760092616094" nodeInfo="ng">
-              <property name="pattern" nameId="3ior.5248329904288051112" value="bin/idea.properties" />
-            </node>
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8607776404756318690" nodeInfo="ng">
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="3191954501586557015" nodeInfo="ng">
@@ -355,9 +349,6 @@
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688312941960" />
             <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="4465510224861492529" nodeInfo="ng">
               <property name="pattern" nameId="3ior.5248329904288051112" value="plugins/**" />
-            </node>
-            <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="1152399386257657357" nodeInfo="ng">
-              <property name="pattern" nameId="3ior.5248329904288051112" value="bin/idea.properties" />
             </node>
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8607776404756319231" nodeInfo="ng">
