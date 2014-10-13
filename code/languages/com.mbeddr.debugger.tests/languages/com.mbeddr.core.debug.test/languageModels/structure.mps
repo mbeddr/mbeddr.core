@@ -711,5 +711,14 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6289137936867337273" resolveInfo="IDebuggerBackend" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7207384538010135495" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element" />
+    <property name="name" nameId="tpck.1169194664001" value="DebuggerRunningValidation" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="running" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7207384538010135651" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4360423713604419403" resolveInfo="IValidationConfigurationElement" />
+    </node>
+  </root>
 </model>
 

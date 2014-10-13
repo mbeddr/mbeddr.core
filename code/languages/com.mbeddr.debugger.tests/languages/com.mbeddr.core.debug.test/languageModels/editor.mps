@@ -2096,5 +2096,13 @@
       <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="tpc5.3229274890674099465" resolveInfo="KeyWord" />
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7207384538010135709" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.7207384538010135495" resolveInfo="DebuggerRunningValidation" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7207384538010137719" nodeInfo="nn">
+      <property name="text" nameId="tpc2.1073389577007" value="debugger running" />
+      <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="tpc5.3229274890674099465" resolveInfo="KeyWord" />
+    </node>
+  </root>
 </model>
 
