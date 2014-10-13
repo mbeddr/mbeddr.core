@@ -832,23 +832,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.318113533128716675" resolveInfo="ITyped" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2877808180148899328" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="CommentModuleContent" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2877808180148899333" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="comment" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2877808180148899331" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6437088627575722831" resolveInfo="IModuleContent" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6584628407655575212" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4527669556368310488" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.4527669556367956681" resolveInfo="IInstantiatedOnlyInGenerators" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5095889050032706476" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
     <property name="name" nameId="tpck.1169194664001" value="InlineConfigItem" />

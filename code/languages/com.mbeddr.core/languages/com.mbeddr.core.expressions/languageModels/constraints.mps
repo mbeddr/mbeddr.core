@@ -469,7 +469,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.1054289341113496566" resolveInfo="BinaryNumberLiteral" />
     <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="1054289341113496595" nodeInfo="ng">
-      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="mj1l.1054289341113496567" resolveInfo="value" />
+      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="mj1l.2212975673976043696" resolveInfo="value" />
       <node role="propertyValidator" roleId="tp1t.1212097481299" type="tp1t.ConstraintFunction_PropertyValidator" typeId="tp1t.1212096972063" id="1054289341113496596" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1054289341113496597" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5420066315456265703" nodeInfo="nn">

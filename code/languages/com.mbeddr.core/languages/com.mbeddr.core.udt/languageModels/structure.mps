@@ -18,13 +18,7 @@
     <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/struct.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="struct" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a struct declaration" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7099329415459817973" resolveInfo="SUDeclaration" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8685795338482669787" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.2742494070478183293" resolveInfo="ICanMangleNames" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8685795338482690096" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
-    </node>
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3038320686460630029" resolveInfo="ModuleContentSUDeclaration" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6394819151180597816" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="StructType" />
@@ -206,13 +200,7 @@
     <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/struct.png" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="union" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a union declaration" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7099329415459817973" resolveInfo="SUDeclaration" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8685795338482669775" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.2742494070478183293" resolveInfo="ICanMangleNames" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8685795338482669800" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
-    </node>
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3038320686460630029" resolveInfo="ModuleContentSUDeclaration" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5882395403881907205" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="UnionType" />
@@ -559,6 +547,17 @@
       <property name="role" nameId="tpce.1071599776563" value="ref" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7099329415459817973" resolveInfo="SUDeclaration" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3038320686460630029" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="su.struct" />
+    <property name="name" nameId="tpck.1169194664001" value="ModuleContentSUDeclaration" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7099329415459817973" resolveInfo="SUDeclaration" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8685795338482669775" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.2742494070478183293" resolveInfo="ICanMangleNames" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8685795338482669800" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
     </node>
   </root>
 </model>

@@ -19,9 +19,6 @@
       <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7646082028326283148" resolveInfo="TestModule" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6068976060903766825" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1363161610622_1" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2515196518059994997" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1391099809488_1" />
     </node>
@@ -39,6 +36,14 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6068976060903766827" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3038320686468461467" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="x" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="3038320686468482968" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3038320686468461386" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7646082028326283117" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7646082028326283118" nodeInfo="ng">
             <link role="function" roleId="x27k.5950410542643524493" targetNodeId="7646082028326283235" resolveInfo="add" />

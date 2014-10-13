@@ -52,6 +52,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/pluginSolution.msd" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime.msd" folder="preferenceform" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.print.pluginSolution/com.mbeddr.mpsutil.print.pluginSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.rcpconfig/com.mbeddr.mpsutil.rcpconfig.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.msd" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.sandbox/com.mbeddr.mpsutil.review.sandbox.msd" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.serializer.xml/com.mbeddr.mpsutil.serializer.xml.msd" folder="" />

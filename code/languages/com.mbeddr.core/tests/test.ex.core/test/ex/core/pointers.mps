@@ -3167,11 +3167,11 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="22102029902284586" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="constVolatileArray" />
       <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="22102029902284588" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="true" />
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         <node role="baseType" roleId="c4fa.7763322639126652758" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="22102029902284587" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="true" />
         </node>
         <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="22102029902284590" nodeInfo="ng">
           <property name="value" nameId="mj1l.2212975673976043696" value="42" />
@@ -4976,15 +4976,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8118992680281421914" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="8118992680281426985" nodeInfo="ng">
-          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8118992680281426987" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8118992680281426988" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8118992680281426989" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="@Kolja: These fail as well; didn't investigate why" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="3534497005925429711" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3534497005925429712" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429713" nodeInfo="ng">
@@ -5103,15 +5094,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8118992680281461597" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="8118992680281509784" nodeInfo="ng">
-          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8118992680281509785" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8118992680281509786" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8118992680281509787" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="@Kolja: These fail as well; didn't investigate why" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="3534497005925510788" nodeInfo="ng">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3534497005925510882" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510893" nodeInfo="ng">

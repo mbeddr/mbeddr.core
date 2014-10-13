@@ -69,6 +69,9 @@
         <property name="text" nameId="k146.2688792604367903089" value="It runs successfully" />
       </node>
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="614750605513737084" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1412943089440_1" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9066372830132897437" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
