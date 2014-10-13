@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:2614f5fc-e90d-4f99-b5fb-05bc371282e5(com.mbeddr.analyses.sat4j.fm.solution)">
   <persistence version="8" />
-  <language namespace="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" />
-  <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
-  <language namespace="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
-  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="10" />
   <import index="glhf" modelUID="f:java_stub#d280cd6b-3d77-4bf2-b70d-fe049ab4c77e#org.sat4j.specs(com.mbeddr.analyses.sat4j/org.sat4j.specs@java_stub)" version="-1" />
   <import index="vy7l" modelUID="r:86500bb5-b61d-4584-98de-8e87c2a6a247(com.mbeddr.analyses.sat4j.fm.analyses)" version="-1" />
-  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="8" />
-  <import index="tz4y" modelUID="f:java_stub#86441d7a-e194-42da-81a5-2161ec62a379#jetbrains.mps.project(MPS.Workbench/jetbrains.mps.project@java_stub)" version="-1" />
   <import index="88zw" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" version="-1" />
   <import index="ky9n" modelUID="r:02fd962e-fdec-4ce8-ac08-1e36622f718b(com.mbeddr.analyses.sat4j.fm.model)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -76,11 +68,11 @@
                       <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2254150758335567518" nodeInfo="nr">
                         <property name="name" nameId="tpck.1169194664001" value="mcc" />
                         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2254150758335612457" nodeInfo="in">
-                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ky9n.2627968989060163640" resolveInfo="ModelConsistencyChecker" />
+                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ky9n.2627968989060163640" resolveInfo="ModelConsistencyCheckerOfVariabilityUse" />
                         </node>
                         <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2254150758335567520" nodeInfo="nn">
                           <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="2254150758335617387" nodeInfo="nn">
-                            <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="ky9n.2627968989060163640" resolveInfo="ModelConsistencyChecker" />
+                            <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="ky9n.2627968989060163640" resolveInfo="ModelConsistencyCheckerOfVariabilityUse" />
                           </node>
                         </node>
                       </node>
