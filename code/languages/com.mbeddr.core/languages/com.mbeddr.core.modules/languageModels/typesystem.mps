@@ -2104,6 +2104,9 @@
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="679530008587465873" nodeInfo="nn">
                     <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="679530008587465875" nodeInfo="sn">
                       <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="679530008587465888" nodeInfo="nn">
+                        <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7545335507009210376" nodeInfo="nn">
+                          <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="679530008587465814" resolveInfo="imc" />
+                        </node>
                         <node role="errorString" roleId="tpd4.1175517851849" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="679530008587488494" nodeInfo="nn">
                           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="679530008587488497" nodeInfo="nn">
                             <property name="value" nameId="tpee.1070475926801" value=" uses this one" />
@@ -2136,9 +2139,6 @@
                               </node>
                             </node>
                           </node>
-                        </node>
-                        <node role="nodeToReport" roleId="tpd4.1227096802790" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="679530008587465923" nodeInfo="nn">
-                          <link role="variable" roleId="tp2q.1153944258490" targetNodeId="679530008587465832" resolveInfo="r" />
                         </node>
                         <node role="messageTarget" roleId="tpd4.1227096836496" type="tpd4.PropertyMessageTarget" typeId="tpd4.1227096498176" id="679530008587488471" nodeInfo="ng">
                           <link role="propertyDeclaration" roleId="tpd4.1227096521710" targetNodeId="tpck.1169194664001" resolveInfo="name" />
