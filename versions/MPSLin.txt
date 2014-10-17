@@ -1,1 +1,1 @@
-http://download.jetbrains.com/mps/31/MPS-3.1.4.tar.gz
+http://download.jetbrains.com/mps/31/MPS-3.1.5.tar.gz
