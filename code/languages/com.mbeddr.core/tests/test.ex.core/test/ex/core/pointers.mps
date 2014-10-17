@@ -5,9 +5,9 @@
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="flbw" modelUID="r:e2a5a0f1-a4a9-37f5-82d2-429bae822a23(com.mbeddr.core.__spreferences.PlatformTemplates)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="5" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
@@ -757,6 +757,32 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2020194812908828630" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1333549189962_5" />
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7545335507005567694" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1413466463491_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7545335507005625511" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="globalVar" />
+      <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="7545335507005625509" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="6528677780846894583" resolveInfo="twoIntArgsReturningInt" />
+      </node>
+      <node role="init" roleId="x27k.2771264470558526601" type="x27k.FunctionRefExpr" typeId="x27k.8551646674110484035" id="7545335507005639156" nodeInfo="ng">
+        <link role="function" roleId="x27k.8551646674110484037" targetNodeId="8551646674110484010" resolveInfo="add" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7545335507009125553" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="globalVarExported" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="7545335507009154516" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="7545335507009140055" resolveInfo="twoIntArgsReturningIntExported" />
+      </node>
+      <node role="init" roleId="x27k.2771264470558526601" type="x27k.FunctionRefExpr" typeId="x27k.8551646674110484035" id="7545335507009125555" nodeInfo="ng">
+        <link role="function" roleId="x27k.8551646674110484037" targetNodeId="8551646674110484010" resolveInfo="add" />
+      </node>
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="912616408885321649" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1345559561059_2" />
     </node>
@@ -769,6 +795,15 @@
         <node role="returnType" roleId="x27k.8551646674110395548" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3813668170744198599" nodeInfo="ng" />
         <node role="argTypes" roleId="x27k.8551646674110395549" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3813668170744198600" nodeInfo="ng" />
         <node role="argTypes" roleId="x27k.8551646674110395549" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3813668170744198601" nodeInfo="ng" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="7545335507009140055" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="twoIntArgsReturningIntExported" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="original" roleId="clbe.6116558314501347862" type="x27k.FunctionRefType" typeId="x27k.8551646674110395547" id="7545335507009140056" nodeInfo="ng">
+        <node role="returnType" roleId="x27k.8551646674110395548" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7545335507009140057" nodeInfo="ng" />
+        <node role="argTypes" roleId="x27k.8551646674110395549" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7545335507009140058" nodeInfo="ng" />
+        <node role="argTypes" roleId="x27k.8551646674110395549" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7545335507009140059" nodeInfo="ng" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8551646674110484010" nodeInfo="ng">
