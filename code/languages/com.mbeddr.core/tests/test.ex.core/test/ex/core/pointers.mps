@@ -3069,11 +3069,48 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="720334501858246669" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4378677424457834562" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4378677424457834569" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9135040388584464792" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4378677424457834570" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4378677424457834571" nodeInfo="ng" />
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9135040388587082401" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1413558905502_4" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="9135040388587095566" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="globalArrVar" />
+      <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="9135040388584458081" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node role="baseType" roleId="c4fa.7763322639126652758" type="yq40.PointerType" typeId="yq40.279446265608459824" id="9135040388584455814" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="baseType" roleId="c4fa.7763322639126652758" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9135040388584454928" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9135040388584458736" nodeInfo="ng">
+          <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+        </node>
+      </node>
+      <node role="init" roleId="x27k.2771264470558526601" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="9135040388584462549" nodeInfo="ng">
+        <node role="elements" roleId="c4fa.8850915533694634146" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="9135040388584463470" nodeInfo="ng">
+          <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="9135040388587105213" nodeInfo="ng">
+            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="9135040388587095565" resolveInfo="globalVar1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="9135040388587095565" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="globalVar1" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9135040388584450896" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9135040388587087448" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1413558905722_5" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7883625829768032478" nodeInfo="ng">
       <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
