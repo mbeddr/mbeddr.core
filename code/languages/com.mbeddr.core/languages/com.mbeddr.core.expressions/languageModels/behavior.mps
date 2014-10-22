@@ -9716,7 +9716,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8860528120401679729" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment.bitwise" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.7193082937527768537" resolveInfo="DirectBitwiseANDAssignmentExpression" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8860528120401679730" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8860528120401679731" nodeInfo="sn" />
@@ -9744,7 +9744,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8860528120401679741" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment.bitwise" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.7193082937527768533" resolveInfo="DirectBitwiseLeftShiftAssignmentExpression" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="8860528120401679744" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="correspondingNonDirectExpression" />
@@ -9878,7 +9878,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8860528120401679776" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment.bitwise" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.7193082937527768539" resolveInfo="DirectBitwiseXORAssignmentExpression" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8860528120401679777" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8860528120401679778" nodeInfo="sn" />
@@ -13143,7 +13143,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8860528120401679764" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment.bitwise" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.7193082937527768535" resolveInfo="DirectBitwiseRightShiftExpression" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8860528120401679765" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8860528120401679766" nodeInfo="sn" />
@@ -13171,7 +13171,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8860528120401679752" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment.bitwise" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.7193082937527768541" resolveInfo="DirectBitwiseORAssignmentExpression" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8860528120401679753" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8860528120401679754" nodeInfo="sn" />
@@ -14412,7 +14412,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8528611498588586298" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary.bitwise" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.5962749441518381743" resolveInfo="BitwiseAndExpression" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7336544617003946994" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="isStaticallyEvaluatable" />
@@ -16303,7 +16303,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="7336544617003930279" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary.bitwise" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.9013371069686136255" resolveInfo="BitwiseLeftShiftExpression" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7336544617003930282" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="isStaticallyEvaluatable" />
@@ -16399,7 +16399,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="7336544617003930340" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary.bitwise" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.9013371069685947728" resolveInfo="BitwiseRightShiftExpression" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7336544617003930343" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="isStaticallyEvaluatable" />
@@ -16511,7 +16511,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="7336544617003947033" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary.bitwise" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.1136530067488156615" resolveInfo="BitwiseORExpression" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7336544617003947036" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="isStaticallyEvaluatable" />
@@ -16618,7 +16618,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="7336544617003947075" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary.bitwise" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.9013371069685926132" resolveInfo="BitwiseXORExpression" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7336544617003947078" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="isStaticallyEvaluatable" />
