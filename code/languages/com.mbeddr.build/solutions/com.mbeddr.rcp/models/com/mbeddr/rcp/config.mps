@@ -15,8 +15,9 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="kdzh" modelUID="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" version="3" implicit="yes" />
   <root type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="9112023735732472580" nodeInfo="ng">
-    <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="." />
     <property name="name" nameId="tpck.1169194664001" value="rcp" />
+    <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.rcp" />
+    <property name="fileName" nameId="3ior.4915877860348071612" value="build-mbeddr-distrib.xml" />
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="425176520008330580" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr.home" />
     </node>
@@ -28,6 +29,9 @@
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6683987974720034635" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="xsd6.6247780594427965024" resolveInfo="com.mbeddr.allInOne" />
+    </node>
+    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="5766059477234139763" nodeInfo="ng">
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="5766059477234139180" resolveInfo="branding" />
     </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="6168924288978819717" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mps.home" />
@@ -55,6 +59,9 @@
           </node>
         </node>
         <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="6168924288978686003" nodeInfo="ng">
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5766059477234139884" nodeInfo="ng">
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="5766059477234139182" />
+          </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698996044876" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688312941960" />
             <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="4465510224861492539" nodeInfo="ng">
@@ -122,9 +129,6 @@
             </node>
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="6168924288978686008" nodeInfo="ng">
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="425176520008330488" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="425176520008330490" nodeInfo="ng" />
-            </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="6168924288978686009" nodeInfo="ng">
               <property name="filemode" nameId="3ior.9126048691955221291" value="755" />
               <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6168924288978686010" nodeInfo="ng">
@@ -151,6 +155,20 @@
                     <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6168924288978686018" nodeInfo="nn">
                       <property name="head" nameId="3ior.8618885170173601779" value="fsnotifier64" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="5766059477234117937" nodeInfo="ng">
+              <node role="parameters" roleId="3ior.9126048691955220774" type="3ior.BuildLayout_CopyFilterFixCRLF" typeId="3ior.4198392933254416812" id="5766059477234118058" nodeInfo="ng">
+                <property name="eol" nameId="3ior.4198392933254416822" value="lf" />
+              </node>
+              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5766059477234117938" nodeInfo="ng">
+                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6168924288978819717" resolveInfo="mps.home" />
+                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5766059477234117939" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="bin" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5766059477234117940" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="mps64.vmoptions" />
                   </node>
                 </node>
               </node>
@@ -218,6 +236,9 @@
           </node>
         </node>
         <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="6168924288978686040" nodeInfo="ng">
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5766059477234140121" nodeInfo="ng">
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="5766059477234139182" />
+          </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698996045063" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688312941960" />
             <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="4465510224861492534" nodeInfo="ng">
@@ -293,6 +314,17 @@
                 </node>
               </node>
             </node>
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="3950383814085462827" nodeInfo="ng">
+              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3950383814085462887" nodeInfo="ng">
+                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6168924288978819717" resolveInfo="mps.home" />
+                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3950383814085462891" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="bin" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3950383814085462897" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="mps64.vmoptions" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="6168924288978686049" nodeInfo="ng">
               <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6168924288978686050" nodeInfo="ng">
                 <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6168924288978819717" resolveInfo="mps.home" />
@@ -300,6 +332,17 @@
                   <property name="head" nameId="3ior.8618885170173601779" value="bin" />
                   <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6168924288978686052" nodeInfo="nn">
                     <property name="head" nameId="3ior.8618885170173601779" value="mps.exe.vmoptions" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="3950383814085462659" nodeInfo="ng">
+              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3950383814085462711" nodeInfo="ng">
+                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6168924288978819717" resolveInfo="mps.home" />
+                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3950383814085462715" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="bin" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3950383814085462766" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="mps64.exe.vmoptions" />
                   </node>
                 </node>
               </node>
@@ -373,6 +416,9 @@
       </node>
       <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Zip" typeId="3ior.7389400916848050071" id="6168924288978686155" nodeInfo="ng">
         <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="6168924288978686156" nodeInfo="ng">
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5766059477234140422" nodeInfo="ng">
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="5766059477234139182" />
+          </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="5590523698996045281" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="ffeo.1392391688312941960" />
             <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="4465510224861492529" nodeInfo="ng">
@@ -577,6 +623,20 @@
                 </node>
               </node>
             </node>
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="3950383814085462945" nodeInfo="ng">
+              <node role="parameters" roleId="3ior.9126048691955220774" type="3ior.BuildLayout_CopyFilterFixCRLF" typeId="3ior.4198392933254416812" id="5766059477234113768" nodeInfo="ng">
+                <property name="eol" nameId="3ior.4198392933254416822" value="lf" />
+              </node>
+              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3950383814085462995" nodeInfo="ng">
+                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6168924288978819717" resolveInfo="mps.home" />
+                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3950383814085462999" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="bin" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3950383814085463005" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="mps64.vmoptions" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="6168924288978686210" nodeInfo="ng">
               <node role="parameters" roleId="3ior.9126048691955220774" type="3ior.BuildLayout_CopyFilterFixCRLF" typeId="3ior.4198392933254416812" id="6168924288978686211" nodeInfo="ng">
                 <property name="eol" nameId="3ior.4198392933254416822" value="lf" />
@@ -624,42 +684,245 @@
     </node>
     <node role="plugins" roleId="3ior.6647099934206700656" type="3ior.BuildJavaPlugin" typeId="3ior.6647099934206700647" id="9112023735732474493" nodeInfo="ng" />
     <node role="plugins" roleId="3ior.6647099934206700656" type="kdzh.BuildMPSPlugin" typeId="kdzh.868032131020265945" id="9112023735732474509" nodeInfo="ng" />
-    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Branding" typeId="kdzh.7753544965996377997" id="6683987974720178952" nodeInfo="ng">
+  </root>
+  <root type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="5766059477234139180" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="branding" />
+    <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.rcp" />
+    <property name="fileName" nameId="3ior.4915877860348071612" value="build-mbeddr-branding.xml" />
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8628756186118380495" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="mbeddr.github.core.home" />
+      <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="5590523698994462437" nodeInfo="ng">
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462440" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value=".." />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462443" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value=".." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildVariableMacro" typeId="3ior.3767587139141066978" id="5220459393254807079" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="platformBuild" />
+      <node role="initialValue" roleId="3ior.2755237150521975432" type="3ior.BuildVariableMacroInitWithString" typeId="3ior.2755237150521975431" id="5220459393254807093" nodeInfo="ng">
+        <node role="value" roleId="3ior.2755237150521975437" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="5220459393254807092" nodeInfo="ng">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="5220459393254807091" nodeInfo="ng">
+            <property name="text" nameId="3ior.4903714810883755350" value="135" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildVariableMacro" typeId="3ior.3767587139141066978" id="5220459393254807112" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="applicationBuild" />
+      <node role="initialValue" roleId="3ior.2755237150521975432" type="3ior.BuildVariableMacroInitWithString" typeId="3ior.2755237150521975431" id="5220459393254807130" nodeInfo="ng">
+        <node role="value" roleId="3ior.2755237150521975437" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="5220459393254807129" nodeInfo="ng">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="5220459393254807128" nodeInfo="ng">
+            <property name="text" nameId="3ior.4903714810883755350" value="001" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildVariableMacro" typeId="3ior.3767587139141066978" id="5220459393254807050" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="buildNumber" />
+      <node role="initialValue" roleId="3ior.2755237150521975432" type="3ior.BuildVariableMacroInitWithString" typeId="3ior.2755237150521975431" id="5220459393254807060" nodeInfo="ng">
+        <node role="value" roleId="3ior.2755237150521975437" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="5220459393254807059" nodeInfo="ng">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="5220459393254807170" nodeInfo="ng">
+            <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="5220459393254807079" resolveInfo="platformBuild" />
+          </node>
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="5220459393254886228" nodeInfo="ng">
+            <property name="text" nameId="3ior.4903714810883755350" value="." />
+          </node>
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="5220459393254886223" nodeInfo="ng">
+            <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="5220459393254807112" resolveInfo="applicationBuild" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildVariableMacro" typeId="3ior.3767587139141066978" id="5220459393254855658" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="buildData" />
+      <node role="initialValue" roleId="3ior.2755237150521975432" type="3ior.BuildVariableMacroInitWithString" typeId="3ior.2755237150521975431" id="5220459393254855686" nodeInfo="ng">
+        <node role="value" roleId="3ior.2755237150521975437" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="5220459393254855685" nodeInfo="ng">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="5220459393254855684" nodeInfo="ng">
+            <property name="text" nameId="3ior.4903714810883755350" value="20140318" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056431151" nodeInfo="ng">
+      <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
+      <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
+      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="4" />
+      <property name="inplace" nameId="kdzh.4297162197621031140" value="true" />
+    </node>
+    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Branding" typeId="kdzh.7753544965996377997" id="6168924288978682793" nodeInfo="ng">
       <property name="major" nameId="kdzh.3497141547781541444" value="0" />
-      <property name="minor" nameId="kdzh.3497141547781541445" value="8" />
-      <node role="splashScreen" roleId="kdzh.6108265972537182996" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720178953" nodeInfo="ng" />
-      <node role="aboutScreen" roleId="kdzh.6108265972537182997" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720178954" nodeInfo="ng" />
-      <node role="buildNumber" roleId="kdzh.6108265972537229337" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6683987974720178955" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6683987974720179667" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="135.001" />
+      <property name="minor" nameId="kdzh.3497141547781541445" value="1" />
+      <node role="updateWebsite" roleId="kdzh.6108265972537335245" type="kdzh.BuildMps_BrandingUpdateSite" typeId="kdzh.7753544965996489991" id="3347698799603761423" nodeInfo="ng">
+        <node role="checkUrl" roleId="kdzh.6108265972537335224" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="3347698799603761946" nodeInfo="ng">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="3347698799603772552" nodeInfo="ng">
+            <property name="text" nameId="3ior.4903714810883755350" value="http://mbeddr.com/updates/update.xml" />
+          </node>
+        </node>
+        <node role="updateUrl" roleId="kdzh.6108265972537335225" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="3347698799603764353" nodeInfo="ng">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="3347698799603773145" nodeInfo="ng">
+            <property name="text" nameId="3ior.4903714810883755350" value="https://github.com/mbeddr/mbeddr.core/releases" />
+          </node>
+        </node>
+        <node role="updateChannel" roleId="kdzh.8795525031433091059" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="3347698799603773148" nodeInfo="ng">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="3347698799603773147" nodeInfo="ng">
+            <property name="text" nameId="3ior.4903714810883755350" value="mbeddr" />
+          </node>
         </node>
       </node>
-      <node role="buildDate" roleId="kdzh.1462305029084462472" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6683987974720178956" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6683987974720179670" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="20140930" />
+      <node role="splashScreen" roleId="kdzh.6108265972537182996" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5590523698994462494" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462497" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462500" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="icons" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462503" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="splash.png" />
+            </node>
+          </node>
         </node>
       </node>
-      <node role="icon32" roleId="kdzh.6108265972537229338" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720178957" nodeInfo="ng" />
-      <node role="icon16" roleId="kdzh.6108265972537229339" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720178958" nodeInfo="ng" />
-      <node role="welcomeLogo" roleId="kdzh.772379520210716142" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720178961" nodeInfo="ng" />
-      <node role="dialogImage" roleId="kdzh.8108467228800445684" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720178962" nodeInfo="ng" />
-      <node role="shortName" roleId="kdzh.6108265972537372847" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6683987974720178963" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6683987974720179655" nodeInfo="ng">
+      <node role="aboutScreen" roleId="kdzh.6108265972537182997" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5590523698994462506" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462509" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462512" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="icons" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462515" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="mbeddr-logo.png" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="buildNumber" roleId="kdzh.6108265972537229337" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6168924288978682799" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="5220459393254807066" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="5220459393254807050" resolveInfo="buildNumber" />
+        </node>
+      </node>
+      <node role="buildDate" roleId="kdzh.1462305029084462472" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6168924288978682801" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="5220459393254855690" nodeInfo="ng">
+          <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="5220459393254855658" resolveInfo="buildData" />
+        </node>
+      </node>
+      <node role="icon32" roleId="kdzh.6108265972537229338" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5590523698994462482" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462485" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462488" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="icons" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462491" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="MPS_16.png" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="icon16" roleId="kdzh.6108265972537229339" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5590523698994462458" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462461" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462464" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="icons" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462467" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="MPS_16.png" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="welcomeCaption" roleId="kdzh.7753544965996489990" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5590523698994462530" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462533" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462536" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="icons" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462539" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="mbeddr-logo.png" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="dialogImage" roleId="kdzh.8108467228800445684" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5590523698994462518" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462521" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462524" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="icons" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5590523698994462527" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="mbeddr-logo.png" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="shortName" roleId="kdzh.6108265972537372847" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6168924288978682815" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6168924288978682832" nodeInfo="ng">
           <property name="text" nameId="3ior.4903714810883755350" value="mbeddr" />
         </node>
       </node>
-      <node role="fullName" roleId="kdzh.6108265972537372848" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6683987974720178964" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6683987974720179664" nodeInfo="ng">
+      <node role="fullName" roleId="kdzh.6108265972537372848" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6168924288978682817" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6168924288978682838" nodeInfo="ng">
           <property name="text" nameId="3ior.4903714810883755350" value="mbeddr IDE" />
         </node>
       </node>
-      <node role="codename" roleId="kdzh.3497141547781549827" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="6683987974720179659" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6683987974720179658" nodeInfo="ng">
+      <node role="codename" roleId="kdzh.3497141547781549827" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="6168924288978682835" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6168924288978682834" nodeInfo="ng">
           <property name="text" nameId="3ior.4903714810883755350" value="mbeddr" />
         </node>
       </node>
-      <node role="welcomeSlogan" roleId="kdzh.6108265972537335222" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720195135" nodeInfo="ng" />
-      <node role="welcomeCaption" roleId="kdzh.7753544965996489990" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="6683987974720195137" nodeInfo="ng" />
+      <node role="textColor" roleId="kdzh.8795525031433238889" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="1707183716788388022" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="1707183716788388024" nodeInfo="ng">
+          <property name="text" nameId="3ior.4903714810883755350" value="002387" />
+        </node>
+      </node>
+      <node role="feedbackUrl" roleId="kdzh.8877724874822185910" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="4608439585964924876" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="4608439585964924875" nodeInfo="ng">
+          <property name="text" nameId="3ior.4903714810883755350" value="http://itemis.de" />
+        </node>
+      </node>
+      <node role="welcomeSlogan" roleId="kdzh.6108265972537335222" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3808399212034418964" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418965" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418966" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="icons" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418967" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="mbeddr-logo.png" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="welcomeLogo" roleId="kdzh.772379520210716142" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3808399212034418984" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418985" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value="rcp" />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418986" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="icons" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808399212034418987" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="mbeddr-logo.png" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="scriptsDir" roleId="3ior.4796668409958418110" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="5766059477234139181" nodeInfo="ng" />
+    <node role="layout" roleId="3ior.5617550519002745372" type="3ior.BuildLayout" typeId="3ior.5617550519002745364" id="5766059477234139182" nodeInfo="ng">
+      <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="6168924288978894468" nodeInfo="ng">
+        <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6168924288978894470" nodeInfo="ng">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6168924288978894474" nodeInfo="ng">
+            <property name="text" nameId="3ior.4903714810883755350" value="lib" />
+          </node>
+        </node>
+        <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Jar" typeId="3ior.7389400916848050074" id="6168924288978894476" nodeInfo="ng">
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_FilesOf" typeId="3ior.7753544965996647428" id="6168924288978898878" nodeInfo="ng">
+            <link role="element" roleId="3ior.7753544965996647430" targetNodeId="6168924288978682793" resolveInfo="mbeddr" />
+          </node>
+          <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6168924288978894477" nodeInfo="ng">
+            <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6168924288978896676" nodeInfo="ng">
+              <property name="text" nameId="3ior.4903714810883755350" value="branding.jar" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>
