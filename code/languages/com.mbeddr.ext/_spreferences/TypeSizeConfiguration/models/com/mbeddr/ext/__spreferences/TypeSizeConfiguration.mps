@@ -2,7 +2,7 @@
 <model modelUID="r:4b60c28a-8c76-3e86-920e-5a33d3ad9998(com.mbeddr.ext.__spreferences.TypeSizeConfiguration)">
   <persistence version="8" />
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" implicit="yes" />
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7883625829768957238" nodeInfo="ng">
     <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="7883625829768957286" nodeInfo="ng">
       <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
