@@ -26,6 +26,9 @@
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6683987974720034635" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="xsd6.6247780594427965024" resolveInfo="com.mbeddr.allInOne" />
+      <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6127960458569319297" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6127960458569319256" resolveInfo="allInOne.artifacts" />
+      </node>
     </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="5766059477234139763" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="5766059477234139180" resolveInfo="branding" />
@@ -52,6 +55,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="6127960458569319256" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="allInOne.artifacts" />
     </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildVariableMacro" typeId="3ior.3767587139141066978" id="7826757590845406033" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="version" />
