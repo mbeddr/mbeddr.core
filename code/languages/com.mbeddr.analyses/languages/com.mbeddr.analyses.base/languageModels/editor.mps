@@ -213,5 +213,11 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2263984427998053144" nodeInfo="nn" />
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1246687699869804452" nodeInfo="ng">
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q46j.1246687699869804428" resolveInfo="ModelUsedForAnalysesTestsMarker" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1246687699869820460" nodeInfo="nn">
+      <property name="text" nameId="tpc2.1073389577007" value="model contains analyses test-data; from this model also code specific for analyses will be generated (e.g. error labels)" />
+    </node>
+  </root>
 </model>
 
