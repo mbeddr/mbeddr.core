@@ -16,6 +16,14 @@
     <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.debugger.testing.build" />
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.debugger.testing" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="debugger-testing.xml" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="1274171888420345059" nodeInfo="ng">
+      <property name="copyResources" nameId="3ior.927724900262033862" value="true" />
+      <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
+      <node role="resourceSelectors" roleId="3ior.927724900262033863" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="1274171888420345060" nodeInfo="ng">
+        <property name="pattern" nameId="3ior.5248329904288051101" value="**/*.info" />
+      </node>
+    </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056443326" nodeInfo="ng">
       <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
       <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
@@ -703,6 +711,7 @@
       <property name="copyResources" nameId="3ior.927724900262033862" value="true" />
       <property name="heapSize" nameId="3ior.927724900262398947" value="2048" />
       <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
       <node role="resourceSelectors" roleId="3ior.927724900262033863" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="2842557153921766593" nodeInfo="ng">
         <property name="pattern" nameId="3ior.5248329904288051101" value="**/*.info" />
       </node>
@@ -958,6 +967,7 @@
       <property name="copyResources" nameId="3ior.927724900262033862" value="true" />
       <property name="heapSize" nameId="3ior.927724900262398947" value="2048" />
       <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
       <node role="resourceSelectors" roleId="3ior.927724900262033863" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="2842557153940854925" nodeInfo="ng">
         <property name="pattern" nameId="3ior.5248329904288051101" value="**/*.info" />
       </node>
@@ -1347,6 +1357,7 @@
       <property name="copyResources" nameId="3ior.927724900262033862" value="true" />
       <property name="heapSize" nameId="3ior.927724900262398947" value="2048" />
       <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
       <node role="resourceSelectors" roleId="3ior.927724900262033863" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="2842557153940855208" nodeInfo="ng">
         <property name="pattern" nameId="3ior.5248329904288051101" value="**/*.info" />
       </node>
@@ -1598,6 +1609,7 @@
     <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="2842557153940855285" nodeInfo="ng">
       <property name="copyResources" nameId="3ior.927724900262033862" value="true" />
       <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
       <node role="resourceSelectors" roleId="3ior.927724900262033863" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="2842557153940855286" nodeInfo="ng">
         <property name="pattern" nameId="3ior.5248329904288051101" value="**/*.info" />
       </node>
@@ -1849,6 +1861,7 @@
       <property name="copyResources" nameId="3ior.927724900262033862" value="true" />
       <property name="heapSize" nameId="3ior.927724900262398947" value="2048" />
       <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
       <node role="resourceSelectors" roleId="3ior.927724900262033863" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="2842557153940855127" nodeInfo="ng">
         <property name="pattern" nameId="3ior.5248329904288051101" value="**/*.info" />
       </node>
@@ -2088,19 +2101,17 @@
     <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="2844724322557464509" nodeInfo="ng">
       <property name="heapSize" nameId="3ior.927724900262398947" value="2048" />
       <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
+      <property name="copyResources" nameId="3ior.927724900262033862" value="true" />
+      <node role="resourceSelectors" roleId="3ior.927724900262033863" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="1274171888420388114" nodeInfo="ng">
+        <property name="pattern" nameId="3ior.5248329904288051101" value="**/*.info" />
+      </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056431863" nodeInfo="ng">
       <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
       <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
       <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="4" />
       <property name="inplace" nameId="kdzh.4297162197621031140" value="true" />
-    </node>
-    <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="2842557153935262069" nodeInfo="ng">
-      <property name="copyResources" nameId="3ior.927724900262033862" value="true" />
-      <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
-      <node role="resourceSelectors" roleId="3ior.927724900262033863" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="2842557153935262070" nodeInfo="ng">
-        <property name="pattern" nameId="3ior.5248329904288051101" value="**/*.info" />
-      </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_IdeaPlugin" typeId="kdzh.6592112598314498932" id="427722866531137805" nodeInfo="ng">
       <property name="id" nameId="kdzh.6592112598314498927" value="debugger.api.dummy" />
