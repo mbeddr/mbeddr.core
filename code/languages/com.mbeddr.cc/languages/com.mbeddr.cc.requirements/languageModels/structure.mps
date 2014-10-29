@@ -862,5 +862,12 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3662230763597235326" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tags" />
+    <property name="name" nameId="tpck.1169194664001" value="RequirementStatusDone" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="done" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="this is implemented" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="882101644643192133" resolveInfo="RequirementStatus" />
+  </root>
 </model>
 
