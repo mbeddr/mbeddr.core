@@ -15,13 +15,13 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="5" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
   <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="96" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5710167937131566969" nodeInfo="ng">
@@ -106,6 +106,14 @@
                 <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="6181369419122885280" resolveInfo="breakOf3rdWhile" />
               </node>
             </node>
+            <node role="elseOn" roleId="rpmx.5641871277850163791" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="8291815659225155432" nodeInfo="ng">
+              <property name="platform" nameId="rpmx.5641871277852618466" value="win" />
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8291815659225156156" nodeInfo="ng">
+                <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8291815659225156157" nodeInfo="ng">
+                  <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="6181369419122885280" resolveInfo="breakOf3rdWhile" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="5710167937131567000" nodeInfo="ng">
@@ -175,6 +183,14 @@
             <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="6181369419122834041" nodeInfo="ng">
               <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="6181369419122834047" nodeInfo="ng">
                 <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5710167937131567381" resolveInfo="conditionOfFirstDoWhile" />
+              </node>
+            </node>
+            <node role="elseOn" roleId="rpmx.5641871277850163791" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="8291815659225157591" nodeInfo="ng">
+              <property name="platform" nameId="rpmx.5641871277852618466" value="win" />
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8291815659225157601" nodeInfo="ng">
+                <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8291815659225157602" nodeInfo="ng">
+                  <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5710167937131567381" resolveInfo="conditionOfFirstDoWhile" />
+                </node>
               </node>
             </node>
           </node>
@@ -283,6 +299,14 @@
                 <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5710167937131567239" resolveInfo="1stStmntInside4thFor" />
               </node>
             </node>
+            <node role="elseOn" roleId="rpmx.5641871277850163791" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="8291815659225157607" nodeInfo="ng">
+              <property name="platform" nameId="rpmx.5641871277852618466" value="win" />
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8291815659225157615" nodeInfo="ng">
+                <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8291815659225157616" nodeInfo="ng">
+                  <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5710167937131567239" resolveInfo="1stStmntInside4thFor" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="5710167937131611846" nodeInfo="ng">
@@ -322,6 +346,14 @@
             <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="6181369419122919777" nodeInfo="ng">
               <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="6181369419122936494" nodeInfo="ng">
                 <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="6181369419122936491" resolveInfo="breakIn4thFor" />
+              </node>
+            </node>
+            <node role="elseOn" roleId="rpmx.5641871277850163791" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="8291815659225157619" nodeInfo="ng">
+              <property name="platform" nameId="rpmx.5641871277852618466" value="win" />
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8291815659225157629" nodeInfo="ng">
+                <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8291815659225157630" nodeInfo="ng">
+                  <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="6181369419122936491" resolveInfo="breakIn4thFor" />
+                </node>
               </node>
             </node>
           </node>
@@ -1414,6 +1446,14 @@
                 <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="1647692136265858288" resolveInfo="conditionOfNested3rdWhile" />
               </node>
             </node>
+            <node role="elseOn" roleId="rpmx.5641871277850163791" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="8291815659225158361" nodeInfo="ng">
+              <property name="platform" nameId="rpmx.5641871277852618466" value="win" />
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8291815659225158369" nodeInfo="ng">
+                <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8291815659225158370" nodeInfo="ng">
+                  <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="1647692136265858288" resolveInfo="conditionOfNested3rdWhile" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1479,6 +1519,14 @@
             <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="5710167937131567557" nodeInfo="ng">
               <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="6181369419122937244" nodeInfo="ng">
                 <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5710167937131567356" resolveInfo="4thWhile" />
+              </node>
+            </node>
+            <node role="elseOn" roleId="rpmx.5641871277850163791" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="8291815659225158393" nodeInfo="ng">
+              <property name="platform" nameId="rpmx.5641871277852618466" value="win" />
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8291815659225158403" nodeInfo="ng">
+                <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8291815659225158404" nodeInfo="ng">
+                  <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5710167937131567356" resolveInfo="4thWhile" />
+                </node>
               </node>
             </node>
           </node>
@@ -1574,6 +1622,14 @@
                 <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="6181369419122885280" resolveInfo="breakOf3rdWhile" />
               </node>
             </node>
+            <node role="elseOn" roleId="rpmx.5641871277850163791" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="8291815659225158407" nodeInfo="ng">
+              <property name="platform" nameId="rpmx.5641871277852618466" value="win" />
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8291815659225158417" nodeInfo="ng">
+                <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8291815659225158418" nodeInfo="ng">
+                  <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="6181369419122885280" resolveInfo="breakOf3rdWhile" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="5710167937131648372" nodeInfo="ng">
@@ -1617,6 +1673,14 @@
             <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="5710167937131567600" nodeInfo="ng">
               <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="6181369419123003906" nodeInfo="ng">
                 <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5710167937131567356" resolveInfo="4thWhile" />
+              </node>
+            </node>
+            <node role="elseOn" roleId="rpmx.5641871277850163791" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="8291815659225158421" nodeInfo="ng">
+              <property name="platform" nameId="rpmx.5641871277852618466" value="win" />
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8291815659225158431" nodeInfo="ng">
+                <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8291815659225158432" nodeInfo="ng">
+                  <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5710167937131567356" resolveInfo="4thWhile" />
+                </node>
               </node>
             </node>
           </node>
