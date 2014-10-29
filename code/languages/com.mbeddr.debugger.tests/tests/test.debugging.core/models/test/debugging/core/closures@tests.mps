@@ -16,14 +16,14 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="5" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="13" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
   <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="96" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5728674636025005163" nodeInfo="ng">
@@ -200,6 +200,22 @@
             <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="5710167937131960854" nodeInfo="ng">
               <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="5710167937131960843" resolveInfo="inTestClosure" />
             </node>
+            <node role="elseOn" roleId="rpmx.5641871277850163791" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="8291815659225150938" nodeInfo="ng">
+              <property name="platform" nameId="rpmx.5641871277852618466" value="win" />
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="8291815659225151261" nodeInfo="ng">
+                <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8291815659225151262" nodeInfo="ng">
+                  <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="5710167937131960897" resolveInfo="inTestClosure" />
+                </node>
+              </node>
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8291815659225151263" nodeInfo="ng">
+                <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8291815659225151264" nodeInfo="ng">
+                  <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2033545087488022060" resolveInfo="assertWithClosure" />
+                </node>
+              </node>
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="8291815659225151265" nodeInfo="ng">
+                <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="5710167937131960843" resolveInfo="inTestClosure" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -371,6 +387,22 @@
             <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="5710167937131960905" nodeInfo="ng">
               <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="5710167937131960906" nodeInfo="ng">
                 <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="5710167937131960897" resolveInfo="inTestClosure" />
+              </node>
+            </node>
+            <node role="elseOn" roleId="rpmx.5641871277850163791" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="8291815659225151347" nodeInfo="ng">
+              <property name="platform" nameId="rpmx.5641871277852618466" value="win" />
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8291815659225151369" nodeInfo="ng">
+                <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8291815659225151370" nodeInfo="ng">
+                  <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2033545087488022060" resolveInfo="assertWithClosure" />
+                </node>
+              </node>
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="8291815659225151371" nodeInfo="ng">
+                <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="5710167937131960843" resolveInfo="inTestClosure" />
+              </node>
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="8291815659225151372" nodeInfo="ng">
+                <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8291815659225151373" nodeInfo="ng">
+                  <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="5710167937131960897" resolveInfo="inTestClosure" />
+                </node>
               </node>
             </node>
           </node>
