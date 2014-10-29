@@ -5,6 +5,7 @@ distros/*
 MPS/*
 mps-distrib/*
 
+.ant_targets
 .DS_Store
 .metadata
 .svn

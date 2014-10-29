@@ -23,7 +23,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
-  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="100" implicit="yes" />
+  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="96" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5710167937131566969" nodeInfo="ng">
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="5710167937131566970" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="LoopsTest" />
@@ -43,7 +43,6 @@
   </root>
   <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="5710167937131566975" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DoWhile" />
-    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877190456" nodeInfo="ng" />
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="5710167937131566976" nodeInfo="ng">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="5710167937131566970" resolveInfo="LoopsTest" />
     </node>
@@ -252,7 +251,6 @@
   </root>
   <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="5710167937131567055" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ForStatement" />
-    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877190936" nodeInfo="ng" />
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="5710167937131567056" nodeInfo="ng">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="5710167937131566970" resolveInfo="LoopsTest" />
     </node>
@@ -1376,7 +1374,6 @@
   </root>
   <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="5710167937131567520" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="While" />
-    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877190724" nodeInfo="ng" />
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="5710167937131567521" nodeInfo="ng">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="5710167937131566970" resolveInfo="LoopsTest" />
     </node>
@@ -1662,7 +1659,6 @@
   </root>
   <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="3853561535654484105" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="LoopsLibrary" />
-    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877191402" nodeInfo="ng" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.StackFramesDeclaration" typeId="rpmx.1218249513292774460" id="5710167937131566948" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="inDoWhileStatement" />
       <property name="exported" nameId="rpmx.8924761790439057805" value="true" />

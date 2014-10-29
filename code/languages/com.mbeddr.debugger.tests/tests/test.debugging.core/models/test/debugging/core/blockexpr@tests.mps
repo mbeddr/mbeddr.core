@@ -452,7 +452,6 @@
         </node>
       </node>
     </node>
-    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877192721" nodeInfo="ng" />
   </root>
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8165847842702599999" nodeInfo="ng">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="8165847842702600000" nodeInfo="ng">

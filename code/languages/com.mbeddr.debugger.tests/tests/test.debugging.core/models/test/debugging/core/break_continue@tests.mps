@@ -180,7 +180,6 @@
         </node>
       </node>
     </node>
-    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877189664" nodeInfo="ng" />
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8441331188640862293" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="BreakTest" />
@@ -700,7 +699,6 @@
         </node>
       </node>
     </node>
-    <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877192735" nodeInfo="ng" />
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3134547887598570816" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ContinueTest" />
