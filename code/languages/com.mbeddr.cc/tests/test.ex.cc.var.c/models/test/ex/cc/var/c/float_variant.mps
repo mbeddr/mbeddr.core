@@ -43,6 +43,10 @@
         <link role="featureModel" roleId="qdv7.6617704999132114002" targetNodeId="lfqn.5959167564566811025" resolveInfo="FM" />
         <link role="configurationModel" roleId="qdv7.6617704999132114003" targetNodeId="lfqn.5959167564566811178" resolveInfo="Float" />
       </node>
+      <node role="mappings" roleId="qdv7.4920787109780106774" type="qdv7.ConfigurationMapping" typeId="qdv7.6617704999132114000" id="3662230763602949509" nodeInfo="ng">
+        <link role="featureModel" roleId="qdv7.6617704999132114002" targetNodeId="lfqn.3662230763602917158" resolveInfo="FM2" />
+        <link role="configurationModel" roleId="qdv7.6617704999132114003" targetNodeId="lfqn.3662230763602919011" resolveInfo="FMConfig" />
+      </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="vxuc.CVariabilityConfigItem" typeId="vxuc.5959167564567389862" id="5959167564567439222" nodeInfo="ng" />
   </root>
