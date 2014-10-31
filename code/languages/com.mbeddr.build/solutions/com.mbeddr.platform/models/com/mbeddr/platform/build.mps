@@ -5905,6 +5905,14 @@
     <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.platform.distribution" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-distribution.xml" />
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.platform" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="1274171888421487960" nodeInfo="ng">
+      <property name="copyResources" nameId="3ior.927724900262033862" value="true" />
+      <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
+      <node role="resourceSelectors" roleId="3ior.927724900262033863" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="1274171888421487961" nodeInfo="ng">
+        <property name="pattern" nameId="3ior.5248329904288051101" value="**/*.info" />
+      </node>
+    </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="7461614749595270240" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr.github.core.home" />
       <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="7461614749595270241" nodeInfo="ng">

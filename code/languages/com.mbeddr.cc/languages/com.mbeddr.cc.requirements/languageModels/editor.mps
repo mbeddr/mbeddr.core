@@ -397,18 +397,36 @@
             <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="920436694378844449" nodeInfo="nn">
               <property name="flag" nameId="tpc2.1186414551515" value="false" />
             </node>
-            <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8745401669463116079" nodeInfo="ng">
-              <property name="attractsFocus" nameId="tpc2.1130859485024" value="2" />
-              <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-              <link role="keyMap" roleId="tpc2.1081339532145" targetNodeId="3273071121108822458" resolveInfo="addNewRequirements" />
-              <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="1165432222362120335" nodeInfo="nn">
-                <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
+            <node role="childCellModel" roleId="tpc2.1073389446424" type="q3j0.CellModel_Tooltip" typeId="q3j0.9185659875393567715" id="3662230763601037030" nodeInfo="ng">
+              <node role="tooltip" roleId="q3j0.9185659875393569179" type="tpc2.CellModel_ReadOnlyModelAccessor" typeId="tpc2.1225900081164" id="3662230763601047416" nodeInfo="ng">
+                <node role="modelAccessor" roleId="tpc2.1225900141900" type="tpc2.ReadOnlyModelAccessor" typeId="tpc2.1225898583838" id="3662230763601047418" nodeInfo="ng">
+                  <node role="getter" roleId="tpc2.1225898971709" type="tpc2.QueryFunction_ModelAccess_Getter" typeId="tpc2.1176717841777" id="3662230763601047420" nodeInfo="nn">
+                    <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3662230763601047422" nodeInfo="sn">
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3662230763601048095" nodeInfo="nn">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3662230763601048568" nodeInfo="nn">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="3662230763601048094" nodeInfo="nn" />
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="3662230763601052606" nodeInfo="nn">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="xvsr.8745401669463170842" resolveInfo="qualifiedName" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
-              <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="882101644642689298" nodeInfo="nn">
-                <property name="color" nameId="tpc2.1186403713874" value="darkGray" />
-              </node>
-              <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="920436694378792777" nodeInfo="nn">
-                <property name="flag" nameId="tpc2.1186414551515" value="true" />
+              <node role="anchor" roleId="q3j0.9185659875393569181" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8745401669463116079" nodeInfo="ng">
+                <property name="attractsFocus" nameId="tpc2.1130859485024" value="2" />
+                <link role="keyMap" roleId="tpc2.1081339532145" targetNodeId="3273071121108822458" resolveInfo="addNewRequirements" />
+                <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="1165432222362120335" nodeInfo="nn">
+                  <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
+                </node>
+                <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="882101644642689298" nodeInfo="nn">
+                  <property name="color" nameId="tpc2.1186403713874" value="darkGray" />
+                </node>
+                <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="920436694378792777" nodeInfo="nn">
+                  <property name="flag" nameId="tpc2.1186414551515" value="true" />
+                </node>
               </node>
             </node>
             <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1942554214112399160" nodeInfo="nn">

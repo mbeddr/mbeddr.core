@@ -18,6 +18,14 @@
     <property name="name" nameId="tpck.1169194664001" value="rcp" />
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.rcp" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-mbeddr-distrib.xml" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="1274171888421487976" nodeInfo="ng">
+      <property name="copyResources" nameId="3ior.927724900262033862" value="true" />
+      <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
+      <node role="resourceSelectors" roleId="3ior.927724900262033863" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="1274171888421487977" nodeInfo="ng">
+        <property name="pattern" nameId="3ior.5248329904288051101" value="**/*.info" />
+      </node>
+    </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="6168924288978819541" nodeInfo="ng">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="ffeo.1392391688312941958" resolveInfo="mpsStandalone" />
       <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6168924288980959548" nodeInfo="ng">
@@ -748,6 +756,14 @@
     <property name="name" nameId="tpck.1169194664001" value="branding" />
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.rcp" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-mbeddr-branding.xml" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="1274171888421487970" nodeInfo="ng">
+      <property name="copyResources" nameId="3ior.927724900262033862" value="true" />
+      <property name="javaLevel" nameId="3ior.6998860900671147996" value="1.6" />
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
+      <node role="resourceSelectors" roleId="3ior.927724900262033863" type="3ior.BuildFileIncludeSelector" typeId="3ior.5248329904288051100" id="1274171888421487971" nodeInfo="ng">
+        <property name="pattern" nameId="3ior.5248329904288051101" value="**/*.info" />
+      </node>
+    </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8628756186118380495" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr.github.core.home" />
       <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="5590523698994462437" nodeInfo="ng">
