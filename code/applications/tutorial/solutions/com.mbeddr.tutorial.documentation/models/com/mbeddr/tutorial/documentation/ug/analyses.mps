@@ -10,6 +10,7 @@
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="16" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
+  <import index="e6xd" modelUID="r:1b6ed767-f17d-4530-9544-0113fe65d4d5(spellcheck.structure)" version="-1" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -107,7 +108,10 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825193691677" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691678" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691679" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr allows the definition of product lines with the help of feature models, configuration models and attaching advanced presence conditions to the produced artefacts (e.g. programs code, requirements). Defining and using product lines in mbeddr is described in Section " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr allowss the definition of product lines with the help of feature models, configuration models and attaching advanced presence conditions to the produced artefacts (e.g. programs code, requirements). Defining and using product lines in mbeddr is described in Section " />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071563" nodeInfo="ng">
+              <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+            </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="5724023611136699901" nodeInfo="ng">
             <link role="target" roleId="2c95.3350625596580108719" targetNodeId="vi23.536680812409754434" resolveInfo="productlinevariability" />
@@ -165,6 +169,9 @@
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691704" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are logical expressions based on features that define when an artefact (e.g. a piece of code) is included in the build.  " />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071573" nodeInfo="ng">
+                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="artefact" />
+                </node>
               </node>
             </node>
           </node>
@@ -174,6 +181,9 @@
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691707" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691708" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="Based on the above content, mbeddr provides the following analyses:" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071574" nodeInfo="ng">
+              <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+            </node>
           </node>
         </node>
       </node>
@@ -229,6 +239,9 @@
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691733" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" checks whether a mbeddr-C program whose parts are annotated with presence conditions is consistent. Examples of inconsistencies are when a function declaration is annotated with a presence condition  and there exist calls to this function that are not annotated with a presence condition - in this case the function is called when the function itself is not included in the generated code and thereby generator or compile errors will be caused." />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071583" nodeInfo="ng">
+                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+                </node>
               </node>
             </node>
           </node>
@@ -241,6 +254,9 @@
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611136706502" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611136706503" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="Variability analyses are enabled both fine-granular on feature models and configuration models as well as on models and sulutions that use variability support. " />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071590" nodeInfo="ng">
+              <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="sulutions" />
+            </node>
           </node>
         </node>
       </node>
@@ -251,6 +267,9 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691737" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691738" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the figure below we present an example of a feature model defined in mbeddr." />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071593" nodeInfo="ng">
+                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+              </node>
             </node>
           </node>
         </node>
@@ -322,6 +341,9 @@
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691761" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691762" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Results provided by the FM-Analyzer. The failure is caused by the fact that the feature 'NoDebug' cannot be selected in any configuration since it conflicts with the 'Optimization' feature which is mandatory. " />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071600" nodeInfo="ng">
+                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="NoDebug" />
+                </node>
               </node>
             </node>
           </node>
@@ -340,6 +362,9 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691767" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691768" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the figure below we present an example of a configuration model defined in mbeddr. Each configuration model contains a subset of features from the feature model it configures." />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071601" nodeInfo="ng">
+                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+              </node>
             </node>
           </node>
         </node>
@@ -410,6 +435,9 @@
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691791" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691792" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Results provided by the CM-Analyzer. The failure is caused by the fact that the feature 'Communication' cannot have both sub-features 'CAN' and 'FlexRay' at the same time." />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071608" nodeInfo="ng">
+                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="FlexRay" />
+                </node>
               </node>
             </node>
           </node>
@@ -428,6 +456,9 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193705482" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193705483" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the figure below we present an example of an implementation module in mbeddr which has attached presence conditions to several entities. " />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071609" nodeInfo="ng">
+                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+              </node>
             </node>
           </node>
         </node>
@@ -482,6 +513,9 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193705501" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193705502" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Module-Analyzer will open a window with the results of the analysis. In the case when the analysis fails, Mo-Analyzer provides an explanation about the cause of failure by giving a possible configuraton (selecting concrete features) that would cause the failure. " />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071616" nodeInfo="ng">
+                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="configuraton" />
+              </node>
             </node>
           </node>
         </node>
@@ -497,6 +531,9 @@
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193705506" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193705507" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Results provided by the Module-Analyzer. The failure is caused by the fact that the function 'log_debug_info' has presence condition 'MinimumDebug' and the caller of this function does not have annotated any presence condition." />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071617" nodeInfo="ng">
+                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="MinimumDebug" />
+                </node>
               </node>
             </node>
           </node>
@@ -518,6 +555,9 @@
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611138133066" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611138133067" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="VariabilitySupport" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071618" nodeInfo="ng">
+                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="VariabilitySupport" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -528,6 +568,9 @@
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611138371979" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611138371980" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="ImplementationModule" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071619" nodeInfo="ng">
+                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="ImplementationModule" />
+                  </node>
                 </node>
               </node>
             </node>
