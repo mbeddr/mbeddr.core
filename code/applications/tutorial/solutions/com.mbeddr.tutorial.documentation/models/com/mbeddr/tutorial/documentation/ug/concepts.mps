@@ -427,5 +427,49 @@
       </node>
     </node>
   </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727855744" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="D_Graphviz" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176727855915" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="PlantUMLAndGraphviz" />
+      <property name="text" nameId="2c95.3350625596580064225" value="PlantUML and Graphviz" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176727856360" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727856361" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727856362" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="PlantUML (" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="1481709176727856368" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727856369" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727856370" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://www.plantuml.com/" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727856367" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=") is an open source tool to generate UML diagrams from relatively simple textual specifications. We use it in mbeddr to render read-only diagrams of program structures in a separate view (these are different from graphical editors). Internally, PlantUML relies on Graphviz (" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="1481709176727856735" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727856736" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727856737" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://www.graphviz.org/" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727856734" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=") for layouting the diagrams. As a user, you will not interact with graphviz directly, but you have to install it manually (see " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="1481709176727856747" nodeInfo="ng">
+            <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727856748" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727856749" nodeInfo="ng" />
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727856750" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="). PlantUML itself is packaged with mbeddr and does not have to be installed manually." />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
 </model>
 
