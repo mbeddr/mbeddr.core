@@ -37,7 +37,7 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176725373042" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="MPS" />
+    <property name="name" nameId="tpck.1169194664001" value="A_MPS" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176725420676" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mps" />
@@ -187,7 +187,7 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176725865181" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="mbeddr" />
+    <property name="name" nameId="tpck.1169194664001" value="B_mbeddr" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176725865222" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr" />
@@ -334,6 +334,94 @@
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="1481709176726613374" nodeInfo="ng">
             <property name="text" nameId="2c95.5185579450379273119" value="Process Concern" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727416409" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="C_CBMC" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176727416605" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="cbmc" />
+      <property name="text" nameId="2c95.3350625596580064225" value="CBMC" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176727416896" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727416897" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727416898" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="CBMC is used for verification. It is discussed in detail in " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="1481709176727417639" nodeInfo="ng">
+            <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727417640" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727417641" nodeInfo="ng" />
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727417642" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". To summarize, CBMC is a bounded model checker for C programs. This means that it can essentially simulate the execution of a C program regarding all its possible execution paths. CBMC is open source software and can be downloaded from " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="1481709176727417930" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727417931" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727417932" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://www.cprover.org/cbmc/" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727417933" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". It has to be installed separately, as described in the Installation section " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="1481709176727417943" nodeInfo="ng">
+            <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727417944" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727417945" nodeInfo="ng" />
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727417946" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". For details on how mbeddr uses CBMC, please take a look at the following papers, as well as at " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="1481709176727854372" nodeInfo="ng">
+            <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727854373" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727854374" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="section" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727854371" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=":" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="1481709176727853396" nodeInfo="ng">
+        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="1481709176727853397" nodeInfo="ng">
+          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1481709176727853398" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727853399" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727853400" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Automated Domain-Specific C Verification with mbeddr: " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="1481709176727853576" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727853577" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727853578" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Automated Domain-Specific C Verification with mbeddr" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727853579" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="1481709176727853911" nodeInfo="ng">
+          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1481709176727853912" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727853913" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727853930" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Using Language Engineering to Lift Languages and Analyses at the Domain Level " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="1481709176727853927" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727853928" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727853929" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://mbeddr.com/files/nfm2013.pdf" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727853931" nodeInfo="ng" />
+            </node>
           </node>
         </node>
       </node>
