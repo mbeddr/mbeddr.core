@@ -6067,6 +6067,7 @@
               </node>
               <node role="childCellModel" roleId="tpc2.1073389446424" type="bbp5.CellModel_QueryList" typeId="bbp5.6202678563380233810" id="324047639345638618" nodeInfo="ng">
                 <property name="duplicatesSafe" nameId="bbp5.730823979356023502" value="true" />
+                <property name="separatorText" nameId="bbp5.1140524450557" value=" | " />
                 <link role="elementsConcept" roleId="bbp5.730823979350682502" targetNodeId="2c95.3350625596580064222" resolveInfo="AbstractSection" />
                 <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ReadOnlyStyleClassItem" typeId="tpc2.795210086017940429" id="324047639345638620" nodeInfo="ng">
                   <property name="flag" nameId="tpc2.1186414551515" value="true" />
@@ -6221,7 +6222,7 @@
                     </node>
                   </node>
                 </node>
-                <node role="cellLayout" roleId="bbp5.1140524464360" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="324047639350516177" nodeInfo="nn" />
+                <node role="cellLayout" roleId="bbp5.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="324047639357897392" nodeInfo="nn" />
               </node>
             </node>
           </node>

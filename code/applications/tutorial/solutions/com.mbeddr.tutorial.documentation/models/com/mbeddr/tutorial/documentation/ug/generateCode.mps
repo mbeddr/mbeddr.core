@@ -98,7 +98,7 @@
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="7088286182584070867" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Efficiency" />
-      <property name="text" nameId="2c95.3350625596580064225" value="Efficientcy" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Efficiency" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7088286182584070881" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182584070882" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182584070883" nodeInfo="ng">
