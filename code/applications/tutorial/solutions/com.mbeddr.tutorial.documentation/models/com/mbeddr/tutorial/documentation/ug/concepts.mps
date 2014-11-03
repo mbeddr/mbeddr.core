@@ -215,7 +215,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176726593326" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The plugins contain mostly language definitions: mbeddr C as well as its extensions are languages in terms of MPS. In addition, the plugins also contain additional utilities, views, editors, etc. However, these details are irrelevant to the mbeddr user." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The plugins contain mostly language definitions: mbeddr C as well as its extensions are languages in terms of MPS. In addition, the plugins also contain additional utilities, libraries, views, editors, etc. However, these details are irrelevant to the mbeddr user." />
           </node>
         </node>
       </node>
@@ -341,7 +341,7 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727416409" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="C_CBMC" />
+    <property name="name" nameId="tpck.1169194664001" value="D_CBMC" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176727416605" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="cbmc" />
@@ -429,7 +429,7 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727855744" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="D_Graphviz" />
+    <property name="name" nameId="tpck.1169194664001" value="E_Graphviz" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176727855915" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="PlantUMLAndGraphviz" />
@@ -469,6 +469,164 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727857044" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="C_GccMakeGdb" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176727857232" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="gccMakeGdb" />
+      <property name="text" nameId="2c95.3350625596580064225" value="gcc, make and gdb" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176727857819" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727857820" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857821" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr does not come with its own compiler. While this could be considered \&quot;cheating\&quot;, it is actually a good idea because " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176727857848" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727857849" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857850" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="gcc" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857852" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and other compilers contain person-decades of optimizations. Replicating those is hopeless. Hence, mbeddr relies on existing backends." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176727857234" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727857235" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857236" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="For compiling, building and debugging mbeddr code, mbeddr relies on the established GNU C tool chain. In particular, " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176727857263" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727857264" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857265" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="gcc" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857267" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is used to compile the generated C code, " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176727857274" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727857275" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857276" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="make" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857278" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is used to orchestrate the compile and link process, and " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176727857289" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727857290" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857291" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="gdb" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857292" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is used by the mbeddr debugger. Note that all of these tools are not visible to the mbeddr user. But they have to be available on your system (see " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="1481709176727857306" nodeInfo="ng">
+            <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727857307" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857308" nodeInfo="ng" />
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857309" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" for details). " />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176727857252" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727857253" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857254" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Other compilers, make tools and debuggers can be plugged into mbeddr (we have just integrated the  Microchip PIC 16 for a customer) . How this is done is beyond the scope of this user guide." />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727858542" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="F_Java" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176727858543" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="java" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Java" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176727858545" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727858546" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727858547" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS is a Java application. This means that it relies on a Java Virtual Machine (specifically, a JRE) to be able to execute. So, in order to be able to use MPS and mbeddr, you have to install Java on your computer. The specific versions are discussed in the Installation section." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176727858557" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727858558" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727858559" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that the Java dependency is of course only for the tool - the systems developed with mbeddr are pure C." />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727861442" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="Z_CHAPTER_Concepts" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="1481709176727861669" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="concepts" />
+      <property name="text" nameId="2c95.3350625596580064225" value="mbeddr Concepts" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176727861675" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861736" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176725373042" resolveInfo="A_MPS" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176727861739" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861789" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176725865181" resolveInfo="B_mbeddr" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176727861745" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861792" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727857044" resolveInfo="C_GccMakeGdb" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176727861753" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861795" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727416409" resolveInfo="D_CBMC" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176727861763" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861798" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727855744" resolveInfo="E_Graphviz" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176727861775" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861801" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727858542" resolveInfo="F_Java" />
+        </node>
+      </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861679" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176725373042" resolveInfo="A_MPS" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861684" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176725865181" resolveInfo="B_mbeddr" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861692" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727857044" resolveInfo="C_GccMakeGdb" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861702" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727416409" resolveInfo="D_CBMC" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861714" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727855744" resolveInfo="E_Graphviz" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861728" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727858542" resolveInfo="F_Java" />
     </node>
   </root>
 </model>
