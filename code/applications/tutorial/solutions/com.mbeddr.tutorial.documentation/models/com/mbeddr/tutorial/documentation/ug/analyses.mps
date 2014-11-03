@@ -2,7 +2,6 @@
 <model modelUID="r:22b9d29d-483d-4f08-8d1b-4e6567157caf(com.mbeddr.tutorial.documentation.ug.analyses)">
   <persistence version="8" />
   <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
-  <language namespace="623c9ff8-1203-4890-b33e-cba29dd6cdc6(spellcheck)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="1yl6" modelUID="r:9bae0493-3d57-4bb7-af86-c94f4734b531(com.mbeddr.tutorial.documentation.analyses_code)" version="-1" />
   <import index="vi23" modelUID="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)" version="-1" />
@@ -40,7 +39,7 @@
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4574736324932010379" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="A-010-Introduction" />
+    <property name="name" nameId="tpck.1169194664001" value="A_Introduction" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="4574736324932019985" nodeInfo="ng">
@@ -108,7 +107,7 @@
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="9020927825193691657" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="A-020-VariabilityVerification" />
+    <property name="name" nameId="tpck.1169194664001" value="B_VariabilityVerification" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="9020927825193691658" nodeInfo="ng">
@@ -645,7 +644,7 @@
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="9020927825193793093" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="A-030-FormalVerification" />
+    <property name="name" nameId="tpck.1169194664001" value="C_FormalVerification" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="9020927825193793094" nodeInfo="ng">
@@ -2219,6 +2218,39 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727863071" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="Z_CHAPTER_Analyses" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="1481709176728354858" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="fundamentals" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Analyses" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176728354860" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357824547" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4574736324932010379" resolveInfo="A_Introduction" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176728354867" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357824550" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="9020927825193691657" resolveInfo="B_VariabilityVerification" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176728354873" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357824553" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="9020927825193793093" resolveInfo="C_FormalVerification" />
+        </node>
+      </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357824529" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4574736324932010379" resolveInfo="A_Introduction" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357824534" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="9020927825193691657" resolveInfo="B_VariabilityVerification" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357824542" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="9020927825193793093" resolveInfo="C_FormalVerification" />
     </node>
   </root>
 </model>
