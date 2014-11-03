@@ -21,6 +21,7 @@
     <usedLanguage>d72d3ee4-7395-438a-9a07-74a38a82cb0e(com.mbeddr.ext.physicalunits.c)</usedLanguage>
     <usedLanguage>0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)</usedLanguage>
     <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
+    <usedLanguage>623c9ff8-1203-4890-b33e-cba29dd6cdc6(spellcheck)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>315c0ec2-38ff-4e9c-9d15-fd0848b5f062(com.mbeddr.analyses.components)</usedDevKit>
