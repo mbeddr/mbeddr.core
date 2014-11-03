@@ -60,6 +60,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="1481709176728444850" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="markedUpUI" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="1481709176728444869" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="markedUpUI.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
@@ -463,17 +464,354 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176728451319" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="projectStructure" />
       <property name="text" nameId="2c95.3350625596580064225" value="Project Structure" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176729756665" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="nodesAndConcepts" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Nodes, Roots and Concepts" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729814870" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729814871" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729814872" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS programs are trees of nodes (this is the structure you can see in the Node Explorer). Each node can have several children, resulting in the tree structure. However, there can also be cross-references between nodes in a program tree. So this makes MPS programs a graph, but one with a primary containment hierarchy. An in fact, a complete MPS program consists of several such trees, we call each of theses trees a Root. Importantly, each Root gets its own editor tab in MPS. References can be across Root boundaries. " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1481709176729816598" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1481709176729816571" resolveInfo="nodesRoots" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729816599" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows the structure. In " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1481709176729817649" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1481709176729817605" resolveInfo="projectStructure" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817650" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", all the implementation modules (blue I icon, such as " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176729817656" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729817657" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817658" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Components" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817660" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176729817933" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729817934" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817935" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="StateMachines" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817936" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are roots." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="1481709176729816571" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="nodesRoots" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="1481709176729816572" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="nodesRoots.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1481709176729816573" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729816574" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729816575" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="This figure shows two roots (grey boxes). Each of them has a number of nodes inside (the letters). The solid lines are the parent-child relationships. The dotted lines are the cross references. Note that references can cross Root boundaries." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="1481709176729816576" nodeInfo="ng" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="1481709176729816537" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729816273" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729816274" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729816275" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Each node is an instance of a language concept. The language concept defines all properties of its instance nodes, including its visual representation (notation, concrete syntax). Concepts are created as part of a language. " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1481709176729815570" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1481709176729815548" resolveInfo="nodesAndConcepts_png" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729815571" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows this relationship. " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="1481709176729815548" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="nodesAndConcepts_png" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="1481709176729815567" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="nodesAndConcepts.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1481709176729815552" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729815553" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729815554" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The relationship between nodes and concepts." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="1481709176729815556" nodeInfo="ng" />
+        </node>
+      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176729756652" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="projectTree" />
-        <property name="text" nameId="2c95.3350625596580064225" value="Project, Solutions, Models, Folders" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Project, Solutions, Models, Folders, Roots" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729819240" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819241" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819242" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS has an elaborate project structure. We discuss the most important ingredients in this section. Each of the ingredients is used for configuring different aspects of the overall project. We describe this in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="1481709176729819277" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="1481709176729814334" resolveInfo="langAndDevkits" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819278" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The basics on the various kinds of dependencies between these ingredients are discussed  below. The (vast load of) details is discussed in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="1481709176729819560" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819561" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819562" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="https://github.com/mbeddr/mbeddr.core/wiki/Dependencies-and-Classpath-in-MPS" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819563" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="1481709176729817605" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="projectStructure" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="1481709176729817637" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="projectStructure.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1481709176729817609" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729817610" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817611" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="A typical MPS project structure. Details are discussed in the running text." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="1481709176729817613" nodeInfo="ng" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729817091" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729817092" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817093" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS is fundamentally a file-based systems. The roots discussed above are stored in XML files (these can then be managed with existing version control systems, see " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="1481709176729817099" nodeInfo="ng">
+              <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729817100" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817101" nodeInfo="ng" />
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817102" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="). These files are called " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="1481709176729817108" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729817109" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817110" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="models" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817111" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in MPS. Each model contains a number of roots (which then have arbitrary substructure). In " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1481709176729818216" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1481709176729817605" resolveInfo="projectStructure" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729818217" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the purple diamonds with the little M inside are models. Models als determine which languages are used for the programs/roots/nodes inside the model. Models can import each other in order to be able to establish cross-references. These dependencies are established in the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176729819571" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819572" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819573" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Model Properties" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819574" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" dialog (Dependencies tab)." />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="1481709176729817094" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Models" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729817317" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729817318" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817319" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="A solution is a way to group models. A solution can contain any number of models, and each model resides in exactly one solution. In " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1481709176729819033" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1481709176729817605" resolveInfo="projectStructure" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819043" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the orange S is a solution. Solutions can also have dependencie onto other solutions." />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="1481709176729817320" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Solutions" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729819174" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819175" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819176" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="A project contains several solutions. Any particular solution can be used in several projects, so projects do not own the solutions (in contrast to models, which are owned by a solution). A project is really more like a workspace in Eclipse: it's a collection of solutions which you want to work on for a particular task. The project defines various settings, preferences and view options." />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="1481709176729819177" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Project" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176729814334" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="langAndDevkits" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Using Languages and Devkits" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729819590" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819591" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819592" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To be able to write code in a model, that model must specify which languages should be used to write the code. As shown in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1481709176729819642" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1481709176729819620" resolveInfo="usedLangs_png" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819643" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", these languages are specified in the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176729819648" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819649" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819650" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Used Languages" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819651" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" tab of the model's properties." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="1481709176729819620" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="usedLangs_png" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="1481709176729819639" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="usedLangs.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1481709176729819624" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819625" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819626" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The Used Languages tab of a model properties dialog." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="1481709176729819628" nodeInfo="ng" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729819676" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819677" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819678" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the Used Languages spec, users can also  add dependencies on devkits. a " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="1481709176729819698" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819699" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819700" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Devkit" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819701" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is a group of languages. For example, there are several languages that deal with requirements in mbeddr. Instead of adding all of these manually to any given model, users can simply add the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176729819707" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819708" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819709" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.reqtrace" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819710" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to a model. This simplifies configuration and avoids clutter." />
+            </node>
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176729756657" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="pathsAndLibs" />
         <property name="text" nameId="2c95.3350625596580064225" value="Paths and Libraries" />
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176729756665" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="nodesAndConcepts" />
-        <property name="text" nameId="2c95.3350625596580064225" value="Nodes and Concepts" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729820032" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729820033" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820034" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="A library is essentially a directory that contains additional languages or solutions (it is like a search path or the Java classpath). Instead of adding a needed solution or language to the project, it can remain \&quot;outside\&quot; the project and made visible by pointing a library to the file system folder. Libraries can be defined specifically for a project (Project Libraries) or globally (Global Libraries). Both are created via the Preferences." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729820044" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729820045" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820046" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In order not to hard code absolute paths in the definition of libraries, you can define a path variable. A path variable is a name name (such as " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176729820372" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729820373" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820374" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="MyProjectDir" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820376" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=") plus a directory (such as " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176729820384" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729820385" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820386" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="/Users/markus/mbeddr/project1" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820383" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="). If you now define a reference to a libary in, say, " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176729820435" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729820436" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820437" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="/Users/markus/mbeddr/project1/my/folder/sol.mps" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820434" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", then this stored in the project as " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176729820458" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729820459" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820460" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="${myProjectDir}/my/folder/sol.mps" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820457" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" even though this is " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="1481709176729820522" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729820523" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820524" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="not" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820526" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" visible in the UI. If the same library is accessed on another computer, the its definition of the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176729820556" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729820557" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820558" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="MyProjectDir" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820555" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" variable is used to resolve it." />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </root>
