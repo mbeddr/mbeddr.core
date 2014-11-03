@@ -401,7 +401,7 @@
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="1481709176727853576" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727853577" nodeInfo="ng">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727853578" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Automated Domain-Specific C Verification with mbeddr" />
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://mbeddr.com/files/dscv-ase2014.pdf" />
                   </node>
                 </node>
               </node>
