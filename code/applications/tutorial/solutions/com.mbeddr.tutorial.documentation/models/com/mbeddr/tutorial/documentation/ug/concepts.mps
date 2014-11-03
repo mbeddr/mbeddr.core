@@ -281,7 +281,13 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176726612652" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176726612653" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176726612654" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr is structured into 5 layers, and addresses three different concerns (see below). The platform layer consists of the JetBrains MPS language workbench, which enables the overall approach. The core layer includes the base languages used in mbeddr; these are different for each of the three concerns. The default extensions layer consits of a set of predefined extensions of the core languages that can be used out-of-the-box to develop software. The user extension layer is empty, it is intended to be filled by users. The backend layer consists of existing tools compilation and analysis tools which mbeddr uses." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr is structured into 5 layers, and addresses three different concerns (see " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1481709176726614941" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1481709176726612629" resolveInfo="mbeddrArchitecture" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176726614940" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="). The platform layer consists of the JetBrains MPS language workbench, which enables the overall approach. The core layer includes the base languages used in mbeddr; these are different for each of the three concerns. The default extensions layer consits of a set of predefined extensions of the core languages that can be used out-of-the-box to develop software. The user extension layer is empty, it is intended to be filled by users. The backend layer consists of existing tools compilation and analysis tools which mbeddr uses." />
             </node>
           </node>
         </node>
@@ -293,13 +299,12 @@
           </node>
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1481709176726612631" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176726612632" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176726612633" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176726612633" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Overview over mbeddr's five layers and three concerns." />
+              </node>
             </node>
           </node>
           <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="1481709176726612634" nodeInfo="ng" />
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="1481709176726612901" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176726613058" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176726613059" nodeInfo="ng">
