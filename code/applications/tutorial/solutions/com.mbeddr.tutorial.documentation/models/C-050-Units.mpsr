@@ -9,8 +9,6 @@
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
   <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" implicit="yes" />
-  <import index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" implicit="yes" />
-  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="620304030110860646" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C-050-Units" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="5" />
@@ -646,7 +644,26 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3018985626171451831" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3018985626171451832" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3018985626171451833" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="First you need to create generic units by invoking the Add Generic Unit Declaration intention on the function. You can specify multiple generic units once the first one has been created by just simply pressing ENTER in the unit list. These newly created generic units can then be used for the type annotation just like the already available non-generic units. The substitutions will be computed based on the input parameters of the function call. One can also combine a generic unit with additional arbitrary non-generic units for the type annotations of the parameters and the return type. Additionally it is also possible to invoke the function with bare types, but be aware that once at least one substitution is present, the function call will be type checked also for matching units. Naturally, the generic units can also have exponents (even as fractions) and the same type-checks also apply to them as it was described for the non-generic units. \n\nSome additional notes on the usage of the generic units:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="First you need to create generic units by invoking the Add Generic Unit Declaration intention on the function. You can specify multiple generic units once the first one has been created by just simply pressing ENTER in the unit list. These newly created generic units can then be used for the type annotation just like the already available non-generic units. The substitutions will be computed based on the input parameters of the function call. One can also combine a generic unit with additional arbitrary non-generic units for the type annotations of the parameters and the return type. Additionally it is also possible to invoke the function with bare types, but be aware that once at least one substitution is present, the function call will be type checked also for matching units. Naturally, the generic units can also have exponents (even as fractions) and the same type-checks also apply to them as it was described for the non-generic units. An example shows how this could be done for a square root function:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="2219633145658861935" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2219633145658862145" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2219633145658862151" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931944290" resolveInfo="FunctionPointers" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2219633145658862160" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.2219633145658635843" resolveInfo="sqrt" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2219633145658862071" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145658862072" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145658862073" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Some additional notes on the usage of the generic units:" />
             </node>
           </node>
         </node>
@@ -655,16 +672,7 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2219633145657667127" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145657667128" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657667129" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="You should not use multiple generic units in the annotation of one given function parameter, because the non-generic units will be bound to the first generic unit (all of them), so the substitutions will probably not be the ones that you would expect." />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="2219633145657667139" nodeInfo="ng">
-            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2219633145657667140" nodeInfo="ng">
-              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145657667141" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657667142" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Return statements must evaluate to the same type (with unit) as the function's return type. " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="You should not use multiple generic units in the annotation of one given function parameter, because the non-generic units will be bound to the first generic unit (all of them), so the substitutions will probably not be the ones that you would expect. This is a constraint introduced to manage the complexity of the compuatation of the bindings; allowing multiple generic units for parameter types could result in a constraint solving problem which we do not support right now. " />
                 </node>
               </node>
             </node>
@@ -764,41 +772,7 @@
       <property name="name" nameId="2c95.126932837435370851" value="Tamas Szabo" />
       <property name="email" nameId="2c95.126932837435370852" value="tamas.szabo@itemis.de" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="7697861917660746292" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="7697861917660746293" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="berndkolb" />
-        <property name="created" nameId="7krq.5652920968054438504" value="03.11.2014 13:19:51" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word42" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2219633145657667129" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="7697861917660746294" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7697861917660746295" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Can we prevent that? Or add a non-ts rule?" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="7697861917660746311" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="berndkolb" />
-        <property name="created" nameId="7krq.5652920968054438504" value="03.11.2014 13:20:39" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word14" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2219633145657667142" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="7697861917660746312" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7697861917660746313" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="isn't that always the case?" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="7697861917660746320" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="berndkolb" />
-        <property name="created" nameId="7krq.5652920968054438504" value="03.11.2014 13:21:12" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word141" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="3018985626171451833" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="7697861917660746321" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7697861917660746322" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="I think an example would be nice. just  use sqrt" />
-          </node>
-        </node>
-      </node>
-    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="7697861917660746292" nodeInfo="ng" />
   </root>
 </model>
 
