@@ -37,8 +37,8 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="7088286182583978008" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
-    <property name="name" nameId="tpck.1169194664001" value="A-Overview" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
+    <property name="name" nameId="tpck.1169194664001" value="A_Overview" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="7088286182583987835" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="generatedCode" />
@@ -72,12 +72,12 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="7088286182584071127" nodeInfo="ng">
         <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="7088286182584071146" nodeInfo="ng">
-          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182584070996" resolveInfo="B-Efficientcy" />
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182584070996" resolveInfo="B_Efficientcy" />
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="7088286182584125026" nodeInfo="ng">
         <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="7088286182584125069" nodeInfo="ng">
-          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182584125022" resolveInfo="C-Readability" />
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182584125022" resolveInfo="C_Readability" />
         </node>
       </node>
     </node>
@@ -85,19 +85,19 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="7088286182584071144" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182584070996" resolveInfo="B-Efficientcy" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182584070996" resolveInfo="B_Efficientcy" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="7088286182584125063" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182584125022" resolveInfo="C-Readability" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182584125022" resolveInfo="C_Readability" />
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="7088286182584070996" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
-    <property name="name" nameId="tpck.1169194664001" value="B-Efficientcy" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
+    <property name="name" nameId="tpck.1169194664001" value="B_Efficientcy" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="7088286182584070867" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Efficientcy" />
+      <property name="name" nameId="tpck.1169194664001" value="Efficiency" />
       <property name="text" nameId="2c95.3350625596580064225" value="Efficientcy" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7088286182584070881" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182584070882" nodeInfo="ng">
@@ -134,8 +134,8 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="7088286182584125022" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
-    <property name="name" nameId="tpck.1169194664001" value="C-Readability" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
+    <property name="name" nameId="tpck.1169194664001" value="C_Readability" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="7088286182584125023" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="readability" />
@@ -198,6 +198,39 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727863071" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="Z_CHAPTER_GeneratedCode" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="1481709176728354858" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="fundamentals" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Fundamentals" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="324047639357702065" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357702069" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182583978008" resolveInfo="A_Overview" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="324047639357702072" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357702086" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182584070996" resolveInfo="B_Efficientcy" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="324047639357702078" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357702089" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182584125022" resolveInfo="C_Readability" />
+        </node>
+      </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357702047" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182583978008" resolveInfo="A_Overview" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357702052" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182584070996" resolveInfo="B_Efficientcy" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357702060" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182584125022" resolveInfo="C_Readability" />
     </node>
   </root>
 </model>
