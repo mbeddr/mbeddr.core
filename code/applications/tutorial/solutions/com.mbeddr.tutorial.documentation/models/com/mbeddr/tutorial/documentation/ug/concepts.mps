@@ -572,5 +572,62 @@
       </node>
     </node>
   </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727861442" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="Z_CHAPTER_Concepts" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="1481709176727861669" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="concepts" />
+      <property name="text" nameId="2c95.3350625596580064225" value="mbeddr Concepts" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176727861675" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861736" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176725373042" resolveInfo="A_MPS" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176727861739" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861789" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176725865181" resolveInfo="B_mbeddr" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176727861745" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861792" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727857044" resolveInfo="C_GccMakeGdb" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176727861753" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861795" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727416409" resolveInfo="D_CBMC" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176727861763" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861798" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727855744" resolveInfo="E_Graphviz" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176727861775" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861801" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727858542" resolveInfo="F_Java" />
+        </node>
+      </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861679" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176725373042" resolveInfo="A_MPS" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861684" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176725865181" resolveInfo="B_mbeddr" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861692" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727857044" resolveInfo="C_GccMakeGdb" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861702" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727416409" resolveInfo="D_CBMC" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861714" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727855744" resolveInfo="E_Graphviz" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176727861728" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727858542" resolveInfo="F_Java" />
+    </node>
+  </root>
 </model>
 
