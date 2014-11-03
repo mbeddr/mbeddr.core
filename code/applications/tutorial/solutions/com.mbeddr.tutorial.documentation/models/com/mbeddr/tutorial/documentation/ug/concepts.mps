@@ -545,7 +545,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176727857252" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176727857253" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176727857254" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Other compilers, make tools and debuggers can be plugged into mbeddr (we have just integrated the  Microchip PIC 16 for a customer) . How this is done is beyond the scope of this user guide." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Other compilers, make tools and debuggers can be plugged into mbeddr (we have just integrated the  Microchip PIC 16 for a customer). How this is done is beyond the scope of this user guide." />
           </node>
         </node>
       </node>
