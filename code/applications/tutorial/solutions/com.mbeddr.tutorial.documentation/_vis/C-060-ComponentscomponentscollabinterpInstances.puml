@@ -1,0 +1,7 @@
+@startuml
+component "store:\nInMemoryStorage" as store
+url of store is [[http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/1731059994647878536/ ]]
+component "interpolator:\nInterpolator" as interpolator
+url of interpolator is [[http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/1731059994647878534/ ]]
+interpolator --> store : store->store [[http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/1731059994647878537/ ]]\nTrackpointStore1
+@enduml

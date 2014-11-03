@@ -13,6 +13,7 @@
       <modulePath path="$PROJECT_DIR$/languages/memory/memory.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/metadata/metadata.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/osconfig/osconfig.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/spellcheck/spellcheck.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/vectors/vectors.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.documentation/com.mbeddr.tutorial.documentation.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" folder="exampleCode" />
