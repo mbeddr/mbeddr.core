@@ -45,7 +45,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176725420678" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176725420679" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176725420680" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr relies on the JetBrains MPS language workbench. A language workbench is a tool that supports language engineering, the activity of building, composing, extending and using languages. MPS can be seen as a framework on with mbeddr relies. " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr relies on the JetBrains MPS language workbench. A language workbench is a tool that supports language engineering, the activity of building, composing, extending and using languages. MPS can be seen as a framework on which mbeddr relies. " />
           </node>
         </node>
       </node>
@@ -79,7 +79,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176725861140" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" contains links to most of these. We want to highlight in particular the book by Fabien Campagne (" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=") contains links to most of these. We want to highlight in particular the book by Fabien Campagne (" />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="1481709176725861326" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176725861327" nodeInfo="ng">
@@ -171,7 +171,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176726611276" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176726611277" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176726611278" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Traditionally, the above mentioned benefits of a projectional editor have come at a price: the user experience of traditional projectional editors was not very good, in particular, when editing code that looked like \&quot;normal text\&quot;. Consequently, projectional editors were not adopted. However, MPS is doing a much better job with this. We have conducated a study with 20 MPS users (most of them mbeddr users as well), and the conclusion is that the editor works well enough. Take a look at this paper for details: " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Traditionally, the above mentioned benefits of a projectional editor have come at a price: the user experience of traditional projectional editors was not very good, in particular, when editing code that looked like \&quot;normal text\&quot;. Consequently, projectional editors were not adopted. However, MPS is doing a much better job with this. We have conducted a study with 20 MPS users (most of them mbeddr users as well), and the conclusion is that the editor works well enough. Take a look at this paper for details: " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="1481709176726611438" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176726611439" nodeInfo="ng">
@@ -180,7 +180,9 @@
               </node>
             </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176726611441" nodeInfo="ng" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176726611441" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+          </node>
         </node>
       </node>
     </node>
@@ -232,7 +234,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176726593427" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="). To get an overview we suggest to take a look at the following two:" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". To get an overview we suggest to take a look at the following two:" />
           </node>
         </node>
       </node>
@@ -263,7 +265,7 @@
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="1481709176726593710" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176726593711" nodeInfo="ng">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176726593712" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://voelter.de/defense/thesis-markusvoelter-1.0-web.pdf" />
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://voelter.de/data/books/GenericToolsSpecificLanguages-1.0-web.pdf" />
                   </node>
                 </node>
               </node>
@@ -281,7 +283,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176726612652" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176726612653" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176726612654" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr is structured into 5 layers, and addresses three different concerns (see " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr is structured into 5 layers and addresses three different concerns (see " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1481709176726614941" nodeInfo="ng">
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1481709176726612629" resolveInfo="mbeddrArchitecture" />
