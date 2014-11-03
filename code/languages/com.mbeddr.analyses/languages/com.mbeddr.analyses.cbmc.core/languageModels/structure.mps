@@ -60,6 +60,10 @@
       <property name="name" nameId="tpck.1169194664001" value="check_unsigned_overflow" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="923137795051161502" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="check_float_overflow" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4053481679317021372" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="check_nan" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
