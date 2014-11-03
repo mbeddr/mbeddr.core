@@ -821,15 +821,47 @@
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176727862949" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="editor" />
-      <property name="text" nameId="2c95.3350625596580064225" value="Editor" />
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176727862971" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="editorVsInspector" />
-        <property name="text" nameId="2c95.3350625596580064225" value="Editor vs. Inspector" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Using the Editor" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="324047639341428457" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639341428458" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430382" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS is a projectional editor. This means that the editing actions as you know them from a text editor may not work exactly the same way as in a text editor. This leads to a lot of benefits in terms of language modularity and notational flexibility. It also has the potential drawback that the  editor may not work exactly as you'd expect.  To better  understand how the editor works and what MPS does to achieve quite good editor usability, we suggest you watch this video: " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="324047639341430379" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639341430380" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430381" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://www.youtube.com/watch?v=PvcXD4cFM4s" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430383" nodeInfo="ng" />
+        </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176727862976" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="usability" />
-        <property name="text" nameId="2c95.3350625596580064225" value="Editor Usability" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="324047639341430398" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639341430399" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430400" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="In addition, the section on " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="324047639341430414" nodeInfo="ng">
+            <link role="target" roleId="2c95.3350625596580108719" targetNodeId="7992580511417017508" resolveInfo="ImportantShortcuts" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430415" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" has a lot of important keyboard shortcuts. Please take the time to read this section! The cheat sheet in " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="324047639341430426" nodeInfo="ng">
+            <link role="target" roleId="2c95.3350625596580108719" targetNodeId="7992580511418100707" resolveInfo="CheatSheet" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430427" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" also summarizes them again." />
+          </node>
+        </node>
       </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639341430412" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727862995" resolveInfo="D_KeyboardShortcuts" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639341430422" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727863070" resolveInfo="I_CheatSheet" />
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727862995" nodeInfo="ng">
