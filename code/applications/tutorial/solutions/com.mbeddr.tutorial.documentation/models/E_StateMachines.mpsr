@@ -10,7 +10,7 @@
   <import index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" implicit="yes" />
   <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="3458996998996953631" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="C-090-StateMachines" />
+    <property name="name" nameId="tpck.1169194664001" value="E_StateMachines" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="9" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="6159972464849879971" nodeInfo="ng">
