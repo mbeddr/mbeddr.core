@@ -95,7 +95,13 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591081967" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". When you report a problem, please make sure you include a Node Info for the problem (see " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="1195021413141466022" nodeInfo="ng">
+            <link role="target" roleId="2c95.3350625596580108719" targetNodeId="bmc6.1195021413141455458" resolveInfo="textInterop" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141466023" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" for details on what a Node Info is)." />
           </node>
         </node>
       </node>
