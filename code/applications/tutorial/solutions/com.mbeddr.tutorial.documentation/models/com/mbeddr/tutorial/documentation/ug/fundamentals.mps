@@ -1971,7 +1971,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2101724341004032018" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2101724341004032019" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004032020" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In this chapter we discuss version control with MPS.  Note that this is not an introduction to version control in general: we assume that you understand version control concepts before you read this chapter. We use git as the example version control system because this is what the mbeddr team has used successfully for years now. We clearly recommend using git." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In this chapter we discuss version control with MPS. Note that this is not an introduction to version control in general: we assume that you understand version control concepts before you read this chapter. We use git as the example version control system because this is what the mbeddr team has used successfully for years now. We clearly recommend using git." />
             </node>
           </node>
         </node>
@@ -2341,7 +2341,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715455418" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" button, you can also directly push from within MPS. You can also use the context menu to show the diff, i.e., the changes that are about to be committed." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" button, you can also directly push from within MPS. You can also use the context menu to show the diff, i.e. the changes that are about to be committed." />
               </node>
             </node>
           </node>
