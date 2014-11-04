@@ -910,39 +910,92 @@
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176727862949" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="editor" />
-      <property name="text" nameId="2c95.3350625596580064225" value="Using the Editor" />
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="324047639341428457" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639341428458" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430382" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS is a projectional editor. This means that the editing actions as you know them from a text editor may not work exactly the same way as in a text editor. This leads to a lot of benefits in terms of language modularity and notational flexibility. It also has the potential drawback that the  editor may not work exactly as you'd expect. To better understand how the editor works and what MPS does to achieve quite good editor usability, we suggest you watch this video: " />
+      <property name="text" nameId="2c95.3350625596580064225" value="The Editor" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004008313" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="usability" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Usability" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="324047639341428457" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639341428458" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430382" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS is a projectional editor. This means that the editing actions as you know them from a text editor may not work exactly the same way as in a text editor. This leads to a lot of benefits in terms of language modularity and notational flexibility. It also has the potential drawback that the  editor may not work exactly as you'd expect. To better understand how the editor works and what MPS does to achieve quite good editor usability, we suggest you watch this video: " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="324047639341430379" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639341430380" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430381" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://www.youtube.com/watch?v=PvcXD4cFM4s" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430383" nodeInfo="ng" />
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="324047639341430379" nodeInfo="ng">
-            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639341430380" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430381" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://www.youtube.com/watch?v=PvcXD4cFM4s" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="324047639341430398" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639341430399" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430400" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In addition, the section on " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="324047639341430414" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="7992580511417017508" resolveInfo="ImportantShortcuts" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430415" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" has a lot of important keyboard shortcuts. Please take the time to read this section! The cheat sheet in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="324047639341430426" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="7992580511418100707" resolveInfo="CheatSheet" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430427" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" also summarizes them again." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004008376" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="projectionModes" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Projection Modes" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2101724341004020971" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2101724341004020972" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004020973" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Since MPS is a projectional editor, the same program can be shown with different notations. Users can switch the notation at any time to match the task they are working on. The specific available notations are discussed although this user guide when we discuss the respective languages; examples include a tabular notation for state machines, a textual vs. graphical notation for wiring components, as well as the regular and the presentation mode in the kinds of documents you may be reading right now." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2101724341004020983" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2101724341004020984" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004020985" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="All notations can be switched from one common menu location: " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="2101724341004021745" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2101724341004021746" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004021747" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Code-&gt;Projection Modes-&gt;..." />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004021748" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". See also " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="2101724341004023004" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="2101724341004022975" resolveInfo="projectionModes" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004023005" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The menu shows only those options that are valid for the languages used in the current model, and the selection is specific for any given editor/root." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="2101724341004022975" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="projectionModes" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="2101724341004023001" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="projectionModes.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2101724341004022979" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2101724341004022980" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004022981" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The menu to change projection modes." />
               </node>
             </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430383" nodeInfo="ng" />
-        </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="324047639341430398" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639341430399" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430400" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="In addition, the section on " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="324047639341430414" nodeInfo="ng">
-            <link role="target" roleId="2c95.3350625596580108719" targetNodeId="7992580511417017508" resolveInfo="ImportantShortcuts" />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430415" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" has a lot of important keyboard shortcuts. Please take the time to read this section! The cheat sheet in " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="324047639341430426" nodeInfo="ng">
-            <link role="target" roleId="2c95.3350625596580108719" targetNodeId="7992580511418100707" resolveInfo="CheatSheet" />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430427" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" also summarizes them again." />
-          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="2101724341004022983" nodeInfo="ng" />
         </node>
       </node>
     </node>
@@ -953,7 +1006,7 @@
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7992580511417017508" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="ImportantShortcuts" />
-      <property name="text" nameId="2c95.3350625596580064225" value="Important Keyboard Shortcuts" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Keyboard Shortcuts" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7992580511417021304" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417021305" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417021306" nodeInfo="ng">
@@ -1100,7 +1153,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417489975" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" you can simply move to the right side of the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="  you can simply move to the right side of the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7992580511417489976" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417489977" nodeInfo="ng">
@@ -1310,7 +1363,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417493503" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The reverse is also supported. The context menu on a program element supports Find Usages. This can also be activated via " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The reverse is also supported. The context menu on a program element supports Find Useages. This can also be activated via " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7992580511417493504" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417493505" nodeInfo="ng">
@@ -1484,7 +1537,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7992580511417501269" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417501270" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417501271" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Imagine the cursor in the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Iimagine the cursor in the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7992580511417501642" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417501643" nodeInfo="ng">
@@ -1551,7 +1604,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7992580511417505030" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417505031" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417505032" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The safest way to delete something is to mark it (using the strategies discussed in the previous paragraph) and then press " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The safest way to delete something is to mark it (using the strategies discussed in the previous paragraph) and the press " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7992580511417506442" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417506443" nodeInfo="ng">
@@ -1751,7 +1804,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7992580511417514202" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417514203" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417514204" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="For many language constructs, refactorings are provided. Refactorings are more important in MPS than in \&quot;normal\&quot; text editors, because a quite few editing operations are hard to do manually. Please explore the refactorings context menu and take note when we explain refactorings in the user's guide. Unlike intentions, which cannot have a specific keyboard shortcut assigned, refactorings can, and we make use of this feature heavily. For example, " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="For many language constructs, refactorings are provided. Refactorings are more important in MPS than in \&quot;normal\&quot; text editors, because a quite few editing operations are hard to do manually. Please explore the refactorings context menu, and take note when we explain refactorings in the user's guide. Unlike intentions, which cannot have a specific keyboard shortcut assigned, refactorings can, and we make use of this feature heavily. For example, " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2900587364563346515" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2900587364563346516" nodeInfo="ng">
@@ -1771,7 +1824,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7992580511417517301" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417517302" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417517303" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="To select the currently edited root node in the project explorer (the big tree on the left), press " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="To select the currently edit root note in the project explorer (the big tree of the left), press " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7992580511417518857" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417518858" nodeInfo="ng">
@@ -1904,46 +1957,6 @@
         <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7992580511417530085" nodeInfo="ng" />
       </node>
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="532461220400560957" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="532461220400560958" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 6:47:41 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word25" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="7992580511417021306" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="532461220400560959" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="532461220400560960" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="At the moment it is at the end of the chapter" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="532461220400562166" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 6:50:21 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word20" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="7992580511417151724" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="532461220400562167" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="532461220400562168" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="It binds only, if the entered string matches the cc menu entry completely. A substring requires an additional Ctrl+Space." />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="532461220400562175" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 6:55:25 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word19" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="7992580511417474037" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="532461220400562176" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="532461220400562177" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="There is also \&quot;smart matching\&quot; were you type only the beginning of the camel cased words." />
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727863012" nodeInfo="ng">
-    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="E_ProjectionModes" />
-    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727863030" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
@@ -1952,6 +1965,511 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176729755835" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="versionControl" />
       <property name="text" nameId="2c95.3350625596580064225" value="Version Control" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004030799" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="intro" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Introduction" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2101724341004032018" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2101724341004032019" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004032020" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In this chapter we discuss version control with MPS.  Note that this is not an introduction to version control in general: we assume that you understand version control concepts before you read this chapter. We use git as the example version control system because this is what the mbeddr team has used successfully for years now. We clearly recommend using git." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2101724341004032106" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2101724341004032107" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004032108" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Also, mbeddr/MPS uses the version control support of the IDEA platform. So to get an overview, you can also check out the following links:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="2101724341004067490" nodeInfo="ng">
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="2101724341004067491" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2101724341004067492" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2101724341004067493" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004067510" nodeInfo="ng" />
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="2101724341004067507" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2101724341004067508" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004067509" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="https://www.jetbrains.com/idea/features/version_control.html" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004067511" nodeInfo="ng" />
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="2101724341004070084" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2101724341004070085" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2101724341004070086" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004070103" nodeInfo="ng" />
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="2101724341004070100" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2101724341004070101" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004070102" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="https://www.jetbrains.com/idea/webhelp/version-control-with-intellij-idea.html" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2101724341004070104" nodeInfo="ng" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004032066" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="supported" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Supported Version Control Systems" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365713374201" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365713374202" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365713374203" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In principle, MPS can work with all the version control systems supported by IntelliJ IDEA. These include git, Subversion, CVS, Mercurial, Perforce, TFS, VSS and Rational ClearCase. This is the case because from the version control system's perspective, MPS is a regular, file based tool. " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365713385472" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365713385473" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365713385474" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="However, this is not quite true, because during merging, some MPS-specific things have to be done. For this purpose, version control systems support merge drivers. Currently, MPS merge drivers exist only for git, Subversion and CVS. Since nobody wants to use CVS anymore, git and Subversion are the most reasonable alternatives to use with MPS. However, it is feasible to develop additional merge drivers if this should become necessary. Please contact the MPS team in this case." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365713385490" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365713385491" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365713385492" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Our experience over the last years is with git, which is why we use git in this chapter. We've also used Subversion successfully in one project. We clearly recommend using git with mbeddr." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004068759" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="setup" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Setting Up Version Control for a Project" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365713386760" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365713386761" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365713386762" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To be able to use version control from within MPS, MPS must be made aware of the version control system and its meta data. MPS uses so called VCS roots. A " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="6952748365713388072" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365713388073" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365713388074" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="VCS root" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365713388076" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is simply a root directory in which git (or other version control systems) store their meta data. You can configure the roots via the Preferences (see " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="6952748365713388083" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365713388050" resolveInfo="vcsSetup" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365713388084" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="). Note that MPS also detects directories that could/should be roots and brings up a popup." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365713388050" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="vcsSetup" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365713388069" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="vcssetup.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365713388054" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365713388055" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365713388056" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The configuration of VCS roots for git." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365713388058" nodeInfo="ng" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004068813" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="tools" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Tools and Views" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365714254493" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365714254494" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714254495" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="As you edit code in the regular MPS editor, MPS keeps track of changes. In particular, it shows changes in the left gutter. " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="6952748365714254530" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365714254507" resolveInfo="vcsAdded" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714254531" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows how new nodes are highlighted. MPS also shows changes to existing nodes as shown in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="6952748365714254559" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365714254535" resolveInfo="vcsChanged" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714254560" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Clicking on the respective color bar in the gutter lets you revert that change, among other things. It also lets you show a detailed diff; we discuss the diff in the next paragraph." />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="6952748365714254496" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Change Markup in Editor" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365714254507" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="vcsAdded" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365714254527" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="vcsAdded.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365714254511" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365714254512" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714254513" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Highlight of added nodes in the editor." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365714254515" nodeInfo="ng" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365714254535" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="vcsChanged" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365714254536" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="vcsChanged.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365714254537" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365714254538" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714254539" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Highlight of changed nodes in the editor." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365714254540" nodeInfo="ng" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365714255880" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365714255881" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714255882" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The Changes view keeps track of which files (i.e., models) have changed on you system compared to the latest in the version control system. " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="6952748365714814946" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365714814903" resolveInfo="changesView" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714814947" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows an example. The " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6952748365714814951" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365714814952" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714814953" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="defaultExtensions" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714814954" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" model is the one that contains the root with the two changes shown above. You can see a diff by selecting " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="6952748365714814962" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365714814963" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714814964" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Show Diff" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714814965" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" from the context menu of the respective model in the changes view. The view which then opens (" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="6952748365714867022" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365714866969" resolveInfo="diffView" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714867021" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=") lets you choose from the changed roots (if several have changed) and then see a diff in the usual side-by-side style. Note that this works for arbitrary notations! You can also undo the changes with the usual operations." />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="6952748365714255883" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Changes View" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365714814903" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="changesView" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365714814943" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="changesView.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365714814907" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365714814908" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714814909" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The changes view in MPS." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365714814911" nodeInfo="ng" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365714866969" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="diffView" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365714866970" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="diffView.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365714866971" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365714866972" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365714866973" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The diff view in MPS." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365714866974" nodeInfo="ng" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004032080" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="commonOperations" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Common Version Control Operations" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365715044742" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715044743" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715044744" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In principle, all version control operations except the diff/merge can be performed from the command line. You can also use VCS-specific tools such as SourceTree (" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="6952748365715048718" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715048719" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715048720" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://www.sourcetreeapp.com/" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715048721" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="). However, it is recommended to use the MPS-internal ways to do things to make sure that MPS' caches do not get out of sync. In practice we do the basic things (explained here) with MPS, and the advanced things with the command line or SourceTree." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365715124127" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715124128" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715124129" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We recommend exploring the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="6952748365715124161" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715124162" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715124163" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="VCS" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715124160" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" menu in MPS, and in particular the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="6952748365715124151" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715124152" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715124153" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="git" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715124154" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" submenu; it has a lot of git operations such as branching or stashing." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004032088" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="update" />
+          <property name="text" nameId="2c95.3350625596580064225" value="Update/Pull" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365715061650" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715061651" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715061652" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Updating, or pulling in git-speak, refers to getting the newest contents from the version control system. From within MPS you can do this via  the menu entry " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="6952748365715061657" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715061658" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715061659" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="VCS-&gt;Update Project" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715061660" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". After the update, the Version Control view shows the set of changed files (" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="6952748365715126196" nodeInfo="ng">
+                <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365715126170" resolveInfo="updateChangedFiles" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715126197" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="). You can use the context menu to show a diff of the changes that came in. " />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365715126170" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="updateChangedFiles" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365715126193" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="updateChangedFiles.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365715126174" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715126175" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715126176" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="List of changed files after an update/pull." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365715126178" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004032093" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="commit" />
+          <property name="text" nameId="2c95.3350625596580064225" value="Commit/Push" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365715127558" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715127559" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715127560" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can use " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="6952748365715128918" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715128919" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715128920" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="VCS-&gt;Commit Changes" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715128921" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="6952748365715128927" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715128928" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715128929" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Ctrl-K" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715128930" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to bring up the commit dialog. This dialog, shown in " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="6952748365715455404" nodeInfo="ng">
+                <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365715455374" resolveInfo="commitView" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715455405" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=", lets you select the models you want to commit and specify a commit message. By using the context menu on models, you can also revert some of the changes. By pressing the little down-arrow on the " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="6952748365715455419" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715455420" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715455421" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Commit" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715455418" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" button, you can also directly push from within MPS. You can also use the context menu to show the diff, i.e., the changes that are about to be committed." />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365715455374" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="commitView" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365715455401" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="commitView.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365715455378" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715455379" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715455380" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Commit dialog in MPS." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365715455382" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004032097" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="merging" />
+          <property name="text" nameId="2c95.3350625596580064225" value="Conflicts/Merging" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365716259001" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365716259002" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365716259003" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Conflicts happen if the same node(s) are changed independently by different parties. It can happen during an update/pull (if somebody else has changed the same nodes independently) or when merging a branch (in the case where the two branches have changes to the same model). In both cases, the Version Control view, when showing the incoming changes, will mark conflicting files as red, as shown in " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="3231021218591013327" nodeInfo="ng">
+                <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365716245147" resolveInfo="changesViewConflict" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591013326" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365716245147" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="changesViewConflict" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365716245148" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="changesViewConflict.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365716245149" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365716245150" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365716245151" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The changes view after it ran into a conflict in a model." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365716245152" nodeInfo="ng" />
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3231021218591054297" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591054298" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054299" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can then select " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="3231021218591054327" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591054328" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054329" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Git-&gt;Merge Conflicts" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054330" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to open the Merge overview (" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="3231021218591054336" nodeInfo="ng">
+                <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365716256156" resolveInfo="mergeView" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054337" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="). It shows the list of conflicing files, and for each of them you can select whether you want to accept your local changes (overwriting what comes in), accept the incoming changes (discarding your own changes) or merge manually." />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365716256156" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="mergeView" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365716256157" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="mergeOverview.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365716256158" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365716256159" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365716256160" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The merge overview dialog shows the files that changed as well as the merge options." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365716256161" nodeInfo="ng" />
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3231021218591054379" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591054380" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054381" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="In case you select " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="3231021218591054418" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591054419" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054420" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Merge" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054421" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=", you will get a three-way merge dialog as shown in " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="3231021218591055842" nodeInfo="ng">
+                <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365716257562" resolveInfo="threeWayMerge" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591055843" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". There you pick and choose then changes you want to use. You can also edit, as well as copy/paste changes into the merge result." />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365716257562" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="threeWayMerge" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365716257563" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="threeWayMerge.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365716257564" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365716257565" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365716257566" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Three-way merge to resovle conflict." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365716257567" nodeInfo="ng" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727863070" nodeInfo="ng">
@@ -2860,7 +3378,7 @@
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7992580511417536229" nodeInfo="ng">
-      <property name="text" nameId="2c95.3350625596580064225" value="Other Useful MPS Settings" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Useful MPS Settings" />
       <property name="name" nameId="tpck.1169194664001" value="OtherSettings" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7992580511417539761" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417539762" nodeInfo="ng">

@@ -10,7 +10,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
   <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="620304030110860646" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="C-050-Units" />
+    <property name="name" nameId="tpck.1169194664001" value="C_Units" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="5" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561785343" nodeInfo="ng">

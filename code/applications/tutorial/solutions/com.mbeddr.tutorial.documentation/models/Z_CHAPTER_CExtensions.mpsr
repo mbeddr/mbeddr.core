@@ -10,6 +10,46 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2101724341003970577" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="cextensions" />
       <property name="text" nameId="2c95.3350625596580064225" value="C Extensions" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="3231021218601956448" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3231021218601956496" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182578613178" resolveInfo="A_StaticEvaluation" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="3231021218601956499" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3231021218601956535" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7979854108176280683" resolveInfo="B_DecisionTables" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="3231021218601956505" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3231021218601956538" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="620304030110860646" resolveInfo="C_Units" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="3231021218601956513" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3231021218601956541" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4199862776468632873" resolveInfo="D_Components" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="3231021218601956523" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3231021218601956544" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3458996998996953631" resolveInfo="E_StateMachines" />
+        </node>
+      </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3231021218601956457" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7088286182578613178" resolveInfo="A_StaticEvaluation" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3231021218601956489" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7979854108176280683" resolveInfo="B_DecisionTables" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3231021218601956452" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="620304030110860646" resolveInfo="C_Units" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3231021218601956467" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4199862776468632873" resolveInfo="D_Components" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3231021218601956477" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3458996998996953631" resolveInfo="E_StateMachines" />
     </node>
   </root>
 </model>
