@@ -1956,7 +1956,7 @@
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="1731059994647783018" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="qlb5.AnnotatedExpression" typeId="qlb5.8337440621611212272" id="2230076513945619685" nodeInfo="ng">
                   <node role="innerExpression" roleId="qlb5.8337440621611267898" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647783021" nodeInfo="ng">
-                    <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="42" />
                   </node>
                   <node role="specification" roleId="qlb5.8337440621611353453" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="2230076513945619686" nodeInfo="ng">
                     <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="2230076513945619687" nodeInfo="ng">
