@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="e6xd" modelUID="r:1b6ed767-f17d-4530-9544-0113fe65d4d5(spellcheck.structure)" version="-1" />
+    </dependencies>
+    <rename id="e6xd.2572590289490699031" type="CONCEPT" from="ErrorWord" to="SpellingMistakesAttribute" />
+  </StructureModification>
+</history>
+

@@ -2,6 +2,8 @@
 <model modelUID="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)">
   <persistence version="8" />
   <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
+  <language namespace="c788b046-2019-4656-8b60-8bb9bbb177b5(com.mbeddr.mpsutil.review)" />
+  <language namespace="7a060fae-09e0-4372-be36-6696d6554c0e(com.mbeddr.mpsutil.review.annotation)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
   <import index="iwll" modelUID="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)" version="-1" />
@@ -10,6 +12,9 @@
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="16" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
+  <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" version="-1" implicit="yes" />
+  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" version="0" implicit="yes" />
+  <import index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" version="0" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -1810,6 +1815,30 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="A_Requirements" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843927224705" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="8280358843927224706" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 4:25:18 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word1" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1195021413141386850" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="8280358843927224707" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8280358843927224708" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Does the user know where to select projection modes?" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="8280358843927225658" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 4:27:54 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="Constant_xqq90p_a0" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1195021413141389610" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="8280358843927225659" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8280358843927225660" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Is this broken? I don't see anything" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1195021413140175530" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="req" />
       <property name="text" nameId="2c95.3350625596580064225" value="Requirements" />
@@ -2049,7 +2078,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413140962230" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The requirements kind described above can include constraints that enforce certain kinds of data (e.g., a a " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The requirements kind described above can include constraints that enforce certain kinds of data (e.g., a " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1195021413140962288" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413140962289" nodeInfo="ng">
@@ -2069,7 +2098,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413140962317" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" data object." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" data object)." />
             </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="1195021413140812799" nodeInfo="ng">
@@ -2079,7 +2108,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1195021413140812752" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413140812753" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413140812754" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="An important aspect of requirements is their relationships: a requirement can establish relations to other requirements. The requirement shown in " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="An important aspect of requirements are their relationships: a requirement can establish relations to other requirements. The requirement shown in " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1195021413140971714" nodeInfo="ng">
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1195021413140970734" resolveInfo="depExample" />
