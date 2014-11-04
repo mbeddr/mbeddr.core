@@ -2213,9 +2213,91 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004032080" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="commonOperations" />
         <property name="text" nameId="2c95.3350625596580064225" value="Common Version Control Operations" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365715044742" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715044743" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715044744" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In principle, all version control operations except the diff/merge can be performed from the command line. You can also use VCS-specific tools such as SourceTree (" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="6952748365715048718" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715048719" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715048720" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://www.sourcetreeapp.com/" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715048721" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="). However, it is recommended to use the MPS-internal ways to do things to make sure that MPS' caches do not get out of sync. In practice we do the basic things (explained here) with MPS, and the advanced things with the command line or SourceTree." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365715124127" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715124128" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715124129" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We recommend exploring the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="6952748365715124161" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715124162" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715124163" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="VCS" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715124160" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" menu in MPS, and in particular the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="6952748365715124151" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715124152" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715124153" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="git" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715124154" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" submenu; it has a lot of git operations such as branching or stashing." />
+            </node>
+          </node>
+        </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004032088" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="update" />
           <property name="text" nameId="2c95.3350625596580064225" value="Update/Pull" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365715061650" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715061651" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715061652" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Updating, or pulling in git-speak, refers to getting the newest contents from the version control system. From within MPS you can do this via  the menu entry " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="6952748365715061657" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715061658" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715061659" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="VCS-&gt;Update Project" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715061660" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". After the update, the Version Control view shows the set of changed files (" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="6952748365715126196" nodeInfo="ng">
+                <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365715126170" resolveInfo="updateChangedFiles" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715126197" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="). You can use the context menu to show a diff of the changes that came in. " />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365715126170" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="updateChangedFiles" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365715126193" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="updateChangedFiles.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365715126174" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365715126175" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365715126176" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="List of changed files after an update/pull." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365715126178" nodeInfo="ng" />
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004032093" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="commit" />
