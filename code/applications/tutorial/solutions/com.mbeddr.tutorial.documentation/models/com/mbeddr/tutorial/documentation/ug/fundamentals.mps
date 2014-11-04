@@ -910,7 +910,7 @@
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1481709176727862949" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="editor" />
-      <property name="text" nameId="2c95.3350625596580064225" value="Using the Editor" />
+      <property name="text" nameId="2c95.3350625596580064225" value="The Editor" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004008313" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="usability" />
         <property name="text" nameId="2c95.3350625596580064225" value="Usability" />
@@ -1006,7 +1006,7 @@
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7992580511417017508" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="ImportantShortcuts" />
-      <property name="text" nameId="2c95.3350625596580064225" value="Important Keyboard Shortcuts" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Keyboard Shortcuts" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7992580511417021304" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417021305" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417021306" nodeInfo="ng">
@@ -3378,7 +3378,7 @@
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7992580511417536229" nodeInfo="ng">
-      <property name="text" nameId="2c95.3350625596580064225" value="Other Useful MPS Settings" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Useful MPS Settings" />
       <property name="name" nameId="tpck.1169194664001" value="OtherSettings" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7992580511417539761" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417539762" nodeInfo="ng">
