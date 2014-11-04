@@ -85,7 +85,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="324047639353691991" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639353691992" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639353691993" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here is the introduction" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here is the introduction ..." />
           </node>
         </node>
       </node>
