@@ -10373,7 +10373,7 @@
             <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2723638869554146355" resolveInfo="testHelperFunction" />
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="2723638869555079988" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="funCall" />
+            <property name="name" nameId="tpck.1169194664001" value="helperFunctionCall" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="1187244948808238750" nodeInfo="ng">
@@ -10390,7 +10390,7 @@
             <property name="value" nameId="mj1l.2212975673976043696" value="10" />
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="2723638869553119311" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="aAssertEquals" />
+            <property name="name" nameId="tpck.1169194664001" value="assertEquals" />
           </node>
         </node>
       </node>

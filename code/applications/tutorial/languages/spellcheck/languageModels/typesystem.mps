@@ -3,13 +3,13 @@
   <persistence version="8" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  <import index="e6xd" modelUID="r:1b6ed767-f17d-4530-9544-0113fe65d4d5(spellcheck.structure)" version="0" />
+  <import index="i8xp" modelUID="r:05d7d916-f694-4ca3-8601-ae19f95c8c11(spellcheck.behavior)" version="-1" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="7" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
-  <import index="e6xd" modelUID="r:1b6ed767-f17d-4530-9544-0113fe65d4d5(spellcheck.structure)" version="-1" implicit="yes" />
-  <import index="i8xp" modelUID="r:05d7d916-f694-4ca3-8601-ae19f95c8c11(spellcheck.behavior)" version="-1" implicit="yes" />
   <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="2572590289490699097" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DetectError" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2572590289490699449" nodeInfo="sn">
@@ -30,7 +30,7 @@
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="2572590289490727851" nodeInfo="nn">
                           <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="2572590289490728489" nodeInfo="ng">
-                            <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="e6xd.2572590289490699031" resolveInfo="ErrorWord" />
+                            <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="e6xd.2572590289490699031" resolveInfo="SpellingMistakesAttribute" />
                           </node>
                         </node>
                       </node>
@@ -50,7 +50,7 @@
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="2617878911176616465" nodeInfo="nn">
                       <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="2617878911176616625" nodeInfo="ng">
-                        <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="e6xd.2572590289490699031" resolveInfo="ErrorWord" />
+                        <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="e6xd.2572590289490699031" resolveInfo="SpellingMistakesAttribute" />
                       </node>
                     </node>
                   </node>
@@ -69,7 +69,7 @@
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="2572590289490713659" nodeInfo="nn">
                   <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="2572590289490713746" nodeInfo="ng">
-                    <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="e6xd.2572590289490699031" resolveInfo="ErrorWord" />
+                    <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="e6xd.2572590289490699031" resolveInfo="SpellingMistakesAttribute" />
                   </node>
                 </node>
               </node>

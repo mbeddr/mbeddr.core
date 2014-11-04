@@ -2,6 +2,7 @@
 <model modelUID="r:22b9d29d-483d-4f08-8d1b-4e6567157caf(com.mbeddr.tutorial.documentation.ug.analyses)">
   <persistence version="8" />
   <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
+  <language namespace="623c9ff8-1203-4890-b33e-cba29dd6cdc6(spellcheck)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="1yl6" modelUID="r:9bae0493-3d57-4bb7-af86-c94f4734b531(com.mbeddr.tutorial.documentation.analyses_code)" version="-1" />
   <import index="vi23" modelUID="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)" version="-1" />
@@ -9,7 +10,7 @@
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="16" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="e6xd" modelUID="r:1b6ed767-f17d-4530-9544-0113fe65d4d5(spellcheck.structure)" version="-1" implicit="yes" />
+  <import index="e6xd" modelUID="r:1b6ed767-f17d-4530-9544-0113fe65d4d5(spellcheck.structure)" version="0" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -49,9 +50,6 @@
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4574736324932019989" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4574736324932019990" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="Besides increasing the programmers productivity, domain specific languages allow the definition of advanced,  user friendly and domain specific analyses. One special kind of analyses is formal verification, which uses mathematical precise methods for checking properties of mbeddr code. In mbeddr we have integrated different formal verification techniques aiming that they are used on a continuous basis in the everyday work of practicing engineers. As of today, we have implemented two different kinds of analyses:" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289492147106" nodeInfo="ng">
-              <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="analyses" />
-            </node>
           </node>
         </node>
       </node>
@@ -60,10 +58,7 @@
           <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4574736324932020387" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4574736324932020388" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4574736324932020389" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Formal verification of variability: mbeddr features advanced support for the definition of product lines using feature models, configuration models and annotation of artefacts with advanced presence conditions. We analyze the consistency of feature models, of configuration models and of the annotated artefacts. To do this we use the SAT4J SAT-solver " />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289492147116" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
-                </node>
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Formal verification of variability: mbeddr features advanced support for the definition of product lines using feature models, configuration models and annotation of artifacts with advanced presence conditions. We analyze the consistency of feature models, of configuration models and of the annotated artifacts. To do this we use the SAT4J SAT-solver " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="4574736324932030101" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4574736324932030102" nodeInfo="ng">
@@ -82,10 +77,7 @@
           <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4574736324932020399" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4574736324932020400" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4574736324932020401" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Formal verification of mbeddr-C programs: once programs are written in mbeddr, we enable developers to use advanced formal verification techniques to prove absence of bugs, or, when the analyses are incomplete, to search for cumbersome bugs. Our focus is on user-friendlyness of the verification: all analyses are targeted to practicing embedded engineers. For verification we use the CBMC C-level model checker " />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289492147123" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
-                </node>
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Formal verification of mbeddr-C programs: once programs are written in mbeddr, we enable developers to use advanced formal verification techniques to prove absence of bugs, or, when the analyses are incomplete, to search for cumbersome bugs. Our focus is on user-friendliness of the verification: all analyses are targeted to practicing embedded engineers. For verification we use the CBMC C-level model checker " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="5724023611136673257" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611136673258" nodeInfo="ng">
@@ -117,8 +109,8 @@
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691678" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691679" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr allowss the definition of product lines with the help of feature models, configuration models and attaching advanced presence conditions to the produced artefacts (e.g. programs code, requirements). Defining and using product lines in mbeddr is described in Section " />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071563" nodeInfo="ng">
-              <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071563" nodeInfo="ng">
+              <property name="wrong_spelling" value="mbeddr" />
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="5724023611136699901" nodeInfo="ng">
@@ -177,8 +169,8 @@
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691704" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are logical expressions based on features that define when an artefact (e.g. a piece of code) is included in the build.  " />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071573" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="artefact" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071573" nodeInfo="ng">
+                  <property name="wrong_spelling" value="artefact" />
                 </node>
               </node>
             </node>
@@ -189,8 +181,8 @@
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691707" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691708" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="Based on the above content, mbeddr provides the following analyses:" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071574" nodeInfo="ng">
-              <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071574" nodeInfo="ng">
+              <property name="wrong_spelling" value="mbeddr" />
             </node>
           </node>
         </node>
@@ -247,8 +239,8 @@
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691733" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" checks whether a mbeddr-C program whose parts are annotated with presence conditions is consistent. Examples of inconsistencies are when a function declaration is annotated with a presence condition  and there exist calls to this function that are not annotated with a presence condition - in this case the function is called when the function itself is not included in the generated code and thereby generator or compile errors will be caused." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071583" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071583" nodeInfo="ng">
+                  <property name="wrong_spelling" value="mbeddr" />
                 </node>
               </node>
             </node>
@@ -262,8 +254,8 @@
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611136706502" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611136706503" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="Variability analyses are enabled both fine-granular on feature models and configuration models as well as on models and sulutions that use variability support. " />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071590" nodeInfo="ng">
-              <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="sulutions" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071590" nodeInfo="ng">
+              <property name="wrong_spelling" value="sulutions" />
             </node>
           </node>
         </node>
@@ -275,8 +267,8 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691737" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691738" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the figure below we present an example of a feature model defined in mbeddr." />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071593" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071593" nodeInfo="ng">
+                <property name="wrong_spelling" value="mbeddr" />
               </node>
             </node>
           </node>
@@ -349,8 +341,8 @@
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691761" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691762" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Results provided by the FM-Analyzer. The failure is caused by the fact that the feature 'NoDebug' cannot be selected in any configuration since it conflicts with the 'Optimization' feature which is mandatory. " />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071600" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="NoDebug" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071600" nodeInfo="ng">
+                  <property name="wrong_spelling" value="NoDebug" />
                 </node>
               </node>
             </node>
@@ -370,8 +362,8 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691767" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691768" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the figure below we present an example of a configuration model defined in mbeddr. Each configuration model contains a subset of features from the feature model it configures." />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071601" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071601" nodeInfo="ng">
+                <property name="wrong_spelling" value="mbeddr" />
               </node>
             </node>
           </node>
@@ -443,8 +435,8 @@
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691791" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691792" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Results provided by the CM-Analyzer. The failure is caused by the fact that the feature 'Communication' cannot have both sub-features 'CAN' and 'FlexRay' at the same time." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071608" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="FlexRay" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071608" nodeInfo="ng">
+                  <property name="wrong_spelling" value="FlexRay" />
                 </node>
               </node>
             </node>
@@ -464,8 +456,8 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193705482" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193705483" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the figure below we present an example of an implementation module in mbeddr which has attached presence conditions to several entities. " />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071609" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071609" nodeInfo="ng">
+                <property name="wrong_spelling" value="mbeddr" />
               </node>
             </node>
           </node>
@@ -521,8 +513,8 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193705501" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193705502" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Module-Analyzer will open a window with the results of the analysis. In the case when the analysis fails, Mo-Analyzer provides an explanation about the cause of failure by giving a possible configuration (selecting concrete features) that would cause the failure. " />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071616" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="configuraton" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071616" nodeInfo="ng">
+                <property name="wrong_spelling" value="configuraton" />
               </node>
             </node>
           </node>
@@ -539,8 +531,8 @@
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193705506" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193705507" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Results provided by the Module-Analyzer. The failure is caused by the fact that the function 'log_debug_info' has presence condition 'MinimumDebug' and the caller of this function does not have annotated any presence condition." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071617" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="MinimumDebug" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071617" nodeInfo="ng">
+                  <property name="wrong_spelling" value="MinimumDebug" />
                 </node>
               </node>
             </node>
@@ -563,8 +555,8 @@
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611138133066" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611138133067" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="VariabilitySupport" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071618" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="VariabilitySupport" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071618" nodeInfo="ng">
+                    <property name="wrong_spelling" value="VariabilitySupport" />
                   </node>
                 </node>
               </node>
@@ -576,8 +568,8 @@
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611138371979" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611138371980" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="ImplementationModule" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2572590289491071619" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="ImplementationModule" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2572590289491071619" nodeInfo="ng">
+                    <property name="wrong_spelling" value="ImplementationModule" />
                   </node>
                 </node>
               </node>
@@ -640,7 +632,7 @@
       </node>
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5724023611136698962" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="vi23.536680812409687143" resolveInfo="C-110-ProductLineVariability" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="vi23.536680812409687143" resolveInfo="B_ProductLineVariability" />
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="9020927825193793093" nodeInfo="ng">
@@ -654,8 +646,8 @@
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193793096" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193793097" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="To perform formal verification, we have integrated the CBMC " />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379603" nodeInfo="ng">
-              <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379603" nodeInfo="ng">
+              <property name="wrong_spelling" value="CBMC" />
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="9020927825193793112" nodeInfo="ng">
@@ -667,8 +659,8 @@
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193793115" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value=" C-level model-checker which is free under a BSD-4-clause license. Below we reproduce the 'advertising requirements' of the  CBMC license:\n\n\&quot;This product includes software developed by Daniel Kroening, ETH Zurich and Edmund Clarke, Computer Science Department, Carnegie Mellon University.\&quot;\n\nThe focus in mbeddr is on bugs hunting at the sub-sub-system level in a continuous and user-friendly manner. In general, we do NOT aim to prove correctness of a system but rather help users to find bugs. Each run of an analysis can provide one of the results: SUCCESS (colored GREEN) - meaning that no bug could be found; FAIL (colored RED) - meaning that a bug could be found, or DON'T KNOW (colored orange) meaning that no bug could be found but the verification is incomplete. When a bug is found, most of the times we have a trace through the system (counterexample) that leads to that failure.\n\nWe distinguish between the following kinds of analyses:" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379629" nodeInfo="ng">
-              <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379629" nodeInfo="ng">
+              <property name="wrong_spelling" value="CBMC" />
             </node>
           </node>
         </node>
@@ -687,8 +679,8 @@
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193818267" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" allows checking of robustness properties like: absence of null pointer dereferencing, absence of div-by-zero, absence of overflows, absence of arrays-out-of-bounds accesses, etc. A more in-depth presentation of robustness checks is given in " />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379678" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="pre" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379678" nodeInfo="ng">
+                  <property name="wrong_spelling" value="pre" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="9020927825193819685" nodeInfo="ng">
@@ -715,8 +707,8 @@
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193818303" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" allows automatic checking of the robustness of several mbeddr-extensions (similar to C-code robustness checks, we can check the robustness of extensions). For example, given a state-machine, a robustness check for it is to make sure that all states of the state machine can be reached and all transitions can be fired. More details are provided in " />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379685" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379685" nodeInfo="ng">
+                  <property name="wrong_spelling" value="fo" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="9020927825193819662" nodeInfo="ng">
@@ -741,8 +733,8 @@
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193818359" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" mbeddr users can define themselves the business-domain specific properties to be checked on a given program; such properties originate usually from functional requirements. Such properties can be given in code either as assertions or attached to higher level constructs like components interfaces. More details are provided in " />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379698" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379698" nodeInfo="ng">
+                  <property name="wrong_spelling" value="mbeddr" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="9020927825193818376" nodeInfo="ng">
@@ -765,24 +757,24 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624555737" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3799250884624555738" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="The verification tool that we are using is run on the generated C code (not on the mbeddr models themselves). Thereby, it assumes that from your models you can generate valid C code  " />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379711" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379711" nodeInfo="ng">
+                <property name="wrong_spelling" value="mbeddr" />
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.FootnoteWord" typeId="2c95.2728443031450669962" id="5724023611140943514" nodeInfo="ng">
               <node role="text" roleId="2c95.2728443031450670151" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140943515" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140943516" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="If advanced environments specification is used, the generated C code might contain also CBMC specific macros, so it does not need to compile." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379723" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379723" nodeInfo="ng">
+                    <property name="wrong_spelling" value="CBMC" />
                   </node>
                 </node>
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140943513" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (otherwise, CBMC will complain and no verification will be performed)." />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379748" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379748" nodeInfo="ng">
+                <property name="wrong_spelling" value="CBMC" />
               </node>
             </node>
           </node>
@@ -794,8 +786,8 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193817387" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193817388" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Before starting each verification we should ask ourselves the following questions:" />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379774" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379774" nodeInfo="ng">
+                <property name="wrong_spelling" value="fo" />
               </node>
             </node>
           </node>
@@ -814,8 +806,8 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193817478" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" The first step is to be aware about what properties will be checked and what properties will not be checked :-) Also, be sure that you understand what sub-system will be verified.\nFor example, when performing robustness analyses of C-code (e.g. searching for div-by-zero) from a function as entry point, only those division operations will be checked for div-by-zero that can be reached from that entry point (see below). " />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379775" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="analyses" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379775" nodeInfo="ng">
+                    <property name="wrong_spelling" value="analyses" />
                   </node>
                 </node>
               </node>
@@ -836,8 +828,8 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193817521" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Each run of CBMC must be given the entry point in the program from which it should perform the verification. When nothing is specified, the entry point is the function " />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379786" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379786" nodeInfo="ng">
+                    <property name="wrong_spelling" value="CBMC" />
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="9020927825193817758" nodeInfo="ng">
@@ -868,16 +860,16 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193817841" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Each subsystem (e.g. function, component) on which a verification is performed, is embedded in a bigger system from where it gets the data. Usually, the data types used in the code are much more permissive than the actual values that a parameter can take (e.g. for a function that computes a distance that a car can travel in a certain time period given a parameter " />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379812" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379812" nodeInfo="ng">
+                    <property name="wrong_spelling" value="fo" />
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="9020927825193817852" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193817853" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193817854" nodeInfo="ng">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="currentSpeed" />
-                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379813" nodeInfo="ng">
-                        <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="currentSpeed" />
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379813" nodeInfo="ng">
+                        <property name="wrong_spelling" value="currentSpeed" />
                       </node>
                     </node>
                   </node>
@@ -918,16 +910,16 @@
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193819795" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193819796" nodeInfo="ng">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="Q4) What are the parameters given to CBMC?" />
-                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379814" nodeInfo="ng">
-                        <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379814" nodeInfo="ng">
+                        <property name="wrong_spelling" value="CBMC" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193819805" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" CBMC takes a big number of parameters that directly affect the results of the verification. The most important parameter is related to the loops unwinding - CBMC performs a stepwise symbolic execution of the code and needs to know how many times loops should be unwound." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379839" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379839" nodeInfo="ng">
+                    <property name="wrong_spelling" value="CBMC" />
                   </node>
                 </node>
               </node>
@@ -938,8 +930,8 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228446945275" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228446945276" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr allows the definition of higher-level, domain specific properties. Our approach to check them is to generate C-level labels (or asserts) for each of them and to check the reachability of these labels (or violation of asserts). In some cases, if a label is reachable then the property is violated (e.g. for decision tables); in other cases labels that are not rechable represent property violations (e.g. for state-machines states reachibility verification, if a label corresponding to a state is not reachable, then that state is not reachable).  Encoding of high-level properties as labels (assertions) and lifting the verification results is done automatically and transparent for the user." />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379865" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="pre" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379865" nodeInfo="ng">
+                <property name="wrong_spelling" value="pre" />
               </node>
             </node>
           </node>
@@ -959,8 +951,8 @@
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140947025" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947026" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="An intuitive overview about how we integrate CBMC in mbeddr: users write high-level functional properties, they are translated into low-level C checks, CBMC is run and then the produced result is lifted back at the domain level." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379887" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379887" nodeInfo="ng">
+                  <property name="wrong_spelling" value="CBMC" />
                 </node>
               </node>
             </node>
@@ -975,8 +967,8 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825194462694" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194462695" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Before starting mbeddr verification, one needs to perform the following steps:" />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379925" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379925" nodeInfo="ng">
+                <property name="wrong_spelling" value="fo" />
               </node>
             </node>
           </node>
@@ -990,16 +982,16 @@
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825194462702" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194462703" nodeInfo="ng">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="Step 1: Add the corresponding verification devkit." />
-                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379938" nodeInfo="ng">
-                        <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="devkit" />
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379938" nodeInfo="ng">
+                        <property name="wrong_spelling" value="devkit" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194462704" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Analyses are provided through a series of devkits that need to be enabled for the model where the analysis is run. Without these devkits enabled, either some analyses are not possible at all or the interpretation of the program trace will not be lifted at the DSL level." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379944" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="pre" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379944" nodeInfo="ng">
+                    <property name="wrong_spelling" value="pre" />
                   </node>
                 </node>
               </node>
@@ -1020,8 +1012,8 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194462712" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" The verification is performed directly on the generated C code. Thereby, if no valid C code is generated from your models, then no verification will be done. Do not forget to add all implementation modules to the build configuration." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379969" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379969" nodeInfo="ng">
+                    <property name="wrong_spelling" value="fo" />
                   </node>
                 </node>
               </node>
@@ -1035,8 +1027,8 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624557168" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3799250884624557169" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Global settings for CBMC-based analyses can be changed via \&quot;File-&gt;Settings\&quot; menu and then selecting \&quot;CProver preference\&quot; tab as shown below." />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176379970" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176379970" nodeInfo="ng">
+                <property name="wrong_spelling" value="CBMC" />
               </node>
             </node>
           </node>
@@ -1053,8 +1045,8 @@
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624557173" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3799250884624557174" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="CBMC global settings." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380011" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380011" nodeInfo="ng">
+                  <property name="wrong_spelling" value="CBMC" />
                 </node>
               </node>
             </node>
@@ -1082,8 +1074,8 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947333" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" defines the maximum number of instances of CBMC that will be started simultaneously." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380036" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380036" nodeInfo="ng">
+                    <property name="wrong_spelling" value="CBMC" />
                   </node>
                 </node>
               </node>
@@ -1102,8 +1094,8 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947348" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" represents the time budget allocated for an analysis. After the timeut expires, the CBMC process will be killed and the analysis will be stopped. In the case when a high-level analysis starts several instances of CBMC (e.g. in case of robustness analyses, we will start one instance of CBMC for each atomic robustness check), then users can define timeout for atomic analyses - denoted as " />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380061" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380061" nodeInfo="ng">
+                    <property name="wrong_spelling" value="CBMC" />
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5724023611140948939" nodeInfo="ng">
@@ -1129,16 +1121,16 @@
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140947367" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947368" nodeInfo="ng">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="VCC/GCC" />
-                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380102" nodeInfo="ng">
-                        <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="GCC" />
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380102" nodeInfo="ng">
+                        <property name="wrong_spelling" value="GCC" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947365" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" under Windows. If VCC is used then mbeddr should be started from the Visual Studio console. If GCC is used, then 'gcc' should be in path." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380106" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380106" nodeInfo="ng">
+                    <property name="wrong_spelling" value="mbeddr" />
                   </node>
                 </node>
               </node>
@@ -1157,8 +1149,8 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947381" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" before analysis instructs mbeddr to perform a full \&quot;MPS rebuild\&quot; of the analyzed model before each analysis (otherwise only an \&quot;MPS make\&quot; will be run; in MPS, 'just make' is not always functioning properly)." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380123" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380123" nodeInfo="ng">
+                    <property name="wrong_spelling" value="fo" />
                   </node>
                 </node>
               </node>
@@ -1172,16 +1164,16 @@
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140947400" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947401" nodeInfo="ng">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="Slice formula" />
-                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380139" nodeInfo="ng">
-                        <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380139" nodeInfo="ng">
+                        <property name="wrong_spelling" value="fo" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947398" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" instructs CBMC to perform program slicing. The analyses will run faster, however, in the case when the analysis fails, the returned counterexample might not contain all intermediate steps." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380140" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380140" nodeInfo="ng">
+                    <property name="wrong_spelling" value="CBMC" />
                   </node>
                 </node>
               </node>
@@ -1200,8 +1192,8 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947415" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" instructs CBMC how many times it should unwind loops. If generate unwinding assertions is selected, then CBMC will explicitly check that each loop was unwound enough. For more details about the loops unwinding in CBMC, please look here: " />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380175" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380175" nodeInfo="ng">
+                    <property name="wrong_spelling" value="CBMC" />
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="3799250884624570469" nodeInfo="ng">
@@ -1230,8 +1222,8 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947440" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" instructs CBMC to continue the analysis even if unwinding is not enough. Enabling partial loops, increases the number of bugs that can be found, however, it might introduce false positives (properties reported as SUCCESS even if they should FAIL) and false negatives (properties reported as FAILS even if they should be SUCCESS; in these cases, provided counterexamples are not feasible). Unfeasible conterexamples can be returned also in the case when the property FAILS indeed." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380200" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380200" nodeInfo="ng">
+                    <property name="wrong_spelling" value="CBMC" />
                   </node>
                 </node>
               </node>
@@ -1250,8 +1242,8 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140948927" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" instructs CBMC to use refinement procedure. If checked, this setting speeds-up some analyses, however, it should be used with case since it is still marked as 'experimental' in CBMC 4.9." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380228" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380228" nodeInfo="ng">
+                    <property name="wrong_spelling" value="CBMC" />
                   </node>
                 </node>
               </node>
@@ -1272,16 +1264,16 @@
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825194463119" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194463120" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.analyses.core" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380262" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="analyses" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380262" nodeInfo="ng">
+                    <property name="wrong_spelling" value="analyses" />
                   </node>
                 </node>
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194463121" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit as shown in the following figure." />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380283" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380283" nodeInfo="ng">
+                <property name="wrong_spelling" value="fo" />
               </node>
             </node>
           </node>
@@ -1304,16 +1296,16 @@
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825194463265" nodeInfo="ng">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194463266" nodeInfo="ng">
                     <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.analyses.core" />
-                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380290" nodeInfo="ng">
-                      <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="analyses" />
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380290" nodeInfo="ng">
+                      <property name="wrong_spelling" value="analyses" />
                     </node>
                   </node>
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194463263" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to your model will enable robustness checks." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380311" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="devkit" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380311" nodeInfo="ng">
+                  <property name="wrong_spelling" value="devkit" />
                 </node>
               </node>
             </node>
@@ -1325,8 +1317,8 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825194463321" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194463322" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="To start the robustness checks for a given function (and transitively for the other functions that are called from it) you can either open a pop-up menu on the function node or define an robustness analysis configuration and start the analysis from there." />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380317" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380317" nodeInfo="ng">
+                <property name="wrong_spelling" value="fo" />
               </node>
             </node>
           </node>
@@ -1373,8 +1365,8 @@
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448010748" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448010749" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="For each configuration item the users can fine-tune which robustness properties will be checked and the entry point in the verification." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380318" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="propertie" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380318" nodeInfo="ng">
+                  <property name="wrong_spelling" value="propertie" />
                 </node>
               </node>
             </node>
@@ -1411,16 +1403,16 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825194724993" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194724994" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="When the analysis is started from the popup menu, all robustness properties will be checked. Below we summarize the robustness properties (details about these propertie can be found on the webpage of CBMC " />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380319" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380319" nodeInfo="ng">
+                <property name="wrong_spelling" value="CBMC" />
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="8229866791076676119" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8229866791076676120" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8229866791076676121" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://www.cprover.org/cprover-manual/properties.shtml" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380349" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="propertie" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380349" nodeInfo="ng">
+                    <property name="wrong_spelling" value="propertie" />
                   </node>
                 </node>
               </node>
@@ -1461,8 +1453,8 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8229866791076694036" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" check that for each division the divisor is not zero" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380350" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380350" nodeInfo="ng">
+                    <property name="wrong_spelling" value="fo" />
                   </node>
                 </node>
               </node>
@@ -1483,8 +1475,8 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8229866791076694070" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" check whether the floating-point computations can result in NaN" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380351" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="NaN" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380351" nodeInfo="ng">
+                    <property name="wrong_spelling" value="NaN" />
                   </node>
                 </node>
               </node>
@@ -1505,8 +1497,8 @@
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8229866791076694132" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value=" check that pointers are valid whenever they are accessed (no NULL-pointer dereference and no access to invalid pointers such as dead objects)." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380352" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="dereference" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380352" nodeInfo="ng">
+                    <property name="wrong_spelling" value="dereference" />
                   </node>
                 </node>
               </node>
@@ -1522,8 +1514,8 @@
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8229866791076694185" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8229866791076694186" nodeInfo="ng">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="overflows/underflows" />
-                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380353" nodeInfo="ng">
-                        <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="underflows" />
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380353" nodeInfo="ng">
+                        <property name="wrong_spelling" value="underflows" />
                       </node>
                     </node>
                   </node>
@@ -1543,8 +1535,8 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228446701689" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228446701690" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Higher-level language constructs carry with them higher-level properties that can be checked. For example, when programming using decision tables, we might ask ourselves if the decision table is complete (have we covered all cases?) or if it is consistent (do we have cases where multiple cells could be active at the same time?). Another example are state-machines about which we might ask ourselves if all states are reachable (we do not have superfluous states) and all transitions can be fired (no transition is completely shadowed by previous transitions)." />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380354" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="pre" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380354" nodeInfo="ng">
+                <property name="wrong_spelling" value="pre" />
               </node>
             </node>
           </node>
@@ -1556,8 +1548,8 @@
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228446701745" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228446701746" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let's consider a decision table which implements a look-up table to compute a breaking distance given the current speed and the information whether the road is icy or not." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380360" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380360" nodeInfo="ng">
+                  <property name="wrong_spelling" value="fo" />
                 </node>
               </node>
             </node>
@@ -1580,8 +1572,8 @@
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228446839909" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228446839910" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="A decision table can be verified only if the 'checked' annotation is enabled as shown below. This flag will instruct the C-code generator to generate labels for each of the properties to be checked." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380361" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380361" nodeInfo="ng">
+                  <property name="wrong_spelling" value="fo" />
                 </node>
               </node>
             </node>
@@ -1643,8 +1635,8 @@
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448010416" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448010417" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="A configuration item for verifying a decision table." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380363" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380363" nodeInfo="ng">
+                    <property name="wrong_spelling" value="fo" />
                   </node>
                 </node>
               </node>
@@ -1699,16 +1691,16 @@
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448025483" nodeInfo="ng">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448025484" nodeInfo="ng">
                     <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.analyses.statemachines" />
-                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380364" nodeInfo="ng">
-                      <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="statemachines" />
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380364" nodeInfo="ng">
+                      <property name="wrong_spelling" value="statemachines" />
                     </node>
                   </node>
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448025481" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to the model containing the statemachine. This devkit enables actions in the menu and the lifting of counterexamples such that they are aware of state-machines.\n\nLet's consider a state-machine that implements a simple counter. After the state-machine is started (with the start event), it counts up or down." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380388" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="devkit" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380388" nodeInfo="ng">
+                  <property name="wrong_spelling" value="devkit" />
                 </node>
               </node>
             </node>
@@ -1731,8 +1723,8 @@
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448025156" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448025157" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="A state-machine can be verified only if the 'checked' annotation is enabled as shown below. The checked flag is enabled via an intention on the state-machine. This flag will instruct the C-code generator to generate labels for each of the properties to be checked. " />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380396" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380396" nodeInfo="ng">
+                  <property name="wrong_spelling" value="fo" />
                 </node>
               </node>
             </node>
@@ -1771,8 +1763,8 @@
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448025179" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448025180" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="A configuration item for verifying the state-machine." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380398" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380398" nodeInfo="ng">
+                    <property name="wrong_spelling" value="fo" />
                   </node>
                 </node>
               </node>
@@ -1806,8 +1798,8 @@
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448025191" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448025192" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Results of the statemachine verification. Two transitions cannot be fired since they are shadowed by previous transitions." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380399" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="pre" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380399" nodeInfo="ng">
+                    <property name="wrong_spelling" value="pre" />
                   </node>
                 </node>
               </node>
@@ -1823,8 +1815,8 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342167532" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342167533" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Many times we want to check properties in the code that are relevant to the business domain of our application. In order to do so, we need to be able to write such properties in the code. In mbeddr one can use plain old assertions or can attach properties to higher level constructs like for example pre/post conditions to components." />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380406" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="pre" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380406" nodeInfo="ng">
+                <property name="wrong_spelling" value="pre" />
               </node>
             </node>
           </node>
@@ -1839,8 +1831,8 @@
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342168979" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342168980" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Writing assertions in C code is a 'classical' method to check properties. In the code fragment below we present a simple assertion." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380425" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="pre" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380425" nodeInfo="ng">
+                  <property name="wrong_spelling" value="pre" />
                 </node>
               </node>
             </node>
@@ -1868,8 +1860,8 @@
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342202682" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342202683" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The assertions verification can be started either with one-click from the popup menu of the function, or by defining an analysis configuration item. Doth ways are illustrated below." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380431" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="popup" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380431" nodeInfo="ng">
+                  <property name="wrong_spelling" value="popup" />
                 </node>
               </node>
             </node>
@@ -1897,8 +1889,8 @@
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342213925" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342213926" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="An assertion analysis configuration item allows mbeddr users to fine tune different verification parameters." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380433" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="mbeddr" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380433" nodeInfo="ng">
+                    <property name="wrong_spelling" value="mbeddr" />
                   </node>
                 </node>
               </node>
@@ -1929,16 +1921,16 @@
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342883327" nodeInfo="ng">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342883328" nodeInfo="ng">
                     <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.analyses.components" />
-                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380445" nodeInfo="ng">
-                      <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="analyses" />
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380445" nodeInfo="ng">
+                      <property name="wrong_spelling" value="analyses" />
                     </node>
                   </node>
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342883325" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to the current model.\n\nmbeddr allows its users to define interfaces and components that implement them. To each of the runnables of an interface, we can attach pre/post conditions. Furthermore, the expected ordering of calls to functions of an interface can be defined using a protocol specification. Pre-/postconditions and protocol together we call the contract of the interface." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380466" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="postcondition" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380466" nodeInfo="ng">
+                  <property name="wrong_spelling" value="postcondition" />
                 </node>
               </node>
             </node>
@@ -1949,8 +1941,8 @@
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342733651" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342733652" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Example of an interface with pre-/postconditions and protocol attached to its functions." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380496" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="postcondition" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380496" nodeInfo="ng">
+                    <property name="wrong_spelling" value="postcondition" />
                   </node>
                 </node>
               </node>
@@ -1995,8 +1987,8 @@
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342733880" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342733881" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Having specified the contract of an interface, we would like to verify if the clients of the components implementing this interface comply with the specified preconditions and call the interface functions in an appropriate order. Furthermore, we would like to check that the implementation of the methods fo the interface fulfilly the specified postconditions." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380507" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="postcondition" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380507" nodeInfo="ng">
+                  <property name="wrong_spelling" value="postcondition" />
                 </node>
               </node>
             </node>
@@ -2024,8 +2016,8 @@
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342736984" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342736985" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="To check the component, we firstly need to add the attribute 'checked' via an intention (having this attribute enabled, we can generate labels for the cases where pre-/postconditions are violated). \n\nThe verification is started either by one-click from the components pop-up menu or via an analysis configuration item which allows to specify an arbitrary entry point. Both of these ways are illustrated below. " />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380519" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="postcondition" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380519" nodeInfo="ng">
+                  <property name="wrong_spelling" value="postcondition" />
                 </node>
               </node>
             </node>
@@ -2054,8 +2046,8 @@
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220344597384" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220344597385" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Example of a configuration item for components analyses." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380530" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="analyses" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380530" nodeInfo="ng">
+                    <property name="wrong_spelling" value="analyses" />
                   </node>
                 </node>
               </node>
@@ -2089,8 +2081,8 @@
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2496896684166576300" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684166576301" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="The results of the verification of each pre-/postcondition and protocol are displayed in the results window." />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380540" nodeInfo="ng">
-                    <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="postcondition" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380540" nodeInfo="ng">
+                    <property name="wrong_spelling" value="postcondition" />
                   </node>
                 </node>
               </node>
@@ -2110,8 +2102,8 @@
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2496896684167181408" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684167181409" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Most of the software modules we develop (e.g. functions, statemachines, components) are included within bigger systems. Other systems, that are neighboring with our module that we verify are called the environment of the system. Most of the times, the data types of the inputs of the to-be-verified system are too permissive and in practice, the sub-system we are veryfying should work under much tighter constraints." />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380546" nodeInfo="ng">
-                <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="veryfying" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380546" nodeInfo="ng">
+                <property name="wrong_spelling" value="veryfying" />
               </node>
             </node>
           </node>
@@ -2122,8 +2114,8 @@
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2496896684167186861" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684167186862" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let's consider for example that our system under verification is a simple function that computes the speed of a car. This function takes two parameters: a distance and a time interval, both of type " />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380550" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="fo" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380550" nodeInfo="ng">
+                  <property name="wrong_spelling" value="fo" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2496896684167186962" nodeInfo="ng">
@@ -2177,32 +2169,32 @@
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2496896684167202734" nodeInfo="ng">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684167202735" nodeInfo="ng">
                     <property name="escapedValue" nameId="87nw.2557074442922438158" value="speedComputer" />
-                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380551" nodeInfo="ng">
-                      <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="speedComputer" />
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380551" nodeInfo="ng">
+                      <property name="wrong_spelling" value="speedComputer" />
                     </node>
                   </node>
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684167202736" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is called from within the harness definition that contains nondeterministic assignments that are further constraint (via an intention on a " />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380552" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="nondet" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380552" nodeInfo="ng">
+                  <property name="wrong_spelling" value="nondet" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2496896684167202748" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2496896684167202749" nodeInfo="ng">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684167202750" nodeInfo="ng">
                     <property name="escapedValue" nameId="87nw.2557074442922438158" value="nondet assign" />
-                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380555" nodeInfo="ng">
-                      <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="nondet" />
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380555" nodeInfo="ng">
+                      <property name="wrong_spelling" value="nondet" />
                     </node>
                   </node>
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684167202747" nodeInfo="ng">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to belong to the desired intervals. In the first nondeterministic assignment we use an explicit construct to specify the interval, in the second assignment we use classical C inequalities. When we use the 'in range expression' (as opposed to explicit inequalities), then the harness is generated in an optimal manner and this increases the running efficiency of CBMC." />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.ErrorWord" typeId="e6xd.2572590289490699031" id="2617878911176380557" nodeInfo="ng">
-                  <property name="wrong_spelling" nameId="e6xd.2572590289490705661" value="CBMC" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="e6xd.SpellingMistakesAttribute" typeId="e6xd.2572590289490699031" id="2617878911176380557" nodeInfo="ng">
+                  <property name="wrong_spelling" value="CBMC" />
                 </node>
               </node>
             </node>
