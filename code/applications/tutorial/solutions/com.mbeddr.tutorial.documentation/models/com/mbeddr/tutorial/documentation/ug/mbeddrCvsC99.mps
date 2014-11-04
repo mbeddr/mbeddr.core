@@ -2506,5 +2506,14 @@
       </node>
     </node>
   </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="2101724341003954452" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="Z_CHAPTER_mbeddrCvsC99" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2101724341003970562" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="mbeddrCVsC99" />
+      <property name="text" nameId="2c95.3350625596580064225" value="mbeddr C vs. C99" />
+    </node>
+  </root>
 </model>
 
