@@ -153,3 +153,4 @@ build/com.mbeddr.tutorial/null/*.puml
 
 #This is restored with 'git submodule update --init --recursive'
 code/plugins/sl-all
+*.puml

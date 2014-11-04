@@ -3337,7 +3337,7 @@
                     </node>
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1819488472665758404" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="state " />
+                    <property name="value" nameId="tpee.1070475926801" value="junction " />
                   </node>
                 </node>
               </node>

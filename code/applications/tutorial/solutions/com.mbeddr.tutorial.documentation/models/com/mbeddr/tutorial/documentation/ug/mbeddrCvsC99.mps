@@ -406,7 +406,7 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can run the tests from within MPS or from the console as discussed in " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="2723638869559784677" nodeInfo="ng">
-              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="null" resolveInfo="HelloWorld" />
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="^" resolveInfo="HelloWorld" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2723638869559784678" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Doing so should " />
@@ -861,6 +861,15 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="993292703731050341" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
       </node>
+    </node>
+  </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="2101724341003954452" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="Z_CHAPTER_mbeddrCvsC99" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2101724341003970562" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="mbeddrCVsC99" />
+      <property name="text" nameId="2c95.3350625596580064225" value="mbeddr C vs. C99" />
     </node>
   </root>
 </model>
