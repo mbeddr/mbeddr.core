@@ -2364,6 +2364,110 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2101724341004032097" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="merging" />
           <property name="text" nameId="2c95.3350625596580064225" value="Conflicts/Merging" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6952748365716259001" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365716259002" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365716259003" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Conflicts happen if the same node(s) are changed independently by different parties. It can happen during an update/pull (if somebody else has changed the same nodes independently) or when merging a branch (in the case where the two branches have changes to the same model). In both cases, the Version Control view, when showing the incoming changes, will mark conflicting files as red, as shown in " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="3231021218591013327" nodeInfo="ng">
+                <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365716245147" resolveInfo="changesViewConflict" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591013326" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365716245147" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="changesViewConflict" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365716245148" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="changesViewConflict.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365716245149" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365716245150" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365716245151" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The changes view after it ran into a conflict in a model." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365716245152" nodeInfo="ng" />
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3231021218591054297" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591054298" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054299" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can then select " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="3231021218591054327" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591054328" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054329" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Git-&gt;Merge Conflicts" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054330" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to open the Merge overview (" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="3231021218591054336" nodeInfo="ng">
+                <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365716256156" resolveInfo="mergeView" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054337" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="). It shows the list of conflicing files, and for each of them you can select whether you want to accept your local changes (overwriting what comes in), accept the incoming changes (discarding your own changes) or merge manually." />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365716256156" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="mergeView" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365716256157" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="mergeOverview.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365716256158" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365716256159" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365716256160" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The merge overview dialog shows the files that changed as well as the merge options." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365716256161" nodeInfo="ng" />
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3231021218591054379" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591054380" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054381" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="In case you select " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="3231021218591054418" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591054419" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054420" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Merge" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591054421" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=", you will get a three-way merge dialog as shown in " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="3231021218591055842" nodeInfo="ng">
+                <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6952748365716257562" resolveInfo="threeWayMerge" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591055843" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". There you pick and choose then changes you want to use. You can also edit, as well as copy/paste changes into the merge result." />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6952748365716257562" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="threeWayMerge" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6952748365716257563" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="threeWayMerge.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6952748365716257564" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6952748365716257565" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6952748365716257566" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Three-way merge to resovle conflict." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="6952748365716257567" nodeInfo="ng" />
+          </node>
         </node>
       </node>
     </node>
