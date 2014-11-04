@@ -85,9 +85,66 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="324047639353691991" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639353691992" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639353691993" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here is the introduction ..." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="This is the mbeddr user guide. It targets users of mbeddr, not people who extend the mbeddr languages. We strive to cover all relevant mbeddr functionalities, but as things change, some parts may not always be up-to-date. Please report problems, ommissions or bugs to our mailing list at " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="3231021218591081964" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591081965" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591081966" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="mailto:mbeddr-discuss@googlegroups.com" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591081967" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
           </node>
         </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3231021218591085833" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591085834" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591085835" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="This user guide is written with the MPS documentation language. On the plus side, this affords us very close integration with source code and models -- these things are always up to date. On the downside, we still have some issues in the Latex generator, the generated Latex file, and especially the embedded figures, don't yet look very beautiful. Please bear with us. It will improve." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3231021218591085901" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591085902" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591085903" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Finally, we want to emphasize that, in addition to this user guide, there is a lot of additional information. This includes various videos (at " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="3231021218591085994" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591085995" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591085996" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://mbeddr.com/" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591085997" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and at " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="3231021218591086062" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591086063" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591086064" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://mbeddr.com/screencasts.html" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591086065" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=") as well as a number of articles and papers at " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="3231021218591086138" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591086139" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591086140" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://mbeddr.com/learn.html" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591086141" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="3231021218591085803" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="324047639347814803" nodeInfo="ng">
         <property name="referenceOnly" nameId="2c95.324047639344492301" value="true" />
