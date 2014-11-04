@@ -47,7 +47,7 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="324047639341435712" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="BOOK" />
+    <property name="name" nameId="tpck.1169194664001" value="mbeddrUserGuide" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639347814820" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="9w7i.1481709176727861442" resolveInfo="Z_CHAPTER_Concepts" />
