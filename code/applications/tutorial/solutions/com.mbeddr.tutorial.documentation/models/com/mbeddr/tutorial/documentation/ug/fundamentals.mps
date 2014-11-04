@@ -540,7 +540,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729814870" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729814871" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729814872" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS programs are trees of nodes (this is the structure you can see in the Node Explorer). Each node can have several children, resulting in the tree structure. However, there can also be cross-references between nodes in a program tree. So this makes MPS programs a graph, but one with a primary containment hierarchy. An in fact, a complete MPS program consists of several such trees, we call each of theses trees a Root. Importantly, each Root gets its own editor tab in MPS. References can be across Root boundaries. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS programs are trees of nodes (this is the structure you can see in the Node Explorer). Each node can have several children, resulting in the tree structure. However, there can also be cross-references between nodes in a program tree. So this makes MPS programs a graph, but one with a primary containment hierarchy. And in fact, a complete MPS program consists of several such trees, we call each of theses trees a Root. Importantly, each Root gets its own editor tab in MPS. References can be across Root boundaries. " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1481709176729816598" nodeInfo="ng">
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1481709176729816571" resolveInfo="nodesRoots" />
@@ -552,7 +552,7 @@
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1481709176729817605" resolveInfo="projectStructure" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817650" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", all the implementation modules (blue I icon, such as " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", all the implementation modules (blue I icon) such as " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176729817656" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729817657" nodeInfo="ng">
@@ -585,7 +585,7 @@
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1481709176729816573" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729816574" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729816575" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="This figure shows two roots (grey boxes). Each of them has a number of nodes inside (the letters). The solid lines are the parent-child relationships. The dotted lines are the cross references. Note that references can cross Root boundaries." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="This figure shows two roots (grey boxes). Each of them has a number of nodes inside (the letters). The solid lines are the parent-child relationships. The dotted lines are the cross references. Note that references can cross root boundaries." />
               </node>
             </node>
           </node>
@@ -635,7 +635,7 @@
               <link role="target" roleId="2c95.3350625596580108719" targetNodeId="1481709176729814334" resolveInfo="langAndDevkits" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819278" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The basics on the various kinds of dependencies between these ingredients are discussed  below. The (vast load of) details is discussed in " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The basics on the various kinds of dependencies between these ingredients are discussed  below. The (vast load of) details are  discussed in " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="1481709176729819560" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819561" nodeInfo="ng">
@@ -668,7 +668,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729817091" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729817092" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817093" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS is fundamentally a file-based systems. The roots discussed above are stored in XML files (these can then be managed with existing version control systems, see " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS is fundamentally a file-based system. The roots discussed above are stored in XML files (these can then be managed with existing version control systems, see " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="1481709176729817099" nodeInfo="ng">
               <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729817100" nodeInfo="ng">
@@ -712,13 +712,13 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729817317" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729817318" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729817319" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="A solution is a way to group models. A solution can contain any number of models, and each model resides in exactly one solution. In " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="A solution is a way to group models. A solution can contain any number of models and each model resides in exactly one solution. In " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1481709176729819033" nodeInfo="ng">
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1481709176729817605" resolveInfo="projectStructure" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819043" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the orange S is a solution. Solutions can also have dependencie onto other solutions." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the orange S is a solution. Solutions can also have dependencies onto other solutions." />
             </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="1481709176729817320" nodeInfo="ng">
@@ -780,7 +780,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729819676" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819677" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729819678" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the Used Languages spec, users can also  add dependencies on devkits. a " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the Used Languages spec, users can also add dependencies on devkits. A " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="1481709176729819698" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729819699" nodeInfo="ng">
@@ -818,7 +818,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1481709176729820044" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729820045" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1481709176729820046" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In order not to hard code absolute paths in the definition of libraries, you can define a path variable. A path variable is a name name (such as " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In order not to hard code absolute paths in the definition of libraries, you can define a path variable. A path variable is a name (such as " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1481709176729820372" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1481709176729820373" nodeInfo="ng">
@@ -884,6 +884,19 @@
         </node>
       </node>
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8091885753334145015" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="8091885753334145016" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 3, 2014 4:13:58 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_text" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1481709176729817320" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="8091885753334145017" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8091885753334145018" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="When would I want to create a Solution?" />
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727862912" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
@@ -901,7 +914,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="324047639341428457" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639341428458" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="324047639341430382" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS is a projectional editor. This means that the editing actions as you know them from a text editor may not work exactly the same way as in a text editor. This leads to a lot of benefits in terms of language modularity and notational flexibility. It also has the potential drawback that the  editor may not work exactly as you'd expect.  To better  understand how the editor works and what MPS does to achieve quite good editor usability, we suggest you watch this video: " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS is a projectional editor. This means that the editing actions as you know them from a text editor may not work exactly the same way as in a text editor. This leads to a lot of benefits in terms of language modularity and notational flexibility. It also has the potential drawback that the  editor may not work exactly as you'd expect. To better understand how the editor works and what MPS does to achieve quite good editor usability, we suggest you watch this video: " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="324047639341430379" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="324047639341430380" nodeInfo="ng">
@@ -1087,7 +1100,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417489975" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="  you can simply move to the right side of the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" you can simply move to the right side of the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7992580511417489976" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417489977" nodeInfo="ng">
@@ -1297,7 +1310,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417493503" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The reverse is also supported. The context menu on a program element supports Find Useages. This can also be activated via " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The reverse is also supported. The context menu on a program element supports Find Usages. This can also be activated via " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7992580511417493504" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417493505" nodeInfo="ng">
@@ -1471,7 +1484,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7992580511417501269" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417501270" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417501271" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Iimagine the cursor in the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Imagine the cursor in the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7992580511417501642" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417501643" nodeInfo="ng">
@@ -1538,7 +1551,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7992580511417505030" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417505031" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417505032" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The safest way to delete something is to mark it (using the strategies discussed in the previous paragraph) and the press " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The safest way to delete something is to mark it (using the strategies discussed in the previous paragraph) and then press " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7992580511417506442" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417506443" nodeInfo="ng">
@@ -1738,7 +1751,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7992580511417514202" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417514203" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417514204" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="For many language constructs, refactorings are provided. Refactorings are more important in MPS than in \&quot;normal\&quot; text editors, because a quite few editing operations are hard to do manually. Please explore the refactorings context menu, and take note when we explain refactorings in the user's guide. Unlike intentions, which cannot have a specific keyboard shortcut assigned, refactorings can, and we make use of this feature heavily. For example, " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="For many language constructs, refactorings are provided. Refactorings are more important in MPS than in \&quot;normal\&quot; text editors, because a quite few editing operations are hard to do manually. Please explore the refactorings context menu and take note when we explain refactorings in the user's guide. Unlike intentions, which cannot have a specific keyboard shortcut assigned, refactorings can, and we make use of this feature heavily. For example, " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2900587364563346515" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2900587364563346516" nodeInfo="ng">
@@ -1758,7 +1771,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7992580511417517301" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417517302" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7992580511417517303" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="To select the currently edit root note in the project explorer (the big tree of the left), press " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="To select the currently edited root node in the project explorer (the big tree on the left), press " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7992580511417518857" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7992580511417518858" nodeInfo="ng">
@@ -1889,6 +1902,41 @@
           </node>
         </node>
         <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7992580511417530085" nodeInfo="ng" />
+      </node>
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="532461220400560957" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="532461220400560958" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 6:47:41 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word25" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="7992580511417021306" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="532461220400560959" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="532461220400560960" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="At the moment it is at the end of the chapter" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="532461220400562166" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 6:50:21 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word20" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="7992580511417151724" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="532461220400562167" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="532461220400562168" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="It binds only, if the entered string matches the cc menu entry completely. A substring requires an additional Ctrl+Space." />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="532461220400562175" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 6:55:25 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word19" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="7992580511417474037" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="532461220400562176" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="532461220400562177" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="There is also \&quot;smart matching\&quot; were you type only the beginning of the camel cased words." />
+          </node>
+        </node>
       </node>
     </node>
   </root>
