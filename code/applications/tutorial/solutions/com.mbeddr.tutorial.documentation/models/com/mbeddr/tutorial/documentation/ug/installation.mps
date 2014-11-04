@@ -677,7 +677,7 @@
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1560676800018096836" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr" />
-      <property name="text" nameId="2c95.3350625596580064225" value="MPS and mbeddr" />
+      <property name="text" nameId="2c95.3350625596580064225" value="mbeddr" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1560676800018135274" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1560676800018135275" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1560676800018135276" nodeInfo="ng">
@@ -770,7 +770,13 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2564556814934565384" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814934565385" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814934565386" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In case you do not want to change mbeddr, we recommend installing the distribution. This just requires downloading a ZIP file and copying a bunch of plugins into your existing MPS installation.\nThe mbeddr distribution can be downloaded from the mbeddr github page: " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In case you do not want to change mbeddr, we recommend installing the distribution. This just requires downloading a ZIP file and copying a bunch of plugins into your existing MPS installation. If you do not have an existing MPS 3.1.x installation on your machine, please follow the steps described in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="4711768717894442262" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="6403595147461065892" resolveInfo="MPS" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894442144" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=".\nFor installing the distribution, please download the distribtion ZIP file from mbeddr GitHub release page:\n" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814934565399" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814934565400" nodeInfo="ng">
@@ -780,7 +786,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814934565402" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The ZIP file you get there contains the mbeddr plugins for MPS. After unzipping, please take all folders inside the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". This ZIP file contains the mbeddr plugins for MPS. After unzipping, please take all folders inside the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814934985771" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814934985772" nodeInfo="ng">
@@ -841,7 +847,17 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2564556814934985990" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814934985991" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814934985992" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Installing mbeddr from sources gives you total control over what you want to do with mbeddr, however this is the most complex installation method. We rather recommend working with the distribution or the mbeddr IDE, expecept you have good reasons not to. You should install mbeddr this way only if any of the following reasons applies to you: " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Installing mbeddr from sources gives you total control over what you want to do with mbeddr, however this is the most complex installation method. We rather recommend working with the distribution or the mbeddr IDE, expecept you have good reasons not to. The following list provides some of these " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="4711768717894442306" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894442307" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894442308" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="good reasons" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894442305" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=":" />
             </node>
           </node>
         </node>
@@ -877,36 +893,51 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1560676800018168727" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1560676800018168728" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1560676800018168729" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="If you still consider installing mbeddr sources, please carray out the following instructions  step by step in their defined order:\n\n\nThe following guide will explain you how to install mbeddr from sources, If you still consider to do so.  and do what ever you want to. Please carry out the following instructions in their defined order:\n\nNote also that the shell scripts rely on Apache ant. You have to install it (from " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1560676800018196590" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1560676800018196591" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1560676800018196592" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://ant.apache.org/" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1560676800018196593" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=") on your machine and make sure that the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1560676800018196594" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1560676800018196595" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1560676800018196596" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="ant" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1560676800018196597" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" script is in your path.\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The following guide will explain you how to install mbeddr from sources. Please carray out the following instructions step by step in their defined order:" />
             </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="2564556814934986015" nodeInfo="ng">
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="4711768717894442314" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4711768717894442315" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894442316" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894442317" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="First you will need to have a client git client installed on your machine. Secondly, you will need an Apache ant installation (from " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4711768717894447554" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894447555" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894447556" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://ant.apache.org/" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894447553" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="). Please make sure that the " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4711768717894448233" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894448234" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894448235" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="ant" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894448236" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" binary is in your path (" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="4711768717894448258" nodeInfo="ng">
+                  <link role="target" roleId="2c95.3350625596580108719" targetNodeId="4711768717894380508" resolveInfo="ChangingPath" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894448257" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=")." />
+                </node>
+              </node>
+            </node>
+          </node>
           <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="2564556814934986021" nodeInfo="ng">
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2564556814934986022" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814934986023" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814934986024" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="We start by cloning the mbeddr repository from GitHub onto your local machine. You can find it at " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Next, clone the mbeddr repository from GitHub onto your local machine. You can find it at " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1560676800018181512" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1560676800018181513" nodeInfo="ng">
@@ -945,7 +976,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1560676800018181800" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" directory. Depending on your operating system, you either use the one  with " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" directory. Depending on your operating system, you either use the one with " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1560676800018181724" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1560676800018181725" nodeInfo="ng">
@@ -1035,7 +1066,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1560676800018187803" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=": points to some folder, which is used by the build process to store temporal files\n  *  " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=": points to a folder, which is used by the build process to store temporal files\n  *  " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1560676800018187685" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1560676800018187686" nodeInfo="ng">
@@ -1065,7 +1096,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1560676800018201844" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" folder. You should get a " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" folder. At the end of the build you should get a " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1560676800018202021" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1560676800018202022" nodeInfo="ng">
@@ -1075,7 +1106,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1560676800018202024" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" message at the end of the build." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" message." />
                 </node>
               </node>
             </node>
@@ -1144,7 +1175,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935136136" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and have it point into the root directory of your mbeddr git clone (e.g. " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and let it point into the root directory of your mbeddr git clone (e.g. " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814935136149" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935136150" nodeInfo="ng">
@@ -1163,7 +1194,7 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2564556814935136167" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935136168" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935136169" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Then go to the $Global Libraries$ in the IDE settings. Create a library called \\ic{mbeddr.core} that points to the \\ic{code} directory of the github repository directory (" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Finally, go to the $Global Libraries$ in the IDE settings. Create a library named \\ic{mbeddr.core} that points to the \\ic{code} directory of the github repository directory (" />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814935136255" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935136256" nodeInfo="ng">
@@ -1224,6 +1255,12 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4711768717894442299" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1560676800020895296" resolveInfo="E_MPSAndJava" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4711768717894448273" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4711768717894379498" resolveInfo="F_ChangingPath" />
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1560676800020889717" nodeInfo="ng">
