@@ -8,7 +8,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
   <import index="us0v" modelUID="r:22b9d29d-483d-4f08-8d1b-4e6567157caf(com.mbeddr.tutorial.documentation.ug.analyses)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="7979854108176280683" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="C-070-DecisionTables" />
+    <property name="name" nameId="tpck.1169194664001" value="B_DecisionTables" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="7" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561787127" nodeInfo="ng">
@@ -263,7 +263,7 @@
       </node>
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4597526689010579583" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="us0v.9020927825193793093" resolveInfo="A-030-FormalVerification" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="us0v.9020927825193793093" resolveInfo="C_FormalVerification" />
     </node>
   </root>
 </model>

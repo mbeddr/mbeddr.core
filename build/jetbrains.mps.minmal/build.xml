@@ -411,7 +411,7 @@
   <target name="java.compile.com.mbeddr.mpsutil.make" depends="fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.make/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.make" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.make" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.make" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.make/source_gen" />
@@ -441,6 +441,11 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.make">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.make/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="cleanSources">
