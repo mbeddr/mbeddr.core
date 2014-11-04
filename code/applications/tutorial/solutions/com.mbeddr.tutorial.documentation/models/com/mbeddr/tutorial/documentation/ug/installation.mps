@@ -747,22 +747,23 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1560676800018098615" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="mbeddrIDEInstallation" />
         <property name="text" nameId="2c95.3350625596580064225" value="mbeddr IDE" />
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4711768717894381697" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894381698" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894381707" nodeInfo="ng" />
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="4711768717894381704" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894381705" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894381706" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4711768717894474395" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894474396" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894474397" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="With the mbeddr IDE, you can use all languages provided my mbeddr and write your own applications with them. Installing the IDE is simple, as you just have to download the platform-specific version from the mbeddr GitHub page und unzip it to your local machine " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="4711768717894474416" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894474417" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894474418" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="https://github.com/mbeddr/mbeddr.core/releases" />
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894381708" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894474415" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
           </node>
         </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="1560676800018098623" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1560676800018098638" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="PluginDistributionInstallation" />
