@@ -482,6 +482,19 @@
     <property name="name" nameId="tpck.1169194664001" value="A-c99-vs-mbeddr" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="2" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843927173381" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="8280358843927173382" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 4:00:51 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word26" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2723638869555190715" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="8280358843927173383" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8280358843927173384" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Do we use \&quot;tutorial style\&quot;?" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4770972444967673852" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="us0v.9020927825193793093" resolveInfo="C_FormalVerification" />
     </node>
@@ -1035,6 +1048,76 @@
             </node>
           </node>
         </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3592268205547053903" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="TypesizeConfig" />
+          <property name="text" nameId="2c95.3350625596580064225" value="Type Size Configuration" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3592268205547068287" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547068288" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547068289" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="As described above mbeddr uses replacements for the C99 native types. To interact with existing C code mbeddr offers " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205547068884" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547068885" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547068886" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="ExternalModule" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547068887" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="s in those modules it is possible to use unqualified integers like " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205547068898" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547068899" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547068900" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="int" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547068901" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Since mbeddr by default doesn't know about the sice of these types those have to be configures on a per project bias. This is done in the so called " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205547069515" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547069516" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547069517" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="TypesizeConfiguration" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547069518" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The configuration can be accessed via  " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.MenuFormattedText" typeId="2c95.2286331641392318852" id="3592268205547069745" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547069746" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547069747" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="File -&gt; Settings -&gt; Type Size Configuration" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547087721" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="3592268205547087720" nodeInfo="ng">
+                <link role="image" roleId="2c95.6386504476136420174" targetNodeId="3592268205547072864" resolveInfo="tsc" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547087719" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". It contains a mapping for each C99 type to a mbeddr type. It the mapping for a given target differ from the defaults that ship with mbeddr these can be changes for each project." />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="3592268205547072864" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="tsc" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="3592268205547072924" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="c99vsmbeddr/typesizeconfig.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3592268205547072868" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547072869" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547072870" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Type Size Configuration" />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="3592268205547072872" nodeInfo="ng" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3592268205546300997" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Arrays" />
@@ -1135,6 +1218,36 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="993292703731052551" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Various" />
         <property name="text" nameId="2c95.3350625596580064225" value="Various Additions" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3592268205547053724" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547053725" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547053726" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In contrast to C99 the order of declared functions, variables and types doesn't matter. Also forward declarations aren't necessary. mbeddr will take care of all these during generation to C code." />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="3592268205547053727" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Declartion order" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3592268205547062359" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547062360" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547062361" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr does not expose the C preprocessor to the end user. Because the preprocessor simply replaces text. It is possible that it results in not compileable code. In addition the preprocessor does not take the typesystem into account and the code couldn't be typechecked.  The proprocessor is often used to express variability in the code with " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205547062979" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547062980" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547062981" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="#ifdef" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547062982" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", mbeddr features a native C extension to address this problem with typesystem integration and will take care the the code is still valid C code. Other preprocessor usecases can most likely be replaced with language extensions." />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="3592268205547062362" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="No Preprocessor" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2723638869557433101" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="UnitTests" />
@@ -1491,19 +1604,6 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="993292703731050341" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
-      </node>
-    </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843927173381" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="8280358843927173382" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 4:00:51 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word26" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2723638869555190715" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="8280358843927173383" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8280358843927173384" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Do we use \&quot;tutorial style\&quot;?" />
-          </node>
-        </node>
       </node>
     </node>
   </root>
