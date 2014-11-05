@@ -407,13 +407,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2723638869559784495" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2723638869559784496" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2723638869559784497" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can run the tests from within MPS or from the console as discussed in " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="2723638869559784677" nodeInfo="ng">
-              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="null" resolveInfo="HelloWorld" />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2723638869559784678" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Doing so should " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can run the tests from within MPS or from the console. " />
             </node>
           </node>
         </node>
