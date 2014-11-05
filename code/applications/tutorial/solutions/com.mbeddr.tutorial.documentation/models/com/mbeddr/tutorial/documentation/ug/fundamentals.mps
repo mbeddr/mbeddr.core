@@ -3584,7 +3584,7 @@
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727863030" resolveInfo="F_VersionControl" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1195021413141455474" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1195021413141453989" resolveInfo="G_TextInterOp" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1195021413141453989" resolveInfo="G_Utilities" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176728354848" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727863070" resolveInfo="I_CheatSheet" />
@@ -3619,7 +3619,7 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1195021413141455509" nodeInfo="ng">
         <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1195021413141455527" nodeInfo="ng">
-          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1195021413141453989" resolveInfo="G_TextInterOp" />
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1195021413141453989" resolveInfo="G_Utilities" />
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176728354972" nodeInfo="ng">
@@ -3631,7 +3631,7 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1195021413141453989" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="G_TextInterOp" />
+    <property name="name" nameId="tpck.1169194664001" value="G_Utilities" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1195021413141455458" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="utiltites" />
@@ -3760,7 +3760,7 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="1195021413141473304" nodeInfo="ng">
-          <property name="text" nameId="2c95.8730648445434044906" value="&lt;_root _nodeID=&quot;1&quot; _conceptFQN=&quot;com.mbeddr.doc.structure.TextParagraph&quot; _linktype=&quot;child&quot;&gt;&#10;  &lt;header _nodeID=&quot;2&quot; _conceptFQN=&quot;com.mbeddr.doc.structure.TextParHeader&quot; _linktype=&quot;child&quot; text=&quot;Copy to XML&quot; /&gt;&#10;  &lt;text _nodeID=&quot;3&quot; _conceptFQN=&quot;de.slisson.mps.richtext.structure.Text&quot; _linktype=&quot;child&quot;&gt;&#10;    &lt;words _nodeID=&quot;4&quot; _conceptFQN=&quot;de.slisson.mps.richtext.structure.Word&quot; _linktype=&quot;child&quot; escapedValue=&quot;It is possible to copy a node (and its complete subtree, of course) to an XML text. The menu item &quot; /&gt;&#10;    &lt;words _nodeID=&quot;5&quot; _conceptFQN=&quot;com.mbeddr.doc.structure.KeyPressFormattedText&quot; _linktype=&quot;child&quot;&gt;&#10;      &lt;text _nodeID=&quot;6&quot; _conceptFQN=&quot;de.slisson.mps.richtext.structure.Text&quot; _linktype=&quot;child&quot;&gt;&#10;        &lt;words _nodeID=&quot;7&quot; _conceptFQN=&quot;de.slisson.mps.richtext.structure.Word&quot; _linktype=&quot;child&quot; escapedValue=&quot;Edit-&amp;gt;Copy Special-&amp;gt;Copy Node as XML&quot; /&gt;&#10;      &lt;/text&gt;&#10;    &lt;/words&gt;&#10;    &lt;words _nodeID=&quot;8&quot; _conceptFQN=&quot;de.slisson.mps.richtext.structure.Word&quot; _linktype=&quot;child&quot; escapedValue=&quot; creates the XML....&quot; /&gt;&#10;  &lt;/text&gt;&#10;&lt;/_root&gt;" />
+          <property name="text" nameId="2c95.8730648445434044906" value="&amp;lt;_root _nodeID=&amp;quot;1&amp;quot; _conceptFQN=&amp;quot;com.mbeddr.doc.structure.TextParagraph&amp;quot; _linktype=&amp;quot;child&amp;quot;&amp;gt;&#10;  &amp;lt;header _nodeID=&amp;quot;2&amp;quot; _conceptFQN=&amp;quot;com.mbeddr.doc.structure.TextParHeader&amp;quot; _linktype=&amp;quot;child&amp;quot; text=&amp;quot;Copy to XML&amp;quot; /&amp;gt;&#10;  &amp;lt;text _nodeID=&amp;quot;3&amp;quot; _conceptFQN=&amp;quot;de.slisson.mps.richtext.structure.Text&amp;quot; _linktype=&amp;quot;child&amp;quot;&amp;gt;&#10;    &amp;lt;words _nodeID=&amp;quot;4&amp;quot; _conceptFQN=&amp;quot;de.slisson.mps.richtext.structure.Word&amp;quot; _linktype=&amp;quot;child&amp;quot;&#10;                escapedValue=&amp;quot;It is possible to copy a node (and its complete subtree, of course) to an XML text. The menu item &amp;quot; /&amp;gt;&#10;    &amp;lt;words _nodeID=&amp;quot;5&amp;quot; _conceptFQN=&amp;quot;com.mbeddr.doc.structure.KeyPressFormattedText&amp;quot; _linktype=&amp;quot;child&amp;quot;&amp;gt;&#10;      &amp;lt;text _nodeID=&amp;quot;6&amp;quot; _conceptFQN=&amp;quot;de.slisson.mps.richtext.structure.Text&amp;quot; _linktype=&amp;quot;child&amp;quot;&amp;gt;&#10;        &amp;lt;words _nodeID=&amp;quot;7&amp;quot; _conceptFQN=&amp;quot;de.slisson.mps.richtext.structure.Word&amp;quot; _linktype=&amp;quot;child&amp;quot;&#10;                    escapedValue=&amp;quot;Edit-&amp;gt;Copy Special-&amp;gt;Copy Node as XML&amp;quot; /&amp;gt;&#10;      &amp;lt;/text&amp;gt;&#10;    &amp;lt;/words&amp;gt;&#10;    &amp;lt;words _nodeID=&amp;quot;8&amp;quot; _conceptFQN=&amp;quot;de.slisson.mps.richtext.structure.Word&amp;quot; _linktype=&amp;quot;child&amp;quot; escapedValue=&amp;quot; creates the XML....&amp;quot; /&amp;gt;&#10;  &amp;lt;/text&amp;gt;&#10;&amp;lt;/_root&amp;gt;" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1195021413141473861" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141473862" nodeInfo="ng">
@@ -3851,6 +3851,21 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="1418902825862783757" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4424988308481613119" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="findUsages" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Find Usages" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="909032631832320459" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="909032631832320460" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="909032631832322740" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="909032631832322737" nodeInfo="ng">
+              <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="909032631832322738" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="909032631832322739" nodeInfo="ng" />
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="909032631832322741" nodeInfo="ng" />
+          </node>
+        </node>
       </node>
     </node>
   </root>

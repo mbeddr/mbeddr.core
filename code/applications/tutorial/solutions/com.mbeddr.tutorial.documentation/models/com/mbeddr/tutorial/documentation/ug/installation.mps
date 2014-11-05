@@ -2,14 +2,13 @@
 <model modelUID="r:ec4f318b-4ee4-4063-b222-8a04b6ed816c(com.mbeddr.tutorial.documentation.ug.installation)">
   <persistence version="8" />
   <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
+  <language namespace="623c9ff8-1203-4890-b33e-cba29dd6cdc6(spellcheck)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="16" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" version="-1" implicit="yes" />
-  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" version="0" implicit="yes" />
-  <import index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" version="0" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -545,7 +544,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052797720691566455" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="). Additionally, you have so sign a certificate for " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="). Additionally, you have to sign a certificate for " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4208238404724949659" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4208238404724949660" nodeInfo="ng">
@@ -588,19 +587,7 @@
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4711768717894387363" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4711768717894379498" resolveInfo="F_ChangingPath" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843928385345" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="8280358843928385346" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 4:47:30 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word4" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="4052797720691566455" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="8280358843928385347" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8280358843928385348" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="to?" />
-          </node>
-        </node>
-      </node>
-    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843928385345" nodeInfo="ng" />
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1560676800018444197" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="2" />
@@ -1279,7 +1266,43 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2564556814935136167" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935136168" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935136169" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Finally, go to the $Global Libraries$ in the IDE settings. Create a library named \\ic{mbeddr.core} that points to the \\ic{code} directory of the github repository directory (" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Finally, go to the " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="2045083395008186283" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395008186284" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008186285" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Global Libraries" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008101975" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" section in the IDE settings (see " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="2045083395008186183" nodeInfo="ng">
+                  <link role="image" roleId="2c95.6386504476136420174" targetNodeId="2564556814935136498" resolveInfo="globalLibraries" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008186184" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="). Create a library named " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2045083395008143004" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395008143005" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008143006" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr.core" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008143003" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" that points to the " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2045083395008143029" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395008143030" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008143031" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="code" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008143028" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" directory of the github repository directory (" />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814935136255" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935136256" nodeInfo="ng">
@@ -1289,7 +1312,17 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814935136254" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="). This library must point to the \\ic{code} directory of the checkout so that all languages are below it, including " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="). This library must point to the " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2045083395008154466" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395008154467" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008154468" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="code" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008154465" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" directory of the checkout so that all languages are below it, including " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="2564556814935136264" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935136265" nodeInfo="ng">
@@ -1347,30 +1380,7 @@
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4711768717894448273" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4711768717894379498" resolveInfo="F_ChangingPath" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843928387419" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="8280358843928387420" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 4:55:31 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word4" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2564556814935136169" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="8280358843928387421" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8280358843928387422" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="it's \\math formatting above, unify" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="8280358843928397504" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 4:56:32 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word14" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2564556814935136169" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="8280358843928397505" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8280358843928397506" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid formatting all over this paragraph" />
-          </node>
-        </node>
-      </node>
-    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843928387419" nodeInfo="ng" />
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1560676800020889717" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="3" />
@@ -1666,7 +1676,7 @@
             <node role="text" roleId="2c95.5785245534400277707" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4711768717894402573" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894402574" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894402575" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="in your system settings, change the value of the \\code(PATH) variable by adding your path to the existing paths: " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="in your Windows System Settings, change the value of the \\code(PATH) variable by adding your path to the existing paths: " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4711768717894403261" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894403262" nodeInfo="ng">
@@ -1727,7 +1737,37 @@
             <node role="text" roleId="2c95.5785245534400277707" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4711768717894402593" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894402594" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894402595" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="On the command-line, type the following command: " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="in general you will have to add your tool path to the " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2045083395008937970" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395008937971" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008937972" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="PATH" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008937969" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" variable. However, the way how this is done depends on your actual operating sytem and the shell you are using. Since nowadays almost every Unix system comes with a " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2045083395008938749" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395008938750" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008938751" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="bash" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008938748" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shell, we describe the processs just for tis scenario. In case you using a different shell, please refer to the vendor's documentation.\nFirst, create or open your existing " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2045083395008938001" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395008938002" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008938003" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value=".bash_profile" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008938000" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=", that is located inside your home folder. Next, just add the following line to it, save the file and restart your shell:\n" />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4711768717894403654" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894403655" nodeInfo="ng">
@@ -1736,9 +1776,7 @@
                     </node>
                   </node>
                 </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894403657" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
-                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894403657" nodeInfo="ng" />
               </node>
             </node>
           </node>
@@ -1750,19 +1788,7 @@
         </node>
       </node>
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843928399718" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="8280358843928399719" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 5:01:50 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word2" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="4711768717894402595" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="8280358843928399720" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8280358843928399721" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="I don't think this will survive a shell restart?" />
-          </node>
-        </node>
-      </node>
-    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843928399718" nodeInfo="ng" />
   </root>
 </model>
 
