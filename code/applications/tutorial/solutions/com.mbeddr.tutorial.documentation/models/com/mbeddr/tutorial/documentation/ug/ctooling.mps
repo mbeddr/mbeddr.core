@@ -917,19 +917,32 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2045083395009161817" nodeInfo="ng">
         <property name="text" nameId="2c95.3350625596580064225" value="Building from Command-Line" />
         <property name="name" nameId="tpck.1169194664001" value="CLBuild" />
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="2045083395009166637" nodeInfo="ng">
-          <property name="language" nameId="2c95.8730648445434044905" value="xml" />
-          <property name="text" nameId="2c95.8730648445434044906" value="a&#10;b&#10;c" />
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2045083395009182409" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
-        </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2045083395009166163" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395009166164" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395009166165" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="\n\nIn the previous section we have generated ant files from our build scripts. In this section, we take these files and invoke them from the command-line.\n\n\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In the previous section we have generated ant files from our MPS build scripts. In this section, we take these files and invoke them from the command-line for building and testing our application. We could directly invoke the scripts from command-line, but we will write a wrapper script, that calls the generated files. Reason is, we will use a custom ant task from mbeddr, that will execute the tests written with mbeddr. MPS itself doesn't provide off-the shell support for that. \n\nIn the listing below, you can see the ant script, which invokes our generated ant files. In the second line we include the custom ant task for invoking the test.\n\nWe will write an ant script for that, as there is no off the shell supported" />
             </node>
           </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2045083395016061386" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2045083395016099585" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395016099586" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395016099587" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2045083395016061417" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="2045083395009166637" nodeInfo="ng">
+          <property name="language" nameId="2c95.8730648445434044905" value="xml" />
+          <property name="text" nameId="2c95.8730648445434044906" value="&lt;project name=&quot;build and test helloworld&quot; default=&quot;build&quot; &gt;&#10;    &lt;taskdef name=&quot;make-tests&quot; classname=&quot;com.mbeddr.tools.ant.MakeTestsTask&quot;  classpath=&quot;${mbeddr.github.core.home}/tools/ant/tasks/MakeTestsTask.jar&quot; /&gt;&#10;    &lt;property name=&quot;mbeddr.github.core.home&quot; location=&quot;/Users/peter/mbeddr.core&quot; /&gt;&#10;    &lt;property name=&quot;source.location&quot; location=&quot;...&quot; /&gt;&#10;&#9;&#10;    &lt;target name=&quot;build&quot;&gt;&#10;        &lt;ant antfile=&quot;build-helloworld.xml&quot; target=&quot;clean&quot; /&gt;&#10;        &lt;ant antfile=&quot;build-helloworld.xml&quot; target=&quot;generate&quot; /&gt;&#10;        &lt;ant antfile=&quot;build-helloworld.xml&quot; target=&quot;build&quot; /&gt;&#9; &#9;&#10;    &lt;/target&gt; &#10;    &#10;    &lt;target name=&quot;test&quot;&gt;&#9;  &#10;        &lt;ant antfile=&quot;test-helloworld.xml&quot; target=&quot;clean&quot; /&gt;&#10;        &lt;ant antfile=&quot;test-helloworld.xml&quot; target=&quot;generate&quot;/&gt;&#10;        &lt;ant antfile=&quot;test-helloworld.xml&quot; target=&quot;build&quot; /&gt;&#10;        &lt;antcall target=&quot;make-tests&quot;&gt;&#10;             &lt;param name=&quot;make-tests.dir&quot; value=&quot;${source.location}&quot;/&gt;&#10;        &lt;/antcall&gt;&#10;    &lt;/target&gt; &#10;&lt;/project&gt;" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2045083395009182409" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2045083395009156075" nodeInfo="ng">
