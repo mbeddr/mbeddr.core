@@ -95,7 +95,13 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591081967" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". When you report a problem, please make sure you include a Node Info for the problem (see " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="1195021413141466022" nodeInfo="ng">
+            <link role="target" roleId="2c95.3350625596580108719" targetNodeId="bmc6.1195021413141455458" resolveInfo="utiltites" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141466023" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" for details on what a Node Info is)." />
           </node>
         </node>
       </node>
@@ -103,6 +109,19 @@
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3231021218591085834" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3231021218591085835" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="This user guide is written with the MPS documentation language. On the plus side, this affords us very close integration with source code and models -- these things are always up to date. On the downside, we still have some issues in the Latex generator, the generated Latex file, and especially the embedded figures, don't yet look very beautiful. Please bear with us. It will improve." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1418902825863421894" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1418902825863421895" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825863421896" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can use mbeddr's full text search utility provided by mbeddr: see " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="1418902825863430813" nodeInfo="ng">
+            <link role="target" roleId="2c95.3350625596580108719" targetNodeId="bmc6.1418902825862766569" resolveInfo="searching" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825863430814" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
           </node>
         </node>
       </node>

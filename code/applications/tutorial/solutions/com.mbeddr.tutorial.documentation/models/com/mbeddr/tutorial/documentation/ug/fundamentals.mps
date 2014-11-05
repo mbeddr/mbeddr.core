@@ -902,6 +902,30 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="C_Editor" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="6459847791815924481" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="6459847791815924482" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 3:52:29 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word37" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2101724341004020973" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="6459847791815924483" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6459847791815924484" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="This word seems to be wrong. I don't understand the sentence." />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="6459847791815940027" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 4:05:37 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="ReadOnlyModelAccessor_ki25o1_b3d0a" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2101724341004022975" resolveInfo="projectionModes" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="6459847791815940028" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6459847791815940029" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="I don't understand the entries. Where can I read more about them." />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639341430412" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727862995" resolveInfo="D_KeyboardShortcuts" />
     </node>
@@ -996,30 +1020,6 @@
             </node>
           </node>
           <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="2101724341004022983" nodeInfo="ng" />
-        </node>
-      </node>
-    </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="6459847791815924481" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="6459847791815924482" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 3:52:29 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word37" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2101724341004020973" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="6459847791815924483" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6459847791815924484" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="This word seems to be wrong. I don't understand the sentence." />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="6459847791815940027" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 4:05:37 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="ReadOnlyModelAccessor_ki25o1_b3d0a" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2101724341004022975" resolveInfo="projectionModes" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="6459847791815940028" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6459847791815940029" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="I don't understand the entries. Where can I read more about them." />
-          </node>
         </node>
       </node>
     </node>
@@ -3580,11 +3580,11 @@
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176728354843" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727862995" resolveInfo="D_KeyboardShortcuts" />
     </node>
-    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176728354844" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727863012" resolveInfo="E_ProjectionModes" />
-    </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176728354845" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727863030" resolveInfo="F_VersionControl" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1195021413141455474" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1195021413141453989" resolveInfo="G_Utilities" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176728354848" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727863070" resolveInfo="I_CheatSheet" />
@@ -3612,20 +3612,249 @@
           <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727862995" resolveInfo="D_KeyboardShortcuts" />
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176728354891" nodeInfo="ng">
-        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176728354960" nodeInfo="ng">
-          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727863012" resolveInfo="E_ProjectionModes" />
-        </node>
-      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176728354903" nodeInfo="ng">
         <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176728354963" nodeInfo="ng">
           <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727863030" resolveInfo="F_VersionControl" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1195021413141455509" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1195021413141455527" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1195021413141453989" resolveInfo="G_Utilities" />
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176728354972" nodeInfo="ng">
         <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176728354992" nodeInfo="ng">
           <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727863070" resolveInfo="I_CheatSheet" />
         </node>
+      </node>
+    </node>
+  </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1195021413141453989" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="G_Utilities" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1195021413141455458" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="utiltites" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Utilitites" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1418902825862766330" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="interopWithText" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Interop with Text" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1195021413141455530" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141455531" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141455532" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="There are various ways of interoperating with textual worlds. One of them is the import of textual, legacy C source. This is covered in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="1195021413141455537" nodeInfo="ng">
+              <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141455538" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141455539" nodeInfo="ng" />
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141455540" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". In this section we discuss a few additional ways." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1195021413141455555" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141455556" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141455557" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="It is often useful to be able to be able to point somebody to a specific node. For example, one may want to send an email to a coworker pointing out a specific node, or an issue in an issue tracker may want to refer to a program node in MPS. For this purpose, it is possible to copy the Node Info and the Node URL to the clipboard (and then paste it as text somewhere else). " />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="1195021413141455558" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Node Info and Node URL" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1195021413141455669" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141455670" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141455671" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can select any node in MPS and use " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="1195021413141464200" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141464201" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141464202" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Copy Node URL to Clipboard" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141464199" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" from the context menu. The following code snippet is a node URL. If you open this URL in a browser, MPS will try to open the respective node. This requires MPS to be running and the currently opened project must contain the node. MPS does " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="1195021413141455696" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141455697" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141455698" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="not" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141455699" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" open the project if it is currently closed. " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="1195021413141464186" nodeInfo="ng">
+              <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141464187" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141464188" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Where is the menu entry in MPS to do the same based on URL in the clipboard?" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141464189" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="1195021413141455650" nodeInfo="ng">
+          <property name="text" nameId="2c95.8730648445434044906" value="http://localhost:8080/select/tutorial/r:4ac377c2-0a54-4908-ae24-f86f1bad7e73/1195021413141453989/" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1195021413141464249" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141464250" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141464251" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The node URL is not readable by humans, only by the tool. You can use " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="1195021413141464401" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141464402" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141464403" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Edit-&gt;Copy Special-&gt;Copy Node Info to Clipboard" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141464404" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to get a more detailed info about the node, as shown in the next snippet. This contains enough data to navigate to a node manually; of course the URL is also included to automate the navigation." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="1195021413141464287" nodeInfo="ng">
+          <property name="text" nameId="2c95.8730648445434044906" value="project: tutorial (/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/applications/tutorial)&#10;module:  com.mbeddr.tutorial.documentation&#10;model:   com.mbeddr.tutorial.documentation.ug.fundamentals&#10;root:    G_TextInterOp [Document]&#10;node:    Word [Word]&#10;url:     http://localhost:8080/select/tutorial/r:4ac377c2-0a54-4908-ae24-f86f1bad7e73/1195021413141455557/" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1195021413141465909" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141465910" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141465911" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="By the way: this functionality is also very useful if you want to report problems about the documentation to us. Please include a Node URL or even better, a Node Info of the document or paragraph where you spot a problem." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1195021413141473607" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141473608" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141473609" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Every MPS node can be copied to a text editor. However, the result is only useful if the original node has essentially a textual syntax (like regular program code or the paragraphs in this document). In the text editor, it will look essentially similar. However, it is not possible to paste the text back into MPS, because, by default, an MPS language definition does not come with the parser necessary to process the text and build the MPS tree (it is of course possible to build and integrate such parsers into MPS, but you don't get it for free). So this approach is only useful for communication purposes, but not to actually exchange program code. The next paragraph describes a more useful alternative." />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="1195021413141473610" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Copy to Text" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1195021413141455614" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141455615" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141455616" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="It is possible to copy a node (and its complete subtree, of course) to an XML text. The menu item " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="1195021413141473799" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141473800" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141473801" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Edit-&gt;Copy Special-&gt;Copy Node as XML" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141473802" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" creates the XML. This can of course be copied into any text context. The following listing shows an example XML (of this paragraph):" />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="1195021413141455617" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Copy to XML" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="1195021413141473304" nodeInfo="ng">
+          <property name="text" nameId="2c95.8730648445434044906" value="&amp;lt;_root _nodeID=&amp;quot;1&amp;quot; _conceptFQN=&amp;quot;com.mbeddr.doc.structure.TextParagraph&amp;quot; _linktype=&amp;quot;child&amp;quot;&amp;gt;&#10;  &amp;lt;header _nodeID=&amp;quot;2&amp;quot; _conceptFQN=&amp;quot;com.mbeddr.doc.structure.TextParHeader&amp;quot; _linktype=&amp;quot;child&amp;quot; text=&amp;quot;Copy to XML&amp;quot; /&amp;gt;&#10;  &amp;lt;text _nodeID=&amp;quot;3&amp;quot; _conceptFQN=&amp;quot;de.slisson.mps.richtext.structure.Text&amp;quot; _linktype=&amp;quot;child&amp;quot;&amp;gt;&#10;    &amp;lt;words _nodeID=&amp;quot;4&amp;quot; _conceptFQN=&amp;quot;de.slisson.mps.richtext.structure.Word&amp;quot; _linktype=&amp;quot;child&amp;quot;&#10;                escapedValue=&amp;quot;It is possible to copy a node (and its complete subtree, of course) to an XML text. The menu item &amp;quot; /&amp;gt;&#10;    &amp;lt;words _nodeID=&amp;quot;5&amp;quot; _conceptFQN=&amp;quot;com.mbeddr.doc.structure.KeyPressFormattedText&amp;quot; _linktype=&amp;quot;child&amp;quot;&amp;gt;&#10;      &amp;lt;text _nodeID=&amp;quot;6&amp;quot; _conceptFQN=&amp;quot;de.slisson.mps.richtext.structure.Text&amp;quot; _linktype=&amp;quot;child&amp;quot;&amp;gt;&#10;        &amp;lt;words _nodeID=&amp;quot;7&amp;quot; _conceptFQN=&amp;quot;de.slisson.mps.richtext.structure.Word&amp;quot; _linktype=&amp;quot;child&amp;quot;&#10;                    escapedValue=&amp;quot;Edit-&amp;gt;Copy Special-&amp;gt;Copy Node as XML&amp;quot; /&amp;gt;&#10;      &amp;lt;/text&amp;gt;&#10;    &amp;lt;/words&amp;gt;&#10;    &amp;lt;words _nodeID=&amp;quot;8&amp;quot; _conceptFQN=&amp;quot;de.slisson.mps.richtext.structure.Word&amp;quot; _linktype=&amp;quot;child&amp;quot; escapedValue=&amp;quot; creates the XML....&amp;quot; /&amp;gt;&#10;  &amp;lt;/text&amp;gt;&#10;&amp;lt;/_root&amp;gt;" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1195021413141473861" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141473862" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141473863" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This XML can then be pasted into another MPS using " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="1195021413141473919" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1195021413141473920" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141473921" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Edit-&gt;Paste XML Node" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141473922" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The MPS node structure is reconstructed and the (internal and external) references are reestablished. While, in general, it is better to use the version control system (and branching, if necessary) to exchange code, this XML-based facility is sometimes useful as well. " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1418902825862766569" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="searching" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Searching Models" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1418902825863412906" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1418902825863412907" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825863412908" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can do a full-text search on soutions and models. The functionality is available via the context menu (shown in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1418902825863412916" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1418902825862783824" resolveInfo="searchTerminal" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825863412917" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="). The resulting search window (" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1418902825863412991" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1418902825863412961" resolveInfo="search" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825863412992" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=") reports all the model elements that contain your search string. Note that this can also be used to search this documentation itself." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="1418902825863412961" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="search" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="1418902825863412962" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="search.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1418902825863412963" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1418902825863412964" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825863412965" nodeInfo="ng" />
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="1418902825863412966" nodeInfo="ng" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="1418902825863412930" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1418902825862775310" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="concoles" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Opening Terminals" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1418902825862783645" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1418902825862783646" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825862783647" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="It is often useful to open a terminal (console, command line) in solutions or models. The context menu for solutions or models has this option. For solutions, the terminal opens in the solution directory. For models, it opens in the model's output directory (where the model's code will be generated to). " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1418902825862784660" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="1418902825862783824" resolveInfo="searchTerminal" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825862784661" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows the context menu for solutions." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="1418902825862783824" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="searchTerminal" />
+        <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="1418902825862783905" nodeInfo="ng">
+          <property name="fileName" nameId="2c95.6386504476136521408" value="terminalSearch.png" />
+          <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+        </node>
+        <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1418902825862783828" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1418902825862783829" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825862783830" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="1418902825862783832" nodeInfo="ng" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="1418902825862783757" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4424988308481613119" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="findUsages" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Find Usages" />
       </node>
     </node>
   </root>
