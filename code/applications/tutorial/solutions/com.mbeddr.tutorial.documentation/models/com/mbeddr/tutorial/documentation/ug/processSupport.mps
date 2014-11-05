@@ -617,7 +617,7 @@
                   <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.869116753978119546" resolveInfo="StaticVariability" />
                 </node>
                 <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238862434311" nodeInfo="ng">
-                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.869116753978119615" resolveInfo="testStaticVariability" />
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.869116753978119615" resolveInfo="testPresenceConditions" />
                 </node>
               </node>
             </node>
@@ -716,7 +716,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238862438494" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238862438495" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238862438496" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="ome To better understand these modes, please go to " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To better understand these modes, please go to " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5479545238862441855" nodeInfo="ng">
               <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5479545238862441856" nodeInfo="ng">
@@ -732,18 +732,248 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238861098090" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238861098091" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238861098092" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238861098092" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Presence conditions are useful for blocks, or statemetns, or other structural parts of programs. However, sometimes you only want to change the value of expressions. Exchanging the complete statement (e.g., in case of a variable declaration) has the problem of changing the identities of the variables which leads to all kinds of downstream problems. It is hence much better to change the value of a variable by exchanging an expression. " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863081791" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863081792" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863081793" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Conditional Replacements" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863081794" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863081805" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863081806" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863081807" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Conditional Switches" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863081808" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" can be used for this. " />
+            </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5479545238861098093" nodeInfo="ng">
             <property name="text" nameId="2c95.5185579450379273119" value="Conditional Replacements" />
           </node>
         </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238863081986" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863081987" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863081988" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Take a look at " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5479545238863082152" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5479545238863082153" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863082154" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.869116753978119546" resolveInfo="StaticVariability" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863082155" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5479545238862935057" resolveInfo="testConditionalReplacement" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863082166" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". In the case of " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5479545238863082179" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5479545238863082180" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863082200" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.869116753978119546" resolveInfo="StaticVariability" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863082208" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5479545238862942824" resolveInfo="v1" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863082181" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" we exhange the value " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863082214" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863082215" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863082216" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="10" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863082217" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" with " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863087282" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863087283" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863087284" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="0" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863087285" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" if the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863087324" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863087325" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863087326" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="nullify" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863087327" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" feature is selected using a conditional replacement. A conditional replacement replaces an expression with " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5479545238863087374" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863087375" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863087376" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="one" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863087377" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" other one, based on a feature condition. It's a bit like an " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863087432" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863087433" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863087434" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="if" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863087435" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement. However, sometimes an expression must be replaced with various different ones based on a set of feature models. A conditional switch can be used for this; it is more like a " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863087765" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863087766" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863087767" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="switch" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863087769" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement. Take a look at " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5479545238863087851" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5479545238863087852" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863087853" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.869116753978119546" resolveInfo="StaticVariability" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863087935" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5479545238862972644" resolveInfo="v2" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863087850" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" for an example. Both conditional replacements and conditional switches are attached with intentions." />
+            </node>
+          </node>
+        </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238861131740" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238861131741" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238861131742" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238861131742" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Presence conditions are good to exchange code blocks or statements. Conditional replacements and switches are good to replace expressions. What's missing is a way to replace things that have a name and that can be referenced. The problem is that all references to something break if it is removed via a presence condition. To solve this problem, mbeddr has a third option, the so-called conditional alternative. " />
+            </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5479545238861131743" nodeInfo="ng">
             <property name="text" nameId="2c95.5185579450379273119" value="Conditional Alternatives" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238863597038" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863597039" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863597040" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Take a look at " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5479545238863597021" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5479545238863597022" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863597023" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.869116753978119546" resolveInfo="StaticVariability" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863707602" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5479545238863686307" resolveInfo="alternatives" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863597030" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". We declare a function " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5479545238863707612" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5479545238863707613" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863707624" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.869116753978119546" resolveInfo="StaticVariability" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863707629" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5479545238863634459" resolveInfo="add" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863707614" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" which we call from the test case " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5479545238863714270" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5479545238863714271" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863714272" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.869116753978119546" resolveInfo="StaticVariability" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863714273" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5479545238863123797" resolveInfo="testConditionalAlternative" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863714289" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Now let's imagine we wanted to replace this function with another one based on a presence condition. If we did that, we'd also have to use presence conditions on all call sites of the function. This is annoying. Conditional alternatives solve this problem in the following way:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="5479545238863714446" nodeInfo="ng">
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5479545238863714447" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5479545238863714448" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863714449" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863714450" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="You mark the original function as " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863714595" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863714596" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863714597" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="conditional original" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863714598" nodeInfo="ng" />
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5479545238863714604" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5479545238863714605" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863714606" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863714607" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="You then write one ore more alternative functions. Each is marked as a " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863719774" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863719775" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863719776" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="conditional alternative" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863719777" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=": it points to the original, it has a presence condition that determines when it should be used, and its name must start with the name of the original plus an underscore." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5479545238863719783" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5479545238863719784" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863719785" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863719786" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="When the transformation runs, the original is replaced with the a suitable alternative, and all references are updated automatically." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238863714773" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863714774" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863714775" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that this does not just work for functions but for anything that has a name and can be referenced." />
+            </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238861131951" nodeInfo="ng">
