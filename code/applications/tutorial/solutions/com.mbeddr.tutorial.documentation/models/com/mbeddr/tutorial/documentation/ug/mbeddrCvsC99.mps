@@ -498,7 +498,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="993292703730996383" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="993292703730996384" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="993292703730996385" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="While mbeddr tries to stick close to C99 standard C as possible there are some differences between them. In this section we will discuss theses differences in detail." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="While mbeddr tries to stick close to C99 standard C as possible there are some differences between them. In this section we will discuss these differences in detail." />
           </node>
         </node>
       </node>
@@ -669,7 +669,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="993292703731046389" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="993292703731046390" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="993292703731046391" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr has two differnt kinds of modules. The most common one is the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr has two different kinds of modules. The most common one is the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="993292703731046627" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="993292703731046628" nodeInfo="ng">
@@ -679,7 +679,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="993292703731046630" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Inside this you write your normal mbeddr code and which will be generated to C99 code and then compiled. The second one is " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Inside this you write your normal mbeddr code which will be generated to C99 code and then compiled. The second one is " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="993292703731047554" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="993292703731047555" nodeInfo="ng">
@@ -689,7 +689,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="993292703731047557" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". External Modules won't be generated into C code. They are used to reference existing code. Hence the fact that they are just referencing existing things they don't contain any implementation. They just contain declarations. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". External Modules won't be generated into C code. They are used to reference existing code. Hence the fact that they just reference existing things, they don't contain any implementation. They just contain declarations. " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="993292703731048260" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="993292703731048261" nodeInfo="ng">
@@ -729,7 +729,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2723638869557507108" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" only seens those contents of " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" only sees those contents of " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2723638869557507127" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2723638869557507128" nodeInfo="ng">
@@ -739,7 +739,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2723638869557507130" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" that are exported. Some kinds of chunks, for example, the requirements module, implicitly export everything. Other chunks, for example, implementation modules default to private contents, and the user has to specifically mark contents as " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" that are exported. Some kinds of chunks, for example the requirements module, implicitly export everything. Other chunks, for example implementation modules, default to private contents, and the user has to specifically mark contents as " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2723638869557507157" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2723638869557507158" nodeInfo="ng">
@@ -836,7 +836,7 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="993292703731054653" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="993292703731054654" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="993292703731054655" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="While in C99 the boolean is a typedefed integer in mbeddr booleans are first class types. " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="While in C99 the boolean is a typedef'd integer, in mbeddr booleans are first class types. " />
               </node>
             </node>
           </node>
@@ -877,7 +877,7 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="993292703731141315" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="993292703731141316" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="993292703731141317" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Also boolean and integer are not assigneable to each other by default. You have to convert them expecitly. This might be the case when you interface legacy code that was not written in mbeddr." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Also boolean and integer are not assignable to each other by default. You have to convert them explicitly. This might be the case when you interface legacy code that was not written in mbeddr." />
               </node>
             </node>
           </node>
@@ -900,7 +900,7 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3592268205546236844" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546236845" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546236846" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="C allows you to specify user defined types (struct and union). To make use of these tyes they are usually wraped with a " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="C allows you to specify user defined types (struct and union). To make use of these types, they are usually wrapped with a " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205546237458" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546237459" nodeInfo="ng">
@@ -910,7 +910,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546237461" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" this is not necceary in mbeddr. mbeddr will take care of the typedef during generation. In addition to this the order of declarations does not matter in mbeddr. It is safe to write code that references types that are defined later in the " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". This is not necceary in mbeddr. mbeddr will take care of the typedef during generation. In addition to this, the order of declarations does not matter in mbeddr. It is safe to write code which references types that are defined later in the " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205546237472" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546237473" nodeInfo="ng">
@@ -919,7 +919,9 @@
                   </node>
                 </node>
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546237475" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546237475" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+              </node>
             </node>
           </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="3592268205546278715" nodeInfo="ng">
@@ -937,7 +939,7 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3592268205546292538" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546292539" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546292540" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Integers in mbeddr always come with a qualified size. The is no " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Integers in mbeddr always come with a qualified size. There is no " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205546292548" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546292549" nodeInfo="ng">
@@ -962,12 +964,12 @@
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205546299765" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546299766" nodeInfo="ng">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546299767" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="long long " />
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="long long" />
                   </node>
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546299764" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and so on in mbeddr, because the  size of these integers can differ depending on the compilation target. mbeddr has its own data types for singed or unsigned interger from 8bit to 64bit. For example " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and so on in mbeddr, because the size of these integers can differ depending on the compilation target. mbeddr has its own data types for singed or unsigned integers from 8bit to 64bit. For example, " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205546294139" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546294140" nodeInfo="ng">
@@ -977,7 +979,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546294142" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" represents a 8bit unsigned integer, " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" represents an 8bit unsigned integer, " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205546294161" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546294162" nodeInfo="ng">
@@ -987,7 +989,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546294164" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" represents a 8bit signed integer, " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" represents an 8bit signed integer, " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205546294191" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546294192" nodeInfo="ng">
@@ -997,7 +999,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546294194" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" represents a 16bit integer and so on.\n\nIf you need to interact with existing C that uses " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" represents an 16bit integer and so on.\n\nIf you need to interact with existing C that uses " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205546294229" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546294230" nodeInfo="ng">
@@ -1007,7 +1009,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546294232" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" you can still write " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=", you can still write " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205546294415" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546294416" nodeInfo="ng">
@@ -1048,7 +1050,7 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3592268205547068287" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547068288" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547068289" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="As described above mbeddr uses replacements for the C99 native types. To interact with existing C code mbeddr offers " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="As described above, mbeddr uses replacements for the C99 native types. To interact with existing C code, mbeddr offers " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205547068884" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547068885" nodeInfo="ng">
@@ -1058,7 +1060,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547068887" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="s in those modules it is possible to use unqualified integers like " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="s. In those modules it is possible to use unqualified integers like " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205547068898" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547068899" nodeInfo="ng">
@@ -1068,7 +1070,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547068901" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Since mbeddr by default doesn't know about the sice of these types those have to be configures on a per project bias. This is done in the so called " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Since mbeddr by default doesn't know about the size of these types, those have to be configured on a per project base. This is done in the so called " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205547069515" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547069516" nodeInfo="ng">
@@ -1078,7 +1080,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547069518" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The configuration can be accessed via  " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". This configuration can be accessed via " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.MenuFormattedText" typeId="2c95.2286331641392318852" id="3592268205547069745" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547069746" nodeInfo="ng">
@@ -1087,12 +1089,14 @@
                   </node>
                 </node>
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547087721" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547087721" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (see " />
+              </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="3592268205547087720" nodeInfo="ng">
                 <link role="image" roleId="2c95.6386504476136420174" targetNodeId="3592268205547072864" resolveInfo="tsc" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547087719" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". It contains a mapping for each C99 type to a mbeddr type. It the mapping for a given target differ from the defaults that ship with mbeddr these can be changes for each project." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="). It contains a mapping for each C99 type to an mbeddr type. The mapping for a given target may differ from the defaults that ship with mbeddr. These can be changes for each project." />
               </node>
             </node>
           </node>
@@ -1119,7 +1123,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3592268205546473096" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546473097" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546473098" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="One of the fundamental differecens compared to C in mebddr is the way how arrays are declared. In C array declarations are hard to read when they incoparte pointers and/or the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="One of the fundamental differences compared to C in mebddr is the way how arrays are declared. In C, array declarations are hard to read when they incorporate pointers and/or the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205546473510" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546473511" nodeInfo="ng">
@@ -1139,7 +1143,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546473527" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" modifier. In mbeddr arrays are declared and read from right to left. This might be differen from other languages that you are used to but in order to make reading types consitent across mbeddr we had to introduce this. Declaring a multidimensional array of 16bit integers in would look like this:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" modifier. In mbeddr, arrays are declared and read from right to left. This might be different compared to other languages that you are used to, but in order to make reading types consistent across mbeddr, we had to introduce this. Declaring a multidimensional array of 16bit integers in C would look like this:" />
             </node>
           </node>
         </node>
@@ -1175,7 +1179,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3592268205546505531" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546505532" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546505533" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This might look irritating in the first place but once we add pointers it will look much easier to read. Declaring a pointer to the array we declared above in C looks like this:\n\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This might look irritating in the first place, but once we add pointers it will look much easier to read. Declaring a pointer to the array, we declared above in C, looks like this:\n\n" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205546505585" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546505586" nodeInfo="ng">
@@ -1193,7 +1197,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3592268205546512474" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205546512475" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205546512476" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In mbeddr the same declaration is completly written from right to left:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In mbeddr, the same declaration is completely written from right to left:" />
             </node>
           </node>
         </node>
@@ -1219,13 +1223,13 @@
             </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="3592268205547053727" nodeInfo="ng">
-            <property name="text" nameId="2c95.5185579450379273119" value="Declartion order" />
+            <property name="text" nameId="2c95.5185579450379273119" value="Declaration order" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3592268205547062359" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547062360" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547062361" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr does not expose the C preprocessor to the end user. Because the preprocessor simply replaces text. It is possible that it results in not compileable code. In addition the preprocessor does not take the typesystem into account and the code couldn't be typechecked.  The proprocessor is often used to express variability in the code with " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr does not expose the C preprocessor to the end user. Because the preprocessor simply replaces text. It is possible that it results in not compileable code. In addition, the preprocessor does not take the typesystem into account and the code couldn't be typechecked.  The proprocessor is often used to express variability in the code with " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3592268205547062979" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3592268205547062980" nodeInfo="ng">
@@ -1235,7 +1239,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3592268205547062982" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", mbeddr features a native C extension to address this problem with typesystem integration and will take care the the code is still valid C code. Other preprocessor usecases can most likely be replaced with language extensions." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". mbeddr features a native C extension to address this problem with typesystem integration and will take care that the code is still valid C code. Other preprocessor use cases can most likely be replaced with language extensions." />
             </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="3592268205547062362" nodeInfo="ng">
