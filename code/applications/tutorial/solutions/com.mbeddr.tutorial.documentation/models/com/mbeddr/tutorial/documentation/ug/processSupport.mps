@@ -1144,7 +1144,7 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="3231021218602645872" nodeInfo="ng">
         <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3231021218602645889" nodeInfo="ng">
-          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3231021218602645813" resolveInfo="C_Asssessments" />
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3231021218602645813" resolveInfo="C_Assessments" />
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="3231021218602645863" nodeInfo="ng">
@@ -1182,7 +1182,7 @@
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4424988308481661406" resolveInfo="E_CodeReview" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3231021218602645839" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3231021218602645813" resolveInfo="C_Asssessments" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3231021218602645813" resolveInfo="C_Assessments" />
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="3231021218602638868" nodeInfo="ng">
@@ -1798,8 +1798,21 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="3231021218602645813" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="C_Asssessments" />
+    <property name="name" nameId="tpck.1169194664001" value="C_Assessments" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902451643265" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902451643266" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 5, 2014 3:33:58 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word15" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5479545238857002942" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902451643267" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902451643268" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Why is this checkbox only visible in this case. I still see the blue coloring and can toggle the OK state via an intention." />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3231021218602645814" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="assess" />
       <property name="text" nameId="2c95.3350625596580064225" value="Assessments" />
@@ -2003,7 +2016,7 @@
           <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5479545238857002741" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238857002742" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238857002743" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Alternatively, the user may decide that a particular small is acually ok in this case; so the result item must be marked as \&quot;it's ok, don't bother me again\&quot;." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Alternatively, the user may decide that a particular smell is acually ok in this case; so the result item must be marked as \&quot;it's ok, don't bother me again\&quot;." />
               </node>
             </node>
           </node>
@@ -2022,7 +2035,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238857002942" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" option can be set on an assessment. Then every result items gets its own checkbox. Checking this checkbox means that \&quot;this result item is ok\&quot;, i.e., it should not be marked as an error (the colored vertical bar becomes blue in this case). It is also possible to hide all those items where the checkbox is checked in the result set by selecting the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" option can be set on an assessment. Then every result item gets its own checkbox. Checking this checkbox means that \&quot;this result item is ok\&quot;, i.e., it should not be marked as an error (the colored vertical bar becomes blue in this case). It is also possible to hide all those items where the checkbox is checked in the result set by selecting the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238857003630" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238857003631" nodeInfo="ng">
@@ -3002,7 +3015,7 @@
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="bmc6.1195021413141453989" resolveInfo="G_Utilities" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4424988308481648988" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3231021218602645813" resolveInfo="C_Asssessments" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3231021218602645813" resolveInfo="C_Assessments" />
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4424988308481661406" nodeInfo="ng">
