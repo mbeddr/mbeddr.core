@@ -978,10 +978,145 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238861131951" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238861131952" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238861131953" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238861131953" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In order to be able to build variant-aware software, one has to specify the configurations for all involved feature models. To do this, you have to add a " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863734542" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863734543" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863734544" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="variability mappings" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863734541" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" configuration item to the build configuration (please see " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="5479545238863734555" nodeInfo="ng">
+              <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863734556" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863734557" nodeInfo="ng" />
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863734554" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" for a general discussion on mbeddr's build system). In this item you can list all relevant feature models plus their configuration. Check out this build configuration as an example: \n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5479545238863742160" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5479545238863742161" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238863742163" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.9141254329931944280" resolveInfo="dummy" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863742177" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Note that you will get errors in the build configuration and sometimes during generation itself if no configutation is specified for a feature model used in the system." />
+            </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5479545238861131954" nodeInfo="ng">
             <property name="text" nameId="2c95.5185579450379273119" value="Building Variable Systems" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238863742369" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863742370" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863742371" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="As explained in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="5479545238863742550" nodeInfo="ng">
+              <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863742551" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863742552" nodeInfo="ng" />
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863742553" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", each model can only have one build configuration. Relative to building variability-aware software, this results in two alternative setups:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="5479545238863743649" nodeInfo="ng">
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5479545238863743650" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5479545238863743651" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863743652" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743653" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can either have one model that contains your variable code (i.e., programs with presence conditions and the like) as well as a build configuration. By changing the " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863743841" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863743842" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743843" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="variability mappings" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743844" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in the build configuration, you can build different variants of the software. However, since they are all in the same model, you can only build " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5479545238863743850" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863743851" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743852" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="one variant at a time" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743853" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="! " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5479545238863743863" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5479545238863743864" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863743865" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743866" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The alternative is to have one model with your variability-aware code (let's call it " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863743884" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863743885" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743886" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="S" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743883" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="), and then an additional model for each variant you want to build (models " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863743893" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863743894" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743895" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="V_1" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743892" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" through " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863743906" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863743907" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743908" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="V_n" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743905" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="). The additional models " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863743923" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863743924" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743925" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="V_i" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743922" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" import the model " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863743943" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863743944" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743945" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="S" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863743946" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and each contain a build configuration with a suitable variability mapping. This way, each of these models builds a separate variant. They exist in parallel, so you can automate the build for all the variants at the same time." />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
