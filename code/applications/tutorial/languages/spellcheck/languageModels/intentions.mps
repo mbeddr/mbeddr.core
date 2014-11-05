@@ -18,7 +18,7 @@
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="2572590289489923504" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SpellCheck" />
     <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
-    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="2c95.4208238404730191274" resolveInfo="Chapter" />
+    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="2c95.3350625596580064222" resolveInfo="AbstractSection" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="2572590289489923562" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2572590289489923563" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2572590289489925957" nodeInfo="nn">
