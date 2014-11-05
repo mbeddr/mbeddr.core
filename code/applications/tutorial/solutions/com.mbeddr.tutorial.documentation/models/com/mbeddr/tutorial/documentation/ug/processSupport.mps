@@ -8,6 +8,7 @@
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
   <import index="iwll" modelUID="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)" version="-1" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" />
+  <import index="bmc6" modelUID="r:4ac377c2-0a54-4908-ae24-f86f1bad7e73(com.mbeddr.tutorial.documentation.ug.fundamentals)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="16" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
@@ -2318,6 +2319,221 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2805811593275579771" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="tracing" />
       <property name="text" nameId="2c95.3350625596580064225" value="Tracing" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2805811593282190301" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593282190302" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282190303" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="A trace is a pointer from some implementation artifact to one or more requirement " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.FootnoteWord" typeId="2c95.2728443031450669962" id="2805811593282191984" nodeInfo="ng">
+            <node role="text" roleId="2c95.2728443031450670151" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593282191985" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282191986" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Strictly speaking, it can also point to other " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="2805811593282191993" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593282191994" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282191995" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="traceable" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282191996" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" elements; mbeddr is extensible in this way. But by default, only requirements are supported as trace targets." />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282191987" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". To use traces, make sure you use the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2805811593282828644" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593282828645" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282828646" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.reqtrace" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282828647" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit in your models." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2805811593282829837" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593282829838" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282829839" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="For an example of a trace, see the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="2805811593282964052" nodeInfo="ng">
+            <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2805811593282964053" nodeInfo="ng">
+              <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2805811593282964059" nodeInfo="ng">
+                <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282964054" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module. It has traces attached to a number of C constants and to various parts of the state machine. Make sure you select a projection mode that lets you actually see the traces (see below)." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2805811593282828733" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593282828734" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282828735" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Each trace has a trace kind associated with it. Trace kinds characterize the nature of the trace relationship. While the set of trace kinds is extensible, mbeddr ships with three default trace kinds: " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2805811593282964061" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593282964062" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282964063" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="implements" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282964064" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=", " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2805811593283263211" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593283263212" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593283263213" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="exemplifies" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593283263210" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2805811593282964070" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593282964071" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282964072" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="tests" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282964073" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Note that a trace kind can restrict the kinds of requirements it can trace to, and it can also restrict to which nodes the trace can be attached. While the default trace kinds have no such constraints, it is useful in general to enforce specific semantics through those constraints. " />
+          </node>
+        </node>
+        <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="2805811593282828736" nodeInfo="ng">
+          <property name="text" nameId="2c95.5185579450379273119" value="Trace Kind" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2805811593282828829" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593282828830" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282828831" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="There are three different modes how traces can be shown (and they can be switched like all other projection modes, see " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="2805811593283323047" nodeInfo="ng">
+            <link role="target" roleId="2c95.3350625596580108719" targetNodeId="bmc6.2101724341004008376" resolveInfo="projectionModes" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593283323048" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="):" />
+          </node>
+        </node>
+        <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="2805811593282828832" nodeInfo="ng">
+          <property name="text" nameId="2c95.5185579450379273119" value="Projection Modes" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="2805811593283323152" nodeInfo="ng">
+        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="2805811593283947497" nodeInfo="ng">
+          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2805811593283947498" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593283947499" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570347" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2805811593284569987" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593284569988" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284569989" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Detailed Traces" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284569990" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=": The trace kind and the trace target(s) are shown on the right side of the traced node" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="2805811593284570390" nodeInfo="ng">
+          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2805811593284570391" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593284570392" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570437" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2805811593284570434" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593284570435" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570436" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Compact Traces" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570438" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=": Only a small " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2805811593284570449" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593284570450" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570451" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="[T]" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570452" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is shown on the right side of the traced node. A tooltip shows the first of the traces elements and the trace kind. The kind and targets can be changed in the inspector of the " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2805811593284570471" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593284570472" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570473" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="[T]" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570474" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" node. " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="2805811593283323153" nodeInfo="ng">
+          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2805811593283323154" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593283323155" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593283947485" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2805811593283947482" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593283947483" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593283947484" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="No Traces" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593283947486" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=": the traces are not shown (even though, of course, they are still in the code)" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2805811593284570664" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593284570665" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570666" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="To get a better feel for the projection modes we suggest you play around with them in the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="2805811593284570834" nodeInfo="ng">
+            <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2805811593284570835" nodeInfo="ng">
+              <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2805811593284570845" nodeInfo="ng">
+                <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570836" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2805811593282828678" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="attachingTraces" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Attaching and Removing Traces" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2805811593282828696" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="reverse" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Reverse Tracing" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2805811593282828781" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="traceReport" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Trace Report Assessment" />
+      </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="2805811593283323044" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="bmc6.1481709176727862912" resolveInfo="C_Editor" />
     </node>
   </root>
 </model>
