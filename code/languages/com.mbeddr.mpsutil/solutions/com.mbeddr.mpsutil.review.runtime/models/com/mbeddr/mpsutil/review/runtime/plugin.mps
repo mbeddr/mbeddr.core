@@ -206,7 +206,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="8455208232410333734" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DeleteReview" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Delete" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Delete Comment" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="8455208232410333735" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="editorComponent" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="1d7m.~MPSEditorDataKeys%dEDITOR_COMPONENT" resolveInfo="EDITOR_COMPONENT" />
@@ -529,7 +529,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="8455208232410333880" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ReplyReview" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Reply" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Reply to Comment" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="8455208232410333881" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="editorComponent" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="1d7m.~MPSEditorDataKeys%dEDITOR_COMPONENT" resolveInfo="EDITOR_COMPONENT" />
